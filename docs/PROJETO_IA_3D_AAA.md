@@ -445,15 +445,41 @@ def unificar_dataset(origem, destino):
 
 ## 10. Plataforma Web (este repositório)
 
-Site local em `D:\scanner3d-platform` (`npm start` → http://localhost:3939). Duas páginas:
+Site local em `D:\scanner3d-platform` (`npm start` → http://localhost:3939). **UI única estilo Ollama** — uma página só (`/`), sem menus duplicados, sem visualizador/asset-pack separados.
 
-### 10.1 Ingestão de dataset (`/`)
+### 10.1 Layout (3 colunas)
 
-- **Upload de arquivos** (imagens, GLB/FBX, texturas) → `data/uploads/` + registrados abaixo.
-- **Links do Twitter/X e YouTube** (vídeos de aprendizado/renderização) → registrados abaixo, viram fila de ingestão para o pipeline do Colab (seção 9).
-- **Inventário de referências** de `D:\References` alimentado automaticamente (seção 13).
+```
+┌────┬──────────────────────────┬────────────────────────────┐
+│ 💬 │ FOTO de origem           │                            │
+│ 🕘 │ ┌─ 9 portões (grid)──┐   │      Viewer 3D principal   │
+│ 🔍 │ │ 🦴 🩸 💪 🪡 🧫       │   │    (controle de mouse)     │
+│ ⚙  │ │ 💅 👤 👁️ 💇          │   │                            │
+│    │ └────────────────────┘   │   ⊙ PBR · ◐ Clay · ▦ Wire │
+│    │ Parâmetros: altura/quad  │   ⨂ Anatomy · 🌍 Mundo     │
+│    │ Portão atual + ações     │                            │
+│    │ ─────────────            │   strip [1][2][3]…[9]      │
+│    │ [prompt textarea]      ➤ │                            │
+│ 👤 │ 📎 ⚡ 👁️                  │   [Visualizador Pro] [⤓ UE5]│
+└────┴──────────────────────────┴────────────────────────────┘
+```
 
-### 10.2 Pipeline interativo — 9 portões de validação sequencial (`/pipeline.html`)
+- **Sidebar fininha (56px)** — 4 ícones: 💬 Conversa · 🕘 Histórico · 🔍 Re-escanear · ⚙ Configurações/Fontes. Sem "ver documento" como menu (link único no drawer).
+- **Coluna do meio** — cards do job: foto, **grid dos 9 portões** com check verde quando aprovado, parâmetros humanos, portão atual com Aprovar/Reprovar/Regen/VLM-julgar, e **input estilo Ollama** na parte inferior (textarea + pills `📎 foto` `⚡ pipeline` `👁️ VLM auto`).
+- **Viewer 3D principal** — preview interativo do portão ativo, modos PBR/Clay/Wireframe/Anatomy/Mundo via círculos coloridos centrais, strip horizontal embaixo com thumbnails dos 9 portões. Botões superiores: **Visualizador GLB Pro** (overlay sobre tudo, abre `/viewer.html` em iframe full-screen) e **Exportar UE5**.
+
+### 10.2 Visão final — VLM aprende, depois Blender headless → UE5
+
+> Esta UI é **treino**. O objetivo: assim que a VLM (seção 7.8) atingir o threshold (score ≥ 0.95 com taxa de rejeição < 5% em N jobs consecutivos), o pipeline roda sem revisão humana: foto entra → MPFB2/Z-Anatomy no Blender headless gera o humano completo (corpo/rosto/rig/pele/cabelo) → exporta GLB → importa direto em UE5 (LiveLink ARKit + Groom). O human-in-the-loop atual existe **só para criar o dataset DPO** que treina a VLM.
+
+```
+HOJE                                       FUTURO (após treino)
+foto → 9 portões → revisão humana →        foto → VLM julga → Blender
+       cria DPO → treina VLM →             headless → UE5 export
+                                           ZERO revisão humana
+```
+
+### 10.3 Pipeline interativo — 9 portões de validação sequencial
 
 Funciona como um **ComfyUI**, mas **estritamente linear e bloqueante**: nenhuma camada subsequente é calculada sem a aprovação explícita do portão atual. Cada portão é um **nó** no grafo (`three.js` para o preview 3D), e tudo passa por um nó central **LLM · Olho Humano** que orquestra, julga e é condicionado pela revisão humana.
 
@@ -481,7 +507,7 @@ Funciona como um **ComfyUI**, mas **estritamente linear e bloqueante**: nenhuma 
 
 > **Escopo honesto:** os motores reais de IA (PSHuman, ATLAS, HIT, DiffLocks, loop nvdiffrast) **não rodam neste protótipo** — cada nó usa um gerador de preview procedural em `three.js`, plugável, que muda visivelmente de abordagem ao reprovar e reage aos prompts. A **infraestrutura** (9 portões, grafo, revisão, dataset DPO, edição por prompt, cascata de recálculo) é real e funcional; basta plugar os modelos da seção 7 no lugar de cada gerador.
 
-### 10.2.1 Recálculo síncrono em cascata
+### 10.3.1 Recálculo síncrono em cascata
 
 Se o usuário está num portão avançado (ex.: **5 — Pele**) e submete um ajuste **estrutural/volumétrico** (ex.: *"aumente o quadril 20%"*, *"engrosse a coxa"*), o sistema **não** quebra as camadas adjacentes nem gera anomalias. Executa um fluxo de **dependência retroativa automática**:
 
@@ -505,16 +531,15 @@ Se o usuário está num portão avançado (ex.: **5 — Pele**) e submete um aju
 - **Persistência de estilo:** modificações superficiais já validadas (texturas, micro-poros) são preservadas e reprojetadas sobre a nova superfície deformada.
 - **No protótipo:** um prompt estrutural reabre **Músculos** e **Tecido** para re-validação (volta o `activeIndex` ao primeiro portão afetado, re-renderizado com os novos parâmetros) e exibe o aviso de cascata — o pipeline pausa até a nova aprovação.
 
-### 10.3 Física de tecido real (não "cola", não rígido)
+### 10.4 Física de tecido real (não "cola", não rígido)
 
 O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta como se o vento agisse de verdade" é **simulação de tecido diferenciável** (seção 7.6): NVIDIA **Warp / Newton 1.0** (VBD) para drape e resposta dinâmica; o vestido é malha **aberta** drapeada sobre o corpo (rota sewing-pattern), nunca casca fechada colada. No protótipo, o portão **Tecido** demonstra a barra do vestido subindo e inflando conforme a intensidade do vento. Objetivo de qualidade: corpo sem triangulação grosseira, mecânica corporal real (HIT + Chaos Flesh) e tecido com resposta real — padrão estúdio AAA.
 
-### 10.4 Asset Pack e Visualizador GLB
+### 10.5 Visualizador GLB Pro (overlay full-screen)
 
-- **`/assetpack.html`** — gerador de pacote no estilo *Mint*: 1 prompt → N assets 3D exibidos como cards arredondados flutuantes (board claro, render `three.js` por card, pop-in, mesmo prompt = mesmo pacote). Clique abre viewer 3D vivo. (Assets procedurais plugáveis; o gerador real entra no lugar de `renderAsset`.)
-- **`/viewer.html`** — inspetor GLB padrão AAA: drag-drop ou seletor de modelos enviados, **3 modos** (Render PBR · Sólido/Clay · **Topologia/Wireframe**), auto-rotação 360°, iluminação de estúdio (key/fill/rim + `RoomEnvironment`), chão com sombra, e **polycount** (vértices/polígonos). O modo Wireframe é a verificação visual de "sem triângulo grosseiro" — topologia limpa exigida na seção 7.
+Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualizador GLB Pro" superior → iframe over tudo). Drag-drop ou seletor de modelos enviados, **3 modos** (Render PBR · Sólido/Clay · **Topologia/Wireframe**), auto-rotação 360°, iluminação de estúdio (key/fill/rim + `RoomEnvironment`), chão com sombra, e **polycount** (vértices/polígonos). Wireframe = verificação visual de "sem triângulo grosseiro" (topologia limpa).
 
-**Endpoints novos:** `POST /api/jobs` (cria job), `GET /api/jobs/:id`, `POST /api/jobs/:id/stages/:stage/snapshot` (grava preview), `POST .../review` (aprova/reprova → dataset), `POST /api/jobs/:id/params` (edição por prompt), `GET /api/dataset[/export]` (estatísticas / `.jsonl`), `GET /api/models` (GLBs enviados para o visualizador).
+**Endpoints:** `POST /api/jobs` (cria job), `GET /api/jobs/:id`, `POST /api/jobs/:id/stages/:stage/snapshot` (grava preview), `POST .../review` (aprova/reprova → dataset), `POST .../vlm-judge` (VLM julga, 7.8), `POST /api/jobs/:id/params` (edição por prompt + cascata), `GET /api/dataset[/export]` (DPO `.jsonl`), `GET /api/models` (GLBs).
 
 ---
 
@@ -539,7 +564,7 @@ O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta c
 ## 13. Arquivos de Referência (`D:\References`)
 
 <!-- AUTO:REFERENCES:START -->
-*Inventário gerado em 2026-06-11T21:00:34.366Z a partir de `D:\References`.*
+*Inventário gerado em 2026-06-12T20:24:53.047Z a partir de `D:\References`.*
 
 **Total: 501 arquivos — 4.03 GB**
 
