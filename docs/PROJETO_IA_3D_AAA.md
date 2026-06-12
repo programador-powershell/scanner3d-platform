@@ -403,7 +403,12 @@ Funciona como um **ComfyUI**: cada etapa do pipeline v2 (seção 7.5) é um **n�
 
 O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta como se o vento agisse de verdade" é **simulação de tecido diferenciável** (seção 7.6): NVIDIA **Warp / Newton 1.0** (VBD) para drape e resposta dinâmica; o vestido é malha **aberta** drapeada sobre o corpo (rota sewing-pattern), nunca casca fechada colada. No protótipo, o nó **Física / Vento** demonstra a barra do vestido subindo e inflando conforme a intensidade do vento. Objetivo de qualidade: corpo sem triangulação grosseira, mecânica corporal real (HIT + Chaos Flesh) e tecido com resposta real — padrão estúdio AAA.
 
-**Endpoints novos:** `POST /api/jobs` (cria job), `GET /api/jobs/:id`, `POST /api/jobs/:id/stages/:stage/snapshot` (grava preview), `POST .../review` (aprova/reprova → dataset), `POST /api/jobs/:id/params` (edição por prompt), `GET /api/dataset[/export]` (estatísticas / `.jsonl`).
+### 10.4 Asset Pack e Visualizador GLB
+
+- **`/assetpack.html`** — gerador de pacote no estilo *Mint*: 1 prompt → N assets 3D exibidos como cards arredondados flutuantes (board claro, render `three.js` por card, pop-in, mesmo prompt = mesmo pacote). Clique abre viewer 3D vivo. (Assets procedurais plugáveis; o gerador real entra no lugar de `renderAsset`.)
+- **`/viewer.html`** — inspetor GLB padrão AAA: drag-drop ou seletor de modelos enviados, **3 modos** (Render PBR · Sólido/Clay · **Topologia/Wireframe**), auto-rotação 360°, iluminação de estúdio (key/fill/rim + `RoomEnvironment`), chão com sombra, e **polycount** (vértices/polígonos). O modo Wireframe é a verificação visual de "sem triângulo grosseiro" — topologia limpa exigida na seção 7.
+
+**Endpoints novos:** `POST /api/jobs` (cria job), `GET /api/jobs/:id`, `POST /api/jobs/:id/stages/:stage/snapshot` (grava preview), `POST .../review` (aprova/reprova → dataset), `POST /api/jobs/:id/params` (edição por prompt), `GET /api/dataset[/export]` (estatísticas / `.jsonl`), `GET /api/models` (GLBs enviados para o visualizador).
 
 ---
 

@@ -246,6 +246,19 @@ app.get('/api/md', (req, res) => {
   res.type('text/markdown; charset=utf-8').send(fs.readFileSync(MD_PATH, 'utf8'));
 });
 
+// GLBs/GLTFs disponíveis (enviados via upload) para o visualizador 3D.
+app.get('/api/models', (req, res) => {
+  const exts = new Set(['.glb', '.gltf']);
+  let models = [];
+  try {
+    models = fs
+      .readdirSync(UPLOADS_DIR)
+      .filter((f) => exts.has(path.extname(f).toLowerCase()))
+      .map((f) => ({ name: f, url: '/uploads/' + encodeURIComponent(f), bytes: (() => { try { return fs.statSync(path.join(UPLOADS_DIR, f)).size; } catch { return 0; } })() }));
+  } catch {}
+  res.json({ models });
+});
+
 // ============================================================
 // Pipeline interativo human-in-the-loop
 // ============================================================
