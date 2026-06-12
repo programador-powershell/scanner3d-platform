@@ -3,10 +3,15 @@ Fine-tuning da VLM avaliadora (seção 7.8) — Unsloth + Qwen2.5-VL-7B 4-bit.
 Hardware alvo: RTX 4060 8GB (config do diretor, mantida verbatim).
 
 Pré-requisitos (uma vez):
-  pip install unsloth "trl>=0.9" transformers accelerate bitsandbytes
+  pip install unsloth "trl>=0.9" transformers accelerate bitsandbytes pillow
 
 Fluxo:
-  1) python training/prepare_dataset.py      # gera training/dataset.json
+  1) python training/ingest_knowledge.py     # TUDO vira aprendizado:
+       referências de D:\\References (visuais + texturas PBR) +
+       README dos repositórios GitHub registrados +
+       decisões aprovar/reprovar dos 9 portões
+     -> gera training/dataset.json unificado
+     (prepare_dataset.py sozinho converte só as decisões, se preferir)
   2) python training/train_vlm_unsloth.py    # treina LoRA -> ./qwen3d
   3) merge + serve (vLLM) e aponte VLM_URL para o servidor:
        set VLM_URL=http://localhost:8000/v1/chat/completions

@@ -296,7 +296,13 @@ A LLM do hub não é só símbolo — ela é uma **VLM (Vision-Language Model)**
 
 **Receita de treino (scripts em `training/`):**
 
-1. `python training/prepare_dataset.py` — converte `data/finetune_dataset.jsonl` (decisões dos 9 portões) em pares de visão: `[foto referência + render do portão + prompt do avaliador] → veredito JSON`. Aprovado = positivo (score 0,92); reprovado = negativo (score 0,35; a nota do diretor vira `defects`).
+1. `python training/ingest_knowledge.py` — **TUDO vira aprendizado** (dataset unificado, 400+ exemplos hoje):
+   - **`D:\References` (img + previews 3D)** — 151 imagens → 2 exemplos cada: veredito positivo ("isto é o padrão AAA aprovado do projeto") + identificação de categoria/elemento.
+   - **Texturas PBR** — 89 mapas → classificação `base_color / metallic_roughness / normal`; a VLM aprende o vocabulário de materiais.
+   - **Repositórios GitHub registrados** (MPFB2, MakeHuman, QRemeshify, AutoRemesher, KIRI 3DGS) — README baixado e fatiado em pares de conhecimento; a VLM aprende **como construir corretamente** com as ferramentas do pipeline.
+   - **Decisões dos 9 portões** (`finetune_dataset.jsonl`) — `[foto + render + prompt do avaliador] → veredito JSON`; aprovado = positivo (0,92), reprovado = negativo (0,35; a nota do diretor vira `defects`).
+   - Imagens reduzidas a 640px em `training/cache_imgs/` (orçamento de tokens da 4060). Links YouTube/X entram via frames da seção 9 no próximo ingest.
+   - (`prepare_dataset.py` continua disponível para converter só as decisões.)
 2. `python training/train_vlm_unsloth.py` — fine-tuning LoRA:
 
 ```python
