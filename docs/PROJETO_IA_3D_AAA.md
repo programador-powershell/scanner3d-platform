@@ -577,9 +577,33 @@ Se o usuário está num portão avançado (ex.: **5 — Pele**) e submete um aju
 
 O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta como se o vento agisse de verdade" é **simulação de tecido diferenciável** (seção 7.6): NVIDIA **Warp / Newton 1.0** (VBD) para drape e resposta dinâmica; o vestido é malha **aberta** drapeada sobre o corpo (rota sewing-pattern), nunca casca fechada colada. No protótipo, o portão **Tecido** demonstra a barra do vestido subindo e inflando conforme a intensidade do vento. Objetivo de qualidade: corpo sem triangulação grosseira, mecânica corporal real (HIT + Chaos Flesh) e tecido com resposta real — padrão estúdio AAA.
 
-### 10.5 Visualizador GLB Pro (overlay full-screen)
+### 10.5 Bridge Blender headless (construção real pós-aprovação)
 
-Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualizador GLB Pro" superior → iframe over tudo). Drag-drop ou seletor de modelos enviados, **3 modos** (Render PBR · Sólido/Clay · **Topologia/Wireframe**), auto-rotação 360°, iluminação de estúdio (key/fill/rim + `RoomEnvironment`), chão com sombra, e **polycount** (vértices/polígonos). Wireframe = verificação visual de "sem triângulo grosseiro" (topologia limpa).
+**Acionada SOMENTE quando os 9 portões são aprovados** — aí o Blender replica toda a construção do zero, na ordem dos portões, e exporta o personagem real:
+
+```
+9/9 aprovados ──► blender.exe --background --python blender/build_character.py
+                    │  01_Esqueleto   armature humana real (42 ossos c/ falanges)
+                    │  02_Veias       strands bezier nos membros
+                    │  03_Músculos    corpo orgânico (MPFB2 se instalado; senão
+                    │                 cápsulas+remesh) RIGADO c/ automatic weights
+                    │  04_Tecido      saia aberta + cloth modifier (pin cintura)
+                    │                 + corpo como COLISOR (roupa não atravessa)
+                    │  05-08          pele SSS · unhas · rosto · olhos c/ íris
+                    │  09_Cabelo      160 strands → malha
+                    ▼
+                  character.glb (rig embutido) + character.blend
+```
+
+- Cada portão vira uma **Collection** nomeada (`01_Esqueleto` … `09_Cabelo`) — modular, espelhando o pipeline.
+- Progresso em tempo real via SSE (`build:started/log/done/error`); ao concluir, botões **"Ver GLB no Visualizador Pro"** e **"Baixar .blend"**.
+- Detecção automática do Blender (`D:\Blender Foundation\blender.exe` ou `BLENDER_PATH`); build manual via `POST /api/jobs/:id/build`.
+- **Verificado de ponta a ponta:** build automático em ~20 s → GLB de 3,8 MB (112 k vértices / 199 k polígonos) carregado no Visualizador Pro.
+- Upgrade do estágio de corpo: instalar **MPFB2** no Blender → o script usa automaticamente (hook `try_mpfb_body`). Próximo: import UE5 (Groom + LiveLink).
+
+### 10.6 Visualizador GLB Pro (overlay full-screen)
+
+Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualizador GLB Pro" superior → iframe over tudo). Drag-drop ou seletor de modelos enviados, **3 modos** (Render PBR · Sólido/Clay · **Topologia/Wireframe**), auto-rotação 360°, iluminação de estúdio (key/fill/rim + `RoomEnvironment`), chão com sombra, e **polycount** (vértices/polígonos). Wireframe = verificação visual de "sem triângulo grosseiro" (topologia limpa). Aceita deep-link `?model=` — é assim que o GLB construído pelo Blender abre.
 
 **Endpoints:** `POST /api/jobs` (cria job), `GET /api/jobs/:id`, `POST /api/jobs/:id/stages/:stage/snapshot` (grava preview), `POST .../review` (aprova/reprova → dataset), `POST .../vlm-judge` (VLM julga, 7.8), `POST /api/jobs/:id/params` (edição por prompt + cascata), `GET /api/dataset[/export]` (DPO `.jsonl`), `GET /api/models` (GLBs).
 

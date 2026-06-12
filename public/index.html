@@ -431,7 +431,14 @@ function renderJobView(){
     const cur=job.stages[job.activeIndex];
     html+=`<div class="card"><div class="head"><div class="dot"></div>PORTÃO ATUAL · ${cur.title.toUpperCase()}</div><div class="body"><div class="meta">${cur.model}</div><div class="meta" style="margin-top:6px">${cur.desc}</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="aprov">✓ Aprovar</button><button class="pill" id="reprov">✗ Reprovar</button><button class="pill" id="regen">↻ Outra abordagem</button>${pillVlm?'<button class="pill on" id="vlm">👁️ VLM julgar</button>':''}</div></div></div>`;
   } else {
-    html+=`<div class="card"><div class="head"><div class="dot"></div>✅ TREINO COMPLETO</div><div class="body"><div class="meta">Todos os portões aprovados. Quando a VLM atingir o threshold, esse job vai direto para Blender headless → exportação UE5 <b>sem essa revisão</b>.</div><button class="ghost-btn" id="export" style="margin-top:10px">⤓ Exportar GLB (placeholder)</button></div></div>`;
+    const b=job.build;
+    let bHtml='';
+    if(!b) bHtml=`<div class="meta">Personagem aprovado em todos os portões. A construção real no Blender (esqueleto → cabelo, do zero) inicia automaticamente — ou dispare manualmente:</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">🏗️ Construir no Blender</button>`;
+    else if(b.status==='running') bHtml=`<div class="meta"><span class="spin"></span> Blender headless replicando a construção (esqueleto → corpo rigado → tecido → cabelo)…</div><div id="buildLog" class="meta" style="margin-top:8px;font-family:monospace;font-size:.68rem;max-height:120px;overflow:hidden"></div>`;
+    else if(b.status==='done') bHtml=`<div class="meta">✅ Personagem construído no Blender — rig com automatic weights, collections por portão.</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="viewGlb">🧊 Ver GLB no Visualizador Pro</button><button class="pill" id="dlBlend">⤓ Baixar .blend</button><button class="pill" id="rebuild">↻ Reconstruir</button></div>`;
+    else bHtml=`<div class="meta">❌ Build falhou (código ${b.code}). Veja <a href="/api/jobs/${job.id}/build/build.log" target="_blank" style="color:var(--accent)">build.log</a>.</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">↻ Tentar de novo</button>`;
+    html+=`<div class="card"><div class="head"><div class="dot"></div>🏗️ CONSTRUÇÃO NO BLENDER</div><div class="body">${bHtml}</div></div>`;
+    html+=`<div class="card"><div class="head"><div class="dot"></div>✅ TREINO COMPLETO</div><div class="body"><div class="meta">Cada decisão deste job alimentou o dataset DPO. Quando a VLM atingir o threshold, jobs futuros vão direto para Blender → UE5 <b>sem revisão</b>.</div></div></div>`;
   }
   $('#midScroll').innerHTML=html;
   $$('#midScroll .tile').forEach(t=>t.addEventListener('click',()=>{
@@ -440,7 +447,10 @@ function renderJobView(){
   if($('#reprov')) $('#reprov').addEventListener('click',()=>review(false));
   if($('#regen')) $('#regen').addEventListener('click',regen);
   if($('#vlm')) $('#vlm').addEventListener('click',vlmJudge);
-  if($('#export')) $('#export').addEventListener('click',exportGLB);
+  if($('#buildBtn')) $('#buildBtn').addEventListener('click',startBuild);
+  if($('#rebuild')) $('#rebuild').addEventListener('click',startBuild);
+  if($('#viewGlb')) $('#viewGlb').addEventListener('click',()=>openGlbPro(job.build.glb));
+  if($('#dlBlend')) $('#dlBlend').addEventListener('click',()=>window.open(job.build.blend,'_blank'));
   // strip embaixo do viewer
   let strip='';
   let i=1;
@@ -496,7 +506,20 @@ async function vlmJudge(){
   // auto-aprova se VLM passar
   if(r.verdict.pass) review(true);
 }
-function exportGLB(){toast('Exportação Blender→UE5: backend headless ainda não plugado (próximo passo).',false);}
+async function startBuild(){
+  const r=await api(`/api/jobs/${job.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+  if(!r.ok)return toast(r.error,false);
+  toast('🏗️ Blender headless iniciado — replicando a construção do zero');
+}
+function openGlbPro(modelUrl){
+  $('#glbFrame').src='/viewer.html?model='+encodeURIComponent(modelUrl);
+  $('#glbModal').classList.add('on');
+  $('#glbClose').style.display='block';
+}
+function exportGLB(){
+  if(job&&job.build&&job.build.status==='done') return openGlbPro(job.build.glb);
+  toast(job&&job.done?'Dispare a construção no Blender primeiro.':'Aprove os 9 portões para liberar a exportação.',false);
+}
 
 async function sendPrompt(){
   const text=$('#prompt').value.trim();
@@ -556,6 +579,27 @@ function connectEvents(){
   es.addEventListener('job:update',e=>{
     const d=JSON.parse(e.data);
     if(!uiLocked) job=d.job; // durante simulação, segura o estado até estabilizar
+  });
+  // build no Blender (dispara só com 9/9 aprovados)
+  es.addEventListener('build:started',()=>{
+    if(job&&!job.build) job.build={status:'running'};
+    renderJobView();
+    toast('🏗️ Blender headless: replicando esqueleto → corpo → tecido → cabelo');
+  });
+  es.addEventListener('build:log',e=>{
+    const d=JSON.parse(e.data);
+    const el=$('#buildLog');
+    if(el){el.textContent=(el.textContent+'\n'+d.line).split('\n').slice(-6).join('\n');}
+  });
+  es.addEventListener('build:done',e=>{
+    const d=JSON.parse(e.data);
+    job=d.job; renderJobView();
+    toast('✅ Personagem construído no Blender — GLB pronto');
+  });
+  es.addEventListener('build:error',e=>{
+    const d=JSON.parse(e.data);
+    job=d.job; renderJobView();
+    toast('❌ Build do Blender falhou — veja build.log',false);
   });
 }
 // anima a simulação ao vivo na viewport conforme os frames chegam do backend

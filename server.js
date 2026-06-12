@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
+const { spawn } = require('child_process');
 const {
   scanReferences,
   manifestToMarkdown,
@@ -231,6 +232,7 @@ app.get('/api/state', (req, res) => {
   res.json({
     links,
     uploads,
+    blender: !!BLENDER_PATH,
     references: manifest
       ? {
           generatedAt: manifest.generatedAt,
@@ -287,6 +289,78 @@ function emitJob(jobId, event, data) {
   for (const res of set) {
     try { res.write(payload); } catch {}
   }
+}
+
+// ---------- Bridge Blender headless ----------
+// Acionada SOMENTE quando o personagem inteiro foi aprovado (9/9 portões):
+// replica a construção do zero (esqueleto → cabelo) no Blender e exporta GLB+blend.
+const BLENDER_PATH = (() => {
+  const candidates = [
+    process.env.BLENDER_PATH,
+    'D:\\Blender Foundation\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender\\blender.exe',
+  ].filter(Boolean);
+  for (const c of candidates) {
+    try { if (fs.existsSync(c)) return c; } catch {}
+  }
+  return null;
+})();
+const BUILD_SCRIPT = path.join(__dirname, 'blender', 'build_character.py');
+const buildsRunning = new Set();
+
+function startBuild(jobId) {
+  if (!BLENDER_PATH) return { ok: false, error: 'Blender não encontrado. Configure BLENDER_PATH.' };
+  if (buildsRunning.has(jobId)) return { ok: false, error: 'Build já em andamento.' };
+  const job = loadJob(jobId);
+  if (!job) return { ok: false, error: 'Job não encontrado.' };
+  if (activeIndex(job) < STAGE_IDS.length) {
+    return { ok: false, error: 'Build só libera com os 9 portões aprovados.' };
+  }
+  const buildDir = path.join(jobDir(jobId), 'build');
+  fs.mkdirSync(buildDir, { recursive: true });
+  const logPath = path.join(buildDir, 'build.log');
+  const logStream = fs.createWriteStream(logPath);
+  buildsRunning.add(jobId);
+
+  withJobLock(jobId, async () => {
+    const j = loadJob(jobId);
+    j.build = { status: 'running', startedAt: new Date().toISOString() };
+    saveJob(j);
+  });
+  emitJob(jobId, 'build:started', { blender: BLENDER_PATH });
+
+  const child = spawn(BLENDER_PATH, [
+    '--background', '--factory-startup',
+    '--python', BUILD_SCRIPT, '--',
+    '--job', jobFile(jobId),
+    '--out', buildDir,
+  ], { windowsHide: true });
+
+  const onLine = (buf) => {
+    for (const line of buf.toString().split(/\r?\n/)) {
+      if (!line.trim()) continue;
+      logStream.write(line + '\n');
+      if (/^\[build\]|Error|Traceback/i.test(line)) emitJob(jobId, 'build:log', { line: line.slice(0, 300) });
+    }
+  };
+  child.stdout.on('data', onLine);
+  child.stderr.on('data', onLine);
+  child.on('close', (code) => {
+    logStream.end();
+    buildsRunning.delete(jobId);
+    const glb = path.join(buildDir, 'character.glb');
+    const okBuild = code === 0 && fs.existsSync(glb);
+    withJobLock(jobId, async () => {
+      const j = loadJob(jobId);
+      if (!j) return;
+      j.build = okBuild
+        ? { status: 'done', finishedAt: new Date().toISOString(), glb: `/api/jobs/${jobId}/build/character.glb`, blend: `/api/jobs/${jobId}/build/character.blend` }
+        : { status: 'error', finishedAt: new Date().toISOString(), code };
+      saveJob(j);
+      emitJob(jobId, okBuild ? 'build:done' : 'build:error', { ...j.build, job: publicJob(j) });
+    });
+  });
+  return { ok: true };
 }
 
 // Simulação física da cascata (placeholder dos motores HIT/Chaos Flesh + Warp):
@@ -506,7 +580,32 @@ app.post('/api/jobs/:id/stages/:stage/review', jsonBig, (req, res, next) => {
     saveJob(job);
     emitJob(job.id, 'job:update', { job: publicJob(job) });
     res.json({ ok: true, approved, nextApproach: st.approach, job: publicJob(job) });
+
+    // Personagem inteiro aprovado (9/9) → replica a construção no Blender headless.
+    if (approved && activeIndex(job) >= STAGE_IDS.length && BLENDER_PATH) {
+      setImmediate(() => startBuild(job.id));
+    }
   }).catch(next);
+});
+
+// Build manual (ex.: Blender não estava configurado na hora da aprovação final).
+app.post('/api/jobs/:id/build', (req, res) => {
+  const r = startBuild(req.params.id);
+  if (!r.ok) return res.status(400).json({ error: r.error });
+  res.json({ ok: true, started: true });
+});
+
+// Serve os artefatos do build (GLB para o viewer, .blend para download, log).
+app.get('/api/jobs/:id/build/:file', (req, res) => {
+  const job = loadJob(req.params.id);
+  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+  const allow = new Set(['character.glb', 'character.blend', 'build.log']);
+  const file = path.basename(req.params.file);
+  if (!allow.has(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
+  const full = path.join(jobDir(job.id), 'build', file);
+  if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
+  if (file.endsWith('.blend')) res.setHeader('Content-Disposition', 'attachment; filename=character.blend');
+  res.sendFile(full);
 });
 
 // Edição paramétrica por prompt ("mude altura para 1,70", "aumente 20% o quadril", "tom de pele pardo").
