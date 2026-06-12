@@ -612,13 +612,14 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (5)
+### GitHub — ferramentas e código de referência (6)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
 - [AutoRemesher - remesh quad automatico standalone (autor do Dust3D), GPL-3.0. Retopo classico da secao 7.6](https://github.com/huxingyi/autoremesher) — adicionado em 2026-06-12T19:47:07.107Z
 - [MPFB2 - gerador humano open p/ Blender 4.2+ (corpo/rosto/rig/pele/poses), GPLv3. Motor base do trilho de Corpo + Rosto](https://github.com/makehumancommunity/mpfb2) — adicionado em 2026-06-12T20:19:24.938Z
 - [MakeHuman - gerador parametrico humano standalone (Python), GPL. Origem do MPFB2](https://github.com/makehumancommunity/makehuman) — adicionado em 2026-06-12T20:19:24.968Z
+- [GarmentCode/Pattern-Generator (Korosteleva, ETH) - sewing patterns parametricos -> Tecido (portao 4)](https://github.com/maria-korosteleva/Garment-Pattern-Generator) — adicionado em 2026-06-12T23:12:46.421Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)

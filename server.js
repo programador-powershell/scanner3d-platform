@@ -435,26 +435,34 @@ function datasetStats() {
   return { total, approved, rejected, byStage };
 }
 
-// Cria um job a partir de uma imagem (upload novo OU referência a um upload existente).
-app.post('/api/jobs', upload.single('image'), (req, res) => {
-  let sourceImage;
-  if (req.file) {
-    for (const f of [req.file]) reservedNames.delete(f.filename);
-    sourceImage = req.file.filename;
+// Cria um job a partir de N imagens (turnaround: frente/perfil/costas etc.) ou existentes.
+app.post('/api/jobs', upload.array('images', 12), (req, res) => {
+  let sourceImages = [];
+  if (req.files && req.files.length) {
     const uploads = readJson(UPLOADS_JSON, []);
-    uploads.push({ name: req.file.filename, bytes: req.file.size, uploadedAt: new Date().toISOString() });
+    for (const f of req.files) {
+      reservedNames.delete(f.filename);
+      sourceImages.push(f.filename);
+      uploads.push({ name: f.filename, bytes: f.size, uploadedAt: new Date().toISOString() });
+    }
     writeJson(UPLOADS_JSON, uploads);
     syncUploadsMd();
-  } else if (req.body && req.body.existing) {
-    const name = path.basename(String(req.body.existing));
-    if (!fs.existsSync(path.join(UPLOADS_DIR, name))) {
-      return res.status(400).json({ error: 'Imagem de origem não encontrada em uploads.' });
-    }
-    sourceImage = name;
-  } else {
-    return res.status(400).json({ error: 'Envie uma imagem (campo "image") ou referencie "existing".' });
   }
-  const job = newJob(genId(), sourceImage);
+  // permite também referenciar existentes (compat com fluxo antigo)
+  const existing = (req.body && (req.body['existing[]'] || req.body.existing)) || [];
+  const exArr = Array.isArray(existing) ? existing : [existing];
+  for (const e of exArr) {
+    if (!e) continue;
+    const name = path.basename(String(e));
+    if (!fs.existsSync(path.join(UPLOADS_DIR, name))) continue;
+    if (!sourceImages.includes(name)) sourceImages.push(name);
+  }
+  if (!sourceImages.length) {
+    return res.status(400).json({ error: 'Envie ao menos uma imagem (campo "images") ou referencie "existing".' });
+  }
+  // primeira foto = imagem principal (compat); todas ficam em sourceImages
+  const job = newJob(genId(), sourceImages[0]);
+  job.sourceImages = sourceImages;
   fs.mkdirSync(jobDir(job.id), { recursive: true });
   saveJob(job);
   res.json({ ok: true, job: publicJob(job) });
@@ -528,7 +536,8 @@ app.get('/api/jobs/:id/artifact/:file', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
   const file = path.basename(req.params.file);
-  if (!/^[a-z]+_a\d+\.png$/.test(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
+  // aceita snapshots PNG do portão E os GLBs gerados pelo Blender por portão
+  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log)$/.test(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
   const full = path.join(jobDir(job.id), file);
   if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
   res.type('image/png').sendFile(full);
@@ -647,6 +656,195 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res, next) => {
       runCascadeSimulation(job.id);
     }
     res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
+  }).catch(next);
+});
+
+// Configura VLM_URL em runtime (botão "Iniciar Treinamento" do navegador).
+app.post('/api/vlm/config', jsonBig, async (req, res) => {
+  const url = String((req.body && req.body.vlm_url) || '').trim();
+  if (url && !/^https?:\/\//.test(url)) return res.status(400).json({ error: 'URL precisa começar com http(s)://' });
+  process.env.VLM_URL = url;
+  // testa a conexão (não bloqueia se falhar — só reporta)
+  let connected = false;
+  if (url) {
+    try {
+      const t = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: process.env.VLM_MODEL || 'qwen3d', messages: [{ role: 'user', content: 'ping' }], max_tokens: 4 }),
+      });
+      connected = t.ok;
+    } catch {}
+  }
+  res.json({ ok: true, vlm_url: url, connected });
+});
+
+// ---------- VLM client (Qwen2.5-VL via vLLM OpenAI-compatible) ----------
+async function vlmChat(messages) {
+  if (!process.env.VLM_URL) return { ok: false, error: 'VLM_URL não configurado — clique em "Iniciar treinamento"' };
+  try {
+    const r = await fetch(process.env.VLM_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: process.env.VLM_MODEL || 'qwen3d',
+        messages,
+        temperature: 0.2,
+        max_tokens: 384,
+      }),
+    });
+    const data = await r.json();
+    const text = data.choices?.[0]?.message?.content || '';
+    return { ok: true, text };
+  } catch (e) {
+    return { ok: false, error: e.message };
+  }
+}
+function fileToB64(filename) {
+  const p = path.join(UPLOADS_DIR, filename);
+  return fs.existsSync(p) ? `data:image/jpeg;base64,${fs.readFileSync(p).toString('base64')}` : null;
+}
+function parseJsonLoose(s) {
+  if (!s) return null;
+  const m = s.match(/\{[\s\S]*\}/);
+  if (!m) return null;
+  try { return JSON.parse(m[0]); } catch { return null; }
+}
+
+// Pré-scan: VLM analisa as N fotos e extrai params humanos antes da construção.
+// Sem VLM_URL: heurística honesta (alerta que precisa do treinamento ligado).
+app.post('/api/jobs/:id/scan', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const imgs = (job.sourceImages || [job.sourceImage]).slice(0, 6);
+    const content = [];
+    for (const f of imgs) {
+      const b = fileToB64(f);
+      if (b) content.push({ type: 'image_url', image_url: { url: b } });
+    }
+    content.push({ type: 'text', text:
+      'Você é diretor de arte AAA. Analise as imagens (turnaround do personagem) e extraia ' +
+      'os PARÂMETROS HUMANOS para construir o modelo 3D no Blender (MPFB2). ' +
+      'Responda APENAS JSON: {"gender":"female|male","age":18-99,' +
+      '"height_m":1.4-2.1,"hip":0.6-1.6,"shoulder":0.6-1.6,"muscle":0.6-1.6,' +
+      '"skin":"#RRGGBB","hair":{"color":"#RRGGBB","length":"short|medium|long"},' +
+      '"garment":"descrição curta","notes":"..."}'
+    });
+    const r = await vlmChat([{ role: 'user', content }]);
+    let scan;
+    if (r.ok) {
+      scan = parseJsonLoose(r.text) || { error: 'VLM resposta sem JSON', raw: r.text.slice(0, 200) };
+    } else {
+      // heurística simples: pixel médio das imagens como tom de pele
+      scan = {
+        source: 'heuristic',
+        warning: r.error,
+        gender: 'female', age: 22, height_m: 1.70, hip: 1, shoulder: 1, muscle: 1,
+        skin: '#c9a08a',
+        hair: { color: '#2b1d16', length: 'long' },
+        garment: 'a definir',
+        notes: 'VLM não conectada; aplique defaults e inicie o treinamento para refinar.',
+      };
+    }
+    // mescla nos params do job (mantém só campos conhecidos)
+    const allowed = ['height_m', 'hip', 'shoulder', 'bust', 'waist', 'muscle', 'skin'];
+    for (const k of allowed) {
+      if (typeof scan[k] === 'number' || (k === 'skin' && /^#[0-9a-f]{6}$/i.test(scan[k] || ''))) {
+        job.params[k] = scan[k];
+      }
+    }
+    job.scan = { ...scan, ts: new Date().toISOString() };
+    saveJob(job);
+    emitJob(job.id, 'job:update', { job: publicJob(job) });
+    res.json({ ok: true, scan: job.scan, job: publicJob(job) });
+  }).catch(next);
+});
+
+// Build do preview de UM portão (Blender headless + MPFB2 + Z-Anatomy).
+// Saída: <job>/stage_<id>.glb (carregado direto no viewer do navegador).
+app.post('/api/jobs/:id/stages/:stage/build', (req, res) => {
+  if (!BLENDER_PATH) return res.status(400).json({ error: 'Blender não encontrado.' });
+  const job = loadJob(req.params.id);
+  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+  const stageId = req.params.stage;
+  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
+  const dir = jobDir(job.id);
+  const out = path.join(dir, `${stageId}.glb`);
+  const log = path.join(dir, `${stageId}.log`);
+  fs.writeFileSync(log, '');
+  const ls = fs.createWriteStream(log, { flags: 'a' });
+  const child = spawn(BLENDER_PATH, [
+    '--background', '--factory-startup',
+    '--python', path.join(__dirname, 'blender', 'build_stage.py'), '--',
+    '--stage', stageId, '--job', jobFile(job.id), '--out', dir,
+  ], { windowsHide: true });
+  emitJob(job.id, 'stage:build:start', { stage: stageId });
+  const onLine = (b) => {
+    for (const line of b.toString().split(/\r?\n/)) {
+      if (!line.trim()) continue;
+      ls.write(line + '\n');
+      if (/^\[stage|Error|Traceback/i.test(line)) emitJob(job.id, 'stage:build:log', { stage: stageId, line: line.slice(0, 240) });
+    }
+  };
+  child.stdout.on('data', onLine);
+  child.stderr.on('data', onLine);
+  child.on('close', (code) => {
+    ls.end();
+    const ok = code === 0 && fs.existsSync(out);
+    emitJob(job.id, ok ? 'stage:build:done' : 'stage:build:error', { stage: stageId, glb: ok ? `/api/jobs/${job.id}/artifact/${stageId}.glb` : null, code });
+  });
+  res.json({ ok: true, started: true });
+});
+
+// Serve GLB de portão (além do PNG snapshot já existente).
+// O endpoint /artifact/:file aceita stage.glb porque já valida basename.
+
+// Reprovar com sugestão da VLM: ela analisa o render e propõe o ajuste paramétrico.
+app.post('/api/jobs/:id/stages/:stage/refine', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const stageId = req.params.stage;
+    const st = job.stages[stageId];
+    const note = String((req.body && req.body.note) || '').trim();
+    const refB64 = (job.sourceImages || []).map(fileToB64).filter(Boolean).slice(0, 3);
+    const renderPath = st.lastImage ? path.join(jobDir(job.id), path.basename(st.lastImage)) : null;
+    const renderB64 = renderPath && fs.existsSync(renderPath)
+      ? `data:image/png;base64,${fs.readFileSync(renderPath).toString('base64')}` : null;
+    const content = [];
+    for (const b of refB64) content.push({ type: 'image_url', image_url: { url: b } });
+    if (renderB64) content.push({ type: 'image_url', image_url: { url: renderB64 } });
+    content.push({ type: 'text', text:
+      `Diretor reprovou o portão "${st.title}" do personagem. ` +
+      (note ? `Motivo do diretor: "${note}". ` : '') +
+      'Compare a referência com o render reprovado e proponha UM comando paramétrico ' +
+      'em pt-BR que aproxime o resultado (ex.: "altura 1,75", "aumente 20% o quadril", ' +
+      '"tom de pele pardo"). Responda APENAS JSON: {"command":"…","reason":"…"}'
+    });
+    const r = await vlmChat([{ role: 'user', content }]);
+    let suggestion = parseJsonLoose(r.text) || { command: '', reason: r.error || 'VLM sem JSON' };
+    job.edits = job.edits || [];
+    job.edits.push({ source: 'vlm-refine', stage: stageId, note, suggestion, ts: new Date().toISOString() });
+
+    // aplica o comando sugerido se houver
+    let applied = [], structural = false, cascade = { cascaded: false, reopened: [] };
+    if (suggestion.command) {
+      const a = applyPromptCommand(job.params, suggestion.command);
+      job.params = a.params; applied = a.applied; structural = a.structural;
+      if (structural) cascade = applyCascade(job);
+    }
+    // muda abordagem do portão
+    st.approach += 1; st.status = 'running'; st.lastImage = null;
+    saveJob(job);
+    appendDataset({
+      ts: new Date().toISOString(), jobId: job.id, stage: stageId,
+      label: 'rejected_refine', note,
+      vlm_suggestion: suggestion, applied, structural,
+      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+    });
+    emitJob(job.id, 'job:update', { job: publicJob(job) });
+    res.json({ ok: true, suggestion, applied, structural, cascade, job: publicJob(job) });
   }).catch(next);
 });
 
