@@ -236,9 +236,10 @@
   <button class="close" id="backdropClose">✕</button>
   <h2>🧠 Iniciar Treinamento da VLM</h2>
   <p>A VLM (Qwen2.5-VL-7B 4-bit) precisa estar servida para analisar fotos e julgar portões. Suba o vLLM e cole a URL OpenAI-compatible abaixo — o servidor passa a usar a VLM treinada automaticamente.</p>
-  <input class="vlmUrl" id="vlmUrl" placeholder="http://localhost:8000/v1/chat/completions">
-  <button id="trainBtn">🚀 Ativar VLM e iniciar treinamento</button>
-  <p style="font-size:.8rem">Sem VLM conectada, o pré-scan e o reprovar-refine usam heurística básica — a construção MPFB2 segue funcionando.</p>
+  <input class="vlmUrl" id="vlmUrl" placeholder="VLM (Qwen2.5-VL) — http://localhost:8000/v1/chat/completions">
+  <input class="vlmUrl" id="cgUrl" placeholder="ChatGarment (portão Tecido) — http://localhost:8100/infer">
+  <button id="trainBtn">🚀 Ativar VLM + ChatGarment e iniciar treinamento</button>
+  <p style="font-size:.8rem">Sem VLM/ChatGarment conectados, scan/refine usam heurística e o trilho de Tecido cai pra fallback MHCLO. MPFB2 funciona sempre.</p>
 </div>
 
 <script type="module">
@@ -476,7 +477,17 @@ function renderJobView(){
   html+=`<div class="card"><div class="head"><div class="dot"></div>PARÂMETROS HUMANOS</div><div class="body"><div class="meta">altura <b style="color:var(--accent)">${(params.height_m||1.7).toFixed(2)}m</b> · quadril ${Math.round((params.hip||1)*100)}% · ombro ${Math.round((params.shoulder||1)*100)}% · músculo ${Math.round((params.muscle||1)*100)}% · pele <span style="display:inline-block;width:11px;height:11px;border-radius:3px;background:${params.skin||'#c9a08a'};vertical-align:middle"></span> · vento ${Math.round((params.wind||0)*100)}%</div>${editLog}</div></div>`;
   if(job.activeIndex<9){
     const cur=job.stages[job.activeIndex];
-    html+=`<div class="card"><div class="head"><div class="dot"></div>PORTÃO ATUAL · ${cur.title.toUpperCase()}</div><div class="body"><div class="meta">${cur.model}</div><div class="meta" style="margin-top:6px">${cur.desc}</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="aprov">✓ Aprovar</button><button class="pill" id="reprov">✗ Reprovar</button><button class="pill" id="regen">↻ Outra abordagem</button>${pillVlm?'<button class="pill on" id="vlm">👁️ VLM julgar</button>':''}</div></div></div>`;
+    let extra='';
+    if(cur.id==='garment'){
+      const g=job.garment||{};
+      const parts=(g.parts||[]).slice(0,12).join(', ');
+      extra=`<div class="meta" style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px">🪡 <b>ChatGarment</b>: anexe as N imagens das etapas do vestido (camisa, corset, saia, avental, laço…) e a VLM deduz o sewing pattern.</div>`+
+        `<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><button class="pill" id="cgPick">📎 Etapas da roupa (${(g.images||[]).length})</button><button class="pill on" id="cgRun">🪡 Rodar ChatGarment</button></div>`+
+        `<input type="file" id="cgFiles" accept="image/*" multiple hidden>`+
+        (g.parts?`<div class="meta" style="margin-top:6px">Painéis detectados: <b style="color:var(--accent)">${parts}</b></div>`:'')+
+        (g.warning?`<div class="meta" style="color:var(--warn);margin-top:6px">⚠️ ${g.warning}</div>`:'');
+    }
+    html+=`<div class="card"><div class="head"><div class="dot"></div>PORTÃO ATUAL · ${cur.title.toUpperCase()}</div><div class="body"><div class="meta">${cur.model}</div><div class="meta" style="margin-top:6px">${cur.desc}</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="aprov">✓ Aprovar</button><button class="pill" id="reprov">✗ Reprovar</button><button class="pill" id="regen">↻ Outra abordagem</button>${pillVlm?'<button class="pill on" id="vlm">👁️ VLM julgar</button>':''}</div>${extra}</div></div>`;
   } else {
     const b=job.build;
     let bHtml='';
@@ -494,6 +505,11 @@ function renderJobView(){
   if($('#reprov')) $('#reprov').addEventListener('click',()=>review(false));
   if($('#regen')) $('#regen').addEventListener('click',regen);
   if($('#vlm')) $('#vlm').addEventListener('click',vlmJudge);
+  if($('#cgPick')) $('#cgPick').addEventListener('click',()=>$('#cgFiles').click());
+  if($('#cgFiles')) $('#cgFiles').addEventListener('change',e=>{ if(e.target.files.length){ runChatGarment([...e.target.files]); e.target.value=''; }});
+  if($('#cgRun')) $('#cgRun').addEventListener('click',()=>{ const g=job.garment||{};
+    if(!(g.images||[]).length) return $('#cgFiles').click();
+    runChatGarment([]); });
   if($('#buildBtn')) $('#buildBtn').addEventListener('click',startBuild);
   if($('#rebuild')) $('#rebuild').addEventListener('click',startBuild);
   if($('#viewGlb')) $('#viewGlb').addEventListener('click',()=>openGlbPro(job.build.glb));
@@ -566,6 +582,21 @@ async function vlmJudge(){
   // auto-aprova se VLM passar
   if(r.verdict.pass) review(true);
 }
+async function runChatGarment(files){
+  const fd=new FormData();
+  for(const f of files) fd.append('images',f);
+  toast(`🪡 ChatGarment lendo ${files.length||'(reutilizando)'} imagem(ns)…`);
+  const r=await fetch(`/api/jobs/${job.id}/stages/garment/chatgarment`,{method:'POST',body:fd});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok) return toast(j.error||'falha ChatGarment',false);
+  job=j.job;
+  toast(j.garment?.source==='chatgarment'?`✓ pattern com ${j.garment.parts.length} painéis`:'⚠️ ChatGarment offline — registrado mesmo assim');
+  // dispara rebuild do portão para drapear o novo pattern
+  const s=job.stages.find(x=>x.id==='garment'); if(s){s.status='running'; s.lastImage=null;}
+  await api(`/api/jobs/${job.id}/stages/garment/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
+  renderJobView();
+}
+
 async function startBuild(){
   const r=await api(`/api/jobs/${job.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
   if(!r.ok)return toast(r.error,false);
@@ -726,11 +757,12 @@ function closeTrain(){ $('#backdrop').classList.remove('on'); }
 $('#backdropClose').addEventListener('click',closeTrain);
 $('#trainBtn').addEventListener('click',async()=>{
   const url=$('#vlmUrl').value.trim();
+  const cg=$('#cgUrl').value.trim();
   $('#trainBtn').disabled=true;
-  const r=await api('/api/vlm/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({vlm_url:url})});
+  const r=await api('/api/vlm/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({vlm_url:url,chatgarment_url:cg})});
   $('#trainBtn').disabled=false;
   if(!r.ok) return toast(r.error,false);
-  toast(r.connected?'✅ VLM conectada — treinamento ativo':'⚠️ VLM não respondeu, salvo mesmo assim',r.connected);
+  toast(`VLM ${r.connected?'✅':'⚠️'} · ChatGarment ${r.chatgarment_connected?'✅':'⚠️'}`,r.connected);
   closeTrain();
 });
 $('#pillMode').addEventListener('click',()=>{pillMode=pillMode==='human'?'vlm':'human';$('#pillMode').classList.toggle('on');$('#pillMode').textContent=pillMode==='human'?'⚡ pipeline humano':'⚡ pipeline VLM-auto';});

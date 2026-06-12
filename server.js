@@ -536,8 +536,8 @@ app.get('/api/jobs/:id/artifact/:file', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
   const file = path.basename(req.params.file);
-  // aceita snapshots PNG do portão E os GLBs gerados pelo Blender por portão
-  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log)$/.test(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
+  // aceita snapshots PNG, GLB por portão, logs, e pattern do ChatGarment
+  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log|garment_pattern\.json)$/.test(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
   const full = path.join(jobDir(job.id), file);
   if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
   res.type('image/png').sendFile(full);
@@ -662,21 +662,25 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res, next) => {
 // Configura VLM_URL em runtime (botão "Iniciar Treinamento" do navegador).
 app.post('/api/vlm/config', jsonBig, async (req, res) => {
   const url = String((req.body && req.body.vlm_url) || '').trim();
-  if (url && !/^https?:\/\//.test(url)) return res.status(400).json({ error: 'URL precisa começar com http(s)://' });
+  const cg = String((req.body && req.body.chatgarment_url) || '').trim();
+  for (const u of [url, cg]) if (u && !/^https?:\/\//.test(u)) return res.status(400).json({ error: 'URLs precisam começar com http(s)://' });
   process.env.VLM_URL = url;
-  // testa a conexão (não bloqueia se falhar — só reporta)
-  let connected = false;
+  process.env.CHATGARMENT_URL = cg;
+  let connected = false, chatgarment_connected = false;
   if (url) {
     try {
-      const t = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: process.env.VLM_MODEL || 'qwen3d', messages: [{ role: 'user', content: 'ping' }], max_tokens: 4 }),
-      });
+      const t = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: process.env.VLM_MODEL || 'qwen3d', messages: [{ role: 'user', content: 'ping' }], max_tokens: 4 }) });
       connected = t.ok;
     } catch {}
   }
-  res.json({ ok: true, vlm_url: url, connected });
+  if (cg) {
+    try {
+      const t = await fetch(cg, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ping: true }) });
+      chatgarment_connected = t.ok;
+    } catch {}
+  }
+  res.json({ ok: true, vlm_url: url, chatgarment_url: cg, connected, chatgarment_connected });
 });
 
 // ---------- VLM client (Qwen2.5-VL via vLLM OpenAI-compatible) ----------
@@ -761,6 +765,84 @@ app.post('/api/jobs/:id/scan', jsonBig, (req, res, next) => {
   }).catch(next);
 });
 
+// ---------- ChatGarment client (portão Tecido) ----------
+// VLM lê N imagens das etapas/peças da roupa + descrição -> JSON GarmentCode
+// -> Blender drapeia o pattern sobre o corpo MPFB2.
+// Sem CHATGARMENT_URL: cai pra heurística com aviso explícito (não tenta inventar mesh).
+async function chatGarmentInfer(images, prompt) {
+  if (!process.env.CHATGARMENT_URL) {
+    return { ok: false, error: 'CHATGARMENT_URL não configurado — clique em "Iniciar treinamento" e suba o ChatGarment' };
+  }
+  try {
+    const r = await fetch(process.env.CHATGARMENT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        images, // array de dataURLs
+        prompt, // pt-BR: descrição da roupa + camadas
+        max_tokens: 1024,
+        temperature: 0.2,
+      }),
+    });
+    const data = await r.json();
+    // O servidor ChatGarment retorna { pattern: GarmentCodeJSON, parts: [...] }
+    return { ok: true, ...data };
+  } catch (e) {
+    return { ok: false, error: e.message };
+  }
+}
+
+// Endpoint dedicado do portão Tecido: usuário envia até 10 imagens das etapas
+// da roupa (camisa/corset/saia/avental/laço/etc) e o ChatGarment infere o pattern.
+app.post('/api/jobs/:id/stages/garment/chatgarment', upload.array('images', 10), (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const uploads = readJson(UPLOADS_JSON, []);
+    const garmentImages = [];
+    for (const f of (req.files || [])) {
+      reservedNames.delete(f.filename);
+      uploads.push({ name: f.filename, bytes: f.size, uploadedAt: new Date().toISOString() });
+      garmentImages.push(f.filename);
+    }
+    // permite referenciar imagens já enviadas
+    const existing = (req.body && (req.body['existing[]'] || req.body.existing)) || [];
+    for (const e of Array.isArray(existing) ? existing : [existing]) {
+      if (e && fs.existsSync(path.join(UPLOADS_DIR, path.basename(e)))) garmentImages.push(path.basename(e));
+    }
+    if (uploads.length > 0) { writeJson(UPLOADS_JSON, uploads); syncUploadsMd(); }
+    if (!garmentImages.length) return res.status(400).json({ error: 'Envie ao menos uma imagem de peça/etapa do vestido.' });
+
+    // pede ao ChatGarment o pattern (multi-image)
+    const datas = garmentImages.map((n) => fileToB64(n)).filter(Boolean);
+    const prompt = String((req.body && req.body.prompt) || '').trim()
+      || `Você é o ChatGarment. As ${garmentImages.length} imagens são etapas/peças do vestido do personagem (turnaround + breakdown). Deduza o sewing pattern completo em GarmentCode JSON: cada peça (camisa, corset, saia interna, sobre-saia, avental, mangas, laço, acessórios) como painel separado com costuras corretas. Retorne JSON {pattern:{...GarmentCode...}, parts:[nome,...]}.`;
+    const inf = await chatGarmentInfer(datas, prompt);
+    job.garment = job.garment || {};
+    job.garment.images = garmentImages;
+    job.garment.lastPrompt = prompt;
+    if (inf.ok && inf.pattern) {
+      const patternPath = path.join(jobDir(job.id), 'garment_pattern.json');
+      fs.writeFileSync(patternPath, JSON.stringify(inf.pattern, null, 2));
+      job.garment.pattern = `/api/jobs/${job.id}/artifact/garment_pattern.json`;
+      job.garment.parts = inf.parts || [];
+      job.garment.source = 'chatgarment';
+    } else {
+      job.garment.source = 'offline';
+      job.garment.warning = inf.error;
+    }
+    saveJob(job);
+    appendDataset({
+      ts: new Date().toISOString(), jobId: job.id, stage: 'garment',
+      label: 'chatgarment', images: garmentImages, prompt,
+      pattern_parts: (inf.parts || []).length,
+      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+    });
+    emitJob(job.id, 'garment:pattern', { ok: !!inf.pattern, parts: inf.parts || [], warning: inf.error || null });
+    res.json({ ok: true, garment: job.garment, job: publicJob(job) });
+  }).catch(next);
+});
+
 // Build do preview de UM portão (Blender headless + MPFB2 + Z-Anatomy).
 // Saída: <job>/stage_<id>.glb (carregado direto no viewer do navegador).
 app.post('/api/jobs/:id/stages/:stage/build', (req, res) => {
@@ -774,11 +856,17 @@ app.post('/api/jobs/:id/stages/:stage/build', (req, res) => {
   const log = path.join(dir, `${stageId}.log`);
   fs.writeFileSync(log, '');
   const ls = fs.createWriteStream(log, { flags: 'a' });
-  const child = spawn(BLENDER_PATH, [
+  const blArgs = [
     '--background', '--factory-startup',
     '--python', path.join(__dirname, 'blender', 'build_stage.py'), '--',
     '--stage', stageId, '--job', jobFile(job.id), '--out', dir,
-  ], { windowsHide: true });
+  ];
+  // portão Tecido: passa o GarmentCode JSON do ChatGarment se existir
+  if (stageId === 'garment') {
+    const patternPath = path.join(dir, 'garment_pattern.json');
+    if (fs.existsSync(patternPath)) blArgs.push('--garment-pattern', patternPath);
+  }
+  const child = spawn(BLENDER_PATH, blArgs, { windowsHide: true });
   emitJob(job.id, 'stage:build:start', { stage: stageId });
   const onLine = (b) => {
     for (const line of b.toString().split(/\r?\n/)) {

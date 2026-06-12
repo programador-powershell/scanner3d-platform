@@ -10,6 +10,7 @@ Saída: <out>/<stage>.glb (carregado pelo navegador no viewer)
 """
 import bpy
 import json
+import math
 import os
 import sys
 import addon_utils
@@ -129,27 +130,62 @@ if STAGE == "skeleton":
 elif STAGE in ("muscle", "skin", "veins", "nails", "face", "eyes"):
     # corpo MPFB2 (+ rig oculto)
     hide_all([body_name])
-elif STAGE in ("hair", "garment"):
-    # Equipa um asset MHCLO real do banco do MPFB2 (cabelo ou roupa).
-    # MPFB2 não tem "default" sem MakeHuman; aqui buscamos no diretório de assets.
-    import glob
-    from bl_ext.blender_org.mpfb.services.locationservice import LocationService  # type: ignore
-    asset_dir = LocationService.get_mpfb_data("mhassets") or LocationService.get_user_data("data")
-    pattern = "*hair*.mhclo" if STAGE == "hair" else "*.mhclo"
-    found = glob.glob(os.path.join(asset_dir or "", "**", pattern), recursive=True) if asset_dir else []
-    if found:
+elif STAGE == "garment":
+    # Trilho de Tecido: ChatGarment (VLM, repo biansy000/ChatGarment) lê N imagens
+    # das etapas da roupa e devolve GarmentCode JSON. Aqui carregamos esse JSON e
+    # construímos cada painel como malha drapeada sobre o corpo MPFB2.
+    pattern_json = arg("--garment-pattern")
+    if pattern_json and os.path.exists(pattern_json):
         try:
-            HS.add_mhclo_asset(found[0], basemesh)
-            print(f"[stage:{STAGE}] MHCLO asset equipado: {os.path.basename(found[0])}")
+            data = json.load(open(pattern_json, encoding="utf-8"))
+            panels = data.get("panels") or data.get("pattern", {}).get("panels") or []
+            print(f"[stage:{STAGE}] ChatGarment pattern: {len(panels)} painéis")
+            # cada painel = mesh plano deformado, drapeado: aqui criamos um proxy
+            # (plano por painel posicionado ao redor do corpo + cloth modifier).
+            # O drape completo via NvidiaWarp/Newton entra quando plugado.
+            import mathutils
+            for i, p in enumerate(panels[:24]):
+                name = p.get("name", f"panel_{i}")
+                bpy.ops.mesh.primitive_plane_add(size=0.4, location=(0, 0.20 + i * 0.02, 1.0))
+                pl = bpy.context.active_object
+                pl.name = f"garment_{name}"
+                sub = pl.modifiers.new("Subd", "SUBSURF"); sub.levels = 3
+                bpy.ops.object.modifier_apply(modifier=sub.name)
+                cloth = pl.modifiers.new("Cloth", "CLOTH")
+                cloth.settings.quality = 4
+            keep = [body_name] + [o.name for o in bpy.data.objects if o.name.startswith("garment_")]
+            hide_all(keep)
         except Exception as e:
-            print(f"[stage:{STAGE}] aviso mhclo: {e}")
+            print(f"[stage:{STAGE}] ChatGarment pattern inválido: {e}")
+            hide_all([body_name])
     else:
-        # Sem assets locais (MakeHuman não linkado): documenta no GLB para a VLM julgar.
-        print(f"[stage:{STAGE}] sem MHCLO local — usando corpo MPFB2 nu como base (instale assets MakeHuman)")
-    if STAGE == "hair":
-        keep = [body_name] + [o.name for o in bpy.data.objects if "hair" in o.name.lower()]
-    else:
+        # Sem pattern (ChatGarment offline ou usuário não enviou imagens de roupa):
+        # fallback MHCLO do MPFB2 se disponível, senão corpo nu (VLM julga).
+        import glob
+        try:
+            from bl_ext.blender_org.mpfb.services.locationservice import LocationService  # type: ignore
+            asset_dir = LocationService.get_mpfb_data("mhassets") or LocationService.get_user_data("data")
+            found = glob.glob(os.path.join(asset_dir or "", "**", "*.mhclo"), recursive=True) if asset_dir else []
+            if found:
+                HS.add_mhclo_asset(found[0], basemesh)
+                print(f"[stage:{STAGE}] fallback MHCLO: {os.path.basename(found[0])}")
+        except Exception as e:
+            print(f"[stage:{STAGE}] sem pattern e sem MHCLO ({e}) — corpo MPFB2 nu")
         keep = [body_name] + [o.name for o in bpy.data.objects if any(k in o.name.lower() for k in ("cloth", "shirt", "pants", "dress", "garment"))]
+        hide_all(keep)
+elif STAGE == "hair":
+    # Cabelo: Hair Curves nativo do Blender (até o DiffLocks ser plugado).
+    import glob
+    try:
+        from bl_ext.blender_org.mpfb.services.locationservice import LocationService  # type: ignore
+        asset_dir = LocationService.get_mpfb_data("mhassets") or LocationService.get_user_data("data")
+        found = glob.glob(os.path.join(asset_dir or "", "**", "*hair*.mhclo"), recursive=True) if asset_dir else []
+        if found:
+            HS.add_mhclo_asset(found[0], basemesh)
+            print(f"[stage:{STAGE}] MHCLO cabelo: {os.path.basename(found[0])}")
+    except Exception as e:
+        print(f"[stage:{STAGE}] aviso hair: {e}")
+    keep = [body_name] + [o.name for o in bpy.data.objects if "hair" in o.name.lower()]
     hide_all(keep)
 else:
     hide_all([body_name])

@@ -619,7 +619,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 - [AutoRemesher - remesh quad automatico standalone (autor do Dust3D), GPL-3.0. Retopo classico da secao 7.6](https://github.com/huxingyi/autoremesher) — adicionado em 2026-06-12T19:47:07.107Z
 - [MPFB2 - gerador humano open p/ Blender 4.2+ (corpo/rosto/rig/pele/poses), GPLv3. Motor base do trilho de Corpo + Rosto](https://github.com/makehumancommunity/mpfb2) — adicionado em 2026-06-12T20:19:24.938Z
 - [MakeHuman - gerador parametrico humano standalone (Python), GPL. Origem do MPFB2](https://github.com/makehumancommunity/makehuman) — adicionado em 2026-06-12T20:19:24.968Z
-- [GarmentCode/Pattern-Generator (Korosteleva, ETH) - sewing patterns parametricos -> Tecido (portao 4)](https://github.com/maria-korosteleva/Garment-Pattern-Generator) — adicionado em 2026-06-12T23:12:46.421Z
+- [ChatGarment (Apache-2.0) - VLM le N imagens de roupa -> sewing pattern GarmentCode JSON -> drape 3D. Trilho Tecido (portao 4) com leitura multi-imagem das 10 etapas do vestido](https://github.com/biansy000/ChatGarment) — adicionado em 2026-06-12T23:22:14.168Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)
