@@ -1,0 +1,14 @@
+{
+  "name": "scanner3d-platform",
+  "version": "0.1.0",
+  "description": "Plataforma de ingestão de dataset para IA 2D→3D (Scanner 3D Cognitivo)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "feed": "node scripts/feed_references.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

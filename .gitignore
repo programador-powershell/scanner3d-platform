@@ -1,0 +1,20 @@
+node_modules/
+
+# estado de runtime (gerado pelo servidor)
+data/uploads/*
+data/jobs/*
+data/links.json
+data/uploads.json
+data/references_manifest.json
+data/finetune_dataset.jsonl
+data/*.tmp
+data/*.corrupt
+
+# manter as pastas no repo
+!data/uploads/.gitkeep
+!data/jobs/.gitkeep
+
+# logs / lixo
+*.log
+.DS_Store
+Thumbs.db

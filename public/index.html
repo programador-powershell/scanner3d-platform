@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scanner 3D Cognitivo — Ingestão de Dataset</title>
+<style>
+  :root {
+    --bg: #0d0f14;
+    --panel: #161a22;
+    --panel2: #1d2330;
+    --border: #2a3142;
+    --text: #e8ebf2;
+    --muted: #8b93a7;
+    --accent: #6ee7b7;
+    --accent2: #818cf8;
+    --danger: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 32px 16px;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 36px; }
+  header h1 {
+    font-size: 1.9rem;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header p { color: var(--muted); margin-top: 8px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+  }
+  .card h2 { font-size: 1.05rem; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .full { grid-column: 1 / -1; }
+  #dropzone {
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 36px 16px;
+    text-align: center;
+    color: var(--muted);
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+  }
+  #dropzone.drag { border-color: var(--accent); background: rgba(110,231,183,.06); color: var(--accent); }
+  input[type=text], input[type=url] {
+    width: 100%;
+    background: var(--panel2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    font-size: .95rem;
+  }
+  input:focus { outline: none; border-color: var(--accent2); }
+  button {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #0d0f14;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: .95rem;
+  }
+  button.ghost {
+    background: var(--panel2);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  button:disabled { opacity: .5; cursor: wait; }
+  ul.list { list-style: none; margin-top: 12px; }
+  ul.list li {
+    background: var(--panel2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: .88rem;
+    word-break: break-all;
+  }
+  ul.list a { color: var(--accent); text-decoration: none; }
+  ul.list .x { color: var(--danger); cursor: pointer; background: none; border: none; font-size: 1rem; padding: 0 4px; }
+  .muted { color: var(--muted); font-size: .85rem; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .stat {
+    background: var(--panel2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: .85rem;
+  }
+  .stat b { color: var(--accent); }
+  #toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: var(--panel2); border: 1px solid var(--accent);
+    padding: 10px 20px; border-radius: 10px; display: none; z-index: 10;
+  }
+  .topbtns { display: flex; gap: 10px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧠 Scanner 3D Cognitivo</h1>
+    <p>Ingestão de dataset para a IA 2D→3D (Florence-2 · Multi-View · PBR · Rig anatômico)</p>
+    <div class="topbtns">
+      <button onclick="location.href='/pipeline.html'">🔬 Abrir Pipeline Interativo 2D→3D</button>
+      <button class="ghost" onclick="feedReferences(this)">🔄 Re-escanear D:\References</button>
+      <button class="ghost" onclick="window.open('/api/md','_blank')">📄 Ver PROJETO_IA_3D_AAA.md</button>
+    </div>
+  </header>
+
+  <div class="card full">
+    <h2>📤 Upload de arquivos</h2>
+    <div id="dropzone">
+      Arraste imagens, GLB/FBX ou texturas aqui — ou clique para escolher
+      <input type="file" id="fileInput" multiple hidden>
+    </div>
+    <ul class="list" id="uploadList"></ul>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>▶️ YouTube — vídeo de aprendizado</h2>
+      <input type="url" id="ytUrl" placeholder="https://youtube.com/watch?v=...">
+      <input type="text" id="ytNote" placeholder="Descrição (ex.: turnaround Stellar Blade 4K)">
+      <button onclick="addLink('youtube')">Adicionar vídeo</button>
+      <ul class="list" id="ytList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>🐦 Twitter / X — referência</h2>
+      <input type="url" id="twUrl" placeholder="https://x.com/...">
+      <input type="text" id="twNote" placeholder="Descrição (ex.: breakdown de personagem)">
+      <button onclick="addLink('twitter')">Adicionar link</button>
+      <ul class="list" id="twList"></ul>
+    </div>
+  </div>
+
+  <div class="card full">
+    <h2>📚 Referências (D:\References)</h2>
+    <div id="refSummary" class="muted">Carregando...</div>
+    <div class="stats" id="refStats"></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+function toast(msg, ok = true) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.style.borderColor = ok ? 'var(--accent)' : 'var(--danger)';
+  t.style.display = 'block';
+  clearTimeout(t._h);
+  t._h = setTimeout(() => (t.style.display = 'none'), 3500);
+}
+
+// Todo fetch passa por aqui: falha de rede e resposta não-JSON (HTML de erro do
+// Express/multer) viram { ok:false, error } em vez de rejection sem catch.
+async function fetchJson(url, opts) {
+  let r;
+  try {
+    r = await fetch(url, opts);
+  } catch {
+    return { ok: false, error: 'Falha de conexão com o servidor.' };
+  }
+  let data = {};
+  if ((r.headers.get('content-type') || '').includes('json')) {
+    try { data = await r.json(); } catch {}
+  } else {
+    data = { error: `Erro no servidor (HTTP ${r.status}).` };
+  }
+  return { ok: r.ok, status: r.status, ...data };
+}
+
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === 'class') node.className = v;
+    else if (k === 'dataset') Object.assign(node.dataset, v);
+    else if (k.startsWith('on')) node.addEventListener(k.slice(2), v);
+    else node.setAttribute(k, v);
+  }
+  for (const c of children) node.append(c);
+  return node;
+}
+
+function fill(listId, nodes, emptyMsg) {
+  const ul = $(listId);
+  ul.replaceChildren(...(nodes.length ? nodes : [el('li', { class: 'muted' }, emptyMsg)]));
+}
+
+async function loadState() {
+  const s = await fetchJson('/api/state');
+  if (!s.ok) return toast(s.error, false);
+
+  // textContent/setAttribute em vez de innerHTML: note/url/nome de arquivo nunca viram HTML.
+  const linkLi = (type) => (l) =>
+    el('li', {},
+      el('span', {}, el('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' }, l.note || l.url)),
+      el('button', {
+        class: 'x', title: 'Remover',
+        onclick: () => delLink(type, l.url),
+      }, '✕'));
+
+  fill('ytList', s.links.youtube.map(linkLi('youtube')), 'Nenhum vídeo cadastrado.');
+  fill('twList', s.links.twitter.map(linkLi('twitter')), 'Nenhum link cadastrado.');
+  fill('uploadList', s.uploads.map((u) =>
+    el('li', {},
+      el('span', {}, el('a', { href: '/uploads/' + encodeURIComponent(u.name), target: '_blank' }, u.name)),
+      el('span', { class: 'muted' }, fmt(u.bytes)))
+  ), 'Nenhum arquivo enviado.');
+
+  if (s.references) {
+    $('refSummary').textContent =
+      `${s.references.totalFiles} arquivos (${s.references.totalSize}) — escaneado em ${new Date(s.references.generatedAt).toLocaleString('pt-BR')}`;
+    $('refStats').replaceChildren(...Object.entries(s.references.categories).map(([k, v]) =>
+      el('div', { class: 'stat' }, el('b', {}, String(v.count)), ` ${k} `, el('span', { class: 'muted' }, `(${v.size})`))));
+  } else {
+    $('refSummary').textContent = 'Inventário ainda não gerado — clique em "Re-escanear".';
+  }
+}
+
+function fmt(b) {
+  if (b >= 1048576) return (b / 1048576).toFixed(1) + ' MB';
+  if (b >= 1024) return (b / 1024).toFixed(1) + ' KB';
+  return b + ' B';
+}
+
+async function addLink(type) {
+  const url = $(type === 'youtube' ? 'ytUrl' : 'twUrl').value.trim();
+  const note = $(type === 'youtube' ? 'ytNote' : 'twNote').value.trim();
+  if (!url) return toast('Informe a URL.', false);
+  const j = await fetchJson('/api/links', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, url, note }),
+  });
+  if (!j.ok) return toast(j.error, false);
+  $(type === 'youtube' ? 'ytUrl' : 'twUrl').value = '';
+  $(type === 'youtube' ? 'ytNote' : 'twNote').value = '';
+  toast('Link adicionado e alimentado no md ✅');
+  loadState();
+}
+
+async function delLink(type, url) {
+  const j = await fetchJson('/api/links', {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, url }),
+  });
+  if (!j.ok) toast(j.error, false);
+  else toast('Link removido.');
+  loadState(); // ressincroniza mesmo em 404
+}
+
+async function uploadFiles(files) {
+  if (!files.length) return;
+  const fd = new FormData();
+  for (const f of files) fd.append('files', f);
+  toast(`Enviando ${files.length} arquivo(s)...`);
+  const j = await fetchJson('/api/upload', { method: 'POST', body: fd });
+  if (!j.ok) return toast(j.error, false);
+  toast(`${j.added.length} arquivo(s) enviados e registrados no md ✅`);
+  loadState();
+}
+
+async function feedReferences(btn) {
+  btn.disabled = true;
+  try {
+    const j = await fetchJson('/api/feed-references', { method: 'POST' });
+    if (!j.ok) return toast(j.error, false);
+    toast(`Inventário atualizado: ${j.totalFiles} arquivos (${j.totalSize}) ✅`);
+    loadState();
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+const dz = $('dropzone');
+dz.addEventListener('click', () => $('fileInput').click());
+$('fileInput').addEventListener('change', (e) => {
+  const files = [...e.target.files];
+  e.target.value = ''; // permite reenviar o mesmo arquivo
+  uploadFiles(files);
+});
+dz.addEventListener('dragover', (e) => { e.preventDefault(); dz.classList.add('drag'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag'));
+dz.addEventListener('drop', (e) => {
+  e.preventDefault();
+  dz.classList.remove('drag');
+  uploadFiles([...e.dataTransfer.files]);
+});
+
+loadState();
+</script>
+</body>
+</html>
