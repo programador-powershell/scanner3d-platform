@@ -82,7 +82,7 @@
   <div class="card" style="margin:0 16px 16px">
     <h2>Grafo do pipeline — cada nó é uma etapa; tudo passa pela LLM (olho humano)</h2>
     <div id="graphScroll" style="overflow-x:auto"><svg id="graph" width="1500" height="200"></svg></div>
-    <div class="muted" style="margin-top:6px">Clique num nó para inspecionar. 🟢 aprovado · 🟡 aguardando revisão · 🔵 em execução · ⚪ pendente. Linhas tracejadas = condicionamento da LLM.</div>
+    <div class="muted" style="margin-top:6px">Clique num nó para inspecionar. 🟢 aprovado · 🟡 aguardando revisão · 🔵 em execução · ⚪ pendente. Linhas tracejadas = avaliação da VLM (Qwen-VL/InternVL) em cada portão. Stack Blender-nativa: <b>MPFB2</b> (corpo/rosto/rig/pele) + <b>Z-Anatomy</b> (ossos/músculos/veias/nervos/órgãos) + <b>Hair Curves</b> + <b>Geometry Nodes</b> + texturas 8K CC0.</div>
   </div>
 
   <div class="layout">
@@ -227,35 +227,133 @@ function mat(color,opts={}){return new THREE.MeshStandardMaterial({color,roughne
 function bone(p0,p1,radius,color){const d=new THREE.Vector3().subVectors(p1,p0);const len=d.length();const g=new THREE.CylinderGeometry(radius,radius,len,10);const mesh=new THREE.Mesh(g,mat(color,{r:0.4,m:0.3}));mesh.position.copy(p0).addScaledVector(d,0.5);mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.clone().normalize());return mesh;}
 function joint(p,r,color){const m=new THREE.Mesh(new THREE.SphereGeometry(r,16,16),mat(color,{r:0.3,m:0.4}));m.position.copy(p);return m;}
 
-// esqueleto humanoide — proporções variam por approach (reprovar = outro esqueleto)
+// Esqueleto humano anatomicamente correto (não stick-figure):
+// crânio + mandíbula + 24 vértebras + caixa torácica (12 pares de costelas + esterno) +
+// pélvis + clavículas + escápulas + ossos longos pareados (rádio/ulna, tíbia/fíbula) + mãos + pés.
+// Proporções variam por approach (reprovar = outro esqueleto válido) E por prompt (quadril/ombro/altura).
+const BONE_COL = 0xeae1cd, BONE_DARK = 0xd0c4a8; // tom de osso real (marfim)
+function boneMat(c){ return new THREE.MeshStandardMaterial({color:c,roughness:0.55,metalness:0.0}); }
+function ellipsoid(g,x,y,z,sx,sy,sz,c){const m=new THREE.Mesh(new THREE.SphereGeometry(1,16,12),boneMat(c||BONE_COL));m.position.set(x,y,z);m.scale.set(sx,sy,sz);g.add(m);return m;}
+
+// curva paramétrica para costela (de vertebra a esterno, contornando o tórax)
+function ribCurve(side, idx, totalY, ribCount){
+  const t=idx/(ribCount-1);
+  const y=totalY - t*0.42;                          // costela alta -> baixa
+  const back=new THREE.Vector3(0, y, -0.06);        // ligação na vértebra
+  const sideMax=0.20 + Math.sin(t*Math.PI)*0.08;    // largura máxima no meio do tórax
+  const lateral=new THREE.Vector3(side*sideMax, y-0.02, 0.05);
+  const front=new THREE.Vector3(side*0.04, y-0.04, 0.15); // chega no esterno
+  return new THREE.CatmullRomCurve3([back,lateral,front]);
+}
+function rib(side, idx, totalY, ribCount){
+  const pts=ribCurve(side,idx,totalY,ribCount).getPoints(20);
+  const path=new THREE.CatmullRomCurve3(pts);
+  const geo=new THREE.TubeGeometry(path,20,0.012,8,false);
+  return new THREE.Mesh(geo,boneMat(BONE_DARK));
+}
+
 function buildSkeleton(rnd){
   const g=contentGroup;
-  // proporções variam por approach (reprovar = outro esqueleto) E por prompt (quadril/ombro)
-  const shoulderW=(0.34+rnd()*0.22)*P.shoulder, hipW=(0.18+rnd()*0.16)*P.hip, spineLen=0.62+rnd()*0.2, legLen=0.85+rnd()*0.25, armLen=0.6+rnd()*0.18, thick=0.022+rnd()*0.02;
-  const col=0xdfe7f5;
-  const pelvis=new THREE.Vector3(0,0.95,0);
-  const chest=new THREE.Vector3(0,pelvis.y+spineLen,0);
-  const neck=new THREE.Vector3(0,chest.y+0.12,0);
-  const head=new THREE.Vector3(0,neck.y+0.16,0);
-  g.add(bone(pelvis,chest,thick*1.4,col));
-  g.add(bone(chest,neck,thick,col));
-  g.add(joint(head,0.13,0xeef3ff));
-  // ombros e braços
+  // multiplicadores por prompt (quadril/ombro/musculo/altura) + variação anatômica leve por approach
+  const shoulderW=0.20*P.shoulder*(0.95+rnd()*0.10);
+  const hipW=0.13*P.hip*(0.95+rnd()*0.10);
+  const ribcageH=0.42, spineLumbar=0.18, neckH=0.10;
+  const pelvisY=0.95;
+  const lumbarTop = pelvisY + spineLumbar;
+  const ribcageTop = lumbarTop + ribcageH;
+  const neckBase = ribcageTop;
+  const skullBase = neckBase + neckH;
+
+  // ----- COLUNA VERTEBRAL: 7 cervicais + 12 torácicas + 5 lombares = 24 vértebras -----
+  function vertebra(y,r){const m=new THREE.Mesh(new THREE.CylinderGeometry(r*0.85,r,0.025,12),boneMat(BONE_DARK));m.position.set(0,y,-0.05);g.add(m);}
+  for(let i=0;i<5;i++) vertebra(pelvisY+i*0.038, 0.030);                          // lombares
+  for(let i=0;i<12;i++) vertebra(lumbarTop+i*0.030, 0.026-i*0.0008);              // torácicas (passam pelas costelas)
+  for(let i=0;i<7;i++) vertebra(ribcageTop+i*0.018, 0.018);                       // cervicais
+
+  // ----- SACRO + PÉLVIS (ilíaco + ísquio) -----
+  const sacrum=new THREE.Mesh(new THREE.ConeGeometry(0.06,0.12,6),boneMat(BONE_DARK));sacrum.rotation.x=Math.PI;sacrum.position.set(0,pelvisY-0.06,-0.04);g.add(sacrum);
   for(const s of [-1,1]){
-    const sh=new THREE.Vector3(s*shoulderW,chest.y,0);
-    g.add(bone(chest,sh,thick,col));
-    const elbow=new THREE.Vector3(s*(shoulderW+0.04),chest.y-armLen*0.5,0.02);
-    const hand=new THREE.Vector3(s*(shoulderW+0.02),chest.y-armLen,0.05);
-    g.add(bone(sh,elbow,thick*0.8,col)); g.add(bone(elbow,hand,thick*0.7,col));
-    g.add(joint(sh,thick*1.6,0x9fb0d6));g.add(joint(elbow,thick*1.4,0x9fb0d6));
-    // pernas
-    const hip=new THREE.Vector3(s*hipW,pelvis.y,0);
-    const knee=new THREE.Vector3(s*hipW,pelvis.y-legLen*0.5,0.01);
-    const foot=new THREE.Vector3(s*hipW,pelvis.y-legLen,0.03);
-    g.add(bone(pelvis,hip,thick,col));g.add(bone(hip,knee,thick*1.1,col));g.add(bone(knee,foot,thick,col));
-    g.add(joint(hip,thick*1.7,0x9fb0d6));g.add(joint(knee,thick*1.5,0x9fb0d6));
+    // asas do ilíaco (placas grandes que voam para fora)
+    const ilium=new THREE.Mesh(new THREE.BoxGeometry(0.06,0.20,0.04),boneMat(BONE_COL));
+    ilium.position.set(s*hipW*0.7, pelvisY-0.02, -0.02);
+    ilium.rotation.z=s*0.35; ilium.rotation.y=s*-0.25; g.add(ilium);
+    // ísquio + acetábulo (encaixe do fêmur)
+    ellipsoid(g, s*hipW, pelvisY-0.10, 0, 0.045, 0.04, 0.05); // acetábulo
+    const ischium=new THREE.Mesh(new THREE.TorusGeometry(0.05,0.013,6,12,Math.PI),boneMat(BONE_COL));
+    ischium.position.set(s*hipW*0.6, pelvisY-0.13, 0); ischium.rotation.z=s*0.6; g.add(ischium);
   }
-  g.add(joint(pelvis,thick*1.9,0xb6c4e6));g.add(joint(chest,thick*1.7,0xb6c4e6));
+
+  // ----- CAIXA TORÁCICA (12 pares de costelas + esterno) -----
+  const ribCount=12;
+  for(let i=0;i<ribCount;i++){
+    g.add(rib(-1, i, ribcageTop-0.02, ribCount));
+    g.add(rib( 1, i, ribcageTop-0.02, ribCount));
+  }
+  // esterno (manúbrio + corpo)
+  const sternum=new THREE.Mesh(new THREE.BoxGeometry(0.05,0.30,0.025),boneMat(BONE_COL));
+  sternum.position.set(0, lumbarTop+0.24, 0.15); g.add(sternum);
+
+  // ----- CRÂNIO + MANDÍBULA -----
+  const cranium=ellipsoid(g, 0, skullBase+0.10, 0.01, 0.085, 0.105, 0.095, BONE_COL);
+  // mandíbula
+  const jaw=new THREE.Mesh(new THREE.TorusGeometry(0.05,0.013,8,16,Math.PI),boneMat(BONE_COL));
+  jaw.position.set(0, skullBase+0.04, 0.05); jaw.rotation.x=Math.PI/2; g.add(jaw);
+  // órbitas dos olhos (cavas escuras)
+  for(const s of [-1,1]){
+    const orbit=new THREE.Mesh(new THREE.SphereGeometry(0.022,12,12),new THREE.MeshStandardMaterial({color:0x111,roughness:1}));
+    orbit.position.set(s*0.035, skullBase+0.12, 0.075); g.add(orbit);
+  }
+
+  // ----- CINTURA ESCAPULAR (clavícula + escápula) + BRAÇOS -----
+  const armLen=0.62*(0.95+rnd()*0.08);
+  for(const s of [-1,1]){
+    const shoulderPt=new THREE.Vector3(s*shoulderW, ribcageTop-0.05, 0);
+    // clavícula (do esterno alto ao acrômio)
+    g.add(bone(new THREE.Vector3(s*0.025, ribcageTop-0.02, 0.13), shoulderPt, 0.013, BONE_COL));
+    // escápula (placa triangular nas costas)
+    const scap=new THREE.Mesh(new THREE.BoxGeometry(0.10,0.13,0.012),boneMat(BONE_COL));
+    scap.position.set(s*0.10, ribcageTop-0.12, -0.13); scap.rotation.z=s*0.35; g.add(scap);
+    // úmero
+    const elbow=new THREE.Vector3(s*(shoulderW+0.02), shoulderPt.y - armLen*0.48, 0.02);
+    g.add(bone(shoulderPt, elbow, 0.022, BONE_COL));
+    // rádio + ulna (paralelos)
+    const wrist=new THREE.Vector3(s*(shoulderW-0.02), shoulderPt.y - armLen, 0.04);
+    const offA=new THREE.Vector3(s*0.012,0,0), offB=new THREE.Vector3(s*-0.012,0,0);
+    g.add(bone(elbow.clone().add(offA), wrist.clone().add(offA), 0.014, BONE_COL)); // rádio
+    g.add(bone(elbow.clone().add(offB), wrist.clone().add(offB), 0.014, BONE_DARK)); // ulna
+    // mão: carpo + 5 metacarpos + falanges
+    for(let f=0;f<5;f++){
+      const fx=s*((f-2)*0.012); const baseY=wrist.y-0.02;
+      const fingerLen=0.07+(f===2?0.015:f===4?-0.02:0);
+      for(let ph=0;ph<3;ph++){
+        const y1=baseY-(ph)*fingerLen/3;
+        const y2=baseY-(ph+1)*fingerLen/3;
+        g.add(bone(new THREE.Vector3(wrist.x+fx,y1,wrist.z),new THREE.Vector3(wrist.x+fx,y2,wrist.z),0.006,BONE_COL));
+      }
+    }
+  }
+
+  // ----- PERNAS (fêmur + patela + tíbia/fíbula + pé) -----
+  const legLen=0.92*(0.95+rnd()*0.06);
+  for(const s of [-1,1]){
+    const hipPt=new THREE.Vector3(s*hipW, pelvisY-0.10, 0);
+    const knee=new THREE.Vector3(s*hipW*0.85, pelvisY-0.10-legLen*0.50, 0.01);
+    const ankle=new THREE.Vector3(s*hipW*0.8, pelvisY-0.10-legLen, 0.03);
+    g.add(bone(hipPt, knee, 0.028, BONE_COL)); // fêmur
+    // patela
+    const patella=new THREE.Mesh(new THREE.SphereGeometry(0.024,12,10),boneMat(BONE_COL));patella.position.copy(knee).add(new THREE.Vector3(0,0,0.03));g.add(patella);
+    // tíbia + fíbula
+    const offA=new THREE.Vector3(s*0.014,0,0), offB=new THREE.Vector3(s*-0.014,0,0);
+    g.add(bone(knee.clone().add(offA), ankle.clone().add(offA), 0.020, BONE_COL)); // tíbia
+    g.add(bone(knee.clone().add(offB), ankle.clone().add(offB), 0.013, BONE_DARK)); // fíbula
+    // tálus + calcâneo + metatarsos
+    ellipsoid(g, ankle.x, ankle.y, ankle.z+0.04, 0.025, 0.025, 0.04, BONE_COL);
+    const heel=new THREE.Mesh(new THREE.BoxGeometry(0.05,0.025,0.06),boneMat(BONE_DARK));heel.position.set(ankle.x, ankle.y-0.012, ankle.z-0.025);g.add(heel);
+    for(let t=0;t<5;t++){
+      const tx=ankle.x + s*(t-2)*0.014;
+      g.add(bone(new THREE.Vector3(tx,ankle.y-0.005,ankle.z+0.02), new THREE.Vector3(tx,ankle.y-0.005,ankle.z+0.10+(t===0?0.02:0)), 0.0065, BONE_COL));
+    }
+  }
 }
 
 // corpo/músculo/pele — humanoide volumétrico, massa varia por approach
@@ -445,7 +543,7 @@ const GNODES=[
   {id:'face',     x:GX[7], y:20},
   {id:'eyes',     x:GX[8], y:20},
   {id:'hair',     x:GX[9], y:20},
-  {id:'llm',      x:GX[0], y:130, w:GX[9]+NODE_W-GX[0], h:46, title:'LLM · Olho Humano', sub:'orquestra · julga · condiciona cada portão (cascata + DPO)'},
+  {id:'llm',      x:GX[0], y:130, w:GX[9]+NODE_W-GX[0], h:46, title:'VLM · Olho Humano (Qwen-VL / InternVL)', sub:'avalia cada portão automaticamente · reprova/aprova · alimenta DPO · sem clipping humano constante'},
 ];
 const GEDGES=[['foto','skeleton'],['skeleton','veins'],['veins','muscle'],['muscle','garment'],['garment','skin'],['skin','nails'],['nails','face'],['face','eyes'],['eyes','hair']];
 const STATUS_COLOR={approved:'#34d399',awaiting_review:'#fbbf24',running:'#818cf8',pending:'#3a4254'};

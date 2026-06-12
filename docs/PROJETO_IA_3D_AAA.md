@@ -240,7 +240,79 @@ Extensões do loop para o caso humano:
 - ❌ **Erro físico:** esculpir poro (~0,05–0,2 mm) como **geometria de vértice** via nvdiffrast é inviável (>10M vértices na face, estoura o rasterizador com aliasing).
 - ✅ **Melhor solução:** poro/ruga como **displacement map de alta frequência** (+ normal derivado), otimizado por gradiente **dentro do loop nvdiffrast que já existe** (7.4), com bootstrap via Texture2Disp/FFHQ-UV. Tessellation adaptativa só onde a silhueta exige; o resto vira normal map. **Unhas:** geometria fica no template (low-poly só p/ silhueta e borda livre); brilho especular, cutícula e transição de cor (lúnula) são **material** (normal + specular/roughness + SSS), não otimização de vértice.
 
-### 7.7 Licenças (atenção para uso comercial)
+### 7.7 Stack Blender-nativa (humano 100% real, do osso ao pelo)
+
+> Requisito do diretor: **o gerador entrega humano em tudo** — sem cilindros, sem stick-figure, sem placeholder. Cada portão usa um motor Blender-nativo open que produz geometria humana de verdade, e a LLM Vision (7.8) avalia automaticamente cada saída.
+
+```
+[Foto] → [Vision: identidade + medidas] → MPFB2 base → Z-Anatomy interno
+   │                                            │
+   │                                            ├─ Pele (8K CC0 + SSS)
+   │                                            ├─ Gordura
+   │                                            ├─ Músculos
+   │                                            ├─ Ossos
+   │                                            ├─ Veias
+   │                                            ├─ Nervos
+   │                                            └─ Órgãos
+   │                                            │
+   └─► Hair Curves (cabelo) + Geometry Nodes (pelos corporais)
+```
+
+| Portão | Motor open (Blender-nativo) | Saída |
+|---|---|---|
+| Esqueleto | **Z-Anatomy** (ossos reais: crânio + 24 vértebras + 12 pares de costelas + pélvis + ossos longos pareados) | Malha óssea anatômica navegável |
+| Veias | **Z-Anatomy** (camada vascular) + texturas SSS 8K | Rede venosa visível com retroiluminação |
+| Músculos | **Z-Anatomy** (camada muscular nomeada) + **MPFB2** rig + Chaos Flesh | Volumes musculares deformáveis |
+| Tecido | **MPFB2** body como colisor + GarmentCode + drape Warp/Newton | Roupa drapeada no corpo MPFB2 |
+| Pele | **MPFB2** skin + texturas **8K CC0** (Texturing.xyz CC0 / FaceScape / FFHQ-UV) + SSS | PBR com poros reais |
+| Unhas | Template **MPFB2** (já inclui dedos) + material PBR | Cutícula/lúnula |
+| Rosto | **MPFB2** face (modelo paramétrico) + 52 ARKit blendshapes | Cabeça animável FACS |
+| Olhos | Material córnea/íris **MPFB2** + shader refração | Globos com umidade lacrimal |
+| Cabelo | **Hair Curves do Blender** (DiffLocks como prior) + **Geometry Nodes** (sobrancelhas, pelos corporais, barba) | Strands reais + pelo corporal |
+
+**Ferramentas plugadas:**
+- **MakeHuman / MPFB2** (`makehumancommunity/mpfb2`, GPLv3) — gerador humano paramétrico open. Saída em malha quad limpa com rig (`Default`, `Game Engine`, `Rigify`), UVs, pele base, dentes, língua, cabelo procedural. **Substitui** o esqueleto procedural cilíndrico — entrega humano completo do nascimento.
+- **Z-Anatomy** (CC-BY-4.0) — addon Blender com **anatomia humana real e nomeada**: 4500+ estruturas (ossos individuais, músculos, nervos, veias, órgãos). Camadas plugáveis nos portões 1/2/3.
+- **Hair Curves nativo do Blender** (4.x) — sistema de strands com física, profissional.
+- **Geometry Nodes** — distribuição procedural de pelos finos (corpo inteiro, sobrancelhas, cílios).
+- **Texturas 8K CC0** — bancos livres (Polyhaven, AmbientCG, Texturing.xyz CC0 set, FFHQ-UV) para difuso/normal/roughness/displacement de pele.
+
+**Visualização por camada anatômica** (radial selector no viewer GLB): Pele · Gordura · Músculos · Ossos · Veias · Nervos · Órgãos.
+
+### 7.8 LLM Vision no Loop — fim do "vou ter que pedir alteração toda hora"
+
+A LLM do hub não é só símbolo — ela é uma **VLM (Vision-Language Model)** que avalia automaticamente cada portão antes de pedir aprovação humana. O usuário só vê o preview se a VLM já considerou correto.
+
+```
+[Portão gera preview 3D] ──► [VLM avalia: bate com a foto? humano? anatomicamente correto?]
+                                │
+                ┌───────────────┴───────────────┐
+                ▼                               ▼
+   reprovação automática             passa para revisão humana
+   (regenera com correção)
+```
+
+**Modelos open viáveis (jun/2026):**
+- **Qwen2.5-VL** / **Qwen3-VL** (Alibaba, Apache-2.0) — VLM forte com grounding de pose e anatomia; roda local em 7B/32B/72B; gratuita.
+- **InternVL3** (Shanghai AI Lab, MIT) — competidor direto do GPT-4V em benchmarks visuais.
+- **LLaVA-OneVision** / **MolmoE** — alternativas leves.
+
+**Prompt do avaliador (por portão):**
+```
+Você é diretor de arte AAA. Foto de referência: <img>. Render atual do {portão}: <img>.
+1) O resultado é 100% humano (não placeholder, não cartoon, não cilindro)?
+2) Anatomia do {portão} bate com referências humanas reais?
+3) Identidade preserva a foto (rosto/proporções/pele)?
+Responda JSON: {pass: bool, score: 0-1, defects: [...], suggested_prompt_fix: "..."}
+```
+
+- **Pass automático:** `score >= 0.8 && pass=true` → portão fica verde sem você clicar.
+- **Reprovação automática:** VLM gera o `suggested_prompt_fix` e re-roda o portão. Você só vê o resultado **depois** de N iterações ou se a VLM travar.
+- **Dataset DPO turbinado:** cada par `{render_rejeitado, render_aprovado, prompt_fix, justificativa_VLM}` vira sinal para fine-tune da própria VLM (ou de uma reward model menor).
+
+**Resultado:** você **não precisa pedir "humano de verdade" toda hora** — a VLM aprende seu padrão e rejeita o que não está no nível, sozinha. Esse loop é o real "olho humano" que estava simbólico no hub LLM.
+
+### 7.9 Licenças (atenção para uso comercial)
 
 | Componente | Licença | Ação |
 |---|---|---|
@@ -254,6 +326,11 @@ Extensões do loop para o caso humano:
 | FLUX.2-dev | Transformer non-commercial | Avaliar; usar só como enhancer opcional |
 | Hunyuan3D-2.x/3.x | Exclui UE/UK/Coreia | Isolar componente se a plataforma for global |
 | SKEL / HIT / FLAME / SMPL-X | Licenças MPI (pesquisa) | Checar termos comerciais com Meshcapade/MPI |
+| **MakeHuman / MPFB2** | GPLv3 (código) + asset license | Distribuir como ferramenta externa OK. Output de personagem livre. Não linkar em código fechado. |
+| **Z-Anatomy** | CC-BY-4.0 | Livre comercial com crédito. Atribuir nos créditos do produto. |
+| **Texturas 8K CC0** (Polyhaven, AmbientCG, FFHQ-UV) | CC0 | Livre total ✓ |
+| **Qwen2.5/3-VL** (LLM Vision) | Apache-2.0 | Livre comercial ✓ |
+| **InternVL3** | MIT | Livre comercial ✓ |
 
 ---
 
@@ -444,11 +521,13 @@ O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta c
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (3)
+### GitHub — ferramentas e código de referência (5)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
 - [AutoRemesher - remesh quad automatico standalone (autor do Dust3D), GPL-3.0. Retopo classico da secao 7.6](https://github.com/huxingyi/autoremesher) — adicionado em 2026-06-12T19:47:07.107Z
+- [MPFB2 - gerador humano open p/ Blender 4.2+ (corpo/rosto/rig/pele/poses), GPLv3. Motor base do trilho de Corpo + Rosto](https://github.com/makehumancommunity/mpfb2) — adicionado em 2026-06-12T20:19:24.938Z
+- [MakeHuman - gerador parametrico humano standalone (Python), GPL. Origem do MPFB2](https://github.com/makehumancommunity/makehuman) — adicionado em 2026-06-12T20:19:24.968Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)

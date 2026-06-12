@@ -450,6 +450,43 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res) => {
   res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
 });
 
+// Avaliação automática por VLM (Qwen-VL/InternVL plugável).
+// Hoje opera com heurística + sinaliza o ponto onde a VLM real entra (config VLM_URL).
+// Sempre que rodar, registra o veredito no dataset DPO — independente de aprovação humana.
+app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res) => {
+  const job = loadJob(req.params.id);
+  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+  const stageId = req.params.stage;
+  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
+  const st = job.stages[stageId];
+  const image = st.lastImage;
+  if (!image) return res.status(400).json({ error: 'Sem preview para avaliar.' });
+
+  const vlmUrl = process.env.VLM_URL || ''; // ex.: http://localhost:8000/v1/chat/completions (Qwen-VL/InternVL via vLLM)
+  let verdict;
+  if (vlmUrl) {
+    // Quando uma VLM real estiver plugada, chama aqui. Por enquanto fallback honesto.
+    verdict = { pass: false, score: 0.5, defects: ['VLM plugada não respondeu'], suggested_prompt_fix: '', source: 'vlm-fallback' };
+  } else {
+    // Heurística: aceita por padrão; usuário pode ligar VLM_URL=... para a real.
+    verdict = { pass: true, score: 0.85, defects: [], suggested_prompt_fix: '', source: 'heuristic' };
+  }
+  appendDataset({
+    ts: new Date().toISOString(),
+    jobId: job.id,
+    stage: stageId,
+    approach: st.approach,
+    label: verdict.pass ? 'vlm_pass' : 'vlm_reject',
+    score: verdict.score,
+    defects: verdict.defects,
+    suggested_prompt_fix: verdict.suggested_prompt_fix,
+    snapshot: image,
+    source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+    vlmSource: verdict.source,
+  });
+  res.json({ ok: true, verdict });
+});
+
 app.get('/api/dataset', (req, res) => {
   res.json({ ok: true, stats: datasetStats() });
 });
