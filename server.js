@@ -129,12 +129,15 @@ const storage = multer.diskStorage({
     cb(null, final);
   },
 });
-const upload = multer({ storage, limits: { fileSize: 2 * 1024 * 1024 * 1024 } });
+// Texturas 8K, FBX densos e vídeos de ingestão passam fácil de 32/500MB.
+// Default 2GB; configurável via UPLOAD_MAX_MB (mínimo prático: 500).
+const UPLOAD_MAX_MB = Math.max(500, parseInt(process.env.UPLOAD_MAX_MB || '2048', 10));
+const upload = multer({ storage, limits: { fileSize: UPLOAD_MAX_MB * 1024 * 1024 } });
 
 // ---------- app ----------
 const app = express();
-// 32mb: snapshots PNG do viewer three.js chegam como dataURL no corpo JSON.
-app.use(express.json({ limit: '32mb' }));
+// 64mb: snapshots PNG do viewer three.js chegam como dataURL no corpo JSON.
+app.use(express.json({ limit: '64mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 // Uploads servidos como download: .html/.svg enviados não executam script no origin da app.
 app.use(
@@ -262,7 +265,60 @@ app.get('/api/models', (req, res) => {
 // ============================================================
 // Pipeline interativo human-in-the-loop
 // ============================================================
-const jsonBig = express.json({ limit: '32mb' }); // snapshots PNG em dataURL
+const jsonBig = express.json({ limit: '64mb' }); // snapshots PNG em dataURL
+
+// ---------- fila de escrita por job (file-locking em memória) ----------
+// Serializa todo read-modify-write de job.json: prompts paramétricos rápidos
+// durante a simulação física não corrompem o estado nem se intercalam.
+const jobLocks = new Map();
+function withJobLock(id, fn) {
+  const prev = jobLocks.get(id) || Promise.resolve();
+  const next = prev.then(fn, fn);
+  jobLocks.set(id, next.catch(() => {}));
+  return next;
+}
+
+// ---------- SSE: eventos em tempo real por job ----------
+const sseClients = new Map(); // jobId -> Set<res>
+function emitJob(jobId, event, data) {
+  const set = sseClients.get(jobId);
+  if (!set || !set.size) return;
+  const payload = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
+  for (const res of set) {
+    try { res.write(payload); } catch {}
+  }
+}
+
+// Simulação física da cascata (placeholder dos motores HIT/Chaos Flesh + Warp):
+// emite frames muscle→cloth em tempo real e fecha com stage:waiting_approval.
+// Quando os motores reais forem plugados, eles publicam nestes mesmos eventos.
+function runCascadeSimulation(jobId) {
+  const FRAMES = 24, DT = 60; // ~1,4s por fase
+  let f = 0;
+  const muscle = setInterval(() => {
+    f++;
+    emitJob(jobId, 'simulation:muscle:frame', { frame: f, total: FRAMES, progress: f / FRAMES });
+    if (f >= FRAMES) {
+      clearInterval(muscle);
+      let c = 0;
+      const cloth = setInterval(() => {
+        c++;
+        emitJob(jobId, 'simulation:cloth:frame', { frame: c, total: FRAMES, progress: c / FRAMES });
+        if (c >= FRAMES) {
+          clearInterval(cloth);
+          withJobLock(jobId, async () => {
+            const job = loadJob(jobId);
+            if (!job) return;
+            emitJob(jobId, 'stage:waiting_approval', {
+              stage: STAGE_IDS[activeIndex(job)],
+              job: publicJob(job),
+            });
+          });
+        }
+      }, DT);
+    }
+  }, DT);
+}
 
 function jobDir(id) {
   return path.join(JOBS_DIR, id);
@@ -346,26 +402,51 @@ app.get('/api/jobs/:id', (req, res) => {
   res.json({ ok: true, job: publicJob(job) });
 });
 
-// Cliente renderizou a etapa no three.js e capturou um snapshot PNG (dataURL).
-// Salva como artefato da tentativa atual e marca a etapa para revisão.
-app.post('/api/jobs/:id/stages/:stage/snapshot', jsonBig, (req, res) => {
+// Streaming de eventos do job (EventSource no frontend).
+app.get('/api/jobs/:id/events', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const stageId = req.params.stage;
-  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-  const st = job.stages[stageId];
-  if (st.status === 'approved') return res.status(409).json({ error: 'Etapa já aprovada.' });
+  res.writeHead(200, {
+    'Content-Type': 'text/event-stream',
+    'Cache-Control': 'no-cache',
+    Connection: 'keep-alive',
+    'X-Accel-Buffering': 'no',
+  });
+  res.write(`event: connected\ndata: ${JSON.stringify({ jobId: job.id })}\n\n`);
+  let set = sseClients.get(job.id);
+  if (!set) { set = new Set(); sseClients.set(job.id, set); }
+  set.add(res);
+  const hb = setInterval(() => { try { res.write(': hb\n\n'); } catch {} }, 25000);
+  req.on('close', () => {
+    clearInterval(hb);
+    set.delete(res);
+    if (!set.size) sseClients.delete(job.id);
+  });
+});
 
-  const dataUrl = String((req.body && req.body.image) || '');
-  const m = dataUrl.match(/^data:image\/png;base64,([A-Za-z0-9+/=]+)$/);
-  if (!m) return res.status(400).json({ error: 'Snapshot PNG inválido.' });
-  const fname = `${stageId}_a${st.approach}.png`;
-  fs.writeFileSync(path.join(jobDir(job.id), fname), Buffer.from(m[1], 'base64'));
+// Cliente renderizou a etapa no three.js e capturou um snapshot PNG (dataURL).
+// Salva como artefato da tentativa atual e marca a etapa para revisão.
+app.post('/api/jobs/:id/stages/:stage/snapshot', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const stageId = req.params.stage;
+    if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
+    const st = job.stages[stageId];
+    if (st.status === 'approved') return res.status(409).json({ error: 'Etapa já aprovada.' });
 
-  st.status = 'awaiting_review';
-  st.lastImage = `/api/jobs/${job.id}/artifact/${fname}`;
-  saveJob(job);
-  res.json({ ok: true, image: st.lastImage });
+    const dataUrl = String((req.body && req.body.image) || '');
+    const m = dataUrl.match(/^data:image\/png;base64,([A-Za-z0-9+/=]+)$/);
+    if (!m) return res.status(400).json({ error: 'Snapshot PNG inválido.' });
+    const fname = `${stageId}_a${st.approach}.png`;
+    fs.writeFileSync(path.join(jobDir(job.id), fname), Buffer.from(m[1], 'base64'));
+
+    st.status = 'awaiting_review';
+    st.lastImage = `/api/jobs/${job.id}/artifact/${fname}`;
+    saveJob(job);
+    emitJob(job.id, 'stage:waiting_approval', { stage: stageId, job: publicJob(job) });
+    res.json({ ok: true, image: st.lastImage });
+  }).catch(next);
 });
 
 // Serve os snapshots gravados do job.
@@ -382,72 +463,92 @@ app.get('/api/jobs/:id/artifact/:file', (req, res) => {
 // Aprovação/reprovação da etapa. Cada decisão vira linha do dataset de fine-tuning.
 // Reprovar = nova abordagem (approach+1) e a etapa volta a "running" para regerar.
 // Aprovar = etapa fica "approved" e o pipeline libera a próxima.
-app.post('/api/jobs/:id/stages/:stage/review', jsonBig, (req, res) => {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const stageId = req.params.stage;
-  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-  const st = job.stages[stageId];
-  const approved = !!(req.body && req.body.approved);
-  const note = String((req.body && req.body.note) || '').trim().slice(0, 1000);
+app.post('/api/jobs/:id/stages/:stage/review', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const stageId = req.params.stage;
+    if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
+    const st = job.stages[stageId];
+    const approved = !!(req.body && req.body.approved);
+    const note = String((req.body && req.body.note) || '').trim().slice(0, 1000);
 
-  const image = st.lastImage || (st.history.length ? st.history[st.history.length - 1].image : null);
-  const record = { approach: st.approach, approved, note, image, ts: new Date().toISOString() };
-  st.history.push(record);
+    const image = st.lastImage || (st.history.length ? st.history[st.history.length - 1].image : null);
+    const record = { approach: st.approach, approved, note, image, ts: new Date().toISOString() };
+    st.history.push(record);
 
-  appendDataset({
-    ts: record.ts,
-    jobId: job.id,
-    stage: stageId,
-    approach: st.approach,
-    label: approved ? 'approved' : 'rejected',
-    note,
-    snapshot: image,
-    source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-  });
+    appendDataset({
+      ts: record.ts,
+      jobId: job.id,
+      stage: stageId,
+      approach: st.approach,
+      label: approved ? 'approved' : 'rejected',
+      note,
+      snapshot: image,
+      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+    });
 
-  if (approved) {
-    st.status = 'approved';
-    const idx = activeIndex(job);
-    if (idx < STAGE_IDS.length) job.stages[STAGE_IDS[idx]].status = 'running';
-  } else {
-    // O modelo "aprende" que esta abordagem não serve e tenta outra (approach incrementa).
-    st.approach += 1;
-    st.status = 'running';
-    st.lastImage = null;
-  }
-  saveJob(job);
-  res.json({ ok: true, approved, nextApproach: st.approach, job: publicJob(job) });
+    if (approved) {
+      st.status = 'approved';
+      // limpa pendência de cascata deste portão e atualiza o ponteiro explícito
+      if (Array.isArray(job.cascadePending)) {
+        job.cascadePending = job.cascadePending.filter((id) => id !== stageId);
+      }
+      const idx = activeIndex(job);
+      job.currentStageIndex = idx;
+      if (idx < STAGE_IDS.length) job.stages[STAGE_IDS[idx]].status = 'running';
+    } else {
+      // O modelo "aprende" que esta abordagem não serve e tenta outra (approach incrementa).
+      st.approach += 1;
+      st.status = 'running';
+      st.lastImage = null;
+    }
+    saveJob(job);
+    emitJob(job.id, 'job:update', { job: publicJob(job) });
+    res.json({ ok: true, approved, nextApproach: st.approach, job: publicJob(job) });
+  }).catch(next);
 });
 
 // Edição paramétrica por prompt ("mude altura para 1,70", "aumente 20% o quadril", "tom de pele pardo").
 // O comando é parseado, aplicado aos params do job e registrado no dataset como sinal de condicionamento.
-app.post('/api/jobs/:id/params', jsonBig, (req, res) => {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const command = String((req.body && req.body.command) || '').trim().slice(0, 500);
-  if (!command) return res.status(400).json({ error: 'Comando vazio.' });
-  const { params, applied, structural } = applyPromptCommand(job.params, command);
-  job.params = params;
-  job.edits = job.edits || [];
-  // Recálculo síncrono em cascata: ajuste estrutural reabre Músculos+Tecido (seção 10.2.1).
-  const cascade = structural ? applyCascade(job) : { cascaded: false, reopened: [] };
-  const edit = { command, applied, ts: new Date().toISOString(), structural, cascaded: cascade.reopened };
-  job.edits.push(edit);
-  saveJob(job);
-  appendDataset({
-    ts: edit.ts,
-    jobId: job.id,
-    stage: 'prompt-edit',
-    label: 'edit',
-    command,
-    applied,
-    structural,
-    cascaded: cascade.reopened,
-    params,
-    source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-  });
-  res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
+app.post('/api/jobs/:id/params', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    const command = String((req.body && req.body.command) || '').trim().slice(0, 500);
+    if (!command) return res.status(400).json({ error: 'Comando vazio.' });
+    const { params, applied, structural } = applyPromptCommand(job.params, command);
+    job.params = params;
+    job.edits = job.edits || [];
+    // Recálculo síncrono em cascata: ajuste estrutural reabre Músculos+Tecido (seção 10.3.1).
+    const cascade = structural ? applyCascade(job) : { cascaded: false, reopened: [] };
+    const edit = { command, applied, ts: new Date().toISOString(), structural, cascaded: cascade.reopened };
+    job.edits.push(edit);
+    saveJob(job);
+    appendDataset({
+      ts: edit.ts,
+      jobId: job.id,
+      stage: 'prompt-edit',
+      label: 'edit',
+      command,
+      applied,
+      structural,
+      cascaded: cascade.reopened,
+      params,
+      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+    });
+    emitJob(job.id, 'job:update', { job: publicJob(job) });
+    if (cascade.cascaded) {
+      // UI bloqueia, grafo reposiciona no Portão 3, simulação roda em tempo real
+      emitJob(job.id, 'cascade:activated', {
+        reopened: cascade.reopened,
+        currentStageIndex: job.currentStageIndex,
+        params,
+      });
+      runCascadeSimulation(job.id);
+    }
+    res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
+  }).catch(next);
 });
 
 // Avaliação automática por VLM (Qwen-VL/InternVL plugável).
