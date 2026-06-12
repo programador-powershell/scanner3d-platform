@@ -81,7 +81,7 @@
   <!-- grafo de nós estilo ComfyUI -->
   <div class="card" style="margin:0 16px 16px">
     <h2>Grafo do pipeline — cada nó é uma etapa; tudo passa pela LLM (olho humano)</h2>
-    <div id="graphScroll" style="overflow-x:auto"><svg id="graph" width="1180" height="380"></svg></div>
+    <div id="graphScroll" style="overflow-x:auto"><svg id="graph" width="1500" height="200"></svg></div>
     <div class="muted" style="margin-top:6px">Clique num nó para inspecionar. 🟢 aprovado · 🟡 aguardando revisão · 🔵 em execução · ⚪ pendente. Linhas tracejadas = condicionamento da LLM.</div>
   </div>
 
@@ -326,22 +326,78 @@ function buildFinal(rnd){ buildBody(rnd,{poro:true}); buildGarmentLite(rnd); bui
 function buildGarmentLite(rnd){const g=contentGroup;const skirt=new THREE.Mesh(new THREE.ConeGeometry(0.55*P.hip,0.5,24,1,true),mat(0x3a5a40,{r:0.8,t:true,o:0.9}));skirt.position.y=0.8;skirt.rotation.x=Math.PI;g.add(skirt);registerCloth(skirt);}
 function buildHairLite(rnd){const g=contentGroup;for(let i=0;i<90;i++){const a=rnd()*Math.PI*2,r=0.12*Math.sqrt(rnd());const pts=[];let x=Math.cos(a)*r,z=Math.sin(a)*r;for(let j=0;j<6;j++){const t=j/5;pts.push(new THREE.Vector3(x,1.9-t*0.8,z));x+=Math.sin(t*6+i)*0.01;}g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x3a2a1e})));}}
 
+// 🩸 Veias — corpo + relevo vascular subdérmico (linhas finas seguindo membros)
+function buildVeins(rnd){
+  buildBody(rnd,{});
+  const g=contentGroup; const vcol=new THREE.Color(0x6a3550).lerp(new THREE.Color(0x335a8a),rnd());
+  const limbs=[[0,1.5,0,0,0.95,0],[ -0.34,1.4,0,-0.36,0.95,0],[0.34,1.4,0,0.36,0.95,0],[-0.13,0.85,0,-0.13,0.3,0],[0.13,0.85,0,0.13,0.3,0]];
+  for(const [x1,y1,z1,x2,y2,z2] of limbs){
+    for(let k=0;k<3;k++){
+      const pts=[];const off=(rnd()-0.5)*0.12;
+      for(let j=0;j<=6;j++){const t=j/6;pts.push(new THREE.Vector3(x1+(x2-x1)*t+Math.sin(t*8+k)*0.02+off*0.3,y1+(y2-y1)*t,0.18+Math.cos(t*7+k)*0.02));}
+      g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:vcol,transparent:true,opacity:0.8})));
+    }
+  }
+}
+// 💅 Unhas — mão em close: palma + dedos + cápsulas de unha glossy
+function buildNails(rnd){
+  const g=contentGroup; const skin=skinColor().getHex();
+  const palm=new THREE.Mesh(new THREE.BoxGeometry(0.5,0.6,0.18),mat(skin,{r:0.5}));palm.position.set(0,1.0,0);g.add(palm);
+  const nailMat=mat(0xf3d9d9,{r:0.18,m:0.0});
+  const fx=[-0.18,-0.06,0.06,0.18];
+  fx.forEach((x,i)=>{
+    const len=0.34+(i===1||i===2?0.06:0)-Math.abs(i-1.5)*0.02;
+    const fing=new THREE.Mesh(new THREE.CapsuleGeometry(0.045,len,5,10),mat(skin,{r:0.5}));fing.position.set(x,1.4+len*0.2,0);g.add(fing);
+    const nail=new THREE.Mesh(new THREE.BoxGeometry(0.07,0.09,0.05),nailMat);nail.position.set(x,1.42+len*0.55,0.06);g.add(nail);
+  });
+  const thumb=new THREE.Mesh(new THREE.CapsuleGeometry(0.05,0.26,5,10),mat(skin,{r:0.5}));thumb.position.set(-0.28,1.05,0.05);thumb.rotation.z=0.9;g.add(thumb);
+  const tnail=new THREE.Mesh(new THREE.BoxGeometry(0.07,0.08,0.05),nailMat);tnail.position.set(-0.38,1.16,0.1);tnail.rotation.z=0.9;g.add(tnail);
+}
+// 👤 Rosto — cabeça com loops de topologia (anéis) ao redor de olhos/boca
+function buildFace(rnd){
+  const g=contentGroup; const skin=skinColor().getHex();
+  const head=new THREE.Mesh(new THREE.SphereGeometry(0.62,40,40),mat(skin,{r:0.5}));head.position.y=1.0;head.scale.set(0.85,1.05,0.9);g.add(head);
+  const loopMat=new THREE.MeshBasicMaterial({color:0x22d3ee,wireframe:true,transparent:true,opacity:0.5});
+  // loops dos olhos e boca (edge flow)
+  for(const [x,y,r] of [[-0.22,1.08,0.13],[0.22,1.08,0.13],[0,0.78,0.18]]){
+    const ring=new THREE.Mesh(new THREE.TorusGeometry(r,0.012,8,24),loopMat);ring.position.set(x,y,0.52);g.add(ring);
+  }
+  // olhos
+  for(const s of[-1,1]){const e=new THREE.Mesh(new THREE.SphereGeometry(0.08,16,16),mat(0xf5f5f5,{r:0.2}));e.position.set(s*0.22,1.08,0.5);g.add(e);}
+  // nariz
+  const nose=new THREE.Mesh(new THREE.ConeGeometry(0.07,0.18,12),mat(skin,{r:0.5}));nose.position.set(0,0.95,0.56);nose.rotation.x=Math.PI/2;g.add(nose);
+}
+// 👁️ Olhos — par de globos com íris, pupila e brilho de córnea
+function buildEyes(rnd){
+  const g=contentGroup; const iris=new THREE.Color().setHSL(0.08+rnd()*0.5,0.5,0.4).getHex();
+  for(const s of[-1,1]){
+    const eye=new THREE.Mesh(new THREE.SphereGeometry(0.34,32,32),mat(0xfafafa,{r:0.15}));eye.position.set(s*0.42,1.0,0);g.add(eye);
+    const ir=new THREE.Mesh(new THREE.CircleGeometry(0.15,28),mat(iris,{r:0.25,m:0.1}));ir.position.set(s*0.42,1.0,0.33);g.add(ir);
+    const pup=new THREE.Mesh(new THREE.CircleGeometry(0.06,24),mat(0x050505,{r:0.1}));pup.position.set(s*0.42,1.0,0.345);g.add(pup);
+    // córnea (refração/umidade)
+    const cor=new THREE.Mesh(new THREE.SphereGeometry(0.345,24,24),new THREE.MeshStandardMaterial({color:0xffffff,transparent:true,opacity:0.18,roughness:0.05,metalness:0}));cor.position.set(s*0.42,1.0,0);g.add(cor);
+    const gl=new THREE.Mesh(new THREE.CircleGeometry(0.03,12),new THREE.MeshBasicMaterial({color:0xffffff}));gl.position.set(s*0.42+0.05,1.06,0.355);g.add(gl);
+  }
+}
+
 function buildStageScene(stage){
   clearContent();
   const seed=hashStr(`${job.id}|${stage.id}|${stage.approach}`);
   const rnd=mulberry32(seed);
   switch(stage.kind){
-    case 'views': buildViews(rnd); break;
-    case 'metric': buildMetric(rnd); break;
-    case 'layers': buildLayers(rnd); break;
     case 'skeleton': buildSkeleton(rnd); break;
+    case 'veins': buildVeins(rnd); break;
+    case 'muscle': buildBody(rnd,{}); break;
     case 'garment': buildGarment(rnd); break;
+    case 'skin': buildBody(rnd,{poro:true}); break;
+    case 'nails': buildNails(rnd); break;
+    case 'face': buildFace(rnd); break;
+    case 'eyes': buildEyes(rnd); break;
     case 'hair': buildHair(rnd); break;
-    case 'final': buildFinal(rnd); break;
-    default: buildBody(rnd,{poro:stage.id==='skin'}); break;
+    default: buildBody(rnd,{}); break;
   }
-  // altura por prompt: escala vertical do corpo (baseline 1,70 m). Etapas não-corporais ignoram.
-  if(['skeleton','mesh','garment','hair','final'].includes(stage.kind)||['muscle','skin'].includes(stage.id)){
+  // altura por prompt: escala vertical só nos portões de corpo inteiro (baseline 1,70 m).
+  if(['skeleton','veins','muscle','garment','skin','hair'].includes(stage.kind)){
     contentGroup.scale.y = P.height_m/1.7;
   }
   renderer.render(scene,camera);
@@ -375,29 +431,29 @@ function loadTexture(){return new Promise((res)=>{new THREE.TextureLoader().load
 
 // ---------- grafo de nós (ComfyUI-like) ----------
 // Posições fixas; nós de etapa puxam status do job. Nós extras: foto(input), llm(hub), física, glb.
-const NODE_W=130, NODE_H=46;
+const NODE_W=140, NODE_H=46;
+// 1 nó de entrada + 9 portões anatômicos em cadeia linear (scroll horizontal) + hub LLM embaixo.
+const GX=[20,168,316,464,612,760,908,1056,1204,1352];
 const GNODES=[
-  {id:'foto',   x:20,  y:170, title:'Foto 2D', sub:'entrada'},
-  {id:'multiview',x:175,y:170},
-  {id:'gate',   x:330, y:170},
-  {id:'segment',x:485, y:170},
-  {id:'skeleton',x:645,y:60},
-  {id:'muscle', x:800, y:60},
-  {id:'skin',   x:955, y:60},
-  {id:'garment',x:645, y:175},
-  {id:'physics',x:800, y:175, title:'Física / Vento', sub:'Warp · Newton (cloth real)'},
-  {id:'hair',   x:645, y:290},
-  {id:'final',  x:1000,y:175},
-  {id:'llm',    x:330, y:315, w:480, h:48, title:'LLM · Olho Humano', sub:'orquestra · julga · condiciona cada nó'},
+  {id:'foto',     x:GX[0], y:20, title:'Foto 2D', sub:'entrada'},
+  {id:'skeleton', x:GX[1], y:20},
+  {id:'veins',    x:GX[2], y:20},
+  {id:'muscle',   x:GX[3], y:20},
+  {id:'garment',  x:GX[4], y:20},
+  {id:'skin',     x:GX[5], y:20},
+  {id:'nails',    x:GX[6], y:20},
+  {id:'face',     x:GX[7], y:20},
+  {id:'eyes',     x:GX[8], y:20},
+  {id:'hair',     x:GX[9], y:20},
+  {id:'llm',      x:GX[0], y:130, w:GX[9]+NODE_W-GX[0], h:46, title:'LLM · Olho Humano', sub:'orquestra · julga · condiciona cada portão (cascata + DPO)'},
 ];
-const GEDGES=[['foto','multiview'],['multiview','gate'],['gate','segment'],['segment','skeleton'],['segment','garment'],['segment','hair'],['skeleton','muscle'],['muscle','skin'],['garment','physics'],['skin','final'],['physics','final'],['hair','final']];
+const GEDGES=[['foto','skeleton'],['skeleton','veins'],['veins','muscle'],['muscle','garment'],['garment','skin'],['skin','nails'],['nails','face'],['face','eyes'],['eyes','hair']];
 const STATUS_COLOR={approved:'#34d399',awaiting_review:'#fbbf24',running:'#818cf8',pending:'#3a4254'};
 
 function nodeStatus(id){
   const s=job&&job.stages.find(st=>st.id===id);
   if(s) return s.status;
   if(id==='foto'||id==='llm') return 'approved';
-  if(id==='physics') { const gw=job&&job.stages.find(st=>st.id==='garment'); return gw?gw.status:'pending'; }
   return 'pending';
 }
 function port(n,side){const w=n.w||NODE_W,h=n.h||NODE_H;return side==='out'?[n.x+w,n.y+h/2]:[n.x,n.y+h/2];}
@@ -413,7 +469,7 @@ function renderGraph(){
   // nós
   for(const n of GNODES){
     const meta=job&&job.stages.find(st=>st.id===n.id);
-    const title=n.title||(meta?meta.title:n.id), sub=n.sub||(meta?meta.model:'');
+    const title=(meta&&meta.icon?meta.icon+' ':'')+(n.title||(meta?meta.title:n.id)), sub=n.sub||(meta?meta.model:'');
     const w=n.w||NODE_W,h=n.h||NODE_H;const st=nodeStatus(n.id);const col=STATUS_COLOR[st]||'#3a4254';
     const active=meta&&meta.index===job.activeIndex;const sel=n.id===selectedStageId;
     const isLLM=n.id==='llm';
@@ -506,9 +562,15 @@ async function applyPrompt(){
   const cmd=$('#promptInput').value.trim(); if(!cmd)return;
   try{
     const j=await api(`/api/jobs/${job.id}/params`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({command:cmd})});
-    job=j.job; syncParams(); rebuildCurrent();
+    job=j.job; syncParams();
     $('#promptInput').value='';
-    toast(j.applied&&j.applied.length?('Aplicado: '+j.applied.join(', ')):'Comando sem efeito reconhecido',!!(j.applied&&j.applied.length));
+    if(j.cascade&&j.cascade.cascaded){
+      toast('🌀 Cascata: Músculos e Tecido reabertos p/ revalidação (recálculo síncrono)');
+      await processActive(); // volta ao portão reaberto e re-renderiza com os novos parâmetros
+    }else{
+      rebuildCurrent();
+      toast(j.applied&&j.applied.length?('Aplicado: '+j.applied.join(', ')):'Comando sem efeito reconhecido',!!(j.applied&&j.applied.length));
+    }
     await refreshDataset();
   }catch(e){toast(e.message,false);}
 }

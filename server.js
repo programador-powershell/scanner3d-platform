@@ -10,7 +10,7 @@ const {
   formatSize,
   mdLink,
 } = require('./lib/references');
-const { STAGE_IDS, newJob, activeIndex, publicJob, applyPromptCommand } = require('./lib/pipeline');
+const { STAGE_IDS, newJob, activeIndex, publicJob, applyPromptCommand, applyCascade } = require('./lib/pipeline');
 
 const PORT = process.env.PORT || 3939;
 const REFERENCES_DIR = process.env.REFERENCES_DIR || 'D:\\References';
@@ -427,10 +427,12 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res) => {
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
   const command = String((req.body && req.body.command) || '').trim().slice(0, 500);
   if (!command) return res.status(400).json({ error: 'Comando vazio.' });
-  const { params, applied } = applyPromptCommand(job.params, command);
+  const { params, applied, structural } = applyPromptCommand(job.params, command);
   job.params = params;
   job.edits = job.edits || [];
-  const edit = { command, applied, ts: new Date().toISOString() };
+  // Recálculo síncrono em cascata: ajuste estrutural reabre Músculos+Tecido (seção 10.2.1).
+  const cascade = structural ? applyCascade(job) : { cascaded: false, reopened: [] };
+  const edit = { command, applied, ts: new Date().toISOString(), structural, cascaded: cascade.reopened };
   job.edits.push(edit);
   saveJob(job);
   appendDataset({
@@ -440,10 +442,12 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res) => {
     label: 'edit',
     command,
     applied,
+    structural,
+    cascaded: cascade.reopened,
     params,
     source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
   });
-  res.json({ ok: true, params, applied, job: publicJob(job) });
+  res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
 });
 
 app.get('/api/dataset', (req, res) => {
