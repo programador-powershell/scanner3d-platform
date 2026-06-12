@@ -131,7 +131,7 @@ Cada camada fatiada pelo Florence-2 segue o trilho do seu material — não exis
 | Cabelo fio a fio | **DiffLocks** (1 foto → ~100K strands, Meshcapade/MPI) → Alembic `.abc` → **UE5 Groom** (binding ao skeletal mesh) → hair cards como LOD de gameplay | Strands reais, não "capacete" |
 
 - **Veias e poros = textura, não geometria:** displacement micro (<0,1 mm) + albedo + subsurface scattering (veias em nariz/orelhas/bochechas). Só veia saliente que muda silhueta vira relevo.
-- **Retopologia:** high-poly dos trilhos + retopo clássico ou registro em template de topologia fixa — nenhum gerador open de 2026 entrega quad AAA direto.
+- **Retopologia:** high-poly dos trilhos + retopo clássico ou registro em template de topologia fixa — nenhum gerador open de 2026 entrega quad AAA direto. Ferramentas open de quad remesh para esse passo: **QRemeshify** (addon Blender, base QuadWild + Bi-MDF) e **AutoRemesher** (standalone, autor do Dust3D) — ambas GPL-3.0 (uso como ferramenta externa ok; não linkar em código proprietário).
 
 ### 7.4 Loop de Fechamento — Differentiable Rendering (nvdiffrast)
 
@@ -415,9 +415,11 @@ O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta c
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (1)
+### GitHub — ferramentas e código de referência (3)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
+- [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
+- [AutoRemesher - remesh quad automatico standalone (autor do Dust3D), GPL-3.0. Retopo classico da secao 7.6](https://github.com/huxingyi/autoremesher) — adicionado em 2026-06-12T19:47:07.107Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)
