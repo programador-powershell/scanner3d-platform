@@ -276,6 +276,9 @@ Extensões do loop para o caso humano:
 - **Hair Curves nativo do Blender** (4.x) — sistema de strands com física, profissional.
 - **Geometry Nodes** — distribuição procedural de pelos finos (corpo inteiro, sobrancelhas, cílios).
 - **Texturas 8K CC0** — bancos livres (Polyhaven, AmbientCG, Texturing.xyz CC0 set, FFHQ-UV) para difuso/normal/roughness/displacement de pele.
+- **SMPL-X** (`vchoutas/smplx`, pip) — corpo paramétrico betas/pose como prior numérico; `python/body_smplx.py` traduz os params do job (altura→β0, quadril→β1) e exporta `body_smplx.obj` (requer modelos MPI baixados).
+- **TailorNet** (`chaitanya100100/TailorNet`) — roupa deformada por **pose+shape+style** com rugas previstas pela rede; `python/cloth_tailornet.py` gera `garments/cloth.obj`, que o portão Tecido importa e refina. Complementa o ChatGarment: este dá o *pattern* (o quê), o TailorNet dá a *deformação pose-dependente* (como veste).
+- **Geometry Nodes "GarmentGeo"** — node tree (Subdivision Surface → Shade Smooth) aplicada a cada painel de roupa e ao cloth do TailorNet no `build_stage.py` (verificado no Blender 5.1 headless).
 
 **Visualização por camada anatômica** (radial selector no viewer GLB): Pele · Gordura · Músculos · Ossos · Veias · Nervos · Órgãos.
 
@@ -612,7 +615,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (6)
+### GitHub — ferramentas e código de referência (8)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
@@ -620,6 +623,8 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 - [MPFB2 - gerador humano open p/ Blender 4.2+ (corpo/rosto/rig/pele/poses), GPLv3. Motor base do trilho de Corpo + Rosto](https://github.com/makehumancommunity/mpfb2) — adicionado em 2026-06-12T20:19:24.938Z
 - [MakeHuman - gerador parametrico humano standalone (Python), GPL. Origem do MPFB2](https://github.com/makehumancommunity/makehuman) — adicionado em 2026-06-12T20:19:24.968Z
 - [ChatGarment (Apache-2.0) - VLM le N imagens de roupa -> sewing pattern GarmentCode JSON -> drape 3D. Trilho Tecido (portao 4) com leitura multi-imagem das 10 etapas do vestido](https://github.com/biansy000/ChatGarment) — adicionado em 2026-06-12T23:22:14.168Z
+- [TailorNet - roupa deformada por pose+shape+style (MPI), prediz wrinkles; trilho Tecido junto com ChatGarment](https://github.com/chaitanya100100/TailorNet) — adicionado em 2026-06-12T23:30:09.796Z
+- [SMPL-X oficial (python package smplx) - corpo parametrico betas/pose; prior do trilho Corpo](https://github.com/vchoutas/smplx) — adicionado em 2026-06-12T23:30:09.826Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)

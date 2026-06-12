@@ -120,6 +120,61 @@ body_name = basemesh.name
 rig = next((o for o in bpy.data.objects if o.type == "ARMATURE"), None)
 rig_name = rig.name if rig else ""
 
+def apply_garment_geonodes(cloth):
+    """Refino da malha de roupa via Geometry Nodes (código-base do diretor):
+    Subdivision Surface + Shade Smooth como node tree 'GarmentGeo'."""
+    modifier = cloth.modifiers.new(
+        name="GarmentNodes",
+        type='NODES'
+    )
+
+    tree = bpy.data.node_groups.new(
+        "GarmentGeo",
+        "GeometryNodeTree"
+    )
+
+    # Blender 4.x/5.x exige declarar os sockets da interface do grupo
+    tree.interface.new_socket("Geometry", in_out='INPUT', socket_type='NodeSocketGeometry')
+    tree.interface.new_socket("Geometry", in_out='OUTPUT', socket_type='NodeSocketGeometry')
+
+    modifier.node_group = tree
+
+    nodes = tree.nodes
+    links = tree.links
+
+    group_in = nodes.new(
+        "NodeGroupInput"
+    )
+
+    group_out = nodes.new(
+        "NodeGroupOutput"
+    )
+
+    subdivide = nodes.new(
+        "GeometryNodeSubdivisionSurface"
+    )
+
+    set_smooth = nodes.new(
+        "GeometryNodeSetShadeSmooth"
+    )
+
+    links.new(
+        group_in.outputs["Geometry"],
+        subdivide.inputs["Mesh"]
+    )
+
+    links.new(
+        subdivide.outputs["Mesh"],
+        set_smooth.inputs["Geometry"]
+    )
+
+    links.new(
+        set_smooth.outputs["Geometry"],
+        group_out.inputs["Geometry"]
+    )
+    return modifier
+
+
 if STAGE == "skeleton":
     # só armature visível
     if rig:
@@ -135,24 +190,33 @@ elif STAGE == "garment":
     # das etapas da roupa e devolve GarmentCode JSON. Aqui carregamos esse JSON e
     # construímos cada painel como malha drapeada sobre o corpo MPFB2.
     pattern_json = arg("--garment-pattern")
+    # 1) TailorNet: se python/cloth_tailornet.py gerou garments/cloth.obj no job dir,
+    #    importa a roupa deformada por pose (código-base do diretor) e refina com geonodes.
+    tailor_obj = os.path.join(OUT_DIR, "garments", "cloth.obj")
+    if os.path.exists(tailor_obj):
+        obj = bpy.ops.wm.obj_import(
+            filepath=tailor_obj
+        )
+        cloth = bpy.context.selected_objects[0]
+        cloth.name = "garment_tailornet"
+        apply_garment_geonodes(cloth)
+        print(f"[stage:{STAGE}] TailorNet cloth.obj importado + GeometryNodes (subdiv+smooth)")
     if pattern_json and os.path.exists(pattern_json):
         try:
             data = json.load(open(pattern_json, encoding="utf-8"))
             panels = data.get("panels") or data.get("pattern", {}).get("panels") or []
             print(f"[stage:{STAGE}] ChatGarment pattern: {len(panels)} painéis")
-            # cada painel = mesh plano deformado, drapeado: aqui criamos um proxy
-            # (plano por painel posicionado ao redor do corpo + cloth modifier).
-            # O drape completo via NvidiaWarp/Newton entra quando plugado.
-            import mathutils
+            # cada painel = mesh proxy + Cloth modifier; refino via GeometryNodes
+            # (Subdivision Surface + Shade Smooth — código-base do diretor).
             for i, p in enumerate(panels[:24]):
                 name = p.get("name", f"panel_{i}")
                 bpy.ops.mesh.primitive_plane_add(size=0.4, location=(0, 0.20 + i * 0.02, 1.0))
                 pl = bpy.context.active_object
                 pl.name = f"garment_{name}"
-                sub = pl.modifiers.new("Subd", "SUBSURF"); sub.levels = 3
-                bpy.ops.object.modifier_apply(modifier=sub.name)
-                cloth = pl.modifiers.new("Cloth", "CLOTH")
-                cloth.settings.quality = 4
+                cloth_mod = pl.modifiers.new("Cloth", "CLOTH")
+                cloth_mod.settings.quality = 4
+                apply_garment_geonodes(pl)
+            print(f"[stage:{STAGE}] GeometryNodes 'GarmentGeo' aplicado em {min(len(panels),24)} painéis")
             keep = [body_name] + [o.name for o in bpy.data.objects if o.name.startswith("garment_")]
             hide_all(keep)
         except Exception as e:
