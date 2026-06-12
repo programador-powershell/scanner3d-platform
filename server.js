@@ -56,29 +56,39 @@ function writeJson(file, data) {
 }
 
 // ---------- md sync ----------
+const LINK_LABELS = {
+  youtube: 'YouTube — vídeos de aprendizado/renderização',
+  twitter: 'Twitter/X — referências',
+  github: 'GitHub — ferramentas e código de referência',
+};
+
+function emptyLinks() {
+  return { youtube: [], twitter: [], github: [] };
+}
+function normalizeLinks(links) {
+  const out = links || {};
+  for (const k of Object.keys(LINK_LABELS)) out[k] = out[k] || [];
+  return out;
+}
+
 function syncSourcesMd() {
-  const links = readJson(LINKS_PATH, { youtube: [], twitter: [] });
+  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
   const lines = [];
-  if (!links.youtube.length && !links.twitter.length) {
-    lines.push('*Nenhum link cadastrado ainda. Use o site para adicionar links do Twitter/X e YouTube.*');
+  const total = Object.keys(LINK_LABELS).reduce((n, k) => n + links[k].length, 0);
+  if (!total) {
+    lines.push('*Nenhum link cadastrado ainda. Use o site para adicionar links do YouTube, Twitter/X e GitHub.*');
   } else {
-    if (links.youtube.length) {
-      lines.push(`### YouTube — vídeos de aprendizado/renderização (${links.youtube.length})`);
+    for (const type of Object.keys(LINK_LABELS)) {
+      if (!links[type].length) continue;
+      lines.push(`### ${LINK_LABELS[type]} (${links[type].length})`);
       lines.push('');
-      for (const l of links.youtube) {
+      for (const l of links[type]) {
         lines.push(`- ${mdLink(l.note, l.url)} — adicionado em ${l.addedAt}`);
       }
       lines.push('');
-    }
-    if (links.twitter.length) {
-      lines.push(`### Twitter/X — referências (${links.twitter.length})`);
-      lines.push('');
-      for (const l of links.twitter) {
-        lines.push(`- ${mdLink(l.note, l.url)} — adicionado em ${l.addedAt}`);
-      }
     }
   }
-  updateMdSection(MD_PATH, 'SOURCES', lines.join('\n'));
+  updateMdSection(MD_PATH, 'SOURCES', lines.join('\n').trimEnd());
 }
 
 function syncUploadsMd() {
@@ -157,18 +167,19 @@ app.post('/api/upload', upload.array('files', 200), (req, res) => {
 const LINK_PATTERNS = {
   youtube: /^https?:\/\/([\w-]+\.)*(youtube\.com|youtu\.be)\//i,
   twitter: /^https?:\/\/([\w-]+\.)*(twitter\.com|x\.com)\//i,
+  github: /^https?:\/\/(www\.)?github\.com\/[\w.-]+\/[\w.-]+/i,
 };
 
 app.post('/api/links', (req, res) => {
   const { type, url, note } = req.body || {};
-  if (type !== 'youtube' && type !== 'twitter') {
-    return res.status(400).json({ error: 'Tipo inválido. Use "youtube" ou "twitter".' });
+  if (!Object.prototype.hasOwnProperty.call(LINK_PATTERNS, type)) {
+    return res.status(400).json({ error: 'Tipo inválido. Use "youtube", "twitter" ou "github".' });
   }
   const cleanUrl = String(url || '').trim();
   if (!cleanUrl || /[\s<>"\\]/.test(cleanUrl) || !LINK_PATTERNS[type].test(cleanUrl)) {
     return res.status(400).json({ error: `URL inválida para ${type}.` });
   }
-  const links = readJson(LINKS_PATH, { youtube: [], twitter: [] });
+  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
   if (links[type].some((l) => l.url === cleanUrl)) {
     return res.status(409).json({ error: 'Link já cadastrado.' });
   }
@@ -181,10 +192,10 @@ app.post('/api/links', (req, res) => {
 
 app.delete('/api/links', (req, res) => {
   const { type, url } = req.body || {};
-  if (type !== 'youtube' && type !== 'twitter') {
+  if (!Object.prototype.hasOwnProperty.call(LINK_PATTERNS, type)) {
     return res.status(400).json({ error: 'Tipo inválido.' });
   }
-  const links = readJson(LINKS_PATH, { youtube: [], twitter: [] });
+  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
   const before = links[type].length;
   links[type] = links[type].filter((l) => l.url !== url);
   if (links[type].length === before) return res.status(404).json({ error: 'Link não encontrado.' });
@@ -211,7 +222,7 @@ app.post('/api/feed-references', (req, res) => {
 });
 
 app.get('/api/state', (req, res) => {
-  const links = readJson(LINKS_PATH, { youtube: [], twitter: [] });
+  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
   const uploads = readJson(UPLOADS_JSON, []);
   const manifest = readJson(MANIFEST_PATH, null);
   res.json({

@@ -25,6 +25,12 @@ npm run feed       # escaneia D:\References e alimenta o .md
 
 A **infraestrutura** (grafo de nós, revisão human-in-the-loop, dataset de preferência, edição por prompt, loop de regeneração) é real e funcional. Os **motores de IA** (PSHuman, SKEL/ATLAS, HIT, DiffLocks, nvdiffrast) ainda não rodam — cada nó usa um gerador de preview procedural em three.js, plugável. Detalhes na seção 10.2 do documento técnico.
 
+## Ferramentas externas (fontes)
+
+Links registrados pela página de ingestão alimentam a seção *Fontes de Treinamento* do documento técnico. Ex.:
+
+- [KIRI Engine — 3DGS Render Blender Addon](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) (Apache-2.0) — importa/edita/anima/renderiza **3D Gaussian Splatting** (`.ply`/`.splat`) no Blender. Ponte para a saída Gaussian do LHM++ (seção 7.1) virar asset editável/baking dentro do pipeline.
+
 ## Stack
 
 Node.js + Express + Multer · three.js (viewer) · documento em Markdown auto-alimentado.

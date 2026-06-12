@@ -410,7 +410,9 @@ O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta c
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-*Nenhum link cadastrado ainda. Use o site para adicionar links do Twitter/X e YouTube.*
+### GitHub — ferramentas e código de referência (1)
+
+- [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)

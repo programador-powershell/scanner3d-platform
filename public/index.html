@@ -153,6 +153,14 @@
       <button onclick="addLink('twitter')">Adicionar link</button>
       <ul class="list" id="twList"></ul>
     </div>
+
+    <div class="card">
+      <h2>🐙 GitHub — ferramenta / código</h2>
+      <input type="url" id="ghUrl" placeholder="https://github.com/owner/repo">
+      <input type="text" id="ghNote" placeholder="Descrição (ex.: addon 3DGS render p/ Blender)">
+      <button onclick="addLink('github')">Adicionar repo</button>
+      <ul class="list" id="ghList"></ul>
+    </div>
   </div>
 
   <div class="card full">
@@ -225,6 +233,7 @@ async function loadState() {
 
   fill('ytList', s.links.youtube.map(linkLi('youtube')), 'Nenhum vídeo cadastrado.');
   fill('twList', s.links.twitter.map(linkLi('twitter')), 'Nenhum link cadastrado.');
+  fill('ghList', (s.links.github || []).map(linkLi('github')), 'Nenhum repo cadastrado.');
   fill('uploadList', s.uploads.map((u) =>
     el('li', {},
       el('span', {}, el('a', { href: '/uploads/' + encodeURIComponent(u.name), target: '_blank' }, u.name)),
@@ -247,9 +256,11 @@ function fmt(b) {
   return b + ' B';
 }
 
+const LINK_INPUTS = { youtube: ['ytUrl', 'ytNote'], twitter: ['twUrl', 'twNote'], github: ['ghUrl', 'ghNote'] };
 async function addLink(type) {
-  const url = $(type === 'youtube' ? 'ytUrl' : 'twUrl').value.trim();
-  const note = $(type === 'youtube' ? 'ytNote' : 'twNote').value.trim();
+  const [urlId, noteId] = LINK_INPUTS[type];
+  const url = $(urlId).value.trim();
+  const note = $(noteId).value.trim();
   if (!url) return toast('Informe a URL.', false);
   const j = await fetchJson('/api/links', {
     method: 'POST',
@@ -257,8 +268,8 @@ async function addLink(type) {
     body: JSON.stringify({ type, url, note }),
   });
   if (!j.ok) return toast(j.error, false);
-  $(type === 'youtube' ? 'ytUrl' : 'twUrl').value = '';
-  $(type === 'youtube' ? 'ytNote' : 'twNote').value = '';
+  $(urlId).value = '';
+  $(noteId).value = '';
   toast('Link adicionado e alimentado no md ✅');
   loadState();
 }
