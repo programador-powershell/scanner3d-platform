@@ -292,10 +292,46 @@ A LLM do hub não é só símbolo — ela é uma **VLM (Vision-Language Model)**
    (regenera com correção)
 ```
 
-**Modelos open viáveis (jun/2026):**
-- **Qwen2.5-VL** / **Qwen3-VL** (Alibaba, Apache-2.0) — VLM forte com grounding de pose e anatomia; roda local em 7B/32B/72B; gratuita.
-- **InternVL3** (Shanghai AI Lab, MIT) — competidor direto do GPT-4V em benchmarks visuais.
-- **LLaVA-OneVision** / **MolmoE** — alternativas leves.
+**Modelo escolhido (treino local, RTX 4060 8GB):** **Qwen2.5-VL-7B-Instruct 4-bit via Unsloth** — substitui o Qwen3-VL como alvo de treino: 7B em 4-bit cabe na 4060, e o LoRA treina **visão e linguagem juntas** (`finetune_vision_layers=True` + `finetune_language_layers=True`, atenção+MLP inclusos para preservar raciocínio). Alternativas só-inferência: InternVL3 (MIT), LLaVA-OneVision.
+
+**Receita de treino (scripts em `training/`):**
+
+1. `python training/prepare_dataset.py` — converte `data/finetune_dataset.jsonl` (decisões dos 9 portões) em pares de visão: `[foto referência + render do portão + prompt do avaliador] → veredito JSON`. Aprovado = positivo (score 0,92); reprovado = negativo (score 0,35; a nota do diretor vira `defects`).
+2. `python training/train_vlm_unsloth.py` — fine-tuning LoRA:
+
+```python
+from unsloth import FastVisionModel
+import torch
+
+# RTX 4060 8GB
+max_seq_length = 512
+
+model, tokenizer = FastVisionModel.from_pretrained(
+    model_name="unsloth/Qwen2.5-VL-7B-Instruct-unsloth-bnb-4bit",
+    load_in_4bit=True,
+    use_gradient_checkpointing="unsloth",
+    max_seq_length=max_seq_length,
+)
+
+model = FastVisionModel.get_peft_model(
+    model,
+    # IMPORTANTE: treinar visão e linguagem juntos
+    finetune_vision_layers=True,
+    finetune_language_layers=True,
+    # mantém capacidade de raciocínio
+    finetune_attention_modules=True,
+    finetune_mlp_modules=True,
+    # RTX 4060 8GB
+    r=8, lora_alpha=16, lora_dropout=0, bias="none",
+    use_rslora=False, random_state=3407,
+    target_modules="all-linear",
+    modules_to_save=["lm_head", "embed_tokens"],
+)
+# TrainingArguments: batch 1 × grad_accum 8 · 3 épocas · lr 2e-4 · fp16 ·
+# adamw_8bit · gradient_checkpointing · save_steps 100 · output ./qwen3d
+```
+
+3. **Servir a VLM treinada:** merge 16-bit (`save_pretrained_merged`) → `vllm serve ./qwen3d-merged --port 8000` → `VLM_URL=http://localhost:8000/v1/chat/completions`. O endpoint `vlm-judge` passa a usar a VLM fine-tunada automaticamente — cada novo ciclo de aprovações regenera o dataset e refina o modelo (loop de melhoria contínua).
 
 **Prompt do avaliador (por portão):**
 ```

@@ -18,3 +18,10 @@ data/*.corrupt
 *.log
 .DS_Store
 Thumbs.db
+
+# artefatos de treino da VLM
+training/dataset.json
+qwen3d/
+qwen3d-merged/
+__pycache__/
+*.pyc
