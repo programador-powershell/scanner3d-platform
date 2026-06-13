@@ -121,18 +121,37 @@ Cada camada fatiada pelo Florence-2 segue o trilho do seu material — não exis
 
 | Camada | Motor (open, jun/2026) | Saída |
 |---|---|---|
-| Corpo / anatomia | **SKEL** (esqueleto biomecânico 46 DoF) via **HSMR/SKEL-CF**, ou **ATLAS/MHR** para controle per-bone real (ver 7.6); **HIT** preenche músculo/gordura/osso; **Chaos Flesh** (UE5.6/5.7) anima o tecido mole | Humano com ossos reais "desde o esqueleto" |
-| Rosto / caretas | **Pixel3DMM / VGGTFace** → parâmetros **FLAME** → registro NRICP em basemesh **ICT-FaceKit** (MIT, loops de boca/olhos, interior bucal, dentes) → transferência das **52 blendshapes ARKit** → wrinkle maps dinâmicos via **DECA** + tension masks | Cabeça animável FACS, topologia fixa |
-| Roupa de pano | **ChatGarment / AIpparel** (CVPR 2025) → padrão de costura **GarmentCode** → drape físico (PyGarment/XPBD) sobre o corpo SKEL → otimização do padrão contra as vistas validadas | Malha aberta simulável, UV por painel, costuras reais |
-| Rígidos (armadura, fivelas, joias, botas) | **TRELLIS.2-4B** (MIT) condicionado multi-image | Malha PBR de alta fidelidade |
-| Cabelo fio a fio | **DiffLocks** (1 foto → ~100K strands, Meshcapade/MPI) → Alembic `.abc` → **UE5 Groom** (binding ao skeletal mesh) → hair cards como LOD de gameplay | Strands reais, não "capacete" |
+| Corpo / anatomia **INSTANCIADA** (v4) | **SKEL** (esqueleto biomecânico 46 DoF, ancorado ao SMPL-X) + **TailorMe** (template volumétrico **instanciado**: pele+músculo+esqueleto, M/F) + **NDG** (Neural Deformation Gradients, CGF/Eurographics 2026 — deforma osso+músculo+pele com a pose, robusto a inversão/volume). **Z-Anatomy** = overlay de veias/nervos por cima. Fallback Blender: MuSkeMo / X-Muscle | Anatomia **instanciada, não inferida** — malhas reais registradas, editáveis |
+| Rosto / caretas | **Pixel3DMM / VGGTFace** → parâmetros **FLAME** → registro NRICP em basemesh **ICT-FaceKit** (MIT) → **52 blendshapes ARKit** → wrinkle maps via **DECA** | Cabeça animável FACS, topologia fixa |
+| Roupa de pano (v4) | **ChatGarment** (lê N imagens das etapas) → **GarmentCode** (sewing pattern) → **NvidiaWarp-GarmentCode** (costura/panels, já é Warp) → solver **Newton 1.0 (VBD)** com self-collision multicamada + colisor do corpo. **TailorNet aposentado** (rede de ~20 MLPs, overfit, sem colisão multicamada) | Vestido lolita multicamada (corset→saia→avental→renda) drapeado fisicamente |
+| Rígidos (armadura, fivelas, joias, botas) | **TRELLIS.2** (MIT) condicionado multi-image | Malha PBR de alta fidelidade |
+| Cabelo fio a fio | **DiffLocks** (1 foto → ~100K strands) → Alembic → **Hair Curves** + **Geometry Nodes** (pelos) → UE5 Groom | Strands reais, não "capacete" |
 
-- **Veias e poros = textura, não geometria:** displacement micro (<0,1 mm) + albedo + subsurface scattering (veias em nariz/orelhas/bochechas). Só veia saliente que muda silhueta vira relevo.
-- **Retopologia:** high-poly dos trilhos + retopo clássico ou registro em template de topologia fixa — nenhum gerador open de 2026 entrega quad AAA direto. Ferramentas open de quad remesh para esse passo: **QRemeshify** (addon Blender, base QuadWild + Bi-MDF) e **AutoRemesher** (standalone, autor do Dust3D) — ambas GPL-3.0 (uso como ferramenta externa ok; não linkar em código proprietário).
+> **Ressalva de licença (v4, due diligence p/ produto comercial):** SKEL/OSSO/HIT/SMPL-X são **research-only MPI** — uso comercial exige contrato (ps-licensing@tue.mpg.de / Meshcapade). Z-Anatomy é **CC-BY-SA 4.0** (comercial OK, mas ShareAlike **viral** contamina derivados). TailorMe/NDG: verificar licença do template anatômico antes de shippar. Para AAA comercial, orçar licenciamento MPI; Z-Anatomy só como overlay respeitando ShareAlike.
 
-### 7.4 Loop de Fechamento — Differentiable Rendering (nvdiffrast)
+- **Por que instanciar > inferir (tese do diretor confirmada):** **HIT** (CVPR 2024) é um campo **implícito** — prediz classe de tecido por ponto, malha só via marching cubes. Não dá controle artístico, normais/oclusão limpas nem edição. A anatomia AAA deve ser **malha instanciada** (TailorMe) deformada com a pose (NDG), não um campo amostrável.
+- **Veias e poros = textura, não geometria:** displacement micro (<0,1 mm) + albedo + SSS. Só veia saliente que muda silhueta vira relevo.
+- **Retopologia:** high-poly + **QRemeshify** (QuadWild+Bi-MDF) ou **AutoRemesher** (GPL-3.0) — nenhum gerador open de 2026 entrega quad AAA direto.
 
-**É este loop — não o gerador — que entrega o "pixel a pixel".** A malha é renderizada nas câmeras conhecidas e textura + offsets de geometria são otimizados por gradiente contra a **foto original**, até LPIPS/ArcFace baterem (coarse-to-fine 512→4096):
+### 7.3.1 Material Intelligence — os mapas que fazem o realismo (v4)
+
+> Tese do diretor confirmada: **"Stellar Blade parece realista mais pelos materiais do que pela malha."** O conjunto AAA de pele: **base color · normal · roughness · metallic · AO · height · SSS(thickness) · micro-normal**.
+
+Verdade honesta (auditada jun/2026): **nenhum modelo open gera os 8 mapas**. Divisão real:
+- **Os 4 que a IA cobre** — **Hunyuan3D 2.1** já entrega albedo + metallic + roughness + normal (não duplicar). Para extrair material limpo de **uma foto** de referência (delight): **RGB↔X** (SIGGRAPH 2024). Para repintar SVBRDF 3D-aware: **Material Anything** (CVPR 2025, **MIT**) — usar só se trocar o paint do Hunyuan.
+- **Os 4 que NÃO são IA** (é bake + shader, não generativo):
+  - **AO + Height + Thickness(p/ SSS)** → bake no Cycles/Blender na malha SMPL-X/MPFB2 (exato, grátis).
+  - **Micro-normal** → blend de detail-normal tileável do **MatSynth** (4000+ materiais 4K, **CC0/CC-BY**) no material UE5.
+  - **SSS** → subsurface profile do UE5 alimentado pelo thickness bake.
+- Modelos só-pesquisa a evitar no produto: **IntrinsiX** (CC-BY-NC-SA, não-comercial). **VideoMatGen** (NVIDIA, mar/2026) modela height junto mas sem pesos públicos — monitorar.
+
+### 7.4 Loop de Fechamento — Differentiable Rendering (v4: Mitsuba 3 + SSS)
+
+**É este loop — não o gerador — que entrega o "pixel a pixel".** Expandido conforme o diretor: `Render → comparação pixel → gradiente → atualiza MALHA → atualiza TEXTURA → render`, até convergir.
+
+> **Upgrade v4:** o `nvdiffrast` puro (rasterizador) não modela **SSS de pele**. Stack open superior verificada: **Mitsuba 3 + Dr.Jit** (BSD-3, comercial OK) como renderizador inverso path-traced, com o integrador **"Practical Inverse Rendering of Textured and Translucent Appearance"** (Google/EPFL, SIGGRAPH 2025, **Apache-2.0**) para refinar albedo+normal+**SSS** da pele contra a foto, e **Continuous Remeshing** (MIT) como remeshing dentro do loop de geometria. O `nvdiffrast` continua como caminho rápido/rasterização; Mitsuba entra no refino final de pele translúcida.
+
+Snippet base (nvdiffrast — caminho rápido; o refino de SSS migra para Mitsuba 3):
 
 ```python
 import torch
@@ -207,30 +226,40 @@ FOTO (turnaround, N imagens)
    ▼
 [ Florence-2 fine-tuned ]       segmentação semântica em camadas
    │
-   ├─ Corpo       → SMPL-X (prior betas/pose) → FLAME (cabeça)
-   ├─ Roupa       → ChatGarment (N imagens) → GarmentCode → TailorNet
+   ├─ Reconstrução inicial → HUNYUAN3D 2.1 + SMPL-X + FLAME + multi-view (PSHuman/MagicMan opc.)
+   │
+   ├─ Corpo / ANATOMIA    → SKEL (rig biomec.) + TailorMe (instanciado: osso+músculo+pele)
+   │  (instanciada,          + NDG (deforma com a pose) · Z-Anatomy = overlay veias/nervos
+   │   não inferida)         A MUSCULATURA É INSTANCIADA, não um campo implícito (HIT)
+   │
+   ├─ Roupa       → ChatGarment (N imgs) → GarmentCode → NvidiaWarp-GarmentCode → Newton 1.0 (VBD)
+   │                (TailorNet APOSENTADO — não cobre roupa multicamada complexa)
+   │
    ├─ Cabelo      → DiffLocks (~100K strands) + Hair Curves + Geometry Nodes
    └─ Acessórios  → TRELLIS.2 (MIT)
    │
    ▼
-[ Hunyuan3D 2.1 ]               refino geométrico + textura PBR
-   │                            (geometria e textura em modelos separados;
-   ▼                             fine-tune com o dataset DPO da plataforma)
+[ Hunyuan3D 2.1 ]               refino geométrico + textura PBR (geometria/textura separadas)
+   │
+   ▼
+[ MATERIAL INTELLIGENCE ]       albedo/normal/rough/metallic (Hunyuan/RGB↔X/MaterialAnything)
+   │                            + AO/height/thickness (bake Cycles) + micro-normal (MatSynth CC0)
+   ▼                            + SSS (subsurface profile). "Realismo vem do material" (Stellar Blade)
 [ Blender ]
    ├─ Geometry Nodes            (GarmentGeo: subdiv+smooth; pelos corporais)
    ├─ Auto Retopo               (QRemeshify / AutoRemesher — quad limpo)
    ├─ PBR 8K                    (texturas CC0 + bake Hunyuan)
-   ├─ Rig Humano                (MPFB2 default / SKEL)
+   ├─ Rig Humano                (SKEL / MPFB2 default)
    └─ ARKit 52                  (blendshapes via FLAME → ICT-FaceKit)
    │
    ▼
 [ GATE: ArcFace + LPIPS + silhueta ]  reprovou → VLM sugere ajuste → regera
    │
    ▼
-[ LOOP nvdiffrast ]  render vs FOTO ORIGINAL até convergir  ← "pixel a pixel" real
-   │
+[ LOOP DIFERENCIÁVEL ]  nvdiffrast (rápido) + Mitsuba 3/Dr.Jit (refino SSS de pele,
+   │   render→pixel→gradiente→ atualiza MALHA+TEXTURA →render até convergir) ← "pixel a pixel"
    ▼
-[ .glb modular PBR + rig ] ──► UE5 (Groom + LiveLink)
+[ .glb modular PBR + rig ] ──► UE5 (Groom + LiveLink + ARKit 52)
 ```
 
 ### 7.6 Camadas Anatômicas: do Osso à Pele (revisado em jun/2026)
@@ -632,7 +661,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (11)
+### GitHub — ferramentas e código de referência (20)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
@@ -645,6 +674,15 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 - [Hunyuan3D 2.1 - reconstrucao inicial + refino geometrico: geometria e textura PBR separadas, TREINO LIBERADO (fine-tune com dataset DPO). VRAM 10GB shape/21GB texture. Atencao licenca Tencent (exclusoes regionais)](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) — adicionado em 2026-06-13T00:05:56.776Z
 - [TRELLIS/TRELLIS.2 (MIT) - geracao 3D de acessorios rigidos (armadura, joias, botas) no trilho Acessorios](https://github.com/microsoft/TRELLIS) — adicionado em 2026-06-13T00:05:56.788Z
 - [DiffLocks (CVPR25) - 1 imagem -> ~100K strands de cabelo 3D; treino incluso + dataset 40K; export Blender/Alembic. Trilho Cabelo com Hair Curves + Geometry Nodes](https://github.com/Meshcapade/DiffLocks) — adicionado em 2026-06-13T00:05:56.793Z
+- [Z-Anatomy (CC-BY-4.0) - atlas anatomico Blender 4500 estruturas (ossos/musculos/veias/nervos/orgaos). Etapa 3: musculatura INSTANCIADA (nao inferida) registrada no SMPL-X](https://github.com/LluisBP/Z-Anatomy) — adicionado em 2026-06-13T00:18:22.264Z
+- [NVIDIA Warp - simulacao diferenciavel (cloth/soft-body). Etapa 4: drape de roupa complexa multicamada (substitui TailorNet)](https://github.com/NVIDIA/warp) — adicionado em 2026-06-13T00:18:22.294Z
+- [Newton (Linux Foundation: NVIDIA+DeepMind+Disney) - solver fisico VBD sobre Warp. Etapa 4: cloth sim final do vestido](https://github.com/newton-physics/newton) — adicionado em 2026-06-13T00:18:22.299Z
+- [TailorMe (Botsch, CGF2024) - template anatomico volumetrico INSTANCIADO (pele+musculo+esqueleto M/F). Etapa 3: anatomia instanciada (nao inferida) registrada ao SMPL-X](https://github.com/mbotsch/TailorMe) — adicionado em 2026-06-13T00:26:03.371Z
+- [SKEL (SIGGRAPH Asia 2023) - rig biomecanico 46-DoF ancorado ao SMPL-X. Driver de pose da anatomia. LICENCA MPI nao-comercial (contrato p/ AAA)](https://github.com/MarilynKeller/SKEL) — adicionado em 2026-06-13T00:26:03.377Z
+- [Material Anything (CVPR2025, MIT) - SVBRDF 3D-aware na malha (albedo/rough/metallic/normal). Etapa 6 Material AI se trocar o paint do Hunyuan](https://github.com/3DTopia/MaterialAnything) — adicionado em 2026-06-13T00:26:03.382Z
+- [RGB-X (SIGGRAPH2024) - decompoe foto em albedo/rough/metallic/normal + delight. Extrai material limpo de 1 foto de referencia](https://github.com/zheng95z/rgbx) — adicionado em 2026-06-13T00:26:03.385Z
+- [Mitsuba 3 + Dr.Jit (BSD-3) - renderizador diferenciavel. Etapa 7: loop inverso joint geometria+material+SSS (substitui nvdiffrast puro)](https://github.com/mitsuba-renderer/mitsuba3) — adicionado em 2026-06-13T00:26:03.389Z
+- [Practical Inverse Rendering (Google/EPFL SIGGRAPH2025, Apache-2.0) - SSS path-traced diferenciavel. Refino de pele no loop Etapa 7](https://github.com/google/practical-inverse-rendering-of-textured-and-translucent-appearance) — adicionado em 2026-06-13T00:26:03.393Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)
