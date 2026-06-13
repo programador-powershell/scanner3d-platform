@@ -96,6 +96,7 @@ Para criar o que o olho não vê (costas do espartilho, interior da saia):
 | Estágio v1 | Problema verificado | Estágio v2 |
 |---|---|---|
 | FLUX.1-LoRA turnaround | Amostra distribuição aprendida, não reconstrói a foto | **PSHuman / MagicMan** (condicionados na foto) + gate métrico |
+| PSHuman/MagicMan como reconstrução (v2) | Sem treino liberado; sem PBR separado; sem refino geométrico | **Hunyuan3D 2.1** (v3): treino liberado p/ fine-tune DPO, geometria+textura PBR separadas; PSHuman/MagicMan viram geradores de vistas opcionais |
 | Unique3D por camada de roupa | Treino excluiu superfícies finas → casca inflada | **Sewing patterns** (ChatGarment/AIpparel → GarmentCode → drape) |
 | Unique3D/SF3D geral | Superado por 2 gerações (2024 vs 2026) | **TRELLIS.2-4B** (rígidos) + **PSHuman/LHM++** (humano) |
 | CraftsMan / MeshXL | Sem quad AAA; tri ~11–30k faces | High-poly + retopo clássico / registro em template de topologia fixa |
@@ -103,11 +104,11 @@ Para criar o que o olho não vê (costas do espartilho, interior da saia):
 | (sem estágio de cabelo) | Malha = capacete sólido | **DiffLocks** → ~100K strands → Alembic → UE5 Groom |
 | (sem estágio facial) | Sem loops, sem boca interna, sem blendshapes | **FLAME** fitting → NRICP em **ICT-FaceKit** → 52 ARKit + wrinkle maps |
 
-### 7.1 Geração Multi-View Condicionada (substitui FLUX.1-LoRA como fonte de verdade)
+### 7.1 Reconstrução Inicial — Hunyuan3D 2.1 (v3; multi-view vira opcional)
 
-- **PSHuman** (CVPR 2025): 1 foto → 6 vistas globais + close-up de rosto, condicionado em SMPL-X, difusão cross-scale corpo+face — preserva identidade onde MVDs genéricos mais distorcem.
-- **MagicMan** (AAAI 2025): 20 vistas densas RGB+normal com **refinamento iterativo** do SMPL-X contra a referência — mais sinal para reconstrução do que 4 vistas de turnaround.
-- **Enhancers** (nunca fonte de verdade): FLUX.2-dev (multi-reference nativo, até 10 imagens), Qwen-Image-Edit (NVS com via de aparência que preserva textura). LoRA via Kohya_ss permanece **só para estilo**, nunca para identidade.
+- **Hunyuan3D 2.1** (Tencent, open-source com **treino liberado**): reconstrução inicial e refino geométrico. Gera **geometria e textura em modelos separados**, com PBR físico (metallic/SSS) pronto para Blender/UE5. Superioridade prática sobre TripoSR/single-shell para personagens complexos + fine-tune direto com o dataset DPO da plataforma. `Imagem → Hunyuan3D → Mesh → Texture`.
+- **PSHuman** (CVPR 2025) e **MagicMan** (AAAI 2025) — rebaixados a **geradores opcionais de vistas humanas** (6–20 vistas condicionadas em SMPL-X, preservam identidade facial) que alimentam o Hunyuan em modo multi-view quando o rosto exigir fidelidade extra.
+- **Enhancers** (nunca fonte de verdade): FLUX.2-dev (multi-reference, até 10 imagens), Qwen-Image-Edit (NVS preservando textura). LoRA via Kohya_ss permanece **só para estilo**, nunca para identidade.
 
 ### 7.2 Gate Métrico de Identidade (toda vista passa ou regera)
 
@@ -191,29 +192,45 @@ Extensões do loop para o caso humano:
 - **Regularização de offsets:** penalizar `vertices_offsets` por Laplacian smoothing para não rasgar a malha base SKEL/FLAME.
 - **Coarse-to-fine:** otimizar textura em 512 → 1024 → 2048 → 4096, congelando geometria nas resoluções altas.
 
-### 7.5 Sequência Unificada v2
+### 7.5 Sequência Unificada v3 (revisão do diretor, jun/2026)
+
+> **Troca efetuada:** **Hunyuan3D 2.1** assume reconstrução inicial + refino geométrico — open-source, **treino liberado** (fine-tune direto com o nosso dataset DPO), geometria e textura **PBR geradas separadamente**, saída pronta para Blender/UE5. **PSHuman/MagicMan rebaixados** a geradores opcionais de vistas humanas alimentando o Hunyuan (multi-view) quando a identidade facial exigir — hibridização que a auditoria já recomendava.
+>
+> Atenções de produção: VRAM **10 GB (shape) / 21 GB (texture)** — shape roda local; texture vai para Colab A100 ou modo low-VRAM. Licença Tencent Community tem **exclusões regionais (UE/UK/Coreia)** — isolar o componente se a plataforma for global. Correção de nome: a "Qwen 3.6 VL" citada não existe — o pré-scan usa a **Qwen2.5-VL fine-tunada** (seção 7.8).
 
 ```
-[ Foto 2D ]
+FOTO (turnaround, N imagens)
    │
    ▼
-[ PSHuman / MagicMan ]  vistas CONDICIONADAS na foto (6–20)
+[ Qwen2.5-VL fine-tunada ]      pré-scan: identidade, medidas, materiais
    │
    ▼
-[ GATE: ArcFace + LPIPS + silhueta ]  reprovou → regera
+[ Florence-2 fine-tuned ]       segmentação semântica em camadas
+   │
+   ├─ Corpo       → SMPL-X (prior betas/pose) → FLAME (cabeça)
+   ├─ Roupa       → ChatGarment (N imagens) → GarmentCode → TailorNet
+   ├─ Cabelo      → DiffLocks (~100K strands) + Hair Curves + Geometry Nodes
+   └─ Acessórios  → TRELLIS.2 (MIT)
    │
    ▼
-[ Florence-2 ]  fatiamento semântico em camadas
-   ├─ corpo/rosto → SKEL+HIT / FLAME+blendshapes (topologia fixa)
-   ├─ roupa pano  → padrão de costura → drape físico → otimiza vs vistas
-   ├─ rígidos     → TRELLIS.2-4B
-   └─ cabelo      → DiffLocks strands → Groom UE5
+[ Hunyuan3D 2.1 ]               refino geométrico + textura PBR
+   │                            (geometria e textura em modelos separados;
+   ▼                             fine-tune com o dataset DPO da plataforma)
+[ Blender ]
+   ├─ Geometry Nodes            (GarmentGeo: subdiv+smooth; pelos corporais)
+   ├─ Auto Retopo               (QRemeshify / AutoRemesher — quad limpo)
+   ├─ PBR 8K                    (texturas CC0 + bake Hunyuan)
+   ├─ Rig Humano                (MPFB2 default / SKEL)
+   └─ ARKit 52                  (blendshapes via FLAME → ICT-FaceKit)
    │
    ▼
-[ LOOP nvdiffrast ]  render vs FOTO ORIGINAL até métricas baterem  ← "pixel a pixel" real
+[ GATE: ArcFace + LPIPS + silhueta ]  reprovou → VLM sugere ajuste → regera
    │
    ▼
-[ Rig SKEL + blendshapes ARKit ] ──► [ .glb modular PBR ]
+[ LOOP nvdiffrast ]  render vs FOTO ORIGINAL até convergir  ← "pixel a pixel" real
+   │
+   ▼
+[ .glb modular PBR + rig ] ──► UE5 (Groom + LiveLink)
 ```
 
 ### 7.6 Camadas Anatômicas: do Osso à Pele (revisado em jun/2026)
@@ -615,7 +632,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (8)
+### GitHub — ferramentas e código de referência (11)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
@@ -625,6 +642,9 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 - [ChatGarment (Apache-2.0) - VLM le N imagens de roupa -> sewing pattern GarmentCode JSON -> drape 3D. Trilho Tecido (portao 4) com leitura multi-imagem das 10 etapas do vestido](https://github.com/biansy000/ChatGarment) — adicionado em 2026-06-12T23:22:14.168Z
 - [TailorNet - roupa deformada por pose+shape+style (MPI), prediz wrinkles; trilho Tecido junto com ChatGarment](https://github.com/chaitanya100100/TailorNet) — adicionado em 2026-06-12T23:30:09.796Z
 - [SMPL-X oficial (python package smplx) - corpo parametrico betas/pose; prior do trilho Corpo](https://github.com/vchoutas/smplx) — adicionado em 2026-06-12T23:30:09.826Z
+- [Hunyuan3D 2.1 - reconstrucao inicial + refino geometrico: geometria e textura PBR separadas, TREINO LIBERADO (fine-tune com dataset DPO). VRAM 10GB shape/21GB texture. Atencao licenca Tencent (exclusoes regionais)](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) — adicionado em 2026-06-13T00:05:56.776Z
+- [TRELLIS/TRELLIS.2 (MIT) - geracao 3D de acessorios rigidos (armadura, joias, botas) no trilho Acessorios](https://github.com/microsoft/TRELLIS) — adicionado em 2026-06-13T00:05:56.788Z
+- [DiffLocks (CVPR25) - 1 imagem -> ~100K strands de cabelo 3D; treino incluso + dataset 40K; export Blender/Alembic. Trilho Cabelo com Hair Curves + Geometry Nodes](https://github.com/Meshcapade/DiffLocks) — adicionado em 2026-06-13T00:05:56.793Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)
