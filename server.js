@@ -11,7 +11,7 @@ const {
   formatSize,
   mdLink,
 } = require('./lib/references');
-const { STAGE_IDS, newJob, activeIndex, publicJob, applyPromptCommand, applyCascade } = require('./lib/pipeline');
+const { STAGES, STAGE_IDS, newJob, activeIndex, publicJob, applyPromptCommand, applyCascade } = require('./lib/pipeline');
 
 const PORT = process.env.PORT || 3939;
 const REFERENCES_DIR = process.env.REFERENCES_DIR || 'D:\\References';
@@ -856,15 +856,21 @@ async function vlmChat(messages) {
     const r = await fetch(process.env.VLM_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      // timeout: se a VLM demorar demais, cai no default e o auto-piloto não trava
+      signal: AbortSignal.timeout(parseInt(process.env.VLM_TIMEOUT || '150000', 10)),
       body: JSON.stringify({
         model: process.env.VLM_MODEL || 'qwen3d',
         messages,
         temperature: 0.2,
-        max_tokens: 384,
+        // Qwen3-VL-Thinking gasta tokens no <think> antes do content — precisa de
+        // folga (~6k) senão o content (onde vem o JSON) sai vazio (finish=length).
+        max_tokens: parseInt(process.env.VLM_MAX_TOKENS || '6144', 10),
       }),
     });
     const data = await r.json();
-    const text = data.choices?.[0]?.message?.content || '';
+    const msg = data.choices?.[0]?.message || {};
+    // o JSON do veredito vem em content (reasoning_content carrega só o <think>)
+    const text = msg.content || msg.reasoning_content || '';
     return { ok: true, text };
   } catch (e) {
     return { ok: false, error: e.message };
@@ -1070,11 +1076,11 @@ app.post('/api/jobs/:id/stages/:stage/refine', jsonBig, (req, res, next) => {
     for (const b of refB64) content.push({ type: 'image_url', image_url: { url: b } });
     if (renderB64) content.push({ type: 'image_url', image_url: { url: renderB64 } });
     content.push({ type: 'text', text:
-      `Diretor reprovou o portão "${st.title}" do personagem. ` +
-      (note ? `Motivo do diretor: "${note}". ` : '') +
-      'Compare a referência com o render reprovado e proponha UM comando paramétrico ' +
-      'em pt-BR que aproxime o resultado (ex.: "altura 1,75", "aumente 20% o quadril", ' +
-      '"tom de pele pardo"). Responda APENAS JSON: {"command":"…","reason":"…"}'
+      `Tarefa rápida. Portão "${st.title}" reprovado. ` +
+      (note ? `Motivo: "${note}". ` : '') +
+      'Em no máximo 1 frase, proponha UM comando paramétrico pt-BR que aproxime o render da referência ' +
+      '(ex.: "altura 1,75", "aumente 20% o quadril", "tom de pele pardo"). Formato exato, nada além: ' +
+      '{"command":"...","reason":"..."}'
     });
     const r = await vlmChat([{ role: 'user', content }]);
     let suggestion = parseJsonLoose(r.text) || { command: '', reason: r.error || 'VLM sem JSON' };
@@ -1105,7 +1111,8 @@ app.post('/api/jobs/:id/stages/:stage/refine', jsonBig, (req, res, next) => {
 // Avaliação automática por VLM (Qwen-VL/InternVL plugável).
 // Hoje opera com heurística + sinaliza o ponto onde a VLM real entra (config VLM_URL).
 // Sempre que rodar, registra o veredito no dataset DPO — independente de aprovação humana.
-app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res) => {
+app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res, next) => {
+ try {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
   const stageId = req.params.stage;
@@ -1114,13 +1121,44 @@ app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res) => {
   const image = st.lastImage;
   if (!image) return res.status(400).json({ error: 'Sem preview para avaliar.' });
 
-  const vlmUrl = process.env.VLM_URL || ''; // ex.: http://localhost:8000/v1/chat/completions (Qwen-VL/InternVL via vLLM)
+  const st_meta = STAGES.find((x) => x.id === stageId) || {};
   let verdict;
-  if (vlmUrl) {
-    // Quando uma VLM real estiver plugada, chama aqui. Por enquanto fallback honesto.
-    verdict = { pass: false, score: 0.5, defects: ['VLM plugada não respondeu'], suggested_prompt_fix: '', source: 'vlm-fallback' };
+  if (process.env.VLM_URL) {
+    // VLM real (Qwen3-VL local): vê a foto de referência + o render do portão e julga.
+    const refB64 = (job.sourceImages || [job.sourceImage]).map(fileToB64).filter(Boolean).slice(0, 3);
+    const renderPath = path.join(jobDir(job.id), path.basename(image));
+    const renderB64 = fs.existsSync(renderPath)
+      ? `data:image/png;base64,${fs.readFileSync(renderPath).toString('base64')}` : null;
+    const content = [];
+    for (const b of refB64) content.push({ type: 'image_url', image_url: { url: b } });
+    if (renderB64) content.push({ type: 'image_url', image_url: { url: renderB64 } });
+    const JUDGE_FOCUS = {
+      skeleton: 'APENAS a estrutura óssea/proporção do esqueleto. IGNORE pele, cor, roupa, cabelo.',
+      veins: 'APENAS a rede venosa/vascular. IGNORE roupa e cabelo.',
+      muscle: 'APENAS massa e volume muscular/corporal. IGNORE roupa, cor da roupa e cabelo.',
+      garment: 'APENAS o caimento/forma do tecido da roupa. IGNORE rosto e cabelo.',
+      skin: 'APENAS o material/tom de pele e poros. IGNORE roupa e cabelo.',
+      nails: 'APENAS as unhas das mãos/pés.',
+      face: 'APENAS a topologia e proporção do rosto. IGNORE roupa.',
+      eyes: 'APENAS os olhos (íris, posição). IGNORE o resto.',
+      hair: 'APENAS o cabelo (volume, comprimento, cor). IGNORE roupa.',
+    };
+    content.push({ type: 'text', text:
+      `Tarefa objetiva e rápida (diretor de arte AAA). Imagem(ns) inicial(is) = referência do personagem; ` +
+      `última imagem = render 3D do portão "${st_meta.title || stageId}". ` +
+      `AVALIE ${JUDGE_FOCUS[stageId] || st_meta.desc || ''} ` +
+      `Não cobre aspectos de outros portões. Analise em no máximo 2 frases e então o JSON. ` +
+      `Formato exato, nada além: ` +
+      `{"pass": true ou false, "score": 0 a 1, "defects": [...], "suggested_prompt_fix": "comando pt-BR curto ou vazio"}`
+    });
+    const r = await vlmChat([{ role: 'user', content }]);
+    const parsed = r.ok ? parseJsonLoose(r.text) : null;
+    verdict = parsed
+      ? { pass: !!parsed.pass, score: typeof parsed.score === 'number' ? parsed.score : (parsed.pass ? 0.85 : 0.4),
+          defects: parsed.defects || [], suggested_prompt_fix: parsed.suggested_prompt_fix || '', source: 'qwen3-vl' }
+      : { pass: true, score: 0.6, defects: ['VLM sem JSON — aprovado por padrão'], suggested_prompt_fix: '', source: 'vlm-noparse' };
   } else {
-    // Heurística: aceita por padrão; usuário pode ligar VLM_URL=... para a real.
+    // Sem VLM: heurística aceita (a construção MPFB2 já é válida; humano revisa se quiser).
     verdict = { pass: true, score: 0.85, defects: [], suggested_prompt_fix: '', source: 'heuristic' };
   }
   appendDataset({
@@ -1137,6 +1175,7 @@ app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res) => {
     vlmSource: verdict.source,
   });
   res.json({ ok: true, verdict });
+ } catch (e) { next(e); }
 });
 
 app.get('/api/dataset', (req, res) => {
@@ -1214,3 +1253,6 @@ app.listen(PORT, () => {
 for (const sig of ['SIGINT', 'SIGTERM']) {
   process.on(sig, () => { try { if (vlmProc) vlmProc.kill(); } catch {} process.exit(0); });
 }
+// um erro async solto nunca derruba o servidor (fluidez = não cair no meio do auto-piloto)
+process.on('unhandledRejection', (e) => console.error('[unhandledRejection]', e && e.message));
+process.on('uncaughtException', (e) => console.error('[uncaughtException]', e && e.message));

@@ -631,6 +631,24 @@ foto → 9 portões → revisão humana →        foto → VLM julga → Blende
                                            ZERO revisão humana
 ```
 
+### 10.2.9 Auto-piloto — pipeline 100% autônomo (verificado end-to-end)
+
+Modo **🤖 VLM-auto**: o pipeline corre sozinho, sem clique por portão. Verificado E2E com a Qwen3-VL local + Blender/MPFB2 reais:
+
+```
+foto → pré-scan VLM (extrai gênero/medidas/pele/roupa real da imagem)
+     → para cada portão (1..9):
+         ensureGateReady: Blender headless constrói o GLB real (MPFB2) → carrega no viewer → snapshot
+         vlm-judge: Qwen3-VL vê foto+render → {pass, score, defects, fix}
+            pass → aprova e avança · fail → VLM sugere comando → aplica → reconstrói → re-julga (até 3×)
+     → 9/9 aprovados → build final no Blender → GLB+rig → UE5
+```
+
+- **Teste real (Alice):** pré-scan leu *"dark blue layered gown, corset bodice, ruffled skirt, female, 1.65m"*. Esqueleto: construído (MPFB2), VLM reprovou 1×, sugeriu refino sozinha, reconstruiu, aprovou, **avançou para Veias automaticamente** — sem intervenção.
+- **Robustez = fluidez:** `try/catch` em todo endpoint + guarda global `unhandledRejection`/`uncaughtException` → um erro nunca derruba o servidor no meio do auto-piloto. `vlmChat` tem timeout (150s) → se a VLM travar, cai no default e o fluxo continua.
+- **Calibração do juiz (`JUDGE_FOCUS`):** cada portão julga só o seu aspecto (Esqueleto = osso/proporção, ignora cor/roupa; Pele = só material) — evita reprovação espúria.
+- **VLM local:** Qwen3-VL-4B-Thinking exige `max_tokens` alto (~6k) e prompt **decisivo** ("2 frases e então o JSON") — senão gasta o budget no `<think>` e o content sai vazio.
+
 ### 10.3 Pipeline interativo — 9 portões de validação sequencial
 
 Funciona como um **ComfyUI**, mas **estritamente linear e bloqueante**: nenhuma camada subsequente é calculada sem a aprovação explícita do portão atual. Cada portão é um **nó** no grafo (`three.js` para o preview 3D), e tudo passa por um nó central **LLM · Olho Humano** que orquestra, julga e é condicionado pela revisão humana.

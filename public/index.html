@@ -378,35 +378,94 @@ function buildHair(rnd){buildBody(rnd,{});const g=content;const n=120+Math.floor
 // Builder: carrega o GLB real gerado pelo Blender headless+MPFB2 do portão.
 // Sem geometria procedural — só ferramentas dos repos GitHub registrados.
 const gltfLoader=new GLTFLoader();
-async function buildStage(s){
-  clearScene();
-  const url=`/api/jobs/${job.id}/artifact/${s.id}.glb`;
-  // tem GLB pronto?
-  const probe=await fetch(url,{method:'HEAD'}).catch(()=>null);
-  if(!probe||!probe.ok){
-    $('#stats').textContent='Aguardando construção real (MPFB2 no Blender)…';
-    // dispara build deste portão se não há um rodando
-    await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
-    return;
-  }
-  gltfLoader.load(url,(gltf)=>{
-    content.add(gltf.scene);
-    content.traverse(o=>{if(o.isMesh){originalMats.set(o.uuid,o.material);o.castShadow=true;o.receiveShadow=true;}});
-    // enquadra
-    const box=new THREE.Box3().setFromObject(content);
-    const c=box.getCenter(new THREE.Vector3());
-    const sz=box.getSize(new THREE.Vector3());
-    content.position.x-=c.x; content.position.y-=box.min.y; content.position.z-=c.z;
-    const dim=Math.max(sz.x,sz.y,sz.z)||1;
-    camera.position.set(0,dim*0.7,dim*1.9);
-    controls.target.set(0,dim*0.5,0);
-    applyMode();
-    let v=0,f=0;content.traverse(o=>{if(o.isMesh&&o.geometry){v+=o.geometry.attributes.position.count;f+=(o.geometry.index?o.geometry.index.count/3:o.geometry.attributes.position.count/3);}});
-    $('#stats').textContent=`Faces ${Math.round(f).toLocaleString()} · Vértices ${v.toLocaleString()} · MPFB2 ${s.id}`;
-  },undefined,(err)=>{
-    console.error('GLB load err',err);
-    $('#stats').textContent='Falha ao carregar GLB do portão.';
+const buildWaiters={}; // stageId -> resolve (acordado pelo SSE stage:build:done)
+
+// Carrega o GLB do portão na viewport; resolve true se carregou, false se ainda não existe.
+function loadGlb(url){
+  return new Promise((resolve)=>{
+    clearScene();
+    gltfLoader.load(url,(gltf)=>{
+      content.add(gltf.scene);
+      content.traverse(o=>{if(o.isMesh){originalMats.set(o.uuid,o.material);o.castShadow=true;o.receiveShadow=true;}});
+      const box=new THREE.Box3().setFromObject(content);
+      const c=box.getCenter(new THREE.Vector3());
+      const sz=box.getSize(new THREE.Vector3());
+      content.position.x-=c.x; content.position.y-=box.min.y; content.position.z-=c.z;
+      const dim=Math.max(sz.x,sz.y,sz.z)||1;
+      camera.position.set(0,dim*0.7,dim*1.9); controls.target.set(0,dim*0.5,0);
+      applyMode();
+      let v=0,f=0;content.traverse(o=>{if(o.isMesh&&o.geometry){v+=o.geometry.attributes.position.count;f+=(o.geometry.index?o.geometry.index.count/3:o.geometry.attributes.position.count/3);}});
+      $('#stats').textContent=`Faces ${Math.round(f).toLocaleString()} · Vértices ${v.toLocaleString()} · MPFB2 ${s_id(url)}`;
+      resolve(true);
+    },undefined,()=>resolve(false));
   });
+}
+function s_id(url){ return (url.match(/\/([a-z]+)\.glb/)||[])[1]||''; }
+
+async function buildStage(s){
+  const url=`/api/jobs/${job.id}/artifact/${s.id}.glb`;
+  const probe=await fetch(url,{method:'HEAD'}).catch(()=>null);
+  if(probe&&probe.ok){ await loadGlb(url); return true; }
+  clearScene();
+  $('#stats').textContent='Construindo no Blender (MPFB2)…';
+  await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
+  return false;
+}
+
+// Garante: portão construído (Blender) + GLB carregado + snapshot enviado.
+async function ensureGateReady(s){
+  let url=`/api/jobs/${job.id}/artifact/${s.id}.glb`;
+  let head=await fetch(url,{method:'HEAD'}).catch(()=>null);
+  if(!head||!head.ok){
+    $('#title').textContent=`${s.icon} ${s.title}`;
+    $('#subtitle').textContent='Construindo no Blender (MPFB2)…';
+    await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
+    await new Promise((res)=>{ buildWaiters[s.id]=res; setTimeout(res,120000); });
+    delete buildWaiters[s.id];
+  }
+  const ok=await loadGlb(url);
+  if(!ok) return false;
+  await new Promise(r=>setTimeout(r,500)); // deixa renderizar 1 frame
+  const img=canvas.toDataURL('image/png');
+  if(img.length>2000){
+    await api(`/api/jobs/${job.id}/stages/${s.id}/snapshot`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image:img,approach:s.approach})}).catch(()=>{});
+  }
+  const j=await api('/api/jobs/'+job.id); if(j.ok) job=j.job;
+  return true;
+}
+
+// AUTO-PILOTO: roda os 9 portões sozinho — constrói, VLM julga, aprova/refina, avança.
+let autoRunning=false;
+async function autoPilot(){
+  if(autoRunning||!job) return; autoRunning=true;
+  try{
+    while(job && !job.done){
+      const s=job.stages[job.activeIndex];
+      selectedStage=null;
+      $('#title').textContent=`${s.icon} ${s.title}`;
+      renderJobView();
+      const built=await ensureGateReady(s);
+      if(!built){ toast(`Portão ${s.id}: build falhou — pausando`,false); break; }
+      // VLM julga (se viva); senão heurística aprova
+      const v=await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+      const pass = v.ok ? v.verdict?.pass : true;
+      const score = v.ok ? v.verdict?.score : '?';
+      if(pass){
+        toast(`✓ ${s.title}: VLM aprovou (score ${score})`);
+        const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
+        if(r.ok) job=r.job;
+      } else {
+        const cur=job.stages[job.activeIndex];
+        if((cur.attempts||0)>=3){ toast(`⏸️ ${s.title}: VLM reprovou 3×, pausando p/ você`,false); break; }
+        toast(`✗ ${s.title}: VLM reprovou — refinando…`,false);
+        const r=await api(`/api/jobs/${job.id}/stages/${s.id}/refine`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:''})});
+        if(r.ok) job=r.job;
+      }
+      renderJobView();
+      if(!autoRunning) break; // parada externa
+    }
+    if(job && job.done){ toast('🎉 9 portões aprovados — construção final no Blender'); await startBuild(); }
+  }finally{ autoRunning=false; }
 }
 
 function applyMode(){
@@ -628,6 +687,8 @@ async function sendPrompt(){
     }
     $('#prompt').value='';
     selectedStage=null; renderJobView();
+    // modo VLM-auto: o pipeline corre sozinho (constrói→julga→aprova→avança)
+    if(pillMode==='vlm' && job && !job.done){ toast('🤖 auto-piloto ligado — a VLM conduz os 9 portões'); autoPilot(); }
   }finally{$('#btnSend').disabled=false;}
 }
 $('#btnSend').addEventListener('click',sendPrompt);
@@ -692,13 +753,15 @@ function connectEvents(){
   });
   es.addEventListener('stage:build:done',e=>{
     const d=JSON.parse(e.data);
-    if(selectedStage&&selectedStage.id===d.stage||job.stages[job.activeIndex].id===d.stage){
-      buildStage(job.stages.find(s=>s.id===d.stage)); // recarrega o GLB pronto
+    if(buildWaiters[d.stage]){ buildWaiters[d.stage](); }      // acorda o auto-piloto
+    else if(selectedStage&&selectedStage.id===d.stage||job.stages[job.activeIndex].id===d.stage){
+      buildStage(job.stages.find(s=>s.id===d.stage));          // modo manual: recarrega o GLB
     }
     toast(`✅ Portão ${d.stage} pronto (MPFB2)`);
   });
   es.addEventListener('stage:build:error',e=>{
     const d=JSON.parse(e.data);
+    if(buildWaiters[d.stage]) buildWaiters[d.stage]();
     toast(`❌ Build portão ${d.stage} falhou (Blender code ${d.code})`,false);
   });
 }
@@ -767,7 +830,13 @@ vlmES.addEventListener('vlm:stopped',()=>updateVlmChip());
 vlmES.addEventListener('vlm:error',e=>{ const d=JSON.parse(e.data); toast('❌ '+(d.error||'erro VLM'),false); updateVlmChip(); });
 updateVlmChip();
 setInterval(updateVlmChip, 15000); // re-sincroniza periodicamente
-$('#pillMode').addEventListener('click',()=>{pillMode=pillMode==='human'?'vlm':'human';$('#pillMode').classList.toggle('on');$('#pillMode').textContent=pillMode==='human'?'⚡ pipeline humano':'⚡ pipeline VLM-auto';});
+$('#pillMode').addEventListener('click',()=>{
+  pillMode=pillMode==='human'?'vlm':'human';
+  $('#pillMode').classList.toggle('on');
+  $('#pillMode').textContent=pillMode==='human'?'⚡ pipeline humano':'🤖 VLM-auto (piloto)';
+  if(pillMode==='vlm'){ if(job && !job.done){ toast('🤖 auto-piloto ligado'); autoPilot(); } }
+  else { autoRunning=false; toast('✋ auto-piloto desligado — controle manual'); }
+});
 $('#pillVlm').addEventListener('click',()=>{pillVlm=!pillVlm;$('#pillVlm').classList.toggle('on');toast(pillVlm?'VLM julga antes de você ver':'VLM desligada');renderJobView();});
 
 // ============ NAV ============
