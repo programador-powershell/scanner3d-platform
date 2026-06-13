@@ -693,12 +693,18 @@ function vlmInstalled() {
 }
 
 async function downloadFile(url, dest, onProgress) {
-  const r = await fetch(url);
-  if (!r.ok || !r.body) throw new Error(`download ${r.status} ${url}`);
-  const total = parseInt(r.headers.get('content-length') || '0', 10);
-  let received = 0;
   const tmp = dest + '.part';
-  const out = fs.createWriteStream(tmp);
+  // resume: se já existe .part, continua de onde parou (HTTP Range)
+  let start = 0;
+  try { start = fs.existsSync(tmp) ? fs.statSync(tmp).size : 0; } catch { start = 0; }
+  const headers = start > 0 ? { Range: `bytes=${start}-` } : {};
+  const r = await fetch(url, { headers });
+  if (!(r.ok || r.status === 206) || !r.body) throw new Error(`download ${r.status} ${url}`);
+  const len = parseInt(r.headers.get('content-length') || '0', 10);
+  const total = start + len; // tamanho total real
+  let received = start;
+  const out = fs.createWriteStream(tmp, { flags: start > 0 && r.status === 206 ? 'a' : 'w' });
+  if (r.status !== 206) received = 0; // servidor ignorou Range → recomeça
   const reader = r.body.getReader();
   for (;;) {
     const { done, value } = await reader.read();
@@ -1148,8 +1154,63 @@ app.use((err, req, res, next) => {
   res.status(status).json({ error: err.message || 'Erro interno.' });
 });
 
+// Inicia (e baixa, se preciso) a VLM local automaticamente — autonomia total,
+// o usuário não precisa clicar em nada. Desligável com AUTO_VLM=0.
+function autoStartVlm() {
+  if (process.env.AUTO_VLM === '0' || !LLAMA_SERVER) return;
+  if (vlmInstalled()) {
+    if (!vlmProc) { console.log('[auto-vlm] GGUF presente → subindo llama-server…'); startVlmLocal(); }
+    return;
+  }
+  // não instalado → baixa em background e sobe ao terminar
+  if (!vlmDownload || vlmDownload.done) {
+    console.log('[auto-vlm] baixando Qwen3-VL-4B GGUF em background…');
+    downloadVlmThenStart();
+  }
+}
+function startVlmLocal() {
+  if (!LLAMA_SERVER || !vlmInstalled() || vlmProc) return;
+  const p = vlmPaths();
+  const ngl = parseInt(process.env.VLM_NGL || '99', 10);
+  vlmProc = spawn(LLAMA_SERVER, ['-m', p.model, '--mmproj', p.mmproj, '--host', '127.0.0.1',
+    '--port', String(VLM_PORT), '-ngl', String(ngl), '-c', process.env.VLM_CTX || '8192', '--jinja'],
+    { windowsHide: true });
+  const ls = fs.createWriteStream(path.join(VLM_DIR, 'llama-server.log'), { flags: 'a' });
+  let listening = false;
+  const onLine = (b) => {
+    const s = b.toString(); ls.write(s);
+    if (!listening && /listening|HTTP server/i.test(s)) { listening = true; process.env.VLM_URL = VLM_LOCAL_URL; emitVlm('vlm:running', { url: VLM_LOCAL_URL }); }
+  };
+  vlmProc.stdout.on('data', onLine); vlmProc.stderr.on('data', onLine);
+  vlmProc.on('close', (code) => { ls.end(); vlmProc = null; if (process.env.VLM_URL === VLM_LOCAL_URL) process.env.VLM_URL = ''; emitVlm('vlm:stopped', { code }); });
+}
+async function downloadVlmThenStart() {
+  fs.mkdirSync(VLM_DIR, { recursive: true });
+  for (const f of [VLM_MODEL_FILE, VLM_MMPROJ_FILE]) {
+    const dest = path.join(VLM_DIR, f);
+    if (fs.existsSync(dest)) continue;
+    vlmDownload = { file: f, received: 0, total: 0, done: false };
+    try {
+      await downloadFile(`https://huggingface.co/${VLM_REPO}/resolve/main/${f}?download=true`, dest, (received, total) => {
+        vlmDownload = { file: f, received, total, done: false };
+        if (received % (8 * 1024 * 1024) < 65536) emitVlm('vlm:download', { file: f, received, total });
+      });
+    } catch (e) { vlmDownload = { file: f, error: e.message, done: true }; return emitVlm('vlm:error', { stage: 'download', file: f, error: e.message }); }
+  }
+  vlmDownload = { done: true };
+  emitVlm('vlm:ready', { installed: vlmInstalled() });
+  startVlmLocal();
+}
+
 app.listen(PORT, () => {
   console.log(`Scanner 3D Cognitivo — http://localhost:${PORT}`);
   console.log(`Referências: ${REFERENCES_DIR}`);
   console.log(`Documento: ${MD_PATH}`);
+  console.log(`Blender: ${BLENDER_PATH || 'não encontrado'} · llama-server: ${LLAMA_SERVER || 'não encontrado'}`);
+  setTimeout(autoStartVlm, 1500); // dá tempo do servidor estabilizar
 });
+
+// encerra o llama-server junto com o app
+for (const sig of ['SIGINT', 'SIGTERM']) {
+  process.on(sig, () => { try { if (vlmProc) vlmProc.kill(); } catch {} process.exit(0); });
+}

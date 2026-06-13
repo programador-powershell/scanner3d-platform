@@ -450,6 +450,20 @@ Responda JSON: {pass: bool, score: 0-1, defects: [...], suggested_prompt_fix: ".
 
 **Resultado:** você **não precisa pedir "humano de verdade" toda hora** — a VLM aprende seu padrão e rejeita o que não está no nível, sozinha. Esse loop é o real "olho humano" que estava simbólico no hub LLM.
 
+### 7.8.5 Auditoria de cobertura (jun/2026) — lacunas confirmadas e preenchidas
+
+Auditoria por agentes (10 capacidades) sobre os 17+ repos registrados. **Espinha dorsal sólida**; lacunas reais encontradas e **repos registrados para fechá-las**:
+
+| Lacuna | Status antes | Repo registrado p/ fechar | Licença |
+|---|---|---|---|
+| **ARKit-52 blendshapes** (FLAME tem PCA próprio, não os 52 alvos) | descoberto | **ICT-FaceKit** (base) + **deformation_transfer_ARkit_blendshapes** (gera os 52) | MIT |
+| **Retopo de roupa por costura** (QRemeshify/AutoRemesher só curvatura) | descoberto | **Parafashion** (Pietroni — quad seguindo painéis/costuras) | acadêmica (ferramenta offline) |
+| **Perda de identidade ArcFace** (Mitsuba cobre o motor, faltava o embedding) | descoberto | **InsightFace** (código MIT — ⚠️ verificar licença dos pesos) | MIT (código) |
+| **Anatomia interna deformável** (SKEL só osso, research-only) | parcial | MuSkeMo (montagem) + stack SurfaceDeform/Cloth do Blender | a validar |
+| **Flow map / anisotropy de cabelo** | parcial | utilitário in-house Blender (projeta tangentes do DiffLocks→UV; GPL, OK) | — |
+
+> **Bloqueador comercial #1 (jurídico, não técnico):** vários "cobertos" dependem de **pesos research-only do MPI** (SMPL-X, SKEL, OSSO, HIT, FLAME) — **proibidos em produto comercial fechado**. Caminho limpo para AAA comercial: **corpo via MakeHuman/MPFB2/TailorMe** (já registrados, comercialmente OK) + **rig facial ARKit-52 via MetaHuman nativo do UE5** (Epic EULA) em vez de FLAME. Os pesos MPI servem para P&D/protótipo; para shipping, licenciar (Meshcapade) ou substituir.
+
 ### 7.9 Licenças (atenção para uso comercial)
 
 | Componente | Licença | Ação |
@@ -708,7 +722,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 11. Fontes de Treinamento (alimentado pelo site)
 
 <!-- AUTO:SOURCES:START -->
-### GitHub — ferramentas e código de referência (20)
+### GitHub — ferramentas e código de referência (24)
 
 - [KIRI Engine 3DGS Render - addon Blender p/ Gaussian Splatting (importa/edita/anima/renderiza .ply/.splat), Apache-2.0](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) — adicionado em 2026-06-12T18:08:53.089Z
 - [QRemeshify - addon Blender de retopologia quad (base QuadWild + Bi-MDF), GPL-3.0. Retopo classico da secao 7.6](https://github.com/ksami/QRemeshify) — adicionado em 2026-06-12T19:47:07.070Z
@@ -730,6 +744,10 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 - [RGB-X (SIGGRAPH2024) - decompoe foto em albedo/rough/metallic/normal + delight. Extrai material limpo de 1 foto de referencia](https://github.com/zheng95z/rgbx) — adicionado em 2026-06-13T00:26:03.385Z
 - [Mitsuba 3 + Dr.Jit (BSD-3) - renderizador diferenciavel. Etapa 7: loop inverso joint geometria+material+SSS (substitui nvdiffrast puro)](https://github.com/mitsuba-renderer/mitsuba3) — adicionado em 2026-06-13T00:26:03.389Z
 - [Practical Inverse Rendering (Google/EPFL SIGGRAPH2025, Apache-2.0) - SSS path-traced diferenciavel. Refino de pele no loop Etapa 7](https://github.com/google/practical-inverse-rendering-of-textured-and-translucent-appearance) — adicionado em 2026-06-13T00:26:03.393Z
+- [ICT-FaceKit (MIT) - modelo facial open, topologia mapeavel a ARKit-52. Base do rig facial/blendshapes (FLAME e research-only)](https://github.com/ICT-USC/ICT-FaceKit) — adicionado em 2026-06-13T02:39:34.026Z
+- [Deformation Transfer ARKit - gera os 52 blendshapes ARKit p/ qualquer face. Preenche lacuna ARKit-52](https://github.com/vasiliskatr/deformation_transfer_ARkit_blendshapes) — adicionado em 2026-06-13T02:39:34.059Z
+- [Parafashion (Pietroni) - quad remeshing de ROUPA seguindo paineis/costuras. Retopo de tecido guiado por seam (lacuna do QRemeshify/AutoRemesher)](https://github.com/nicopietroni/parafashion) — adicionado em 2026-06-13T02:39:34.063Z
+- [InsightFace/ArcFace (codigo MIT) - embedding facial p/ a perda de identidade do loop diferenciavel. VERIFICAR licenca dos pesos p/ comercial](https://github.com/deepinsight/insightface) — adicionado em 2026-06-13T02:39:34.068Z
 <!-- AUTO:SOURCES:END -->
 
 ## 12. Arquivos Enviados (upload via site)
