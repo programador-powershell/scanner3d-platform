@@ -258,6 +258,24 @@ def otimizar_passo_aaa(self, foto_original, crop_rosto_original, mvp_matrix, opt
 - **Regularização Laplaciana (peso 0.1):** penaliza variação alta dos `vertices_offsets` — os vértices se movem para casar a foto **sem rasgar** a topologia base SKEL/FLAME nem inverter triângulos.
 - **Coarse-to-fine:** 512 → 1024 → 2048 → 4096; geometria congela nas resoluções altas (só textura/SSS refina). O refino de pele translúcida migra para o **Mitsuba 3** path-traced (integrador SSS), o `nvdiffrast` faz o passo rápido.
 
+#### 7.4.1 Passo de Polimento Final — Mitsuba 3 (implementado: `python/mitsuba_skin_optimizer.py`)
+
+Onde o `nvdiffrast` cola a **geometria** à silhueta (rápido, rasterizado), o **Mitsuba 3** faz o **polimento final da pele**: geometria **CONGELADA**, esculpe só `pele_albedo` + `pele_sss_radius` (raio de espalhamento subdérmico — oclusão de veias/cartilagem) contra a foto, por path tracing diferenciável. É o passo que garante que as texturas exportadas pra UE5 **já contenham a profundidade e a refração de luz de uma pele real**.
+
+Três regras de produção codificadas no runner:
+
+1. **Coarse-to-fine / geometria congelada** — chega aqui já colada pelo nvdiffrast; o loop só toca PBR+SSS (sem `vertices_offsets`).
+2. **SPP baixo no loop, alto só na validação** — `spp=16` por iteração (não estoura VRAM; o ruído do path tracer é amortecido pelo momentum do Adam do Dr.Jit); render final de validação a `spp=256` (limpo) → `skin_polished.png`.
+3. **Clamp `[0.01, 0.99]`** em albedo e SSS a cada passo (`dr.clip`) — impede pele "radioativa" que viola conservação de energia e destrói os gradientes da iteração seguinte.
+
+Perda: `L1(pixel) + 0.8·LPIPS(perceptual)` (gancho previsto pra somar identidade ArcFace). `mi.set_variant('cuda_ad_rgb')` (GPU+autodiff+RGB).
+
+**Wiring no servidor** (padrão plugável honesto, igual Hunyuan/ChatGarment):
+
+- `POST /api/jobs/:id/polish` → spawna `python/mitsuba_skin_optimizer.py --scene <xml> --photo <foto> --iters N --out build/`. SSE ao vivo: `polish:start` · `polish:log` · `polish:done` (grava `build.polished` = `skin_polished.png`) · `polish:skipped` · `polish:error`.
+- **Auto-disparo:** no fim do build dos 9 portões, se a cena Mitsuba existir, o polimento roda sozinho (`polishReady()` em `server.js`). Sem cena/deps, **fica quieto** — não suja o build com skips.
+- **Honesto:** precisa de (a) `pip install mitsuba drjit lpips` + **torch CUDA** (a build CPU **não** roda `cuda_ad_rgb` → o script sai com `exit 3` e o servidor emite `polish:skipped`), e (b) uma **cena `.xml`** (modelo + câmera alinhada à foto) via env `MITSUBA_SCENE` ou `build/scene.xml`. O exportador de cena `.xml` ainda **não** está plugado no build — quando estiver, o auto-disparo ativa sem mudar código.
+
 ### 7.5 Sequência Unificada v3 (revisão do diretor, jun/2026)
 
 > **Troca efetuada:** **Hunyuan3D 2.1** assume reconstrução inicial + refino geométrico — open-source, **treino liberado** (fine-tune direto com o nosso dataset DPO), geometria e textura **PBR geradas separadamente**, saída pronta para Blender/UE5. **PSHuman/MagicMan rebaixados** a geradores opcionais de vistas humanas alimentando o Hunyuan (multi-view) quando a identidade facial exigir — hibridização que a auditoria já recomendava.

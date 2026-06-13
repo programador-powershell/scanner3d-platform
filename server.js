@@ -363,6 +363,11 @@ function startBuild(jobId) {
       saveJob(j);
       emitJob(jobId, okBuild ? 'build:done' : 'build:error', { ...j.build, job: publicJob(j) });
     });
+    // Passo de polimento final (Mitsuba SSS): dispara sozinho SÓ quando a cena
+    // .xml existe. Sem cena/deps, fica quieto (não suja o build com skips).
+    if (okBuild && polishReady(jobId)) {
+      runPolish(jobId).catch(() => {});
+    }
   });
   return { ok: true };
 }
@@ -615,7 +620,7 @@ app.post('/api/jobs/:id/build', (req, res) => {
 app.get('/api/jobs/:id/build/:file', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const allow = new Set(['character.glb', 'character.blend', 'character.fbx', 'hunyuan_base.glb', 'build.log']);
+  const allow = new Set(['character.glb', 'character.blend', 'character.fbx', 'hunyuan_base.glb', 'build.log', 'skin_polished.png', 'polish.log']);
   const file = path.basename(req.params.file);
   if (!allow.has(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
   const full = path.join(jobDir(job.id), 'build', file);
@@ -623,6 +628,115 @@ app.get('/api/jobs/:id/build/:file', (req, res) => {
   if (file.endsWith('.blend')) res.setHeader('Content-Disposition', 'attachment; filename=character.blend');
   if (file.endsWith('.fbx')) res.setHeader('Content-Disposition', 'attachment; filename=character.fbx');
   res.sendFile(full);
+});
+
+// ============================================================
+// POLIMENTO FINAL DE PELE — Mitsuba 3 (loop diferenciável SSS), seção 7.4.
+// Roda DEPOIS do build (geometria já colada pelo nvdiffrast). Aqui a geometria
+// fica CONGELADA e só os mapas PBR (albedo) + raio SSS são esculpidos contra a
+// foto, até a pele ter a profundidade/refração real exportada pra UE5.
+// Plugável e honesto: precisa de (a) Python+mitsuba+drjit+lpips com CUDA e
+// (b) uma cena Mitsuba .xml (modelo + câmera alinhada). Sem isso, NÃO finge —
+// devolve aviso claro (igual ao padrão Hunyuan/ChatGarment).
+// ============================================================
+const PYTHON_BIN = process.env.PYTHON_BIN || process.env.PYTHON || 'python';
+const MITSUBA_SCRIPT = path.join(__dirname, 'python', 'mitsuba_skin_optimizer.py');
+const polishRunning = new Set();
+
+// Cena Mitsuba do job: env MITSUBA_SCENE (global) ou build/scene.xml (por job).
+// O exportador de cena .xml ainda não está plugado no build — quando estiver,
+// basta gravar scene.xml no buildDir e o polimento dispara sozinho.
+function mitsubaScenePath(jobId) {
+  const cand = [process.env.MITSUBA_SCENE, path.join(jobDir(jobId), 'build', 'scene.xml')];
+  for (const c of cand) { try { if (c && fs.existsSync(c)) return c; } catch {} }
+  return null;
+}
+function polishReady(jobId) {
+  const glb = path.join(jobDir(jobId), 'build', 'character.glb');
+  return fs.existsSync(glb) && !!mitsubaScenePath(jobId);
+}
+
+// Spawna o otimizador Mitsuba. Resolve com {ok, skipped?, reason?}.
+// exit 3 = mitsuba/CUDA ausente -> skipped honesto (não é erro).
+function runPolish(jobId, { iters } = {}) {
+  return new Promise((resolve) => {
+    if (polishRunning.has(jobId)) return resolve({ ok: false, error: 'Polimento já em andamento.' });
+    const buildDir = path.join(jobDir(jobId), 'build');
+    if (!fs.existsSync(path.join(buildDir, 'character.glb'))) {
+      return resolve({ ok: false, error: 'Build final não encontrado — rode o build dos 9 portões antes do polimento.' });
+    }
+    const scene = mitsubaScenePath(jobId);
+    if (!scene) {
+      return resolve({ ok: true, skipped: true, reason:
+        'Cena Mitsuba (.xml) ausente — o exportador de cena ainda não está plugado no build. ' +
+        'Defina MITSUBA_SCENE ou grave build/scene.xml (modelo + câmera alinhada à foto) para ativar o polimento SSS.' });
+    }
+    const job = loadJob(jobId);
+    const photoName = (job && (job.sourceImages?.[0] || job.sourceImage)) || '';
+    const photo = path.join(UPLOADS_DIR, path.basename(photoName));
+    if (!photoName || !fs.existsSync(photo)) {
+      return resolve({ ok: false, error: 'Foto de referência do job não encontrada para o polimento.' });
+    }
+    polishRunning.add(jobId);
+    const logPath = path.join(buildDir, 'polish.log');
+    const ls = fs.createWriteStream(logPath);
+    emitJob(jobId, 'polish:start', { scene: path.basename(scene) });
+    const child = spawn(PYTHON_BIN, [
+      MITSUBA_SCRIPT,
+      '--scene', scene,
+      '--photo', photo,
+      '--iters', String(iters || parseInt(process.env.MITSUBA_ITERS || '50', 10)),
+      '--out', buildDir,
+    ], { windowsHide: true });
+    let lastLine = '';
+    const onLine = (buf) => {
+      for (const line of buf.toString().split(/\r?\n/)) {
+        if (!line.trim()) continue;
+        ls.write(line + '\n');
+        lastLine = line;
+        if (/^\[mitsuba\]|Error|Traceback/i.test(line)) emitJob(jobId, 'polish:log', { line: line.slice(0, 240) });
+      }
+    };
+    child.stdout.on('data', onLine);
+    child.stderr.on('data', onLine);
+    child.on('error', (e) => {
+      polishRunning.delete(jobId); ls.end();
+      // python ausente no PATH etc. — honesto, não derruba nada
+      emitJob(jobId, 'polish:skipped', { reason: `Python indisponível (${e.code || e.message}). Configure PYTHON_BIN.` });
+      resolve({ ok: true, skipped: true, reason: `Python indisponível: ${e.message}` });
+    });
+    child.on('close', (code) => {
+      polishRunning.delete(jobId); ls.end();
+      const out = path.join(buildDir, 'skin_polished.png');
+      if (code === 3) {
+        emitJob(jobId, 'polish:skipped', { reason: 'mitsuba/CUDA ausente — pip install mitsuba drjit lpips (+ torch CUDA).' });
+        return resolve({ ok: true, skipped: true, reason: 'mitsuba/CUDA ausente', detail: lastLine });
+      }
+      const done = code === 0 && fs.existsSync(out);
+      if (done) {
+        withJobLock(jobId, async () => {
+          const j = loadJob(jobId);
+          if (!j) return;
+          j.build = j.build || {};
+          j.build.polished = `/api/jobs/${jobId}/build/skin_polished.png`;
+          j.build.polishedAt = new Date().toISOString();
+          saveJob(j);
+        });
+      }
+      emitJob(jobId, done ? 'polish:done' : 'polish:error',
+        { png: done ? `/api/jobs/${jobId}/build/skin_polished.png` : null, code, detail: lastLine.slice(0, 240) });
+      resolve(done ? { ok: true, png: `/api/jobs/${jobId}/build/skin_polished.png` } : { ok: false, error: `polimento falhou (code ${code})`, detail: lastLine });
+    });
+  });
+}
+
+// Polimento final SSS (Mitsuba). Dispara sozinho no fim do build quando a cena
+// existe; este endpoint permite disparar manualmente.
+app.post('/api/jobs/:id/polish', jsonBig, (req, res, next) => {
+  const job = loadJob(req.params.id);
+  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+  const iters = parseInt((req.body && req.body.iters) || 0, 10) || undefined;
+  runPolish(req.params.id, { iters }).then((r) => res.json(r)).catch(next);
 });
 
 // Edição paramétrica por prompt ("mude altura para 1,70", "aumente 20% o quadril", "tom de pele pardo").

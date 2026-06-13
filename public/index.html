@@ -564,7 +564,7 @@ function renderJobView(){
     let bHtml='';
     if(!b) bHtml=`<div class="meta">Personagem aprovado em todos os portões. A construção real no Blender (esqueleto → cabelo, do zero) inicia automaticamente — ou dispare manualmente:</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">🏗️ Construir no Blender</button>`;
     else if(b.status==='running') bHtml=`<div class="meta"><span class="spin"></span> Blender headless replicando a construção (esqueleto → corpo rigado → tecido → cabelo)…</div><div id="buildLog" class="meta" style="margin-top:8px;font-family:monospace;font-size:.68rem;max-height:120px;overflow:hidden"></div>`;
-    else if(b.status==='done') bHtml=`<div class="meta">✅ Personagem construído no Blender — rig com automatic weights, collections por portão.</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="viewGlb">🧊 Ver GLB no Visualizador Pro</button>${b.fbx?'<button class="pill on" id="dlFbx">⤓ FBX (UE5)</button>':''}<button class="pill" id="dlBlend">⤓ .blend</button><button class="pill" id="rebuild">↻ Reconstruir</button></div>`;
+    else if(b.status==='done') bHtml=`<div class="meta">✅ Personagem construído no Blender — rig com automatic weights, collections por portão.</div>${b.polished?`<div class="meta" style="margin-top:8px">✨ Pele polida (Mitsuba SSS): <a href="${b.polished}" target="_blank" style="color:var(--accent)">skin_polished.png</a></div>`:''}<div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="viewGlb">🧊 Ver GLB no Visualizador Pro</button>${b.fbx?'<button class="pill on" id="dlFbx">⤓ FBX (UE5)</button>':''}<button class="pill" id="dlBlend">⤓ .blend</button><button class="pill" id="polishBtn">🧫 Polir pele (SSS)</button><button class="pill" id="rebuild">↻ Reconstruir</button></div>`;
     else bHtml=`<div class="meta">❌ Build falhou (código ${b.code}). Veja <a href="/api/jobs/${job.id}/build/build.log" target="_blank" style="color:var(--accent)">build.log</a>.</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">↻ Tentar de novo</button>`;
     html+=`<div class="card"><div class="head"><div class="dot"></div>🏗️ CONSTRUÇÃO NO BLENDER</div><div class="body">${bHtml}</div></div>`;
     html+=`<div class="card"><div class="head"><div class="dot"></div>✅ TREINO COMPLETO</div><div class="body"><div class="meta">Cada decisão deste job alimentou o dataset DPO. Quando a VLM atingir o threshold, jobs futuros vão direto para Blender → UE5 <b>sem revisão</b>.</div></div></div>`;
@@ -586,6 +586,12 @@ function renderJobView(){
   if($('#viewGlb')) $('#viewGlb').addEventListener('click',()=>openGlbPro(job.build.glb));
   if($('#dlBlend')) $('#dlBlend').addEventListener('click',()=>window.open(job.build.blend,'_blank'));
   if($('#dlFbx')) $('#dlFbx').addEventListener('click',()=>window.open(job.build.fbx,'_blank'));
+  if($('#polishBtn')) $('#polishBtn').addEventListener('click',async()=>{
+    toast('🧫 Disparando polimento de pele (Mitsuba SSS)…');
+    const r=await api('/api/jobs/'+job.id+'/polish',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    if(r&&r.skipped) toast('ℹ️ '+(r.reason||'polimento indisponível'),false);
+    else if(r&&!r.ok) toast('❌ '+(r.error||'falha no polimento'),false);
+  });
   // strip embaixo do viewer
   let strip='';
   let i=1;
@@ -773,6 +779,23 @@ function connectEvents(){
     job=d.job; renderJobView();
     toast('❌ Build do Blender falhou — veja build.log',false);
   });
+  // polimento final de pele (Mitsuba 3 SSS) — passo 7.4.1
+  es.addEventListener('polish:start',()=>toast('🧫 Polimento de pele (Mitsuba SSS) — esculpindo albedo+SSS contra a foto'));
+  es.addEventListener('polish:log',e=>{
+    const d=JSON.parse(e.data);
+    const el=$('#buildLog');
+    if(el){el.textContent=(el.textContent+'\n'+d.line).split('\n').slice(-6).join('\n');}
+  });
+  es.addEventListener('polish:done',e=>{
+    const d=JSON.parse(e.data);
+    if(job){ job.build=job.build||{}; job.build.polished=d.png; renderJobView(); }
+    toast('✨ Pele polida — texturas SSS prontas pra UE5');
+  });
+  es.addEventListener('polish:skipped',e=>{
+    const d=JSON.parse(e.data);
+    toast('ℹ️ Polimento SSS pulado: '+(d.reason||'indisponível'),false);
+  });
+  es.addEventListener('polish:error',()=>toast('❌ Polimento SSS falhou — veja polish.log',false));
   // build por portão (MPFB2 real)
   es.addEventListener('stage:build:start',e=>{
     const d=JSON.parse(e.data);
