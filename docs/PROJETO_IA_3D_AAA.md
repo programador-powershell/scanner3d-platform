@@ -131,19 +131,38 @@ Cada camada fatiada pelo Florence-2 segue o trilho do seu material — não exis
 
 - **Por que instanciar > inferir (tese do diretor confirmada):** **HIT** (CVPR 2024) é um campo **implícito** — prediz classe de tecido por ponto, malha só via marching cubes. Não dá controle artístico, normais/oclusão limpas nem edição. A anatomia AAA deve ser **malha instanciada** (TailorMe) deformada com a pose (NDG), não um campo amostrável.
 - **Veias e poros = textura, não geometria:** displacement micro (<0,1 mm) + albedo + SSS. Só veia saliente que muda silhueta vira relevo.
-- **Retopologia:** high-poly + **QRemeshify** (QuadWild+Bi-MDF) ou **AutoRemesher** (GPL-3.0) — nenhum gerador open de 2026 entrega quad AAA direto.
+- **Retopologia (v5): edge flow específico por tipo de superfície.**
+  - **Orgânico (corpo/rosto/acessórios)** → high-poly + **QRemeshify** (QuadWild+Bi-MDF) ou **AutoRemesher** (GPL-3.0). Bom para forma orgânica geral.
+  - **Roupa → retopo guiado pela costura, NÃO genérico.** QRemeshify/AutoRemesher ignoram as linhas de costura e dobras → durante a animação do esqueleto a malha **rasga / estica (skin-stretching)** e gera artefatos. Correção: o **GarmentCode já fornece o edge flow** — cada painel do sewing pattern (ChatGarment→GarmentCode) é uma **grade quad** com arestas **alinhadas às costuras e às dobras principais**. O retopo da roupa deve **preservar os loops dos painéis** (1 ilha UV por painel, arestas nas costuras), não passar pelo remesher orgânico. Dobras principais viram edge loops dedicados; QuadWild só refina dentro do painel respeitando as bordas de costura como hard constraints.
 
-### 7.3.1 Material Intelligence — os mapas que fazem o realismo (v4)
+### 7.3.1 Material Intelligence — os mapas que fazem o realismo (v4/v5)
 
-> Tese do diretor confirmada: **"Stellar Blade parece realista mais pelos materiais do que pela malha."** O conjunto AAA de pele: **base color · normal · roughness · metallic · AO · height · SSS(thickness) · micro-normal**.
+> Tese do diretor confirmada: **"Stellar Blade parece realista mais pelos materiais do que pela malha."** Conjunto AAA completo: **base color · normal · roughness · metallic · AO · height · SSS(thickness) · micro-normal · cavity(micro-AO) · anisotropy + tangent**.
 
-Verdade honesta (auditada jun/2026): **nenhum modelo open gera os 8 mapas**. Divisão real:
-- **Os 4 que a IA cobre** — **Hunyuan3D 2.1** já entrega albedo + metallic + roughness + normal (não duplicar). Para extrair material limpo de **uma foto** de referência (delight): **RGB↔X** (SIGGRAPH 2024). Para repintar SVBRDF 3D-aware: **Material Anything** (CVPR 2025, **MIT**) — usar só se trocar o paint do Hunyuan.
-- **Os 4 que NÃO são IA** (é bake + shader, não generativo):
-  - **AO + Height + Thickness(p/ SSS)** → bake no Cycles/Blender na malha SMPL-X/MPFB2 (exato, grátis).
-  - **Micro-normal** → blend de detail-normal tileável do **MatSynth** (4000+ materiais 4K, **CC0/CC-BY**) no material UE5.
+Verdade honesta (auditada jun/2026): **nenhum modelo open gera todos os mapas**. Divisão real:
+- **Os 4 que a IA cobre** — **Hunyuan3D 2.1** já entrega albedo + metallic + roughness + normal (não duplicar). Delight de **uma foto** de referência: **RGB↔X** (SIGGRAPH 2024). Repintar SVBRDF 3D-aware: **Material Anything** (CVPR 2025, **MIT**) — só se trocar o paint do Hunyuan.
+- **Os que NÃO são IA** (bake geométrico + shader, não generativo):
+  - **AO + Height + Thickness(p/ SSS)** → bake Cycles/Blender na malha (exato, grátis).
+  - **Cavity / Micro-AO (v5)** → derivado do **normal de alta frequência** (high-pass do normal map → escurece poros profundos da pele e ranhuras do tecido, AO dinâmico de micro-relevo). Bake no Blender ou nó de cavity no material UE5.
+  - **Anisotropy + Tangent (v5)** → **obrigatório para o cabelo** DiffLocks/Groom: o brilho precisa correr **ao longo do fio** (efeito *shimmer*). O **tangent map** vem da **direção das curvas de cabelo** (Hair Curves → tangente por strand → flow map); a anisotropia controla a forma do realce especular. Sem isso o cabelo fica com brilho plástico isotrópico. Aplica-se também a tecidos escovados (cetim, seda) e metais escovados dos acessórios.
+  - **Micro-normal** → blend de detail-normal tileável do **MatSynth** (4000+ materiais 4K, **CC0/CC-BY**).
   - **SSS** → subsurface profile do UE5 alimentado pelo thickness bake.
-- Modelos só-pesquisa a evitar no produto: **IntrinsiX** (CC-BY-NC-SA, não-comercial). **VideoMatGen** (NVIDIA, mar/2026) modela height junto mas sem pesos públicos — monitorar.
+- Só-pesquisa, evitar no produto: **IntrinsiX** (CC-BY-NC-SA). **VideoMatGen** (NVIDIA, mar/2026) modela height junto mas sem pesos públicos — monitorar.
+
+### 7.3.2 UDIM — resolução por região (close-up de rosto sem perder nitidez)
+
+Guardar rosto+corpo+roupa+acessórios num único 8K perde nitidez no **close-up do rosto**. Padrão de estúdio AAA: **UDIM** separa a textura em quadrantes por região, cada um com sua densidade de píxeis:
+
+| Tile UDIM | Região | Densidade |
+|---|---|---|
+| **1001** | Rosto / cabeça | máxima (4K/8K — close-up) |
+| **1002** | Corpo / pele | alta |
+| **1003** | Roupas | média-alta |
+| **1004** | Acessórios / cabelo cards | média |
+
+> **Atenção dura (constraint real do formato):** **glTF/GLB NÃO suporta UDIM** — a spec exige UV em [0,1] e 1 textura por slot. Por isso o pipeline trata UDIM em **duas camadas**:
+> - **Autoria/Blender/loop de refino**: trabalha em **UDIM real** (cada região no seu tile, densidade independente) — é onde a fidelidade é ganha.
+> - **Export para engine**: ao exportar GLB, **divide por material/sub-malha** — cada região vira um **material separado** com sua própria textura (rosto 4K, corpo 2K, roupa 2K…). Para manter UDIM nativo, exportar **USD ou FBX** (UE5/Unity leem UDIM por material). O endpoint `/api/jobs/:id/artifact/:f` serve as texturas por tile (`character_1001.png`, `_1002`, …) e o builder Blender atribui um material por região.
 
 ### 7.4 Loop de Fechamento — Differentiable Rendering (v4: Mitsuba 3 + SSS)
 
@@ -206,10 +225,38 @@ class AAAOptimizationPipeline(torch.nn.Module):
         return loss_total.item()
 ```
 
-Extensões do loop para o caso humano:
-- **Termo de identidade facial:** `loss_total += w_id * (1 - arcface_cosine(crop_rosto(render), crop_rosto(foto)))` — trava o rosto.
-- **Regularização de offsets:** penalizar `vertices_offsets` por Laplacian smoothing para não rasgar a malha base SKEL/FLAME.
-- **Coarse-to-fine:** otimizar textura em 512 → 1024 → 2048 → 4096, congelando geometria nas resoluções altas.
+**Passo de otimização AAA (v5)** — incorpora a trava de identidade facial (ArcFace) e a regularização Laplaciana da malha, conforme o diretor:
+
+```python
+# Extensão do método otimizar_passo (loop de fechamento AAA):
+def otimizar_passo_aaa(self, foto_original, crop_rosto_original, mvp_matrix, optimizer):
+    optimizer.zero_grad()
+
+    # 1. Renderização diferenciada do modelo atual (4K)
+    render_atual, coordenadas_raster = self.renderizar_modelo(mvp_matrix, resolucao=4096)
+
+    # 2. Perda de cor e perceptual geral (Corpo e Roupa)
+    loss_pixel = F.mse_loss(render_atual, foto_original)
+    loss_perceptual = self.lpips_metric(render_atual, foto_original).mean()
+
+    # 3. Trava de Identidade Facial (garante o nível Stellar Blade)
+    crop_rosto_render = extrair_crop_rosto(render_atual, coordenadas_raster)
+    loss_identidade = 1.0 - self.arcface_model(crop_rosto_render, crop_rosto_original)
+
+    # 4. Regularização Laplaciana (impede que os vértices rasguem a malha anatômica)
+    loss_mesh_reg = regularization_laplacian(self.mesh_base, self.vertices_offsets)
+
+    # Peso AAA balanceado
+    loss_total = loss_pixel + (0.7 * loss_perceptual) + (1.2 * loss_identidade) + (0.1 * loss_mesh_reg)
+
+    loss_total.backward()
+    optimizer.step()
+    return loss_total.item()
+```
+
+- **Identidade (peso 1.2):** ArcFace cosine entre o crop do rosto renderizado e o da foto — domina a otimização (o rosto é o que o olho julga primeiro). É o que separa "parecido" de **a mesma pessoa**.
+- **Regularização Laplaciana (peso 0.1):** penaliza variação alta dos `vertices_offsets` — os vértices se movem para casar a foto **sem rasgar** a topologia base SKEL/FLAME nem inverter triângulos.
+- **Coarse-to-fine:** 512 → 1024 → 2048 → 4096; geometria congela nas resoluções altas (só textura/SSS refina). O refino de pele translúcida migra para o **Mitsuba 3** path-traced (integrador SSS), o `nvdiffrast` faz o passo rápido.
 
 ### 7.5 Sequência Unificada v3 (revisão do diretor, jun/2026)
 

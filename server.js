@@ -536,8 +536,11 @@ app.get('/api/jobs/:id/artifact/:file', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
   const file = path.basename(req.params.file);
-  // aceita snapshots PNG, GLB por portão, logs, e pattern do ChatGarment
-  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log|garment_pattern\.json)$/.test(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
+  // aceita snapshots PNG, GLB por portão, logs, pattern do ChatGarment,
+  // e texturas UDIM por tile (character_1001.png .. 1099) — resolução por região (7.3.2)
+  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log|garment_pattern\.json|[a-z]+_1[0-9]{3}\.(png|jpg|exr))$/.test(file)) {
+    return res.status(400).json({ error: 'Arquivo inválido.' });
+  }
   const full = path.join(jobDir(job.id), file);
   if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
   res.type('image/png').sendFile(full);
