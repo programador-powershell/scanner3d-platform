@@ -120,6 +120,11 @@
   /* toast */
   #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--accent);padding:10px 18px;border-radius:10px;display:none;z-index:80;font-size:.85rem}
 
+  /* banner de progresso do auto-piloto */
+  .autobanner{margin:0 14px 8px;padding:9px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--accent2);font-size:.82rem;color:var(--text);display:flex;align-items:center;gap:8px}
+  .autobanner.ok{border-color:var(--ok)}
+  .autobanner.warn{border-color:var(--warn)}
+  .autobanner.err{border-color:var(--danger)}
   /* chip de status da VLM (sempre visível na home) */
   .vlmchip{margin:0 14px 8px;padding:8px 12px;border-radius:10px;background:var(--panel);border:1px solid var(--border);font-size:.8rem;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:8px}
   .vlmchip.ok{border-color:var(--ok);color:var(--ok)}
@@ -169,6 +174,7 @@
   <section class="mid">
     <div class="top" id="midTop">CONVERSA</div>
     <div id="vlmChip" class="vlmchip" title="VLM local (clique para detalhes)">🧠 verificando VLM…</div>
+    <div id="autoBanner" class="autobanner" style="display:none"></div>
     <div class="scroll" id="midScroll">
       <!-- conteúdo dinâmico -->
     </div>
@@ -179,7 +185,7 @@
         <div class="actions">
           <span class="pill" id="pillImg">📎 anexar foto</span>
           <span class="pill" id="pillMode">⚡ pipeline humano</span>
-          <span class="pill" id="pillVlm">👁️ VLM auto-aprovar</span>
+          <span class="pill on" id="pillVlm">👁️ VLM julga (qualidade)</span>
           <button class="send" id="btnSend" title="Enviar">➤</button>
         </div>
       </div>
@@ -258,7 +264,7 @@ let mode='pbr'; let originalMats=new Map();
 const clayMat=new THREE.MeshStandardMaterial({color:0x909094,roughness:0.6,metalness:0});
 
 // estado paramétrico (declarado cedo porque loop() acessa P.wind)
-let job=null, mid='conv', pillMode='human', pillVlm=false;
+let job=null, mid='conv', pillMode='human', pillVlm=true;
 let attachedImages=[]; // multi-foto (turnaround)
 let P={height_m:1.7,hip:1,shoulder:1,bust:1,waist:1,muscle:1,skin:'#c9a08a',wind:0};
 let clothMeshes=[];
@@ -434,37 +440,54 @@ async function ensureGateReady(s){
   return true;
 }
 
-// AUTO-PILOTO: roda os 9 portões sozinho — constrói, VLM julga, aprova/refina, avança.
+// AUTO-PILOTO: roda os 9 portões sozinho — constrói, (VLM julga), aprova/refina, avança.
 let autoRunning=false;
+function autoProgress(txt,cls){
+  const b=$('#autoBanner'); if(!b)return;
+  b.style.display='flex'; b.className='autobanner'+(cls?' '+cls:'');
+  const idx=job?Math.min(job.activeIndex,8):0;
+  b.innerHTML=`<span class="spin"></span><span><b>${job&&job.activeIndex>=9?'9/9':((idx+1)+'/9')}</b> ${txt}</span><button id="autoStop" class="pill" style="margin-left:auto">■ parar</button>`;
+  $('#autoStop')?.addEventListener('click',()=>{autoRunning=false;toast('auto-piloto parado');});
+}
 async function autoPilot(){
   if(autoRunning||!job) return; autoRunning=true;
+  const useJudge = pillVlm;   // 👁️ ligado = qualidade (VLM julga); desligado = rápido (auto-aprova)
   try{
-    while(job && !job.done){
+    while(job && !job.done && autoRunning){
       const s=job.stages[job.activeIndex];
       selectedStage=null;
+      autoProgress(`🏗️ ${s.icon} ${s.title}: construindo no Blender (MPFB2)…`);
       $('#title').textContent=`${s.icon} ${s.title}`;
-      renderJobView();
       const built=await ensureGateReady(s);
-      if(!built){ toast(`Portão ${s.id}: build falhou — pausando`,false); break; }
-      // VLM julga (se viva); senão heurística aprova
-      const v=await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
-      const pass = v.ok ? v.verdict?.pass : true;
-      const score = v.ok ? v.verdict?.score : '?';
-      if(pass){
-        toast(`✓ ${s.title}: VLM aprovou (score ${score})`);
+      if(!built){ autoProgress(`❌ ${s.title}: build falhou`,'err'); toast(`Portão ${s.id}: build falhou — pausando`,false); break; }
+      if(!autoRunning) break;
+      if(!useJudge){
+        // MODO RÁPIDO: aprova assim que constrói (sem juiz) — ~15s/portão
+        autoProgress(`✓ ${s.icon} ${s.title}: pronto (modo rápido)`,'ok');
         const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
         if(r.ok) job=r.job;
       } else {
-        const cur=job.stages[job.activeIndex];
-        if((cur.attempts||0)>=3){ toast(`⏸️ ${s.title}: VLM reprovou 3×, pausando p/ você`,false); break; }
-        toast(`✗ ${s.title}: VLM reprovou — refinando…`,false);
-        const r=await api(`/api/jobs/${job.id}/stages/${s.id}/refine`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:''})});
-        if(r.ok) job=r.job;
+        autoProgress(`🧠 ${s.icon} ${s.title}: VLM julgando…`);
+        const v=await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+        const pass = v.ok ? v.verdict?.pass : true;
+        const score = v.ok ? (v.verdict?.score??'?') : '?';
+        if(pass){
+          autoProgress(`✓ ${s.icon} ${s.title}: aprovado (score ${score})`,'ok');
+          const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
+          if(r.ok) job=r.job;
+        } else {
+          const cur=job.stages[job.activeIndex];
+          if((cur.attempts||0)>=3){ autoProgress(`⏸️ ${s.title}: reprovado 3×, pausa`,'err'); toast(`⏸️ ${s.title}: VLM reprovou 3×, controle p/ você`,false); break; }
+          const fix=v.ok?(v.verdict?.suggested_prompt_fix||''):'';
+          autoProgress(`✗ ${s.icon} ${s.title}: refinando${fix?` ("${fix}")`:''}…`,'warn');
+          const r=await api(`/api/jobs/${job.id}/stages/${s.id}/refine`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:''})});
+          if(r.ok) job=r.job;
+        }
       }
       renderJobView();
-      if(!autoRunning) break; // parada externa
     }
-    if(job && job.done){ toast('🎉 9 portões aprovados — construção final no Blender'); await startBuild(); }
+    if(job && job.done){ autoProgress('🎉 9/9 — build final no Blender',' ok'); toast('🎉 personagem completo — construção final'); await startBuild(); }
+    else if(!autoRunning){ const b=$('#autoBanner'); if(b) b.style.display='none'; }
   }finally{ autoRunning=false; }
 }
 
@@ -837,7 +860,7 @@ $('#pillMode').addEventListener('click',()=>{
   if(pillMode==='vlm'){ if(job && !job.done){ toast('🤖 auto-piloto ligado'); autoPilot(); } }
   else { autoRunning=false; toast('✋ auto-piloto desligado — controle manual'); }
 });
-$('#pillVlm').addEventListener('click',()=>{pillVlm=!pillVlm;$('#pillVlm').classList.toggle('on');toast(pillVlm?'VLM julga antes de você ver':'VLM desligada');renderJobView();});
+$('#pillVlm').addEventListener('click',()=>{pillVlm=!pillVlm;$('#pillVlm').classList.toggle('on');$('#pillVlm').textContent=pillVlm?'👁️ VLM julga (qualidade)':'⚡ rápido (sem juiz)';toast(pillVlm?'Modo qualidade: VLM julga cada portão':'Modo rápido: aprova ao construir (~15s/portão)');renderJobView();});
 
 // ============ NAV ============
 function switchTab(id){
