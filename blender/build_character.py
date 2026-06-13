@@ -339,7 +339,28 @@ print(f"[build] cabelo: {N_STRANDS} fios")
 # ============================================================
 blend_path = os.path.join(OUT_DIR, "character.blend")
 glb_path = os.path.join(OUT_DIR, "character.glb")
+fbx_path = os.path.join(OUT_DIR, "character.fbx")
 bpy.ops.wm.save_as_mainfile(filepath=blend_path)
 bpy.ops.export_scene.gltf(filepath=glb_path, export_format="GLB")
 print(f"[build] OK -> {glb_path}")
 print(f"[build] OK -> {blend_path}")
+
+# Export FBX para UE5: malha + armature, eixo Y-up, escala UE (rig pronto p/ retarget).
+try:
+    bpy.ops.export_scene.fbx(
+        filepath=fbx_path,
+        use_selection=False,
+        apply_unit_scale=True,
+        apply_scale_options='FBX_SCALE_UNITS',
+        object_types={'ARMATURE', 'MESH'},
+        add_leaf_bones=False,            # UE5 não gosta de leaf bones
+        primary_bone_axis='Y',
+        secondary_bone_axis='X',
+        bake_anim=False,
+        mesh_smooth_type='FACE',
+        path_mode='COPY',
+        embed_textures=True,
+    )
+    print(f"[build] OK -> {fbx_path} (UE5)")
+except Exception as e:
+    print(f"[build] aviso FBX: {e}")

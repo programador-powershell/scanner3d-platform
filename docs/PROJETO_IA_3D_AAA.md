@@ -720,11 +720,13 @@ O requisito "se está de vestido e cai num lugar mais baixo, o vestido levanta c
                     │  05-08          pele SSS · unhas · rosto · olhos c/ íris
                     │  09_Cabelo      160 strands → malha
                     ▼
-                  character.glb (rig embutido) + character.blend
+                  character.glb + character.fbx (UE5) + character.blend
 ```
 
 - Cada portão vira uma **Collection** nomeada (`01_Esqueleto` … `09_Cabelo`) — modular, espelhando o pipeline.
-- Progresso em tempo real via SSE (`build:started/log/done/error`); ao concluir, botões **"Ver GLB no Visualizador Pro"** e **"Baixar .blend"**.
+- **Export UE5 (verificado):** além do GLB, exporta **FBX** (malha + armature, Y-up, escala UE, sem leaf bones, texturas embutidas) — `character.fbx` 4,9 MB pronto para o UE5 (retarget de skeleton). Botão **⤓ FBX (UE5)** na UI.
+- **Reconstrução inicial Hunyuan3D 2.1 (pluggável):** `POST /api/jobs/:id/reconstruct` posta a foto para `HUNYUAN_URL` → base mesh + PBR que os portões refinam (`hunyuan_base.glb`). Sem `HUNYUAN_URL`: fallback honesto para MPFB2.
+- Progresso em tempo real via SSE (`build:started/log/done/error`); ao concluir: **Ver GLB Pro**, **⤓ FBX (UE5)**, **⤓ .blend**.
 - Detecção automática do Blender (`D:\Blender Foundation\blender.exe` ou `BLENDER_PATH`); build manual via `POST /api/jobs/:id/build`.
 - **Verificado de ponta a ponta:** build automático em ~20 s → GLB de 3,8 MB (112 k vértices / 199 k polígonos) carregado no Visualizador Pro.
 - Upgrade do estágio de corpo: instalar **MPFB2** no Blender → o script usa automaticamente (hook `try_mpfb_body`). Próximo: import UE5 (Groom + LiveLink).

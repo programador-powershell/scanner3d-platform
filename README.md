@@ -1,36 +1,63 @@
 # Scanner 3D Cognitivo
 
-Plataforma de geração **2D→3D por decomposição semântica e reconstrução por camadas** — objetivo: reconstrução humana fiel (não preenchimento tipo Meshy/Hunyuan), com rig anatômico nativo, texturas PBR, cabelo fio a fio e modelo modular padrão AAA.
+Plataforma **autônoma** de geração **2D→3D** de humanos realistas (padrão AAA). Você solta uma foto, a IA conduz tudo sozinha — pré-scan, 9 portões anatômicos, julgamento, refino — e entrega um personagem 3D rigado pronto para Blender/UE5.
 
-Documento técnico completo: [`docs/PROJETO_IA_3D_AAA.md`](docs/PROJETO_IA_3D_AAA.md).
+Documento técnico completo (arquitetura v5, stack open-source auditada): [`docs/PROJETO_IA_3D_AAA.md`](docs/PROJETO_IA_3D_AAA.md).
 
 ## Rodar
 
 ```bash
 npm install
 npm start          # http://localhost:3939
-npm run feed       # escaneia D:\References e alimenta o .md
 ```
 
-## Páginas
+No boot, o servidor **auto-detecta e sobe a VLM local** (Qwen3-VL-4B no llama.cpp) — sem configurar nada.
 
-- **`/`** — ingestão de dataset: upload de arquivos, links YouTube/Twitter, inventário de referências.
-- **`/pipeline.html`** — pipeline interativo estilo **ComfyUI**: grafo de nós (three.js), nó central **LLM · Olho Humano**, revisão aprovar/reprovar por etapa (human-in-the-loop → dataset de preferência DPO), e **edição paramétrica por prompt** (`mude altura para 1,70`, `aumente 20% o quadril`, `tom de pele pardo`, `vento na queda do vestido`).
+## Como usar (zero fricção)
 
-## Stack v2 (auditado, jun/2026)
+1. Abra `http://localhost:3939`.
+2. **Arraste 1+ fotos** (turnaround do personagem) em qualquer lugar da home.
+3. Mande no campo de texto (ou só envie a foto).
+4. Escolha o modo:
+   - **🤖 VLM-auto** + **👁️ qualidade** → a VLM julga cada portão, refina sozinha, avança. Treina o dataset DPO.
+   - **🤖 VLM-auto** + **⚡ rápido** → constrói e aprova direto (~minutos para o personagem inteiro).
+   - **⚡ pipeline humano** → você aprova/reprova cada portão.
+5. No fim: **Visualizador GLB Pro**, **⤓ FBX (UE5)**, **⤓ .blend**.
 
-`Foto → PSHuman/MagicMan (vistas condicionadas) → gate ArcFace/LPIPS → Florence-2 (camadas) → trilhos: SKEL/ATLAS+HIT (corpo) · FLAME→ICT-FaceKit (rosto) · GarmentCode→drape Warp/Newton (roupa) · TRELLIS.2 (rígidos) · DiffLocks (cabelo) → loop nvdiffrast (pixel-fiel vs foto) → rig SKEL → GLB modular`
+## Pipeline (v5, auditado jun/2026)
 
-## Escopo do protótipo
+```
+FOTO → Qwen3-VL (pré-scan: medidas/pele/roupa) → Florence-2 (segmentação)
+     → 9 portões: 🦴 Esqueleto · 🩸 Veias · 💪 Músculos · 🪡 Tecido · 🧫 Pele
+                  · 💅 Unhas · 👤 Rosto · 👁️ Olhos · 💇 Cabelo
+       cada um: Blender headless (MPFB2) constrói o GLB real → VLM julga → refina → aprova
+     → build final (rig + collections por portão) → GLB + FBX (UE5) + .blend
+```
 
-A **infraestrutura** (grafo de nós, revisão human-in-the-loop, dataset de preferência, edição por prompt, loop de regeneração) é real e funcional. Os **motores de IA** (PSHuman, SKEL/ATLAS, HIT, DiffLocks, nvdiffrast) ainda não rodam — cada nó usa um gerador de preview procedural em three.js, plugável. Detalhes na seção 10.2 do documento técnico.
+Motores open-source plugáveis (ver doc): **Hunyuan3D 2.1** (reconstrução+PBR), **MPFB2/MakeHuman** (corpo), **SMPL-X/SKEL/TailorMe** (anatomia instanciada), **ChatGarment→GarmentCode→Warp/Newton** (roupa), **DiffLocks** (cabelo), **TRELLIS.2** (rígidos), **Material Anything/RGB↔X** (PBR), **Mitsuba 3** (loop diferenciável SSS), **ICT-FaceKit** (ARKit-52), **QRemeshify/Parafashion** (retopo).
 
-## Ferramentas externas (fontes)
+## Serviços opcionais (env)
 
-Links registrados pela página de ingestão alimentam a seção *Fontes de Treinamento* do documento técnico. Ex.:
+| Variável | Para quê | Sem ela |
+|---|---|---|
+| (auto) | VLM Qwen3-VL local no llama.cpp | sobe sozinha; senão heurística |
+| `HUNYUAN_URL` | reconstrução inicial Hunyuan3D 2.1 | fallback MPFB2 |
+| `CHATGARMENT_URL` | sewing pattern do vestido | fallback MHCLO |
+| `BLENDER_PATH` | Blender (auto: `D:\Blender Foundation`) | sem build real |
+| `AUTO_VLM=0` | desliga auto-start da VLM | — |
 
-- [KIRI Engine — 3DGS Render Blender Addon](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) (Apache-2.0) — importa/edita/anima/renderiza **3D Gaussian Splatting** (`.ply`/`.splat`) no Blender. Ponte para a saída Gaussian do LHM++ (seção 7.1) virar asset editável/baking dentro do pipeline.
+## Arquitetura
+
+- **Backend**: Node + Express. Auto-start VLM, build Blender headless por portão (SSE ao vivo), VLM judge/refine, dataset DPO, cascata síncrona, robusto (try/catch + guarda global, nunca cai).
+- **Frontend**: página única estilo Ollama (`public/index.html`) + Visualizador GLB Pro (`public/viewer.html`). three.js.
+- **Blender**: `blender/build_stage.py` (1 portão), `blender/build_character.py` (final → GLB+FBX+blend).
+- **Treino**: `training/` (Unsloth + Qwen3-VL LoRA, ingestor de conhecimento: References + repos + decisões DPO).
+- **Fontes**: ~21 repos GitHub open-source registrados, alimentando o documento.
+
+## Escopo honesto
+
+A **infraestrutura é real e autônoma** (VLM local, build MPFB2/Blender, auto-piloto, FBX UE5). Os **motores pesados** (Hunyuan3D 10-21GB VRAM, TailorMe/Z-Anatomy, ChatGarment) são **plugáveis via env** — quando você tiver o serviço/hardware, conectam sem mudar código. Pesos research-only do MPI (SMPL-X/SKEL/FLAME) exigem licença comercial para produto; caminho livre documentado na seção 7.8.5.
 
 ## Stack
 
-Node.js + Express + Multer · three.js (viewer) · documento em Markdown auto-alimentado.
+Node.js · Express · three.js · Blender 5.1 + MPFB2 · llama.cpp (Qwen3-VL GGUF) · Python (Unsloth/torch/smplx).

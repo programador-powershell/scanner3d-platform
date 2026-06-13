@@ -564,7 +564,7 @@ function renderJobView(){
     let bHtml='';
     if(!b) bHtml=`<div class="meta">Personagem aprovado em todos os portões. A construção real no Blender (esqueleto → cabelo, do zero) inicia automaticamente — ou dispare manualmente:</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">🏗️ Construir no Blender</button>`;
     else if(b.status==='running') bHtml=`<div class="meta"><span class="spin"></span> Blender headless replicando a construção (esqueleto → corpo rigado → tecido → cabelo)…</div><div id="buildLog" class="meta" style="margin-top:8px;font-family:monospace;font-size:.68rem;max-height:120px;overflow:hidden"></div>`;
-    else if(b.status==='done') bHtml=`<div class="meta">✅ Personagem construído no Blender — rig com automatic weights, collections por portão.</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="viewGlb">🧊 Ver GLB no Visualizador Pro</button><button class="pill" id="dlBlend">⤓ Baixar .blend</button><button class="pill" id="rebuild">↻ Reconstruir</button></div>`;
+    else if(b.status==='done') bHtml=`<div class="meta">✅ Personagem construído no Blender — rig com automatic weights, collections por portão.</div><div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="pill on" id="viewGlb">🧊 Ver GLB no Visualizador Pro</button>${b.fbx?'<button class="pill on" id="dlFbx">⤓ FBX (UE5)</button>':''}<button class="pill" id="dlBlend">⤓ .blend</button><button class="pill" id="rebuild">↻ Reconstruir</button></div>`;
     else bHtml=`<div class="meta">❌ Build falhou (código ${b.code}). Veja <a href="/api/jobs/${job.id}/build/build.log" target="_blank" style="color:var(--accent)">build.log</a>.</div><button class="ghost-btn" id="buildBtn" style="margin-top:10px">↻ Tentar de novo</button>`;
     html+=`<div class="card"><div class="head"><div class="dot"></div>🏗️ CONSTRUÇÃO NO BLENDER</div><div class="body">${bHtml}</div></div>`;
     html+=`<div class="card"><div class="head"><div class="dot"></div>✅ TREINO COMPLETO</div><div class="body"><div class="meta">Cada decisão deste job alimentou o dataset DPO. Quando a VLM atingir o threshold, jobs futuros vão direto para Blender → UE5 <b>sem revisão</b>.</div></div></div>`;
@@ -585,6 +585,7 @@ function renderJobView(){
   if($('#rebuild')) $('#rebuild').addEventListener('click',startBuild);
   if($('#viewGlb')) $('#viewGlb').addEventListener('click',()=>openGlbPro(job.build.glb));
   if($('#dlBlend')) $('#dlBlend').addEventListener('click',()=>window.open(job.build.blend,'_blank'));
+  if($('#dlFbx')) $('#dlFbx').addEventListener('click',()=>window.open(job.build.fbx,'_blank'));
   // strip embaixo do viewer
   let strip='';
   let i=1;
@@ -699,6 +700,9 @@ async function sendPrompt(){
       // pré-scan ANTES de qualquer construção: VLM extrai params do turnaround
       const sc=await api(`/api/jobs/${job.id}/scan`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
       if(sc.ok){ job=sc.job; toast(sc.scan.source==='heuristic'?'⚠️ VLM offline — defaults aplicados':'✓ VLM extraiu params'); }
+      // reconstrução inicial (Hunyuan3D 2.1 se HUNYUAN_URL; senão MPFB2)
+      const rc=await api(`/api/jobs/${job.id}/reconstruct`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>null);
+      if(rc&&rc.ok) toast(rc.source==='hunyuan3d-2.1'?'✓ Hunyuan3D reconstruiu a base':'base via MPFB2 (Hunyuan offline)');
     }
     if(text){
       // edição paramétrica (altura/quadril/pele/vento) — texto sempre aplica

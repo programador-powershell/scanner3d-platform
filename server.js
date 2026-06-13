@@ -353,8 +353,12 @@ function startBuild(jobId) {
     withJobLock(jobId, async () => {
       const j = loadJob(jobId);
       if (!j) return;
+      const hasFbx = fs.existsSync(path.join(buildDir, 'character.fbx'));
       j.build = okBuild
-        ? { status: 'done', finishedAt: new Date().toISOString(), glb: `/api/jobs/${jobId}/build/character.glb`, blend: `/api/jobs/${jobId}/build/character.blend` }
+        ? { status: 'done', finishedAt: new Date().toISOString(),
+            glb: `/api/jobs/${jobId}/build/character.glb`,
+            blend: `/api/jobs/${jobId}/build/character.blend`,
+            fbx: hasFbx ? `/api/jobs/${jobId}/build/character.fbx` : null }
         : { status: 'error', finishedAt: new Date().toISOString(), code };
       saveJob(j);
       emitJob(jobId, okBuild ? 'build:done' : 'build:error', { ...j.build, job: publicJob(j) });
@@ -611,12 +615,13 @@ app.post('/api/jobs/:id/build', (req, res) => {
 app.get('/api/jobs/:id/build/:file', (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const allow = new Set(['character.glb', 'character.blend', 'build.log']);
+  const allow = new Set(['character.glb', 'character.blend', 'character.fbx', 'hunyuan_base.glb', 'build.log']);
   const file = path.basename(req.params.file);
   if (!allow.has(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
   const full = path.join(jobDir(job.id), 'build', file);
   if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
   if (file.endsWith('.blend')) res.setHeader('Content-Disposition', 'attachment; filename=character.blend');
+  if (file.endsWith('.fbx')) res.setHeader('Content-Disposition', 'attachment; filename=character.fbx');
   res.sendFile(full);
 });
 
@@ -934,6 +939,46 @@ app.post('/api/jobs/:id/scan', jsonBig, (req, res, next) => {
     saveJob(job);
     emitJob(job.id, 'job:update', { job: publicJob(job) });
     res.json({ ok: true, scan: job.scan, job: publicJob(job) });
+  }).catch(next);
+});
+
+// ---------- Hunyuan3D 2.1 (reconstrução inicial pluggável) ----------
+// Quando HUNYUAN_URL aponta para um serviço (ComfyUI/Hunyuan API), a foto vira
+// uma base mesh + textura PBR que os portões refinam. Sem serviço: o pipeline
+// segue com MPFB2 (fallback honesto — não inventa geometria).
+app.post('/api/jobs/:id/reconstruct', jsonBig, (req, res, next) => {
+  withJobLock(req.params.id, async () => {
+    const job = loadJob(req.params.id);
+    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+    if (!process.env.HUNYUAN_URL) {
+      return res.json({ ok: true, source: 'mpfb-fallback',
+        note: 'HUNYUAN_URL não configurado — reconstrução inicial via MPFB2 (Blender). Suba o Hunyuan3D 2.1 e configure HUNYUAN_URL para usar geometria+PBR reconstruída da foto.' });
+    }
+    const img = fileToB64(job.sourceImages?.[0] || job.sourceImage);
+    try {
+      const r = await fetch(process.env.HUNYUAN_URL, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        signal: AbortSignal.timeout(parseInt(process.env.HUNYUAN_TIMEOUT || '600000', 10)),
+        body: JSON.stringify({ image: img, output: 'glb', pbr: true }),
+      });
+      // O serviço Hunyuan deve devolver o GLB (binário) ou base64
+      const ct = r.headers.get('content-type') || '';
+      const buildDir = path.join(jobDir(job.id), 'build');
+      fs.mkdirSync(buildDir, { recursive: true });
+      const dest = path.join(buildDir, 'hunyuan_base.glb');
+      if (ct.includes('json')) {
+        const data = await r.json();
+        if (data.glb_base64) fs.writeFileSync(dest, Buffer.from(data.glb_base64, 'base64'));
+        else throw new Error('resposta sem glb_base64');
+      } else {
+        fs.writeFileSync(dest, Buffer.from(await r.arrayBuffer()));
+      }
+      job.reconstruct = { source: 'hunyuan3d-2.1', glb: `/api/jobs/${job.id}/build/hunyuan_base.glb`, ts: new Date().toISOString() };
+      saveJob(job);
+      res.json({ ok: true, source: 'hunyuan3d-2.1', glb: job.reconstruct.glb });
+    } catch (e) {
+      res.json({ ok: true, source: 'mpfb-fallback', warning: e.message });
+    }
   }).catch(next);
 });
 
