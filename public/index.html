@@ -127,16 +127,6 @@
   #dropOverlay{position:fixed;inset:0;background:rgba(168,230,58,.06);border:3px dashed var(--accent);z-index:90;display:none;align-items:center;justify-content:center;font-size:1.4rem;color:var(--accent);pointer-events:none;backdrop-filter:blur(4px)}
   #dropOverlay.on{display:flex}
 
-  /* backdrop "Iniciar Treinamento" */
-  #backdrop{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(14px);z-index:70;display:none;align-items:center;justify-content:center;flex-direction:column;gap:18px}
-  #backdrop.on{display:flex}
-  #backdrop h2{font-size:1.6rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
-  #backdrop p{color:var(--muted);max-width:520px;text-align:center;line-height:1.5;font-size:.95rem}
-  #trainBtn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a0c0e;border:0;padding:18px 46px;border-radius:14px;font-size:1.1rem;font-weight:700;cursor:pointer;box-shadow:0 8px 32px rgba(168,230,58,.35);display:flex;align-items:center;gap:10px}
-  #trainBtn:hover{transform:translateY(-1px)}
-  #trainBtn:disabled{opacity:.6;cursor:wait}
-  #backdrop .vlmUrl{background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:9px 12px;width:420px;font-size:.85rem}
-  #backdrop .close{position:absolute;top:18px;right:22px;background:var(--panel);border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:8px;cursor:pointer}
 
   /* thumbs das fotos anexadas (turnaround) */
   .thumbs{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 8px}
@@ -230,17 +220,6 @@
 
 <!-- Overlay de drop em qualquer lugar -->
 <div id="dropOverlay">📸 solte as fotos do turnaround aqui</div>
-
-<!-- Backdrop "Iniciar Treinamento" -->
-<div id="backdrop">
-  <button class="close" id="backdropClose">✕</button>
-  <h2>🧠 Iniciar Treinamento da VLM</h2>
-  <p>A VLM (Qwen2.5-VL-7B 4-bit) precisa estar servida para analisar fotos e julgar portões. Suba o vLLM e cole a URL OpenAI-compatible abaixo — o servidor passa a usar a VLM treinada automaticamente.</p>
-  <input class="vlmUrl" id="vlmUrl" placeholder="VLM (Qwen2.5-VL) — http://localhost:8000/v1/chat/completions">
-  <input class="vlmUrl" id="cgUrl" placeholder="ChatGarment (portão Tecido) — http://localhost:8100/infer">
-  <button id="trainBtn">🚀 Ativar VLM + ChatGarment e iniciar treinamento</button>
-  <p style="font-size:.8rem">Sem VLM/ChatGarment conectados, scan/refine usam heurística e o trilho de Tecido cai pra fallback MHCLO. MPFB2 funciona sempre.</p>
-</div>
 
 <script type="module">
 import * as THREE from 'three';
@@ -752,19 +731,52 @@ document.addEventListener('dragover',e=>{ if(e.dataTransfer.types.includes('File
 document.addEventListener('drop',e=>{ e.preventDefault(); dragDepth=0; $('#dropOverlay').classList.remove('on'); acceptFiles(e.dataTransfer.files); });
 
 // Backdrop "Iniciar Treinamento" — liga a VLM (config VLM_URL no servidor)
-function openTrain(){ $('#backdrop').classList.add('on'); }
-function closeTrain(){ $('#backdrop').classList.remove('on'); }
-$('#backdropClose').addEventListener('click',closeTrain);
-$('#trainBtn').addEventListener('click',async()=>{
-  const url=$('#vlmUrl').value.trim();
-  const cg=$('#cgUrl').value.trim();
-  $('#trainBtn').disabled=true;
-  const r=await api('/api/vlm/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({vlm_url:url,chatgarment_url:cg})});
-  $('#trainBtn').disabled=false;
-  if(!r.ok) return toast(r.error,false);
-  toast(`VLM ${r.connected?'✅':'⚠️'} · ChatGarment ${r.chatgarment_connected?'✅':'⚠️'}`,r.connected);
-  closeTrain();
-});
+// ============ VLM LOCAL (GGUF no llama.cpp) — painel inline na home ============
+function fmtGB(b){ if(!b) return '—'; return (b/1073741824).toFixed(2)+' GB'; }
+async function renderTrain(){
+  mid='train';
+  $('#midTop').textContent='TREINAMENTO · VLM LOCAL';
+  $('#midScroll').innerHTML='<div class="card"><div class="body"><span class="spin"></span> verificando llama.cpp…</div></div>';
+  const s=await api('/api/vlm/status');
+  if(!s.ok){ $('#midScroll').innerHTML='<div class="card"><div class="body">Falha ao consultar status.</div></div>'; return; }
+  const dl=s.download;
+  let dlHtml='';
+  if(dl && !dl.done && dl.total){ const pct=Math.round(dl.received/dl.total*100); dlHtml=`<div class="meta" style="margin-top:8px">⬇️ ${dl.file} — ${pct}% (${fmtGB(dl.received)}/${fmtGB(dl.total)})</div><div style="height:6px;background:var(--panel2);border-radius:3px;margin-top:4px;overflow:hidden"><div id="dlbar" style="height:100%;width:${pct}%;background:var(--accent)"></div></div>`; }
+  $('#midScroll').innerHTML=`
+  <div class="card"><div class="head"><div class="dot"></div>🧠 VLM LOCAL · Qwen3-VL-4B-Thinking (GGUF)</div><div class="body">
+    <div class="meta">Roda <b>100% local no llama.cpp</b> (sem cloud). Baixa o modelo GGUF do HuggingFace e sobe um servidor local que analisa as fotos e julga os portões.</div>
+    <div class="meta" style="margin-top:10px">
+      llama-server: <b style="color:${s.llamaFound?'var(--accent)':'var(--danger)'}">${s.llamaFound?'encontrado':'NÃO encontrado (D:\\llama.cpp)'}</b><br>
+      modelo: <b>${s.model}</b> em <code>${s.dir}</code><br>
+      baixado: <b style="color:${s.installed?'var(--accent)':'var(--warn)'}">${s.installed?'sim':'não'}</b> · rodando: <b style="color:${s.running?'var(--accent)':'var(--muted)'}">${s.running?(s.responding?'sim (respondendo)':'subindo…'):'não'}</b>
+    </div>
+    ${dlHtml}
+    <div style="display:flex;gap:6px;margin-top:12px;flex-wrap:wrap">
+      ${!s.installed?'<button class="pill on" id="vlmDl">⬇️ Baixar GGUF (~2,5 GB)</button>':''}
+      ${s.installed && !s.running?'<button class="pill on" id="vlmStart">🚀 Iniciar VLM local</button>':''}
+      ${s.running?'<button class="pill" id="vlmStop">■ Parar VLM</button>':''}
+      <button class="pill" id="vlmRefresh">↻ Atualizar</button>
+    </div>
+    <div class="meta" style="margin-top:10px;color:var(--muted)">Sem VLM rodando, o pré-scan e o reprovar-refine usam heurística. A construção MPFB2/Blender funciona sempre.</div>
+  </div></div>
+  <div class="card"><div class="head"><div class="dot"></div>🪡 CHATGARMENT (portão Tecido)</div><div class="body">
+    <div class="meta">Serviço local que lê N imagens da roupa → sewing pattern. Opcional — sem ele, o Tecido usa fallback MHCLO.</div>
+    <input type="text" id="cgUrl" placeholder="http://localhost:8100/infer" style="width:100%;background:var(--panel);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 10px;font-size:.82rem;margin-top:8px" value="${s.chatgarmentUrl||''}">
+    <button class="pill" id="cgSave" style="margin-top:8px">salvar URL ChatGarment</button>
+  </div></div>`;
+  if($('#vlmDl')) $('#vlmDl').addEventListener('click',async()=>{ const r=await api('/api/vlm/download',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); if(!r.ok) return toast(r.error,false); toast('⬇️ baixando GGUF — acompanhe a barra'); renderTrain(); });
+  if($('#vlmStart')) $('#vlmStart').addEventListener('click',async()=>{ const r=await api('/api/vlm/start',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); if(!r.ok) return toast(r.error,false); toast('🚀 subindo llama-server local…'); renderTrain(); });
+  if($('#vlmStop')) $('#vlmStop').addEventListener('click',async()=>{ await api('/api/vlm/stop',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); toast('VLM parada'); renderTrain(); });
+  if($('#vlmRefresh')) $('#vlmRefresh').addEventListener('click',renderTrain);
+  if($('#cgSave')) $('#cgSave').addEventListener('click',async()=>{ const cg=$('#cgUrl').value.trim(); const r=await api('/api/vlm/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chatgarment_url:cg})}); toast(r.ok?`ChatGarment ${r.chatgarment_connected?'✅':'salvo'}`:'erro',r.ok); });
+}
+// eventos da VLM local (download/running) atualizam o painel se estiver aberto
+const vlmES=new EventSource('/api/vlm/events');
+vlmES.addEventListener('vlm:download',e=>{ if(mid==='train'){ const d=JSON.parse(e.data); const bar=$('#dlbar'); if(bar&&d.total){bar.style.width=Math.round(d.received/d.total*100)+'%';} } });
+vlmES.addEventListener('vlm:ready',()=>{ toast('✅ GGUF baixado'); if(mid==='train') renderTrain(); });
+vlmES.addEventListener('vlm:running',()=>{ toast('✅ VLM local no ar — julgando portões'); if(mid==='train') renderTrain(); });
+vlmES.addEventListener('vlm:stopped',()=>{ if(mid==='train') renderTrain(); });
+vlmES.addEventListener('vlm:error',e=>{ const d=JSON.parse(e.data); toast('❌ '+(d.error||'erro VLM'),false); });
 $('#pillMode').addEventListener('click',()=>{pillMode=pillMode==='human'?'vlm':'human';$('#pillMode').classList.toggle('on');$('#pillMode').textContent=pillMode==='human'?'⚡ pipeline humano':'⚡ pipeline VLM-auto';});
 $('#pillVlm').addEventListener('click',()=>{pillVlm=!pillVlm;$('#pillVlm').classList.toggle('on');toast(pillVlm?'VLM julga antes de você ver':'VLM desligada');renderJobView();});
 
@@ -774,6 +786,7 @@ function switchTab(id){
   if(id==='navHome'){mid='conv';renderJobView();}
   else if(id==='navHist'){mid='history';loadHistory();}
   else if(id==='navScan'){mid='scan';openDrawer('scan');}
+  else if(id==='navTrain'){mid='train';renderTrain();}
   else if(id==='navSettings'){mid='settings';openDrawer('settings');}
 }
 async function loadHistory(){
@@ -786,7 +799,7 @@ $('#navHome').addEventListener('click',()=>switchTab('navHome'));
 $('#navHist').addEventListener('click',()=>switchTab('navHist'));
 $('#navScan').addEventListener('click',()=>switchTab('navScan'));
 $('#navSettings').addEventListener('click',()=>switchTab('navSettings'));
-$('#navTrain').addEventListener('click',openTrain);
+$('#navTrain').addEventListener('click',()=>switchTab('navTrain'));
 
 // GLB Pro overlay
 $('#btnGlb').addEventListener('click',()=>{

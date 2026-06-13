@@ -659,7 +659,164 @@ app.post('/api/jobs/:id/params', jsonBig, (req, res, next) => {
   }).catch(next);
 });
 
-// Configura VLM_URL em runtime (botão "Iniciar Treinamento" do navegador).
+// ============================================================
+// VLM LOCAL — Qwen3-VL-4B-Thinking GGUF rodando no llama.cpp (sem cloud)
+// ============================================================
+const LLAMA_SERVER = (() => {
+  for (const c of [process.env.LLAMA_SERVER, 'D:\\llama.cpp\\llama-server.exe']) {
+    try { if (c && fs.existsSync(c)) return c; } catch {}
+  }
+  return null;
+})();
+const VLM_DIR = process.env.VLM_DIR || 'D:\\llm\\qwen3-vl-4b';
+const VLM_REPO = 'unsloth/Qwen3-VL-4B-Thinking-GGUF';
+const VLM_MODEL_FILE = process.env.VLM_MODEL_FILE || 'Qwen3-VL-4B-Thinking-Q4_K_M.gguf';
+const VLM_MMPROJ_FILE = process.env.VLM_MMPROJ_FILE || 'mmproj-F16.gguf';
+const VLM_PORT = parseInt(process.env.VLM_LOCAL_PORT || '8080', 10);
+const VLM_LOCAL_URL = `http://127.0.0.1:${VLM_PORT}/v1/chat/completions`;
+
+let vlmProc = null;            // processo llama-server
+let vlmDownload = null;        // { file, received, total, done }
+
+function vlmPaths() {
+  return {
+    model: path.join(VLM_DIR, VLM_MODEL_FILE),
+    mmproj: path.join(VLM_DIR, VLM_MMPROJ_FILE),
+  };
+}
+function vlmInstalled() {
+  const p = vlmPaths();
+  try { return fs.existsSync(p.model) && fs.existsSync(p.mmproj); } catch { return false; }
+}
+
+async function downloadFile(url, dest, onProgress) {
+  const r = await fetch(url);
+  if (!r.ok || !r.body) throw new Error(`download ${r.status} ${url}`);
+  const total = parseInt(r.headers.get('content-length') || '0', 10);
+  let received = 0;
+  const tmp = dest + '.part';
+  const out = fs.createWriteStream(tmp);
+  const reader = r.body.getReader();
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    received += value.length;
+    out.write(Buffer.from(value));
+    if (onProgress) onProgress(received, total);
+  }
+  await new Promise((res) => out.end(res));
+  fs.renameSync(tmp, dest);
+  return { received, total };
+}
+
+// Baixa modelo + mmproj do HuggingFace para D:\llm\qwen3-vl-4b
+app.post('/api/vlm/download', async (req, res) => {
+  if (vlmDownload && !vlmDownload.done) return res.status(409).json({ error: 'Download já em andamento.' });
+  fs.mkdirSync(VLM_DIR, { recursive: true });
+  const files = [VLM_MODEL_FILE, VLM_MMPROJ_FILE];
+  res.json({ ok: true, started: true, files });
+  // roda em background, reporta via SSE global (jobless) + estado
+  (async () => {
+    for (const f of files) {
+      const dest = path.join(VLM_DIR, f);
+      if (fs.existsSync(dest)) { emitVlm('vlm:download', { file: f, received: 1, total: 1, skipped: true }); continue; }
+      const url = `https://huggingface.co/${VLM_REPO}/resolve/main/${f}?download=true`;
+      vlmDownload = { file: f, received: 0, total: 0, done: false };
+      try {
+        await downloadFile(url, dest, (received, total) => {
+          vlmDownload = { file: f, received, total, done: false };
+          if (received % (8 * 1024 * 1024) < 65536) emitVlm('vlm:download', { file: f, received, total });
+        });
+        emitVlm('vlm:download', { file: f, received: 1, total: 1, fileDone: true });
+      } catch (e) {
+        vlmDownload = { file: f, error: e.message, done: true };
+        return emitVlm('vlm:error', { stage: 'download', file: f, error: e.message });
+      }
+    }
+    vlmDownload = { done: true };
+    emitVlm('vlm:ready', { installed: vlmInstalled() });
+  })();
+});
+
+// Sobe o llama-server local com visão (mmproj) e aponta a VLM para ele
+app.post('/api/vlm/start', (req, res) => {
+  if (!LLAMA_SERVER) return res.status(400).json({ error: 'llama-server.exe não encontrado (D:\\llama.cpp). Configure LLAMA_SERVER.' });
+  if (!vlmInstalled()) return res.status(400).json({ error: 'GGUF não baixado — clique em Baixar primeiro.' });
+  if (vlmProc) return res.json({ ok: true, already: true, url: VLM_LOCAL_URL });
+  const p = vlmPaths();
+  const ngl = parseInt(process.env.VLM_NGL || '99', 10);   // camadas na GPU (4060)
+  vlmProc = spawn(LLAMA_SERVER, [
+    '-m', p.model,
+    '--mmproj', p.mmproj,
+    '--host', '127.0.0.1',
+    '--port', String(VLM_PORT),
+    '-ngl', String(ngl),
+    '-c', process.env.VLM_CTX || '8192',
+    '--jinja',
+  ], { windowsHide: true });
+  const logPath = path.join(VLM_DIR, 'llama-server.log');
+  const ls = fs.createWriteStream(logPath, { flags: 'a' });
+  let listening = false;
+  const onLine = (b) => {
+    const s = b.toString(); ls.write(s);
+    if (!listening && /server (is )?listening|HTTP server listening/i.test(s)) {
+      listening = true;
+      process.env.VLM_URL = VLM_LOCAL_URL;
+      emitVlm('vlm:running', { url: VLM_LOCAL_URL });
+    }
+  };
+  vlmProc.stdout.on('data', onLine);
+  vlmProc.stderr.on('data', onLine);
+  vlmProc.on('close', (code) => {
+    ls.end(); vlmProc = null;
+    if (process.env.VLM_URL === VLM_LOCAL_URL) process.env.VLM_URL = '';
+    emitVlm('vlm:stopped', { code });
+  });
+  res.json({ ok: true, starting: true, url: VLM_LOCAL_URL });
+});
+
+app.post('/api/vlm/stop', (req, res) => {
+  if (vlmProc) { try { vlmProc.kill(); } catch {} vlmProc = null; }
+  process.env.VLM_URL = '';
+  res.json({ ok: true });
+});
+
+app.get('/api/vlm/status', async (req, res) => {
+  let responding = false;
+  if (vlmProc) {
+    try { const t = await fetch(`http://127.0.0.1:${VLM_PORT}/health`, { signal: AbortSignal.timeout(1500) }); responding = t.ok; } catch {}
+  }
+  res.json({
+    ok: true,
+    llamaFound: !!LLAMA_SERVER,
+    installed: vlmInstalled(),
+    dir: VLM_DIR,
+    model: VLM_MODEL_FILE,
+    repo: VLM_REPO,
+    running: !!vlmProc,
+    responding,
+    url: vlmProc ? VLM_LOCAL_URL : null,
+    download: vlmDownload,
+    vlmUrlActive: process.env.VLM_URL || null,
+    chatgarmentUrl: process.env.CHATGARMENT_URL || null,
+  });
+});
+
+// SSE global (eventos da VLM local, sem job)
+const vlmClients = new Set();
+function emitVlm(event, data) {
+  const payload = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
+  for (const r of vlmClients) { try { r.write(payload); } catch {} }
+}
+app.get('/api/vlm/events', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
+  res.write(`event: connected\ndata: {}\n\n`);
+  vlmClients.add(res);
+  const hb = setInterval(() => { try { res.write(': hb\n\n'); } catch {} }, 25000);
+  req.on('close', () => { clearInterval(hb); vlmClients.delete(res); });
+});
+
+// Configura ChatGarment URL (e VLM manual avançado) em runtime.
 app.post('/api/vlm/config', jsonBig, async (req, res) => {
   const url = String((req.body && req.body.vlm_url) || '').trim();
   const cg = String((req.body && req.body.chatgarment_url) || '').trim();

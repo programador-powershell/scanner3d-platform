@@ -694,7 +694,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 13. Arquivos de Referência (`D:\References`)
 
 <!-- AUTO:REFERENCES:START -->
-*Inventário gerado em 2026-06-12T20:24:53.047Z a partir de `D:\References`.*
+*Inventário gerado em 2026-06-13T01:44:06.417Z a partir de `D:\References`.*
 
 **Total: 501 arquivos — 4.03 GB**
 
