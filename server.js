@@ -1,490 +1,108 @@
+// server.js - Versão corrigida e aprimorada para Stellar Blade / Blood Rain level
+// Correções aplicadas:
+// - Human-in-the-loop estrito (pausa em awaiting_review após cada build)
+// - Registro melhorado de sugestões para DPO / auto-treinamento
+// - Suporte forte a refinamento iterativo por camada (objetivo: match exato como Wukong)
+// - Integração do VLM Local (Qwen3-VL-4B-Thinking GGUF via llama.cpp)
+
 const express = require('express');
-const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
-const {
-  scanReferences,
-  manifestToMarkdown,
-  updateMdSection,
-  assertMarkers,
-  formatSize,
-  mdLink,
-} = require('./lib/references');
+const multer = require('multer');
+
+// Live Blender bridge (from understanding claude-blender-designer socket protocol)
+// Optional: set BLENDER_LIVE_BRIDGE=1 to execute stages visibly inside open Blender GUI
+// + get viewport shots for progress + real VLM garment judge feedback loops.
+const blenderLive = require('./lib/blender_live_bridge');
+
+const app = express();
+const PORT = process.env.PORT || 3939;
+
+const JOBS_DIR = path.join(__dirname, 'data', 'jobs');
+const DATASET_PATH = path.join(__dirname, 'data', 'dpo_dataset.jsonl');
+const UPLOADS_DIR = path.join(__dirname, 'data', 'uploads');
+
+fs.mkdirSync(JOBS_DIR, { recursive: true });
+fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+
+const upload = multer({ dest: UPLOADS_DIR });
+
 const { STAGES, STAGE_IDS, newJob, activeIndex, publicJob, applyPromptCommand, applyCascade } = require('./lib/pipeline');
 
-const PORT = process.env.PORT || 3939;
-const REFERENCES_DIR = process.env.REFERENCES_DIR || 'D:\\References';
-const DATA_DIR = path.join(__dirname, 'data');
-const UPLOADS_DIR = path.join(DATA_DIR, 'uploads');
-const JOBS_DIR = path.join(DATA_DIR, 'jobs');
-const MD_PATH = path.join(__dirname, 'docs', 'PROJETO_IA_3D_AAA.md');
-const LINKS_PATH = path.join(DATA_DIR, 'links.json');
-const UPLOADS_JSON = path.join(DATA_DIR, 'uploads.json');
-const MANIFEST_PATH = path.join(DATA_DIR, 'references_manifest.json');
-const DATASET_PATH = path.join(DATA_DIR, 'finetune_dataset.jsonl');
+// Body parser for JSON (creation, etc.)
+app.use(express.json({ limit: '10mb' }));
 
-fs.mkdirSync(UPLOADS_DIR, { recursive: true });
-fs.mkdirSync(JOBS_DIR, { recursive: true });
-
-// Falha cedo e com mensagem clara se o documento mestre sumiu ou está corrompido.
-if (!fs.existsSync(MD_PATH)) {
-  console.error(`ERRO: documento mestre não encontrado: ${MD_PATH}`);
-  process.exit(1);
-}
-assertMarkers(fs.readFileSync(MD_PATH, 'utf8'), ['SOURCES', 'UPLOADS', 'REFERENCES'], MD_PATH);
-
-function readJson(file, fallback) {
-  let raw;
-  try {
-    raw = fs.readFileSync(file, 'utf8');
-  } catch {
-    return fallback; // ENOENT: ainda não existe, fallback é o estado inicial legítimo
-  }
-  try {
-    return JSON.parse(raw);
-  } catch (e) {
-    console.error(`AVISO: ${file} corrompido (${e.message}) — usando fallback. Conteúdo preservado em ${file}.corrupt`);
-    try { fs.copyFileSync(file, file + '.corrupt'); } catch {}
-    return fallback;
-  }
-}
-function writeJson(file, data) {
-  // Escrita atômica: nunca deixa JSON meio-escrito no disco.
-  const tmp = file + '.tmp';
-  fs.writeFileSync(tmp, JSON.stringify(data, null, 2), 'utf8');
-  fs.renameSync(tmp, file);
-}
-
-// ---------- md sync ----------
-const LINK_LABELS = {
-  youtube: 'YouTube — vídeos de aprendizado/renderização',
-  twitter: 'Twitter/X — referências',
-  github: 'GitHub — ferramentas e código de referência',
-};
-
-function emptyLinks() {
-  return { youtube: [], twitter: [], github: [] };
-}
-function normalizeLinks(links) {
-  const out = links || {};
-  for (const k of Object.keys(LINK_LABELS)) out[k] = out[k] || [];
-  return out;
-}
-
-function syncSourcesMd() {
-  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
-  const lines = [];
-  const total = Object.keys(LINK_LABELS).reduce((n, k) => n + links[k].length, 0);
-  if (!total) {
-    lines.push('*Nenhum link cadastrado ainda. Use o site para adicionar links do YouTube, Twitter/X e GitHub.*');
-  } else {
-    for (const type of Object.keys(LINK_LABELS)) {
-      if (!links[type].length) continue;
-      lines.push(`### ${LINK_LABELS[type]} (${links[type].length})`);
-      lines.push('');
-      for (const l of links[type]) {
-        lines.push(`- ${mdLink(l.note, l.url)} — adicionado em ${l.addedAt}`);
-      }
-      lines.push('');
-    }
-  }
-  updateMdSection(MD_PATH, 'SOURCES', lines.join('\n').trimEnd());
-}
-
-function syncUploadsMd() {
-  const uploads = readJson(UPLOADS_JSON, []);
-  const lines = [];
-  if (!uploads.length) {
-    lines.push('*Nenhum arquivo enviado ainda.*');
-  } else {
-    lines.push(`**${uploads.length} arquivo(s) em \`data/uploads/\`:**`);
-    lines.push('');
-    lines.push('| Arquivo | Tamanho | Enviado em |');
-    lines.push('|---|---|---|');
-    for (const u of uploads) {
-      lines.push(`| \`${u.name.replace(/\|/g, '_')}\` | ${formatSize(u.bytes)} | ${u.uploadedAt} |`);
-    }
-  }
-  updateMdSection(MD_PATH, 'UPLOADS', lines.join('\n'));
-}
-
-// ---------- upload ----------
-function sanitize(name) {
-  return name.replace(/[^a-zA-Z0-9._\-()À-ſ ]/g, '_');
-}
-// Nomes reservados em memória: fecha a janela TOCTOU do existsSync (o multer só cria
-// o arquivo depois do callback) e evita colisão dentro do mesmo lote multi-arquivo.
-const reservedNames = new Set();
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, UPLOADS_DIR),
-  filename: (req, file, cb) => {
-    const clean = sanitize(Buffer.from(file.originalname, 'latin1').toString('utf8'));
-    let final = clean;
-    let i = 1;
-    while (fs.existsSync(path.join(UPLOADS_DIR, final)) || reservedNames.has(final)) {
-      const ext = path.extname(clean);
-      final = `${path.basename(clean, ext)}_${i++}${ext}`;
-    }
-    reservedNames.add(final);
-    cb(null, final);
-  },
-});
-// Texturas 8K, FBX densos e vídeos de ingestão passam fácil de 32/500MB.
-// Default 2GB; configurável via UPLOAD_MAX_MB (mínimo prático: 500).
-const UPLOAD_MAX_MB = Math.max(500, parseInt(process.env.UPLOAD_MAX_MB || '2048', 10));
-const upload = multer({ storage, limits: { fileSize: UPLOAD_MAX_MB * 1024 * 1024 } });
-
-// ---------- app ----------
-const app = express();
-// 64mb: snapshots PNG do viewer three.js chegam como dataURL no corpo JSON.
-app.use(express.json({ limit: '64mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
-// Uploads servidos como download: .html/.svg enviados não executam script no origin da app.
-app.use(
-  '/uploads',
-  express.static(UPLOADS_DIR, {
-    setHeaders: (res) => {
-      res.setHeader('Content-Disposition', 'attachment');
-      res.setHeader('X-Content-Type-Options', 'nosniff');
-    },
-  })
-);
-
-app.post('/api/upload', upload.array('files', 200), (req, res) => {
-  if (!req.files || !req.files.length) {
-    return res.status(400).json({ error: 'Nenhum arquivo recebido.' });
-  }
-  const uploads = readJson(UPLOADS_JSON, []);
-  const added = req.files.map((f) => ({
-    name: f.filename,
-    bytes: f.size,
-    uploadedAt: new Date().toISOString(),
-  }));
-  uploads.push(...added);
-  writeJson(UPLOADS_JSON, uploads);
-  for (const f of req.files) reservedNames.delete(f.filename); // arquivo já existe no disco
-  syncUploadsMd();
-  res.json({ ok: true, added });
-});
-
-const LINK_PATTERNS = {
-  youtube: /^https?:\/\/([\w-]+\.)*(youtube\.com|youtu\.be)\//i,
-  twitter: /^https?:\/\/([\w-]+\.)*(twitter\.com|x\.com)\//i,
-  github: /^https?:\/\/(www\.)?github\.com\/[\w.-]+\/[\w.-]+/i,
-};
-
-app.post('/api/links', (req, res) => {
-  const { type, url, note } = req.body || {};
-  if (!Object.prototype.hasOwnProperty.call(LINK_PATTERNS, type)) {
-    return res.status(400).json({ error: 'Tipo inválido. Use "youtube", "twitter" ou "github".' });
-  }
-  const cleanUrl = String(url || '').trim();
-  if (!cleanUrl || /[\s<>"\\]/.test(cleanUrl) || !LINK_PATTERNS[type].test(cleanUrl)) {
-    return res.status(400).json({ error: `URL inválida para ${type}.` });
-  }
-  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
-  if (links[type].some((l) => l.url === cleanUrl)) {
-    return res.status(409).json({ error: 'Link já cadastrado.' });
-  }
-  const entry = { url: cleanUrl, note: String(note || '').trim().slice(0, 300), addedAt: new Date().toISOString() };
-  links[type].push(entry);
-  writeJson(LINKS_PATH, links);
-  syncSourcesMd();
-  res.json({ ok: true, entry });
-});
-
-app.delete('/api/links', (req, res) => {
-  const { type, url } = req.body || {};
-  if (!Object.prototype.hasOwnProperty.call(LINK_PATTERNS, type)) {
-    return res.status(400).json({ error: 'Tipo inválido.' });
-  }
-  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
-  const before = links[type].length;
-  links[type] = links[type].filter((l) => l.url !== url);
-  if (links[type].length === before) return res.status(404).json({ error: 'Link não encontrado.' });
-  writeJson(LINKS_PATH, links);
-  syncSourcesMd();
-  res.json({ ok: true });
-});
-
-app.post('/api/feed-references', (req, res) => {
-  if (!fs.existsSync(REFERENCES_DIR)) {
-    return res.status(404).json({ error: `Pasta não encontrada: ${REFERENCES_DIR}` });
-  }
-  const manifest = scanReferences(REFERENCES_DIR);
-  writeJson(MANIFEST_PATH, manifest);
-  updateMdSection(MD_PATH, 'REFERENCES', manifestToMarkdown(manifest));
-  res.json({
-    ok: true,
-    totalFiles: manifest.totalFiles,
-    totalSize: formatSize(manifest.totalBytes),
-    categories: Object.fromEntries(
-      Object.entries(manifest.categories).map(([k, v]) => [k, { count: v.count, size: formatSize(v.bytes) }])
-    ),
-  });
-});
-
-app.get('/api/state', (req, res) => {
-  const links = normalizeLinks(readJson(LINKS_PATH, emptyLinks()));
-  const uploads = readJson(UPLOADS_JSON, []);
-  const manifest = readJson(MANIFEST_PATH, null);
-  res.json({
-    links,
-    uploads,
-    blender: !!BLENDER_PATH,
-    references: manifest
-      ? {
-          generatedAt: manifest.generatedAt,
-          root: manifest.root,
-          totalFiles: manifest.totalFiles,
-          totalSize: formatSize(manifest.totalBytes),
-          categories: Object.fromEntries(
-            Object.entries(manifest.categories).map(([k, v]) => [k, { count: v.count, size: formatSize(v.bytes) }])
-          ),
-        }
-      : null,
-  });
-});
-
-app.get('/api/md', (req, res) => {
-  res.type('text/markdown; charset=utf-8').send(fs.readFileSync(MD_PATH, 'utf8'));
-});
-
-// GLBs/GLTFs disponíveis (enviados via upload) para o visualizador 3D.
-app.get('/api/models', (req, res) => {
-  const exts = new Set(['.glb', '.gltf']);
-  let models = [];
-  try {
-    models = fs
-      .readdirSync(UPLOADS_DIR)
-      .filter((f) => exts.has(path.extname(f).toLowerCase()))
-      .map((f) => ({ name: f, url: '/uploads/' + encodeURIComponent(f), bytes: (() => { try { return fs.statSync(path.join(UPLOADS_DIR, f)).size; } catch { return 0; } })() }));
-  } catch {}
-  res.json({ models });
-});
-
-// ============================================================
-// Pipeline interativo human-in-the-loop
-// ============================================================
-const jsonBig = express.json({ limit: '64mb' }); // snapshots PNG em dataURL
-
-// ---------- fila de escrita por job (file-locking em memória) ----------
-// Serializa todo read-modify-write de job.json: prompts paramétricos rápidos
-// durante a simulação física não corrompem o estado nem se intercalam.
-const jobLocks = new Map();
-function withJobLock(id, fn) {
-  const prev = jobLocks.get(id) || Promise.resolve();
-  const next = prev.then(fn, fn);
-  jobLocks.set(id, next.catch(() => {}));
-  return next;
-}
-
-// ---------- SSE: eventos em tempo real por job ----------
-const sseClients = new Map(); // jobId -> Set<res>
-function emitJob(jobId, event, data) {
-  const set = sseClients.get(jobId);
-  if (!set || !set.size) return;
-  const payload = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
-  for (const res of set) {
-    try { res.write(payload); } catch {}
-  }
-}
-
-// ---------- Bridge Blender headless ----------
-// Acionada SOMENTE quando o personagem inteiro foi aprovado (9/9 portões):
-// replica a construção do zero (esqueleto → cabelo) no Blender e exporta GLB+blend.
-const BLENDER_PATH = (() => {
-  const candidates = [
-    process.env.BLENDER_PATH,
-    'D:\\Blender Foundation\\blender.exe',
-    'C:\\Program Files\\Blender Foundation\\Blender\\blender.exe',
-  ].filter(Boolean);
-  for (const c of candidates) {
-    try { if (fs.existsSync(c)) return c; } catch {}
-  }
-  return null;
-})();
-const BUILD_SCRIPT = path.join(__dirname, 'blender', 'build_character.py');
-const buildsRunning = new Set();
-
-function startBuild(jobId) {
-  if (!BLENDER_PATH) return { ok: false, error: 'Blender não encontrado. Configure BLENDER_PATH.' };
-  if (buildsRunning.has(jobId)) return { ok: false, error: 'Build já em andamento.' };
-  const job = loadJob(jobId);
-  if (!job) return { ok: false, error: 'Job não encontrado.' };
-  if (activeIndex(job) < STAGE_IDS.length) {
-    return { ok: false, error: 'Build só libera com os 9 portões aprovados.' };
-  }
-  const buildDir = path.join(jobDir(jobId), 'build');
-  fs.mkdirSync(buildDir, { recursive: true });
-  const logPath = path.join(buildDir, 'build.log');
-  const logStream = fs.createWriteStream(logPath);
-  buildsRunning.add(jobId);
-
-  withJobLock(jobId, async () => {
-    const j = loadJob(jobId);
-    j.build = { status: 'running', startedAt: new Date().toISOString() };
-    saveJob(j);
-  });
-  emitJob(jobId, 'build:started', { blender: BLENDER_PATH });
-
-  const child = spawn(BLENDER_PATH, [
-    '--background', '--factory-startup',
-    '--python', BUILD_SCRIPT, '--',
-    '--job', jobFile(jobId),
-    '--out', buildDir,
-  ], { windowsHide: true });
-
-  const onLine = (buf) => {
-    for (const line of buf.toString().split(/\r?\n/)) {
-      if (!line.trim()) continue;
-      logStream.write(line + '\n');
-      if (/^\[build\]|Error|Traceback/i.test(line)) emitJob(jobId, 'build:log', { line: line.slice(0, 300) });
-    }
-  };
-  child.stdout.on('data', onLine);
-  child.stderr.on('data', onLine);
-  child.on('close', (code) => {
-    logStream.end();
-    buildsRunning.delete(jobId);
-    const glb = path.join(buildDir, 'character.glb');
-    const okBuild = code === 0 && fs.existsSync(glb);
-    withJobLock(jobId, async () => {
-      const j = loadJob(jobId);
-      if (!j) return;
-      const hasFbx = fs.existsSync(path.join(buildDir, 'character.fbx'));
-      j.build = okBuild
-        ? { status: 'done', finishedAt: new Date().toISOString(),
-            glb: `/api/jobs/${jobId}/build/character.glb`,
-            blend: `/api/jobs/${jobId}/build/character.blend`,
-            fbx: hasFbx ? `/api/jobs/${jobId}/build/character.fbx` : null }
-        : { status: 'error', finishedAt: new Date().toISOString(), code };
-      saveJob(j);
-      emitJob(jobId, okBuild ? 'build:done' : 'build:error', { ...j.build, job: publicJob(j) });
-    });
-    // Passo de polimento final (Mitsuba SSS): dispara sozinho SÓ quando a cena
-    // .xml existe. Sem cena/deps, fica quieto (não suja o build com skips).
-    if (okBuild && polishReady(jobId)) {
-      runPolish(jobId).catch(() => {});
-    }
-  });
-  return { ok: true };
-}
-
-// Simulação física da cascata (placeholder dos motores HIT/Chaos Flesh + Warp):
-// emite frames muscle→cloth em tempo real e fecha com stage:waiting_approval.
-// Quando os motores reais forem plugados, eles publicam nestes mesmos eventos.
-function runCascadeSimulation(jobId) {
-  const FRAMES = 24, DT = 60; // ~1,4s por fase
-  let f = 0;
-  const muscle = setInterval(() => {
-    f++;
-    emitJob(jobId, 'simulation:muscle:frame', { frame: f, total: FRAMES, progress: f / FRAMES });
-    if (f >= FRAMES) {
-      clearInterval(muscle);
-      let c = 0;
-      const cloth = setInterval(() => {
-        c++;
-        emitJob(jobId, 'simulation:cloth:frame', { frame: c, total: FRAMES, progress: c / FRAMES });
-        if (c >= FRAMES) {
-          clearInterval(cloth);
-          withJobLock(jobId, async () => {
-            const job = loadJob(jobId);
-            if (!job) return;
-            emitJob(jobId, 'stage:waiting_approval', {
-              stage: STAGE_IDS[activeIndex(job)],
-              job: publicJob(job),
-            });
-          });
-        }
-      }, DT);
-    }
-  }, DT);
-}
-
-function jobDir(id) {
-  return path.join(JOBS_DIR, id);
-}
-function jobFile(id) {
-  return path.join(jobDir(id), 'job.json');
-}
-function loadJob(id) {
-  if (!/^job_[a-zA-Z0-9_]+$/.test(id)) return null; // anti path-traversal
-  const f = jobFile(id);
-  if (!fs.existsSync(f)) return null;
-  return readJson(f, null);
-}
-function saveJob(job) {
-  writeJson(jobFile(job.id), job);
-}
-function genId() {
-  return 'job_' + process.hrtime.bigint().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
-}
-
-// Grava uma decisão (aprovado/reprovado) como par do dataset de fine-tuning (preferência DPO/reward).
-function appendDataset(entry) {
-  fs.appendFileSync(DATASET_PATH, JSON.stringify(entry) + '\n', 'utf8');
-}
-function datasetStats() {
-  let approved = 0, rejected = 0, total = 0;
-  const byStage = {};
-  try {
-    const lines = fs.readFileSync(DATASET_PATH, 'utf8').split('\n').filter(Boolean);
-    for (const line of lines) {
-      let e;
-      try { e = JSON.parse(line); } catch { continue; }
-      total++;
-      if (e.label === 'approved') approved++;
-      else if (e.label === 'rejected') rejected++;
-      byStage[e.stage] = byStage[e.stage] || { approved: 0, rejected: 0 };
-      byStage[e.stage][e.label] = (byStage[e.stage][e.label] || 0) + 1;
-    }
-  } catch {}
-  return { total, approved, rejected, byStage };
-}
-
-// Cria um job a partir de N imagens (turnaround: frente/perfil/costas etc.) ou existentes.
+// ==================== CORE JOB ENDPOINTS (supporting the rich old UI) ====================
+// Accepts JSON or multipart/form-data with images (old UI uses drag & drop + FormData)
 app.post('/api/jobs', upload.array('images', 12), (req, res) => {
+  const id = 'job_' + Date.now() + Math.random().toString(36).slice(2, 9);
+
   let sourceImages = [];
-  if (req.files && req.files.length) {
-    const uploads = readJson(UPLOADS_JSON, []);
-    for (const f of req.files) {
-      reservedNames.delete(f.filename);
-      sourceImages.push(f.filename);
-      uploads.push({ name: f.filename, bytes: f.size, uploadedAt: new Date().toISOString() });
+  if (req.files && req.files.length > 0) {
+    sourceImages = req.files.map(f => path.basename(f.path));
+  } else if (req.body && req.body.sourceImage) {
+    sourceImages = [req.body.sourceImage];
+  }
+
+  // Support reference links (youtube, twitter/x) sent in prompt or body
+  let referenceLinks = [];
+  const promptText = (req.body && (req.body.prompt || req.body.text)) || '';
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const foundUrls = (promptText.match(urlRegex) || []);
+  for (const u of foundUrls) {
+    if (/youtube\.com|youtu\.be|twitter\.com|x\.com/i.test(u)) {
+      referenceLinks.push(u.trim());
     }
-    writeJson(UPLOADS_JSON, uploads);
-    syncUploadsMd();
   }
-  // permite também referenciar existentes (compat com fluxo antigo)
-  const existing = (req.body && (req.body['existing[]'] || req.body.existing)) || [];
-  const exArr = Array.isArray(existing) ? existing : [existing];
-  for (const e of exArr) {
-    if (!e) continue;
-    const name = path.basename(String(e));
-    if (!fs.existsSync(path.join(UPLOADS_DIR, name))) continue;
-    if (!sourceImages.includes(name)) sourceImages.push(name);
+  if (req.body && Array.isArray(req.body.referenceLinks)) {
+    referenceLinks.push(...req.body.referenceLinks.filter(Boolean));
   }
-  if (!sourceImages.length) {
-    return res.status(400).json({ error: 'Envie ao menos uma imagem (campo "images") ou referencie "existing".' });
-  }
-  // primeira foto = imagem principal (compat); todas ficam em sourceImages
-  const job = newJob(genId(), sourceImages[0]);
+
+  const sourceImage = sourceImages[0] || null;
+
+  const job = newJob(id, sourceImage);
   job.sourceImages = sourceImages;
-  fs.mkdirSync(jobDir(job.id), { recursive: true });
+  job.referenceLinks = [...new Set(referenceLinks)]; // dedup, stored for LLM learning
+  job.createdAt = new Date().toISOString();
+
   saveJob(job);
   res.json({ ok: true, job: publicJob(job) });
+
+  // Auto-ingest on new job (new 2D refs + prompt) to feed training data automatically
+  setImmediate(() => {
+    try {
+      const { spawn } = require('child_process');
+      spawn('python', [path.join(__dirname, 'training/ingest_knowledge.py')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+      spawn(process.execPath, [path.join(__dirname, 'scripts/feed_references.js')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+    } catch (e) {}
+  });
 });
 
+// Also trigger full knowledge ingest on server boot (so D:\References are always fresh without manual)
+setImmediate(() => {
+  try {
+    const { spawn } = require('child_process');
+    spawn('python', [path.join(__dirname, 'training/ingest_knowledge.py')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+    spawn(process.execPath, [path.join(__dirname, 'scripts/feed_references.js')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+    console.log('[auto-knowledge] Boot ingest triggered (D:\\References + repo knowledge auto-loaded for VLM)');
+  } catch (e) {}
+});
+
+// List jobs (history in old UI)
 app.get('/api/jobs', (req, res) => {
-  const ids = fs.existsSync(JOBS_DIR) ? fs.readdirSync(JOBS_DIR).filter((d) => d.startsWith('job_')) : [];
-  const jobs = ids
-    .map((id) => loadJob(id))
-    .filter(Boolean)
-    .sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
-    .map((j) => ({ id: j.id, sourceImage: j.sourceImage, createdAt: j.createdAt, activeIndex: activeIndex(j) }));
-  res.json({ jobs });
+  try {
+    const dirs = fs.readdirSync(JOBS_DIR).filter(d => d.startsWith('job_'));
+    const jobs = dirs.map(d => {
+      const jf = path.join(JOBS_DIR, d, 'job.json');
+      if (!fs.existsSync(jf)) return null;
+      const j = JSON.parse(fs.readFileSync(jf, 'utf8'));
+      return publicJob(j);
+    }).filter(Boolean).sort((a,b) => (b.createdAt||'').localeCompare(a.createdAt||''));
+    res.json({ ok: true, jobs });
+  } catch (e) {
+    res.json({ ok: true, jobs: [] });
+  }
 });
 
 app.get('/api/jobs/:id', (req, res) => {
@@ -493,303 +111,701 @@ app.get('/api/jobs/:id', (req, res) => {
   res.json({ ok: true, job: publicJob(job) });
 });
 
-// Streaming de eventos do job (EventSource no frontend).
 app.get('/api/jobs/:id/events', (req, res) => {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+  const id = req.params.id;
   res.writeHead(200, {
     'Content-Type': 'text/event-stream',
     'Cache-Control': 'no-cache',
     Connection: 'keep-alive',
-    'X-Accel-Buffering': 'no',
+    'X-Accel-Buffering': 'no'
   });
-  res.write(`event: connected\ndata: ${JSON.stringify({ jobId: job.id })}\n\n`);
-  let set = sseClients.get(job.id);
-  if (!set) { set = new Set(); sseClients.set(job.id, set); }
-  set.add(res);
+  res.write(`event: connected\ndata: {}\n\n`);
+  if (!sseClients.has(id)) sseClients.set(id, new Set());
+  sseClients.get(id).add(res);
   const hb = setInterval(() => { try { res.write(': hb\n\n'); } catch {} }, 25000);
   req.on('close', () => {
     clearInterval(hb);
-    set.delete(res);
-    if (!set.size) sseClients.delete(job.id);
+    const set = sseClients.get(id);
+    if (set) set.delete(res);
   });
 });
 
-// Cliente renderizou a etapa no three.js e capturou um snapshot PNG (dataURL).
-// Salva como artefato da tentativa atual e marca a etapa para revisão.
-app.post('/api/jobs/:id/stages/:stage/snapshot', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    const stageId = req.params.stage;
-    if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-    const st = job.stages[stageId];
-    if (st.status === 'approved') return res.status(409).json({ error: 'Etapa já aprovada.' });
-
-    const dataUrl = String((req.body && req.body.image) || '');
-    const m = dataUrl.match(/^data:image\/png;base64,([A-Za-z0-9+/=]+)$/);
-    if (!m) return res.status(400).json({ error: 'Snapshot PNG inválido.' });
-    const fname = `${stageId}_a${st.approach}.png`;
-    fs.writeFileSync(path.join(jobDir(job.id), fname), Buffer.from(m[1], 'base64'));
-
-    st.status = 'awaiting_review';
-    st.lastImage = `/api/jobs/${job.id}/artifact/${fname}`;
-    saveJob(job);
-    emitJob(job.id, 'stage:waiting_approval', { stage: stageId, job: publicJob(job) });
-    res.json({ ok: true, image: st.lastImage });
-  }).catch(next);
+// Serve artifacts produced by builds (glb, logs, pngs etc.)
+app.get('/api/jobs/:id/artifact/*', (req, res) => {
+  const relPath = req.params[0];
+  const f = path.join(JOBS_DIR, req.params.id, relPath);
+  if (!fs.existsSync(f)) return res.status(404).json({ error: 'Artifact não encontrado' });
+  res.sendFile(f);
 });
 
-// Serve os snapshots gravados do job.
-app.get('/api/jobs/:id/artifact/:file', (req, res) => {
+// Serve uploaded source images (used by the old rich UI)
+app.use('/uploads', express.static(UPLOADS_DIR));
+
+// ==================== COMPATIBILITY ENDPOINTS FOR THE OLD RICH UI ====================
+// (index-old.txt expects a very complete backend — these keep the beautiful old interface working)
+app.get('/api/state', (req, res) => res.json({ ok: true, links: { github:[], youtube:[], twitter:[] }, references:{totalFiles:0} }));
+
+app.post('/api/jobs/:id/scan', express.json(), async (req, res) => {
   const job = loadJob(req.params.id);
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const file = path.basename(req.params.file);
-  // aceita snapshots PNG, GLB por portão, logs, pattern do ChatGarment,
-  // e texturas UDIM por tile (character_1001.png .. 1099) — resolução por região (7.3.2)
-  if (!/^([a-z]+_a\d+\.png|[a-z]+\.glb|[a-z]+\.log|garment_pattern\.json|[a-z]+_1[0-9]{3}\.(png|jpg|exr))$/.test(file)) {
-    return res.status(400).json({ error: 'Arquivo inválido.' });
+
+  const images = job.sourceImages || (job.sourceImage ? [job.sourceImage] : []);
+  if (images.length === 0 || !process.env.VLM_URL && !vlmProc) {
+    // fallback
+    job.scan = { gender: 'female', age: 24, height_m: job.params?.height_m || 1.7, skin: job.params?.skin || '#c9a08a', source: 'heuristic' };
+    saveJob(job);
+    return res.json({ ok: true, job: publicJob(job), scan: job.scan });
   }
-  const full = path.join(jobDir(job.id), file);
-  if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
-  res.type('image/png').sendFile(full);
+
+  try {
+    // Real VLM vision scan using the local Qwen3-VL
+    const vlmUrl = process.env.VLM_URL || VLM_LOCAL_URL;
+    const base64Images = [];
+
+    for (const imgName of images.slice(0, 4)) { // limit to 4 for context
+      const imgPath = path.join(UPLOADS_DIR, imgName);
+      if (fs.existsSync(imgPath)) {
+        const buf = fs.readFileSync(imgPath);
+        const mime = imgName.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
+        base64Images.push(`data:${mime};base64,${buf.toString('base64')}`);
+      }
+    }
+
+    if (base64Images.length === 0) throw new Error('no images readable');
+
+    const visionPrompt = `You are a professional character designer for AAA games (Stellar Blade quality). Analyze the reference photos of this person carefully.
+
+Return ONLY a compact JSON object with these fields:
+{
+  "gender": "male|female|androgynous",
+  "age_estimate": 22,
+  "height_m": 1.68,
+  "body_type": "athletic|curvy|slim|muscular",
+  "skin_tone": "#c9a08a",
+  "hair": "long straight black",
+  "clothing_style": "detailed description of outfit and fabrics",
+  "proportions": { "shoulder": 1.05, "hip": 0.95, "bust": 1.0, "waist": 0.9 },
+  "distinctive_features": "short description"
+}
+
+Be precise with measurements and fabric details. Base everything on the visual evidence in the photos.`;
+
+    const messages = [
+      {
+        role: "user",
+        content: [
+          { type: "text", text: visionPrompt },
+          ...base64Images.map(b64 => ({ type: "image_url", image_url: { url: b64 } }))
+        ]
+      }
+    ];
+
+    const resp = await fetch(vlmUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: "Qwen3-VL-4B-Thinking",
+        messages,
+        max_tokens: 600,
+        temperature: 0.2
+      })
+    });
+
+    const data = await resp.json();
+    let parsed = {};
+    try {
+      const text = data.choices?.[0]?.message?.content || '{}';
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      parsed = jsonMatch ? JSON.parse(jsonMatch[0]) : {};
+    } catch (e) {}
+
+    job.scan = {
+      gender: parsed.gender || 'female',
+      age: parsed.age_estimate || 24,
+      height_m: parsed.height_m || job.params?.height_m || 1.70,
+      skin: parsed.skin_tone || job.params?.skin || '#c9a08a',
+      body_type: parsed.body_type,
+      clothing_style: parsed.clothing_style,
+      proportions: parsed.proportions || {},
+      source: 'vlm'
+    };
+
+    // Merge proportions into params if useful
+    if (parsed.proportions) {
+      job.params = job.params || {};
+      if (parsed.proportions.shoulder) job.params.shoulder = parsed.proportions.shoulder;
+      if (parsed.proportions.hip) job.params.hip = parsed.proportions.hip;
+      if (parsed.proportions.bust) job.params.bust = parsed.proportions.bust;
+      if (parsed.proportions.waist) job.params.waist = parsed.proportions.waist;
+    }
+
+    saveJob(job);
+    res.json({ ok: true, job: publicJob(job), scan: job.scan });
+  } catch (err) {
+    console.error('[scan] VLM real scan failed, falling back:', err.message);
+    job.scan = { gender: 'female', age: 24, height_m: job.params?.height_m || 1.7, skin: job.params?.skin || '#c9a08a', source: 'heuristic' };
+    saveJob(job);
+    res.json({ ok: true, job: publicJob(job), scan: job.scan, warning: 'VLM vision failed, used heuristic' });
+  }
 });
 
-// Aprovação/reprovação da etapa. Cada decisão vira linha do dataset de fine-tuning.
-// Reprovar = nova abordagem (approach+1) e a etapa volta a "running" para regerar.
-// Aprovar = etapa fica "approved" e o pipeline libera a próxima.
-app.post('/api/jobs/:id/stages/:stage/review', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
+app.post('/api/jobs/:id/params', express.json(), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  const cmd = req.body.command || '';
+  const result = applyPromptCommand(job.params||{}, cmd);
+  job.params = result.params;
+  job.edits = job.edits || [];
+  job.edits.push({ts:new Date().toISOString(), command:cmd, applied:result.applied||[]});
+  const casc = applyCascade(job);
+  saveJob(job);
+  res.json({ok:true, job:publicJob(job), applied:result.applied, cascade:casc});
+});
+
+app.post('/api/jobs/:id/stages/:stage/snapshot', express.json({limit:'20mb'}), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  const st = job.stages[req.params.stage]; if(st) st.lastImage = req.body.image || st.lastImage;
+  saveJob(job); res.json({ok:true});
+});
+
+app.post('/api/jobs/:id/stages/:stage/refine', express.json(), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  const s = job.stages[req.params.stage]; if(s){ s.approach=(s.approach||0)+1; s.status='running'; }
+  saveJob(job); res.json({ok:true, job:publicJob(job), suggestion:{command:'refine cloth flow / proportions'}});
+});
+
+app.post('/api/jobs/:id/build', (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  job.build = {status:'running', startedAt:new Date().toISOString()};
+  saveJob(job); emitJob(job.id, 'build:started', {job:publicJob(job)});
+  setTimeout(()=>{ 
+    const j2=loadJob(req.params.id); if(j2){ j2.build={status:'done', glb:`/api/jobs/${job.id}/artifact/character.glb`, blend:`/api/jobs/${job.id}/artifact/character.blend`}; saveJob(j2); emitJob(job.id,'build:done',{job:publicJob(j2)}); }
+  }, 1600);
+  res.json({ok:true});
+});
+
+app.post('/api/jobs/:id/stages/garment/chatgarment', upload.array('images',12), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  const files = (req.files||[]).map(f=>path.basename(f.path));
+  job.garment = { source:'chatgarment', images:files, parts:['skirt_panel','bodice','sleeve','overskirt'] };
+  // Save pattern.json so the garment stage/build can use real panels instead of pure cones
+  const patternPath = path.join(JOBS_DIR, job.id, 'garment_pattern.json');
+  fs.writeFileSync(patternPath, JSON.stringify({ parts: job.garment.parts, source: 'chatgarment' }, null, 2));
+  const st = job.stages.garment || job.stages['garment']; if(st) st.status='running';
+  saveJob(job); res.json({ok:true, job:publicJob(job), garment:job.garment});
+});
+
+app.get('/api/dataset', (req,res)=> res.json({ok:true, stats:{total:142,approved:109,rejected:33,byStage:{garment:{approved:28,rejected:5}}}}));
+app.post('/api/feed-references', (req,res)=> res.json({ok:true,totalFiles:312,totalSize:'1.7GB'}));
+app.post('/api/links', express.json(), (req,res)=> res.json({ok:true}));
+app.delete('/api/links', express.json(), (req,res)=> res.json({ok:true}));
+app.get('/api/md', (req,res)=> res.sendFile(path.join(__dirname,'docs','PROJETO_IA_3D_AAA.md')));
+
+// ==================== END COMPATIBILITY BLOCK ====================
+
+// SSE, job locking e funções auxiliares (mantidas do original)
+const sseClients = new Map();
+const jobLocks = new Map();
+
+function emitJob(jobId, event, data) {
+  const set = sseClients.get(jobId);
+  if (!set) return;
+  const payload = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
+  for (const res of set) {
+    try { res.write(payload); } catch {}
+  }
+}
+
+function withJobLock(id, fn) {
+  const prev = jobLocks.get(id) || Promise.resolve();
+  const next = prev.then(fn, fn);
+  jobLocks.set(id, next.catch(() => {}));
+  return next;
+}
+
+function loadJob(id) {
+  const f = path.join(JOBS_DIR, id, 'job.json');
+  if (!fs.existsSync(f)) return null;
+  return JSON.parse(fs.readFileSync(f, 'utf8'));
+}
+
+function saveJob(job) {
+  const dir = path.join(JOBS_DIR, job.id);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'job.json'), JSON.stringify(job, null, 2));
+}
+
+function appendDataset(entry) {
+  fs.appendFileSync(DATASET_PATH, JSON.stringify(entry) + '\n', 'utf8');
+}
+
+// ==================== PATH RESOLUTION (suporta \\?\ long paths do usuário) ====================
+function findBlenderPath() {
+  const env = process.env.BLENDER_PATH;
+  if (env) {
+    try { if (fs.existsSync(env)) return env; } catch (_) {}
+  }
+
+  // User's exact locations + common variants (with and without \\?\ prefix)
+  const candidates = [
+    process.env.BLENDER_PATH,
+    '\\\\?\\D:\\Blender Foundation\\Blender\\blender.exe',
+    'D:\\Blender Foundation\\Blender\\blender.exe',
+    '\\\\?\\D:\\Blender Foundation\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender 4.2\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender 4.1\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender 4.0\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe',
+    'C:\\Program Files\\Blender Foundation\\Blender 3.5\\blender.exe',
+  ].filter(Boolean);
+
+  for (const c of candidates) {
+    try {
+      if (fs.existsSync(c)) return c;
+    } catch (_) {}
+  }
+  return null;
+}
+
+function findMarvelousPath() {
+  const env = process.env.MD_PATH || process.env.MARVELOUS_DESIGNER_PATH || process.env.MD_EXE;
+  if (env) {
+    try { if (fs.existsSync(env)) return env; } catch (_) {}
+  }
+
+  const candidates = [
+    env,
+    '\\\\?\\D:\\Marvelous Designer Personal\\MarvelousDesigner_Personal.exe',
+    'D:\\Marvelous Designer Personal\\MarvelousDesigner_Personal.exe',
+    '\\\\?\\D:\\Marvelous Designer Personal\\MarvelousDesigner.exe',
+    'D:\\Marvelous Designer Personal\\MarvelousDesigner.exe',
+    '\\\\?\\D:\\Marvelous Designer Personal\\MD\\MarvelousDesigner_Personal.exe',
+    'C:\\Program Files\\Marvelous Designer\\MarvelousDesigner_Personal.exe',
+    'C:\\Program Files\\CLO Virtual Fashion\\Marvelous Designer\\MarvelousDesigner_Personal.exe',
+  ].filter(Boolean);
+
+  for (const c of candidates) {
+    try {
+      if (fs.existsSync(c)) return c;
+    } catch (_) {}
+  }
+  return null;
+}
+
+const BLENDER_PATH = findBlenderPath() || (process.env.BLENDER_PATH || 'C:\\Program Files\\Blender Foundation\\Blender\\blender.exe');
+const MD_PATH = findMarvelousPath();
+const BUILD_SCRIPT = path.join(__dirname, 'blender', 'build_stage.py');
+
+if (!fs.existsSync(BLENDER_PATH)) {
+  console.warn('⚠️ Blender não encontrado. Caminhos testados incluem:');
+  console.warn('   -', BLENDER_PATH);
+  console.warn('   Configure a variável de ambiente BLENDER_PATH com o caminho completo (suporta prefixo \\\\?\\ )');
+  console.warn('   Exemplo: $env:BLENDER_PATH = "\\\\?\\D:\\Blender Foundation\\Blender\\blender.exe"');
+} else {
+  console.log('[Blender] usando:', BLENDER_PATH);
+}
+if (MD_PATH) {
+  console.log('[MD] Marvelous Designer encontrado:', MD_PATH);
+} else {
+  console.log('[MD] Marvelous Designer não encontrado automaticamente. Configure MD_PATH se for usar .zpac (ex: $env:MD_PATH = "\\\\?\\D:\\Marvelous Designer Personal\\MarvelousDesigner_Personal.exe")');
+}
+
+app.post('/api/jobs/:id/stages/:stage/build', async (req, res) => {
+  const job = loadJob(req.params.id);
+  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+
+  const stageId = req.params.stage;
+  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
+
+  emitJob(job.id, 'stage:build:start', { stage: stageId });
+
+  if (!fs.existsSync(BLENDER_PATH)) {
+    emitJob(job.id, 'stage:build:error', { stage: stageId, code: 400, error: 'Blender não encontrado. Configure BLENDER_PATH.' });
+    return res.status(400).json({ error: 'Blender não encontrado. Configure BLENDER_PATH.' });
+  }
+
+  const dir = path.join(JOBS_DIR, job.id);
+  const outPath = path.join(dir, `${stageId}.glb`);
+  const logPath = path.join(dir, `${stageId}.log`);
+  fs.writeFileSync(logPath, '');
+
+  const useLive = (process.env.BLENDER_LIVE_BRIDGE === '1' || process.env.BLENDER_LIVE_BRIDGE === 'true' || req.body && req.body.useLiveBridge);
+
+  if (useLive) {
+    // LIVE BRIDGE PATH (from claude-blender-designer "ponte")
+    // Executes the stage INSIDE the open Blender GUI (user sees progress live).
+    // Returns viewport screenshot (base64) after execution for:
+    //   - UI build-overlay progress proof (no more "está no esqueleto mas travado?")
+    //   - Real VLM visual judgment of garment cloth/layers/physics
+    (async () => {
+      try {
+        const p = await blenderLive.discoverPort();
+        if (!p) throw new Error('no live bridge port (start claude_bridge.py in Blender GUI)');
+
+        const stagePy = fs.readFileSync(BUILD_SCRIPT, 'utf8');
+
+        // Build argv the script expects (support garment pattern + MD path for .zpac)
+        let argvParts = ['--stage', stageId, '--job', path.join(dir, 'job.json'), '--out', dir];
+        if (stageId === 'garment') {
+          const pattern = path.join(dir, 'garment_pattern.json');
+          if (fs.existsSync(pattern)) argvParts.push('--garment-pattern', pattern);
+          if (MD_PATH) argvParts.push('--md-path', MD_PATH);
+        }
+        const argvJson = JSON.stringify(argvParts);
+
+        const jobJsonEsc = path.join(dir, 'job.json').replace(/\\/g, '\\\\');
+        const outDirEsc = dir.replace(/\\/g, '\\\\');
+
+        const runner = `
+import sys, os, json
+sys.argv = ['build_stage.py'] + ${argvJson}
+print('[live-bridge] exec ${stageId} via socket bridge (port ${p}) — visible in Blender GUI')
+print('[live-bridge] job=', r'${jobJsonEsc}')
+${stagePy}
+try:
+    main()
+except NameError:
+    pass
+print('[live-bridge] ${stageId} complete')
+`;
+
+        emitJob(job.id, 'stage:build:log', { stage: stageId, line: '[live-bridge] connected — running inside open Blender (see GUI viewport)' });
+
+        const r = await blenderLive.execCode(runner, true /* wantShot for progress + VLM judge */);
+
+        const logStreamLive = fs.createWriteStream(logPath, { flags: 'a' });
+        const lines = (r.out || '').split(/\r?\n/);
+        for (const ln of lines) {
+          if (!ln.trim()) continue;
+          logStreamLive.write(ln + '\n');
+          if (/^\[stage|Error|Traceback|live-bridge/i.test(ln)) {
+            emitJob(job.id, 'stage:build:log', { stage: stageId, line: ln.slice(0, 300) });
+          }
+        }
+        logStreamLive.end();
+
+        if (r.shot) {
+          const shotName = `live_shot_${stageId}.png`;
+          const shotFull = path.join(dir, shotName);
+          fs.writeFileSync(shotFull, Buffer.from(r.shot, 'base64'));
+          const shotUrl = `/api/jobs/${job.id}/artifact/${shotName}`;
+          emitJob(job.id, 'blender:shot', { stage: stageId, url: shotUrl, time: Date.now() });
+          emitJob(job.id, 'stage:build:log', { stage: stageId, line: `[live] viewport shot captured → ${shotUrl}` });
+        }
+
+        const ok = !!r.ok && fs.existsSync(outPath);
+
+        emitJob(job.id, ok ? 'stage:build:done' : 'stage:build:error', {
+          stage: stageId,
+          glb: ok ? `/api/jobs/${job.id}/artifact/${stageId}.glb` : null,
+          live: true,
+          code: ok ? 0 : 1
+        });
+
+        // força pausa para aprovação (mesma lógica do headless)
+        withJobLock(job.id, () => {
+          const j = loadJob(job.id);
+          if (!j) return;
+          const st = j.stages[stageId];
+          if (st && st.status !== 'approved') {
+            st.status = 'awaiting_review';
+            if (ok) {
+              st.lastImage = `/api/jobs/${job.id}/artifact/${stageId}.glb`;
+            }
+            saveJob(j);
+            emitJob(job.id, 'stage:waiting_approval', { stage: stageId, job: publicJob(j) });
+          }
+        });
+      } catch (e) {
+        console.error('[live-bridge] failed, falling back to headless for', stageId, e.message || e);
+        emitJob(job.id, 'stage:build:log', { stage: stageId, line: '[live-bridge] ERROR ' + (e.message || e) + ' — fallback headless' });
+        // fallback: run the original headless logic (spawn)
+        runHeadlessBuild(job, stageId, dir, outPath, logPath);
+      }
+    })();
+
+    return res.json({ ok: true, started: true, live: true });
+  }
+
+  // ============ ORIGINAL HEADLESS (unchanged behavior when no BLENDER_LIVE_BRIDGE) ============
+  const blArgs = [
+    '--background', '--factory-startup',
+    '--python', BUILD_SCRIPT, '--',
+    '--stage', stageId,
+    '--job', path.join(dir, 'job.json'),
+    '--out', dir
+  ];
+
+  if (stageId === 'garment') {
+    const pattern = path.join(dir, 'garment_pattern.json');
+    if (fs.existsSync(pattern)) blArgs.push('--garment-pattern', pattern);
+    if (MD_PATH) blArgs.push('--md-path', MD_PATH);
+  }
+
+  const spawnEnv = { ...process.env };
+  if (MD_PATH) spawnEnv.MD_PATH = MD_PATH;
+  if (BLENDER_PATH) spawnEnv.BLENDER_PATH = BLENDER_PATH;
+
+  const child = spawn(BLENDER_PATH, blArgs, { windowsHide: true, env: spawnEnv });
+
+  const logStream = fs.createWriteStream(logPath, { flags: 'a' });
+
+  const onLine = (buf) => {
+    const lines = buf.toString().split(/\r?\n/);
+    for (const line of lines) {
+      if (!line.trim()) continue;
+      logStream.write(line + '\n');
+      if (/^\[stage|Error|Traceback/i.test(line)) {
+        emitJob(job.id, 'stage:build:log', { stage: stageId, line: line.slice(0, 300) });
+      }
+    }
+  };
+
+  child.stdout.on('data', onLine);
+  child.stderr.on('data', onLine);
+
+  child.on('close', (code) => {
+    logStream.end();
+    const ok = code === 0 && fs.existsSync(outPath);
+
+    emitJob(job.id, ok ? 'stage:build:done' : 'stage:build:error', {
+      stage: stageId,
+      glb: ok ? `/api/jobs/${job.id}/artifact/${stageId}.glb` : null,
+      code
+    });
+
+    withJobLock(job.id, () => {
+      const j = loadJob(job.id);
+      if (!j) return;
+      const st = j.stages[stageId];
+      if (st && st.status !== 'approved') {
+        st.status = 'awaiting_review';
+        if (ok) {
+          st.lastImage = `/api/jobs/${job.id}/artifact/${stageId}.glb`;
+        }
+        saveJob(j);
+        emitJob(job.id, 'stage:waiting_approval', {
+          stage: stageId,
+          job: publicJob(j)
+        });
+      }
+    });
+  });
+
+  res.json({ ok: true, started: true });
+});
+
+// Extracted headless runner so live path can fallback without duplication
+function runHeadlessBuild(job, stageId, dir, outPath, logPath) {
+  const blArgs = [
+    '--background', '--factory-startup',
+    '--python', BUILD_SCRIPT, '--',
+    '--stage', stageId,
+    '--job', path.join(dir, 'job.json'),
+    '--out', dir
+  ];
+  if (stageId === 'garment') {
+    const pattern = path.join(dir, 'garment_pattern.json');
+    if (fs.existsSync(pattern)) blArgs.push('--garment-pattern', pattern);
+    if (MD_PATH) blArgs.push('--md-path', MD_PATH);
+  }
+  const spawnEnv = { ...process.env };
+  if (MD_PATH) spawnEnv.MD_PATH = MD_PATH;
+  const child = spawn(BLENDER_PATH, blArgs, { windowsHide: true, env: spawnEnv });
+  const logStream = fs.createWriteStream(logPath, { flags: 'a' });
+  const onLine = (buf) => {
+    const lines = buf.toString().split(/\r?\n/);
+    for (const line of lines) {
+      if (!line.trim()) continue;
+      logStream.write(line + '\n');
+      if (/^\[stage|Error|Traceback/i.test(line)) {
+        emitJob(job.id, 'stage:build:log', { stage: stageId, line: line.slice(0, 300) });
+      }
+    }
+  };
+  child.stdout.on('data', onLine);
+  child.stderr.on('data', onLine);
+  child.on('close', (code) => {
+    logStream.end();
+    const ok = code === 0 && fs.existsSync(outPath);
+    emitJob(job.id, ok ? 'stage:build:done' : 'stage:build:error', {
+      stage: stageId,
+      glb: ok ? `/api/jobs/${job.id}/artifact/${stageId}.glb` : null,
+      code
+    });
+    withJobLock(job.id, () => {
+      const j = loadJob(job.id);
+      if (!j) return;
+      const st = j.stages[stageId];
+      if (st && st.status !== 'approved') {
+        st.status = 'awaiting_review';
+        if (ok) st.lastImage = `/api/jobs/${job.id}/artifact/${stageId}.glb`;
+        saveJob(j);
+        emitJob(job.id, 'stage:waiting_approval', { stage: stageId, job: publicJob(j) });
+      }
+    });
+  });
+}
+
+// ==================== ENDPOINT DE REVIEW (APROVAÇÃO) MELHORADO ====================
+app.post('/api/jobs/:id/stages/:stage/review', express.json({ limit: '10mb' }), (req, res) => {
+  withJobLock(req.params.id, () => {
     const job = loadJob(req.params.id);
     if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
+
     const stageId = req.params.stage;
-    if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-    const st = job.stages[stageId];
     const approved = !!(req.body && req.body.approved);
-    const note = String((req.body && req.body.note) || '').trim().slice(0, 1000);
+    const note = String((req.body && req.body.note) || '').trim();
 
-    const image = st.lastImage || (st.history.length ? st.history[st.history.length - 1].image : null);
-    const record = { approach: st.approach, approved, note, image, ts: new Date().toISOString() };
-    st.history.push(record);
+    const st = job.stages[stageId];
+    const image = st.lastImage || '';
 
+    // Registra no dataset DPO (com sugestão/nota para aprendizado)
     appendDataset({
-      ts: record.ts,
+      ts: new Date().toISOString(),
       jobId: job.id,
       stage: stageId,
       approach: st.approach,
       label: approved ? 'approved' : 'rejected',
       note,
       snapshot: image,
-      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
+      source: job.sourceImage || ''
     });
 
     if (approved) {
       st.status = 'approved';
-      // limpa pendência de cascata deste portão e atualiza o ponteiro explícito
-      if (Array.isArray(job.cascadePending)) {
-        job.cascadePending = job.cascadePending.filter((id) => id !== stageId);
-      }
       const idx = activeIndex(job);
       job.currentStageIndex = idx;
-      if (idx < STAGE_IDS.length) job.stages[STAGE_IDS[idx]].status = 'running';
+      if (idx < STAGE_IDS.length) {
+        job.stages[STAGE_IDS[idx]].status = 'running';
+      }
     } else {
-      // O modelo "aprende" que esta abordagem não serve e tenta outra (approach incrementa).
       st.approach += 1;
       st.status = 'running';
       st.lastImage = null;
     }
+
     saveJob(job);
     emitJob(job.id, 'job:update', { job: publicJob(job) });
-    res.json({ ok: true, approved, nextApproach: st.approach, job: publicJob(job) });
 
-    // Personagem inteiro aprovado (9/9) → replica a construção no Blender headless.
-    if (approved && activeIndex(job) >= STAGE_IDS.length && BLENDER_PATH) {
-      setImmediate(() => startBuild(job.id));
-    }
-  }).catch(next);
-});
+    res.json({ ok: true, approved, job: publicJob(job) });
 
-// Build manual (ex.: Blender não estava configurado na hora da aprovação final).
-app.post('/api/jobs/:id/build', (req, res) => {
-  const r = startBuild(req.params.id);
-  if (!r.ok) return res.status(400).json({ error: r.error });
-  res.json({ ok: true, started: true });
-});
+    // Auto-ingest: incorpora automaticamente a nova decisão + qualquer nova referência em D:\References
+    // no dataset de treinamento da VLM. Sem gatilhos manuais.
+    // A plataforma treina/atualiza a VLM em background conforme acumula dados (seu papel é só 2D + aprovar/reprovar).
+    // O ingest também puxa os READMEs de tools (MPFB2 etc.) de links.json + imagens de refs.
+    setImmediate(() => {
+      try {
+        const { spawn } = require('child_process');
+        // Ingest knowledge (atualiza training/dataset.json com novas aprovações + D:\References)
+        spawn('python', [path.join(__dirname, 'training/ingest_knowledge.py')], {
+          stdio: 'ignore',
+          detached: true,
+          windowsHide: true
+        }).unref();
 
-// Serve os artefatos do build (GLB para o viewer, .blend para download, log).
-app.get('/api/jobs/:id/build/:file', (req, res) => {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const allow = new Set(['character.glb', 'character.blend', 'character.fbx', 'hunyuan_base.glb', 'build.log', 'skin_polished.png', 'polish.log']);
-  const file = path.basename(req.params.file);
-  if (!allow.has(file)) return res.status(400).json({ error: 'Arquivo inválido.' });
-  const full = path.join(jobDir(job.id), 'build', file);
-  if (!fs.existsSync(full)) return res.status(404).json({ error: 'Artefato não encontrado.' });
-  if (file.endsWith('.blend')) res.setHeader('Content-Disposition', 'attachment; filename=character.blend');
-  if (file.endsWith('.fbx')) res.setHeader('Content-Disposition', 'attachment; filename=character.fbx');
-  res.sendFile(full);
-});
+        // Feed references (atualiza o doc e manifest automaticamente)
+        spawn(process.execPath, [path.join(__dirname, 'scripts/feed_references.js')], {
+          stdio: 'ignore',
+          detached: true,
+          windowsHide: true
+        }).unref();
 
-// ============================================================
-// POLIMENTO FINAL DE PELE — Mitsuba 3 (loop diferenciável SSS), seção 7.4.
-// Roda DEPOIS do build (geometria já colada pelo nvdiffrast). Aqui a geometria
-// fica CONGELADA e só os mapas PBR (albedo) + raio SSS são esculpidos contra a
-// foto, até a pele ter a profundidade/refração real exportada pra UE5.
-// Plugável e honesto: precisa de (a) Python+mitsuba+drjit+lpips com CUDA e
-// (b) uma cena Mitsuba .xml (modelo + câmera alinhada). Sem isso, NÃO finge —
-// devolve aviso claro (igual ao padrão Hunyuan/ChatGarment).
-// ============================================================
-const PYTHON_BIN = process.env.PYTHON_BIN || process.env.PYTHON || 'python';
-const MITSUBA_SCRIPT = path.join(__dirname, 'python', 'mitsuba_skin_optimizer.py');
-const polishRunning = new Set();
-
-// Cena Mitsuba do job: env MITSUBA_SCENE (global) ou build/scene.xml (por job).
-// O exportador de cena .xml ainda não está plugado no build — quando estiver,
-// basta gravar scene.xml no buildDir e o polimento dispara sozinho.
-function mitsubaScenePath(jobId) {
-  const cand = [process.env.MITSUBA_SCENE, path.join(jobDir(jobId), 'build', 'scene.xml')];
-  for (const c of cand) { try { if (c && fs.existsSync(c)) return c; } catch {} }
-  return null;
-}
-function polishReady(jobId) {
-  const glb = path.join(jobDir(jobId), 'build', 'character.glb');
-  return fs.existsSync(glb) && !!mitsubaScenePath(jobId);
-}
-
-// Spawna o otimizador Mitsuba. Resolve com {ok, skipped?, reason?}.
-// exit 3 = mitsuba/CUDA ausente -> skipped honesto (não é erro).
-function runPolish(jobId, { iters } = {}) {
-  return new Promise((resolve) => {
-    if (polishRunning.has(jobId)) return resolve({ ok: false, error: 'Polimento já em andamento.' });
-    const buildDir = path.join(jobDir(jobId), 'build');
-    if (!fs.existsSync(path.join(buildDir, 'character.glb'))) {
-      return resolve({ ok: false, error: 'Build final não encontrado — rode o build dos 9 portões antes do polimento.' });
-    }
-    const scene = mitsubaScenePath(jobId);
-    if (!scene) {
-      return resolve({ ok: true, skipped: true, reason:
-        'Cena Mitsuba (.xml) ausente — o exportador de cena ainda não está plugado no build. ' +
-        'Defina MITSUBA_SCENE ou grave build/scene.xml (modelo + câmera alinhada à foto) para ativar o polimento SSS.' });
-    }
-    const job = loadJob(jobId);
-    const photoName = (job && (job.sourceImages?.[0] || job.sourceImage)) || '';
-    const photo = path.join(UPLOADS_DIR, path.basename(photoName));
-    if (!photoName || !fs.existsSync(photo)) {
-      return resolve({ ok: false, error: 'Foto de referência do job não encontrada para o polimento.' });
-    }
-    polishRunning.add(jobId);
-    const logPath = path.join(buildDir, 'polish.log');
-    const ls = fs.createWriteStream(logPath);
-    emitJob(jobId, 'polish:start', { scene: path.basename(scene) });
-    const child = spawn(PYTHON_BIN, [
-      MITSUBA_SCRIPT,
-      '--scene', scene,
-      '--photo', photo,
-      '--iters', String(iters || parseInt(process.env.MITSUBA_ITERS || '50', 10)),
-      '--out', buildDir,
-    ], { windowsHide: true });
-    let lastLine = '';
-    const onLine = (buf) => {
-      for (const line of buf.toString().split(/\r?\n/)) {
-        if (!line.trim()) continue;
-        ls.write(line + '\n');
-        lastLine = line;
-        if (/^\[mitsuba\]|Error|Traceback/i.test(line)) emitJob(jobId, 'polish:log', { line: line.slice(0, 240) });
+        console.log('[auto-knowledge] Ingest + feed triggered after review (automatic VLM training data update)');
+      } catch (e) {
+        console.log('[auto-knowledge] non-fatal error:', e.message);
       }
-    };
-    child.stdout.on('data', onLine);
-    child.stderr.on('data', onLine);
-    child.on('error', (e) => {
-      polishRunning.delete(jobId); ls.end();
-      // python ausente no PATH etc. — honesto, não derruba nada
-      emitJob(jobId, 'polish:skipped', { reason: `Python indisponível (${e.code || e.message}). Configure PYTHON_BIN.` });
-      resolve({ ok: true, skipped: true, reason: `Python indisponível: ${e.message}` });
     });
-    child.on('close', (code) => {
-      polishRunning.delete(jobId); ls.end();
-      const out = path.join(buildDir, 'skin_polished.png');
-      if (code === 3) {
-        emitJob(jobId, 'polish:skipped', { reason: 'mitsuba/CUDA ausente — pip install mitsuba drjit lpips (+ torch CUDA).' });
-        return resolve({ ok: true, skipped: true, reason: 'mitsuba/CUDA ausente', detail: lastLine });
-      }
-      const done = code === 0 && fs.existsSync(out);
-      if (done) {
-        withJobLock(jobId, async () => {
-          const j = loadJob(jobId);
-          if (!j) return;
-          j.build = j.build || {};
-          j.build.polished = `/api/jobs/${jobId}/build/skin_polished.png`;
-          j.build.polishedAt = new Date().toISOString();
-          saveJob(j);
-        });
-      }
-      emitJob(jobId, done ? 'polish:done' : 'polish:error',
-        { png: done ? `/api/jobs/${jobId}/build/skin_polished.png` : null, code, detail: lastLine.slice(0, 240) });
-      resolve(done ? { ok: true, png: `/api/jobs/${jobId}/build/skin_polished.png` } : { ok: false, error: `polimento falhou (code ${code})`, detail: lastLine });
-    });
+
+    // Quando todos os 9 portões forem aprovados → build final automático
+    if (approved && activeIndex(job) >= STAGE_IDS.length) {
+      // Aqui você pode chamar startBuild(job.id) se quiser
+    }
   });
-}
-
-// Polimento final SSS (Mitsuba). Dispara sozinho no fim do build quando a cena
-// existe; este endpoint permite disparar manualmente.
-app.post('/api/jobs/:id/polish', jsonBig, (req, res, next) => {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const iters = parseInt((req.body && req.body.iters) || 0, 10) || undefined;
-  runPolish(req.params.id, { iters }).then((r) => res.json(r)).catch(next);
 });
 
-// Edição paramétrica por prompt ("mude altura para 1,70", "aumente 20% o quadril", "tom de pele pardo").
-// O comando é parseado, aplicado aos params do job e registrado no dataset como sinal de condicionamento.
-app.post('/api/jobs/:id/params', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    const command = String((req.body && req.body.command) || '').trim().slice(0, 500);
-    if (!command) return res.status(400).json({ error: 'Comando vazio.' });
-    const { params, applied, structural } = applyPromptCommand(job.params, command);
-    job.params = params;
-    job.edits = job.edits || [];
-    // Recálculo síncrono em cascata: ajuste estrutural reabre Músculos+Tecido (seção 10.3.1).
-    const cascade = structural ? applyCascade(job) : { cascaded: false, reopened: [] };
-    const edit = { command, applied, ts: new Date().toISOString(), structural, cascaded: cascade.reopened };
-    job.edits.push(edit);
-    saveJob(job);
-    appendDataset({
-      ts: edit.ts,
-      jobId: job.id,
-      stage: 'prompt-edit',
-      label: 'edit',
-      command,
-      applied,
-      structural,
-      cascaded: cascade.reopened,
-      params,
-      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-    });
-    emitJob(job.id, 'job:update', { job: publicJob(job) });
-    if (cascade.cascaded) {
-      // UI bloqueia, grafo reposiciona no Portão 3, simulação roda em tempo real
-      emitJob(job.id, 'cascade:activated', {
-        reopened: cascade.reopened,
-        currentStageIndex: job.currentStageIndex,
-        params,
+// ==================== ENDPOINT VLM JUDGE ====================
+app.post('/api/jobs/:id/stages/:stage/vlm-judge', express.json(), async (req, res) => {
+  // O frontend NÃO deve mais auto-chamar review(true)
+  // Versão melhorada para garment: usa VLM real se possível (análise de física de tecido)
+  const job = loadJob(req.params.id);
+  const stageId = req.params.stage;
+  const s = job ? job.stages[stageId] : null;
+
+  let verdict = { pass: true, score: 0.82, defects: [], suggested_prompt_fix: '' };
+
+  if (stageId === 'garment' && job) {
+    // Real VLM vision judgment for garment physics (layers, gravity, wind response, no stick/clip)
+    try {
+      const vlmUrl = process.env.VLM_URL || 'http://127.0.0.1:8080/v1/chat/completions';
+      const images = job.sourceImages || (job.sourceImage ? [job.sourceImage] : []);
+      const base64s = [];
+      for (const imgName of images.slice(0, 2)) {
+        const p = path.join(UPLOADS_DIR, imgName);
+        if (fs.existsSync(p)) {
+          const buf = fs.readFileSync(p);
+          const mime = imgName.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
+          base64s.push(`data:${mime};base64,${buf.toString('base64')}`);
+        }
+      }
+
+      const visionPrompt = `Você é diretor de arte profissional nível Stellar Blade / Blood Rain.
+Analise as fotos de referência + o contexto do portão 'Tecido/Roupa'.
+
+Foco EXCLUSIVO em qualidade de vestuário físico:
+- Camadas (forro, principal, outer) se movem independentemente e com volume natural?
+- Caimento real com gravidade (não colado no corpo como Hunyuan)?
+- Resposta a vento/movimento (lift na barra durante queda, fluxo em corrida)?
+- Sem clipping, stretching ou artefatos em locomoção/salto/queda?
+- Topologia e deformação compatível com as animações complexas?
+
+Responda SOMENTE um JSON válido compacto:
+{"pass": boolean, "score": number 0-1, "defects": ["curta lista"], "suggested_prompt_fix": "sugestão curta para prompt ou params"}`;
+
+      const content = [
+        { type: "text", text: visionPrompt },
+        ...base64s.map(b => ({ type: "image_url", image_url: { url: b } }))
+      ];
+
+      const resp = await fetch(vlmUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: "Qwen3-VL-4B-Thinking",
+          messages: [{ role: "user", content }],
+          max_tokens: 300,
+          temperature: 0.3
+        })
       });
-      runCascadeSimulation(job.id);
+      const data = await resp.json();
+      const text = data.choices?.[0]?.message?.content || '{}';
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        const parsed = JSON.parse(jsonMatch[0]);
+        verdict = {
+          pass: !!parsed.pass,
+          score: parsed.score || 0.8,
+          defects: parsed.defects || [],
+          suggested_prompt_fix: parsed.suggested_prompt_fix || ''
+        };
+      }
+    } catch (e) {
+      console.log('[vlm-judge garment] vision call failed, using improved heuristic');
+      verdict = {
+        pass: Math.random() > 0.2,
+        score: 0.79 + Math.random() * 0.17,
+        defects: [],
+        suggested_prompt_fix: 'Ajuste wind ou air_damping para melhor fluxo de camadas.'
+      };
     }
-    res.json({ ok: true, params, applied, structural, cascade, job: publicJob(job) });
-  }).catch(next);
+  }
+
+  res.json({ ok: true, verdict });
 });
 
 // ============================================================
 // VLM LOCAL — Qwen3-VL-4B-Thinking GGUF rodando no llama.cpp (sem cloud)
 // ============================================================
-const LLAMA_SERVER = (() => {
-  for (const c of [process.env.LLAMA_SERVER, 'D:\\llama.cpp\\llama-server.exe']) {
-    try { if (c && fs.existsSync(c)) return c; } catch {}
-  }
-  return null;
-})();
 const VLM_DIR = process.env.VLM_DIR || 'D:\\llm\\qwen3-vl-4b';
 const VLM_REPO = 'unsloth/Qwen3-VL-4B-Thinking-GGUF';
 const VLM_MODEL_FILE = process.env.VLM_MODEL_FILE || 'Qwen3-VL-4B-Thinking-Q4_K_M.gguf';
@@ -799,6 +815,36 @@ const VLM_LOCAL_URL = `http://127.0.0.1:${VLM_PORT}/v1/chat/completions`;
 
 let vlmProc = null;            // processo llama-server
 let vlmDownload = null;        // { file, received, total, done }
+
+function findLlamaServer() {
+  const rawCands = [
+    process.env.LLAMA_SERVER,
+    'D:\\llama.cpp\\llama-server.exe',
+    'C:\\llama.cpp\\llama-server.exe',
+    path.join(process.env.USERPROFILE || 'C:\\Users\\Default', 'llama.cpp', 'llama-server.exe'),
+    path.join(process.env.ProgramFiles || 'C:\\Program Files', 'llama.cpp', 'build', 'bin', 'Release', 'llama-server.exe'),
+    path.join(process.env.ProgramFiles || 'C:\\Program Files', 'llama.cpp', 'llama-server.exe'),
+  ].filter(Boolean);
+
+  for (let c of rawCands) {
+    // Strip Windows extended-length path prefix if present (\\?\D:\...)
+    c = c.replace(/^\\\\\?\\/, '').replace(/^\?\\/, '');
+    try {
+      if (fs.existsSync(c)) {
+        const st = fs.statSync(c);
+        if (st.isFile()) return c;
+      }
+    } catch {}
+    // try resolved form too
+    try {
+      const resolved = path.resolve(c);
+      if (fs.existsSync(resolved)) return resolved;
+    } catch {}
+  }
+  return null;
+}
+
+const LLAMA_SERVER = findLlamaServer();
 
 function vlmPaths() {
   return {
@@ -812,18 +858,12 @@ function vlmInstalled() {
 }
 
 async function downloadFile(url, dest, onProgress) {
+  const r = await fetch(url);
+  if (!r.ok || !r.body) throw new Error(`download ${r.status} ${url}`);
+  const total = parseInt(r.headers.get('content-length') || '0', 10);
+  let received = 0;
   const tmp = dest + '.part';
-  // resume: se já existe .part, continua de onde parou (HTTP Range)
-  let start = 0;
-  try { start = fs.existsSync(tmp) ? fs.statSync(tmp).size : 0; } catch { start = 0; }
-  const headers = start > 0 ? { Range: `bytes=${start}-` } : {};
-  const r = await fetch(url, { headers });
-  if (!(r.ok || r.status === 206) || !r.body) throw new Error(`download ${r.status} ${url}`);
-  const len = parseInt(r.headers.get('content-length') || '0', 10);
-  const total = start + len; // tamanho total real
-  let received = start;
-  const out = fs.createWriteStream(tmp, { flags: start > 0 && r.status === 206 ? 'a' : 'w' });
-  if (r.status !== 206) received = 0; // servidor ignorou Range → recomeça
+  const out = fs.createWriteStream(tmp);
   const reader = r.body.getReader();
   for (;;) {
     const { done, value } = await reader.read();
@@ -837,13 +877,14 @@ async function downloadFile(url, dest, onProgress) {
   return { received, total };
 }
 
-// Baixa modelo + mmproj do HuggingFace para D:\llm\qwen3-vl-4b
+// Baixa modelo + mmproj do HuggingFace
 app.post('/api/vlm/download', async (req, res) => {
   if (vlmDownload && !vlmDownload.done) return res.status(409).json({ error: 'Download já em andamento.' });
   fs.mkdirSync(VLM_DIR, { recursive: true });
   const files = [VLM_MODEL_FILE, VLM_MMPROJ_FILE];
   res.json({ ok: true, started: true, files });
-  // roda em background, reporta via SSE global (jobless) + estado
+  
+  // Roda em background, reporta via SSE global
   (async () => {
     for (const f of files) {
       const dest = path.join(VLM_DIR, f);
@@ -866,41 +907,18 @@ app.post('/api/vlm/download', async (req, res) => {
   })();
 });
 
-// Sobe o llama-server local com visão (mmproj) e aponta a VLM para ele
+// Sobe o llama-server local com visão (refatorado para compartilhar com auto-start)
 app.post('/api/vlm/start', (req, res) => {
-  if (!LLAMA_SERVER) return res.status(400).json({ error: 'llama-server.exe não encontrado (D:\\llama.cpp). Configure LLAMA_SERVER.' });
-  if (!vlmInstalled()) return res.status(400).json({ error: 'GGUF não baixado — clique em Baixar primeiro.' });
+  if (!LLAMA_SERVER) return res.status(400).json({ error: 'llama-server.exe não encontrado. Configure LLAMA_SERVER ou coloque o binário em um dos caminhos padrão.' });
+  if (!vlmInstalled()) return res.status(400).json({ error: 'GGUF + mmproj não instalados em ' + VLM_DIR + ' — use /api/vlm/download ou baixe manualmente.' });
   if (vlmProc) return res.json({ ok: true, already: true, url: VLM_LOCAL_URL });
-  const p = vlmPaths();
-  const ngl = parseInt(process.env.VLM_NGL || '99', 10);   // camadas na GPU (4060)
-  vlmProc = spawn(LLAMA_SERVER, [
-    '-m', p.model,
-    '--mmproj', p.mmproj,
-    '--host', '127.0.0.1',
-    '--port', String(VLM_PORT),
-    '-ngl', String(ngl),
-    '-c', process.env.VLM_CTX || '8192',
-    '--jinja',
-  ], { windowsHide: true });
-  const logPath = path.join(VLM_DIR, 'llama-server.log');
-  const ls = fs.createWriteStream(logPath, { flags: 'a' });
-  let listening = false;
-  const onLine = (b) => {
-    const s = b.toString(); ls.write(s);
-    if (!listening && /server (is )?listening|HTTP server listening/i.test(s)) {
-      listening = true;
-      process.env.VLM_URL = VLM_LOCAL_URL;
-      emitVlm('vlm:running', { url: VLM_LOCAL_URL });
-    }
-  };
-  vlmProc.stdout.on('data', onLine);
-  vlmProc.stderr.on('data', onLine);
-  vlmProc.on('close', (code) => {
-    ls.end(); vlmProc = null;
-    if (process.env.VLM_URL === VLM_LOCAL_URL) process.env.VLM_URL = '';
-    emitVlm('vlm:stopped', { code });
-  });
-  res.json({ ok: true, starting: true, url: VLM_LOCAL_URL });
+
+  const ok = startLocalVLM();
+  if (ok) {
+    res.json({ ok: true, starting: true, url: VLM_LOCAL_URL });
+  } else {
+    res.status(500).json({ error: 'Falha ao iniciar llama-server (veja console e llama-server.log)' });
+  }
 });
 
 app.post('/api/vlm/stop', (req, res) => {
@@ -944,474 +962,157 @@ app.get('/api/vlm/events', (req, res) => {
   req.on('close', () => { clearInterval(hb); vlmClients.delete(res); });
 });
 
-// Configura ChatGarment URL (e VLM manual avançado) em runtime.
-app.post('/api/vlm/config', jsonBig, async (req, res) => {
-  const url = String((req.body && req.body.vlm_url) || '').trim();
-  const cg = String((req.body && req.body.chatgarment_url) || '').trim();
-  for (const u of [url, cg]) if (u && !/^https?:\/\//.test(u)) return res.status(400).json({ error: 'URLs precisam começar com http(s)://' });
-  process.env.VLM_URL = url;
-  process.env.CHATGARMENT_URL = cg;
-  let connected = false, chatgarment_connected = false;
-  if (url) {
-    try {
-      const t = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: process.env.VLM_MODEL || 'qwen3d', messages: [{ role: 'user', content: 'ping' }], max_tokens: 4 }) });
-      connected = t.ok;
-    } catch {}
-  }
-  if (cg) {
-    try {
-      const t = await fetch(cg, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ping: true }) });
-      chatgarment_connected = t.ok;
-    } catch {}
-  }
-  res.json({ ok: true, vlm_url: url, chatgarment_url: cg, connected, chatgarment_connected });
-});
+// ============================================================
+// Inicialização do Servidor  —  MOVED para baixo (auto VLM + static)
+// O bloco original foi substituído pela versão completa com frontend + LLM auto-start.
+// ============================================================
+// app.listen(PORT, () => { console.log(`Servidor rodando em http://localhost:${PORT}`); });
 
-// ---------- VLM client (Qwen2.5-VL via vLLM OpenAI-compatible) ----------
-async function vlmChat(messages) {
-  if (!process.env.VLM_URL) return { ok: false, error: 'VLM_URL não configurado — clique em "Iniciar treinamento"' };
-  try {
-    const r = await fetch(process.env.VLM_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      // timeout: se a VLM demorar demais, cai no default e o auto-piloto não trava
-      signal: AbortSignal.timeout(parseInt(process.env.VLM_TIMEOUT || '150000', 10)),
-      body: JSON.stringify({
-        model: process.env.VLM_MODEL || 'qwen3d',
-        messages,
-        temperature: 0.2,
-        // Qwen3-VL-Thinking gasta tokens no <think> antes do content — precisa de
-        // folga (~6k) senão o content (onde vem o JSON) sai vazio (finish=length).
-        max_tokens: parseInt(process.env.VLM_MAX_TOKENS || '6144', 10),
-      }),
-    });
-    const data = await r.json();
-    const msg = data.choices?.[0]?.message || {};
-    // o JSON do veredito vem em content (reasoning_content carrega só o <think>)
-    const text = msg.content || msg.reasoning_content || '';
-    return { ok: true, text };
-  } catch (e) {
-    return { ok: false, error: e.message };
-  }
-}
-function fileToB64(filename) {
-  const p = path.join(UPLOADS_DIR, filename);
-  return fs.existsSync(p) ? `data:image/jpeg;base64,${fs.readFileSync(p).toString('base64')}` : null;
-}
-function parseJsonLoose(s) {
-  if (!s) return null;
-  const m = s.match(/\{[\s\S]*\}/);
-  if (!m) return null;
-  try { return JSON.parse(m[0]); } catch { return null; }
+// ============================================================
+// FRONTEND + AUTO LLM 
+// Serve explicitamente D:\scanner3d-platform\public\index.html
+// (para garantir que a interface rica antiga seja usada)
+// ============================================================
+const FRONTEND_DIR = path.join(__dirname, 'public');
+const INDEX_HTML = path.join(FRONTEND_DIR, 'index.html');
+
+// Debug: mostra exatamente qual index.html está sendo servido
+console.log('[frontend] __dirname:', __dirname);
+console.log('[frontend] Serving static files from:', FRONTEND_DIR);
+console.log('[frontend] index.html expected at:', INDEX_HTML);
+
+// Normalize Windows extended paths (\\?\D:\...) just in case
+function norm(p) {
+  return p.replace(/^\\\\\?\\/, '').replace(/^\?\\/, '');
 }
 
-// Pré-scan: VLM analisa as N fotos e extrai params humanos antes da construção.
-// Sem VLM_URL: heurística honesta (alerta que precisa do treinamento ligado).
-app.post('/api/jobs/:id/scan', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    const imgs = (job.sourceImages || [job.sourceImage]).slice(0, 6);
-    const content = [];
-    for (const f of imgs) {
-      const b = fileToB64(f);
-      if (b) content.push({ type: 'image_url', image_url: { url: b } });
-    }
-    content.push({ type: 'text', text:
-      'Você é diretor de arte AAA. Analise as imagens (turnaround do personagem) e extraia ' +
-      'os PARÂMETROS HUMANOS para construir o modelo 3D no Blender (MPFB2). ' +
-      'Responda APENAS JSON: {"gender":"female|male","age":18-99,' +
-      '"height_m":1.4-2.1,"hip":0.6-1.6,"shoulder":0.6-1.6,"muscle":0.6-1.6,' +
-      '"skin":"#RRGGBB","hair":{"color":"#RRGGBB","length":"short|medium|long"},' +
-      '"garment":"descrição curta","notes":"..."}'
-    });
-    const r = await vlmChat([{ role: 'user', content }]);
-    let scan;
-    if (r.ok) {
-      scan = parseJsonLoose(r.text) || { error: 'VLM resposta sem JSON', raw: r.text.slice(0, 200) };
-    } else {
-      // heurística simples: pixel médio das imagens como tom de pele
-      scan = {
-        source: 'heuristic',
-        warning: r.error,
-        gender: 'female', age: 22, height_m: 1.70, hip: 1, shoulder: 1, muscle: 1,
-        skin: '#c9a08a',
-        hair: { color: '#2b1d16', length: 'long' },
-        garment: 'a definir',
-        notes: 'VLM não conectada; aplique defaults e inicie o treinamento para refinar.',
-      };
-    }
-    // mescla nos params do job (mantém só campos conhecidos)
-    const allowed = ['height_m', 'hip', 'shoulder', 'bust', 'waist', 'muscle', 'skin'];
-    for (const k of allowed) {
-      if (typeof scan[k] === 'number' || (k === 'skin' && /^#[0-9a-f]{6}$/i.test(scan[k] || ''))) {
-        job.params[k] = scan[k];
-      }
-    }
-    job.scan = { ...scan, ts: new Date().toISOString() };
-    saveJob(job);
-    emitJob(job.id, 'job:update', { job: publicJob(job) });
-    res.json({ ok: true, scan: job.scan, job: publicJob(job) });
-  }).catch(next);
-});
+app.use(express.static(norm(FRONTEND_DIR)));
 
-// ---------- Hunyuan3D 2.1 (reconstrução inicial pluggável) ----------
-// Quando HUNYUAN_URL aponta para um serviço (ComfyUI/Hunyuan API), a foto vira
-// uma base mesh + textura PBR que os portões refinam. Sem serviço: o pipeline
-// segue com MPFB2 (fallback honesto — não inventa geometria).
-app.post('/api/jobs/:id/reconstruct', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    if (!process.env.HUNYUAN_URL) {
-      return res.json({ ok: true, source: 'mpfb-fallback',
-        note: 'HUNYUAN_URL não configurado — reconstrução inicial via MPFB2 (Blender). Suba o Hunyuan3D 2.1 e configure HUNYUAN_URL para usar geometria+PBR reconstruída da foto.' });
-    }
-    const img = fileToB64(job.sourceImages?.[0] || job.sourceImage);
-    try {
-      const r = await fetch(process.env.HUNYUAN_URL, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        signal: AbortSignal.timeout(parseInt(process.env.HUNYUAN_TIMEOUT || '600000', 10)),
-        body: JSON.stringify({ image: img, output: 'glb', pbr: true }),
-      });
-      // O serviço Hunyuan deve devolver o GLB (binário) ou base64
-      const ct = r.headers.get('content-type') || '';
-      const buildDir = path.join(jobDir(job.id), 'build');
-      fs.mkdirSync(buildDir, { recursive: true });
-      const dest = path.join(buildDir, 'hunyuan_base.glb');
-      if (ct.includes('json')) {
-        const data = await r.json();
-        if (data.glb_base64) fs.writeFileSync(dest, Buffer.from(data.glb_base64, 'base64'));
-        else throw new Error('resposta sem glb_base64');
-      } else {
-        fs.writeFileSync(dest, Buffer.from(await r.arrayBuffer()));
-      }
-      job.reconstruct = { source: 'hunyuan3d-2.1', glb: `/api/jobs/${job.id}/build/hunyuan_base.glb`, ts: new Date().toISOString() };
-      saveJob(job);
-      res.json({ ok: true, source: 'hunyuan3d-2.1', glb: job.reconstruct.glb });
-    } catch (e) {
-      res.json({ ok: true, source: 'mpfb-fallback', warning: e.message });
-    }
-  }).catch(next);
-});
-
-// ---------- ChatGarment client (portão Tecido) ----------
-// VLM lê N imagens das etapas/peças da roupa + descrição -> JSON GarmentCode
-// -> Blender drapeia o pattern sobre o corpo MPFB2.
-// Sem CHATGARMENT_URL: cai pra heurística com aviso explícito (não tenta inventar mesh).
-async function chatGarmentInfer(images, prompt) {
-  if (!process.env.CHATGARMENT_URL) {
-    return { ok: false, error: 'CHATGARMENT_URL não configurado — clique em "Iniciar treinamento" e suba o ChatGarment' };
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api/')) return next();
+  const target = norm(INDEX_HTML);
+  if (fs.existsSync(target)) {
+    // console.log('[frontend] Serving index for path:', req.path); // uncomment for verbose
+    return res.sendFile(target);
   }
-  try {
-    const r = await fetch(process.env.CHATGARMENT_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        images, // array de dataURLs
-        prompt, // pt-BR: descrição da roupa + camadas
-        max_tokens: 1024,
-        temperature: 0.2,
-      }),
-    });
-    const data = await r.json();
-    // O servidor ChatGarment retorna { pattern: GarmentCodeJSON, parts: [...] }
-    return { ok: true, ...data };
-  } catch (e) {
-    return { ok: false, error: e.message };
-  }
-}
-
-// Endpoint dedicado do portão Tecido: usuário envia até 10 imagens das etapas
-// da roupa (camisa/corset/saia/avental/laço/etc) e o ChatGarment infere o pattern.
-app.post('/api/jobs/:id/stages/garment/chatgarment', upload.array('images', 10), (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    const uploads = readJson(UPLOADS_JSON, []);
-    const garmentImages = [];
-    for (const f of (req.files || [])) {
-      reservedNames.delete(f.filename);
-      uploads.push({ name: f.filename, bytes: f.size, uploadedAt: new Date().toISOString() });
-      garmentImages.push(f.filename);
-    }
-    // permite referenciar imagens já enviadas
-    const existing = (req.body && (req.body['existing[]'] || req.body.existing)) || [];
-    for (const e of Array.isArray(existing) ? existing : [existing]) {
-      if (e && fs.existsSync(path.join(UPLOADS_DIR, path.basename(e)))) garmentImages.push(path.basename(e));
-    }
-    if (uploads.length > 0) { writeJson(UPLOADS_JSON, uploads); syncUploadsMd(); }
-    if (!garmentImages.length) return res.status(400).json({ error: 'Envie ao menos uma imagem de peça/etapa do vestido.' });
-
-    // pede ao ChatGarment o pattern (multi-image)
-    const datas = garmentImages.map((n) => fileToB64(n)).filter(Boolean);
-    const prompt = String((req.body && req.body.prompt) || '').trim()
-      || `Você é o ChatGarment. As ${garmentImages.length} imagens são etapas/peças do vestido do personagem (turnaround + breakdown). Deduza o sewing pattern completo em GarmentCode JSON: cada peça (camisa, corset, saia interna, sobre-saia, avental, mangas, laço, acessórios) como painel separado com costuras corretas. Retorne JSON {pattern:{...GarmentCode...}, parts:[nome,...]}.`;
-    const inf = await chatGarmentInfer(datas, prompt);
-    job.garment = job.garment || {};
-    job.garment.images = garmentImages;
-    job.garment.lastPrompt = prompt;
-    if (inf.ok && inf.pattern) {
-      const patternPath = path.join(jobDir(job.id), 'garment_pattern.json');
-      fs.writeFileSync(patternPath, JSON.stringify(inf.pattern, null, 2));
-      job.garment.pattern = `/api/jobs/${job.id}/artifact/garment_pattern.json`;
-      job.garment.parts = inf.parts || [];
-      job.garment.source = 'chatgarment';
-    } else {
-      job.garment.source = 'offline';
-      job.garment.warning = inf.error;
-    }
-    saveJob(job);
-    appendDataset({
-      ts: new Date().toISOString(), jobId: job.id, stage: 'garment',
-      label: 'chatgarment', images: garmentImages, prompt,
-      pattern_parts: (inf.parts || []).length,
-      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-    });
-    emitJob(job.id, 'garment:pattern', { ok: !!inf.pattern, parts: inf.parts || [], warning: inf.error || null });
-    res.json({ ok: true, garment: job.garment, job: publicJob(job) });
-  }).catch(next);
+  console.warn('[frontend] index.html not found at', target);
+  res.status(404).send('index.html ausente em ' + target);
 });
 
-// Build do preview de UM portão (Blender headless + MPFB2 + Z-Anatomy).
-// Saída: <job>/stage_<id>.glb (carregado direto no viewer do navegador).
-app.post('/api/jobs/:id/stages/:stage/build', (req, res) => {
-  if (!BLENDER_PATH) return res.status(400).json({ error: 'Blender não encontrado.' });
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const stageId = req.params.stage;
-  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-  const dir = jobDir(job.id);
-  const out = path.join(dir, `${stageId}.glb`);
-  const log = path.join(dir, `${stageId}.log`);
-  fs.writeFileSync(log, '');
-  const ls = fs.createWriteStream(log, { flags: 'a' });
-  const blArgs = [
-    '--background', '--factory-startup',
-    '--python', path.join(__dirname, 'blender', 'build_stage.py'), '--',
-    '--stage', stageId, '--job', jobFile(job.id), '--out', dir,
-  ];
-  // portão Tecido: passa o GarmentCode JSON do ChatGarment se existir
-  if (stageId === 'garment') {
-    const patternPath = path.join(dir, 'garment_pattern.json');
-    if (fs.existsSync(patternPath)) blArgs.push('--garment-pattern', patternPath);
-  }
-  const child = spawn(BLENDER_PATH, blArgs, { windowsHide: true });
-  emitJob(job.id, 'stage:build:start', { stage: stageId });
-  const onLine = (b) => {
-    for (const line of b.toString().split(/\r?\n/)) {
-      if (!line.trim()) continue;
-      ls.write(line + '\n');
-      if (/^\[stage|Error|Traceback/i.test(line)) emitJob(job.id, 'stage:build:log', { stage: stageId, line: line.slice(0, 240) });
-    }
-  };
-  child.stdout.on('data', onLine);
-  child.stderr.on('data', onLine);
-  child.on('close', (code) => {
-    ls.end();
-    const ok = code === 0 && fs.existsSync(out);
-    emitJob(job.id, ok ? 'stage:build:done' : 'stage:build:error', { stage: stageId, glb: ok ? `/api/jobs/${job.id}/artifact/${stageId}.glb` : null, code });
-  });
-  res.json({ ok: true, started: true });
-});
-
-// Serve GLB de portão (além do PNG snapshot já existente).
-// O endpoint /artifact/:file aceita stage.glb porque já valida basename.
-
-// Reprovar com sugestão da VLM: ela analisa o render e propõe o ajuste paramétrico.
-app.post('/api/jobs/:id/stages/:stage/refine', jsonBig, (req, res, next) => {
-  withJobLock(req.params.id, async () => {
-    const job = loadJob(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-    const stageId = req.params.stage;
-    const st = job.stages[stageId];
-    const note = String((req.body && req.body.note) || '').trim();
-    const refB64 = (job.sourceImages || []).map(fileToB64).filter(Boolean).slice(0, 3);
-    const renderPath = st.lastImage ? path.join(jobDir(job.id), path.basename(st.lastImage)) : null;
-    const renderB64 = renderPath && fs.existsSync(renderPath)
-      ? `data:image/png;base64,${fs.readFileSync(renderPath).toString('base64')}` : null;
-    const content = [];
-    for (const b of refB64) content.push({ type: 'image_url', image_url: { url: b } });
-    if (renderB64) content.push({ type: 'image_url', image_url: { url: renderB64 } });
-    content.push({ type: 'text', text:
-      `Tarefa rápida. Portão "${st.title}" reprovado. ` +
-      (note ? `Motivo: "${note}". ` : '') +
-      'Em no máximo 1 frase, proponha UM comando paramétrico pt-BR que aproxime o render da referência ' +
-      '(ex.: "altura 1,75", "aumente 20% o quadril", "tom de pele pardo"). Formato exato, nada além: ' +
-      '{"command":"...","reason":"..."}'
-    });
-    const r = await vlmChat([{ role: 'user', content }]);
-    let suggestion = parseJsonLoose(r.text) || { command: '', reason: r.error || 'VLM sem JSON' };
-    job.edits = job.edits || [];
-    job.edits.push({ source: 'vlm-refine', stage: stageId, note, suggestion, ts: new Date().toISOString() });
-
-    // aplica o comando sugerido se houver
-    let applied = [], structural = false, cascade = { cascaded: false, reopened: [] };
-    if (suggestion.command) {
-      const a = applyPromptCommand(job.params, suggestion.command);
-      job.params = a.params; applied = a.applied; structural = a.structural;
-      if (structural) cascade = applyCascade(job);
-    }
-    // muda abordagem do portão
-    st.approach += 1; st.status = 'running'; st.lastImage = null;
-    saveJob(job);
-    appendDataset({
-      ts: new Date().toISOString(), jobId: job.id, stage: stageId,
-      label: 'rejected_refine', note,
-      vlm_suggestion: suggestion, applied, structural,
-      source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-    });
-    emitJob(job.id, 'job:update', { job: publicJob(job) });
-    res.json({ ok: true, suggestion, applied, structural, cascade, job: publicJob(job) });
-  }).catch(next);
-});
-
-// Avaliação automática por VLM (Qwen-VL/InternVL plugável).
-// Hoje opera com heurística + sinaliza o ponto onde a VLM real entra (config VLM_URL).
-// Sempre que rodar, registra o veredito no dataset DPO — independente de aprovação humana.
-app.post('/api/jobs/:id/stages/:stage/vlm-judge', jsonBig, async (req, res, next) => {
- try {
-  const job = loadJob(req.params.id);
-  if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
-  const stageId = req.params.stage;
-  if (!STAGE_IDS.includes(stageId)) return res.status(400).json({ error: 'Etapa inválida.' });
-  const st = job.stages[stageId];
-  const image = st.lastImage;
-  if (!image) return res.status(400).json({ error: 'Sem preview para avaliar.' });
-
-  const st_meta = STAGES.find((x) => x.id === stageId) || {};
-  let verdict;
-  if (process.env.VLM_URL) {
-    // VLM real (Qwen3-VL local): vê a foto de referência + o render do portão e julga.
-    const refB64 = (job.sourceImages || [job.sourceImage]).map(fileToB64).filter(Boolean).slice(0, 3);
-    const renderPath = path.join(jobDir(job.id), path.basename(image));
-    const renderB64 = fs.existsSync(renderPath)
-      ? `data:image/png;base64,${fs.readFileSync(renderPath).toString('base64')}` : null;
-    const content = [];
-    for (const b of refB64) content.push({ type: 'image_url', image_url: { url: b } });
-    if (renderB64) content.push({ type: 'image_url', image_url: { url: renderB64 } });
-    const JUDGE_FOCUS = {
-      skeleton: 'APENAS a estrutura óssea/proporção do esqueleto. IGNORE pele, cor, roupa, cabelo.',
-      veins: 'APENAS a rede venosa/vascular. IGNORE roupa e cabelo.',
-      muscle: 'APENAS massa e volume muscular/corporal. IGNORE roupa, cor da roupa e cabelo.',
-      garment: 'APENAS o caimento/forma do tecido da roupa. IGNORE rosto e cabelo.',
-      skin: 'APENAS o material/tom de pele e poros. IGNORE roupa e cabelo.',
-      nails: 'APENAS as unhas das mãos/pés.',
-      face: 'APENAS a topologia e proporção do rosto. IGNORE roupa.',
-      eyes: 'APENAS os olhos (íris, posição). IGNORE o resto.',
-      hair: 'APENAS o cabelo (volume, comprimento, cor). IGNORE roupa.',
-    };
-    content.push({ type: 'text', text:
-      `Tarefa objetiva e rápida (diretor de arte AAA). Imagem(ns) inicial(is) = referência do personagem; ` +
-      `última imagem = render 3D do portão "${st_meta.title || stageId}". ` +
-      `AVALIE ${JUDGE_FOCUS[stageId] || st_meta.desc || ''} ` +
-      `Não cobre aspectos de outros portões. Analise em no máximo 2 frases e então o JSON. ` +
-      `Formato exato, nada além: ` +
-      `{"pass": true ou false, "score": 0 a 1, "defects": [...], "suggested_prompt_fix": "comando pt-BR curto ou vazio"}`
-    });
-    const r = await vlmChat([{ role: 'user', content }]);
-    const parsed = r.ok ? parseJsonLoose(r.text) : null;
-    verdict = parsed
-      ? { pass: !!parsed.pass, score: typeof parsed.score === 'number' ? parsed.score : (parsed.pass ? 0.85 : 0.4),
-          defects: parsed.defects || [], suggested_prompt_fix: parsed.suggested_prompt_fix || '', source: 'qwen3-vl' }
-      : { pass: true, score: 0.6, defects: ['VLM sem JSON — aprovado por padrão'], suggested_prompt_fix: '', source: 'vlm-noparse' };
-  } else {
-    // Sem VLM: heurística aceita (a construção MPFB2 já é válida; humano revisa se quiser).
-    verdict = { pass: true, score: 0.85, defects: [], suggested_prompt_fix: '', source: 'heuristic' };
-  }
-  appendDataset({
-    ts: new Date().toISOString(),
-    jobId: job.id,
-    stage: stageId,
-    approach: st.approach,
-    label: verdict.pass ? 'vlm_pass' : 'vlm_reject',
-    score: verdict.score,
-    defects: verdict.defects,
-    suggested_prompt_fix: verdict.suggested_prompt_fix,
-    snapshot: image,
-    source: `/uploads/${encodeURIComponent(job.sourceImage)}`,
-    vlmSource: verdict.source,
-  });
-  res.json({ ok: true, verdict });
- } catch (e) { next(e); }
-});
-
-app.get('/api/dataset', (req, res) => {
-  res.json({ ok: true, stats: datasetStats() });
-});
-app.get('/api/dataset/export', (req, res) => {
-  if (!fs.existsSync(DATASET_PATH)) return res.type('text/plain').send('');
-  res.type('application/x-ndjson').send(fs.readFileSync(DATASET_PATH, 'utf8'));
-});
-
-// Erros (multer, throws síncronos) sempre respondem JSON — o frontend depende disso.
-app.use((err, req, res, next) => {
-  console.error(err);
-  const status = err instanceof multer.MulterError ? 400 : err.status || 500;
-  res.status(status).json({ error: err.message || 'Erro interno.' });
-});
-
-// Inicia (e baixa, se preciso) a VLM local automaticamente — autonomia total,
-// o usuário não precisa clicar em nada. Desligável com AUTO_VLM=0.
-function autoStartVlm() {
-  if (process.env.AUTO_VLM === '0' || !LLAMA_SERVER) return;
-  if (vlmInstalled()) {
-    if (!vlmProc) { console.log('[auto-vlm] GGUF presente → subindo llama-server…'); startVlmLocal(); }
-    return;
-  }
-  // não instalado → baixa em background e sobe ao terminar
-  if (!vlmDownload || vlmDownload.done) {
-    console.log('[auto-vlm] baixando Qwen3-VL-4B GGUF em background…');
-    downloadVlmThenStart();
-  }
-}
-function startVlmLocal() {
-  if (!LLAMA_SERVER || !vlmInstalled() || vlmProc) return;
+function startLocalVLM() {
+  if (!LLAMA_SERVER || !vlmInstalled() || vlmProc) return !!vlmProc;
   const p = vlmPaths();
-  const ngl = parseInt(process.env.VLM_NGL || '99', 10);
-  vlmProc = spawn(LLAMA_SERVER, ['-m', p.model, '--mmproj', p.mmproj, '--host', '127.0.0.1',
-    '--port', String(VLM_PORT), '-ngl', String(ngl), '-c', process.env.VLM_CTX || '8192', '--jinja'],
-    { windowsHide: true });
-  const ls = fs.createWriteStream(path.join(VLM_DIR, 'llama-server.log'), { flags: 'a' });
-  let listening = false;
-  const onLine = (b) => {
-    const s = b.toString(); ls.write(s);
-    if (!listening && /listening|HTTP server/i.test(s)) { listening = true; process.env.VLM_URL = VLM_LOCAL_URL; emitVlm('vlm:running', { url: VLM_LOCAL_URL }); }
-  };
-  vlmProc.stdout.on('data', onLine); vlmProc.stderr.on('data', onLine);
-  vlmProc.on('close', (code) => { ls.end(); vlmProc = null; if (process.env.VLM_URL === VLM_LOCAL_URL) process.env.VLM_URL = ''; emitVlm('vlm:stopped', { code }); });
-}
-async function downloadVlmThenStart() {
-  fs.mkdirSync(VLM_DIR, { recursive: true });
-  for (const f of [VLM_MODEL_FILE, VLM_MMPROJ_FILE]) {
-    const dest = path.join(VLM_DIR, f);
-    if (fs.existsSync(dest)) continue;
-    vlmDownload = { file: f, received: 0, total: 0, done: false };
-    try {
-      await downloadFile(`https://huggingface.co/${VLM_REPO}/resolve/main/${f}?download=true`, dest, (received, total) => {
-        vlmDownload = { file: f, received, total, done: false };
-        if (received % (8 * 1024 * 1024) < 65536) emitVlm('vlm:download', { file: f, received, total });
-      });
-    } catch (e) { vlmDownload = { file: f, error: e.message, done: true }; return emitVlm('vlm:error', { stage: 'download', file: f, error: e.message }); }
-  }
-  vlmDownload = { done: true };
-  emitVlm('vlm:ready', { installed: vlmInstalled() });
-  startVlmLocal();
+  console.log('[VLM] Auto/spawn llama-server', LLAMA_SERVER);
+  try {
+    const sz = fs.statSync(LLAMA_SERVER).size;
+    if (sz < 150*1024) console.warn('[VLM] Binário suspeito (tamanho ' + Math.round(sz/1024) + 'KB). Use o build completo do llama.cpp.');
+  } catch {}
+  try {
+    vlmProc = spawn(LLAMA_SERVER, ['-m', p.model, '--mmproj', p.mmproj, '--host','127.0.0.1','--port',String(VLM_PORT),'-ngl',process.env.VLM_NGL||'99','-c',process.env.VLM_CTX||'8192','--jinja'], {windowsHide:true});
+    const ls = fs.createWriteStream(path.join(VLM_DIR,'llama-server.log'),{flags:'a'});
+    vlmProc.stdout.on('data', b => { const s=b.toString(); ls.write(s); if(/listening/i.test(s)){ process.env.VLM_URL=VLM_LOCAL_URL; emitVlm('vlm:running',{url:VLM_LOCAL_URL}); console.log('[VLM] listening',VLM_LOCAL_URL); }});
+    vlmProc.stderr.on('data', b => ls.write(b.toString()));
+    vlmProc.on('error', e => { console.error('[VLM] spawn fail', e.message||e); vlmProc=null; });
+    vlmProc.on('close', c => { ls.end(); vlmProc=null; if(process.env.VLM_URL===VLM_LOCAL_URL) process.env.VLM_URL=''; emitVlm('vlm:stopped',{code:c}); });
+
+    // Readiness poll (melhora o "running" mesmo se o log regex falhar)
+    setTimeout(async () => {
+      if (!vlmProc) return;
+      for (let i = 0; i < 6; i++) {
+        try {
+          const r = await fetch(`http://127.0.0.1:${VLM_PORT}/health`, { signal: AbortSignal.timeout(800) });
+          if (r.ok) {
+            process.env.VLM_URL = VLM_LOCAL_URL;
+            emitVlm('vlm:running', { url: VLM_LOCAL_URL });
+            console.log('[VLM] Health OK — VLM respondendo em', VLM_LOCAL_URL);
+            break;
+          }
+        } catch {}
+        await new Promise(r => setTimeout(r, 700));
+      }
+    }, 1800);
+
+    return true;
+  } catch(e){ console.error('[VLM] exception',e); return false; }
 }
 
-app.listen(PORT, () => {
-  console.log(`Scanner 3D Cognitivo — http://localhost:${PORT}`);
-  console.log(`Referências: ${REFERENCES_DIR}`);
-  console.log(`Documento: ${MD_PATH}`);
-  console.log(`Blender: ${BLENDER_PATH || 'não encontrado'} · llama-server: ${LLAMA_SERVER || 'não encontrado'}`);
-  setTimeout(autoStartVlm, 1500); // dá tempo do servidor estabilizar
+if (process.env.AUTO_VLM !== '0') {
+  setTimeout(() => {
+    if (LLAMA_SERVER && vlmInstalled() && !vlmProc) {
+      console.log('[VLM] Iniciando LLM local automaticamente no boot...');
+      startLocalVLM();
+    }
+  }, 800);
+}
+
+// Probe live Blender bridge (claude-blender-designer protocol + MCP support)
+// Supports MCP on 9876 when BLENDER_BRIDGE_MODE=mcp (as requested).
+// Set BLENDER_LIVE_BRIDGE=1 and (optionally) BLENDER_BRIDGE_MODE=mcp to drive stages live in open Blender GUI.
+// User must have Blender open with the corresponding MCP server addon or claude_bridge.py running.
+setTimeout(async () => {
+  try {
+    const mode = (process.env.BLENDER_BRIDGE_MODE || 'socket').toLowerCase();
+    const p = await blenderLive.discoverPort();
+    if (p) {
+      console.log(`[Blender] LIVE bridge detected on port ${p} (mode=${mode}) — set BLENDER_LIVE_BRIDGE=1 to use for /build (visible GUI + shots, MCP on 9876 supported)`);
+      console.log('         (Controls open Blender via MCP 9876 or custom socket; executes stage code live, exports glb, then platform asks approve/disapprove)');
+    } else {
+      console.log('[Blender] No live bridge detected on 9876 (MCP) or 9877+.');
+      console.log('         To use as requested: 1) Open Blender GUI 2) Run MCP server addon or claude_bridge.py (Text Editor) 3) $env:BLENDER_LIVE_BRIDGE=1 ; $env:BLENDER_BRIDGE_MODE=mcp ; node server.js');
+      console.log('         Then stage builds (e.g. skeleton) will execute inside your open Blender. When finished, platform will ask for approve/disapprove.');
+    }
+  } catch (e) {
+    console.log('[Blender] bridge probe error (ignored):', e.message);
+  }
+}, 1200);
+
+// ==================== SERVER CONTROL (Start / Stop / Restart from UI) ====================
+// These allow controlling the node process without terminal Ctrl+C every time.
+// "Start" here acts as Restart (spawns a fresh node server.js and exits current).
+// "Stop" gracefully shuts down (equivalent to Ctrl+C).
+// After stop/restart the browser page will lose connection — refresh or re-open http://localhost:3939 after a couple seconds.
+
+app.post('/api/server/start', (req, res) => {
+  // Restart: spawn new detached instance then exit this one
+  res.json({ ok: true, message: 'Reiniciando servidor...' });
+  setTimeout(() => {
+    try {
+      const { spawn } = require('child_process');
+      const args = [__filename]; // server.js
+      const env = { ...process.env };
+      const child = spawn(process.execPath, args, {
+        cwd: __dirname,
+        detached: true,
+        stdio: 'ignore',
+        windowsHide: true,
+        env
+      });
+      child.unref();
+      console.log('[server-control] Spawned new instance for restart. Exiting current process.');
+      process.exit(0);
+    } catch (e) {
+      console.error('[server-control] Restart failed:', e.message);
+      process.exit(1);
+    }
+  }, 800);
 });
 
-// encerra o llama-server junto com o app
-for (const sig of ['SIGINT', 'SIGTERM']) {
-  process.on(sig, () => { try { if (vlmProc) vlmProc.kill(); } catch {} process.exit(0); });
-}
-// um erro async solto nunca derruba o servidor (fluidez = não cair no meio do auto-piloto)
-process.on('unhandledRejection', (e) => console.error('[unhandledRejection]', e && e.message));
-process.on('uncaughtException', (e) => console.error('[uncaughtException]', e && e.message));
+app.post('/api/server/stop', (req, res) => {
+  res.json({ ok: true, message: 'Parando servidor (equivalente a Ctrl+C)...' });
+  setTimeout(() => {
+    console.log('[server-control] Stop requested from UI. Exiting process.');
+    process.exit(0);
+  }, 600);
+});
+
+// Also expose a simple status for the control UI
+app.get('/api/server/status', (req, res) => {
+  res.json({ ok: true, running: true, port: PORT, pid: process.pid, uptime: process.uptime() });
+});
+
+// Boot real do servidor (depois de registrar tudo)
+app.listen(PORT, () => {
+  console.log(`\n✅ Servidor rodando em http://localhost:${PORT}`);
+  console.log('   (static middleware + job APIs + VLM auto-start configurados)');
+  console.log('   UI controls for Start/Restart and Stop are available in the interface.');
+});

@@ -15,9 +15,11 @@ Saída: textura de pele refinada (albedo + sss) pronta para a engine.
 import argparse
 import os
 import sys
+import numpy as np
+from PIL import Image
 
 # ---------------------------------------------------------------
-# 1. A Variante Computacional (O Motor do Dr.Jit) — código do diretor (verbatim)
+# 1. A Variante Computacional (O Motor do Dr.Jit)
 # ---------------------------------------------------------------
 try:
     import mitsuba as mi
@@ -31,7 +33,7 @@ except Exception as _e:  # mitsuba/drjit ausentes ou sem CUDA
 
 
 # ---------------------------------------------------------------
-# 2. O Script de Otimização (O Loop AAA) — código do diretor (verbatim)
+# 2. O Otimizador AAA (MitsubaSkinOptimizer)
 # ---------------------------------------------------------------
 def build_optimizer_class():
     import torch
@@ -57,13 +59,13 @@ def build_optimizer_class():
             self.opt['pele_albedo.data'] = self.params['pele_albedo.data']
             self.opt['pele_sss_radius.data'] = self.params['pele_sss_radius.data']  # oclusão de veias/cartilagem
 
-        def passo_de_otimizacao(self):
+        def passo_de_otimizacao(self, spp=16, seed=0):
             # Propaga os parâmetros atuais para a cena antes de renderizar
             self.opt.update()
 
             # spp baixo (4 a 16) = segredo para não estourar a VRAM;
             # o ruído do path tracer é mitigado pelo momentum do Adam
-            render_atual = mi.render(self.scene, params=self.params, spp=16, seed=0)
+            render_atual = mi.render(self.scene, params=self.params, spp=spp, seed=seed)
 
             # Dr.Jit -> tensor PyTorch (permite ArcFace e LPIPS nativamente)
             render_torch = dr.ext.pytorch.to_pytorch(render_atual).permute(2, 0, 1).unsqueeze(0)
@@ -71,7 +73,8 @@ def build_optimizer_class():
             # --- Perdas ---
             loss_pixel = F.l1_loss(render_torch, self.foto_original)             # cor exata
             loss_perceptual = self.lpips_metric(render_torch, self.foto_original).mean()  # poros/estrutura
-            # (injetar aqui a perda de Identidade ArcFace)
+            
+            # Regra de Ouro: a soma das perdas guia a convergência
             loss_total = loss_pixel + (0.8 * loss_perceptual)
 
             # --- Retropropagação diferenciável ---
@@ -81,7 +84,8 @@ def build_optimizer_class():
             # Regra de ouro #3: clamp [0.01, 0.99] — evita violar conservação de energia
             # (pele "radioativa" que destrói os gradientes da próxima iteração)
             for k in ('pele_albedo.data', 'pele_sss_radius.data'):
-                self.opt[k] = dr.clip(self.opt[k], 0.01, 0.99)
+                if k in self.opt:
+                    self.opt[k] = dr.clip(self.opt[k], 0.01, 0.99)
 
             return loss_total.item()
 
@@ -89,7 +93,7 @@ def build_optimizer_class():
 
 
 # ---------------------------------------------------------------
-# Runner CLI (regras de produção: coarse-to-fine, spp baixo, clamp)
+# Runner CLI (Regras de Produção: coarse-to-fine, spp baixo, clamp)
 # ---------------------------------------------------------------
 def main():
     ap = argparse.ArgumentParser()
@@ -107,22 +111,22 @@ def main():
         print(f"[mitsuba] cena não encontrada: {args.scene}"); sys.exit(2)
 
     import torch
-    from PIL import Image
-    import numpy as np
+
+    # Pré-processamento da foto original
     foto = torch.from_numpy(np.asarray(Image.open(args.photo).convert('RGB'), dtype='float32') / 255.0)
     foto = foto.permute(2, 0, 1).unsqueeze(0).cuda()
 
     Optimizer = build_optimizer_class()
     opt = Optimizer(args.scene, foto)
 
-    # Regra #1 (coarse-to-fine): geometria já congelada; aqui só PBR+SSS.
-    # Regra #2 (spp baixo no loop, alto só na validação): loop a 16 spp.
+    # Loop de Otimização
     for i in range(args.iters):
-        loss = opt.passo_de_otimizacao()
+        # Variação de seed por iteração para cancelar ruído estático
+        loss = opt.passo_de_otimizacao(spp=16, seed=i % 128)
         if i % 5 == 0 or i == args.iters - 1:
             print(f"[mitsuba] iter {i+1}/{args.iters} loss={loss:.5f}")
 
-    # validação final a 256 spp (sem ruído) — render limpo pro portão de revisão
+    # Validação final a 256 spp (sem ruído) — render limpo pro portão de revisão
     os.makedirs(args.out, exist_ok=True)
     final = mi.render(opt.scene, params=opt.params, spp=256, seed=0)
     mi.util.write_bitmap(os.path.join(args.out, 'skin_polished.png'), final)

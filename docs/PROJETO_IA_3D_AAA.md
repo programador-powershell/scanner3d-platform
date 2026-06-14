@@ -791,28 +791,95 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 ## 12. Arquivos Enviados (upload via site)
 
 <!-- AUTO:UPLOADS:START -->
-*Nenhum arquivo enviado ainda.*
+**64 arquivo(s) em `data/uploads/`:**
+
+| Arquivo | Tamanho | Enviado em |
+|---|---|---|
+| `alice_1.jpg` | 44.0 KB | 2026-06-13T14:51:15.168Z |
+| `Alice-3D_1.png` | 2.2 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (1).png` | 2.1 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (2).png` | 2.1 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (3).png` | 2.3 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (4).png` | 2.2 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (5).png` | 2.2 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (6).png` | 2.3 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (7).png` | 2.3 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (8).png` | 2.0 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (9).png` | 2.1 MB | 2026-06-13T14:51:15.168Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_20 (10).png` | 2.5 MB | 2026-06-13T14:51:15.168Z |
+| `alice_2.jpg` | 44.0 KB | 2026-06-13T16:35:02.108Z |
+| `Alice-3D_2.png` | 2.2 MB | 2026-06-13T16:35:02.108Z |
+| `alice-faca-cozinha.png` | 2.1 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (1)_1.png` | 2.1 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (2)_1.png` | 2.1 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (3)_1.png` | 2.3 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (4)_1.png` | 2.2 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (5)_1.png` | 2.2 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (6)_1.png` | 2.3 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (7)_1.png` | 2.3 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (8)_1.png` | 2.0 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (9)_1.png` | 2.1 MB | 2026-06-13T16:35:02.108Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_20 (10)_1.png` | 2.5 MB | 2026-06-13T16:35:02.108Z |
+| `alice_3.jpg` | 44.0 KB | 2026-06-13T16:50:42.295Z |
+| `Alice-3D_3.png` | 2.2 MB | 2026-06-13T16:50:42.295Z |
+| `alice-faca-cozinha_1.png` | 2.1 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (1)_2.png` | 2.1 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (2)_2.png` | 2.1 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (3)_2.png` | 2.3 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (4)_2.png` | 2.2 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (5)_2.png` | 2.2 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (6)_2.png` | 2.3 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (7)_2.png` | 2.3 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (8)_2.png` | 2.0 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (9)_2.png` | 2.1 MB | 2026-06-13T16:50:42.295Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_20 (10)_2.png` | 2.5 MB | 2026-06-13T16:50:42.295Z |
+| `alice_4.jpg` | 44.0 KB | 2026-06-13T19:40:30.278Z |
+| `Alice-3D_4.png` | 2.2 MB | 2026-06-13T19:40:30.278Z |
+| `alice-faca-cozinha_2.png` | 2.1 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (1)_3.png` | 2.1 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (2)_3.png` | 2.1 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (3)_3.png` | 2.3 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (4)_3.png` | 2.2 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (5)_3.png` | 2.2 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (6)_3.png` | 2.3 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (7)_3.png` | 2.3 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (8)_3.png` | 2.0 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (9)_3.png` | 2.1 MB | 2026-06-13T19:40:30.278Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_20 (10)_3.png` | 2.5 MB | 2026-06-13T19:40:30.278Z |
+| `alice_5.jpg` | 44.0 KB | 2026-06-13T19:54:41.402Z |
+| `Alice-3D_5.png` | 2.2 MB | 2026-06-13T19:54:41.402Z |
+| `alice-faca-cozinha_3.png` | 2.1 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (1)_4.png` | 2.1 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_16 (2)_4.png` | 2.1 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (3)_4.png` | 2.3 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (4)_4.png` | 2.2 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_17 (5)_4.png` | 2.2 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (6)_4.png` | 2.3 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_18 (7)_4.png` | 2.3 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (8)_4.png` | 2.0 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_19 (9)_4.png` | 2.1 MB | 2026-06-13T19:54:41.402Z |
+| `ChatGPT Image 7 de jun. de 2026_ 11_25_20 (10)_4.png` | 2.5 MB | 2026-06-13T19:54:41.402Z |
 <!-- AUTO:UPLOADS:END -->
 
 ## 13. Arquivos de Referência (`D:\References`)
 
 <!-- AUTO:REFERENCES:START -->
-*Inventário gerado em 2026-06-13T01:44:06.417Z a partir de `D:\References`.*
+*Inventário gerado em 2026-06-14T12:03:16.456Z a partir de `D:\References`.*
 
-**Total: 501 arquivos — 4.03 GB**
+**Total: 504 arquivos — 4.04 GB**
 
 | Categoria | Arquivos | Tamanho |
 |---|---|---|
-| Imagens de conceito | 145 | 291.7 MB |
+| Imagens de conceito | 146 | 293.8 MB |
 | Modelos 3D (GLB/OBJ) | 29 | 2.27 GB |
-| Modelos 3D / Rigs (FBX) | 34 | 303.0 MB |
+| Modelos 3D / Rigs (FBX) | 29 | 281.8 MB |
 | Texturas PBR | 114 | 1.07 GB |
-| Animações (FBX) | 169 | 116.7 MB |
+| Animações (FBX) | 174 | 137.9 MB |
 | Documentos (roteiro/lore) | 2 | 999.2 KB |
-| Imagens diversas | 8 | 2.4 MB |
+| Imagens diversas | 10 | 2.6 MB |
 
 <details>
-<summary><strong>Imagens de conceito</strong> — 145 arquivos (291.7 MB)</summary>
+<summary><strong>Imagens de conceito</strong> — 146 arquivos (293.8 MB)</summary>
 
 | Arquivo | Tamanho |
 |---|---|
@@ -857,6 +924,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `img/Model 3D/alice-lagarta.png` | 2.2 MB |
 | `img/Model 3D/alice-rainha.png` | 2.0 MB |
 | `img/Model 3D/armas.png` | 2.0 MB |
+| `img/Model 3D/BASE/alice base/Alice-3D.png` | 2.2 MB |
 | `img/Model 3D/BASE/alice base/alice-faca-cozinha.png` | 2.1 MB |
 | `img/Model 3D/BASE/alice base/alice.jpg` | 44.0 KB |
 | `img/Model 3D/BASE/alice base/ChatGPT Image 7 de jun. de 2026, 11_25_16 (1).png` | 2.1 MB |
@@ -1002,7 +1070,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 </details>
 
 <details>
-<summary><strong>Modelos 3D / Rigs (FBX)</strong> — 34 arquivos (303.0 MB)</summary>
+<summary><strong>Modelos 3D / Rigs (FBX)</strong> — 29 arquivos (281.8 MB)</summary>
 
 | Arquivo | Tamanho |
 |---|---|
@@ -1035,11 +1103,6 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `3D/SK_LidiaBoss.fbx` | 10.6 MB |
 | `3D/SK_LidiaDress.fbx` | 9.8 MB |
 | `3D/SK_RainhaDress.fbx` | 4.3 MB |
-| `model/Alice_for_mixamo.fbx` | 1.5 MB |
-| `model/Alice_Tpose.fbx` | 1.5 MB |
-| `model/Eve.fbx` | 14.6 MB |
-| `model/SK_Alice.fbx` | 1.6 MB |
-| `model/Y Bot.fbx` | 1.9 MB |
 
 </details>
 
@@ -1156,20 +1219,22 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `3D/SK_Lidia.fbm/texture_pbr_20250901.png` | 13.2 MB |
 | `3D/SK_RainhaDress.fbm/rainha_base.png` | 15.3 MB |
 | `3D/SK_RainhaDress.fbm/rainha_normal.png` | 9.0 MB |
+| `model/anims/Eve.fbm/SpacePirate_diffuse.png` | 4.6 MB |
+| `model/anims/Eve.fbm/SpacePirate_normal.png` | 4.7 MB |
+| `model/anims/Eve.fbm/SpacePirate_specular.png` | 4.1 MB |
 | `model/anims/Pro Sword and Shield Pack/Eve By J.Gonzales.fbm/SpacePirate_diffuse.png` | 4.6 MB |
 | `model/anims/Pro Sword and Shield Pack/Eve By J.Gonzales.fbm/SpacePirate_normal.png` | 4.7 MB |
 | `model/anims/Pro Sword and Shield Pack/Eve By J.Gonzales.fbm/SpacePirate_specular.png` | 4.1 MB |
-| `model/Eve.fbm/SpacePirate_diffuse.png` | 4.6 MB |
-| `model/Eve.fbm/SpacePirate_normal.png` | 4.7 MB |
-| `model/Eve.fbm/SpacePirate_specular.png` | 4.1 MB |
 
 </details>
 
 <details>
-<summary><strong>Animações (FBX)</strong> — 169 arquivos (116.7 MB)</summary>
+<summary><strong>Animações (FBX)</strong> — 174 arquivos (137.9 MB)</summary>
 
 | Arquivo | Tamanho |
 |---|---|
+| `model/anims/Alice_for_mixamo.fbx` | 1.5 MB |
+| `model/anims/Alice_Tpose.fbx` | 1.5 MB |
 | `model/anims/Brutal Assassination.fbx` | 990.0 KB |
 | `model/anims/Convulsing.fbx` | 636.6 KB |
 | `model/anims/Dual Weapon Combo.fbx` | 701.0 KB |
@@ -1181,6 +1246,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `model/anims/Eve_Run.fbx` | 1021.2 KB |
 | `model/anims/Eve_Skel.fbx` | 1021.1 KB |
 | `model/anims/Eve_Walk.fbx` | 1021.5 KB |
+| `model/anims/Eve.fbx` | 14.6 MB |
 | `model/anims/Fast Run.fbx` | 337.6 KB |
 | `model/anims/Great Sword Pack/draw a great sword 1.fbx` | 398.6 KB |
 | `model/anims/Great Sword Pack/draw a great sword 2.fbx` | 342.5 KB |
@@ -1328,6 +1394,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `model/anims/Pro Sword and Shield Pack/sword and shield turn.fbx` | 333.2 KB |
 | `model/anims/Pro Sword and Shield Pack/sword and shield walk (2).fbx` | 359.0 KB |
 | `model/anims/Pro Sword and Shield Pack/sword and shield walk.fbx` | 357.9 KB |
+| `model/anims/SK_Alice.fbx` | 1.6 MB |
 | `model/anims/Slow Run.fbx` | 414.6 KB |
 | `model/anims/Sprinting Forward Roll.fbx` | 489.7 KB |
 | `model/anims/Stable Sword Outward Slash.fbx` | 573.3 KB |
@@ -1339,6 +1406,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `model/anims/Standing Melee Combo Attack Ver. 3.fbx` | 662.6 KB |
 | `model/anims/Standing React Death Forward.fbx` | 882.2 KB |
 | `model/anims/Walking.fbx` | 486.5 KB |
+| `model/anims/Y Bot.fbx` | 1.9 MB |
 
 </details>
 
@@ -1353,7 +1421,7 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 </details>
 
 <details>
-<summary><strong>Imagens diversas</strong> — 8 arquivos (2.4 MB)</summary>
+<summary><strong>Imagens diversas</strong> — 10 arquivos (2.6 MB)</summary>
 
 | Arquivo | Tamanho |
 |---|---|
@@ -1363,6 +1431,8 @@ Mantido como `viewer.html` mas **aberto dentro da home** (botão "🧊 Visualiza
 | `3D/coelho.jpg` | 35.7 KB |
 | `3D/lidia.jpg` | 41.6 KB |
 | `3D/rainha.jpg` | 32.7 KB |
+| `imagens/unha 1.jpg` | 66.5 KB |
+| `imagens/unha2.jpg` | 117.2 KB |
 | `logo-gg.png` | 2.0 MB |
 | `wolrd-map.jpg` | 260.7 KB |
 
