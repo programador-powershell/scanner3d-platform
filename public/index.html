@@ -801,19 +801,28 @@ function updateViewer(){
   }
 }
 
-async function review(approved){
-  if(uiLocked) return toast('⏳ Aguarde a simulação física estabilizar…',false);
-  const s=job.stages[job.activeIndex]; if(!s)return;
-  if(!approved){
-    // Reprovar = VLM olha render+ref e sugere comando paramétrico (opção B do diretor)
-    toast('🧠 VLM analisando o reprovado e sugerindo ajuste…');
-    const r=await api(`/api/jobs/${job.id}/stages/${s.id}/refine`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:''})});
-    if(!r.ok) return toast(r.error,false);
-    job=r.job;
-    toast(r.suggestion?.command?`✗ → "${r.suggestion.command}"`:'✗ Regerando com nova abordagem');
-    renderJobView();
-    return;
-  }
+async function review(approved) {
+    const s = job.stages[job.activeIndex];
+    if (!s) return;
+
+    const note = prompt(approved ? "Observação / Sugestão (opcional):" : "Por que reprovou? (sugestão de correção)", "");
+
+    const res = await api(`/api/jobs/${job.id}/stages/${s.id}/review`, {
+        approved: approved,
+        note: note || ""
+    });
+
+    if (res.ok) {
+        job = res.job;
+        renderJobView();
+
+        if (approved) {
+            showToast("Etapa aprovada! Avançando...");
+        } else {
+            showToast("Etapa reprovada. Faça as correções e tente novamente.");
+        }
+    }
+}
   const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
   if(!r.ok)return toast(r.error,false);
   job=r.job; selectedStage=null;
@@ -824,13 +833,25 @@ async function regen(){
   if(uiLocked) return toast('⏳ Aguarde a simulação física estabilizar…',false);
   const s=job.stages[job.activeIndex]; s.approach++; s.status='running'; renderJobView();
 }
-async function vlmJudge(){
-  const s=job.stages[job.activeIndex]; if(!s)return;
-  const r=await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
-  if(!r.ok)return toast(r.error,false);
-  toast(`VLM: score ${r.verdict.score} · ${r.verdict.pass?'pass':'reject'}`,r.verdict.pass);
-  // auto-aprova se VLM passar
-  if(r.verdict.pass) review(true);
+async function vlmJudge() {
+    const s = job.stages[job.activeIndex];
+    if (!s) return alert("Nenhuma etapa ativa");
+
+    const res = await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`);
+
+    if (res.verdict) {
+        const v = res.verdict;
+        showToast(`VLM Score: ${v.score} | ${v.defects?.length ? v.defects.join(' • ') : 'Sem defeitos graves'}`);
+
+        if (v.suggested_prompt_fix) {
+            // Mostra a sugestão da VLM para você decidir usar ou não
+            console.log("Sugestão da VLM:", v.suggested_prompt_fix);
+            // Opcional: você pode adicionar um botão "Usar sugestão" na interface
+        }
+    }
+    
+    // IMPORTANTE: NÃO chama review(true) automaticamente
+    // O usuário deve clicar manualmente em Aprovar ou Reprovar
 }
 async function runChatGarment(files){
   const fd=new FormData();
@@ -845,6 +866,57 @@ async function runChatGarment(files){
   const s=job.stages.find(x=>x.id==='garment'); if(s){s.status='running'; s.lastImage=null;}
   await api(`/api/jobs/${job.id}/stages/garment/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
   renderJobView();
+}
+async function startVlmAutoPilot() {
+    const confirmAuto = confirm("Modo VLM-Auto: Vai construir e julgar todas as camadas automaticamente, mas você ainda terá que aprovar manualmente cada uma. Continuar?");
+    if (!confirmAuto) return;
+
+    for (let i = 0; i < STAGE_IDS.length; i++) {
+        const current = job.stages[job.activeIndex];
+        if (!current || current.status === 'approved') break;
+
+        // 1. Constrói a camada
+        await api(`/api/jobs/${job.id}/stages/${current.id}/build`, {});
+
+        // 2. Espera o build terminar (via SSE ou polling simples)
+        await waitForBuildDone(current.id);
+
+        // 3. Julga com VLM (só julga, não aprova)
+        await vlmJudge();
+
+        // 4. Para aqui e espera sua aprovação manual
+        showToast(`Camada ${current.title} pronta. Aprove ou reprove manualmente.`);
+        
+        // Aguarda até a camada ser aprovada (pode melhorar com polling)
+        await waitForStageApproved(current.id);
+    }
+
+    showToast("Todas as camadas processadas! Agora faça o build final.");
+}
+
+// Funções auxiliares (adicione se ainda não existirem)
+function waitForBuildDone(stageId) {
+    return new Promise(resolve => {
+        const check = setInterval(() => {
+            const s = job.stages.find(x => x.id === stageId);
+            if (s && s.lastImage) {
+                clearInterval(check);
+                resolve();
+            }
+        }, 800);
+    });
+}
+
+function waitForStageApproved(stageId) {
+    return new Promise(resolve => {
+        const check = setInterval(() => {
+            const s = job.stages.find(x => x.id === stageId);
+            if (s && s.status === 'approved') {
+                clearInterval(check);
+                resolve();
+            }
+        }, 1000);
+    });
 }
 
 async function startBuild(){
