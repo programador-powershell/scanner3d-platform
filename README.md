@@ -43,7 +43,7 @@ Motores open-source plugáveis (ver doc): **Hunyuan3D 2.1** (reconstrução+PBR)
 | (auto) | VLM Qwen3-VL local no llama.cpp | sobe sozinha; senão heurística |
 | `HUNYUAN_URL` | reconstrução inicial Hunyuan3D 2.1 | fallback MPFB2 |
 | `CHATGARMENT_URL` | sewing pattern do vestido | fallback MHCLO |
-| `BLENDER_PATH` | Blender (auto: `D:\Blender Foundation`) | sem build real |
+| `BLENDER_PATH` | Blender exe (configure se não achar auto; MPFB source is inside project blender/addons/mpfb now) | full pro AAA build |
 | `AUTO_VLM=0` | desliga auto-start da VLM | — |
 
 ## Arquitetura

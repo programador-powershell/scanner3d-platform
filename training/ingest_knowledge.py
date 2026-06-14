@@ -1,9 +1,9 @@
 """
 Ingestor de conhecimento unificado — TUDO vira aprendizado da VLM:
 
-  1. D:\\References\\img\\**       -> referências visuais aprovadas (padrão AAA do projeto)
-  2. D:\\References\\3D\\*.jpg     -> previews dos modelos 3D de produção
-  3. D:\\References\\3D\\*_tex\\** -> classificação de mapas PBR (base/mr/normal)
+  1. data/references/img/** (or $REFERENCES_DIR) -> referências visuais aprovadas (padrão AAA do projeto)
+  2. data/references/3D/*.jpg     -> previews dos modelos 3D de produção
+  3. data/references/3D/*_tex/** -> classificação de mapas PBR (base/mr/normal)
   4. data/links.json (github)      -> README dos repositórios registrados (MPFB2,
                                       MakeHuman, QRemeshify, AutoRemesher, KIRI 3DGS)
                                       vira conhecimento de COMO construir corretamente
@@ -27,7 +27,7 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-REFERENCES = os.environ.get("REFERENCES_DIR", "D:\\References")
+REFERENCES = os.environ.get("REFERENCES_DIR", os.path.join(ROOT, "data", "references"))
 LINKS = os.path.join(ROOT, "data", "links.json")
 CACHE = os.path.join(HERE, "cache_imgs")
 OUT = os.path.join(HERE, "dataset.json")

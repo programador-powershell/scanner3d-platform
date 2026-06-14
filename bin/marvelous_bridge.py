@@ -4,6 +4,7 @@ import subprocess
 import json
 
 # Caminho padrão do executável do Marvelous Designer (personal)
+# External tool (not bundled). Default search includes project if user copied, but normally set MD_PATH env.
 DEFAULT_MD_PATH = r"D:\\Marvelous Designer Personal\\MarvelousDesigner_Personal.exe"
 
 

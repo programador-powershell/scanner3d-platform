@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const { scanReferences, manifestToMarkdown, updateMdSection, formatSize } = require('../lib/references');
 
-const REFERENCES_DIR = process.env.REFERENCES_DIR || 'D:\\References';
+// UNIFIED default inside project. Override with REFERENCES_DIR env for large external sets.
+const REFERENCES_DIR = process.env.REFERENCES_DIR || path.join(__dirname, '..', 'data', 'references');
 const MD_PATH = path.join(__dirname, '..', 'docs', 'PROJETO_IA_3D_AAA.md');
 const MANIFEST_PATH = path.join(__dirname, '..', 'data', 'references_manifest.json');
 
