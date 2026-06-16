@@ -180,75 +180,13 @@ Cada portão de roupa agora gera **preview por sub-layer** e permite aprovação
 
 ---
 
-## 6. Integrações Adicionais 2026 para Scanner e Fidelidade (NVlabs + Licon)
+## 6. Próximos Passos Recomendados
 
-Adicionadas para elevar o "scanner" (análise precisa da imagem enviada) e a "fidelidade" (reconstrução 3D pixel-perfect com anatomia/movimento realistas):
-
-### SOMA-X (NVlabs)
-- **O que é**: Unificador de modelos paramétricos de corpo (SMPL/SMPL-X + MHR + Anny + GarmentMeasurements + SOMA-shape próprio). Topologia canônica + rig unificado + pose correctives automáticos. GPU (NVIDIA Warp), fully differentiable.
-- **Como melhora o projeto**:
-  - Substitui/aumenta o atual MPFB2 / cylinders manuais / SMPL fallback no gate de corpo, rig, músculos.
-  - Fitting de shape/proporções mais preciso a partir da foto + VLM params (height, medidas, etc.).
-  - Consistência perfeita para camadas de roupa (collision com body unificado) e export de rig.
-  - Integração com GR00T (retargeting) e BONES-SEED motion data.
-- **Arquivo de integração**: `python/soma_integration.py` (SOMALayer + fit + export OBJ/params para Blender).
-- **Uso no pipeline**: No pre-scan ou gate "muscles/body", chame `fit_body_from_image_and_params`. No `build_character.py` (estágio body/skeleton): gere o mesh base com SOMA em vez de procedural puro. Exporta para GLB com rig unificado.
-- **Instalação**: `pip install py-soma-x` (+ extras smpl/anny). Assets auto-download do HF. Para SMPL: baixe os .pkl/.npz oficiais separadamente.
-
-### GR00T-WholeBodyControl + GEAR-SONIC + MotionBricks (NVlabs)
-- **O que é**: Plataforma unificada para whole-body controllers de humanoides (Decoupled WBC, SONIC behavior foundation model treinado em motion tracking, kinematic planner, teleop VR, C++ inference real-time, MotionBricks latent motion).
-- **Como melhora o projeto**:
-  - Rig avançado + whole-body IK/control no lugar de IK manual simples.
-  - Geração de animação/movimento natural e física-aware (respeitando layers de roupa, vento, gravidade).
-  - Melhor export para UE/Unity + control direto (melhora o "rig pronto para heavy anims").
-  - Validação de fidelidade de garment em movimento (simulação de camadas durante o planner).
-  - MotionBricks para controle interativo no viewer (além das anims estáticas em data/anims).
-- **Sinergia**: Funciona nativamente com SOMA (retargeting + body unificado). Eagle é backbone VLM em várias versões do GR00T.
-- **Arquivo de integração**: `python/gr00t_control.py` (wrappers para controller, retarget via SOMA, generate motion, apply no rig Blender, export).
-- **Uso**: Após criação do rig (skeleton + muscles), chame o controller/SONIC para gerar ou aplicar poses/motion. No garment: simule resposta das layers ao movimento. No final export + viewer: use MotionBricks/SONIC para previews animados de alta qualidade. Adicione como opção no launch do Blender GUI.
-
-### Eagle (NVlabs)
-- **O que é**: Família de frontier VLMs com estratégias data-centric. Forte em image/video understanding, long-context reasoning, generalist grounding (LocateAnything para detecção/ponteiros densos), embodied AI. Usado em GR00T N1.x, Cosmos, etc. Variantes: Eagle (mixture-of-encoders), Eagle 2/2.5 (SOTA), LocateAnything (grounding).
-- **Como melhora o projeto**:
-  - **Scanner melhorado**: Pre-scan muito mais preciso (medidas, proporções, camadas de roupa, materiais, pose, landmarks via grounding). Substitui ou ensemble com Qwen atual.
-  - **Julgamento de gates com mais fidelidade**: Cada portão compara render vs foto enviada com muito mais detalhe (grounding de costuras, drape, poros, hair strands, etc.). Menos falsos positivos/negativos.
-  - Long-context útil para múltiplas imagens (ref + várias previews ou Licon-MSR video frames).
-  - Grounding (LocateAnything) para extração automática de medidas precisas ou segmentação de layers sem depender só de Florence/Qwen.
-- **Arquivo de integração**: `python/eagle_vlm.py` (load via transformers, call_eagle_vlm, helpers eagle_scan + eagle_judge + eagle_locate_anything).
-- **Uso no pipeline**: Em server.js `/scan` e no loop de VLM judge por gate: chame as funções Eagle quando `EAGLE_MODEL` configurado (ou sempre como backend preferencial). No garment/layer analysis: use para grounding de painéis específicos.
-- **Instalação/Modelos**: HF `nvidia/Eagle2.5-8B` etc. (ou variantes LocateAnything). Roda com transformers/vLLM. Atualize `VLM_URL` ou adicione switch no server.
-
-### ComfyUI-Licon-MSR (liconstudio)
-- **O que é**: Custom node ComfyUI para LTX 2.3 MSR (Multiple-Subject-Reference) LoRA. Recebe até 4 imagens de sujeito + background e gera MP4 de referência com frames fixos (17/25/33/41 frames @24fps). Otimizado para workflows de consistent subject reference.
-- **Como melhora o projeto**:
-  - Quando o usuário envia **múltiplas imagens** (body base + full costume + stage sheets de camadas + diferentes ângulos/poses), gera vídeo de referência consistente.
-  - Os frames viram input superior para:
-    - Eagle VLM (análise multi-view + grounding).
-    - SOMA body fit (melhor shape/pose a partir de várias vistas).
-    - Decomposição de layers (análise mais precisa de corset/saia/ruffles etc.).
-    - Reconstrução 3D / garment (condicionamento multi-ref para Hunyuan + ChatGarment + MD).
-  - Aumenta dramaticamente fidelidade em figurinos complexos (ex: o Alice Liddell gothic de 8+ layers do update/).
-- **Arquivo de integração**: `python/licon_msr_integration.py` (generate_reference_video + frames extraction). Workflows de exemplo no repo (MSR_Sample_workflow.json).
-- **Uso**: No upload de job ou pre-scan: se len(sourceImages) > 1, chame o node (via ComfyUI API ou subprocess) para gerar o ref video. Extraia frames e injete no resto do pipeline (VLM, SOMA, garment).
-- **Instalação**: `cd ComfyUI/custom_nodes && git clone https://github.com/liconstudio/ComfyUI-Licon-MSR`. Instale requirements. Rode ComfyUI. O projeto já tem vibe "ComfyUI-like" (gates como nodes) — integre como etapa de pré-processamento de imagem.
-
-### Como Integrar no Código Atual (resumo prático)
-- **python/**: Adicionados `soma_integration.py`, `eagle_vlm.py`, `gr00t_control.py`, `licon_msr_integration.py`. Chame-os condicionalmente (try/except + env flags como `USE_SOMA=1`, `EAGLE_MODEL=...`).
-- **blender/build_character.py**: No gate de body/skeleton/muscles use SOMA para o mesh base. No garment use layers do costume + GR00T para motion sim. Render previews continuam para VLM.
-- **server.js**: 
-  - VLM: suporte a Eagle (além de Qwen).
-  - Pre-scan e garment: chame analyze com Licon-MSR quando múltiplas imagens.
-  - Body/rig: passe params SOMA.
-  - No final do build (após GUI launch): chame GR00T para gerar motion de preview se desejado.
-- **Docs**: Esta seção + atualizações na tabela de stack e arquitetura (Engine A agora pode usar SOMA + Eagle grounding; rig/control com GR00T; image preproc com Licon).
-- **Training/VLM**: Eagle como backbone alternativo para os julgamentos. Use os julgamentos + imagens geradas por Licon para mais dados de fine-tune (a cada build já disparamos fine-tuning).
-- **Custo/Opicional**: Tudo opcional (fallbacks mantidos para MPFB/manual/Qwen atual). Requer installs extras e models (HF para Eagle/SOMA/GR00T). Assets grandes — use cache.
-
-Com essas integrações o scanner fica muito mais inteligente na análise da foto enviada (Eagle + Licon + grounding) e a fidelidade do output 3D sobe significativamente (SOMA body unificado + GR00T whole-body control + motion natural + layers físicas consistentes).
-
-Teste com o fluxo atual (foto Alice ou similar + prompt) ativando as novas flags. Os portões continuam com VLM judgment (agora com Eagle) e o loop de fine-tuning por build continua.
-
-Próximos: adicionar endpoints no server para "use_soma_body", "use_eagle_vlm", "generate_msr_ref_video", e opções no UI.
+1. Implementar `costume_layers.json` parser no `server.js` e `build_stage.py`.
+2. Adicionar endpoint `/api/jobs/:id/costume/analyze` que usa VLM para gerar o JSON a partir de imagem de conceito.
+3. Expandir `build_stage.py` com lógica real de Cloth simulation por layer + collision groups.
+4. Criar preset de materiais e embroidery para estilo "Dark Romantic Victorian Gothic".
+5. Testar com o set completo de imagens Alice Liddell fornecido.
 
 **Este documento reflete a visão v6 com foco em figurinos complexos de alta fidelidade.**
 

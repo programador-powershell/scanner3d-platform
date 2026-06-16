@@ -1,0 +1,193 @@
+{
+  "character_id": "alice_liddell_kitchen_knife_v1",
+  "style": "Dark Romantic Victorian Gothic",
+  "source": "Analyzed from provided concept sheets (Stage 1-10) + full turnaround + base body",
+  "base_body": "alice_base_bodysuit",
+  "layers": [
+    {
+      "id": "layer_01_inner_base",
+      "name": "Inner Base Layer (Chemise + Internal Corset)",
+      "type": "underwear",
+      "parent": null,
+      "order": 1,
+      "physics": {
+        "stiffness": 0.75,
+        "damping": 0.45,
+        "mass": 0.25,
+        "collision_group": "body",
+        "friction": 0.4
+      },
+      "material_id": "inner_cream_cotton_lace",
+      "construction_notes": "Lightweight cotton/linen blend with antique lace trim and cross embroidery. Creates smooth foundation for outer layers."
+    },
+    {
+      "id": "layer_02_corset",
+      "name": "Outer Corset + Waist Belt System",
+      "type": "corset",
+      "parent": "layer_01_inner_base",
+      "order": 2,
+      "physics": {
+        "stiffness": 0.95,
+        "damping": 0.15,
+        "mass": 0.65,
+        "collision_group": "corset",
+        "friction": 0.6
+      },
+      "material_id": "corset_navy_leather_brass",
+      "construction_notes": "Structured cotton coutil with steel boning. Multiple antique brass belts, central rose buckle, D-rings and hanging chains. Provides strong waist shaping."
+    },
+    {
+      "id": "layer_03_underskirt",
+      "name": "Underskirt + Multi-Tier Petticoat (6 layers)",
+      "type": "skirt",
+      "parent": "layer_02_corset",
+      "order": 3,
+      "physics": {
+        "stiffness": 0.55,
+        "damping": 0.55,
+        "mass": 0.45,
+        "collision_group": "skirt_inner",
+        "friction": 0.35
+      },
+      "material_id": "underskirt_cream_lace_tiers",
+      "sub_layers": [
+        "waistband_structural",
+        "base_lining",
+        "volume_petticoat",
+        "lace_tier_1_dark",
+        "lace_tier_2",
+        "lace_tier_3_hem_scalloped"
+      ],
+      "construction_notes": "Layered cream and dark lace petticoats for volume, movement and silhouette support. Scalloped lace edges throughout."
+    },
+    {
+      "id": "layer_04_overskirt",
+      "name": "Outer Skirt + Asymmetrical Overskirt + Front Apron Panel",
+      "type": "overskirt",
+      "parent": "layer_03_underskirt",
+      "order": 4,
+      "physics": {
+        "stiffness": 0.45,
+        "damping": 0.65,
+        "mass": 0.75,
+        "collision_group": "skirt_outer",
+        "friction": 0.5
+      },
+      "material_id": "overskirt_navy_jacquard_gold",
+      "construction_notes": "Navy-black jacquard with subtle floral/scroll woven pattern. Heavy gold metallic embroidery, deep red rose appliqués. Asymmetrical side drapes + prominent front apron panel with ornate gold work."
+    },
+    {
+      "id": "layer_05_sleeves",
+      "name": "Puff Sleeves + Leather Bracers + Lace Cuffs",
+      "type": "sleeves",
+      "parent": "layer_02_corset",
+      "order": 5,
+      "physics": {
+        "stiffness": 0.6,
+        "damping": 0.4,
+        "mass": 0.35,
+        "collision_group": "sleeves",
+        "friction": 0.45
+      },
+      "material_id": "sleeves_navy_puff_leather",
+      "construction_notes": "Gathered puff sleeves with antique gold printed motif. Detachable black leather bracers with rose medallions, studs and lace ruffle trim at wrist."
+    },
+    {
+      "id": "layer_06_back_bow",
+      "name": "Rear Bow / Bustle + Back Skirt Drape + Lacing",
+      "type": "back_detail",
+      "parent": "layer_04_overskirt",
+      "order": 6,
+      "physics": {
+        "stiffness": 0.5,
+        "damping": 0.5,
+        "mass": 0.55,
+        "collision_group": "skirt_outer",
+        "friction": 0.4
+      },
+      "material_id": "back_bow_navy_gold",
+      "construction_notes": "Large structured navy bow with central rose brooch and hanging antique brass chains. Back skirt drape panel + visible corset lacing detail."
+    },
+    {
+      "id": "layer_07_accessories",
+      "name": "Jewelry Set + Hair Ornaments + Belt Charms + Kitchen Knife",
+      "type": "accessories",
+      "parent": null,
+      "order": 7,
+      "rigid": true,
+      "physics": {
+        "stiffness": 1.0,
+        "damping": 0.0,
+        "mass": 0.2,
+        "collision_group": "accessories",
+        "friction": 0.7
+      },
+      "material_id": "accessories_antique_brass_garnet",
+      "construction_notes": "Layered necklaces with garnet glass pendants and rose motifs. Multiple rose hair ornaments with chains. Belt with dangling keys, crosses and roses. Ornate kitchen knife with rose-engraved blade and blood details."
+    },
+    {
+      "id": "layer_08_legwear",
+      "name": "Striped Stockings + Lace-up Victorian Boots",
+      "type": "legwear",
+      "parent": "layer_01_inner_base",
+      "order": 8,
+      "physics": {
+        "stiffness": 0.3,
+        "damping": 0.3,
+        "mass": 0.4,
+        "collision_group": "legwear",
+        "friction": 0.6
+      },
+      "material_id": "legwear_striped_leather",
+      "construction_notes": "Black and charcoal horizontal striped stockings with delicate lace cuff. Heavy black leather Victorian lace-up boots with antique brass hardware, stacked block heel and detailed sole tread."
+    }
+  ],
+  "materials_palette": {
+    "inner_cream_cotton_lace": {
+      "base_color": "#F5F0E6",
+      "roughness": 0.65,
+      "metallic": 0.0,
+      "sheen": 0.28
+    },
+    "corset_navy_leather_brass": {
+      "base_color": "#1A1F2E",
+      "roughness": 0.52,
+      "metallic": 0.18
+    },
+    "overskirt_navy_jacquard_gold": {
+      "base_color": "#0D111F",
+      "roughness": 0.68,
+      "metallic": 0.09,
+      "displacement": 0.18
+    },
+    "accessories_antique_brass_garnet": {
+      "base_color": "#3D2B1F",
+      "roughness": 0.38,
+      "metallic": 0.75,
+      "clearcoat": 0.35
+    },
+    "legwear_striped_leather": {
+      "base_color": "#1C1814",
+      "roughness": 0.42,
+      "metallic": 0.06
+    }
+  },
+  "construction_order": [
+    "layer_01_inner_base",
+    "layer_02_corset",
+    "layer_03_underskirt",
+    "layer_04_overskirt",
+    "layer_05_sleeves",
+    "layer_06_back_bow",
+    "layer_07_accessories",
+    "layer_08_legwear"
+  ],
+  "simulation_settings": {
+    "gravity": -9.81,
+    "wind_strength": 0.25,
+    "air_damping": 0.12,
+    "enable_self_collision": true,
+    "solver_iterations": 12,
+    "enable_wind": true
+  }
+}

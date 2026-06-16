@@ -1,0 +1,125 @@
+{
+  "style": "Dark Romantic Victorian Gothic - Alice Liddell",
+  "version": "v1.0",
+  "description": "High-fidelity PBR materials and embroidery presets matching the detailed construction sheets for Alice Liddell (Faca de Cozinha). Optimized for Stellar Blade-level quality with micro-details, sheen, and realistic fabric behavior.",
+  "materials": {
+    "inner_cream_cotton_lace": {
+      "base_color": "#F5F0E6",
+      "roughness": 0.65,
+      "metallic": 0.0,
+      "sheen": 0.28,
+      "sheen_tint": 0.1,
+      "normal_strength": 0.85,
+      "displacement": 0.08,
+      "subsurface": 0.15,
+      "notes": "Lightweight cotton/linen blend with delicate antique lace trim. Soft sheen and subtle weave."
+    },
+    "corset_navy_leather_brass": {
+      "base_color": "#1A1F2E",
+      "roughness": 0.52,
+      "metallic": 0.18,
+      "sheen": 0.15,
+      "normal_strength": 1.1,
+      "clearcoat": 0.25,
+      "clearcoat_roughness": 0.3,
+      "notes": "Structured cotton coutil + vegetable-tanned leather straps. Antique brass hardware with aged patina."
+    },
+    "overskirt_navy_jacquard_gold": {
+      "base_color": "#0D111F",
+      "roughness": 0.68,
+      "metallic": 0.09,
+      "sheen": 0.12,
+      "normal_strength": 0.95,
+      "displacement": 0.18,
+      "notes": "Navy-black jacquard with subtle floral/scroll woven pattern + gold metallic thread embroidery. Deep red rose appliqués."
+    },
+    "lace_trim_antique": {
+      "base_color": "#E8E0D0",
+      "roughness": 0.75,
+      "metallic": 0.0,
+      "sheen": 0.35,
+      "normal_strength": 1.2,
+      "alpha": 0.92,
+      "notes": "Delicate antique cotton lace with scalloped edges. Semi-transparent with fine thread detail."
+    },
+    "leather_bracers_victorian": {
+      "base_color": "#2C241F",
+      "roughness": 0.45,
+      "metallic": 0.08,
+      "sheen": 0.22,
+      "normal_strength": 1.3,
+      "clearcoat": 0.4,
+      "notes": "Premium black leather with antique brass studs, rose medallions and filigree."
+    },
+    "antique_brass_hardware": {
+      "base_color": "#3D2B1F",
+      "roughness": 0.38,
+      "metallic": 0.75,
+      "clearcoat": 0.35,
+      "clearcoat_roughness": 0.25,
+      "normal_strength": 0.6,
+      "notes": "Aged antique brass with brushed and engraved details. Slight green oxidation in recesses."
+    },
+    "deep_red_rose_applique": {
+      "base_color": "#5B0D1A",
+      "roughness": 0.55,
+      "metallic": 0.05,
+      "sheen": 0.18,
+      "normal_strength": 0.9,
+      "subsurface": 0.25,
+      "notes": "Hand-layered deep red satin/organza rose with gold metallic thread accents. Soft petal volume."
+    },
+    "garnet_glass_pendant": {
+      "base_color": "#4A0F1F",
+      "roughness": 0.15,
+      "metallic": 0.0,
+      "transmission": 0.85,
+      "ior": 1.65,
+      "clearcoat": 0.9,
+      "notes": "Dark garnet glass with high refraction and internal sparkle. Antique brass setting."
+    },
+    "victorian_leather_boots": {
+      "base_color": "#1C1814",
+      "roughness": 0.42,
+      "metallic": 0.06,
+      "sheen": 0.25,
+      "normal_strength": 1.4,
+      "clearcoat": 0.3,
+      "notes": "Heavy black leather with aged finish, antique brass eyelets and buckles. Subtle natural sheen."
+    }
+  },
+  "embroidery_presets": {
+    "gold_metallic_scroll_floral": {
+      "type": "metallic_thread",
+      "color": "#C5A05A",
+      "metallic": 0.65,
+      "roughness": 0.35,
+      "height": 0.12,
+      "pattern": "floral_scroll_medallion",
+      "density": "high",
+      "notes": "Gold metallic thread embroidery with rose and filigree motifs. Raised effect."
+    },
+    "deep_red_rose_applique_layered": {
+      "type": "applique",
+      "petal_color": "#5B0D1A",
+      "center_color": "#2A0A10",
+      "gold_accent": true,
+      "height": 0.25,
+      "notes": "Hand-layered deep red rose with gold thread outline and center detail."
+    },
+    "antique_lace_scrolled_edge": {
+      "type": "lace",
+      "color": "#E8E0D0",
+      "alpha": 0.88,
+      "normal_strength": 1.5,
+      "pattern": "scalloped_floral",
+      "notes": "Fine antique lace with delicate scalloped edge and small floral motifs."
+    }
+  },
+  "recommended_shader_nodes": {
+    "fabric_base": "Principled BSDF + Sheen + Normal + Displacement",
+    "leather": "Principled BSDF + Clearcoat + Anisotropic + Normal",
+    "metal_antique": "Principled BSDF + Metallic + Clearcoat + Normal + Slight Subsurface",
+    "glass_garnet": "Principled BSDF + Transmission + IOR + Clearcoat + Normal"
+  }
+}

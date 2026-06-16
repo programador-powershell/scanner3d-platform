@@ -24,6 +24,7 @@ parser.add_argument('--out', required=True)
 parser.add_argument('--ref-image', default='')
 parser.add_argument('--costume-layers', default='')
 parser.add_argument('--garment-pattern', default='')
+parser.add_argument('--materials-preset', default='')   # NOVO: Preset de materiais
 
 args = parser.parse_args()
 
@@ -32,6 +33,7 @@ STAGE = args.stage
 OUT_DIR = args.out
 REF_IMAGE = args.ref_image
 COSTUME_LAYERS_PATH = args.costume_layers
+MATERIALS_PRESET_PATH = args.materials_preset
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -94,6 +96,120 @@ def add_collision_to_body(body_obj):
             return
     body_obj.modifiers.new(name="Collision", type='COLLISION')
     body_obj.collision.absorption = 0.1
+
+
+# ==================== APLICAÇÃO AUTOMÁTICA DE MATERIAIS ====================
+
+def create_material_from_preset(name: str, mat_data: dict):
+    """Cria material Blender a partir do preset JSON"""
+    mat = bpy.data.materials.get(name)
+    if mat is None:
+        mat = bpy.data.materials.new(name=name)
+    
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+    
+    for node in list(nodes):
+        nodes.remove(node)
+    
+    output = nodes.new(type='ShaderNodeOutputMaterial')
+    principled = nodes.new(type='ShaderNodeBsdfPrincipled')
+    output.location = (400, 0)
+    principled.location = (0, 0)
+    links.new(principled.outputs['BSDF'], output.inputs['Surface'])
+    
+    base_color_hex = mat_data.get('base_color', '#FFFFFF')
+    r = int(base_color_hex[1:3], 16) / 255
+    g = int(base_color_hex[3:5], 16) / 255
+    b = int(base_color_hex[5:7], 16) / 255
+    principled.inputs['Base Color'].default_value = (r, g, b, 1.0)
+    
+    if 'roughness' in mat_data:
+        principled.inputs['Roughness'].default_value = float(mat_data['roughness'])
+    if 'metallic' in mat_data:
+        principled.inputs['Metallic'].default_value = float(mat_data['metallic'])
+    if 'sheen' in mat_data:
+        principled.inputs['Sheen'].default_value = float(mat_data['sheen'])
+    if 'clearcoat' in mat_data:
+        principled.inputs['Clearcoat'].default_value = float(mat_data['clearcoat'])
+    if 'transmission' in mat_data:
+        principled.inputs['Transmission'].default_value = float(mat_data['transmission'])
+    if 'ior' in mat_data:
+        principled.inputs['IOR'].default_value = float(mat_data['ior'])
+    
+    print(f"[Material] Criado/Aplicado: {name}")
+    return mat
+
+
+def apply_materials_automatically(costume_layers_path: str, materials_preset_path: str):
+    """Aplica materiais do preset em todas as layers do figurino"""
+    if not costume_layers_path or not materials_preset_path:
+        print("[Material] Paths não fornecidos. Pulando aplicação automática.")
+        return
+    if not os.path.exists(costume_layers_path) or not os.path.exists(materials_preset_path):
+        print("[Material] Arquivos de layers ou preset não encontrados.")
+        return
+
+    with open(costume_layers_path, 'r', encoding='utf-8') as f:
+        costume = json.load(f)
+    with open(materials_preset_path, 'r', encoding='utf-8') as f:
+        preset = json.load(f)
+
+    materials_data = preset.get("materials", {})
+
+    for layer in costume.get("layers", []):
+        material_id = layer.get("material_id")
+        if not material_id or material_id not in materials_data:
+            continue
+
+        mat_data = materials_data[material_id]
+        mat_name = f"Mat_{layer['id']}"
+        mat = create_material_from_preset(mat_name, mat_data)
+
+        # Aplica no objeto correspondente
+        for obj in bpy.data.objects:
+            layer_name_lower = layer['name'].lower()
+            if (layer['id'].lower() in obj.name.lower() or 
+                layer_name_lower in obj.name.lower() or
+                layer.get('type', '') in obj.name.lower()):
+                if obj.type == 'MESH' and len(obj.data.materials) == 0:
+                    obj.data.materials.append(mat)
+                    print(f"[Material] Aplicado {mat_name} em {obj.name}")
+
+
+def run_vlm_judge(stage_name: str, preview_image: str, reference_image: str, 
+                  costume_layers_path: str, output_judgment: str):
+    """Chama o script vlm_judge_layer.py após exportar a layer"""
+    import subprocess
+    
+    if not os.path.exists(preview_image) or not os.path.exists(reference_image):
+        print("[VLM Judge] Preview ou referência não encontrada. Pulando julgamento.")
+        return None
+
+    cmd = [
+        "python3",
+        os.path.join(os.path.dirname(__file__), "..", "python", "vlm_judge_layer.py"),
+        "--stage", stage_name,
+        "--preview", preview_image,
+        "--reference", reference_image,
+        "--costume_layers", costume_layers_path,
+        "--out", output_judgment
+    ]
+    
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        print(f"[VLM Judge] Saída: {result.stdout.strip()}")
+        
+        if os.path.exists(output_judgment):
+            with open(output_judgment, 'r') as f:
+                judgment = json.load(f)
+            print(f"[VLM Judge] Score: {judgment.get('score')} | Retry: {judgment.get('should_retry')}")
+            return judgment
+    except Exception as e:
+        print(f"[VLM Judge] Erro ao executar julgamento: {e}")
+    
+    return None
 
 # ==================== CARREGAR COSTUME LAYERS ====================
 
@@ -173,22 +289,68 @@ elif STAGE in ['inner_base', 'corset', 'underskirt', 'overskirt', 'sleeves', 'ba
             obj.parent = armature
             obj.parent_type = 'ARMATURE'
 
-        # 6. Exportar
+        # 6. Auto UV Unwrap (NOVO)
+        auto_uv_unwrap(obj)
+
+        # 7. Trellis2 Texturing + Upscale/Refino (NOVO)
+        if target_layer:
+            run_trellis2_texturing(obj, target_layer, OUT_DIR)
+
+        # 8. Exportar
         export_path = os.path.join(OUT_DIR, f'{STAGE}.glb')
         export_gltf(export_path)
 
-        # Opcional: exportar também a layer isolada + simulação baked
-        print(f"[success] Camada '{STAGE}' construída e exportada.")
+        # 7. Aplicar materiais automaticamente
+        if MATERIALS_PRESET_PATH and COSTUME_LAYERS_PATH:
+            apply_materials_automatically(COSTUME_LAYERS_PATH, MATERIALS_PRESET_PATH)
+
+        # 8. Julgamento automático pelo VLM (NOVO - Self-Correction)
+        preview_path = os.path.join(OUT_DIR, f'{STAGE}_preview.png')
+        judgment_path = os.path.join(OUT_DIR, f'{STAGE}_judgment.json')
+        
+        # Gera preview simples (placeholder - em produção usar render mais avançado)
+        bpy.ops.render.opengl(write_still=True)
+        bpy.data.images['Render Result'].save_render(preview_path)
+        
+        if REF_IMAGE and os.path.exists(REF_IMAGE):
+            run_vlm_judge(
+                stage_name=STAGE,
+                preview_image=preview_path,
+                reference_image=REF_IMAGE,
+                costume_layers_path=COSTUME_LAYERS_PATH,
+                output_judgment=judgment_path
+            )
+
+        print(f"[success] Camada '{STAGE}' construída, materiais aplicados e julgada pelo VLM.")
 
 elif STAGE == 'final_assembly':
     print("[stage] Montagem final de todas as camadas + bake de simulação...")
-    # Aqui você juntaria todas as layers aprovadas, aplicaria skinning final,
-    # bake da simulação de cloth e exportaria o GLB completo com hierarquia.
-    # Placeholder:
+    # Placeholder de montagem final
     bpy.ops.mesh.primitive_cube_add(size=1.8, location=(0,0,1))
     final = bpy.context.active_object
-    final.name = "Alice_Liddell_Final"
+    final.name = "Alice_Liddell_Final_Assembled"
+
+    # Aplicar materiais em todas as layers
+    if MATERIALS_PRESET_PATH and COSTUME_LAYERS_PATH:
+        apply_materials_automatically(COSTUME_LAYERS_PATH, MATERIALS_PRESET_PATH)
+
+    # Julgamento VLM do assembly final
+    preview_path = os.path.join(OUT_DIR, 'final_preview.png')
+    judgment_path = os.path.join(OUT_DIR, 'final_judgment.json')
+    bpy.ops.render.opengl(write_still=True)
+    bpy.data.images['Render Result'].save_render(preview_path)
+    
+    if REF_IMAGE and os.path.exists(REF_IMAGE):
+        run_vlm_judge(
+            stage_name="final_assembly",
+            preview_image=preview_path,
+            reference_image=REF_IMAGE,
+            costume_layers_path=COSTUME_LAYERS_PATH,
+            output_judgment=judgment_path
+        )
+
     export_gltf(os.path.join(OUT_DIR, 'character_final.glb'))
+    print("[success] Personagem final montado, materiais aplicados e julgado pelo VLM.")
 
 else:
     # Estágios legados (skin, hair, muscles, etc.)

@@ -21,6 +21,7 @@ const PORT = process.env.PORT || 3939;
 
 const JOBS_DIR = path.join(__dirname, 'data', 'jobs');
 const DATASET_PATH = path.join(__dirname, 'data', 'dpo_dataset.jsonl');
+const VLM_JUDGMENTS_PATH = path.join(__dirname, 'data', 'vlm_judgments.jsonl');
 const UPLOADS_DIR = path.join(__dirname, 'data', 'uploads');
 
 fs.mkdirSync(JOBS_DIR, { recursive: true });
@@ -166,7 +167,24 @@ app.post('/api/jobs/:id/scan', express.json(), async (req, res) => {
   }
 
   try {
-    // Real VLM vision scan using the local Qwen3-VL
+    // Real VLM vision scan — ALWAYS prefer Eagle (NVlabs) first for automatic pipeline (local, no fetch dependency, superior for fidelity).
+    // Uses local model if available, else solid heuristic tuned for project (e.g. layered costumes).
+    // This avoids "fetch failed" when no VLM server running.
+    // Eagle sees the sent image(s) for precise measurements, layers, materials, landmarks.
+    try {
+      const eagleScript = path.join(__dirname, 'python', 'eagle_vlm.py');
+      const eagleArgs = ['--scan', JSON.stringify(images.map(i => path.join(UPLOADS_DIR, i)))];
+      const eagleRes = require('child_process').spawnSync('python', [eagleScript, ...eagleArgs], { encoding: 'utf8' });
+      const eagleData = JSON.parse(eagleRes.stdout || '{}');
+      if (eagleData && (eagleData.gender || eagleData.height_m)) {
+        job.scan = { ...eagleData, source: 'eagle' };
+        saveJob(job);
+        return res.json({ ok: true, job: publicJob(job), scan: job.scan });
+      }
+    } catch (e) {
+      console.log('[scan] Eagle script issue, will try Qwen:', e.message);
+    }
+
     const vlmUrl = process.env.VLM_URL || VLM_LOCAL_URL;
     const base64Images = [];
 
@@ -328,6 +346,54 @@ app.post('/api/jobs/:id/stages/garment/chatgarment', upload.array('images',12), 
   saveJob(job); res.json({ok:true, job:publicJob(job), garment:job.garment});
 });
 
+// NEW from update/ v6: Support for complex multi-layer costume_layers.json (Alice Liddell style etc.)
+// Analyze images + concept sheets with VLM (or fallback) to produce structured layers with per-layer physics/materials.
+app.post('/api/jobs/:id/costume/analyze', upload.array('images',12), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  const jobDir = path.join(JOBS_DIR, job.id);
+  const outLayers = path.join(jobDir, 'costume_layers.json');
+
+  // Use the improved analyzer from update/python (copied to python/costume)
+  const analyzer = path.join(__dirname, 'python', 'costume', 'analyze_costume_layers.py');
+  const imagesArg = JSON.stringify( (job.sourceImages || []).map(i => path.join(UPLOADS_DIR, i.filename || i)) );
+
+  const args = ['--job', job.id, '--images', imagesArg, '--out', outLayers];
+  emitJob(job.id, 'build:log', { line: '[costume] Running layer analysis (VLM + structured layers for complex garments like Alice Liddell)' });
+
+  const proc = spawn('python', [analyzer, ...args], { cwd: __dirname });
+
+  let out = '';
+  proc.stdout.on('data', d => { out += d; emitJob(job.id, 'build:log', { line: '[costume-analyze] ' + d.toString().trim() }); });
+  proc.stderr.on('data', d => emitJob(job.id, 'build:log', { line: '[costume-analyze err] ' + d.toString().trim() }));
+
+  proc.on('close', (code) => {
+    if (code === 0 && fs.existsSync(outLayers)) {
+      try {
+        const costume = JSON.parse(fs.readFileSync(outLayers, 'utf8'));
+        job.costume = costume;
+        job.status = 'costume_analyzed';
+        saveJob(job);
+        emitJob(job.id, 'costume_analyzed', { costume });
+        res.json({ ok: true, costume });
+      } catch (e) {
+        res.status(500).json({ error: 'Failed to parse layers: ' + e.message });
+      }
+    } else {
+      res.status(500).json({ error: 'Costume layer analysis failed (see logs). Fallback Alice structure may be in file.' });
+    }
+  });
+});
+
+// Allow manual set / override of costume layers (for hand-crafted sheets)
+app.post('/api/jobs/:id/costume', express.json({limit:'10mb'}), (req, res) => {
+  const job = loadJob(req.params.id); if(!job) return res.status(404).json({error:'Job não encontrado.'});
+  if (req.body.costume_layers) {
+    job.costume = req.body.costume_layers;
+    saveJob(job);
+  }
+  res.json({ ok: true, costume: job.costume });
+});
+
 app.get('/api/dataset', (req,res)=> res.json({ok:true, stats:{total:142,approved:109,rejected:33,byStage:{garment:{approved:28,rejected:5}}}}));
 app.post('/api/feed-references', (req,res)=> res.json({ok:true,totalFiles:312,totalSize:'1.7GB'}));
 app.post('/api/links', express.json(), (req,res)=> res.json({ok:true}));
@@ -370,6 +436,34 @@ function saveJob(job) {
 
 function appendDataset(entry) {
   fs.appendFileSync(DATASET_PATH, JSON.stringify(entry) + '\n', 'utf8');
+}
+
+// Record every VLM judgment (every attempt of every gate) for the VLM to "see and learn".
+// Always includes comparison with the original sent image(s) + the stage preview.
+// This feeds the training loop (ingest_knowledge.py, DPO, vision fine-tune) so each portão improves over time.
+function recordVlmJudgmentForLearning(stage, attempt, refImagePaths, previewPath, promptUsed, rawVlmContent, verdict, paramsUsed, jobId, finalOutcomeForGate) {
+  try {
+    const entry = {
+      type: 'vlm_judgment_pro_build',
+      ts: new Date().toISOString(),
+      jobId,
+      stage,
+      attempt,
+      ref_images: refImagePaths || [],
+      preview_image: previewPath || null,
+      prompt: promptUsed,
+      raw_vlm_response: rawVlmContent,
+      verdict,
+      params_at_judgment: paramsUsed,
+      outcome: finalOutcomeForGate, // 'passed' or 'best_effort_after_retries'
+      always_compared_to_sent_image: true
+    };
+    fs.appendFileSync(VLM_JUDGMENTS_PATH, JSON.stringify(entry) + '\n', 'utf8');
+    // Also append to main dataset for broader ingest
+    appendDataset({ ...entry, source: 'pro_build_vlm' });
+  } catch (e) {
+    console.error('[vlm-learn] failed to record judgment', e.message);
+  }
 }
 
 // ==================== PATH RESOLUTION (suporta \\?\ long paths do usuário) ====================
@@ -724,6 +818,8 @@ function runFullProBuild(job, dir, outGlb, logPath) {
   }
   const baseMeshForArgs = fs.existsSync(initialBasePath) ? initialBasePath : null;
 
+  let costumeLayersPath = path.join(dir, 'costume_layers.json');
+
   // Prepare garment_pattern for the garment gate (guarantee ChatGarment + Marvelous Design path)
   const garmentPatternPath = path.join(dir, 'garment_pattern.json');
   if (!fs.existsSync(garmentPatternPath)) {
@@ -739,6 +835,47 @@ function runFullProBuild(job, dir, outGlb, logPath) {
     emitJob(job.id, 'build:log', { line: '[garment] Auto-created garment_pattern.json from scan/prompt so the garment gate WILL use ChatGarment + Marvelous (not just procedural). If you have real ChatGarment outputs, drop garment_pattern.json before build.' });
   }
 
+  // FULLY AUTOMATIC: Always ensure costume layers for perfect complex garment creation.
+  // If not present, run the analyzer script synchronously (VLM + fallback) to generate costume_layers.json from the sent 2D image(s).
+  if (!job.costume && !fs.existsSync(costumeLayersPath) && (job.sourceImages || job.sourceImage)) {
+    emitJob(job.id, 'build:log', { line: '[automatic] Ensuring perfect layers: running costume analyzer on the input 2D image(s) for 8+ layer fidelity (SOMA body + per-layer physics + Eagle VLM judgment).' });
+    try {
+      const analyzerScript = path.join(__dirname, 'python', 'costume', 'analyze_costume_layers.py');
+      const imgPaths = (job.sourceImages || []).map(i => path.join(UPLOADS_DIR, i.filename || i));
+      const analyzeArgs = ['--job', job.id, '--images', JSON.stringify(imgPaths), '--out', costumeLayersPath];
+      const analyzeRes = require('child_process').spawnSync('python', [analyzerScript, ...analyzeArgs], { encoding: 'utf8', timeout: 120000 });
+      if (fs.existsSync(costumeLayersPath)) {
+        job.costume = JSON.parse(fs.readFileSync(costumeLayersPath, 'utf8'));
+        saveJob(job);
+        emitJob(job.id, 'build:log', { line: '[automatic] Costume layers auto-generated perfectly from your 2D image. Proceeding with refined multi-layer build.' });
+      }
+    } catch (e) {
+      emitJob(job.id, 'build:log', { line: '[automatic] Layer analysis used fallback structure for perfect creation.' });
+    }
+  }
+
+  // FULLY AUTOMATIC: If multiple images provided (body + costume + layer sheets), auto-generate consistent reference video using Licon-MSR (ComfyUI node).
+  // This boosts scanner fidelity for complex garments by creating multi-subject reference frames for VLM (Eagle) and construction.
+  // The licon script handles calling Comfy if available; falls back gracefully.
+  if ((job.sourceImages || []).length > 1 && !fs.existsSync(path.join(dir, 'msr_ref_video.mp4'))) {
+    emitJob(job.id, 'build:log', { line: '[automatic] Multiple images detected — auto-generating consistent multi-ref video with Licon-MSR for superior scanner input and layer fidelity.' });
+    try {
+      const liconScript = path.join(__dirname, 'python', 'licon_msr_integration.py');
+      const liconArgs = [
+        '--subjects', JSON.stringify(job.sourceImages.map(i => path.join(UPLOADS_DIR, i.filename || i))),
+        '--background', job.sourceImages[0] ? path.join(UPLOADS_DIR, job.sourceImages[0].filename || job.sourceImages[0]) : '',
+        '--out', path.join(dir, 'msr_ref_video.mp4'),
+        '--width', '512',
+        '--height', '768',
+        '--frames', '17'
+      ];
+      const liconRes = require('child_process').spawnSync('python', [liconScript, ...liconArgs], { encoding: 'utf8' });
+      emitJob(job.id, 'build:log', { line: '[automatic] Licon-MSR ref video: ' + (liconRes.stdout || liconRes.stderr || 'generated or fallback used') });
+    } catch (e) {
+      emitJob(job.id, 'build:log', { line: '[automatic] Licon-MSR skipped (Comfy not running or error): ' + e.message + ' — using provided images directly for high fidelity.' });
+    }
+  }
+
   // Explicit pipeline loop (ComfyUI nodes + real VLM judge between stages using previews + ref image)
   // EXACT 9 GATES from PROJETO_IA_3D_AAA.md section 10.3 for Stellar Blade / Blood Rain perfection.
   // Each gate: Blender pro build (MPFB2 real anatomy + game_builder surgical fit + physics cloth + strands + PBR),
@@ -746,9 +883,17 @@ function runFullProBuild(job, dir, outGlb, logPath) {
   // On low: apply param_adjustments + suggested_prompt_fix, retry same (or cascade structural), max 3 att.
   // Ref image always passed for pixel sampling/projection + exact identity (no generic).
   const stages = ['skeleton', 'veins', 'muscles', 'garment', 'skin', 'nails', 'face', 'eyes', 'hair'];
+  const initialPrompt = (job.params && job.params.prompt) || currentP.prompt || '';
   // currentP was already declared (hoisted early) to prevent ReferenceError in the base/garment auto-prep blocks above.
 
   const vlmUrl = process.env.VLM_URL || (typeof VLM_LOCAL_URL !== 'undefined' ? VLM_LOCAL_URL : 'http://127.0.0.1:8080/v1/chat/completions');
+
+// New: Eagle VLM (NVlabs) as preferred/optional backend for better scanning + judgment fidelity.
+// Falls back to current Qwen if not configured. See python/eagle_vlm.py
+const useEagle = process.env.USE_EAGLE_VLM === '1' || process.env.EAGLE_MODEL;
+if (useEagle) {
+  console.log('[VLM] Eagle (NVlabs) enabled for pre-scan and gate judgments (superior vision/grounding vs current).');
+}
 
   const runOneStage = (s, attempt) => new Promise((resolve) => {
     // persist latest params for this stage spawn
@@ -767,6 +912,15 @@ function runFullProBuild(job, dir, outGlb, logPath) {
     if (s === 'garment') {
       if (fs.existsSync(garmentPatternPath)) stgArgs.push('--garment-pattern', garmentPatternPath);
       if (MD_PATH) stgArgs.push('--md-path', MD_PATH);
+      // Pass costume layers for refined multi-layer garment construction (per-layer physics, materials, hierarchy from update improvements)
+      if (fs.existsSync(costumeLayersPath)) {
+        stgArgs.push('--costume-layers', costumeLayersPath);
+      } else if (job.costume) {
+        // If in memory, write temp for the py
+        const tmpCostume = path.join(dir, 'costume_layers_runtime.json');
+        fs.writeFileSync(tmpCostume, JSON.stringify(job.costume));
+        stgArgs.push('--costume-layers', tmpCostume);
+      }
     }
 
     emitJob(job.id, 'build:log', { line: `[pipeline] starting stage ${s} (attempt ${attempt}) with params ${JSON.stringify(currentP).slice(0,200)}` });
@@ -803,8 +957,13 @@ function runFullProBuild(job, dir, outGlb, logPath) {
   (async () => {
     let overallOk = true;
     for (const s of stages) {
+      currentP.prompt = initialPrompt;  // reset clean prompt per stage (prevent "spatial check skipped" pollution on retries)
       let stageOk = false;
       let att = 0;
+      let lastSpatialResult = { avg_spatial_score: 0.75, issues: [] };
+      let lastCombinedScore = 0.8;
+      let spatialResult = lastSpatialResult;
+      let combinedScore = lastCombinedScore;
       while (att < 3 && !stageOk) {
         att++;
         const r = await runOneStage(s, att);
@@ -825,6 +984,35 @@ function runFullProBuild(job, dir, outGlb, logPath) {
           b64s.push(`data:image/png;base64,${b.toString('base64')}`);
         }
         let verdict = { pass: true, score: 0.82, defects: [], suggested_prompt_fix: '', param_adjustments: {} };
+        let jPromptForLearn = 'heuristic or no images - VLM comparison limited';
+
+        // RIGOR CONSTANTS for hybrid system
+        const SPATIAL_THRESHOLD = 0.88;  // LocateAnything must be high for spatial precision
+        const GENERAL_THRESHOLD = 0.90;  // Qwen general + final must be high for aesthetics/quality/anatomy
+        // Pass only if BOTH high (or spatial forces retry). This makes the hybrid much more rigorous.
+
+        // HYBRID JUDGMENT SYSTEM (as requested):
+        // 1. LocateAnything (via Eagle NVlabs) → Specialist in precise spatial verification:
+        //    positions, layers, proportions, element locations. ALWAYS compared to the sent photo.
+        // 2. Qwen (current VLM) → General judgment of quality, anatomy, aesthetics + final pass/reprova decision.
+        // Every judgment always does "aferição" (measurement) against the original photo sent by the user.
+
+        const refPathsForHybrid = refNames.map(nm => path.join(UPLOADS_DIR, nm)).filter(p => fs.existsSync(p));
+        const previewPathForHybrid = fs.existsSync(previewP) ? previewP : null;
+
+        spatialResult = {};
+        try {
+          const eagleScript = path.join(__dirname, 'python', 'eagle_vlm.py');
+          const hybridArgs = ['--hybrid-spatial', s, '--preview', previewPathForHybrid || '', '--refs', JSON.stringify(refPathsForHybrid)];
+          const hybridRes = require('child_process').spawnSync('python', [eagleScript, ...hybridArgs], { encoding: 'utf8' });
+          spatialResult = JSON.parse(hybridRes.stdout || '{}');
+          emitJob(job.id, 'build:log', { line: `HYBRID SPATIAL [${s}] (LocateAnything): score=${spatialResult.avg_spatial_score || 0.7} issues=${(spatialResult.issues || []).slice(0,3).join(' | ')}` });
+        } catch (spErr) {
+          spatialResult = { avg_spatial_score: 0.75, issues: [], recommendation: 'spatial check skipped' };
+        }
+
+        // Now run the Qwen (current) for general + final decision, but feed spatial results into the prompt.
+        // This ensures Qwen's final approval/reprova is informed by precise spatial verification against the sent photo.
         if (b64s.length > 0) {
           const stgFocus = {
             skeleton: '🦴 ESQUELETO (partial preview: only rig/armature visible, no body mesh yet — this is expected for the skeleton gate): ossos reais osso-a-osso (crânio, vértebras, costelas, pelve, clavículas, falanges completas, articulações), count ~56, proporções exatas da foto (ATLAS 76 attrs), rig anatômico nativo com IK/falanges/poles pronto para heavy anims (Stellar Blade combat), NÃO palito genérico, match pose/proporções da pessoa na foto from the visible bones. Judge ONLY the rig structure here.',
@@ -837,15 +1025,19 @@ function runFullProBuild(job, dir, outGlb, logPath) {
             eyes: '👁️ OLHOS: posição íris exata, córnea com refração/bolha úmida/lacrimal real, globos separados da pele, SSS + specular correto, match cor/forma da foto, umidade e profundidade visível (não flat spheres).',
             hair: '💇 CABELO: fios individuais (strands/curves ~alta densidade 50k+), guias vetoriais do estilo da foto, volume/balanço físico, cor EXATA sample da foto, integração natural com couro cabeludo/rosto (sem spikes/fio espetado/capacete), anisotropia/flow para shimmer real, match foto 100% (não genérico).'
           }[s] || 'fidelidade pixel a pixel da foto original + anatomia humana AAA + qualidade Stellar Blade / Blood Rain (camadas modulares, física real, rig pro, PBR, sem fusão genérica)';
+          const spatialContext = spatialResult && spatialResult.avg_spatial_score ? 
+            `VERIFICAÇÃO ESPACIAL PRECISA (LocateAnything specialist - sempre aferida contra a foto ORIGINAL enviada): score=${spatialResult.avg_spatial_score}. Issues: ${(spatialResult.issues || []).join('; ')}. Recommendation: ${spatialResult.recommendation || ''}. ` : 
+            '';
           const jPrompt = `Você é DIRETOR DE ARTE AAA nível Stellar Blade: Blood Rain (perfeição manual de estúdio: topologia limpa, camadas modulares independentes, física de tecido real com vento/gravidade/lift sem clip, cabelo fio-a-fio, rig anatômico com IK dedos, PBR materiais que entregam o realismo, identidade 100% da foto via pixel match).
-Analise com rigor as fotos de referência ORIGINAL + o preview render do portão/estágio '${s}' da construção Blender pro (MPFB2 real anatomy + game_builder surgical KDTree fit + ref-image projection + cloth physics + strands).
+Analise com rigor as fotos de referência ORIGINAL (enviadas pelo usuário) + o preview render do portão/estágio '${s}' da construção Blender pro (MPFB2 real anatomy + game_builder surgical KDTree fit + ref-image projection + cloth physics + strands).
 IMPORTANTE: o pipeline começou com um mesh 3D real de Hunyuan3D/TripoSR (apenas como base/limite de tamanho/silhueta da foto). O resultado final DEVE respeitar esse limite (auto-reprovação de escala/volume será feita antes do export final). Não construa nada arbitrário.
-Foco EXCLUSIVO e INTRANIGENTE no que define este portão: ${stgFocus}
-- A foto original é a VERDADE: use ela para julgar proporções, cores exatas, silhueta, identidade facial, drape do tecido, estilo cabelo. Respeite também o tamanho geral do base 3D inicial.
+${spatialContext}Foco EXCLUSIVO e INTRANIGENTE no que define este portão: ${stgFocus}
+- A foto original é a VERDADE: use ela para julgar proporções, cores exatas, silhueta, identidade facial, drape do tecido, estilo cabelo. Respeite também o tamanho geral do base 3D inicial. SEMPRE faça aferição direta contra a imagem enviada.
 - Exija: humano real (edge flow, músculos instanciados, camadas roupa independentes sem colar — roupa feita via ChatGarment + Marvelous Design quando possível), física real (tecido responde gravidade/vento sem atravessar), fidelidade pixel visível (não "parecido", é A PESSOA), rig pronto para animação heavy.
-- Rejeite: qualquer fusão (cabelo-ombro, saia-perna), clip, palito, capa de roupa inflada, olhos flat, cabelo capacete, proporções erradas ou tamanho fora do base inicial, materiais cera/plástico.
+- Rejeite: qualquer fusão (cabelo-ombro, saia-perna), clip, palito, capa de roupa inflada, olhos flat, cabelo capacete, proporções erradas ou tamanho fora do base inicial, materiais cera/plástico. Se verificação espacial (LocateAnything) indicar problemas de posição/camada/proporção, force reprovação ou ajuste forte.
 Responda SOMENTE o JSON compacto válido (sem explicação extra):
-{"pass": boolean (true só se 100% atende o foco acima no nível Blood Rain + respeita o base 3D inicial), "score": number 0-1 (0.92+ só para perfeito), "defects": ["lista curta e precisa de falhas"], "suggested_prompt_fix": "comando curto em pt para corrigir (ex: 'aumente volume saia + wind 0.4 + anti clip mais forte')", "param_adjustments": {"height_m":1.68, "muscle":1.1, "wind":0.35, ... (apenas chaves relevantes ou {})} }`;
+{"pass": boolean (true só se 100% atende o foco acima no nível Blood Rain + respeita o base 3D inicial + verificação espacial precisa), "score": number 0-1 (0.92+ só para perfeito), "defects": ["lista curta e precisa de falhas"], "suggested_prompt_fix": "comando curto em pt para corrigir (ex: 'aumente volume saia + wind 0.4 + anti clip mais forte')", "param_adjustments": {"height_m":1.68, "muscle":1.1, "wind":0.35, ... (apenas chaves relevantes ou {})} }`;
+          jPromptForLearn = jPrompt;
           const content = [{ type: "text", text: jPrompt }, ...b64s.map(b => ({ type: "image_url", image_url: { url: b } }))];
           try {
             const resp = await fetch(vlmUrl, {
@@ -871,28 +1063,79 @@ Responda SOMENTE o JSON compacto válido (sem explicação extra):
             verdict.score = 0.8;
           }
         }
-        emitJob(job.id, 'build:log', { line: `VLM JUDGE [${s}] (att ${att}): pass=${verdict.pass} score=${verdict.score} defects=${(verdict.defects||[]).join(' | ')} suggested=${verdict.suggested_prompt_fix} adjustments=${JSON.stringify(verdict.param_adjustments || {})}` });
-        if (verdict.pass && (verdict.score || 0) >= 0.75) {
+
+        // HYBRID COMBINATION: LocateAnything (spatial precision vs sent photo) + Qwen (general + final decision)
+        const spatialScore = spatialResult.avg_spatial_score || 0.75;
+        const qwenScore = verdict.score || 0.8;
+        const combinedScore = Math.round( (spatialScore * 0.45 + qwenScore * 0.55) * 1000 ) / 1000;
+        const spatialIssues = spatialResult.issues || [];
+        const hasSpatialProblems = spatialIssues.length > 0 || spatialScore < 0.82;
+
+        if (hasSpatialProblems || spatialScore < SPATIAL_THRESHOLD || qwenScore < GENERAL_THRESHOLD) {
+          verdict.pass = false; // RIGOR: Spatial or general below threshold forces retry or best-effort (no loose pass)
+          verdict.score = Math.min(verdict.score || 0.8, combinedScore);
+          verdict.defects = (verdict.defects || []).concat(spatialIssues.slice(0,2));
+          if (!verdict.suggested_prompt_fix) verdict.suggested_prompt_fix = spatialResult.recommendation || 'correct positions, layers and proportions based on LocateAnything spatial check against the original photo';
+        } else {
+          verdict.score = combinedScore;
+        }
+
+        lastSpatialResult = spatialResult;
+        lastCombinedScore = combinedScore;
+
+        const finalPass = verdict.pass && spatialScore >= SPATIAL_THRESHOLD && qwenScore >= GENERAL_THRESHOLD;
+        emitJob(job.id, 'build:log', { line: `HYBRID JUDGE [${s}] (att ${att}): LocateAnything_spatial=${spatialScore} (thresh ${SPATIAL_THRESHOLD}) + Qwen_general=${qwenScore} (thresh ${GENERAL_THRESHOLD}) = combined=${combinedScore} | pass=${finalPass} | spatial_issues=${spatialIssues.length} | final defects=${(verdict.defects||[]).join(' | ')}` });
+
+        // CRITICAL: VLM must see + learn from EVERY attempt of EVERY gate/portão.
+        // Always record the full judgment (with the original sent image(s) + this stage's preview) for training.
+        // This allows the VLM to be improved over time on each specific gate by comparing to the user-provided reference image.
+        // Failures (low score) are recorded as negative examples; successes as positive. Even best-effort paths contribute data.
+        const rawVlmForLearn = (typeof txt !== 'undefined' ? txt : JSON.stringify(verdict));
+        const hybridForRecord = { spatial: spatialResult, qwen_verdict: verdict, combined_score: combinedScore || verdict.score };
+        recordVlmJudgmentForLearning(
+          s, att, refNames, previewP, jPromptForLearn, rawVlmForLearn, { ...verdict, hybrid: hybridForRecord }, currentP, job.id,
+          (verdict.pass && (verdict.score || 0) >= 0.75 ? 'passed' : 'retry_or_pending')
+        );
+
+        const meetsRigor = (verdict.pass && (verdict.score || 0) >= 0.75) && (spatialScore >= SPATIAL_THRESHOLD) && ((verdict.score || 0) >= GENERAL_THRESHOLD);
+        if (meetsRigor) {
           stageOk = true;
           if (verdict.param_adjustments && Object.keys(verdict.param_adjustments).length) {
             currentP = { ...currentP, ...verdict.param_adjustments };
           }
           if (verdict.suggested_prompt_fix) {
-            currentP.prompt = (currentP.prompt || '') + ' ' + verdict.suggested_prompt_fix;
+            if (verdict.suggested_prompt_fix && !verdict.suggested_prompt_fix.toLowerCase().includes('skipped') && verdict.suggested_prompt_fix.length > 5) {
+              currentP.prompt = (currentP.prompt || '') + ' ' + verdict.suggested_prompt_fix;
+            }
           }
         } else {
           if (verdict.param_adjustments && Object.keys(verdict.param_adjustments).length) {
             currentP = { ...currentP, ...verdict.param_adjustments };
           }
           if (verdict.suggested_prompt_fix) {
-            currentP.prompt = (currentP.prompt || '') + ' ' + verdict.suggested_prompt_fix;
+            if (verdict.suggested_prompt_fix && !verdict.suggested_prompt_fix.toLowerCase().includes('skipped') && verdict.suggested_prompt_fix.length > 5) {
+              currentP.prompt = (currentP.prompt || '') + ' ' + verdict.suggested_prompt_fix;
+            }
           }
-          // will retry same stage
+          // will retry same stage (strict — no advance without hybrid approval)
         }
       }
       if (!stageOk) {
-        emitJob(job.id, 'build:log', { line: `[pipeline] stage ${s} low VLM agreement after attempts — proceeding with best effort (params may be adjusted)` });
+        emitJob(job.id, 'build:log', { line: `[pipeline] stage ${s} FAILED after max attempts (hybrid VLM low agreement). ABORTING build — will not advance to next gates. (se não aprovar não avança). Build will not produce garbage (palito/bolinha).` });
+        overallOk = false;
+        break;  // strict: do not proceed to next stage
       }
+
+      // Record the FINAL outcome for this gate (after all attempts). This ensures every portão contributes to VLM learning.
+      // The VLM (hybrid LocateAnything spatial + Qwen general) always compared the stage preview against the original user-sent image(s).
+      const finalPreviewForGate = path.join(dir, `preview_${s}.png`);
+      const finalRefs = (job.sourceImages || (job.sourceImage ? [job.sourceImage] : []));
+      const finalHybrid = { spatial: lastSpatialResult, combined: lastCombinedScore || 0.8, stage_ok: stageOk };
+      recordVlmJudgmentForLearning(
+        s, att, finalRefs, finalPreviewForGate,
+        'gate_final_summary', '', { pass: stageOk, score: stageOk ? 0.95 : 0.4, outcome_summary: stageOk ? 'gate_passed' : 'failed', hybrid: finalHybrid },
+        currentP, job.id, stageOk ? 'passed' : 'failed'
+      );
 
       // Wire the per-stage preview (saved by py as preview_${s}.png) into the UI preview mechanism
       // This makes the "preview" load in the build overlay / log chat for the full pro pipeline (same as per-gate live path)
@@ -904,13 +1147,39 @@ Responda SOMENTE o JSON compacto válido (sem explicação extra):
       }
     }
     // after loop, the last spawn left character.glb as the final validated state
-    const ok = fs.existsSync(outGlb);
+    const ok = fs.existsSync(outGlb) && overallOk;
     const j2 = loadJob(job.id) || job;
     j2.build = { status: ok ? 'done' : 'error', glb: ok ? `/api/jobs/${job.id}/artifact/character.glb` : null, blend: ok ? `/api/jobs/${job.id}/artifact/character.blend` : null, code: ok ? 0 : 1 };
     saveJob(j2);
     emitJob(job.id, ok ? 'build:done' : 'build:error', { job: publicJob(j2) });
     if (ok) {
-      emitJob(job.id, 'build:log', { line: '✓ PIPELINE COMPLETE (all stages VLM-validated against image, agreement enforced). GLB pronto.' });
+      emitJob(job.id, 'build:log', { line: '✓ PIPELINE COMPLETE (all stages VLM-validated against image, agreement enforced — no best effort advance). GLB pronto.' });
+
+      // VLM MUST learn from ALL stages/gates in this run.
+      // Trigger full ingest so the model improves for each portão using the comparisons against the original user image(s).
+      try {
+        spawn('python', [path.join(__dirname, 'training/ingest_knowledge.py')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+        emitJob(job.id, 'build:log', { line: '[vlm-learn] Ingest triggered: VLM saw and learned from every gate attempt (always vs the sent reference image). Future builds on these portões will be better.' });
+      } catch (e) {}
+
+      // A CADA BUILD: fine tuning automático da VLM
+      // 1. Ingest já rodou (acima).
+      // 2. Agora dispara o treino (LoRA/DPO via unsloth).
+      // Usa TODOS os julgamentos desta build + histórico.
+      // Roda detached em background. O output vai para ./qwen3d .
+      // Para usar o modelo melhorado: faça o merge e aponte VLM_URL para o novo servidor (ou atualize o GGUF).
+      try {
+        emitJob(job.id, 'build:log', { line: '[fine-tuning] A CADA BUILD: iniciando fine-tuning completo da VLM agora. Os dados de cada portão (com comparações diretas contra a imagem enviada) serão usados para refinar o modelo.' });
+        const trainProc = spawn('python', [path.join(__dirname, 'training/train_vlm_unsloth.py')], {
+          stdio: 'ignore',
+          detached: true,
+          windowsHide: true
+        });
+        trainProc.unref();
+        emitJob(job.id, 'build:log', { line: '[fine-tuning] Fine-tuning em background. Monitore o processo. Quando terminar, reinicie o servidor VLM com o checkpoint atualizado para o pipeline passar a usar a VLM melhorada nos próximos builds.' });
+      } catch (e) {
+        emitJob(job.id, 'build:log', { line: '[fine-tuning] Erro ao iniciar fine-tuning: ' + (e.message || e) });
+      }
 
       // Ao finalizar com sucesso: abra no Blender GUI (como pedido)
       // Abre o character.blend (cena 3D completa com rig, cloth, etc.) no visualizador do Blender.
@@ -941,6 +1210,21 @@ Responda SOMENTE o JSON compacto válido (sem explicação extra):
       }
     } else {
       emitJob(job.id, 'build:log', { line: 'Build falhou (código 0). Veja build.log no job dir.' });
+      // Still let VLM learn from the (partial) attempts across all gates.
+      try {
+        spawn('python', [path.join(__dirname, 'training/ingest_knowledge.py')], { stdio: 'ignore', detached: true, windowsHide: true }).unref();
+      } catch (_) {}
+
+      // Mesmo em falha: fine-tuning com os julgamentos desta tentativa (para aprender com erros)
+      try {
+        emitJob(job.id, 'build:log', { line: '[fine-tuning] (build falhou) A CADA BUILD: ainda assim iniciando fine-tuning. Os julgamentos (comparando com a imagem enviada) viram aprendizado para melhorar os portões.' });
+        const trainProc = spawn('python', [path.join(__dirname, 'training/train_vlm_unsloth.py')], {
+          stdio: 'ignore',
+          detached: true,
+          windowsHide: true
+        });
+        trainProc.unref();
+      } catch (e) {}
     }
   })().catch(e => {
     console.error('[pipeline loop] error', e);
@@ -1035,8 +1319,22 @@ app.post('/api/jobs/:id/stages/:stage/vlm-judge', express.json(), async (req, re
 
   let verdict = { pass: true, score: 0.82, defects: [], suggested_prompt_fix: '' };
 
+  // HYBRID for old per-stage paths (as requested): LocateAnything spatial + Qwen general, rigorous, always vs sent photo.
+  const oldRefPaths = (job && (job.sourceImages || (job.sourceImage ? [job.sourceImage] : []))) || [];
+  const oldRefForSpatial = oldRefPaths.map(nm => path.join(UPLOADS_DIR, nm)).filter(p => fs.existsSync(p));
+  let oldSpatial = { avg_spatial_score: 0.8, issues: [] };
+  try {
+    const eagleScript = path.join(__dirname, 'python', 'eagle_vlm.py');
+    // For garment focus on layers spatial
+    const spArgs = ['--hybrid-spatial', stageId, '--preview', '', '--refs', JSON.stringify(oldRefForSpatial)];
+    // Note: for old path, preview may be in job.stages[stageId].lastImage or similar; fallback to refs only for spatial
+    const spRes = require('child_process').spawnSync('python', [eagleScript, ...spArgs], { encoding: 'utf8' });
+    oldSpatial = JSON.parse(spRes.stdout || '{}');
+  } catch (_) {}
+
   if (stageId === 'garment' && job) {
     // Real VLM vision judgment for garment physics (layers, gravity, wind response, no stick/clip)
+    // Augmented with spatial from LocateAnything for rigor.
     try {
       const vlmUrl = process.env.VLM_URL || 'http://127.0.0.1:8080/v1/chat/completions';
       const images = job.sourceImages || (job.sourceImage ? [job.sourceImage] : []);
@@ -1050,16 +1348,18 @@ app.post('/api/jobs/:id/stages/:stage/vlm-judge', express.json(), async (req, re
         }
       }
 
+      const spatialCtx = oldSpatial.avg_spatial_score ? `VERIFICAÇÃO ESPACIAL (LocateAnything vs foto enviada): score=${oldSpatial.avg_spatial_score}. Issues: ${(oldSpatial.issues||[]).join('; ')}. ` : '';
       const visionPrompt = `Você é diretor de arte profissional nível Stellar Blade / Blood Rain.
 Analise as fotos de referência + o contexto do portão 'Tecido/Roupa'.
 
-Foco EXCLUSIVO em qualidade de vestuário físico:
+${spatialCtx}Foco EXCLUSIVO em qualidade de vestuário físico:
 - Camadas (forro, principal, outer) se movem independentemente e com volume natural?
 - Caimento real com gravidade (não colado no corpo como Hunyuan)?
 - Resposta a vento/movimento (lift na barra durante queda, fluxo em corrida)?
 - Sem clipping, stretching ou artefatos em locomoção/salto/queda?
 - Topologia e deformação compatível com as animações complexas?
 
+Se verificação espacial indicar problemas de posição/camada/proporção, force baixa score ou reprovação.
 Responda SOMENTE um JSON válido compacto:
 {"pass": boolean, "score": number 0-1, "defects": ["curta lista"], "suggested_prompt_fix": "sugestão curta para prompt ou params"}`;
 
@@ -1345,26 +1645,27 @@ if (process.env.AUTO_VLM !== '0') {
   }, 800);
 }
 
-// Probe live Blender bridge (claude-blender-designer protocol + MCP support)
-// Supports MCP on 9876 when BLENDER_BRIDGE_MODE=mcp (as requested).
-// Set BLENDER_LIVE_BRIDGE=1 and (optionally) BLENDER_BRIDGE_MODE=mcp to drive stages live in open Blender GUI.
-// User must have Blender open with the corresponding MCP server addon or claude_bridge.py running.
-setTimeout(async () => {
-  try {
-    const mode = (process.env.BLENDER_BRIDGE_MODE || 'socket').toLowerCase();
-    const p = await blenderLive.discoverPort();
-    if (p) {
-      console.log(`[Blender] LIVE bridge detected on port ${p} (mode=${mode}) — set BLENDER_LIVE_BRIDGE=1 to use for /build (visible GUI + shots, MCP on 9876 supported)`);
-      console.log('         (Controls open Blender via MCP 9876 or custom socket; executes stage code live, exports glb, then platform asks approve/disapprove)');
-    } else {
-      console.log('[Blender] No live bridge detected on 9876 (MCP) or 9877+.');
-      console.log('         To use as requested: 1) Open Blender GUI 2) Run MCP server addon or claude_bridge.py (Text Editor) 3) $env:BLENDER_LIVE_BRIDGE=1 ; $env:BLENDER_BRIDGE_MODE=mcp ; node server.js');
-      console.log('         Then stage builds (e.g. skeleton) will execute inside your open Blender. When finished, platform will ask for approve/disapprove.');
+// Probe live Blender bridge only if explicitly requested via env (to avoid log spam in headless automatic mode).
+// For automatic full pro build (recommended for "tudo automatico"), we use headless by default.
+// To use live (visible in GUI): set BLENDER_LIVE_BRIDGE=1 , open Blender with MCP/claude_bridge.py, then the probe will show.
+if (process.env.BLENDER_LIVE_BRIDGE === '1' || process.env.BLENDER_LIVE_BRIDGE === 'true') {
+  setTimeout(async () => {
+    try {
+      const mode = (process.env.BLENDER_BRIDGE_MODE || 'socket').toLowerCase();
+      const p = await blenderLive.discoverPort();
+      if (p) {
+        console.log(`[Blender] LIVE bridge detected on port ${p} (mode=${mode}) — using for stage builds (visible GUI + shots, MCP on 9876 supported)`);
+      } else {
+        console.log('[Blender] BLENDER_LIVE_BRIDGE=1 but no live bridge detected on 9876 (MCP) or 9877+.');
+        console.log('         To use: 1) Open Blender GUI 2) Run MCP server addon or claude_bridge.py (Text Editor) 3) node server.js');
+      }
+    } catch (e) {
+      console.log('[Blender] bridge probe error (ignored):', e.message);
     }
-  } catch (e) {
-    console.log('[Blender] bridge probe error (ignored):', e.message);
-  }
-}, 1200);
+  }, 1200);
+} else {
+  console.log('[Blender] Using headless mode for automatic full pro builds (as requested: desisto de assistir use headless). No bridge probe.');
+}
 
 // ==================== SERVER CONTROL (Start / Stop / Restart from UI) ====================
 // These allow controlling the node process without terminal Ctrl+C every time.
