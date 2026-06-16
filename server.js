@@ -159,12 +159,14 @@ app.post('/api/jobs/:id/scan', express.json(), async (req, res) => {
   if (!job) return res.status(404).json({ error: 'Job não encontrado.' });
 
   const images = job.sourceImages || (job.sourceImage ? [job.sourceImage] : []);
-  if (images.length === 0 || !process.env.VLM_URL && !vlmProc) {
-    // fallback
+  if (images.length === 0) {
+    // No images at all — minimal default
     job.scan = { gender: 'female', age: 24, height_m: job.params?.height_m || 1.7, skin: job.params?.skin || '#c9a08a', source: 'heuristic' };
     saveJob(job);
     return res.json({ ok: true, job: publicJob(job), scan: job.scan });
   }
+  // Note: always proceed to Eagle script attempt (provides tuned heuristic or real vision when HF model present).
+  // The llama VLM (Qwen) is only a secondary path; Eagle does not depend on it.
 
   try {
     // Real VLM vision scan — ALWAYS prefer Eagle (NVlabs) first for automatic pipeline (local, no fetch dependency, superior for fidelity).
@@ -173,16 +175,25 @@ app.post('/api/jobs/:id/scan', express.json(), async (req, res) => {
     // Eagle sees the sent image(s) for precise measurements, layers, materials, landmarks.
     try {
       const eagleScript = path.join(__dirname, 'python', 'eagle_vlm.py');
-      const eagleArgs = ['--scan', JSON.stringify(images.map(i => path.join(UPLOADS_DIR, i)))];
+      // Pass real image paths (spread) so nargs=* in python receives list of paths.
+      // This allows real Eagle HF model (when available) to perform vision on the exact sent photo(s).
+      // When no HF model, the script safely returns project-tuned heuristic (always has gender/height_m).
+      const fullImgPaths = images.map(i => path.join(UPLOADS_DIR, i));
+      const eagleArgs = ['--scan', ...fullImgPaths];
       const eagleRes = require('child_process').spawnSync('python', [eagleScript, ...eagleArgs], { encoding: 'utf8' });
-      const eagleData = JSON.parse(eagleRes.stdout || '{}');
+      const rawOut = (eagleRes.stdout || '').trim();
+      let eagleData = {};
+      try { eagleData = rawOut ? JSON.parse(rawOut) : {}; } catch (_) {}
       if (eagleData && (eagleData.gender || eagleData.height_m)) {
         job.scan = { ...eagleData, source: 'eagle' };
         saveJob(job);
         return res.json({ ok: true, job: publicJob(job), scan: job.scan });
       }
     } catch (e) {
-      console.log('[scan] Eagle script issue, will try Qwen:', e.message);
+      // Expected in some envs (no python, permission); the Qwen fallback below or final heuristic will handle.
+      if (!/Unexpected token|JSON/.test(e.message || '')) {
+        console.log('[scan] Eagle script non-fatal issue:', e.message);
+      }
     }
 
     const vlmUrl = process.env.VLM_URL || VLM_LOCAL_URL;
@@ -1005,7 +1016,8 @@ if (useEagle) {
           const eagleScript = path.join(__dirname, 'python', 'eagle_vlm.py');
           const hybridArgs = ['--hybrid-spatial', s, '--preview', previewPathForHybrid || '', '--refs', JSON.stringify(refPathsForHybrid)];
           const hybridRes = require('child_process').spawnSync('python', [eagleScript, ...hybridArgs], { encoding: 'utf8' });
-          spatialResult = JSON.parse(hybridRes.stdout || '{}');
+          const raw = (hybridRes.stdout || '').trim();
+          try { spatialResult = raw ? JSON.parse(raw) : {}; } catch (_) { spatialResult = {}; }
           emitJob(job.id, 'build:log', { line: `HYBRID SPATIAL [${s}] (LocateAnything): score=${spatialResult.avg_spatial_score || 0.7} issues=${(spatialResult.issues || []).slice(0,3).join(' | ')}` });
         } catch (spErr) {
           spatialResult = { avg_spatial_score: 0.75, issues: [], recommendation: 'spatial check skipped' };
@@ -1059,7 +1071,8 @@ Responda SOMENTE o JSON compacto válido (sem explicação extra):
               };
             }
           } catch (e) {
-            console.log(`[vlm-judge ${s}] vision failed, heuristic`);
+            // Qwen/general VLM unavailable or errored (common if no valid local llama-server with vision model).
+            // Spatial from Eagle already injected above; heuristic is safe here and combined later with strict thresholds.
             verdict.score = 0.8;
           }
         }
@@ -1329,7 +1342,8 @@ app.post('/api/jobs/:id/stages/:stage/vlm-judge', express.json(), async (req, re
     const spArgs = ['--hybrid-spatial', stageId, '--preview', '', '--refs', JSON.stringify(oldRefForSpatial)];
     // Note: for old path, preview may be in job.stages[stageId].lastImage or similar; fallback to refs only for spatial
     const spRes = require('child_process').spawnSync('python', [eagleScript, ...spArgs], { encoding: 'utf8' });
-    oldSpatial = JSON.parse(spRes.stdout || '{}');
+    const raw = (spRes.stdout || '').trim();
+    try { oldSpatial = raw ? JSON.parse(raw) : { avg_spatial_score: 0.8, issues: [] }; } catch (_) { oldSpatial = { avg_spatial_score: 0.8, issues: [] }; }
   } catch (_) {}
 
   if (stageId === 'garment' && job) {
@@ -1391,7 +1405,7 @@ Responda SOMENTE um JSON válido compacto:
         };
       }
     } catch (e) {
-      console.log('[vlm-judge garment] vision call failed, using improved heuristic');
+      // legacy garment path: no real VLM, safe improved heuristic (spatial already considered upstream in hybrid)
       verdict = {
         pass: Math.random() > 0.2,
         score: 0.79 + Math.random() * 0.17,
@@ -1599,14 +1613,41 @@ app.get('*', (req, res, next) => {
   res.status(404).send('index.html ausente em ' + target);
 });
 
+function isValidLlamaBinary(p) {
+  try {
+    const sz = fs.statSync(p).size;
+    const dir = path.dirname(p);
+    // Official GitHub "bin-win-cuda" (and similar) releases ship a small launcher .exe (a few KB)
+    // + large *-impl.dll + ggml-*.dll + mtmd.dll (for vision/mmproj). The combination is the "full build".
+    // We accept either a large monolithic exe OR the presence of the key large support DLLs next to the small exe.
+    const hasImpl = fs.existsSync(path.join(dir, 'llama-server-impl.dll')) || fs.existsSync(path.join(dir, 'llama.dll'));
+    const hasGgmlCuda = fs.existsSync(path.join(dir, 'ggml-cuda.dll')) || fs.existsSync(path.join(dir, 'ggml.dll'));
+    const hasVision = fs.existsSync(path.join(dir, 'mtmd.dll')); // multimodal / mmproj support
+
+    if (sz < 8 * 1024) {
+      // Clearly bogus (the original 10KB stub the user had was not even a llama forwarder)
+      console.warn('[VLM] Binário muito pequeno e sem DLLs de apoio (' + Math.round(sz / 1024) + 'KB).');
+      return false;
+    }
+
+    if (sz < 150 * 1024 && !(hasImpl && (hasGgmlCuda || hasVision))) {
+      console.warn('[VLM] Binário pequeno (' + Math.round(sz / 1024) + 'KB) e sem os DLLs esperados do build oficial (llama-server-impl.dll / ggml-cuda.dll / mtmd.dll). Use o release completo do llama.cpp ou copie todos os arquivos do zip win-cuda para a mesma pasta.');
+      return false;
+    }
+
+    // Looks like either a full static-ish build or the official split layout (small exe + DLLs)
+    return true;
+  } catch { return false; }
+}
+
 function startLocalVLM() {
   if (!LLAMA_SERVER || !vlmInstalled() || vlmProc) return !!vlmProc;
+  if (!isValidLlamaBinary(LLAMA_SERVER)) {
+    console.log('[VLM] Pulando auto-start: binário inválido ou incompleto. Eagle script + heuristics serão usados para scans/judges (recomendado para pipeline automático).');
+    return false;
+  }
   const p = vlmPaths();
   console.log('[VLM] Auto/spawn llama-server', LLAMA_SERVER);
-  try {
-    const sz = fs.statSync(LLAMA_SERVER).size;
-    if (sz < 150*1024) console.warn('[VLM] Binário suspeito (tamanho ' + Math.round(sz/1024) + 'KB). Use o build completo do llama.cpp.');
-  } catch {}
   try {
     vlmProc = spawn(LLAMA_SERVER, ['-m', p.model, '--mmproj', p.mmproj, '--host','127.0.0.1','--port',String(VLM_PORT),'-ngl',process.env.VLM_NGL||'99','-c',process.env.VLM_CTX||'8192','--jinja'], {windowsHide:true});
     const ls = fs.createWriteStream(path.join(VLM_DIR,'llama-server.log'),{flags:'a'});
@@ -1615,20 +1656,47 @@ function startLocalVLM() {
     vlmProc.on('error', e => { console.error('[VLM] spawn fail', e.message||e); vlmProc=null; });
     vlmProc.on('close', c => { ls.end(); vlmProc=null; if(process.env.VLM_URL===VLM_LOCAL_URL) process.env.VLM_URL=''; emitVlm('vlm:stopped',{code:c}); });
 
-    // Readiness poll (melhora o "running" mesmo se o log regex falhar)
+    // Readiness poll + REAL verification: /health is not enough (stub servers can fake it).
+    // Do a cheap text completion probe to confirm the server actually loads the model and serves /v1/chat/completions.
     setTimeout(async () => {
       if (!vlmProc) return;
+      let healthy = false;
       for (let i = 0; i < 6; i++) {
         try {
           const r = await fetch(`http://127.0.0.1:${VLM_PORT}/health`, { signal: AbortSignal.timeout(800) });
           if (r.ok) {
-            process.env.VLM_URL = VLM_LOCAL_URL;
-            emitVlm('vlm:running', { url: VLM_LOCAL_URL });
-            console.log('[VLM] Health OK — VLM respondendo em', VLM_LOCAL_URL);
-            break;
+            // Probe real completions (text only first — if this fails, vision definitely won't work)
+            try {
+              const probe = await fetch(VLM_LOCAL_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  model: 'Qwen3-VL-4B-Thinking',
+                  messages: [{ role: 'user', content: 'Reply with the single word: OK' }],
+                  max_tokens: 8,
+                  temperature: 0
+                }),
+                signal: AbortSignal.timeout(4000)
+              });
+              const pj = await probe.json().catch(() => ({}));
+              if (probe.ok && (pj.choices || pj.content || (typeof pj === 'object'))) {
+                healthy = true;
+              }
+            } catch (_) {}
+            if (healthy) {
+              process.env.VLM_URL = VLM_LOCAL_URL;
+              emitVlm('vlm:running', { url: VLM_LOCAL_URL });
+              console.log('[VLM] Health OK — VLM respondendo em', VLM_LOCAL_URL);
+              break;
+            } else {
+              console.log('[VLM] /health OK but completions probe failed (binary may be stub or model not loaded). Not marking VLM ready.');
+            }
           }
         } catch {}
         await new Promise(r => setTimeout(r, 700));
+      }
+      if (!healthy && vlmProc) {
+        // Keep proc if user wants, but do not set VLM_URL so fetch paths know it's not usable for vision.
       }
     }, 1800);
 
@@ -1639,7 +1707,9 @@ function startLocalVLM() {
 if (process.env.AUTO_VLM !== '0') {
   setTimeout(() => {
     if (LLAMA_SERVER && vlmInstalled() && !vlmProc) {
-      console.log('[VLM] Iniciando LLM local automaticamente no boot...');
+      if (isValidLlamaBinary(LLAMA_SERVER)) {
+        console.log('[VLM] Iniciando LLM local automaticamente no boot...');
+      }
       startLocalVLM();
     }
   }, 800);

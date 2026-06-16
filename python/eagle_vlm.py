@@ -298,6 +298,16 @@ if __name__ == "__main__":
         print(json.dumps(result, ensure_ascii=False, indent=2))
     elif args.scan:
         imgs = args.scan if isinstance(args.scan, list) else [args.scan]
+        # Support both spread paths (preferred: --scan p1 p2) and legacy single json-array-string arg
+        if len(imgs) == 1 and isinstance(imgs[0], str):
+            s0 = imgs[0].strip()
+            if s0.startswith('[') and s0.endswith(']'):
+                try:
+                    parsed = json.loads(s0)
+                    if isinstance(parsed, list):
+                        imgs = parsed
+                except Exception:
+                    pass
         result = eagle_scan(imgs)
         print(json.dumps(result, ensure_ascii=False))
     elif args.judge and args.images:
