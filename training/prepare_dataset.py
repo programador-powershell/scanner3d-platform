@@ -24,7 +24,7 @@ VLM_JUDGMENTS_IN = os.path.join(ROOT, "data", "vlm_judgments.jsonl")  # new hybr
 DATASET_OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dataset.json")
 
 STAGE_NAMES = {
-    "skeleton": "Esqueleto", "veins": "Veias", "muscle": "Músculos",
+    "skeleton": "Esqueleto", "muscles": "Músculos",
     "garment": "Tecido", "skin": "Pele", "nails": "Unhas",
     "face": "Rosto", "eyes": "Olhos", "hair": "Cabelo",
 }
@@ -37,8 +37,7 @@ JUDGE_PROMPT = (
     "SEMPRE faça aferição direta e rigorosa contra a foto enviada (posições, proporções, camadas, localização exata de elementos via verificação espacial precisa).\n"
     "Descrição do que é o portão {stage}:\n"
     "  - Esqueleto: ossos reais (crânio, vértebras, costelas, pelve, clavículas, falanges), rig com IK, proporções anatômicas, sem palito.\n"
-    "  - Veias: rede vascular subdérmica fina, visível em SSS/translucidez, ramificada corretamente.\n"
-    "  - Músculos: volumes instanciados reais servindo de colisor para tecido, definição anatômica, proporções corpo.\n"
+    "  - Músculos: volumes volumétricos instanciados (deltoides, peitorais, bíceps, quadríceps etc) que seguem exatamente a silhueta e massas do corpo na foto de referência, servindo de barreira física real para o tecido (não inferidos, não genéricos), definição de bordas anatômicas visíveis, proporções que casam com o tipo físico da pessoa na foto (ombros/quadril/cintura da imagem).\n"
     "  - Tecido: camadas independentes (corset/chemise como base estruturada na cintura, underskirt com tiers de volume e renda, overskirt com drape assimétrico e apron, mangas puff, back bow, legwear), física real (gravidade, vento, lift), sem fusão/clip entre layers ou com corpo, materiais e bordados fiéis.\n"
     "  - Pele: PBR com poros/micro-normais, SSS translucidez, albedo exato da foto, sem aspecto de cera.\n"
     "  - Unhas: forma anatômica, cutícula, lúnula, specular correto nas extremidades.\n"
@@ -76,12 +75,24 @@ def url_to_local(url: str) -> str | None:
 
 
 def to_example(rec: dict) -> dict | None:
-    if rec.get("label") not in ("approved", "rejected", "vlm_pass", "vlm_reject"):
-        return None  # edits de prompt não viram par visão
     stage = STAGE_NAMES.get(rec.get("stage", ""), rec.get("stage", ""))
-    ref = url_to_local(rec.get("source", ""))
-    render = url_to_local(rec.get("snapshot", ""))
+    ref = url_to_local(rec.get("source", "")) or url_to_local(rec.get("image", ""))
+    render = url_to_local(rec.get("snapshot", "")) or url_to_local(rec.get("preview_image", ""))
     if not ref or not render:
+        return None
+
+    # Support direct DPO format (chosen/rejected) or old label/vlm
+    if "chosen" in rec and "rejected" in rec:
+        # DPO style from review or judgments
+        prompt = rec.get("prompt", f"Analise o portão {stage} vs a foto original enviada.")
+        return {
+            "messages": [
+                {"role": "user", "content": [{"type": "image", "image": ref}, {"type": "image", "image": render}, {"type": "text", "text": prompt}] },
+                {"role": "assistant", "content": rec["chosen"] or "approved"}
+            ]
+        }  # For DPO, the dataset prep will turn into chosen/rejected pairs later if needed; here we prioritize the pair
+
+    if rec.get("label") not in ("approved", "rejected", "vlm_pass", "vlm_reject"):
         return None
 
     approved = rec["label"] in ("approved", "vlm_pass")

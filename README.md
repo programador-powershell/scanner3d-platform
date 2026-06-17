@@ -28,7 +28,7 @@ No boot, o servidor **auto-detecta e sobe a VLM local** (Qwen3-VL-4B no llama.cp
 
 ```
 FOTO → Qwen3-VL (pré-scan: medidas/pele/roupa) → Florence-2 (segmentação)
-     → 9 portões: 🦴 Esqueleto · 🩸 Veias · 💪 Músculos · 🪡 Tecido · 🧫 Pele
+     → 8 portões: 🦴 Esqueleto · 💪 Músculos · 🪡 Tecido · 🧫 Pele
                   · 💅 Unhas · 👤 Rosto · 👁️ Olhos · 💇 Cabelo
        cada um: Blender headless (MPFB2) constrói o GLB real → VLM julga → refina → aprova
      → build final (rig + collections por portão) → GLB + FBX (UE5) + .blend

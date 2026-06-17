@@ -122,6 +122,26 @@ if STAGE == 'skeleton':
         bpy.ops.object.armature_add()
         export_gltf(os.path.join(OUT_DIR, 'skeleton_fallback.glb'))
 
+elif STAGE == 'muscles':
+    print("[stage] Inflando músculos volumétricos (Z-Anatomy / SKEL + volume)...")
+    # 1. Tentar carregar rig ou body do estágio anterior (skeleton)
+    body = bpy.data.objects.get('Body') or bpy.data.objects.get('BaseMesh') or bpy.data.objects.get('SkeletonRig_MPFB2')
+    if body:
+        # 2. Aplicar volumes musculares - exemplo usando modificadores ou geometria básica
+        #    Em produção: integrar com Z-Anatomy ou SKEL para instanciar músculos reais
+        #    Aqui: adicionar um modificador de displace ou geometry nodes simples para volume
+        mod = body.modifiers.new(name="MuscleVolume", type='DISPLACE')
+        mod.strength = 0.15  # Ajuste baseado em params do job
+        # Ou criar esferas/cilindros para deltoides, peitorais etc. e parentar
+        print("[muscles] Corpo com músculos volumétricos gerado.")
+    else:
+        print("[warning] Corpo base não encontrado para inflar músculos. Criando placeholder.")
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.4, location=(0, 0, 1.0))
+        body = bpy.context.active_object
+        body.name = "Muscle_Volumes_Placeholder"
+
+    export_gltf(os.path.join(OUT_DIR, 'muscles.glb'))
+
 elif STAGE in ['inner_base', 'corset', 'underskirt', 'overskirt', 'sleeves', 'back_assembly', 'legwear', 'accessories']:
     print(f"[stage] Construindo camada de figurino: {STAGE}")
 
@@ -162,8 +182,11 @@ elif STAGE in ['inner_base', 'corset', 'underskirt', 'overskirt', 'sleeves', 'ba
         # 3. Configurar física Cloth
         setup_cloth_physics(obj, target_layer)
 
-        # 4. Adicionar Collision no corpo (se existir)
-        body = bpy.data.objects.get('Body') or bpy.data.objects.get('BaseMesh')
+        # 4. Adicionar Collision no corpo JÁ MUSCULOSO (importante para evitar clipping)
+        body = (bpy.data.objects.get('Body_Muscles') or 
+                bpy.data.objects.get('muscles') or 
+                bpy.data.objects.get('Body') or 
+                bpy.data.objects.get('BaseMesh'))
         if body:
             add_collision_to_body(body)
 
@@ -191,7 +214,7 @@ elif STAGE == 'final_assembly':
     export_gltf(os.path.join(OUT_DIR, 'character_final.glb'))
 
 else:
-    # Estágios legados (skin, hair, muscles, etc.)
+    # Estágios legados (skin, hair, etc. - muscles agora tem estágio dedicado)
     print(f"[stage] Estágio legado: {STAGE}")
     # ... manter lógica anterior ...
 

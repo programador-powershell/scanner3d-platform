@@ -132,7 +132,7 @@ O sistema agora trabalha com **costume_layers.json** estruturado:
 
 ---
 
-## 3. Atualizações no Pipeline de 9+ Portões
+## 3. Atualizações no Pipeline de 8 Portões (veias removido)
 
 O pipeline agora tem **portões expandidos para figurinos**:
 

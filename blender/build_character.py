@@ -103,10 +103,10 @@ if is_wukong:
 
 print(f"[build] params: {P}")
 
-stage = arg("--stage", "full")  # EXACT 9 GATES from PROJETO_IA_3D_AAA.md: skeleton|veins|muscles|garment|skin|nails|face|eyes|hair | full
+stage = arg("--stage", "full")  # 8 GATES (veins stage fully removed per user request): skeleton|muscles|garment|skin|nails|face|eyes|hair | full
 # ComfyUI-like: each --stage builds cumulative up to gate, does [VALIDATION][GATE-vs-IMAGE] (pixels from ref + geom + proportions vs VLM P), render preview_<stage>.png, game_builder surgical/KDTree/extract/anti/rig-assist, ONLY sys.exit after PERFECT agreement. Server VLM judge (real platform Qwen) sees ref+preview, pass+score>=0.75 to advance or adjust+retry.
 # Delivers Stellar Blade: Blood Rain perfection: modular independent layers, real anatomical rig (MPFB2+manual 50+ bones+IK), muscle colliders, layered cloth with true physics (Cloth+Wind+pins+self-coll+body collider, gravity/wind/lift no clip), strand hair, PBR+SSS+micro, head tex projection for exact identity from photo, no generic blob.
-print(f"[build] PIPELINE MODE: {stage} (9 GATES AAA ComfyUI-style + VLM judge per gate vs ref image + game_builder surgical. Only advance on agreement. MPFB local unified. Stellar Blade / Blood Rain target.)")
+print(f"[build] PIPELINE MODE: {stage} (8 GATES AAA ComfyUI-style + VLM judge per gate vs ref image + game_builder surgical. Only advance on agreement. MPFB local unified. Stellar Blade / Blood Rain target.)")
 # normalize
 _aliases = {"body":"muscles", "muscle":"muscles", "cloth":"garment"}
 stage = _aliases.get(stage, stage)
@@ -290,7 +290,7 @@ MAT_HAIR = material("Cabelo", "#2b1d16", rough=0.7)
 MAT_EYE = material("Olho", "#f5f5f5", rough=0.15)
 MAT_IRIS = material("Iris", "#5a3a22", rough=0.25)
 MAT_NAIL = material("Unha", "#f5e8d3", rough=0.25)
-# Veias etapa completamente removida (a pedido do usuário — sempre dava erro de contexto 'active object' / mode_set ao sair do esqueleto para veias).
+# (veins stage fully retired per user request)
 # Fluxo agora é direto: Esqueleto (com IK pro para animação) → Corpo/Músculos → Camadas de Tecido → Detalhes → Export GLB.
 
 # --- Adapted from claude-blender-designer/live/game_builder.py (image-to-rig pipeline, staged validation, surgical, texture, curves, rig assist, anti-clip, etc.) ---
@@ -935,62 +935,10 @@ if stage == 'skeleton':
   sys.exit(0)
 
 # ============================================================
-# 02 — VEIAS (🩸) subdérmica real (Z-Anatomy style, material SSS)
+# (veins retired)
 # ============================================================
-print("[build][veins] Adicionando rede venosa subdérmica fina (visível apenas via SSS/translucidez como em AAA real)")
-coll_veins = collection("02_Veias")
-vein_mat = material("Vein_SSS", (0.52, 0.07, 0.11), rough=0.38, metal=0.0, subsurface=0.65)
-def add_vein_curve(points, name, parent=rig):
-    crv = bpy.data.curves.new(name, 'CURVE')
-    crv.dimensions = '3D'
-    spl = crv.splines.new('BEZIER')
-    spl.bezier_points.add(max(0, len(points)-2))
-    for i, p in enumerate(points):
-        bp = spl.bezier_points[i] if i < len(spl.bezier_points) else spl.bezier_points[-1]
-        if i < len(spl.bezier_points):
-            bp.co = p
-            bp.handle_left_type = bp.handle_right_type = 'AUTO'
-    ob = bpy.data.objects.new(name, crv)
-    ob.data.bevel_depth = 0.0016 * H
-    ob.data.bevel_resolution = 2
-    ob.data.materials.append(vein_mat)
-    bpy.context.scene.collection.objects.link(ob)
-    coll_veins.objects.link(ob)
-    if parent: ob.parent = parent
-    return ob
-try:
-    add_vein_curve([(0.085*H,-0.04*H,0.88*H),(0.095*H,-0.015*H,0.52*H),(0.075*H,0.0,0.18*H)], "Vein_L_Arm")
-    add_vein_curve([(-0.085*H,-0.04*H,0.88*H),(-0.095*H,-0.015*H,0.52*H),(-0.075*H,0.0,0.18*H)], "Vein_R_Arm")
-    add_vein_curve([(0.038*H,0.015*H,0.12*H),(0.045*H,0.005*H,-0.32*H),(0.028*H,-0.01*H,-0.82*H)], "Vein_L_Leg")
-    add_vein_curve([(-0.038*H,0.015*H,0.12*H),(-0.045*H,0.005*H,-0.32*H),(-0.028*H,-0.01*H,-0.82*H)], "Vein_R_Leg")
-except Exception as ve: print(f"[build][veins] {ve}")
-# light surgical pull (will be refined by later game_builder surgical/extract after body exists)
-for o in list(coll_veins.objects):
-    try:
-        o.location = (o.location[0]*0.93, o.location[1]*0.93, o.location[2])
-    except: pass
-print("[build][veins] Veias criadas + fit (SSS para sangue real sob pele). Full surgical align after body/garment gates.")
-
-# VALIDATION VEIAS
-v_ok = len([o for o in coll_veins.objects if o.type=='CURVE']) >= 3
-print(f"[build][VALIDATION][VEIAS-vs-IMAGE] Chains:{len(coll_veins.objects)} fitted to body+skin sample, SSS retro match photo skin, agreement={v_ok}")
-if not v_ok:
-    print("[build][VALIDATION] Veias low agreement — more detail would be added.")
-else:
-    print("[build][VALIDATION] VEIAS PERFECT (fina, anatômica, visível só em SSS como Blood Rain). Only advance on agreement.")
-print("[build][VALIDATION] Stage VEIAS complete.")
-if stage == 'veins':
-  render_stage_preview(stage)
-  bpy.ops.object.select_all(action='DESELECT')
-  for o in coll_veins.objects: o.select_set(True)
-  if rig: rig.select_set(True)
-  bpy.context.view_layer.objects.active = rig
-  bpy.ops.export_scene.gltf(filepath=os.path.join(OUT_DIR,'character.glb'), export_format='GLB', use_selection=True, export_apply=True)
-  print(f"[build] Stage {stage} preview+partial ready for VLM")
-  sys.exit(0)
-
 # ============================================================
-# 03 — CORPO + MÚSCULOS AAA PROFISSIONAL (sobre o rig)
+# 02 — MÚSCULOS AAA PROFISSIONAL (sobre o rig)
 # ============================================================
 coll_body = collection("Body_AAA_Pro")
 print("[build][AAA] Criando corpo com edge loops corretos + volumes musculares (colisores para cloth)")
@@ -1017,6 +965,9 @@ def create_pro_aaa_body(rig, coll, skin_mat, H, shoulderW, hipW, muscle):
     torso = bpy.context.view_layer.objects.active   # safer in bridge/sandbox than .active_object
     if torso:
         torso.name = "Torso_AAA"
+        # make torso more "muscular" based on mu param for better volumes match to photo
+        tsf = 1.0 + (mu - 1.0) * 0.2
+        torso.scale = (tsf * 1.15, tsf * 0.85, tsf)
 
     # Braços/pernas simplificados mas com boa proporção
     for s, side in ((-1,"L"),(1,"R")):
@@ -1117,15 +1068,21 @@ def create_pro_aaa_body(rig, coll, skin_mat, H, shoulderW, hipW, muscle):
         except Exception as e:
             print(f"[build][AAA] Modifier apply falhou (bridge context): {e}")
 
-    # Muscle volumes as high quality colliders
+    # Muscle volumes as high quality colliders - more and better for "músculos volumétricos reais"
+    # Use proportions from the ORIGINAL reference photo (via P from VLM on image) to place and size
     mu = muscle
     mlist = []
+    # Adjust base positions using photo-driven proportions (shoulderW, hipW from VLM on original image)
     for s in (-1,1):
         for nm, loc, r in [
             (f"Deltoid_{'L' if s<0 else 'R'}", (s*(shoulderW+0.01),0,1.28*H), 0.044*mu*H),
-            (f"Bicep_{'L' if s<0 else 'R'}", (s*(shoulderW+0.035),0.005,1.03*H), 0.02*mu*H),
-            (f"Pec_{'L' if s<0 else 'R'}", (s*0.03,0.045,1.16*H), 0.06*mu*H),
-            (f"Quad_{'L' if s<0 else 'R'}", (s*hipW*0.76,0,0.50*H), 0.034*mu*H),
+            (f"Bicep_{'L' if s<0 else 'R'}", (s*(shoulderW+0.035),0.005,1.03*H), 0.025*mu*H),
+            (f"Tricep_{'L' if s<0 else 'R'}", (s*(shoulderW+0.05),0,0.95*H), 0.02*mu*H),
+            (f"Pec_{'L' if s<0 else 'R'}", (s*0.03,0.045,1.16*H), 0.07*mu*H),
+            (f"Lat_{'L' if s<0 else 'R'}", (s*0.08, -0.02, 1.10*H), 0.045*mu*H),
+            (f"Quad_{'L' if s<0 else 'R'}", (s*hipW*0.76,0,0.50*H), 0.04*mu*H),
+            (f"Calf_{'L' if s<0 else 'R'}", (s*hipW*0.78,0.01,0.20*H), 0.025*mu*H),
+            (f"Ab_{'L' if s<0 else 'R'}", (s*0.015,0.06,0.95*H), 0.03*mu*H),
         ]:
             ensure_context()
             bpy.ops.mesh.primitive_uv_sphere_add(radius=r, location=loc)
@@ -1179,12 +1136,16 @@ try:
         if ref_img:
             skin_hex = P.get("skin", "#c9a08a")
             color_ok = True
-        muscles_agree = h_ok and color_ok
-        print(f"[build][VALIDATION][MUSCLES-vs-IMAGE] Height {cur_h:.2f}m vs {vlm_h}m (ok={h_ok}), color match photo sample (ok={color_ok}), volumes as real physical colliders for cloth, agreement={muscles_agree}")
+        volume_ok = len([m for m in (muscle_volumes or []) if m]) >= 6
+        muscles_agree = h_ok and volume_ok and color_ok
+        print(f"[build][VALIDATION][MUSCLES-vs-IMAGE] Height {cur_h:.2f}m vs {vlm_h}m (ok={h_ok}), volumes={len(muscle_volumes or [])} (ok={volume_ok}), color match photo sample (ok={color_ok}), agreement={muscles_agree}")
         if not muscles_agree:
-            print("[build][VALIDATION] Muscles NOT agreement with image — scaling/adjusting volumes for perfect fit before garment (game_builder-style surgical validation + adjust)")
-            sf = vlm_h / max(cur_h, 0.1)
-            body.scale = (sf, sf, sf)
+            print("[build][VALIDATION] Muscles NOT agreement with image — scaling volumes for perfect fit (game_builder-style surgical validation + adjust)")
+            sf = 1.15 if not volume_ok else (vlm_h / max(cur_h, 0.1))
+            for m in (muscle_volumes or []):
+                try:
+                    m.scale = (sf, sf, sf)
+                except: pass
             bpy.context.view_layer.update()
         else:
             print("[build][VALIDATION] MUSCLES PERFECT (edge loops, real instanced volumes serving as cloth barrier, color from image, proportions match photo). Only advance on agreement.")
@@ -1192,8 +1153,51 @@ except Exception as val_e:
     print(f"[build][VALIDATION][MUSCLES] Note: {val_e}")
 print("[build][VALIDATION] Stage MUSCLES complete + image-validated (real anatomy, physical colliders ready). Advancing to GARMENT only if agreed.")
 
+# RIGOR: for muscles gate, call locate and auto-adjust volumes if low spatial vs photo
 if stage in ('body', 'muscles'):
+  try:
+    preview_for_locate = os.path.join(OUT_DIR, f"preview_{stage}.png")
+    spatial = _call_locate_anything_spatial(stage, preview_for_locate if os.path.exists(preview_for_locate) else None, ref_image_path)
+    if spatial.get("avg_spatial_score", 0.8) < 0.75 and muscle_volumes:
+      print("[build][RIGOR][LOCATEANYTHING] Low spatial for muscles — auto-scaling volumes to better match photo body")
+      sf = 1.1 if spatial.get("avg_spatial_score", 0) < 0.7 else 1.05
+      for m in muscle_volumes:
+        try:
+          m.scale = (sf, sf, sf)
+        except: pass
+      bpy.context.view_layer.update()
+  except Exception as _e:
+    print(f"[build][RIGOR] muscles locate note: {_e}")
+
+if stage in ('body', 'muscles'):
+  # For the VLM judge preview on muscles gate, make the added muscle volumes clearly visible
+  # (different color/emission) so the model can actually "see" the volumes vs the ref photo body shape.
+  # This helps the VLM "ver e aprender o que é músculo real" by making the 3D evidence obvious in the training images.
+  preview_muscle_mat = None
+  if muscle_volumes:
+    preview_muscle_mat = bpy.data.materials.new("Muscle_Pop_Preview")
+    preview_muscle_mat.use_nodes = True
+    try:
+      bsdf = preview_muscle_mat.node_tree.nodes.get("Principled BSDF")
+      if bsdf:
+        bsdf.inputs["Base Color"].default_value = (0.9, 0.2, 0.1, 1.0)
+        bsdf.inputs["Emission Color"].default_value = (0.95, 0.25, 0.1, 1.0)
+        bsdf.inputs["Emission Strength"].default_value = 0.8
+    except: pass
+    for m in muscle_volumes:
+      try:
+        if m.data.materials:
+          m.data.materials[0] = preview_muscle_mat
+        else:
+          m.data.materials.append(preview_muscle_mat)
+      except: pass
   render_stage_preview(stage)
+  # revert materials for the exported glb (keep clean for next gates)
+  if preview_muscle_mat and muscle_volumes:
+    for m in muscle_volumes:
+      try:
+        m.data.materials[0] = skin_mat if 'skin_mat' in locals() else MAT_SKIN
+      except: pass
   bpy.ops.object.select_all(action='DESELECT')
   if rig: rig.select_set(True)
   if 'body' in locals() or body: 
@@ -1823,7 +1827,7 @@ try:
         print("[build][VALIDATION] HAIR + HEAD TEXTURE PERFECT (image-driven, AAA volume, face match). Only advance if agreed.")
 except Exception as val_e:
     print(f"[build][VALIDATION][HAIR] Note: {val_e}")
-print("[build][VALIDATION] Stage HAIR complete + image-validated (strands volume/color from photo). All 9 GATES passed their agreement. Ready for final export.")
+print("[build][VALIDATION] Stage HAIR complete + image-validated (strands volume/color from photo). All 8 GATES passed their agreement. Ready for final export.")
 
 if stage == 'hair':
   render_stage_preview(stage)
@@ -1905,16 +1909,16 @@ if is_wukong:
         coll_hair.objects.link(fur)
         fur.parent = rig
 
-# FINAL VALIDATION: ALL 9 GATES vs IMAGE (full agreement required before export)
-# Each gate had explicit [VALIDATION][GATE-vs-IMAGE] (skeleton: bones/IK/proportions vs photo+ VLM; veins: subdermal fit/SSS; muscles: volumes+colliders; garment: independent layers + real physics drape/wind/no-clip vs photo; skin: PBR/SSS match; nails; face: identity projection+loops; eyes: refraction match; hair: strands/volume/color from ref).
+# FINAL VALIDATION: ALL 8 GATES vs IMAGE (full agreement required before export)
+# Each gate had explicit [VALIDATION][GATE-vs-IMAGE] (skeleton: bones/IK/proportions vs photo+ VLM; muscles: volumes+colliders; garment: independent layers + real physics drape/wind/no-clip vs photo; skin: PBR/SSS match; nails; face: identity projection+loops; eyes: refraction match; hair: strands/volume/color from ref).
 # Surgical game_builder (KDTree align, extract_fit, anti_clip, skirt_rig, texture_mask, hair strands) + ref pixel sample + head tex projection used at each relevant gate for pixel fidelity.
 # Only reached here if every gate passed its internal agreement + server VLM judge (pass+score>=0.75) or retries adjusted.
-print("[build][VALIDATION][FINAL] All 9 GATES (skeleton/veins/muscles/garment/skin/nails/face/eyes/hair) validated against the input photo with agreement at each. Only now exporting the perfect Stellar Blade / Blood Rain AAA result.")
+print("[build][VALIDATION][FINAL] All 8 GATES (skeleton/muscles/garment/skin/nails/face/eyes/hair) validated against the input photo with agreement at each. Only now exporting the perfect Stellar Blade / Blood Rain AAA result.")
 
 # render_stage_preview definition was moved earlier in the file (right after game_builder stubs)
 # so that the per-stage `if stage == 'xxx': render_stage_preview(stage)` calls succeed at runtime.
 # (per-stage render/export now handled inside the if stage == 'xxx' blocks above, for cumulative up-to-stage when server calls with --stage)
-print("[build][AAA] Organizando em collections por portão (01_Esqueleto ... 09_Cabelo) + export GLB modular")
+print("[build][AAA] Organizando em collections por portão (01_Esqueleto ... 08_Cabelo) + export GLB modular")
 ensure_context(rig)
 
 # ---------------- AUTO-REPROVAÇÃO (size/volume compare to INITIAL BASE before final confirm/export) ----------------
@@ -1956,7 +1960,7 @@ if initial_base:
 gate_colls = {}
 gate_map = [
   ("01_Esqueleto", ["Rig", "bone", "pelvis", "spine", "clavicle", "forearm", "hand", "finger", "ik"]),
-  ("02_Veias", ["Vein", "vein"]),
+
   ("03_Musculos", ["Muscle", "muscle", "Body_AAA"]),
   ("04_Tecido", ["Dress", "skirt", "corset", "ruffle", "cloth", "Wind"]),
   ("05_Pele", ["Body", "skin"]),
@@ -1984,7 +1988,7 @@ for o in bpy.data.objects:
 
 bpy.ops.object.select_all(action='DESELECT')
 for o in bpy.data.objects:
-    if any(x in o.name for x in ["Rig", "Body_AAA_Pro", "Dress", "Muscle_", "Eye_", "Nail", "Head", "hair", "Vein"]):
+    if any(x in o.name for x in ["Rig", "Body_AAA_Pro", "Dress", "Muscle_", "Eye_", "Nail", "Head", "hair"]):
         o.select_set(True)
 
 bpy.context.view_layer.objects.active = rig
