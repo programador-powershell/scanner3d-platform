@@ -1,8 +1,8 @@
 # Scanner 3D · Project Alice
 
-A construção nova por camadas está em **http://localhost:3939/alice/layers**. O repositório inclui um estudo parcial novo do corsete da ficha 2 do Chapeleiro, sua foto original e a comparação em quatro vistas. Seus componentes têm skin e quatro clipes de movimento; mangas, acabamentos, tecido e colisões continuam pendentes. Esse estudo não é uma Alice finalizada.
+A construção por camadas está em **http://localhost:3939/alice/layers**. O repositório inclui o **GLB novo completo do Chapeleiro**, gerado uma vez no Tripo AI Studio com três vistas da referência, 1.890.825 triângulos e texturas 4K. Está disponível como conjunto separado das fichas, ainda em refinamento e sem rig. O estudo anterior do corsete da ficha 2 foi rejeitado por fidelidade insuficiente.
 
-Para inspecionar as 66 etapas locais das seis versões, configure `ALICE_STAGE_ROOT=F:/Alice/Deliverables/Alice_Variants`. Cada etapa usa sua própria foto e não recebe uma malha antiga quando ainda não foi construída. Os novos geradores não importam geometria anterior de Alice. Consulte [construção, rig e comparações por etapa](docs/ALICE_VARIANTS.md).
+Para inspecionar as 66 etapas locais das seis versões, configure `ALICE_STAGE_ROOT=F:/Alice/Deliverables/Alice_Variants`. Cada etapa usa sua própria foto. Conforme a instrução atual, preservar a Alice Base com vestido já aprovada e refinar localmente cada novo GLB completo das demais versões. Finalizar todas as camadas e o rig do Chapeleiro antes da próxima geração; não usar recursos premium do Tripo. Consulte [construção, rig e comparações por etapa](docs/ALICE_VARIANTS.md).
 
 Estúdio para inspecionar uma personagem **em geometria 3D real**, comparar frente/perfil/costas com o turnaround e exportar assets com evidência. O resultado é identificado pela sua origem; um asset importado não é apresentado como uma reconstrução gerada pela IA.
 

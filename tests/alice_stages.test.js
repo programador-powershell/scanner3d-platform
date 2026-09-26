@@ -48,6 +48,22 @@ test('each stage exposes its own photo; pending geometry has no fallback',async(
   assert.notEqual(sha256(photos[0]),sha256(photos[1]));
   assert.equal((await fetch(`${url}/api/alice/stages/alice_test_stage_02/model`)).status,404);
 });
+test('a full outfit study stays separate from unfinished photo layers',async()=>{
+  const garment=plan.stages[0];
+  const full={...garment,id:'alice_test_full',kind:'full-model',number:null,label:'Conjunto'};
+  plan.stages.push(full);save();
+  try {
+    const result=await(await fetch(`${url}/api/alice/stages`)).json();
+    const study=result.stages.find(s=>s.id===full.id);
+    assert.equal(study.kind,'full-model');assert.equal(study.number,null);
+    assert.ok(study.model);assert.equal(study.fidelityVerified,false);
+    const pending=result.stages.find(s=>s.id==='alice_test_stage_02');
+    assert.equal(pending.kind,'layer-stage');assert.equal(pending.model,null);
+    assert.equal((await fetch(`${url}/api/alice/stages/${pending.id}/model`)).status,404);
+    assert.equal((await fetch(url+study.referenceUrl)).status,200);
+    assert.equal(result.completed,false);
+  } finally {plan.stages.pop();save();}
+});
 test('a model associated with another stage photo is rejected',async()=>{
   const original=plan.stages[0].comparison.sourcePhotoSha256;
   plan.stages[0].comparison.sourcePhotoSha256=plan.stages[1].sourcePhotoSha256;save();

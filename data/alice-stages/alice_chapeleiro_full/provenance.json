@@ -1,0 +1,33 @@
+{
+  "variant": "alice_chapeleiro",
+  "provider": "Tripo AI Studio",
+  "studioModelId": "32254621-cdf9-43bd-8297-54446796d892",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "downloadedGlbSha256": "774363e83d8606c42c0cdf273e4b79a870825f4802a813ee6667840cbdf70578",
+  "inspectionGlbSha256": "19bd4738b4508fe7ef175f8b4b21587843f18bce8f7a8831d0f0d27bfc827008",
+  "inputMode": "front_left_back_views_of_one_character",
+  "generationCount": 1,
+  "creditsConsumed": 55,
+  "premiumFeaturesUsed": false,
+  "parametersObserved": {
+    "model": "H3.1",
+    "ultraMesh": true,
+    "textureResolution": "4K",
+    "pbr": true,
+    "removeLighting": true,
+    "polycountLimit": 2000000,
+    "generateParts": false,
+    "texture8K": false,
+    "aiCompletion": false
+  },
+  "localChanges": "Skin material polish v002 on a copy: face, arms, hands and exposed chest. Original positions, UV atlas and garment geometry preserved; original downloaded GLB preserved locally. Further refinement and all-layer rig still pending.",
+  "triangles": 1890825,
+  "joints": 0,
+  "animations": [],
+  "scope": "Full outfit draft only. Does not complete any numbered photo layer.",
+  "fidelityVerified": false,
+  "allLayersFinished": false,
+  "rigFinished": false,
+  "clothCollisionVerified": false,
+  "nextVariantMayStart": false
+}

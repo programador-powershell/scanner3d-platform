@@ -55,13 +55,22 @@ def main():
                           'preservedForInspectionOnly': True}
                 (folder/'REJECTED.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
                 rejected.append(str(folder))
+    full_models = [s for s in previous.get('stages', []) if s.get('kind') == 'full-model']
+    for full in full_models:
+        variant = next(v for v in inventory['variants'] if v['id'] == full['variant'])
+        source = Path(variant['finalReference'])
+        if source.resolve() != Path(full['sourcePhoto']).resolve() or hashlib.sha256(source.read_bytes()).hexdigest() != full['sourcePhotoSha256']:
+            raise ValueError('Full-model study must retain the original outfit photo of its own variant.')
+    photo_binding_count = len(entries)
+    entries.extend(full_models)
     plan = {'status': 'in_progress', 'completed': False, 'fidelityVerified': False,
             'comparisonPolicy': 'Each stage is compared with its own original photo, never a substitute final-outfit image.',
-            'freshGeometryPolicy': 'No prior GLB/FBX/BLEND as reconstruction input.', 'stages': entries,
+            'freshGeometryPolicy': 'Preserve the existing approved Alice Base GLB. Generate a new full Tripo GLB for each other variant, then refine its layers locally; rejected legacy drafts stay excluded.', 'stages': entries,
+            'workflowPolicy': 'Finish all layer-photo refinements and rig of the current variant before generating the next. Tripo is used only for its full GLB; no premium features.',
             'motionPolicy':'All actual garment layers must be skinned to one compatible character rig; walk, run, jump and attack require deformation, cloth response and inter-layer collision review.',
             'excludedLegacyDrafts': rejected}
     (root/'stage_comparisons.json').write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(json.dumps({'photoBindings': len(entries), 'excludedReusedDrafts': len(rejected), 'completed': False}))
+    print(json.dumps({'photoBindings': photo_binding_count, 'fullModelStudies': len(full_models), 'excludedReusedDrafts': len(rejected), 'completed': False}))
 
 if __name__=='__main__':
     main()

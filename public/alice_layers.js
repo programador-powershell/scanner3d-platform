@@ -15,6 +15,7 @@ let followBone=null, followOffset=new THREE.Vector3(), referenceCenter=new THREE
 const originals=new Map(), temporaryMaterials=[];
 const names={alice_base:'Alice Base',alice_chapeleiro:'Alice Chapeleiro',alice_cheshire:'Alice Cheshire',alice_coelho:'Alice Coelho',alice_lagarta:'Alice Lagarta',alice_rainha:'Alice Rainha'};
 const directions={front:[0,0,1],side:[1,0,0],back:[0,0,-1],threequarter:[.65,.15,1]};
+const stageNumber=stage=>stage.kind==='full-model'?'Conjunto':String(stage.number).padStart(2,'0');
 function fit(name=view){
   view=name;const aspect=Math.max(host.clientWidth,1)/Math.max(host.clientHeight,1);
   camera.left=-span*aspect/2;camera.right=span*aspect/2;camera.top=span/2;camera.bottom=-span/2;camera.zoom=1;
@@ -42,7 +43,7 @@ async function selectStage(){
   const current=++token;clearModel();$('rotate').checked=false;
   const stage=stages.find(s=>s.id===$('stage').value);if(!stage)return;
   history.replaceState(null,'',`${location.pathname}?stage=${encodeURIComponent(stage.id)}`);
-  $('stage-label').textContent=stage.label;$('reference-title').textContent=`${names[stage.variant]} · ${String(stage.number).padStart(2,'0')}`;
+  $('stage-label').textContent=stage.label;$('reference-title').textContent=`${names[stage.variant]} · ${stageNumber(stage)}`;
   $('reference').src=stage.referenceUrl;$('reference').alt=`${names[stage.variant]}: foto original de ${stage.label}`;$('reference').hidden=false;
   $('original').href=stage.referenceUrl;$('original').hidden=false;
   $('origin').textContent=`Foto identificada por SHA-256: ${stage.sourcePhotoSha256.slice(0,16)}…`;
@@ -76,7 +77,7 @@ async function selectStage(){
   }catch(error){if(current===token){$('message').hidden=false;$('message').textContent=`Malha indisponível: ${error.message}`;}}
 }
 function selectVariant(stageId){
-  $('stage').replaceChildren(...stages.filter(s=>s.variant===$('variant').value).map(s=>new Option(`${String(s.number).padStart(2,'0')} · ${s.label}`,s.id)));
+  $('stage').replaceChildren(...stages.filter(s=>s.variant===$('variant').value).map(s=>new Option(`${stageNumber(s)} · ${s.label}`,s.id)));
   if(typeof stageId==='string'&&[...$('stage').options].some(o=>o.value===stageId))$('stage').value=stageId;
   selectStage();
 }

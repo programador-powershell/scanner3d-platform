@@ -1,6 +1,6 @@
 {
   "comparisonPolicy": "Each stage is compared with its own original photo, never a substitute final-outfit image.",
-  "freshGeometryPolicy": "No prior GLB/FBX/BLEND as reconstruction input.",
+  "freshGeometryPolicy": "Preserve the existing approved Alice Base GLB. Generate a new full Tripo GLB for each other variant, then refine its layers locally; rejected legacy drafts stay excluded.",
   "motionPolicy": "All actual garment layers must be skinned to one compatible character rig; walk, run, jump and attack require deformation, cloth response and inter-layer collision review.",
   "status": "partial_preview",
   "completed": false,
@@ -13,7 +13,7 @@
       "label": "Corpete verde e mangas",
       "sourcePhoto": "alice_chapeleiro_stage_02/source_photo.png",
       "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
-      "status": "needs_refinement",
+      "status": "rejected_fidelity",
       "fidelityVerified": false,
       "requiredEvidence": [
         "original_stage_photo",
@@ -25,8 +25,9 @@
         "visible_difference_review"
       ],
       "review": {
-        "verdict": "needs_refinement",
+        "verdict": "rejected_fidelity",
         "visibleDifferences": [
+          "O usuário rejeitou o nível de detalhe dos outros ensaios e aprovou somente a aparência detalhada mostrada na imagem do Tripo AI.",
           "Somente o corsete foi modelado e riggado; mangas, renda e ornamentos da ficha ainda faltam.",
           "O decote foi arredondado, mas ombros e cavas ainda precisam seguir o contorno da foto.",
           "UVs das costas e laterais precisam de correção; a foto inclui iluminação e sombras.",
@@ -61,7 +62,55 @@
         "method": "new_photo_modeled_corset_with_supplied_motion_rig",
         "frontAxis": "-y"
       }
+    },
+    {
+      "id": "alice_chapeleiro_full",
+      "kind": "full-model",
+      "variant": "alice_chapeleiro",
+      "number": null,
+      "label": "GLB completo Tripo · camadas e rig em trabalho",
+      "sourcePhoto": "alice_chapeleiro_full/source_photo.png",
+      "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+      "status": "needs_refinement",
+      "fidelityVerified": false,
+      "countsAsFinishedLayer": false,
+      "review": {
+        "verdict": "needs_refinement",
+        "visibleDifferences": [
+          "Conjunto novo preserva cartola, cartas, relogios, xicaras, avental e laco em volume real; ainda exige refinamento pela ficha de cada peca.",
+          "O material de pele foi corrigido localmente em rosto, bracos e dedos. Cabelo ainda tem mechas compactas; bordados e rendas precisam de separacao e polimento.",
+          "Superficies internas de todas as camadas, rig completo, caminhada, corrida, salto, ataque e colisoes de tecido permanecem pendentes."
+        ]
+      },
+      "motionRequirements": {
+        "rigRequired": true,
+        "requiredActions": [
+          "walk",
+          "run",
+          "jump",
+          "attack"
+        ],
+        "clothFollowingRequired": true,
+        "collisionChecksRequired": true,
+        "motionVerified": false
+      },
+      "comparison": {
+        "reusedGeometry": false,
+        "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "displayModel": {
+          "file": "alice_chapeleiro_full/inspection.glb",
+          "sha256": "19bd4738b4508fe7ef175f8b4b21587843f18bce8f7a8831d0f0d27bfc827008"
+        },
+        "board": {
+          "file": "alice_chapeleiro_full/photo_vs_geometry.jpg",
+          "sha256": "d083be441bc8a299712323e4f4f16a1a4958b378ad7527e50eb6dd7672fac354"
+        },
+        "modelSha256": "2f92c8edcb595230156484acf7715063e9efda01c8659321e22c3c937154b79e",
+        "method": "new_Tripo_full_model_local_skin_material_polish",
+        "frontAxis": "-y"
+      }
     }
   ],
-  "scope": "Selected partial studies only; the complete six-variant inventory remains local."
+  "scope": "Rejected corset history and the new full Tripo Chapeleiro draft. Layer refinement, rig and cloth remain in progress.",
+  "workflowPolicy": "Preserve approved Base. Finish all current-variant photo layers and rig locally before generating the next variant; Tripo supplies only the full GLB without premium features."
 }
