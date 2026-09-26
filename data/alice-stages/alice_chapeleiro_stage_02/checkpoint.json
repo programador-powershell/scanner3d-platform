@@ -1,0 +1,142 @@
+{
+  "variant": "alice_chapeleiro",
+  "stageId": "alice_chapeleiro_stage_02",
+  "version": "bodice_refinement_v007",
+  "status": "needs_refinement",
+  "sourcePhoto": "source_photo.png",
+  "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
+  "studioModelId": "32254621-cdf9-43bd-8297-54446796d892",
+  "geometryParentSha256": "b51f72872d42f1751b6eaa4f7921336147a7d98d32264b4a9590b0b5b18e536b",
+  "reconstructionModelSha256": "eef96fbc75a5f66e10aabaf450dc51a30552c4168965995a125603b4935e19a0",
+  "displayModel": {
+    "file": "alice_chapeleiro_stage_02/inspection.glb",
+    "sha256": "aea0fad5c8d913a8df47d23d306a519557df075e7a3b376d79a181b33b7891bb"
+  },
+  "refinementScript": "blender/refine_tripo_chapeleiro_bodice.py",
+  "refinementScriptSha256": "311a61f875a69defa4d16d094e330b6f35234a635a6630781943cc833c5e8f08",
+  "bodyConstruction": {
+    "neckAndArmOpenings": 3,
+    "rearClosureOpening": true,
+    "shoulderBridgesSewnToBody": true,
+    "liningThickness": 0.00065,
+    "frontAndBackPhotoProjection": true,
+    "rearDepthInferredWithoutHairEnvelope": true
+  },
+  "sleeveRefinementAudit": [
+    {
+      "name": "Manga esquerda / scan exterior",
+      "coincidentAtlasVerticesWelded": 629,
+      "removedDisconnectedSpeckVertices": 12,
+      "removedUpperHairFaces": 1683,
+      "surfaceAreaRetention": 0.9546385672943619,
+      "boundarySmoothed": 950,
+      "foldsFromNewTripoScan": true,
+      "textureSource": "Own sheet 2 isolated sleeve; unseen back pattern inferred."
+    },
+    {
+      "name": "Manga direita / scan exterior",
+      "coincidentAtlasVerticesWelded": 917,
+      "removedDisconnectedSpeckVertices": 0,
+      "removedUpperHairFaces": 1299,
+      "surfaceAreaRetention": 0.9630785737263768,
+      "boundarySmoothed": 1009,
+      "foldsFromNewTripoScan": true,
+      "textureSource": "Own sheet 2 isolated sleeve; unseen back pattern inferred."
+    }
+  ],
+  "componentAudit": [
+    {
+      "component": "Manga esquerda / scan exterior",
+      "vertices": 38994,
+      "triangles": 78128,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Manga direita / scan exterior",
+      "vertices": 41064,
+      "triangles": 82304,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+      "vertices": 64184,
+      "triangles": 126280,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Vivo de latão / decote, cavas e bainha em volume",
+      "vertices": 6400,
+      "triangles": 12800,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Barbatanas / costuras douradas em relevo",
+      "vertices": 9072,
+      "triangles": 17920,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Ilhós de latão / amarrações frontal e traseira",
+      "vertices": 5440,
+      "triangles": 10880,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Cordões cruzados / frente e costas",
+      "vertices": 9280,
+      "triangles": 17920,
+      "rigged": false,
+      "fidelityVerified": false
+    },
+    {
+      "component": "Renda do decote e fecho / pequenos laços de latão em volume",
+      "vertices": 11520,
+      "triangles": 23040,
+      "rigged": false,
+      "fidelityVerified": false
+    }
+  ],
+  "materialAudit": [
+    "Original sheet-2 color projection; lighting baked in the photograph remains approximate.",
+    "Fabric and metal roughness are local estimates, not measured material scans."
+  ],
+  "actualFourViewReview": [
+    "Frente verde, costas, forro, alcas, cavas e abertura traseira foram reconstruidos pela propria ficha 2 e ajustados ao GLB novo do Chapeleiro; profundidade das superficies ocultas permanece inferida.",
+    "Laterais ainda mostram trechos de estampa esticada. Abas inferiores sobrepostas, correntes, fecho e renda fina ainda precisam seguir os detalhes da foto 2.",
+    "Mangas conservam dobras do novo Tripo e recebem a estampa da propria ficha. Restam recortes nos ombros; punhos, lacos de fita e renda inferior precisam de polimento e geometria adicional.",
+    "Esta revisao tem zero ossos e zero clipes. Todos os componentes precisam do rig compartilhado, pesos e verificacao de caminhar, correr, saltar, atacar e colisao de tecido; nao conta como camada concluida."
+  ],
+  "rigPresent": false,
+  "countsAsFinishedLayer": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "originalTripoCreditsConsumed": 55,
+  "premiumFeaturesUsed": false,
+  "artifacts": {
+    "front": {
+      "file": "alice_chapeleiro_stage_02/front.png",
+      "sha256": "06441e5968962d7c9f75f40c1b91c6a72aef2dccfc82523c4f0f1eccafbfc6fa"
+    },
+    "side": {
+      "file": "alice_chapeleiro_stage_02/side.png",
+      "sha256": "ee4c9656ce5947d08b2b1b54dd84510ec3171af8a1a239085cf0327a5bde7621"
+    },
+    "back": {
+      "file": "alice_chapeleiro_stage_02/back.png",
+      "sha256": "3250eb0815968dbe287cf88f530fca926af1d0e395482289601f38c9c8f2abcf"
+    },
+    "threequarter": {
+      "file": "alice_chapeleiro_stage_02/threequarter.png",
+      "sha256": "383dbb331e1f6b21cf52ad103cfeab964c48fe5f43792df75a866e4e51edfc5e"
+    }
+  }
+}

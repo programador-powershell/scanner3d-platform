@@ -13,7 +13,7 @@
       "label": "Corpete verde e mangas",
       "sourcePhoto": "alice_chapeleiro_stage_02/source_photo.png",
       "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
-      "status": "rejected_fidelity",
+      "status": "needs_refinement",
       "fidelityVerified": false,
       "requiredEvidence": [
         "original_stage_photo",
@@ -25,13 +25,12 @@
         "visible_difference_review"
       ],
       "review": {
-        "verdict": "rejected_fidelity",
+        "verdict": "needs_refinement",
         "visibleDifferences": [
-          "O usuário rejeitou o nível de detalhe dos outros ensaios e aprovou somente a aparência detalhada mostrada na imagem do Tripo AI.",
-          "Somente o corsete foi modelado e riggado; mangas, renda e ornamentos da ficha ainda faltam.",
-          "O decote foi arredondado, mas ombros e cavas ainda precisam seguir o contorno da foto.",
-          "UVs das costas e laterais precisam de correção; a foto inclui iluminação e sombras.",
-          "Os 93 componentes têm pesos; clipes de caminhada, corrida, ataque e salto de teste existem, mas tecido e colisões seguem sem validação."
+          "Frente verde, costas, forro, alcas, cavas e abertura traseira foram reconstruidos pela propria ficha 2 e ajustados ao GLB novo do Chapeleiro; profundidade das superficies ocultas permanece inferida.",
+          "Laterais ainda mostram trechos de estampa esticada. Abas inferiores sobrepostas, correntes, fecho e renda fina ainda precisam seguir os detalhes da foto 2.",
+          "Mangas conservam dobras do novo Tripo e recebem a estampa da propria ficha. Restam recortes nos ombros; punhos, lacos de fita e renda inferior precisam de polimento e geometria adicional.",
+          "Esta revisao tem zero ossos e zero clipes. Todos os componentes precisam do rig compartilhado, pesos e verificacao de caminhar, correr, saltar, atacar e colisao de tecido; nao conta como camada concluida."
         ]
       },
       "motionRequirements": {
@@ -52,14 +51,14 @@
         "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
         "displayModel": {
           "file": "alice_chapeleiro_stage_02/inspection.glb",
-          "sha256": "5e3076c1f7fb4a27983bf8d10210916f973cb740fdc78c0328e1fb7a3cdddb04"
+          "sha256": "aea0fad5c8d913a8df47d23d306a519557df075e7a3b376d79a181b33b7891bb"
         },
         "board": {
           "file": "alice_chapeleiro_stage_02/photo_vs_geometry.jpg",
-          "sha256": "9928e1e4f010392ca1ddc4a98459dbed56d36a07e425a3c60d3b93aaa3aaf403"
+          "sha256": "5c98615a623d7ffa6f52fb99ee27d762bc9cbb17759f6f8603ac2ed2606d6cc9"
         },
-        "modelSha256": "052563dcbeb74318e150baef8f5e8b7cc0d7e3aba9c0a43b805a865039133941",
-        "method": "new_photo_modeled_corset_with_supplied_motion_rig",
+        "modelSha256": "eef96fbc75a5f66e10aabaf450dc51a30552c4168965995a125603b4935e19a0",
+        "method": "own_layer_2_tailoring_fitted_to_authorized_new_Tripo_scan",
         "frontAxis": "-y"
       }
     },
@@ -111,6 +110,6 @@
       }
     }
   ],
-  "scope": "Rejected corset history and the new full Tripo Chapeleiro draft. Layer refinement, rig and cloth remain in progress.",
+  "scope": "New Tripo Chapeleiro full draft and sheet-2 surface refinement. All photo layers, rig and cloth remain in progress; rejected geometry stays in git history.",
   "workflowPolicy": "Preserve approved Base. Finish all current-variant photo layers and rig locally before generating the next variant; Tripo supplies only the full GLB without premium features."
 }

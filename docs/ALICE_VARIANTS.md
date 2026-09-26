@@ -75,6 +75,31 @@ Para o ensaio CPU, instalar as dependências em um ambiente separado: PyTorch CP
 
 O teste de identidade das etapas é executado com `node --test tests/alice_stages.test.js`. Ele verifica que a foto de outra camada, geometria reutilizada e arquivos alterados não podem passar como evidência da etapa atual; não mede semelhança artística.
 
+## Reconstrução local do corpete Chapeleiro
+
+`blender/refine_tripo_chapeleiro_bodice.py` trabalha exclusivamente sobre a
+extração do novo Tripo Chapeleiro `32254621-cdf9-43bd-8297-54446796d892`, com a
+foto original da camada 2 identificada por `3a7fb91e7a0724f3`. Não lê o corsete
+antigo rejeitado nem a malha da Alice Base. Ajusta uma superfície nova às medidas
+do scan, reconstrói a frente verde e as costas ocultas pelo cabelo, costura as
+alças à malha e preserva aberturas separadas para pescoço e braços. O forro tem
+espessura real; vivos, ilhós, cordões, canais e pequenos laços são geometria.
+As duas mangas conservam as dobras do scan novo e usam sua própria ficha para
+o acabamento. Profundidade traseira, material e detalhes invisíveis são inferidos.
+
+O checkpoint `bodice_refinement_v007` foi conferido nas quatro vistas e está em
+`data/alice-stages/alice_chapeleiro_stage_02/`, com foto, GLB, renders, comparação
+e proveniência. Sua situação é **precisa de refinamento**: ainda há estampa
+esticada nas laterais, cortes nas mangas e detalhes de abas, fecho, correntes,
+laços e renda a completar. Não tem ossos nem clipes e não conta como camada
+finalizada. O arquivo `legacy_rejected_rig_audit.json` pertence ao ensaio antigo
+rejeitado; não é auditoria desta nova malha. Este trabalho não gastou créditos
+adicionais e não substitui o vestido completo publicado na galeria.
+
+O portal publicou a remoção dos textos legados de armazenamento Supabase no
+commit `ac1d9d9` de `project-alice-challenge`; build e tipos passaram, e a Vercel
+confirmou a produção. Modelos e histórico continuam no GitHub.
+
 ## Auditoria exigida antes da conclusão
 
 Todas as camadas reais devem compartilhar um rig compatível com Alice. Caminhada, corrida, salto e ataque precisam deformar a malha, e o vestido precisa acompanhar os movimentos de um jogo Soulslike. Nas camadas soltas, conferir resposta secundária do tecido, colisão com corpo/pernas e colisões entre forro, anáguas, saia, avental, mangas e acessórios. Pesos rígidos nos quadris ou ossos extras sem comportamento testado não satisfazem esse requisito. Materiais e fotos de biblioteca não são camadas riggadas; suas peças correspondentes precisam cumprir os testes.
