@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BIKINI · 3D Game Studio</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui;background:#11151b;color:#e3eaf2}body{max-width:1050px;margin:3rem auto;padding:0 1.5rem}a{color:#95c5ff}h1{font-size:2.1rem}p{line-height:1.6}section{background:#1b222d;border:1px solid #354255;border-radius:10px;padding:1.2rem;margin:1rem 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#10151d;padding:1rem;border-radius:6px}input,button{font:inherit;background:#17293b;color:#eef3f8;border:1px solid #53708a;border-radius:5px;padding:.55rem}.warning{border-left:4px solid #edb15a}table{width:100%;border-collapse:collapse}td,th{padding:.7rem;text-align:left;border-bottom:1px solid #354255}small{color:#b8c6d8}#nodes{overflow-x:auto}code{overflow-wrap:anywhere}
+</style></head>
+<body><a href="/alice/layers">← Camadas do Alice</a> · <a href="/alice">Inspecionar personagem</a>
+<h1>BIKINI · backend experimental</h1>
+<p>Blender 5.3 não oficial, em pacote Windows x64. Ferramentas de Geometry Nodes e materiais para trabalhar em cópias dos assets. Não é um serviço de reconstrução por IA.</p>
+<section class="warning"><strong>Fidelidade da personagem: não validada por esta integração.</strong><p>O probe mede exportação e reimportação de um objeto técnico. Descobrir um nó não prova seu solver. Nenhum desses resultados aprova um personagem, rig, tecido ou build da Unreal.</p></section>
+<section><h2>Instalação e último probe</h2><p id="status" aria-live="polite">Consultando o controlador…</p><button id="refresh">Atualizar leitura</button><pre id="details"></pre><small>Esta página apenas lê os registros. Não inicia Blender, GPU, download ou cobrança.</small></section>
+<section><h2>Configurar na máquina Windows executora</h2><pre>$env:BIKINI_PATH = 'D:\Tools\BIKINI\blender.exe'
+$env:BIKINI_ALLOW_UNOFFICIAL = '1'
+npm run bikini:check
+npm run bikini:probe
+npm run start:bikini</pre><p>Mantenha o pacote completo. A revisão e o hash do executável estão em <code>config/bikini.lock.json</code>. O comando <code>npm start</code> continua usando Blender normal, salvo seleção explícita via <code>BLENDER_BACKEND=bikini</code>.</p></section>
+<section><h2>Assar uma camada de Geometry Nodes</h2><pre>npm run bikini:bake -- "D:\Alice\estudo.blend" "COL_Ornamentos" "D:\Alice\candidatos\ornamentos-001"</pre><p>Exige uma collection existente de malhas estáticas. Produz GLB, FBX, BLEND e relatório em pasta nova. Recusa rig, pesos, shape keys e cloth: essa operação não pode destruir o skinning para aparentar sucesso. Materiais procedurais exigem bake próprio.</p></section>
+<section><h2>Nós observados na instalação</h2><input id="filter" placeholder="Filtrar por nome ou identificador" aria-label="Filtrar nós"><div id="nodes"></div><p><small>Dados do último probe, sujeitos à conferência de integridade antes de cada execução.</small></p></section>
+<script>
+let data=null;
+const el=id=>document.getElementById(id);
+function renderNodes(){const rows=(data?.nodes||[]).filter(n=>(n.id+' '+(n.label||'')).toLowerCase().includes(el('filter').value.toLowerCase()));const box=el('nodes');box.replaceChildren();if(!rows.length){box.textContent='Nenhum nó registrado para este filtro. Execute o probe na instalação BIKINI.';return;}const table=document.createElement('table');for(const n of rows){const row=document.createElement('tr');for(const text of [n.id,n.label||'',n.instantiated?'Instanciado; solver não testado':'Não instanciado']){const c=document.createElement('td');c.textContent=text;row.append(c);}table.append(row);}box.append(table);}
+async function refresh(){try{const r=await fetch('/api/integrations/bikini',{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);data=await r.json();el('status').textContent=data.note;el('details').textContent=JSON.stringify({selecionado:data.selected,configurado:data.configured,hostWindowsX64:data.supportedHost,consentimento:data.optIn,estado:data.status,versaoObservada:data.version,consulta:data.checkedAt,revisaoFixada:data.revision},null,2);renderNodes();}catch(e){el('status').textContent='Falha ao consultar: '+e.message;}}
+el('refresh').addEventListener('click',refresh);el('filter').addEventListener('input',renderNodes);refresh();
+</script></body></html>

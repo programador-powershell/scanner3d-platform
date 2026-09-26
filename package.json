@@ -7,7 +7,12 @@
     "start": "node server.js",
     "feed": "node scripts/feed_references.js",
     "test": "node --test tests/*.test.js",
-    "alice:fetch": "node scripts/fetch_alice_source.js"
+    "alice:fetch": "node scripts/fetch_alice_source.js",
+    "bikini:check": "node scripts/bikini.js check",
+    "bikini:probe": "node scripts/bikini.js probe",
+    "bikini:bake": "node scripts/bikini.js bake",
+    "start:bikini": "node scripts/bikini.js start",
+    "test:bikini": "node --test tests/bikini.test.js"
   },
   "engines": { "node": ">=20" },
   "dependencies": {

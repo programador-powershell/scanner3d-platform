@@ -32,3 +32,6 @@ data/assets/*.blend
 data/assets/*.fbx
 data/assets/*.png
 data/source/
+
+# BIKINI: external runtime and generated diagnostics are not game assets
+data/bikini-runtime/

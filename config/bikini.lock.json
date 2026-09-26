@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "product": "BIKINI",
+  "officialBlender": false,
+  "platform": "win32",
+  "arch": "x64",
+  "repository": "https://github.com/blueish0930/BIKINI",
+  "revision": "b007d4e4f2cdb80074852900d9ed8429d228b65d",
+  "sourceRepository": "https://projects.blender.org/blueish/BIKINI",
+  "expectedBlenderMajorMinor": [5, 3],
+  "executable": {
+    "name": "blender.exe",
+    "size": 133306880,
+    "sha256": "aeb517ef7d2643024c19e9ddf1b749487c534ed4b890218eed4f35753d71c20d"
+  },
+  "requiredDirectories": ["5.3", "blender.crt", "blender.shared", "license", "quadwild"],
+  "requiredFiles": [
+    "BIKINI_BUILD_INFO.txt", "REPOSITORY_LICENSE.txt", "license/license.md",
+    "python3.dll", "python313.dll", "blender_cpu_check.dll",
+    "bf_intern_cgal_bridge.dll", "bf_intern_cgal_volume.dll",
+    "bf_intern_instant_meshes.dll", "bf_intern_jolt_bridge.dll",
+    "bf_intern_pmp_remesh.dll", "bf_intern_quadriflow.dll"
+  ],
+  "notes": [
+    "Windows x64 portable nightly fork, not a Blender Foundation signed distribution.",
+    "Executable digest comes from the pinned Git LFS pointer; hydrate LFS before use.",
+    "Package files and runtime probe have separate fingerprints; hashing is not a security audit.",
+    "No binaries, DLSS/NGX DLLs or third-party source are redistributed by this integration.",
+    "BIKINI_BUILD_INFO is upstream metadata, not proof of the running Blender version."
+  ]
+}
