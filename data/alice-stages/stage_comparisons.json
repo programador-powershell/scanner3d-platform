@@ -129,13 +129,11 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "Camisa e mangas foram acrescentadas, mas os franzidos, a profundidade do decote e o acabamento dos punhos ainda precisam de ajuste contra esta foto e o corpo completo.",
-          "O corsete ainda precisa do babado de borda, fitas traseiras e ajuste das proporcoes; a estrutura e os fechos nao comprovam fidelidade final.",
-          "A anagua creme ainda tem silhueta muito conica e regular; faltam cascatas laterais e dobras naturais semelhantes a foto.",
-          "Rendas de anagua conservam sombras do recorte; os pequenos lacos do decote e dos punhos e as repeticoes nao visiveis sao interpretados da referencia.",
-          "Bloomers, ligas, tiras de sustentacao e meias ainda precisam ser construidos; a fundacao nao esta completa.",
-          "O GLB e estatico, com zero ossos e zero clipes. Todas as camadas precisam de rig compartilhado, caminhada, corrida, salto e ataque.",
-          "Vinculos e solvers no Blender nao validam movimento Soulslike, colisao com corpo/pernas, colisao entre camadas ou exportacao de fisica ao GLB."
+          "A anagua marfim ainda e conica: faltam as cascatas laterais e o caimento irregular visiveis na ficha 1.",
+          "Camisa, mangas, decote e acabamento do corsete precisam de ajuste fino; faltam babados e fitas traseiras do corsete.",
+          "Bloomers, ligas e meias agora existem em geometria: suas dobras, rendas, costuras e ajuste ao corpo ainda precisam de polimento.",
+          "O corpo interno, rosto e cabelo ainda precisam ser concluidos; este conjunto esta sem rig e sem validacao de caminhada, corrida, salto ou ataque.",
+          "Retopologia para jogo, pesos, movimento secundario do vestido e colisoes entre todas as camadas continuam pendentes."
         ]
       },
       "motionRequirements": {
@@ -156,14 +154,14 @@
         "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
         "displayModel": {
           "file": "alice_chapeleiro_stage_01/inspection.glb",
-          "sha256": "b84871e10e237ece65cbcf4df6719be99d1c0ad93efdbe18f6428844f67564ea"
+          "sha256": "0bc503629ce738f7fec03857867a07c71bc0507c8021d0ec2afe0ff6f8fcc8a2"
         },
         "board": {
           "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
-          "sha256": "faaf1031273b25bf6c396b4551b2993a19c5b170ff7cad5400bb9c9c9775847e"
+          "sha256": "90798957d2a0b708bd361836b2f158917bfc00c2e63a2c0d4dbdf0e3956b5b38"
         },
-        "modelSha256": "65e860422353e7a0d8ff9f6b8385280afcd10e9d9ff25b5cd1247a0d2f410494",
-        "method": "incremental_photo_1_blouse_open_armholes_sewn_gathers_and_existing_foundation",
+        "modelSha256": "28c928a23c7cac02cc0892e36967f896b9bfbbc1c696d07bdd7b9229eacceb51",
+        "method": "incremental_photo_1_connected_bloomers_garters_and_anatomical_stockings",
         "frontAxis": "-y"
       }
     }

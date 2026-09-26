@@ -11,6 +11,7 @@ parser.add_argument('--generation', required=True)
 parser.add_argument('--comparison', required=True)
 parser.add_argument('--audit', required=True)
 parser.add_argument('--game', required=True)
+parser.add_argument('--part-comparison', action='append', default=[])
 args = parser.parse_args()
 sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
 generation = json.loads(Path(args.generation).read_text(encoding='utf-8'))
@@ -18,7 +19,9 @@ comparison = json.loads(Path(args.comparison).read_text(encoding='utf-8'))
 audit = json.loads(Path(args.audit).read_text(encoding='utf-8'))
 if (audit['editableBlendSha256'] != generation['editableBlendSha256']
         or not audit.get('savedModelUnchanged')
-        or len(audit.get('actualApertureAudit',[])) != 4
+        or {a['mesh'] for a in audit.get('actualApertureAudit',[])}
+           != {p['name'] for p in generation['pieces'] if p.get('actualGeometricApertures')
+                                                     or p['role']=='internal_photographic_lace'}
         or not audit.get('allActualFollowersCovered')
         or audit.get('actualInternalObjects') != len(generation['pieces'])
         or audit.get('verifiedFollowers') != len(generation['pieces'])-len(audit.get('attachmentRoots',[]))
@@ -26,6 +29,13 @@ if (audit['editableBlendSha256'] != generation['editableBlendSha256']
            != {p['name'] for p in generation['pieces']}-set(audit.get('attachmentRoots',[]))
         or any(p['p95TranslationError'] > .001 for p in audit['carrierTranslationProbe'])):
     raise ValueError('Requires the actual geometric-aperture and carrier-translation audit.')
+if any(p['role']=='foundation_bloomers' for p in generation['pieces']):
+    lower=audit.get('actualLowerConstructionAudit',[])
+    if (sum(bool(p.get('connectedCrotchVerified')) for p in lower)!=1
+            or sum(bool(p.get('closedToeVerified')) for p in lower)!=2
+            or sum(bool(p.get('bindingVerified')) for p in lower)
+               != len(generation.get('additionalSimulationCages',[]))+len(generation.get('additionalSkinCages',[]))):
+        raise ValueError('Requires actual connected-crotch, closed-foot and lower carrier evidence.')
 if any(p['role']=='foundation_gathered_blouse' for p in generation['pieces']):
     seams=audit.get('actualBlouseSeamAudit',[])
     if len(seams)!=5 or any(not s['measuredFromActualCages'] or s['maximumRootGap']>1e-6 for s in seams):
@@ -45,6 +55,20 @@ for field in ['model', 'editableBlend', 'sourcePhoto']:
 artifacts = [comparison['displayModel'], comparison['comparisonBoard'], *comparison['renders'].values()]
 if any(sha(a['file']) != a['sha256'] for a in artifacts):
     raise ValueError('Changed visual review evidence.')
+part_reviews=[]
+for path in args.part_comparison:
+    part=json.loads(Path(path).read_text(encoding='utf-8'))
+    if (part.get('reviewScope')!='selected_internal_components'
+            or part.get('status')!='needs_refinement' or not part.get('visibleDifferences')
+            or part['sourcePhotoSha256']!=generation['sourcePhotoSha256']
+            or part['modelSha256']!=generation['modelSha256']
+            or set(part['renderedComponents'])!={p['name'] for p in generation['pieces']
+                            if p['role'].startswith(part['selectedRolePrefix'])}
+            or set(part['renders'])!={'front','side','back','threequarter'}):
+        raise ValueError('Requires an own-photo four-view review of the same actual construction.')
+    if any(sha(a['file'])!=a['sha256'] for a in [part['comparisonBoard'],*part['renders'].values()]):
+        raise ValueError('Changed part review evidence.')
+    part_reviews.append(part)
 model = Path(comparison['displayModel']['file'])
 binary = model.read_bytes()
 if binary[:4] != b'glTF' or len(binary) >= 100_000_000:
@@ -58,6 +82,13 @@ if gltf.get('skins') or gltf.get('animations'):
 game = Path(args.game)
 complete = game/'Content/Assets/3D/personagens/alice-vestido-chapeleiro.glb'
 complete_hash = sha(complete)
+editable_dependencies=[]
+for dependency in generation.get('editableLibraryDependencies',[]):
+    canonical=complete.parent/dependency['file']
+    local=Path(generation['editableBlend']).parent/dependency['file']
+    if sha(local)!=dependency['sha256'] or sha(canonical)!=dependency['sha256']:
+        raise ValueError('The existing Git-tracked editable master must remain identical.')
+    editable_dependencies.append({**dependency,'file':canonical.relative_to(game).as_posix()})
 docs = game/'Docs/alice-variants/chapeleiro/foundation'
 docs.mkdir(parents=True,exist_ok=True)
 def copy(source,destination):
@@ -74,6 +105,24 @@ copy(comparison['comparisonBoard']['file'],docs/'photo_vs_geometry.jpg')
 copy(args.audit,docs/'carrier_audit.json')
 for name, artifact in comparison['renders'].items():
     copy(artifact['file'],docs/(name+'.png'))
+portable_parts=[]
+for part in part_reviews:
+    prefix=part['selectedRolePrefix']
+    if prefix not in ['foundation_bloomers','foundation_garter_','foundation_stocking']:
+        raise ValueError('Unknown foundation part review.')
+    folder=docs/'parts'/prefix.removeprefix('foundation_').rstrip('_')
+    copy(part['comparisonBoard']['file'],folder/'photo_vs_geometry.jpg')
+    record={k:part[k] for k in ['sourcePhotoSha256','sourceCrop','reviewScope','selectedRolePrefix',
+                              'renderedComponents','modelSha256','status','visibleDifferences']}
+    record['renders']={}
+    for name,artifact in part['renders'].items():
+        destination=folder/(name+'.png')
+        copy(artifact['file'],destination)
+        record['renders'][name]={'file':destination.relative_to(game).as_posix(),'sha256':sha(destination)}
+    record['comparisonBoard']={'file':(folder/'photo_vs_geometry.jpg').relative_to(game).as_posix(),
+                               'sha256':sha(folder/'photo_vs_geometry.jpg')}
+    (folder/'comparison.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
+    portable_parts.append(record)
 if sha(complete)!=complete_hash:
     raise ValueError('The whole dressed gallery item must remain unchanged.')
 report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
@@ -83,16 +132,18 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                  'bytes':model_path.stat().st_size,'triangles':triangles,'meshes':len(gltf['meshes']),
                  'joints':0,'animations':[]},
         'editable':{'file':blend_path.relative_to(game).as_posix(),'sha256':sha(blend_path),
-                    'bytes':blend_path.stat().st_size},
+                    'bytes':blend_path.stat().st_size,'libraries':editable_dependencies},
         'completeExteriorVerticesUnchanged':True,'completeGalleryModelSha256Unchanged':complete_hash,
         'addon':{'name':generation['addon'],'author':generation['author'],
                  'version':generation['addonVersion'],'originalAssetSha256':generation['originalAssetSha256']},
         'newInternalPieces':generation['pieces'],'visibleDifferences':comparison['visibleDifferences'],
+        'isolatedPartReviews':portable_parts,
         'attachmentAudit':{'file':'Docs/alice-variants/chapeleiro/foundation/carrier_audit.json',
                            'sha256':sha(args.audit),'frame':1,'verifiedFollowers':audit['verifiedFollowers'],
                            'actualApertureAudit':audit['actualApertureAudit'],
                            'actualBlouseSeamAudit':audit.get('actualBlouseSeamAudit',[]),
                            'blouseSolverPartitionAudit':audit.get('blouseSolverPartitionAudit',[]),
+                           'actualLowerConstructionAudit':audit.get('actualLowerConstructionAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False,'nextVariantMayStart':False}
@@ -101,7 +152,9 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
     '# Chapeleiro: fundação da ficha 1 em refinamento\n\n'
     'Anáguas internas novas, renda floral com aberturas em geometria, camisa '
     'franzida com cavas reais, mangas bufantes e corsete '
-    'com canais, fechos, ilhoses e cruzamentos traseiros. O GLB do vestido '
+    'com canais, fechos, ilhoses e cruzamentos traseiros. Bloomers com entrepernas '
+    'conectado, ligas com tiras e ferragens e meias com pés fechados também '
+    'fazem parte desta construção. As comparações isoladas estão em parts/. O GLB do vestido '
     'completo permanece inteiro no seu item original. As rendas acompanham '
     'os respectivos suportes no arquivo Blender por Surface Deform; isso '
     'ainda não valida rig, simulação em gameplay ou colisões.\n\n'
@@ -111,6 +164,10 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
     'FLOAT2 de UV para Blender 5.2; o pacote original não foi alterado. '
     'A licença e o pacote original estão no scanner3d-platform em '
     'blender/addons/bystedts-cloth-builder.\n\n'
+    'Quando listado no checkpoint, o exterior inteiro é vinculado ao arquivo '
+    'alice-vestido-chapeleiro.blend já existente na mesma pasta do editável. '
+    'Conservar os dois arquivos juntos; isso preserva geometria e texturas '
+    'sem duplicar o mestre dentro da fundação.\n\n'
     'A foto original desta etapa, os quatro renders e os hashes estão juntos '
     'nesta pasta. Flores/sombras visíveis orientam o traçado, mas a repetição '
     'ao redor da peça e as superfícies não visíveis são inferidas.\n\n'

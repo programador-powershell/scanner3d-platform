@@ -75,8 +75,25 @@ restaurados antes de salvar e exportar; a geometria anterior é conferida por ha
 A auditoria mede os cinco encontros reais: duas cavas, dois punhos e decote.
 Confere um solver por peça, UVs avaliados e todos os seguidores da hierarquia,
 sem depender de uma contagem fixa de peças. São verificações de construção no
-frame 1, não aprovação de fidelidade, rig ou simulação de ações. Bloomers,
-ligas/meias, caimento das anáguas, acabamentos e movimentos continuam pendentes.
+frame 1, não aprovação de fidelidade, rig ou simulação de ações.
+
+`refine_chapeleiro_foundation_lower.py` acrescenta bloomers com uma superfície
+conectada de cintura, entrepernas e duas pernas, ligas com quatro tiras e
+ferragens, e meias com malha fechada nos pés. As medidas das pernas vêm apenas
+dos ossos do FBX de caminhada; nenhuma roupa ou corpo desse FBX é incorporado.
+O entrepernas compartilha vértices reais. A renda das barras dos bloomers usa
+um terceiro recorte da própria ficha 1, registrado pelo traçador com
+`--section bloomers`; não reaproveita a estampa das anáguas.
+
+Bloomers e cintura das ligas recebem malhas de simulação únicas. Meias e tiras
+recebem superfícies preparadas para skinning antes da espessura, ainda sem
+pesos ou rig. A auditoria exige a topologia do entrepernas e dos pés e vínculos
+reais de todas as peças, mantendo as 104 peças anteriores e o exterior intactos.
+O renderizador permite comparar as peças escondidas isoladamente em quatro
+vistas, sempre junto da foto original e do recorte documentado. A revisão
+`--part-only` não substitui o conjunto completo no índice de etapas.
+Caimento, ajuste às fotos, retopologia para jogo, rig, movimentos e colisões
+continuam pendentes; essas construções não são camadas finalizadas.
 
 `optimize_alice_whole_outfit.py` mantém o mestre inteiro e salva uma cópia com
 modificador reversível de redução, preservando o atlas PBR 4K e dando prioridade

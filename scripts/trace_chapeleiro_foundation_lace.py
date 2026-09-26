@@ -14,6 +14,7 @@ from PIL import Image, ImageDraw
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--photo', required=True)
 parser.add_argument('--output', required=True)
+parser.add_argument('--section', choices=['petticoats', 'bloomers'], default='petticoats')
 args = parser.parse_args()
 photo = Path(args.photo)
 photo_hash = hashlib.sha256(photo.read_bytes()).hexdigest()
@@ -25,10 +26,13 @@ if out.exists():
 out.mkdir(parents=True)
 source = np.asarray(Image.open(photo).convert('RGB'))
 records = []
-for label, box, threshold, header in [
+tiles = [
     ('ivory', (758, 685, 866, 737), 94, 5),
     ('black', (715, 1000, 860, 1059), 26, 4),
-]:
+]
+if args.section == 'bloomers':
+    tiles = [('bloomer hem', (62, 1283, 141, 1308), 85, 3)]
+for label, box, threshold, header in tiles:
     x0, y0, x1, y1 = box
     tile = source[y0:y1, x0:x1].copy()
     grey = cv2.cvtColor(tile, cv2.COLOR_RGB2GRAY)
@@ -67,6 +71,7 @@ for label, box, threshold, header in [
                     'contours': outlines, 'retainedHoles': sum(o['hole'] for o in outlines),
                     'occupiedFraction': float(np.count_nonzero(retained) / retained.size)})
 report = {'sourcePhoto': str(photo.resolve()), 'sourcePhotoSha256': photo_hash,
+          'section': args.section,
           'purpose': 'Actual apertures for new internal lace geometry; original photo stays authoritative.',
           'limitation': 'Photographic shadows and folds affect tracing; unseen repeats are inferred.',
           'tiles': records}

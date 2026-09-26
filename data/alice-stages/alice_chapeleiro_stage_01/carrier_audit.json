@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "425f64a43d60b0afea98c152a2e6670a5f10ffc0c55f2de1ed87d7bbcd290361",
+  "editableBlendSha256": "2479c9fefad42a9804bda3057a137be3bd8bb097c066c1ec0b519d11353a3569",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -37,6 +37,24 @@
       "minimumExpected": 728.0,
       "textureAlphaHolesUsed": false,
       "surfaceCentroidsOnPhotoThreadMask": 0.9993535875888817
+    },
+    {
+      "components": 10,
+      "eulerCharacteristic": -250,
+      "openSurfaceHoles": 260,
+      "mesh": "01 / left bloomers / bloomer hem floral lace",
+      "minimumExpected": 160.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 1.0
+    },
+    {
+      "components": 10,
+      "eulerCharacteristic": -250,
+      "openSurfaceHoles": 260,
+      "mesh": "01 / right bloomers / bloomer hem floral lace",
+      "minimumExpected": 160.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 1.0
     }
   ],
   "carrierTranslationProbe": [
@@ -1453,6 +1471,874 @@
       "maximumTranslationError": 5.2154064053566707e-11,
       "frame": 1,
       "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / continuous waist and sewn crotch",
+      "measuredVertices": 12536,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / gathered waist elastic casing",
+      "measuredVertices": 1792,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / front placket seam -1",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / front placket seam 1",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / sewn ivory button 0",
+      "measuredVertices": 104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / sewn ivory button 1",
+      "measuredVertices": 104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / sewn ivory button 2",
+      "measuredVertices": 104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / sewn ivory button 3",
+      "measuredVertices": 104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / bloomers / sewn ivory button 4",
+      "measuredVertices": 104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left bloomers / cuff elastic casing",
+      "measuredVertices": 648,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left bloomers / gathered cuff frill",
+      "measuredVertices": 1096,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left bloomers / bloomer hem floral lace",
+      "measuredVertices": 6721,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left bloomers / cuff bow wing -1",
+      "measuredVertices": 168,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left bloomers / cuff bow wing 1",
+      "measuredVertices": 168,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right bloomers / cuff elastic casing",
+      "measuredVertices": 648,
+      "medianDelta": [
+        0.0060000005178153515,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right bloomers / gathered cuff frill",
+      "measuredVertices": 1104,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right bloomers / bloomer hem floral lace",
+      "measuredVertices": 6731,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right bloomers / cuff bow wing -1",
+      "measuredVertices": 168,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right bloomers / cuff bow wing 1",
+      "measuredVertices": 168,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left stocking / fitted leg ankle and closed toe",
+      "measuredVertices": 8578,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left stocking / horizontal knitted bands",
+      "measuredVertices": 12288,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left stocking / sewn front panel seam",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left stocking / sewn rear panel seam",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right stocking / fitted leg ankle and closed toe",
+      "measuredVertices": 8578,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right stocking / horizontal knitted bands",
+      "measuredVertices": 12288,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right stocking / sewn front panel seam",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right stocking / sewn rear panel seam",
+      "measuredVertices": 248,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / gathered waist casing",
+      "measuredVertices": 2304,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / ruffled edge 0",
+      "measuredVertices": 1792,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / looped lace edge 0",
+      "measuredVertices": 4896,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / ruffled edge 1",
+      "measuredVertices": 1792,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / looped lace edge 1",
+      "measuredVertices": 4896,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / pointed thigh reinforcement",
+      "measuredVertices": 2880,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / cup bound edge 0",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / cup bound edge 1",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / cup front stitch -0.003",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / cup front stitch 0.003",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / gathered thigh cup frill",
+      "measuredVertices": 1344,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / thigh cup needle lace",
+      "measuredVertices": 2856,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / front suspension web",
+      "measuredVertices": 100,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / True brass slider 0",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / True brass slider 1",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / True brass stocking clasp",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / rear suspension web",
+      "measuredVertices": 100,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / False brass slider 0",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / False brass slider 1",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / False brass stocking clasp",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / pointed thigh reinforcement",
+      "measuredVertices": 2880,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / cup bound edge 0",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / cup bound edge 1",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / cup front stitch -0.003",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / cup front stitch 0.003",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / gathered thigh cup frill",
+      "measuredVertices": 1344,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / thigh cup needle lace",
+      "measuredVertices": 2856,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / front suspension web",
+      "measuredVertices": 100,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / True brass slider 0",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / True brass slider 1",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / True brass stocking clasp",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / rear suspension web",
+      "measuredVertices": 100,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / False brass slider 0",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / False brass slider 1",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / False brass stocking clasp",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
     }
   ],
   "actualBlouseSeamAudit": [
@@ -1515,13 +2401,108 @@
       "dynamicSimulationVerified": false
     }
   ],
-  "actualInternalObjects": 104,
+  "actualLowerConstructionAudit": [
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch",
+      "components": 1,
+      "eulerCharacteristic": -1,
+      "openSurfaceHoles": 2,
+      "boundaryLoops": 3,
+      "connectedCrotchVerified": true,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe",
+      "components": 1,
+      "eulerCharacteristic": 1,
+      "openSurfaceHoles": 0,
+      "boundaryLoops": 1,
+      "closedToeVerified": true,
+      "outwardLegFacesVerified": true,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe",
+      "components": 1,
+      "eulerCharacteristic": 1,
+      "openSurfaceHoles": 0,
+      "boundaryLoops": 1,
+      "closedToeVerified": true,
+      "outwardLegFacesVerified": true,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch",
+      "carrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "actualClothSolvers": 1,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / gathered waist casing",
+      "carrier": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "actualClothSolvers": 1,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe",
+      "carrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe",
+      "carrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / front suspension web",
+      "carrier": "01 / left garter / front suspension web / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / rear suspension web",
+      "carrier": "01 / left garter / rear suspension web / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / front suspension web",
+      "carrier": "01 / right garter / front suspension web / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / rear suspension web",
+      "carrier": "01 / right garter / rear suspension web / skin midsurface",
+      "actualClothSolvers": 0,
+      "bindingVerified": true,
+      "rigPresent": false,
+      "motionVerified": false
+    }
+  ],
+  "actualInternalObjects": 166,
   "attachmentRoots": [
     "01 / long ivory gathered petticoat",
     "01 / black petticoat continuous waist support",
     "01 / ivory fitted boned corset / pointed front"
   ],
-  "verifiedFollowers": 101,
+  "verifiedFollowers": 163,
   "allActualFollowersCovered": true,
   "savedModelUnchanged": true,
   "rigPresent": false,

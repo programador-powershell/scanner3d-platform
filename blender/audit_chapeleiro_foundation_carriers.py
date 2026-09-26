@@ -17,6 +17,14 @@ digest=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 if digest(record['editableBlend'])!=record['editableBlendSha256']:
     raise ValueError('Editable checkpoint changed.')
 bpy.ops.wm.open_mainfile(filepath=record['editableBlend'])
+for dependency in record.get('editableLibraryDependencies',[]):
+    libraries=[library for library in bpy.data.libraries
+               if Path(bpy.path.abspath(library.filepath)).name==dependency['file']]
+    if len(libraries)!=1 or digest(bpy.path.abspath(libraries[0].filepath))!=dependency['sha256']:
+        raise ValueError('The intact master library must reopen at its relative Git path.')
+    meshes=[mesh for mesh in bpy.data.meshes if mesh.library==libraries[0]]
+    if not meshes or any(not len(mesh.vertices) for mesh in meshes):
+        raise ValueError('The linked exterior did not reopen as actual geometry.')
 scene=bpy.context.scene
 scene.frame_set(1)
 def coords(obj):
@@ -141,6 +149,11 @@ if blouses:
         raise ValueError('The torso and both sleeves need exactly three simulation carriers.')
 apertures=[]
 trace=json.loads(Path(record['laceTrace']).read_text(encoding='utf-8'))
+if record.get('additionalLaceTrace'):
+    extra=json.loads(Path(record['additionalLaceTrace']).read_text(encoding='utf-8'))
+    if extra['sourcePhotoSha256']!=record['sourcePhotoSha256']:
+        raise ValueError('The lower lace belongs to another photo.')
+    trace['tiles']+=extra['tiles']
 for obj in objects.values():
     if obj.get('opaqueGeometryApertures'):
         result=holes(obj.data)
@@ -165,6 +178,42 @@ for obj in objects.values():
             raise ValueError('Lace texture UV does not align with traced material: '+str(result))
         apertures.append(result)
         print('FOUNDATION_APERTURES_VERIFIED',json.dumps(result),flush=True)
+lower_construction=[]
+bloomers=[o for o in objects.values() if o.get('role')=='foundation_bloomers']
+if bloomers:
+    if len(bloomers)!=1:
+        raise ValueError('Expected one connected bloomer garment.')
+    obj=bloomers[0]
+    topology=holes(obj.data)
+    boundary=boundary_loops(obj.data)
+    if topology['components']!=1 or topology['eulerCharacteristic']!=-1 or len(boundary)!=3:
+        raise ValueError('The bloomers must have one waist and two leg openings with a real shared crotch.')
+    lower_construction.append({'mesh':obj.name,**topology,'boundaryLoops':len(boundary),
+                                'connectedCrotchVerified':True,'motionVerified':False})
+    stocks=[o for o in objects.values() if o.get('role')=='foundation_stocking']
+    if len(stocks)!=2:
+        raise ValueError('Both actual stocking legs and feet are required.')
+    for obj in stocks:
+        topology=holes(obj.data)
+        boundary=boundary_loops(obj.data)
+        if (topology['components']!=1 or topology['eulerCharacteristic']!=1 or len(boundary)!=1
+                or obj.data.polygons[0].normal.x<=0):
+            raise ValueError('The stocking foot must be closed with outward faces and one thigh opening.')
+        lower_construction.append({'mesh':obj.name,**topology,'boundaryLoops':len(boundary),
+                                    'closedToeVerified':True,'outwardLegFacesVerified':True,'motionVerified':False})
+    for entry in record.get('additionalSimulationCages',[])+record.get('additionalSkinCages',[]):
+        cage=bpy.data.objects[entry['name']]
+        visible=objects[entry['visibleFabric']]
+        expected_cloth=1 if 'simulationVerified' in entry else 0
+        if (not cage.hide_render or cage.data!=visible.data
+                or sum(m.type=='CLOTH' for m in cage.modifiers)!=expected_cloth
+                or any(m.type=='CLOTH' for m in visible.modifiers)
+                or not any(m.type=='SURFACE_DEFORM' and m.target==cage and m.is_bound for m in visible.modifiers)):
+            raise ValueError('A lower fabric has a duplicated or disconnected carrier.')
+        lower_construction.append({'mesh':visible.name,'carrier':cage.name,
+                                    'actualClothSolvers':expected_cloth,'bindingVerified':True,
+                                    'rigPresent':False,'motionVerified':False})
+    print('FOUNDATION_LOWER_CONSTRUCTION_VERIFIED',json.dumps(lower_construction),flush=True)
 roots=[o for o in objects.values() if o.parent is None or o.parent.name not in objects]
 def descendants(support):
     family={support.name}
@@ -211,6 +260,7 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'actualApertureAudit':apertures,'carrierTranslationProbe':probes,
         'actualBlouseSeamAudit':blouse_seams,
         'blouseSolverPartitionAudit':solver_partition,
+        'actualLowerConstructionAudit':lower_construction,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,
         'savedModelUnchanged':True,'rigPresent':False,'motionVerified':False,
