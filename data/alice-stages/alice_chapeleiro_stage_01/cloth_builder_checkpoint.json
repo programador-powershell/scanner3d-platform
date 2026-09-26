@@ -1,0 +1,188 @@
+{
+  "sourcePhoto": "source_photo.png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "completeExteriorSha256": "9bd0e395073470de459ce622b7b1077ce364861fc417fd1e62b350c261534353",
+  "completeExteriorVerticesUnchanged": true,
+  "addon": "Bystedts Cloth Builder",
+  "author": "Daniel Bystedt",
+  "addonVersion": [
+    1,
+    0,
+    1
+  ],
+  "originalAssetSha256": "28544589d7495de8544109c51e82383bdf5d6bace3b72c3fac29c2d2a958ae0b",
+  "proceduralNodeAsset": "Post sim cloth",
+  "compatibilityAdjustment": "Loaded UV Store Named Attribute upgraded FLOAT_VECTOR to FLOAT2 for Blender 5.2.",
+  "newInternalPieces": [
+    {
+      "name": "01 / ivory inner petticoat / gathered quad shell",
+      "baseVertices": 4176,
+      "baseQuads": 4032,
+      "evaluatedVertices": 8352,
+      "evaluatedPolygons": 8352,
+      "bounds": [
+        [
+          -0.1759931445121765,
+          -0.10906166583299637,
+          0.34599998593330383
+        ],
+        [
+          0.1759931445121765,
+          0.10906166583299637,
+          0.6374347805976868
+        ]
+      ],
+      "uvMaps": [
+        "UVMap"
+      ],
+      "uvFinite": true,
+      "uvNonDegenerate": true,
+      "clothPinGroup": "pinned",
+      "postSimNodeGroup": "Post sim cloth",
+      "separateSeams": 0,
+      "thickness": -0.00055,
+      "rigPresent": false,
+      "photoFidelityApproved": false
+    },
+    {
+      "name": "01 / ivory gathered lower flounce",
+      "baseVertices": 1584,
+      "baseQuads": 1440,
+      "evaluatedVertices": 3168,
+      "evaluatedPolygons": 3168,
+      "bounds": [
+        [
+          -0.19335418939590454,
+          -0.11630972474813461,
+          0.3059607744216919
+        ],
+        [
+          0.19335418939590454,
+          0.11630972474813461,
+          0.35442766547203064
+        ]
+      ],
+      "uvMaps": [
+        "UVMap"
+      ],
+      "uvFinite": true,
+      "uvNonDegenerate": true,
+      "clothPinGroup": "pinned",
+      "postSimNodeGroup": "Post sim cloth",
+      "separateSeams": 0,
+      "thickness": -0.00055,
+      "rigPresent": false,
+      "photoFidelityApproved": false
+    },
+    {
+      "name": "01 / black inner petticoat tier 1",
+      "baseVertices": 1584,
+      "baseQuads": 1440,
+      "evaluatedVertices": 3168,
+      "evaluatedPolygons": 3168,
+      "bounds": [
+        [
+          -0.1861540973186493,
+          -0.10918059945106506,
+          0.3049607574939728
+        ],
+        [
+          0.1861540973186493,
+          0.10918059945106506,
+          0.3614465594291687
+        ]
+      ],
+      "uvMaps": [
+        "UVMap"
+      ],
+      "uvFinite": true,
+      "uvNonDegenerate": true,
+      "clothPinGroup": "pinned",
+      "postSimNodeGroup": "Post sim cloth",
+      "separateSeams": 0,
+      "thickness": -0.00055,
+      "rigPresent": false,
+      "photoFidelityApproved": false
+    },
+    {
+      "name": "01 / black inner petticoat tier 2",
+      "baseVertices": 1584,
+      "baseQuads": 1440,
+      "evaluatedVertices": 3168,
+      "evaluatedPolygons": 3168,
+      "bounds": [
+        [
+          -0.1961537003517151,
+          -0.11317960172891617,
+          0.2749607563018799
+        ],
+        [
+          0.1961537003517151,
+          0.11317960172891617,
+          0.324464350938797
+        ]
+      ],
+      "uvMaps": [
+        "UVMap"
+      ],
+      "uvFinite": true,
+      "uvNonDegenerate": true,
+      "clothPinGroup": "pinned",
+      "postSimNodeGroup": "Post sim cloth",
+      "separateSeams": 0,
+      "thickness": -0.00055,
+      "rigPresent": false,
+      "photoFidelityApproved": false
+    },
+    {
+      "name": "01 / black inner petticoat tier 3",
+      "baseVertices": 1584,
+      "baseQuads": 1440,
+      "evaluatedVertices": 3168,
+      "evaluatedPolygons": 3168,
+      "bounds": [
+        [
+          -0.20515741407871246,
+          -0.11717972904443741,
+          0.24696077406406403
+        ],
+        [
+          0.20515741407871246,
+          0.11717972904443741,
+          0.29045888781547546
+        ]
+      ],
+      "uvMaps": [
+        "UVMap"
+      ],
+      "uvFinite": true,
+      "uvNonDegenerate": true,
+      "clothPinGroup": "pinned",
+      "postSimNodeGroup": "Post sim cloth",
+      "separateSeams": 0,
+      "thickness": -0.00055,
+      "rigPresent": false,
+      "photoFidelityApproved": false
+    }
+  ],
+  "model": "inspection.glb",
+  "modelSha256": "f80b046452e47bb66200964122dcf3e07052099cbf2fac73490c96b88b901ceb",
+  "editableBlend": "editable.blend",
+  "editableBlendSha256": "2b7cb856bac9254ce62e1b452e5305d7f44fd854b8709392428b740cbd1a38af",
+  "additionalCreditsConsumed": 0,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitations": [
+    "Foundation construction study: blouse, corset, bloomers, stockings, garters, lace detail remain pending.",
+    "Gravity settings exist, but animation/collision behavior has not been verified.",
+    "Measurements inferred to fit the intact exterior; compare all views to photo 1."
+  ],
+  "variant": "alice_chapeleiro",
+  "method": "new_internal_quad_cloth_from_own_foundation_photo_with_BCB_nodes",
+  "reusedGeometry": false,
+  "modelUpAxis": "Y",
+  "status": "generated_awaiting_visual_review"
+}

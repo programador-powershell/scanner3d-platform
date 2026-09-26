@@ -4,6 +4,48 @@ Objetivo integral: construir cada versão em `F:/Alice/prototipo`, desde a base 
 
 Fluxo determinado pelo usuário: preservar o GLB existente da Alice Base com vestido; para cada outra versão, gerar somente um GLB completo no Tripo e trabalhar nele localmente. Refinar personagem, vestido e todas as camadas contra suas próprias fotos. Finalizar as camadas e o rig da versão atual antes de iniciar a próxima. O Chapeleiro é a versão em trabalho. O modelo Base aprovado visualmente não comprova rig, tecido ou colisões aprovados.
 
+Correção explícita do usuário: **o vestido exterior já está no GLB completo; as
+fichas servem à construção das camadas inferiores que faltam.** Recortar o
+vestido do scan e substituí-lo por peças projetadas das fichas foi uma
+interpretação incorreta. Os ensaios de extração de corpete/mangas ficam como
+histórico rejeitado desse método e não devem ser continuados. O fluxo atual
+preserva o exterior inteiro e trabalha em cópias: polimento, redução inicial,
+retopologia para deformação, UVs e bake de detalhes/PBR, seguidos de construção
+dos interiores, rig compartilhado e tecido. Redução automática não é aprovação
+de retopologia anatômica nem de aparência.
+
+O ZIP `BystedtsClothBuilder_1_0_1.zip` fornecido pelo usuário tem SHA-256
+`132440c150ce09a04d5e7b19de57485cfcf0d630914fd63201c9835abca0dab8`.
+`install_bystedts_cloth_builder.py` instalou e habilitou o add-on de Daniel
+Bystedt no Blender 5.2.1 e registrou a biblioteca de assets. Os grupos originais
+`Post sim cloth`, `Solidify` e `UV unwrap solidified` vêm desse pacote. Os
+personagens/roupas genéricos da biblioteca não entram na Alice. Código do
+add-on: GPL-3.0-or-later, conforme cabeçalho do pacote; origem:
+https://3dbystedt.gumroad.com/l/bystedtsClothBuilder e tutorial:
+https://www.youtube.com/watch?v=EAraCGAaLoU.
+
+`build_chapeleiro_inner_cloth.py` constrói superfícies quad novas para a anágua
+creme, seu babado e três níveis pretos da ficha 1. Usa o Cloth Builder real para
+grupos de pinning/cloth e o grupo original de Geometry Nodes após a simulação.
+Espessura interna de 0,00055 unidades; separação de costuras em zero. No arquivo
+carregado, o armazenamento UV passa de `FLOAT_VECTOR` para `FLOAT2`, necessário
+para virar mapa UV no Blender atual. Entradas do modificador são configuradas
+pela interface RNA 5.2. Nenhum vértice do exterior é alterado nessa construção.
+O ensaio é parcial: renda, camisa, corsete, bloomers, ligas/meias, rig e ensaios
+de movimento/colisão ainda precisam de trabalho. A presença do modificador
+Cloth não comprova simulação aprovada nem exportação de física ao GLB.
+
+`optimize_alice_whole_outfit.py` mantém o mestre inteiro e salva uma cópia com
+modificador reversível de redução, preservando o atlas PBR 4K e dando prioridade
+ao rosto, dedos e decote. O ensaio `whole_reduction_v027` tem 302.532 triângulos
+(16% de 1.890.825). Mediu distância mestre→cópia em 20.075 amostras; isso não
+substitui comparação de vistas e close-ups. A primeira comparação mostrou
+distorção nas faixas das meias, portanto essa cópia sem bake não é publicada
+como refinamento aprovado. `bake_alice_whole_outfit.py` transfere cor base,
+roughness, metallic e normal tangente do mestre completo para o alvo, em 4K.
+Os quatro renders e a foto original continuam exigidos antes da atualização
+do mesmo item da galeria por commit direto, sem PR.
+
 ## Referências observadas
 
 O índice local contém seis pastas e sessenta fichas numeradas. As fichas não têm a mesma ordem entre versões; algumas são panoramas, bibliotecas de material ou montagem final.
@@ -75,7 +117,7 @@ Para o ensaio CPU, instalar as dependências em um ambiente separado: PyTorch CP
 
 O teste de identidade das etapas é executado com `node --test tests/alice_stages.test.js`. Ele verifica que a foto de outra camada, geometria reutilizada e arquivos alterados não podem passar como evidência da etapa atual; não mede semelhança artística.
 
-## Reconstrução local do corpete Chapeleiro
+## Histórico de extração do corpete — método rejeitado pelo usuário
 
 `blender/refine_tripo_chapeleiro_bodice.py` trabalha exclusivamente sobre a
 extração do novo Tripo Chapeleiro `32254621-cdf9-43bd-8297-54446796d892`, com a
@@ -87,7 +129,7 @@ espessura real; vivos, ilhós, cordões, canais e pequenos laços são geometria
 As duas mangas conservam as dobras do scan novo e usam sua própria ficha para
 o acabamento. Profundidade traseira, material e detalhes invisíveis são inferidos.
 
-O checkpoint atual `bodice_native_shared_rig_v025` está em
+O checkpoint histórico `bodice_native_shared_rig_v025` está em
 `data/alice-stages/alice_chapeleiro_stage_02/`, com a foto própria da ficha 2,
 GLB, Blender editável, quatro vistas, doze poses e auditoria do rig. O refinamento
 `finish_chapeleiro_bodice_details.py` acrescentou cinco abas sobrepostas,

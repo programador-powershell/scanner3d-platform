@@ -1,14 +1,9 @@
 {
-  "variant": "alice_chapeleiro",
-  "provider": "Tripo AI Studio",
+  "method": "whole_Tripo_outfit_reduction_with_high_to_low_4K_PBR_bake",
   "studioModelId": "32254621-cdf9-43bd-8297-54446796d892",
+  "originalDownloadedModelSha256": "774363e83d8606c42c0cdf273e4b79a870825f4802a813ee6667840cbdf70578",
   "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
-  "downloadedGlbSha256": "774363e83d8606c42c0cdf273e4b79a870825f4802a813ee6667840cbdf70578",
-  "inspectionGlbSha256": "19bd4738b4508fe7ef175f8b4b21587843f18bce8f7a8831d0f0d27bfc827008",
-  "inputMode": "front_left_back_views_of_one_character",
-  "generationCount": 1,
-  "creditsConsumed": 55,
-  "premiumFeaturesUsed": false,
+  "modelSha256": "487525591c5eb541f4d484084ee115ab81761c04732e0d50c192d3ce130a103e",
   "parametersObserved": {
     "model": "H3.1",
     "ultraMesh": true,
@@ -20,14 +15,93 @@
     "texture8K": false,
     "aiCompletion": false
   },
-  "localChanges": "Skin material polish v002 on a copy: face, arms, hands and exposed chest. Original positions, UV atlas and garment geometry preserved; original downloaded GLB preserved locally. Further refinement and all-layer rig still pending.",
-  "triangles": 1890825,
-  "joints": 0,
-  "animations": [],
-  "scope": "Full outfit draft only. Does not complete any numbered photo layer.",
+  "creditsConsumed": 55,
+  "additionalCreditsConsumed": 0,
   "fidelityVerified": false,
-  "allLayersFinished": false,
-  "rigFinished": false,
-  "clothCollisionVerified": false,
-  "nextVariantMayStart": false
+  "rigPresent": false,
+  "motionVerified": false,
+  "optimizationAudit": {
+    "originalVertices": 996867,
+    "originalTriangles": 1890825,
+    "reducedVertices": 182268,
+    "reducedTriangles": 302532,
+    "ratioRequested": 0.16,
+    "ratioActual": 0.16,
+    "wholeOutfitKept": true,
+    "garmentFaceExtractionUsed": false,
+    "sourceUvAtlasPreserved": true,
+    "uvFinite": true,
+    "textures": [
+      {
+        "name": "alice_chapeleiro_tripo_full_32254621_basecolor.jpg",
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "alice_chapeleiro_tripo_full_32254621_normal.png",
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "alice_chapeleiro_tripo_full_32254621_rm.jpg",
+        "size": [
+          4096,
+          4096
+        ]
+      }
+    ],
+    "sourceBounds": [
+      [
+        -0.22173309326171875,
+        -0.1555938571691513,
+        0.0
+      ],
+      [
+        0.22173309326171875,
+        0.1555938571691513,
+        0.97991943359375
+      ]
+    ],
+    "candidateBounds": [
+      [
+        -0.2219676971435547,
+        -0.1558958739042282,
+        3.525985812302679e-05
+      ],
+      [
+        0.221963033080101,
+        0.15569806098937988,
+        0.9799668192863464
+      ]
+    ],
+    "highToLowDistance": {
+      "samples": 20075,
+      "p50": 7.068181730573997e-05,
+      "p95": 0.00028235882637090977,
+      "p99": 0.0004138250037794929,
+      "max": 0.0010096924379467964,
+      "units": "Blender source units; model height 0.979919"
+    },
+    "deformationTopologyApproved": false,
+    "normalRebakeCompleted": true,
+    "limitations": [
+      "Collapse reduction is a first candidate, not anatomical retopology.",
+      "High-to-low 4K PBR maps baked; projection artifacts and close-ups still need review.",
+      "No rig, internal layers or collision approval implied."
+    ]
+  },
+  "bakeSettings": {
+    "resolution": 4096,
+    "marginPixels": 16,
+    "cageExtrusion": 0.00135,
+    "maxRayDistance": 0.003,
+    "selectedToActive": true,
+    "normalSpace": "TANGENT"
+  },
+  "bakeMasterSha256": "2f92c8edcb595230156484acf7715063e9efda01c8659321e22c3c937154b79e",
+  "exteriorCutIntoLayers": false
 }

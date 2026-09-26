@@ -60,11 +60,16 @@ function prepareGalleryUpdate(generation, comparison, gameRoot) {
                   joints:stats.joints, animations:stats.animations, dimensions:stats.dimensions},
     parametersObserved:options, creditsConsumed:generation.creditsConsumed,
     additionalCreditsConsumed:generation.additionalCreditsConsumed || 0,
+    exteriorPolicy:'Keep the complete Tripo outfit. Numbered photos describe internal layers and detail references; do not cut the exterior into photo-based garment slices.',
+    optimizationAudit:generation.optimizationAudit || null,
+    bakeSettings:generation.bakeSettings || null,
+    bakeMasterSha256:generation.bakeMasterSha256 || null,
+    bakedTextureHashes:generation.bakedTextures ? Object.fromEntries(Object.entries(generation.bakedTextures).map(([name, item]) => [name, item.sha256])) : null,
     premiumFeaturesUsed:false, actualFourViewReview:comparison.visibleDifferences,
     comparisonArtifacts:payloads.map(([name,,digest])=>({file:evidenceRelative+'/'+name, sha256:digest})),
     allLayersFinished:false, fidelityVerified:false, motionVerified:false, clothCollisionVerified:false,
     nextVariantMayStart:false, approvedAliceBasePreserved:true,
-    updatePolicy:'Refine locally against each original layer photo. Publish further commits to this same gallery slug. Finish all Chapeleiro layers and rig before the next Tripo generation.'
+    updatePolicy:'Preserve and polish the whole exterior, reduce/retopologize and bake PBR locally; build missing internal garments from their own photos. Publish further commits to this same gallery slug. Finish all Chapeleiro layers and rig before the next Tripo generation.'
   };
   fs.writeFileSync(path.join(root, evidenceRelative, 'checkpoint.json'), JSON.stringify(record, null, 2) + '\n');
   return record;

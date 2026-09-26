@@ -13,7 +13,7 @@
       "label": "Corpete verde e mangas",
       "sourcePhoto": "alice_chapeleiro_stage_02/source_photo.png",
       "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
-      "status": "needs_refinement",
+      "status": "rejected_fidelity",
       "fidelityVerified": false,
       "requiredEvidence": [
         "original_stage_photo",
@@ -25,12 +25,9 @@
         "visible_difference_review"
       ],
       "review": {
-        "verdict": "needs_refinement",
+        "verdict": "rejected_fidelity",
         "visibleDifferences": [
-          "As mangas da foto 2 sao mais arredondadas, com franzidos verticais; o scan conserva dobras horizontais e sobras no topo.",
-          "A costura entre corpete, manga e punho esta continua, mas a ligacao interna forma um volume largo junto a cava e precisa de ajuste.",
-          "A estampa lateral ainda estica; renda, filigrana e abas precisam de acabamento mais fiel a propria ficha.",
-          "Os reforcos isolados das costas permanecem pendentes. Caminhada, corrida e ataque ainda esticam partes da costura; colisao entre corpo e todas as camadas nao foi validada."
+          "Método de extração do vestido rejeitado pelo usuário: o exterior deve ser preservado inteiro; construir as camadas inferiores a partir das fotos e polir/otimizar/UV/bake do conjunto completo."
         ]
       },
       "motionRequirements": {
@@ -60,7 +57,9 @@
         "modelSha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde",
         "method": "new_Tripo_sheet_2_components_on_shared_A_pose_motion_rig",
         "frontAxis": "-y"
-      }
+      },
+      "historicalStudy": true,
+      "supersededMethod": "cut_exterior_garment_reconstruction"
     },
     {
       "id": "alice_chapeleiro_full",
@@ -76,9 +75,9 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "Conjunto novo preserva cartola, cartas, relogios, xicaras, avental e laco em volume real; ainda exige refinamento pela ficha de cada peca.",
-          "O material de pele foi corrigido localmente em rosto, bracos e dedos. Cabelo ainda tem mechas compactas; bordados e rendas precisam de separacao e polimento.",
-          "Superficies internas de todas as camadas, rig completo, caminhada, corrida, salto, ataque e colisoes de tecido permanecem pendentes."
+          "GLB exterior inteiro preservado em cópia de redução com 302.532 triângulos e bake PBR 4K do mestre de 1.890.825; cartola, cartas, xícaras, relógios, avental, laço e vestido continuam em volume.",
+          "Comparação de frente, perfil, costas e três quartos mantém a silhueta do mestre; o bake corrigiu a distorção de UV das faixas das meias observada antes da transferência.",
+          "Ainda diferente da foto: mechas compactas, bordados/rendas pouco definidos, acessórios fundidos e expressão/pele precisam de polimento. Retopologia para deformação, camadas internas, rig completo, movimentos e colisões continuam pendentes."
         ]
       },
       "motionRequirements": {
@@ -98,14 +97,14 @@
         "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
         "displayModel": {
           "file": "alice_chapeleiro_full/inspection.glb",
-          "sha256": "19bd4738b4508fe7ef175f8b4b21587843f18bce8f7a8831d0f0d27bfc827008"
+          "sha256": "84e27a46ecc472db6f3d5345dbf1c6d2164c5830c6bd6104cfb919fd10bc4943"
         },
         "board": {
           "file": "alice_chapeleiro_full/photo_vs_geometry.jpg",
-          "sha256": "d083be441bc8a299712323e4f4f16a1a4958b378ad7527e50eb6dd7672fac354"
+          "sha256": "e0379e8c81781088ea5af78932a6895d70409381a603bea3303f06bc75fc1c65"
         },
-        "modelSha256": "2f92c8edcb595230156484acf7715063e9efda01c8659321e22c3c937154b79e",
-        "method": "new_Tripo_full_model_local_skin_material_polish",
+        "modelSha256": "487525591c5eb541f4d484084ee115ab81761c04732e0d50c192d3ce130a103e",
+        "method": "whole_Tripo_outfit_reduction_with_high_to_low_4K_PBR_bake",
         "frontAxis": "-y"
       }
     }
