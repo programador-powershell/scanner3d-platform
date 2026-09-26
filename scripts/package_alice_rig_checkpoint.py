@@ -11,6 +11,7 @@ parser.add_argument('--generation', required=True)
 parser.add_argument('--comparison', required=True)
 parser.add_argument('--motion', required=True)
 parser.add_argument('--rig-audit', required=True)
+parser.add_argument('--seam-audit')
 parser.add_argument('--preview', required=True)
 parser.add_argument('--destination', required=True)
 args = parser.parse_args()
@@ -41,6 +42,15 @@ photo_sha = generation['sourcePhotoSha256']
 if {photo_sha, sha(generation['sourcePhoto']), comparison['sourcePhotoSha256'],
         motion['sourcePhotoSha256'], audit['sourcePhotoSha256'], stage['sourcePhotoSha256']} != {photo_sha}:
     raise ValueError('Mixed photographs from different layers are not permitted.')
+seam_audit = read(args.seam_audit) if args.seam_audit else None
+if generation.get('sleeveConstructionAudit'):
+    if not seam_audit or {seam_audit.get('modelSha256'), model_sha} != {model_sha}:
+        raise ValueError('Reconstructed sleeve joins require an audit of this exact exported GLB.')
+    if (seam_audit.get('sourcePhotoSha256') != photo_sha
+            or not seam_audit.get('allExportedSampleTimesChecked')
+            or not seam_audit.get('sewnEndpointContinuityVerified')
+            or {c['clip'] for c in seam_audit['clips']} != set(generation['exportAudit']['clips'])):
+        raise ValueError('Every actual exported clip must preserve the recorded sleeve joins.')
 destination = Path(args.destination).resolve()
 manifest = destination / 'stage_comparisons.json'
 plan = read(manifest)
@@ -93,6 +103,13 @@ checkpoint = {'variant': stage['variant'], 'stageId': stage_id,
               'motionVerified': False, 'clothCollisionVerified': False, 'nextVariantMayStart': False,
               'additionalCreditsConsumed': 0, 'originalTripoCreditsConsumed': generation['creditsConsumed'],
               'premiumFeaturesUsed': False, 'artifacts': renders, 'limitations': generation['limitations']}
+if seam_audit:
+    checkpoint.update(sleeveConstructionAudit=generation['sleeveConstructionAudit'],
+                      originalFullScanSha256=generation['originalFullScanSha256'],
+                      sleeveScriptSha256=generation['sleeveScriptSha256'],
+                      sleeveWeightField=generation['sleeveWeightField'],
+                      sewnEndpointContinuityVerified=True,
+                      seamAudit=copy(args.seam_audit, sha(args.seam_audit), 'exported_seam_audit.json'))
 write(target / 'checkpoint.json', checkpoint)
 plan['stages'] = [stage if s['id'] == stage_id else s for s in plan['stages']]
 write(manifest, plan)

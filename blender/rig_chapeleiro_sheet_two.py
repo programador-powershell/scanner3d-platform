@@ -23,7 +23,9 @@ sha = lambda file: hashlib.sha256(Path(file).read_bytes()).hexdigest()
 record = json.loads(Path(args.generation).read_text(encoding='utf-8'))
 if (record.get('studioModelId') != '32254621-cdf9-43bd-8297-54446796d892'
         or record.get('reusedGeometry') is not False
-        or record.get('method') != 'own_layer_2_cuff_lace_tab_and_filigree_refinement_of_new_Tripo'):
+        or record.get('status') == 'rejected_fidelity'
+        or record.get('method') not in {'own_layer_2_cuff_lace_tab_and_filigree_refinement_of_new_Tripo',
+                                      'own_layer_2_native_scan_sleeves_sewn_to_real_cavas'}):
     raise ValueError('Requires the detailed layer reconstructed around the new authorized Tripo scan.')
 for field in ['model', 'editableBlend', 'sourcePhoto']:
     if sha(record[field]) != record[field + 'Sha256']:
@@ -152,7 +154,7 @@ def torso_weights(p):
             return {torso_names[index]: 1 - t, torso_names[index + 1]: t}
     return {'Spine2': 1.0}
 
-def weight(p, role):
+def weight(p, role, seam_parameter=None):
     if role == 'torso':
         return torso_weights(p)
     if role.startswith(('sleeve_', 'cuff_', 'lace_', 'ribbon_')):
@@ -160,6 +162,14 @@ def weight(p, role):
         side = 'Left' if label == 'L' else 'Right'
         arm = side + 'Arm'
         if role.startswith('sleeve_'):
+            if seam_parameter is not None:
+                # The actual sewn root receives exactly the bodice weights;
+                # the cuff receives exactly the arm weights. Transition over
+                # the recovered cloth, not a steep coordinate-space threshold.
+                arm_fraction = clamp(seam_parameter)
+                values = {n: v * (1 - arm_fraction) for n, v in torso_weights(p).items()}
+                values[arm] = arm_fraction
+                return values
             direction = tails[arm] - heads[arm]
             t = (p - heads[arm]).dot(direction) / direction.length_squared
             attachment = (1 - smooth((t - .1) / .22)) * clamp((.093 - abs(p.x)) / .022) * .75
@@ -188,8 +198,10 @@ for obj in garments:
     obj.matrix_world = transform
     groups = {}
     max_error = 0.0
+    seam_attribute = obj.data.attributes.get('sleeve_seam_parameter')
     for vertex in obj.data.vertices:
-        values = weight(transform @ vertex.co, role)
+        seam_parameter = seam_attribute.data[vertex.index].value if seam_attribute else None
+        values = weight(transform @ vertex.co, role, seam_parameter)
         total = sum(values.values())
         if not total > 0:
             raise ValueError('Unweighted vertex in ' + obj.name)

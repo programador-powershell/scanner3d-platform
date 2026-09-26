@@ -1,35 +1,13 @@
 {
-  "layer": "alice_chapeleiro_stage_02",
+  "layer": "2",
   "role": "fitted",
   "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
-  "modelSha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1",
-  "blendSha256": "a8c6f92d2cd4fb4bac04eb82fe310b87d351a8c5f7d07bb7010b5dbae6e72025",
+  "modelSha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde",
+  "blendSha256": "d7babc03ef5db9fe53ed98c22c89f53ff7e08c868b31614a25742332b2eba59b",
   "components": [
     {
-      "mesh": "Manga esquerda / scan exterior",
-      "layer": "alice_chapeleiro_stage_02",
-      "role": "fitted",
-      "rig": "Alice / Chapeleiro shared rig",
-      "vertices": 13480,
-      "unweightedVertices": 0,
-      "maxWeightError": 4.470348358154297e-08,
-      "clothModifiers": [],
-      "clothSimulationConfigured": false
-    },
-    {
-      "mesh": "Manga direita / scan exterior",
-      "layer": "alice_chapeleiro_stage_02",
-      "role": "fitted",
-      "rig": "Alice / Chapeleiro shared rig",
-      "vertices": 14416,
-      "unweightedVertices": 0,
-      "maxWeightError": 4.470348358154297e-08,
-      "clothModifiers": [],
-      "clothSimulationConfigured": false
-    },
-    {
       "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 64184,
@@ -40,7 +18,7 @@
     },
     {
       "mesh": "Vivo de latão / decote, cavas e bainha em volume",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 6400,
@@ -51,7 +29,7 @@
     },
     {
       "mesh": "Barbatanas / costuras douradas em relevo",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 9072,
@@ -62,7 +40,7 @@
     },
     {
       "mesh": "Ilhós de latão / amarrações frontal e traseira",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 5440,
@@ -73,7 +51,7 @@
     },
     {
       "mesh": "Cordões cruzados / frente e costas",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 9280,
@@ -84,7 +62,7 @@
     },
     {
       "mesh": "Punho L / tecido verde plissado da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 8064,
@@ -95,7 +73,7 @@
     },
     {
       "mesh": "Punho L / fita bronze",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 512,
@@ -106,7 +84,7 @@
     },
     {
       "mesh": "Laco L / volta -1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 196,
@@ -117,7 +95,7 @@
     },
     {
       "mesh": "Laco L / ponta -1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 100,
@@ -128,7 +106,7 @@
     },
     {
       "mesh": "Laco L / volta 1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 196,
@@ -139,7 +117,7 @@
     },
     {
       "mesh": "Laco L / ponta 1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 100,
@@ -150,7 +128,7 @@
     },
     {
       "mesh": "Laco L / no e vivos",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 144,
@@ -161,7 +139,7 @@
     },
     {
       "mesh": "Punho L / renda vazada e festonada",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 16320,
@@ -172,7 +150,7 @@
     },
     {
       "mesh": "Punho R / tecido verde plissado da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 8064,
@@ -183,7 +161,7 @@
     },
     {
       "mesh": "Punho R / fita bronze",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 512,
@@ -194,7 +172,7 @@
     },
     {
       "mesh": "Laco R / volta -1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 196,
@@ -205,7 +183,7 @@
     },
     {
       "mesh": "Laco R / ponta -1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 100,
@@ -216,7 +194,7 @@
     },
     {
       "mesh": "Laco R / volta 1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 196,
@@ -227,7 +205,7 @@
     },
     {
       "mesh": "Laco R / ponta 1",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 100,
@@ -238,7 +216,7 @@
     },
     {
       "mesh": "Laco R / no e vivos",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 144,
@@ -249,7 +227,7 @@
     },
     {
       "mesh": "Punho R / renda vazada e festonada",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 16320,
@@ -260,7 +238,7 @@
     },
     {
       "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1254,
@@ -271,7 +249,7 @@
     },
     {
       "mesh": "Aba inferior 1 / vivo de latao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 600,
@@ -282,7 +260,7 @@
     },
     {
       "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1254,
@@ -293,7 +271,7 @@
     },
     {
       "mesh": "Aba inferior 2 / vivo de latao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 600,
@@ -304,7 +282,7 @@
     },
     {
       "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1254,
@@ -315,7 +293,7 @@
     },
     {
       "mesh": "Aba inferior 3 / vivo de latao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 600,
@@ -326,7 +304,7 @@
     },
     {
       "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1254,
@@ -337,7 +315,7 @@
     },
     {
       "mesh": "Aba inferior 4 / vivo de latao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 600,
@@ -348,7 +326,7 @@
     },
     {
       "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1254,
@@ -359,7 +337,7 @@
     },
     {
       "mesh": "Aba inferior 5 / vivo de latao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 600,
@@ -370,7 +348,7 @@
     },
     {
       "mesh": "Abas / ilhoses de fixacao",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 960,
@@ -381,7 +359,7 @@
     },
     {
       "mesh": "Abas / correntes com elos individuais",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 2592,
@@ -392,7 +370,7 @@
     },
     {
       "mesh": "Decote / tira plissada frontal",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1930,
@@ -403,7 +381,7 @@
     },
     {
       "mesh": "Decote / renda com lacunas frontal",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 6156,
@@ -414,7 +392,7 @@
     },
     {
       "mesh": "Decote / tira plissada traseira",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 1930,
@@ -425,7 +403,7 @@
     },
     {
       "mesh": "Decote / renda com lacunas traseira",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 6156,
@@ -436,10 +414,32 @@
     },
     {
       "mesh": "Fecho do decote / filigrana tracada da foto 2",
-      "layer": "alice_chapeleiro_stage_02",
+      "layer": "2",
       "role": "fitted",
       "rig": "Alice / Chapeleiro shared rig",
       "vertices": 330,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Manga L / dobras nativas e costura interna",
+      "layer": "2",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 17226,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Manga R / dobras nativas e costura interna",
+      "layer": "2",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 18020,
       "unweightedVertices": 0,
       "maxWeightError": 2.9802322387695312e-08,
       "clothModifiers": [],
@@ -464,14 +464,6 @@
         42
       ],
       "componentDeformation": [
-        {
-          "mesh": "Manga esquerda / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.08943802376051622
-        },
-        {
-          "mesh": "Manga direita / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.11005044465244897
-        },
         {
           "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
           "maxRootRelativeDisplacementMetres": 0.0639463838937991
@@ -623,6 +615,14 @@
         {
           "mesh": "Fecho do decote / filigrana tracada da foto 2",
           "maxRootRelativeDisplacementMetres": 0.05684118068334052
+        },
+        {
+          "mesh": "Manga L / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.09116956637408873
+        },
+        {
+          "mesh": "Manga R / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.0994441038075941
         }
       ]
     },
@@ -642,14 +642,6 @@
         17
       ],
       "componentDeformation": [
-        {
-          "mesh": "Manga esquerda / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.13867994028129854
-        },
-        {
-          "mesh": "Manga direita / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.12839779359921816
-        },
         {
           "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
           "maxRootRelativeDisplacementMetres": 0.05651143129848896
@@ -801,6 +793,14 @@
         {
           "mesh": "Fecho do decote / filigrana tracada da foto 2",
           "maxRootRelativeDisplacementMetres": 0.05791383011275696
+        },
+        {
+          "mesh": "Manga L / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.13554345907832094
+        },
+        {
+          "mesh": "Manga R / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.11331197870647344
         }
       ]
     },
@@ -820,14 +820,6 @@
         53
       ],
       "componentDeformation": [
-        {
-          "mesh": "Manga esquerda / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.019205871875826213
-        },
-        {
-          "mesh": "Manga direita / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.018997371929234532
-        },
         {
           "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
           "maxRootRelativeDisplacementMetres": 0.017419828812798768
@@ -979,6 +971,14 @@
         {
           "mesh": "Fecho do decote / filigrana tracada da foto 2",
           "maxRootRelativeDisplacementMetres": 0.015875567673062783
+        },
+        {
+          "mesh": "Manga L / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.020112554675461105
+        },
+        {
+          "mesh": "Manga R / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.0205404290340696
         }
       ]
     },
@@ -998,14 +998,6 @@
         137
       ],
       "componentDeformation": [
-        {
-          "mesh": "Manga esquerda / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.07149340681917905
-        },
-        {
-          "mesh": "Manga direita / scan exterior",
-          "maxRootRelativeDisplacementMetres": 0.17780324825003718
-        },
         {
           "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
           "maxRootRelativeDisplacementMetres": 0.045557983185466736
@@ -1157,6 +1149,14 @@
         {
           "mesh": "Fecho do decote / filigrana tracada da foto 2",
           "maxRootRelativeDisplacementMetres": 0.046090028073204115
+        },
+        {
+          "mesh": "Manga L / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.07138656974230947
+        },
+        {
+          "mesh": "Manga R / dobras nativas e costura interna",
+          "maxRootRelativeDisplacementMetres": 0.16681112371228815
         }
       ]
     }

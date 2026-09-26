@@ -1,5 +1,5 @@
 {
-  "modelSha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1",
+  "modelSha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde",
   "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
   "sourcePhoto": "alice_chapeleiro_stage_02/source_photo.png",
   "exportedMeshCount": 40,
@@ -14,7 +14,7 @@
         {
           "frame": 0.8000000715255737,
           "render": "alice_chapeleiro_stage_02/motion_review/walk_1.png",
-          "renderSha256": "8c643e6d0c55b62134fd2c3691ac7dedcde80b871518d1024beb7c3a0b3c900f",
+          "renderSha256": "1eabeac24906f67feea44a42b0f673d5819ce85752850a5267c96c56277b45b1",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -575,38 +575,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.8005939850426336,
-              "edgeStretch95Percentile": 1.3486951594560326,
-              "fractionOfEdgesAbove150Percent": 0.021495917354626245,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.4033927220330833,
+              "edgeStretch95Percentile": 1.062442864467958,
+              "fractionOfEdgesAbove150Percent": 0.0014860848419346122,
               "bounds": [
                 [
-                  -0.10299244523048401,
-                  -0.04014129191637039,
-                  0.7096328139305115
+                  0.07720386981964111,
+                  -0.028689205646514893,
+                  0.6975559592247009
                 ],
                 [
-                  -0.03690953925251961,
-                  0.046645089983940125,
-                  0.7919713258743286
+                  0.1262195110321045,
+                  0.06324262917041779,
+                  0.7758450508117676
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 1.6891288732256182,
-              "edgeStretch95Percentile": 1.1881876616205145,
-              "fractionOfEdgesAbove150Percent": 0.004008596749655888,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 2.8218945651613354,
+              "edgeStretch95Percentile": 1.0609572825360387,
+              "fractionOfEdgesAbove150Percent": 0.0011236782964300187,
               "bounds": [
                 [
-                  0.07110904157161713,
-                  -0.028748931363224983,
-                  0.6959649324417114
+                  -0.10374709963798523,
+                  -0.040950700640678406,
+                  0.7093304395675659
                 ],
                 [
-                  0.12505972385406494,
-                  0.06587713211774826,
-                  0.7736586332321167
+                  -0.04029645025730133,
+                  0.04542330279946327,
+                  0.7865652441978455
                 ]
               ]
             },
@@ -741,7 +741,7 @@
         {
           "frame": 11.623999544382096,
           "render": "alice_chapeleiro_stage_02/motion_review/walk_2.png",
-          "renderSha256": "9d96375c9520e06aaf7d1be401e6fad74fb1622f0a628f8debc15d5529c16d97",
+          "renderSha256": "8ab06d253beee34513b969bd5af79a0dec420ecd57d9422d625791536b6ddb29",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -1302,38 +1302,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 2.2274284611530266,
-              "edgeStretch95Percentile": 1.328574725118974,
-              "fractionOfEdgesAbove150Percent": 0.024428204087156583,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.330947135146257,
+              "edgeStretch95Percentile": 1.058123311943859,
+              "fractionOfEdgesAbove150Percent": 0.002065078936194851,
               "bounds": [
                 [
-                  -0.11580750346183777,
-                  -0.053245432674884796,
-                  0.6993866562843323
+                  0.023540955036878586,
+                  -0.0031723342835903168,
+                  0.6763773560523987
                 ],
                 [
-                  -0.05574636533856392,
-                  0.044097691774368286,
-                  0.7866772413253784
+                  0.09416484832763672,
+                  0.08488266170024872,
+                  0.7607099413871765
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 2.3670703655099747,
-              "edgeStretch95Percentile": 1.5023016501720385,
-              "fractionOfEdgesAbove150Percent": 0.0501316075438893,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.637260973280885,
+              "edgeStretch95Percentile": 1.0735464276941027,
+              "fractionOfEdgesAbove150Percent": 0.001013152562354935,
               "bounds": [
                 [
-                  0.023013100028038025,
-                  -0.006872186437249184,
-                  0.6766335368156433
+                  -0.11761266738176346,
+                  -0.052068956196308136,
+                  0.6987937092781067
                 ],
                 [
-                  0.09395058453083038,
-                  0.08465757966041565,
-                  0.7537959814071655
+                  -0.061681874096393585,
+                  0.03239070996642113,
+                  0.7822141647338867
                 ]
               ]
             },
@@ -1468,7 +1468,7 @@
         {
           "frame": 22.44799901723862,
           "render": "alice_chapeleiro_stage_02/motion_review/walk_3.png",
-          "renderSha256": "49b3aac210068ae0048c2c1c9b9d17a79b455807137dc72f121330cf42986f89",
+          "renderSha256": "92d953d4d08f05f3f1e48cc5171d1f856f44e6eb8101e1d7528c3e5baec45b0a",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -2029,38 +2029,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.9433595588947479,
-              "edgeStretch95Percentile": 1.4104535661787196,
-              "fractionOfEdgesAbove150Percent": 0.03345062480263455,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.495452618780806,
+              "edgeStretch95Percentile": 1.079531905079621,
+              "fractionOfEdgesAbove150Percent": 0.0016790828733546919,
               "bounds": [
                 [
-                  -0.11544393002986908,
-                  -0.025401776656508446,
-                  0.7084641456604004
+                  0.049644455313682556,
+                  -0.05261640250682831,
+                  0.7054511308670044
                 ],
                 [
-                  -0.04609975218772888,
-                  0.06093800812959671,
-                  0.7913063764572144
+                  0.10686207562685013,
+                  0.0388018935918808,
+                  0.7861488461494446
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 2.667066990083407,
-              "edgeStretch95Percentile": 1.4424384964409613,
-              "fractionOfEdgesAbove150Percent": 0.042524932988819396,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.443201826529097,
+              "edgeStretch95Percentile": 1.0745644455534449,
+              "fractionOfEdgesAbove150Percent": 0.001768411745201341,
               "bounds": [
                 [
-                  0.04526747018098831,
-                  -0.05292182415723801,
-                  0.7062094211578369
+                  -0.11573520302772522,
+                  -0.025023501366376877,
+                  0.7096653580665588
                 ],
                 [
-                  0.10617607831954956,
-                  0.046569742262363434,
-                  0.7835711240768433
+                  -0.04785319045186043,
+                  0.05985702946782112,
+                  0.7889285087585449
                 ]
               ]
             },
@@ -2206,7 +2206,7 @@
         {
           "frame": 0.8000000715255737,
           "render": "alice_chapeleiro_stage_02/motion_review/run_1.png",
-          "renderSha256": "e2adc8a224ca8c62f2e6a2f13c9a0eef41e98f4f49e6e2819cd956b1e7a6c594",
+          "renderSha256": "73631f37a4b16421cdb03697d4fe6fdb56cbbb60265061c59688f3bb714a8a9a",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -2767,38 +2767,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 2.53987870809555,
-              "edgeStretch95Percentile": 1.400457978585976,
-              "fractionOfEdgesAbove150Percent": 0.03681147651915009,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 4.29937101950086,
+              "edgeStretch95Percentile": 1.06025504585837,
+              "fractionOfEdgesAbove150Percent": 0.0033581657467093838,
               "bounds": [
                 [
-                  -0.1084858775138855,
-                  -0.13161757588386536,
-                  0.6158091425895691
+                  0.04394408315420151,
+                  -0.10665753483772278,
+                  0.6270498037338257
                 ],
                 [
-                  -0.050001293420791626,
-                  -0.03521597385406494,
-                  0.7009344100952148
+                  0.11946945637464523,
+                  -0.034820735454559326,
+                  0.7175540328025818
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 2.4347488172906444,
-              "edgeStretch95Percentile": 1.470233248659532,
-              "fractionOfEdgesAbove150Percent": 0.04293545193306127,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 5.859982452012067,
+              "edgeStretch95Percentile": 1.1046405443543688,
+              "fractionOfEdgesAbove150Percent": 0.004863132299303688,
               "bounds": [
                 [
-                  0.04235595464706421,
-                  -0.10531925410032272,
-                  0.6270560026168823
+                  -0.11051991581916809,
+                  -0.1277218461036682,
+                  0.6174643635749817
                 ],
                 [
-                  0.11967422068119049,
-                  -0.03571739047765732,
-                  0.7214232087135315
+                  -0.058692991733551025,
+                  -0.038601264357566833,
+                  0.700847327709198
                 ]
               ]
             },
@@ -2933,7 +2933,7 @@
         {
           "frame": 5.024000173807145,
           "render": "alice_chapeleiro_stage_02/motion_review/run_2.png",
-          "renderSha256": "f5f42705753448d36a5cd177bb7d844132c8925854f50d243339ac0c561e132b",
+          "renderSha256": "ad52f0520f393dbcd0a3fd5158554ab8f4dbe040e448e800a71e1f895a39d7ba",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -3494,38 +3494,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.8440830297378858,
-              "edgeStretch95Percentile": 1.2255306392074097,
-              "fractionOfEdgesAbove150Percent": 0.008075066540352777,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 4.11879032648572,
+              "edgeStretch95Percentile": 1.0627993091496961,
+              "fractionOfEdgesAbove150Percent": 0.003666962596981511,
               "bounds": [
                 [
-                  -0.11021099239587784,
-                  -0.131733238697052,
-                  0.6479604840278625
+                  0.06537394225597382,
+                  -0.08383217453956604,
+                  0.6321711540222168
                 ],
                 [
-                  -0.0341428704559803,
-                  -0.04841870814561844,
-                  0.7328903079032898
+                  0.12384316325187683,
+                  -0.0004093945026397705,
+                  0.7287399768829346
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 1.9132786891719897,
-              "edgeStretch95Percentile": 1.239292507704117,
-              "fractionOfEdgesAbove150Percent": 0.012194827461302552,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 4.217068422261048,
+              "edgeStretch95Percentile": 1.0626279591725842,
+              "fractionOfEdgesAbove150Percent": 0.0024499871053310245,
               "bounds": [
                 [
-                  0.05974982678890228,
-                  -0.08502640575170517,
-                  0.6321631669998169
+                  -0.11035899817943573,
+                  -0.13038292527198792,
+                  0.6482371091842651
                 ],
                 [
-                  0.123497873544693,
-                  -0.0001498684287071228,
-                  0.7292527556419373
+                  -0.037287477403879166,
+                  -0.05269279330968857,
+                  0.7366434335708618
                 ]
               ]
             },
@@ -3660,7 +3660,7 @@
         {
           "frame": 9.248000276088716,
           "render": "alice_chapeleiro_stage_02/motion_review/run_3.png",
-          "renderSha256": "ff9b36f032f26acb34effe46697843ea58da5e354f44da1b6de12b38e15e3739",
+          "renderSha256": "067d468bfc10f86e2ec6115a844825948acc521018f3efc8d5c02e86e2941a0e",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -4221,38 +4221,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 2.5116523129920365,
-              "edgeStretch95Percentile": 1.446891645225135,
-              "fractionOfEdgesAbove150Percent": 0.04109712635900212,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 4.322718518087192,
+              "edgeStretch95Percentile": 1.0938266012833238,
+              "fractionOfEdgesAbove150Percent": 0.0055004438954722665,
               "bounds": [
                 [
-                  -0.12458451092243195,
-                  -0.09319114685058594,
-                  0.6569274663925171
+                  0.04336409270763397,
+                  -0.1794036328792572,
+                  0.6457619667053223
                 ],
                 [
-                  -0.05397835373878479,
-                  -0.020771145820617676,
-                  0.7447206377983093
+                  0.12134537100791931,
+                  -0.08721612393856049,
+                  0.7113486528396606
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 3.136402424614563,
-              "edgeStretch95Percentile": 1.5842867850681688,
-              "fractionOfEdgesAbove150Percent": 0.06348554731834537,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 2.8223916768052004,
+              "edgeStretch95Percentile": 1.0267636603919545,
+              "fractionOfEdgesAbove150Percent": 0.0017315698338429798,
               "bounds": [
                 [
-                  0.04162472113966942,
-                  -0.17948853969573975,
-                  0.6481781005859375
+                  -0.12471357733011246,
+                  -0.08703490346670151,
+                  0.6592538356781006
                 ],
                 [
-                  0.12136006355285645,
-                  -0.08171027898788452,
-                  0.7163115739822388
+                  -0.053266726434230804,
+                  -0.018570035696029663,
+                  0.7423179149627686
                 ]
               ]
             },
@@ -4398,7 +4398,7 @@
         {
           "frame": 0.8000000715255737,
           "render": "alice_chapeleiro_stage_02/motion_review/jump_1.png",
-          "renderSha256": "d637b7121b88fd1cc83a031b303bcb00980d6e4d213945fe7cd96643ece00367",
+          "renderSha256": "3f73eb439136f3099bfbafa66896b619693dddd9f07c821cfbd3e4581a8ca6cc",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -4959,38 +4959,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.00017680886175,
-              "edgeStretch95Percentile": 1.0000018724578021,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.0000626289544166,
+              "edgeStretch95Percentile": 1.0000001986289386,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  -0.1279996782541275,
-                  -0.02970152348279953,
-                  0.730883002281189
+                  0.061501454561948776,
+                  -0.029621344059705734,
+                  0.7179998755455017
                 ],
                 [
-                  -0.07159151136875153,
-                  0.06437212228775024,
-                  0.8020384311676025
+                  0.1286756694316864,
+                  0.06313551217317581,
+                  0.7972121238708496
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 1.0001079882881814,
-              "edgeStretch95Percentile": 1.0000017477469398,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.0001993993554614,
+              "edgeStretch95Percentile": 1.000000341337326,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  0.07154202461242676,
-                  -0.029621344059705734,
-                  0.7308289408683777
+                  -0.1286756694316864,
+                  -0.02970152348279953,
+                  0.7179998755455017
                 ],
                 [
-                  0.1279999017715454,
-                  0.06422008574008942,
-                  0.7933859825134277
+                  -0.06508228927850723,
+                  0.06428487598896027,
+                  0.7978575825691223
                 ]
               ]
             },
@@ -5125,7 +5125,7 @@
         {
           "frame": 14.528000551462174,
           "render": "alice_chapeleiro_stage_02/motion_review/jump_2.png",
-          "renderSha256": "dfaf46681b3911ca6cdb1db814783a99bc018535782c1b1aec4f129644649713",
+          "renderSha256": "d59d0bd6016520c152508d24f01a768b5ef659df1c88a1e2c78b8abb54f3a066",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -5686,38 +5686,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.0029799778633928,
-              "edgeStretch95Percentile": 1.0000300726673252,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.0041251757710659,
+              "edgeStretch95Percentile": 1.0000295591576966,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  -0.12799957394599915,
-                  -0.029294976964592934,
-                  0.8055999875068665
+                  0.06150060147047043,
+                  -0.02921958826482296,
+                  0.792926549911499
                 ],
                 [
-                  -0.07159215956926346,
-                  0.06478047370910645,
-                  0.8769546747207642
+                  0.12867583334445953,
+                  0.0635359138250351,
+                  0.8719910383224487
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 1.0006577200156233,
-              "edgeStretch95Percentile": 1.000030115289447,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.002789127839307,
+              "edgeStretch95Percentile": 1.000032584104174,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  0.07154317945241928,
-                  -0.02921951562166214,
-                  0.8055501580238342
+                  -0.12867558002471924,
+                  -0.029295042157173157,
+                  0.7929260730743408
                 ],
                 [
-                  0.12800006568431854,
-                  0.06462153792381287,
-                  0.8682953715324402
+                  -0.0650823786854744,
+                  0.06469141691923141,
+                  0.8726381063461304
                 ]
               ]
             },
@@ -5852,7 +5852,7 @@
         {
           "frame": 28.256001031398775,
           "render": "alice_chapeleiro_stage_02/motion_review/jump_3.png",
-          "renderSha256": "7d911a29fed836b8a3e0f23ddce7777708e11ba8c7f5ce9e0c20e332345710f9",
+          "renderSha256": "aa24e3b1c5c4c2f8213ee39805719ac0cef590d8b1f1b42418e3cd0ffce44239",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -6413,38 +6413,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.0016861674303594,
-              "edgeStretch95Percentile": 1.000033213802451,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.0020834481746275,
+              "edgeStretch95Percentile": 1.0000327227590668,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  -0.12800030410289764,
-                  -0.0345102921128273,
-                  0.7655493021011353
+                  0.061512574553489685,
+                  -0.034351594746112823,
+                  0.7534238696098328
                 ],
                 [
-                  -0.07158234715461731,
-                  0.05937252193689346,
-                  0.8374166488647461
+                  0.12867523729801178,
+                  0.05823368951678276,
+                  0.8343640565872192
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 1.0018746305767892,
-              "edgeStretch95Percentile": 1.0000329505206134,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 1.0035030356061072,
+              "edgeStretch95Percentile": 1.0000323927176544,
               "fractionOfEdgesAbove150Percent": 0.0,
               "bounds": [
                 [
-                  0.07152947783470154,
-                  -0.034352466464042664,
-                  0.7655425667762756
+                  -0.12867611646652222,
+                  -0.0345102958381176,
+                  0.7534281611442566
                 ],
                 [
-                  0.12799930572509766,
-                  0.05930347368121147,
-                  0.828864336013794
+                  -0.06508026272058487,
+                  0.059306927025318146,
+                  0.8349404335021973
                 ]
               ]
             },
@@ -6590,7 +6590,7 @@
         {
           "frame": 0.8000000715255737,
           "render": "alice_chapeleiro_stage_02/motion_review/attack_1.png",
-          "renderSha256": "35122858c76eed0ad0593e281f4f03f61976254804a76b2c866f3cba1c300c2f",
+          "renderSha256": "11c78aa809a42dfcf4201f966484d4eaf6616d358dc3c05e90234661f9e6bd43",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -7151,38 +7151,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 1.658231061275934,
-              "edgeStretch95Percentile": 1.187551883792386,
-              "fractionOfEdgesAbove150Percent": 0.0022781612306581856,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 2.7700929666894236,
+              "edgeStretch95Percentile": 1.0551982623455152,
+              "fractionOfEdgesAbove150Percent": 0.001157988188520477,
               "bounds": [
                 [
-                  -0.11066547781229019,
-                  0.013962838798761368,
-                  0.6327931880950928
+                  -0.02351824939250946,
+                  -0.14409880340099335,
+                  0.6270864009857178
                 ],
                 [
-                  -0.020865537226200104,
-                  0.09944817423820496,
-                  0.7007880210876465
+                  0.06309811025857925,
+                  -0.0710277110338211,
+                  0.7010310292243958
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 2.1885970757409545,
-              "edgeStretch95Percentile": 1.2477797590043433,
-              "fractionOfEdgesAbove150Percent": 0.017193499311777063,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.3470413752116768,
+              "edgeStretch95Percentile": 1.0643868289171776,
+              "fractionOfEdgesAbove150Percent": 0.0016947279224846185,
               "bounds": [
                 [
-                  -0.023315250873565674,
-                  -0.14378349483013153,
-                  0.6296724081039429
+                  -0.11143189668655396,
+                  0.0025581568479537964,
+                  0.6266660690307617
                 ],
                 [
-                  0.06274598836898804,
-                  -0.05922308936715126,
-                  0.6989994645118713
+                  -0.023368820548057556,
+                  0.09952805191278458,
+                  0.7040374279022217
                 ]
               ]
             },
@@ -7317,7 +7317,7 @@
         {
           "frame": 36.7039995443821,
           "render": "alice_chapeleiro_stage_02/motion_review/attack_2.png",
-          "renderSha256": "6bd0f559e4f6581c480110d25bccfe350f3d4038de3f5588b780c9c3a7457bf7",
+          "renderSha256": "525c626244fd90fc6c61c1bd44e563a0d4588409ac19b0b3cfe761933c75ddbf",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -7878,38 +7878,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 4.011278076092074,
-              "edgeStretch95Percentile": 1.9563477773799978,
-              "fractionOfEdgesAbove150Percent": 0.10962241169305725,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 3.486048071027626,
+              "edgeStretch95Percentile": 1.0739894239504464,
+              "fractionOfEdgesAbove150Percent": 0.002065078936194851,
               "bounds": [
                 [
-                  0.02473974972963333,
-                  -0.14037075638771057,
-                  0.6383107304573059
+                  0.0350826270878315,
+                  0.010272607207298279,
+                  0.6340993642807007
                 ],
                 [
-                  0.1309281438589096,
-                  -0.07001520693302155,
-                  0.7143255472183228
+                  0.11833750456571579,
+                  0.06945689022541046,
+                  0.7117692828178406
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 2.7717451729604794,
-              "edgeStretch95Percentile": 1.5183458093443059,
-              "fractionOfEdgesAbove150Percent": 0.052618869382531214,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 8.011415770470123,
+              "edgeStretch95Percentile": 1.143485989100438,
+              "fractionOfEdgesAbove150Percent": 0.008878900637365067,
               "bounds": [
                 [
-                  0.023378342390060425,
-                  0.009585779160261154,
-                  0.6339896321296692
+                  0.029049046337604523,
+                  -0.13889575004577637,
+                  0.6375014781951904
                 ],
                 [
-                  0.11896952986717224,
-                  0.06825870275497437,
-                  0.7141132950782776
+                  0.13061365485191345,
+                  -0.07762114703655243,
+                  0.7147049307823181
                 ]
               ]
             },
@@ -8044,7 +8044,7 @@
         {
           "frame": 72.60799901723863,
           "render": "alice_chapeleiro_stage_02/motion_review/attack_3.png",
-          "renderSha256": "40544918368db31ad661daf1b2356128e9668ca7780ea7eb888ef7cc92a88a87",
+          "renderSha256": "9b5d522e14a08d3f1d79ad295c38ff2509fca244f68438d14d8ea562ea8245e1",
           "componentMeasurements": [
             {
               "component": "Aba inferior 1 / painel sobreposto da foto 2",
@@ -8605,38 +8605,38 @@
               ]
             },
             {
-              "component": "Manga direita / scan exterior",
-              "maximumEdgeStretch": 4.118139653161512,
-              "edgeStretch95Percentile": 1.908000920555589,
-              "fractionOfEdgesAbove150Percent": 0.10290070826002616,
+              "component": "Manga L / dobras nativas e costura interna",
+              "maximumEdgeStretch": 4.620729647143301,
+              "edgeStretch95Percentile": 1.096165749113818,
+              "fractionOfEdgesAbove150Percent": 0.0046898521635079325,
               "bounds": [
                 [
-                  -0.07498863339424133,
-                  -0.1118587851524353,
-                  0.6623871326446533
+                  0.079336017370224,
+                  -0.04812389612197876,
+                  0.6448312997817993
                 ],
                 [
-                  -0.0050473883748054504,
-                  -0.012030895799398422,
-                  0.7401913404464722
+                  0.15537962317466736,
+                  0.04086267948150635,
+                  0.7269397974014282
                 ]
               ]
             },
             {
-              "component": "Manga esquerda / scan exterior",
-              "maximumEdgeStretch": 3.62134945284217,
-              "edgeStretch95Percentile": 1.7628483443284846,
-              "fractionOfEdgesAbove150Percent": 0.09272898505228079,
+              "component": "Manga R / dobras nativas e costura interna",
+              "maximumEdgeStretch": 7.347263145920006,
+              "edgeStretch95Percentile": 1.123118116228885,
+              "fractionOfEdgesAbove150Percent": 0.007976273809085214,
               "bounds": [
                 [
-                  0.08729087561368942,
-                  -0.04775303602218628,
-                  0.652134120464325
+                  -0.07639674842357635,
+                  -0.11040753126144409,
+                  0.6584978103637695
                 ],
                 [
-                  0.1551356315612793,
-                  0.0456402450799942,
-                  0.729030430316925
+                  -0.011506214737892151,
+                  -0.024040963500738144,
+                  0.736669659614563
                 ]
               ]
             },
@@ -8797,13 +8797,13 @@
   ],
   "contactBoard": {
     "file": "alice_chapeleiro_stage_02/photo_vs_skin_motion.jpg",
-    "sha256": "9944ad9171663a3f2106daa04b06c76922384507f5f2e1f2471ad3f71ea900f2"
+    "sha256": "5e9054ecdef8259ae176b8a9d21b3c3e44b0c3ce6a3980da87347d20b41bd791"
   },
   "visualReviewPerformed": true,
   "visibleDifferences": [
-    "Foto propria da camada 2: cinco abas sobrepostas, correntes com elos, lacos nos punhos, plissados e rendas vazadas foram adicionados em geometria; a ponta causada pela espessura da manga foi corrigida.",
-    "As 40 pecas deste arquivo, incluindo o forro e os acabamentos, tem pesos normalizados no mesmo rig de 74 ossos. O GLB contem caminhar, correr, ataque e um salto autoral de teste.",
-    "A revisao de 12 poses do GLB exportado revelou folgas nos ombros e estiramento das mangas em corrida e ataque. Os pesos e as costuras precisam de refino; movimento e fidelidade continuam sem aprovacao.",
-    "A textura lateral, os reforcos isolados e os recortes das mangas ainda diferem da ficha. Salto e oscilacao secundaria sao ensaios, sem simulacao aprovada de tecido, corpo ou colisao entre camadas. As outras camadas permanecem pendentes e a proxima variante nao pode iniciar."
+    "As mangas da foto 2 sao mais arredondadas, com franzidos verticais; o scan conserva dobras horizontais e sobras no topo.",
+    "A costura entre corpete, manga e punho esta continua, mas a ligacao interna forma um volume largo junto a cava e precisa de ajuste.",
+    "A estampa lateral ainda estica; renda, filigrana e abas precisam de acabamento mais fiel a propria ficha.",
+    "Os reforcos isolados das costas permanecem pendentes. Caminhada, corrida e ataque ainda esticam partes da costura; colisao entre corpo e todas as camadas nao foi validada."
   ]
 }

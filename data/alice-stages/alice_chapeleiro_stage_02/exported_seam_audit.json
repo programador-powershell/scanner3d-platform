@@ -1,0 +1,881 @@
+{
+  "modelSha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde",
+  "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
+  "allExportedSampleTimesChecked": true,
+  "clips": [
+    {
+      "clip": "Walk / supplied motion retargeted to new Chapeleiro",
+      "exportedSampleCount": 42,
+      "seams": {
+        "L_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "L_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        }
+      },
+      "edgeStretch": {
+        "Manga L / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 3.9093687273788036,
+          "maximum95Percentile": 1.0828379295840729,
+          "maximumFractionAbove150Percent": 0.00235457598332497,
+          "worstEdge": {
+            "indices": [
+              16899,
+              16900
+            ],
+            "timeSeconds": 1.2000000476837158,
+            "restLengthMetres": 0.0001199728470450026,
+            "deformedLengthMetres": 0.0004690180963723337,
+            "restPoints": [
+              [
+                0.08714202046394348,
+                -3.998657484771684e-05,
+                0.7466645836830139
+              ],
+              [
+                0.08708379417657852,
+                -1.980956039915327e-05,
+                0.7465616464614868
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.07877904176712036,
+                -0.0071395584382116795,
+                0.7255473136901855
+              ],
+              [
+                0.07844622433185577,
+                -0.007299149874597788,
+                0.725257933139801
+              ]
+            ]
+          }
+        },
+        "Corpete / frente verde, costas e alças reconstruídas da foto 2": {
+          "maximumEdgeStretch": 1.2023004139615807,
+          "maximum95Percentile": 1.1250848330520795,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              20986,
+              21239
+            ],
+            "timeSeconds": 0.5666666626930237,
+            "restLengthMetres": 0.0009579430155190572,
+            "deformedLengthMetres": 0.0011517352841101676,
+            "restPoints": [
+              [
+                -0.059787567704916,
+                0.009231001138687134,
+                0.6956983208656311
+              ],
+              [
+                -0.06013854593038559,
+                0.009274763986468315,
+                0.6965885758399963
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.07999733090400696,
+                0.009738193824887276,
+                0.6894195079803467
+              ],
+              [
+                -0.08030521124601364,
+                0.009653174318373203,
+                0.6905260682106018
+              ]
+            ]
+          }
+        },
+        "Manga R / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 4.6428701255560165,
+          "maximum95Percentile": 1.093422246835058,
+          "maximumFractionAbove150Percent": 0.003536823490402682,
+          "worstEdge": {
+            "indices": [
+              17754,
+              17755
+            ],
+            "timeSeconds": 1.1666666269302368,
+            "restLengthMetres": 0.0001301902328250269,
+            "deformedLengthMetres": 0.0006044563426224997,
+            "restPoints": [
+              [
+                -0.07959329336881638,
+                -0.006496020592749119,
+                0.7460349798202515
+              ],
+              [
+                -0.07949089258909225,
+                -0.006461480166763067,
+                0.7461075782775879
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.080533467233181,
+                0.00020460039377212524,
+                0.7101812362670898
+              ],
+              [
+                -0.0803290605545044,
+                -0.00017697690054774284,
+                0.7106031179428101
+              ]
+            ]
+          }
+        },
+        "Punho L / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.000145703373387,
+          "maximum95Percentile": 1.0000298803086984,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4415,
+              8447
+            ],
+            "timeSeconds": 0.8999999761581421,
+            "restLengthMetres": 0.0004500032271534079,
+            "deformedLengthMetres": 0.00045006879414163914,
+            "restPoints": [
+              [
+                0.14181844890117645,
+                0.017689093947410583,
+                0.7051743865013123
+              ],
+              [
+                0.1414378434419632,
+                0.017849372699856758,
+                0.7049956321716309
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.11699490249156952,
+                -0.04279741644859314,
+                0.6986855268478394
+              ],
+              [
+                0.11662659049034119,
+                -0.04265376925468445,
+                0.698470413684845
+              ]
+            ]
+          }
+        },
+        "Punho R / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.0001692073906758,
+          "maximum95Percentile": 1.0000300281916759,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4326,
+              8358
+            ],
+            "timeSeconds": 0.23333333432674408,
+            "restLengthMetres": 0.00045000586765051975,
+            "deformedLengthMetres": 0.00045008201196917373,
+            "restPoints": [
+              [
+                -0.13390257954597473,
+                0.012583734467625618,
+                0.7070015072822571
+              ],
+              [
+                -0.13366273045539856,
+                0.01295750867575407,
+                0.7069289088249207
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.11454267799854279,
+                -0.04702883958816528,
+                0.7151371836662292
+              ],
+              [
+                -0.11434817314147949,
+                -0.046704232692718506,
+                0.7148935198783875
+              ]
+            ]
+          }
+        }
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / supplied motion retargeted to new Chapeleiro",
+      "exportedSampleCount": 17,
+      "seams": {
+        "L_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "L_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        }
+      },
+      "edgeStretch": {
+        "Manga L / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 4.835812907867527,
+          "maximum95Percentile": 1.109749683440577,
+          "maximumFractionAbove150Percent": 0.006851430115412823,
+          "worstEdge": {
+            "indices": [
+              16899,
+              16900
+            ],
+            "timeSeconds": 0.5333333611488342,
+            "restLengthMetres": 0.0001199728470450026,
+            "deformedLengthMetres": 0.0005801662423338401,
+            "restPoints": [
+              [
+                0.08714202046394348,
+                -3.998657484771684e-05,
+                0.7466645836830139
+              ],
+              [
+                0.08708379417657852,
+                -1.980956039915327e-05,
+                0.7465616464614868
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.0645422711968422,
+                -0.08366633206605911,
+                0.6530985236167908
+              ],
+              [
+                0.06422050297260284,
+                -0.08338359743356705,
+                0.6527072191238403
+              ]
+            ]
+          }
+        },
+        "Corpete / frente verde, costas e alças reconstruídas da foto 2": {
+          "maximumEdgeStretch": 1.28645150597645,
+          "maximum95Percentile": 1.045637338372942,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              32742,
+              33001
+            ],
+            "timeSeconds": 0.10000000149011612,
+            "restLengthMetres": 0.0028990131698632127,
+            "deformedLengthMetres": 0.003729439858216092,
+            "restPoints": [
+              [
+                -0.0019999968353658915,
+                0.05739380046725273,
+                0.5887654423713684
+              ],
+              [
+                -0.003745283931493759,
+                0.056543849408626556,
+                0.5909185409545898
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.019715776666998863,
+                0.04331468045711517,
+                0.5447089076042175
+              ],
+              [
+                -0.022440552711486816,
+                0.04146796464920044,
+                0.5464621782302856
+              ]
+            ]
+          }
+        },
+        "Manga R / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 6.336486147149736,
+          "maximum95Percentile": 1.110361178345803,
+          "maximumFractionAbove150Percent": 0.005636812437829274,
+          "worstEdge": {
+            "indices": [
+              17750,
+              17754
+            ],
+            "timeSeconds": 0.06666667014360428,
+            "restLengthMetres": 0.0003677469294633909,
+            "deformedLengthMetres": 0.0023302233242016275,
+            "restPoints": [
+              [
+                -0.07982109487056732,
+                -0.006210392341017723,
+                0.7460769414901733
+              ],
+              [
+                -0.07959329336881638,
+                -0.006496020592749119,
+                0.7460349798202515
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.07426375150680542,
+                -0.10478072613477707,
+                0.6580215096473694
+              ],
+              [
+                -0.07262564450502396,
+                -0.10643728822469711,
+                0.657973051071167
+              ]
+            ]
+          }
+        },
+        "Punho L / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.0002146025730654,
+          "maximum95Percentile": 1.000042663474993,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4187,
+              4571
+            ],
+            "timeSeconds": 0.1666666716337204,
+            "restLengthMetres": 0.00045000287982268424,
+            "deformedLengthMetres": 0.00045009945159858104,
+            "restPoints": [
+              [
+                0.11230435222387314,
+                -0.009726577438414097,
+                0.7318348288536072
+              ],
+              [
+                0.11227698624134064,
+                -0.00928153283894062,
+                0.731774091720581
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.1090465560555458,
+                -0.023362398147583008,
+                0.6607850790023804
+              ],
+              [
+                0.10906518995761871,
+                -0.023150622844696045,
+                0.6611818075180054
+              ]
+            ]
+          }
+        },
+        "Punho R / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.0002279131858525,
+          "maximum95Percentile": 1.0000363359949809,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4189,
+              4573
+            ],
+            "timeSeconds": 0.46666666865348816,
+            "restLengthMetres": 0.00045000572765532023,
+            "deformedLengthMetres": 0.00045010828989436205,
+            "restPoints": [
+              [
+                -0.09401897341012955,
+                -0.009515631012618542,
+                0.7299970388412476
+              ],
+              [
+                -0.09409825503826141,
+                -0.009081500582396984,
+                0.7299090027809143
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.09545090794563293,
+                -0.036550164222717285,
+                0.6519873142242432
+              ],
+              [
+                -0.09553562849760056,
+                -0.0362781286239624,
+                0.6523357629776001
+              ]
+            ]
+          }
+        }
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / supplied motion retargeted to new Chapeleiro",
+      "exportedSampleCount": 137,
+      "seams": {
+        "L_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "L_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        }
+      },
+      "edgeStretch": {
+        "Manga L / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 6.170759715248669,
+          "maximum95Percentile": 1.1472621776414527,
+          "maximumFractionAbove150Percent": 0.010556992318678349,
+          "worstEdge": {
+            "indices": [
+              1563,
+              1564
+            ],
+            "timeSeconds": 3.4000000953674316,
+            "restLengthMetres": 3.179576702955636e-05,
+            "deformedLengthMetres": 0.00019620403830141822,
+            "restPoints": [
+              [
+                0.0905485674738884,
+                -0.006760233081877232,
+                0.7306533455848694
+              ],
+              [
+                0.09057255834341049,
+                -0.006780955940485001,
+                0.7306557893753052
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.09254516661167145,
+                -0.06515264511108398,
+                0.6954169273376465
+              ],
+              [
+                0.0925704687833786,
+                -0.06531616300344467,
+                0.6955223679542542
+              ]
+            ]
+          }
+        },
+        "Corpete / frente verde, costas e alças reconstruídas da foto 2": {
+          "maximumEdgeStretch": 1.2655932295789594,
+          "maximum95Percentile": 1.163624128400936,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              936,
+              1195
+            ],
+            "timeSeconds": 1.4333332777023315,
+            "restLengthMetres": 0.0019918514609047313,
+            "deformedLengthMetres": 0.002520873723247987,
+            "restPoints": [
+              [
+                -0.046836789697408676,
+                0.03129652887582779,
+                0.62515789270401
+              ],
+              [
+                -0.04690798372030258,
+                0.030222587287425995,
+                0.6268339157104492
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.039068832993507385,
+                -0.053342562168836594,
+                0.5532197952270508
+              ],
+              [
+                -0.03765610232949257,
+                -0.055069178342819214,
+                0.5543935894966125
+              ]
+            ]
+          }
+        },
+        "Manga R / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 9.005212992034398,
+          "maximum95Percentile": 1.1757924155217465,
+          "maximumFractionAbove150Percent": 0.01654201819990421,
+          "worstEdge": {
+            "indices": [
+              17750,
+              17754
+            ],
+            "timeSeconds": 3.299999952316284,
+            "restLengthMetres": 0.0003677469294633909,
+            "deformedLengthMetres": 0.003311639426984485,
+            "restPoints": [
+              [
+                -0.07982109487056732,
+                -0.006210392341017723,
+                0.7460769414901733
+              ],
+              [
+                -0.07959329336881638,
+                -0.006496020592749119,
+                0.7460349798202515
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.018420398235321045,
+                -0.11852000653743744,
+                0.6566231846809387
+              ],
+              [
+                0.021331094205379486,
+                -0.1171073243021965,
+                0.6573296785354614
+              ]
+            ]
+          }
+        },
+        "Punho L / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.000278333944234,
+          "maximum95Percentile": 1.0000439864975315,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4192,
+              4576
+            ],
+            "timeSeconds": 3.200000047683716,
+            "restLengthMetres": 0.00044999498441435884,
+            "deformedLengthMetres": 0.00045012023329325644,
+            "restPoints": [
+              [
+                0.11633788049221039,
+                -0.008539626374840736,
+                0.7322402000427246
+              ],
+              [
+                0.11609705537557602,
+                -0.008193082176148891,
+                0.7320839762687683
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.12615716457366943,
+                -0.05623519420623779,
+                0.7099071741104126
+              ],
+              [
+                0.12602654099464417,
+                -0.05611342191696167,
+                0.7094939947128296
+              ]
+            ]
+          }
+        },
+        "Punho R / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.0002733725405888,
+          "maximum95Percentile": 1.000043702756501,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4033,
+              4417
+            ],
+            "timeSeconds": 3.933333396911621,
+            "restLengthMetres": 0.0004500006040159623,
+            "deformedLengthMetres": 0.00045012362182434866,
+            "restPoints": [
+              [
+                -0.07939808070659637,
+                0.02003847435116768,
+                0.7285276055335999
+              ],
+              [
+                -0.07983137667179108,
+                0.01997504197061062,
+                0.7284240126609802
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.11718249320983887,
+                0.027978166937828064,
+                0.6815474033355713
+              ],
+              [
+                -0.11751949787139893,
+                0.028160877525806427,
+                0.6817833185195923
+              ]
+            ]
+          }
+        }
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / authored deformation probe",
+      "exportedSampleCount": 53,
+      "seams": {
+        "L_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "L_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_root": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        },
+        "R_cuff": {
+          "maxGapMetres": 0.0,
+          "worstTimeSeconds": 0.0
+        }
+      },
+      "edgeStretch": {
+        "Manga L / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 1.0062822856323732,
+          "maximum95Percentile": 1.0000351769433093,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              16845,
+              16846
+            ],
+            "timeSeconds": 1.5333333015441895,
+            "restLengthMetres": 1.1710791656004963e-05,
+            "deformedLengthMetres": 1.1784362194169199e-05,
+            "restPoints": [
+              [
+                0.08228545635938644,
+                -0.007049706764519215,
+                0.7657819390296936
+              ],
+              [
+                0.08228407055139542,
+                -0.007050067652016878,
+                0.7657935619354248
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.08230042457580566,
+                -0.015788476914167404,
+                0.7423614859580994
+              ],
+              [
+                0.08229904621839523,
+                -0.015789847820997238,
+                0.7423731088638306
+              ]
+            ]
+          }
+        },
+        "Corpete / frente verde, costas e alças reconstruídas da foto 2": {
+          "maximumEdgeStretch": 1.1519352154766656,
+          "maximum95Percentile": 1.0316998911483382,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              32104,
+              38871
+            ],
+            "timeSeconds": 0.30000001192092896,
+            "restLengthMetres": 0.0016911414649383046,
+            "deformedLengthMetres": 0.00194808540781523,
+            "restPoints": [
+              [
+                0.0023471438325941563,
+                0.043235402554273605,
+                0.6285091638565063
+              ],
+              [
+                0.002408945932984352,
+                0.04307835176587105,
+                0.6268264651298523
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.0023330431431531906,
+                0.045162443071603775,
+                0.5858123302459717
+              ],
+              [
+                0.002396282274276018,
+                0.044890061020851135,
+                0.5838844180107117
+              ]
+            ]
+          }
+        },
+        "Manga R / dobras nativas e costura interna": {
+          "maximumEdgeStretch": 1.0066174291703387,
+          "maximum95Percentile": 1.0000411768733082,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              8303,
+              8304
+            ],
+            "timeSeconds": 0.800000011920929,
+            "restLengthMetres": 1.1742214889308923e-05,
+            "deformedLengthMetres": 1.1819918164641822e-05,
+            "restPoints": [
+              [
+                -0.0780000239610672,
+                0.03735233098268509,
+                0.7970519661903381
+              ],
+              [
+                -0.0780000239610672,
+                0.03735237941145897,
+                0.7970637083053589
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.0779951736330986,
+                0.04415905103087425,
+                0.9383443593978882
+              ],
+              [
+                -0.0779951736330986,
+                0.04415970668196678,
+                0.9383561611175537
+              ]
+            ]
+          }
+        },
+        "Punho L / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.000112532575683,
+          "maximum95Percentile": 1.000030094443812,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4225,
+              8257
+            ],
+            "timeSeconds": 0.4333333373069763,
+            "restLengthMetres": 0.00045000256373388533,
+            "deformedLengthMetres": 0.0004500532036814463,
+            "restPoints": [
+              [
+                0.14181844890117645,
+                0.02031088061630726,
+                0.7051743865013123
+              ],
+              [
+                0.1414378434419632,
+                0.020150603726506233,
+                0.7049956321716309
+              ]
+            ],
+            "deformedPoints": [
+              [
+                0.1418149620294571,
+                0.016270242631435394,
+                0.6941841244697571
+              ],
+              [
+                0.1414344161748886,
+                0.01612825319170952,
+                0.6939902901649475
+              ]
+            ]
+          }
+        },
+        "Punho R / tecido verde plissado da foto 2": {
+          "maximumEdgeStretch": 1.0000990899097781,
+          "maximum95Percentile": 1.0000307182240258,
+          "maximumFractionAbove150Percent": 0.0,
+          "worstEdge": {
+            "indices": [
+              4144,
+              4528
+            ],
+            "timeSeconds": 1.1666666269302368,
+            "restLengthMetres": 0.0004499955310893715,
+            "deformedLengthMetres": 0.00045004012110594767,
+            "restPoints": [
+              [
+                -0.12536977231502533,
+                0.0031000101007521152,
+                0.733147919178009
+              ],
+              [
+                -0.12499785423278809,
+                0.003275689436122775,
+                0.7329654097557068
+              ]
+            ],
+            "deformedPoints": [
+              [
+                -0.12536543607711792,
+                -0.0006935819983482361,
+                0.77462238073349
+              ],
+              [
+                -0.12499356269836426,
+                -0.0005080848932266235,
+                0.7744496464729309
+              ]
+            ]
+          }
+        }
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "sewnEndpointContinuityVerified": true,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "limitations": [
+    "Only the explicitly named sleeve/cuff joins are checked.",
+    "Exported sample times do not prove all interpolated frames or transitions.",
+    "Endpoint continuity does not prove collision-free or natural cloth simulation.",
+    "Actual deformation, silhouettes, texture and layering still require visual review."
+  ]
+}

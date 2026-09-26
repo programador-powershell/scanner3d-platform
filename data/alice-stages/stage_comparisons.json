@@ -27,10 +27,10 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "Foto propria da camada 2: cinco abas sobrepostas, correntes com elos, lacos nos punhos, plissados e rendas vazadas foram adicionados em geometria; a ponta causada pela espessura da manga foi corrigida.",
-          "As 40 pecas deste arquivo, incluindo o forro e os acabamentos, tem pesos normalizados no mesmo rig de 74 ossos. O GLB contem caminhar, correr, ataque e um salto autoral de teste.",
-          "A revisao de 12 poses do GLB exportado revelou folgas nos ombros e estiramento das mangas em corrida e ataque. Os pesos e as costuras precisam de refino; movimento e fidelidade continuam sem aprovacao.",
-          "A textura lateral, os reforcos isolados e os recortes das mangas ainda diferem da ficha. Salto e oscilacao secundaria sao ensaios, sem simulacao aprovada de tecido, corpo ou colisao entre camadas. As outras camadas permanecem pendentes e a proxima variante nao pode iniciar."
+          "As mangas da foto 2 sao mais arredondadas, com franzidos verticais; o scan conserva dobras horizontais e sobras no topo.",
+          "A costura entre corpete, manga e punho esta continua, mas a ligacao interna forma um volume largo junto a cava e precisa de ajuste.",
+          "A estampa lateral ainda estica; renda, filigrana e abas precisam de acabamento mais fiel a propria ficha.",
+          "Os reforcos isolados das costas permanecem pendentes. Caminhada, corrida e ataque ainda esticam partes da costura; colisao entre corpo e todas as camadas nao foi validada."
         ]
       },
       "motionRequirements": {
@@ -51,13 +51,13 @@
         "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
         "displayModel": {
           "file": "alice_chapeleiro_stage_02/inspection.glb",
-          "sha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1"
+          "sha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde"
         },
         "board": {
           "file": "alice_chapeleiro_stage_02/photo_vs_geometry.jpg",
-          "sha256": "151225dde77547294a614ed7ee16cc2c5ff88d62dd275f8e38ea48f02295688c"
+          "sha256": "8e6926d8fd82a53a4c35a75eefe2c38f4d0a8cfad99fda836edb26843214372d"
         },
-        "modelSha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1",
+        "modelSha256": "de1cddd3590658aaa130feb75a9c568ae61eaf8289ad92c4de701571f47a1bde",
         "method": "new_Tripo_sheet_2_components_on_shared_A_pose_motion_rig",
         "frontAxis": "-y"
       }

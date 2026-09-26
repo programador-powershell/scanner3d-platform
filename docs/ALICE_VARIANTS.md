@@ -87,7 +87,7 @@ espessura real; vivos, ilhós, cordões, canais e pequenos laços são geometria
 As duas mangas conservam as dobras do scan novo e usam sua própria ficha para
 o acabamento. Profundidade traseira, material e detalhes invisíveis são inferidos.
 
-O checkpoint atual `bodice_shared_rig_v010` está em
+O checkpoint atual `bodice_native_shared_rig_v025` está em
 `data/alice-stages/alice_chapeleiro_stage_02/`, com a foto própria da ficha 2,
 GLB, Blender editável, quatro vistas, doze poses e auditoria do rig. O refinamento
 `finish_chapeleiro_bodice_details.py` acrescentou cinco abas sobrepostas,
@@ -105,16 +105,33 @@ sem vértices sem peso; o esquema de vínculo está em `shared_rig_bind.json`.
 
 `render_chapeleiro_skin_motion.py` importa o GLB exportado e registra três poses
 de cada clipe, com câmera fixa e medição de estiramento. A situação continua
-**precisa de refinamento**: folgas nos ombros, textura lateral esticada, reforços
-isolados pendentes e deformações excessivas nas mangas em corrida/ataque. Na
-amostra de ataque, o maior fator de estiramento de aresta foi 4,12 e o percentil
-95 chegou a 1,96. Os laços e abas têm ossos secundários com chaves de ensaio;
+**precisa de refinamento**: volume da ligação interna no ombro, dobras da manga
+diferentes da foto 2, textura lateral esticada, reforços isolados pendentes e
+deformações excessivas em partes da costura durante corrida/ataque.
+Os laços e abas têm ossos secundários com chaves de ensaio;
 isso não é simulação de tecido nem aprovação de colisões. Salto, transições e
 movimento Soulslike permanecem pendentes. Não conta como camada finalizada.
+
+`sew_native_chapeleiro_sleeves.py` recupera as dobras do mesmo Tripo novo sem
+excluir motivos escuros da estampa. Modela a ligação interna, adapta a altura do
+ombro e costura cada manga aos 66 vértices da cava e aos 192 vértices do punho.
+Mantém as duas aberturas separadas e verifica a topologia. Os pesos seguem uma
+solução harmônica sobre a superfície real, com as mesmas influências do corpete
+na cava e do braço no punho. A ligação oculta e os ajustes continuam inferidos.
+
+`audit_alice_exported_seams.py` importa o GLB real e confere as 249 amostras
+exportadas dos quatro clipes. Os quatro encontros manga/corpete e manga/punho
+mantiveram distância zero nessas amostras. No ataque, o percentil 95 de
+estiramento das mangas chegou a 1,176; uma aresta interna de 0,368 mm atingiu
+3,312 mm (9,00 vezes), portanto o movimento permanece sem aprovação. O relatório
+grava os pontos e o instante dessa aresta para o próximo ajuste. Continuidade
+da costura não comprova fidelidade, todos os quadros interpolados ou colisões.
 
 `compose_alice_motion_review.py` reúne a foto original e os renders reais.
 `package_alice_rig_checkpoint.py` confere os hashes da foto, GLB, Blender e
 evidências, e atualiza somente a etapa selecionada no índice do repositório.
+Para mangas reconstruídas, exige também a auditoria dos encontros de todos os
+clipes, vinculada ao mesmo hash do GLB e à foto própria da etapa.
 O arquivo `legacy_rejected_rig_audit.json` pertence ao ensaio antigo rejeitado;
 `rig_audit.json` audita as peças novas deste checkpoint. Nenhum crédito adicional
 foi gasto. O vestido completo publicado e a Alice Base aprovada foram preservados.
@@ -122,6 +139,9 @@ foi gasto. O vestido completo publicado e a Alice Base aprovada foram preservado
 O portal publicou a remoção dos textos legados de armazenamento Supabase no
 commit `ac1d9d9` de `project-alice-challenge`; build e tipos passaram, e a Vercel
 confirmou a produção. Modelos e histórico continuam no GitHub.
+O commit `dc1065a` removeu também a permissão residual de imagens do Supabase
+em `next.config.ts`; build e publicação na Vercel passaram. A galeria em produção
+lista os 35 modelos diretamente do GitHub, sem banco Supabase.
 
 ## Auditoria exigida antes da conclusão
 
