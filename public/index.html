@@ -155,10 +155,11 @@
   @keyframes spin{to{transform:rotate(360deg)}}
 </style>
 <script type="importmap">
-{"imports":{"three":"https://unpkg.com/three@0.161.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.161.0/examples/jsm/"}}
+{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}
 </script>
 </head>
 <body>
+<a href="/alice" style="position:fixed;right:20px;top:18px;z-index:80;color:#d1b78c;background:#17181d;padding:8px 12px;border:1px solid #67583b;border-radius:5px">Alice · comparar em 3D ↗</a>
 
 <div class="app">
 
@@ -527,7 +528,7 @@ function loadGlb(url){
         action.play();
       }
       let v=0,f=0;content.traverse(o=>{if(o.isMesh&&o.geometry){v+=o.geometry.attributes.position.count;f+=(o.geometry.index?o.geometry.index.count/3:o.geometry.attributes.position.count/3);}});
-      $('#stats').textContent=`Faces ${Math.round(f).toLocaleString()} · Vértices ${v.toLocaleString()} · MPFB2 ${s_id(url)}`;
+      $('#stats').textContent=`Faces ${Math.round(f).toLocaleString()} · Vértices ${v.toLocaleString()} · malha importada ${s_id(url)}`;
       resolve(true);
     },undefined,()=>resolve(false));
   });
@@ -600,158 +601,71 @@ async function playSelectedAnim(animPath) {
 }
 
 async function buildStage(s){
-  // skeleton and garment produce real GLBs from Blender (MPFB2 for skeleton when installed, full cloth for garment).
-  // We load them into the main GLB Pro viewer when the build completes.
-  // The procedural is only for true stubs (muscle etc.) to avoid 404 spam while building.
-  const REAL_GLB_STAGES = ['skeleton', 'garment'];
-  if (!REAL_GLB_STAGES.includes(s.id)) {
-    showBuildOverlay(s ? s.title : 'etapa atual');
-    const buildResult = await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(e => ({ok: false, error: e?.message || 'network error'}));
-    if (!buildResult.ok) {
-      hideBuildOverlay();
-      toast('Falha ao iniciar build da etapa: ' + (buildResult.error || 'Blender não encontrado?'), false);
-      return false;
-    }
-    // Fallback procedural only for true stubs
-    clearScene();
-    if (s.id === 'muscle' && typeof buildSkeleton === 'function') {  // reuse skeleton viz as placeholder
-      buildSkeleton(Math.random);
-    }
-    $('#stats').textContent = `${s.title} (stub — veja logs do Blender)`;
-    hideBuildOverlay();
-    return true;
-  }
+  return ensureGateReady(s);
+}
 
-  // Real GLB path for garment → carrega no canvas principal (que é o GLB Pro viewer)
-  // (skeleton handled specially above to avoid 404 probe spam)
-  const url=`/api/jobs/${job.id}/artifact/${s.id}.glb`;
-  const probe=await fetch(url,{method:'HEAD'}).catch(()=>null);
-  if(probe&&probe.ok){ await loadGlb(url); hideBuildOverlay(); return true; }
-  clearScene();
-  $('#stats').textContent='Construindo no Blender (MPFB2)…';
-  showBuildOverlay(s ? s.title : 'etapa atual');
-  appendToLog('Triggering build for ' + s.id, 'UI');
-  const buildResult = await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(e => ({ok: false, error: e?.message || 'network error'}));
-  if (!buildResult.ok) {
-    hideBuildOverlay();
-    appendToLog('Falha ao iniciar build da etapa: ' + (buildResult.error || 'Blender não encontrado? Configure BLENDER_PATH.'), 'Error');
+async function ensureGateReady(s){
+  showBuildOverlay(s.title);
+  $('#title').textContent = `${s.icon} ${s.title}`;
+  const existing = s.glb;
+  if (existing && await loadGlb(existing)) return true;
+  // Register before POST so a quick SSE completion cannot be missed.
+  let timer;
+  const completed = new Promise(resolve => {
+    buildWaiters[s.id] = result => { clearTimeout(timer); resolve(result); };
+    timer = setTimeout(() => resolve(null), 600000);
+  });
+  const result = await api(`/api/jobs/${job.id}/stages/${s.id}/build`, {method:'POST', headers:{'Content-Type':'application/json'}, body:'{}'}).catch(error => ({error:error.message}));
+  if (!result.ok) {
+    clearTimeout(timer); delete buildWaiters[s.id]; hideBuildOverlay();
+    appendToLog(result.error || 'Build não iniciado.', 'Error');
     return false;
   }
-  // the actual load will happen via SSE 'stage:build:done' which calls loadGlb (no procedural overwrite)
-  return false;
+  const artifact = await completed;
+  delete buildWaiters[s.id]; hideBuildOverlay();
+  if (!artifact?.glb) return false;
+  const loaded = await loadGlb(artifact.glb);
+  const fresh = await api('/api/jobs/' + job.id); if(fresh.ok) job=fresh.job;
+  return loaded;
 }
 
-// Garante: portão construído (Blender) + GLB carregado + snapshot enviado.
-async function ensureGateReady(s){
-  if (s.id === 'skeleton') {
-    // Special for skeleton to avoid 404 probe spam.
-    $('#title').textContent=`${s.icon} ${s.title}`;
-    $('#subtitle').textContent='Construindo no Blender (MPFB2)…';
-    showBuildOverlay(s.title);
-    const bres = await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(e => ({ok:false, error: e?.message}));
-    if (!bres.ok) {
-      hideBuildOverlay();
-      appendToLog('Falha no build skeleton: ' + (bres.error || 'Blender não configurado?'), 'Error');
-      return false;
-    }
-    clearScene();
-    hideBuildOverlay();
-    const j2=await api('/api/jobs/'+job.id); if(j2.ok) job=j2.job;
-    return true;
-  }
-
-  // skeleton and garment produce real GLBs (MPFB2 human when available for skeleton, complex cloth sim for garment).
-  // Loaded into main GLB Pro canvas.
-  const REAL_GLB_STAGES = ['garment'];
-  if (!REAL_GLB_STAGES.includes(s.id)) {
-    $('#title').textContent=`${s.icon} ${s.title}`;
-    $('#subtitle').textContent='Construindo no Blender (MPFB2)…';
-    showBuildOverlay(s.title);
-    const bres = await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(e => ({ok:false, error: e?.message}));
-    if (!bres.ok) {
-      hideBuildOverlay();
-      appendToLog('Falha no build: ' + (bres.error || 'Blender não configurado?'), 'Error');
-      return false;
-    }
-    clearScene();
-    if (s.id === 'muscle' && typeof buildSkeleton === 'function') buildSkeleton(Math.random);
-    hideBuildOverlay();
-    const j2=await api('/api/jobs/'+job.id); if(j2.ok) job=j2.job;
-    return true;
-  }
-
-  let url=`/api/jobs/${job.id}/artifact/${s.id}.glb`;
-  let head=await fetch(url,{method:'HEAD'}).catch(()=>null);
-  if(!head||!head.ok){
-    $('#title').textContent=`${s.icon} ${s.title}`;
-    $('#subtitle').textContent='Construindo no Blender (MPFB2)…';
-    const bres = await api(`/api/jobs/${job.id}/stages/${s.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(e => ({ok:false, error: e?.message}));
-    if (!bres.ok) {
-      hideBuildOverlay();
-      appendToLog('Falha no build: ' + (bres.error || 'Blender não configurado?'), 'Error');
-      return false;
-    }
-    await new Promise((res)=>{ buildWaiters[s.id]=res; setTimeout(res,120000); });
-    delete buildWaiters[s.id];
-  }
-  const ok=await loadGlb(url);   // carrega no main canvas = GLB Pro viewer
-  if(!ok) return false;
-  await new Promise(r=>setTimeout(r,500)); // deixa renderizar 1 frame
-  const img=canvas.toDataURL('image/png');
-  if(img.length>2000){
-    await api(`/api/jobs/${job.id}/stages/${s.id}/snapshot`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image:img,approach:s.approach})}).catch(()=>{});
-  }
-  const j=await api('/api/jobs/'+job.id); if(j.ok) job=j.job;
-  return true;
-}
-
-// AUTO-PILOTO: roda os 9 portões sozinho — constrói, (VLM julga), aprova/refina, avança.
+// AUTO-PILOTO: roda os 8 portões sozinho — constrói, (VLM julga), aprova/refina, avança.
 let autoRunning=false;
 function autoProgress(txt,cls){
   const b=$('#autoBanner'); if(!b)return;
   b.style.display='flex'; b.className='autobanner'+(cls?' '+cls:'');
   const idx=job?Math.min(job.activeIndex,8):0;
-  b.innerHTML=`<span class="spin"></span><span><b>${job&&job.activeIndex>=9?'9/9':((idx+1)+'/9')}</b> ${txt}</span><button id="autoStop" class="pill" style="margin-left:auto">■ parar</button>`;
+  b.innerHTML=`<span class="spin"></span><span><b>${job&&job.activeIndex>=8?'8/8':((idx+1)+'/8')}</b> ${txt}</span><button id="autoStop" class="pill" style="margin-left:auto">■ parar</button>`;
   $('#autoStop')?.addEventListener('click',()=>{autoRunning=false;toast('auto-piloto parado');});
 }
 async function autoPilot(){
   if(autoRunning||!job) return; autoRunning=true;
-  const useJudge = pillVlm;   // 👁️ ligado = qualidade (VLM julga); desligado = rápido (auto-aprova)
   try{
     while(job && !job.done && autoRunning){
       const s=job.stages[job.activeIndex];
       selectedStage=null;
-      autoProgress(`🏗️ ${s.icon} ${s.title}: construindo no Blender (MPFB2)…`);
+      autoProgress(`🏗️ ${s.icon} ${s.title}: exportando a malha real no Blender…`);
       $('#title').textContent=`${s.icon} ${s.title}`;
       const built=await ensureGateReady(s);
       if(!built){ autoProgress(`❌ ${s.title}: build falhou`,'err'); toast(`Portão ${s.id}: build falhou — pausando`,false); break; }
       if(!autoRunning) break;
-      if(!useJudge){
-        // MODO RÁPIDO: aprova assim que constrói (sem juiz) — ~15s/portão
-        autoProgress(`✓ ${s.icon} ${s.title}: pronto (modo rápido)`,'ok');
-        const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
-        if(r.ok) job=r.job;
-      } else {
         autoProgress(`🧠 ${s.icon} ${s.title}: VLM julgando…`);
         const v=await api(`/api/jobs/${job.id}/stages/${s.id}/vlm-judge`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
-        const pass = v.ok ? v.verdict?.pass : true;
-        const score = v.ok ? (v.verdict?.score??'?') : '?';
+        const pass = v.ok && v.verdict?.verified === true && v.verdict?.pass === true;
+        const score = v.verdict?.score ?? 'indisponível';
+        if (!v.ok || !v.verdict?.verified) { autoProgress('Análise visual indisponível: revisão pendente.', 'warn'); break; }
         if(pass){
           autoProgress(`✓ ${s.icon} ${s.title}: aprovado (score ${score})`,'ok');
-          const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,note:''})});
+          const r=await api(`/api/jobs/${job.id}/stages/${s.id}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approved:true,approvalSource:'vision-model',note:''})});
           if(r.ok) job=r.job;
         } else {
-          const cur=job.stages[job.activeIndex];
-          if((cur.attempts||0)>=3){ autoProgress(`⏸️ ${s.title}: reprovado 3×, pausa`,'err'); toast(`⏸️ ${s.title}: VLM reprovou 3×, controle p/ você`,false); break; }
-          const fix=v.ok?(v.verdict?.suggested_prompt_fix||''):'';
-          autoProgress(`✗ ${s.icon} ${s.title}: refinando${fix?` ("${fix}")`:''}…`,'warn');
-          const r=await api(`/api/jobs/${job.id}/stages/${s.id}/refine`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:''})});
-          if(r.ok) job=r.job;
+          autoProgress(`${s.title}: divergências registradas; edição da malha necessária.`, 'warn');
+          appendToLog((v.verdict.defects || []).join('; '), 'Review');
+          break;
         }
-      }
       renderJobView();
     }
-    if(job && job.done){ autoProgress('🎉 9/9 — build final no Blender',' ok'); toast('🎉 personagem completo — construção final'); await startBuild(); }
+    if(job && job.done){ autoProgress('🎉 8/8 — build final no Blender',' ok'); toast('🎉 personagem completo — construção final'); await startBuild(); }
     else if(!autoRunning){ const b=$('#autoBanner'); if(b) b.style.display='none'; }
   }finally{ autoRunning=false; }
 }
@@ -775,7 +689,7 @@ function renderHistory(jobs){
   if(!jobs.length){html='<div class="card"><div class="head"><div class="dot"></div>VAZIO</div><div class="body"><div class="meta">Nenhum job ainda. Mande um prompt + foto.</div></div></div>';}
   else for(const j of jobs){
     const date=new Date(j.createdAt).toLocaleString('pt-BR');
-    const prog=j.activeIndex>=9?'completo':`portão ${j.activeIndex+1}/9`;
+    const prog=j.activeIndex>=8?'completo':`portão ${j.activeIndex+1}/9`;
     html+=`<div class="card" data-id="${j.id}"><div class="head"><div class="dot"></div>JOB</div><div class="body"><h3>${j.sourceImage}</h3><div class="meta">${date} · ${prog}</div></div></div>`;
   }
   $('#midScroll').innerHTML=html;
@@ -996,7 +910,7 @@ function openGlbPro(modelUrl){
 }
 function exportGLB(){
   if(job&&job.build&&job.build.status==='done') return openGlbPro(job.build.glb);
-  toast(job&&job.done?'Dispare a construção no Blender primeiro.':'Aguardando build profissional AAA terminar (GLB pronto para export).',false);
+  toast(job&&job.done?'Dispare a construção no Blender primeiro.':'Aguardando build da malha importada terminar (GLB pronto para export).',false);
 }
 
 async function sendPrompt(){
@@ -1026,7 +940,7 @@ async function sendPrompt(){
     // FULL PROFESSIONAL AAA BUILD - one shot in Blender (no 9 gates)
     // The platform triggers the pro script (detailed manual topology, real anatomy, muscles, layered cloth with real physics, rig, all AAA quality)
     // When finished, the GLB is exported and loaded in the main pro viewer.
-    appendToLog('Iniciando construção profissional AAA completa no Blender (um passo só, pro como estúdio grande: esqueleto detalhado, músculos volumétricos reais, pele, unhas, cabelo, roupa multicamada com simulação física de verdade, rig pronto)', 'UI');
+    appendToLog('Iniciando construção da malha importada completa no Blender (um passo só, pro como estúdio grande: esqueleto detalhado, músculos volumétricos reais, pele, unhas, cabelo, roupa multicamada com simulação física de verdade, rig pronto)', 'UI');
     api(`/api/jobs/${job.id}/build`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({full:true, prompt: text || ''})}).catch(() => appendToLog('Full build trigger sent (check Blender)', 'UI'));
     if(text){
       // edição paramétrica (altura/quadril/pele/vento) — texto sempre aplica
@@ -1042,7 +956,7 @@ async function sendPrompt(){
     $('#prompt').value='';
     selectedStage=null; renderJobView();
     // modo VLM-auto: o pipeline corre sozinho (constrói→julga→aprova→avança)
-    if(pillMode==='vlm' && job && !job.done){ toast('🤖 auto-piloto ligado — a VLM conduz os 9 portões'); autoPilot(); }
+    if(pillMode==='vlm' && job && !job.done){ toast('🤖 auto-piloto ligado — a VLM conduz os 8 portões'); autoPilot(); }
   }finally{$('#btnSend').disabled=false;}
 }
 // Guard against static vanilla JS re-attachment (causes double POSTs to /build and /params, duplicate logs)
@@ -1090,7 +1004,7 @@ function connectEvents(){
     const d=JSON.parse(e.data);
     if(!uiLocked) job=d.job; // durante simulação, segura o estado até estabilizar
   });
-  // build no Blender (dispara só com 9/9 aprovados)
+  // build no Blender (dispara só com 8/8 aprovados)
   es.addEventListener('build:started',()=>{
     if(job&&!job.build) job.build={status:'running'};
     renderJobView();
@@ -1108,7 +1022,7 @@ function connectEvents(){
     const glbUrl = job && job.build && job.build.glb;
     if (glbUrl) {
       loadGlb(glbUrl).then(ok => {
-        if (ok) appendToLog('Build finalizado — GLB AAA no visualizador pro (selecione animação para testar)', 'Blender');
+        if (ok) appendToLog('Build finalizado — GLB real no visualizador pro (selecione animação para testar)', 'Blender');
       }).catch(()=>{});
     }
     toast('✅ Personagem construído no Blender — GLB pronto');
@@ -1122,27 +1036,21 @@ function connectEvents(){
   es.addEventListener('stage:build:start',e=>{
     const d=JSON.parse(e.data);
     appendToLog(`Build started for ${d.stage}`, 'Blender');
-    $('#stats').textContent=`Construindo portão ${d.stage} no Blender (MPFB2)…`;
+    $('#stats').textContent=`Construindo portão ${d.stage} no Blender (malha importada)…`;
     const s = job ? job.stages.find(x=>x.id===d.stage) : null;
     showBuildOverlay(s ? s.title : d.stage);
   });
   es.addEventListener('stage:build:done',e=>{
     const d=JSON.parse(e.data);
     hideBuildOverlay();
-    if(buildWaiters[d.stage]){ buildWaiters[d.stage](); }      // acorda o auto-piloto
-    else if(selectedStage&&selectedStage.id===d.stage||job.stages[job.activeIndex].id===d.stage){
-      const st = job.stages.find(s=>s.id===d.stage);
-      if (st && (st.id === 'garment' || st.id === 'skeleton')) {
-        // load the real GLB (MPFB2 skeleton or garment) into the main GLB Pro viewer
-        buildStage(st);
-      }
-    }
-    toast(`✅ Portão ${d.stage} pronto (MPFB2)`);
+    if(buildWaiters[d.stage]){ buildWaiters[d.stage](d); }      // acorda o auto-piloto
+    else if (d.glb) loadGlb(d.glb);
+    toast(`✅ Portão ${d.stage} pronto (malha importada)`);
   });
   es.addEventListener('stage:build:error',e=>{
     const d=JSON.parse(e.data);
     hideBuildOverlay();
-    if(buildWaiters[d.stage]) buildWaiters[d.stage]();
+    if(buildWaiters[d.stage]) buildWaiters[d.stage](null);
     appendToLog(`Build portão ${d.stage} falhou (Blender code ${d.code})`, 'Error');
   });
   // Live bridge viewport shots (when BLENDER_LIVE_BRIDGE=1 or useLiveBridge).
@@ -1235,7 +1143,7 @@ if (pillModeEl) pillModeEl.addEventListener('click',()=>{
   else { autoRunning=false; toast('✋ auto-piloto desligado — controle manual'); }
 });
 const pillVlmEl = $('#pillVlm');
-if (pillVlmEl) pillVlmEl.addEventListener('click',()=>{pillVlm=!pillVlm;$('#pillVlm').classList.toggle('on');$('#pillVlm').textContent=pillVlm?'👁️ VLM julga (qualidade)':'⚡ rápido (sem juiz)';toast(pillVlm?'Modo qualidade: VLM julga cada portão':'Modo rápido: aprova ao construir (~15s/portão)');renderJobView();});
+if (pillVlmEl) pillVlmEl.addEventListener('click',()=>{pillVlm=true;$('#pillVlm').classList.add('on');toast('Aprovação automática exige avaliação visual do render real.');});
 
 // ============ NAV ============
 function switchTab(id){

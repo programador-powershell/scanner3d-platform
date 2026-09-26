@@ -1,63 +1,66 @@
-# Scanner 3D Cognitivo
+# Scanner 3D · Project Alice
 
-Plataforma **autônoma** de geração **2D→3D** de humanos realistas (padrão AAA). Você solta uma foto, a IA conduz tudo sozinha — pré-scan, 9 portões anatômicos, julgamento, refino — e entrega um personagem 3D rigado pronto para Blender/UE5.
+Estúdio para inspecionar uma personagem **em geometria 3D real**, comparar frente/perfil/costas com o turnaround e exportar assets com evidência. O resultado é identificado pela sua origem; um asset importado não é apresentado como uma reconstrução gerada pela IA.
 
-Documento técnico completo (arquitetura v5, stack open-source auditada): [`docs/PROJETO_IA_3D_AAA.md`](docs/PROJETO_IA_3D_AAA.md).
+## Executar
 
-## Rodar
-
-```bash
-npm install
-npm start          # http://localhost:3939
+```sh
+npm ci
+npm start
 ```
 
-No boot, o servidor **auto-detecta e sobe a VLM local** (Qwen3-VL-4B no llama.cpp) — sem configurar nada.
+Node 20 ou posterior. Abra **http://localhost:3939/alice**. O Three.js é servido localmente, sem CDN.
 
-## Como usar (zero fricção)
+O estúdio abre a Alice detalhada existente no repositório do jogo: **249.975 triângulos, atlas UV de 2048 px, malha estática**. O importador seleciona apenas o LOD3 do FBX, evita cinco cópias sobrepostas e liga a textura original à cor do material. Não tem rig nem simulação de tecido. A versão GLB anterior, com rig de 33 juntas, está disponível para comparação; sua textura ausente pode ser restaurada por projeção multivista, com as limitações registradas no relatório.
 
-1. Abra `http://localhost:3939`.
-2. **Arraste 1+ fotos** (turnaround do personagem) em qualquer lugar da home.
-3. Mande no campo de texto (ou só envie a foto).
-4. Escolha o modo:
-   - **🤖 VLM-auto** + **👁️ qualidade** → a VLM julga cada portão, refina sozinha, avança. Treina o dataset DPO.
-   - **🤖 VLM-auto** + **⚡ rápido** → constrói e aprova direto (~minutos para o personagem inteiro).
-   - **⚡ pipeline humano** → você aprova/reprova cada portão.
-5. No fim: **Visualizador GLB Pro**, **⤓ FBX (UE5)**, **⤓ .blend**.
+Use órbita, aproximação, vistas fixas, perspectiva, argila, topologia, cor sem iluminação e foco em rosto/roupa/botas para examinar o volume. O painel mantém a referência original ao lado. **Registrar frente, perfil e costas** salva renders PNG e um relatório com hashes da malha e referência. Registrar evidência deixa a revisão visual pendente; não declara fidelidade total.
 
-## Pipeline (v5, auditado jun/2026)
+## Reproduzir a importação do FBX original
 
-```
-FOTO → Qwen3-VL (pré-scan: medidas/pele/roupa) → Florence-2 (segmentação)
-     → 8 portões: 🦴 Esqueleto · 💪 Músculos · 🪡 Tecido · 🧫 Pele
-                  · 💅 Unhas · 👤 Rosto · 👁️ Olhos · 💇 Cabelo
-       cada um: Blender headless (MPFB2) constrói o GLB real → VLM julga → refina → aprova
-     → build final (rig + collections por portão) → GLB + FBX (UE5) + .blend
+```sh
+npm run alice:fetch
+blender --background --factory-startup --python-exit-code 1 --python blender/import_alice_fbx.py -- --source data/source/alice.fbx --out data/assets/alice-detail.glb
 ```
 
-Motores open-source plugáveis (ver doc): **Hunyuan3D 2.1** (reconstrução+PBR), **MPFB2/MakeHuman** (corpo), **SMPL-X/SKEL/TailorMe** (anatomia instanciada), **ChatGarment→GarmentCode→Warp/Newton** (roupa), **DiffLocks** (cabelo), **TRELLIS.2** (rígidos), **Material Anything/RGB↔X** (PBR), **Mitsuba 3** (loop diferenciável SSS), **ICT-FaceKit** (ARKit-52), **QRemeshify/Parafashion** (retopo).
+O download usa um commit fixo do [Project Alice — Game](https://github.com/programador-powershell/project-alice-game) e verifica SHA-256. O FBX de 152 MB não é duplicado neste repositório. A geometria e a textura pertencem ao projeto de **Programador de Powershell · Project Alice — Challenge**. A referência é o turnaround fornecido pelo usuário.
 
-## Serviços opcionais (env)
+Alternativa para experimentar projeção de cor na malha GLB anterior:
 
-| Variável | Para quê | Sem ela |
-|---|---|---|
-| (auto) | VLM Qwen3-VL local no llama.cpp | sobe sozinha; senão heurística |
-| `HUNYUAN_URL` | reconstrução inicial Hunyuan3D 2.1 | fallback MPFB2 |
-| `CHATGARMENT_URL` | sewing pattern do vestido | fallback MHCLO |
-| `BLENDER_PATH` | Blender exe (configure se não achar auto; MPFB source is inside project blender/addons/mpfb now) | full pro AAA build |
-| `AUTO_VLM=0` | desliga auto-start da VLM | — |
+```sh
+python -m pip install numpy Pillow
+python python/restore_alice_materials.py
+```
 
-## Arquitetura
+Isso preserva triângulos, skinning e animação existentes, retira da cena o corpo-template em pose T e cria UVs por vista. Não gera uma personagem nova, nem prova camadas físicas independentes. A projeção usa o perfil observado também no lado oposto e contém iluminação da imagem.
 
-- **Backend**: Node + Express. Auto-start VLM, build Blender headless por portão (SSE ao vivo), VLM judge/refine, dataset DPO, cascata síncrona, robusto (try/catch + guarda global, nunca cai).
-- **Frontend**: página única estilo Ollama (`public/index.html`) + Visualizador GLB Pro (`public/viewer.html`). three.js.
-- **Blender**: `blender/build_stage.py` (1 portão), `blender/build_character.py` (final → GLB+FBX+blend).
-- **Treino**: `training/` (Unsloth + Qwen3-VL LoRA, ingestor de conhecimento: References + repos + decisões DPO).
-- **Fontes**: ~21 repos GitHub open-source registrados, alimentando o documento.
+## Exportar pelo Blender
 
-## Escopo honesto
+Configure `BLENDER_PATH` com o executável do Blender. Em Windows/PowerShell:
 
-A **infraestrutura é real e autônoma** (VLM local, build MPFB2/Blender, auto-piloto, FBX UE5). Os **motores pesados** (Hunyuan3D 10-21GB VRAM, TailorMe/Z-Anatomy, ChatGarment) são **plugáveis via env** — quando você tiver o serviço/hardware, conectam sem mudar código. Pesos research-only do MPI (SMPL-X/SKEL/FLAME) exigem licença comercial para produto; caminho livre documentado na seção 7.8.5.
+```powershell
+$env:BLENDER_PATH = 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'
+$env:AUTO_KNOWLEDGE = '0'
+npm start
+```
 
-## Stack
+Na API de jobs, importe um GLB real em `POST /api/jobs/:id/source-mesh` (multipart `model`). O upload do turnaround byte a byte idêntico à referência Alice seleciona a base detalhada do projeto, identificada como importação.
 
-Node.js · Express · three.js · Blender 5.1 + MPFB2 · llama.cpp (Qwen3-VL GGUF) · Python (Unsloth/torch/smplx).
+`POST /api/jobs/:id/build` exporta **GLB, FBX, .blend e três renders** da malha real. Os oito portões selecionam o foco de revisão; não fabricam ossos, músculos, tecido ou cabelo ausentes. Um portão de esqueleto sem rig falha explicitamente. A altura só é alterada quando houver `params.target_height_m` explícito.
+
+Cada execução usa uma pasta nova. Erro de processo, falta de arquivo ou malha inválida falham; um GLB antigo não é aceito como saída da execução atual. A conclusão da exportação é distinta da aprovação de fidelidade.
+
+## Reconstrução e avaliação visual
+
+Para um serviço multivista real, configure `ALICE_RECONSTRUCTION_URL`. O contrato é **POST multipart `front`, `side`, `back` (PNG), `profile` (JSON) → resposta binária GLB 2.0**, até 100 MB. O botão envia recortes separados, evitando tratar o turnaround como três personagens. Esta é uma API de adaptação explícita, não uma promessa de compatibilidade automática com Hunyuan3D ou TrackEverything. Sem serviço, não há reconstrução por IA nem fallback de primitivas.
+
+O avaliador usa `VLM_URL` (chat completions multimodal) e opcionalmente `VLM_MODEL`. Referência e render real são obrigatórios. Modelo ausente, JSON inválido e falta de evidência retornam `verified:false`, `pass:false`, `score:null`. Avaliações visuais válidas têm escopo de comparação de imagens; não comprovam física, topologia interna ou fidelidade integral. Uma reprovação pede edição/reconstrução da malha, em vez de repetir o mesmo build indefinidamente. Ingestão automática de conhecimento exige `AUTO_KNOWLEDGE=1`; não é treinamento automático garantido.
+
+## Verificação e limites
+
+```sh
+npm test
+```
+
+Os testes cobrem os assets reais, rejeição de GLBs truncados/planos, coordenadas inválidas, falta de serviço visual, evidências desatualizadas e comportamento da API.
+
+Esta alteração **não entrega o jogo completo em Unreal Engine 5.7**, nem uma Alice comprovadamente 100% fiel. Persistem diferenças de cabelo, rosto e acabamentos; a malha detalhada combina corpo/roupa. Rig de produção, roupa em camadas com colisão, materiais PBR completos, gameplay e validação na UE 5.7 exigem trabalho adicional. Veja [evidências e referência TrackEverything](docs/ALICE_FIDELITY.md).

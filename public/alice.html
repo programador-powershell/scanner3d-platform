@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alice · Estúdio de reconstrução 3D</title>
+  <link rel="stylesheet" href="/alice.css">
+  <script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header><a class="brand" href="/alice"><span class="emblem">A</span><span>PROJECT ALICE<small>ESTÚDIO DE RECONSTRUÇÃO</small></span></a><span class="header-note">Referência → malha → inspeção</span><a href="/">Scanner 3D ↗</a></header>
+  <main>
+    <aside class="tools">
+      <div class="eyebrow">01 / MALHA</div><h1>Alice Liddell</h1><p class="muted">Vestido azul e marfim</p>
+      <label for="model">Versão em inspeção</label><select id="model" disabled><option>Carregando…</option></select>
+      <p id="provenance" class="caption">Lendo a origem da geometria…</p>
+      <label class="file-button">Importar malha GLB<input id="import" type="file" accept=".glb"></label>
+      <button id="reconstruct" disabled>Reconstruir pelas 3 vistas</button><p id="service" class="caption"></p>
+      <div class="rule"></div><div class="eyebrow">02 / INSPEÇÃO</div>
+      <label for="render-mode">Superfície</label><select id="render-mode"><option value="pbr">Materiais e iluminação</option><option value="albedo">Cor sem iluminação adicional</option><option value="clay">Volume em argila</option><option value="wire">Malha e topologia</option></select>
+      <div class="toggle"><label><input type="checkbox" id="rotate"> Girar 360°</label><label><input type="checkbox" id="rig"> Mostrar rig</label></div>
+      <label for="projection">Projeção da câmera</label><select id="projection"><option value="orthographic">Ortográfica · comparação</option><option value="perspective">Perspectiva · volume</option></select>
+      <label for="focus">Enquadramento</label><select id="focus"><option value="full">Corpo inteiro</option><option value="face">Rosto e cabelo</option><option value="torso">Corpete e mangas</option><option value="skirt">Saia, renda e laço</option><option value="boots">Botas e meias</option></select>
+      <label for="animation">Animação da malha</label><select id="animation"><option value="">Pose de referência</option></select>
+      <p class="caption">A animação vem do GLB. Movimento do rig não comprova simulação de tecido.</p>
+      <div class="rule"></div><div class="eyebrow">03 / EVIDÊNCIA</div>
+      <button id="capture" disabled>Registrar frente, perfil e costas</button><a id="download" class="file-button" href="#" download>Baixar esta malha GLB ↓</a>
+      <div id="evidence" class="caption">Nenhuma inspeção registrada.</div>
+      <details><summary>Origem e limites</summary><p>Projeto de <a href="https://github.com/programador-powershell/project-alice-game" target="_blank" rel="noreferrer">Programador de Powershell</a>.</p><ul id="limits"></ul><p><a href="https://github.com/ayushjain1144/trackeverything" target="_blank" rel="noreferrer">TrackEverything</a>: referência de pesquisa. Rastreador ainda sem código publicado; não está em execução aqui.</p></details>
+    </aside>
+    <section class="viewport" aria-label="Visualização interativa da malha 3D">
+      <div class="view-top"><span id="view-name">Frente / ortográfica</span><span class="status" id="status">Carregando a malha…</span></div>
+      <div id="canvas-container"></div><div id="message" role="status">Preparando o visualizador 3D…</div>
+      <div class="view-controls"><button data-view="front" class="active">Frente</button><button data-view="side">Perfil</button><button data-view="back">Costas</button><button data-view="threequarter">¾</button><button id="fit">Enquadrar</button></div>
+      <div class="view-help">Arraste para orbitar · roda para aproximar · botão direito para mover</div>
+      <div class="stats" id="stats">Aguardando geometria real</div>
+    </section>
+    <aside class="reference">
+      <div class="eyebrow">REFERÊNCIA ORIGINAL</div><h2>Comparação por vista</h2><p class="muted">A mesma personagem, em três ângulos.</p>
+      <div class="ref-tabs"><button data-ref="front" class="active">Frente</button><button data-ref="side">Perfil</button><button data-ref="back">Costas</button></div>
+      <img id="reference" src="/api/alice/reference/front" alt="Vista frontal original de Alice Liddell">
+      <a href="/api/alice/reference/sheet" target="_blank">Abrir turnaround completo ↗</a>
+      <label class="overlay-control"><input id="overlay" type="checkbox"> Sobrepor referência na vista fixa</label><label for="opacity">Opacidade da referência</label><input type="range" id="opacity" min="0" max="100" value="40">
+      <div class="rule"></div><h3>Detalhes a conferir</h3><p class="caption">Selecione um detalhe para aproximar. Marcar a lista não aprova a fidelidade.</p><div id="details"></div>
+    </aside>
+  </main>
+  <script type="module" src="/alice.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "method": "calibrated_turnaround_projection",
+  "sourceSha256": "5c77df43745fe88c5858cbdd7f6f3da5d6dc1a995d4528c03a7ddf589f10f52a",
+  "referenceSha256": "347ae293208647c44116d2940fa691ab19d0c0c410eb42d5d889394b38859da7",
+  "trianglesByProjection": {
+    "front": 11544,
+    "side": 12558,
+    "back": 10033
+  },
+  "geometryOrigin": {
+    "repository": "https://github.com/programador-powershell/project-alice-game",
+    "commit": "f6e534865a7b3432b6c7b374e8e10921905b4e4c",
+    "path": "Content/Assets/3D/personagens/alice.glb",
+    "author": "Programador de Powershell · Project Alice — Challenge",
+    "role": "Malha existente do projeto; não é uma reconstrução gerada pelo scanner."
+  },
+  "geometryReconstructed": false,
+  "excludedSceneTemplates": [
+    "Corpo"
+  ],
+  "rightProfile": "inferred_from_left_profile",
+  "fidelityStatus": "unverified",
+  "limitations": [
+    "A imagem não revela todas as superfícies nem dimensões absolutas. A escala em metros é uma calibração de trabalho.",
+    "A textura projetada contém a iluminação da fotografia; não equivale a albedo PBR capturado.",
+    "A malha de origem combina cabelo, corpo e roupa; separação física das camadas e colisões não foram comprovadas.",
+    "A existência de rig e animação não comprova deformação correta, física de tecido ou compatibilidade com UE 5.7.",
+    "As métricas de silhueta não comprovam identidade facial, detalhes de renda ou fidelidade total."
+  ],
+  "outputSha256": "0606158872a5cb3082fc6d576179bf69693a8f38c19c1ac9357dbb0f0ab362e6"
+}

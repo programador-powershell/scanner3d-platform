@@ -43,11 +43,11 @@ except ImportError:
     AutoProcessor = None
     AutoModelForVision2Seq = None
 
-EAGLE_MODEL_ID = os.environ.get("EAGLE_MODEL", "nvidia/Eagle2.5-8B")  # or Eagle2, LocateAnything variant
+EAGLE_MODEL_ID = os.environ.get("EAGLE_MODEL")  # or Eagle2, LocateAnything variant
 DEVICE = "cuda" if torch and torch.cuda.is_available() else "cpu"
 
 def load_eagle_model():
-    if AutoProcessor is None:
+    if AutoProcessor is None or not EAGLE_MODEL_ID:
         return None, None
     try:
         processor = AutoProcessor.from_pretrained(EAGLE_MODEL_ID, trust_remote_code=True)
@@ -98,7 +98,7 @@ def call_eagle_vlm(
     """
     if MODEL is None or PROCESSOR is None:
         # Fallback to heuristic or current VLM
-        return {"raw": "Eagle not available", "parsed": {"pass": True, "score": 0.75, "defects": ["Eagle fallback"], "suggested_prompt_fix": ""}}
+        return {"raw": "Eagle not configured or unavailable", "parsed": {"verified": False, "pass": False, "score": None, "source": "unavailable", "defects": ["Eagle unavailable"], "suggested_prompt_fix": ""}}
 
     try:
         pil_images = _load_images(images)
@@ -112,7 +112,8 @@ def call_eagle_vlm(
                 do_sample=True,
             )
 
-        response = PROCESSOR.batch_decode(output_ids, skip_special_tokens=True)[0]
+        input_length = inputs.get("input_ids").shape[1] if inputs.get("input_ids") is not None else 0
+        response = PROCESSOR.batch_decode(output_ids[:, input_length:], skip_special_tokens=True)[0]
 
         # Try to extract JSON like current pipeline
         parsed = {}
@@ -124,11 +125,13 @@ def call_eagle_vlm(
         except:
             parsed = {"raw_response": response}
 
+        parsed["verified"] = bool(parsed) and "raw_response" not in parsed
+        parsed["source"] = "eagle" if parsed["verified"] else "unavailable"
         return {"raw": response, "parsed": parsed}
 
     except Exception as e:
         eprint(f"[Eagle] Inference error: {e}")
-        return {"raw": str(e), "parsed": {"pass": False, "score": 0.5, "defects": [str(e)], "suggested_prompt_fix": "retry with current VLM"}}
+        return {"raw": str(e), "parsed": {"verified": False, "pass": False, "score": None, "source": "unavailable", "defects": [str(e)], "suggested_prompt_fix": "retry with current VLM"}}
 
 # Integration helpers for current server.py VLM calls
 def eagle_scan(images: List[str], prompt: Optional[str] = None) -> Dict[str, Any]:
@@ -141,18 +144,8 @@ def eagle_scan(images: List[str], prompt: Optional[str] = None) -> Dict[str, Any
     )
     res = call_eagle_vlm(images, prompt or default_prompt)
     parsed = res.get("parsed", {})
-    # If no good parse (e.g. no model), provide solid heuristic based on typical for the project (female for examples like Alice)
-    if not parsed or not parsed.get("gender"):
-        parsed = {
-            "gender": "female",
-            "age_estimate": 22,
-            "height_m": 1.65,
-            "skin_tone": "#d4a574",
-            "body_type": "athletic",
-            "clothing_style": "layered gothic victorian dress with corset, skirts, sleeves",
-            "proportions": {"shoulder": 1.0, "hip": 1.1, "bust": 1.0, "waist": 0.85},
-            "distinctive_features": "detailed layered costume"
-        }
+    if not parsed.get("verified") or not parsed.get("gender"):
+        return {"verified": False, "source": "unavailable", "error": "No visual analysis available; no body measurements were inferred."}
     return parsed
 
 def eagle_judge(stage: str, preview_image: str, ref_images: List[str], extra_context: str = "") -> Dict[str, Any]:
@@ -243,26 +236,10 @@ Output ONLY compact JSON:
 
 def hybrid_spatial_verification(stage: str, preview_image: str, ref_images: list[str]) -> dict:
     """Run LocateAnything-style spatial checks for the stage, always against the sent photo(s)."""
-    # For early gates like skeleton, when no real VLM model loaded (heuristic), return high score
-    # because the build_character.py already did internal validation + auto-adjust + re-render.
-    # This prevents getting stuck on early gates with low heuristic while allowing strict for later gates.
-    if stage == 'skeleton':
-        return {
-            "stage": stage,
-            "spatial_verification": "LocateAnything specialist (heuristic - skeleton gate validated in build)",
-            "avg_spatial_score": 0.95,
-            "issues": [],
-            "recommendation": "rig structure good per internal validation and photo proportions"
-        }
-    if stage == 'muscles':
-        # Muscles are added as instanced volumes/colliders. When no real model, give high heuristic so the gate can pass if py code + basic volumes are present (the VLM Qwen will judge aesthetics).
-        return {
-            "stage": stage,
-            "spatial_verification": "LocateAnything specialist (heuristic - muscles volumes added as physical colliders)",
-            "avg_spatial_score": 0.88,
-            "issues": [],
-            "recommendation": "muscle volumes placed and scaled per photo body type and internal validation"
-        }
+    if MODEL is None or PROCESSOR is None or not preview_image or not ref_images:
+        return {"stage": stage, "verified": False, "spatial_verification": "unavailable",
+                "avg_spatial_score": None, "issues": ["Real preview, reference and visual model are required"],
+                "recommendation": "Await actual visual evidence"}
     queries = get_spatial_queries_for_stage(stage)
     ref = ref_images[0] if ref_images else None
     all_results = []
@@ -275,15 +252,18 @@ def hybrid_spatial_verification(stage: str, preview_image: str, ref_images: list
     for r in all_results:
         if isinstance(r, dict):
             issues.extend(r.get("spatial_issues", []))
-            scores.append(r.get("overall_spatial_score", 0.7))
-    avg_score = sum(scores) / len(scores) if scores else 0.7
+            score = r.get("overall_spatial_score")
+            if r.get("verified") and isinstance(score, (float, int)) and 0 <= score <= 1:
+                scores.append(score)
+    avg_score = sum(scores) / len(scores) if scores else None
     return {
         "stage": stage,
-        "spatial_verification": "LocateAnything specialist",
-        "avg_spatial_score": round(avg_score, 3),
+        "spatial_verification": "Eagle image comparison; not a LocateAnything implementation",
+        "verified": avg_score is not None,
+        "avg_spatial_score": round(avg_score, 3) if avg_score is not None else None,
         "issues": issues,
         "details": all_results,
-        "recommendation": "high confidence spatial match" if avg_score > 0.85 else "adjust positions/layers/proportions"
+        "recommendation": "high confidence spatial match" if avg_score is not None and avg_score > 0.85 else "adjust positions/layers/proportions"
     }
 
 if __name__ == "__main__":

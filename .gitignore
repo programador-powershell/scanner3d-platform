@@ -26,3 +26,9 @@ qwen3d-merged/
 __pycache__/
 *.pyc
 training/cache_imgs/
+data/alice-runs/
+data/references_manifest.json
+data/assets/*.blend
+data/assets/*.fbx
+data/assets/*.png
+data/source/

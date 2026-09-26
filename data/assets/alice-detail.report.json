@@ -1,0 +1,26 @@
+{
+  "method": "existing-fbx-lod-import-and-material-repair",
+  "sourceSha256": "707db04639e87b74d21b298bc8c32033e2fb144c2c22c38f11acf8092d05b248",
+  "outputSha256": "27200e6ea06b7940aa21ae86a18e6ad7442f1ff844add0cf0e471336cfa48c05",
+  "lod": 3,
+  "polygons": 249975,
+  "vertices": 124932,
+  "geometryReconstructed": false,
+  "fidelityStatus": "unverified",
+  "rigged": false,
+  "source": {
+    "repository": "https://github.com/programador-powershell/project-alice-game",
+    "commit": "f6e534865a7b3432b6c7b374e8e10921905b4e4c",
+    "path": "Content/Assets/3D/personagens/alice.fbx",
+    "author": "Programador de Powershell · Project Alice — Challenge"
+  },
+  "repairs": [
+    "Select one LOD to avoid five overlapping copies.",
+    "Use the embedded shaded.png UV atlas as base colour instead of emission."
+  ],
+  "limitations": [
+    "Static fused mesh: no independent garment layers, verified rig or cloth physics.",
+    "Original shaded texture includes baked lighting; this is not captured PBR albedo.",
+    "Visual similarity still requires front, side and back review."
+  ]
+}

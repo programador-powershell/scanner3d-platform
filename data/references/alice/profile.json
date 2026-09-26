@@ -1,0 +1,44 @@
+{
+  "id": "alice-liddell-turnaround",
+  "name": "Alice Liddell · vestido azul e marfim",
+  "reference": "turnaround.jpg",
+  "source": {
+    "repository": "https://github.com/programador-powershell/project-alice-game",
+    "commit": "f6e534865a7b3432b6c7b374e8e10921905b4e4c",
+    "path": "Content/Assets/3D/personagens/alice.glb",
+    "author": "Programador de Powershell · Project Alice — Challenge",
+    "role": "Malha existente do projeto; não é uma reconstrução gerada pelo scanner."
+  },
+  "calibration": {
+    "units": "metres",
+    "height": 1.70433886,
+    "minY": -0.00313671,
+    "pixelsPerMetre": 490,
+    "groundPixel": 918,
+    "frontAxis": "+Z",
+    "views": {
+      "front": { "label": "Frente", "crop": [42, 70, 440, 850], "centerPixel": 267, "camera": [0, 0, 1] },
+      "side": { "label": "Perfil", "crop": [495, 70, 308, 850], "centerPixel": 648, "camera": [1, 0, 0] },
+      "back": { "label": "Costas", "crop": [807, 70, 408, 850], "centerPixel": 1014, "camera": [0, 0, -1] }
+    }
+  },
+  "details": [
+    { "id": "face", "label": "Rosto, olhos e identidade facial", "views": ["front", "side"] },
+    { "id": "hair", "label": "Cabelo preto ondulado, mechas e ornamentos", "views": ["front", "side", "back"] },
+    { "id": "sleeves", "label": "Mangas bufantes azul-escuro e acabamento dourado", "views": ["front", "side", "back"] },
+    { "id": "corset", "label": "Corpete ajustado, painéis marfim e amarração", "views": ["front", "side"] },
+    { "id": "apron", "label": "Painel frontal marfim, renda e bordados", "views": ["front"] },
+    { "id": "skirt", "label": "Saia volumosa, pregas e babados em camadas", "views": ["front", "side", "back"] },
+    { "id": "embroidery", "label": "Filigranas douradas e flores violetas", "views": ["front", "side", "back"] },
+    { "id": "bow", "label": "Laço traseiro e duas faixas bordadas", "views": ["back", "side"] },
+    { "id": "bracers", "label": "Braceletes pretos rendados e mãos", "views": ["front", "side", "back"] },
+    { "id": "boots", "label": "Meias listradas, botas de cadarço e salto", "views": ["front", "side", "back"] }
+  ],
+  "limitations": [
+    "A imagem não revela todas as superfícies nem dimensões absolutas. A escala em metros é uma calibração de trabalho.",
+    "A textura projetada contém a iluminação da fotografia; não equivale a albedo PBR capturado.",
+    "A malha de origem combina cabelo, corpo e roupa; separação física das camadas e colisões não foram comprovadas.",
+    "A existência de rig e animação não comprova deformação correta, física de tecido ou compatibilidade com UE 5.7.",
+    "As métricas de silhueta não comprovam identidade facial, detalhes de renda ou fidelidade total."
+  ]
+}
