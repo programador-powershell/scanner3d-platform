@@ -41,6 +41,7 @@ function surface(){
 async function selectStage(){
   const current=++token;clearModel();$('rotate').checked=false;
   const stage=stages.find(s=>s.id===$('stage').value);if(!stage)return;
+  history.replaceState(null,'',`${location.pathname}?stage=${encodeURIComponent(stage.id)}`);
   $('stage-label').textContent=stage.label;$('reference-title').textContent=`${names[stage.variant]} · ${String(stage.number).padStart(2,'0')}`;
   $('reference').src=stage.referenceUrl;$('reference').alt=`${names[stage.variant]}: foto original de ${stage.label}`;$('reference').hidden=false;
   $('original').href=stage.referenceUrl;$('original').hidden=false;
@@ -74,8 +75,9 @@ async function selectStage(){
     if(stage.status!=='rejected_fidelity')$('status').textContent='Fidelidade a verificar';
   }catch(error){if(current===token){$('message').hidden=false;$('message').textContent=`Malha indisponível: ${error.message}`;}}
 }
-function selectVariant(){
+function selectVariant(stageId){
   $('stage').replaceChildren(...stages.filter(s=>s.variant===$('variant').value).map(s=>new Option(`${String(s.number).padStart(2,'0')} · ${s.label}`,s.id)));
+  if(typeof stageId==='string'&&[...$('stage').options].some(o=>o.value===stageId))$('stage').value=stageId;
   selectStage();
 }
 $('variant').onchange=selectVariant;$('stage').onchange=selectStage;$('surface').onchange=surface;
@@ -88,5 +90,5 @@ try{
   const response=await fetch('/api/alice/stages');const result=await response.json();if(!response.ok)throw new Error(result.error||response.status);
   stages=result.stages;$('variant').replaceChildren(...[...new Set(stages.map(s=>s.variant))].map(id=>new Option(names[id]||id,id)));
   $('variant').disabled=$('stage').disabled=!stages.length;
-  if(stages.length)selectVariant();else{$('message').textContent='As fotos das etapas ainda não foram configuradas neste servidor.';$('status').textContent='Referências pendentes';}
+  if(stages.length){const requested=stages.find(s=>s.id===new URLSearchParams(location.search).get('stage'));if(requested)$('variant').value=requested.variant;selectVariant(requested?.id);}else{$('message').textContent='As fotos das etapas ainda não foram configuradas neste servidor.';$('status').textContent='Referências pendentes';}
 }catch(error){$('message').textContent=`Não foi possível ler as etapas: ${error.message}`;}
