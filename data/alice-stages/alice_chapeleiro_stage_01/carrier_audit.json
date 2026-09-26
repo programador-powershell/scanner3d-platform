@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "2479c9fefad42a9804bda3057a137be3bd8bb097c066c1ec0b519d11353a3569",
+  "editableBlendSha256": "751cfa7764285b83f1325cf8e5ecacfadf232a200dac642dffa4350dc2b37273",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -53,6 +53,15 @@
       "openSurfaceHoles": 260,
       "mesh": "01 / right bloomers / bloomer hem floral lace",
       "minimumExpected": 160.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 1.0
+    },
+    {
+      "components": 14,
+      "eulerCharacteristic": -196,
+      "openSurfaceHoles": 210,
+      "mesh": "01 / corset / corset hem scalloped floral lace",
+      "minimumExpected": 84.0,
       "textureAlphaHolesUsed": false,
       "surfaceCentroidsOnPhotoThreadMask": 1.0
     }
@@ -2339,6 +2348,132 @@
       "maximumTranslationError": 9.834766386690452e-10,
       "frame": 1,
       "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / upper gathered frill",
+      "measuredVertices": 2304,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / lower pointed gathered frill",
+      "measuredVertices": 2304,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / upper needle lace edging",
+      "measuredVertices": 7344,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / corset hem scalloped floral lace",
+      "measuredVertices": 3557,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / rear ribbon bow wing -1",
+      "measuredVertices": 242,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / rear hanging ribbon tail -1",
+      "measuredVertices": 330,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / rear ribbon bow wing 1",
+      "measuredVertices": 242,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / rear hanging ribbon tail 1",
+      "measuredVertices": 330,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 8.791685105619118e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset / rear ribbon sewn knot",
+      "measuredVertices": 200,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
     }
   ],
   "actualBlouseSeamAudit": [
@@ -2496,13 +2631,13 @@
       "motionVerified": false
     }
   ],
-  "actualInternalObjects": 166,
+  "actualInternalObjects": 175,
   "attachmentRoots": [
     "01 / long ivory gathered petticoat",
     "01 / black petticoat continuous waist support",
     "01 / ivory fitted boned corset / pointed front"
   ],
-  "verifiedFollowers": 163,
+  "verifiedFollowers": 172,
   "allActualFollowersCovered": true,
   "savedModelUnchanged": true,
   "rigPresent": false,

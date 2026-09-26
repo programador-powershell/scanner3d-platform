@@ -154,6 +154,13 @@ if record.get('additionalLaceTrace'):
     if extra['sourcePhotoSha256']!=record['sourcePhotoSha256']:
         raise ValueError('The lower lace belongs to another photo.')
     trace['tiles']+=extra['tiles']
+for dependency in record.get('additionalLaceTraces',[]):
+    if digest(dependency['file'])!=dependency['sha256']:
+        raise ValueError('Changed additional photographic lace trace.')
+    extra=json.loads(Path(dependency['file']).read_text(encoding='utf-8'))
+    if extra['sourcePhotoSha256']!=record['sourcePhotoSha256']:
+        raise ValueError('The corset lace belongs to another original photo.')
+    trace['tiles']+=extra['tiles']
 for obj in objects.values():
     if obj.get('opaqueGeometryApertures'):
         result=holes(obj.data)

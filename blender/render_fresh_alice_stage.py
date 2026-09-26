@@ -7,6 +7,8 @@ import sys
 from pathlib import Path
 import bpy
 from mathutils import Vector, Matrix
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+from alice_foundation_parts import foundation_review_members
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--generation', required=True)
@@ -15,6 +17,7 @@ parser.add_argument('--stage-id', required=True)
 parser.add_argument('--output', required=True)
 parser.add_argument('--front-axis', choices=['+x','-x','+y','-y'], default='+x')
 parser.add_argument('--role-prefix', help='Isolate actual named components for a part review; do not register as the complete stage.')
+parser.add_argument('--component-group', choices=['corset'], help='Review the complete authored corset, including structural hardware and hem lace.')
 parser.add_argument('--source-crop', help='Diagnostic reference crop x0,y0,x1,y1; the original full photo is always retained.')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
 generation=json.loads(Path(args.generation).read_text(encoding='utf-8'))
@@ -33,8 +36,8 @@ bpy.ops.import_scene.gltf(filepath=str(model_path))
 rigs=[o for o in bpy.context.scene.objects if o.type=='ARMATURE']
 bone_shapes={bone.custom_shape for rig in rigs for bone in rig.pose.bones if bone.custom_shape}
 meshes=[o for o in bpy.context.scene.objects if o.type=='MESH' and not o.hide_render and o not in bone_shapes]
-if args.role_prefix:
-    selected={p['name'] for p in generation['pieces'] if p['role'].startswith(args.role_prefix)}
+if args.role_prefix or args.component_group:
+    selected=foundation_review_members(generation['pieces'], args.role_prefix, args.component_group)
     if not selected:
         raise ValueError('No authored parts match this review scope.')
     for obj in meshes:
@@ -102,8 +105,9 @@ display_model=out/'inspection.glb'
 bpy.ops.export_scene.gltf(filepath=str(display_model),export_format='GLB',use_selection=True,export_yup=True,export_animation_mode='NLA_TRACKS')
 report={'stageId':stage['id'],'sourcePhoto':stage['sourcePhoto'],'sourcePhotoSha256':stage['sourcePhotoSha256'],
         'sourceCrop':list(map(int,args.source_crop.split(','))) if args.source_crop else generation.get('sourceCrop'),
-        'reviewScope':'selected_internal_components' if args.role_prefix else 'complete_stage_geometry',
-        'selectedRolePrefix':args.role_prefix,'renderedComponents':[o.name for o in meshes],
+        'reviewScope':'selected_internal_components' if args.role_prefix or args.component_group else 'complete_stage_geometry',
+        'selectedRolePrefix':args.role_prefix,'selectedComponentGroup':args.component_group,
+        'renderedComponents':[o.name for o in meshes],
         'model':str(model_path),'modelSha256':generation['modelSha256'],
         'renders':renders,'bounds':{'min':list(lo),'max':list(hi)},'frontAxis':args.front_axis,
         'fidelityVerified':False,'status':'awaiting_visual_review','visibleDifferences':None,

@@ -29,7 +29,7 @@ for artifact in [comparison['displayModel'],comparison['comparisonBoard'],*compa
 comparison['status']=args.verdict;comparison['visibleDifferences']=args.difference
 Path(args.comparison).write_text(json.dumps(comparison,ensure_ascii=False,indent=2),encoding='utf-8')
 if args.part_only:
-    print(json.dumps({'stage':stage['id'],'part':comparison['selectedRolePrefix'],
+    print(json.dumps({'stage':stage['id'],'part':comparison.get('selectedComponentGroup') or comparison['selectedRolePrefix'],
                       'status':args.verdict,'fidelityVerified':False,'stageUnchanged':True}))
     raise SystemExit(0)
 stage.update(status=args.verdict,fidelityVerified=False,

@@ -16,7 +16,7 @@ if sha(source)!=report['sourcePhotoSha256'] or sha(report['model'])!=report['mod
     raise ValueError('Photo or model no longer matches the comparison record.')
 board=Image.new('RGB',(1920,1500),'#18191e')
 draw=ImageDraw.Draw(board)
-scope=report.get('selectedRolePrefix') or 'conjunto da etapa'
+scope=report.get('selectedComponentGroup') or report.get('selectedRolePrefix') or 'conjunto da etapa'
 draw.text((24,18),f"{report['stageId']} / {scope} / FOTO DESTA ETAPA / FIDELIDADE A VERIFICAR",fill='white')
 def paste(image,box):
     x,y,w,h=box

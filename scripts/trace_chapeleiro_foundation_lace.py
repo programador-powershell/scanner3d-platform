@@ -14,7 +14,7 @@ from PIL import Image, ImageDraw
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--photo', required=True)
 parser.add_argument('--output', required=True)
-parser.add_argument('--section', choices=['petticoats', 'bloomers'], default='petticoats')
+parser.add_argument('--section', choices=['petticoats', 'bloomers', 'corset'], default='petticoats')
 args = parser.parse_args()
 photo = Path(args.photo)
 photo_hash = hashlib.sha256(photo.read_bytes()).hexdigest()
@@ -32,6 +32,8 @@ tiles = [
 ]
 if args.section == 'bloomers':
     tiles = [('bloomer hem', (62, 1283, 141, 1308), 85, 3)]
+if args.section == 'corset':
+    tiles = [('corset hem', (663, 251, 703, 286), 88, 2)]
 for label, box, threshold, header in tiles:
     x0, y0, x1, y1 = box
     tile = source[y0:y1, x0:x1].copy()
@@ -39,7 +41,16 @@ for label, box, threshold, header in tiles:
     mask = (grey >= threshold).astype(np.uint8) * 255
     # The photograph's attachment seam is structurally continuous. Keep a
     # narrow sewn header, rather than disconnected islands floating at the hem.
-    mask[:header, :] = 255
+    seam = [11, 24] if args.section == 'corset' else None
+    if seam:
+        # The pointed corset's photographed hem is inclined. Keep its actual
+        # raw photo UVs while mapping the sewn header onto the curved 3D rim.
+        for x in range(mask.shape[1]):
+            start=int(round(seam[0]+(seam[1]-seam[0])*x/(mask.shape[1]-1)))
+            mask[:start, x]=0
+            mask[start:start+header, x]=255
+    else:
+        mask[:header, :] = 255
     count, components, stats, _ = cv2.connectedComponentsWithStats(mask, 8)
     retained = np.zeros_like(mask)
     for index in range(1, count):
@@ -70,6 +81,9 @@ for label, box, threshold, header in tiles:
                     'cropSha256': hashlib.sha256(tile_file.read_bytes()).hexdigest(),
                     'contours': outlines, 'retainedHoles': sum(o['hole'] for o in outlines),
                     'occupiedFraction': float(np.count_nonzero(retained) / retained.size)})
+    if seam:
+        records[-1].update(attachmentSeamPixels=seam,laceDepthPixels=16,
+                           seamMapping='Raw photo UV retained; inclined seam flattened only in authored geometry.')
 report = {'sourcePhoto': str(photo.resolve()), 'sourcePhotoSha256': photo_hash,
           'section': args.section,
           'purpose': 'Actual apertures for new internal lace geometry; original photo stays authoritative.',

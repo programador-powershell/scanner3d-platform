@@ -129,11 +129,11 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "A anagua marfim ainda e conica: faltam as cascatas laterais e o caimento irregular visiveis na ficha 1.",
-          "Camisa, mangas, decote e acabamento do corsete precisam de ajuste fino; faltam babados e fitas traseiras do corsete.",
-          "Bloomers, ligas e meias agora existem em geometria: suas dobras, rendas, costuras e ajuste ao corpo ainda precisam de polimento.",
-          "O corpo interno, rosto e cabelo ainda precisam ser concluidos; este conjunto esta sem rig e sem validacao de caminhada, corrida, salto ou ataque.",
-          "Retopologia para jogo, pesos, movimento secundario do vestido e colisoes entre todas as camadas continuam pendentes."
+          "A anágua longa ainda tem dobras regulares e faltam os franzidos e cascatas laterais visíveis na foto; o babado inferior precisa de mais volume.",
+          "Camisa, mangas e corsete precisam de dobras de tecido menos regulares, franzidos superiores mais definidos, costuras e ferragens mais próximas da ficha.",
+          "Bloomers precisam de cintura e punhos mais franzidos; ligas precisam de acabamento nas copas e os pés das meias precisam de dedos e calcanhares mais arredondados.",
+          "A renda inferior e as fitas traseiras do corsete foram acrescentadas em geometria; seus motivos, bordas e caimento continuam em refinamento.",
+          "Este conjunto parcial ainda não tem corpo final nem rig compartilhado; caminhada, corrida, salto, ataque e colisões entre camadas estão pendentes."
         ]
       },
       "motionRequirements": {
@@ -154,14 +154,14 @@
         "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
         "displayModel": {
           "file": "alice_chapeleiro_stage_01/inspection.glb",
-          "sha256": "0bc503629ce738f7fec03857867a07c71bc0507c8021d0ec2afe0ff6f8fcc8a2"
+          "sha256": "151d3bef5e1dbf28966614c1060d311410069f70df4e079bdf5622ab5fe7e49c"
         },
         "board": {
           "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
-          "sha256": "90798957d2a0b708bd361836b2f158917bfc00c2e63a2c0d4dbdf0e3956b5b38"
+          "sha256": "3795b3abbc5db5f43fe40dd9e9363ffb75c0b46e821c42bd34e7a7d7a7707254"
         },
-        "modelSha256": "28c928a23c7cac02cc0892e36967f896b9bfbbc1c696d07bdd7b9229eacceb51",
-        "method": "incremental_photo_1_connected_bloomers_garters_and_anatomical_stockings",
+        "modelSha256": "249bbe2fe867071318dfcce7b8d38f51a2c84f365af5037ad596e4cc35ed0a3f",
+        "method": "own_photo_corset_frills_inclined_seam_lace_and_rear_fabric_ribbons",
         "frontAxis": "-y"
       }
     }

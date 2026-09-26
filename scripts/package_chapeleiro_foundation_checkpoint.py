@@ -5,6 +5,7 @@ import json
 import shutil
 import struct
 from pathlib import Path
+from alice_foundation_parts import foundation_review_members
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--generation', required=True)
@@ -62,8 +63,8 @@ for path in args.part_comparison:
             or part.get('status')!='needs_refinement' or not part.get('visibleDifferences')
             or part['sourcePhotoSha256']!=generation['sourcePhotoSha256']
             or part['modelSha256']!=generation['modelSha256']
-            or set(part['renderedComponents'])!={p['name'] for p in generation['pieces']
-                            if p['role'].startswith(part['selectedRolePrefix'])}
+            or set(part['renderedComponents'])!=foundation_review_members(
+                generation['pieces'], part.get('selectedRolePrefix'), part.get('selectedComponentGroup'))
             or set(part['renders'])!={'front','side','back','threequarter'}):
         raise ValueError('Requires an own-photo four-view review of the same actual construction.')
     if any(sha(a['file'])!=a['sha256'] for a in [part['comparisonBoard'],*part['renders'].values()]):
@@ -71,7 +72,7 @@ for path in args.part_comparison:
     part_reviews.append(part)
 model = Path(comparison['displayModel']['file'])
 binary = model.read_bytes()
-if binary[:4] != b'glTF' or len(binary) >= 100_000_000:
+if binary[:4] != b'glTF' or len(binary) > 100 * 1024 * 1024:
     raise ValueError('Expected a GitHub-compatible real GLB, not an LFS pointer.')
 size = struct.unpack_from('<I',binary,12)[0]
 gltf = json.loads(binary[20:20+size])
@@ -107,13 +108,14 @@ for name, artifact in comparison['renders'].items():
     copy(artifact['file'],docs/(name+'.png'))
 portable_parts=[]
 for part in part_reviews:
-    prefix=part['selectedRolePrefix']
-    if prefix not in ['foundation_bloomers','foundation_garter_','foundation_stocking']:
+    prefix=part.get('selectedComponentGroup') or part['selectedRolePrefix']
+    if prefix not in ['foundation_bloomers','foundation_garter_','foundation_stocking','corset']:
         raise ValueError('Unknown foundation part review.')
     folder=docs/'parts'/prefix.removeprefix('foundation_').rstrip('_')
     copy(part['comparisonBoard']['file'],folder/'photo_vs_geometry.jpg')
     record={k:part[k] for k in ['sourcePhotoSha256','sourceCrop','reviewScope','selectedRolePrefix',
                               'renderedComponents','modelSha256','status','visibleDifferences']}
+    record['selectedComponentGroup']=part.get('selectedComponentGroup')
     record['renders']={}
     for name,artifact in part['renders'].items():
         destination=folder/(name+'.png')
@@ -152,7 +154,8 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
     '# Chapeleiro: fundação da ficha 1 em refinamento\n\n'
     'Anáguas internas novas, renda floral com aberturas em geometria, camisa '
     'franzida com cavas reais, mangas bufantes e corsete '
-    'com canais, fechos, ilhoses e cruzamentos traseiros. Bloomers com entrepernas '
+    'com canais, fechos, ilhoses, cruzamentos traseiros, babados nas bordas, '
+    'renda inferior vazada e fitas traseiras com largura e espessura. Bloomers com entrepernas '
     'conectado, ligas com tiras e ferragens e meias com pés fechados também '
     'fazem parte desta construção. As comparações isoladas estão em parts/. O GLB do vestido '
     'completo permanece inteiro no seu item original. As rendas acompanham '

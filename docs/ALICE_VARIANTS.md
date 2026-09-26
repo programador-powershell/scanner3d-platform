@@ -95,6 +95,28 @@ vistas, sempre junto da foto original e do recorte documentado. A revisão
 Caimento, ajuste às fotos, retopologia para jogo, rig, movimentos e colisões
 continuam pendentes; essas construções não são camadas finalizadas.
 
+`refine_chapeleiro_corset_edges.py` constrói babados nas bordas reais do
+corsete, renda inferior traçada da mesma ficha com a costura inclinada
+fotografada, laço e pontas de fita com largura e espessura. O traçador recebe
+`--section corset`. A posição do nó acompanha a última fileira real de ilhoses;
+as pontas seguem o perfil traseiro medido do corsete e da anágua para evitar
+ficarem escondidas dentro da peça. Isso ainda exige validação em movimento.
+O renderizador permite `--component-group corset` para incluir também o tecido,
+canais, fechos e ilhoses anteriores na comparação isolada, sem perder as
+peças cuja função não começa pelo mesmo prefixo.
+
+`probe_chapeleiro_bloomers_cloth.py` realizou um ensaio de 24 quadros reais
+contra volumes aproximados de pelve e coxas. O GLB resolvido foi comparado à
+foto própria em quatro vistas. Dobras, cintura e punhos ainda diferem da
+referência, então essa solução não entrou na fundação publicada. A evidência
+está em `docs/alice-experiments/chapeleiro/bloomers-static-v051/`.
+
+O tamanho dos arquivos não reduz o escopo solicitado. Continuar o trabalho
+local em checkpoints completos; publicar o FBX no GitHub depois da validação
+do rig compartilhado, movimentos e tecido. A fundação estática em refinamento
+não substitui esse FBX final. Atualizações do site continuam por commits
+diretos, preservando o histórico e sem PR.
+
 `optimize_alice_whole_outfit.py` mantém o mestre inteiro e salva uma cópia com
 modificador reversível de redução, preservando o atlas PBR 4K e dando prioridade
 ao rosto, dedos e decote. O ensaio `whole_reduction_v027` tem 302.532 triângulos

@@ -1,0 +1,246 @@
+{
+  "method": "actual_static_bloomers_cloth_probe_with_inferred_hidden_colliders",
+  "sourcePhoto": "data/alice-stages/alice_chapeleiro_stage_01/source_photo.png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "reviewScope": "selected_internal_components",
+  "localCheckpoint": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_bloomers_cloth_probe_v051",
+  "solvedModelSha256": "82dba9a2dd9e6f05790483410d1fe202fb104f1f22b5b286ee35bc7c9085cdfd",
+  "solvedMidsurfaceSha256": "ccd9b27368f40328f08b71a5aa1622cc36a5e403dea5a476b87d7c3e0dbf0565",
+  "publishedAsFoundation": false,
+  "sourceCagesUnchanged": true,
+  "simulatedFrames": [
+    {
+      "frame": 1,
+      "p95Displacement": 0.0,
+      "maxDisplacement": 0.0,
+      "seconds": 32.47901140002068
+    },
+    {
+      "frame": 2,
+      "p95Displacement": 0.0011856274213641882,
+      "maxDisplacement": 0.0026014980394393206,
+      "seconds": 26.797912499983795
+    },
+    {
+      "frame": 3,
+      "p95Displacement": 0.002574335318058729,
+      "maxDisplacement": 0.004457462579011917,
+      "seconds": 36.26156160002574
+    },
+    {
+      "frame": 4,
+      "p95Displacement": 0.0037691453471779823,
+      "maxDisplacement": 0.00706435227766633,
+      "seconds": 41.69903459993657
+    },
+    {
+      "frame": 5,
+      "p95Displacement": 0.005122896749526262,
+      "maxDisplacement": 0.008974440395832062,
+      "seconds": 33.52289889997337
+    },
+    {
+      "frame": 6,
+      "p95Displacement": 0.0065483152866363525,
+      "maxDisplacement": 0.012207962572574615,
+      "seconds": 36.75605929992162
+    },
+    {
+      "frame": 7,
+      "p95Displacement": 0.0075490898452699184,
+      "maxDisplacement": 0.014868070371448994,
+      "seconds": 33.1396262999624
+    },
+    {
+      "frame": 8,
+      "p95Displacement": 0.008005677722394466,
+      "maxDisplacement": 0.01689324341714382,
+      "seconds": 39.88143349997699
+    },
+    {
+      "frame": 9,
+      "p95Displacement": 0.008003701455891132,
+      "maxDisplacement": 0.017238713800907135,
+      "seconds": 45.2140985999722
+    },
+    {
+      "frame": 10,
+      "p95Displacement": 0.007932125590741634,
+      "maxDisplacement": 0.01724066771566868,
+      "seconds": 40.432898099999875
+    },
+    {
+      "frame": 11,
+      "p95Displacement": 0.0077712656930089,
+      "maxDisplacement": 0.017045458778738976,
+      "seconds": 49.05542669992428
+    },
+    {
+      "frame": 12,
+      "p95Displacement": 0.007758244406431913,
+      "maxDisplacement": 0.016855113208293915,
+      "seconds": 42.50343939999584
+    },
+    {
+      "frame": 13,
+      "p95Displacement": 0.007712525315582752,
+      "maxDisplacement": 0.016460468992590904,
+      "seconds": 32.708936400013044
+    },
+    {
+      "frame": 14,
+      "p95Displacement": 0.007761463988572359,
+      "maxDisplacement": 0.016189688816666603,
+      "seconds": 31.027715699980035
+    },
+    {
+      "frame": 15,
+      "p95Displacement": 0.007865113206207752,
+      "maxDisplacement": 0.016108058393001556,
+      "seconds": 37.876615099958144
+    },
+    {
+      "frame": 16,
+      "p95Displacement": 0.007972008548676968,
+      "maxDisplacement": 0.016111640259623528,
+      "seconds": 25.321870299987495
+    },
+    {
+      "frame": 17,
+      "p95Displacement": 0.008035551756620407,
+      "maxDisplacement": 0.016276320442557335,
+      "seconds": 27.287649299949408
+    },
+    {
+      "frame": 18,
+      "p95Displacement": 0.008163418620824814,
+      "maxDisplacement": 0.016399525105953217,
+      "seconds": 22.671788100036792
+    },
+    {
+      "frame": 19,
+      "p95Displacement": 0.008367294445633888,
+      "maxDisplacement": 0.016340570524334908,
+      "seconds": 25.194698399980552
+    },
+    {
+      "frame": 20,
+      "p95Displacement": 0.00843633059412241,
+      "maxDisplacement": 0.01633463054895401,
+      "seconds": 23.397780600003898
+    },
+    {
+      "frame": 21,
+      "p95Displacement": 0.008494436740875244,
+      "maxDisplacement": 0.01624845340847969,
+      "seconds": 24.755303399986587
+    },
+    {
+      "frame": 22,
+      "p95Displacement": 0.008518311195075512,
+      "maxDisplacement": 0.016213923692703247,
+      "seconds": 29.076075999997556
+    },
+    {
+      "frame": 23,
+      "p95Displacement": 0.008575813844799995,
+      "maxDisplacement": 0.016257479786872864,
+      "seconds": 37.00599560001865
+    },
+    {
+      "frame": 24,
+      "p95Displacement": 0.008617131970822811,
+      "maxDisplacement": 0.01631413958966732,
+      "seconds": 43.42144199996255
+    }
+  ],
+  "approximateHiddenColliders": [
+    {
+      "name": "STATIC PROBE ONLY / inferred pelvis",
+      "center": [
+        0,
+        0,
+        0.568
+      ],
+      "radii": [
+        0.069,
+        0.044,
+        0.049
+      ],
+      "bodyFidelityVerified": false,
+      "exported": false
+    },
+    {
+      "name": "STATIC PROBE ONLY / inferred left thigh",
+      "center": [
+        0.04535,
+        0.002,
+        0.466
+      ],
+      "radii": [
+        0.027,
+        0.03,
+        0.07
+      ],
+      "bodyFidelityVerified": false,
+      "exported": false
+    },
+    {
+      "name": "STATIC PROBE ONLY / inferred right thigh",
+      "center": [
+        -0.04535,
+        0.002,
+        0.466
+      ],
+      "radii": [
+        0.027,
+        0.03,
+        0.07
+      ],
+      "bodyFidelityVerified": false,
+      "exported": false
+    }
+  ],
+  "settings": {
+    "mass": 0.08,
+    "quality": 12,
+    "bendingStiffness": 0.18,
+    "collisionDistance": 0.0005,
+    "selfCollisionDistance": 0.0004,
+    "fps": 30
+  },
+  "cacheBaked": false,
+  "rigPresent": false,
+  "motionVerified": false,
+  "gameplayVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "As dobras do ensaio estático ainda são muito regulares e profundas comparadas aos vincos irregulares da foto.",
+    "Os punhos precisam de mais volume no franzido e de ajuste dos laços laterais; a cintura precisa reproduzir melhor o elástico fotografado.",
+    "As colisões deste ensaio usam guias aproximadas; o corpo final, o rig e os quatro movimentos ainda não foram validados."
+  ],
+  "renders": {
+    "front": {
+      "file": "docs/alice-experiments/chapeleiro/bloomers-static-v051/front.png",
+      "sha256": "3624365e8159ce19893b8d9ce56aa770bb9d7fb438fefda59e9bfee46aead739"
+    },
+    "side": {
+      "file": "docs/alice-experiments/chapeleiro/bloomers-static-v051/side.png",
+      "sha256": "4db9919fa01625da3ade828b78a645016fdda45e2f1e402904c53f192c66ffc7"
+    },
+    "back": {
+      "file": "docs/alice-experiments/chapeleiro/bloomers-static-v051/back.png",
+      "sha256": "2d1008a55d54b922e2474aa3ffe7113893a3727c3f027a404eac6ac6a469530d"
+    },
+    "threequarter": {
+      "file": "docs/alice-experiments/chapeleiro/bloomers-static-v051/threequarter.png",
+      "sha256": "a2d2c645e450a2dbf8af1ac757c4ce4adfeb998d2c93a2452a50f89daebe4587"
+    }
+  },
+  "comparisonBoard": {
+    "file": "docs/alice-experiments/chapeleiro/bloomers-static-v051/photo_vs_geometry.jpg",
+    "sha256": "77d114c33fe1db5d82732a0836fbdaeb741138245b784aafe842db8f6197ee8a"
+  }
+}
