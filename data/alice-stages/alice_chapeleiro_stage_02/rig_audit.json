@@ -1,0 +1,1179 @@
+{
+  "layer": "alice_chapeleiro_stage_02",
+  "role": "fitted",
+  "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
+  "modelSha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1",
+  "blendSha256": "a8c6f92d2cd4fb4bac04eb82fe310b87d351a8c5f7d07bb7010b5dbae6e72025",
+  "components": [
+    {
+      "mesh": "Manga esquerda / scan exterior",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 13480,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Manga direita / scan exterior",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 14416,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 64184,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Vivo de latão / decote, cavas e bainha em volume",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 6400,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Barbatanas / costuras douradas em relevo",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 9072,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Ilhós de latão / amarrações frontal e traseira",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 5440,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Cordões cruzados / frente e costas",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 9280,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho L / tecido verde plissado da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 8064,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho L / fita bronze",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 512,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco L / volta -1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 196,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco L / ponta -1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 100,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco L / volta 1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 196,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco L / ponta 1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 100,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco L / no e vivos",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 144,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho L / renda vazada e festonada",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 16320,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho R / tecido verde plissado da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 8064,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho R / fita bronze",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 512,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco R / volta -1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 196,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco R / ponta -1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 100,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco R / volta 1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 196,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco R / ponta 1",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 100,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Laco R / no e vivos",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 144,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Punho R / renda vazada e festonada",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 16320,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1254,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 1 / vivo de latao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 600,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.0978193283081055e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1254,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 2 / vivo de latao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 600,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1254,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.2549800127744675e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 3 / vivo de latao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 600,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.330649971961975e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1254,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 4 / vivo de latao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 600,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.366665962152183e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1254,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Aba inferior 5 / vivo de latao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 600,
+      "unweightedVertices": 0,
+      "maxWeightError": 4.470348358154297e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Abas / ilhoses de fixacao",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 960,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Abas / correntes com elos individuais",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 2592,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Decote / tira plissada frontal",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1930,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Decote / renda com lacunas frontal",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 6156,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Decote / tira plissada traseira",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 1930,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Decote / renda com lacunas traseira",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 6156,
+      "unweightedVertices": 0,
+      "maxWeightError": 0.0,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    },
+    {
+      "mesh": "Fecho do decote / filigrana tracada da foto 2",
+      "layer": "alice_chapeleiro_stage_02",
+      "role": "fitted",
+      "rig": "Alice / Chapeleiro shared rig",
+      "vertices": 330,
+      "unweightedVertices": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "clothModifiers": [],
+      "clothSimulationConfigured": false
+    }
+  ],
+  "sharedRigCount": 1,
+  "motions": [
+    {
+      "requiredMotion": "Walk",
+      "found": true,
+      "visibleQualityVerified": false,
+      "collisionVerified": false,
+      "name": "Walk / supplied motion retargeted to new Chapeleiro",
+      "frames": [
+        1,
+        8,
+        15,
+        22,
+        28,
+        35,
+        42
+      ],
+      "componentDeformation": [
+        {
+          "mesh": "Manga esquerda / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.08943802376051622
+        },
+        {
+          "mesh": "Manga direita / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.11005044465244897
+        },
+        {
+          "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.0639463838937991
+        },
+        {
+          "mesh": "Vivo de latão / decote, cavas e bainha em volume",
+          "maxRootRelativeDisplacementMetres": 0.07733451862752205
+        },
+        {
+          "mesh": "Barbatanas / costuras douradas em relevo",
+          "maxRootRelativeDisplacementMetres": 0.07354132382142117
+        },
+        {
+          "mesh": "Ilhós de latão / amarrações frontal e traseira",
+          "maxRootRelativeDisplacementMetres": 0.039474604751237465
+        },
+        {
+          "mesh": "Cordões cruzados / frente e costas",
+          "maxRootRelativeDisplacementMetres": 0.03603912116636587
+        },
+        {
+          "mesh": "Punho L / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.10273263688665916
+        },
+        {
+          "mesh": "Punho L / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.09405331560284441
+        },
+        {
+          "mesh": "Laco L / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.0910909424982221
+        },
+        {
+          "mesh": "Laco L / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.09164578922144584
+        },
+        {
+          "mesh": "Laco L / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.09758676739289342
+        },
+        {
+          "mesh": "Laco L / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.09542715293143278
+        },
+        {
+          "mesh": "Laco L / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.09308880046691101
+        },
+        {
+          "mesh": "Punho L / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.10882148128029831
+        },
+        {
+          "mesh": "Punho R / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.12048538789971447
+        },
+        {
+          "mesh": "Punho R / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.11011032938025968
+        },
+        {
+          "mesh": "Laco R / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.11369528721881388
+        },
+        {
+          "mesh": "Laco R / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.11295233754847762
+        },
+        {
+          "mesh": "Laco R / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.10714602381455786
+        },
+        {
+          "mesh": "Laco R / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.10762477374641492
+        },
+        {
+          "mesh": "Laco R / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.10943598835013857
+        },
+        {
+          "mesh": "Punho R / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.12568715864074226
+        },
+        {
+          "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.014940293374254154
+        },
+        {
+          "mesh": "Aba inferior 1 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.015119327275442641
+        },
+        {
+          "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.011829882416878433
+        },
+        {
+          "mesh": "Aba inferior 2 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.011996089733202334
+        },
+        {
+          "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.007917400958364518
+        },
+        {
+          "mesh": "Aba inferior 3 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.008509061756149197
+        },
+        {
+          "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.011085358882508544
+        },
+        {
+          "mesh": "Aba inferior 4 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.012045846813291914
+        },
+        {
+          "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.013379473378078271
+        },
+        {
+          "mesh": "Aba inferior 5 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.013889387458468305
+        },
+        {
+          "mesh": "Abas / ilhoses de fixacao",
+          "maxRootRelativeDisplacementMetres": 0.013756686397243941
+        },
+        {
+          "mesh": "Abas / correntes com elos individuais",
+          "maxRootRelativeDisplacementMetres": 0.012313974187313989
+        },
+        {
+          "mesh": "Decote / tira plissada frontal",
+          "maxRootRelativeDisplacementMetres": 0.07890929978827972
+        },
+        {
+          "mesh": "Decote / renda com lacunas frontal",
+          "maxRootRelativeDisplacementMetres": 0.07788284872468006
+        },
+        {
+          "mesh": "Decote / tira plissada traseira",
+          "maxRootRelativeDisplacementMetres": 0.07203711101758847
+        },
+        {
+          "mesh": "Decote / renda com lacunas traseira",
+          "maxRootRelativeDisplacementMetres": 0.06965284328150263
+        },
+        {
+          "mesh": "Fecho do decote / filigrana tracada da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.05684118068334052
+        }
+      ]
+    },
+    {
+      "requiredMotion": "Run",
+      "found": true,
+      "visibleQualityVerified": false,
+      "collisionVerified": false,
+      "name": "Run / supplied motion retargeted to new Chapeleiro",
+      "frames": [
+        1,
+        4,
+        6,
+        9,
+        12,
+        14,
+        17
+      ],
+      "componentDeformation": [
+        {
+          "mesh": "Manga esquerda / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.13867994028129854
+        },
+        {
+          "mesh": "Manga direita / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.12839779359921816
+        },
+        {
+          "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.05651143129848896
+        },
+        {
+          "mesh": "Vivo de latão / decote, cavas e bainha em volume",
+          "maxRootRelativeDisplacementMetres": 0.06317352111656313
+        },
+        {
+          "mesh": "Barbatanas / costuras douradas em relevo",
+          "maxRootRelativeDisplacementMetres": 0.06103428139655641
+        },
+        {
+          "mesh": "Ilhós de latão / amarrações frontal e traseira",
+          "maxRootRelativeDisplacementMetres": 0.041715187427001366
+        },
+        {
+          "mesh": "Cordões cruzados / frente e costas",
+          "maxRootRelativeDisplacementMetres": 0.04198799911184402
+        },
+        {
+          "mesh": "Punho L / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.1750212886127904
+        },
+        {
+          "mesh": "Punho L / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.1480898554578479
+        },
+        {
+          "mesh": "Laco L / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.1437718650703978
+        },
+        {
+          "mesh": "Laco L / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.14995529710404948
+        },
+        {
+          "mesh": "Laco L / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.1527342424443955
+        },
+        {
+          "mesh": "Laco L / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.1582904312802678
+        },
+        {
+          "mesh": "Laco L / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.1457610812355989
+        },
+        {
+          "mesh": "Punho L / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.1925680006250123
+        },
+        {
+          "mesh": "Punho R / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.1740935390870125
+        },
+        {
+          "mesh": "Punho R / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.13847910147275927
+        },
+        {
+          "mesh": "Laco R / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.14490001570462777
+        },
+        {
+          "mesh": "Laco R / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.14888905371327266
+        },
+        {
+          "mesh": "Laco R / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.13675347035263652
+        },
+        {
+          "mesh": "Laco R / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.14103950183347447
+        },
+        {
+          "mesh": "Laco R / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.139328627709774
+        },
+        {
+          "mesh": "Punho R / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.18386099836052322
+        },
+        {
+          "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.025652532721514396
+        },
+        {
+          "mesh": "Aba inferior 1 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.02616435511899781
+        },
+        {
+          "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.024070501401903116
+        },
+        {
+          "mesh": "Aba inferior 2 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.024248992810107662
+        },
+        {
+          "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.023014908052395814
+        },
+        {
+          "mesh": "Aba inferior 3 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.02321065560513748
+        },
+        {
+          "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.023036607252417775
+        },
+        {
+          "mesh": "Aba inferior 4 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.02324868076173546
+        },
+        {
+          "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.02484929835860792
+        },
+        {
+          "mesh": "Aba inferior 5 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.025236129256190735
+        },
+        {
+          "mesh": "Abas / ilhoses de fixacao",
+          "maxRootRelativeDisplacementMetres": 0.024943594711686803
+        },
+        {
+          "mesh": "Abas / correntes com elos individuais",
+          "maxRootRelativeDisplacementMetres": 0.0244221724510879
+        },
+        {
+          "mesh": "Decote / tira plissada frontal",
+          "maxRootRelativeDisplacementMetres": 0.06470601893218124
+        },
+        {
+          "mesh": "Decote / renda com lacunas frontal",
+          "maxRootRelativeDisplacementMetres": 0.06446880585998564
+        },
+        {
+          "mesh": "Decote / tira plissada traseira",
+          "maxRootRelativeDisplacementMetres": 0.06171945186811057
+        },
+        {
+          "mesh": "Decote / renda com lacunas traseira",
+          "maxRootRelativeDisplacementMetres": 0.06006728496543292
+        },
+        {
+          "mesh": "Fecho do decote / filigrana tracada da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.05791383011275696
+        }
+      ]
+    },
+    {
+      "requiredMotion": "Jump",
+      "found": true,
+      "visibleQualityVerified": false,
+      "collisionVerified": false,
+      "name": "Jump / authored deformation probe",
+      "frames": [
+        1,
+        10,
+        18,
+        27,
+        36,
+        44,
+        53
+      ],
+      "componentDeformation": [
+        {
+          "mesh": "Manga esquerda / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.019205871875826213
+        },
+        {
+          "mesh": "Manga direita / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.018997371929234532
+        },
+        {
+          "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.017419828812798768
+        },
+        {
+          "mesh": "Vivo de latão / decote, cavas e bainha em volume",
+          "maxRootRelativeDisplacementMetres": 0.020901060734089812
+        },
+        {
+          "mesh": "Barbatanas / costuras douradas em relevo",
+          "maxRootRelativeDisplacementMetres": 0.02032906429063465
+        },
+        {
+          "mesh": "Ilhós de latão / amarrações frontal e traseira",
+          "maxRootRelativeDisplacementMetres": 0.015560375679098298
+        },
+        {
+          "mesh": "Cordões cruzados / frente e costas",
+          "maxRootRelativeDisplacementMetres": 0.014310510902821946
+        },
+        {
+          "mesh": "Punho L / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.011257188846331478
+        },
+        {
+          "mesh": "Punho L / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.012419877708041127
+        },
+        {
+          "mesh": "Laco L / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.011760769409891741
+        },
+        {
+          "mesh": "Laco L / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.010866779707168475
+        },
+        {
+          "mesh": "Laco L / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.011752098894166724
+        },
+        {
+          "mesh": "Laco L / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.010863682970850374
+        },
+        {
+          "mesh": "Laco L / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.011231819608855354
+        },
+        {
+          "mesh": "Punho L / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.009395281983701627
+        },
+        {
+          "mesh": "Punho R / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.011356790151958694
+        },
+        {
+          "mesh": "Punho R / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.012641900030110013
+        },
+        {
+          "mesh": "Laco R / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.011921935017031
+        },
+        {
+          "mesh": "Laco R / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.011026830687339314
+        },
+        {
+          "mesh": "Laco R / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.01191321901512093
+        },
+        {
+          "mesh": "Laco R / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.0110236415433788
+        },
+        {
+          "mesh": "Laco R / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.011391408833095208
+        },
+        {
+          "mesh": "Punho R / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.009045326427561272
+        },
+        {
+          "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.0029516879821772793
+        },
+        {
+          "mesh": "Aba inferior 1 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.003690715311381404
+        },
+        {
+          "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.003519435226914428
+        },
+        {
+          "mesh": "Aba inferior 2 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.004215203526365843
+        },
+        {
+          "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.0034857771614568143
+        },
+        {
+          "mesh": "Aba inferior 3 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.004296367003885726
+        },
+        {
+          "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.004330674282439636
+        },
+        {
+          "mesh": "Aba inferior 4 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.004431135012739348
+        },
+        {
+          "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.0038804343779118085
+        },
+        {
+          "mesh": "Aba inferior 5 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.003966604245493965
+        },
+        {
+          "mesh": "Abas / ilhoses de fixacao",
+          "maxRootRelativeDisplacementMetres": 0.0031946214583739793
+        },
+        {
+          "mesh": "Abas / correntes com elos individuais",
+          "maxRootRelativeDisplacementMetres": 0.0009992235715978411
+        },
+        {
+          "mesh": "Decote / tira plissada frontal",
+          "maxRootRelativeDisplacementMetres": 0.020330644217116806
+        },
+        {
+          "mesh": "Decote / renda com lacunas frontal",
+          "maxRootRelativeDisplacementMetres": 0.02020876845740504
+        },
+        {
+          "mesh": "Decote / tira plissada traseira",
+          "maxRootRelativeDisplacementMetres": 0.020983581021957735
+        },
+        {
+          "mesh": "Decote / renda com lacunas traseira",
+          "maxRootRelativeDisplacementMetres": 0.020729565234237152
+        },
+        {
+          "mesh": "Fecho do decote / filigrana tracada da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.015875567673062783
+        }
+      ]
+    },
+    {
+      "requiredMotion": "Attack",
+      "found": true,
+      "visibleQualityVerified": false,
+      "collisionVerified": false,
+      "name": "Attack / supplied motion retargeted to new Chapeleiro",
+      "frames": [
+        1,
+        24,
+        46,
+        69,
+        92,
+        114,
+        137
+      ],
+      "componentDeformation": [
+        {
+          "mesh": "Manga esquerda / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.07149340681917905
+        },
+        {
+          "mesh": "Manga direita / scan exterior",
+          "maxRootRelativeDisplacementMetres": 0.17780324825003718
+        },
+        {
+          "mesh": "Corpete / frente verde, costas e alças reconstruídas da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.045557983185466736
+        },
+        {
+          "mesh": "Vivo de latão / decote, cavas e bainha em volume",
+          "maxRootRelativeDisplacementMetres": 0.05747164714948627
+        },
+        {
+          "mesh": "Barbatanas / costuras douradas em relevo",
+          "maxRootRelativeDisplacementMetres": 0.054495281650961236
+        },
+        {
+          "mesh": "Ilhós de latão / amarrações frontal e traseira",
+          "maxRootRelativeDisplacementMetres": 0.03296493809291994
+        },
+        {
+          "mesh": "Cordões cruzados / frente e costas",
+          "maxRootRelativeDisplacementMetres": 0.03332593845186855
+        },
+        {
+          "mesh": "Punho L / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.09412751735997979
+        },
+        {
+          "mesh": "Punho L / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.0719730526774192
+        },
+        {
+          "mesh": "Laco L / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.06510288085760514
+        },
+        {
+          "mesh": "Laco L / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.06641234188502185
+        },
+        {
+          "mesh": "Laco L / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.06857867648215214
+        },
+        {
+          "mesh": "Laco L / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.07060836879712215
+        },
+        {
+          "mesh": "Laco L / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.06705785655814567
+        },
+        {
+          "mesh": "Punho L / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.09593766766437771
+        },
+        {
+          "mesh": "Punho R / tecido verde plissado da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.22824251786720096
+        },
+        {
+          "mesh": "Punho R / fita bronze",
+          "maxRootRelativeDisplacementMetres": 0.19371462678588497
+        },
+        {
+          "mesh": "Laco R / volta -1",
+          "maxRootRelativeDisplacementMetres": 0.18705979157636124
+        },
+        {
+          "mesh": "Laco R / ponta -1",
+          "maxRootRelativeDisplacementMetres": 0.19149974502855108
+        },
+        {
+          "mesh": "Laco R / volta 1",
+          "maxRootRelativeDisplacementMetres": 0.17095119819922894
+        },
+        {
+          "mesh": "Laco R / ponta 1",
+          "maxRootRelativeDisplacementMetres": 0.17107888164212706
+        },
+        {
+          "mesh": "Laco R / no e vivos",
+          "maxRootRelativeDisplacementMetres": 0.17445876748961858
+        },
+        {
+          "mesh": "Punho R / renda vazada e festonada",
+          "maxRootRelativeDisplacementMetres": 0.2430265077786414
+        },
+        {
+          "mesh": "Aba inferior 1 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.015827257709440552
+        },
+        {
+          "mesh": "Aba inferior 1 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.016016655697871945
+        },
+        {
+          "mesh": "Aba inferior 2 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.014838974991491885
+        },
+        {
+          "mesh": "Aba inferior 2 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.01502971218649427
+        },
+        {
+          "mesh": "Aba inferior 3 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.013404312011874557
+        },
+        {
+          "mesh": "Aba inferior 3 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.013572930282459122
+        },
+        {
+          "mesh": "Aba inferior 4 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.013728355999028495
+        },
+        {
+          "mesh": "Aba inferior 4 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.013886828185506257
+        },
+        {
+          "mesh": "Aba inferior 5 / painel sobreposto da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.012539686434857497
+        },
+        {
+          "mesh": "Aba inferior 5 / vivo de latao",
+          "maxRootRelativeDisplacementMetres": 0.012684505489669819
+        },
+        {
+          "mesh": "Abas / ilhoses de fixacao",
+          "maxRootRelativeDisplacementMetres": 0.014707657299921566
+        },
+        {
+          "mesh": "Abas / correntes com elos individuais",
+          "maxRootRelativeDisplacementMetres": 0.01195670950328234
+        },
+        {
+          "mesh": "Decote / tira plissada frontal",
+          "maxRootRelativeDisplacementMetres": 0.06216269656284042
+        },
+        {
+          "mesh": "Decote / renda com lacunas frontal",
+          "maxRootRelativeDisplacementMetres": 0.06190985146726761
+        },
+        {
+          "mesh": "Decote / tira plissada traseira",
+          "maxRootRelativeDisplacementMetres": 0.05015327673192128
+        },
+        {
+          "mesh": "Decote / renda com lacunas traseira",
+          "maxRootRelativeDisplacementMetres": 0.049514187425845055
+        },
+        {
+          "mesh": "Fecho do decote / filigrana tracada da foto 2",
+          "maxRootRelativeDisplacementMetres": 0.046090028073204115
+        }
+      ]
+    }
+  ],
+  "colliders": [],
+  "allComponentsSkinned": true,
+  "allRequiredClipsPresent": true,
+  "clothFollowingVerified": false,
+  "bodyCollisionVerified": false,
+  "interLayerCollisionVerified": false,
+  "fidelityVerified": false,
+  "readyForGameplay": false,
+  "limitations": [
+    "This audit covers only the named layer and components actually in this file.",
+    "Seven sampled poses and sixteen vertices per component do not prove full deformation quality.",
+    "Root-relative displacement excludes character translation; rigid fittings may correctly remain stationary.",
+    "Cloth settings and existing colliders do not prove collision-free simulation.",
+    "Loose skirts, linings, aprons, sleeves and accessories require visual motion and collision tests."
+  ]
+}

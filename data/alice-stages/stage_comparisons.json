@@ -27,10 +27,10 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "Frente verde, costas, forro, alcas, cavas e abertura traseira foram reconstruidos pela propria ficha 2 e ajustados ao GLB novo do Chapeleiro; profundidade das superficies ocultas permanece inferida.",
-          "Laterais ainda mostram trechos de estampa esticada. Abas inferiores sobrepostas, correntes, fecho e renda fina ainda precisam seguir os detalhes da foto 2.",
-          "Mangas conservam dobras do novo Tripo e recebem a estampa da propria ficha. Restam recortes nos ombros; punhos, lacos de fita e renda inferior precisam de polimento e geometria adicional.",
-          "Esta revisao tem zero ossos e zero clipes. Todos os componentes precisam do rig compartilhado, pesos e verificacao de caminhar, correr, saltar, atacar e colisao de tecido; nao conta como camada concluida."
+          "Foto propria da camada 2: cinco abas sobrepostas, correntes com elos, lacos nos punhos, plissados e rendas vazadas foram adicionados em geometria; a ponta causada pela espessura da manga foi corrigida.",
+          "As 40 pecas deste arquivo, incluindo o forro e os acabamentos, tem pesos normalizados no mesmo rig de 74 ossos. O GLB contem caminhar, correr, ataque e um salto autoral de teste.",
+          "A revisao de 12 poses do GLB exportado revelou folgas nos ombros e estiramento das mangas em corrida e ataque. Os pesos e as costuras precisam de refino; movimento e fidelidade continuam sem aprovacao.",
+          "A textura lateral, os reforcos isolados e os recortes das mangas ainda diferem da ficha. Salto e oscilacao secundaria sao ensaios, sem simulacao aprovada de tecido, corpo ou colisao entre camadas. As outras camadas permanecem pendentes e a proxima variante nao pode iniciar."
         ]
       },
       "motionRequirements": {
@@ -51,14 +51,14 @@
         "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
         "displayModel": {
           "file": "alice_chapeleiro_stage_02/inspection.glb",
-          "sha256": "aea0fad5c8d913a8df47d23d306a519557df075e7a3b376d79a181b33b7891bb"
+          "sha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1"
         },
         "board": {
           "file": "alice_chapeleiro_stage_02/photo_vs_geometry.jpg",
-          "sha256": "5c98615a623d7ffa6f52fb99ee27d762bc9cbb17759f6f8603ac2ed2606d6cc9"
+          "sha256": "151225dde77547294a614ed7ee16cc2c5ff88d62dd275f8e38ea48f02295688c"
         },
-        "modelSha256": "eef96fbc75a5f66e10aabaf450dc51a30552c4168965995a125603b4935e19a0",
-        "method": "own_layer_2_tailoring_fitted_to_authorized_new_Tripo_scan",
+        "modelSha256": "c2c39f6e495ba44ce82f18c65876721c02a4388b5b709a1fdc9e5ab5dff2a8a1",
+        "method": "new_Tripo_sheet_2_components_on_shared_A_pose_motion_rig",
         "frontAxis": "-y"
       }
     },

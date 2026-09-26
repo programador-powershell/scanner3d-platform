@@ -87,14 +87,37 @@ espessura real; vivos, ilhós, cordões, canais e pequenos laços são geometria
 As duas mangas conservam as dobras do scan novo e usam sua própria ficha para
 o acabamento. Profundidade traseira, material e detalhes invisíveis são inferidos.
 
-O checkpoint `bodice_refinement_v007` foi conferido nas quatro vistas e está em
-`data/alice-stages/alice_chapeleiro_stage_02/`, com foto, GLB, renders, comparação
-e proveniência. Sua situação é **precisa de refinamento**: ainda há estampa
-esticada nas laterais, cortes nas mangas e detalhes de abas, fecho, correntes,
-laços e renda a completar. Não tem ossos nem clipes e não conta como camada
-finalizada. O arquivo `legacy_rejected_rig_audit.json` pertence ao ensaio antigo
-rejeitado; não é auditoria desta nova malha. Este trabalho não gastou créditos
-adicionais e não substitui o vestido completo publicado na galeria.
+O checkpoint atual `bodice_shared_rig_v010` está em
+`data/alice-stages/alice_chapeleiro_stage_02/`, com a foto própria da ficha 2,
+GLB, Blender editável, quatro vistas, doze poses e auditoria do rig. O refinamento
+`finish_chapeleiro_bodice_details.py` acrescentou cinco abas sobrepostas,
+correntes com elos individuais, laços de fita, plissados e renda vazada. A revisão
+lateral detectou uma ponta criada pelo deslocamento de espessura da manga;
+o deslocamento normal limitado corrigiu esse defeito.
+
+`rig_chapeleiro_sheet_two.py` liga os **40 componentes** deste arquivo, incluindo
+forro e acabamentos, ao mesmo esqueleto com **74 ossos**. Usa somente ossos e
+movimentos dos FBXs fornecidos, descartando suas malhas. Ajusta a pose de vínculo
+aos braços do scan novo e transfere a orientação mundial das animações, evitando
+aplicar duas vezes a mudança de braços de T-pose para A-pose. O GLB real contém
+caminhada, corrida, ataque e um salto autoral de teste. Os pesos são normalizados,
+sem vértices sem peso; o esquema de vínculo está em `shared_rig_bind.json`.
+
+`render_chapeleiro_skin_motion.py` importa o GLB exportado e registra três poses
+de cada clipe, com câmera fixa e medição de estiramento. A situação continua
+**precisa de refinamento**: folgas nos ombros, textura lateral esticada, reforços
+isolados pendentes e deformações excessivas nas mangas em corrida/ataque. Na
+amostra de ataque, o maior fator de estiramento de aresta foi 4,12 e o percentil
+95 chegou a 1,96. Os laços e abas têm ossos secundários com chaves de ensaio;
+isso não é simulação de tecido nem aprovação de colisões. Salto, transições e
+movimento Soulslike permanecem pendentes. Não conta como camada finalizada.
+
+`compose_alice_motion_review.py` reúne a foto original e os renders reais.
+`package_alice_rig_checkpoint.py` confere os hashes da foto, GLB, Blender e
+evidências, e atualiza somente a etapa selecionada no índice do repositório.
+O arquivo `legacy_rejected_rig_audit.json` pertence ao ensaio antigo rejeitado;
+`rig_audit.json` audita as peças novas deste checkpoint. Nenhum crédito adicional
+foi gasto. O vestido completo publicado e a Alice Base aprovada foram preservados.
 
 O portal publicou a remoção dos textos legados de armazenamento Supabase no
 commit `ac1d9d9` de `project-alice-challenge`; build e tipos passaram, e a Vercel
