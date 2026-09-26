@@ -1,5 +1,9 @@
 # Scanner 3D · Project Alice
 
+A construção nova por camadas está em **http://localhost:3939/alice/layers**. O repositório inclui um estudo parcial novo do corsete da ficha 2 do Chapeleiro, sua foto original e a comparação em quatro vistas. Seus componentes têm skin e quatro clipes de movimento; mangas, acabamentos, tecido e colisões continuam pendentes. Esse estudo não é uma Alice finalizada.
+
+Para inspecionar as 66 etapas locais das seis versões, configure `ALICE_STAGE_ROOT=F:/Alice/Deliverables/Alice_Variants`. Cada etapa usa sua própria foto e não recebe uma malha antiga quando ainda não foi construída. Os novos geradores não importam geometria anterior de Alice. Consulte [construção, rig e comparações por etapa](docs/ALICE_VARIANTS.md).
+
 Estúdio para inspecionar uma personagem **em geometria 3D real**, comparar frente/perfil/costas com o turnaround e exportar assets com evidência. O resultado é identificado pela sua origem; um asset importado não é apresentado como uma reconstrução gerada pela IA.
 
 ## Executar

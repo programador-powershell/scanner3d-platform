@@ -81,6 +81,7 @@ test('a diagonally rotated photograph plane is still rejected as planar', () => 
 test('both viewer modules and legacy inline module remain syntactically valid', () => {
   const { execFileSync } = require('child_process');
   execFileSync(process.execPath, ['--check', path.join(root, 'public/alice.js')]);
+  execFileSync(process.execPath, ['--check', path.join(root, 'public/alice_layers.js')]);
   const html = fs.readFileSync(path.join(root, 'public/index.html'), 'utf8');
   const module = html.match(/<script type="module">([\s\S]*?)<\/script>/)[1];
   execFileSync(process.execPath, ['--check', '--input-type=module'], { input: module });

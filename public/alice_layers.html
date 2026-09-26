@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alice · Fotos e camadas em 3D</title><link rel="stylesheet" href="/alice.css">
+  <script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+  <style>[hidden]{display:none!important}.reference img{max-height:70vh;object-fit:contain}.review{white-space:pre-line}.viewport canvas{display:block}.reference a{display:block;margin:14px 0}#canvas-container{height:100%}</style>
+</head>
+<body>
+<header><a class="brand" href="/alice"><span class="emblem">A</span><span>PROJECT ALICE<small>FOTOS E CAMADAS EM 3D</small></span></a><span class="header-note">Cada etapa, sua própria referência</span><a href="/alice">Estúdio ↗</a></header>
+<main>
+  <aside class="tools">
+    <div class="eyebrow">VERSÃO E ETAPA</div><h1>Construção de Alice</h1>
+    <label for="variant">Versão</label><select id="variant" disabled><option>Carregando…</option></select>
+    <label for="stage">Foto da etapa</label><select id="stage" disabled><option>Carregando…</option></select>
+    <p class="caption" id="stage-label"></p><p class="caption" id="origin"></p>
+    <div class="rule"></div><div class="eyebrow">INSPEÇÃO DO VOLUME</div>
+    <label for="surface">Superfície</label><select id="surface"><option value="pbr">Materiais</option><option value="clay">Volume em argila</option><option value="wire">Malha</option><option value="albedo">Cor sem iluminação</option></select>
+    <label><input id="rotate" type="checkbox"> Girar 360°</label>
+    <label for="animation">Teste de movimento da camada</label><select id="animation" disabled><option value="">Sem animação disponível</option></select>
+    <p id="rig-status" class="caption">Rig e acompanhamento do tecido pendentes.</p>
+    <div class="rule"></div><h3>Diferenças observadas</h3><p id="review" class="caption review"></p>
+    <a id="comparison" class="file-button" hidden target="_blank">Abrir foto e renders da etapa ↗</a>
+    <p class="caption">Uma malha existente ou uma foto bonita não comprova fidelidade. Etapas sem geometria nova ficam pendentes.</p>
+  </aside>
+  <section class="viewport" aria-label="Malha tridimensional da etapa selecionada">
+    <div class="view-top"><span id="view-name">Frente / ortográfica</span><span class="status" id="status">Carregando etapas…</span></div>
+    <div id="canvas-container"></div><div id="message" role="status">Carregando referências…</div>
+    <div class="view-controls"><button data-view="front" class="active">Frente</button><button data-view="side">Perfil</button><button data-view="back">Costas</button><button data-view="threequarter">¾</button></div>
+    <div class="view-help">Arraste para orbitar · roda para aproximar · botão direito para mover</div><div id="stats" class="stats"></div>
+  </section>
+  <aside class="reference"><div class="eyebrow">FOTO ORIGINAL DESTA ETAPA</div><h2 id="reference-title">Referência</h2>
+    <img id="reference" alt="Foto original da etapa selecionada" hidden><a id="original" target="_blank" hidden>Abrir foto original em tamanho completo ↗</a>
+    <p class="caption" id="reference-note">A referência muda com a etapa selecionada.</p>
+  </aside>
+</main><script type="module" src="/alice_layers.js"></script>
+</body></html>

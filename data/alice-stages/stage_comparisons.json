@@ -1,0 +1,67 @@
+{
+  "comparisonPolicy": "Each stage is compared with its own original photo, never a substitute final-outfit image.",
+  "freshGeometryPolicy": "No prior GLB/FBX/BLEND as reconstruction input.",
+  "motionPolicy": "All actual garment layers must be skinned to one compatible character rig; walk, run, jump and attack require deformation, cloth response and inter-layer collision review.",
+  "status": "partial_preview",
+  "completed": false,
+  "fidelityVerified": false,
+  "stages": [
+    {
+      "id": "alice_chapeleiro_stage_02",
+      "variant": "alice_chapeleiro",
+      "number": 2,
+      "label": "Corpete verde e mangas",
+      "sourcePhoto": "alice_chapeleiro_stage_02/source_photo.png",
+      "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
+      "status": "needs_refinement",
+      "fidelityVerified": false,
+      "requiredEvidence": [
+        "original_stage_photo",
+        "source_crop_if_used",
+        "actual_front_render",
+        "actual_side_render",
+        "actual_back_render",
+        "actual_threequarter_render",
+        "visible_difference_review"
+      ],
+      "review": {
+        "verdict": "needs_refinement",
+        "visibleDifferences": [
+          "Somente o corsete foi modelado e riggado; mangas, renda e ornamentos da ficha ainda faltam.",
+          "O decote foi arredondado, mas ombros e cavas ainda precisam seguir o contorno da foto.",
+          "UVs das costas e laterais precisam de correção; a foto inclui iluminação e sombras.",
+          "Os 93 componentes têm pesos; clipes de caminhada, corrida, ataque e salto de teste existem, mas tecido e colisões seguem sem validação."
+        ]
+      },
+      "motionRequirements": {
+        "rigRequired": true,
+        "status": "pending",
+        "requiredActions": [
+          "walk",
+          "run",
+          "jump",
+          "attack"
+        ],
+        "clothFollowingRequired": true,
+        "collisionChecksRequired": true,
+        "motionVerified": false
+      },
+      "comparison": {
+        "reusedGeometry": false,
+        "sourcePhotoSha256": "3a7fb91e7a0724f3d631f1a5c56d7e77119af016d1b152a14696d4fff260b7bc",
+        "displayModel": {
+          "file": "alice_chapeleiro_stage_02/inspection.glb",
+          "sha256": "5e3076c1f7fb4a27983bf8d10210916f973cb740fdc78c0328e1fb7a3cdddb04"
+        },
+        "board": {
+          "file": "alice_chapeleiro_stage_02/photo_vs_geometry.jpg",
+          "sha256": "9928e1e4f010392ca1ddc4a98459dbed56d36a07e425a3c60d3b93aaa3aaf403"
+        },
+        "modelSha256": "052563dcbeb74318e150baef8f5e8b7cc0d7e3aba9c0a43b805a865039133941",
+        "method": "new_photo_modeled_corset_with_supplied_motion_rig",
+        "frontAxis": "-y"
+      }
+    }
+  ],
+  "scope": "Selected partial studies only; the complete six-variant inventory remains local."
+}
