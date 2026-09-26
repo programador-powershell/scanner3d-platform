@@ -19,9 +19,20 @@ audit = json.loads(Path(args.audit).read_text(encoding='utf-8'))
 if (audit['editableBlendSha256'] != generation['editableBlendSha256']
         or not audit.get('savedModelUnchanged')
         or len(audit.get('actualApertureAudit',[])) != 4
-        or len(audit.get('carrierTranslationProbe',[])) != 80
+        or not audit.get('allActualFollowersCovered')
+        or audit.get('actualInternalObjects') != len(generation['pieces'])
+        or audit.get('verifiedFollowers') != len(generation['pieces'])-len(audit.get('attachmentRoots',[]))
+        or {p['follower'] for p in audit.get('carrierTranslationProbe',[])}
+           != {p['name'] for p in generation['pieces']}-set(audit.get('attachmentRoots',[]))
         or any(p['p95TranslationError'] > .001 for p in audit['carrierTranslationProbe'])):
     raise ValueError('Requires the actual geometric-aperture and carrier-translation audit.')
+if any(p['role']=='foundation_gathered_blouse' for p in generation['pieces']):
+    seams=audit.get('actualBlouseSeamAudit',[])
+    if len(seams)!=5 or any(not s['measuredFromActualCages'] or s['maximumRootGap']>1e-6 for s in seams):
+        raise ValueError('Requires measurements of both armholes, both cuffs and the neckline seam.')
+    solvers=audit.get('blouseSolverPartitionAudit',[])
+    if len(solvers)!=3 or any(not s['singleSolver'] or s['uvNonDegenerateTriangleFraction']<.95 for s in solvers):
+        raise ValueError('Requires actual single-solver and evaluated blouse UV evidence.')
 if (generation['sourcePhotoSha256'] != comparison['sourcePhotoSha256']
         or comparison['stageId'] != 'alice_chapeleiro_stage_01'
         or comparison['status'] != 'needs_refinement'
@@ -78,15 +89,18 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                  'version':generation['addonVersion'],'originalAssetSha256':generation['originalAssetSha256']},
         'newInternalPieces':generation['pieces'],'visibleDifferences':comparison['visibleDifferences'],
         'attachmentAudit':{'file':'Docs/alice-variants/chapeleiro/foundation/carrier_audit.json',
-                           'sha256':sha(args.audit),'frame':1,'verifiedFollowers':80,
+                           'sha256':sha(args.audit),'frame':1,'verifiedFollowers':audit['verifiedFollowers'],
                            'actualApertureAudit':audit['actualApertureAudit'],
+                           'actualBlouseSeamAudit':audit.get('actualBlouseSeamAudit',[]),
+                           'blouseSolverPartitionAudit':audit.get('blouseSolverPartitionAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False,'nextVariantMayStart':False}
 (docs/'checkpoint.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 (docs/'README.md').write_text(
     '# Chapeleiro: fundação da ficha 1 em refinamento\n\n'
-    'Anáguas internas novas, renda floral com aberturas em geometria e corsete '
+    'Anáguas internas novas, renda floral com aberturas em geometria, camisa '
+    'franzida com cavas reais, mangas bufantes e corsete '
     'com canais, fechos, ilhoses e cruzamentos traseiros. O GLB do vestido '
     'completo permanece inteiro no seu item original. As rendas acompanham '
     'os respectivos suportes no arquivo Blender por Surface Deform; isso '

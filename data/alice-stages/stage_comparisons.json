@@ -129,11 +129,13 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "Anáguas novas, suporte contínuo até a cintura, quatro rendas florais com aberturas reais e corsete com canais, fechos, ilhoses e cruzamentos traseiros. Geometria e UV da renda foram conferidos contra o traçado da própria ficha 1.",
-          "O teste de translação no frame 1 verificou babados, rendas e 72 acabamentos seguindo seus suportes. Isso não aprova rig, animação nem simulação de tecido em gameplay.",
-          "A ficha 1 continua incompleta: faltam camisa e mangas franzidas, bloomers, ligas, suspensórios e meias. O drapeado creme ainda está cônico; faltam cascatas laterais, franzidos naturais, frisos/rendas do corsete e fitas traseiras.",
-          "O traçado de renda conserva sombras da foto e repete motivos inferidos nas partes não visíveis. Precisa de polimento de fios, materiais, proporções e LOD para o jogo.",
-          "Esta malha está estática, sem ossos ou clipes. Rig compartilhado em todas as peças, caminhada, corrida, salto, ataque e colisões permanecem pendentes. Nenhuma nova variante pode iniciar ainda."
+          "Camisa e mangas foram acrescentadas, mas os franzidos, a profundidade do decote e o acabamento dos punhos ainda precisam de ajuste contra esta foto e o corpo completo.",
+          "O corsete ainda precisa do babado de borda, fitas traseiras e ajuste das proporcoes; a estrutura e os fechos nao comprovam fidelidade final.",
+          "A anagua creme ainda tem silhueta muito conica e regular; faltam cascatas laterais e dobras naturais semelhantes a foto.",
+          "Rendas de anagua conservam sombras do recorte; os pequenos lacos do decote e dos punhos e as repeticoes nao visiveis sao interpretados da referencia.",
+          "Bloomers, ligas, tiras de sustentacao e meias ainda precisam ser construidos; a fundacao nao esta completa.",
+          "O GLB e estatico, com zero ossos e zero clipes. Todas as camadas precisam de rig compartilhado, caminhada, corrida, salto e ataque.",
+          "Vinculos e solvers no Blender nao validam movimento Soulslike, colisao com corpo/pernas, colisao entre camadas ou exportacao de fisica ao GLB."
         ]
       },
       "motionRequirements": {
@@ -154,14 +156,14 @@
         "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
         "displayModel": {
           "file": "alice_chapeleiro_stage_01/inspection.glb",
-          "sha256": "a63093b6837e291e7627353645c11ab18269586ffbe1950df66deda4f926f224"
+          "sha256": "b84871e10e237ece65cbcf4df6719be99d1c0ad93efdbe18f6428844f67564ea"
         },
         "board": {
           "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
-          "sha256": "0affc327b9c3db023749544fbe1601ff2326ac0300b70f5ea290b109cf8d55b3"
+          "sha256": "faaf1031273b25bf6c396b4551b2993a19c5b170ff7cad5400bb9c9c9775847e"
         },
-        "modelSha256": "1cd875c4ef9eec95f4ee20dd466e86e3c55e6840115b3d4c81c92292b9a96c12",
-        "method": "new_internal_gathered_cloth_photo_traced_geometric_lace_and_boned_corset",
+        "modelSha256": "65e860422353e7a0d8ff9f6b8385280afcd10e9d9ff25b5cd1247a0d2f410494",
+        "method": "incremental_photo_1_blouse_open_armholes_sewn_gathers_and_existing_foundation",
         "frontAxis": "-y"
       }
     }

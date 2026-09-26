@@ -54,6 +54,30 @@ inferida. Camisa, bloomers, ligas, meias, acabamentos e o movimento completo
 continuam pendentes. O item de fundação publicado pelo script de embalagem
 fica separado do GLB completo e mantém explícito o estado em refinamento.
 
+`refine_chapeleiro_foundation_blouse.py` continua o mestre da fundação, mantendo
+as 83 peças anteriores e o exterior inteiro. Acrescenta 21 peças da própria
+ficha 1: camisa com decote aberto e duas cavas reais, mangas bufantes franzidas,
+punhos/babados, acabamento do decote, carcela, botões e pequeno ornamento de
+latão, além de laços vazados de fio nas rendas dos punhos e do decote. As mangas
+partem das bordas reais das cavas; os punhos e o decote também
+partem das bordas do tecido, sem tampas ou recortes do vestido exterior.
+
+Cada uma das três superfícies de camisa/manga tem uma única malha de simulação
+antes da espessura. A superfície visível e seus acabamentos seguem essa malha;
+o grupo original de Bystedt acrescenta espessura e UV após a deformação. Somente
+o alvo avaliado recebe triangulação para evitar polígonos côncavos durante o
+vínculo; a malha editável de tecido mantém seus quads. Isso
+evita usar a saída espessa dos nós como alvo de Surface Deform. As malhas de
+simulação ficam no Blender editável e não são exportadas como roupa duplicada.
+Os modificadores antigos são desativados somente durante a construção e
+restaurados antes de salvar e exportar; a geometria anterior é conferida por hash.
+
+A auditoria mede os cinco encontros reais: duas cavas, dois punhos e decote.
+Confere um solver por peça, UVs avaliados e todos os seguidores da hierarquia,
+sem depender de uma contagem fixa de peças. São verificações de construção no
+frame 1, não aprovação de fidelidade, rig ou simulação de ações. Bloomers,
+ligas/meias, caimento das anáguas, acabamentos e movimentos continuam pendentes.
+
 `optimize_alice_whole_outfit.py` mantém o mestre inteiro e salva uma cópia com
 modificador reversível de redução, preservando o atlas PBR 4K e dando prioridade
 ao rosto, dedos e decote. O ensaio `whole_reduction_v027` tem 302.532 triângulos

@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "9a27aea9e79d0ddecbfdc6004cfbc1c28155dc679fb7a195e042e4e20028d763",
+  "editableBlendSha256": "425f64a43d60b0afea98c152a2e6670a5f10ffc0c55f2de1ed87d7bbcd290361",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -1159,8 +1159,370 @@
       "maximumTranslationError": 8.791685105619118e-10,
       "frame": 1,
       "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / gathered blouse / real open armholes",
+      "measuredVertices": 13116,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right gathered puff sleeve / sewn armhole",
+      "measuredVertices": 9355,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right sleeve elastic binding",
+      "measuredVertices": 1224,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.708766937130959e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right gathered cuff frill",
+      "measuredVertices": 2624,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.708766937130959e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right cuff looped needle lace",
+      "measuredVertices": 2856,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left gathered puff sleeve / sewn armhole",
+      "measuredVertices": 9354,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left sleeve elastic binding",
+      "measuredVertices": 1224,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left gathered cuff frill",
+      "measuredVertices": 2624,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left cuff looped needle lace",
+      "measuredVertices": 2856,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / gathered scoop neckline frill",
+      "measuredVertices": 5746,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / neckline looped needle lace",
+      "measuredVertices": 6936,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / neckline stitched binding",
+      "measuredVertices": 1288,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse center placket rail -1",
+      "measuredVertices": 232,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse center placket rail 1",
+      "measuredVertices": 232,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse aged brass key ornament 0",
+      "measuredVertices": 40,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 4.1350722325417255e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse aged brass key ornament 1",
+      "measuredVertices": 16,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse aged brass key ornament 2",
+      "measuredVertices": 16,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 1.4249235385371817e-10,
+      "maximumTranslationError": 4.1350722325417255e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse aged brass key ornament 3",
+      "measuredVertices": 16,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse center sewn button 0",
+      "measuredVertices": 136,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse center sewn button 1",
+      "measuredVertices": 136,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / blouse center sewn button 2",
+      "measuredVertices": 136,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
     }
   ],
+  "actualBlouseSeamAudit": [
+    {
+      "name": "armhole",
+      "object": "01 / right gathered puff sleeve / sewn armhole",
+      "measuredRootVertices": 152,
+      "maximumRootGap": 2.999993681966847e-08,
+      "measuredFromActualCages": true
+    },
+    {
+      "name": "cuff",
+      "object": "01 / right gathered cuff frill",
+      "measuredRootVertices": 152,
+      "maximumRootGap": 0.0,
+      "measuredFromActualCages": true
+    },
+    {
+      "name": "armhole",
+      "object": "01 / left gathered puff sleeve / sewn armhole",
+      "measuredRootVertices": 152,
+      "maximumRootGap": 3.003642065605492e-08,
+      "measuredFromActualCages": true
+    },
+    {
+      "name": "cuff",
+      "object": "01 / left gathered cuff frill",
+      "measuredRootVertices": 152,
+      "maximumRootGap": 0.0,
+      "measuredFromActualCages": true
+    },
+    {
+      "name": "neckline",
+      "object": "01 / gathered scoop neckline frill",
+      "measuredRootVertices": 320,
+      "maximumRootGap": 3.0022365054347007e-08,
+      "measuredFromActualCages": true
+    }
+  ],
+  "blouseSolverPartitionAudit": [
+    {
+      "visibleFabric": "01 / gathered blouse / real open armholes",
+      "simulationCage": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "singleSolver": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "dynamicSimulationVerified": false
+    },
+    {
+      "visibleFabric": "01 / right gathered puff sleeve / sewn armhole",
+      "simulationCage": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "singleSolver": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "dynamicSimulationVerified": false
+    },
+    {
+      "visibleFabric": "01 / left gathered puff sleeve / sewn armhole",
+      "simulationCage": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "singleSolver": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "dynamicSimulationVerified": false
+    }
+  ],
+  "actualInternalObjects": 104,
+  "attachmentRoots": [
+    "01 / long ivory gathered petticoat",
+    "01 / black petticoat continuous waist support",
+    "01 / ivory fitted boned corset / pointed front"
+  ],
+  "verifiedFollowers": 101,
+  "allActualFollowersCovered": true,
   "savedModelUnchanged": true,
   "rigPresent": false,
   "motionVerified": false,
