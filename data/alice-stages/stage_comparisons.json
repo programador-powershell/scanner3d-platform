@@ -107,6 +107,63 @@
         "method": "whole_Tripo_outfit_reduction_with_high_to_low_4K_PBR_bake",
         "frontAxis": "-y"
       }
+    },
+    {
+      "id": "alice_chapeleiro_stage_01",
+      "variant": "alice_chapeleiro",
+      "number": 1,
+      "label": "Fundação interna",
+      "sourcePhoto": "alice_chapeleiro_stage_01/source_photo.png",
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "status": "needs_refinement",
+      "fidelityVerified": false,
+      "requiredEvidence": [
+        "original_stage_photo",
+        "source_crop_if_used",
+        "actual_front_render",
+        "actual_side_render",
+        "actual_back_render",
+        "actual_threequarter_render",
+        "visible_difference_review"
+      ],
+      "review": {
+        "verdict": "needs_refinement",
+        "visibleDifferences": [
+          "Anáguas novas, suporte contínuo até a cintura, quatro rendas florais com aberturas reais e corsete com canais, fechos, ilhoses e cruzamentos traseiros. Geometria e UV da renda foram conferidos contra o traçado da própria ficha 1.",
+          "O teste de translação no frame 1 verificou babados, rendas e 72 acabamentos seguindo seus suportes. Isso não aprova rig, animação nem simulação de tecido em gameplay.",
+          "A ficha 1 continua incompleta: faltam camisa e mangas franzidas, bloomers, ligas, suspensórios e meias. O drapeado creme ainda está cônico; faltam cascatas laterais, franzidos naturais, frisos/rendas do corsete e fitas traseiras.",
+          "O traçado de renda conserva sombras da foto e repete motivos inferidos nas partes não visíveis. Precisa de polimento de fios, materiais, proporções e LOD para o jogo.",
+          "Esta malha está estática, sem ossos ou clipes. Rig compartilhado em todas as peças, caminhada, corrida, salto, ataque e colisões permanecem pendentes. Nenhuma nova variante pode iniciar ainda."
+        ]
+      },
+      "motionRequirements": {
+        "rigRequired": true,
+        "status": "pending",
+        "requiredActions": [
+          "walk",
+          "run",
+          "jump",
+          "attack"
+        ],
+        "clothFollowingRequired": true,
+        "collisionChecksRequired": true,
+        "motionVerified": false
+      },
+      "comparison": {
+        "reusedGeometry": false,
+        "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "displayModel": {
+          "file": "alice_chapeleiro_stage_01/inspection.glb",
+          "sha256": "a63093b6837e291e7627353645c11ab18269586ffbe1950df66deda4f926f224"
+        },
+        "board": {
+          "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
+          "sha256": "0affc327b9c3db023749544fbe1601ff2326ac0300b70f5ea290b109cf8d55b3"
+        },
+        "modelSha256": "1cd875c4ef9eec95f4ee20dd466e86e3c55e6840115b3d4c81c92292b9a96c12",
+        "method": "new_internal_gathered_cloth_photo_traced_geometric_lace_and_boned_corset",
+        "frontAxis": "-y"
+      }
     }
   ],
   "scope": "New Tripo Chapeleiro full draft and sheet-2 surface refinement. All photo layers, rig and cloth remain in progress; rejected geometry stays in git history.",

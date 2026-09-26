@@ -1,0 +1,1169 @@
+{
+  "stage": "alice_chapeleiro_stage_01",
+  "editableBlendSha256": "9a27aea9e79d0ddecbfdc6004cfbc1c28155dc679fb7a195e042e4e20028d763",
+  "actualApertureAudit": [
+    {
+      "components": 54,
+      "eulerCharacteristic": -810,
+      "openSurfaceHoles": 864,
+      "mesh": "01 / ivory scalloped floral lace / real apertures",
+      "minimumExpected": 495.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 1.0
+    },
+    {
+      "components": 352,
+      "eulerCharacteristic": -928,
+      "openSurfaceHoles": 1280,
+      "mesh": "01 / black floral lace tier 1 / real apertures",
+      "minimumExpected": 728.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 0.9993535875888817
+    },
+    {
+      "components": 352,
+      "eulerCharacteristic": -928,
+      "openSurfaceHoles": 1280,
+      "mesh": "01 / black floral lace tier 2 / real apertures",
+      "minimumExpected": 728.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 0.9993535875888817
+    },
+    {
+      "components": 352,
+      "eulerCharacteristic": -928,
+      "openSurfaceHoles": 1280,
+      "mesh": "01 / black floral lace tier 3 / real apertures",
+      "minimumExpected": 728.0,
+      "textureAlphaHolesUsed": false,
+      "surfaceCentroidsOnPhotoThreadMask": 0.9993535875888817
+    }
+  ],
+  "carrierTranslationProbe": [
+    {
+      "support": "01 / long ivory gathered petticoat",
+      "follower": "01 / ivory lower gathered flounce",
+      "measuredVertices": 4992,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / long ivory gathered petticoat",
+      "follower": "01 / ivory scalloped floral lace / real apertures",
+      "measuredVertices": 30453,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black gathered flounce 1",
+      "measuredVertices": 4992,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black gathered flounce 2",
+      "measuredVertices": 4992,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black gathered flounce 3",
+      "measuredVertices": 4992,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black floral lace tier 1 / real apertures",
+      "measuredVertices": 46677,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black floral lace tier 2 / real apertures",
+      "measuredVertices": 46933,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / black petticoat continuous waist support",
+      "follower": "01 / black floral lace tier 3 / real apertures",
+      "measuredVertices": 47084,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 4.708766937130959e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 00 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 00 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 01 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 01 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 02 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 02 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 03 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 03 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 04 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 04 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 05 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 05 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 06 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 06 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 07 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 07 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 08 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 08 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 09 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 09 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 10 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 10 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 11 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 11 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 12 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 12 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 13 edge -1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset boning channel 13 edge 1",
+      "measuredVertices": 198,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset bound upper edge",
+      "measuredVertices": 1158,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / corset bound lower edge",
+      "measuredVertices": 1158,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 0",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 0",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 1",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 2",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 2",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 3",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 3",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 4",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 4",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk hook 5",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / brass busk catch 5",
+      "measuredVertices": 12,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 0 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 0 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 1 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 1 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 2 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 2 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 3 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.2915344247024165e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 3 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 4 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.2915344247024165e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 4 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 5 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 8.791685105619118e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 5 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 6 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 8.791685105619118e-10,
+      "maximumTranslationError": 8.791685105619118e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 6 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 7 side -1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear eyelet 7 side 1",
+      "measuredVertices": 78,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 5.2154064053566707e-11,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 0 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 8.791685105619118e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 0 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 1 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 1 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.2154064053566707e-11,
+      "maximumTranslationError": 4.1350722325417255e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 2 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 2 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.125999449559488e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 3 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.125999449559488e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 3 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 4 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 4 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 5 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 5 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 6 side 0",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 4.1350722325417255e-10,
+      "maximumTranslationError": 5.17815351361306e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / rear corset crossing 6 side 1",
+      "measuredVertices": 42,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 5.17815351361306e-10,
+      "maximumTranslationError": 8.791685105619118e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    }
+  ],
+  "savedModelUnchanged": true,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Frame-1 attachment probe only; no gameplay or dynamic simulation approval."
+}

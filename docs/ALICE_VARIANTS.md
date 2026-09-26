@@ -35,6 +35,25 @@ O ensaio é parcial: renda, camisa, corsete, bloomers, ligas/meias, rig e ensaio
 de movimento/colisão ainda precisam de trabalho. A presença do modificador
 Cloth não comprova simulação aprovada nem exportação de física ao GLB.
 
+`refine_chapeleiro_foundation_cloth.py` acrescenta ao mesmo fluxo anáguas com
+franzidos de espaçamento variável, suporte preto contínuo até a cintura e
+corsete creme com canais de barbatana, fechos frontais, ilhoses e cruzamentos
+traseiros em geometria. A renda é traçada de dois recortes documentados da
+própria ficha 1 por `trace_chapeleiro_foundation_lace.py`: os contornos viram
+superfícies com aberturas reais, espessura pelo grupo original de Bystedt e UV
+fotográfico preservado além do UV automático. Mapas normais de trama e renda
+entram no GLB; nenhum card plano ou alpha substitui essas aberturas.
+
+Babados seguem os respectivos suportes por Surface Deform antes de Cloth,
+com raízes dinâmicas; rendas seguem os babados por outro vínculo real.
+`audit_chapeleiro_foundation_carriers.py` mede aberturas pela topologia e
+movimento dos vínculos em um teste de translação no frame 1, sem salvar
+alterações. Esse ensaio não aprova rig, simulação durante ações ou colisões.
+As sombras e dobras da foto afetam o traçado; a repetição ao redor das peças é
+inferida. Camisa, bloomers, ligas, meias, acabamentos e o movimento completo
+continuam pendentes. O item de fundação publicado pelo script de embalagem
+fica separado do GLB completo e mantém explícito o estado em refinamento.
+
 `optimize_alice_whole_outfit.py` mantém o mestre inteiro e salva uma cópia com
 modificador reversível de redução, preservando o atlas PBR 4K e dando prioridade
 ao rosto, dedos e decote. O ensaio `whole_reduction_v027` tem 302.532 triângulos
