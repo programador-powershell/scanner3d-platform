@@ -414,3 +414,13 @@ Todas as camadas reais devem compartilhar um rig compatível com Alice. Caminhad
 Para cada versão: corpo/rosto/cabelo coerentes com a referência; todas as camadas internas e externas; mangas, costas, laços, rendas e acabamentos; meias/botas; todos os ornamentos e acessórios de sua ficha; UVs, estampas, materiais e detalhes; conferência de frente/perfil/costas e cortes entre camadas; geometria tridimensional verificável e arquivos editáveis. Fichas de panorama/material/montagem exigem conferir o conjunto, não criar uma cópia com outro nome.
 
 Rig e colisões adaptados ainda exigem inspeção e ensaios. Ausência de erros no Python, existência de arquivos, contagem de polígonos e renders isolados não aprovam fidelidade integral nem prontidão para Unreal.
+
+O ensaio [shared-rig-v084](alice-experiments/chapeleiro/shared-rig-v084/README.md)
+preserva 229 peças da fundação e o exterior inteiro em um rig de 173 ossos,
+com quatro ações realmente exportadas. As fotos próprias, quatro vistas e
+doze poses de cada GLB registram defeitos concretos. Os pesos das costuras e
+botões foram refinados, mas mangas, renda dos bloomers, mãos/luvas e colisões
+continuam pendentes. Os GLBs experimentais ficam no GitHub, sem promover esse
+ensaio à galeria canônica. O Blender completo de 128.220.742 bytes foi preservado
+localmente; o FBX final continua dependendo da conclusão das fichas e dos testes
+reais de movimento, tecido e colisão.

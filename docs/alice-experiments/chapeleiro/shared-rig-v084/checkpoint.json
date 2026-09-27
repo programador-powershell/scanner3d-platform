@@ -1,0 +1,85 @@
+{
+  "status": "needs_refinement",
+  "scope": "shared rig for current 229 foundation pieces and intact native exterior",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0",
+        "bytes": 69265528
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+        "bytes": 65148404
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    }
+  },
+  "fullLocalEditableBytes": 128220742,
+  "fullLocalEditableSha256": "70775c1bd7a800c4c63bf652add7a2261475565fd5e674be86745abab21c93b3",
+  "actualClothFieldWeightsUnchanged": true,
+  "actualRawGeometryUnchanged": true,
+  "canonicalGalleryPromoted": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "As quatro vistas conservam a geometria da ficha 1, mas decote, microfranzidos, canais do corset, cascatas diagonais das anáguas, trama e acabamento ainda diferem da foto própria.",
+      "Caminhada, corrida, salto e ataque deformam as 229 peças no mesmo rig; a perna levantada atravessa as anáguas na corrida e no ataque. O ensaio não aprova colisões.",
+      "A saia mantém resposta rígida dos quadris. Os ossos secundários ainda não recebem simulação física ou movimento assado do tecido.",
+      "O corset e as raízes das anáguas deixaram de receber ossos dos braços. A transição das cavas ainda estica e comprime as mangas nas poses extremas.",
+      "O botão central dos bloomers foi estabilizado; a renda dos punhos dos bloomers continua esticando excessivamente. Pesos, tecido solto e união dessas regiões precisam de refinamento.",
+      "O salto usa IK em chaves plantadas; contato real das superfícies dos pés com o chão, todas as poses intermediárias, transições de gameplay e encaixe nas botas continuam pendentes."
+    ],
+    "whole": [
+      "O exterior inteiro mantém sua geometria, atlas e detalhes Tripo originais nas quatro vistas. Silhueta, cabelo, rosto, dobras, materiais e ornamentos ainda precisam do acabamento e da comparação detalhada de cada ficha.",
+      "As quatro ações deformam o exterior no mesmo esqueleto da fundação. A abertura das pernas foi ajustada a partir das malhas atuais; isso não comprova contato dos pés ou contenção das meias nas botas.",
+      "Nas poses de caminhada, corrida e ataque aparecem superfícies muito esticadas junto às mãos e luvas, ligadas à região lateral da saia. É necessário diagnosticar a malha e os pesos mantendo o conjunto inteiro, sem extrair camadas substitutas.",
+      "As coxas levantadas entram na saia durante a corrida e o ataque. O exterior continua sem resposta física secundária e sem colisão validada com corpo ou camadas inferiores.",
+      "A folha de poses usa três amostras por ação. Ela mostra defeitos concretos e não aprova movimento em todos os quadros, rig final ou prontidão para o jogo."
+    ]
+  }
+}

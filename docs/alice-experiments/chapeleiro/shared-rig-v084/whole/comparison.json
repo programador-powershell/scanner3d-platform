@@ -1,0 +1,114 @@
+{
+  "stageId": "alice_chapeleiro_full",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourceCrop": null,
+  "reviewScope": "complete_stage_geometry",
+  "selectedRolePrefix": null,
+  "selectedComponentGroup": null,
+  "renderedComponents": [
+    "Chapeleiro / intact whole exterior / skin study"
+  ],
+  "model": "whole/skin_study.glb",
+  "modelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+  "renders": {
+    "front": {
+      "file": "whole/rest/front.png",
+      "sha256": "ae630fc0eb082b60fd1df3f6361d079c91140079bd03f595be28ae6c5aa2d8c6",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        -3.9198248386383057,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 556738
+    },
+    "side": {
+      "file": "whole/rest/side.png",
+      "sha256": "78240f25daffa82e8f1ecc45390ff7237c738e412e879fd83ca0d6aec38147e7",
+      "cameraPosition": [
+        3.9197239875793457,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 451528
+    },
+    "back": {
+      "file": "whole/rest/back.png",
+      "sha256": "adc6d061da7881be92864b7bbd7cd8e7571bc49d42fb7d22ba2ed4c41cb005ee",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        3.9196274280548096,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 555350
+    },
+    "threequarter": {
+      "file": "whole/rest/threequarter.png",
+      "sha256": "18d3916b886bc0324a93ffd17a3e14513e89cc475f3c38fb4ed1dd9ffd1590fa",
+      "cameraPosition": [
+        2.1195058822631836,
+        -3.260880708694458,
+        0.9791184663772583
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 542522
+    }
+  },
+  "bounds": {
+    "min": [
+      -0.22196771204471588,
+      -0.15589569509029388,
+      3.5339067835593596e-05
+    ],
+    "max": [
+      0.22196318209171295,
+      0.1556984782218933,
+      0.9799668788909912
+    ]
+  },
+  "frontAxis": "-y",
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "O exterior inteiro mantém sua geometria, atlas e detalhes Tripo originais nas quatro vistas. Silhueta, cabelo, rosto, dobras, materiais e ornamentos ainda precisam do acabamento e da comparação detalhada de cada ficha.",
+    "As quatro ações deformam o exterior no mesmo esqueleto da fundação. A abertura das pernas foi ajustada a partir das malhas atuais; isso não comprova contato dos pés ou contenção das meias nas botas.",
+    "Nas poses de caminhada, corrida e ataque aparecem superfícies muito esticadas junto às mãos e luvas, ligadas à região lateral da saia. É necessário diagnosticar a malha e os pesos mantendo o conjunto inteiro, sem extrair camadas substitutas.",
+    "As coxas levantadas entram na saia durante a corrida e o ataque. O exterior continua sem resposta física secundária e sem colisão validada com corpo ou camadas inferiores.",
+    "A folha de poses usa três amostras por ação. Ela mostra defeitos concretos e não aprova movimento em todos os quadros, rig final ou prontidão para o jogo."
+  ],
+  "limitation": "Unseen surfaces are inferred; camera registration and details require review.",
+  "displayModel": {
+    "file": "whole/skin_study.glb",
+    "sha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+    "bytes": 65148404
+  },
+  "comparisonBoard": {
+    "file": "whole/photo_vs_geometry.jpg",
+    "sha256": "5061d8da0452372e38627e9e25e09c3d72d454da0f9faef0b851c8021ffc7177",
+    "bytes": 506125
+  },
+  "visualReviewPerformed": true
+}

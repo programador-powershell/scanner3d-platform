@@ -1,0 +1,33 @@
+{
+  "reviewDate": "2026-09-27",
+  "scope": "Actual Three.js visualizer using the same archived v084 GLBs and each family's own original photo",
+  "previewUrl": "http://localhost:3941/alice/layers",
+  "foundation": {
+    "stage": "alice_chapeleiro_stage_01",
+    "modelSha256": "2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0",
+    "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+    "displayedJoints": 173,
+    "displayedTriangles": 1308839,
+    "selectedAction": "Run / shared Chapeleiro deformation study",
+    "observed": "The raised leg visibly passes through the petticoats; the skirts retain rigid hip motion. The full original sheet remains visible beside the actual animated mesh."
+  },
+  "whole": {
+    "stage": "alice_chapeleiro_full",
+    "modelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+    "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+    "displayedJoints": 173,
+    "displayedTriangles": 302532,
+    "selectedAction": "Attack / shared Chapeleiro deformation study",
+    "selectedView": "three quarter / orthographic",
+    "observed": "A broad stretched surface joins the hand/glove region to the side of the skirt, and the raised thigh enters the skirt. The whole model's original three-view sheet remains visible."
+  },
+  "availableActions": ["Walk", "Run", "Attack", "Jump"],
+  "restPoseRestoredAfterInspection": true,
+  "canonicalGalleryPromoted": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "finalFbxExported": false,
+  "additionalCreditsConsumed": 0,
+  "limitations": "This records direct visual inspection of selected motion and camera controls. It does not approve every frame, game transitions, cloth physics, body contact, or final character fidelity."
+}
