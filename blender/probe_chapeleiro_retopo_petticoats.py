@@ -17,9 +17,12 @@ p.add_argument('--outward-winding', action=argparse.BooleanOptionalAction, defau
 p.add_argument('--solver-quality', type=int)
 p.add_argument('--seam-mode', choices=['welded', 'springs'], default='welded')
 p.add_argument('--seam-clearance', type=float, default=.0015)
+p.add_argument('--collider-normal-response', action=argparse.BooleanOptionalAction, default=False)
+p.add_argument('--mass-per-vertex', type=float, help='Explicit numerical solver control; not a measured garment density')
 a = p.parse_args(sys.argv[sys.argv.index('--') + 1:])
 assert a.warmup > 0 and a.areal_density > 0 and a.inplane_stiffness_scale > 0
 assert a.solver_quality is None or a.solver_quality > 0
+assert a.mass_per_vertex is None or a.mass_per_vertex > 0
 path, out = Path(a.generation), Path(a.output)
 read = lambda f: json.loads(Path(f).read_text(encoding='utf-8'))
 sha = lambda f: hashlib.sha256(Path(f).read_bytes()).hexdigest()
@@ -75,8 +78,13 @@ surface_area = float(triangle_area.sum())
 assert surface_area > 0
 inherited_mass = float(cloth.settings.mass)
 cloth.settings.mass = a.areal_density * surface_area / len(rest_world)
+if a.mass_per_vertex is not None:
+    cloth.settings.mass = a.mass_per_vertex
 mass_calibration = {
-    'mode': 'areal', 'actualBlenderVersion': bpy.app.version_string,
+    'mode': 'explicit_solver_control' if a.mass_per_vertex is not None else 'areal',
+    'explicitSolverControlIsNotMeasuredPhysicalMaterialMass': a.mass_per_vertex is not None,
+    'requestedMassPerVertex': a.mass_per_vertex,
+    'actualBlenderVersion': bpy.app.version_string,
     'installedMassPropertyDescription': cloth.settings.bl_rna.properties['mass'].description,
     'massSemanticsPrimarySource': 'https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc',
     'surfaceAreaSquareMeters': surface_area, 'vertices': len(rest_world),
@@ -114,10 +122,14 @@ assert end == a.warmup + 17
 collider_names = ['01 / left stocking / fitted leg ankle and closed toe', '01 / right stocking / fitted leg ankle and closed toe',
                   '01 / bloomers / continuous waist and sewn crotch']
 colliders, collider_rows = thin_underlayer_colliders(scene, audit, collider_names, rig)
-for obj in colliders:
+for obj, row in zip(colliders, collider_rows):
     obj.modifiers.new('Actual animated underlayer / coupled petticoats', 'COLLISION')
+    row['inheritedInstalledCollisionSettings'] = copy_settings(obj.collision, None)
     obj.collision.thickness_outer = obj.collision.thickness_inner = .0008
     obj.collision.cloth_friction = 5
+    if a.collider_normal_response:
+        obj.collision.use_normal = True
+    row['actualInstalledCollisionSettings'] = copy_settings(obj.collision, None)
 target = cage.copy()
 target.name = 'Measurement only / identical sewn assembly Armature input'
 scene.collection.objects.link(target)
@@ -198,6 +210,14 @@ for frame in range(1, end + 1):
                  'maximumFullyPinnedInputError': float(error[pins > .999].max()),
                  'maximumPhysicalFullyPinnedInputError': float(np.linalg.norm(physical-physical_skin, axis=1)[simulation_pins > .999].max()),
                  'cacheInfo': cloth.point_cache.info, 'cacheOutdated': bool(cloth.point_cache.is_outdated)})
+    result = getattr(cloth, 'solver_result', None)
+    if result is not None:
+        rows[-1]['actualNativeSolverResult'] = {}
+        for prop in result.bl_rna.properties:
+            if prop.identifier == 'rna_type' or prop.type not in {'BOOLEAN', 'INT', 'FLOAT', 'STRING', 'ENUM'}: continue
+            value = getattr(result, prop.identifier)
+            rows[-1]['actualNativeSolverResult'][prop.identifier] = (
+                sorted(value) if isinstance(value, set) else list(value) if prop.is_array else value)
     points.append(actual)
     simulation_points.append(physical)
     inputs.append(skin)
@@ -226,6 +246,7 @@ report = {'parentEditableSha256': g['editableBlendSha256'], 'sourcePhotoSha256':
           'inheritedIvorySolverSettings': inherited_settings,
           'provisionalInplaneStiffnessScale': a.inplane_stiffness_scale,
           'requestedSolverQuality': a.solver_quality,
+          'requestedColliderNormalResponse': a.collider_normal_response,
           'massCalibration': mass_calibration,
           'actualSolverSettings': copy_settings(cloth.settings, None),
           'actualCollisionSettings': copy_settings(cloth.collision_settings, None),

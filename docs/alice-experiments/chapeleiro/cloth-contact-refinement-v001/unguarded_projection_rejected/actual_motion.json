@@ -1,0 +1,3357 @@
+{
+  "parentEditableSha256": "e03074bc5a8f3de32b688b50161d91a4cde245c76cc61fbc35bfda3ae1347e5c",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualSolver": "Independent XPBD distance/shear and two-ring bend constraints; closed recorded body projection and particle self contact",
+  "assembly": {
+    "includedIvory": true,
+    "actualVertices": 9024,
+    "actualFaces": 8544,
+    "actualLooseEdges": 288,
+    "actualWeldedSeamPairs": 0,
+    "actualSewingSpringPairs": 288,
+    "actualFaceEdgesWithMoreThanTwoFaces": 0,
+    "seamMode": "springs",
+    "independentSeamClearanceMeters": 0.0015,
+    "actualSeamSupportRings": [
+      31,
+      34,
+      38
+    ],
+    "seamsUseOneContinuousSupportRingEach": true,
+    "logicalCarrierVertices": 22080,
+    "angularLowpass": 10,
+    "visualSourceGeometryUnchanged": true,
+    "thicknessAndUvRemainOnOriginalReceivers": true,
+    "originalRestDetailReconstructionMaximumError": 1.862645149230957e-09,
+    "detailTransferIsApproximationNotApproval": true,
+    "detailUsesInterpolatedVertexTangents": false,
+    "outwardWinding": true,
+    "actualRadialOutwardFacesFraction": 1.0,
+    "windingChangeAppliesOnlyToIndependentSimulationMesh": true,
+    "sourceHashes": {
+      "01 / long ivory gathered petticoat / petticoat simulation midsurface": "a304b55033ce6e0c12fbdc9e02c09193c0f39a7acb75c8c85e1c2f9d372e5a28",
+      "Authoring / 01 / black petticoat continuous waist support": "700edad0f8d83c15c0a7c996264b2c7845ec7612c8f9ad821e27979eadaccab4",
+      "Authoring / 01 / black gathered flounce 1": "c1e33ee599ccd187d660aea54a171e9369f857b1abefdf54013d4e1840496fda",
+      "Authoring / 01 / black gathered flounce 2": "5c88944a81516fdfd1f0579b5a70d5fd992b3237935ffc6322248b63eacbba99",
+      "Authoring / 01 / black gathered flounce 3": "180928f7e145ed6a78518893650a913a912556b9259b3f7f3f631158cecb0037"
+    }
+  },
+  "parts": [
+    {
+      "key": "ivory",
+      "source": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "visibleGarment": "01 / long ivory gathered petticoat",
+      "family": "IvoryCloth",
+      "start": 0,
+      "vertices": 7104,
+      "faces": 3456,
+      "originalSourceFaces": 6912,
+      "simulationRows": 37,
+      "simulationAround": 96,
+      "sourceRawGeometrySha256": "a304b55033ce6e0c12fbdc9e02c09193c0f39a7acb75c8c85e1c2f9d372e5a28",
+      "originalWorldPointsSha256": "2f8363db2a420b5a54183ed543654c64cf673fdeb7b74740b715f0bd3fad27b6",
+      "actualOwnedSolverVertices": 3552,
+      "uniformSeamSupportRing": null
+    },
+    {
+      "key": "support",
+      "source": "Authoring / 01 / black petticoat continuous waist support",
+      "visibleGarment": "01 / black petticoat continuous waist support",
+      "family": "BlackCloth",
+      "start": 7104,
+      "vertices": 7488,
+      "faces": 3648,
+      "originalSourceFaces": 7296,
+      "simulationRows": 39,
+      "simulationAround": 96,
+      "sourceRawGeometrySha256": "700edad0f8d83c15c0a7c996264b2c7845ec7612c8f9ad821e27979eadaccab4",
+      "originalWorldPointsSha256": "c14072fb6d0f40377029386386e1d0e417425415ebc90d5220c5db70abffd53e",
+      "actualOwnedSolverVertices": 3744,
+      "uniformSeamSupportRing": null
+    },
+    {
+      "key": "tier1",
+      "source": "Authoring / 01 / black gathered flounce 1",
+      "visibleGarment": "01 / black gathered flounce 1",
+      "family": "BlackCloth",
+      "start": 14592,
+      "vertices": 2496,
+      "faces": 480,
+      "originalSourceFaces": 2304,
+      "simulationRows": 6,
+      "simulationAround": 96,
+      "sourceRawGeometrySha256": "c1e33ee599ccd187d660aea54a171e9369f857b1abefdf54013d4e1840496fda",
+      "originalWorldPointsSha256": "3d69c88449b810e31fdee6240768fc033d0962239787a427ccad27d21b1df671",
+      "actualOwnedSolverVertices": 576,
+      "uniformSeamSupportRing": 31
+    },
+    {
+      "key": "tier2",
+      "source": "Authoring / 01 / black gathered flounce 2",
+      "visibleGarment": "01 / black gathered flounce 2",
+      "family": "BlackCloth",
+      "start": 17088,
+      "vertices": 2496,
+      "faces": 480,
+      "originalSourceFaces": 2304,
+      "simulationRows": 6,
+      "simulationAround": 96,
+      "sourceRawGeometrySha256": "5c88944a81516fdfd1f0579b5a70d5fd992b3237935ffc6322248b63eacbba99",
+      "originalWorldPointsSha256": "e0e1335063ce810ad354821ae5e0488a6e3db955778df5f9ad9812a6997a27be",
+      "actualOwnedSolverVertices": 576,
+      "uniformSeamSupportRing": 34
+    },
+    {
+      "key": "tier3",
+      "source": "Authoring / 01 / black gathered flounce 3",
+      "visibleGarment": "01 / black gathered flounce 3",
+      "family": "BlackCloth",
+      "start": 19584,
+      "vertices": 2496,
+      "faces": 480,
+      "originalSourceFaces": 2304,
+      "simulationRows": 6,
+      "simulationAround": 96,
+      "sourceRawGeometrySha256": "180928f7e145ed6a78518893650a913a912556b9259b3f7f3f631158cecb0037",
+      "originalWorldPointsSha256": "cc9d3694756e0c948f472d47546b2f733e6e66455284ce928e57ae81f1eaf3fa",
+      "actualOwnedSolverVertices": 576,
+      "uniformSeamSupportRing": 38
+    }
+  ],
+  "actualColliders": [
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / left stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / left stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "inheritedInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.20000000298023224,
+        "thickness_outer": 0.019999999552965164,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": false
+      },
+      "actualInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.0010000000474974513,
+        "thickness_outer": 0.0010000000474974513,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": true
+      }
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / right stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / right stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "inheritedInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.20000000298023224,
+        "thickness_outer": 0.019999999552965164,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": false
+      },
+      "actualInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.0010000000474974513,
+        "thickness_outer": 0.0010000000474974513,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": true
+      }
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / bloomers / continuous waist and sewn crotch",
+      "actualSourceCarrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "visibleGarment": "01 / bloomers / continuous waist and sewn crotch",
+      "sourceVertices": 6287,
+      "sourceFaces": 6144,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "inheritedInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.20000000298023224,
+        "thickness_outer": 0.019999999552965164,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": false
+      },
+      "actualInstalledCollisionSettings": {
+        "use": true,
+        "damping_factor": 0.0,
+        "damping_random": 0.0,
+        "friction_factor": 0.0,
+        "friction_random": 0.0,
+        "permeability": 0.0,
+        "use_particle_kill": false,
+        "stickiness": 0.0,
+        "thickness_inner": 0.0010000000474974513,
+        "thickness_outer": 0.0010000000474974513,
+        "damping": 0.10000000149011612,
+        "absorption": 0.0,
+        "cloth_friction": 5.0,
+        "use_culling": true,
+        "use_normal": true
+      }
+    }
+  ],
+  "seamMode": "springs_regular_carriers",
+  "physicalRestEdgeQuality": [
+    {
+      "key": "ivory",
+      "minimumEdgeLengthMeters": 0.0028134414460510015,
+      "edgeLength05PercentileMeters": 0.004028507973998785,
+      "edgeLength95PercentileMeters": 0.009489914402365685,
+      "maximumEdgeLengthMeters": 0.011329090222716331
+    },
+    {
+      "key": "support",
+      "minimumEdgeLengthMeters": 0.002683147555217147,
+      "edgeLength05PercentileMeters": 0.0039976732805371284,
+      "edgeLength95PercentileMeters": 0.010380231775343418,
+      "maximumEdgeLengthMeters": 0.012369788251817226
+    },
+    {
+      "key": "tier1",
+      "minimumEdgeLengthMeters": 0.00445260014384985,
+      "edgeLength05PercentileMeters": 0.004669085144996643,
+      "edgeLength95PercentileMeters": 0.011766531504690647,
+      "maximumEdgeLengthMeters": 0.012364273890852928
+    },
+    {
+      "key": "tier2",
+      "minimumEdgeLengthMeters": 0.005185229238122702,
+      "edgeLength05PercentileMeters": 0.005400836933404207,
+      "edgeLength95PercentileMeters": 0.012242241762578487,
+      "maximumEdgeLengthMeters": 0.012822155840694904
+    },
+    {
+      "key": "tier3",
+      "minimumEdgeLengthMeters": 0.0039164824411273,
+      "edgeLength05PercentileMeters": 0.004094215109944344,
+      "edgeLength95PercentileMeters": 0.012835129164159298,
+      "maximumEdgeLengthMeters": 0.013280031271278858
+    }
+  ],
+  "logicalPointsReconstructOriginalRestDetailThroughRotatingTangentFrames": true,
+  "restDetailReconstructionMaximumError": 1.862645149230957e-09,
+  "inheritedIvorySolverSettings": {
+    "goal_min": 0.0,
+    "goal_max": 1.0,
+    "goal_default": 0.0,
+    "goal_spring": 1.0,
+    "goal_friction": 0.0,
+    "internal_friction": 0.0,
+    "collider_friction": 0.0,
+    "density_target": 0.0,
+    "density_strength": 0.0,
+    "mass": 0.11999999731779099,
+    "vertex_group_mass": "pinned",
+    "gravity": [
+      0.0,
+      0.0,
+      -9.8100004196167
+    ],
+    "air_damping": 1.0,
+    "pin_stiffness": 1.0,
+    "quality": 12,
+    "time_scale": 1.0,
+    "vertex_group_shrink": "shrinking",
+    "shrink_min": 0.0,
+    "shrink_max": 0.0,
+    "voxel_cell_size": 0.10000000149011612,
+    "tension_damping": 5.0,
+    "compression_damping": 5.0,
+    "shear_damping": 5.0,
+    "tension_stiffness": 35.0,
+    "tension_stiffness_max": 35.0,
+    "compression_stiffness": 35.0,
+    "compression_stiffness_max": 35.0,
+    "shear_stiffness": 12.0,
+    "shear_stiffness_max": 12.0,
+    "sewing_force_max": 0.0,
+    "vertex_group_structural_stiffness": "",
+    "vertex_group_shear_stiffness": "",
+    "bending_stiffness": 0.6000000238418579,
+    "bending_stiffness_max": 0.6000000238418579,
+    "bending_damping": 0.5,
+    "use_sewing_springs": false,
+    "vertex_group_bending": "stiffness",
+    "use_dynamic_mesh": false,
+    "bending_model": "ANGULAR",
+    "use_internal_springs": false,
+    "internal_spring_normal_check": true,
+    "internal_spring_max_length": 0.0,
+    "internal_spring_max_diversion": 0.7853981852531433,
+    "internal_tension_stiffness": 15.0,
+    "internal_tension_stiffness_max": 15.0,
+    "internal_compression_stiffness": 15.0,
+    "internal_compression_stiffness_max": 15.0,
+    "vertex_group_intern": "",
+    "use_pressure": false,
+    "use_pressure_volume": false,
+    "uniform_pressure_force": 0.0,
+    "target_volume": 0.0,
+    "pressure_factor": 1.0,
+    "fluid_density": 0.0,
+    "vertex_group_pressure": "pressure"
+  },
+  "provisionalInplaneStiffnessScale": 1.0,
+  "requestedSolverQuality": 12,
+  "requestedColliderNormalResponse": true,
+  "massCalibration": {
+    "mode": "areal",
+    "actualBlenderVersion": "5.2.1 LTS",
+    "installedMassPropertyDescription": "The mass of each vertex on the cloth material",
+    "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc",
+    "surfaceAreaSquareMeters": 0.46804210619766884,
+    "vertices": 9024,
+    "assumedArealDensityKgPerSquareMeter": 0.18,
+    "densityIsProvisionalMaterialAssumption": true,
+    "inheritedMassPerVertexKg": 0.11999999731779099,
+    "inheritedTotalMassKg": 1082.8799757957458,
+    "actualMassPerVertexKg": 9.335945833299775e-06,
+    "actualTotalMassKg": 0.08424757519969717,
+    "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true,
+    "parts": [
+      {
+        "key": "ivory",
+        "areaSquareMeters": 0.15803237539607018,
+        "allocatedUniqueSolverVertices": 3552,
+        "sharedSeamMassAllocatedToSupport": false,
+        "actualMassKg": 0.0331612795998808,
+        "effectiveArealDensityKgPerSquareMeter": 0.209838518953917
+      },
+      {
+        "key": "support",
+        "areaSquareMeters": 0.23946756105142958,
+        "allocatedUniqueSolverVertices": 3744,
+        "sharedSeamMassAllocatedToSupport": false,
+        "actualMassKg": 0.034953781199874356,
+        "effectiveArealDensityKgPerSquareMeter": 0.1459645767735842
+      },
+      {
+        "key": "tier1",
+        "areaSquareMeters": 0.022658550643882867,
+        "allocatedUniqueSolverVertices": 576,
+        "sharedSeamMassAllocatedToSupport": false,
+        "actualMassKg": 0.00537750479998067,
+        "effectiveArealDensityKgPerSquareMeter": 0.23732783638711843
+      },
+      {
+        "key": "tier2",
+        "areaSquareMeters": 0.026654513051516993,
+        "allocatedUniqueSolverVertices": 576,
+        "sharedSeamMassAllocatedToSupport": false,
+        "actualMassKg": 0.00537750479998067,
+        "effectiveArealDensityKgPerSquareMeter": 0.20174837895508352
+      },
+      {
+        "key": "tier3",
+        "areaSquareMeters": 0.02122910605476925,
+        "allocatedUniqueSolverVertices": 576,
+        "sharedSeamMassAllocatedToSupport": false,
+        "actualMassKg": 0.00537750479998067,
+        "effectiveArealDensityKgPerSquareMeter": 0.2533081132152798
+      }
+    ]
+  },
+  "actualSolverSettings": {
+    "goal_min": 0.0,
+    "goal_max": 1.0,
+    "goal_default": 0.0,
+    "goal_spring": 1.0,
+    "goal_friction": 0.0,
+    "internal_friction": 0.0,
+    "collider_friction": 0.0,
+    "density_target": 0.0,
+    "density_strength": 0.0,
+    "mass": 9.335945833299775e-06,
+    "vertex_group_mass": "pinned",
+    "gravity": [
+      0.0,
+      0.0,
+      -9.8100004196167
+    ],
+    "air_damping": 1.0,
+    "pin_stiffness": 1.0,
+    "quality": 12,
+    "time_scale": 1.0,
+    "vertex_group_shrink": "shrinking",
+    "shrink_min": 0.0,
+    "shrink_max": 0.0,
+    "voxel_cell_size": 0.10000000149011612,
+    "tension_damping": 5.0,
+    "compression_damping": 5.0,
+    "shear_damping": 5.0,
+    "tension_stiffness": 35.0,
+    "tension_stiffness_max": 35.0,
+    "compression_stiffness": 35.0,
+    "compression_stiffness_max": 35.0,
+    "shear_stiffness": 12.0,
+    "shear_stiffness_max": 12.0,
+    "sewing_force_max": 0.0,
+    "vertex_group_structural_stiffness": "",
+    "vertex_group_shear_stiffness": "",
+    "bending_stiffness": 0.6000000238418579,
+    "bending_stiffness_max": 0.6000000238418579,
+    "bending_damping": 0.5,
+    "use_sewing_springs": true,
+    "vertex_group_bending": "stiffness",
+    "use_dynamic_mesh": false,
+    "bending_model": "ANGULAR",
+    "use_internal_springs": false,
+    "internal_spring_normal_check": true,
+    "internal_spring_max_length": 0.0,
+    "internal_spring_max_diversion": 0.7853981852531433,
+    "internal_tension_stiffness": 15.0,
+    "internal_tension_stiffness_max": 15.0,
+    "internal_compression_stiffness": 15.0,
+    "internal_compression_stiffness_max": 15.0,
+    "vertex_group_intern": "",
+    "use_pressure": false,
+    "use_pressure_volume": false,
+    "uniform_pressure_force": 0.0,
+    "target_volume": 0.0,
+    "pressure_factor": 1.0,
+    "fluid_density": 0.0,
+    "vertex_group_pressure": "pressure"
+  },
+  "actualCollisionSettings": {
+    "use_collision": true,
+    "distance_min": 0.0010000000474974513,
+    "friction": 5.0,
+    "damping": 0.0,
+    "collision_quality": 5,
+    "impulse_clamp": 0.0,
+    "use_self_collision": true,
+    "self_distance_min": 0.0010000000474974513,
+    "self_friction": 5.0,
+    "vertex_group_self_collisions": "",
+    "vertex_group_object_collisions": "",
+    "self_impulse_clamp": 0.0
+  },
+  "sourceAction": "Run / current fitted Chapeleiro motion study",
+  "localAction": "Local cloth entry only / rest to Run / current fitted Chapeleiro motion study",
+  "initialRestTransformMaximumError": 0.0,
+  "actualModifierOrder": [
+    "ARMATURE",
+    "CLOTH"
+  ],
+  "clothNeverBypassedDuringSequence": true,
+  "frames": [
+    {
+      "frame": 1,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 1.0,
+          "solverEdgeStretch95Percentile": 1.0,
+          "bounds": [
+            [
+              -0.17590384185314178,
+              -0.10797129571437836,
+              0.39753785729408264
+            ],
+            [
+              0.17614640295505524,
+              0.10690587759017944,
+              0.6370000243186951
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 1.0,
+          "solverEdgeStretch95Percentile": 1.0,
+          "bounds": [
+            [
+              -0.18998011946678162,
+              -0.11032608896493912,
+              0.280537873506546
+            ],
+            [
+              0.1917310357093811,
+              0.11043175309896469,
+              0.6330000162124634
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0,
+          "solverEdgeStretch95Percentile": 1.0,
+          "bounds": [
+            [
+              -0.19103264808654785,
+              -0.11182800680398941,
+              0.32453787326812744
+            ],
+            [
+              0.19167223572731018,
+              0.11180712282657623,
+              0.35100001096725464
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0,
+          "solverEdgeStretch95Percentile": 1.0,
+          "bounds": [
+            [
+              -0.19794735312461853,
+              -0.1155707910656929,
+              0.2925378680229187
+            ],
+            [
+              0.19933868944644928,
+              0.11601600050926208,
+              0.3160000145435333
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0,
+          "solverEdgeStretch95Percentile": 1.0,
+          "bounds": [
+            [
+              -0.2048889845609665,
+              -0.12032697349786758,
+              0.2615378797054291
+            ],
+            [
+              0.20602652430534363,
+              0.11998394876718521,
+              0.28200000524520874
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0015000074254847135,
+      "maximumPhysicalFullyPinnedInputError": 5.587935447692871e-09
+    },
+    {
+      "frame": 2,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.1693972852186008,
+          "solverEdgeStretch95Percentile": 1.0315956985882802,
+          "bounds": [
+            [
+              -0.17521439492702484,
+              -0.10813815891742706,
+              0.39094793796539307
+            ],
+            [
+              0.17554177343845367,
+              0.10681495070457458,
+              0.6337524652481079
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.026147644898044,
+          "solverEdgeStretch95Percentile": 1.0306756320842412,
+          "bounds": [
+            [
+              -0.19005097448825836,
+              -0.11035776883363724,
+              0.27403968572616577
+            ],
+            [
+              0.1913592517375946,
+              0.11173615604639053,
+              0.6296826601028442
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0334105820152983,
+          "solverEdgeStretch95Percentile": 1.0052855136576453,
+          "bounds": [
+            [
+              -0.19085517525672913,
+              -0.11184374243021011,
+              0.31861597299575806
+            ],
+            [
+              0.19174382090568542,
+              0.11137630045413971,
+              0.34877049922943115
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0110248527678785,
+          "solverEdgeStretch95Percentile": 1.0043600137847815,
+          "bounds": [
+            [
+              -0.19767901301383972,
+              -0.11561118811368942,
+              0.2865835130214691
+            ],
+            [
+              0.19931660592556,
+              0.11571351438760757,
+              0.3145664632320404
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0137534168550222,
+          "solverEdgeStretch95Percentile": 1.0059316475264644,
+          "bounds": [
+            [
+              -0.2044498473405838,
+              -0.12037979066371918,
+              0.25556620955467224
+            ],
+            [
+              0.20585086941719055,
+              0.11990057677030563,
+              0.28142213821411133
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0016491551144803785,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 3,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.2024611672570344,
+          "solverEdgeStretch95Percentile": 1.0426695781817077,
+          "bounds": [
+            [
+              -0.17461681365966797,
+              -0.10523894429206848,
+              0.3820918798446655
+            ],
+            [
+              0.17713972926139832,
+              0.10303232818841934,
+              0.6304302215576172
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.1001419704077198,
+          "solverEdgeStretch95Percentile": 1.0495156815900704,
+          "bounds": [
+            [
+              -0.18925637006759644,
+              -0.11102902889251709,
+              0.2636401057243347
+            ],
+            [
+              0.1920185387134552,
+              0.11239709705114365,
+              0.6262762546539307
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0397271064460556,
+          "solverEdgeStretch95Percentile": 1.0153346247807518,
+          "bounds": [
+            [
+              -0.18896393477916718,
+              -0.1111234501004219,
+              0.30569708347320557
+            ],
+            [
+              0.1912129819393158,
+              0.11014442145824432,
+              0.34383949637413025
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.02265383436559,
+          "solverEdgeStretch95Percentile": 1.0114512851249442,
+          "bounds": [
+            [
+              -0.19573280215263367,
+              -0.11532770842313766,
+              0.2736242711544037
+            ],
+            [
+              0.1981555074453354,
+              0.11487895995378494,
+              0.3083754777908325
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0174530296655855,
+          "solverEdgeStretch95Percentile": 1.0145070807239243,
+          "bounds": [
+            [
+              -0.2014392465353012,
+              -0.12000009417533875,
+              0.24232085049152374
+            ],
+            [
+              0.20414097607135773,
+              0.12015902251005173,
+              0.2765274941921234
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0016094137463877408,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 4,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 1.9285733900055868,
+          "solverEdgeStretch95Percentile": 1.0356700642441705,
+          "bounds": [
+            [
+              -0.1736150085926056,
+              -0.0976066142320633,
+              0.3773150146007538
+            ],
+            [
+              0.17636241018772125,
+              0.09420645982027054,
+              0.6270482540130615
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.3578416574131293,
+          "solverEdgeStretch95Percentile": 1.0475945621267473,
+          "bounds": [
+            [
+              -0.1901475340127945,
+              -0.10866135358810425,
+              0.25784626603126526
+            ],
+            [
+              0.1908167004585266,
+              0.11462996900081635,
+              0.6227967739105225
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0601086103261732,
+          "solverEdgeStretch95Percentile": 1.016032692085751,
+          "bounds": [
+            [
+              -0.18756896257400513,
+              -0.10773428529500961,
+              0.29814717173576355
+            ],
+            [
+              0.1885058730840683,
+              0.10630962997674942,
+              0.3411346673965454
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0464010412499503,
+          "solverEdgeStretch95Percentile": 1.011377278919241,
+          "bounds": [
+            [
+              -0.19492129981517792,
+              -0.1135558933019638,
+              0.26730647683143616
+            ],
+            [
+              0.19546203315258026,
+              0.11352550238370895,
+              0.3057005703449249
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0142349309351084,
+          "solverEdgeStretch95Percentile": 1.0071551090203912,
+          "bounds": [
+            [
+              -0.19839619100093842,
+              -0.1186399981379509,
+              0.23621483147144318
+            ],
+            [
+              0.20215022563934326,
+              0.1190408393740654,
+              0.2738575339317322
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.001631472804098407,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 5,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.2526431261863147,
+          "solverEdgeStretch95Percentile": 1.044377748911783,
+          "bounds": [
+            [
+              -0.1700330525636673,
+              -0.0888296365737915,
+              0.3680115342140198
+            ],
+            [
+              0.17744235694408417,
+              0.08378827571868896,
+              0.6235811114311218
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.2543697492214125,
+          "solverEdgeStretch95Percentile": 1.0431593493000164,
+          "bounds": [
+            [
+              -0.19149956107139587,
+              -0.1061171218752861,
+              0.2539024353027344
+            ],
+            [
+              0.1917329877614975,
+              0.11389677226543427,
+              0.6192401051521301
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.036244150249733,
+          "solverEdgeStretch95Percentile": 1.0151506499299292,
+          "bounds": [
+            [
+              -0.18981482088565826,
+              -0.10270747542381287,
+              0.2936878502368927
+            ],
+            [
+              0.19228360056877136,
+              0.10555634647607803,
+              0.34056714177131653
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0283917665145508,
+          "solverEdgeStretch95Percentile": 1.010360444360332,
+          "bounds": [
+            [
+              -0.19557970762252808,
+              -0.10990060120820999,
+              0.2625855505466461
+            ],
+            [
+              0.1975308656692505,
+              0.11904451996088028,
+              0.3058723509311676
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0182137533725952,
+          "solverEdgeStretch95Percentile": 1.0056257326331925,
+          "bounds": [
+            [
+              -0.19782112538814545,
+              -0.11525530368089676,
+              0.23195375502109528
+            ],
+            [
+              0.20439715683460236,
+              0.11806748062372208,
+              0.2766014337539673
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0017040980492681215,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 6,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 1.9326941763573935,
+          "solverEdgeStretch95Percentile": 1.0500413108865052,
+          "bounds": [
+            [
+              -0.16122494637966156,
+              -0.09084966033697128,
+              0.36516425013542175
+            ],
+            [
+              0.17629188299179077,
+              0.0759616568684578,
+              0.6200286746025085
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.144551906322395,
+          "solverEdgeStretch95Percentile": 1.0456051415187537,
+          "bounds": [
+            [
+              -0.1896650195121765,
+              -0.11224324256181717,
+              0.24833112955093384
+            ],
+            [
+              0.19200995564460754,
+              0.11195026338100433,
+              0.6156036257743835
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.044550181973785,
+          "solverEdgeStretch95Percentile": 1.0115006755187288,
+          "bounds": [
+            [
+              -0.18607035279273987,
+              -0.11440766602754593,
+              0.2865219712257385
+            ],
+            [
+              0.19138222932815552,
+              0.1088128536939621,
+              0.3371935784816742
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0466209343711848,
+          "solverEdgeStretch95Percentile": 1.009022567590479,
+          "bounds": [
+            [
+              -0.1947859674692154,
+              -0.11495181173086166,
+              0.25699642300605774
+            ],
+            [
+              0.19951625168323517,
+              0.11980122327804565,
+              0.3033081293106079
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.027514393101759,
+          "solverEdgeStretch95Percentile": 1.0066682921209194,
+          "bounds": [
+            [
+              -0.1999991536140442,
+              -0.11361368745565414,
+              0.22722077369689941
+            ],
+            [
+              0.20605435967445374,
+              0.11812551319599152,
+              0.2723260521888733
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0018660442559329945,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 7,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.2301916992707733,
+          "solverEdgeStretch95Percentile": 1.0533122083420432,
+          "bounds": [
+            [
+              -0.1536962240934372,
+              -0.10351698845624924,
+              0.3528040647506714
+            ],
+            [
+              0.1785619854927063,
+              0.06958363950252533,
+              0.6163939237594604
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.1767715733674673,
+          "solverEdgeStretch95Percentile": 1.04934409348641,
+          "bounds": [
+            [
+              -0.18624509871006012,
+              -0.12778562307357788,
+              0.24265454709529877
+            ],
+            [
+              0.1855742633342743,
+              0.11207704991102219,
+              0.611885130405426
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0491770734286834,
+          "solverEdgeStretch95Percentile": 1.0124066858376066,
+          "bounds": [
+            [
+              -0.1800030618906021,
+              -0.1294603794813156,
+              0.27988532185554504
+            ],
+            [
+              0.1822270303964615,
+              0.1099589392542839,
+              0.33172038197517395
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0201489610607344,
+          "solverEdgeStretch95Percentile": 1.0076102903651016,
+          "bounds": [
+            [
+              -0.19113661348819733,
+              -0.13099431991577148,
+              0.2501288652420044
+            ],
+            [
+              0.19285786151885986,
+              0.11592312157154083,
+              0.2975555956363678
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0352302850223114,
+          "solverEdgeStretch95Percentile": 1.009466710718788,
+          "bounds": [
+            [
+              -0.20058928430080414,
+              -0.12902551889419556,
+              0.22322101891040802
+            ],
+            [
+              0.20146216452121735,
+              0.11770153045654297,
+              0.2657022178173065
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0017609402541931922,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 8,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 1.9984684984797736,
+          "solverEdgeStretch95Percentile": 1.0612746583976735,
+          "bounds": [
+            [
+              -0.14721214771270752,
+              -0.11079341918230057,
+              0.3427661061286926
+            ],
+            [
+              0.17180179059505463,
+              0.06905270367860794,
+              0.612667977809906
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.1106662309832047,
+          "solverEdgeStretch95Percentile": 1.0586589484854187,
+          "bounds": [
+            [
+              -0.18077494204044342,
+              -0.1471601128578186,
+              0.23730452358722687
+            ],
+            [
+              0.17454750835895538,
+              0.11309931427240372,
+              0.6080834269523621
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0685567746297773,
+          "solverEdgeStretch95Percentile": 1.0120417409861815,
+          "bounds": [
+            [
+              -0.17220771312713623,
+              -0.14607150852680206,
+              0.273328572511673
+            ],
+            [
+              0.1685214787721634,
+              0.10767681896686554,
+              0.3274608850479126
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0263235704986782,
+          "solverEdgeStretch95Percentile": 1.0091257444384816,
+          "bounds": [
+            [
+              -0.1821882724761963,
+              -0.14700406789779663,
+              0.24421146512031555
+            ],
+            [
+              0.18095721304416656,
+              0.11330028623342514,
+              0.2916145622730255
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0215021515672187,
+          "solverEdgeStretch95Percentile": 1.0092159553320275,
+          "bounds": [
+            [
+              -0.1918998658657074,
+              -0.1526099294424057,
+              0.21423520147800446
+            ],
+            [
+              0.18970495462417603,
+              0.11540210992097855,
+              0.2578235864639282
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0017326090735696289,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 9,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.051731880986066,
+          "solverEdgeStretch95Percentile": 1.0553292036584745,
+          "bounds": [
+            [
+              -0.1383095234632492,
+              -0.12279316037893295,
+              0.3381759822368622
+            ],
+            [
+              0.16112245619297028,
+              0.07312966883182526,
+              0.6088526844978333
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.0384318194934545,
+          "solverEdgeStretch95Percentile": 1.0675128609598639,
+          "bounds": [
+            [
+              -0.1698799580335617,
+              -0.16452565789222717,
+              0.23036441206932068
+            ],
+            [
+              0.15540839731693268,
+              0.1132437065243721,
+              0.6041969060897827
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0624939243824822,
+          "solverEdgeStretch95Percentile": 1.0133810369572358,
+          "bounds": [
+            [
+              -0.16092874109745026,
+              -0.15956838428974152,
+              0.2666599154472351
+            ],
+            [
+              0.15964816510677338,
+              0.10804538428783417,
+              0.33059248328208923
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0215484871610843,
+          "solverEdgeStretch95Percentile": 1.0080526627803748,
+          "bounds": [
+            [
+              -0.17129985988140106,
+              -0.16373133659362793,
+              0.2380443513393402
+            ],
+            [
+              0.1656443178653717,
+              0.11502023786306381,
+              0.2938930094242096
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0266378167272112,
+          "solverEdgeStretch95Percentile": 1.008701814895855,
+          "bounds": [
+            [
+              -0.17988179624080658,
+              -0.17247043550014496,
+              0.2062441110610962
+            ],
+            [
+              0.17008009552955627,
+              0.12015135586261749,
+              0.26094838976860046
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.001671514622867976,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 10,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.6696884996205212,
+          "solverEdgeStretch95Percentile": 1.063932228218896,
+          "bounds": [
+            [
+              -0.13250797986984253,
+              -0.13715225458145142,
+              0.33570247888565063
+            ],
+            [
+              0.15234021842479706,
+              0.08000211417675018,
+              0.6049443483352661
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.44729281169889,
+          "solverEdgeStretch95Percentile": 1.0775712745558725,
+          "bounds": [
+            [
+              -0.15479867160320282,
+              -0.17934167385101318,
+              0.22047805786132812
+            ],
+            [
+              0.140231654047966,
+              0.11293483525514603,
+              0.6002235412597656
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.112799562673106,
+          "solverEdgeStretch95Percentile": 1.011418350254196,
+          "bounds": [
+            [
+              -0.1485682874917984,
+              -0.17250856757164001,
+              0.2578718364238739
+            ],
+            [
+              0.14443202316761017,
+              0.10937753319740295,
+              0.32880300283432007
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0276424363321839,
+          "solverEdgeStretch95Percentile": 1.0094400199559734,
+          "bounds": [
+            [
+              -0.15557609498500824,
+              -0.17916584014892578,
+              0.22904276847839355
+            ],
+            [
+              0.14827124774456024,
+              0.11560385674238205,
+              0.29233819246292114
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0279575547073938,
+          "solverEdgeStretch95Percentile": 1.008437571707756,
+          "bounds": [
+            [
+              -0.16212303936481476,
+              -0.18710507452487946,
+              0.19807589054107666
+            ],
+            [
+              0.15232256054878235,
+              0.12017207592725754,
+              0.2595638632774353
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.002235401167323142,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 11,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.1292466781808503,
+          "solverEdgeStretch95Percentile": 1.0611156852461259,
+          "bounds": [
+            [
+              -0.13556110858917236,
+              -0.14922800660133362,
+              0.3310028910636902
+            ],
+            [
+              0.1349063366651535,
+              0.09999604523181915,
+              0.6009407043457031
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.296855019685878,
+          "solverEdgeStretch95Percentile": 1.0857981408247073,
+          "bounds": [
+            [
+              -0.13659687340259552,
+              -0.1926700919866562,
+              0.21377652883529663
+            ],
+            [
+              0.12642084062099457,
+              0.11214017122983932,
+              0.5961621999740601
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.1083739626496987,
+          "solverEdgeStretch95Percentile": 1.0139403258294761,
+          "bounds": [
+            [
+              -0.1339508593082428,
+              -0.1841406524181366,
+              0.2510412335395813
+            ],
+            [
+              0.13065482676029205,
+              0.10879586637020111,
+              0.3295688033103943
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.062072132791678,
+          "solverEdgeStretch95Percentile": 1.0103002407572494,
+          "bounds": [
+            [
+              -0.13747332990169525,
+              -0.19284644722938538,
+              0.22069086134433746
+            ],
+            [
+              0.1342892199754715,
+              0.114833302795887,
+              0.2929786741733551
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0378497237595732,
+          "solverEdgeStretch95Percentile": 1.0099305521955584,
+          "bounds": [
+            [
+              -0.14153572916984558,
+              -0.20162111520767212,
+              0.1893288642168045
+            ],
+            [
+              0.13675427436828613,
+              0.11883660405874252,
+              0.2602810859680176
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0016947572219567562,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 12,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.573371814270724,
+          "solverEdgeStretch95Percentile": 1.0653079423169587,
+          "bounds": [
+            [
+              -0.14322039484977722,
+              -0.157083660364151,
+              0.32566002011299133
+            ],
+            [
+              0.11829063296318054,
+              0.10757681727409363,
+              0.5968427658081055
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 3.0890461029043372,
+          "solverEdgeStretch95Percentile": 1.103117482202929,
+          "bounds": [
+            [
+              -0.11810094863176346,
+              -0.20564857125282288,
+              0.20977771282196045
+            ],
+            [
+              0.11214850097894669,
+              0.11273675411939621,
+              0.5920109748840332
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0689727111627052,
+          "solverEdgeStretch95Percentile": 1.0149967238392197,
+          "bounds": [
+            [
+              -0.11755826324224472,
+              -0.19519974291324615,
+              0.24775415658950806
+            ],
+            [
+              0.1185721680521965,
+              0.11026860773563385,
+              0.3337058126926422
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0530985410601605,
+          "solverEdgeStretch95Percentile": 1.0121157154274885,
+          "bounds": [
+            [
+              -0.1206783875823021,
+              -0.20426644384860992,
+              0.21526427567005157
+            ],
+            [
+              0.12004019320011139,
+              0.11598851531744003,
+              0.29788681864738464
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0291180672092723,
+          "solverEdgeStretch95Percentile": 1.010426215404539,
+          "bounds": [
+            [
+              -0.12043534219264984,
+              -0.21450917422771454,
+              0.18497507274150848
+            ],
+            [
+              0.1158813014626503,
+              0.11430225521326065,
+              0.26521673798561096
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.001832283671074304,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 13,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.614797560977578,
+          "solverEdgeStretch95Percentile": 1.0768077088367243,
+          "bounds": [
+            [
+              -0.14338594675064087,
+              -0.168495774269104,
+              0.32066866755485535
+            ],
+            [
+              0.11212523281574249,
+              0.1138165295124054,
+              0.5926475524902344
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.731074783906605,
+          "solverEdgeStretch95Percentile": 1.1104557064642604,
+          "bounds": [
+            [
+              -0.10257215052843094,
+              -0.2172269970178604,
+              0.2060820758342743
+            ],
+            [
+              0.10763461887836456,
+              0.11479591578245163,
+              0.5877703428268433
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0915727020035835,
+          "solverEdgeStretch95Percentile": 1.0178437211611135,
+          "bounds": [
+            [
+              -0.10813581943511963,
+              -0.20453514158725739,
+              0.24418668448925018
+            ],
+            [
+              0.1019744798541069,
+              0.1101737767457962,
+              0.3379446864128113
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0328551074978194,
+          "solverEdgeStretch95Percentile": 1.0132750981638454,
+          "bounds": [
+            [
+              -0.10803437232971191,
+              -0.21520774066448212,
+              0.21344144642353058
+            ],
+            [
+              0.09632951021194458,
+              0.1113821268081665,
+              0.3033462166786194
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.0602743163306019,
+          "solverEdgeStretch95Percentile": 1.01223103682378,
+          "bounds": [
+            [
+              -0.10735084861516953,
+              -0.2265624850988388,
+              0.18327347934246063
+            ],
+            [
+              0.09516938030719757,
+              0.11945784837007523,
+              0.2709655463695526
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.001686732274176493,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 14,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 3.0267712159647546,
+          "solverEdgeStretch95Percentile": 1.1189716981911497,
+          "bounds": [
+            [
+              -0.12910574674606323,
+              -0.1805959790945053,
+              0.3217262625694275
+            ],
+            [
+              0.10952126234769821,
+              0.10781074315309525,
+              0.5899317264556885
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 4.290520148949088,
+          "solverEdgeStretch95Percentile": 1.1441279725468243,
+          "bounds": [
+            [
+              -0.09585851430892944,
+              -0.2263685166835785,
+              0.20321787893772125
+            ],
+            [
+              0.10338200628757477,
+              0.13078178465366364,
+              0.5852712988853455
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0643587620747466,
+          "solverEdgeStretch95Percentile": 1.0213054270229718,
+          "bounds": [
+            [
+              -0.09932844340801239,
+              -0.21160347759723663,
+              0.2412838190793991
+            ],
+            [
+              0.09694484621286392,
+              0.11443795263767242,
+              0.343808114528656
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0877760591567536,
+          "solverEdgeStretch95Percentile": 1.018803717336406,
+          "bounds": [
+            [
+              -0.09555282443761826,
+              -0.22396449744701385,
+              0.21048426628112793
+            ],
+            [
+              0.09101653099060059,
+              0.12514404952526093,
+              0.30899131298065186
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.131892742862144,
+          "solverEdgeStretch95Percentile": 1.0186562788873075,
+          "bounds": [
+            [
+              -0.09296930581331253,
+              -0.23694120347499847,
+              0.17972862720489502
+            ],
+            [
+              0.09087175875902176,
+              0.14359502494335175,
+              0.2768275737762451
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0023874468010289377,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 15,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 3.833742078679129,
+          "solverEdgeStretch95Percentile": 1.1582581807767125,
+          "bounds": [
+            [
+              -0.10882062464952469,
+              -0.17933355271816254,
+              0.32400497794151306
+            ],
+            [
+              0.11323996633291245,
+              0.12792187929153442,
+              0.5871543884277344
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 4.5252340652338265,
+          "solverEdgeStretch95Percentile": 1.1667548712026963,
+          "bounds": [
+            [
+              -0.08839472383260727,
+              -0.2358074188232422,
+              0.2071026712656021
+            ],
+            [
+              0.10275066643953323,
+              0.17293702065944672,
+              0.5821785926818848
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.1698596333049833,
+          "solverEdgeStretch95Percentile": 1.0234497989363773,
+          "bounds": [
+            [
+              -0.07614339888095856,
+              -0.22280071675777435,
+              0.24582870304584503
+            ],
+            [
+              0.08971919864416122,
+              0.15556609630584717,
+              0.35109806060791016
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0683568603330313,
+          "solverEdgeStretch95Percentile": 1.0208573515192874,
+          "bounds": [
+            [
+              -0.06745903193950653,
+              -0.23598620295524597,
+              0.2154809534549713
+            ],
+            [
+              0.08821965008974075,
+              0.1699526309967041,
+              0.31713923811912537
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.236087998747092,
+          "solverEdgeStretch95Percentile": 1.0297513179598634,
+          "bounds": [
+            [
+              -0.059575099498033524,
+              -0.2465345859527588,
+              0.184681236743927
+            ],
+            [
+              0.09649710357189178,
+              0.18608658015727997,
+              0.2869630753993988
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.002441104644422136,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 16,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.7862929531070866,
+          "solverEdgeStretch95Percentile": 1.1574073440470156,
+          "bounds": [
+            [
+              -0.10016152262687683,
+              -0.1743181049823761,
+              0.3353343605995178
+            ],
+            [
+              0.11412034183740616,
+              0.11966025829315186,
+              0.5974583625793457
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 6.648784035781417,
+          "solverEdgeStretch95Percentile": 1.1664465124691676,
+          "bounds": [
+            [
+              -0.08718293160200119,
+              -0.2416074275970459,
+              0.21813291311264038
+            ],
+            [
+              0.10128110647201538,
+              0.17796392738819122,
+              0.5925797820091248
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0697285251578208,
+          "solverEdgeStretch95Percentile": 1.026219392474483,
+          "bounds": [
+            [
+              -0.05925396829843521,
+              -0.22597730159759521,
+              0.2545071244239807
+            ],
+            [
+              0.08186913281679153,
+              0.1535007804632187,
+              0.36511895060539246
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.1182584792329329,
+          "solverEdgeStretch95Percentile": 1.019782269804594,
+          "bounds": [
+            [
+              -0.04746358096599579,
+              -0.23555395007133484,
+              0.2256821244955063
+            ],
+            [
+              0.08819659054279327,
+              0.17093093693256378,
+              0.3312933146953583
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.3437357745885152,
+          "solverEdgeStretch95Percentile": 1.0371468681022886,
+          "bounds": [
+            [
+              -0.0390859954059124,
+              -0.2534700334072113,
+              0.1990247517824173
+            ],
+            [
+              0.09406635910272598,
+              0.19056065380573273,
+              0.3017641305923462
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0028860321167290784,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 17,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.5831252581585127,
+          "solverEdgeStretch95Percentile": 1.1053449519912764,
+          "bounds": [
+            [
+              -0.0983634889125824,
+              -0.16615884006023407,
+              0.3361106514930725
+            ],
+            [
+              0.12441394478082657,
+              0.11902216076850891,
+              0.6104176640510559
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.381988668508083,
+          "solverEdgeStretch95Percentile": 1.1068163168102212,
+          "bounds": [
+            [
+              -0.09058407694101334,
+              -0.22287175059318542,
+              0.24015718698501587
+            ],
+            [
+              0.10455905646085739,
+              0.17365461587905884,
+              0.6057886481285095
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0574114467117124,
+          "solverEdgeStretch95Percentile": 1.0213720000872915,
+          "bounds": [
+            [
+              -0.044641997665166855,
+              -0.20395030081272125,
+              0.2792319357395172
+            ],
+            [
+              0.08347520977258682,
+              0.15884004533290863,
+              0.37324604392051697
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.052653396193014,
+          "solverEdgeStretch95Percentile": 1.014374750519595,
+          "bounds": [
+            [
+              -0.039833541959524155,
+              -0.21968141198158264,
+              0.24571509659290314
+            ],
+            [
+              0.08772451430559158,
+              0.1731385886669159,
+              0.3434661626815796
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.1498129026228465,
+          "solverEdgeStretch95Percentile": 1.014923899530666,
+          "bounds": [
+            [
+              -0.03951270878314972,
+              -0.2310728281736374,
+              0.21568521857261658
+            ],
+            [
+              0.09656548500061035,
+              0.18614651262760162,
+              0.31627562642097473
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.0026598451635504844,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 18,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.6817464579617134,
+          "solverEdgeStretch95Percentile": 1.0943345551720118,
+          "bounds": [
+            [
+              -0.10568126291036606,
+              -0.15706096589565277,
+              0.3431401550769806
+            ],
+            [
+              0.132741317152977,
+              0.11876790970563889,
+              0.6109801530838013
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.939282592093469,
+          "solverEdgeStretch95Percentile": 1.1054188576141368,
+          "bounds": [
+            [
+              -0.09330981224775314,
+              -0.1953345090150833,
+              0.24757206439971924
+            ],
+            [
+              0.1153533011674881,
+              0.16682621836662292,
+              0.6061969995498657
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.072093020156838,
+          "solverEdgeStretch95Percentile": 1.0154959677804014,
+          "bounds": [
+            [
+              -0.050892312079668045,
+              -0.17391455173492432,
+              0.2843416631221771
+            ],
+            [
+              0.09285055845975876,
+              0.15330928564071655,
+              0.3815877139568329
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.0662374146489528,
+          "solverEdgeStretch95Percentile": 1.0177335973563506,
+          "bounds": [
+            [
+              -0.04814951866865158,
+              -0.19184163212776184,
+              0.25167831778526306
+            ],
+            [
+              0.09889795631170273,
+              0.1618967205286026,
+              0.3498339056968689
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.2064721005931873,
+          "solverEdgeStretch95Percentile": 1.016566889879739,
+          "bounds": [
+            [
+              -0.048207126557826996,
+              -0.20900213718414307,
+              0.22271710634231567
+            ],
+            [
+              0.1000884398818016,
+              0.1723129153251648,
+              0.3245861828327179
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.002620111509628883,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 19,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.88328666303005,
+          "solverEdgeStretch95Percentile": 1.0934392016944927,
+          "bounds": [
+            [
+              -0.11716840416193008,
+              -0.1513369083404541,
+              0.353183388710022
+            ],
+            [
+              0.13800689578056335,
+              0.10934292525053024,
+              0.6030505895614624
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.8134505446935023,
+          "solverEdgeStretch95Percentile": 1.1345140265427613,
+          "bounds": [
+            [
+              -0.09666592627763748,
+              -0.16814373433589935,
+              0.23683328926563263
+            ],
+            [
+              0.13015586137771606,
+              0.13760940730571747,
+              0.5983871221542358
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.0391856937035509,
+          "solverEdgeStretch95Percentile": 1.017357316005109,
+          "bounds": [
+            [
+              -0.06646247953176498,
+              -0.14721627533435822,
+              0.2760183811187744
+            ],
+            [
+              0.10140030086040497,
+              0.13611917197704315,
+              0.3853854238986969
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.1203989845845077,
+          "solverEdgeStretch95Percentile": 1.0391855124492824,
+          "bounds": [
+            [
+              -0.06888740509748459,
+              -0.1653936207294464,
+              0.2457168847322464
+            ],
+            [
+              0.10436421632766724,
+              0.1358930468559265,
+              0.35377466678619385
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.1205826583214142,
+          "solverEdgeStretch95Percentile": 1.0258649666026978,
+          "bounds": [
+            [
+              -0.06323430687189102,
+              -0.18565711379051208,
+              0.21555720269680023
+            ],
+            [
+              0.10246825218200684,
+              0.13787570595741272,
+              0.32458239793777466
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.002921429775204688,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 20,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.5528392319395823,
+          "solverEdgeStretch95Percentile": 1.085045554919808,
+          "bounds": [
+            [
+              -0.12170562893152237,
+              -0.12907764315605164,
+              0.34286046028137207
+            ],
+            [
+              0.14779169857501984,
+              0.08998709917068481,
+              0.5943878889083862
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 3.6687115551909395,
+          "solverEdgeStretch95Percentile": 1.1850218678619953,
+          "bounds": [
+            [
+              -0.09453807026147842,
+              -0.14816226065158844,
+              0.22541822493076324
+            ],
+            [
+              0.13396155834197998,
+              0.11839935183525085,
+              0.5897059440612793
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.1944034976722777,
+          "solverEdgeStretch95Percentile": 1.0458917429062633,
+          "bounds": [
+            [
+              -0.07806859165430069,
+              -0.1407296359539032,
+              0.25662752985954285
+            ],
+            [
+              0.10886344313621521,
+              0.119158536195755,
+              0.37785205245018005
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.5436299548934616,
+          "solverEdgeStretch95Percentile": 1.0337602313617662,
+          "bounds": [
+            [
+              -0.07847041636705399,
+              -0.1455496847629547,
+              0.22978578507900238
+            ],
+            [
+              0.10769923031330109,
+              0.1082947701215744,
+              0.3469664752483368
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.1133807935262516,
+          "solverEdgeStretch95Percentile": 1.0263064475562662,
+          "bounds": [
+            [
+              -0.07768502831459045,
+              -0.1670403927564621,
+              0.20342989265918732
+            ],
+            [
+              0.10055156797170639,
+              0.10266333818435669,
+              0.31787511706352234
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.004219233179378976,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 21,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 4.149436542826536,
+          "solverEdgeStretch95Percentile": 1.1360278480764603,
+          "bounds": [
+            [
+              -0.11876928806304932,
+              -0.14034950733184814,
+              0.32891833782196045
+            ],
+            [
+              0.15137231349945068,
+              0.08611050248146057,
+              0.5953620672225952
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 5.86591937447969,
+          "solverEdgeStretch95Percentile": 1.261409084597013,
+          "bounds": [
+            [
+              -0.08575025945901871,
+              -0.2161434143781662,
+              0.2098441869020462
+            ],
+            [
+              0.13324393332004547,
+              0.10454101860523224,
+              0.5905917286872864
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.6778435521947912,
+          "solverEdgeStretch95Percentile": 1.0638244539380872,
+          "bounds": [
+            [
+              -0.0804978758096695,
+              -0.20305916666984558,
+              0.24232468008995056
+            ],
+            [
+              0.12307998538017273,
+              0.10702913254499435,
+              0.36216607689857483
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.1486364293551028,
+          "solverEdgeStretch95Percentile": 1.0369211897781034,
+          "bounds": [
+            [
+              -0.08513377606868744,
+              -0.2133621722459793,
+              0.21166352927684784
+            ],
+            [
+              0.10498465597629547,
+              0.09286341816186905,
+              0.35282254219055176
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.1092516107860737,
+          "solverEdgeStretch95Percentile": 1.0353720099643193,
+          "bounds": [
+            [
+              -0.08675534278154373,
+              -0.2254456877708435,
+              0.18802109360694885
+            ],
+            [
+              0.09938149154186249,
+              0.08484689891338348,
+              0.3406292200088501
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.003127586959469125,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 22,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.950022318420446,
+          "solverEdgeStretch95Percentile": 1.1971567462851223,
+          "bounds": [
+            [
+              -0.09309309720993042,
+              -0.1558019369840622,
+              0.32216978073120117
+            ],
+            [
+              0.15546336770057678,
+              0.10193581879138947,
+              0.6004893779754639
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 5.505428700687503,
+          "solverEdgeStretch95Percentile": 1.258518235340708,
+          "bounds": [
+            [
+              -0.08333238959312439,
+              -0.24070917069911957,
+              0.20969659090042114
+            ],
+            [
+              0.12598299980163574,
+              0.11607305705547333,
+              0.5955951809883118
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.1373308023659812,
+          "solverEdgeStretch95Percentile": 1.0453640705115923,
+          "bounds": [
+            [
+              -0.06180434301495552,
+              -0.22060322761535645,
+              0.24722854793071747
+            ],
+            [
+              0.12914806604385376,
+              0.11502546072006226,
+              0.4172028601169586
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.08800174730635,
+          "solverEdgeStretch95Percentile": 1.0365683172277989,
+          "bounds": [
+            [
+              -0.0673050582408905,
+              -0.24001269042491913,
+              0.2156970500946045
+            ],
+            [
+              0.1191481351852417,
+              0.11530118435621262,
+              0.38655078411102295
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.1165945237970192,
+          "solverEdgeStretch95Percentile": 1.030017272891862,
+          "bounds": [
+            [
+              -0.07101542502641678,
+              -0.2607150375843048,
+              0.1908138543367386
+            ],
+            [
+              0.10471237450838089,
+              0.11139912158250809,
+              0.3608248829841614
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.003021494888382432,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 23,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 3.036913613505898,
+          "solverEdgeStretch95Percentile": 1.1708930784998914,
+          "bounds": [
+            [
+              -0.10555872321128845,
+              -0.1419677436351776,
+              0.32545042037963867
+            ],
+            [
+              0.1457265019416809,
+              0.09962185472249985,
+              0.5999590158462524
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 7.363267975062932,
+          "solverEdgeStretch95Percentile": 1.2651688345280332,
+          "bounds": [
+            [
+              -0.08770151436328888,
+              -0.23893679678440094,
+              0.22343800961971283
+            ],
+            [
+              0.11267095059156418,
+              0.14074943959712982,
+              0.5950312614440918
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.493496173927173,
+          "solverEdgeStretch95Percentile": 1.079979419938821,
+          "bounds": [
+            [
+              -0.043527089059352875,
+              -0.21118046343326569,
+              0.2676352560520172
+            ],
+            [
+              0.12375712394714355,
+              0.13330304622650146,
+              0.4550231993198395
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 10.242230568957291,
+          "solverEdgeStretch95Percentile": 1.1368092333213475,
+          "bounds": [
+            [
+              -0.04917550086975098,
+              -0.23758266866207123,
+              0.2316909283399582
+            ],
+            [
+              0.11531825363636017,
+              0.14739492535591125,
+              0.43695068359375
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.3762204407632819,
+          "solverEdgeStretch95Percentile": 1.0867971582444222,
+          "bounds": [
+            [
+              -0.04619558900594711,
+              -0.2580472230911255,
+              0.20339344441890717
+            ],
+            [
+              0.10309266299009323,
+              0.14589887857437134,
+              0.41789188981056213
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.04404617907436035,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 24,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.9641267895394035,
+          "solverEdgeStretch95Percentile": 1.1155908893225868,
+          "bounds": [
+            [
+              -0.1398838609457016,
+              -0.10448338836431503,
+              0.3399776220321655
+            ],
+            [
+              0.12163048982620239,
+              0.1131533682346344,
+              0.6116455793380737
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 3.6492186600375507,
+          "solverEdgeStretch95Percentile": 1.2236161051722823,
+          "bounds": [
+            [
+              -0.09383773058652878,
+              -0.19603489339351654,
+              0.26608532667160034
+            ],
+            [
+              0.09522785246372223,
+              0.1508244425058365,
+              0.6067649722099304
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.57046622772774,
+          "solverEdgeStretch95Percentile": 1.0634676725203256,
+          "bounds": [
+            [
+              -0.04579425975680351,
+              -0.16893891990184784,
+              0.28531181812286377
+            ],
+            [
+              0.08141899853944778,
+              0.13775478303432465,
+              0.46023258566856384
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 4.209223975203281,
+          "solverEdgeStretch95Percentile": 1.0726733132244952,
+          "bounds": [
+            [
+              -0.04549771547317505,
+              -0.19093413650989532,
+              0.26563411951065063
+            ],
+            [
+              0.0880202203989029,
+              0.15315191447734833,
+              0.45176926255226135
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 3.7006416261997517,
+          "solverEdgeStretch95Percentile": 1.0691726411406313,
+          "bounds": [
+            [
+              -0.03386545181274414,
+              -0.21497179567813873,
+              0.25442928075790405
+            ],
+            [
+              0.09227492660284042,
+              0.15464244782924652,
+              0.4407585859298706
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.016850887467866435,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 25,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 3.2535231623179066,
+          "solverEdgeStretch95Percentile": 1.1268242506680641,
+          "bounds": [
+            [
+              -0.17337080836296082,
+              -0.08770754188299179,
+              0.3512454628944397
+            ],
+            [
+              0.10796549916267395,
+              0.11180788278579712,
+              0.6158648729324341
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 3.218910476266773,
+          "solverEdgeStretch95Percentile": 1.188637780697426,
+          "bounds": [
+            [
+              -0.10706507414579391,
+              -0.14751051366329193,
+              0.2967299222946167
+            ],
+            [
+              0.09575028717517853,
+              0.14932435750961304,
+              0.6111645698547363
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 2.25467268249467,
+          "solverEdgeStretch95Percentile": 1.0850604875045002,
+          "bounds": [
+            [
+              -0.08102244138717651,
+              -0.12169234454631805,
+              0.3038952052593231
+            ],
+            [
+              0.07088351994752884,
+              0.15026667714118958,
+              0.44311559200286865
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 3.885402916933529,
+          "solverEdgeStretch95Percentile": 1.1180520137084637,
+          "bounds": [
+            [
+              -0.061693303287029266,
+              -0.1466679573059082,
+              0.29438838362693787
+            ],
+            [
+              0.09101665019989014,
+              0.16099107265472412,
+              0.44178295135498047
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 3.1010829144699694,
+          "solverEdgeStretch95Percentile": 1.0779462460814517,
+          "bounds": [
+            [
+              -0.06678642332553864,
+              -0.15626251697540283,
+              0.290429949760437
+            ],
+            [
+              0.08158153295516968,
+              0.14910613000392914,
+              0.4377911388874054
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.015754422498602923,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 26,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.2888367942419885,
+          "solverEdgeStretch95Percentile": 1.134020666376958,
+          "bounds": [
+            [
+              -0.1965654045343399,
+              -0.09675005823373795,
+              0.36529457569122314
+            ],
+            [
+              0.09907494485378265,
+              0.08421581983566284,
+              0.614175021648407
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.9440459097185885,
+          "solverEdgeStretch95Percentile": 1.1793252851010727,
+          "bounds": [
+            [
+              -0.11598189175128937,
+              -0.10355731844902039,
+              0.3050490915775299
+            ],
+            [
+              0.10130585730075836,
+              0.1436898559331894,
+              0.6093190312385559
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 2.745766837958695,
+          "solverEdgeStretch95Percentile": 1.126499524810912,
+          "bounds": [
+            [
+              -0.07224968075752258,
+              -0.08640836179256439,
+              0.32127225399017334
+            ],
+            [
+              0.07075200974941254,
+              0.1422116905450821,
+              0.4374372363090515
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 2.0686732590758394,
+          "solverEdgeStretch95Percentile": 1.0805883605129027,
+          "bounds": [
+            [
+              -0.07375101000070572,
+              -0.10629110038280487,
+              0.2934853732585907
+            ],
+            [
+              0.07880419492721558,
+              0.14840944111347198,
+              0.41803815960884094
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.6010065089443757,
+          "solverEdgeStretch95Percentile": 1.0656426486220403,
+          "bounds": [
+            [
+              -0.07143151760101318,
+              -0.11391644179821014,
+              0.2996562421321869
+            ],
+            [
+              0.08731460571289062,
+              0.14808732271194458,
+              0.41522642970085144
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.011522605449870228,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 27,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.032125256893233,
+          "solverEdgeStretch95Percentile": 1.113362160519829,
+          "bounds": [
+            [
+              -0.21254852414131165,
+              -0.10584958642721176,
+              0.3617689609527588
+            ],
+            [
+              0.09646616131067276,
+              0.09025462716817856,
+              0.6013030409812927
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.4083174168479897,
+          "solverEdgeStretch95Percentile": 1.1706185851313864,
+          "bounds": [
+            [
+              -0.1050087958574295,
+              -0.09159806370735168,
+              0.3015994131565094
+            ],
+            [
+              0.10989252477884293,
+              0.12213831394910812,
+              0.5963826179504395
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 2.0622475541181142,
+          "solverEdgeStretch95Percentile": 1.0886328128661447,
+          "bounds": [
+            [
+              -0.06369596719741821,
+              -0.0747830718755722,
+              0.3287004828453064
+            ],
+            [
+              0.10434100031852722,
+              0.11402329802513123,
+              0.4337233901023865
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 2.5441759510426123,
+          "solverEdgeStretch95Percentile": 1.0651280723695447,
+          "bounds": [
+            [
+              -0.06794125586748123,
+              -0.08954334259033203,
+              0.3021712899208069
+            ],
+            [
+              0.10221858322620392,
+              0.12323218584060669,
+              0.4132862389087677
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 2.6640018676592065,
+          "solverEdgeStretch95Percentile": 1.0890248274250727,
+          "bounds": [
+            [
+              -0.06324134767055511,
+              -0.09352665394544601,
+              0.2965177893638611
+            ],
+            [
+              0.10430476814508438,
+              0.1299736201763153,
+              0.39889445900917053
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.011027966062425692,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 28,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.8413996215988355,
+          "solverEdgeStretch95Percentile": 1.120823802085407,
+          "bounds": [
+            [
+              -0.1907666027545929,
+              -0.11706723272800446,
+              0.3518504798412323
+            ],
+            [
+              0.10579924285411835,
+              0.09417469054460526,
+              0.5912686586380005
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 3.3345556188362586,
+          "solverEdgeStretch95Percentile": 1.1738652951190123,
+          "bounds": [
+            [
+              -0.10592041909694672,
+              -0.10762252658605576,
+              0.2912787199020386
+            ],
+            [
+              0.1333351582288742,
+              0.09809551388025284,
+              0.5865077376365662
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 3.9817654423272337,
+          "solverEdgeStretch95Percentile": 1.0787100029260248,
+          "bounds": [
+            [
+              -0.08197858184576035,
+              -0.08988787978887558,
+              0.28526899218559265
+            ],
+            [
+              0.11065242439508438,
+              0.07988428324460983,
+              0.4218604266643524
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.3096097776339162,
+          "solverEdgeStretch95Percentile": 1.0843537143391246,
+          "bounds": [
+            [
+              -0.07976656407117844,
+              -0.10281500965356827,
+              0.29532456398010254
+            ],
+            [
+              0.12637537717819214,
+              0.09649551659822464,
+              0.412683367729187
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.172120812168664,
+          "solverEdgeStretch95Percentile": 1.0658217850374956,
+          "bounds": [
+            [
+              -0.08662877231836319,
+              -0.11583074182271957,
+              0.28854137659072876
+            ],
+            [
+              0.1375570148229599,
+              0.10304117202758789,
+              0.393548846244812
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.003204673223711868,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    },
+    {
+      "frame": 29,
+      "pieces": [
+        {
+          "key": "ivory",
+          "solverMaximumEdgeStretch": 2.9697811681809374,
+          "solverEdgeStretch95Percentile": 1.133651798711084,
+          "bounds": [
+            [
+              -0.16298747062683105,
+              -0.12044928222894669,
+              0.3398944139480591
+            ],
+            [
+              0.1178077757358551,
+              0.087061308324337,
+              0.5926453471183777
+            ]
+          ]
+        },
+        {
+          "key": "support",
+          "solverMaximumEdgeStretch": 2.815519896963387,
+          "solverEdgeStretch95Percentile": 1.1605475205100912,
+          "bounds": [
+            [
+              -0.09256505221128464,
+              -0.1565956175327301,
+              0.24908430874347687
+            ],
+            [
+              0.11811607331037521,
+              0.0801452025771141,
+              0.5877706408500671
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "solverMaximumEdgeStretch": 1.3300967006149416,
+          "solverEdgeStretch95Percentile": 1.0964308596847099,
+          "bounds": [
+            [
+              -0.0723118931055069,
+              -0.12839175760746002,
+              0.25916025042533875
+            ],
+            [
+              0.09627319872379303,
+              0.04752930626273155,
+              0.426043838262558
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "solverMaximumEdgeStretch": 1.3545872921390232,
+          "solverEdgeStretch95Percentile": 1.0787469109311103,
+          "bounds": [
+            [
+              -0.06906311959028244,
+              -0.14842362701892853,
+              0.2489698827266693
+            ],
+            [
+              0.11987259984016418,
+              0.0692756325006485,
+              0.4113640785217285
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "solverMaximumEdgeStretch": 1.3460777328555273,
+          "solverEdgeStretch95Percentile": 1.0690745521448999,
+          "bounds": [
+            [
+              -0.06566237658262253,
+              -0.16033178567886353,
+              0.25174570083618164
+            ],
+            [
+              0.12244775146245956,
+              0.07992126792669296,
+              0.40636301040649414
+            ]
+          ]
+        }
+      ],
+      "maximumSeamGapMeters": 0.003743396528117881,
+      "maximumPhysicalFullyPinnedInputError": 0.0
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v001\\actual_sewn_petticoat_frames.npz",
+  "dataSha256": "e44f9ef48d76a896c7e06c0a8ebe46f54ae1b4f5c8df3f09f87e3d4925e0f9c7",
+  "scriptSha256": "60c61fcffa69e4c44e6d0b206373f80b8c20bc6a58436a5725883fddf772fb4f",
+  "assemblyHelperSha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+  "retopoAssemblyHelperSha256": "d9acd115b2b392281790db99c639a808624c617aa517d0d9757052f5b271d54e",
+  "fieldHelperSha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+  "entryHelperSha256": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57",
+  "colliderHelperSha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+  "materialSettingsHelperSha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66",
+  "parentEditableUnchanged": true,
+  "exportedModelUnchanged": true,
+  "responseBakedIntoRig": false,
+  "modelExported": false,
+  "finalFbxExported": false,
+  "allLayersFinished": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Particle self contacts, nearest-normal closed-body projection and two-ring bend distances are approximations; continuous-time and triangle self contact and visual fidelity are not approved.",
+  "elapsedSeconds": 356.4103145599365,
+  "nativeBlenderClothSolverReexecuted": false,
+  "independentPhysicalSolverExecuted": true,
+  "sourcePhysicalDataSha256": "5477584f76801b80d7906ef76cddfc6cfa8d98fabdcbcac84c4b4767d8b0844e",
+  "sourceBodyContactDataSha256": "b8769666ce0139a7d1a5575ce6c35560ee1aa03ab850db36b402d469c5732066",
+  "actualNativeSettingsAreReferenceOnly": true,
+  "independentSolverSettings": {
+    "fps": 30,
+    "substeps": 8,
+    "iterations": 24,
+    "structuralCompliance": 1e-07,
+    "twoRingBendingCompliance": 0.2,
+    "massPerVertex": 9.335945833299775e-06,
+    "bodyClearanceMeters": 0.0015,
+    "selfParticleDistanceMeters": 0.0015,
+    "partialPinIterationTether": 0.15,
+    "velocityRetentionPerSubstep": 0.985,
+    "seamsKeepAuthoredCalculationClearance": true,
+    "distanceConstraintPrimarySource": "https://mmacklin.com/xpbd.pdf",
+    "parametersAreProvisional": true
+  },
+  "actualContactCorrections": [
+    {
+      "frame": 2,
+      "actualBodyCorrections": 11271,
+      "actualParticleSelfCorrections": 162
+    },
+    {
+      "frame": 3,
+      "actualBodyCorrections": 21714,
+      "actualParticleSelfCorrections": 1643
+    },
+    {
+      "frame": 4,
+      "actualBodyCorrections": 22100,
+      "actualParticleSelfCorrections": 2735
+    },
+    {
+      "frame": 5,
+      "actualBodyCorrections": 26136,
+      "actualParticleSelfCorrections": 4330
+    },
+    {
+      "frame": 6,
+      "actualBodyCorrections": 29235,
+      "actualParticleSelfCorrections": 4600
+    },
+    {
+      "frame": 7,
+      "actualBodyCorrections": 31560,
+      "actualParticleSelfCorrections": 4187
+    },
+    {
+      "frame": 8,
+      "actualBodyCorrections": 36754,
+      "actualParticleSelfCorrections": 4729
+    },
+    {
+      "frame": 9,
+      "actualBodyCorrections": 38340,
+      "actualParticleSelfCorrections": 5680
+    },
+    {
+      "frame": 10,
+      "actualBodyCorrections": 40975,
+      "actualParticleSelfCorrections": 5086
+    },
+    {
+      "frame": 11,
+      "actualBodyCorrections": 44474,
+      "actualParticleSelfCorrections": 4941
+    },
+    {
+      "frame": 12,
+      "actualBodyCorrections": 49477,
+      "actualParticleSelfCorrections": 4061
+    },
+    {
+      "frame": 13,
+      "actualBodyCorrections": 54455,
+      "actualParticleSelfCorrections": 4163
+    },
+    {
+      "frame": 14,
+      "actualBodyCorrections": 60808,
+      "actualParticleSelfCorrections": 4198
+    },
+    {
+      "frame": 15,
+      "actualBodyCorrections": 58045,
+      "actualParticleSelfCorrections": 3768
+    },
+    {
+      "frame": 16,
+      "actualBodyCorrections": 65059,
+      "actualParticleSelfCorrections": 4846
+    },
+    {
+      "frame": 17,
+      "actualBodyCorrections": 52062,
+      "actualParticleSelfCorrections": 4862
+    },
+    {
+      "frame": 18,
+      "actualBodyCorrections": 45243,
+      "actualParticleSelfCorrections": 4197
+    },
+    {
+      "frame": 19,
+      "actualBodyCorrections": 47994,
+      "actualParticleSelfCorrections": 3274
+    },
+    {
+      "frame": 20,
+      "actualBodyCorrections": 55233,
+      "actualParticleSelfCorrections": 4133
+    },
+    {
+      "frame": 21,
+      "actualBodyCorrections": 63381,
+      "actualParticleSelfCorrections": 3129
+    },
+    {
+      "frame": 22,
+      "actualBodyCorrections": 76670,
+      "actualParticleSelfCorrections": 3055
+    },
+    {
+      "frame": 23,
+      "actualBodyCorrections": 77930,
+      "actualParticleSelfCorrections": 4177
+    },
+    {
+      "frame": 24,
+      "actualBodyCorrections": 85620,
+      "actualParticleSelfCorrections": 4151
+    },
+    {
+      "frame": 25,
+      "actualBodyCorrections": 63875,
+      "actualParticleSelfCorrections": 5001
+    },
+    {
+      "frame": 26,
+      "actualBodyCorrections": 64400,
+      "actualParticleSelfCorrections": 6160
+    },
+    {
+      "frame": 27,
+      "actualBodyCorrections": 65207,
+      "actualParticleSelfCorrections": 5409
+    },
+    {
+      "frame": 28,
+      "actualBodyCorrections": 64918,
+      "actualParticleSelfCorrections": 6305
+    },
+    {
+      "frame": 29,
+      "actualBodyCorrections": 72292,
+      "actualParticleSelfCorrections": 6351
+    }
+  ]
+}

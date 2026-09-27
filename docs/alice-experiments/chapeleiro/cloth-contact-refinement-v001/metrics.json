@@ -1,0 +1,154 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "controls": [
+    {
+      "label": "Antes",
+      "physicsSha256": "a52cfe076069b1a38b8bf07b2333280f3afe600bb3c009e170ff69ef9fa1f3bc",
+      "physicalMaximumStretchByPart": {
+        "ivory": 3.7213337421417236,
+        "support": 5.1969685554504395,
+        "tier1": 1.803017258644104,
+        "tier2": 2.3811914920806885,
+        "tier3": 2.7435336112976074
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.7496187686920166,
+        "support": 1.8244209289550781,
+        "tier1": 1.2246742248535156,
+        "tier2": 1.209127426147461,
+        "tier3": 1.4792388677597046
+      },
+      "maximumSeamGapMeters": 0.00949137657880783,
+      "maximumFullyPinnedErrorMeters": 0.0014799544587731361,
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 28,
+          "maximumCertainPenetrationMeters": 0.0188152939081192,
+          "totalAmbiguousQueries": 0
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 36,
+          "maximumCertainPenetrationMeters": 0.011003131978213787,
+          "totalAmbiguousQueries": 4
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 677,
+          "maximumCertainPenetrationMeters": 0.03720106929540634,
+          "totalAmbiguousQueries": 97
+        }
+      ]
+    },
+    {
+      "label": "Normais nativas",
+      "physicsSha256": "5477584f76801b80d7906ef76cddfc6cfa8d98fabdcbcac84c4b4767d8b0844e",
+      "physicalMaximumStretchByPart": {
+        "ivory": 2.665600299835205,
+        "support": 4.123067855834961,
+        "tier1": 1.968126893043518,
+        "tier2": 1.6149097681045532,
+        "tier3": 1.7652992010116577
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.3718533515930176,
+        "support": 1.6319351196289062,
+        "tier1": 1.2814397811889648,
+        "tier2": 1.1410053968429565,
+        "tier3": 1.2060997486114502
+      },
+      "maximumSeamGapMeters": 0.009925905615091324,
+      "maximumFullyPinnedErrorMeters": 0.0014799544587731361,
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 8,
+          "maximumCertainPenetrationMeters": 0.0016771529335528612,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 1,
+          "maximumCertainPenetrationMeters": 1.9203882402507588e-05,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 355,
+          "maximumCertainPenetrationMeters": 0.029781170189380646,
+          "totalAmbiguousQueries": 76
+        }
+      ]
+    },
+    {
+      "label": "Restrições e contato corrigido",
+      "physicsSha256": "497effcc339c84c230d9c4154cce47bc2ced48874cea33f56a79ef5bdca7ccd0",
+      "physicalMaximumStretchByPart": {
+        "ivory": 2.351778895368219,
+        "support": 4.748688853701631,
+        "tier1": 1.2375225761357604,
+        "tier2": 1.3022209617834557,
+        "tier3": 1.3605910456172683
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.0950085839618455,
+        "support": 1.1957636031288394,
+        "tier1": 1.0494581053224166,
+        "tier2": 1.0524127298441355,
+        "tier3": 1.0654703056946693
+      },
+      "maximumSeamGapMeters": 0.00582472341514709,
+      "maximumFullyPinnedErrorMeters": 5.587935447692871e-09,
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "totalAmbiguousQueries": 8
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 29,
+          "maximumCertainPenetrationMeters": 0.005702601745724678,
+          "totalAmbiguousQueries": 72
+        }
+      ]
+    }
+  ],
+  "exactlyPreservedInputArrays": [
+    "actual_skin_targets",
+    "rest_points",
+    "edges",
+    "loose_edges",
+    "pin_weights",
+    "rig_deformations",
+    "bone_names",
+    "actual_simulation_skin_targets",
+    "simulation_rest_points",
+    "simulation_edges",
+    "simulation_pin_weights",
+    "simulation_loose_edges",
+    "physical_seam_pairs",
+    "simulation_faces",
+    "detail_corner_indices",
+    "detail_weights",
+    "detail_u",
+    "detail_v",
+    "detail_frame_offsets",
+    "ivory_original_world_points",
+    "support_original_world_points",
+    "tier1_original_world_points",
+    "tier2_original_world_points",
+    "tier3_original_world_points"
+  ],
+  "ownSourceGeometryUvRigInputsPinsAndRestPreserved": true,
+  "allLayersFinished": false,
+  "clothCollisionVerified": false
+}

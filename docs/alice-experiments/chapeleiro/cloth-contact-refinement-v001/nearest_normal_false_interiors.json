@@ -1,0 +1,28 @@
+{
+  "sourceClothSha256": "5477584f76801b80d7906ef76cddfc6cfa8d98fabdcbcac84c4b4767d8b0844e",
+  "sourceBodyDataSha256": "b8769666ce0139a7d1a5575ce6c35560ee1aa03ab850db36b402d469c5732066",
+  "actualQueries": [
+    {
+      "proxyIndex": 0,
+      "testedVertices": 191,
+      "falseInteriorClassificationsByNearestNormal": 0,
+      "maximumRejectedDistanceMeters": 0,
+      "certainInsideVerticesAtRecordedRest": 0
+    },
+    {
+      "proxyIndex": 1,
+      "testedVertices": 219,
+      "falseInteriorClassificationsByNearestNormal": 0,
+      "maximumRejectedDistanceMeters": 0,
+      "certainInsideVerticesAtRecordedRest": 0
+    },
+    {
+      "proxyIndex": 2,
+      "testedVertices": 1945,
+      "falseInteriorClassificationsByNearestNormal": 40,
+      "maximumRejectedDistanceMeters": 0.024407338351011276,
+      "certainInsideVerticesAtRecordedRest": 0
+    }
+  ],
+  "notCollisionOrFidelityApproval": true
+}
