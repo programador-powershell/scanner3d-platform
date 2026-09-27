@@ -1,0 +1,11 @@
+# Chapeleiro — costuras das camadas inferiores em refinamento
+
+Três ensaios reais de 29 poses reúnem a anágua clara, o suporte preto e três babados em um solver Cloth com colisões das meias e bloomers e autocontato das camadas. A [foto completa da própria etapa](source_photo.png) acompanha [as vistas reais antes/depois](photo_vs_actual_sewn_cloth_before_after.jpg). O resultado ainda requer refinamento e não foi incorporado ao GLB publicado.
+
+No primeiro ensaio, a massa herdada era 0,12 kg por vértice: 2.649,6 kg nos 22.080 vértices do solver. A descrição da propriedade no Blender instalado e o [código primário do Blender](https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc) confirmam essa semântica. O segundo ensaio calcula a massa pela área de repouso medida. A densidade de 0,18 kg/m² é uma hipótese provisória; a massa uniforme por vértice não representa exatamente a mesma densidade em regiões com amostragem diferente. Geometria de repouso, pin, entradas do rig, colisões e outros parâmetros são exatamente iguais entre esses dois controles. A massa foi o único parâmetro físico alterado, e corrigir a massa não resolveu a abertura das costuras.
+
+No terceiro ensaio, 576 pares de raiz/suporte são unidos somente na malha independente de simulação. Há 21.504 vértices físicos e 22.080 posições lógicas para reconstruir os receptores originais. A costura tem afastamento zero nas 29 poses, por construção; isso não aprova a forma, dobras, renda, colisões ou movimento. O vestido exterior, os modelos publicados e o checkpoint completo permanecem intactos.
+
+Os oito renders passam pelos receptores reais, pela renda original vinculada a alvos finos estáveis e pela espessura/UV do Bystedt. As outras 221 superfícies da fundação permanecem como contexto animado pelo rig anterior. Elas não receberam aprovação física neste ensaio. Consulte [a avaliação visual](visual_assessment.json), [as medições por peça](controls.json) e [os dados e hashes preservados](artifact_inventory.json).
+
+As falhas de inicialização foram arquivadas com seus programas e logs. Não há créditos Tripo adicionais, FBX final ou início de outra variante. O refinamento da Chapeleiro continua antes da próxima Alice.

@@ -1,0 +1,47 @@
+{
+  "mode": "areal",
+  "actualBlenderVersion": "5.2.1 LTS",
+  "installedMassPropertyDescription": "The mass of each vertex on the cloth material",
+  "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc",
+  "surfaceAreaSquareMeters": 0.48801295939587624,
+  "vertices": 22080,
+  "assumedArealDensityKgPerSquareMeter": 0.18,
+  "densityIsProvisionalMaterialAssumption": true,
+  "inheritedMassPerVertexKg": 0.11999999731779099,
+  "inheritedTotalMassKg": 2649.599940776825,
+  "actualMassPerVertexKg": 3.978366294177249e-06,
+  "actualTotalMassKg": 0.08784232777543366,
+  "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true,
+  "parts": [
+    {
+      "key": "ivory",
+      "areaSquareMeters": 0.1645550330300703,
+      "actualMassKg": 0.028262314153835177,
+      "effectiveArealDensityKgPerSquareMeter": 0.17174992240237713
+    },
+    {
+      "key": "support",
+      "areaSquareMeters": 0.24550889462648706,
+      "actualMassKg": 0.02979000681079924,
+      "effectiveArealDensityKgPerSquareMeter": 0.12133982704016177
+    },
+    {
+      "key": "tier1",
+      "areaSquareMeters": 0.027303059737686652,
+      "actualMassKg": 0.009930002270266414,
+      "effectiveArealDensityKgPerSquareMeter": 0.3636955845120884
+    },
+    {
+      "key": "tier2",
+      "areaSquareMeters": 0.028132460280220626,
+      "actualMassKg": 0.009930002270266414,
+      "effectiveArealDensityKgPerSquareMeter": 0.3529731197113962
+    },
+    {
+      "key": "tier3",
+      "areaSquareMeters": 0.0225135117214116,
+      "actualMassKg": 0.009930002270266414,
+      "effectiveArealDensityKgPerSquareMeter": 0.4410685633206849
+    }
+  ]
+}

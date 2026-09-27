@@ -1,0 +1,252 @@
+{
+  "cases": [
+    {
+      "case": "inherited_mass_springs",
+      "frames": 29,
+      "dataSha256": "dd1b5df578d3d0f18bf31447a72a82fa242aa23567f0735a4b8b4bd3bb27066e",
+      "actualSolverVertices": 22080,
+      "sequenceMaximumSeamGapMeters": 0.04388045519590378,
+      "sequenceMaximumFullyPinnedInputError": 0.001481177401728928,
+      "mass": {
+        "mode": "inherited",
+        "actualMassPerVertexKg": 0.11999999731779099,
+        "actualTotalMassKg": 2649.599940776825
+      },
+      "pieces": {
+        "ivory": {
+          "sequenceMaximumEdgeStretch": 1.9697527885437012,
+          "sequenceMaximumEdgeStretch95Percentile": 1.0784872770309448,
+          "lastFrameMaximumEdgeStretch": 1.9032347202301025
+        },
+        "support": {
+          "sequenceMaximumEdgeStretch": 4.151429653167725,
+          "sequenceMaximumEdgeStretch95Percentile": 1.4168154001235962,
+          "lastFrameMaximumEdgeStretch": 3.0483150482177734
+        },
+        "tier1": {
+          "sequenceMaximumEdgeStretch": 3.761762857437134,
+          "sequenceMaximumEdgeStretch95Percentile": 1.492457628250122,
+          "lastFrameMaximumEdgeStretch": 2.418891668319702
+        },
+        "tier2": {
+          "sequenceMaximumEdgeStretch": 3.6207685470581055,
+          "sequenceMaximumEdgeStretch95Percentile": 1.5723603963851929,
+          "lastFrameMaximumEdgeStretch": 2.9557111263275146
+        },
+        "tier3": {
+          "sequenceMaximumEdgeStretch": 5.553730010986328,
+          "sequenceMaximumEdgeStretch95Percentile": 2.123002290725708,
+          "lastFrameMaximumEdgeStretch": 3.3487751483917236
+        }
+      }
+    },
+    {
+      "case": "areal_mass_springs",
+      "frames": 29,
+      "dataSha256": "b414c87a3ee39f9be035316cb2ad8e2fb8ff4b1a626c3cc77931d2490593e35b",
+      "actualSolverVertices": 22080,
+      "sequenceMaximumSeamGapMeters": 0.09398350119590759,
+      "sequenceMaximumFullyPinnedInputError": 0.001481177401728928,
+      "mass": {
+        "mode": "areal",
+        "actualBlenderVersion": "5.2.1 LTS",
+        "installedMassPropertyDescription": "The mass of each vertex on the cloth material",
+        "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc",
+        "surfaceAreaSquareMeters": 0.48801295939587624,
+        "vertices": 22080,
+        "assumedArealDensityKgPerSquareMeter": 0.18,
+        "densityIsProvisionalMaterialAssumption": true,
+        "inheritedMassPerVertexKg": 0.11999999731779099,
+        "inheritedTotalMassKg": 2649.599940776825,
+        "actualMassPerVertexKg": 3.978366294177249e-06,
+        "actualTotalMassKg": 0.08784232777543366,
+        "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true,
+        "parts": [
+          {
+            "key": "ivory",
+            "areaSquareMeters": 0.1645550330300703,
+            "actualMassKg": 0.028262314153835177,
+            "effectiveArealDensityKgPerSquareMeter": 0.17174992240237713
+          },
+          {
+            "key": "support",
+            "areaSquareMeters": 0.24550889462648706,
+            "actualMassKg": 0.02979000681079924,
+            "effectiveArealDensityKgPerSquareMeter": 0.12133982704016177
+          },
+          {
+            "key": "tier1",
+            "areaSquareMeters": 0.027303059737686652,
+            "actualMassKg": 0.009930002270266414,
+            "effectiveArealDensityKgPerSquareMeter": 0.3636955845120884
+          },
+          {
+            "key": "tier2",
+            "areaSquareMeters": 0.028132460280220626,
+            "actualMassKg": 0.009930002270266414,
+            "effectiveArealDensityKgPerSquareMeter": 0.3529731197113962
+          },
+          {
+            "key": "tier3",
+            "areaSquareMeters": 0.0225135117214116,
+            "actualMassKg": 0.009930002270266414,
+            "effectiveArealDensityKgPerSquareMeter": 0.4410685633206849
+          }
+        ]
+      },
+      "pieces": {
+        "ivory": {
+          "sequenceMaximumEdgeStretch": 1.7736320495605469,
+          "sequenceMaximumEdgeStretch95Percentile": 1.0627375841140747,
+          "lastFrameMaximumEdgeStretch": 1.4987773895263672
+        },
+        "support": {
+          "sequenceMaximumEdgeStretch": 4.9076762199401855,
+          "sequenceMaximumEdgeStretch95Percentile": 1.442882776260376,
+          "lastFrameMaximumEdgeStretch": 3.3711612224578857
+        },
+        "tier1": {
+          "sequenceMaximumEdgeStretch": 2.7708311080932617,
+          "sequenceMaximumEdgeStretch95Percentile": 1.4459940195083618,
+          "lastFrameMaximumEdgeStretch": 2.7708311080932617
+        },
+        "tier2": {
+          "sequenceMaximumEdgeStretch": 5.737523078918457,
+          "sequenceMaximumEdgeStretch95Percentile": 1.8687463998794556,
+          "lastFrameMaximumEdgeStretch": 5.737523078918457
+        },
+        "tier3": {
+          "sequenceMaximumEdgeStretch": 6.686502933502197,
+          "sequenceMaximumEdgeStretch95Percentile": 2.0904018878936768,
+          "lastFrameMaximumEdgeStretch": 6.10652494430542
+        }
+      }
+    },
+    {
+      "case": "areal_mass_welded",
+      "frames": 29,
+      "dataSha256": "726221875638f62d3001cc6f4930606efcae22aa782147d647e19af217894209",
+      "actualSolverVertices": 21504,
+      "sequenceMaximumSeamGapMeters": 0.0,
+      "sequenceMaximumFullyPinnedInputError": 0.001481177401728928,
+      "mass": {
+        "mode": "areal",
+        "actualBlenderVersion": "5.2.1 LTS",
+        "installedMassPropertyDescription": "The mass of each vertex on the cloth material",
+        "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc",
+        "surfaceAreaSquareMeters": 0.4889281149069899,
+        "vertices": 21504,
+        "assumedArealDensityKgPerSquareMeter": 0.18,
+        "densityIsProvisionalMaterialAssumption": true,
+        "inheritedMassPerVertexKg": 0.11999999731779099,
+        "inheritedTotalMassKg": 2580.4799423217773,
+        "actualMassPerVertexKg": 4.092590188520262e-06,
+        "actualTotalMassKg": 0.08800705941393971,
+        "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true,
+        "parts": [
+          {
+            "key": "ivory",
+            "areaSquareMeters": 0.1645550330300703,
+            "allocatedUniqueSolverVertices": 7104,
+            "sharedSeamMassAllocatedToSupport": true,
+            "actualMassKg": 0.02907376069924794,
+            "effectiveArealDensityKgPerSquareMeter": 0.17668107844465072
+          },
+          {
+            "key": "support",
+            "areaSquareMeters": 0.24550889462648706,
+            "allocatedUniqueSolverVertices": 7488,
+            "sharedSeamMassAllocatedToSupport": true,
+            "actualMassKg": 0.030645315331639722,
+            "effectiveArealDensityKgPerSquareMeter": 0.12482364591418559
+          },
+          {
+            "key": "tier1",
+            "areaSquareMeters": 0.027656606872002713,
+            "allocatedUniqueSolverVertices": 2304,
+            "sharedSeamMassAllocatedToSupport": true,
+            "actualMassKg": 0.009429327794350684,
+            "effectiveArealDensityKgPerSquareMeter": 0.3409430461947291
+          },
+          {
+            "key": "tier2",
+            "areaSquareMeters": 0.028401712891252335,
+            "allocatedUniqueSolverVertices": 2304,
+            "sharedSeamMassAllocatedToSupport": true,
+            "actualMassKg": 0.009429327794350684,
+            "effectiveArealDensityKgPerSquareMeter": 0.33199856045495396
+          },
+          {
+            "key": "tier3",
+            "areaSquareMeters": 0.02280586748717747,
+            "allocatedUniqueSolverVertices": 2304,
+            "sharedSeamMassAllocatedToSupport": true,
+            "actualMassKg": 0.009429327794350684,
+            "effectiveArealDensityKgPerSquareMeter": 0.4134606061204335
+          }
+        ]
+      },
+      "pieces": {
+        "ivory": {
+          "sequenceMaximumEdgeStretch": 1.8405284881591797,
+          "sequenceMaximumEdgeStretch95Percentile": 1.055351972579956,
+          "lastFrameMaximumEdgeStretch": 1.5693758726119995
+        },
+        "support": {
+          "sequenceMaximumEdgeStretch": 4.529831409454346,
+          "sequenceMaximumEdgeStretch95Percentile": 1.3104134798049927,
+          "lastFrameMaximumEdgeStretch": 2.458935022354126
+        },
+        "tier1": {
+          "sequenceMaximumEdgeStretch": 6.33864164352417,
+          "sequenceMaximumEdgeStretch95Percentile": 1.433324933052063,
+          "lastFrameMaximumEdgeStretch": 2.9230024814605713
+        },
+        "tier2": {
+          "sequenceMaximumEdgeStretch": 3.649791717529297,
+          "sequenceMaximumEdgeStretch95Percentile": 1.4196609258651733,
+          "lastFrameMaximumEdgeStretch": 2.7309796810150146
+        },
+        "tier3": {
+          "sequenceMaximumEdgeStretch": 5.18589448928833,
+          "sequenceMaximumEdgeStretch95Percentile": 1.9659950733184814,
+          "lastFrameMaximumEdgeStretch": 3.7733821868896484
+        }
+      }
+    }
+  ],
+  "massControlExactUnchangedFields": [
+    "rest_points",
+    "edges",
+    "loose_edges",
+    "pin_weights",
+    "bone_names",
+    "rig_deformations",
+    "actual_skin_targets"
+  ],
+  "massControlSolverSettingsDelta": {
+    "mass": [
+      0.11999999731779099,
+      3.978366294177249e-06
+    ]
+  },
+  "massControlCollisionSettingsIdentical": true,
+  "weldedControlSameRigMatrices": true,
+  "logicalToActualSolverMappingVerified": true,
+  "weldingChangedOnlyIndependentSimulationMesh": true,
+  "fullLocalEditable": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\chapeleiro_shared_rig_ivory_response.blend",
+    "bytes": 129770853,
+    "sha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38"
+  },
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "parentGlbSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "responseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalTripoCreditsConsumed": 0
+}

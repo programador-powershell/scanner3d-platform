@@ -1,0 +1,23 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+00:04.031  blend            | Read blend: "F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\chapeleiro_shared_rig_ivory_response.blend"
+Traceback (most recent call last):
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\probe_chapeleiro_sewn_petticoats.py", line 35, in <module>
+    cage, parts, assembly = assemble_welded_petticoats(scene, rig, schema, include_ivory=a.assembly == 'ivory_black')
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\chapeleiro_welded_cloth_assembly.py", line 37, in assemble_welded_petticoats
+    for (index, value), ids in groups.items(): cage.vertex_groups[index].add(ids, value, 'REPLACE')
+                                               ~~~~~~~~~~~~~~~~~~^^^^^^^
+IndexError: bpy_prop_collection[index]: index 0 out of range, size 0
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+Info: Read library: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\alice-vestido-chapeleiro.blend', '//alice-vestido-chapeleiro.blend', parent '<direct>'
+
+Error: script failed, file: 'blender/probe_chapeleiro_sewn_petticoats.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,1533 @@
+{
+  "probeDataSha256": "726221875638f62d3001cc6f4930606efcae22aa782147d647e19af217894209",
+  "actuallyMeasuredAll29Frames": true,
+  "parts": [
+    {
+      "piece": "ivory",
+      "worstEdgesAcrossActualSequence": [
+        {
+          "frame": 22,
+          "stretch": 1.8405284881591797,
+          "logicalVertices": [
+            4731,
+            4732
+          ],
+          "rows": [
+            24,
+            24
+          ],
+          "columns": [
+            123,
+            124
+          ],
+          "restLengthMeters": 0.0036337263882160187,
+          "actualLengthMeters": 0.006687976885586977
+        },
+        {
+          "frame": 24,
+          "stretch": 1.813273310661316,
+          "logicalVertices": [
+            4723,
+            4724
+          ],
+          "rows": [
+            24,
+            24
+          ],
+          "columns": [
+            115,
+            116
+          ],
+          "restLengthMeters": 0.003910132218152285,
+          "actualLengthMeters": 0.007090138271450996
+        },
+        {
+          "frame": 24,
+          "stretch": 1.7844312191009521,
+          "logicalVertices": [
+            4530,
+            4531
+          ],
+          "rows": [
+            23,
+            23
+          ],
+          "columns": [
+            114,
+            115
+          ],
+          "restLengthMeters": 0.003838860895484686,
+          "actualLengthMeters": 0.006850183010101318
+        },
+        {
+          "frame": 23,
+          "stretch": 1.783897876739502,
+          "logicalVertices": [
+            4911,
+            4912
+          ],
+          "rows": [
+            25,
+            25
+          ],
+          "columns": [
+            111,
+            112
+          ],
+          "restLengthMeters": 0.004727196879684925,
+          "actualLengthMeters": 0.008432836271822453
+        },
+        {
+          "frame": 22,
+          "stretch": 1.7796279191970825,
+          "logicalVertices": [
+            4338,
+            4339
+          ],
+          "rows": [
+            22,
+            22
+          ],
+          "columns": [
+            114,
+            115
+          ],
+          "restLengthMeters": 0.003765262197703123,
+          "actualLengthMeters": 0.006700765807181597
+        },
+        {
+          "frame": 27,
+          "stretch": 1.7715307474136353,
+          "logicalVertices": [
+            4144,
+            4145
+          ],
+          "rows": [
+            21,
+            21
+          ],
+          "columns": [
+            112,
+            113
+          ],
+          "restLengthMeters": 0.004249631892889738,
+          "actualLengthMeters": 0.0075283534824848175
+        },
+        {
+          "frame": 22,
+          "stretch": 1.7619044780731201,
+          "logicalVertices": [
+            4924,
+            4925
+          ],
+          "rows": [
+            25,
+            25
+          ],
+          "columns": [
+            124,
+            125
+          ],
+          "restLengthMeters": 0.003516387427225709,
+          "actualLengthMeters": 0.006195538677275181
+        },
+        {
+          "frame": 26,
+          "stretch": 1.7567389011383057,
+          "logicalVertices": [
+            4528,
+            4529
+          ],
+          "rows": [
+            23,
+            23
+          ],
+          "columns": [
+            112,
+            113
+          ],
+          "restLengthMeters": 0.004444372374564409,
+          "actualLengthMeters": 0.00780760170891881
+        },
+        {
+          "frame": 27,
+          "stretch": 1.75099778175354,
+          "logicalVertices": [
+            4529,
+            4530
+          ],
+          "rows": [
+            23,
+            23
+          ],
+          "columns": [
+            113,
+            114
+          ],
+          "restLengthMeters": 0.004255342297255993,
+          "actualLengthMeters": 0.007451094686985016
+        },
+        {
+          "frame": 23,
+          "stretch": 1.7503714561462402,
+          "logicalVertices": [
+            4142,
+            4143
+          ],
+          "rows": [
+            21,
+            21
+          ],
+          "columns": [
+            110,
+            111
+          ],
+          "restLengthMeters": 0.00460516894236207,
+          "actualLengthMeters": 0.008060756139457226
+        }
+      ]
+    },
+    {
+      "piece": "support",
+      "worstEdgesAcrossActualSequence": [
+        {
+          "frame": 12,
+          "stretch": 4.529831409454346,
+          "logicalVertices": [
+            1017,
+            1018
+          ],
+          "rows": [
+            5,
+            5
+          ],
+          "columns": [
+            57,
+            58
+          ],
+          "restLengthMeters": 0.001954880775883794,
+          "actualLengthMeters": 0.008855280466377735
+        },
+        {
+          "frame": 13,
+          "stretch": 4.301244258880615,
+          "logicalVertices": [
+            1212,
+            1213
+          ],
+          "rows": [
+            6,
+            6
+          ],
+          "columns": [
+            60,
+            61
+          ],
+          "restLengthMeters": 0.002082160906866193,
+          "actualLengthMeters": 0.008955882862210274
+        },
+        {
+          "frame": 12,
+          "stretch": 4.144114971160889,
+          "logicalVertices": [
+            1212,
+            1213
+          ],
+          "rows": [
+            6,
+            6
+          ],
+          "columns": [
+            60,
+            61
+          ],
+          "restLengthMeters": 0.002082160906866193,
+          "actualLengthMeters": 0.00862871389836073
+        },
+        {
+          "frame": 10,
+          "stretch": 3.9860682487487793,
+          "logicalVertices": [
+            1106,
+            1107
+          ],
+          "rows": [
+            5,
+            5
+          ],
+          "columns": [
+            146,
+            147
+          ],
+          "restLengthMeters": 0.0017615014221519232,
+          "actualLengthMeters": 0.0070214648731052876
+        },
+        {
+          "frame": 14,
+          "stretch": 3.9542136192321777,
+          "logicalVertices": [
+            1212,
+            1213
+          ],
+          "rows": [
+            6,
+            6
+          ],
+          "columns": [
+            60,
+            61
+          ],
+          "restLengthMeters": 0.002082160906866193,
+          "actualLengthMeters": 0.008233308792114258
+        },
+        {
+          "frame": 25,
+          "stretch": 3.9263689517974854,
+          "logicalVertices": [
+            3383,
+            3384
+          ],
+          "rows": [
+            17,
+            17
+          ],
+          "columns": [
+            119,
+            120
+          ],
+          "restLengthMeters": 0.0032092442270368338,
+          "actualLengthMeters": 0.012600677087903023
+        },
+        {
+          "frame": 27,
+          "stretch": 3.9226491451263428,
+          "logicalVertices": [
+            3366,
+            3367
+          ],
+          "rows": [
+            17,
+            17
+          ],
+          "columns": [
+            102,
+            103
+          ],
+          "restLengthMeters": 0.003969363868236542,
+          "actualLengthMeters": 0.015570421703159809
+        },
+        {
+          "frame": 25,
+          "stretch": 3.852682113647461,
+          "logicalVertices": [
+            3386,
+            3387
+          ],
+          "rows": [
+            17,
+            17
+          ],
+          "columns": [
+            122,
+            123
+          ],
+          "restLengthMeters": 0.003630445571616292,
+          "actualLengthMeters": 0.013986952602863312
+        },
+        {
+          "frame": 8,
+          "stretch": 3.6699607372283936,
+          "logicalVertices": [
+            914,
+            915
+          ],
+          "rows": [
+            4,
+            4
+          ],
+          "columns": [
+            146,
+            147
+          ],
+          "restLengthMeters": 0.0016936451429501176,
+          "actualLengthMeters": 0.006215611007064581
+        },
+        {
+          "frame": 14,
+          "stretch": 3.6604249477386475,
+          "logicalVertices": [
+            1017,
+            1018
+          ],
+          "rows": [
+            5,
+            5
+          ],
+          "columns": [
+            57,
+            58
+          ],
+          "restLengthMeters": 0.001954880775883794,
+          "actualLengthMeters": 0.007155694533139467
+        }
+      ]
+    },
+    {
+      "piece": "tier1",
+      "worstEdgesAcrossActualSequence": [
+        {
+          "frame": 15,
+          "stretch": 6.33864164352417,
+          "logicalVertices": [
+            965,
+            1157
+          ],
+          "rows": [
+            5,
+            6
+          ],
+          "columns": [
+            5,
+            5
+          ],
+          "restLengthMeters": 0.0016286360332742333,
+          "actualLengthMeters": 0.010323340073227882
+        },
+        {
+          "frame": 16,
+          "stretch": 4.888672351837158,
+          "logicalVertices": [
+            772,
+            964
+          ],
+          "rows": [
+            4,
+            5
+          ],
+          "columns": [
+            4,
+            4
+          ],
+          "restLengthMeters": 0.0018820581026375294,
+          "actualLengthMeters": 0.009200765751302242
+        },
+        {
+          "frame": 16,
+          "stretch": 3.9889934062957764,
+          "logicalVertices": [
+            584,
+            776
+          ],
+          "rows": [
+            3,
+            4
+          ],
+          "columns": [
+            8,
+            8
+          ],
+          "restLengthMeters": 0.0019953197333961725,
+          "actualLengthMeters": 0.007959317415952682
+        },
+        {
+          "frame": 15,
+          "stretch": 3.8472628593444824,
+          "logicalVertices": [
+            1543,
+            1735
+          ],
+          "rows": [
+            8,
+            9
+          ],
+          "columns": [
+            7,
+            7
+          ],
+          "restLengthMeters": 0.0017933808267116547,
+          "actualLengthMeters": 0.006899607367813587
+        },
+        {
+          "frame": 15,
+          "stretch": 3.8076469898223877,
+          "logicalVertices": [
+            1349,
+            1541
+          ],
+          "rows": [
+            7,
+            8
+          ],
+          "columns": [
+            5,
+            5
+          ],
+          "restLengthMeters": 0.001635101973079145,
+          "actualLengthMeters": 0.006225890945643187
+        },
+        {
+          "frame": 14,
+          "stretch": 3.532956123352051,
+          "logicalVertices": [
+            6,
+            198
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            6,
+            6
+          ],
+          "restLengthMeters": 0.0025265440344810486,
+          "actualLengthMeters": 0.008926169015467167
+        },
+        {
+          "frame": 16,
+          "stretch": 3.498371124267578,
+          "logicalVertices": [
+            771,
+            963
+          ],
+          "rows": [
+            4,
+            5
+          ],
+          "columns": [
+            3,
+            3
+          ],
+          "restLengthMeters": 0.0019725197926163673,
+          "actualLengthMeters": 0.006900606211274862
+        },
+        {
+          "frame": 14,
+          "stretch": 3.481844663619995,
+          "logicalVertices": [
+            584,
+            776
+          ],
+          "rows": [
+            3,
+            4
+          ],
+          "columns": [
+            8,
+            8
+          ],
+          "restLengthMeters": 0.0019953197333961725,
+          "actualLengthMeters": 0.006947393529117107
+        },
+        {
+          "frame": 25,
+          "stretch": 3.439603090286255,
+          "logicalVertices": [
+            32,
+            224
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            32,
+            32
+          ],
+          "restLengthMeters": 0.0037181787192821503,
+          "actualLengthMeters": 0.012789059430360794
+        },
+        {
+          "frame": 16,
+          "stretch": 3.375767469406128,
+          "logicalVertices": [
+            20,
+            212
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            20,
+            20
+          ],
+          "restLengthMeters": 0.0031342129223048687,
+          "actualLengthMeters": 0.010580373927950859
+        }
+      ],
+      "seamPath": {
+        "supportRowsByColumn": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "adjacentColumnsWithDifferentSupportRows": 28,
+        "maximumAdjacentRowJump": 1,
+        "reviewRequired": true,
+        "limitation": "Nearest-height ring selection per column can produce a stepped seam path; zero welded gap does not establish smooth seam continuity."
+      }
+    },
+    {
+      "piece": "tier2",
+      "worstEdgesAcrossActualSequence": [
+        {
+          "frame": 14,
+          "stretch": 3.649791717529297,
+          "logicalVertices": [
+            5,
+            197
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            5,
+            5
+          ],
+          "restLengthMeters": 0.00233246386051178,
+          "actualLengthMeters": 0.008513007313013077
+        },
+        {
+          "frame": 14,
+          "stretch": 3.544685125350952,
+          "logicalVertices": [
+            12,
+            204
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            12,
+            12
+          ],
+          "restLengthMeters": 0.002647395245730877,
+          "actualLengthMeters": 0.009384182281792164
+        },
+        {
+          "frame": 14,
+          "stretch": 3.3783347606658936,
+          "logicalVertices": [
+            11,
+            203
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            11,
+            11
+          ],
+          "restLengthMeters": 0.002557914238423109,
+          "actualLengthMeters": 0.008641490712761879
+        },
+        {
+          "frame": 14,
+          "stretch": 3.1847410202026367,
+          "logicalVertices": [
+            10,
+            202
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            10,
+            10
+          ],
+          "restLengthMeters": 0.0024118823930621147,
+          "actualLengthMeters": 0.007681220769882202
+        },
+        {
+          "frame": 15,
+          "stretch": 3.17154598236084,
+          "logicalVertices": [
+            7,
+            199
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            7,
+            7
+          ],
+          "restLengthMeters": 0.0025855733547359705,
+          "actualLengthMeters": 0.008200264535844326
+        },
+        {
+          "frame": 14,
+          "stretch": 3.14253830909729,
+          "logicalVertices": [
+            13,
+            205
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            13,
+            13
+          ],
+          "restLengthMeters": 0.0026367129758000374,
+          "actualLengthMeters": 0.008285971358418465
+        },
+        {
+          "frame": 15,
+          "stretch": 3.0714333057403564,
+          "logicalVertices": [
+            8,
+            200
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            8,
+            8
+          ],
+          "restLengthMeters": 0.0025916267186403275,
+          "actualLengthMeters": 0.007960008457303047
+        },
+        {
+          "frame": 15,
+          "stretch": 3.0653672218322754,
+          "logicalVertices": [
+            10,
+            202
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            10,
+            10
+          ],
+          "restLengthMeters": 0.0024118823930621147,
+          "actualLengthMeters": 0.007393305189907551
+        },
+        {
+          "frame": 16,
+          "stretch": 2.939279794692993,
+          "logicalVertices": [
+            100,
+            292
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            100,
+            100
+          ],
+          "restLengthMeters": 0.0023382045328617096,
+          "actualLengthMeters": 0.0068726371973752975
+        },
+        {
+          "frame": 14,
+          "stretch": 2.8680882453918457,
+          "logicalVertices": [
+            6,
+            198
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            6,
+            6
+          ],
+          "restLengthMeters": 0.002334288787096739,
+          "actualLengthMeters": 0.006694946438074112
+        }
+      ],
+      "seamPath": {
+        "supportRowsByColumn": [
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34
+        ],
+        "adjacentColumnsWithDifferentSupportRows": 0,
+        "maximumAdjacentRowJump": 0,
+        "reviewRequired": false,
+        "limitation": "Nearest-height ring selection per column can produce a stepped seam path; zero welded gap does not establish smooth seam continuity."
+      }
+    },
+    {
+      "piece": "tier3",
+      "worstEdgesAcrossActualSequence": [
+        {
+          "frame": 22,
+          "stretch": 5.18589448928833,
+          "logicalVertices": [
+            2198,
+            2390
+          ],
+          "rows": [
+            11,
+            12
+          ],
+          "columns": [
+            86,
+            86
+          ],
+          "restLengthMeters": 0.0019765328615903854,
+          "actualLengthMeters": 0.0102500906214118
+        },
+        {
+          "frame": 22,
+          "stretch": 4.8030266761779785,
+          "logicalVertices": [
+            1485,
+            1677
+          ],
+          "rows": [
+            7,
+            8
+          ],
+          "columns": [
+            141,
+            141
+          ],
+          "restLengthMeters": 0.0017986814491450787,
+          "actualLengthMeters": 0.008639114908874035
+        },
+        {
+          "frame": 22,
+          "stretch": 4.623712062835693,
+          "logicalVertices": [
+            2199,
+            2391
+          ],
+          "rows": [
+            11,
+            12
+          ],
+          "columns": [
+            87,
+            87
+          ],
+          "restLengthMeters": 0.0019435094436630607,
+          "actualLengthMeters": 0.00898622814565897
+        },
+        {
+          "frame": 22,
+          "stretch": 4.348832607269287,
+          "logicalVertices": [
+            721,
+            913
+          ],
+          "rows": [
+            3,
+            4
+          ],
+          "columns": [
+            145,
+            145
+          ],
+          "restLengthMeters": 0.0020792996510863304,
+          "actualLengthMeters": 0.009042525663971901
+        },
+        {
+          "frame": 22,
+          "stretch": 4.3393120765686035,
+          "logicalVertices": [
+            1486,
+            1678
+          ],
+          "rows": [
+            7,
+            8
+          ],
+          "columns": [
+            142,
+            142
+          ],
+          "restLengthMeters": 0.001870458945631981,
+          "actualLengthMeters": 0.008116505108773708
+        },
+        {
+          "frame": 22,
+          "stretch": 4.325194835662842,
+          "logicalVertices": [
+            1239,
+            1431
+          ],
+          "rows": [
+            6,
+            7
+          ],
+          "columns": [
+            87,
+            87
+          ],
+          "restLengthMeters": 0.0017384202219545841,
+          "actualLengthMeters": 0.007519006263464689
+        },
+        {
+          "frame": 22,
+          "stretch": 4.3134846687316895,
+          "logicalVertices": [
+            256,
+            448
+          ],
+          "rows": [
+            1,
+            2
+          ],
+          "columns": [
+            64,
+            64
+          ],
+          "restLengthMeters": 0.0020430637523531914,
+          "actualLengthMeters": 0.008812724612653255
+        },
+        {
+          "frame": 21,
+          "stretch": 4.299257278442383,
+          "logicalVertices": [
+            64,
+            256
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            64,
+            64
+          ],
+          "restLengthMeters": 0.0024995391722768545,
+          "actualLengthMeters": 0.010746161453425884
+        },
+        {
+          "frame": 21,
+          "stretch": 4.2012200355529785,
+          "logicalVertices": [
+            1817,
+            2009
+          ],
+          "rows": [
+            9,
+            10
+          ],
+          "columns": [
+            89,
+            89
+          ],
+          "restLengthMeters": 0.0016104683745652437,
+          "actualLengthMeters": 0.006765932310372591
+        },
+        {
+          "frame": 21,
+          "stretch": 4.172349452972412,
+          "logicalVertices": [
+            63,
+            255
+          ],
+          "rows": [
+            0,
+            1
+          ],
+          "columns": [
+            63,
+            63
+          ],
+          "restLengthMeters": 0.002527049509808421,
+          "actualLengthMeters": 0.010543733835220337
+        }
+      ],
+      "seamPath": {
+        "supportRowsByColumn": [
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "adjacentColumnsWithDifferentSupportRows": 0,
+        "maximumAdjacentRowJump": 0,
+        "reviewRequired": false,
+        "limitation": "Nearest-height ring selection per column can produce a stepped seam path; zero welded gap does not establish smooth seam continuity."
+      }
+    }
+  ],
+  "scriptSha256": "6793bd99fbab64b2ceba04ef0a155cefa0b6c520da99db679be5034fece35e2a",
+  "notAVisualOrPhysicalApproval": true
+}

@@ -1,0 +1,29 @@
+{
+  "actuallyViewedAllEightRenders": true,
+  "actuallyViewedFullOriginalStagePhoto": true,
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "springControlDataSha256": "b414c87a3ee39f9be035316cb2ad8e2fb8ff4b1a626c3cc77931d2490593e35b",
+  "weldedControlDataSha256": "726221875638f62d3001cc6f4930606efcae22aa782147d647e19af217894209",
+  "status": "needs_refinement",
+  "observedProgress": [
+    "Os 576 pares de costura permanecem unidos nas 29 poses físicas. A abertura máxima de 9,40 cm do ensaio com molas torna-se zero por construção na malha de simulação unida.",
+    "As três rendas continuam vinculadas a alvos finos de 2.496 vértices, sem avisos de mudança da topologia dos alvos.",
+    "A pose inicial conserva a composição das camadas; a nova montagem aplica-se somente à malha independente de simulação."
+  ],
+  "visibleProblems": [
+    "Nas poses 20 e 29, os três babados pretos amassam e a renda forma tiras e pontas alongadas. A união das costuras não corrige essa forma.",
+    "A anágua clara levanta e comprime sobre a perna na corrida. Os adornos laterais e a renda da anágua seguem o rig anterior e não acompanham adequadamente a superfície física.",
+    "O suporte e os babados ainda apresentam esticamento excessivo localizado. O primeiro babado chega a 6,34 vezes o comprimento original de uma aresta durante a sequência.",
+    "Na comparação com a foto própria da etapa, o tecido ainda parece liso e regular demais. Corsete, franzidos, cascatas diagonais, costuras, trama das meias e detalhe da renda precisam de polimento."
+  ],
+  "scopeLimitation": "Oito receptores usam as posições físicas reconstruídas. As outras 221 superfícies são contexto animado pelo rig anterior e não recebem aprovação física por estes renders.",
+  "nextWork": "Revisar o espaçamento e a qualidade dos quads do suporte e dos babados, a continuidade da costura do primeiro babado e o vínculo dos adornos à superfície fina. Depois validar contato e transferência ao rig, sem substituir o vestido exterior por recortes.",
+  "responseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalTripoCreditsConsumed": 0
+}

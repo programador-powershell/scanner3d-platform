@@ -1,0 +1,57 @@
+{
+  "mode": "areal",
+  "actualBlenderVersion": "5.2.1 LTS",
+  "installedMassPropertyDescription": "The mass of each vertex on the cloth material",
+  "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc",
+  "surfaceAreaSquareMeters": 0.4889281149069899,
+  "vertices": 21504,
+  "assumedArealDensityKgPerSquareMeter": 0.18,
+  "densityIsProvisionalMaterialAssumption": true,
+  "inheritedMassPerVertexKg": 0.11999999731779099,
+  "inheritedTotalMassKg": 2580.4799423217773,
+  "actualMassPerVertexKg": 4.092590188520262e-06,
+  "actualTotalMassKg": 0.08800705941393971,
+  "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true,
+  "parts": [
+    {
+      "key": "ivory",
+      "areaSquareMeters": 0.1645550330300703,
+      "allocatedUniqueSolverVertices": 7104,
+      "sharedSeamMassAllocatedToSupport": true,
+      "actualMassKg": 0.02907376069924794,
+      "effectiveArealDensityKgPerSquareMeter": 0.17668107844465072
+    },
+    {
+      "key": "support",
+      "areaSquareMeters": 0.24550889462648706,
+      "allocatedUniqueSolverVertices": 7488,
+      "sharedSeamMassAllocatedToSupport": true,
+      "actualMassKg": 0.030645315331639722,
+      "effectiveArealDensityKgPerSquareMeter": 0.12482364591418559
+    },
+    {
+      "key": "tier1",
+      "areaSquareMeters": 0.027656606872002713,
+      "allocatedUniqueSolverVertices": 2304,
+      "sharedSeamMassAllocatedToSupport": true,
+      "actualMassKg": 0.009429327794350684,
+      "effectiveArealDensityKgPerSquareMeter": 0.3409430461947291
+    },
+    {
+      "key": "tier2",
+      "areaSquareMeters": 0.028401712891252335,
+      "allocatedUniqueSolverVertices": 2304,
+      "sharedSeamMassAllocatedToSupport": true,
+      "actualMassKg": 0.009429327794350684,
+      "effectiveArealDensityKgPerSquareMeter": 0.33199856045495396
+    },
+    {
+      "key": "tier3",
+      "areaSquareMeters": 0.02280586748717747,
+      "allocatedUniqueSolverVertices": 2304,
+      "sharedSeamMassAllocatedToSupport": true,
+      "actualMassKg": 0.009429327794350684,
+      "effectiveArealDensityKgPerSquareMeter": 0.4134606061204335
+    }
+  ]
+}

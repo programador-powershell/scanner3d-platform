@@ -1,0 +1,245 @@
+{
+  "artifacts": [
+    {
+      "file": "inherited_mass_springs/actual_sewn_solver_motion.json",
+      "sha256": "513c48b05ba647ddc5bc49176068e402e68e2704fb121fd9f1af63a890261484",
+      "bytes": 118363
+    },
+    {
+      "file": "inherited_mass_springs/executed_probe.py",
+      "sha256": "0f657107ff1534d2224da2bca65248594e4bbded1242890308453d519f5d8389",
+      "bytes": 9707
+    },
+    {
+      "file": "inherited_mass_springs/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "inherited_mass_springs/actual_cloth_frames.npz",
+      "sha256": "dd1b5df578d3d0f18bf31447a72a82fa242aa23567f0735a4b8b4bd3bb27066e",
+      "bytes": 14740010
+    },
+    {
+      "file": "inherited_mass_springs/actual_execution.log",
+      "sha256": "fff2fa967003345862565ac450d08595bf23bfe822ac19b4ad2507c49f32e6c3",
+      "bytes": 1771
+    },
+    {
+      "file": "areal_mass_springs/actual_sewn_solver_motion.json",
+      "sha256": "917e36619519af4de78f9b1c190212a8291f1113337d268bd0af48736ffeb091",
+      "bytes": 120126
+    },
+    {
+      "file": "areal_mass_springs/executed_probe.py",
+      "sha256": "a8f388d4bda4f4237a313bd84983dcc81376844ee4afbc271df97941fbcfc318",
+      "bytes": 12221
+    },
+    {
+      "file": "areal_mass_springs/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "areal_mass_springs/actual_cloth_frames.npz",
+      "sha256": "b414c87a3ee39f9be035316cb2ad8e2fb8ff4b1a626c3cc77931d2490593e35b",
+      "bytes": 14739444
+    },
+    {
+      "file": "areal_mass_springs/actual_execution.log",
+      "sha256": "e4e3c7024053d84e821c544a5f1518feb8164179f564cd243b7aa8319746c50a",
+      "bytes": 3273
+    },
+    {
+      "file": "areal_mass_springs/mass_calibration.json",
+      "sha256": "14e5c04624a9e49d80306bfb64222388afbd7f3ef9143c38a2664a1095a918e0",
+      "bytes": 1683
+    },
+    {
+      "file": "areal_mass_springs/review/comparison.json",
+      "sha256": "3918de479508d0e8fc9191e6ac0d790a5e9d6e5dfb4be635ee8ea988c25d053b",
+      "bytes": 4736
+    },
+    {
+      "file": "areal_mass_springs/review/executed_render.py",
+      "sha256": "18dc5d843c676433a9b76d0d366572b51359a2335f436072b5c3db7e7067f616",
+      "bytes": 10780
+    },
+    {
+      "file": "areal_mass_springs/review/actual_execution.log",
+      "sha256": "84d8a10ba49239d838a0b20f1ed87d786d667b849caf77dc23c77f9cb3fe1874",
+      "bytes": 1843
+    },
+    {
+      "file": "areal_mass_springs/review/renders/foundation_01_front.png",
+      "sha256": "f23c038d5d644b66e1ce78791d48599268a202db75aa7a912e05af02968107d2",
+      "bytes": 342886
+    },
+    {
+      "file": "areal_mass_springs/review/renders/foundation_20_front.png",
+      "sha256": "04d080bbb2f38cd25ead04328af02e35f5ac180cebdce3c5b46f7043468bda41",
+      "bytes": 311618
+    },
+    {
+      "file": "areal_mass_springs/review/renders/foundation_29_threequarter.png",
+      "sha256": "18f0a33986b4f9d06556183dbce1b10bb78858926e7ecd5de36702efe740e22b",
+      "bytes": 295735
+    },
+    {
+      "file": "areal_mass_springs/review/renders/sewn_receivers_29_threequarter.png",
+      "sha256": "72aeeff4aaad08938c18abf7bd239b0ac30c5212d47356751f30bbd9deed6f3b",
+      "bytes": 189720
+    },
+    {
+      "file": "areal_mass_welded/actual_sewn_solver_motion.json",
+      "sha256": "92030ffcbd70a891a9bce4d6aebfeb3c6468ff2de715f3fdc90462826df13c83",
+      "bytes": 119939
+    },
+    {
+      "file": "areal_mass_welded/executed_probe.py",
+      "sha256": "cebd72483ef7d1ec6d7402e1027ac70e1e64d34a91a5cf2a9a5e7b1e4cebcd97",
+      "bytes": 14190
+    },
+    {
+      "file": "areal_mass_welded/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "areal_mass_welded/actual_cloth_frames.npz",
+      "sha256": "726221875638f62d3001cc6f4930606efcae22aa782147d647e19af217894209",
+      "bytes": 21715654
+    },
+    {
+      "file": "areal_mass_welded/actual_execution.log",
+      "sha256": "0f36a08720b38271e042f5a8f68690e5c38702f1821477f869aaf5a479519da6",
+      "bytes": 3690
+    },
+    {
+      "file": "areal_mass_welded/mass_calibration.json",
+      "sha256": "abda0dedd72eaebec896184a3e27b68f4956b148cd15d63c2117134a15033c98",
+      "bytes": 2150
+    },
+    {
+      "file": "areal_mass_welded/executed_welded_assembly.py",
+      "sha256": "1473742628ab7a693236a8f22075b9b0a8de5d82c5f0b95013f0ea6f2386bcd6",
+      "bytes": 2755
+    },
+    {
+      "file": "areal_mass_welded/review/comparison.json",
+      "sha256": "518d063aadad79d66a4bb3ec15ae39725a3dc4bf287d8b81292a61d82379ce9e",
+      "bytes": 4736
+    },
+    {
+      "file": "areal_mass_welded/review/executed_render.py",
+      "sha256": "18dc5d843c676433a9b76d0d366572b51359a2335f436072b5c3db7e7067f616",
+      "bytes": 10780
+    },
+    {
+      "file": "areal_mass_welded/review/actual_execution.log",
+      "sha256": "72d9dd85c25e662371d47ec33e0ec4a2b37284552704e9a168db95049cd0ce2e",
+      "bytes": 1843
+    },
+    {
+      "file": "areal_mass_welded/review/renders/foundation_01_front.png",
+      "sha256": "48be93e763821e8cb21e07036898c68976cb665564b5657e26644ba9b03f7961",
+      "bytes": 342815
+    },
+    {
+      "file": "areal_mass_welded/review/renders/foundation_20_front.png",
+      "sha256": "1c0c128f4ddff526b92fe0c8a086aa5448e1ecfd41baeee5912fbd4c91c41307",
+      "bytes": 312416
+    },
+    {
+      "file": "areal_mass_welded/review/renders/foundation_29_threequarter.png",
+      "sha256": "5d3ac4ad0dd23b70c6985f48e972918d96f571570b5883a08c9df6ebd4039d45",
+      "bytes": 293293
+    },
+    {
+      "file": "areal_mass_welded/review/renders/sewn_receivers_29_threequarter.png",
+      "sha256": "cbe4db12b3c2251cbd4d118729292df8d78b1e684c09d8b4eb0725d119e112b8",
+      "bytes": 198003
+    },
+    {
+      "file": "executed_helpers/chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_motion_entry.py",
+      "sha256": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57",
+      "bytes": 2417
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_colliders.py",
+      "sha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+      "bytes": 1803
+    },
+    {
+      "file": "initialization_failures/v1/executed_failed_probe.py",
+      "sha256": "6adc3c4660f8ea02919ae605a7fbc0a6770ae13d8117a65aedfe9842afd40b72",
+      "bytes": 9695
+    },
+    {
+      "file": "initialization_failures/v1/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "initialization_failures/v1/actual_execution.log",
+      "sha256": "684b4ff9f16bb053407f694266316b5907d4d05a86329463d5f175f5426c6156",
+      "bytes": 1405
+    },
+    {
+      "file": "initialization_failures/v4/executed_failed_probe.py",
+      "sha256": "61e1d8332a2324125d7a66884b551c99bc1d2853452e861ba0fd4fdb3c37edbc",
+      "bytes": 14150
+    },
+    {
+      "file": "initialization_failures/v4/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "initialization_failures/v4/executed_failed_welded_assembly.py",
+      "sha256": "f0a5c8a856a77262010ca0bfe076f792b8370550c618a764f24bb444b5bf83d4",
+      "bytes": 2606
+    },
+    {
+      "file": "initialization_failures/v4/actual_execution.log",
+      "sha256": "2480035eed177041f2e1b5d058beb217a257dfbc9ad9d3d23c8c8d6e707bc61e",
+      "bytes": 1646
+    },
+    {
+      "file": "source_photo.png",
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "bytes": 2255895
+    },
+    {
+      "file": "visual_assessment.json",
+      "sha256": "72ce29438bdee629b263e76fff0e6e97b354f54cd5fc17ef94d92c24a5732187",
+      "bytes": 2356
+    },
+    {
+      "file": "areal_mass_welded/strain_localization.json",
+      "sha256": "bd7a689ff70ec130d67a045f04d90488d7145e7ec2b4eb91c8754ca5da8b516d",
+      "bytes": 29702
+    },
+    {
+      "file": "executed_strain_analysis.py",
+      "sha256": "6793bd99fbab64b2ceba04ef0a155cefa0b6c520da99db679be5034fece35e2a",
+      "bytes": 2997
+    },
+    {
+      "file": "photo_vs_actual_sewn_cloth_before_after.jpg",
+      "sha256": "cd7b77fb901c51f0f6e17cd0bf51064af3330e53ebd8c6c57eea62385e08186e",
+      "bytes": 413566
+    },
+    {
+      "file": "executed_package.py",
+      "sha256": "ac0e1cc2376a30b04a3ff541d4f5246f8d3577bdd24fc4389b27316d54604c93",
+      "bytes": 12915
+    }
+  ],
+  "preservedExactlyAsExecutedBytes": true
+}
