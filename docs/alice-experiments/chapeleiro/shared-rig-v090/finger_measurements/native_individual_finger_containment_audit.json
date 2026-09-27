@@ -1,0 +1,449 @@
+{
+  "modelSha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+  "method": "solid-angle winding on actual native arm triangles; five actual samples per inferred bone",
+  "rows": [
+    {
+      "bone": "LeftHandIndex1",
+      "windingSamples": [
+        0.9984596471005498,
+        0.9985038224502731,
+        0.9985460163907363,
+        0.9985863380019134,
+        0.9986249018919995
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex2",
+      "windingSamples": [
+        0.9986249018919995,
+        0.9986468907005025,
+        0.9986683350739115,
+        0.9986892554169107,
+        0.9987096712844524
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex3",
+      "windingSamples": [
+        0.9987096712844524,
+        0.9987335377964752,
+        0.9987566949552378,
+        0.9987791772406738,
+        0.9988010164266299
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex4",
+      "windingSamples": [
+        0.9988010164266299,
+        0.99880268906021,
+        0.9988043578418568,
+        0.9988060227859049,
+        0.998807683906603
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle1",
+      "windingSamples": [
+        0.9984116888569375,
+        0.9984602804937939,
+        0.9985066129646408,
+        0.998550801164321,
+        0.9985929738161424
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle2",
+      "windingSamples": [
+        0.9985929738161424,
+        0.9986171998821092,
+        0.9986409198019902,
+        0.9986641369287861,
+        0.9986868573477103
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle3",
+      "windingSamples": [
+        0.9986868573477103,
+        0.9987132646394481,
+        0.9987389833199253,
+        0.9987640329673741,
+        0.9987884335774341
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle4",
+      "windingSamples": [
+        0.9987884335774341,
+        0.9987901127398947,
+        0.998791788088897,
+        0.9987934596387775,
+        0.9987951274037854
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing1",
+      "windingSamples": [
+        0.9983425180143893,
+        0.998399339786593,
+        0.9984524302529474,
+        0.9985022446962191,
+        0.9985491551311377
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing2",
+      "windingSamples": [
+        0.9985491551311377,
+        0.9985721135896651,
+        0.9985946514486423,
+        0.9986167678656901,
+        0.9986384646868617
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing3",
+      "windingSamples": [
+        0.9986384646868617,
+        0.9986633860063231,
+        0.998687647992697,
+        0.9987112762005604,
+        0.9987342949361129
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing4",
+      "windingSamples": [
+        0.9987342949361129,
+        0.9987360810315499,
+        0.9987378628678065,
+        0.9987396404621229,
+        0.998741413831624
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky1",
+      "windingSamples": [
+        0.9982996955813886,
+        0.9983418397532706,
+        0.9983827760818721,
+        0.9984224493725214,
+        0.9984608450062176
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky2",
+      "windingSamples": [
+        0.9984608450062176,
+        0.9984790699379529,
+        0.9984970330398902,
+        0.998514733917993,
+        0.9985321732903567
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky3",
+      "windingSamples": [
+        0.9985321732903567,
+        0.9985486012092522,
+        0.9985648174130081,
+        0.9985808218639717,
+        0.9985966151670939
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky4",
+      "windingSamples": [
+        0.9985966151670939,
+        0.9985986505259133,
+        0.9986006810946312,
+        0.9986027068924681,
+        0.9986047279385216
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb1",
+      "windingSamples": [
+        0.9977213344830196,
+        0.9978458029503645,
+        0.9979706394350627,
+        0.9980760690655571,
+        0.9981624373026005
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb2",
+      "windingSamples": [
+        0.9981624373026005,
+        0.9982322127851297,
+        0.9982937425528271,
+        0.9983493878668285,
+        0.9984005616713609
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb3",
+      "windingSamples": [
+        0.9984005616713609,
+        0.9984510796613112,
+        0.9984982472504879,
+        0.998542547473072,
+        0.9985843424754338
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb4",
+      "windingSamples": [
+        0.9985843424754338,
+        0.998586884335047,
+        0.9985894175480355,
+        0.9985919421743936,
+        0.9985944582733322
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex1",
+      "windingSamples": [
+        0.9941289479052481,
+        0.9946022985837404,
+        0.9950258128416838,
+        0.9954053969592007,
+        0.9957462613400792
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex2",
+      "windingSamples": [
+        0.9957462613400792,
+        0.9959349591972533,
+        0.9961127065891331,
+        0.9962802121935354,
+        0.9964381410095016
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex3",
+      "windingSamples": [
+        0.9964381410095016,
+        0.9966070639708249,
+        0.9967647429907044,
+        0.996912086932415,
+        0.9970499226499666
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex4",
+      "windingSamples": [
+        0.9970499226499666,
+        0.997059056503469,
+        0.9970681472858898,
+        0.997077195262555,
+        0.9970862006968291
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle1",
+      "windingSamples": [
+        0.9939761771570012,
+        0.9945209225598043,
+        0.9949979564022191,
+        0.9954173471851787,
+        0.9957875031153098
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle2",
+      "windingSamples": [
+        0.9957875031153098,
+        0.9960112080225482,
+        0.9962211267625908,
+        0.9964180217537837,
+        0.9966026480899522
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle3",
+      "windingSamples": [
+        0.9966026480899522,
+        0.996808163500629,
+        0.9969983769573103,
+        0.9971744646677341,
+        0.997337533348137
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle4",
+      "windingSamples": [
+        0.997337533348137,
+        0.997346263003459,
+        0.9973549490780164,
+        0.9973635918562689,
+        0.9973721916204358
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing1",
+      "windingSamples": [
+        0.9940363311416051,
+        0.9945994927649151,
+        0.9950894208990412,
+        0.99551754581119,
+        0.9958933051416485
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing2",
+      "windingSamples": [
+        0.9958933051416485,
+        0.9961043030238114,
+        0.9963028869799784,
+        0.9964896898331497,
+        0.9966653448899909
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing3",
+      "windingSamples": [
+        0.9966653448899909,
+        0.9968475094886039,
+        0.9970166003183654,
+        0.9971736794244944,
+        0.9973197225386451
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing4",
+      "windingSamples": [
+        0.9973197225386451,
+        0.9973287849209315,
+        0.9973377997041794,
+        0.9973467672203025,
+        0.9973556877983815
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky1",
+      "windingSamples": [
+        0.9942588799523988,
+        0.9947309911642853,
+        0.9951493905152189,
+        0.995521413868946,
+        0.9958532811514793
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky2",
+      "windingSamples": [
+        0.9958532811514793,
+        0.9960151594116443,
+        0.9961697384958623,
+        0.9963173030876369,
+        0.9964581384685897
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky3",
+      "windingSamples": [
+        0.9964581384685897,
+        0.9965911526040749,
+        0.9967183117069989,
+        0.9968398501359291,
+        0.9969560000524259
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky4",
+      "windingSamples": [
+        0.9969560000524259,
+        0.9969681319728673,
+        0.9969801919851511,
+        0.9969921806315145,
+        0.997004098449404
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb1",
+      "windingSamples": [
+        0.9889503064722185,
+        0.9900393490615907,
+        0.9909828653291978,
+        0.9918037073553131,
+        0.992520867711738
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb2",
+      "windingSamples": [
+        0.992520867711738,
+        0.9931106837333468,
+        0.9936331767500017,
+        0.9940980010297338,
+        0.9945131916030223
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb3",
+      "windingSamples": [
+        0.9945131916030223,
+        0.994906382127067,
+        0.9952574611162639,
+        0.9955722663199021,
+        0.9958556622902534
+      ],
+      "allSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb4",
+      "windingSamples": [
+        0.9958556622902534,
+        0.9958719691401124,
+        0.9958881755248288,
+        0.9959042822826785,
+        0.9959202902431685
+      ],
+      "allSamplesInside": true
+    }
+  ],
+  "outsideSampleBones": [],
+  "anatomyVerified": false,
+  "motionVerified": false
+}

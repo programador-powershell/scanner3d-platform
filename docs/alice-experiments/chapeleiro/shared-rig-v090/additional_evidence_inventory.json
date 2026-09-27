@@ -1,0 +1,176 @@
+{
+  "artifacts": [
+    {
+      "file": "full_editable_reopen.json",
+      "sha256": "fef59473d170fd68a5850c37c5381348b889f7268103bf5adbd6a3b0e126a5b7",
+      "bytes": 48820
+    },
+    {
+      "file": "native_hand_bind_fit.json",
+      "sha256": "8ddddec2cffc33f7382b160881f491fdf28a8a2cc0266a4147b8238af1055c03",
+      "bytes": 1174101
+    },
+    {
+      "file": "native_individual_finger_targets.json",
+      "sha256": "cb216e4da7986cecce58dc36b73114944b234c7c309c90fed6afd5dbad68968d",
+      "bytes": 922775
+    },
+    {
+      "file": "actual_individual_finger_bind_audit.json",
+      "sha256": "a267a03f464276fe4f4edaf76233869870031532c542f0eae0dde5f5a3422c15",
+      "bytes": 23264
+    },
+    {
+      "file": "refitted_motion_retarget.json",
+      "sha256": "248690baeafbc1cbcfad6c00e0a2530b4ff273844655738d12b302774fda56f2",
+      "bytes": 10836
+    },
+    {
+      "file": "executed_chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_refine_chapeleiro_shared_rig_attachments.py",
+      "sha256": "babde9ccdd354a14777991fa9851cd81527f14290e0423ba17e55612b62afd0b",
+      "bytes": 13286
+    },
+    {
+      "file": "executed_chapeleiro_native_hand_fit.py",
+      "sha256": "dce4ce14fceaa647bee80bd0917e2fb4f383292392e3a2e8bb651bb05263975d",
+      "bytes": 11723
+    },
+    {
+      "file": "executed_chapeleiro_whole_arm_components.py",
+      "sha256": "ee4da052995622f5578dfe6bb76c43b80ea006cc47ba68471f078032c1383364",
+      "bytes": 3651
+    },
+    {
+      "file": "executed_chapeleiro_refitted_motion_retarget.py",
+      "sha256": "cbb4a3a9426333dc788d7407d13ae4ce9eb4c79e6212ba3488735256079fa4e0",
+      "bytes": 10597
+    },
+    {
+      "file": "executed_audit_chapeleiro_individual_finger_bind.py",
+      "sha256": "258a03f60448357b5208a2c01ba14304a0f896f033b805b6f0c07f3ae504d8f4",
+      "bytes": 5149
+    },
+    {
+      "file": "executed_render_chapeleiro_native_hand_bind.py",
+      "sha256": "5d5ebb977b84303d54ddae43f8761005c0b27d577c058e0118a56fe760e03203",
+      "bytes": 6096
+    },
+    {
+      "file": "executed_audit_chapeleiro_shared_rig_checkpoint.py",
+      "sha256": "dd8163d6139090c8d354c4d9fd3562f8eb220a4c79dd0b2e60c91a3ebf6d5794",
+      "bytes": 4703
+    },
+    {
+      "file": "executed_diagnose_chapeleiro_whole_pose_edges.py",
+      "sha256": "62abf79b24d838a27d5ffa75c65782baf31033f57e10e38febe7201e55429825",
+      "bytes": 3908
+    },
+    {
+      "file": "executed_compose_chapeleiro_hand_bind_review.py",
+      "sha256": "6387d309d32e064ad5d7ee9eb6c967e9ed4a72fae64ce79027ccbb8fc9c2b752",
+      "bytes": 2657
+    },
+    {
+      "file": "finger_measurements/native_individual_finger_sections_extended.json",
+      "sha256": "b3a7c48856cb653b187439a8779b6788ed7204c8c8e76ce489a785fc367e33cc",
+      "bytes": 6318740
+    },
+    {
+      "file": "finger_measurements/native_individual_finger_contours_extended.json",
+      "sha256": "682933c3e3ce173b03ed28f2cf27408ff89320b3c246ffefe653bef516bab0f2",
+      "bytes": 2720241
+    },
+    {
+      "file": "finger_measurements/native_whole_hand_measurement_data.npz",
+      "sha256": "2d3ac0cd8614bf177df725406d87ec057498d3ea95c3aafd6134ecca34d09434",
+      "bytes": 2837678
+    },
+    {
+      "file": "finger_measurements/native_whole_hand_measurement_data_extended.npz",
+      "sha256": "2d3ac0cd8614bf177df725406d87ec057498d3ea95c3aafd6134ecca34d09434",
+      "bytes": 2837678
+    },
+    {
+      "file": "finger_measurements/native_individual_finger_containment_audit.json",
+      "sha256": "d0ebdca574b34843c9cc9244187714f6b23ace65018378ced7b54f4198aedd83",
+      "bytes": 10734
+    },
+    {
+      "file": "finger_measurements/prior_v086_bind_proportions.json",
+      "sha256": "b2724db2417e8ba46e964fd016282fb1f2cf3e88b7054e5f64dd7f3c5da5e3b6",
+      "bytes": 318639
+    },
+    {
+      "file": "finger_measurements/executed_measure_chapeleiro_individual_finger_sections.py",
+      "sha256": "9b7260657498e2d768de2c18964fa512ebafc1fdb0c990b79f1127635990653d",
+      "bytes": 2796
+    },
+    {
+      "file": "finger_measurements/executed_measure_chapeleiro_individual_finger_sections_extended.py",
+      "sha256": "871d0fac46724a084d5a7efbd5031a2aae057584c975d29ae845b7b8c4edb070",
+      "bytes": 2845
+    },
+    {
+      "file": "finger_measurements/executed_analyze_chapeleiro_finger_contours.py",
+      "sha256": "3e74e77788da353a417022e49900bfd9d29ee5e510913eacd2228562e3c57c1e",
+      "bytes": 2403
+    },
+    {
+      "file": "finger_measurements/executed_analyze_chapeleiro_finger_contours_extended.py",
+      "sha256": "2c861ac230c936daa810213e5b2259ca9bac859b7bdd63d50c91f3d3dd5dc88f",
+      "bytes": 2449
+    },
+    {
+      "file": "finger_measurements/executed_fit_chapeleiro_actual_finger_curves.py",
+      "sha256": "edeaf81f734245a25fd853434bb8dd08c32d901e27e0ba1ba82054b330dea477",
+      "bytes": 6301
+    },
+    {
+      "file": "finger_measurements/executed_audit_chapeleiro_actual_finger_containment.py",
+      "sha256": "614ed08493c3a0aeb7fb2fb726ec7efb1f8d1834fdf31b5e50cd118807a27ca4",
+      "bytes": 1508
+    },
+    {
+      "file": "hand_bind_left/front.png",
+      "sha256": "5d314caf9df0c824d14e462432981e3f20d175f2078b1800ae39079499dbc89f",
+      "bytes": 798446
+    },
+    {
+      "file": "hand_bind_left/side.png",
+      "sha256": "f0406e0ec331703c64863b936c111588957244ea5c0309aa6f5423ec57eb64fc",
+      "bytes": 1309395
+    },
+    {
+      "file": "hand_bind_left/back.png",
+      "sha256": "5b660e42dc67f00b77a74aea2a52aa0b08ca5df5ac3450b4953d28c37773d954",
+      "bytes": 819143
+    },
+    {
+      "file": "hand_bind_right/front.png",
+      "sha256": "022a006b720481b100e24bdf520b4a5f4eba714a151dc4b91e0d42683fd32f90",
+      "bytes": 834002
+    },
+    {
+      "file": "hand_bind_right/side.png",
+      "sha256": "e96b14cedc2489ad88e64260012fd7d566eedfa69c3d7bf1558cde5699e013c7",
+      "bytes": 1304757
+    },
+    {
+      "file": "hand_bind_right/back.png",
+      "sha256": "e30acd72ef1022f8519ce3ff8ce17a2d0772928ffbfdfd4921517298144eb728",
+      "bytes": 801911
+    },
+    {
+      "file": "photo_vs_actual_hand_bind.jpg",
+      "sha256": "edfab8a3dd5483556802dbbc0cf6af16f27c28a03ceaf61cf168b42c5c1c0d23",
+      "bytes": 647334
+    }
+  ],
+  "allLayersFinished": false,
+  "finalFbxExported": false
+}

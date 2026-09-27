@@ -69,7 +69,7 @@ def elbow_surface_section(whole,points,z,side,sign):
         'actualContourPoints':contour.tolist(),'bounds':[low.tolist(),high.tolist()],
         'inferredCenter':center.tolist(),'internalJointInferred':True,'meshEdited':False}
 
-def infer_targets(rig,whole):
+def infer_targets(rig,whole,finger_guides=None):
     points,skin,images=native_samples(whole);heads={};tails={};guides=[]
     for side,sign in [('Left',1),('Right',-1)]:
         current={b.name:b.head_local.copy() for b in rig.data.bones if b.name.startswith(side+'Hand')}
@@ -82,6 +82,18 @@ def infer_targets(rig,whole):
         elbow[2]=elbow_z;row['inferredCenter']=elbow.tolist();guides.append(row)
         heads[side+'ForeArm']=Vector(elbow);tails[side+'Arm']=Vector(elbow)
         heads[side+'Hand']=Vector(wrist);tails[side+'ForeArm']=Vector(wrist)
+        if finger_guides:
+            targets=finger_guides['boneTargets']
+            required={side+'Hand'+digit+str(joint) for digit in ['Thumb','Index','Middle','Ring','Pinky'] for joint in range(1,5)}
+            if not required.issubset(targets):raise ValueError('Missing individual native finger targets.')
+            for name in required:
+                value=targets[name]
+                if not np.isfinite([value['head'],value['tail']]).all():raise ValueError('Non-finite native finger target.')
+                heads[name]=Vector(value['head']);tails[name]=Vector(value['tail'])
+            tails[side+'Hand']=sum((heads[side+'Hand'+digit+'1'] for digit in ['Index','Middle','Ring','Pinky']),Vector())/4
+            guides.append({'label':side+' individual digits','method':finger_guides['method'],
+                'individualDigitEvidence':[p for p in finger_guides['individualDigitEvidence'] if p['side']==side]})
+            continue
         digits=['Index','Middle','Ring','Pinky'];levels={}
         for joint,(lo,hi) in enumerate([(.480,.495),(.465,.480),(.450,.465),(.445,.453)],1):
             centre,row=section(points,region&(points[:,2]>=lo)&(points[:,2]<hi),side+' finger joint '+str(joint))
@@ -111,8 +123,8 @@ def infer_targets(rig,whole):
         name=side+'HandThumb4';tails[name]=heads[name]+(heads[name]-heads[side+'HandThumb3']).normalized()*.0025
     return heads,tails,guides,images
 
-def fit_native_hands(rig,whole):
-    heads,tails,guides,images=infer_targets(rig,whole)
+def fit_native_hands(rig,whole,finger_guides=None):
+    heads,tails,guides,images=infer_targets(rig,whole,finger_guides)
     names=set(heads)|set(tails)
     before={name:{'head':list(rig.data.bones[name].head_local),'tail':list(rig.data.bones[name].tail_local),
         'matrix':[[v for v in row] for row in rig.data.bones[name].matrix_local]} for name in names}
@@ -142,9 +154,10 @@ def fit_native_hands(rig,whole):
     bpy.context.view_layer.update()
     after={name:{'head':list(rig.data.bones[name].head_local),'tail':list(rig.data.bones[name].tail_local),
         'matrix':[[v for v in row] for row in rig.data.bones[name].matrix_local]} for name in names}
-    return {'method':'inferred elbow/wrist/finger bind from actual native atlas and real 3D surface sections',
+    return {'method':'inferred elbow/wrist bind and individual native finger surface centerlines' if finger_guides else 'inferred elbow/wrist/finger bind from actual native atlas and real 3D surface sections',
         'guides':guides,'actualAtlasImages':images,'before':before,'after':after,
         'existingCommonSkeletonTopologyPreserved':True,'actualChangedBones':len(names),'geometryChanged':False,
+        'individualNativeFingerSurfaceGuidesUsed':bool(finger_guides),
         'inheritedLocalActionChannelsRequireRetargetAndPoseReview':True,
         'rigFitVerified':False,'motionVerified':False,'fidelityVerified':False,'clothCollisionVerified':False,
         'limitations':['Internal anatomy is inferred; color candidates may include ornaments.',

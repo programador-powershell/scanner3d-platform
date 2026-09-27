@@ -1,4 +1,4 @@
-"""Render the actual whole GLB and its actual finger bones for bind diagnosis."""
+"""Render actual GLB joint positions and hierarchy for hand-bind diagnosis."""
 import argparse,hashlib,json,sys
 from pathlib import Path
 import bpy
@@ -35,16 +35,22 @@ colors={'Thumb':(.95,.35,.08),'Index':(.1,.65,1),'Middle':(.2,1,.25),'Ring':(.95
 materials={key:marker_material(key,value) for key,value in colors.items()}
 materials['Arm']=marker_material('Palm and forearm',(.95,.85,.3))
 names=[b.name for b in rig.data.bones if b.name in [args.side+'Arm',args.side+'ForeArm',args.side+'Hand'] or b.name.startswith(args.side+'Hand')]
+joint_positions={name:rig.matrix_world@rig.data.bones[name].head_local for name in names}
+connections=[]
 for name in names:
-    bone=rig.data.bones[name];head=rig.matrix_world@bone.head_local;tail=rig.matrix_world@bone.tail_local
+    bone=rig.data.bones[name];head=joint_positions[name]
     key=next((k for k in colors if k in name),'Arm');material=materials[key]
-    direction=tail-head
-    bpy.ops.mesh.primitive_cylinder_add(vertices=8,radius=.00055,depth=direction.length,location=(head+tail)/2)
-    cylinder=bpy.context.object;cylinder.name='Diagnostic bone / '+name
-    cylinder.rotation_euler=direction.to_track_quat('Z','Y').to_euler();cylinder.data.materials.append(material)
-    for index,point in enumerate([head,tail]):
-        bpy.ops.mesh.primitive_uv_sphere_add(segments=8,ring_count=4,radius=.001,location=point)
-        sphere=bpy.context.object;sphere.name='Diagnostic joint / '+name+' / '+str(index);sphere.data.materials.append(material)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=8,ring_count=4,radius=.001,location=head)
+    sphere=bpy.context.object;sphere.name='Diagnostic actual joint / '+name;sphere.data.materials.append(material)
+    # glTF stores joint nodes, not bone lengths. The importer may synthesize
+    # leaf tails; only actual parent/child joint heads represent exported data.
+    if bone.parent and bone.parent.name in joint_positions:
+        parent=joint_positions[bone.parent.name];direction=head-parent
+        if direction.length>1e-8:
+            bpy.ops.mesh.primitive_cylinder_add(vertices=8,radius=.00055,depth=direction.length,location=(parent+head)/2)
+            cylinder=bpy.context.object;cylinder.name='Diagnostic joint connection / '+name
+            cylinder.rotation_euler=direction.to_track_quat('Z','Y').to_euler();cylinder.data.materials.append(material)
+        connections.append({'parent':bone.parent.name,'child':name})
 
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=16
 scene.render.resolution_x=700;scene.render.resolution_y=900;scene.render.resolution_percentage=100
@@ -68,8 +74,10 @@ for name,direction in [('front',Vector((0,-1,0))),('side',Vector((1,0,0))),('bac
 report={'model':record['model'],'modelSha256':record['modelSha256'],'sourcePhoto':record['sourcePhoto'],
     'sourcePhotoSha256':record['sourcePhotoSha256'],'scope':args.side+' forearm and hand bind diagnostic only',
     'nativeMaterialDiagnosticAlpha':.28,'bonesShown':names,'renders':views,
+    'displayedJointPositions':{name:list(point) for name,point in joint_positions.items()},
+    'connections':connections,'importerBoneTailsUsed':False,
     'actualModelGeometryChanged':False,'sourceGlbUnchanged':sha(record['model'])==record['modelSha256'],
     'fidelityVerified':False,'motionVerified':False,'clothCollisionVerified':False,
-    'limitation':'Transparent native material and colored actual bones are diagnostic overlays, not a new character, layer, or fidelity render.'}
+    'limitation':'Transparent material and colored actual glTF joint positions/hierarchy are diagnostic overlays; synthetic importer leaf tails are not displayed. Anatomy, poses and cloth still require review.'}
 (out/'comparison.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print('ACTUAL_NATIVE_HAND_BIND_VIEWS_SAVED',flush=True)

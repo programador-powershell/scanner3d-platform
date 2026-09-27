@@ -1,0 +1,116 @@
+{
+  "stageId": "alice_chapeleiro_full",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourceCrop": null,
+  "reviewScope": "complete_stage_geometry",
+  "selectedRolePrefix": null,
+  "selectedComponentGroup": null,
+  "renderedComponents": [
+    "Chapeleiro / intact whole exterior / skin study"
+  ],
+  "model": "whole/skin_study.glb",
+  "modelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "renders": {
+    "front": {
+      "file": "whole/rest/front.png",
+      "sha256": "e981151b1dad3590a1ffad52a2f5303778d87f62abe8071cf73e67cc99a685c0",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        -3.9198248386383057,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 556656
+    },
+    "side": {
+      "file": "whole/rest/side.png",
+      "sha256": "e93a7690e1ad7d837d6d8bfe3ed6364164ea022df333b386a7e7b1c459276e75",
+      "cameraPosition": [
+        3.9197239875793457,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 451549
+    },
+    "back": {
+      "file": "whole/rest/back.png",
+      "sha256": "07c728c8550b3318f2757adaa84f382f6b0d1916077ea5190bee6c5ef352f893",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        3.9196274280548096,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 555301
+    },
+    "threequarter": {
+      "file": "whole/rest/threequarter.png",
+      "sha256": "dc85ee49eefc6bb56d7edc3158eade245d01a630e19a0c57f2cbbba11ccca535",
+      "cameraPosition": [
+        2.1195058822631836,
+        -3.260880708694458,
+        0.9791184663772583
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 542473
+    }
+  },
+  "bounds": {
+    "min": [
+      -0.22196771204471588,
+      -0.15589569509029388,
+      3.5339067835593596e-05
+    ],
+    "max": [
+      0.22196318209171295,
+      0.1556984782218933,
+      0.9799668788909912
+    ]
+  },
+  "frontAxis": "-y",
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "O exterior inteiro foi reimportado e renderizado novamente com a própria foto original completa: quatro vistas e doze poses reais. A geometria, os UVs e o atlas do mestre foram preservados sem recortar o vestido.",
+    "Cada dedo recebeu um guia próprio medido por contornos transversais da superfície nativa. A reabertura confirmou os 40 ossos e seus 200 pontos amostrados dentro das superfícies originais; a reimportação confirmou as 40 posições das juntas no GLB. Isso não aprova anatomia ou flexão em movimento.",
+    "As seis sobreposições mostram as juntas e ligações reais do GLB em frente, perfil e costas. Pontas de ossos sintetizadas pelo importador não são exibidas nem usadas como evidência do arquivo exportado.",
+    "Caminhada, corrida, salto e ataque foram reconstruídos para o encaixe atual, usando apenas ossos e ações das fontes originais. A geometria de outros personagens não foi usada. Contatos, transições e poses intermediárias continuam pendentes.",
+    "O pior esticamento nas cinco poses diagnosticadas permanece 304,93 vezes na fronteira entre a barra da saia e os pesos da perna. A correção dos dedos e a reconstrução das ações não corrigem esse defeito do campo do vestido.",
+    "As pernas ainda penetram o vestido em poses fortes. Cabelo, cintura, mangas, luvas, ornamentos, bordados, cartas, relógios e acabamento precisam do polimento conforme a foto própria; tecido secundário e colisões com o corpo e entre camadas continuam pendentes.",
+    "Na inspeção interativa em três quartos, com a própria foto e o ataque atual, o cabelo ainda abre em placas nas costas. Em uma pose, um trecho do braço/luva levantado aparece afastado acima da cabeça; a continuidade dos pesos de ombro, braço, punho e dedos precisa ser corrigida e conferida ao longo da ação."
+  ],
+  "limitation": "Unseen surfaces are inferred; camera registration and details require review.",
+  "displayModel": {
+    "file": "whole/skin_study.glb",
+    "sha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+    "bytes": 65149880
+  },
+  "comparisonBoard": {
+    "file": "whole/photo_vs_geometry.jpg",
+    "sha256": "ebc7358acc7386147db6ec794d8644c39f1f051eb82d9a5979a2094eea142249",
+    "bytes": 506036
+  },
+  "visualReviewPerformed": true
+}

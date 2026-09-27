@@ -1,0 +1,98 @@
+{
+  "status": "needs_refinement",
+  "scope": "shared rig for current 229 foundation pieces and intact native exterior",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "ecb91c104cd743642c3d60684835fd778eaab9f1beabeaf09db1fa3df69feb19",
+        "bytes": 69267012
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+        "bytes": 65149880
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    }
+  },
+  "fullLocalEditableBytes": 129351994,
+  "fullLocalEditableSha256": "b30d53c7f08b9d0a5797266f061e4359c42d569018d9be3a39cece974b46d4c0",
+  "actualClothFieldWeightsUnchanged": true,
+  "actualRawGeometryUnchanged": true,
+  "canonicalGalleryPromoted": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "O GLB atual foi reimportado e renderizado novamente: foto completa própria da ficha 1, quatro vistas e doze poses reais. Nenhuma evidência de movimento foi reaproveitada de um GLB anterior.",
+      "As quatro ações foram reconstruídas para o encaixe atual do mesmo esqueleto. A concordância das matrizes nas chaves não aprova poses intermediárias, transições, contato dos pés ou encaixe nas botas.",
+      "Nas poses de corrida e ataque, as pernas e os acabamentos dos bloomers atravessam as anáguas. Os ossos secundários continuam seguindo os quadris; resposta física do tecido e colisões entre as camadas não estão assadas nem aprovadas.",
+      "A comparação em repouso mostra decote muito horizontal e alto, franzidos maiores e mais regulares, canais do corset pouco definidos e cascatas laterais menos diagonais e volumosas que a ficha. Trama, meias, renda e acabamento continuam pendentes.",
+      "Mangas e costuras deformam nas poses fortes. Todas as outras fichas do Chapeleiro ainda precisam de revisão e conclusão antes de iniciar outra variante."
+    ],
+    "whole": [
+      "O exterior inteiro foi reimportado e renderizado novamente com a própria foto original completa: quatro vistas e doze poses reais. A geometria, os UVs e o atlas do mestre foram preservados sem recortar o vestido.",
+      "Cada dedo recebeu um guia próprio medido por contornos transversais da superfície nativa. A reabertura confirmou os 40 ossos e seus 200 pontos amostrados dentro das superfícies originais; a reimportação confirmou as 40 posições das juntas no GLB. Isso não aprova anatomia ou flexão em movimento.",
+      "As seis sobreposições mostram as juntas e ligações reais do GLB em frente, perfil e costas. Pontas de ossos sintetizadas pelo importador não são exibidas nem usadas como evidência do arquivo exportado.",
+      "Caminhada, corrida, salto e ataque foram reconstruídos para o encaixe atual, usando apenas ossos e ações das fontes originais. A geometria de outros personagens não foi usada. Contatos, transições e poses intermediárias continuam pendentes.",
+      "O pior esticamento nas cinco poses diagnosticadas permanece 304,93 vezes na fronteira entre a barra da saia e os pesos da perna. A correção dos dedos e a reconstrução das ações não corrigem esse defeito do campo do vestido.",
+      "As pernas ainda penetram o vestido em poses fortes. Cabelo, cintura, mangas, luvas, ornamentos, bordados, cartas, relógios e acabamento precisam do polimento conforme a foto própria; tecido secundário e colisões com o corpo e entre camadas continuam pendentes.",
+      "Na inspeção interativa em três quartos, com a própria foto e o ataque atual, o cabelo ainda abre em placas nas costas. Em uma pose, um trecho do braço/luva levantado aparece afastado acima da cabeça; a continuidade dos pesos de ombro, braço, punho e dedos precisa ser corrigida e conferida ao longo da ação."
+    ]
+  },
+  "interactivePreviewObserved": {
+    "scope": "local experimental viewer only",
+    "url": "http://localhost:3941/alice/layers?stage=alice_chapeleiro_full",
+    "actualWholeJointsShown": 173,
+    "actualWholeTrianglesShown": 302532,
+    "threeQuarterAttackViewed": true,
+    "wholeOwnPhotoShown": true,
+    "hairPlateOpeningObserved": true,
+    "raisedArmGloveDiscontinuityObserved": true,
+    "productionGalleryPromoted": false,
+    "poseRestoredToReference": true
+  }
+}

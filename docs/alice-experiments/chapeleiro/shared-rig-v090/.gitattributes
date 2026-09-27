@@ -1,0 +1,4 @@
+# Preserve the exact measured/exported/executed bytes referenced by SHA-256.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# This executed archival script retains its original final blank line.
+finger_measurements/executed_fit_chapeleiro_actual_finger_curves.py whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

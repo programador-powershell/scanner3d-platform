@@ -1,0 +1,49 @@
+{
+  "scope": "five actual exported poses; current finger fit/retarget does not fix hem/leg boundary",
+  "beforeModelSha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+  "afterModelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "rows": [
+    {
+      "motion": "Walk",
+      "fraction": 0.33,
+      "beforeClip": "Walk / shared Chapeleiro deformation study",
+      "afterClip": "Walk / current fitted Chapeleiro motion study",
+      "v089MaximumStretchRatio": 214.5092010498047,
+      "v090MaximumStretchRatio": 214.5092010498047
+    },
+    {
+      "motion": "Run",
+      "fraction": 0.66,
+      "beforeClip": "Run / shared Chapeleiro deformation study",
+      "afterClip": "Run / current fitted Chapeleiro motion study",
+      "v089MaximumStretchRatio": 153.88002014160156,
+      "v090MaximumStretchRatio": 153.88002014160156
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.18,
+      "beforeClip": "Attack / shared Chapeleiro deformation study",
+      "afterClip": "Attack / current fitted Chapeleiro motion study",
+      "v089MaximumStretchRatio": 265.6569519042969,
+      "v090MaximumStretchRatio": 265.6569519042969
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.5,
+      "beforeClip": "Attack / shared Chapeleiro deformation study",
+      "afterClip": "Attack / current fitted Chapeleiro motion study",
+      "v089MaximumStretchRatio": 120.10704040527344,
+      "v090MaximumStretchRatio": 120.10704040527344
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.78,
+      "beforeClip": "Attack / shared Chapeleiro deformation study",
+      "afterClip": "Attack / current fitted Chapeleiro motion study",
+      "v089MaximumStretchRatio": 304.92633056640625,
+      "v090MaximumStretchRatio": 304.92633056640625
+    }
+  ],
+  "fidelityVerified": false,
+  "clothCollisionVerified": false
+}

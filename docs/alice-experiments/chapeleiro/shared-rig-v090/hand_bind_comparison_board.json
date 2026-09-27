@@ -1,0 +1,16 @@
+{
+  "modelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourcePhotoUnchanged": true,
+  "board": {
+    "file": "photo_vs_actual_hand_bind.jpg",
+    "sha256": "edfab8a3dd5483556802dbbc0cf6af16f27c28a03ceaf61cf168b42c5c1c0d23"
+  },
+  "leftEvidence": "hand_bind_left/comparison.json",
+  "rightEvidence": "hand_bind_right/comparison.json",
+  "scriptSha256": "6387d309d32e064ad5d7ee9eb6c967e9ed4a72fae64ce79027ccbb8fc9c2b752",
+  "rigFitVerified": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "pathsRelativeTo": "study package root"
+}

@@ -1,0 +1,600 @@
+{
+  "family": "whole",
+  "model": "whole/skin_study.glb",
+  "modelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "actualImportedSkeletons": 1,
+  "actualImportedSkinnedMeshes": 1,
+  "restSkinAudit": [
+    {
+      "mesh": "Chapeleiro / intact whole exterior / skin study",
+      "actualVertices": 198526,
+      "boneGroups": [
+        "Hips",
+        "BlackCloth_00_0",
+        "BlackCloth_00_1",
+        "BlackCloth_00_2",
+        "BlackCloth_01_0",
+        "BlackCloth_01_1",
+        "BlackCloth_01_2",
+        "BlackCloth_02_0",
+        "BlackCloth_02_1",
+        "BlackCloth_02_2",
+        "BlackCloth_03_0",
+        "BlackCloth_03_1",
+        "BlackCloth_03_2",
+        "BlackCloth_04_0",
+        "BlackCloth_04_1",
+        "BlackCloth_04_2",
+        "BlackCloth_05_0",
+        "BlackCloth_05_1",
+        "BlackCloth_05_2",
+        "BlackCloth_06_0",
+        "BlackCloth_06_1",
+        "BlackCloth_06_2",
+        "BlackCloth_07_0",
+        "BlackCloth_07_1",
+        "BlackCloth_07_2",
+        "BlackCloth_08_0",
+        "BlackCloth_08_1",
+        "BlackCloth_08_2",
+        "BlackCloth_09_0",
+        "BlackCloth_09_1",
+        "BlackCloth_09_2",
+        "BlackCloth_10_0",
+        "BlackCloth_10_1",
+        "BlackCloth_10_2",
+        "BlackCloth_11_0",
+        "BlackCloth_11_1",
+        "BlackCloth_11_2",
+        "ExteriorCloth_00_0",
+        "ExteriorCloth_00_1",
+        "ExteriorCloth_00_2",
+        "ExteriorCloth_01_0",
+        "ExteriorCloth_01_1",
+        "ExteriorCloth_01_2",
+        "ExteriorCloth_02_0",
+        "ExteriorCloth_02_1",
+        "ExteriorCloth_02_2",
+        "ExteriorCloth_03_0",
+        "ExteriorCloth_03_1",
+        "ExteriorCloth_03_2",
+        "ExteriorCloth_04_0",
+        "ExteriorCloth_04_1",
+        "ExteriorCloth_04_2",
+        "ExteriorCloth_05_0",
+        "ExteriorCloth_05_1",
+        "ExteriorCloth_05_2",
+        "ExteriorCloth_06_0",
+        "ExteriorCloth_06_1",
+        "ExteriorCloth_06_2",
+        "ExteriorCloth_07_0",
+        "ExteriorCloth_07_1",
+        "ExteriorCloth_07_2",
+        "ExteriorCloth_08_0",
+        "ExteriorCloth_08_1",
+        "ExteriorCloth_08_2",
+        "ExteriorCloth_09_0",
+        "ExteriorCloth_09_1",
+        "ExteriorCloth_09_2",
+        "ExteriorCloth_10_0",
+        "ExteriorCloth_10_1",
+        "ExteriorCloth_10_2",
+        "ExteriorCloth_11_0",
+        "ExteriorCloth_11_1",
+        "ExteriorCloth_11_2",
+        "IvoryCloth_00_0",
+        "IvoryCloth_00_1",
+        "IvoryCloth_00_2",
+        "IvoryCloth_01_0",
+        "IvoryCloth_01_1",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_0",
+        "IvoryCloth_04_1",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_0",
+        "IvoryCloth_05_1",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_0",
+        "IvoryCloth_07_1",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_0",
+        "IvoryCloth_08_1",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_0",
+        "IvoryCloth_11_1",
+        "IvoryCloth_11_2",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "LeftToe_End",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "RightToe_End",
+        "Spine",
+        "Spine1",
+        "Spine2",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftHandIndex1",
+        "LeftHandIndex2",
+        "LeftHandIndex3",
+        "LeftHandIndex4",
+        "LeftHandMiddle1",
+        "LeftHandMiddle2",
+        "LeftHandMiddle3",
+        "LeftHandMiddle4",
+        "LeftHandPinky1",
+        "LeftHandPinky2",
+        "LeftHandPinky3",
+        "LeftHandPinky4",
+        "LeftHandRing1",
+        "LeftHandRing2",
+        "LeftHandRing3",
+        "LeftHandRing4",
+        "LeftHandThumb1",
+        "LeftHandThumb2",
+        "LeftHandThumb3",
+        "LeftHandThumb4",
+        "Neck",
+        "Head",
+        "HeadTop_End",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "RightHandIndex1",
+        "RightHandIndex2",
+        "RightHandIndex3",
+        "RightHandIndex4",
+        "RightHandMiddle1",
+        "RightHandMiddle2",
+        "RightHandMiddle3",
+        "RightHandMiddle4",
+        "RightHandPinky1",
+        "RightHandPinky2",
+        "RightHandPinky3",
+        "RightHandPinky4",
+        "RightHandRing1",
+        "RightHandRing2",
+        "RightHandRing3",
+        "RightHandRing4",
+        "RightHandThumb1",
+        "RightHandThumb2",
+        "RightHandThumb3",
+        "RightHandThumb4"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 4.1443854570388794e-08,
+      "maximumInfluences": 4
+    }
+  ],
+  "clips": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "frameRange": [
+        0.8000000715255737,
+        33.599998474121094
+      ],
+      "poses": [
+        {
+          "frame": 0.8000000715255737,
+          "fraction": 0,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 190.17440795898438,
+              "edgeStretch95Percentile": 1.0777264833450317,
+              "edgeFractionAbove150Percent": 0.008363502681275824,
+              "maximumDeformationAfterTranslation": 0.13565585017204285,
+              "bounds": [
+                [
+                  -0.25170204043388367,
+                  -0.16345849633216858,
+                  0.005440102890133858
+                ],
+                [
+                  0.18130891025066376,
+                  0.16387878358364105,
+                  0.9832916259765625
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/walk_1.png",
+          "renderSha256": "23dd729fe6143af4ddf4edd96c0230256ad30d4937c6ed34d344b47088a9304f"
+        },
+        {
+          "frame": 11.623999544382096,
+          "fraction": 0.33,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 214.5092010498047,
+              "edgeStretch95Percentile": 1.107684850692749,
+              "edgeFractionAbove150Percent": 0.008906950538253135,
+              "maximumDeformationAfterTranslation": 0.34762004017829895,
+              "bounds": [
+                [
+                  -0.1692083775997162,
+                  -0.26653769612312317,
+                  0.010364529676735401
+                ],
+                [
+                  0.2742886543273926,
+                  0.2604125738143921,
+                  0.9686263203620911
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/walk_2.png",
+          "renderSha256": "962e588e64a0669bf2f243849ccdbb378345de78f7274d18a952e2b0817c5442"
+        },
+        {
+          "frame": 22.44799901723862,
+          "fraction": 0.66,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 104.30906677246094,
+              "edgeStretch95Percentile": 1.0821146965026855,
+              "edgeFractionAbove150Percent": 0.008491372765270485,
+              "maximumDeformationAfterTranslation": 0.2724112868309021,
+              "bounds": [
+                [
+                  -0.20805293321609497,
+                  -0.2664422392845154,
+                  0.008858510293066502
+                ],
+                [
+                  0.2322186976671219,
+                  0.19832207262516022,
+                  0.9881941080093384
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/walk_3.png",
+          "renderSha256": "ce75ba76078c7db208719daf36c46398623927b1c721d1971ab17ec1f55b7505"
+        }
+      ],
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "frameRange": [
+        0.8000000715255737,
+        13.600000381469727
+      ],
+      "poses": [
+        {
+          "frame": 0.8000000715255737,
+          "fraction": 0,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 472.84954833984375,
+              "edgeStretch95Percentile": 1.1792542934417725,
+              "edgeFractionAbove150Percent": 0.012125680308806253,
+              "maximumDeformationAfterTranslation": 0.3854050040245056,
+              "bounds": [
+                [
+                  -0.22524310648441315,
+                  -0.27735257148742676,
+                  -0.004902389831840992
+                ],
+                [
+                  0.22184450924396515,
+                  0.24315635859966278,
+                  0.9000361561775208
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/run_1.png",
+          "renderSha256": "3f0bf0d7601d56b3dc232e77611e5b5b7c44ca57843f17b783d1db165146431f"
+        },
+        {
+          "frame": 5.024000173807145,
+          "fraction": 0.33,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 325.440673828125,
+              "edgeStretch95Percentile": 1.1618502140045166,
+              "edgeFractionAbove150Percent": 0.011632181703389356,
+              "maximumDeformationAfterTranslation": 0.572169840335846,
+              "bounds": [
+                [
+                  -0.20741495490074158,
+                  -0.21041610836982727,
+                  0.002902762498706579
+                ],
+                [
+                  0.2390652894973755,
+                  0.358256459236145,
+                  0.911658763885498
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/run_2.png",
+          "renderSha256": "304d105d5c15d36903557bf6f853da55d8be79913a71efcd8599667b3f9925df"
+        },
+        {
+          "frame": 9.248000276088716,
+          "fraction": 0.66,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 153.88002014160156,
+              "edgeStretch95Percentile": 1.1810389757156372,
+              "edgeFractionAbove150Percent": 0.011983824434374676,
+              "maximumDeformationAfterTranslation": 0.4740869700908661,
+              "bounds": [
+                [
+                  -0.2665668725967407,
+                  -0.29404106736183167,
+                  0.042966555804014206
+                ],
+                [
+                  0.16886378824710846,
+                  0.37869375944137573,
+                  0.903986394405365
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/run_3.png",
+          "renderSha256": "7f920815c70ea29bdc5163fac73720f3f48552b1b18eb540bfba2b1a0df32113"
+        }
+      ],
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "frameRange": [
+        0.8000000715255737,
+        42.400001525878906
+      ],
+      "poses": [
+        {
+          "frame": 7.200000295272241,
+          "fraction": 0.15384615384615385,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 135.54527282714844,
+              "edgeStretch95Percentile": 1.0000377893447876,
+              "edgeFractionAbove150Percent": 0.0010649180432680397,
+              "maximumDeformationAfterTranslation": 0.09530041366815567,
+              "bounds": [
+                [
+                  -0.2219676971435547,
+                  -0.15589579939842224,
+                  8.018701191758737e-05
+                ],
+                [
+                  0.2219630926847458,
+                  0.15569837391376495,
+                  0.9317828416824341
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/jump_1.png",
+          "renderSha256": "3f1c3b8bf5f475d20f8cc5abc95b252d04ee55d660f5f55ed5f9329d6041d529"
+        },
+        {
+          "frame": 20.000000742765575,
+          "fraction": 0.46153846153846156,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 145.44020080566406,
+              "edgeStretch95Percentile": 1.0000600814819336,
+              "edgeFractionAbove150Percent": 0.0007352529829693032,
+              "maximumDeformationAfterTranslation": 0.10740785300731659,
+              "bounds": [
+                [
+                  -0.2219676971435547,
+                  -0.15589579939842224,
+                  0.195085346698761
+                ],
+                [
+                  0.2219630926847458,
+                  0.15569837391376495,
+                  1.1246275901794434
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/jump_2.png",
+          "renderSha256": "8aff9f4dff652a9d4c6ffb4967524f4dac236f7a71b3044803563fd33d5299a7"
+        },
+        {
+          "frame": 32.80000119025891,
+          "fraction": 0.7692307692307693,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 114.59335327148438,
+              "edgeStretch95Percentile": 1.0000395774841309,
+              "edgeFractionAbove150Percent": 0.0010109728515827919,
+              "maximumDeformationAfterTranslation": 0.08012211322784424,
+              "bounds": [
+                [
+                  -0.2219676971435547,
+                  -0.15589579939842224,
+                  6.994094292167574e-05
+                ],
+                [
+                  0.2219630926847458,
+                  0.15569837391376495,
+                  0.9424090385437012
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/jump_3.png",
+          "renderSha256": "fe38ad71513f188e97213e789dba6adf68f39e487ec384245780493b41e54b15"
+        }
+      ],
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "frameRange": [
+        0.8000000715255737,
+        109.5999984741211
+      ],
+      "poses": [
+        {
+          "frame": 20.383999783992767,
+          "fraction": 0.18,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 265.6569519042969,
+              "edgeStretch95Percentile": 1.1436430215835571,
+              "edgeFractionAbove150Percent": 0.010643186522493147,
+              "maximumDeformationAfterTranslation": 0.5436873435974121,
+              "bounds": [
+                [
+                  -0.21647590398788452,
+                  -0.33414608240127563,
+                  -0.000518564716912806
+                ],
+                [
+                  0.20389369130134583,
+                  0.24593967199325562,
+                  0.980668842792511
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/attack_1.png",
+          "renderSha256": "777d5e9f09b53202635ec3142302ed69e842bcc5de3636975e15670ad5aa4643"
+        },
+        {
+          "frame": 55.199999272823334,
+          "fraction": 0.5,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 120.10704040527344,
+              "edgeStretch95Percentile": 1.1763296127319336,
+              "edgeFractionAbove150Percent": 0.011528287260143695,
+              "maximumDeformationAfterTranslation": 0.39432141184806824,
+              "bounds": [
+                [
+                  -0.20431964099407196,
+                  -0.269321084022522,
+                  -0.004731749650090933
+                ],
+                [
+                  0.24827797710895538,
+                  0.32434165477752686,
+                  0.9065990447998047
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/attack_2.png",
+          "renderSha256": "1c484771ee4f05e439ea8bc1da5953564e4848a5856d28ebd75a858aa0d384bc"
+        },
+        {
+          "frame": 85.66399882555008,
+          "fraction": 0.78,
+          "componentMeasurements": [
+            {
+              "mesh": "Chapeleiro / intact whole exterior / skin study",
+              "maximumEdgeStretch": 304.92633056640625,
+              "edgeStretch95Percentile": 1.151626706123352,
+              "edgeFractionAbove150Percent": 0.012023783835623006,
+              "maximumDeformationAfterTranslation": 0.42132604122161865,
+              "bounds": [
+                [
+                  -0.20938804745674133,
+                  -0.2438500076532364,
+                  0.00020446963026188314
+                ],
+                [
+                  0.23625946044921875,
+                  0.32230284810066223,
+                  0.8945328593254089
+                ]
+              ]
+            }
+          ],
+          "render": "whole/motion/attack_3.png",
+          "renderSha256": "d115d42af6816d3e5d9fce815e2a6ccb27b2c6724829f89163340b3344cd226c"
+        }
+      ],
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "camera": {
+    "position": [
+      1.9961235523223877,
+      -3.9622514247894287,
+      0.9583151936531067
+    ],
+    "target": [
+      0.0038608908653259277,
+      0.02227383852005005,
+      0.5598626136779785
+    ],
+    "orthoScale": 1.49087287984839
+  },
+  "status": "needs_refinement",
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitations": [
+    "Three actual poses per action do not approve all-frame quality or game transitions.",
+    "Secondary cloth bones only follow their parent; physical response and body/inter-layer collisions are not baked.",
+    "Photographic scale, unseen anatomy, native hair weighting and extreme-pose deformation require refinement."
+  ],
+  "contactBoard": {
+    "file": "whole/photo_vs_shared_skin_motion.jpg",
+    "sha256": "d426f50af9db536907a5f382718639d99a6fd275443a09a972f9a9c860e012d0",
+    "bytes": 428856
+  },
+  "visibleDifferences": [
+    "O exterior inteiro foi reimportado e renderizado novamente com a própria foto original completa: quatro vistas e doze poses reais. A geometria, os UVs e o atlas do mestre foram preservados sem recortar o vestido.",
+    "Cada dedo recebeu um guia próprio medido por contornos transversais da superfície nativa. A reabertura confirmou os 40 ossos e seus 200 pontos amostrados dentro das superfícies originais; a reimportação confirmou as 40 posições das juntas no GLB. Isso não aprova anatomia ou flexão em movimento.",
+    "As seis sobreposições mostram as juntas e ligações reais do GLB em frente, perfil e costas. Pontas de ossos sintetizadas pelo importador não são exibidas nem usadas como evidência do arquivo exportado.",
+    "Caminhada, corrida, salto e ataque foram reconstruídos para o encaixe atual, usando apenas ossos e ações das fontes originais. A geometria de outros personagens não foi usada. Contatos, transições e poses intermediárias continuam pendentes.",
+    "O pior esticamento nas cinco poses diagnosticadas permanece 304,93 vezes na fronteira entre a barra da saia e os pesos da perna. A correção dos dedos e a reconstrução das ações não corrigem esse defeito do campo do vestido.",
+    "As pernas ainda penetram o vestido em poses fortes. Cabelo, cintura, mangas, luvas, ornamentos, bordados, cartas, relógios e acabamento precisam do polimento conforme a foto própria; tecido secundário e colisões com o corpo e entre camadas continuam pendentes.",
+    "Na inspeção interativa em três quartos, com a própria foto e o ataque atual, o cabelo ainda abre em placas nas costas. Em uma pose, um trecho do braço/luva levantado aparece afastado acima da cabeça; a continuidade dos pesos de ombro, braço, punho e dedos precisa ser corrigida e conferida ao longo da ação."
+  ],
+  "visualReviewPerformed": true
+}

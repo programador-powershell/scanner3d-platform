@@ -12,7 +12,7 @@ for key in ['modelSha256','sourcePhotoSha256']:
 if sha(left['model'])!=left['modelSha256'] or sha(left['sourcePhoto'])!=left['sourcePhotoSha256']:
     raise ValueError('Changed model or own photograph.')
 board=Image.new('RGB',(2860,1900),(24,26,30));draw=ImageDraw.Draw(board)
-draw.text((24,20),'CHAPELEIRO / OSSOS REAIS IMPORTADOS / ENCAIXE A REFINAR',fill='white')
+draw.text((24,20),'CHAPELEIRO / JUNTAS E HIERARQUIA REAIS DO GLB / ENCAIXE A REVISAR',fill='white')
 def put(file,box):
     photo=Image.open(file).convert('RGBA');photo.thumbnail((box[2],box[3]),Image.Resampling.LANCZOS)
     board.paste(photo,(box[0]+(box[2]-photo.width)//2,box[1]+(box[3]-photo.height)//2),photo)
@@ -25,7 +25,7 @@ for row,(side,record) in enumerate([('Left',left),('Right',right)]):
         x,y=730+column*700,65+row*880
         draw.text((x,y),side+' / '+name+' / alpha diagnóstico 0,28',fill=(210,205,193))
         put(artifact['file'],(x,y+30,670,835))
-draw.text((24,1830),'Juntas internas inferidas. As pontas dos dedos, costuras, retarget e movimento ainda exigem refinamento.',fill=(215,198,160))
+draw.text((24,1830),'Juntas internas inferidas na superfície nativa. Anatomia, poses, contatos e tecido ainda exigem revisão.',fill=(215,198,160))
 draw.text((24,1855),'Material transparente e ossos coloridos são sobreposições de diagnóstico; a geometria original permanece intacta.',fill=(215,198,160))
 file=root/'photo_vs_actual_hand_bind.jpg';board.save(file,quality=94)
 record={'modelSha256':left['modelSha256'],'sourcePhotoSha256':left['sourcePhotoSha256'],

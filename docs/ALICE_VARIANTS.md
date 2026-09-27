@@ -443,3 +443,15 @@ excessiva com os pesos da perna. O v088 foi rejeitado por regressão nessa
 atribuição. O editável completo de 128.128.124 bytes foi preservado; retarget,
 fidelidade, tecido secundário e colisões continuam pendentes. O FBX final e a
 próxima variante aguardam concluir todas as fichas do Chapeleiro.
+
+O [shared-rig-v090](alice-experiments/chapeleiro/shared-rig-v090/README.md)
+encaixa cada dedo por contornos da superfície original e reconstrói as quatro
+ações para o rig atual. A reabertura confere 40 ossos, 200 pontos amostrados
+internos às mãos e as 40 posições reais das juntas exportadas no GLB. Pontas
+de ossos sintetizadas pelo importador ficam fora da evidência. As quatro vistas
+e doze poses de ambos os GLBs foram renderizadas novamente com as fotos
+próprias completas. A barra mantém uma fronteira excessiva com os pesos da
+perna, e as pernas ainda atravessam as camadas. Anatomia, cabelo, acabamento,
+contatos, tecido secundário e colisões continuam pendentes. O editável completo
+de 129.351.994 bytes foi preservado; esse avanço parcial não é o FBX final nem
+autoriza iniciar outra variante.

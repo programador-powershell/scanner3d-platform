@@ -1,0 +1,262 @@
+{
+  "model": "whole/skin_study.glb",
+  "modelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "scope": "Left forearm and hand bind diagnostic only",
+  "nativeMaterialDiagnosticAlpha": 0.28,
+  "bonesShown": [
+    "LeftArm",
+    "LeftForeArm",
+    "LeftHand",
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandIndex4",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandMiddle4",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3",
+    "LeftHandPinky4",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandRing4",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3",
+    "LeftHandThumb4"
+  ],
+  "renders": {
+    "front": {
+      "file": "hand_bind_left/front.png",
+      "sha256": "5d314caf9df0c824d14e462432981e3f20d175f2078b1800ae39079499dbc89f"
+    },
+    "side": {
+      "file": "hand_bind_left/side.png",
+      "sha256": "f0406e0ec331703c64863b936c111588957244ea5c0309aa6f5423ec57eb64fc"
+    },
+    "back": {
+      "file": "hand_bind_left/back.png",
+      "sha256": "5b660e42dc67f00b77a74aea2a52aa0b08ca5df5ac3450b4953d28c37773d954"
+    }
+  },
+  "displayedJointPositions": {
+    "LeftArm": [
+      0.07599999755620956,
+      0.018000014126300812,
+      0.7800000905990601
+    ],
+    "LeftForeArm": [
+      0.10347043722867966,
+      0.021812506020069122,
+      0.6520001888275146
+    ],
+    "LeftHand": [
+      0.16095855832099915,
+      -0.013112299144268036,
+      0.535000205039978
+    ],
+    "LeftHandIndex1": [
+      0.17968812584877014,
+      -0.03566037863492966,
+      0.48400020599365234
+    ],
+    "LeftHandIndex2": [
+      0.17745622992515564,
+      -0.03745229169726372,
+      0.470304399728775
+    ],
+    "LeftHandIndex3": [
+      0.17624197900295258,
+      -0.03791823983192444,
+      0.4620038866996765
+    ],
+    "LeftHandIndex4": [
+      0.17621280252933502,
+      -0.03806329518556595,
+      0.4523159861564636
+    ],
+    "LeftHandMiddle1": [
+      0.1805097609758377,
+      -0.025964396074414253,
+      0.48400017619132996
+    ],
+    "LeftHandMiddle2": [
+      0.17752613127231598,
+      -0.02716284617781639,
+      0.4692850410938263
+    ],
+    "LeftHandMiddle3": [
+      0.1737891435623169,
+      -0.027970466762781143,
+      0.4598836302757263
+    ],
+    "LeftHandMiddle4": [
+      0.1695750206708908,
+      -0.028538711369037628,
+      0.4486348032951355
+    ],
+    "LeftHandPinky1": [
+      0.17553240060806274,
+      -0.007708069868385792,
+      0.4850001037120819
+    ],
+    "LeftHandPinky2": [
+      0.17105013132095337,
+      -0.009017415344715118,
+      0.47310757637023926
+    ],
+    "LeftHandPinky3": [
+      0.16832853853702545,
+      -0.009662685915827751,
+      0.46716126799583435
+    ],
+    "LeftHandPinky4": [
+      0.165283203125,
+      -0.01024296972900629,
+      0.4613566994667053
+    ],
+    "LeftHandRing1": [
+      0.17505747079849243,
+      -0.017998717725276947,
+      0.48400020599365234
+    ],
+    "LeftHandRing2": [
+      0.17520512640476227,
+      -0.018048090860247612,
+      0.4695523977279663
+    ],
+    "LeftHandRing3": [
+      0.17135800421237946,
+      -0.018720414489507675,
+      0.4610537588596344
+    ],
+    "LeftHandRing4": [
+      0.16836203634738922,
+      -0.018989866599440575,
+      0.451362282037735
+    ],
+    "LeftHandThumb1": [
+      0.15732638537883759,
+      -0.03899598494172096,
+      0.5100001692771912
+    ],
+    "LeftHandThumb2": [
+      0.15886139869689941,
+      -0.04146484285593033,
+      0.49779194593429565
+    ],
+    "LeftHandThumb3": [
+      0.16034278273582458,
+      -0.044930070638656616,
+      0.4867378771305084
+    ],
+    "LeftHandThumb4": [
+      0.16147354245185852,
+      -0.04962978884577751,
+      0.4754616916179657
+    ]
+  },
+  "connections": [
+    {
+      "parent": "LeftArm",
+      "child": "LeftForeArm"
+    },
+    {
+      "parent": "LeftForeArm",
+      "child": "LeftHand"
+    },
+    {
+      "parent": "LeftHand",
+      "child": "LeftHandIndex1"
+    },
+    {
+      "parent": "LeftHandIndex1",
+      "child": "LeftHandIndex2"
+    },
+    {
+      "parent": "LeftHandIndex2",
+      "child": "LeftHandIndex3"
+    },
+    {
+      "parent": "LeftHandIndex3",
+      "child": "LeftHandIndex4"
+    },
+    {
+      "parent": "LeftHand",
+      "child": "LeftHandMiddle1"
+    },
+    {
+      "parent": "LeftHandMiddle1",
+      "child": "LeftHandMiddle2"
+    },
+    {
+      "parent": "LeftHandMiddle2",
+      "child": "LeftHandMiddle3"
+    },
+    {
+      "parent": "LeftHandMiddle3",
+      "child": "LeftHandMiddle4"
+    },
+    {
+      "parent": "LeftHand",
+      "child": "LeftHandPinky1"
+    },
+    {
+      "parent": "LeftHandPinky1",
+      "child": "LeftHandPinky2"
+    },
+    {
+      "parent": "LeftHandPinky2",
+      "child": "LeftHandPinky3"
+    },
+    {
+      "parent": "LeftHandPinky3",
+      "child": "LeftHandPinky4"
+    },
+    {
+      "parent": "LeftHand",
+      "child": "LeftHandRing1"
+    },
+    {
+      "parent": "LeftHandRing1",
+      "child": "LeftHandRing2"
+    },
+    {
+      "parent": "LeftHandRing2",
+      "child": "LeftHandRing3"
+    },
+    {
+      "parent": "LeftHandRing3",
+      "child": "LeftHandRing4"
+    },
+    {
+      "parent": "LeftHand",
+      "child": "LeftHandThumb1"
+    },
+    {
+      "parent": "LeftHandThumb1",
+      "child": "LeftHandThumb2"
+    },
+    {
+      "parent": "LeftHandThumb2",
+      "child": "LeftHandThumb3"
+    },
+    {
+      "parent": "LeftHandThumb3",
+      "child": "LeftHandThumb4"
+    }
+  ],
+  "importerBoneTailsUsed": false,
+  "actualModelGeometryChanged": false,
+  "sourceGlbUnchanged": true,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Transparent material and colored actual glTF joint positions/hierarchy are diagnostic overlays; synthetic importer leaf tails are not displayed. Anatomy, poses and cloth still require review.",
+  "pathsRelativeTo": "study package root"
+}

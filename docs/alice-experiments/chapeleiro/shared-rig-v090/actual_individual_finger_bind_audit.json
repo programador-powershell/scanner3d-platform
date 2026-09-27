@@ -1,0 +1,862 @@
+{
+  "editableSha256": "b30d53c7f08b9d0a5797266f061e4359c42d569018d9be3a39cece974b46d4c0",
+  "modelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "measurementDataSha256": "2d3ac0cd8614bf177df725406d87ec057498d3ea95c3aafd6134ecca34d09434",
+  "nativeSurfaceMaximumPositionError": 0.0,
+  "method": "actual reopened bone heads/tails: five solid-angle winding samples each on unchanged original hand triangles; actual reimported glTF joint heads compared to editable",
+  "actualBoneSamples": 200,
+  "actualExportedJointHeads": 40,
+  "editableBoneChecks": [
+    {
+      "bone": "LeftHandIndex1",
+      "maximumGuidePositionError": 8.579818489692246e-09,
+      "windingSamples": [
+        0.9984596471532137,
+        0.9985038224724789,
+        0.9985460163849975,
+        0.998586337970568,
+        0.9986249018371798
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex2",
+      "maximumGuidePositionError": 1.4314266639339423e-08,
+      "windingSamples": [
+        0.9986249018371798,
+        0.9986468906957154,
+        0.9986683351170051,
+        0.9986892555058238,
+        0.9987096714172159
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex3",
+      "maximumGuidePositionError": 1.4314266639339423e-08,
+      "windingSamples": [
+        0.9987096714172159,
+        0.9987335378965085,
+        0.9987566950241821,
+        0.9987791772800678,
+        0.9988010164379195
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandIndex4",
+      "maximumGuidePositionError": 8.3750176696957e-09,
+      "windingSamples": [
+        0.9988010164379195,
+        0.9988026890547747,
+        0.9988043578197752,
+        0.9988060227472549,
+        0.9988076838514619
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle1",
+      "maximumGuidePositionError": 6.0504995323046934e-09,
+      "windingSamples": [
+        0.9984116889304938,
+        0.998460280529318,
+        0.9985066129676443,
+        0.9985508011393507,
+        0.9985929737669782
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle2",
+      "maximumGuidePositionError": 1.1287532156161475e-08,
+      "windingSamples": [
+        0.9985929737669782,
+        0.9986171998126486,
+        0.9986409197133971,
+        0.9986641368221614,
+        0.9986868572240931
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle3",
+      "maximumGuidePositionError": 1.414555175198754e-08,
+      "windingSamples": [
+        0.9986868572240931,
+        0.9987132645586442,
+        0.9987389832780723,
+        0.9987640329609843,
+        0.9987884336033451
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandMiddle4",
+      "maximumGuidePositionError": 3.824700605261655e-09,
+      "windingSamples": [
+        0.998788433570392,
+        0.9987901127265298,
+        0.9987917880692363,
+        0.9987934596128465,
+        0.9987951273716107
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing1",
+      "maximumGuidePositionError": 1.4681946914266634e-08,
+      "windingSamples": [
+        0.9983425180853075,
+        0.9983993398937335,
+        0.9984524303919663,
+        0.9985022448634834,
+        0.998549155323567
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing2",
+      "maximumGuidePositionError": 1.4681946914266634e-08,
+      "windingSamples": [
+        0.998549155323567,
+        0.9985721137196413,
+        0.9985946515188899,
+        0.998616767878862,
+        0.9986384646455236
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing3",
+      "maximumGuidePositionError": 9.12676112620762e-09,
+      "windingSamples": [
+        0.9986384646455236,
+        0.9986633859733484,
+        0.998687647968077,
+        0.9987112761842462,
+        0.9987342949280263
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandRing4",
+      "maximumGuidePositionError": 5.349839007155953e-09,
+      "windingSamples": [
+        0.9987342949280263,
+        0.9987360810142186,
+        0.9987378628412767,
+        0.9987396404264404,
+        0.9987414137868342
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky1",
+      "maximumGuidePositionError": 1.462797549873276e-08,
+      "windingSamples": [
+        0.9982996953634552,
+        0.9983418396099931,
+        0.9983827760071315,
+        0.9984224493604831,
+        0.9984608450514497
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky2",
+      "maximumGuidePositionError": 8.155496339455455e-09,
+      "windingSamples": [
+        0.9984608450494813,
+        0.998479069991082,
+        0.9984970331024969,
+        0.9985147339897004,
+        0.998532173370801
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky3",
+      "maximumGuidePositionError": 8.155496339455455e-09,
+      "windingSamples": [
+        0.998532173370801,
+        0.9985486012639055,
+        0.9985648174433315,
+        0.9985808218713377,
+        0.9985966151527942
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandPinky4",
+      "maximumGuidePositionError": 4.646233610600261e-09,
+      "windingSamples": [
+        0.9985966151547064,
+        0.9985986505072363,
+        0.9986006810696803,
+        0.9986027068612585,
+        0.9986047279010687
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb1",
+      "maximumGuidePositionError": 1.0433495323865217e-08,
+      "windingSamples": [
+        0.997721334647597,
+        0.9978458030542371,
+        0.9979706393908873,
+        0.9980760688966068,
+        0.9981624370466559
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb2",
+      "maximumGuidePositionError": 1.0433495323865217e-08,
+      "windingSamples": [
+        0.9981624370466559,
+        0.9982322126548513,
+        0.9982937425190819,
+        0.9983493879115038,
+        0.9984005617822946
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb3",
+      "maximumGuidePositionError": 1.3475716638224135e-08,
+      "windingSamples": [
+        0.9984005617513937,
+        0.9984510797265805,
+        0.9984982473034256,
+        0.9985425475154222,
+        0.9985843425084772
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "LeftHandThumb4",
+      "maximumGuidePositionError": 4.696432714273587e-09,
+      "windingSamples": [
+        0.9985843424737286,
+        0.9985868843259527,
+        0.998589417531604,
+        0.9985919421506758,
+        0.9985944582423792
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex1",
+      "maximumGuidePositionError": 5.094569694843093e-09,
+      "windingSamples": [
+        0.9941289482349479,
+        0.9946022986998988,
+        0.9950258127851944,
+        0.9954053967640639,
+        0.9957462610344346
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex2",
+      "maximumGuidePositionError": 1.187741668602659e-08,
+      "windingSamples": [
+        0.9957462610344346,
+        0.9959349587350677,
+        0.9961127059870891,
+        0.9962802114669409,
+        0.9964381401723629
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex3",
+      "maximumGuidePositionError": 1.187741668602659e-08,
+      "windingSamples": [
+        0.9964381401723629,
+        0.9966070633841086,
+        0.9967647426266952,
+        0.9969120867662876,
+        0.9970499226594949
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandIndex4",
+      "maximumGuidePositionError": 7.005526266980136e-09,
+      "windingSamples": [
+        0.9970499226594949,
+        0.9970590564734795,
+        0.9970681472167684,
+        0.9970771951546843,
+        0.9970862005505872
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle1",
+      "maximumGuidePositionError": 1.1827185649762446e-08,
+      "windingSamples": [
+        0.9939761775698335,
+        0.9945209231862486,
+        0.9949979571945173,
+        0.9954173481044852,
+        0.9957875041301855
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle2",
+      "maximumGuidePositionError": 1.1827185649762446e-08,
+      "windingSamples": [
+        0.9957875041301855,
+        0.9960112085586131,
+        0.9962211268666501,
+        0.9964180214702627,
+        0.9966026474605875
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle3",
+      "maximumGuidePositionError": 1.0448752574115554e-08,
+      "windingSamples": [
+        0.9966026474605875,
+        0.9968081630627756,
+        0.9969983766939248,
+        0.9971744645622019,
+        0.9973375333845542
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandMiddle4",
+      "maximumGuidePositionError": 4.997902572986716e-09,
+      "windingSamples": [
+        0.9973375333845542,
+        0.9973462629966092,
+        0.9973549490283038,
+        0.9973635917640937,
+        0.9973721914861945
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing1",
+      "maximumGuidePositionError": 6.526664326479545e-09,
+      "windingSamples": [
+        0.9940363316039271,
+        0.9945994932104225,
+        0.9950894213309718,
+        0.9955175462314418,
+        0.9958933055513017
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing2",
+      "maximumGuidePositionError": 6.526664326479545e-09,
+      "windingSamples": [
+        0.9958933055513017,
+        0.996104303176137,
+        0.9963028869025953,
+        0.9964896895517894,
+        0.9966653444284537
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing3",
+      "maximumGuidePositionError": 6.336295461331946e-09,
+      "windingSamples": [
+        0.9966653444284537,
+        0.9968475091448721,
+        0.997016600073995,
+        0.9971736792637063,
+        0.9973197224479512
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandRing4",
+      "maximumGuidePositionError": 4.07155638357251e-09,
+      "windingSamples": [
+        0.9973197224479512,
+        0.9973287848134206,
+        0.9973377995800949,
+        0.9973467670798845,
+        0.9973556876418674
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky1",
+      "maximumGuidePositionError": 1.4904002643907624e-08,
+      "windingSamples": [
+        0.9942588774851625,
+        0.9947309895123013,
+        0.9951493895267841,
+        0.9955214134198168,
+        0.9958532811398966
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky2",
+      "maximumGuidePositionError": 1.134979445020024e-08,
+      "windingSamples": [
+        0.9958532811398966,
+        0.996015159690595,
+        0.9961697390349881,
+        0.9963173038589138,
+        0.996458139446223
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky3",
+      "maximumGuidePositionError": 1.134979445020024e-08,
+      "windingSamples": [
+        0.996458139446223,
+        0.9965911532481914,
+        0.9967183120442693,
+        0.996839850191545,
+        0.9969559998501043
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandPinky4",
+      "maximumGuidePositionError": 6.133737953287521e-09,
+      "windingSamples": [
+        0.9969559998501043,
+        0.99696813178926,
+        0.9969801918205081,
+        0.9969921804860779,
+        0.9970040983234078
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb1",
+      "maximumGuidePositionError": 1.1642190867125874e-08,
+      "windingSamples": [
+        0.988950308731682,
+        0.9900393503310819,
+        0.9909828658260303,
+        0.9918037072522978,
+        0.9925208671457214
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb2",
+      "maximumGuidePositionError": 7.538763346218993e-09,
+      "windingSamples": [
+        0.9925208671457214,
+        0.9931106832251312,
+        0.9936331762923258,
+        0.9940980006165142,
+        0.994513191229091
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb3",
+      "maximumGuidePositionError": 3.3370809836554286e-08,
+      "windingSamples": [
+        0.994513191407272,
+        0.9949063814706455,
+        0.995257460102455,
+        0.9955722650298218,
+        0.9958556607879093
+      ],
+      "allFiveSamplesInside": true
+    },
+    {
+      "bone": "RightHandThumb4",
+      "maximumGuidePositionError": 4.4822022111580775e-09,
+      "windingSamples": [
+        0.9958556623977952,
+        0.9958719691582908,
+        0.9958881754547287,
+        0.9959042821253716,
+        0.9959202899997137
+      ],
+      "allFiveSamplesInside": true
+    }
+  ],
+  "exportedJointChecks": [
+    {
+      "joint": "LeftHandIndex1",
+      "position": [
+        0.17968812584877014,
+        -0.03566037863492966,
+        0.48400020599365234
+      ],
+      "editableJointPositionError": 2.102397540140519e-07
+    },
+    {
+      "joint": "LeftHandIndex2",
+      "position": [
+        0.17745622992515564,
+        -0.03745229169726372,
+        0.470304399728775
+      ],
+      "editableJointPositionError": 2.407644485243637e-07
+    },
+    {
+      "joint": "LeftHandIndex3",
+      "position": [
+        0.17624197900295258,
+        -0.03791823983192444,
+        0.4620038866996765
+      ],
+      "editableJointPositionError": 2.42601933407261e-07
+    },
+    {
+      "joint": "LeftHandIndex4",
+      "position": [
+        0.17621280252933502,
+        -0.03806329518556595,
+        0.4523159861564636
+      ],
+      "editableJointPositionError": 2.42601933407261e-07
+    },
+    {
+      "joint": "LeftHandMiddle1",
+      "position": [
+        0.1805097609758377,
+        -0.025964396074414253,
+        0.48400017619132996
+      ],
+      "editableJointPositionError": 1.8106022271335497e-07
+    },
+    {
+      "joint": "LeftHandMiddle2",
+      "position": [
+        0.17752613127231598,
+        -0.02716284617781639,
+        0.4692850410938263
+      ],
+      "editableJointPositionError": 2.1277408976668825e-07
+    },
+    {
+      "joint": "LeftHandMiddle3",
+      "position": [
+        0.1737891435623169,
+        -0.027970466762781143,
+        0.4598836302757263
+      ],
+      "editableJointPositionError": 1.7249341164216735e-07
+    },
+    {
+      "joint": "LeftHandMiddle4",
+      "position": [
+        0.1695750206708908,
+        -0.028538711369037628,
+        0.4486348032951355
+      ],
+      "editableJointPositionError": 2.4548080191428884e-07
+    },
+    {
+      "joint": "LeftHandRing1",
+      "position": [
+        0.17505747079849243,
+        -0.017998717725276947,
+        0.48400020599365234
+      ],
+      "editableJointPositionError": 2.1033874472220397e-07
+    },
+    {
+      "joint": "LeftHandRing2",
+      "position": [
+        0.17520512640476227,
+        -0.018048090860247612,
+        0.4695523977279663
+      ],
+      "editableJointPositionError": 1.8243465846732913e-07
+    },
+    {
+      "joint": "LeftHandRing3",
+      "position": [
+        0.17135800421237946,
+        -0.018720414489507675,
+        0.4610537588596344
+      ],
+      "editableJointPositionError": 2.176108486432027e-07
+    },
+    {
+      "joint": "LeftHandRing4",
+      "position": [
+        0.16836203634738922,
+        -0.018989866599440575,
+        0.451362282037735
+      ],
+      "editableJointPositionError": 2.134903384413792e-07
+    },
+    {
+      "joint": "LeftHandPinky1",
+      "position": [
+        0.17553240060806274,
+        -0.007708069868385792,
+        0.4850001037120819
+      ],
+      "editableJointPositionError": 1.1620371929261973e-07
+    },
+    {
+      "joint": "LeftHandPinky2",
+      "position": [
+        0.17105013132095337,
+        -0.009017415344715118,
+        0.47310757637023926
+      ],
+      "editableJointPositionError": 1.2265557201125785e-07
+    },
+    {
+      "joint": "LeftHandPinky3",
+      "position": [
+        0.16832853853702545,
+        -0.009662685915827751,
+        0.46716126799583435
+      ],
+      "editableJointPositionError": 7.634573255449234e-08
+    },
+    {
+      "joint": "LeftHandPinky4",
+      "position": [
+        0.165283203125,
+        -0.01024296972900629,
+        0.4613566994667053
+      ],
+      "editableJointPositionError": 1.224397005851924e-07
+    },
+    {
+      "joint": "LeftHandThumb1",
+      "position": [
+        0.15732638537883759,
+        -0.03899598494172096,
+        0.5100001692771912
+      ],
+      "editableJointPositionError": 1.8671101460071903e-07
+    },
+    {
+      "joint": "LeftHandThumb2",
+      "position": [
+        0.15886139869689941,
+        -0.04146484285593033,
+        0.49779194593429565
+      ],
+      "editableJointPositionError": 1.3374777936202467e-07
+    },
+    {
+      "joint": "LeftHandThumb3",
+      "position": [
+        0.16034278273582458,
+        -0.044930070638656616,
+        0.4867378771305084
+      ],
+      "editableJointPositionError": 1.8804415261930172e-07
+    },
+    {
+      "joint": "LeftHandThumb4",
+      "position": [
+        0.16147354245185852,
+        -0.04962978884577751,
+        0.4754616916179657
+      ],
+      "editableJointPositionError": 2.7486483373786085e-07
+    },
+    {
+      "joint": "RightHandIndex1",
+      "position": [
+        -0.1813732236623764,
+        -0.035480938851833344,
+        0.4840003252029419
+      ],
+      "editableJointPositionError": 3.372570961045109e-07
+    },
+    {
+      "joint": "RightHandIndex2",
+      "position": [
+        -0.18017630279064178,
+        -0.03745375946164131,
+        0.470342218875885
+      ],
+      "editableJointPositionError": 3.69010642082685e-07
+    },
+    {
+      "joint": "RightHandIndex3",
+      "position": [
+        -0.17901571094989777,
+        -0.03791439160704613,
+        0.4620647728443146
+      ],
+      "editableJointPositionError": 3.367011265232659e-07
+    },
+    {
+      "joint": "RightHandIndex4",
+      "position": [
+        -0.17908883094787598,
+        -0.03815083205699921,
+        0.4524037539958954
+      ],
+      "editableJointPositionError": 2.7760287407877046e-07
+    },
+    {
+      "joint": "RightHandMiddle1",
+      "position": [
+        -0.1788129061460495,
+        -0.027508553117513657,
+        0.4840002954006195
+      ],
+      "editableJointPositionError": 3.129243850708008e-07
+    },
+    {
+      "joint": "RightHandMiddle2",
+      "position": [
+        -0.18019555509090424,
+        -0.027346737682819366,
+        0.46939823031425476
+      ],
+      "editableJointPositionError": 3.122362236350814e-07
+    },
+    {
+      "joint": "RightHandMiddle3",
+      "position": [
+        -0.17667317390441895,
+        -0.02792114019393921,
+        0.46006879210472107
+      ],
+      "editableJointPositionError": 2.324727407043274e-07
+    },
+    {
+      "joint": "RightHandMiddle4",
+      "position": [
+        -0.17263934016227722,
+        -0.028324158862233162,
+        0.4489056468009949
+      ],
+      "editableJointPositionError": 2.568019619526578e-07
+    },
+    {
+      "joint": "RightHandRing1",
+      "position": [
+        -0.17779742181301117,
+        -0.018039284273982048,
+        0.48400020599365234
+      ],
+      "editableJointPositionError": 2.2892355975141426e-07
+    },
+    {
+      "joint": "RightHandRing2",
+      "position": [
+        -0.1778639405965805,
+        -0.018104277551174164,
+        0.4695321321487427
+      ],
+      "editableJointPositionError": 2.119899676132226e-07
+    },
+    {
+      "joint": "RightHandRing3",
+      "position": [
+        -0.17414335906505585,
+        -0.018719010055065155,
+        0.4610216021537781
+      ],
+      "editableJointPositionError": 2.70186293723527e-07
+    },
+    {
+      "joint": "RightHandRing4",
+      "position": [
+        -0.1713467836380005,
+        -0.019002428278326988,
+        0.4513165056705475
+      ],
+      "editableJointPositionError": 2.3720038199765143e-07
+    },
+    {
+      "joint": "RightHandPinky1",
+      "position": [
+        -0.17453519999980927,
+        -0.008894741535186768,
+        0.485000342130661
+      ],
+      "editableJointPositionError": 3.41927317932731e-07
+    },
+    {
+      "joint": "RightHandPinky2",
+      "position": [
+        -0.17374271154403687,
+        -0.009063062258064747,
+        0.4731021225452423
+      ],
+      "editableJointPositionError": 2.8548948806443697e-07
+    },
+    {
+      "joint": "RightHandPinky3",
+      "position": [
+        -0.17101888358592987,
+        -0.009693223051726818,
+        0.46715304255485535
+      ],
+      "editableJointPositionError": 2.5574599496029165e-07
+    },
+    {
+      "joint": "RightHandPinky4",
+      "position": [
+        -0.1681046336889267,
+        -0.010307001881301403,
+        0.461345374584198
+      ],
+      "editableJointPositionError": 2.601375843623048e-07
+    },
+    {
+      "joint": "RightHandThumb1",
+      "position": [
+        -0.16006070375442505,
+        -0.03826052322983742,
+        0.5100001692771912
+      ],
+      "editableJointPositionError": 1.9057326856894289e-07
+    },
+    {
+      "joint": "RightHandThumb2",
+      "position": [
+        -0.161570206284523,
+        -0.04129033163189888,
+        0.4977632164955139
+      ],
+      "editableJointPositionError": 2.3063729244715134e-07
+    },
+    {
+      "joint": "RightHandThumb3",
+      "position": [
+        -0.16295330226421356,
+        -0.044920384883880615,
+        0.486682653427124
+      ],
+      "editableJointPositionError": 3.33283383344785e-07
+    },
+    {
+      "joint": "RightHandThumb4",
+      "position": [
+        -0.1641465127468109,
+        -0.04973011463880539,
+        0.47537970542907715
+      ],
+      "editableJointPositionError": 3.040165567860479e-07
+    }
+  ],
+  "outsideSampleBones": [],
+  "importerBoneTailsUsed": false,
+  "reopenedWithoutSaving": true,
+  "anatomyVerified": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Surface containment at sampled points and exact joint export do not establish anatomy, finger bending, intermediate pose safety or cloth behavior."
+}

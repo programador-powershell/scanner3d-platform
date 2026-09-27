@@ -12,6 +12,8 @@ from chapeleiro_shared_rig_fields import GarmentFields,attachment_regions,quanti
 
 parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--parent',required=True);parser.add_argument('--output',required=True)
 parser.add_argument('--fit-native-hands',action='store_true',help='Infer arm/hand bind from the unchanged whole geometry and native atlas; inherited motions require renewed review.')
+parser.add_argument('--finger-guides',help='Measured individual native finger target JSON for the exact parent whole export.')
+parser.add_argument('--retarget-motions',help='Directory containing the original Walking, Fast Run and One Hand Sword Combo FBX bones/actions.')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);parent_path=Path(args.parent);parent=json.loads(parent_path.read_text(encoding='utf-8'))
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 if sha(parent['editableBlend'])!=parent['editableBlendSha256'] or parent['riggedActualPieces']!=230:raise ValueError('Changed actual complete rig checkpoint.')
@@ -44,10 +46,29 @@ if not args.fit_native_hands and parent.get('nativeHandBindFit'):
 if args.fit_native_hands:
     from chapeleiro_native_hand_fit import fit_native_hands
     native_entry=next(p for p in old_audit['pieces'] if p['role']=='whole_native')
-    hand_fit=fit_native_hands(rig,bpy.data.objects[native_entry['mesh']]);write('native_hand_bind_fit',hand_fit)
+    finger_guides=None
+    if args.finger_guides:
+        finger_guides=json.loads(Path(args.finger_guides).read_text(encoding='utf-8'))
+        if finger_guides['modelSha256']!=whole_record['modelSha256'] or finger_guides['parentEditableSha256']!=parent['editableBlendSha256'] or finger_guides['sourcePhotoSha256']!=whole_record['sourcePhotoSha256']:
+            raise ValueError('Individual finger guides belong to a different actual model/photo.')
+        shutil.copyfile(args.finger_guides,out/'native_individual_finger_targets.json')
+    hand_fit=fit_native_hands(rig,bpy.data.objects[native_entry['mesh']],finger_guides);write('native_hand_bind_fit',hand_fit)
     schema['bones']=[{'name':b.name,'parent':b.parent.name if b.parent else None,'head':list(b.head_local),
         'tail':list(b.tail_local),'matrix':[[v for v in row] for row in b.matrix_local]} for b in rig.data.bones]
     schema['nativeHandBindFit']=hand_fit
+elif args.finger_guides:raise ValueError('Individual finger guides require native hand fitting.')
+retarget=None
+if args.retarget_motions:
+    from chapeleiro_refitted_motion_retarget import retarget_refitted_rig
+    retarget=retarget_refitted_rig(rig,Path(args.retarget_motions))
+    if hand_fit:
+        hand_fit['inheritedLocalActionChannelsRequireRetargetAndPoseReview']=False
+        hand_fit['retargetRequiresPoseReview']=True
+        hand_fit['limitations']=[s for s in hand_fit['limitations'] if not s.startswith('Original local action channels')]
+        hand_fit['limitations'].append('Four actions were rebuilt for this bind; full motion and cloth review remain pending.')
+        write('native_hand_bind_fit',hand_fit)
+    write('refitted_motion_retarget',retarget);schema['refittedMotionRetarget']=retarget
+    progress('four_actions_rebuilt_for_current_bind',actualClips=[m['clip'] for m in retarget['motionAudit']])
 regions=attachment_regions(foundation['pieces'],authored)
 fields=GarmentFields(rig,schema['clothFamilies'],schema['pieceFamilies'],regions)
 previews=[bpy.data.objects[p['mesh']] for p in old_audit['pieces']]
@@ -113,6 +134,9 @@ for label,objects,source_record in [('foundation',previews[:-1],foundation),('wh
         status='generated_awaiting_visual_review',fidelityVerified=False,motionVerified=False,clothCollisionVerified=False,
         allLayersFinished=False,nextVariantMayStart=False,additionalCreditsConsumed=0)
     if label=='foundation':updated['pieces']=[dict(p,rigPresent=True,motionVerified=False) for p in updated['pieces']]
+    if retarget:
+        updated['motionAudit']=retarget['motionAudit'];updated['retargetStatus']='rebuilt from original source orientations and current fitted bind; pose and cloth review pending'
+        updated['inheritedActionsRequireRetargetReview']=False;updated['retargetRequiresPoseReview']=True
     write(label+'_generation',updated);progress('actual_refined_glb_exported',family=label,**exports[label])
 result=dict(parent);result.update(parentGeneration=str(parent_path.resolve()),parentGenerationSha256=sha(parent_path),
     method='same_230_piece_shared_rig_with_sewn_torso_and_cava_attachment_field_refinement',
@@ -130,4 +154,8 @@ if hand_fit:
     result['motionAudit']=[dict(m,previousRetarget=m.get('retarget'),
         retarget='inherited local channels in a refitted arm/hand bind; experimental deformation probe',motionVerified=False)
         for m in result['motionAudit']]
+if args.finger_guides:result['nativeIndividualFingerGuideSha256']=sha(args.finger_guides)
+if retarget:
+    result['motionAudit']=retarget['motionAudit'];result['inheritedActionsRequireRetargetReview']=False
+    result['retargetRequiresPoseReview']=True;result['motionRetargetScriptSha256']=sha(Path(__file__).with_name('chapeleiro_refitted_motion_retarget.py'))
 write('generation',result);progress('complete_local_attachment_refinement',actualPieces=len(previews))
