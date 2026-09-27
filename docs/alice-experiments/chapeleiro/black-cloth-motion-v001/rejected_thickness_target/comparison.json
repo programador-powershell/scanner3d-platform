@@ -1,0 +1,93 @@
+{
+  "parentEditableSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "probeDataSha256": "8e70f76a7b37288f77c6d54a97399ce6c9b73577bfc05cb1c838c137a4ca749a",
+  "scope": "Actual measured Black support and flounces reconstructed in the complete authoring scene; linked lace follows original Surface Deform and Bystedt thickness/UV nodes.",
+  "renders": [
+    {
+      "sourcePhysicsFrame": 1,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review\\foundation_01_front.png",
+      "sha256": "8c06f20b39ce0d46273c3ed7cdf1e8bca06ebfb4d5461fea944e484efb85ef45",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.364418029785156e-07,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review\\foundation_20_front.png",
+      "sha256": "5e0eb6c7f81d9c188566422b273231910a104780cfa0c6ffcc206fbebc896993",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review\\foundation_29_threequarter.png",
+      "sha256": "4feb84be6c470e8509b942f3e57f2b971a3193e52e0554bcfbace2ce60978b0a",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 1.3113021850585938e-06,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "black_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review\\black_family_20_front.png",
+      "sha256": "48e4540756ee2a39123024a761c79e8207cb0271426fc2729e9def1376d7e254",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "actualVisibleSurfaces": 7
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "black_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review\\black_family_29_threequarter.png",
+      "sha256": "ac347dd3bdbb98c6fbfb958bd047d3bc8b95195ceaddc5b1e95fa441ab770bed",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 1.3113021850585938e-06,
+      "actualVisibleSurfaces": 7
+    }
+  ],
+  "scriptSha256": "e539fda84329db123c17e1bc2ac3479ec48824e147854f1743bf447f8a6d6025",
+  "checkpointUnchanged": true,
+  "parentGlbUnchanged": true,
+  "blackResponseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}

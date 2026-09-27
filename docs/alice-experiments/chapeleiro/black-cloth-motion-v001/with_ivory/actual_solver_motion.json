@@ -1,0 +1,2649 @@
+{
+  "parentEditableSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualSolver": "Blender CLOTH on independent copies of existing photo-authored Black support and three sewn flounces",
+  "sources": [
+    {
+      "source": "Authoring / 01 / black petticoat continuous waist support",
+      "visibleGarment": "01 / black petticoat continuous waist support",
+      "vertices": 7488,
+      "faces": 7296,
+      "independentMeshCopy": true,
+      "originalPhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    {
+      "source": "Authoring / 01 / black gathered flounce 1",
+      "visibleGarment": "01 / black gathered flounce 1",
+      "vertices": 2496,
+      "faces": 2304,
+      "independentMeshCopy": true,
+      "originalPhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    {
+      "source": "Authoring / 01 / black gathered flounce 2",
+      "visibleGarment": "01 / black gathered flounce 2",
+      "vertices": 2496,
+      "faces": 2304,
+      "independentMeshCopy": true,
+      "originalPhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    {
+      "source": "Authoring / 01 / black gathered flounce 3",
+      "visibleGarment": "01 / black gathered flounce 3",
+      "vertices": 2496,
+      "faces": 2304,
+      "independentMeshCopy": true,
+      "originalPhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    }
+  ],
+  "assignedCommonRigField": {
+    "mesh": "Local physical Black family / 01 / black petticoat continuous waist support",
+    "role": "internal_petticoat",
+    "vertices": 7488,
+    "boneGroups": [
+      "BlackCloth_00_0",
+      "BlackCloth_00_1",
+      "BlackCloth_00_2",
+      "BlackCloth_01_0",
+      "BlackCloth_01_1",
+      "BlackCloth_01_2",
+      "BlackCloth_02_0",
+      "BlackCloth_02_1",
+      "BlackCloth_02_2",
+      "BlackCloth_03_0",
+      "BlackCloth_03_1",
+      "BlackCloth_03_2",
+      "BlackCloth_04_0",
+      "BlackCloth_04_1",
+      "BlackCloth_04_2",
+      "BlackCloth_05_0",
+      "BlackCloth_05_1",
+      "BlackCloth_05_2",
+      "BlackCloth_06_0",
+      "BlackCloth_06_1",
+      "BlackCloth_06_2",
+      "BlackCloth_07_0",
+      "BlackCloth_07_1",
+      "BlackCloth_07_2",
+      "BlackCloth_08_0",
+      "BlackCloth_08_1",
+      "BlackCloth_08_2",
+      "BlackCloth_09_0",
+      "BlackCloth_09_1",
+      "BlackCloth_09_2",
+      "BlackCloth_10_0",
+      "BlackCloth_10_1",
+      "BlackCloth_10_2",
+      "BlackCloth_11_0",
+      "BlackCloth_11_1",
+      "BlackCloth_11_2",
+      "Hips",
+      "Spine",
+      "Spine1"
+    ],
+    "unweightedVertices": 0,
+    "maximumNormalizationError": 0.0,
+    "maximumInfluences": 4,
+    "quantization": 65536,
+    "preservedClothFields": true,
+    "motionVerified": false
+  },
+  "actualColliderSources": [
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / left stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / left stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / right stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / right stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / bloomers / continuous waist and sewn crotch",
+      "actualSourceCarrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "visibleGarment": "01 / bloomers / continuous waist and sewn crotch",
+      "sourceVertices": 6287,
+      "sourceFaces": 6144,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / long ivory gathered petticoat",
+      "actualSourceCarrier": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "visibleGarment": "01 / long ivory gathered petticoat",
+      "sourceVertices": 7104,
+      "sourceFaces": 6912,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true
+    }
+  ],
+  "includeMeasuredIvoryCollider": true,
+  "sourceAction": "Corrida com tecido / anágua em refinamento",
+  "sourceAnimationFrames": 29,
+  "actualModifierOrders": [
+    [
+      "ARMATURE",
+      "CLOTH",
+      "TRIANGULATE"
+    ],
+    [
+      "SURFACE_DEFORM",
+      "CLOTH",
+      "TRIANGULATE"
+    ],
+    [
+      "SURFACE_DEFORM",
+      "CLOTH",
+      "TRIANGULATE"
+    ],
+    [
+      "SURFACE_DEFORM",
+      "CLOTH",
+      "TRIANGULATE"
+    ]
+  ],
+  "clothNeverBypassedDuringSequence": true,
+  "frames": [
+    {
+      "frame": 1,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 1.0000064373016357,
+          "edgeStretch95Percentile": 1.0000028610229492,
+          "maximumFullyPinnedInputError": 0.0,
+          "cacheInfo": "0 frames in memory (0 B).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18998010456562042,
+              -0.11032609641551971,
+              0.28053775429725647
+            ],
+            [
+              0.1917310655117035,
+              0.11043180525302887,
+              0.6330000162124634
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 1.0000814199447632,
+          "edgeStretch95Percentile": 1.000016212463379,
+          "maximumFullyPinnedInputError": 0.0,
+          "cacheInfo": "0 frames in memory (0 B).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19103263318538666,
+              -0.1118280291557312,
+              0.3245377540588379
+            ],
+            [
+              0.19167226552963257,
+              0.11180714517831802,
+              0.3510001301765442
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 1.0000665187835693,
+          "edgeStretch95Percentile": 1.0000165700912476,
+          "maximumFullyPinnedInputError": 0.0,
+          "cacheInfo": "0 frames in memory (0 B).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19794730842113495,
+              -0.11557081341743469,
+              0.29253777861595154
+            ],
+            [
+              0.19933867454528809,
+              0.11601604521274567,
+              0.31600016355514526
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 1.0001798868179321,
+          "edgeStretch95Percentile": 1.0000344514846802,
+          "maximumFullyPinnedInputError": 0.0,
+          "cacheInfo": "0 frames in memory (0 B).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20488910377025604,
+              -0.12032711505889893,
+              0.2615377902984619
+            ],
+            [
+              0.20602655410766602,
+              0.11998404562473297,
+              0.2820001244544983
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 1.3357545137405396,
+          "edgeStretch95Percentile": 1.0031907558441162,
+          "maximumFullyPinnedInputError": 0.0005791094736196101,
+          "cacheInfo": "2 frames in memory (527 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1904526650905609,
+              -0.10926789045333862,
+              0.273635596036911
+            ],
+            [
+              0.19207878410816193,
+              0.11112683266401291,
+              0.6293931007385254
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 1.6125887632369995,
+          "edgeStretch95Percentile": 1.0727574825286865,
+          "maximumFullyPinnedInputError": 0.00062210374744609,
+          "cacheInfo": "2 frames in memory (176 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19321691989898682,
+              -0.1151803508400917,
+              0.31705930829048157
+            ],
+            [
+              0.19338887929916382,
+              0.11231648176908493,
+              0.34777840971946716
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 1.6038037538528442,
+          "edgeStretch95Percentile": 1.0788744688034058,
+          "maximumFullyPinnedInputError": 0.000628388486802578,
+          "cacheInfo": "2 frames in memory (176 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20104901492595673,
+              -0.12022844702005386,
+              0.2860283851623535
+            ],
+            [
+              0.20073243975639343,
+              0.11744438111782074,
+              0.3128102123737335
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 1.558719277381897,
+          "edgeStretch95Percentile": 1.0844098329544067,
+          "maximumFullyPinnedInputError": 0.0006408339831978083,
+          "cacheInfo": "2 frames in memory (176 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20701994001865387,
+              -0.12462827563285828,
+              0.25678569078445435
+            ],
+            [
+              0.20744743943214417,
+              0.12190824747085571,
+              0.2788415253162384
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 1.8078275918960571,
+          "edgeStretch95Percentile": 1.0131076574325562,
+          "maximumFullyPinnedInputError": 0.0005823005340062082,
+          "cacheInfo": "3 frames in memory (790 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18992379307746887,
+              -0.10679253935813904,
+              0.2664238214492798
+            ],
+            [
+              0.19138987362384796,
+              0.11173972487449646,
+              0.6259848475456238
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 2.3697521686553955,
+          "edgeStretch95Percentile": 1.1648024320602417,
+          "maximumFullyPinnedInputError": 0.0005995029350742698,
+          "cacheInfo": "3 frames in memory (264 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19209860265254974,
+              -0.11435098946094513,
+              0.310165673494339
+            ],
+            [
+              0.19309446215629578,
+              0.11016209423542023,
+              0.34486743807792664
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 2.600101947784424,
+          "edgeStretch95Percentile": 1.189174771308899,
+          "maximumFullyPinnedInputError": 0.0006352294585667551,
+          "cacheInfo": "3 frames in memory (264 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20045961439609528,
+              -0.11929147690534592,
+              0.28112927079200745
+            ],
+            [
+              0.19866937398910522,
+              0.11583387851715088,
+              0.309929221868515
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 2.461132049560547,
+          "edgeStretch95Percentile": 1.1739197969436646,
+          "maximumFullyPinnedInputError": 0.0007219925755634904,
+          "cacheInfo": "3 frames in memory (264 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20759110152721405,
+              -0.12258011847734451,
+              0.2514304518699646
+            ],
+            [
+              0.205556720495224,
+              0.121989905834198,
+              0.2760108709335327
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 2.1138343811035156,
+          "edgeStretch95Percentile": 1.0470740795135498,
+          "maximumFullyPinnedInputError": 0.0005853069014847279,
+          "cacheInfo": "4 frames in memory (1.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18757420778274536,
+              -0.10340394079685211,
+              0.2597093880176544
+            ],
+            [
+              0.18887950479984283,
+              0.11175607144832611,
+              0.6225011348724365
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 3.5325357913970947,
+          "edgeStretch95Percentile": 1.2432681322097778,
+          "maximumFullyPinnedInputError": 0.0005878720548935235,
+          "cacheInfo": "4 frames in memory (351 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1881309151649475,
+              -0.11119277775287628,
+              0.3038616180419922
+            ],
+            [
+              0.19089706242084503,
+              0.10675977170467377,
+              0.34216731786727905
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 3.589601516723633,
+          "edgeStretch95Percentile": 1.2643475532531738,
+          "maximumFullyPinnedInputError": 0.0006422098376788199,
+          "cacheInfo": "4 frames in memory (351 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1961226612329483,
+              -0.11546854674816132,
+              0.2739195227622986
+            ],
+            [
+              0.1957101672887802,
+              0.11387844383716583,
+              0.30730360746383667
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 3.583240509033203,
+          "edgeStretch95Percentile": 1.2157797813415527,
+          "maximumFullyPinnedInputError": 0.0007430342375300825,
+          "cacheInfo": "4 frames in memory (351 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20525957643985748,
+              -0.1182752400636673,
+              0.2442663311958313
+            ],
+            [
+              0.2030131220817566,
+              0.12093987315893173,
+              0.2734648287296295
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 2.514678955078125,
+          "edgeStretch95Percentile": 1.1244966983795166,
+          "maximumFullyPinnedInputError": 0.0005881850374862552,
+          "cacheInfo": "5 frames in memory (1.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18460002541542053,
+              -0.0991944670677185,
+              0.25299933552742004
+            ],
+            [
+              0.1850319653749466,
+              0.11175315082073212,
+              0.618939995765686
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 5.206798076629639,
+          "edgeStretch95Percentile": 1.3286360502243042,
+          "maximumFullyPinnedInputError": 0.0006943087792024016,
+          "cacheInfo": "5 frames in memory (439 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18244516849517822,
+              -0.10741180926561356,
+              0.2954137921333313
+            ],
+            [
+              0.1880563646554947,
+              0.10353565961122513,
+              0.3392069637775421
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 4.527800559997559,
+          "edgeStretch95Percentile": 1.3228386640548706,
+          "maximumFullyPinnedInputError": 0.0007623242563568056,
+          "cacheInfo": "5 frames in memory (439 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19204217195510864,
+              -0.11123901605606079,
+              0.26573818922042847
+            ],
+            [
+              0.19271692633628845,
+              0.1116945818066597,
+              0.30455195903778076
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.012235164642334,
+          "edgeStretch95Percentile": 1.2688403129577637,
+          "maximumFullyPinnedInputError": 0.0007469398551620543,
+          "cacheInfo": "5 frames in memory (439 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.20156238973140717,
+              -0.11341523379087448,
+              0.23699361085891724
+            ],
+            [
+              0.20137248933315277,
+              0.11864029616117477,
+              0.27073007822036743
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 3.079068422317505,
+          "edgeStretch95Percentile": 1.2655514478683472,
+          "maximumFullyPinnedInputError": 0.0005907718441449106,
+          "cacheInfo": "6 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1807163506746292,
+              -0.11567405611276627,
+              0.24735626578330994
+            ],
+            [
+              0.17543242871761322,
+              0.11170988529920578,
+              0.6152992248535156
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 7.197575092315674,
+          "edgeStretch95Percentile": 1.390154480934143,
+          "maximumFullyPinnedInputError": 0.00125918781850487,
+          "cacheInfo": "6 frames in memory (527 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.17711219191551208,
+              -0.11697740107774734,
+              0.290855348110199
+            ],
+            [
+              0.1837393194437027,
+              0.10109146684408188,
+              0.3358795940876007
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.341729640960693,
+          "edgeStretch95Percentile": 1.316910743713379,
+          "maximumFullyPinnedInputError": 0.0014307827223092318,
+          "cacheInfo": "6 frames in memory (527 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1862069070339203,
+              -0.1197061836719513,
+              0.2626643478870392
+            ],
+            [
+              0.18614068627357483,
+              0.10989465564489365,
+              0.30141201615333557
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.445962429046631,
+          "edgeStretch95Percentile": 1.327341914176941,
+          "maximumFullyPinnedInputError": 0.0017880689119920135,
+          "cacheInfo": "6 frames in memory (527 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1975315809249878,
+              -0.11288059502840042,
+              0.23379892110824585
+            ],
+            [
+              0.19105513393878937,
+              0.11660920828580856,
+              0.26781633496284485
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 2.9076039791107178,
+          "edgeStretch95Percentile": 1.3365920782089233,
+          "maximumFullyPinnedInputError": 0.0005932422936894,
+          "cacheInfo": "7 frames in memory (1.8 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.17512202262878418,
+              -0.13284701108932495,
+              0.24148525297641754
+            ],
+            [
+              0.15937219560146332,
+              0.11212880164384842,
+              0.6115766763687134
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 5.43967866897583,
+          "edgeStretch95Percentile": 1.4431426525115967,
+          "maximumFullyPinnedInputError": 0.0017346699023619294,
+          "cacheInfo": "7 frames in memory (615 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.16803207993507385,
+              -0.13160933554172516,
+              0.28963392972946167
+            ],
+            [
+              0.1680242270231247,
+              0.10000292956829071,
+              0.33279016613960266
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 4.494513511657715,
+          "edgeStretch95Percentile": 1.3553675413131714,
+          "maximumFullyPinnedInputError": 0.001966638956218958,
+          "cacheInfo": "7 frames in memory (615 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1802978813648224,
+              -0.13518725335597992,
+              0.2586183249950409
+            ],
+            [
+              0.175394207239151,
+              0.10815569013357162,
+              0.2988876402378082
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.24458646774292,
+          "edgeStretch95Percentile": 1.416031002998352,
+          "maximumFullyPinnedInputError": 0.002642313251271844,
+          "cacheInfo": "7 frames in memory (615 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.19102944433689117,
+              -0.13185985386371613,
+              0.23261100053787231
+            ],
+            [
+              0.17418941855430603,
+              0.11617104709148407,
+              0.27192795276641846
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 3.335465431213379,
+          "edgeStretch95Percentile": 1.4097340106964111,
+          "maximumFullyPinnedInputError": 0.0005955379456281662,
+          "cacheInfo": "8 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.16558508574962616,
+              -0.14924627542495728,
+              0.23655293881893158
+            ],
+            [
+              0.14111249148845673,
+              0.11086972802877426,
+              0.6077706813812256
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 4.798642158508301,
+          "edgeStretch95Percentile": 1.4923850297927856,
+          "maximumFullyPinnedInputError": 0.0018686234252527356,
+          "cacheInfo": "8 frames in memory (703 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.16205762326717377,
+              -0.14641432464122772,
+              0.285542756319046
+            ],
+            [
+              0.1511765569448471,
+              0.0971875712275505,
+              0.3384639322757721
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 4.563963413238525,
+          "edgeStretch95Percentile": 1.396906852722168,
+          "maximumFullyPinnedInputError": 0.002473743399605155,
+          "cacheInfo": "8 frames in memory (703 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.17104960978031158,
+              -0.15185968577861786,
+              0.2585034966468811
+            ],
+            [
+              0.15503641963005066,
+              0.10600855201482773,
+              0.30581673979759216
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.759029865264893,
+          "edgeStretch95Percentile": 1.515841007232666,
+          "maximumFullyPinnedInputError": 0.003058450762182474,
+          "cacheInfo": "8 frames in memory (703 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.18124262988567352,
+              -0.1506926566362381,
+              0.22818274796009064
+            ],
+            [
+              0.15447866916656494,
+              0.11471051722764969,
+              0.2794686257839203
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 3.4828507900238037,
+          "edgeStretch95Percentile": 1.4798847436904907,
+          "maximumFullyPinnedInputError": 0.0005976624670438468,
+          "cacheInfo": "9 frames in memory (2.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1492053121328354,
+              -0.16633644700050354,
+              0.2362699955701828
+            ],
+            [
+              0.11630753427743912,
+              0.10829204320907593,
+              0.6038792133331299
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 5.514078617095947,
+          "edgeStretch95Percentile": 1.5982381105422974,
+          "maximumFullyPinnedInputError": 0.0024101671297103167,
+          "cacheInfo": "9 frames in memory (791 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.15178707242012024,
+              -0.15821079909801483,
+              0.28067153692245483
+            ],
+            [
+              0.13078348338603973,
+              0.09207101166248322,
+              0.34815987944602966
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 4.535697937011719,
+          "edgeStretch95Percentile": 1.4336280822753906,
+          "maximumFullyPinnedInputError": 0.002863218542188406,
+          "cacheInfo": "9 frames in memory (791 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1568537950515747,
+              -0.166438028216362,
+              0.2575482130050659
+            ],
+            [
+              0.13232581317424774,
+              0.10143570601940155,
+              0.316220760345459
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.875021457672119,
+          "edgeStretch95Percentile": 1.5602868795394897,
+          "maximumFullyPinnedInputError": 0.0034923204220831394,
+          "cacheInfo": "9 frames in memory (791 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.1647270917892456,
+              -0.16679584980010986,
+              0.22926636040210724
+            ],
+            [
+              0.12364770472049713,
+              0.1109931543469429,
+              0.28945663571357727
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 3.8894870281219482,
+          "edgeStretch95Percentile": 1.559610366821289,
+          "maximumFullyPinnedInputError": 0.0005996227846480906,
+          "cacheInfo": "10 frames in memory (2.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.134487122297287,
+              -0.18261174857616425,
+              0.2339141070842743
+            ],
+            [
+              0.09998854994773865,
+              0.10289853811264038,
+              0.5999007225036621
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.018906593322754,
+          "edgeStretch95Percentile": 1.7672170400619507,
+          "maximumFullyPinnedInputError": 0.0021411017514765263,
+          "cacheInfo": "10 frames in memory (879 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.13531909883022308,
+              -0.16950088739395142,
+              0.27612069249153137
+            ],
+            [
+              0.11534900218248367,
+              0.08505009859800339,
+              0.35708603262901306
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.147839546203613,
+          "edgeStretch95Percentile": 1.4699088335037231,
+          "maximumFullyPinnedInputError": 0.00280744768679142,
+          "cacheInfo": "10 frames in memory (879 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.13715292513370514,
+              -0.17927616834640503,
+              0.2542087137699127
+            ],
+            [
+              0.11154548823833466,
+              0.09483469277620316,
+              0.32703182101249695
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.6105852127075195,
+          "edgeStretch95Percentile": 1.5884535312652588,
+          "maximumFullyPinnedInputError": 0.0035248533822596073,
+          "cacheInfo": "10 frames in memory (879 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.14261400699615479,
+              -0.18410252034664154,
+              0.22490519285202026
+            ],
+            [
+              0.10844824463129044,
+              0.1045605018734932,
+              0.3000117540359497
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 3.898366928100586,
+          "edgeStretch95Percentile": 1.6681957244873047,
+          "maximumFullyPinnedInputError": 0.0006013584206812084,
+          "cacheInfo": "11 frames in memory (2.8 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.11287613958120346,
+              -0.19131618738174438,
+              0.23082700371742249
+            ],
+            [
+              0.096715047955513,
+              0.09465546905994415,
+              0.5958341956138611
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 7.987333297729492,
+          "edgeStretch95Percentile": 1.9642213582992554,
+          "maximumFullyPinnedInputError": 0.0023205336183309555,
+          "cacheInfo": "11 frames in memory (966 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.11305972188711166,
+              -0.17941579222679138,
+              0.2705601751804352
+            ],
+            [
+              0.09989380836486816,
+              0.07649631798267365,
+              0.36561107635498047
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.813081741333008,
+          "edgeStretch95Percentile": 1.5766167640686035,
+          "maximumFullyPinnedInputError": 0.0022854788694530725,
+          "cacheInfo": "11 frames in memory (966 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.11268686503171921,
+              -0.1883997619152069,
+              0.2490854263305664
+            ],
+            [
+              0.10406956076622009,
+              0.08751002699136734,
+              0.33776146173477173
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 4.491461277008057,
+          "edgeStretch95Percentile": 1.677394986152649,
+          "maximumFullyPinnedInputError": 0.0033177814912050962,
+          "cacheInfo": "11 frames in memory (966 KiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.11997818201780319,
+              -0.19513145089149475,
+              0.22188237309455872
+            ],
+            [
+              0.10374057292938232,
+              0.09610076993703842,
+              0.3119284510612488
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 4.342155933380127,
+          "edgeStretch95Percentile": 1.7616872787475586,
+          "maximumFullyPinnedInputError": 0.0006029879441484809,
+          "cacheInfo": "12 frames in memory (3.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09696679562330246,
+              -0.19742076098918915,
+              0.22602586448192596
+            ],
+            [
+              0.09685400873422623,
+              0.08297418802976608,
+              0.5916781425476074
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.870085716247559,
+          "edgeStretch95Percentile": 2.083972215652466,
+          "maximumFullyPinnedInputError": 0.0023676841519773006,
+          "cacheInfo": "12 frames in memory (1.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09251859784126282,
+              -0.18771371245384216,
+              0.27371302247047424
+            ],
+            [
+              0.09466679394245148,
+              0.07341854274272919,
+              0.37548819184303284
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.643542289733887,
+          "edgeStretch95Percentile": 1.7342942953109741,
+          "maximumFullyPinnedInputError": 0.0025349613279104233,
+          "cacheInfo": "12 frames in memory (1.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08650539070367813,
+              -0.19670358300209045,
+              0.24609118700027466
+            ],
+            [
+              0.10014647245407104,
+              0.08296747505664825,
+              0.349674254655838
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.262470722198486,
+          "edgeStretch95Percentile": 1.8639246225357056,
+          "maximumFullyPinnedInputError": 0.002941155806183815,
+          "cacheInfo": "12 frames in memory (1.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0944833904504776,
+              -0.20409677922725677,
+              0.22047637403011322
+            ],
+            [
+              0.10280125588178635,
+              0.08451703190803528,
+              0.32112929224967957
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 5.436463832855225,
+          "edgeStretch95Percentile": 1.854512095451355,
+          "maximumFullyPinnedInputError": 0.0006044817273505032,
+          "cacheInfo": "13 frames in memory (3.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09720971435308456,
+              -0.20488528907299042,
+              0.22111883759498596
+            ],
+            [
+              0.09799224138259888,
+              0.07817790657281876,
+              0.5874310731887817
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 10.72776985168457,
+          "edgeStretch95Percentile": 2.2585296630859375,
+          "maximumFullyPinnedInputError": 0.002194775501266122,
+          "cacheInfo": "13 frames in memory (1.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08425956964492798,
+              -0.1927880495786667,
+              0.27239298820495605
+            ],
+            [
+              0.09252406656742096,
+              0.07557924836874008,
+              0.38662612438201904
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.5543413162231445,
+          "edgeStretch95Percentile": 1.88713538646698,
+          "maximumFullyPinnedInputError": 0.002489405917003751,
+          "cacheInfo": "13 frames in memory (1.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07103817164897919,
+              -0.20364195108413696,
+              0.23986980319023132
+            ],
+            [
+              0.09787554293870926,
+              0.08250803500413895,
+              0.35874757170677185
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 6.578132629394531,
+          "edgeStretch95Percentile": 1.9587440490722656,
+          "maximumFullyPinnedInputError": 0.003034763503819704,
+          "cacheInfo": "13 frames in memory (1.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07632026076316833,
+              -0.20839974284172058,
+              0.2174694836139679
+            ],
+            [
+              0.10049471259117126,
+              0.08347609639167786,
+              0.32942524552345276
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 6.445789337158203,
+          "edgeStretch95Percentile": 2.0094830989837646,
+          "maximumFullyPinnedInputError": 0.0009388105827383697,
+          "cacheInfo": "14 frames in memory (3.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0925939530134201,
+              -0.22694671154022217,
+              0.22905820608139038
+            ],
+            [
+              0.10270114243030548,
+              0.13742786645889282,
+              0.5851119756698608
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.040701866149902,
+          "edgeStretch95Percentile": 2.186218023300171,
+          "maximumFullyPinnedInputError": 0.00431590061634779,
+          "cacheInfo": "14 frames in memory (1.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07008586823940277,
+              -0.20819096267223358,
+              0.2859838008880615
+            ],
+            [
+              0.08498910069465637,
+              0.12459012120962143,
+              0.4264204800128937
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.8874897956848145,
+          "edgeStretch95Percentile": 1.9171818494796753,
+          "maximumFullyPinnedInputError": 0.005255314987152815,
+          "cacheInfo": "14 frames in memory (1.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06845299154520035,
+              -0.22974064946174622,
+              0.2512984275817871
+            ],
+            [
+              0.08064180612564087,
+              0.13449978828430176,
+              0.4036896824836731
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 6.1707844734191895,
+          "edgeStretch95Percentile": 2.146693229675293,
+          "maximumFullyPinnedInputError": 0.006449813488870859,
+          "cacheInfo": "14 frames in memory (1.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06662816554307938,
+              -0.23102352023124695,
+              0.2288191020488739
+            ],
+            [
+              0.08421821147203445,
+              0.15486183762550354,
+              0.37273427844047546
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 6.775002479553223,
+          "edgeStretch95Percentile": 1.9242666959762573,
+          "maximumFullyPinnedInputError": 0.0011751421261578798,
+          "cacheInfo": "15 frames in memory (3.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08881638199090958,
+              -0.22975996136665344,
+              0.25373557209968567
+            ],
+            [
+              0.10624966770410538,
+              0.16469816863536835,
+              0.5819865465164185
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.361989974975586,
+          "edgeStretch95Percentile": 2.1943531036376953,
+          "maximumFullyPinnedInputError": 0.0033883124124258757,
+          "cacheInfo": "15 frames in memory (1.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06045316532254219,
+              -0.19905251264572144,
+              0.2909817695617676
+            ],
+            [
+              0.08498366177082062,
+              0.14469076693058014,
+              0.4420704245567322
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.020027160644531,
+          "edgeStretch95Percentile": 1.7619223594665527,
+          "maximumFullyPinnedInputError": 0.0034554707817733288,
+          "cacheInfo": "15 frames in memory (1.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0632985457777977,
+              -0.2261803299188614,
+              0.27214571833610535
+            ],
+            [
+              0.07507459074258804,
+              0.15579241514205933,
+              0.42299187183380127
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.873184680938721,
+          "edgeStretch95Percentile": 2.050555944442749,
+          "maximumFullyPinnedInputError": 0.004012428689748049,
+          "cacheInfo": "15 frames in memory (1.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05368577688932419,
+              -0.23304376006126404,
+              0.2552550733089447
+            ],
+            [
+              0.0782739594578743,
+              0.1699741631746292,
+              0.3953447639942169
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 7.066224575042725,
+          "edgeStretch95Percentile": 1.9032143354415894,
+          "maximumFullyPinnedInputError": 0.001093653729185462,
+          "cacheInfo": "16 frames in memory (4.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08885160088539124,
+              -0.20606575906276703,
+              0.27785345911979675
+            ],
+            [
+              0.10385263711214066,
+              0.17602914571762085,
+              0.5934935212135315
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.684584140777588,
+          "edgeStretch95Percentile": 2.4893388748168945,
+          "maximumFullyPinnedInputError": 0.0025206985883414745,
+          "cacheInfo": "16 frames in memory (1.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05550074949860573,
+              -0.17205694317817688,
+              0.3026426136493683
+            ],
+            [
+              0.07884569466114044,
+              0.1479729264974594,
+              0.4396933317184448
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 5.71980094909668,
+          "edgeStretch95Percentile": 1.8943159580230713,
+          "maximumFullyPinnedInputError": 0.003027878003194928,
+          "cacheInfo": "16 frames in memory (1.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05244949832558632,
+              -0.19863484799861908,
+              0.2967076301574707
+            ],
+            [
+              0.07594452798366547,
+              0.16427788138389587,
+              0.42286428809165955
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.089478015899658,
+          "edgeStretch95Percentile": 1.9905083179473877,
+          "maximumFullyPinnedInputError": 0.004421185702085495,
+          "cacheInfo": "16 frames in memory (1.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.056617967784404755,
+              -0.20888645946979523,
+              0.2795099914073944
+            ],
+            [
+              0.07137955725193024,
+              0.17946550250053406,
+              0.4031580984592438
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 8.02163028717041,
+          "edgeStretch95Percentile": 1.8286617994308472,
+          "maximumFullyPinnedInputError": 0.0014700652100145817,
+          "cacheInfo": "17 frames in memory (4.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0948609784245491,
+              -0.17361710965633392,
+              0.2942354381084442
+            ],
+            [
+              0.10481049120426178,
+              0.16232097148895264,
+              0.6069250702857971
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.8283162117004395,
+          "edgeStretch95Percentile": 2.5342113971710205,
+          "maximumFullyPinnedInputError": 0.0028775776736438274,
+          "cacheInfo": "17 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.059763237833976746,
+              -0.1489284187555313,
+              0.3321956396102905
+            ],
+            [
+              0.08596477657556534,
+              0.13644780218601227,
+              0.4343129098415375
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 7.47612190246582,
+          "edgeStretch95Percentile": 2.078587532043457,
+          "maximumFullyPinnedInputError": 0.003320832271128893,
+          "cacheInfo": "17 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0461689792573452,
+              -0.17376397550106049,
+              0.3154822289943695
+            ],
+            [
+              0.07894787937402725,
+              0.15623176097869873,
+              0.4190596044063568
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 5.256972312927246,
+          "edgeStretch95Percentile": 1.9237693548202515,
+          "maximumFullyPinnedInputError": 0.003817771328613162,
+          "cacheInfo": "17 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05486415699124336,
+              -0.1775420904159546,
+              0.28925955295562744
+            ],
+            [
+              0.07035303115844727,
+              0.1621035784482956,
+              0.40324270725250244
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 7.540318489074707,
+          "edgeStretch95Percentile": 1.6191771030426025,
+          "maximumFullyPinnedInputError": 0.0006175655871629715,
+          "cacheInfo": "18 frames in memory (4.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09939789026975632,
+              -0.15842416882514954,
+              0.28757384419441223
+            ],
+            [
+              0.10406079143285751,
+              0.14372922480106354,
+              0.6062752604484558
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.90927791595459,
+          "edgeStretch95Percentile": 2.6536874771118164,
+          "maximumFullyPinnedInputError": 0.004533892031759024,
+          "cacheInfo": "18 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06459317356348038,
+              -0.13425153493881226,
+              0.3272305428981781
+            ],
+            [
+              0.09414619207382202,
+              0.12526898086071014,
+              0.43737632036209106
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 7.802663326263428,
+          "edgeStretch95Percentile": 2.27317214012146,
+          "maximumFullyPinnedInputError": 0.005024655722081661,
+          "cacheInfo": "18 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05679822713136673,
+              -0.1567630022764206,
+              0.30993494391441345
+            ],
+            [
+              0.09079829603433609,
+              0.13434232771396637,
+              0.419958233833313
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 7.904394149780273,
+          "edgeStretch95Percentile": 2.0729997158050537,
+          "maximumFullyPinnedInputError": 0.005885149817913771,
+          "cacheInfo": "18 frames in memory (1.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0575052946805954,
+              -0.1592327505350113,
+              0.28371766209602356
+            ],
+            [
+              0.09177585691213608,
+              0.14444231986999512,
+              0.41525954008102417
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 19,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 9.328254699707031,
+          "edgeStretch95Percentile": 1.594786286354065,
+          "maximumFullyPinnedInputError": 0.0008545478922314942,
+          "cacheInfo": "19 frames in memory (4.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10160821676254272,
+              -0.15583521127700806,
+              0.28457000851631165
+            ],
+            [
+              0.10489536821842194,
+              0.1281248778104782,
+              0.5977500081062317
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 6.8984174728393555,
+          "edgeStretch95Percentile": 2.703099012374878,
+          "maximumFullyPinnedInputError": 0.0049010105431079865,
+          "cacheInfo": "19 frames in memory (1.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07666494697332382,
+              -0.12605196237564087,
+              0.3164740204811096
+            ],
+            [
+              0.10614301264286041,
+              0.10612151771783829,
+              0.43090707063674927
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 7.918587684631348,
+          "edgeStretch95Percentile": 2.3068268299102783,
+          "maximumFullyPinnedInputError": 0.006084400694817305,
+          "cacheInfo": "19 frames in memory (1.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07532507926225662,
+              -0.14461058378219604,
+              0.3040635585784912
+            ],
+            [
+              0.1015627533197403,
+              0.12123376131057739,
+              0.42143675684928894
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 9.724221229553223,
+          "edgeStretch95Percentile": 2.084909200668335,
+          "maximumFullyPinnedInputError": 0.0065530831925570965,
+          "cacheInfo": "19 frames in memory (1.6 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07230617851018906,
+              -0.15746912360191345,
+              0.28588178753852844
+            ],
+            [
+              0.1021227017045021,
+              0.13081775605678558,
+              0.4231412410736084
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 8.329658508300781,
+          "edgeStretch95Percentile": 1.6862940788269043,
+          "maximumFullyPinnedInputError": 0.0007856125012040138,
+          "cacheInfo": "20 frames in memory (5.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10409728437662125,
+              -0.1477987915277481,
+              0.28362467885017395
+            ],
+            [
+              0.11085053533315659,
+              0.11248695850372314,
+              0.5889981985092163
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 7.778254508972168,
+          "edgeStretch95Percentile": 2.886465549468994,
+          "maximumFullyPinnedInputError": 0.0053806668147444725,
+          "cacheInfo": "20 frames in memory (1.7 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07891522347927094,
+              -0.12144841253757477,
+              0.3194722831249237
+            ],
+            [
+              0.12066289037466049,
+              0.09921258687973022,
+              0.42681270837783813
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.868042945861816,
+          "edgeStretch95Percentile": 2.2433574199676514,
+          "maximumFullyPinnedInputError": 0.006097689270973206,
+          "cacheInfo": "20 frames in memory (1.7 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08728747069835663,
+              -0.13629266619682312,
+              0.3027198910713196
+            ],
+            [
+              0.10834662616252899,
+              0.10736708343029022,
+              0.4191341996192932
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 8.258090019226074,
+          "edgeStretch95Percentile": 2.1529221534729004,
+          "maximumFullyPinnedInputError": 0.006170306354761124,
+          "cacheInfo": "20 frames in memory (1.7 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08023296296596527,
+              -0.15241889655590057,
+              0.2803628444671631
+            ],
+            [
+              0.12111520767211914,
+              0.11777235567569733,
+              0.42760640382766724
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 7.254787921905518,
+          "edgeStretch95Percentile": 1.8041436672210693,
+          "maximumFullyPinnedInputError": 0.0005110148922540247,
+          "cacheInfo": "21 frames in memory (5.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10223522782325745,
+              -0.17859585583209991,
+              0.2749159634113312
+            ],
+            [
+              0.11268268525600433,
+              0.11088091880083084,
+              0.5906999707221985
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 9.580754280090332,
+          "edgeStretch95Percentile": 3.213456630706787,
+          "maximumFullyPinnedInputError": 0.004648671485483646,
+          "cacheInfo": "21 frames in memory (1.8 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07594648003578186,
+              -0.16444800794124603,
+              0.3223530054092407
+            ],
+            [
+              0.12077724188566208,
+              0.09258406609296799,
+              0.43853506445884705
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.7378387451171875,
+          "edgeStretch95Percentile": 2.392674446105957,
+          "maximumFullyPinnedInputError": 0.004783760290592909,
+          "cacheInfo": "21 frames in memory (1.8 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0852806344628334,
+              -0.17160752415657043,
+              0.2921105623245239
+            ],
+            [
+              0.11766013503074646,
+              0.10141296684741974,
+              0.42749202251434326
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 7.352819919586182,
+          "edgeStretch95Percentile": 1.9764233827590942,
+          "maximumFullyPinnedInputError": 0.0050352164544165134,
+          "cacheInfo": "21 frames in memory (1.8 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08084432780742645,
+              -0.1896129995584488,
+              0.2712433636188507
+            ],
+            [
+              0.12643039226531982,
+              0.11871112883090973,
+              0.42813339829444885
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 9.079666137695312,
+          "edgeStretch95Percentile": 1.8683514595031738,
+          "maximumFullyPinnedInputError": 0.0012779454700648785,
+          "cacheInfo": "22 frames in memory (5.7 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10323397815227509,
+              -0.18921807408332825,
+              0.2711550295352936
+            ],
+            [
+              0.1096830740571022,
+              0.10327471047639847,
+              0.5960708260536194
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.539440155029297,
+          "edgeStretch95Percentile": 2.996525526046753,
+          "maximumFullyPinnedInputError": 0.003247462445870042,
+          "cacheInfo": "22 frames in memory (1.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06554711610078812,
+              -0.16054707765579224,
+              0.3169800639152527
+            ],
+            [
+              0.11329499632120132,
+              0.1080419272184372,
+              0.4588281810283661
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.225306034088135,
+          "edgeStretch95Percentile": 2.254486083984375,
+          "maximumFullyPinnedInputError": 0.0033778890501707792,
+          "cacheInfo": "22 frames in memory (1.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06564561277627945,
+              -0.18278557062149048,
+              0.28677383065223694
+            ],
+            [
+              0.1215379536151886,
+              0.10823924094438553,
+              0.4506590962409973
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 6.847939491271973,
+          "edgeStretch95Percentile": 2.2984297275543213,
+          "maximumFullyPinnedInputError": 0.004345564637333155,
+          "cacheInfo": "22 frames in memory (1.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06938259303569794,
+              -0.19449427723884583,
+              0.27081260085105896
+            ],
+            [
+              0.11699468642473221,
+              0.10974803566932678,
+              0.452279657125473
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 9.527657508850098,
+          "edgeStretch95Percentile": 1.9291470050811768,
+          "maximumFullyPinnedInputError": 0.0009996904991567135,
+          "cacheInfo": "23 frames in memory (5.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10380281507968903,
+              -0.17663156986236572,
+              0.2732139229774475
+            ],
+            [
+              0.09212545305490494,
+              0.13392575085163116,
+              0.5951210856437683
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.148959159851074,
+          "edgeStretch95Percentile": 2.9877774715423584,
+          "maximumFullyPinnedInputError": 0.00364444637671113,
+          "cacheInfo": "23 frames in memory (2.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.056509122252464294,
+              -0.1536937952041626,
+              0.32049641013145447
+            ],
+            [
+              0.09322076290845871,
+              0.13068638741970062,
+              0.47279664874076843
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.355398654937744,
+          "edgeStretch95Percentile": 2.244082450866699,
+          "maximumFullyPinnedInputError": 0.004653744865208864,
+          "cacheInfo": "23 frames in memory (2.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.04249492660164833,
+              -0.1748882532119751,
+              0.2890287935733795
+            ],
+            [
+              0.10251319408416748,
+              0.1321040689945221,
+              0.4638347625732422
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 14.575382232666016,
+          "edgeStretch95Percentile": 2.2722907066345215,
+          "maximumFullyPinnedInputError": 0.0039910986088216305,
+          "cacheInfo": "23 frames in memory (2.0 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05467093363404274,
+              -0.18311376869678497,
+              0.27207449078559875
+            ],
+            [
+              0.09316226840019226,
+              0.1387760192155838,
+              0.4603304862976074
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 8.055747985839844,
+          "edgeStretch95Percentile": 1.9152244329452515,
+          "maximumFullyPinnedInputError": 0.001191799994558096,
+          "cacheInfo": "24 frames in memory (6.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10328935086727142,
+              -0.1596250832080841,
+              0.28596916794776917
+            ],
+            [
+              0.08986537158489227,
+              0.15400783717632294,
+              0.6077641844749451
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.331148147583008,
+          "edgeStretch95Percentile": 2.7717700004577637,
+          "maximumFullyPinnedInputError": 0.003638420021161437,
+          "cacheInfo": "24 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.051430098712444305,
+              -0.14019456505775452,
+              0.32890716195106506
+            ],
+            [
+              0.07590094953775406,
+              0.14183732867240906,
+              0.46899962425231934
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.71474027633667,
+          "edgeStretch95Percentile": 2.094386577606201,
+          "maximumFullyPinnedInputError": 0.00395516911521554,
+          "cacheInfo": "24 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.03901495784521103,
+              -0.15397128462791443,
+              0.30333638191223145
+            ],
+            [
+              0.07926930487155914,
+              0.14662481844425201,
+              0.4555176794528961
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 9.8825101852417,
+          "edgeStretch95Percentile": 2.143501043319702,
+          "maximumFullyPinnedInputError": 0.004597772378474474,
+          "cacheInfo": "24 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.05579495057463646,
+              -0.1692950576543808,
+              0.2836662232875824
+            ],
+            [
+              0.05857771262526512,
+              0.1605691760778427,
+              0.45144015550613403
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 8.437041282653809,
+          "edgeStretch95Percentile": 1.8808408975601196,
+          "maximumFullyPinnedInputError": 0.0007914143498055637,
+          "cacheInfo": "25 frames in memory (6.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10411873459815979,
+              -0.14536575973033905,
+              0.30172595381736755
+            ],
+            [
+              0.09332256019115448,
+              0.14804555475711823,
+              0.611552357673645
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 8.83963680267334,
+          "edgeStretch95Percentile": 2.847207546234131,
+          "maximumFullyPinnedInputError": 0.0040303561836481094,
+          "cacheInfo": "25 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06329420208930969,
+              -0.12565630674362183,
+              0.3304799497127533
+            ],
+            [
+              0.07763763517141342,
+              0.13047058880329132,
+              0.4484212100505829
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 8.055153846740723,
+          "edgeStretch95Percentile": 2.256347894668579,
+          "maximumFullyPinnedInputError": 0.00367091316729784,
+          "cacheInfo": "25 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.053652919828891754,
+              -0.13547393679618835,
+              0.3123473823070526
+            ],
+            [
+              0.061556246131658554,
+              0.13906978070735931,
+              0.4373101592063904
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 9.484551429748535,
+          "edgeStretch95Percentile": 2.554224729537964,
+          "maximumFullyPinnedInputError": 0.004262164700776339,
+          "cacheInfo": "25 frames in memory (2.1 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.06280634552240372,
+              -0.15071962773799896,
+              0.29478225111961365
+            ],
+            [
+              0.051371071487665176,
+              0.15421992540359497,
+              0.4341590702533722
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 8.452016830444336,
+          "edgeStretch95Percentile": 1.8170645236968994,
+          "maximumFullyPinnedInputError": 0.00047826074296608567,
+          "cacheInfo": "26 frames in memory (6.7 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10458695888519287,
+              -0.13227184116840363,
+              0.29501745104789734
+            ],
+            [
+              0.0965893566608429,
+              0.11487902700901031,
+              0.609184980392456
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 10.413558006286621,
+          "edgeStretch95Percentile": 3.0270802974700928,
+          "maximumFullyPinnedInputError": 0.003070180071517825,
+          "cacheInfo": "26 frames in memory (2.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.07228827476501465,
+              -0.11710985004901886,
+              0.32269179821014404
+            ],
+            [
+              0.08945738524198532,
+              0.11378926783800125,
+              0.4280020594596863
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.50733757019043,
+          "edgeStretch95Percentile": 2.36803936958313,
+          "maximumFullyPinnedInputError": 0.004082736559212208,
+          "cacheInfo": "26 frames in memory (2.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0718022957444191,
+              -0.12166472524404526,
+              0.3083414137363434
+            ],
+            [
+              0.07356142997741699,
+              0.1171601265668869,
+              0.41403236985206604
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 9.32298755645752,
+          "edgeStretch95Percentile": 2.5985097885131836,
+          "maximumFullyPinnedInputError": 0.004400145262479782,
+          "cacheInfo": "26 frames in memory (2.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08020778000354767,
+              -0.131110280752182,
+              0.2911408543586731
+            ],
+            [
+              0.06739065051078796,
+              0.12577427923679352,
+              0.4095771908760071
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 27,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 11.131054878234863,
+          "edgeStretch95Percentile": 1.7410733699798584,
+          "maximumFullyPinnedInputError": 0.0011048645246773958,
+          "cacheInfo": "27 frames in memory (6.9 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10398101061582565,
+              -0.12186967581510544,
+              0.28829312324523926
+            ],
+            [
+              0.0972602367401123,
+              0.09427303075790405,
+              0.5953218936920166
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 10.512499809265137,
+          "edgeStretch95Percentile": 3.1927499771118164,
+          "maximumFullyPinnedInputError": 0.004284893628209829,
+          "cacheInfo": "27 frames in memory (2.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08645740151405334,
+              -0.10238943994045258,
+              0.3287661671638489
+            ],
+            [
+              0.10085511207580566,
+              0.09227274358272552,
+              0.4124695658683777
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 7.314237117767334,
+          "edgeStretch95Percentile": 2.394967555999756,
+          "maximumFullyPinnedInputError": 0.004629680421203375,
+          "cacheInfo": "27 frames in memory (2.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.08809616416692734,
+              -0.11115162074565887,
+              0.30766764283180237
+            ],
+            [
+              0.09176010638475418,
+              0.09650417417287827,
+              0.39522817730903625
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 11.394393920898438,
+          "edgeStretch95Percentile": 2.6763715744018555,
+          "maximumFullyPinnedInputError": 0.005843841936439276,
+          "cacheInfo": "27 frames in memory (2.3 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09513862431049347,
+              -0.11928863078355789,
+              0.2883290648460388
+            ],
+            [
+              0.08872472494840622,
+              0.07941150665283203,
+              0.3865777254104614
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 10.700628280639648,
+          "edgeStretch95Percentile": 1.7997134923934937,
+          "maximumFullyPinnedInputError": 0.0008410913869738579,
+          "cacheInfo": "28 frames in memory (7.2 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10586033016443253,
+              -0.13042278587818146,
+              0.2913668751716614
+            ],
+            [
+              0.10163648426532745,
+              0.07498421519994736,
+              0.5856980085372925
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 10.55270004272461,
+          "edgeStretch95Percentile": 3.216179847717285,
+          "maximumFullyPinnedInputError": 0.005324998404830694,
+          "cacheInfo": "28 frames in memory (2.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09453072398900986,
+              -0.12723393738269806,
+              0.3239370286464691
+            ],
+            [
+              0.1108618751168251,
+              0.06369708478450775,
+              0.3937543034553528
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 7.614147663116455,
+          "edgeStretch95Percentile": 2.4056789875030518,
+          "maximumFullyPinnedInputError": 0.005153239704668522,
+          "cacheInfo": "28 frames in memory (2.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.0988621711730957,
+              -0.12872809171676636,
+              0.3043200969696045
+            ],
+            [
+              0.10730409622192383,
+              0.06787969917058945,
+              0.3780955672264099
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 10.579826354980469,
+          "edgeStretch95Percentile": 2.4913997650146484,
+          "maximumFullyPinnedInputError": 0.006266797427088022,
+          "cacheInfo": "28 frames in memory (2.4 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10659817606210709,
+              -0.1443708837032318,
+              0.2760752737522125
+            ],
+            [
+              0.09587202221155167,
+              0.0683758333325386,
+              0.36919549107551575
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "pieces": [
+        {
+          "key": "support",
+          "maximumEdgeStretch": 11.183354377746582,
+          "edgeStretch95Percentile": 1.9566646814346313,
+          "maximumFullyPinnedInputError": 0.00049102638149634,
+          "cacheInfo": "29 frames in memory (7.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10575328022241592,
+              -0.1756466031074524,
+              0.26878485083580017
+            ],
+            [
+              0.09796572476625443,
+              0.07923635840415955,
+              0.5878899693489075
+            ]
+          ]
+        },
+        {
+          "key": "tier1",
+          "maximumEdgeStretch": 12.716448783874512,
+          "edgeStretch95Percentile": 3.1690621376037598,
+          "maximumFullyPinnedInputError": 0.0048426673747599125,
+          "cacheInfo": "29 frames in memory (2.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.09319783747196198,
+              -0.16689835488796234,
+              0.30808746814727783
+            ],
+            [
+              0.10431099683046341,
+              0.07088708877563477,
+              0.4225452244281769
+            ]
+          ]
+        },
+        {
+          "key": "tier2",
+          "maximumEdgeStretch": 6.9741997718811035,
+          "edgeStretch95Percentile": 2.461153268814087,
+          "maximumFullyPinnedInputError": 0.005429920274764299,
+          "cacheInfo": "29 frames in memory (2.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10138166695833206,
+              -0.17875856161117554,
+              0.2888282835483551
+            ],
+            [
+              0.10714251548051834,
+              0.06990539282560349,
+              0.4177646040916443
+            ]
+          ]
+        },
+        {
+          "key": "tier3",
+          "maximumEdgeStretch": 9.98154067993164,
+          "edgeStretch95Percentile": 2.626136064529419,
+          "maximumFullyPinnedInputError": 0.005907153710722923,
+          "cacheInfo": "29 frames in memory (2.5 MiB).",
+          "cacheOutdated": false,
+          "bounds": [
+            [
+              -0.10524449497461319,
+              -0.18408159911632538,
+              0.260282039642334
+            ],
+            [
+              0.09491432458162308,
+              0.07030606269836426,
+              0.40634965896606445
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_black_family_cloth_frames.npz",
+  "dataSha256": "8e70f76a7b37288f77c6d54a97399ce6c9b73577bfc05cb1c838c137a4ca749a",
+  "scriptSha256": "38dddfa05dd9e03b4ec4cccaa6169e590b011df90d69aa2366d6d5dfccf91965",
+  "fieldHelperSha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+  "colliderHelperSha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+  "parentEditableUnchanged": true,
+  "localBlackResponseBaked": false,
+  "modelExported": false,
+  "finalFbxExported": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "limitation": "Animated Ivory collision surface is the existing approximate rig response. Mutual cloth response, all poses and signed contact remain unapproved.",
+  "elapsedSeconds": 244.3898515701294
+}

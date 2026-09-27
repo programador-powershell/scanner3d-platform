@@ -1,0 +1,126 @@
+{
+  "parentEditableSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "probeDataSha256": "8e70f76a7b37288f77c6d54a97399ce6c9b73577bfc05cb1c838c137a4ca749a",
+  "scope": "Actual measured Black support and flounces reconstructed in the complete authoring scene. Original lace is rebound to stable thin flounce targets before Bystedt thickness/UV nodes.",
+  "originalLaceRawGeometryAndUvUnchanged": true,
+  "stableThinTargetVertices": 2496,
+  "thicknessOutputTopologyNotUsedAsLaceBindingTarget": true,
+  "renders": [
+    {
+      "sourcePhysicsFrame": 1,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review_v002\\foundation_01_front.png",
+      "sha256": "80cdb7607db9048fff988e57bd64e28da3880f72d8db32ad0636d35b8ef6172d",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.364418029785156e-07,
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review_v002\\foundation_20_front.png",
+      "sha256": "8cce7392654b5b999d476f32b2764d2fd132d598439e86d36d034a5edfcf7b5d",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review_v002\\foundation_29_threequarter.png",
+      "sha256": "6627ba1cf7268e62200a0509d1bbb4268a0574d0184de2ffed5273e96cda2b12",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 1.3113021850585938e-06,
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "black_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review_v002\\black_family_20_front.png",
+      "sha256": "d54b8163ede81f480a27d5854c74e2acb65b0dc69fa27ad08aa3759161a5f9a0",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 7
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "black_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\black_cloth_family_ivory_collision_v001\\actual_receiver_review_v002\\black_family_29_threequarter.png",
+      "sha256": "ab418b515bcff09218cecb24b202bc0cf9197fccfdc494ee51cb9a79ccdcb16f",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 1.3113021850585938e-06,
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 7
+    }
+  ],
+  "scriptSha256": "1490dfcb402d8473334a6abe73a5f0ca64c5805dd7c59f4b021c1b270bc88afb",
+  "checkpointUnchanged": true,
+  "parentGlbUnchanged": true,
+  "blackResponseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}

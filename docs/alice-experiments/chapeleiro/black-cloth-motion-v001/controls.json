@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "case": "with_ivory",
+      "dataSha256": "8e70f76a7b37288f77c6d54a97399ce6c9b73577bfc05cb1c838c137a4ca749a",
+      "frames": 29,
+      "pieces": {
+        "support": {
+          "sequenceMaximumEdgeStretch": 11.183354377746582,
+          "lastFrameMaximumEdgeStretch": 11.183354377746582,
+          "sequenceMaximumFullyPinnedInputError": 0.0014700652100145817
+        },
+        "tier1": {
+          "sequenceMaximumEdgeStretch": 12.716448783874512,
+          "lastFrameMaximumEdgeStretch": 12.716448783874512,
+          "sequenceMaximumFullyPinnedInputError": 0.0053806668147444725
+        },
+        "tier2": {
+          "sequenceMaximumEdgeStretch": 8.055153846740723,
+          "lastFrameMaximumEdgeStretch": 6.9741997718811035,
+          "sequenceMaximumFullyPinnedInputError": 0.006097689270973206
+        },
+        "tier3": {
+          "sequenceMaximumEdgeStretch": 14.575382232666016,
+          "lastFrameMaximumEdgeStretch": 9.98154067993164,
+          "sequenceMaximumFullyPinnedInputError": 0.0065530831925570965
+        }
+      }
+    },
+    {
+      "case": "without_ivory_control",
+      "dataSha256": "ed7491ded742599bd444ba84ac4a5c0ba393cad99d6403da63c6b1eda6f8131d",
+      "frames": 29,
+      "pieces": {
+        "support": {
+          "sequenceMaximumEdgeStretch": 4.311458587646484,
+          "lastFrameMaximumEdgeStretch": 1.908179759979248,
+          "sequenceMaximumFullyPinnedInputError": 0.0014700652100145817
+        },
+        "tier1": {
+          "sequenceMaximumEdgeStretch": 11.353550910949707,
+          "lastFrameMaximumEdgeStretch": 7.059211254119873,
+          "sequenceMaximumFullyPinnedInputError": 0.005583149380981922
+        },
+        "tier2": {
+          "sequenceMaximumEdgeStretch": 9.196172714233398,
+          "lastFrameMaximumEdgeStretch": 6.793025493621826,
+          "sequenceMaximumFullyPinnedInputError": 0.006654782686382532
+        },
+        "tier3": {
+          "sequenceMaximumEdgeStretch": 23.382776260375977,
+          "lastFrameMaximumEdgeStretch": 9.528651237487793,
+          "sequenceMaximumFullyPinnedInputError": 0.007277269847691059
+        }
+      }
+    }
+  ],
+  "sameRigMatricesRestGeometryPinFieldsAndMainSkinInputs": true,
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "parentEditableSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "stableLaceTargetReviewPending": false,
+  "responseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "nextVariantMayStart": false,
+  "actualStableTargetVertices": [
+    2496,
+    2496,
+    2496
+  ],
+  "sameActualCacheRigAndCamerasBeforeAfter": true,
+  "actualLaceTargetTopologyWarningsAbsent": true,
+  "visibleDifferences": [
+    "A renda acompanha os alvos, mas forma pontas alongadas. Babados, costuras e contato entre camadas permanecem instáveis."
+  ]
+}

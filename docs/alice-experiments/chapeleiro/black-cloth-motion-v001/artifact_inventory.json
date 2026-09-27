@@ -1,0 +1,170 @@
+{
+  "artifacts": [
+    {
+      "file": "with_ivory/executed_probe.py",
+      "sha256": "38dddfa05dd9e03b4ec4cccaa6169e590b011df90d69aa2366d6d5dfccf91965",
+      "bytes": 10418
+    },
+    {
+      "file": "with_ivory/actual_solver_motion.json",
+      "sha256": "7d08d5c54eee7c4a2dea2ad2bd8730e7a6d2ab66d2a8f40c5bffdb9cd240d487",
+      "bytes": 78955
+    },
+    {
+      "file": "with_ivory/actual_cloth_frames.npz",
+      "sha256": "8e70f76a7b37288f77c6d54a97399ce6c9b73577bfc05cb1c838c137a4ca749a",
+      "bytes": 9953579
+    },
+    {
+      "file": "with_ivory/actual_execution.log",
+      "sha256": "bffa7c490dbfaad8ee5d3649dbdaed1586617e8cdf01161650ae90e8d05a5904",
+      "bytes": 933
+    },
+    {
+      "file": "without_ivory_control/executed_probe.py",
+      "sha256": "38dddfa05dd9e03b4ec4cccaa6169e590b011df90d69aa2366d6d5dfccf91965",
+      "bytes": 10418
+    },
+    {
+      "file": "without_ivory_control/actual_solver_motion.json",
+      "sha256": "e605cb93bfbc82ecac82ca5d9c975f6cdad0709010cdf62c85ab9dd0d7fa9f6f",
+      "bytes": 78435
+    },
+    {
+      "file": "without_ivory_control/actual_cloth_frames.npz",
+      "sha256": "ed7491ded742599bd444ba84ac4a5c0ba393cad99d6403da63c6b1eda6f8131d",
+      "bytes": 9951084
+    },
+    {
+      "file": "without_ivory_control/actual_execution.log",
+      "sha256": "026f68130f535333585b49fc6a584dd2011eda21fb776964681e07b83668a06a",
+      "bytes": 933
+    },
+    {
+      "file": "actual_authored_black_supports.json",
+      "sha256": "5896d7ec44bf8480521feae95b0fa61acc37315e9f720178a4c046a628aa473a",
+      "bytes": 11195
+    },
+    {
+      "file": "executed_inspection.py",
+      "sha256": "474ad9cb6d747cff21999b54bd90555175348d075f3536f6ba8137db5f62c545",
+      "bytes": 2537
+    },
+    {
+      "file": "executed_chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_chapeleiro_cloth_colliders.py",
+      "sha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+      "bytes": 1803
+    },
+    {
+      "file": "source_photo.png",
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "bytes": 2255895
+    },
+    {
+      "file": "rejected_thickness_target/executed_render.py",
+      "sha256": "e539fda84329db123c17e1bc2ac3479ec48824e147854f1743bf447f8a6d6025",
+      "bytes": 8066
+    },
+    {
+      "file": "rejected_thickness_target/comparison.json",
+      "sha256": "2861ecc466cd0566544c56308e42e45f5612e62c6ef9d29b0e22d6f1611b481e",
+      "bytes": 4121
+    },
+    {
+      "file": "rejected_thickness_target/visual_failure.json",
+      "sha256": "9880a40b85fdc630964269eecd9cb710701bf7092d7b591c222dcea442db9ae2",
+      "bytes": 370
+    },
+    {
+      "file": "rejected_thickness_target/actual_execution.log",
+      "sha256": "7082c90657997f63329ee73bf3b0b5f059ce01c0cf8de4e021a8f90497eb333d",
+      "bytes": 7188
+    },
+    {
+      "file": "rejected_thickness_target/renders/foundation_01_front.png",
+      "sha256": "8c06f20b39ce0d46273c3ed7cdf1e8bca06ebfb4d5461fea944e484efb85ef45",
+      "bytes": 343721
+    },
+    {
+      "file": "rejected_thickness_target/renders/foundation_20_front.png",
+      "sha256": "5e0eb6c7f81d9c188566422b273231910a104780cfa0c6ffcc206fbebc896993",
+      "bytes": 306775
+    },
+    {
+      "file": "rejected_thickness_target/renders/foundation_29_threequarter.png",
+      "sha256": "4feb84be6c470e8509b942f3e57f2b971a3193e52e0554bcfbace2ce60978b0a",
+      "bytes": 299465
+    },
+    {
+      "file": "rejected_thickness_target/renders/black_family_20_front.png",
+      "sha256": "48e4540756ee2a39123024a761c79e8207cb0271426fc2729e9def1376d7e254",
+      "bytes": 210452
+    },
+    {
+      "file": "rejected_thickness_target/renders/black_family_29_threequarter.png",
+      "sha256": "ac347dd3bdbb98c6fbfb958bd047d3bc8b95195ceaddc5b1e95fa441ab770bed",
+      "bytes": 214919
+    },
+    {
+      "file": "executed_package.py",
+      "sha256": "8bad035bab6c976ececfead5eb5cf2deb6d3ffc2e89ded51e72fee6bbec31c7d",
+      "bytes": 6318
+    },
+    {
+      "file": "stable_thin_target/executed_render.py",
+      "sha256": "1490dfcb402d8473334a6abe73a5f0ca64c5805dd7c59f4b021c1b270bc88afb",
+      "bytes": 9939
+    },
+    {
+      "file": "stable_thin_target/comparison.json",
+      "sha256": "da9120b2acbbc7f5d23b3594b6fe6cedb3079902cbebf2cdedffb7da61acbdab",
+      "bytes": 4972
+    },
+    {
+      "file": "stable_thin_target/actual_execution.log",
+      "sha256": "b12a857eecdbfc53d2d638e08e64e8d5523668a1290c12b82d54cd30c54a4d0d",
+      "bytes": 2183
+    },
+    {
+      "file": "stable_thin_target/renders/foundation_01_front.png",
+      "sha256": "80cdb7607db9048fff988e57bd64e28da3880f72d8db32ad0636d35b8ef6172d",
+      "bytes": 343753
+    },
+    {
+      "file": "stable_thin_target/renders/foundation_20_front.png",
+      "sha256": "8cce7392654b5b999d476f32b2764d2fd132d598439e86d36d034a5edfcf7b5d",
+      "bytes": 296036
+    },
+    {
+      "file": "stable_thin_target/renders/foundation_29_threequarter.png",
+      "sha256": "6627ba1cf7268e62200a0509d1bbb4268a0574d0184de2ffed5273e96cda2b12",
+      "bytes": 304845
+    },
+    {
+      "file": "stable_thin_target/renders/black_family_20_front.png",
+      "sha256": "d54b8163ede81f480a27d5854c74e2acb65b0dc69fa27ad08aa3759161a5f9a0",
+      "bytes": 206134
+    },
+    {
+      "file": "stable_thin_target/renders/black_family_29_threequarter.png",
+      "sha256": "ab418b515bcff09218cecb24b202bc0cf9197fccfdc494ee51cb9a79ccdcb16f",
+      "bytes": 226025
+    },
+    {
+      "file": "photo_vs_actual_lace_binding_before_after.jpg",
+      "sha256": "3643487c7ce3802ccbb5f5c0f21b64da88bcf5888e2286dea212f511069e04f4",
+      "bytes": 323040
+    },
+    {
+      "file": "executed_finish_stable_review.py",
+      "sha256": "8c8bf0a7861030e5a1daa0f0ac9b57e0e75e180cf5020f461b8aff26d613978e",
+      "bytes": 5391
+    }
+  ],
+  "preservedExactlyAsExecutedBytes": true
+}
