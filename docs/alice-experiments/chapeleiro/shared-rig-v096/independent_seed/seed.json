@@ -1,0 +1,273 @@
+{
+  "parentEditableSha256": "8637e43cd83a8539d0ad408a1446ce7bc796bda20047d8d6695115d85160ddfb",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "referencePhysicalDataSha256": "8bb66023df1b134fcd728def6a6a727f2b11392d798a61df53fc02bdd61c76f9",
+  "referenceProbe": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003_surface_deform_v001\\actual_sewn_solver_motion.json",
+  "physicalReferenceParentSha256": "e03074bc5a8f3de32b688b50161d91a4cde245c76cc61fbc35bfda3ae1347e5c",
+  "independentFlounceRigReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_independent_flounces_v003\\independent_flounce_rig.json",
+  "actualRigBones": 209,
+  "actualClothBones": 108,
+  "actualVertices": 22080,
+  "parts": [
+    {
+      "key": "ivory",
+      "source": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "actualWeightedPreview": "01 / long ivory gathered petticoat",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        7104
+      ],
+      "start": 0,
+      "vertices": 7104,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 4
+    },
+    {
+      "key": "support",
+      "source": "Authoring / 01 / black petticoat continuous waist support",
+      "actualWeightedPreview": "01 / black petticoat continuous waist support",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        7488
+      ],
+      "start": 7104,
+      "vertices": 7488,
+      "originalWorldPointsMaximumError": 0.0,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 4
+    },
+    {
+      "key": "tier1",
+      "source": "Authoring / 01 / black gathered flounce 1",
+      "actualWeightedPreview": "01 / black gathered flounce 1",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 14592,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    },
+    {
+      "key": "tier2",
+      "source": "Authoring / 01 / black gathered flounce 2",
+      "actualWeightedPreview": "01 / black gathered flounce 2",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 17088,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    },
+    {
+      "key": "tier3",
+      "source": "Authoring / 01 / black gathered flounce 3",
+      "actualWeightedPreview": "01 / black gathered flounce 3",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 19584,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 3.5762786865234375e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    }
+  ],
+  "originalRestMaximumError": 5.066394805908203e-07,
+  "originalFineSkinVsCalculatorDetailTargets": [
+    {
+      "frame": 1,
+      "maximumMeters": 5.197922567059321e-07,
+      "p95Meters": 1.1307120635215978e-07,
+      "meanMeters": 4.910796167626415e-08
+    },
+    {
+      "frame": 2,
+      "maximumMeters": 4.689376669200754e-05,
+      "p95Meters": 4.455943942668653e-06,
+      "meanMeters": 6.26927259367682e-07
+    },
+    {
+      "frame": 3,
+      "maximumMeters": 9.36677889077933e-05,
+      "p95Meters": 8.929970098368508e-06,
+      "meanMeters": 1.2108251600718328e-06
+    },
+    {
+      "frame": 4,
+      "maximumMeters": 0.00014023797980903827,
+      "p95Meters": 1.3386431191207397e-05,
+      "meanMeters": 1.7950182033030892e-06
+    },
+    {
+      "frame": 5,
+      "maximumMeters": 0.00018677996358389313,
+      "p95Meters": 1.779984676636457e-05,
+      "meanMeters": 2.3770186917859902e-06
+    },
+    {
+      "frame": 6,
+      "maximumMeters": 0.00023311958290502208,
+      "p95Meters": 2.2309956083579514e-05,
+      "meanMeters": 2.9587201819494405e-06
+    },
+    {
+      "frame": 7,
+      "maximumMeters": 0.00027936292449720705,
+      "p95Meters": 2.6741661460721795e-05,
+      "meanMeters": 3.5387791586235047e-06
+    },
+    {
+      "frame": 8,
+      "maximumMeters": 0.0003252823542066896,
+      "p95Meters": 3.1139181086594566e-05,
+      "meanMeters": 4.118072120505285e-06
+    },
+    {
+      "frame": 9,
+      "maximumMeters": 0.0003711723691521645,
+      "p95Meters": 3.557191210769077e-05,
+      "meanMeters": 4.698603192485088e-06
+    },
+    {
+      "frame": 10,
+      "maximumMeters": 0.00041688137338482113,
+      "p95Meters": 4.0051215507824104e-05,
+      "meanMeters": 5.275712474343519e-06
+    },
+    {
+      "frame": 11,
+      "maximumMeters": 0.00046249623859739657,
+      "p95Meters": 4.456359656670376e-05,
+      "meanMeters": 5.852702987942294e-06
+    },
+    {
+      "frame": 12,
+      "maximumMeters": 0.0005078417042950182,
+      "p95Meters": 4.903588812835267e-05,
+      "meanMeters": 6.4293597158306084e-06
+    },
+    {
+      "frame": 13,
+      "maximumMeters": 0.0005530455315376866,
+      "p95Meters": 5.351895211456051e-05,
+      "meanMeters": 7.006171834112374e-06
+    },
+    {
+      "frame": 14,
+      "maximumMeters": 0.0007447923231193267,
+      "p95Meters": 7.656992181416141e-05,
+      "meanMeters": 1.0450826941924135e-05
+    },
+    {
+      "frame": 15,
+      "maximumMeters": 0.0011222439275294608,
+      "p95Meters": 0.00011155261661210432,
+      "meanMeters": 1.680767171334508e-05
+    },
+    {
+      "frame": 16,
+      "maximumMeters": 0.001107767707916426,
+      "p95Meters": 0.0001102734242339298,
+      "meanMeters": 1.6654710505101988e-05
+    },
+    {
+      "frame": 17,
+      "maximumMeters": 0.0007850735520284842,
+      "p95Meters": 8.310428476528628e-05,
+      "meanMeters": 1.1966354773196508e-05
+    },
+    {
+      "frame": 18,
+      "maximumMeters": 0.0005800242673475518,
+      "p95Meters": 6.47144847903394e-05,
+      "meanMeters": 9.098747208782537e-06
+    },
+    {
+      "frame": 19,
+      "maximumMeters": 0.0005244276830101965,
+      "p95Meters": 6.037460963415672e-05,
+      "meanMeters": 8.542841547685796e-06
+    },
+    {
+      "frame": 20,
+      "maximumMeters": 0.0005342634403060964,
+      "p95Meters": 6.0818748330033614e-05,
+      "meanMeters": 8.685488058619585e-06
+    },
+    {
+      "frame": 21,
+      "maximumMeters": 0.000550421531223411,
+      "p95Meters": 6.257750423205491e-05,
+      "meanMeters": 8.401278675705607e-06
+    },
+    {
+      "frame": 22,
+      "maximumMeters": 0.0009951888665150508,
+      "p95Meters": 8.401848861002539e-05,
+      "meanMeters": 1.1560756787788304e-05
+    },
+    {
+      "frame": 23,
+      "maximumMeters": 0.0015627414094341334,
+      "p95Meters": 0.00011065884942473436,
+      "meanMeters": 1.6895267168510114e-05
+    },
+    {
+      "frame": 24,
+      "maximumMeters": 0.0013571921387495983,
+      "p95Meters": 9.689519485468566e-05,
+      "meanMeters": 1.4645087387585838e-05
+    },
+    {
+      "frame": 25,
+      "maximumMeters": 0.0010230218301865242,
+      "p95Meters": 7.843025785244832e-05,
+      "meanMeters": 1.120552943380921e-05
+    },
+    {
+      "frame": 26,
+      "maximumMeters": 0.0008060329151243385,
+      "p95Meters": 7.05854315259473e-05,
+      "meanMeters": 9.414960783671298e-06
+    },
+    {
+      "frame": 27,
+      "maximumMeters": 0.0007005691837927785,
+      "p95Meters": 5.877201406719787e-05,
+      "meanMeters": 8.105640187197673e-06
+    },
+    {
+      "frame": 28,
+      "maximumMeters": 0.0005417441030436076,
+      "p95Meters": 4.784273904678003e-05,
+      "meanMeters": 6.675714536360455e-06
+    },
+    {
+      "frame": 29,
+      "maximumMeters": 0.0005531187687117304,
+      "p95Meters": 5.351551677436953e-05,
+      "meanMeters": 7.005497310852564e-06
+    }
+  ],
+  "limitation": "The actual original surface of each skin preview supplies its existing weights. The separate thickness output is not reordered or assumed to match by index. Calculator detail targets can differ from these fine weights; errors are measured and no motion or fidelity is approved.",
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\independent_flounce_skin_seed_v001\\actual_five_cage_skin_seed.npz",
+  "dataSha256": "3cbe79d0120f4e5d45fd463867c336cb7f095273aee47db309ddd877473ce7d4",
+  "scriptSha256": "80b4c6ebcef396e91912a7c52ee088d9b5f13fce443ed4cf6d4059395fd2b6a8",
+  "sourceEditableUnchanged": true,
+  "sourceGeometryUvMaterialsAndWeightsUnchanged": true,
+  "responseFitted": false,
+  "responseBaked": false,
+  "finalFbxExported": false,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

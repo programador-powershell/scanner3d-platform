@@ -1,0 +1,465 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "controls": [
+    {
+      "label": "Contato anterior",
+      "folder": "xpbd_ivory_black_cloth_v002",
+      "dataSha256": "497effcc339c84c230d9c4154cce47bc2ced48874cea33f56a79ef5bdca7ccd0",
+      "physicalMaximumStretchByPart": {
+        "ivory": 2.351778895368219,
+        "support": 4.748688853701631,
+        "tier1": 1.2375225761357604,
+        "tier2": 1.3022209617834557,
+        "tier3": 1.3605910456172683
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.0950085839618455,
+        "support": 1.1957636031288394,
+        "tier1": 1.0494581053224166,
+        "tier2": 1.0524127298441355,
+        "tier3": 1.0654703056946693
+      },
+      "maximumSeamGapMeters": 0.00582472341514709,
+      "maximumFullyPinnedErrorMeters": 5.587935447692871e-09,
+      "contactSurface": "physical_calculator_9024_points",
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "totalAmbiguousQueries": 8
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 29,
+          "maximumCertainPenetrationMeters": 0.005702601745724678,
+          "totalAmbiguousQueries": 72
+        }
+      ],
+      "actualTriangleCrossings": {
+        "sourcePhysicalDataSha256": "497effcc339c84c230d9c4154cce47bc2ced48874cea33f56a79ef5bdca7ccd0",
+        "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "actualPhysicalVertices": 9024,
+        "actualPhysicalTriangles": 17088,
+        "frames": [
+          {
+            "frame": 1,
+            "nonAdjacentBroadPhasePairs": 0,
+            "properEdgeFaceCrossings": 0,
+            "unresolvedBroadPhasePairs": 0,
+            "crossingsByPiecePair": []
+          },
+          {
+            "frame": 20,
+            "nonAdjacentBroadPhasePairs": 4142,
+            "properEdgeFaceCrossings": 4135,
+            "unresolvedBroadPhasePairs": 7,
+            "crossingsByPiecePair": [
+              {
+                "pieces": [
+                  "ivory",
+                  "support"
+                ],
+                "trianglePairs": 2442
+              },
+              {
+                "pieces": [
+                  "support",
+                  "support"
+                ],
+                "trianglePairs": 244
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier1"
+                ],
+                "trianglePairs": 440
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier2"
+                ],
+                "trianglePairs": 564
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier3"
+                ],
+                "trianglePairs": 163
+              },
+              {
+                "pieces": [
+                  "tier1",
+                  "tier1"
+                ],
+                "trianglePairs": 13
+              },
+              {
+                "pieces": [
+                  "tier1",
+                  "tier2"
+                ],
+                "trianglePairs": 129
+              },
+              {
+                "pieces": [
+                  "tier2",
+                  "tier2"
+                ],
+                "trianglePairs": 66
+              },
+              {
+                "pieces": [
+                  "tier2",
+                  "tier3"
+                ],
+                "trianglePairs": 64
+              },
+              {
+                "pieces": [
+                  "tier3",
+                  "tier3"
+                ],
+                "trianglePairs": 10
+              }
+            ]
+          },
+          {
+            "frame": 29,
+            "nonAdjacentBroadPhasePairs": 3657,
+            "properEdgeFaceCrossings": 3655,
+            "unresolvedBroadPhasePairs": 2,
+            "crossingsByPiecePair": [
+              {
+                "pieces": [
+                  "ivory",
+                  "support"
+                ],
+                "trianglePairs": 2771
+              },
+              {
+                "pieces": [
+                  "support",
+                  "support"
+                ],
+                "trianglePairs": 23
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier1"
+                ],
+                "trianglePairs": 263
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier2"
+                ],
+                "trianglePairs": 298
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier3"
+                ],
+                "trianglePairs": 132
+              },
+              {
+                "pieces": [
+                  "tier2",
+                  "tier3"
+                ],
+                "trianglePairs": 168
+              }
+            ]
+          }
+        ],
+        "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v002\\triangle_contact_inspection_v001\\actual_triangle_crossings.npz",
+        "dataSha256": "e6c8e40ce978de5fe512d565e4938a55a6ed5657ca7fae1f1f74a3a2b10ce221",
+        "scriptSha256": "cf910ae711472913c031c480cda8b1a87005f215212aac1918e2f653b91c1617",
+        "sourceTrajectoryUnchanged": true,
+        "clothCollisionVerified": false,
+        "fidelityVerified": false,
+        "limitation": "Only proper interior edge/face crossings in the selected recorded poses. Coplanar/endpoint pairs, thickness and continuous-time contact are not approved."
+      }
+    },
+    {
+      "label": "Contato entre camadas",
+      "folder": "xpbd_ivory_black_cloth_v003",
+      "dataSha256": "e9f59edc694ca15d10dd4636f673623084cfc1f88bccf964de63df4dbafbd22e",
+      "physicalMaximumStretchByPart": {
+        "ivory": 2.4736334576527965,
+        "support": 5.468882320064491,
+        "tier1": 2.1620329681651285,
+        "tier2": 1.3959464312755014,
+        "tier3": 1.743869127563532
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.1007527863306104,
+        "support": 1.1601260748800124,
+        "tier1": 1.0382914911673566,
+        "tier2": 1.0327537649953766,
+        "tier3": 1.0710644738337978
+      },
+      "maximumSeamGapMeters": 0.003245023503586403,
+      "maximumFullyPinnedErrorMeters": 5.587935447692871e-09,
+      "contactSurface": "physical_calculator_9024_points",
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 4,
+          "maximumCertainPenetrationMeters": 0.008880569599568844,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 7,
+          "maximumCertainPenetrationMeters": 0.014586582779884338,
+          "totalAmbiguousQueries": 3
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 52,
+          "maximumCertainPenetrationMeters": 0.010263492353260517,
+          "totalAmbiguousQueries": 76
+        }
+      ],
+      "actualTriangleCrossings": {
+        "sourcePhysicalDataSha256": "e9f59edc694ca15d10dd4636f673623084cfc1f88bccf964de63df4dbafbd22e",
+        "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "actualPhysicalVertices": 9024,
+        "actualPhysicalTriangles": 17088,
+        "frames": [
+          {
+            "frame": 1,
+            "nonAdjacentBroadPhasePairs": 0,
+            "properEdgeFaceCrossings": 0,
+            "unresolvedBroadPhasePairs": 0,
+            "crossingsByPiecePair": []
+          },
+          {
+            "frame": 20,
+            "nonAdjacentBroadPhasePairs": 532,
+            "properEdgeFaceCrossings": 532,
+            "unresolvedBroadPhasePairs": 0,
+            "crossingsByPiecePair": [
+              {
+                "pieces": [
+                  "ivory",
+                  "support"
+                ],
+                "trianglePairs": 64
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier1"
+                ],
+                "trianglePairs": 105
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier2"
+                ],
+                "trianglePairs": 96
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier3"
+                ],
+                "trianglePairs": 144
+              },
+              {
+                "pieces": [
+                  "tier1",
+                  "tier2"
+                ],
+                "trianglePairs": 15
+              },
+              {
+                "pieces": [
+                  "tier1",
+                  "tier3"
+                ],
+                "trianglePairs": 23
+              },
+              {
+                "pieces": [
+                  "tier2",
+                  "tier3"
+                ],
+                "trianglePairs": 85
+              }
+            ]
+          },
+          {
+            "frame": 29,
+            "nonAdjacentBroadPhasePairs": 824,
+            "properEdgeFaceCrossings": 823,
+            "unresolvedBroadPhasePairs": 1,
+            "crossingsByPiecePair": [
+              {
+                "pieces": [
+                  "ivory",
+                  "support"
+                ],
+                "trianglePairs": 463
+              },
+              {
+                "pieces": [
+                  "support",
+                  "support"
+                ],
+                "trianglePairs": 19
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier1"
+                ],
+                "trianglePairs": 20
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier2"
+                ],
+                "trianglePairs": 15
+              },
+              {
+                "pieces": [
+                  "support",
+                  "tier3"
+                ],
+                "trianglePairs": 69
+              },
+              {
+                "pieces": [
+                  "tier1",
+                  "tier2"
+                ],
+                "trianglePairs": 32
+              },
+              {
+                "pieces": [
+                  "tier2",
+                  "tier3"
+                ],
+                "trianglePairs": 180
+              },
+              {
+                "pieces": [
+                  "tier3",
+                  "tier3"
+                ],
+                "trianglePairs": 25
+              }
+            ]
+          }
+        ],
+        "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003\\triangle_contact_inspection_v001\\actual_triangle_crossings.npz",
+        "dataSha256": "d3e2d47465c090f255981baec15120f03cf2f3cf602f1495aa8ba8a10c4f5a3c",
+        "scriptSha256": "cf910ae711472913c031c480cda8b1a87005f215212aac1918e2f653b91c1617",
+        "sourceTrajectoryUnchanged": true,
+        "clothCollisionVerified": false,
+        "fidelityVerified": false,
+        "limitation": "Only proper interior edge/face crossings in the selected recorded poses. Coplanar/endpoint pairs, thickness and continuous-time contact are not approved."
+      }
+    },
+    {
+      "label": "Transferência do detalhe",
+      "folder": "xpbd_ivory_black_cloth_v003_surface_deform_v001",
+      "dataSha256": "8bb66023df1b134fcd728def6a6a727f2b11392d798a61df53fc02bdd61c76f9",
+      "physicalMaximumStretchByPart": {
+        "ivory": 2.4736334576527965,
+        "support": 5.468882320064491,
+        "tier1": 2.1620329681651285,
+        "tier2": 1.3959464312755014,
+        "tier3": 1.743869127563532
+      },
+      "physical95PercentileStretchPeakByPart": {
+        "ivory": 1.1007527863306104,
+        "support": 1.1601260748800124,
+        "tier1": 1.0382914911673566,
+        "tier2": 1.0327537649953766,
+        "tier3": 1.0710644738337978
+      },
+      "maximumSeamGapMeters": 0.003245023503586403,
+      "maximumFullyPinnedErrorMeters": 5.587935447692871e-09,
+      "contactSurface": "fine_detail_22080_points",
+      "bodyContacts": [
+        {
+          "proxyIndex": 0,
+          "maximumCertainInsideVertices": 302,
+          "maximumCertainPenetrationMeters": 0.008984370157122612,
+          "totalAmbiguousQueries": 4
+        },
+        {
+          "proxyIndex": 1,
+          "maximumCertainInsideVertices": 191,
+          "maximumCertainPenetrationMeters": 0.020792793482542038,
+          "totalAmbiguousQueries": 1
+        },
+        {
+          "proxyIndex": 2,
+          "maximumCertainInsideVertices": 291,
+          "maximumCertainPenetrationMeters": 0.009477908723056316,
+          "totalAmbiguousQueries": 162
+        }
+      ]
+    }
+  ],
+  "exactlyPreservedInputArrays": [
+    "actual_skin_targets",
+    "rest_points",
+    "edges",
+    "loose_edges",
+    "pin_weights",
+    "rig_deformations",
+    "bone_names",
+    "actual_simulation_skin_targets",
+    "simulation_rest_points",
+    "simulation_edges",
+    "simulation_pin_weights",
+    "simulation_loose_edges",
+    "physical_seam_pairs",
+    "simulation_faces",
+    "detail_corner_indices",
+    "detail_weights",
+    "detail_u",
+    "detail_v",
+    "detail_frame_offsets",
+    "ivory_original_world_points",
+    "support_original_world_points",
+    "tier1_original_world_points",
+    "tier2_original_world_points",
+    "tier3_original_world_points"
+  ],
+  "exactlyPreservedPhysicalArraysInDetailTransfer": [
+    "actual_simulation_points",
+    "actual_simulation_skin_targets",
+    "simulation_rest_points",
+    "simulation_faces",
+    "simulation_edges",
+    "simulation_loose_edges",
+    "simulation_pin_weights",
+    "physical_seam_pairs",
+    "rig_deformations",
+    "bone_names"
+  ],
+  "allLayersFinished": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

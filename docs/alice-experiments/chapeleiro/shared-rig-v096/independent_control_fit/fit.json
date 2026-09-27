@@ -1,0 +1,3594 @@
+{
+  "method": "Fixed actual fine preview weights; alternating rigid weighted Kabsch transforms on both existing cloth joint families",
+  "seedReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\independent_flounce_skin_seed_v001\\seed.json",
+  "physicsReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003_surface_deform_v001\\actual_sewn_solver_motion.json",
+  "parentEditableSha256": "8637e43cd83a8539d0ad408a1446ce7bc796bda20047d8d6695115d85160ddfb",
+  "physicalReferenceParentSha256": "e03074bc5a8f3de32b688b50161d91a4cde245c76cc61fbc35bfda3ae1347e5c",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualSeedDataSha256": "3cbe79d0120f4e5d45fd463867c336cb7f095273aee47db309ddd877473ce7d4",
+  "actualPhysicsDataSha256": "8bb66023df1b134fcd728def6a6a727f2b11392d798a61df53fc02bdd61c76f9",
+  "actualFrames": 29,
+  "iterationsPerFrame": 64,
+  "frames": [
+    {
+      "frame": 1,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 2.399461549147909e-07,
+            "meanMeters": 4.62645042590472e-08,
+            "p95Meters": 1.1727524666597021e-07
+          },
+          "baselineError": {
+            "maximumMeters": 2.5863887429233895e-07,
+            "meanMeters": 5.1106274991858914e-08,
+            "p95Meters": 1.2039210156988578e-07
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 2.2089989851873356e-07,
+            "meanMeters": 3.2584196880100087e-08,
+            "p95Meters": 7.348042831841161e-08
+          },
+          "baselineError": {
+            "maximumMeters": 2.358228629444871e-07,
+            "meanMeters": 3.8997550808098884e-08,
+            "p95Meters": 8.48663126551471e-08
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 4.899091519041683e-07,
+            "meanMeters": 4.5829788564278016e-08,
+            "p95Meters": 9.892957628180108e-08
+          },
+          "baselineError": {
+            "maximumMeters": 5.197922567059321e-07,
+            "meanMeters": 5.189640319898917e-08,
+            "p95Meters": 1.1145552570936058e-07
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 1.766074403975051e-07,
+            "meanMeters": 3.930574067078521e-08,
+            "p95Meters": 8.820016378963391e-08
+          },
+          "baselineError": {
+            "maximumMeters": 1.8909294651540158e-07,
+            "meanMeters": 4.5516703712076066e-08,
+            "p95Meters": 9.620320434834872e-08
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 3.494771406004325e-07,
+            "meanMeters": 5.737419549407798e-08,
+            "p95Meters": 1.4325595129560338e-07
+          },
+          "baselineError": {
+            "maximumMeters": 4.05674794572481e-07,
+            "meanMeters": 6.31897279055019e-08,
+            "p95Meters": 1.5792581725602024e-07
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 4.899091519041683e-07,
+        "meanMeters": 4.2045189194673795e-08,
+        "p95Meters": 1.0605650727200853e-07
+      },
+      "maximumFullyPinnedErrorMeters": 1.8970997287996482e-07,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 5.197922567059321e-07,
+        "meanMeters": 4.910796167626414e-08,
+        "p95Meters": 1.1307120635215978e-07
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 8.502706602944413e-11
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 8.380931144861703e-11
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 8.379721370800376e-11
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 8.379545230000868e-11
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 8.379512574145622e-11
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 8.379505780647463e-11
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 8.379504244770846e-11
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 8.379503872383023e-11
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 8.379503783225138e-11
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.00039857484330221735,
+            "meanMeters": 9.753094765258819e-05,
+            "p95Meters": 0.0002360401457577019
+          },
+          "baselineError": {
+            "maximumMeters": 0.007533491444690284,
+            "meanMeters": 0.002598913741013544,
+            "p95Meters": 0.006239283767318894
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.0016237664427843793,
+            "meanMeters": 0.00017593234518472188,
+            "p95Meters": 0.0005853909323559952
+          },
+          "baselineError": {
+            "maximumMeters": 0.010959317311869218,
+            "meanMeters": 0.00373573671343673,
+            "p95Meters": 0.009202028868562103
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.0011563412512939218,
+            "meanMeters": 0.000161860623152725,
+            "p95Meters": 0.0004456328285982829
+          },
+          "baselineError": {
+            "maximumMeters": 0.010160792654511395,
+            "meanMeters": 0.0065254363186347435,
+            "p95Meters": 0.00970922796311916
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.0007830502843597586,
+            "meanMeters": 0.00011258126031725817,
+            "p95Meters": 0.00031536125666149794
+          },
+          "baselineError": {
+            "maximumMeters": 0.011140284942695524,
+            "meanMeters": 0.007425682612638728,
+            "p95Meters": 0.010740137893785853
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.0016255659719425285,
+            "meanMeters": 0.00027084488671175064,
+            "p95Meters": 0.0007113407036124471
+          },
+          "baselineError": {
+            "maximumMeters": 0.012006267071744122,
+            "meanMeters": 0.008233931386850952,
+            "p95Meters": 0.011651626556354185
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.0016255659719425285,
+        "meanMeters": 0.00015268464815402136,
+        "p95Meters": 0.0004720884124225426
+      },
+      "maximumFullyPinnedErrorMeters": 9.016119765603159e-05,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 4.689376669200754e-05,
+        "meanMeters": 6.26927259367682e-07,
+        "p95Meters": 4.455943942668653e-06
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.03261366060146308
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.0017182915314085695
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0013475400018177627
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.0013168764625528086
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.001313214372463397
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.0013126755540291794
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.0013125860575604305
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.001312569940971457
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.0013125670239376888
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.001770860183675389,
+            "meanMeters": 0.0004985814581117327,
+            "p95Meters": 0.0011737394465246795
+          },
+          "baselineError": {
+            "maximumMeters": 0.013260265414451012,
+            "meanMeters": 0.005019607972349976,
+            "p95Meters": 0.010894858714827678
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.0021334899530823874,
+            "meanMeters": 0.00047801345271239324,
+            "p95Meters": 0.001113360801777219
+          },
+          "baselineError": {
+            "maximumMeters": 0.021904253147836436,
+            "meanMeters": 0.008183708806925647,
+            "p95Meters": 0.01856149932529553
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.003090863999280193,
+            "meanMeters": 0.0009523842894397658,
+            "p95Meters": 0.0018412416264702819
+          },
+          "baselineError": {
+            "maximumMeters": 0.02213712958801306,
+            "meanMeters": 0.014163019014401868,
+            "p95Meters": 0.020830999053405706
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.002717958555082545,
+            "meanMeters": 0.0008276916043129847,
+            "p95Meters": 0.0017407474016163027
+          },
+          "baselineError": {
+            "maximumMeters": 0.02317891313440615,
+            "meanMeters": 0.015508986836770565,
+            "p95Meters": 0.022187399885478187
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.0032888109638086545,
+            "meanMeters": 0.000894874786533455,
+            "p95Meters": 0.001772802645673574
+          },
+          "baselineError": {
+            "maximumMeters": 0.024376114613080882,
+            "meanMeters": 0.016527237396050706,
+            "p95Meters": 0.0233909727139325
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.0032888109638086545,
+        "meanMeters": 0.0006249078039098966,
+        "p95Meters": 0.0014466468211608784
+      },
+      "maximumFullyPinnedErrorMeters": 0.00014980363816296957,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 9.36677889077933e-05,
+        "meanMeters": 1.2108251600718328e-06,
+        "p95Meters": 8.929970098368508e-06
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.053291785436148355
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.01407643633537955
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0131813843043447
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.013079030789108654
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.013064612610387652
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.013062314532128722
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.013061908327335687
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.013061829173585449
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.013061813257435507
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.0027301123243133074,
+            "meanMeters": 0.0008459574383357695,
+            "p95Meters": 0.0019022020330552026
+          },
+          "baselineError": {
+            "maximumMeters": 0.017827954204425872,
+            "meanMeters": 0.0060026833867902925,
+            "p95Meters": 0.013378374663405747
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.005322531783536086,
+            "meanMeters": 0.0008899830988337434,
+            "p95Meters": 0.0023616450847186933
+          },
+          "baselineError": {
+            "maximumMeters": 0.029772632007192372,
+            "meanMeters": 0.011142311250654562,
+            "p95Meters": 0.025866269135834934
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.004984942136558903,
+            "meanMeters": 0.0011917424216317401,
+            "p95Meters": 0.0024326754008996395
+          },
+          "baselineError": {
+            "maximumMeters": 0.033306310664462456,
+            "meanMeters": 0.018137640433955958,
+            "p95Meters": 0.02889895117797218
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.0046433208017838574,
+            "meanMeters": 0.001186749346986778,
+            "p95Meters": 0.002199794327249263
+          },
+          "baselineError": {
+            "maximumMeters": 0.03294985948067604,
+            "meanMeters": 0.019608781043261622,
+            "p95Meters": 0.03029334193563285
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.004171397507132147,
+            "meanMeters": 0.0012411452650008081,
+            "p95Meters": 0.002308414377728006
+          },
+          "baselineError": {
+            "maximumMeters": 0.033678929248189576,
+            "meanMeters": 0.020801782237914138,
+            "p95Meters": 0.030969004055739685
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.005322531783536086,
+        "meanMeters": 0.0009831743261738322,
+        "p95Meters": 0.0021992241959622387
+      },
+      "maximumFullyPinnedErrorMeters": 0.00014357153465633626,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00014023797980903827,
+        "meanMeters": 1.795018203303089e-06,
+        "p95Meters": 1.3386431191207397e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.059672029940126235
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.031666102736452734
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.031095466267336756
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.031031257158396833
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.03102186213819552
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.03102025513473055
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.031019947836747174
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.0310198839313297
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.031019870602823022
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.004680405660582443,
+            "meanMeters": 0.0011229292901829384,
+            "p95Meters": 0.0026859197908392167
+          },
+          "baselineError": {
+            "maximumMeters": 0.021396419204877143,
+            "meanMeters": 0.007301070425901491,
+            "p95Meters": 0.01668774472696914
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.009814041780368253,
+            "meanMeters": 0.0014728834475484088,
+            "p95Meters": 0.003956249913556612
+          },
+          "baselineError": {
+            "maximumMeters": 0.038561020071564006,
+            "meanMeters": 0.013509357989925341,
+            "p95Meters": 0.03301510598706514
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.005122924332210776,
+            "meanMeters": 0.0011641498546650494,
+            "p95Meters": 0.002694318778991841
+          },
+          "baselineError": {
+            "maximumMeters": 0.038976789189813996,
+            "meanMeters": 0.020840756309307488,
+            "p95Meters": 0.03459285069987293
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.003709522369411424,
+            "meanMeters": 0.0011239792875219249,
+            "p95Meters": 0.0022019483906879802
+          },
+          "baselineError": {
+            "maximumMeters": 0.039828035814514766,
+            "meanMeters": 0.02248154986381647,
+            "p95Meters": 0.036934358502483715
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.005571559699049878,
+            "meanMeters": 0.0014593941664721953,
+            "p95Meters": 0.002933180022696682
+          },
+          "baselineError": {
+            "maximumMeters": 0.043912280734997616,
+            "meanMeters": 0.024717045036215107,
+            "p95Meters": 0.03954782727869972
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.009814041780368253,
+        "meanMeters": 0.0012844229669889207,
+        "p95Meters": 0.003147078384392373
+      },
+      "maximumFullyPinnedErrorMeters": 9.379923616607868e-05,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00018677996358389313,
+        "meanMeters": 2.3770186917859902e-06,
+        "p95Meters": 1.779984676636457e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.08775101836293668
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.05690373524038107
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.05651976809517059
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.056474024161928975
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.05646692357390513
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.056465673653428625
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.05646543367467486
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.05646538410570541
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.05646537380995208
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.0054143927933727656,
+            "meanMeters": 0.0014723772890992183,
+            "p95Meters": 0.003514530687318189
+          },
+          "baselineError": {
+            "maximumMeters": 0.026287536873470747,
+            "meanMeters": 0.009080209015886385,
+            "p95Meters": 0.020302595677462277
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.010822623632630004,
+            "meanMeters": 0.0019093858592907173,
+            "p95Meters": 0.004838614836814256
+          },
+          "baselineError": {
+            "maximumMeters": 0.048679248845591716,
+            "meanMeters": 0.016566102934533793,
+            "p95Meters": 0.041306844075079
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.006964499315771783,
+            "meanMeters": 0.0012103681225379664,
+            "p95Meters": 0.003065504260773516
+          },
+          "baselineError": {
+            "maximumMeters": 0.04817232335187463,
+            "meanMeters": 0.026211888633827573,
+            "p95Meters": 0.04232336616446866
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.004030894872091353,
+            "meanMeters": 0.0009010438662703357,
+            "p95Meters": 0.0021718794427924466
+          },
+          "baselineError": {
+            "maximumMeters": 0.048801281937680296,
+            "meanMeters": 0.028021716513600487,
+            "p95Meters": 0.04520844049626324
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.0056443759419482955,
+            "meanMeters": 0.0015493625748864252,
+            "p95Meters": 0.003440049474092457
+          },
+          "baselineError": {
+            "maximumMeters": 0.05320523331591486,
+            "meanMeters": 0.030544887778165393,
+            "p95Meters": 0.04873538181903819
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.010822623632630004,
+        "meanMeters": 0.0015350789351047003,
+        "p95Meters": 0.003980191470014587
+      },
+      "maximumFullyPinnedErrorMeters": 0.00014752849564110754,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00023311958290502208,
+        "meanMeters": 2.9587201819494405e-06,
+        "p95Meters": 2.2309956083579514e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.12415936523808038
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.08476393097729643
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0840477507823859
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.08394177660374913
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.08392121519709157
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.08391682656860289
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.08391584265118036
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.08391561477612695
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.08391556403185751
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.007048706827949399,
+            "meanMeters": 0.0017566425806455992,
+            "p95Meters": 0.004355878626645356
+          },
+          "baselineError": {
+            "maximumMeters": 0.03488133498742589,
+            "meanMeters": 0.011815659415404791,
+            "p95Meters": 0.02573709150029878
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.009602782584416969,
+            "meanMeters": 0.0020930983944385997,
+            "p95Meters": 0.005133641238126467
+          },
+          "baselineError": {
+            "maximumMeters": 0.06950581267349368,
+            "meanMeters": 0.020981583604435316,
+            "p95Meters": 0.0537434749277414
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.008082579246102057,
+            "meanMeters": 0.0016670729578218378,
+            "p95Meters": 0.003951897245658474
+          },
+          "baselineError": {
+            "maximumMeters": 0.0667063594018101,
+            "meanMeters": 0.0352204484866211,
+            "p95Meters": 0.05903583156778926
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.005565325313452434,
+            "meanMeters": 0.0012205412368499404,
+            "p95Meters": 0.002804118444027038
+          },
+          "baselineError": {
+            "maximumMeters": 0.06694913711568835,
+            "meanMeters": 0.038449157524782694,
+            "p95Meters": 0.06068098393717243
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.010067308190446954,
+            "meanMeters": 0.0014506202509705973,
+            "p95Meters": 0.003757983724883584
+          },
+          "baselineError": {
+            "maximumMeters": 0.06921296540281549,
+            "meanMeters": 0.04162385446148362,
+            "p95Meters": 0.061712441869500895
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.010067308190446954,
+        "meanMeters": 0.0017654231361768993,
+        "p95Meters": 0.004523469075359443
+      },
+      "maximumFullyPinnedErrorMeters": 0.00015451908049497737,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00027936292449720705,
+        "meanMeters": 3.5387791586235055e-06,
+        "p95Meters": 2.6741661460721795e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.21844496605886843
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.10990987600864184
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.10869803858489627
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.10856895802962892
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.10854917117612957
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.10854563779664056
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.10854494610899361
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.10854480139700778
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.10854477138509794
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.008634735544965506,
+            "meanMeters": 0.002022573151047023,
+            "p95Meters": 0.004751267936841747
+          },
+          "baselineError": {
+            "maximumMeters": 0.05171700235968818,
+            "meanMeters": 0.01570589646753576,
+            "p95Meters": 0.03430670745376718
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.01070431244467019,
+            "meanMeters": 0.0021778759552739326,
+            "p95Meters": 0.0054529969214854816
+          },
+          "baselineError": {
+            "maximumMeters": 0.09653420586573112,
+            "meanMeters": 0.026613900203474036,
+            "p95Meters": 0.06797417743193038
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.006163606813381533,
+            "meanMeters": 0.0016976670615325494,
+            "p95Meters": 0.004096029839015093
+          },
+          "baselineError": {
+            "maximumMeters": 0.08783477459199211,
+            "meanMeters": 0.04623693717120352,
+            "p95Meters": 0.07896757586724579
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.006514602511911163,
+            "meanMeters": 0.001610142832669682,
+            "p95Meters": 0.003923535543824592
+          },
+          "baselineError": {
+            "maximumMeters": 0.09102863934354619,
+            "meanMeters": 0.05136780394914077,
+            "p95Meters": 0.08516711980636812
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.007052286554229608,
+            "meanMeters": 0.0015662347542963649,
+            "p95Meters": 0.003178307211000776
+          },
+          "baselineError": {
+            "maximumMeters": 0.09774631803491383,
+            "meanMeters": 0.05571164649322204,
+            "p95Meters": 0.0863143555151916
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.01070431244467019,
+        "meanMeters": 0.0019403039067383042,
+        "p95Meters": 0.004752207024436606
+      },
+      "maximumFullyPinnedErrorMeters": 9.677128613071388e-05,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0003252823542066896,
+        "meanMeters": 4.118072120505285e-06,
+        "p95Meters": 3.1139181086594566e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.28393327111291017
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.12949169228908475
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.12772272191875964
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.1275435021211607
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.12751850010314442
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.12751438868931433
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.1275136323481772
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.1275134821183053
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.12751345253764845
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.008338812085923767,
+            "meanMeters": 0.0021862336956547097,
+            "p95Meters": 0.005071208329421194
+          },
+          "baselineError": {
+            "maximumMeters": 0.06930010366879885,
+            "meanMeters": 0.020428406396500946,
+            "p95Meters": 0.04514740908716122
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.010912994613624181,
+            "meanMeters": 0.0023372731973223264,
+            "p95Meters": 0.005843923475441536
+          },
+          "baselineError": {
+            "maximumMeters": 0.12319585724153781,
+            "meanMeters": 0.03304848311390031,
+            "p95Meters": 0.08257631762344197
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.00759715917383591,
+            "meanMeters": 0.0017522084930472425,
+            "p95Meters": 0.004297790904189943
+          },
+          "baselineError": {
+            "maximumMeters": 0.11000849843212258,
+            "meanMeters": 0.05808541605530442,
+            "p95Meters": 0.09902914166015844
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.0076716382780985665,
+            "meanMeters": 0.0018552323806535142,
+            "p95Meters": 0.004535131444200454
+          },
+          "baselineError": {
+            "maximumMeters": 0.11602252321894044,
+            "meanMeters": 0.06461033735817492,
+            "p95Meters": 0.10762575560233122
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.008250413005321075,
+            "meanMeters": 0.0017503784775664906,
+            "p95Meters": 0.0036072139703068385
+          },
+          "baselineError": {
+            "maximumMeters": 0.1244824690401116,
+            "meanMeters": 0.07052575557396651,
+            "p95Meters": 0.11393814130567587
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.010912994613624181,
+        "meanMeters": 0.002101703939141471,
+        "p95Meters": 0.005125553527028578
+      },
+      "maximumFullyPinnedErrorMeters": 9.985288832357052e-05,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0003711723691521645,
+        "meanMeters": 4.698603192485089e-06,
+        "p95Meters": 3.557191210769077e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.32574965321227983
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.1519543022588267
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.14995018851640834
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.14976296145526258
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.1497355709759426
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.14973041818990393
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.14972926552993002
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.14972897638167482
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.14972890373403647
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.009791213609884202,
+            "meanMeters": 0.0022243887272164137,
+            "p95Meters": 0.0052731230526010826
+          },
+          "baselineError": {
+            "maximumMeters": 0.08839084331455063,
+            "meanMeters": 0.0252858227900787,
+            "p95Meters": 0.05901577029192674
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.012998695103469961,
+            "meanMeters": 0.002597448516402415,
+            "p95Meters": 0.006276882256034577
+          },
+          "baselineError": {
+            "maximumMeters": 0.1486241748163621,
+            "meanMeters": 0.039762636614236666,
+            "p95Meters": 0.098532069824698
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.00849671842862406,
+            "meanMeters": 0.0018304250643213572,
+            "p95Meters": 0.004132426621506562
+          },
+          "baselineError": {
+            "maximumMeters": 0.13173703564803863,
+            "meanMeters": 0.07073142376956788,
+            "p95Meters": 0.11824626050173022
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.0063622339128847965,
+            "meanMeters": 0.0018674622772138782,
+            "p95Meters": 0.004291536247976892
+          },
+          "baselineError": {
+            "maximumMeters": 0.13993095346808396,
+            "meanMeters": 0.07843028315280037,
+            "p95Meters": 0.12839715097434143
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.007272369434590235,
+            "meanMeters": 0.0018193263931086446,
+            "p95Meters": 0.003753521425148296
+          },
+          "baselineError": {
+            "maximumMeters": 0.15140930185488016,
+            "meanMeters": 0.08628439525021485,
+            "p95Meters": 0.1392867337062629
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.012998695103469961,
+        "meanMeters": 0.002220231770409321,
+        "p95Meters": 0.005390168452928429
+      },
+      "maximumFullyPinnedErrorMeters": 0.00011728827643378367,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00041688137338482113,
+        "meanMeters": 5.275712474343519e-06,
+        "p95Meters": 4.0051215507824104e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.36392238301313284
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.16929168657155996
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.16692053282308664
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.1667038999228913
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.1666711307355529
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.16666487629039745
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.16666352969482504
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.1666632190743285
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.16666314898747103
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.012308774220191596,
+            "meanMeters": 0.0023554745907905014,
+            "p95Meters": 0.005578190161364992
+          },
+          "baselineError": {
+            "maximumMeters": 0.10706430899038945,
+            "meanMeters": 0.02964039980329582,
+            "p95Meters": 0.07190911157433433
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.012369444853445948,
+            "meanMeters": 0.0026816336433499563,
+            "p95Meters": 0.006378345242258703
+          },
+          "baselineError": {
+            "maximumMeters": 0.17028409424673221,
+            "meanMeters": 0.04752158584845643,
+            "p95Meters": 0.11562669935377241
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.007540692711683488,
+            "meanMeters": 0.0019545267823596695,
+            "p95Meters": 0.004507058905551627
+          },
+          "baselineError": {
+            "maximumMeters": 0.14996677047846382,
+            "meanMeters": 0.0841953205122082,
+            "p95Meters": 0.13757238065600336
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.007757250334395981,
+            "meanMeters": 0.001971167060855047,
+            "p95Meters": 0.004548786154282414
+          },
+          "baselineError": {
+            "maximumMeters": 0.16159020520670367,
+            "meanMeters": 0.09369024631113655,
+            "p95Meters": 0.14928975620950602
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.007725910022697168,
+            "meanMeters": 0.0019353001686657205,
+            "p95Meters": 0.004036114910039429
+          },
+          "baselineError": {
+            "maximumMeters": 0.1732612581897483,
+            "meanMeters": 0.1032518268966949,
+            "p95Meters": 0.16169187833709361
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.012369444853445948,
+        "meanMeters": 0.0023298190791681958,
+        "p95Meters": 0.005589641828822031
+      },
+      "maximumFullyPinnedErrorMeters": 0.0001235162582033922,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.00046249623859739657,
+        "meanMeters": 5.852702987942294e-06,
+        "p95Meters": 4.456359656670376e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.3840835373954189
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.18428766071420738
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.1825863794597477
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.18245683195367657
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.18244116924874465
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.18243884034569188
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.18243845003509235
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.18243837922866354
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.18243836640478106
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.01128837806032201,
+            "meanMeters": 0.0023787009327881216,
+            "p95Meters": 0.0060357845286214944
+          },
+          "baselineError": {
+            "maximumMeters": 0.12613931150370047,
+            "meanMeters": 0.03359319962925611,
+            "p95Meters": 0.08457087292379978
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.013824723144573347,
+            "meanMeters": 0.002676613127607098,
+            "p95Meters": 0.006324632823510458
+          },
+          "baselineError": {
+            "maximumMeters": 0.19179216691244985,
+            "meanMeters": 0.05499171197468754,
+            "p95Meters": 0.1337552879833606
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.007397185111271144,
+            "meanMeters": 0.0019859034503905667,
+            "p95Meters": 0.004507699869656264
+          },
+          "baselineError": {
+            "maximumMeters": 0.16899619136155766,
+            "meanMeters": 0.09890419958574197,
+            "p95Meters": 0.15555212791322903
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.007651127872368884,
+            "meanMeters": 0.0020950522558056037,
+            "p95Meters": 0.004792590511432872
+          },
+          "baselineError": {
+            "maximumMeters": 0.18321515481559528,
+            "meanMeters": 0.11007247652088036,
+            "p95Meters": 0.16968069966196198
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.00859100805950976,
+            "meanMeters": 0.0021265472788939235,
+            "p95Meters": 0.004438992277623536
+          },
+          "baselineError": {
+            "maximumMeters": 0.19624088238647508,
+            "meanMeters": 0.12117096560690263,
+            "p95Meters": 0.18316377919921686
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.013824723144573347,
+        "meanMeters": 0.0023747598721392048,
+        "p95Meters": 0.005734220653464141
+      },
+      "maximumFullyPinnedErrorMeters": 0.00013084667125073547,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005078417042950182,
+        "meanMeters": 6.429359715830606e-06,
+        "p95Meters": 4.903588812835267e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.3966177589602391
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.19153624537310474
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.19014731869825377
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.19001307391432168
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.18999244776913243
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.18998839355439115
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.1899874721022127
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.18998724512733536
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.18998719048249535
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.011180845231505055,
+            "meanMeters": 0.0024488889520895966,
+            "p95Meters": 0.006306275299004975
+          },
+          "baselineError": {
+            "maximumMeters": 0.14358054755704017,
+            "meanMeters": 0.036829552164800855,
+            "p95Meters": 0.09572980594608667
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.014493984661624295,
+            "meanMeters": 0.0027975684603089804,
+            "p95Meters": 0.006894138752026207
+          },
+          "baselineError": {
+            "maximumMeters": 0.21473506776967446,
+            "meanMeters": 0.06206505283677056,
+            "p95Meters": 0.15129661930847213
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.00850514932595988,
+            "meanMeters": 0.0021550020969335485,
+            "p95Meters": 0.004854748775650992
+          },
+          "baselineError": {
+            "maximumMeters": 0.1877703950759564,
+            "meanMeters": 0.11293492204694416,
+            "p95Meters": 0.1740990714699081
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.007739779366776111,
+            "meanMeters": 0.002243980106817522,
+            "p95Meters": 0.00493532505239545
+          },
+          "baselineError": {
+            "maximumMeters": 0.20482874268146178,
+            "meanMeters": 0.12654243171765736,
+            "p95Meters": 0.19011771546772097
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.007418961933988615,
+            "meanMeters": 0.0021937632772943104,
+            "p95Meters": 0.0043258228422728435
+          },
+          "baselineError": {
+            "maximumMeters": 0.2211096037795315,
+            "meanMeters": 0.14003934304319757,
+            "p95Meters": 0.20627137974356188
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.014493984661624295,
+        "meanMeters": 0.00248191089072135,
+        "p95Meters": 0.006063908353791635
+      },
+      "maximumFullyPinnedErrorMeters": 0.0001379965464257216,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005530455315376866,
+        "meanMeters": 7.006171834112374e-06,
+        "p95Meters": 5.351895211456051e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.40683788730824666
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.21012922379985996
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.20894673812056405
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.2088445552886324
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.20883170264607578
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.2088296516873089
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.208829247166721
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.2088291528290475
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.20882912977402995
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.013257519543615601,
+            "meanMeters": 0.0024253332576383737,
+            "p95Meters": 0.006199673561250258
+          },
+          "baselineError": {
+            "maximumMeters": 0.17236073271685767,
+            "meanMeters": 0.039197409326703465,
+            "p95Meters": 0.10082670499102529
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.017399005540762357,
+            "meanMeters": 0.002838246671187865,
+            "p95Meters": 0.00746052364695244
+          },
+          "baselineError": {
+            "maximumMeters": 0.21954204488104392,
+            "meanMeters": 0.06521735383533918,
+            "p95Meters": 0.16156489087664083
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.008025051088542729,
+            "meanMeters": 0.0021974836003691477,
+            "p95Meters": 0.004937887361438292
+          },
+          "baselineError": {
+            "maximumMeters": 0.1925653577135478,
+            "meanMeters": 0.11774827344179155,
+            "p95Meters": 0.17884750854061068
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.008096065595519826,
+            "meanMeters": 0.002522811053560496,
+            "p95Meters": 0.00541484177338508
+          },
+          "baselineError": {
+            "maximumMeters": 0.20941416725833378,
+            "meanMeters": 0.13226170647275506,
+            "p95Meters": 0.19493249848308797
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.007054784701982451,
+            "meanMeters": 0.0026260398914058868,
+            "p95Meters": 0.004900385296764637
+          },
+          "baselineError": {
+            "maximumMeters": 0.22509276311623636,
+            "meanMeters": 0.1452793083245811,
+            "p95Meters": 0.2111105837705029
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.017399005540762357,
+        "meanMeters": 0.0025733156504200733,
+        "p95Meters": 0.006299757304164206
+      },
+      "maximumFullyPinnedErrorMeters": 0.0001984002867123802,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0007447923231193267,
+        "meanMeters": 1.0450826941924133e-05,
+        "p95Meters": 7.656992181416141e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.6002277103619659
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.23889886414238856
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.22885754492374577
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.22815491226159046
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.22809929090773204
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.22809373096194577
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.22809292946152362
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.22809276084974556
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.22809271847528734
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.0150994416607891,
+            "meanMeters": 0.0028348256282232647,
+            "p95Meters": 0.007567352937487507
+          },
+          "baselineError": {
+            "maximumMeters": 0.18548130707307314,
+            "meanMeters": 0.04548519888283607,
+            "p95Meters": 0.1243362888036315
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.01894969139344429,
+            "meanMeters": 0.003110555195542791,
+            "p95Meters": 0.008016169500857493
+          },
+          "baselineError": {
+            "maximumMeters": 0.2365214479298122,
+            "meanMeters": 0.07092297414807804,
+            "p95Meters": 0.18645965454128755
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.00863536261663146,
+            "meanMeters": 0.0020568670649436646,
+            "p95Meters": 0.004624539906447966
+          },
+          "baselineError": {
+            "maximumMeters": 0.209272646889146,
+            "meanMeters": 0.12645931017129702,
+            "p95Meters": 0.1961226563361905
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.006875360869521953,
+            "meanMeters": 0.0022399277248735796,
+            "p95Meters": 0.004447234889958068
+          },
+          "baselineError": {
+            "maximumMeters": 0.22649383977974114,
+            "meanMeters": 0.14114106191709735,
+            "p95Meters": 0.21522313896540407
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.011923737987887529,
+            "meanMeters": 0.0025591028067370914,
+            "p95Meters": 0.005196074726063439
+          },
+          "baselineError": {
+            "maximumMeters": 0.24836606802931965,
+            "meanMeters": 0.15527604919029558,
+            "p95Meters": 0.23617361391711783
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.01894969139344429,
+        "meanMeters": 0.0027419727793533567,
+        "p95Meters": 0.00702316912833753
+      },
+      "maximumFullyPinnedErrorMeters": 0.0002940583715645042,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0011222439275294608,
+        "meanMeters": 1.680767171334508e-05,
+        "p95Meters": 0.00011155261661210432
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.3664691110150242
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.3352898788077077
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.2688798965125911
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.26483714962589605
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.26448181466078974
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.26444393496311075
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.26443889196590364
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.26443805322759606
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.2644378977360286
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.013130942101872742,
+            "meanMeters": 0.0032793219803240775,
+            "p95Meters": 0.007930412335428934
+          },
+          "baselineError": {
+            "maximumMeters": 0.18194453984013922,
+            "meanMeters": 0.050135833430285555,
+            "p95Meters": 0.12859439447247095
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.012968993724602633,
+            "meanMeters": 0.0035709070422116507,
+            "p95Meters": 0.008819339658109184
+          },
+          "baselineError": {
+            "maximumMeters": 0.25116358291670043,
+            "meanMeters": 0.0720790041992784,
+            "p95Meters": 0.1955887442156382
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.007565842659226992,
+            "meanMeters": 0.001991096651035575,
+            "p95Meters": 0.004056902732708034
+          },
+          "baselineError": {
+            "maximumMeters": 0.21829859085064296,
+            "meanMeters": 0.12941209805568002,
+            "p95Meters": 0.20222635897354904
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.00689900666701122,
+            "meanMeters": 0.0018773328705481828,
+            "p95Meters": 0.003739988692192987
+          },
+          "baselineError": {
+            "maximumMeters": 0.23991157199708776,
+            "meanMeters": 0.14677321809210953,
+            "p95Meters": 0.22300891360711994
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.015016078383426747,
+            "meanMeters": 0.0033128496107172733,
+            "p95Meters": 0.007038589559002416
+          },
+          "baselineError": {
+            "maximumMeters": 0.26213219240894475,
+            "meanMeters": 0.16401935044510893,
+            "p95Meters": 0.24564432061176295
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.015016078383426747,
+        "meanMeters": 0.0030778862316361622,
+        "p95Meters": 0.00774803756577852
+      },
+      "maximumFullyPinnedErrorMeters": 0.0003077083913965167,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.001107767707916426,
+        "meanMeters": 1.6654710505101985e-05,
+        "p95Meters": 0.0001102734242339298
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.8172021953208981
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.3344702361282297
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.3256516639179091
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.3248706598398423
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.324785332585766
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.32477492644102507
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.32477349822881707
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.32477327547682117
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.32477323830148697
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.019380096019510084,
+            "meanMeters": 0.0036298945102157944,
+            "p95Meters": 0.009043647494332688
+          },
+          "baselineError": {
+            "maximumMeters": 0.1659994599626718,
+            "meanMeters": 0.04663176830925283,
+            "p95Meters": 0.11260085281614624
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.03355235718487467,
+            "meanMeters": 0.003997380455105835,
+            "p95Meters": 0.009830224348123936
+          },
+          "baselineError": {
+            "maximumMeters": 0.22351413508420284,
+            "meanMeters": 0.06426122024270486,
+            "p95Meters": 0.17090949102885447
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.0084740869071462,
+            "meanMeters": 0.0023045778766195017,
+            "p95Meters": 0.00517701045396724
+          },
+          "baselineError": {
+            "maximumMeters": 0.190782122848876,
+            "meanMeters": 0.11867887583073174,
+            "p95Meters": 0.176909549378707
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.010018931954813706,
+            "meanMeters": 0.0027086515828994365,
+            "p95Meters": 0.00563540121371036
+          },
+          "baselineError": {
+            "maximumMeters": 0.21241966876391197,
+            "meanMeters": 0.1386110175983288,
+            "p95Meters": 0.19887230964745323
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.015102913965080199,
+            "meanMeters": 0.003337543435140163,
+            "p95Meters": 0.007381005559440403
+          },
+          "baselineError": {
+            "maximumMeters": 0.23243986790884158,
+            "meanMeters": 0.15427285800732307,
+            "p95Meters": 0.21971819788815855
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.03355235718487467,
+        "meanMeters": 0.00346751288919722,
+        "p95Meters": 0.008581991274253875
+      },
+      "maximumFullyPinnedErrorMeters": 0.00022448646899208739,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0007850735520284842,
+        "meanMeters": 1.1966354773196508e-05,
+        "p95Meters": 8.310428476528628e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.9241251154904742
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.43556394255440584
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.42432063248718577
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.42346777056750196
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.423401700795766
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.42339592182521457
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.42339530587647295
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.42339522177232203
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.42339520830026905
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.019331949100706233,
+            "meanMeters": 0.0035338751597796406,
+            "p95Meters": 0.00852061516880515
+          },
+          "baselineError": {
+            "maximumMeters": 0.14239831136544395,
+            "meanMeters": 0.04035998074295459,
+            "p95Meters": 0.09834255166276851
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.046212389538038356,
+            "meanMeters": 0.004906233142111548,
+            "p95Meters": 0.011642529145017191
+          },
+          "baselineError": {
+            "maximumMeters": 0.19353783276506792,
+            "meanMeters": 0.05462337090012388,
+            "p95Meters": 0.14879883690826373
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.012475803191907586,
+            "meanMeters": 0.0028725111315034283,
+            "p95Meters": 0.006624620530743045
+          },
+          "baselineError": {
+            "maximumMeters": 0.16140203874329184,
+            "meanMeters": 0.10542176743779101,
+            "p95Meters": 0.15005024275800863
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009031913661514093,
+            "meanMeters": 0.0025589443876992655,
+            "p95Meters": 0.005934448513235998
+          },
+          "baselineError": {
+            "maximumMeters": 0.18438855428670542,
+            "meanMeters": 0.123769522078336,
+            "p95Meters": 0.1743768243106839
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.017164802945557313,
+            "meanMeters": 0.0046866245871542336,
+            "p95Meters": 0.009662219340138525
+          },
+          "baselineError": {
+            "maximumMeters": 0.20240128734697488,
+            "meanMeters": 0.13728220302039984,
+            "p95Meters": 0.1913523526322494
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.046212389538038356,
+        "meanMeters": 0.00394462186814641,
+        "p95Meters": 0.009694951230339284
+      },
+      "maximumFullyPinnedErrorMeters": 0.00012130659842529157,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005800242673475518,
+        "meanMeters": 9.098747208782539e-06,
+        "p95Meters": 6.47144847903394e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.083711240105124
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.5888120256869711
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.5779653750926952
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.5768349896236367
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.5767191686986428
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.5767047382072227
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.5767025218688903
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.5767021340028968
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.5767020648832104
+        }
+      ]
+    },
+    {
+      "frame": 19,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.021518865212283866,
+            "meanMeters": 0.002952050200749964,
+            "p95Meters": 0.0075469763004445654
+          },
+          "baselineError": {
+            "maximumMeters": 0.12455959479860507,
+            "meanMeters": 0.038046764155977755,
+            "p95Meters": 0.0938281032481969
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.05362691337156896,
+            "meanMeters": 0.005616746436831703,
+            "p95Meters": 0.014568629932513873
+          },
+          "baselineError": {
+            "maximumMeters": 0.17388715016402836,
+            "meanMeters": 0.04938693141906808,
+            "p95Meters": 0.13414811593454415
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.03142029648402644,
+            "meanMeters": 0.0035991105528193103,
+            "p95Meters": 0.012379181661383
+          },
+          "baselineError": {
+            "maximumMeters": 0.16190530152243834,
+            "meanMeters": 0.09871811168566143,
+            "p95Meters": 0.13807926801900394
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.020806200786898706,
+            "meanMeters": 0.002985201821765832,
+            "p95Meters": 0.007291314984910193
+          },
+          "baselineError": {
+            "maximumMeters": 0.18481227685246426,
+            "meanMeters": 0.11499016743942232,
+            "p95Meters": 0.16368381319273104
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.019042032662145398,
+            "meanMeters": 0.004784454443031219,
+            "p95Meters": 0.011549154655232215
+          },
+          "baselineError": {
+            "maximumMeters": 0.18733596401540606,
+            "meanMeters": 0.12436154890743567,
+            "p95Meters": 0.1745290525491892
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.05362691337156896,
+        "meanMeters": 0.004139764670375633,
+        "p95Meters": 0.01134007337706961
+      },
+      "maximumFullyPinnedErrorMeters": 0.00012723220714816008,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005244276830101965,
+        "meanMeters": 8.542841547685794e-06,
+        "p95Meters": 6.037460963415672e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.3598817270254622
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.7631616355213916
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.7510129817820412
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.748687361308262
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.7475527737101918
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.7468719532457291
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.7464785751861659
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.7462702511928064
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.746177534629968
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.0115574478102905,
+            "meanMeters": 0.0023333092819333395,
+            "p95Meters": 0.006015232821337336
+          },
+          "baselineError": {
+            "maximumMeters": 0.11996263683731709,
+            "meanMeters": 0.03678705026022828,
+            "p95Meters": 0.08802397214530248
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.05902916344778388,
+            "meanMeters": 0.005300706410394726,
+            "p95Meters": 0.01246989813135608
+          },
+          "baselineError": {
+            "maximumMeters": 0.17345964969918354,
+            "meanMeters": 0.049345882750101586,
+            "p95Meters": 0.12375839946813741
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.016863854518527906,
+            "meanMeters": 0.00314112535426983,
+            "p95Meters": 0.008281556613162717
+          },
+          "baselineError": {
+            "maximumMeters": 0.14897242379973608,
+            "meanMeters": 0.09703855259769384,
+            "p95Meters": 0.13392394239458996
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009523513812419738,
+            "meanMeters": 0.002776422114494039,
+            "p95Meters": 0.0060018008807340515
+          },
+          "baselineError": {
+            "maximumMeters": 0.18793929182124958,
+            "meanMeters": 0.11213061482102632,
+            "p95Meters": 0.1608898147786405
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.015200308474044709,
+            "meanMeters": 0.003862946819314615,
+            "p95Meters": 0.007467882561251487
+          },
+          "baselineError": {
+            "maximumMeters": 0.1814237120190223,
+            "meanMeters": 0.11905475389485619,
+            "p95Meters": 0.16936683026385224
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.05902916344778388,
+        "meanMeters": 0.003653968862451723,
+        "p95Meters": 0.009091263987306152
+      },
+      "maximumFullyPinnedErrorMeters": 0.0001721997956189065,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005342634403060964,
+        "meanMeters": 8.685488058619583e-06,
+        "p95Meters": 6.0818748330033614e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.1168688733475218
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.6047423685454749
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.5973468873755313
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.5963673176028643
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.5961730855917328
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.5961302025614169
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.5961202214578777
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.5961177949526583
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.5961172205859872
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.008255579249507379,
+            "meanMeters": 0.0019659336558654214,
+            "p95Meters": 0.00463571219677512
+          },
+          "baselineError": {
+            "maximumMeters": 0.13309722971821455,
+            "meanMeters": 0.031917635237540966,
+            "p95Meters": 0.07564214805272361
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.044167899116512255,
+            "meanMeters": 0.003683238024245557,
+            "p95Meters": 0.010160977111129605
+          },
+          "baselineError": {
+            "maximumMeters": 0.13346685518662335,
+            "meanMeters": 0.04998092681624891,
+            "p95Meters": 0.11374199397198487
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.012742571955855207,
+            "meanMeters": 0.0020477360118057748,
+            "p95Meters": 0.005128122626032573
+          },
+          "baselineError": {
+            "maximumMeters": 0.13070067461937712,
+            "meanMeters": 0.08859817184907218,
+            "p95Meters": 0.1253281160908806
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.011837595427907964,
+            "meanMeters": 0.0025082373803786097,
+            "p95Meters": 0.005157324608104809
+          },
+          "baselineError": {
+            "maximumMeters": 0.15375908321349785,
+            "meanMeters": 0.09873177533101295,
+            "p95Meters": 0.1290875018410596
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.01340594182351713,
+            "meanMeters": 0.004646254932839158,
+            "p95Meters": 0.00906788939623239
+          },
+          "baselineError": {
+            "maximumMeters": 0.14661260916955637,
+            "meanMeters": 0.10348538826437838,
+            "p95Meters": 0.1386964699715878
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.044167899116512255,
+        "meanMeters": 0.0029218677951122034,
+        "p95Meters": 0.007502565929511534
+      },
+      "maximumFullyPinnedErrorMeters": 0.0003142455450451808,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.000550421531223411,
+        "meanMeters": 8.401278675705609e-06,
+        "p95Meters": 6.257750423205491e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.877425452815029
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.3743245943846605
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.3672668669445097
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.3663318630062954
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.36619639035668483
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.3661755697110091
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.36617214537104514
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.36617154589556616
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.3661714407699369
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.016208929585608593,
+            "meanMeters": 0.0026863905655488125,
+            "p95Meters": 0.0068182806991200565
+          },
+          "baselineError": {
+            "maximumMeters": 0.16462555969825246,
+            "meanMeters": 0.03550458207982806,
+            "p95Meters": 0.10426999889397758
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.023476314984438675,
+            "meanMeters": 0.0027792748382842454,
+            "p95Meters": 0.006909760031087934
+          },
+          "baselineError": {
+            "maximumMeters": 0.14793155499162125,
+            "meanMeters": 0.049499693162538716,
+            "p95Meters": 0.13092208536294786
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.009806837637189165,
+            "meanMeters": 0.0017891349582252797,
+            "p95Meters": 0.004422826393657488
+          },
+          "baselineError": {
+            "maximumMeters": 0.13864046727822368,
+            "meanMeters": 0.0817031647020585,
+            "p95Meters": 0.133744244711745
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.014761414224595818,
+            "meanMeters": 0.0023625398166503566,
+            "p95Meters": 0.005776882041218774
+          },
+          "baselineError": {
+            "maximumMeters": 0.14513301902959205,
+            "meanMeters": 0.08711448715848472,
+            "p95Meters": 0.14035102863030002
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.020760628928006997,
+            "meanMeters": 0.004157845102191448,
+            "p95Meters": 0.008962938436864201
+          },
+          "baselineError": {
+            "maximumMeters": 0.15668641722740287,
+            "meanMeters": 0.09364647733131329,
+            "p95Meters": 0.1482308388710392
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.023476314984438675,
+        "meanMeters": 0.002746190678437076,
+        "p95Meters": 0.006854686660762416
+      },
+      "maximumFullyPinnedErrorMeters": 0.000320321525313479,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0009951888665150508,
+        "meanMeters": 1.1560756787788306e-05,
+        "p95Meters": 8.401848861002539e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.4484403651452835
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.2948857887540711
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.2744734961119795
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.27258926314396686
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.2723452933946282
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.2723073254083479
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.27230074013498595
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.2722995181223797
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.27229929405865944
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.014962084698430083,
+            "meanMeters": 0.0033517017307908986,
+            "p95Meters": 0.008197859393313852
+          },
+          "baselineError": {
+            "maximumMeters": 0.1866133416795546,
+            "meanMeters": 0.046074374363519195,
+            "p95Meters": 0.13512703321628972
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.025021167786744895,
+            "meanMeters": 0.00310829104000648,
+            "p95Meters": 0.007835624826315208
+          },
+          "baselineError": {
+            "maximumMeters": 0.19610928717907208,
+            "meanMeters": 0.056617610898629975,
+            "p95Meters": 0.15933061026837286
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.013106799750027539,
+            "meanMeters": 0.0018887448899801806,
+            "p95Meters": 0.0041054534100109456
+          },
+          "baselineError": {
+            "maximumMeters": 0.18513817528790716,
+            "meanMeters": 0.09609561729046144,
+            "p95Meters": 0.17210949304270814
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009988399081937539,
+            "meanMeters": 0.0019384311118890835,
+            "p95Meters": 0.004368202320495548
+          },
+          "baselineError": {
+            "maximumMeters": 0.1884015433093529,
+            "meanMeters": 0.10492350258245278,
+            "p95Meters": 0.17884321795921465
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.014518682885553733,
+            "meanMeters": 0.0033272351802033826,
+            "p95Meters": 0.007267657447415155
+          },
+          "baselineError": {
+            "maximumMeters": 0.2074621144054224,
+            "meanMeters": 0.11536916322756276,
+            "p95Meters": 0.19432616163060507
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.025021167786744895,
+        "meanMeters": 0.0029412492170996555,
+        "p95Meters": 0.0074697656087154216
+      },
+      "maximumFullyPinnedErrorMeters": 0.00034264507682657075,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0015627414094341334,
+        "meanMeters": 1.6895267168510114e-05,
+        "p95Meters": 0.00011065884942473436
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.4932075979555308
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.32778533824203393
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.3103976368383324
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.3090114620985103
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.30884704026890225
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.3088216954490269
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.30881716512317015
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.3088162871613821
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.30881611861463504
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.02065443597880248,
+            "meanMeters": 0.0034025242092919094,
+            "p95Meters": 0.008926859778395926
+          },
+          "baselineError": {
+            "maximumMeters": 0.19109816672067262,
+            "meanMeters": 0.05004910667811208,
+            "p95Meters": 0.13674484357999134
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.024869611963386034,
+            "meanMeters": 0.0038456937331588373,
+            "p95Meters": 0.009273795726116231
+          },
+          "baselineError": {
+            "maximumMeters": 0.22927022168032024,
+            "meanMeters": 0.06401661171429694,
+            "p95Meters": 0.1777995169952876
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.01029687087273831,
+            "meanMeters": 0.0017358085751193535,
+            "p95Meters": 0.0037911380305947397
+          },
+          "baselineError": {
+            "maximumMeters": 0.2059954395236534,
+            "meanMeters": 0.1128049274567984,
+            "p95Meters": 0.19404453343042724
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.005714814006183836,
+            "meanMeters": 0.0015883713853760521,
+            "p95Meters": 0.003304877887104361
+          },
+          "baselineError": {
+            "maximumMeters": 0.22152542545142248,
+            "meanMeters": 0.12390831752408861,
+            "p95Meters": 0.20705881506760665
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.013144218451933672,
+            "meanMeters": 0.0032422156575682534,
+            "p95Meters": 0.007493798807618896
+          },
+          "baselineError": {
+            "maximumMeters": 0.2395132584924928,
+            "meanMeters": 0.13870811024594026,
+            "p95Meters": 0.2264911332541922
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.024869611963386034,
+        "meanMeters": 0.003141205168450634,
+        "p95Meters": 0.008448574607335705
+      },
+      "maximumFullyPinnedErrorMeters": 0.0002992582426902879,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0013571921387495983,
+        "meanMeters": 1.4645087387585842e-05,
+        "p95Meters": 9.689519485468566e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.8345548466021442
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.3843057938115173
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.37003864348449356
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.3685248234063323
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.3683455256391169
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.3683219574686124
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.3683185280121215
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.3683179768588623
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.36831788500974255
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.024154683227026325,
+            "meanMeters": 0.0037046112155656773,
+            "p95Meters": 0.009793333925443013
+          },
+          "baselineError": {
+            "maximumMeters": 0.17980764948942596,
+            "meanMeters": 0.04705243928377298,
+            "p95Meters": 0.12197856290473594
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.019954099553991484,
+            "meanMeters": 0.004335625079938636,
+            "p95Meters": 0.010439608918341092
+          },
+          "baselineError": {
+            "maximumMeters": 0.2381143339436327,
+            "meanMeters": 0.06527432392545686,
+            "p95Meters": 0.17422577866679753
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.009136268784678334,
+            "meanMeters": 0.0020685094231921827,
+            "p95Meters": 0.004348732190772278
+          },
+          "baselineError": {
+            "maximumMeters": 0.20458432246147368,
+            "meanMeters": 0.11854648777837189,
+            "p95Meters": 0.18687490958355282
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009650524254101518,
+            "meanMeters": 0.0024586864507219267,
+            "p95Meters": 0.0048503529801590785
+          },
+          "baselineError": {
+            "maximumMeters": 0.22777715699136614,
+            "meanMeters": 0.13575292047990642,
+            "p95Meters": 0.2092126531702888
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.014982609739128473,
+            "meanMeters": 0.0036804131337682586,
+            "p95Meters": 0.00788429021081259
+          },
+          "baselineError": {
+            "maximumMeters": 0.24826170142280166,
+            "meanMeters": 0.15337456092842158,
+            "p95Meters": 0.23082665104395866
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.024154683227026325,
+        "meanMeters": 0.003590077479942675,
+        "p95Meters": 0.009299224498158693
+      },
+      "maximumFullyPinnedErrorMeters": 0.0002643912249982775,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0010230218301865242,
+        "meanMeters": 1.1205529433809212e-05,
+        "p95Meters": 7.843025785244832e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.9094547198139912
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.4723907764989694
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.45622276687437735
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.4548813499238311
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.45474443842468293
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.45472728934232604
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.45472454431613984
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.4547239880444005
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.4547238628335158
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.02532112098972593,
+            "meanMeters": 0.0035592560002823195,
+            "p95Meters": 0.009786160897124542
+          },
+          "baselineError": {
+            "maximumMeters": 0.1610867959976905,
+            "meanMeters": 0.04173769232218295,
+            "p95Meters": 0.10870548934050996
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.03339168797349859,
+            "meanMeters": 0.004904695785445668,
+            "p95Meters": 0.011977410475522258
+          },
+          "baselineError": {
+            "maximumMeters": 0.24117226589538604,
+            "meanMeters": 0.062021193639070264,
+            "p95Meters": 0.1706017647682597
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.012548271502714968,
+            "meanMeters": 0.002685527386388126,
+            "p95Meters": 0.006263929557355138
+          },
+          "baselineError": {
+            "maximumMeters": 0.20085061303993088,
+            "meanMeters": 0.120554675872539,
+            "p95Meters": 0.18072822016329665
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009363616444231533,
+            "meanMeters": 0.002595502926211513,
+            "p95Meters": 0.005756908868383997
+          },
+          "baselineError": {
+            "maximumMeters": 0.22954575156834095,
+            "meanMeters": 0.13948260869317672,
+            "p95Meters": 0.20799409318568757
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.021381409267198986,
+            "meanMeters": 0.004499791625875698,
+            "p95Meters": 0.00937205974513598
+          },
+          "baselineError": {
+            "maximumMeters": 0.2506812616967555,
+            "meanMeters": 0.15776259572860646,
+            "p95Meters": 0.2304896783403469
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.03339168797349859,
+        "meanMeters": 0.003914141676895707,
+        "p95Meters": 0.010059391425654728
+      },
+      "maximumFullyPinnedErrorMeters": 0.00026234086259475757,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0008060329151243385,
+        "meanMeters": 9.4149607836713e-06,
+        "p95Meters": 7.05854315259473e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.906069128560946
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.5800544636589402
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.5668886124949889
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.555552576716588
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.5550613994848367
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.5550231867294773
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.5550156586256982
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.5550138322685437
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.5550133878280118
+        }
+      ]
+    },
+    {
+      "frame": 27,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.02216823982048423,
+            "meanMeters": 0.0033104693928569556,
+            "p95Meters": 0.008803157181945949
+          },
+          "baselineError": {
+            "maximumMeters": 0.15517648964811728,
+            "meanMeters": 0.03976110000120723,
+            "p95Meters": 0.10712898769730257
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.03866849182654429,
+            "meanMeters": 0.005585496854125161,
+            "p95Meters": 0.01332157815446324
+          },
+          "baselineError": {
+            "maximumMeters": 0.252843250560488,
+            "meanMeters": 0.06078238238379732,
+            "p95Meters": 0.17853340257653447
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.011151290950028677,
+            "meanMeters": 0.002794365812828247,
+            "p95Meters": 0.006165372297940867
+          },
+          "baselineError": {
+            "maximumMeters": 0.20463591511509155,
+            "meanMeters": 0.12258707021853245,
+            "p95Meters": 0.18287642648376837
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.01080355459008988,
+            "meanMeters": 0.002349364299514093,
+            "p95Meters": 0.005252060460950909
+          },
+          "baselineError": {
+            "maximumMeters": 0.23925877825234895,
+            "meanMeters": 0.1423616526565294,
+            "p95Meters": 0.21524564273999963
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.01775874984448702,
+            "meanMeters": 0.0044395458946789625,
+            "p95Meters": 0.008252495295349493
+          },
+          "baselineError": {
+            "maximumMeters": 0.26234305753161996,
+            "meanMeters": 0.16037591868646664,
+            "p95Meters": 0.24380171940066656
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.03866849182654429,
+        "meanMeters": 0.004042646373372745,
+        "p95Meters": 0.010313802201930395
+      },
+      "maximumFullyPinnedErrorMeters": 0.00022104405294510026,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0007005691837927785,
+        "meanMeters": 8.105640187197673e-06,
+        "p95Meters": 5.877201406719787e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.130775648473448
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.6306920797303807
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.6152783137635109
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.6135121676992777
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.6131891309414953
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.6131120628264483
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.6130907875397928
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.6130840600172144
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.6130818484756722
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.012758926484227277,
+            "meanMeters": 0.0028763658994592793,
+            "p95Meters": 0.007887571036152435
+          },
+          "baselineError": {
+            "maximumMeters": 0.13449024580618668,
+            "meanMeters": 0.039208256944960634,
+            "p95Meters": 0.10293718141535113
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.06976917072092198,
+            "meanMeters": 0.006080450100217388,
+            "p95Meters": 0.016356369710040303
+          },
+          "baselineError": {
+            "maximumMeters": 0.2533243819593661,
+            "meanMeters": 0.06385183527374662,
+            "p95Meters": 0.18776474350293695
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.013402057614725328,
+            "meanMeters": 0.0026458276144017264,
+            "p95Meters": 0.006316961505104334
+          },
+          "baselineError": {
+            "maximumMeters": 0.20439221349268577,
+            "meanMeters": 0.13106563441908448,
+            "p95Meters": 0.18949359131647203
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.009632509696116091,
+            "meanMeters": 0.0023061563711283435,
+            "p95Meters": 0.005340737659388405
+          },
+          "baselineError": {
+            "maximumMeters": 0.24001188698865802,
+            "meanMeters": 0.15033058219251452,
+            "p95Meters": 0.22236922939818884
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.023908400142332007,
+            "meanMeters": 0.0045587879688943934,
+            "p95Meters": 0.00972101557343636
+          },
+          "baselineError": {
+            "maximumMeters": 0.26295051729178986,
+            "meanMeters": 0.16335508346907257,
+            "p95Meters": 0.24778245593199733
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.06976917072092198,
+        "meanMeters": 0.004062635892139039,
+        "p95Meters": 0.010865990474317955
+      },
+      "maximumFullyPinnedErrorMeters": 0.00014193090994402073,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005417441030436076,
+        "meanMeters": 6.675714536360454e-06,
+        "p95Meters": 4.784273904678003e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.3870843908386439
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.7630275230418021
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.7359551692505323
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.732351225506818
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.7317483745676039
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.7316324964716844
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.7316080924542657
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.7316025894664021
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.7316013647740264
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "pieces": [
+        {
+          "key": "ivory",
+          "fittedError": {
+            "maximumMeters": 0.01343999591098459,
+            "meanMeters": 0.0025375121901051625,
+            "p95Meters": 0.006574865304273937
+          },
+          "baselineError": {
+            "maximumMeters": 0.1405666514872862,
+            "meanMeters": 0.0360538272947938,
+            "p95Meters": 0.09043649294788385
+          }
+        },
+        {
+          "key": "support",
+          "fittedError": {
+            "maximumMeters": 0.06107540753302145,
+            "meanMeters": 0.005412595255167099,
+            "p95Meters": 0.014908630474021588
+          },
+          "baselineError": {
+            "maximumMeters": 0.21950557406720794,
+            "meanMeters": 0.06669522977156409,
+            "p95Meters": 0.17066213748611647
+          }
+        },
+        {
+          "key": "tier1",
+          "fittedError": {
+            "maximumMeters": 0.009024619796748217,
+            "meanMeters": 0.0025484792269300297,
+            "p95Meters": 0.005500300000221875
+          },
+          "baselineError": {
+            "maximumMeters": 0.1915138071977292,
+            "meanMeters": 0.13257752168488307,
+            "p95Meters": 0.17364768036312195
+          }
+        },
+        {
+          "key": "tier2",
+          "fittedError": {
+            "maximumMeters": 0.015350319040098422,
+            "meanMeters": 0.0032445512142233444,
+            "p95Meters": 0.00671694774054621
+          },
+          "baselineError": {
+            "maximumMeters": 0.21481765692141272,
+            "meanMeters": 0.1490114328623995,
+            "p95Meters": 0.19885878086459235
+          }
+        },
+        {
+          "key": "tier3",
+          "fittedError": {
+            "maximumMeters": 0.01942121781741997,
+            "meanMeters": 0.004465238201308181,
+            "p95Meters": 0.009561301555576107
+          },
+          "baselineError": {
+            "maximumMeters": 0.22839564762510242,
+            "meanMeters": 0.16153770317476854,
+            "p95Meters": 0.21960476396013895
+          }
+        }
+      ],
+      "fittedError": {
+        "maximumMeters": 0.06107540753302145,
+        "meanMeters": 0.0038116231159774612,
+        "p95Meters": 0.009789505847401016
+      },
+      "maximumFullyPinnedErrorMeters": 0.00020465742781382036,
+      "originalFineSkinVsCalculatorTargets": {
+        "maximumMeters": 0.0005531187687117304,
+        "meanMeters": 7.005497310852564e-06,
+        "p95Meters": 5.351551677436953e-05
+      },
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 1.2445509797854049
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.6351936328518178
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.6263270823961589
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.6249820226586538
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.6246841155749867
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.6246106814732522
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.6245915178658666
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.624586310807859
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.6245849518750053
+        }
+      ]
+    }
+  ],
+  "originalRestMaximumErrorMeters": 5.066394805908203e-07,
+  "actualModifiedBones": [
+    "IvoryCloth_00_0",
+    "IvoryCloth_00_1",
+    "IvoryCloth_00_2",
+    "IvoryCloth_01_0",
+    "IvoryCloth_01_1",
+    "IvoryCloth_01_2",
+    "IvoryCloth_02_0",
+    "IvoryCloth_02_1",
+    "IvoryCloth_02_2",
+    "IvoryCloth_03_0",
+    "IvoryCloth_03_1",
+    "IvoryCloth_03_2",
+    "IvoryCloth_04_0",
+    "IvoryCloth_04_1",
+    "IvoryCloth_04_2",
+    "IvoryCloth_05_0",
+    "IvoryCloth_05_1",
+    "IvoryCloth_05_2",
+    "IvoryCloth_06_0",
+    "IvoryCloth_06_1",
+    "IvoryCloth_06_2",
+    "IvoryCloth_07_0",
+    "IvoryCloth_07_1",
+    "IvoryCloth_07_2",
+    "IvoryCloth_08_0",
+    "IvoryCloth_08_1",
+    "IvoryCloth_08_2",
+    "IvoryCloth_09_0",
+    "IvoryCloth_09_1",
+    "IvoryCloth_09_2",
+    "IvoryCloth_10_0",
+    "IvoryCloth_10_1",
+    "IvoryCloth_10_2",
+    "IvoryCloth_11_0",
+    "IvoryCloth_11_1",
+    "IvoryCloth_11_2",
+    "BlackCloth_00_0",
+    "BlackCloth_00_1",
+    "BlackCloth_00_2",
+    "BlackFlounce1_00",
+    "BlackFlounce2_00",
+    "BlackFlounce3_00",
+    "BlackCloth_01_0",
+    "BlackCloth_01_1",
+    "BlackCloth_01_2",
+    "BlackFlounce1_01",
+    "BlackFlounce2_01",
+    "BlackFlounce3_01",
+    "BlackCloth_02_0",
+    "BlackCloth_02_1",
+    "BlackCloth_02_2",
+    "BlackFlounce1_02",
+    "BlackFlounce2_02",
+    "BlackFlounce3_02",
+    "BlackCloth_03_0",
+    "BlackCloth_03_1",
+    "BlackCloth_03_2",
+    "BlackFlounce1_03",
+    "BlackFlounce2_03",
+    "BlackFlounce3_03",
+    "BlackCloth_04_0",
+    "BlackCloth_04_1",
+    "BlackCloth_04_2",
+    "BlackFlounce1_04",
+    "BlackFlounce2_04",
+    "BlackFlounce3_04",
+    "BlackCloth_05_0",
+    "BlackCloth_05_1",
+    "BlackCloth_05_2",
+    "BlackFlounce1_05",
+    "BlackFlounce2_05",
+    "BlackFlounce3_05",
+    "BlackCloth_06_0",
+    "BlackCloth_06_1",
+    "BlackCloth_06_2",
+    "BlackFlounce1_06",
+    "BlackFlounce2_06",
+    "BlackFlounce3_06",
+    "BlackCloth_07_0",
+    "BlackCloth_07_1",
+    "BlackCloth_07_2",
+    "BlackFlounce1_07",
+    "BlackFlounce2_07",
+    "BlackFlounce3_07",
+    "BlackCloth_08_0",
+    "BlackCloth_08_1",
+    "BlackCloth_08_2",
+    "BlackFlounce1_08",
+    "BlackFlounce2_08",
+    "BlackFlounce3_08",
+    "BlackCloth_09_0",
+    "BlackCloth_09_1",
+    "BlackCloth_09_2",
+    "BlackFlounce1_09",
+    "BlackFlounce2_09",
+    "BlackFlounce3_09",
+    "BlackCloth_10_0",
+    "BlackCloth_10_1",
+    "BlackCloth_10_2",
+    "BlackFlounce1_10",
+    "BlackFlounce2_10",
+    "BlackFlounce3_10",
+    "BlackCloth_11_0",
+    "BlackCloth_11_1",
+    "BlackCloth_11_2",
+    "BlackFlounce1_11",
+    "BlackFlounce2_11",
+    "BlackFlounce3_11"
+  ],
+  "actualClothBonesFitted": 108,
+  "actualSharedRigBones": 209,
+  "other101BodyAndExteriorBonesUnchanged": true,
+  "actualGeometryUvMaterialsAndWeightsUnchanged": true,
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\independent_flounce_joint_fit_v001\\fitted_five_cage_joint_frames.npz",
+  "dataSha256": "a2496fc472b285526be52724d291721f06454182e0b2e5d60f53ba93f6ba3d1c",
+  "scriptSha256": "caf3c1e56bd65e05a20dc46578485836fbea142b5af7e92da4395079f3e46c22",
+  "elapsedSeconds": 166.1566243171692,
+  "responseFitted": true,
+  "responseBaked": false,
+  "physicalTargetCollisionOrFidelityApproved": false,
+  "limitation": "Only five fine midsurface responses are approximated. Thickness, lace, other layers, all actions, collisions and actual reimported exports still require review.",
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

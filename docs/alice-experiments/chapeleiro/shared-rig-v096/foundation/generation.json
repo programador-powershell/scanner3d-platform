@@ -1,0 +1,1662 @@
+{
+  "method": "Preserved full shared rig checkpoint with measured Ivory and Black cloth study action",
+  "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_v001\\generation.json",
+  "parentGenerationSha256": "4b31d91aafad59ad9ba677beed9aca0e776c40d688e219076bd2b8bf212a33aa",
+  "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_v001\\chapeleiro_shared_rig_sewn_cloth_study.blend",
+  "editableBlendSha256": "ea6205d9e7101cadba9572c4f1d331f809153ba234b9a135105622873957244d",
+  "editableBytes": 130167778,
+  "exports": {
+    "foundation": {
+      "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\foundation_shared_rig_study.glb",
+      "modelSha256": "1c2e1a9a3af242acaaf2dd48e8c482e57e6013f8f7f84e0744012dd13752dc45",
+      "bytes": 69609560,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study",
+        "Corrida com tecido / camadas em refinamento"
+      ],
+      "actualSkinnedNodes": 229,
+      "actualSkins": 1,
+      "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "actualJointCount": 209
+    },
+    "whole": {
+      "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_shared_rig_study.glb",
+      "modelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+      "bytes": 65149880,
+      "actualSkinnedNodes": 1,
+      "actualSkins": 1,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+      "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab"
+    }
+  },
+  "riggedActualPieces": 230,
+  "sharedArmatures": 1,
+  "bones": 173,
+  "sourceWholeGeometrySha256": "10d6825fa75b34de11fbd71b7b61f69c71ec14589fb1cd035d36a6c07c5d7ece",
+  "sourceWholeUncut": true,
+  "actualAuthoringGeometryUnchanged": true,
+  "authoringCages": 14,
+  "motionAudit": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "frames": 42,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        83.0
+      ],
+      "source": "Walk",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 42,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 4.5299530029296875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "frames": 17,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        32.0
+      ],
+      "source": "Run",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 17,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 7.1302056312561035e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "frames": 137,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        273.0
+      ],
+      "source": "Attack",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 137,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 6.67572021484375e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "frames": 53,
+      "fps": 30,
+      "source": "locally rebuilt planted-key IK probe in the current fitted bind",
+      "plantedKeys": [
+        1,
+        9,
+        41,
+        53
+      ],
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 7,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 2.6226043701171875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "surfaceContactVerified": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "scriptSha256": "74cf99caf9c978d656b9ee2abfb087bd9fb504dcd429a6d0720f7139e5d61823",
+  "fieldScriptSha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+  "additionalCreditsConsumed": 0,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "publicationStatus": "local_export_pending_actual_reimport_and_photo_review",
+  "actualGeometryUnchanged": true,
+  "actualClothFieldWeightsUnchanged": true,
+  "torsoSkirtArmContaminationAbsent": true,
+  "nativeHandBindFit": true,
+  "inheritedActionsRequireRetargetReview": false,
+  "handFitScriptSha256": "dce4ce14fceaa647bee80bd0917e2fb4f383292392e3a2e8bb651bb05263975d",
+  "nativeArmComponentScriptSha256": "ee4da052995622f5578dfe6bb76c43b80ea006cc47ba68471f078032c1383364",
+  "nativeArmMembershipClassificationVerified": false,
+  "nativeHandFitInheritedFrom": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v092\\generation.json",
+  "nativeIndividualFingerGuideSha256": "cb216e4da7986cecce58dc36b73114944b234c7c309c90fed6afd5dbad68968d",
+  "retargetRequiresPoseReview": true,
+  "motionRetargetScriptSha256": "cbb4a3a9426333dc788d7407d13ae4ce9eb4c79e6212ba3488735256079fa4e0",
+  "nativeSurfaceWeightInferenceSha256": "e2ca051bf36ad0a433b03d1c248315648a3aca681ba4d6d478e34ee892850014",
+  "nativeSurfaceWeightScriptSha256": "b15503ea12d11cb26f01d4769c8b7e150c770a2057578dbdd6ce34c1ead78f7c",
+  "nativeSurfaceOwnershipVerified": false,
+  "sourceFourActionCurveHashes": {
+    "Attack / current fitted Chapeleiro motion study": "6d4ed16b42b8b1902ad57586babc358090634d43bf700ef86512620d2c083c43",
+    "Jump / current fitted planted-key IK motion study": "e52e1fcf823cffdb716ceb9550470e13d6a9e3534a32c6f7965ea3b0abc83dd8",
+    "Run / current fitted Chapeleiro motion study": "28ba81a375684fc0fd17fd935616d2c718a16f184951e1767fefdfaf11406536",
+    "Walk / current fitted Chapeleiro motion study": "c30ad39e29f93d14f6a1bf1f691e0781a1a00268ba9a317666a2b731fe44ae66"
+  },
+  "ivoryFitReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\fit.json",
+  "ivoryFitDataSha256": "6d8591053037341c685a365bce13979a85047419e0a4e295c4e198a8ff20c8d8",
+  "ivoryResponseBaked": true,
+  "ivoryStudyClip": "Corrida com tecido / camadas em refinamento",
+  "actualBakedJointMatrixChecks": [
+    {
+      "frame": 1,
+      "actualBakedJointMatrixMaximumError": 6.556510925292969e-07
+    },
+    {
+      "frame": 2,
+      "actualBakedJointMatrixMaximumError": 9.5367431640625e-07
+    },
+    {
+      "frame": 3,
+      "actualBakedJointMatrixMaximumError": 6.556510925292969e-07
+    },
+    {
+      "frame": 4,
+      "actualBakedJointMatrixMaximumError": 7.226445961905359e-07
+    },
+    {
+      "frame": 5,
+      "actualBakedJointMatrixMaximumError": 1.1784200257825006e-06
+    },
+    {
+      "frame": 6,
+      "actualBakedJointMatrixMaximumError": 1.4503578245061988e-06
+    },
+    {
+      "frame": 7,
+      "actualBakedJointMatrixMaximumError": 1.9575607426158825e-06
+    },
+    {
+      "frame": 8,
+      "actualBakedJointMatrixMaximumError": 2.9251838278288034e-06
+    },
+    {
+      "frame": 9,
+      "actualBakedJointMatrixMaximumError": 1.6357207237582827e-06
+    },
+    {
+      "frame": 10,
+      "actualBakedJointMatrixMaximumError": 1.9976596854487383e-06
+    },
+    {
+      "frame": 11,
+      "actualBakedJointMatrixMaximumError": 2.2926013341084683e-06
+    },
+    {
+      "frame": 12,
+      "actualBakedJointMatrixMaximumError": 3.062120309871297e-06
+    },
+    {
+      "frame": 13,
+      "actualBakedJointMatrixMaximumError": 3.1684007099075373e-06
+    },
+    {
+      "frame": 14,
+      "actualBakedJointMatrixMaximumError": 3.0441391592472833e-06
+    },
+    {
+      "frame": 15,
+      "actualBakedJointMatrixMaximumError": 2.1913708000420584e-06
+    },
+    {
+      "frame": 16,
+      "actualBakedJointMatrixMaximumError": 2.7696319161440996e-06
+    },
+    {
+      "frame": 17,
+      "actualBakedJointMatrixMaximumError": 2.3527968705042146e-06
+    },
+    {
+      "frame": 18,
+      "actualBakedJointMatrixMaximumError": 2.448645792130222e-06
+    },
+    {
+      "frame": 19,
+      "actualBakedJointMatrixMaximumError": 2.4154240835239094e-06
+    },
+    {
+      "frame": 20,
+      "actualBakedJointMatrixMaximumError": 3.0877970177145553e-06
+    },
+    {
+      "frame": 21,
+      "actualBakedJointMatrixMaximumError": 2.2645737733917315e-06
+    },
+    {
+      "frame": 22,
+      "actualBakedJointMatrixMaximumError": 2.182956388041557e-06
+    },
+    {
+      "frame": 23,
+      "actualBakedJointMatrixMaximumError": 2.674256697643429e-06
+    },
+    {
+      "frame": 24,
+      "actualBakedJointMatrixMaximumError": 4.15812711440644e-06
+    },
+    {
+      "frame": 25,
+      "actualBakedJointMatrixMaximumError": 3.55975531673991e-06
+    },
+    {
+      "frame": 26,
+      "actualBakedJointMatrixMaximumError": 4.10947650952842e-06
+    },
+    {
+      "frame": 27,
+      "actualBakedJointMatrixMaximumError": 3.96326236984379e-06
+    },
+    {
+      "frame": 28,
+      "actualBakedJointMatrixMaximumError": 4.048396733513648e-06
+    },
+    {
+      "frame": 29,
+      "actualBakedJointMatrixMaximumError": 3.2718847714496846e-06
+    }
+  ],
+  "wholePhysicsResponseBaked": false,
+  "otherLayersPhysicsResponseBaked": false,
+  "sourcePhotoComparisonAndExportReimportPending": true,
+  "elapsedSeconds": 64.79307198524475,
+  "authoringReferenceRoot": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094",
+  "exportsInheritedForReferenceOnly": false,
+  "modelExportedInThisRefinement": true,
+  "waistSkinRefinement": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095\\waist_skin_refinement.json",
+  "independentFlounceRig": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_independent_flounces_v003\\independent_flounce_rig.json",
+  "actualSharedBones": 209,
+  "sewnClothBake": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_v001\\sewn_cloth_bake.json",
+  "sewnClothFitReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\independent_flounce_joint_fit_v001\\fit.json",
+  "sewnClothStudyClip": "Corrida com tecido / camadas em refinamento",
+  "authoringClips": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study",
+    "Corrida com tecido / camadas em refinamento"
+  ],
+  "wholeExportInheritedUnchanged": true,
+  "actualSelectedModifierTypes": [
+    "ARMATURE"
+  ],
+  "excludedAuthoringModifiersMutedInExportMemoryOnly": [
+    {
+      "object": "Chapeleiro / intact whole exterior / skin study",
+      "modifier": "Common Chapeleiro rig / actual weighted skin",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "Authoring / 01 / long ivory gathered petticoat",
+      "modifier": "Visible petticoat follows its single thin solver",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / long ivory gathered petticoat",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / ivory lower gathered flounce",
+      "modifier": "Sewn ruffle follows continuous waist support",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / ivory lower gathered flounce",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "Authoring / 01 / ivory lower gathered flounce",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black petticoat continuous waist support",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "Authoring / 01 / black petticoat continuous waist support",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 1",
+      "modifier": "Sewn ruffle follows continuous waist support",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 1",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 1",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 2",
+      "modifier": "Sewn ruffle follows continuous waist support",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 2",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 2",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 3",
+      "modifier": "Sewn ruffle follows continuous waist support",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 3",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "Authoring / 01 / black gathered flounce 3",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / ivory scalloped floral lace / real apertures",
+      "modifier": "Lace follows actual internal cloth carrier",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / ivory scalloped floral lace / real apertures",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 1 / real apertures",
+      "modifier": "Lace follows actual internal cloth carrier",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 1 / real apertures",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 2 / real apertures",
+      "modifier": "Lace follows actual internal cloth carrier",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 2 / real apertures",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 3 / real apertures",
+      "modifier": "Lace follows actual internal cloth carrier",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / black floral lace tier 3 / real apertures",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / ivory fitted boned corset / pointed front",
+      "modifier": "Bystedt / Post sim cloth / new internal surface",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / gathered blouse / real open armholes",
+      "modifier": "Visible fabric follows its single simulation midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / gathered blouse / real open armholes",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "modifier": "Valid evaluated midsurface for deformation bindings",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right gathered puff sleeve / sewn armhole",
+      "modifier": "Visible fabric follows its single simulation midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right gathered puff sleeve / sewn armhole",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Valid evaluated midsurface for deformation bindings",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right sleeve elastic binding",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right gathered cuff frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right gathered cuff frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right cuff looped needle lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left gathered puff sleeve / sewn armhole",
+      "modifier": "Visible fabric follows its single simulation midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left gathered puff sleeve / sewn armhole",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "modifier": "Valid evaluated midsurface for deformation bindings",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left sleeve elastic binding",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left gathered cuff frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left gathered cuff frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left cuff looped needle lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / gathered scoop neckline frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / gathered scoop neckline frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / neckline looped needle lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / neckline stitched binding",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse center placket rail -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse center placket rail 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse aged brass key ornament 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse aged brass key ornament 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse aged brass key ornament 2",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse aged brass key ornament 3",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse center sewn button 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse center sewn button 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / blouse center sewn button 2",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / continuous waist and sewn crotch",
+      "modifier": "Visible fabric follows its single simulation midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / continuous waist and sewn crotch",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "modifier": "Valid evaluated midsurface for deformation bindings",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / gathered waist elastic casing",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / gathered waist elastic casing",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / front placket seam -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / front placket seam 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / sewn ivory button 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / sewn ivory button 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / sewn ivory button 2",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / sewn ivory button 3",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / bloomers / sewn ivory button 4",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / cuff elastic casing",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / gathered cuff frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / gathered cuff frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / bloomer hem floral lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / bloomer hem floral lace",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / cuff bow wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left bloomers / cuff bow wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / cuff elastic casing",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / gathered cuff frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / gathered cuff frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / bloomer hem floral lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / bloomer hem floral lace",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / cuff bow wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right bloomers / cuff bow wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / fitted leg ankle and closed toe",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / fitted leg ankle and closed toe",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / horizontal knitted bands",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / horizontal knitted bands",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / sewn front panel seam",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left stocking / sewn rear panel seam",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / fitted leg ankle and closed toe",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / fitted leg ankle and closed toe",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / horizontal knitted bands",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / horizontal knitted bands",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / sewn front panel seam",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right stocking / sewn rear panel seam",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / gathered waist casing",
+      "modifier": "Visible fabric follows its single simulation midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / gathered waist casing",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "modifier": "Valid evaluated midsurface for deformation bindings",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / ruffled edge 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / ruffled edge 0",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / looped lace edge 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / ruffled edge 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / ruffled edge 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / garter belt hem photographic lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / pointed thigh reinforcement",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / pointed thigh reinforcement",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / cup bound edge 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / cup bound edge 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / cup front stitch -0.003",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / cup front stitch 0.003",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / gathered thigh cup frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / gathered thigh cup frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / thigh cup needle lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / front suspension web",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / front suspension web",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / left garter / front suspension web / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / left garter / front suspension web / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left garter / True brass slider 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / True brass slider 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / True brass stocking clasp",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / rear suspension web",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / rear suspension web",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / left garter / rear suspension web / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / left garter / rear suspension web / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left garter / False brass slider 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / False brass slider 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / False brass stocking clasp",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / pointed thigh reinforcement",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / pointed thigh reinforcement",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / cup bound edge 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / cup bound edge 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / cup front stitch -0.003",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / cup front stitch 0.003",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / gathered thigh cup frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / gathered thigh cup frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / thigh cup needle lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / front suspension web",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / front suspension web",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / right garter / front suspension web / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / right garter / front suspension web / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right garter / True brass slider 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / True brass slider 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / True brass stocking clasp",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / rear suspension web",
+      "modifier": "Visible fabric follows its skin midsurface",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / rear suspension web",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / right garter / rear suspension web / skin midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / right garter / rear suspension web / skin midsurface",
+      "modifier": "Valid evaluated skin midsurface",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right garter / False brass slider 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / False brass slider 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / False brass stocking clasp",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / upper gathered frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / upper gathered frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / lower pointed gathered frill",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / lower pointed gathered frill",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / upper needle lace edging",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / corset hem scalloped floral lace",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / corset hem scalloped floral lace",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear ribbon bow wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear ribbon bow wing -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear hanging ribbon tail -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear hanging ribbon tail -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear ribbon bow wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear ribbon bow wing 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear hanging ribbon tail 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear hanging ribbon tail 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / corset / rear ribbon sewn knot",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "modifier": "Stable evaluated thin target / fixed diagonals",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered side cascade panel",
+      "modifier": "Visible petticoat samples its solved point positions",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered side cascade panel",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Stable evaluated thin target / fixed diagonals",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / sewn drawstring casing tape",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / sewn drawstring casing tape",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / rolled cascade lower hem",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / continuous gathering drawcord",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 2",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 3",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 4",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / drawstring brass eyelet 5",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered tie bow wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered tie bow wing -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / hanging gathered tie ribbon -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / hanging gathered tie ribbon -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered tie bow wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered tie bow wing 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / hanging gathered tie ribbon 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / hanging gathered tie ribbon 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left petticoat / gathered tie sewn knot",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered side cascade panel",
+      "modifier": "Visible petticoat samples its solved point positions",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered side cascade panel",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Skin before physical garment solver",
+      "type": "ARMATURE"
+    },
+    {
+      "object": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Cloth",
+      "type": "CLOTH"
+    },
+    {
+      "object": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "modifier": "Stable evaluated thin target / fixed diagonals",
+      "type": "TRIANGULATE"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / sewn drawstring casing tape",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / sewn drawstring casing tape",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / rolled cascade lower hem",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / continuous gathering drawcord",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 2",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 3",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 4",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / drawstring brass eyelet 5",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered tie bow wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered tie bow wing -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / hanging gathered tie ribbon -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / hanging gathered tie ribbon -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered tie bow wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered tie bow wing 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / hanging gathered tie ribbon 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / hanging gathered tie ribbon 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right petticoat / gathered tie sewn knot",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / narrow top facing band",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / narrow top facing band",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / top facing stitch 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / top facing stitch 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / curved panel seam -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / curved panel seam 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / curved seam sewing threads",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow folded wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow folded wing -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow hanging ribbon -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow hanging ribbon -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow folded wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow folded wing 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow hanging ribbon 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow hanging ribbon 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow wrapped knot",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / left garter / side bow wrapped knot",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / narrow top facing band",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / narrow top facing band",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / top facing stitch 0",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / top facing stitch 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / curved panel seam -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / curved panel seam 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / curved seam sewing threads",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow folded wing -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow folded wing -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow hanging ribbon -1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow hanging ribbon -1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow folded wing 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow folded wing 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow hanging ribbon 1",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow hanging ribbon 1",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow wrapped knot",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / right garter / side bow wrapped knot",
+      "modifier": "Bystedt / blouse thickness and UV",
+      "type": "NODES"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / elastic casing upper stitch",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    },
+    {
+      "object": "Authoring / 01 / garter belt / elastic casing lower stitch",
+      "modifier": "Sewn blouse attachment follows actual fabric",
+      "type": "SURFACE_DEFORM"
+    }
+  ],
+  "fullEditableCheckpointNotSavedOrTrimmedByExport": true,
+  "physicalSpringStudyNotBakedIntoExport": false,
+  "coupledClothStudyClipBakedIntoExport": true,
+  "limitation": "The separately named two-anagua study is fitted and baked; fitting errors, contact and photo fidelity still require actual export review."
+}

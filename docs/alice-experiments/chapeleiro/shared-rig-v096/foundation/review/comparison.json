@@ -1,0 +1,1242 @@
+{
+  "modelSha256": "1c2e1a9a3af242acaaf2dd48e8c482e57e6013f8f7f84e0744012dd13752dc45",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "fitDataSha256": "a2496fc472b285526be52724d291721f06454182e0b2e5d60f53ba93f6ba3d1c",
+  "clip": "Corrida com tecido / camadas em refinamento",
+  "actualRestCorrespondence": [
+    {
+      "key": "ivory",
+      "actualImportedVertices": 15104,
+      "originalMidsurfaceVerticesMatched": 7104,
+      "restMaximumMatchErrorMeters": 2.901903144447715e-07
+    },
+    {
+      "key": "support",
+      "actualImportedVertices": 15888,
+      "originalMidsurfaceVerticesMatched": 7488,
+      "restMaximumMatchErrorMeters": 6.448088925026241e-07
+    },
+    {
+      "key": "tier1",
+      "actualImportedVertices": 5703,
+      "originalMidsurfaceVerticesMatched": 2496,
+      "restMaximumMatchErrorMeters": 5.777443448096165e-07
+    },
+    {
+      "key": "tier2",
+      "actualImportedVertices": 5698,
+      "originalMidsurfaceVerticesMatched": 2496,
+      "restMaximumMatchErrorMeters": 6.25538234544365e-07
+    },
+    {
+      "key": "tier3",
+      "actualImportedVertices": 5698,
+      "originalMidsurfaceVerticesMatched": 2496,
+      "restMaximumMatchErrorMeters": 6.642831067438237e-07
+    }
+  ],
+  "frames": [
+    {
+      "sourcePhysicsFrame": 1,
+      "actualImportedFrame": 0.8000000715255737,
+      "actualJointMatrixMaximumError": 1.0013580322265625e-05,
+      "actualExportVsFitMaximumMeters": 5.711881679006861e-07,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 3.312066264754526e-07,
+          "actualExportVsSolverMaximumMeters": 4.2363610791651904e-07,
+          "actualExportVsSolverP95Meters": 2.231802355391933e-07
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 5.667206225532803e-07,
+          "actualExportVsSolverMaximumMeters": 5.796149474017836e-07,
+          "actualExportVsSolverP95Meters": 3.0833810313081415e-07
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.7481632722101575e-07,
+          "actualExportVsSolverMaximumMeters": 5.328207064148881e-07,
+          "actualExportVsSolverP95Meters": 3.6793678125580434e-07
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.322877714917746e-07,
+          "actualExportVsSolverMaximumMeters": 5.497422897056178e-07,
+          "actualExportVsSolverP95Meters": 4.114536319728848e-07
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.711881679006861e-07,
+          "actualExportVsSolverMaximumMeters": 6.064333243705223e-07,
+          "actualExportVsSolverP95Meters": 4.4466921301212356e-07
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 2,
+      "actualImportedFrame": 1.6000000280993325,
+      "actualJointMatrixMaximumError": 9.953975677490234e-06,
+      "actualExportVsFitMaximumMeters": 5.465881010134292e-07,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.154649465346635e-07,
+          "actualExportVsSolverMaximumMeters": 0.00039862845918326015,
+          "actualExportVsSolverP95Meters": 0.00023602582220126847
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 5.043773345986563e-07,
+          "actualExportVsSolverMaximumMeters": 0.0016237818429797129,
+          "actualExportVsSolverP95Meters": 0.0005853318392944144
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.816983682549581e-07,
+          "actualExportVsSolverMaximumMeters": 0.0011563214148576813,
+          "actualExportVsSolverP95Meters": 0.00044555621563630737
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.065378557566331e-07,
+          "actualExportVsSolverMaximumMeters": 0.0007831369677490173,
+          "actualExportVsSolverP95Meters": 0.0003150236054117192
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.465881010134292e-07,
+          "actualExportVsSolverMaximumMeters": 0.001625608904325253,
+          "actualExportVsSolverP95Meters": 0.0007112723271984832
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 3,
+      "actualImportedFrame": 2.3999999846730913,
+      "actualJointMatrixMaximumError": 9.894371032714844e-06,
+      "actualExportVsFitMaximumMeters": 1.1383556725228644e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 1.1383556725228644e-06,
+          "actualExportVsSolverMaximumMeters": 0.0017709924756854393,
+          "actualExportVsSolverP95Meters": 0.0011737862286668888
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.130034310530032e-06,
+          "actualExportVsSolverMaximumMeters": 0.0021334936614213953,
+          "actualExportVsSolverP95Meters": 0.00111362281502568
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 5.996881539078157e-07,
+          "actualExportVsSolverMaximumMeters": 0.0030912537701324855,
+          "actualExportVsSolverP95Meters": 0.001841183946621311
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.856712067514237e-07,
+          "actualExportVsSolverMaximumMeters": 0.0027183422103585625,
+          "actualExportVsSolverP95Meters": 0.0017408370836287422
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.268410954682331e-07,
+          "actualExportVsSolverMaximumMeters": 0.0032889639590193216,
+          "actualExportVsSolverP95Meters": 0.0017730376856285772
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 4,
+      "actualImportedFrame": 3.1999999412468503,
+      "actualJointMatrixMaximumError": 1.0073184967041016e-05,
+      "actualExportVsFitMaximumMeters": 1.5254375687774832e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 1.5053496019869048e-06,
+          "actualExportVsSolverMaximumMeters": 0.0027300725830341752,
+          "actualExportVsSolverP95Meters": 0.001902241559475463
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.5254375687774832e-06,
+          "actualExportVsSolverMaximumMeters": 0.005322608903193898,
+          "actualExportVsSolverP95Meters": 0.002361607355589778
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 6.966578873491542e-07,
+          "actualExportVsSolverMaximumMeters": 0.004985084345544872,
+          "actualExportVsSolverP95Meters": 0.0024328043171210926
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 6.572271524320012e-07,
+          "actualExportVsSolverMaximumMeters": 0.00464344545701516,
+          "actualExportVsSolverP95Meters": 0.0021997275162981052
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.368343133875981e-07,
+          "actualExportVsSolverMaximumMeters": 0.004171518577213389,
+          "actualExportVsSolverP95Meters": 0.0023084664127211688
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 5,
+      "actualImportedFrame": 3.999999897820609,
+      "actualJointMatrixMaximumError": 1.0967254638671875e-05,
+      "actualExportVsFitMaximumMeters": 2.9665757262125116e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 2.9665757262125116e-06,
+          "actualExportVsSolverMaximumMeters": 0.0046803737286999,
+          "actualExportVsSolverP95Meters": 0.0026859434863647984
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 2.4557554267569202e-06,
+          "actualExportVsSolverMaximumMeters": 0.009813962896753464,
+          "actualExportVsSolverP95Meters": 0.003956223830104963
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 9.077219353167307e-07,
+          "actualExportVsSolverMaximumMeters": 0.00512289539297984,
+          "actualExportVsSolverP95Meters": 0.002694240154873683
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 1.1610504494429755e-06,
+          "actualExportVsSolverMaximumMeters": 0.003709522620006931,
+          "actualExportVsSolverP95Meters": 0.0022017744423407258
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 1.102341003354418e-06,
+          "actualExportVsSolverMaximumMeters": 0.005571673470170617,
+          "actualExportVsSolverP95Meters": 0.002933291439443392
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 6,
+      "actualImportedFrame": 4.799999854394368,
+      "actualJointMatrixMaximumError": 1.150369644165039e-05,
+      "actualExportVsFitMaximumMeters": 3.81793210921386e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 3.81793210921386e-06,
+          "actualExportVsSolverMaximumMeters": 0.005414452980998274,
+          "actualExportVsSolverP95Meters": 0.0035145607606036533
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 3.658137064753195e-06,
+          "actualExportVsSolverMaximumMeters": 0.010822645913565847,
+          "actualExportVsSolverP95Meters": 0.004838701969873263
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.962383811813804e-06,
+          "actualExportVsSolverMaximumMeters": 0.006964574421707377,
+          "actualExportVsSolverP95Meters": 0.0030656698817545015
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.4247896486151877e-06,
+          "actualExportVsSolverMaximumMeters": 0.004030759327537728,
+          "actualExportVsSolverP95Meters": 0.0021720449825777333
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 2.022126903480928e-06,
+          "actualExportVsSolverMaximumMeters": 0.005644381907884286,
+          "actualExportVsSolverP95Meters": 0.0034397191126031255
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 7,
+      "actualImportedFrame": 5.599999810968127,
+      "actualJointMatrixMaximumError": 1.2040138244628906e-05,
+      "actualExportVsFitMaximumMeters": 4.50558737382635e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 4.50558737382635e-06,
+          "actualExportVsSolverMaximumMeters": 0.007048662962190612,
+          "actualExportVsSolverP95Meters": 0.004355873728819329
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 3.895285471230266e-06,
+          "actualExportVsSolverMaximumMeters": 0.009603155834368457,
+          "actualExportVsSolverP95Meters": 0.005133639030342331
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.3588638538410156e-06,
+          "actualExportVsSolverMaximumMeters": 0.008082684006472269,
+          "actualExportVsSolverP95Meters": 0.003952019887448509
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.17275534331984e-06,
+          "actualExportVsSolverMaximumMeters": 0.005565196733749165,
+          "actualExportVsSolverP95Meters": 0.0028042447297610966
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 3.528599718260371e-06,
+          "actualExportVsSolverMaximumMeters": 0.010067119405912654,
+          "actualExportVsSolverP95Meters": 0.0037581790360565804
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 8,
+      "actualImportedFrame": 6.399999767541885,
+      "actualJointMatrixMaximumError": 1.2636184692382812e-05,
+      "actualExportVsFitMaximumMeters": 4.723476507339502e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 4.723476507339502e-06,
+          "actualExportVsSolverMaximumMeters": 0.008634712156161658,
+          "actualExportVsSolverP95Meters": 0.004751328483489477
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 4.194212387888407e-06,
+          "actualExportVsSolverMaximumMeters": 0.010704740137725707,
+          "actualExportVsSolverP95Meters": 0.005452937110786953
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.461675481256773e-06,
+          "actualExportVsSolverMaximumMeters": 0.006163607195009119,
+          "actualExportVsSolverP95Meters": 0.0040959718266510466
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.66052321852689e-06,
+          "actualExportVsSolverMaximumMeters": 0.006514661273838244,
+          "actualExportVsSolverP95Meters": 0.003923487998777901
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 4.4861781710557806e-06,
+          "actualExportVsSolverMaximumMeters": 0.007052345165000543,
+          "actualExportVsSolverP95Meters": 0.003178261739517532
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 9,
+      "actualImportedFrame": 7.199999724115644,
+      "actualJointMatrixMaximumError": 1.33514404296875e-05,
+      "actualExportVsFitMaximumMeters": 5.607241753391129e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.607241753391129e-06,
+          "actualExportVsSolverMaximumMeters": 0.008338954267112274,
+          "actualExportVsSolverP95Meters": 0.005071192412680201
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 4.5562823854295065e-06,
+          "actualExportVsSolverMaximumMeters": 0.010913081877506326,
+          "actualExportVsSolverP95Meters": 0.0058439356227223535
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.34324394414442e-06,
+          "actualExportVsSolverMaximumMeters": 0.007597293300234579,
+          "actualExportVsSolverP95Meters": 0.0042979111208533306
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.154089408120955e-06,
+          "actualExportVsSolverMaximumMeters": 0.007671452822761933,
+          "actualExportVsSolverP95Meters": 0.004535337549211633
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 4.749217461128522e-06,
+          "actualExportVsSolverMaximumMeters": 0.008250501336604125,
+          "actualExportVsSolverP95Meters": 0.0036071732468793702
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 10,
+      "actualImportedFrame": 7.999999680689403,
+      "actualJointMatrixMaximumError": 1.4185905456542969e-05,
+      "actualExportVsFitMaximumMeters": 6.23772327637024e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.998075779884853e-06,
+          "actualExportVsSolverMaximumMeters": 0.009791149401831673,
+          "actualExportVsSolverP95Meters": 0.005273123580579493
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 6.23772327637024e-06,
+          "actualExportVsSolverMaximumMeters": 0.012998563125712452,
+          "actualExportVsSolverP95Meters": 0.006276873190830133
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.395044701756976e-06,
+          "actualExportVsSolverMaximumMeters": 0.008496843420773757,
+          "actualExportVsSolverP95Meters": 0.004132382705439089
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.95370715864064e-06,
+          "actualExportVsSolverMaximumMeters": 0.0063625643600852405,
+          "actualExportVsSolverP95Meters": 0.004291597824071888
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.45790362156208e-06,
+          "actualExportVsSolverMaximumMeters": 0.00727248635330683,
+          "actualExportVsSolverP95Meters": 0.003753489317707634
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 11,
+      "actualImportedFrame": 8.799999637263163,
+      "actualJointMatrixMaximumError": 1.4483928680419922e-05,
+      "actualExportVsFitMaximumMeters": 7.242274100592468e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 6.304204556300625e-06,
+          "actualExportVsSolverMaximumMeters": 0.012308762499014534,
+          "actualExportVsSolverP95Meters": 0.005578196769508884
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 7.242274100592468e-06,
+          "actualExportVsSolverMaximumMeters": 0.012369275020567269,
+          "actualExportVsSolverP95Meters": 0.006378237100297856
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.591115684758111e-06,
+          "actualExportVsSolverMaximumMeters": 0.00754083394150732,
+          "actualExportVsSolverP95Meters": 0.004507206394852706
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.45719919423828e-06,
+          "actualExportVsSolverMaximumMeters": 0.007757446250180389,
+          "actualExportVsSolverP95Meters": 0.004548890239191521
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 6.0030921507618814e-06,
+          "actualExportVsSolverMaximumMeters": 0.007726304788332663,
+          "actualExportVsSolverP95Meters": 0.004036043381597811
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 12,
+      "actualImportedFrame": 9.599999593836921,
+      "actualJointMatrixMaximumError": 1.5139579772949219e-05,
+      "actualExportVsFitMaximumMeters": 7.834860222793608e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 6.111538165541845e-06,
+          "actualExportVsSolverMaximumMeters": 0.01128829560763664,
+          "actualExportVsSolverP95Meters": 0.006035935729907313
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 7.834860222793608e-06,
+          "actualExportVsSolverMaximumMeters": 0.013824580647422301,
+          "actualExportVsSolverP95Meters": 0.006324516174052418
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.982516935643498e-06,
+          "actualExportVsSolverMaximumMeters": 0.007397514368277915,
+          "actualExportVsSolverP95Meters": 0.004507620684572701
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.845867635033121e-06,
+          "actualExportVsSolverMaximumMeters": 0.007651174055383359,
+          "actualExportVsSolverP95Meters": 0.004792575178418716
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 6.414513841210631e-06,
+          "actualExportVsSolverMaximumMeters": 0.008591383125577248,
+          "actualExportVsSolverP95Meters": 0.0044390299120627185
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 13,
+      "actualImportedFrame": 10.39999955041068,
+      "actualJointMatrixMaximumError": 1.5556812286376953e-05,
+      "actualExportVsFitMaximumMeters": 8.124457265636274e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 4.902381582366589e-06,
+          "actualExportVsSolverMaximumMeters": 0.011180628449224845,
+          "actualExportVsSolverP95Meters": 0.006306352285002584
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.124457265636274e-06,
+          "actualExportVsSolverMaximumMeters": 0.01449378935078351,
+          "actualExportVsSolverP95Meters": 0.006894127021383547
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 5.343529646559773e-06,
+          "actualExportVsSolverMaximumMeters": 0.008505174978919262,
+          "actualExportVsSolverP95Meters": 0.004854752759729447
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 6.1408114438546484e-06,
+          "actualExportVsSolverMaximumMeters": 0.007739701692064435,
+          "actualExportVsSolverP95Meters": 0.004935406657920063
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 6.227077871451313e-06,
+          "actualExportVsSolverMaximumMeters": 0.007419176888604315,
+          "actualExportVsSolverP95Meters": 0.004325819823154805
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 14,
+      "actualImportedFrame": 11.199999506984438,
+      "actualJointMatrixMaximumError": 1.6033649444580078e-05,
+      "actualExportVsFitMaximumMeters": 7.258102522745457e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.501591851646094e-06,
+          "actualExportVsSolverMaximumMeters": 0.013257494240242914,
+          "actualExportVsSolverP95Meters": 0.006199713740284448
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 7.258102522745457e-06,
+          "actualExportVsSolverMaximumMeters": 0.017399130359484035,
+          "actualExportVsSolverP95Meters": 0.00746055515796838
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.775703683099453e-06,
+          "actualExportVsSolverMaximumMeters": 0.008025158202000063,
+          "actualExportVsSolverP95Meters": 0.00493785661122831
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.741552660706019e-06,
+          "actualExportVsSolverMaximumMeters": 0.008096195472957,
+          "actualExportVsSolverP95Meters": 0.005414876183400465
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.71721900102284e-06,
+          "actualExportVsSolverMaximumMeters": 0.007054749140590908,
+          "actualExportVsSolverP95Meters": 0.004900325329290065
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 15,
+      "actualImportedFrame": 11.999999463558197,
+      "actualJointMatrixMaximumError": 1.633167266845703e-05,
+      "actualExportVsFitMaximumMeters": 8.776052034831532e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.69602342516209e-06,
+          "actualExportVsSolverMaximumMeters": 0.015099412485548221,
+          "actualExportVsSolverP95Meters": 0.0075674228678568895
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.776052034831532e-06,
+          "actualExportVsSolverMaximumMeters": 0.01894997821137983,
+          "actualExportVsSolverP95Meters": 0.008016107014478326
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 3.6559646664548073e-06,
+          "actualExportVsSolverMaximumMeters": 0.00863542814590781,
+          "actualExportVsSolverP95Meters": 0.00462472465781962
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 5.292268111839479e-06,
+          "actualExportVsSolverMaximumMeters": 0.006875188192093274,
+          "actualExportVsSolverP95Meters": 0.004447301055123367
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.6415897254060975e-06,
+          "actualExportVsSolverMaximumMeters": 0.011923139785106233,
+          "actualExportVsSolverP95Meters": 0.005196065558310273
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 16,
+      "actualImportedFrame": 12.799999420131956,
+      "actualJointMatrixMaximumError": 1.6570091247558594e-05,
+      "actualExportVsFitMaximumMeters": 9.703579168970814e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 9.561678369766758e-06,
+          "actualExportVsSolverMaximumMeters": 0.01313096428561813,
+          "actualExportVsSolverP95Meters": 0.007930503426747133
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 9.703579168970814e-06,
+          "actualExportVsSolverMaximumMeters": 0.012968864941019932,
+          "actualExportVsSolverP95Meters": 0.008819366930420519
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.6664977020258774e-06,
+          "actualExportVsSolverMaximumMeters": 0.007566102834414418,
+          "actualExportVsSolverP95Meters": 0.004056879783464664
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.3815803031593076e-06,
+          "actualExportVsSolverMaximumMeters": 0.006899095689066413,
+          "actualExportVsSolverP95Meters": 0.003739913175853637
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 7.581129146869124e-06,
+          "actualExportVsSolverMaximumMeters": 0.015016169038807951,
+          "actualExportVsSolverP95Meters": 0.007037996294953228
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 17,
+      "actualImportedFrame": 13.599999376705714,
+      "actualJointMatrixMaximumError": 1.6927719116210938e-05,
+      "actualExportVsFitMaximumMeters": 8.998554149655368e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 7.84095507693634e-06,
+          "actualExportVsSolverMaximumMeters": 0.019380225723405198,
+          "actualExportVsSolverP95Meters": 0.009043565754400539
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.998554149655368e-06,
+          "actualExportVsSolverMaximumMeters": 0.033552368010184415,
+          "actualExportVsSolverP95Meters": 0.009830092269515494
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.5458998758268568e-06,
+          "actualExportVsSolverMaximumMeters": 0.008474268675735183,
+          "actualExportVsSolverP95Meters": 0.005177065626713321
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.896122689372219e-06,
+          "actualExportVsSolverMaximumMeters": 0.010019035580233714,
+          "actualExportVsSolverP95Meters": 0.005635531649738568
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 6.301243421851956e-06,
+          "actualExportVsSolverMaximumMeters": 0.015103119664169126,
+          "actualExportVsSolverP95Meters": 0.007380887338547644
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 18,
+      "actualImportedFrame": 14.399999333279473,
+      "actualJointMatrixMaximumError": 1.6808509826660156e-05,
+      "actualExportVsFitMaximumMeters": 8.082117764583555e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 6.103958523137971e-06,
+          "actualExportVsSolverMaximumMeters": 0.01933203722287455,
+          "actualExportVsSolverP95Meters": 0.00852058138019496
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.082117764583555e-06,
+          "actualExportVsSolverMaximumMeters": 0.04621235929470833,
+          "actualExportVsSolverP95Meters": 0.011642632297783484
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 3.3444220176274742e-06,
+          "actualExportVsSolverMaximumMeters": 0.012475877081181894,
+          "actualExportVsSolverP95Meters": 0.006624471434257102
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.0753841790830343e-06,
+          "actualExportVsSolverMaximumMeters": 0.009031886035933858,
+          "actualExportVsSolverP95Meters": 0.005934544026728437
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 2.287118988406784e-06,
+          "actualExportVsSolverMaximumMeters": 0.017164502463319745,
+          "actualExportVsSolverP95Meters": 0.009662238422735817
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 19,
+      "actualImportedFrame": 15.199999289853233,
+      "actualJointMatrixMaximumError": 1.7344951629638672e-05,
+      "actualExportVsFitMaximumMeters": 9.858116582310066e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.080059889741003e-06,
+          "actualExportVsSolverMaximumMeters": 0.021518928935638594,
+          "actualExportVsSolverP95Meters": 0.007546915481973902
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 9.858116582310066e-06,
+          "actualExportVsSolverMaximumMeters": 0.05362701289150843,
+          "actualExportVsSolverP95Meters": 0.014568595163651247
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.5304758023193406e-06,
+          "actualExportVsSolverMaximumMeters": 0.031420268227645896,
+          "actualExportVsSolverP95Meters": 0.01237913280103259
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.15422037089732e-06,
+          "actualExportVsSolverMaximumMeters": 0.020806190491751083,
+          "actualExportVsSolverP95Meters": 0.007291429721403524
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 5.964340518923001e-06,
+          "actualExportVsSolverMaximumMeters": 0.01904191995874228,
+          "actualExportVsSolverP95Meters": 0.01154898504201337
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "actualJointMatrixMaximumError": 1.7762184143066406e-05,
+      "actualExportVsFitMaximumMeters": 1.0658203284332119e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 7.293571171578858e-06,
+          "actualExportVsSolverMaximumMeters": 0.011557355464892394,
+          "actualExportVsSolverP95Meters": 0.006015382533056425
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.0658203284332119e-05,
+          "actualExportVsSolverMaximumMeters": 0.059029178934863945,
+          "actualExportVsSolverP95Meters": 0.012470010617325706
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.057241953561458e-06,
+          "actualExportVsSolverMaximumMeters": 0.016863967779456136,
+          "actualExportVsSolverP95Meters": 0.008281326576675782
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.2895624748951925e-06,
+          "actualExportVsSolverMaximumMeters": 0.009523277914973935,
+          "actualExportVsSolverP95Meters": 0.006001838206258673
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 3.311074285557457e-06,
+          "actualExportVsSolverMaximumMeters": 0.015200273096650806,
+          "actualExportVsSolverP95Meters": 0.007467900914032171
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 21,
+      "actualImportedFrame": 16.799999203000752,
+      "actualJointMatrixMaximumError": 1.7642974853515625e-05,
+      "actualExportVsFitMaximumMeters": 1.0135214340539097e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 6.787790496742175e-06,
+          "actualExportVsSolverMaximumMeters": 0.00825549049243596,
+          "actualExportVsSolverP95Meters": 0.004635683575604582
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.0135214340539097e-05,
+          "actualExportVsSolverMaximumMeters": 0.044168089786275275,
+          "actualExportVsSolverP95Meters": 0.010161034662286584
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 4.474044391703156e-06,
+          "actualExportVsSolverMaximumMeters": 0.012742382724318093,
+          "actualExportVsSolverP95Meters": 0.005128093901995322
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.6239259018234685e-06,
+          "actualExportVsSolverMaximumMeters": 0.01183755685301099,
+          "actualExportVsSolverP95Meters": 0.0051572537027672425
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 4.888861443989116e-06,
+          "actualExportVsSolverMaximumMeters": 0.013405867455090283,
+          "actualExportVsSolverP95Meters": 0.009068013720018862
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 22,
+      "actualImportedFrame": 17.59999915957451,
+      "actualJointMatrixMaximumError": 1.5676021575927734e-05,
+      "actualExportVsFitMaximumMeters": 8.442334433559906e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 7.466200521267066e-06,
+          "actualExportVsSolverMaximumMeters": 0.016209003925356343,
+          "actualExportVsSolverP95Meters": 0.0068182901528375355
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.442334433559906e-06,
+          "actualExportVsSolverMaximumMeters": 0.023476176324491803,
+          "actualExportVsSolverP95Meters": 0.006909904578127229
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.639076970406127e-06,
+          "actualExportVsSolverMaximumMeters": 0.00980690057543357,
+          "actualExportVsSolverP95Meters": 0.004422685272665128
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.346939616552161e-06,
+          "actualExportVsSolverMaximumMeters": 0.014761339246327882,
+          "actualExportVsSolverP95Meters": 0.005776772898848894
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 3.930679766435087e-06,
+          "actualExportVsSolverMaximumMeters": 0.020760560877321154,
+          "actualExportVsSolverP95Meters": 0.008962870397141548
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 23,
+      "actualImportedFrame": 18.39999911614827,
+      "actualJointMatrixMaximumError": 1.3887882232666016e-05,
+      "actualExportVsFitMaximumMeters": 1.1446580159791761e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 8.38997960440552e-06,
+          "actualExportVsSolverMaximumMeters": 0.014962073766509933,
+          "actualExportVsSolverP95Meters": 0.008197825363994429
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.1446580159791761e-05,
+          "actualExportVsSolverMaximumMeters": 0.025021375885333343,
+          "actualExportVsSolverP95Meters": 0.007835589867473841
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.608037091901118e-06,
+          "actualExportVsSolverMaximumMeters": 0.013106726701151558,
+          "actualExportVsSolverP95Meters": 0.004105416958126155
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.3290175142000552e-06,
+          "actualExportVsSolverMaximumMeters": 0.009988625674305104,
+          "actualExportVsSolverP95Meters": 0.0043681791357777335
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 2.410374556937835e-06,
+          "actualExportVsSolverMaximumMeters": 0.014517656903395652,
+          "actualExportVsSolverP95Meters": 0.007267820021748246
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 24,
+      "actualImportedFrame": 19.199999072722026,
+      "actualJointMatrixMaximumError": 1.3649463653564453e-05,
+      "actualExportVsFitMaximumMeters": 1.1874577143614752e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 8.339338729794865e-06,
+          "actualExportVsSolverMaximumMeters": 0.020654477508767616,
+          "actualExportVsSolverP95Meters": 0.008926711731056105
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.1874577143614752e-05,
+          "actualExportVsSolverMaximumMeters": 0.02486966106516818,
+          "actualExportVsSolverP95Meters": 0.009273685749545102
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 2.24003629122812e-06,
+          "actualExportVsSolverMaximumMeters": 0.010296812129583088,
+          "actualExportVsSolverP95Meters": 0.0037912039175308967
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.135481004245045e-06,
+          "actualExportVsSolverMaximumMeters": 0.0057147575359318276,
+          "actualExportVsSolverP95Meters": 0.0033050018895385094
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 3.8327089975001154e-06,
+          "actualExportVsSolverMaximumMeters": 0.01314443735886066,
+          "actualExportVsSolverP95Meters": 0.0074933483623567335
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 25,
+      "actualImportedFrame": 19.999999029295786,
+      "actualJointMatrixMaximumError": 1.4483928680419922e-05,
+      "actualExportVsFitMaximumMeters": 1.2431675165574397e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 7.613495673453584e-06,
+          "actualExportVsSolverMaximumMeters": 0.024154415586061923,
+          "actualExportVsSolverP95Meters": 0.009793311297055692
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.2431675165574397e-05,
+          "actualExportVsSolverMaximumMeters": 0.019953923723207045,
+          "actualExportVsSolverP95Meters": 0.010439752472850214
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 3.3808117867415855e-06,
+          "actualExportVsSolverMaximumMeters": 0.009136104044530415,
+          "actualExportVsSolverP95Meters": 0.004348796870357826
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.809974082899143e-06,
+          "actualExportVsSolverMaximumMeters": 0.00965036412023253,
+          "actualExportVsSolverP95Meters": 0.004850337144562032
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 2.951810395363411e-06,
+          "actualExportVsSolverMaximumMeters": 0.014982665579476518,
+          "actualExportVsSolverP95Meters": 0.007884424472237613
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 26,
+      "actualImportedFrame": 20.799998985869543,
+      "actualJointMatrixMaximumError": 1.4901161193847656e-05,
+      "actualExportVsFitMaximumMeters": 1.0901836306580294e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.948461667479101e-06,
+          "actualExportVsSolverMaximumMeters": 0.025320998018423614,
+          "actualExportVsSolverP95Meters": 0.00978612807553193
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.0901836306580294e-05,
+          "actualExportVsSolverMaximumMeters": 0.03339174198887455,
+          "actualExportVsSolverP95Meters": 0.0119773930400766
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 3.329780059127183e-06,
+          "actualExportVsSolverMaximumMeters": 0.012548095679027132,
+          "actualExportVsSolverP95Meters": 0.006263737102962984
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 4.4039729558141875e-06,
+          "actualExportVsSolverMaximumMeters": 0.009363381525657808,
+          "actualExportVsSolverP95Meters": 0.005757078565286048
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 3.078474403478484e-06,
+          "actualExportVsSolverMaximumMeters": 0.021381573025159573,
+          "actualExportVsSolverP95Meters": 0.009372133721985223
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 27,
+      "actualImportedFrame": 21.599998942443303,
+      "actualJointMatrixMaximumError": 1.519918441772461e-05,
+      "actualExportVsFitMaximumMeters": 1.1636443202886326e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 5.386318234287953e-06,
+          "actualExportVsSolverMaximumMeters": 0.02216808741882684,
+          "actualExportVsSolverP95Meters": 0.008803137685406118
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.1636443202886326e-05,
+          "actualExportVsSolverMaximumMeters": 0.038668333907021894,
+          "actualExportVsSolverP95Meters": 0.013321253661372014
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 1.5900673502710668e-06,
+          "actualExportVsSolverMaximumMeters": 0.011151416520282984,
+          "actualExportVsSolverP95Meters": 0.006165321472284694
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.730825297745726e-06,
+          "actualExportVsSolverMaximumMeters": 0.01080367855652251,
+          "actualExportVsSolverP95Meters": 0.005251911749426803
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 4.628740181581463e-06,
+          "actualExportVsSolverMaximumMeters": 0.017758826298839077,
+          "actualExportVsSolverP95Meters": 0.008252562602579866
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 28,
+      "actualImportedFrame": 22.39999889901706,
+      "actualJointMatrixMaximumError": 1.519918441772461e-05,
+      "actualExportVsFitMaximumMeters": 1.2569758968604946e-05,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 1.1433550549899695e-05,
+          "actualExportVsSolverMaximumMeters": 0.012758964487560922,
+          "actualExportVsSolverP95Meters": 0.00788823397758604
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 1.2569758968604946e-05,
+          "actualExportVsSolverMaximumMeters": 0.06976931230058389,
+          "actualExportVsSolverP95Meters": 0.016356062545630875
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 1.3121742942373918e-06,
+          "actualExportVsSolverMaximumMeters": 0.013402059803758068,
+          "actualExportVsSolverP95Meters": 0.006317010926639924
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 2.7017966508773237e-06,
+          "actualExportVsSolverMaximumMeters": 0.00963243098846476,
+          "actualExportVsSolverP95Meters": 0.005340737119163195
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 6.424840129347549e-06,
+          "actualExportVsSolverMaximumMeters": 0.023908469404027178,
+          "actualExportVsSolverP95Meters": 0.009721206121555257
+        }
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "actualJointMatrixMaximumError": 1.0058692204717445e-05,
+      "actualExportVsFitMaximumMeters": 8.872875890437644e-06,
+      "parts": [
+        {
+          "key": "ivory",
+          "actualExportVsFitMaximumMeters": 8.401807337253822e-06,
+          "actualExportVsSolverMaximumMeters": 0.013440005169398316,
+          "actualExportVsSolverP95Meters": 0.006573746048811981
+        },
+        {
+          "key": "support",
+          "actualExportVsFitMaximumMeters": 8.872875890437644e-06,
+          "actualExportVsSolverMaximumMeters": 0.06107528568455108,
+          "actualExportVsSolverP95Meters": 0.014908751179025419
+        },
+        {
+          "key": "tier1",
+          "actualExportVsFitMaximumMeters": 3.1378072543404256e-06,
+          "actualExportVsSolverMaximumMeters": 0.009024463118205567,
+          "actualExportVsSolverP95Meters": 0.005500374232974841
+        },
+        {
+          "key": "tier2",
+          "actualExportVsFitMaximumMeters": 3.394578413500631e-06,
+          "actualExportVsSolverMaximumMeters": 0.015350494889438106,
+          "actualExportVsSolverP95Meters": 0.0067171005952097245
+        },
+        {
+          "key": "tier3",
+          "actualExportVsFitMaximumMeters": 7.1699652935273925e-06,
+          "actualExportVsSolverMaximumMeters": 0.019421095243531306,
+          "actualExportVsSolverP95Meters": 0.009561221765741909
+        }
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\actual_exported_five_garment_frames.npz",
+  "dataSha256": "20122644bfa3ff41d006e396ef627119ad75d301857ac7649bc366caaf086a6f",
+  "scriptSha256": "b0ca478c5bf484007b0283a1d729d6faf075faef55aa6269d59a0b5acf1fb4eb",
+  "actualFiveGarmentSurfacesMeasured": true,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "renders": [
+    {
+      "sourcePhysicsFrame": 1,
+      "actualImportedFrame": 0.8000000715255737,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_01_front.png",
+      "sha256": "87b055cd4ce9e4c75cec10fd38d66c13d8344b400d842d93f983b000fb0c58f7",
+      "cameraPosition": [
+        0.0008925125002861023,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 1,
+      "actualImportedFrame": 0.8000000715255737,
+      "view": "back",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_01_back.png",
+      "sha256": "7975a3dc020b03479e98301364cd8c6030d86403f9837b526648d38dbe679c88",
+      "cameraPosition": [
+        0.0008925125002861023,
+        2.985128402709961,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_20_front.png",
+      "sha256": "8739195a60b775dae4132ee5b849d250815733d08174f7b26577361e0f219aaa",
+      "cameraPosition": [
+        0.0008925125002861023,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_29_threequarter.png",
+      "sha256": "5fd93ce99212367be14e4309dcb6fa439cee670086c76abb61f6497ea94abdb2",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.49074387550354,
+        0.7127175331115723
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "profile",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_29_profile.png",
+      "sha256": "c2421251bae0db90e7134fc388b1a7d8a935f59ae36b759e2245c4dc0ef3f3a4",
+      "cameraPosition": [
+        2.9862687587738037,
+        -0.00024800747632980347,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "back",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_29_back.png",
+      "sha256": "44fb636a8576e68e4d0f935f4d496da035f1f064aab8eccff64ff8f2e993bb5c",
+      "cameraPosition": [
+        0.0008925125002861023,
+        2.985128402709961,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    }
+  ],
+  "actualSkeletons": 1,
+  "actualSkinnedMeshes": 229,
+  "modelUnchanged": true,
+  "finalFbxExported": false,
+  "limitation": "Reimported fitted study, not the physical trajectory itself. Residuals, body and layer contacts, all actions, other layers and photo fidelity remain unapproved."
+}

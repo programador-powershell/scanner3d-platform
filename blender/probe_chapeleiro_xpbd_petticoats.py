@@ -17,6 +17,8 @@ p.add_argument('--contacts', required=True)
 p.add_argument('--output', required=True)
 p.add_argument('--substeps', type=int, default=8)
 p.add_argument('--iterations', type=int, default=24)
+p.add_argument('--verified-body-recovery',action=argparse.BooleanOptionalAction,default=False)
+p.add_argument('--layer-order-contacts',action=argparse.BooleanOptionalAction,default=False)
 a = p.parse_args(sys.argv[sys.argv.index('--')+1:])
 assert a.substeps > 0 and a.iterations > 0
 read = lambda f: json.loads(Path(f).read_text(encoding='utf-8'))
@@ -30,6 +32,7 @@ assert not out.exists()
 out.mkdir(parents=True)
 sys.path.insert(0, str(Path(__file__).parent))
 from chapeleiro_retopo_cloth_assembly import RestDetailTransfer
+from chapeleiro_xpbd_surface_contacts import closed_state,outside_candidate,ordered_layer_contact
 rest = d['simulation_rest_points'].astype(np.float64)
 faces = d['simulation_faces']
 edges = d['simulation_edges'][~d['simulation_loose_edges']]
@@ -40,11 +43,12 @@ transfer = RestDetailTransfer(d['detail_corner_indices'], d['detail_weights'], d
 assert np.max(np.abs(transfer.offsets-d['detail_frame_offsets'])) < 1e-6
 diagonals = np.concatenate([faces[:,[0,2]], faces[:,[1,3]]])
 structural = np.unique(np.sort(np.concatenate([edges,diagonals,seams]),axis=1),axis=0)
-bending, start, part_ids = [], 0, []
+bending, start, part_ids, part_grids = [], 0, [], []
 for part in r['parts']:
     rows, around = part['simulationRows'],part['simulationAround']
     grid = np.arange(start,start+rows*around).reshape(rows,around)
     part_ids.append(grid.ravel())
+    part_grids.append(grid)
     bending.extend(np.stack([grid[:-2].ravel(),grid[2:].ravel()],axis=1).tolist())
     bending.extend(np.stack([grid.ravel(),np.roll(grid,-2,axis=1).ravel()],axis=1).tolist())
     start += rows*around
@@ -111,6 +115,17 @@ def body_contact(trees, bounds):
             nearest, normal, index, distance = tree.find_nearest(Vector(positions[i]))
             assert nearest is not None
             signed = (Vector(positions[i])-nearest).dot(normal)
+            if a.verified_body_recovery:
+                state=closed_state(tree,positions[i])
+                if state is None:continue
+                if state:
+                    candidate=outside_candidate(tree,positions[i],nearest,normal,margin)
+                    if candidate is not None:positions[i]=candidate;count+=1
+                    continue
+                if 1e-10<distance<margin:
+                    candidate=outside_candidate(tree,positions[i],nearest,normal,margin)
+                    if candidate is not None:positions[i]=candidate;count+=1
+                continue
             if signed < 0:
                 answers=[ray_inside(tree,positions[i],direction) for direction in ray_directions]
                 if answers[0] != answers[1]: continue
@@ -162,7 +177,7 @@ def measure(frame):
 
 rows.append(measure(1))
 for frame in range(1,len(targets)):
-    projected_body=projected_self=0
+    projected_body=projected_self=projected_layers=ambiguous_layers=unresolved_layers=0
     for substep in range(1,a.substeps+1):
         fraction=substep/a.substeps
         target=targets[frame-1]*(1-fraction)+targets[frame]*fraction
@@ -184,12 +199,20 @@ for frame in range(1,len(targets)):
             positions[fully_pinned]=target[fully_pinned]
             if iteration%4==3 or iteration==a.iterations-1:
                 projected_self += self_contact()
+                if a.layer_order_contacts:
+                    outer=np.concatenate([part_ids[i] for i in [0,2,3,4]])
+                    result=ordered_layer_contact(positions,inverse,part_grids[1],outer,margin)
+                    projected_layers+=result['corrections']
+                    ambiguous_layers+=result['ambiguousQueries']
+                    unresolved_layers+=result['unresolvedQueries']
                 projected_body += body_contact(trees,bounds)
         velocity=(positions-previous)/dt*.985
         positions[fully_pinned]=target[fully_pinned]
         assert np.isfinite(positions).all()
     history.append(positions.copy());rows.append(measure(frame+1))
-    contact_counts.append({'frame':frame+1,'actualBodyCorrections':projected_body,'actualParticleSelfCorrections':projected_self})
+    contact_counts.append({'frame':frame+1,'actualBodyCorrections':projected_body,'actualParticleSelfCorrections':projected_self,
+                          'actualOrderedSurfaceCorrections':projected_layers,'ambiguousOrderedQueries':ambiguous_layers,
+                          'unresolvedOrderedQueries':unresolved_layers})
     (out/'progress.json').write_text(json.dumps({'completed':False,'lastActualFrame':frame+1,'frames':rows})+'\n')
     print('ACTUAL_XPBD_FRAME',frame+1,len(targets),round(time.time()-start_time,2),flush=True)
 
@@ -200,18 +223,25 @@ data=out/'actual_sewn_petticoat_frames.npz'
 np.savez_compressed(data,**arrays)
 report=copy.deepcopy(r)
 native_reference={key:report.pop(key) for key in ['actualSolverSettings','actualCollisionSettings',
-                 'actualModifierOrder','clothNeverBypassedDuringSequence'] if key in report}
+                 'actualModifierOrder','clothNeverBypassedDuringSequence','actualColliders',
+                 'requestedSolverQuality','requestedColliderNormalResponse','provisionalInplaneStiffnessScale'] if key in report}
 report.update({'actualSolver':'Independent XPBD distance/shear and two-ring bend constraints; closed recorded body projection and particle self contact',
                'nativeBlenderClothSolverReexecuted':False,'independentPhysicalSolverExecuted':True,
                'sourcePhysicalDataSha256':r['dataSha256'],'sourceBodyContactDataSha256':contact['dataSha256'],
                'dataFile':str(data),'dataSha256':sha(data),'frames':rows,'scriptSha256':sha(__file__),
                'actualNativeSettingsAreReferenceOnly':True,
                'nativeBlenderParentReference':native_reference,
+               'actualClosedBodyProxyReference':contact['actualClosedProxies'],
+               'surfaceContactHelperSha256':sha(Path(__file__).with_name('chapeleiro_xpbd_surface_contacts.py')),
                'independentSolverSettings':{'fps':30,'substeps':a.substeps,'iterations':a.iterations,
                    'structuralCompliance':1e-7,'twoRingBendingCompliance':.2,'massPerVertex':mass,
                    'bodyClearanceMeters':margin,'selfParticleDistanceMeters':self_distance,
                    'partialPinIterationTether':.15,'velocityRetentionPerSubstep':.985,
                    'deepBodyRecoveryRequiresTwoRayInteriorAgreement':True,
+                   'allBodySignsQueriedAndRecoveryCandidateVerifiedOutside':a.verified_body_recovery,
+                   'authoredOuterSheetsOrderedOutsideBlackSupport':a.layer_order_contacts,
+                   'orderedLayerCorrectionsUseOriginalTriangleMasses':a.layer_order_contacts,
+                   'orderedLayerVirtualCapsAreOnlyClassificationVolumes':a.layer_order_contacts,
                    'seamsKeepAuthoredCalculationClearance':True,'distanceConstraintPrimarySource':'https://mmacklin.com/xpbd.pdf',
                    'parametersAreProvisional':True},
                'actualContactCorrections':contact_counts,'finalFbxExported':False,'responseBakedIntoRig':False,
@@ -220,4 +250,5 @@ report.update({'actualSolver':'Independent XPBD distance/shear and two-ring bend
                'elapsedSeconds':time.time()-start_time})
 (out/'actual_sewn_solver_motion.json').write_text(json.dumps(report,indent=2)+'\n',newline='\n')
 shutil.copyfile(__file__,out/'executed_xpbd_probe.py')
+shutil.copyfile(Path(__file__).with_name('chapeleiro_xpbd_surface_contacts.py'),out/'executed_surface_contact_helper.py')
 print('ACTUAL_XPBD_TRAJECTORY_SAVED',len(history),flush=True)

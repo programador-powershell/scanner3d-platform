@@ -14,7 +14,7 @@ p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--generation', required=True)
 p.add_argument('--probe', required=True)
 p.add_argument('--output', required=True)
-p.add_argument('--points-field', choices=['actual_simulation_points', 'actual_simulation_skin_targets'], default='actual_simulation_points')
+p.add_argument('--points-field', choices=['actual_simulation_points', 'actual_simulation_skin_targets', 'points', 'actual_skin_targets'], default='actual_simulation_points')
 p.add_argument('--minimum-pin-weight', type=float)
 a = p.parse_args(sys.argv[sys.argv.index('--') + 1:])
 read = lambda f: json.loads(Path(f).read_text(encoding='utf-8'))
@@ -29,10 +29,14 @@ out.mkdir(parents=True)
 started = time.time()
 data = np.load(r['dataFile'])
 assert a.points_field in data.files
-query_ids = (np.arange(len(data['simulation_rest_points'])) if a.minimum_pin_weight is None
-             else np.flatnonzero(data['simulation_pin_weights'] >= a.minimum_pin_weight))
+fine_points = a.points_field in ['points', 'actual_skin_targets']
+point_count = len(data['rest_points'] if fine_points else data['simulation_rest_points'])
+pin_values = data['pin_weights'] if fine_points else data['simulation_pin_weights']
+assert data[a.points_field].shape[1] == point_count and len(pin_values) == point_count
+query_ids = (np.arange(point_count) if a.minimum_pin_weight is None
+             else np.flatnonzero(pin_values >= a.minimum_pin_weight))
 assert len(query_ids) > 0
-query_index = np.full(len(data['simulation_rest_points']), -1, np.int32)
+query_index = np.full(point_count, -1, np.int32)
 query_index[query_ids] = np.arange(len(query_ids))
 bpy.ops.wm.open_mainfile(filepath=g['editableBlend'])
 scene = bpy.context.scene
@@ -58,7 +62,8 @@ bind = {b.name: b.matrix_local.copy() for b in rig.data.bones}
 directions = [Vector((.837, .324, .439)).normalized(), Vector((-.413, .823, .388)).normalized()]
 part_indices, start = [], 0
 for part in r['parts']:
-    indices = np.unique(data['simulation_faces'][start:start + part['faces']])
+    indices = (np.arange(part['start'], part['start'] + part['vertices']) if fine_points
+               else np.unique(data['simulation_faces'][start:start + part['faces']]))
     part_indices.append(query_index[indices][query_index[indices] >= 0])
     start += part['faces']
 
@@ -121,15 +126,17 @@ for frame, all_points in enumerate(data[a.points_field], 1):
     rows.append({'frame': frame, 'recordedRigMatrixMaximumError': matrix_error, 'proxies': frame_rows})
     masks.append(frame_masks); distances.append(frame_distances); agreements.append(frame_agreements)
     print('ACTUAL_DYNAMIC_CLEARANCE', frame, len(data['actual_simulation_points']), round(time.time() - started, 2), flush=True)
-arrays = {'queried_simulation_vertex_indices': query_ids, 'certain_inside_masks': np.asarray(masks), 'nearest_distances': np.asarray(distances),
+arrays = {'queried_point_vertex_indices': query_ids, 'certain_inside_masks': np.asarray(masks), 'nearest_distances': np.asarray(distances),
           'two_ray_agreements': np.asarray(agreements)}
+if not fine_points: arrays['queried_simulation_vertex_indices'] = query_ids
 for index in range(len(proxies)):
     arrays[f'proxy_{index}_animated_world_points'] = np.asarray(proxy_points[index])
     arrays[f'proxy_{index}_animated_triangles'] = np.asarray(proxy_triangles[index])
 datafile = out / 'actual_dynamic_clearance.npz'
 np.savez_compressed(datafile, **arrays)
 report = {'sourcePhysicalDataSha256': r['dataSha256'], 'sourcePhotoSha256': r['sourcePhotoSha256'],
-          'actualQueriedPointField': a.points_field, 'minimumPinWeight': a.minimum_pin_weight, 'actualVerticesQueriedPerProxyAndFrame': len(query_ids),
+          'actualQueriedPointField': a.points_field, 'actualQueriedSurface': 'original_fine_garment_detail' if fine_points else 'coarse_physical_calculator',
+          'minimumPinWeight': a.minimum_pin_weight, 'actualVerticesQueriedPerProxyAndFrame': len(query_ids),
           'actualClosedProxies': proxy_rows, 'frames': rows,
           'dataFile': str(datafile), 'dataSha256': sha(datafile), 'scriptSha256': sha(__file__),
           'closedProxyHelperSha256': sha(Path(__file__).with_name('chapeleiro_closed_underlayer_proxies.py')),

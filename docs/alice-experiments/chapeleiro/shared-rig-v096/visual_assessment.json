@@ -1,0 +1,32 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualReviewedExportRenders": [
+    "87b055cd4ce9e4c75cec10fd38d66c13d8344b400d842d93f983b000fb0c58f7",
+    "7975a3dc020b03479e98301364cd8c6030d86403f9837b526648d38dbe679c88",
+    "8739195a60b775dae4132ee5b849d250815733d08174f7b26577361e0f219aaa",
+    "5fd93ce99212367be14e4309dcb6fa439cee670086c76abb61f6497ea94abdb2",
+    "c2421251bae0db90e7134fc388b1a7d8a935f59ae36b759e2245c4dc0ef3f3a4",
+    "44fb636a8576e68e4d0f935f4d496da035f1f064aab8eccff64ff8f2e993bb5c"
+  ],
+  "actualExportPhotoBoardReviewed": true,
+  "actualContactPhotoBoardReviewed": true,
+  "observedImprovements": [
+    "The front running pose retains more of the ivory skirt and its lower trim than the previous GLB.",
+    "Black flounces respond separately instead of remaining on the old shared bottom-ring controls.",
+    "Whole garment topology, UVs, materials and embedded textures remain intact."
+  ],
+  "observedRemainingDefects": [
+    "The raised leg still intersects the ivory layer in pose 29.",
+    "Black support remains visible through the ivory surface in profile and back poses.",
+    "Waist gaps and discontinuities around independently weighted decorations persist.",
+    "Reference gathers, diagonal cascades, scalloped lace, corset silhouette and finish are not yet faithful."
+  ],
+  "motionScope": "Only the separately named measured run study has the new two-anagua response. Four original actions are unchanged, and their cloth physics is not approved.",
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalTripoCreditsConsumed": 0
+}

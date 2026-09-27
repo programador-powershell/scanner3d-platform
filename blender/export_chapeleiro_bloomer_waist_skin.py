@@ -1,4 +1,4 @@
-"""Export the actual waist skin, excluding unrelated authoring solver evaluation.
+"""Export a verified shared skin checkpoint without unrelated solver evaluation.
 
 The 229 exported previews have only Armature modifiers. Keep the full checkpoint
 on disk and mute modifiers only on excluded authoring objects in export memory.
@@ -23,14 +23,17 @@ sha = lambda f: hashlib.sha256(Path(f).read_bytes()).hexdigest()
 path, out = Path(a.generation), Path(a.output)
 g = read(path)
 ref = Path(g['authoringReferenceRoot'])
-waist = read(g['waistSkinRefinement'])
-assert sha(g['editableBlend']) == g['editableBlendSha256'] == waist['editableBlendSha256']
+study = read(g.get('sewnClothBake') or g.get('independentFlounceRig') or g['waistSkinRefinement'])
+assert sha(g['editableBlend']) == g['editableBlendSha256'] == study['editableBlendSha256']
+expected_bones = study.get('actualSharedBones', 173)
+coupled_response = bool(g.get('sewnClothBake'))
+expected_clips = g['authoringClips'] if coupled_response else g['exports']['foundation']['actualClips']
 assert not out.exists()
 out.mkdir(parents=True)
 bpy.ops.wm.open_mainfile(filepath=g['editableBlend'])
 scene = bpy.context.scene
 rigs = [o for o in scene.objects if o.type == 'ARMATURE']
-assert len(rigs) == 1 and len(rigs[0].data.bones) == 173
+assert len(rigs) == 1 and len(rigs[0].data.bones) == expected_bones
 rig = rigs[0]
 pieces = [bpy.data.objects[p['mesh']] for p in read(ref / 'skin_audit.json')['pieces'][:-1]]
 assert len(pieces) == 229
@@ -65,10 +68,11 @@ raw = model.read_bytes()
 length = struct.unpack_from('<I', raw, 12)[0]
 doc = json.loads(raw[20:20 + length])
 assert len([n for n in doc['nodes'] if 'mesh' in n and 'skin' in n]) == 229
-assert len(doc['skins']) == 1 and len(doc['skins'][0]['joints']) == 173
-assert [a['name'] for a in doc['animations']] == g['exports']['foundation']['actualClips']
+assert len(doc['skins']) == 1 and len(doc['skins'][0]['joints']) == expected_bones
+assert [a['name'] for a in doc['animations']] == expected_clips
 assert sha(g['editableBlend']) == g['editableBlendSha256']
-entry = {**g['exports']['foundation'], 'model': str(model), 'modelSha256': sha(model), 'bytes': model.stat().st_size}
+entry = {**g['exports']['foundation'], 'model': str(model), 'modelSha256': sha(model), 'bytes': model.stat().st_size,
+         'actualClips': expected_clips, 'actualJointCount': expected_bones}
 report = {**g, 'exports': {**g['exports'], 'foundation': entry}, 'parentGeneration': str(path),
           'exportsInheritedForReferenceOnly': False, 'modelExportedInThisRefinement': True,
           'wholeExportInheritedUnchanged': True, 'scriptSha256': sha(__file__),
@@ -77,8 +81,10 @@ report = {**g, 'exports': {**g['exports'], 'foundation': entry}, 'parentGenerati
           'allLayersFinished': False, 'fidelityVerified': False, 'motionVerified': False,
           'clothCollisionVerified': False, 'finalFbxExported': False, 'nextVariantMayStart': False,
           'publicationStatus': 'local_export_pending_actual_reimport_and_photo_review',
-          'physicalSpringStudyNotBakedIntoExport': True, 'sourcePhotoComparisonAndExportReimportPending': True,
-          'limitation': 'Only bloomer waist skin weights changed. Five original study actions are preserved; new spring cloth and Surface Deform diagnostic trajectories are not baked into this GLB.'}
+          'physicalSpringStudyNotBakedIntoExport': not coupled_response,
+          'coupledClothStudyClipBakedIntoExport': coupled_response, 'sourcePhotoComparisonAndExportReimportPending': True,
+          'limitation': ('The separately named two-anagua study is fitted and baked; fitting errors, contact and photo fidelity still require actual export review.' if coupled_response else
+                        'Existing actions are preserved. New coupled physical response is not baked into this export.')}
 (out / 'generation.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
 shutil.copyfile(__file__, out / 'executed_export.py')
 print('ACTUAL_BLOOMER_WAIST_SKIN_EXPORTED', model.stat().st_size, sha(model), flush=True)

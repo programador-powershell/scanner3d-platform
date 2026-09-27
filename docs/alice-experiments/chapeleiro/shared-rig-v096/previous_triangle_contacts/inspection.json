@@ -1,0 +1,150 @@
+{
+  "sourcePhysicalDataSha256": "497effcc339c84c230d9c4154cce47bc2ced48874cea33f56a79ef5bdca7ccd0",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualPhysicalVertices": 9024,
+  "actualPhysicalTriangles": 17088,
+  "frames": [
+    {
+      "frame": 1,
+      "nonAdjacentBroadPhasePairs": 0,
+      "properEdgeFaceCrossings": 0,
+      "unresolvedBroadPhasePairs": 0,
+      "crossingsByPiecePair": []
+    },
+    {
+      "frame": 20,
+      "nonAdjacentBroadPhasePairs": 4142,
+      "properEdgeFaceCrossings": 4135,
+      "unresolvedBroadPhasePairs": 7,
+      "crossingsByPiecePair": [
+        {
+          "pieces": [
+            "ivory",
+            "support"
+          ],
+          "trianglePairs": 2442
+        },
+        {
+          "pieces": [
+            "support",
+            "support"
+          ],
+          "trianglePairs": 244
+        },
+        {
+          "pieces": [
+            "support",
+            "tier1"
+          ],
+          "trianglePairs": 440
+        },
+        {
+          "pieces": [
+            "support",
+            "tier2"
+          ],
+          "trianglePairs": 564
+        },
+        {
+          "pieces": [
+            "support",
+            "tier3"
+          ],
+          "trianglePairs": 163
+        },
+        {
+          "pieces": [
+            "tier1",
+            "tier1"
+          ],
+          "trianglePairs": 13
+        },
+        {
+          "pieces": [
+            "tier1",
+            "tier2"
+          ],
+          "trianglePairs": 129
+        },
+        {
+          "pieces": [
+            "tier2",
+            "tier2"
+          ],
+          "trianglePairs": 66
+        },
+        {
+          "pieces": [
+            "tier2",
+            "tier3"
+          ],
+          "trianglePairs": 64
+        },
+        {
+          "pieces": [
+            "tier3",
+            "tier3"
+          ],
+          "trianglePairs": 10
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "nonAdjacentBroadPhasePairs": 3657,
+      "properEdgeFaceCrossings": 3655,
+      "unresolvedBroadPhasePairs": 2,
+      "crossingsByPiecePair": [
+        {
+          "pieces": [
+            "ivory",
+            "support"
+          ],
+          "trianglePairs": 2771
+        },
+        {
+          "pieces": [
+            "support",
+            "support"
+          ],
+          "trianglePairs": 23
+        },
+        {
+          "pieces": [
+            "support",
+            "tier1"
+          ],
+          "trianglePairs": 263
+        },
+        {
+          "pieces": [
+            "support",
+            "tier2"
+          ],
+          "trianglePairs": 298
+        },
+        {
+          "pieces": [
+            "support",
+            "tier3"
+          ],
+          "trianglePairs": 132
+        },
+        {
+          "pieces": [
+            "tier2",
+            "tier3"
+          ],
+          "trianglePairs": 168
+        }
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v002\\triangle_contact_inspection_v001\\actual_triangle_crossings.npz",
+  "dataSha256": "e6c8e40ce978de5fe512d565e4938a55a6ed5657ca7fae1f1f74a3a2b10ce221",
+  "scriptSha256": "cf910ae711472913c031c480cda8b1a87005f215212aac1918e2f653b91c1617",
+  "sourceTrajectoryUnchanged": true,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Only proper interior edge/face crossings in the selected recorded poses. Coplanar/endpoint pairs, thickness and continuous-time contact are not approved."
+}

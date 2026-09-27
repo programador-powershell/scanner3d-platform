@@ -1,0 +1,71 @@
+{
+  "beforeModelSha256": "bccd78d0312de37a67b5b5b5bc49c21079943fc88c670535020a6ac92462295b",
+  "afterModelSha256": "1c2e1a9a3af242acaaf2dd48e8c482e57e6013f8f7f84e0744012dd13752dc45",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualAttributeArraysCompared": 1153,
+  "actualSkinnedMeshNodes": 229,
+  "actualSharedBones": 209,
+  "actualWeightRemaps": [
+    {
+      "mesh": "01 / black floral lace tier 1 / real apertures",
+      "actualRemappedVertices": 105229
+    },
+    {
+      "mesh": "01 / black floral lace tier 2 / real apertures",
+      "actualRemappedVertices": 105448
+    },
+    {
+      "mesh": "01 / black floral lace tier 3 / real apertures",
+      "actualRemappedVertices": 105492
+    },
+    {
+      "mesh": "01 / black gathered flounce 1",
+      "actualRemappedVertices": 5703
+    },
+    {
+      "mesh": "01 / black gathered flounce 2",
+      "actualRemappedVertices": 5698
+    },
+    {
+      "mesh": "01 / black gathered flounce 3",
+      "actualRemappedVertices": 5698
+    }
+  ],
+  "actualRestGeometryUvNormalsIndicesMaterialsAndTextureBytesPreservedExactly": true,
+  "actualWeightValuesPreservedExactly": true,
+  "old173InverseBindsPreservedExactly": true,
+  "originalFourActionArraysPreservedExactly": true,
+  "animations": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "oldJointChannelArraysPreservedExactly": true,
+      "oldChannels": 519,
+      "addedStaticChildChannels": 108
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "oldJointChannelArraysPreservedExactly": true,
+      "oldChannels": 519,
+      "addedStaticChildChannels": 108
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "oldJointChannelArraysPreservedExactly": true,
+      "oldChannels": 519,
+      "addedStaticChildChannels": 108
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "oldJointChannelArraysPreservedExactly": true,
+      "oldChannels": 519,
+      "addedStaticChildChannels": 108
+    }
+  ],
+  "studyClip": "Corrida com tecido / camadas em refinamento",
+  "scriptSha256": "e0c0c43f29c90a17575f51a2c7c2bcf1ba2ff50a3781910f092b1d134e5c9b4b",
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}
