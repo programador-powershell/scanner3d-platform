@@ -1,0 +1,140 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+00:11.453  blend            | Read blend: "F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\chapeleiro_shared_rig_ivory_response.blend"
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+Info: Read library: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\alice-vestido-chapeleiro.blend', '//alice-vestido-chapeleiro.blend', parent '<direct>'
+{
+  "carriers": [
+    {
+      "key": "ivory",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.013112451881170273,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "support",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.016221290454268456,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier1",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.002327336696907878,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier2",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.0023947940208017826,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier3",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.0018503457540646195,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    }
+  ],
+  "colliders": [
+    {
+      "vertices": 4289,
+      "triangles": 8512,
+      "radialOutwardFacingTrianglesFraction": 0.8825187969924813,
+      "radialInwardFacingTrianglesFraction": 0.1174812030075188,
+      "signedVolumeCubicMeters": 0.00043805106543004513,
+      "boundaryEdges": 64,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 0,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 205,
+      "nearestDistance05PercentileMeters": 0.03985469415783882,
+      "minimumDistanceMeters": 0.019739588722586632
+    },
+    {
+      "vertices": 4289,
+      "triangles": 8512,
+      "radialOutwardFacingTrianglesFraction": 0.8730028195488722,
+      "radialInwardFacingTrianglesFraction": 0.12699718045112782,
+      "signedVolumeCubicMeters": 0.0004384549392852932,
+      "boundaryEdges": 64,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 0,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 202,
+      "nearestDistance05PercentileMeters": 0.039835202507674694,
+      "minimumDistanceMeters": 0.019826199859380722
+    },
+    {
+      "vertices": 6287,
+      "triangles": 12288,
+      "radialOutwardFacingTrianglesFraction": 0.8693033854166666,
+      "radialInwardFacingTrianglesFraction": 0.13069661458333334,
+      "signedVolumeCubicMeters": 0.0014741533668711782,
+      "boundaryEdges": 288,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 143,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 407,
+      "nearestDistance05PercentileMeters": 0.004483298282139003,
+      "minimumDistanceMeters": 0.00014987896429374814
+    }
+  ],
+  "interlayers": [
+    {
+      "first": "ivory",
+      "second": "support",
+      "testedPhysicalVertices": 3552,
+      "physicalVerticesWithinTwoMillimeters": 0,
+      "distance05PercentileMeters": 0.004087199387140572,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier1",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier2",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier3",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    }
+  ]
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

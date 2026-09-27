@@ -1,0 +1,445 @@
+{
+  "artifacts": [
+    {
+      "file": "regular_inward/actual_sewn_solver_motion.json",
+      "sha256": "92d64aa3d28dfd863e702bc944753c37ceca5d3019ecc325d2ce73b0c8a8046c",
+      "bytes": 107444
+    },
+    {
+      "file": "regular_inward/actual_cloth_frames.npz",
+      "sha256": "d6dc6960a14c192b3a2eac45b6230c3f9cde89cbc28a77066e92af8db6ebc778",
+      "bytes": 18009286
+    },
+    {
+      "file": "regular_inward/executed_retopo_assembly.py",
+      "sha256": "a9edb6bb457cdc520d01eae613b2efb4bdb18c97d908d8253a582f1d7baa6c3c",
+      "bytes": 11186
+    },
+    {
+      "file": "regular_inward/executed_probe.py",
+      "sha256": "b5b25ed7847c6406450b529b31333c6fa72f41baf7bc4dadb3f3002357b6e6ab",
+      "bytes": 15401
+    },
+    {
+      "file": "regular_inward/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "regular_inward/mass_calibration.json",
+      "sha256": "d4d7acca5cde2d394f255147be8a6624bb15732e2049a5d575e5f9c3ae8e28e3",
+      "bytes": 2145
+    },
+    {
+      "file": "regular_inward/actual_execution.log",
+      "sha256": "44c2d3a9b493c748f896341ed846cef65e385c14cb982733f490c8de73d1923e",
+      "bytes": 3669
+    },
+    {
+      "file": "regular_inward/review/comparison.json",
+      "sha256": "b7370fe2d4c2c154c1a7bf86ab68c0dc0748e9c32c9b07514aabfc57a43d48f0",
+      "bytes": 4744
+    },
+    {
+      "file": "regular_inward/review/executed_render.py",
+      "sha256": "18dc5d843c676433a9b76d0d366572b51359a2335f436072b5c3db7e7067f616",
+      "bytes": 10780
+    },
+    {
+      "file": "regular_inward/review/actual_execution.log",
+      "sha256": "1a7d9afde7f06c0ba47166a242c24ddd39f78e9da6fc4b0d9b53afabbe3c2679",
+      "bytes": 1851
+    },
+    {
+      "file": "regular_inward/review/renders/foundation_01_front.png",
+      "sha256": "1d3f5e4994fcd29fde467b2b72cdbe5930e1edf419e1ef245b99bca9766b788a",
+      "bytes": 343637
+    },
+    {
+      "file": "regular_inward/review/renders/foundation_20_front.png",
+      "sha256": "936328168bca17b1e33b99862c6e8d68b2e6868add1d99256763d61411bbae63",
+      "bytes": 317467
+    },
+    {
+      "file": "regular_inward/review/renders/foundation_29_threequarter.png",
+      "sha256": "768091f0502eaa6f10b9508db0dc9b40382ec4b8ab6187c92d8b2d2aa1695108",
+      "bytes": 295697
+    },
+    {
+      "file": "regular_inward/review/renders/sewn_receivers_29_threequarter.png",
+      "sha256": "3e9ffdfe55505ebc13475c5bfedf8ace9928da6f909a5f772fb7d58da560b89f",
+      "bytes": 184258
+    },
+    {
+      "file": "smooth_detail_same_physics/actual_sewn_solver_motion.json",
+      "sha256": "caa35fac1d3ddc143a3859bff80b2728a2fda18ecce8e7c9bcb37aab70e17015",
+      "bytes": 112953
+    },
+    {
+      "file": "smooth_detail_same_physics/actual_cloth_frames.npz",
+      "sha256": "6c3bcbdd371e6b6d41c7a749ba700f503162a575fbc0fb4a6822f85cd212be62",
+      "bytes": 20862198
+    },
+    {
+      "file": "smooth_detail_same_physics/executed_retopo_assembly.py",
+      "sha256": "140fd2b209219e9e9a4472ae507ae0724850cd1cf4e1f7d1b1a8b99a8db11798",
+      "bytes": 13711
+    },
+    {
+      "file": "smooth_detail_same_physics/executed_refinement.py",
+      "sha256": "1b7fbb06602ba53a090d6f2b55888d92521116d97f060e919c75a21152a28072",
+      "bytes": 8020
+    },
+    {
+      "file": "smooth_detail_same_physics/review/comparison.json",
+      "sha256": "ea013cdd2cae24e4f20df6c226abc396ed1195bda185b8d22f14d14a16a3cfb7",
+      "bytes": 4744
+    },
+    {
+      "file": "smooth_detail_same_physics/review/executed_render.py",
+      "sha256": "18dc5d843c676433a9b76d0d366572b51359a2335f436072b5c3db7e7067f616",
+      "bytes": 10780
+    },
+    {
+      "file": "smooth_detail_same_physics/review/actual_execution.log",
+      "sha256": "9f44e78bf595562b061a9f8ae74ddeb7dc0b916c979349c22b863d975be3a18d",
+      "bytes": 1851
+    },
+    {
+      "file": "smooth_detail_same_physics/review/renders/foundation_01_front.png",
+      "sha256": "9a07dc8a49de2b90498fa7b74f014b59b23ebe0636001beacc1d0f9f6d89cde6",
+      "bytes": 343626
+    },
+    {
+      "file": "smooth_detail_same_physics/review/renders/foundation_20_front.png",
+      "sha256": "7cee0118baefe5d5493e625c71010f2c3c9e73347736e5146bc73ea55682bfc8",
+      "bytes": 317678
+    },
+    {
+      "file": "smooth_detail_same_physics/review/renders/foundation_29_threequarter.png",
+      "sha256": "6b1a85c3a47bf5f858b6c2213afe48ebb69dc16cab9d190f93bec547cc2a2840",
+      "bytes": 295445
+    },
+    {
+      "file": "smooth_detail_same_physics/review/renders/sewn_receivers_29_threequarter.png",
+      "sha256": "801825c6c8340298ea674874e40a617650b609c191d42737c8b8636d00255165",
+      "bytes": 184305
+    },
+    {
+      "file": "stiffness_control/actual_sewn_solver_motion.json",
+      "sha256": "c4f91079133219196652db8fe735935ed3d7eef3fbd370420abf9d464ab541f7",
+      "bytes": 107551
+    },
+    {
+      "file": "stiffness_control/actual_cloth_frames.npz",
+      "sha256": "786768625b32a006d481f83774b4b91f4b4db93c76ee52f5ef700e05338082f5",
+      "bytes": 18008972
+    },
+    {
+      "file": "stiffness_control/executed_retopo_assembly.py",
+      "sha256": "140fd2b209219e9e9a4472ae507ae0724850cd1cf4e1f7d1b1a8b99a8db11798",
+      "bytes": 13711
+    },
+    {
+      "file": "stiffness_control/executed_probe.py",
+      "sha256": "200126832e24b48186b4b7e3b67e69f70cf83d5b348904c4ccf340c8fea0ecf8",
+      "bytes": 15994
+    },
+    {
+      "file": "stiffness_control/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "stiffness_control/mass_calibration.json",
+      "sha256": "d4d7acca5cde2d394f255147be8a6624bb15732e2049a5d575e5f9c3ae8e28e3",
+      "bytes": 2145
+    },
+    {
+      "file": "stiffness_control/actual_execution.log",
+      "sha256": "5fd552035c2a2e2527854fb43cbae3b44804869d6435bd154f56b26a71ce1c1b",
+      "bytes": 3665
+    },
+    {
+      "file": "stiffness_control/review/comparison.json",
+      "sha256": "aaa93688109873a83ac140d7299c9a9cee5c22f603d0388571c6b2c6c09b83ee",
+      "bytes": 2941
+    },
+    {
+      "file": "stiffness_control/review/executed_render.py",
+      "sha256": "0f3f77750077d2cac39be624c30f6abed45de239c0e9f4d320eabb81d5c7fa26",
+      "bytes": 10948
+    },
+    {
+      "file": "stiffness_control/review/actual_execution.log",
+      "sha256": "7f594756c077f0d48e7bcdef2ede83b53e15bd35a3d3e5542516eeae37e884e9",
+      "bytes": 1386
+    },
+    {
+      "file": "stiffness_control/review/renders/foundation_20_front.png",
+      "sha256": "66570e249d2f26dfaff70f57732044fc7e3e197624d449bafdcadab75609ce0b",
+      "bytes": 318571
+    },
+    {
+      "file": "stiffness_control/review/renders/foundation_29_threequarter.png",
+      "sha256": "365d4dc22d40cbe625a74baac0c90f722b21fdebdcd4206fb09df69cae5a9dcf",
+      "bytes": 297394
+    },
+    {
+      "file": "regular_outward_quality12/actual_sewn_solver_motion.json",
+      "sha256": "6594a7fa2934bfdd09268cb1bcd66955d102b1f9f958591eae8f28533d2c12d7",
+      "bytes": 107641
+    },
+    {
+      "file": "regular_outward_quality12/actual_cloth_frames.npz",
+      "sha256": "fea85187991e8d28b244c496627f137dd243e83a6abb26abf27ae1263aa610bc",
+      "bytes": 18018230
+    },
+    {
+      "file": "regular_outward_quality12/executed_retopo_assembly.py",
+      "sha256": "5e9cd983939f44965cc04117bb2fc97f77820e9ec1ac147577989ee9490dddd3",
+      "bytes": 14371
+    },
+    {
+      "file": "regular_outward_quality12/executed_probe.py",
+      "sha256": "3dd45c3b2e68dab14abe6ae62b55cf87e75bc458d8fd1b0600ed5f638f4c630e",
+      "bytes": 16135
+    },
+    {
+      "file": "regular_outward_quality12/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "regular_outward_quality12/mass_calibration.json",
+      "sha256": "d4d7acca5cde2d394f255147be8a6624bb15732e2049a5d575e5f9c3ae8e28e3",
+      "bytes": 2145
+    },
+    {
+      "file": "regular_outward_quality12/actual_execution.log",
+      "sha256": "3941589c865eab4f8073ed8f20fc42b118abda11908d205c75e8d1daf3d249a0",
+      "bytes": 3663
+    },
+    {
+      "file": "regular_outward_quality12/review/comparison.json",
+      "sha256": "5cb4b9df02cc5708fb04344f44c06f0dfd4c8dc19007c381c8d74fb847f6f9ac",
+      "bytes": 2941
+    },
+    {
+      "file": "regular_outward_quality12/review/executed_render.py",
+      "sha256": "0f3f77750077d2cac39be624c30f6abed45de239c0e9f4d320eabb81d5c7fa26",
+      "bytes": 10948
+    },
+    {
+      "file": "regular_outward_quality12/review/actual_execution.log",
+      "sha256": "eb7dc7a240832c433dd848ae681c2ec44fcacb50b6ef7fe9e65fe0bdd199a581",
+      "bytes": 1386
+    },
+    {
+      "file": "regular_outward_quality12/review/renders/foundation_20_front.png",
+      "sha256": "546e6370b4c52ac1d39c38a9aea1b24822ed9bb2d2fd709c886d71483e120197",
+      "bytes": 315877
+    },
+    {
+      "file": "regular_outward_quality12/review/renders/foundation_29_threequarter.png",
+      "sha256": "bec8a89dd1c9e9a52062bec55faea5b1a9a0a7359df42735e55f33a2a84b2f96",
+      "bytes": 293872
+    },
+    {
+      "file": "regular_inward/rest_contact_inspection/rest_contact_inspection.json",
+      "sha256": "639d48519247a1fa9dc1e32826b58f34280de80a7308ebcb4ae19b34f8106c90",
+      "bytes": 7857
+    },
+    {
+      "file": "regular_inward/rest_contact_inspection/executed_inspection.py",
+      "sha256": "df1aae9f8601c1636470e59df4f4d8adfd1eeadace626318888d679783eb387d",
+      "bytes": 6810
+    },
+    {
+      "file": "regular_inward/rest_contact_inspection/actual_execution.log",
+      "sha256": "44db93c2ca9c0a23c26672d2c9861bb572e73c0a187b15ba068d49f20094ef16",
+      "bytes": 6287
+    },
+    {
+      "file": "regular_outward_quality12/closed_rest_clearance_inspection/rest_clearance_inspection.json",
+      "sha256": "e23e1bd20a06b8d9945a9e2f4b2c47b29bc92a86e507c166c44f22c6ee11f32c",
+      "bytes": 7046
+    },
+    {
+      "file": "regular_outward_quality12/closed_rest_clearance_inspection/executed_inspection.py",
+      "sha256": "4a4cb865edb77753b2053f848eef047365c8fff284f280ca6add73baaecb4b32",
+      "bytes": 5642
+    },
+    {
+      "file": "regular_outward_quality12/closed_rest_clearance_inspection/actual_rest_inside_masks.npz",
+      "sha256": "fd38f6318b19aac5de56fca1c0e595fa0015397a8fca58d5eaf171ceb825c538",
+      "bytes": 95301
+    },
+    {
+      "file": "regular_outward_quality12/closed_rest_clearance_inspection/executed_closed_proxy_helper.py",
+      "sha256": "4b277d7403c2aa4d8950dc4adee43927d9763d7bd8371b954d007386da25a6d7",
+      "bytes": 2288
+    },
+    {
+      "file": "regular_outward_quality12/closed_rest_clearance_inspection/actual_execution.log",
+      "sha256": "33f1e4f0ace454a83a84db4d598362990532807a4f63975e1c9c52fb668697dc",
+      "bytes": 6922
+    },
+    {
+      "file": "regular_outward_quality12/rest_intersection_inspection/rest_intersection_inspection.json",
+      "sha256": "2d9b3da80ef11a2f3d110b0174c5312981663ed7c8fc65c7b1320c72d5a6d085",
+      "bytes": 1103
+    },
+    {
+      "file": "regular_outward_quality12/rest_intersection_inspection/executed_inspection.py",
+      "sha256": "43aa4b889532a6d8f912774cb3a11b4e4ff0fa6449379d41652f3b95f215c5bc",
+      "bytes": 4426
+    },
+    {
+      "file": "regular_outward_quality12/rest_intersection_inspection/actual_rest_triangle_crossings.npz",
+      "sha256": "0b76245761d290650ae6880cf9c76592e9ec2ea5a8d4430337d70e6782fec737",
+      "bytes": 144858
+    },
+    {
+      "file": "regular_outward_quality12/rest_intersection_inspection/actual_execution.log",
+      "sha256": "fbc219d05f4e9edf16a1f486bc00865c4f35630d8c34fd6c2c6ccd7cc7df75b0",
+      "bytes": 1428
+    },
+    {
+      "file": "regular_outward_quality12/dynamic_clearance_inspection/dynamic_clearance_inspection.json",
+      "sha256": "b65f5ff5cbcb3548f2a7e7e4725b28a4bf940e0be14aabbe93d8f3888b7ee37d",
+      "bytes": 133104
+    },
+    {
+      "file": "regular_outward_quality12/dynamic_clearance_inspection/executed_inspection.py",
+      "sha256": "550ff4c5a9d2557f90990b5322192dc063fd71491cefa6624d160902b29afe74",
+      "bytes": 8284
+    },
+    {
+      "file": "regular_outward_quality12/dynamic_clearance_inspection/actual_dynamic_clearance.npz",
+      "sha256": "15ed84a82c4fb26b93204d7c3fa4834ea65ad2e0be5a72fafe9e759762193a70",
+      "bytes": 10750122
+    },
+    {
+      "file": "regular_outward_quality12/dynamic_clearance_inspection/executed_closed_proxy_helper.py",
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5",
+      "bytes": 2319
+    },
+    {
+      "file": "regular_outward_quality12/dynamic_clearance_inspection/actual_execution.log",
+      "sha256": "58a41d02c42754eec6b31793e3702458def9d05a01c62144261be2383f0a2e82",
+      "bytes": 1781
+    },
+    {
+      "file": "executed_helpers/chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_motion_entry.py",
+      "sha256": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57",
+      "bytes": 2417
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_colliders.py",
+      "sha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+      "bytes": 1803
+    },
+    {
+      "file": "quality48_stopped/stopped_execution.json",
+      "sha256": "c2fb2a7c00fe25e1fe087550b3f5aea338fcc4299107e4f1ff9be3517f3f6592",
+      "bytes": 1079
+    },
+    {
+      "file": "quality48_stopped/progress.json",
+      "sha256": "46facd805a80c37060492b2aa894c18a16fa5c37ecaa19351fe1c934f1c1e2af",
+      "bytes": 43116
+    },
+    {
+      "file": "quality48_stopped/mass_calibration.json",
+      "sha256": "d4d7acca5cde2d394f255147be8a6624bb15732e2049a5d575e5f9c3ae8e28e3",
+      "bytes": 2145
+    },
+    {
+      "file": "quality48_stopped/executed_stopped_probe.py",
+      "sha256": "5517b112fc61c6792a85a16669049b3223c32f5e2dafd273790d166942fbd659",
+      "bytes": 16365
+    },
+    {
+      "file": "quality48_stopped/executed_retopo_assembly.py",
+      "sha256": "5e9cd983939f44965cc04117bb2fc97f77820e9ec1ac147577989ee9490dddd3",
+      "bytes": 14371
+    },
+    {
+      "file": "quality48_stopped/executed_assembly.py",
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+      "bytes": 7374
+    },
+    {
+      "file": "quality48_stopped/actual_execution.log",
+      "sha256": "66417201f6f8d715383f628772ca5a68a4bf8fc8acc13135eee6318ade9a8ffa",
+      "bytes": 3301
+    },
+    {
+      "file": "source_photo.png",
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "bytes": 2255895
+    },
+    {
+      "file": "visual_assessment.json",
+      "sha256": "179d90d119584e45e130e15c8652270dda6f42bfce31747e9621351c6794221e",
+      "bytes": 3249
+    },
+    {
+      "file": "photo_vs_actual_regular_cloth_contact.jpg",
+      "sha256": "7c2fe553a063a19bbd297e2e967f40c0630a96806689672c47fe74e58907d17e",
+      "bytes": 366499
+    },
+    {
+      "file": "controls.json",
+      "sha256": "5bf5cc90b5476dbe24f4abe73de6eb5d5eab42dc8461d824d6d785e5af22f175",
+      "bytes": 8503
+    },
+    {
+      "file": "executed_package.py",
+      "sha256": "38dc2781ef0cf31d661738e1d95611eb60170aaded70a745643878db65b674b5",
+      "bytes": 16118
+    },
+    {
+      "file": ".gitattributes",
+      "sha256": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f",
+      "bytes": 72
+    },
+    {
+      "file": "README.md",
+      "sha256": "36083d635a70d7d242608b4b1316bfbb4e7d4b072e34059e597695ce5306abcc",
+      "bytes": 3840
+    },
+    {
+      "file": "corrected_stiffness_assignment/actual_assignment.json",
+      "sha256": "6574ec01705f117150f7ced847c2b3ac0eece25e6e358961fcd3586d86d3b91b",
+      "bytes": 948
+    },
+    {
+      "file": "corrected_stiffness_assignment/executed_check.py",
+      "sha256": "033403e2fe8b357fb554fee8557c9d317c6b7962a9ae7abe4406938c4cf82cc7",
+      "bytes": 1997
+    },
+    {
+      "file": "corrected_stiffness_assignment/executed_helper.py",
+      "sha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66",
+      "bytes": 743
+    },
+    {
+      "file": "corrected_stiffness_assignment/stiffness_assignment_check.log",
+      "sha256": "69de09a2ebb6f23eee2b8e23a7995fbf9a2a5def3341cecb8a8ccf43dc640a32",
+      "bytes": 1639
+    },
+    {
+      "file": "executed_append_assignment_check.py",
+      "sha256": "ad2282df60356f720b274ecf6efba8ce1827dbee189b2a4a9b5f92c5b4f9fd30",
+      "bytes": 2434
+    }
+  ],
+  "preservedExactlyAsExecutedBytes": true
+}

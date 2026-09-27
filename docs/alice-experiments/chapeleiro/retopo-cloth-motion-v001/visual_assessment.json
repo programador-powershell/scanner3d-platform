@@ -1,0 +1,47 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actuallyViewedFullUnchangedOwnStagePhoto": true,
+  "actuallyViewedAllTwelveRenders": true,
+  "viewedRenderSha256": [
+    "1d3f5e4994fcd29fde467b2b72cdbe5930e1edf419e1ef245b99bca9766b788a",
+    "936328168bca17b1e33b99862c6e8d68b2e6868add1d99256763d61411bbae63",
+    "768091f0502eaa6f10b9508db0dc9b40382ec4b8ab6187c92d8b2d2aa1695108",
+    "3e9ffdfe55505ebc13475c5bfedf8ace9928da6f909a5f772fb7d58da560b89f",
+    "9a07dc8a49de2b90498fa7b74f014b59b23ebe0636001beacc1d0f9f6d89cde6",
+    "7cee0118baefe5d5493e625c71010f2c3c9e73347736e5146bc73ea55682bfc8",
+    "6b1a85c3a47bf5f858b6c2213afe48ebb69dc16cab9d190f93bec547cc2a2840",
+    "801825c6c8340298ea674874e40a617650b609c191d42737c8b8636d00255165",
+    "66570e249d2f26dfaff70f57732044fc7e3e197624d449bafdcadab75609ce0b",
+    "365d4dc22d40cbe625a74baac0c90f722b21fdebdcd4206fb09df69cae5a9dcf",
+    "546e6370b4c52ac1d39c38a9aea1b24822ed9bb2d2fd709c886d71483e120197",
+    "bec8a89dd1c9e9a52062bec55faea5b1a9a0a7359df42735e55f33a2a84b2f96"
+  ],
+  "observationsPortuguese": [
+    "Em repouso, a silhueta das camadas inferiores é reconhecível, mas o corset ainda é liso e as cascatas e franzidos não têm a riqueza da foto.",
+    "As três faixas pretas e a renda ficam excessivamente comprimidas e deformadas na corrida. Há buracos e vincos abruptos na transferência para os receptores da anágua clara.",
+    "A interpolação das tangentes não trouxe melhora visual suficiente e piorou alguns máximos de alongamento. Não foi aprovada.",
+    "A orientação para fora corrige as faces da malha de cálculo, mas não resolve o contato ou o movimento e piora alguns máximos de alongamento.",
+    "O ensaio de rigidez usou os valores reais base vezes 8 e máximo vezes 64. Não é um controle uniforme de fator 8 e não foi aprovado.",
+    "O ensaio solicitando 48 passos foi interrompido após a pose 22 quando as medições registraram até 8,4 vezes o comprimento físico de repouso. Não há trajetória completa nem render desse ensaio.",
+    "A consulta de volumes fechados encontrou zero vértices físicos dentro dos três proxies em repouso. Na corrida, o volume dos bloomers tem penetração medida de até 3,88 cm, com consultas ambíguas preservadas.",
+    "As 192 arestas de costura com três faces são um candidato para revisar o vínculo físico. Ainda não foi demonstrada uma correção estável desse vínculo.",
+    "Os outros 221 receptores são contexto do rig anterior. O resultado não aprova todas as camadas ou ações e não substitui o GLB publicado."
+  ],
+  "boardNotesPortuguese": [
+    "Mesma foto, repouso, rig e câmeras.",
+    "Malha de cálculo mais regular.",
+    "O detalhe original continua no receptor.",
+    "Orientação das faces corrigida.",
+    "Corrida ainda amassa babados e renda.",
+    "Contato e acabamento seguem pendentes.",
+    "Nenhum novo GLB aprovado neste ensaio.",
+    "Vestido exterior preservado inteiro.",
+    "Sem créditos adicionais do Tripo.",
+    "FBX final após validar as camadas."
+  ],
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}

@@ -1,0 +1,22 @@
+{
+  "completed": false,
+  "stoppedDueToMeasuredDivergence": true,
+  "lastCompletedFrameInPreservedProgress": 22,
+  "plannedFrames": 29,
+  "requestedSolverQuality": 48,
+  "actualCompletedTrajectoryFileExists": false,
+  "noRenderedQuality48ComparisonExists": true,
+  "sequenceMeasuredMaximumPhysicalEdgeStretch": 8.402417182922363,
+  "executedSources": {
+    "executed_stopped_probe.py": "5517b112fc61c6792a85a16669049b3223c32f5e2dafd273790d166942fbd659",
+    "executed_retopo_assembly.py": "5e9cd983939f44965cc04117bb2fc97f77820e9ec1ac147577989ee9490dddd3",
+    "executed_assembly.py": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e"
+  },
+  "progressSha256": "46facd805a80c37060492b2aa894c18a16fa5c37ecaa19351fe1c934f1c1e2af",
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "reason": "Stopped after frame 22 when the actual preserved measurements showed more than eightfold physical edge stretch. No completed trajectory or quality48 render is claimed."
+}

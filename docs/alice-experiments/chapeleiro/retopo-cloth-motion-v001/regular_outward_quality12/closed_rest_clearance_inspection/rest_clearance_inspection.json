@@ -1,0 +1,179 @@
+{
+  "sourcePhysicalDataSha256": "fea85187991e8d28b244c496627f137dd243e83a6abb26abf27ae1263aa610bc",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualClosedProxyRestInspection": [
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / left stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / left stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 64,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 1,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "63226c619d61a2d5b41db61ac6f78f39b335ff97dcbca40ee6a6078b2deecafc",
+      "actualSignedVolumeCubicMeters": 0.0009790356270968914,
+      "twoRayDirectionsAgreeAwayFromBoundary": true,
+      "verticesInsideClosedProxy": 0,
+      "maximumInsideDistanceMeters": 0.0,
+      "parts": [
+        {
+          "key": "ivory",
+          "restPhysicalVertices": 3552,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "support",
+          "restPhysicalVertices": 3744,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier1",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier2",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier3",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        }
+      ]
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / right stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / right stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 64,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 1,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "5a1a2070d01b71ca531ab5075e7720432914031c0dab25904a2480a5881863f5",
+      "actualSignedVolumeCubicMeters": 0.000979439471848309,
+      "twoRayDirectionsAgreeAwayFromBoundary": true,
+      "verticesInsideClosedProxy": 0,
+      "maximumInsideDistanceMeters": 0.0,
+      "parts": [
+        {
+          "key": "ivory",
+          "restPhysicalVertices": 3552,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "support",
+          "restPhysicalVertices": 3744,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier1",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier2",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier3",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        }
+      ]
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / bloomers / continuous waist and sewn crotch",
+      "actualSourceCarrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "visibleGarment": "01 / bloomers / continuous waist and sewn crotch",
+      "sourceVertices": 6287,
+      "sourceFaces": 6144,
+      "sharedActualMeshData": true,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 288,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 3,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "a75281122cfbcf61aebdc6e33ca17a3df6c5a5c25fbe8f26782e247802e74150",
+      "actualSignedVolumeCubicMeters": 0.0023023246321827173,
+      "twoRayDirectionsAgreeAwayFromBoundary": true,
+      "verticesInsideClosedProxy": 0,
+      "maximumInsideDistanceMeters": 0.0,
+      "parts": [
+        {
+          "key": "ivory",
+          "restPhysicalVertices": 3552,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "support",
+          "restPhysicalVertices": 3744,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier1",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier2",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        },
+        {
+          "key": "tier3",
+          "restPhysicalVertices": 576,
+          "verticesInsideClosedProxy": 0,
+          "maximumInsideDistanceMeters": 0.0
+        }
+      ]
+    }
+  ],
+  "rawInsideMasksFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v005\\closed_rest_clearance_inspection\\actual_rest_inside_masks.npz",
+  "rawInsideMasksSha256": "fd38f6318b19aac5de56fca1c0e595fa0015397a8fca58d5eaf171ceb825c538",
+  "scriptSha256": "4a4cb865edb77753b2053f848eef047365c8fff284f280ca6add73baaecb4b32",
+  "closedProxyHelperSha256": "4b277d7403c2aa4d8950dc4adee43927d9763d7bd8371b954d007386da25a6d7",
+  "parentEditableUnchanged": true,
+  "noVisualSourceOrPhysicalTrajectoryChanged": true,
+  "notAnAllActionOrFidelityApproval": true,
+  "limitation": "Underlayer caps define independent collision-test volumes only. The visible stockings and bloomers remain open at their original cuffs and waist."
+}

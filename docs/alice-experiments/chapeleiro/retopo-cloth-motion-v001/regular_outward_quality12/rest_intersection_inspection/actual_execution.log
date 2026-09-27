@@ -1,0 +1,31 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+{
+  "sourcePhysicalDataSha256": "fea85187991e8d28b244c496627f137dd243e83a6abb26abf27ae1263aa610bc",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualRestVertices": 8736,
+  "actualRestQuads": 8544,
+  "actualRestTriangles": 17088,
+  "actualBoundaryEdges": 576,
+  "actualEdgesWithMoreThanTwoFaces": 192,
+  "nonAdjacentBroadPhasePairs": 0,
+  "properRestEdgeFaceCrossings": 0,
+  "unresolvedBroadPhasePairs": 0,
+  "crossingsByPiecePair": [],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v005\\rest_intersection_inspection\\actual_rest_triangle_crossings.npz",
+  "dataSha256": "0b76245761d290650ae6880cf9c76592e9ec2ea5a8d4430337d70e6782fec737",
+  "scriptSha256": "43aa4b889532a6d8f912774cb3a11b4e4ff0fa6449379d41652f3b95f215c5bc",
+  "noModelOrTrajectoryChanged": true,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Only non-adjacent interior segment/triangle intersections at rest. Coplanar/endpoint pairs and clearance below cloth thickness require separate checks."
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

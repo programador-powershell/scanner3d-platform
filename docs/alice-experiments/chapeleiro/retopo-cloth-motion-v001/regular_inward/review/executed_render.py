@@ -15,7 +15,6 @@ p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--generation', required=True)
 p.add_argument('--probe', required=True)
 p.add_argument('--output', required=True)
-p.add_argument('--motion-only', action='store_true')
 a = p.parse_args(sys.argv[sys.argv.index('--') + 1:])
 read = lambda f: json.loads(Path(f).read_text(encoding='utf-8'))
 sha = lambda f: hashlib.sha256(Path(f).read_bytes()).hexdigest()
@@ -129,7 +128,6 @@ before = read(path.parent / 'actual_ivory_export_review_v001/comparison.json')
 renders = []
 specs = [(1, 'front', 'foundation'), (20, 'front', 'foundation'), (29, 'threequarter', 'foundation'),
          (29, 'threequarter', 'sewn_receivers')]
-if a.motion_only: specs = specs[1:3]
 
 def reconstruct(obj, world):
     m = np.asarray(obj.matrix_world.inverted())
@@ -183,7 +181,6 @@ report = {'parentEditableSha256': g['editableBlendSha256'], 'sourcePhoto': g['ex
           'sourcePhotoSha256': probe['sourcePhotoSha256'], 'probeDataSha256': probe['dataSha256'],
           'scope': 'Recorded coupled Ivory and Black cloth reconstructed through eight actual authored receivers; other 221 foundation surfaces remain body-driven context and are not collision-approved.',
           'stableThinLaceTargets': True, 'thicknessOutputTopologyNotUsedAsLaceBindingTarget': True,
-          'reviewIncludesInitialRestAndIsolatedReceivers': not a.motion_only,
           'renders': renders, 'scriptSha256': sha(__file__), 'checkpointUnchanged': sha(g['editableBlend']) == g['editableBlendSha256'],
           'parentGlbUnchanged': sha(g['exports']['foundation']['model']) == g['exports']['foundation']['modelSha256'],
           'responseBakedIntoGlb': False, 'allLayersFinished': False, 'motionVerified': False,

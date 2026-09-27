@@ -1,0 +1,19 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+00:05.703  blend            | Read blend: "F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\chapeleiro_shared_rig_ivory_response.blend"
+C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\render_chapeleiro_sewn_petticoats.py:86: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+02:32.953  render           | Saved: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\retopo_ivory_black_cloth_v003\actual_receiver_review\foundation_20_front.png'
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+Info: Read library: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\alice-vestido-chapeleiro.blend', '//alice-vestido-chapeleiro.blend', parent '<direct>'
+ACTUAL_SEWN_RECEIVER_RENDERED 20 front foundation
+03:22.531  render           | Saved: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\retopo_ivory_black_cloth_v003\actual_receiver_review\foundation_29_threequarter.png'
+ACTUAL_SEWN_RECEIVER_RENDERED 29 threequarter foundation
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

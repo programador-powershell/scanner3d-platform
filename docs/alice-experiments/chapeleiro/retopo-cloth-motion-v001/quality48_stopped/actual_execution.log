@@ -1,0 +1,33 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+00:03.797  blend            | Read blend: "F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\chapeleiro_shared_rig_ivory_response.blend"
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+Info: Read library: 'F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_shared_rig_v094\alice-vestido-chapeleiro.blend', '//alice-vestido-chapeleiro.blend', parent '<direct>'
+ACTUAL_MASS_CALIBRATION {"mode": "areal", "actualBlenderVersion": "5.2.1 LTS", "installedMassPropertyDescription": "The mass of each vertex on the cloth material", "massSemanticsPrimarySource": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/cloth.cc", "surfaceAreaSquareMeters": 0.4698325594809918, "vertices": 8736, "assumedArealDensityKgPerSquareMeter": 0.18, "densityIsProvisionalMaterialAssumption": true, "inheritedMassPerVertexKg": 0.11999999731779099, "inheritedTotalMassKg": 1048.319976568222, "actualMassPerVertexKg": 9.68061613093596e-06, "actualTotalMassKg": 0.08456986251985654, "uniformVertexMassCannotRepresentDifferentLocalSamplingDensities": true, "parts": [{"key": "ivory", "areaSquareMeters": 0.15803237539607018, "allocatedUniqueSolverVertices": 3552, "sharedSeamMassAllocatedToSupport": true, "actualMassKg": 0.03438554849708453, "effectiveArealDensityKgPerSquareMeter": 0.21758546886930866}, {"key": "support", "areaSquareMeters": 0.23946756105142958, "allocatedUniqueSolverVertices": 3744, "sharedSeamMassAllocatedToSupport": true, "actualMassKg": 0.03624422679422423, "effectiveArealDensityKgPerSquareMeter": 0.15135338847185315}, {"key": "tier1", "areaSquareMeters": 0.023309623048868678, "allocatedUniqueSolverVertices": 480, "sharedSeamMassAllocatedToSupport": true, "actualMassKg": 0.004646695742849261, "effectiveArealDensityKgPerSquareMeter": 0.19934667039048432}, {"key": "tier2", "areaSquareMeters": 0.027195381336569846, "allocatedUniqueSolverVertices": 480, "sharedSeamMassAllocatedToSupport": true, "actualMassKg": 0.004646695742849261, "effectiveArealDensityKgPerSquareMeter": 0.17086341556831974}, {"key": "tier3", "areaSquareMeters": 0.02182761864805354, "allocatedUniqueSolverVertices": 480, "sharedSeamMassAllocatedToSupport": true, "actualMassKg": 0.004646695742849261, "effectiveArealDensityKgPerSquareMeter": 0.2128814790917939}]}
+ACTUAL_SEWN_CLOTH_FRAME 1 29 7.15
+ACTUAL_SEWN_CLOTH_FRAME 2 29 12.51
+ACTUAL_SEWN_CLOTH_FRAME 3 29 17.79
+ACTUAL_SEWN_CLOTH_FRAME 4 29 23.14
+ACTUAL_SEWN_CLOTH_FRAME 5 29 29.44
+ACTUAL_SEWN_CLOTH_FRAME 6 29 35.93
+ACTUAL_SEWN_CLOTH_FRAME 7 29 43.04
+ACTUAL_SEWN_CLOTH_FRAME 8 29 49.07
+ACTUAL_SEWN_CLOTH_FRAME 9 29 55.09
+ACTUAL_SEWN_CLOTH_FRAME 10 29 61.98
+ACTUAL_SEWN_CLOTH_FRAME 11 29 69.11
+ACTUAL_SEWN_CLOTH_FRAME 12 29 76.08
+ACTUAL_SEWN_CLOTH_FRAME 13 29 83.38
+ACTUAL_SEWN_CLOTH_FRAME 14 29 91.94
+ACTUAL_SEWN_CLOTH_FRAME 15 29 102.31
+ACTUAL_SEWN_CLOTH_FRAME 16 29 115.69
+ACTUAL_SEWN_CLOTH_FRAME 17 29 132.33
+ACTUAL_SEWN_CLOTH_FRAME 18 29 157.25
+ACTUAL_SEWN_CLOTH_FRAME 19 29 196.02
+ACTUAL_SEWN_CLOTH_FRAME 20 29 255.66
+ACTUAL_SEWN_CLOTH_FRAME 21 29 379.49
+ACTUAL_SEWN_CLOTH_FRAME 22 29 655.14

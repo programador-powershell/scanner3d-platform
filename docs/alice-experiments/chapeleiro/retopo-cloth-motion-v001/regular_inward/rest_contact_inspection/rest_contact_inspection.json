@@ -1,0 +1,170 @@
+{
+  "sourcePhysicalDataSha256": "d6dc6960a14c192b3a2eac45b6230c3f9cde89cbc28a77066e92af8db6ebc778",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualRestMeshWinding": [
+    {
+      "key": "ivory",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.013112451881170273,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "support",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.016221290454268456,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier1",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.002327336696907878,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier2",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.0023947940208017826,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    },
+    {
+      "key": "tier3",
+      "radialOutwardFacingTrianglesFraction": 0.0,
+      "radialInwardFacingTrianglesFraction": 1.0,
+      "signedVolumeCubicMeters": -0.0018503457540646195,
+      "boundaryEdges": 192,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only."
+    }
+  ],
+  "actualThinColliders": [
+    {
+      "source": {
+        "proxy": "Local collision only / existing thin carrier / 01 / left stocking / fitted leg ankle and closed toe",
+        "actualSourceCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+        "visibleGarment": "01 / left stocking / fitted leg ankle and closed toe",
+        "sourceVertices": 4289,
+        "sourceFaces": 4288,
+        "sharedActualMeshData": true,
+        "sameActualSkinGroups": true,
+        "sourceGeometryChanged": false,
+        "foreignBodyMesh": false,
+        "sourceClothAndThicknessExcludedFromLocalCollider": true
+      },
+      "vertices": 4289,
+      "triangles": 8512,
+      "radialOutwardFacingTrianglesFraction": 0.8825187969924813,
+      "radialInwardFacingTrianglesFraction": 0.1174812030075188,
+      "signedVolumeCubicMeters": 0.00043805106543004513,
+      "boundaryEdges": 64,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 0,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 205,
+      "nearestDistance05PercentileMeters": 0.03985469415783882,
+      "minimumDistanceMeters": 0.019739588722586632
+    },
+    {
+      "source": {
+        "proxy": "Local collision only / existing thin carrier / 01 / right stocking / fitted leg ankle and closed toe",
+        "actualSourceCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+        "visibleGarment": "01 / right stocking / fitted leg ankle and closed toe",
+        "sourceVertices": 4289,
+        "sourceFaces": 4288,
+        "sharedActualMeshData": true,
+        "sameActualSkinGroups": true,
+        "sourceGeometryChanged": false,
+        "foreignBodyMesh": false,
+        "sourceClothAndThicknessExcludedFromLocalCollider": true
+      },
+      "vertices": 4289,
+      "triangles": 8512,
+      "radialOutwardFacingTrianglesFraction": 0.8730028195488722,
+      "radialInwardFacingTrianglesFraction": 0.12699718045112782,
+      "signedVolumeCubicMeters": 0.0004384549392852932,
+      "boundaryEdges": 64,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 0,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 202,
+      "nearestDistance05PercentileMeters": 0.039835202507674694,
+      "minimumDistanceMeters": 0.019826199859380722
+    },
+    {
+      "source": {
+        "proxy": "Local collision only / existing thin carrier / 01 / bloomers / continuous waist and sewn crotch",
+        "actualSourceCarrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+        "visibleGarment": "01 / bloomers / continuous waist and sewn crotch",
+        "sourceVertices": 6287,
+        "sourceFaces": 6144,
+        "sharedActualMeshData": true,
+        "sameActualSkinGroups": true,
+        "sourceGeometryChanged": false,
+        "foreignBodyMesh": false,
+        "sourceClothAndThicknessExcludedFromLocalCollider": true
+      },
+      "vertices": 6287,
+      "triangles": 12288,
+      "radialOutwardFacingTrianglesFraction": 0.8693033854166666,
+      "radialInwardFacingTrianglesFraction": 0.13069661458333334,
+      "signedVolumeCubicMeters": 0.0014741533668711782,
+      "boundaryEdges": 288,
+      "nonmanifoldEdges": 0,
+      "limitation": "Radial signs use the object centroid and are descriptive on curved limbs; signed volume is definitive for closed consistent surfaces only.",
+      "carrierPointsWithinTwoMillimeters": 143,
+      "carrierPointsBehindGeometricNormalByOneMillimeter": 407,
+      "nearestDistance05PercentileMeters": 0.004483298282139003,
+      "minimumDistanceMeters": 0.00014987896429374814
+    }
+  ],
+  "actualRestInterlayerProximity": [
+    {
+      "first": "ivory",
+      "second": "support",
+      "testedPhysicalVertices": 3552,
+      "physicalVerticesWithinTwoMillimeters": 0,
+      "distance05PercentileMeters": 0.004087199387140572,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier1",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier2",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    },
+    {
+      "first": "tier3",
+      "second": "support",
+      "testedPhysicalVertices": 576,
+      "physicalVerticesWithinTwoMillimeters": 96,
+      "distance05PercentileMeters": 0.0,
+      "limitation": "Welded seam vertices are included; proximity alone is not a triangle-intersection or penetration test."
+    }
+  ],
+  "scriptSha256": "df1aae9f8601c1636470e59df4f4d8adfd1eeadace626318888d679783eb387d",
+  "colliderHelperSha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+  "parentEditableUnchanged": true,
+  "noMeshOrSimulationWasSavedOrModified": true,
+  "notAContactOrFidelityApproval": true
+}

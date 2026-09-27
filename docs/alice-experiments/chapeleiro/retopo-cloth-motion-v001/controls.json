@@ -1,0 +1,238 @@
+{
+  "cases": [
+    {
+      "case": "regular_inward",
+      "version": 1,
+      "frames": 29,
+      "physicalVertices": 8736,
+      "physicalFaces": 8544,
+      "solverQuality": 12,
+      "dataSha256": "d6dc6960a14c192b3a2eac45b6230c3f9cde89cbc28a77066e92af8db6ebc778",
+      "physicalSolverReexecuted": true,
+      "pieces": {
+        "ivory": {
+          "solverMaximumEdgeStretch": 2.0696465969085693,
+          "solverEdgeStretch95Percentile": 1.132155418395996,
+          "maximumEdgeStretch": 2.7437193393707275,
+          "edgeStretch95Percentile": 1.2598520517349243
+        },
+        "support": {
+          "solverMaximumEdgeStretch": 3.4175713062286377,
+          "solverEdgeStretch95Percentile": 1.4834848642349243,
+          "maximumEdgeStretch": 3.8599483966827393,
+          "edgeStretch95Percentile": 1.5156049728393555
+        },
+        "tier1": {
+          "solverMaximumEdgeStretch": 2.0008749961853027,
+          "solverEdgeStretch95Percentile": 1.2796870470046997,
+          "maximumEdgeStretch": 7.225181579589844,
+          "edgeStretch95Percentile": 2.7303380966186523
+        },
+        "tier2": {
+          "solverMaximumEdgeStretch": 2.232513427734375,
+          "solverEdgeStretch95Percentile": 1.3080105781555176,
+          "maximumEdgeStretch": 5.417433738708496,
+          "edgeStretch95Percentile": 2.5351221561431885
+        },
+        "tier3": {
+          "solverMaximumEdgeStretch": 2.385775566101074,
+          "solverEdgeStretch95Percentile": 1.472580075263977,
+          "maximumEdgeStretch": 5.681727886199951,
+          "edgeStretch95Percentile": 2.4373178482055664
+        }
+      }
+    },
+    {
+      "case": "smooth_detail_same_physics",
+      "version": 2,
+      "frames": 29,
+      "physicalVertices": 8736,
+      "physicalFaces": 8544,
+      "solverQuality": 12,
+      "dataSha256": "6c3bcbdd371e6b6d41c7a749ba700f503162a575fbc0fb4a6822f85cd212be62",
+      "physicalSolverReexecuted": false,
+      "pieces": {
+        "ivory": {
+          "solverMaximumEdgeStretch": 2.0696465969085693,
+          "solverEdgeStretch95Percentile": 1.132155418395996,
+          "maximumEdgeStretch": 2.0224721431732178,
+          "edgeStretch95Percentile": 1.2148280143737793
+        },
+        "support": {
+          "solverMaximumEdgeStretch": 3.4175713062286377,
+          "solverEdgeStretch95Percentile": 1.4834848642349243,
+          "maximumEdgeStretch": 3.586885452270508,
+          "edgeStretch95Percentile": 1.4898829460144043
+        },
+        "tier1": {
+          "solverMaximumEdgeStretch": 2.0008749961853027,
+          "solverEdgeStretch95Percentile": 1.2796870470046997,
+          "maximumEdgeStretch": 7.323376178741455,
+          "edgeStretch95Percentile": 2.012259006500244
+        },
+        "tier2": {
+          "solverMaximumEdgeStretch": 2.232513427734375,
+          "solverEdgeStretch95Percentile": 1.3080105781555176,
+          "maximumEdgeStretch": 5.273462772369385,
+          "edgeStretch95Percentile": 1.7850717306137085
+        },
+        "tier3": {
+          "solverMaximumEdgeStretch": 2.385775566101074,
+          "solverEdgeStretch95Percentile": 1.472580075263977,
+          "maximumEdgeStretch": 5.787691593170166,
+          "edgeStretch95Percentile": 1.8191452026367188
+        }
+      }
+    },
+    {
+      "case": "stiffness_control",
+      "version": 3,
+      "frames": 29,
+      "physicalVertices": 8736,
+      "physicalFaces": 8544,
+      "solverQuality": 12,
+      "dataSha256": "786768625b32a006d481f83774b4b91f4b4db93c76ee52f5ef700e05338082f5",
+      "physicalSolverReexecuted": true,
+      "pieces": {
+        "ivory": {
+          "solverMaximumEdgeStretch": 2.1737241744995117,
+          "solverEdgeStretch95Percentile": 1.126168131828308,
+          "maximumEdgeStretch": 2.77738356590271,
+          "edgeStretch95Percentile": 1.2910268306732178
+        },
+        "support": {
+          "solverMaximumEdgeStretch": 3.316828727722168,
+          "solverEdgeStretch95Percentile": 1.6547691822052002,
+          "maximumEdgeStretch": 3.5984575748443604,
+          "edgeStretch95Percentile": 1.6631579399108887
+        },
+        "tier1": {
+          "solverMaximumEdgeStretch": 2.018779993057251,
+          "solverEdgeStretch95Percentile": 1.2758898735046387,
+          "maximumEdgeStretch": 7.202395915985107,
+          "edgeStretch95Percentile": 2.7494430541992188
+        },
+        "tier2": {
+          "solverMaximumEdgeStretch": 2.1692235469818115,
+          "solverEdgeStretch95Percentile": 1.2662763595581055,
+          "maximumEdgeStretch": 5.458614826202393,
+          "edgeStretch95Percentile": 2.4373533725738525
+        },
+        "tier3": {
+          "solverMaximumEdgeStretch": 2.625840187072754,
+          "solverEdgeStretch95Percentile": 1.4563924074172974,
+          "maximumEdgeStretch": 6.018791675567627,
+          "edgeStretch95Percentile": 2.489915132522583
+        }
+      }
+    },
+    {
+      "case": "regular_outward_quality12",
+      "version": 5,
+      "frames": 29,
+      "physicalVertices": 8736,
+      "physicalFaces": 8544,
+      "solverQuality": 12,
+      "dataSha256": "fea85187991e8d28b244c496627f137dd243e83a6abb26abf27ae1263aa610bc",
+      "physicalSolverReexecuted": true,
+      "pieces": {
+        "ivory": {
+          "solverMaximumEdgeStretch": 2.0145256519317627,
+          "solverEdgeStretch95Percentile": 1.1725808382034302,
+          "maximumEdgeStretch": 2.7190325260162354,
+          "edgeStretch95Percentile": 1.317659854888916
+        },
+        "support": {
+          "solverMaximumEdgeStretch": 4.0693745613098145,
+          "solverEdgeStretch95Percentile": 1.7243868112564087,
+          "maximumEdgeStretch": 4.490822792053223,
+          "edgeStretch95Percentile": 1.7342004776000977
+        },
+        "tier1": {
+          "solverMaximumEdgeStretch": 2.841599941253662,
+          "solverEdgeStretch95Percentile": 1.4090489149093628,
+          "maximumEdgeStretch": 7.299777507781982,
+          "edgeStretch95Percentile": 2.779146432876587
+        },
+        "tier2": {
+          "solverMaximumEdgeStretch": 2.194868803024292,
+          "solverEdgeStretch95Percentile": 1.4313735961914062,
+          "maximumEdgeStretch": 5.380918025970459,
+          "edgeStretch95Percentile": 2.5584700107574463
+        },
+        "tier3": {
+          "solverMaximumEdgeStretch": 3.2361936569213867,
+          "solverEdgeStretch95Percentile": 1.70236337184906,
+          "maximumEdgeStretch": 5.951376914978027,
+          "edgeStretch95Percentile": 2.568037748336792
+        }
+      }
+    }
+  ],
+  "exactPreservedPhysicalArraysForDetailOnlyControl": [
+    "actual_simulation_points",
+    "simulation_rest_points",
+    "simulation_faces",
+    "simulation_edges",
+    "simulation_pin_weights",
+    "physical_seam_pairs",
+    "rig_deformations",
+    "bone_names"
+  ],
+  "sameRestPinsRigAndBodyInputFields": [
+    "simulation_rest_points",
+    "simulation_pin_weights",
+    "physical_seam_pairs",
+    "rig_deformations",
+    "bone_names",
+    "actual_skin_targets"
+  ],
+  "windingOnlyReversesIndependentFaces": true,
+  "windingSolverSettingsIdentical": true,
+  "quality48ControlIncompleteAndStoppedAfterDivergence": true,
+  "stiffnessActualSolverSettingsDelta": {
+    "tension_stiffness": [
+      35.0,
+      280.0
+    ],
+    "tension_stiffness_max": [
+      35.0,
+      2240.0
+    ],
+    "compression_stiffness": [
+      35.0,
+      280.0
+    ],
+    "compression_stiffness_max": [
+      35.0,
+      2240.0
+    ],
+    "shear_stiffness": [
+      12.0,
+      96.0
+    ],
+    "shear_stiffness_max": [
+      12.0,
+      768.0
+    ]
+  },
+  "stiffnessControlMaximumScaledTwiceByExecutedRnaDependentLoop": true,
+  "closedRestLegacySharedMeshFlagIsStaleAfterCopy": true,
+  "closedRestActualIndependentCopyAndUnchangedOriginalVerified": true,
+  "allCollidersAndCollisionSettingsIdentical": true,
+  "fullLocalEditable": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\chapeleiro_shared_rig_ivory_response.blend",
+    "bytes": 129770853,
+    "sha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38"
+  },
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "parentGlbSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "responseBakedIntoGlb": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalTripoCreditsConsumed": 0
+}

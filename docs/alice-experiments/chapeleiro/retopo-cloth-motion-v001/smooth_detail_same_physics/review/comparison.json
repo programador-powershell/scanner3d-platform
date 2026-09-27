@@ -1,0 +1,132 @@
+{
+  "parentEditableSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "probeDataSha256": "6c3bcbdd371e6b6d41c7a749ba700f503162a575fbc0fb4a6822f85cd212be62",
+  "scope": "Recorded coupled Ivory and Black cloth reconstructed through eight actual authored receivers; other 221 foundation surfaces remain body-driven context and are not collision-approved.",
+  "stableThinLaceTargets": true,
+  "thicknessOutputTopologyNotUsedAsLaceBindingTarget": true,
+  "renders": [
+    {
+      "sourcePhysicsFrame": 1,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v002\\actual_receiver_review\\foundation_01_front.png",
+      "sha256": "9a07dc8a49de2b90498fa7b74f014b59b23ebe0636001beacc1d0f9f6d89cde6",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v002\\actual_receiver_review\\foundation_20_front.png",
+      "sha256": "7cee0118baefe5d5493e625c71010f2c3c9e73347736e5146bc73ea55682bfc8",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v002\\actual_receiver_review\\foundation_29_threequarter.png",
+      "sha256": "6b1a85c3a47bf5f858b6c2213afe48ebb69dc16cab9d190f93bec547cc2a2840",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 5.066394805908203e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "sewn_receivers",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\retopo_ivory_black_cloth_v002\\actual_receiver_review\\sewn_receivers_29_threequarter.png",
+      "sha256": "801825c6c8340298ea674874e40a617650b609c191d42737c8b8636d00255165",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 5.066394805908203e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 8
+    }
+  ],
+  "scriptSha256": "18dc5d843c676433a9b76d0d366572b51359a2335f436072b5c3db7e7067f616",
+  "checkpointUnchanged": true,
+  "parentGlbUnchanged": true,
+  "responseBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}
