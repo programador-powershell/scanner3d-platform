@@ -1,0 +1,50 @@
+{
+  "beforeModelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "afterModelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+  "rows": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "fraction": 0.33,
+      "beforeHandMaximum": 15.936659812927246,
+      "afterHandMaximum": 5.520472049713135,
+      "beforeHandEdgesAbove10": 6,
+      "afterHandEdgesAbove10": 0
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "fraction": 0.66,
+      "beforeHandMaximum": 30.510976791381836,
+      "afterHandMaximum": 9.090677261352539,
+      "beforeHandEdgesAbove10": 50,
+      "afterHandEdgesAbove10": 0
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "fraction": 0.18,
+      "beforeHandMaximum": 32.582496643066406,
+      "afterHandMaximum": 11.498188018798828,
+      "beforeHandEdgesAbove10": 58,
+      "afterHandEdgesAbove10": 5
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "fraction": 0.5,
+      "beforeHandMaximum": 32.58258056640625,
+      "afterHandMaximum": 11.498186111450195,
+      "beforeHandEdgesAbove10": 61,
+      "afterHandEdgesAbove10": 5
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "fraction": 0.78,
+      "beforeHandMaximum": 32.58243942260742,
+      "afterHandMaximum": 11.498275756835938,
+      "beforeHandEdgesAbove10": 76,
+      "afterHandEdgesAbove10": 5
+    }
+  ],
+  "scope": "five actual exported poses; inferred hand mask follows actual skin groups and rest bounds, not all-frame or anatomy approval",
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false
+}

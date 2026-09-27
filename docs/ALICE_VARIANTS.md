@@ -467,3 +467,15 @@ com as mesmas quatro vistas, doze poses e foto própria preservadas. O candidato
 v091 foi rejeitado por regressão de atribuição no antebraço. O novo editável
 completo de 129.193.720 bytes foi preservado e reaberto; o FBX final e a próxima
 variante continuam aguardando a conclusão das fichas e testes de movimento.
+
+O [shared-rig-v093](alice-experiments/chapeleiro/shared-rig-v093/README.md)
+suaviza os pesos da palma e dedos na superfície intacta, com punhos e pontas
+reais como âncoras. Cinco poses medidas dos GLBs e seis detalhes renderizados
+antes/depois registram menos faixas alongadas na luva: o maior esticamento nas
+mãos no ataque cai de 32,58 para 11,50 vezes. Anatomia e acabamento das mãos,
+ombros, cabelo, vestido, tecido e colisões continuam pendentes. O novo editável
+completo de 129.256.128 bytes foi preservado e reaberto; a fundação segue
+idêntica à anterior. Um ensaio físico separado da anágua foi iniciado contra
+as superfícies animadas das meias e bloomers, sem incorporar essa resposta
+aos GLBs nem aprovar todas as camadas. O FBX final e a próxima variante continuam
+aguardando a conclusão integral do Chapeleiro.

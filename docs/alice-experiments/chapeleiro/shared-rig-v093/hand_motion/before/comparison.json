@@ -1,0 +1,204 @@
+{
+  "modelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "actualImportedSkeletons": 1,
+  "actualModelGeometryChanged": false,
+  "actualMaterialChanged": false,
+  "diagnosticObjectsAdded": false,
+  "scope": "six actual posed hand close-ups; camera follows actual wrist joint, entire source mesh remains present",
+  "renders": [
+    {
+      "side": "Left",
+      "motion": "Run",
+      "fraction": 0.66,
+      "frame": 9.248000276088716,
+      "file": "hand_motion/before/left_run_0.66.png",
+      "sha256": "9228e1dad9286b64a185674f047cae1b7037e9a1efcd12c3c9acc9d35b6a652f",
+      "cameraPosition": [
+        0.17570459842681885,
+        0.0010682642459869385,
+        1.0767953395843506
+      ],
+      "cameraTarget": [
+        -0.013172455132007599,
+        -0.27460017800331116,
+        0.7048647999763489
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          -0.03282855451107025,
+          -0.29404106736183167,
+          0.6764507293701172
+        ],
+        [
+          0.009218648076057434,
+          -0.2403056025505066,
+          0.7259344458580017
+        ]
+      ]
+    },
+    {
+      "side": "Right",
+      "motion": "Run",
+      "fraction": 0.66,
+      "frame": 9.248000276088716,
+      "file": "hand_motion/before/right_run_0.66.png",
+      "sha256": "8b02187e07c05eb85fce38f3bacfdbc4eae75f27e8f8b130b39718156d4d526f",
+      "cameraPosition": [
+        0.01820017397403717,
+        -0.25025075674057007,
+        0.2702471613883972
+      ],
+      "cameraTarget": [
+        -0.20620888471603394,
+        0.10352316498756409,
+        0.5431658029556274
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          -0.22148919105529785,
+          0.07419368624687195,
+          0.5182338356971741
+        ],
+        [
+          -0.17803999781608582,
+          0.1257311850786209,
+          0.5731797218322754
+        ]
+      ]
+    },
+    {
+      "side": "Left",
+      "motion": "Attack",
+      "fraction": 0.18,
+      "frame": 20.383999783992767,
+      "file": "hand_motion/before/left_attack_0.18.png",
+      "sha256": "4ef811a8bd02364d03d3d7153deb833d6b5a3b52df1d7f25e6a123f03bb2f673",
+      "cameraPosition": [
+        -0.33007317781448364,
+        -0.2581576108932495,
+        0.6892563104629517
+      ],
+      "cameraTarget": [
+        0.10405425727367401,
+        -0.13933256268501282,
+        0.47150883078575134
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          0.07214450091123581,
+          -0.15484419465065002,
+          0.448722243309021
+        ],
+        [
+          0.1328197419643402,
+          -0.1070241928100586,
+          0.49755334854125977
+        ]
+      ]
+    },
+    {
+      "side": "Right",
+      "motion": "Attack",
+      "fraction": 0.18,
+      "frame": 20.383999783992767,
+      "file": "hand_motion/before/right_attack_0.18.png",
+      "sha256": "52e9c55fdd4e5105b0f0d40a78d39956dcdfd508f32dd3fe658b6bde646a0e0a",
+      "cameraPosition": [
+        0.31814613938331604,
+        -0.15992562472820282,
+        0.8315433263778687
+      ],
+      "cameraTarget": [
+        -0.07685359567403793,
+        0.11714671552181244,
+        0.9627155661582947
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          -0.10707302391529083,
+          0.08206090331077576,
+          0.9338153600692749
+        ],
+        [
+          -0.05443083494901657,
+          0.13101652264595032,
+          0.980668842792511
+        ]
+      ]
+    },
+    {
+      "side": "Left",
+      "motion": "Attack",
+      "fraction": 0.78,
+      "frame": 85.66399882555008,
+      "file": "hand_motion/before/left_attack_0.78.png",
+      "sha256": "62513de4a442c18e083acc360562ffd44870f1c84ee010c113b96ef9c85f8e1d",
+      "cameraPosition": [
+        0.05497397482395172,
+        0.19381780922412872,
+        1.051218032836914
+      ],
+      "cameraTarget": [
+        -0.08952730894088745,
+        -0.15571336448192596,
+        0.7241899371147156
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          -0.10400041937828064,
+          -0.1848340779542923,
+          0.7044335603713989
+        ],
+        [
+          -0.053115665912628174,
+          -0.12466852366924286,
+          0.7431909441947937
+        ]
+      ]
+    },
+    {
+      "side": "Right",
+      "motion": "Attack",
+      "fraction": 0.78,
+      "frame": 85.66399882555008,
+      "file": "hand_motion/before/right_attack_0.78.png",
+      "sha256": "ca6b8b5dbcb44eafacc0cb97d4d31c4196ee677a91687e31d1e595768e973d93",
+      "cameraPosition": [
+        0.3204105496406555,
+        0.23572255671024323,
+        0.6386316418647766
+      ],
+      "cameraTarget": [
+        0.15611495077610016,
+        -0.22068043053150177,
+        0.5173745155334473
+      ],
+      "orthoScale": 0.14000000059604645,
+      "actualHandVertexBounds": [
+        [
+          0.12669165432453156,
+          -0.2438500076532364,
+          0.4994809627532959
+        ],
+        [
+          0.17631816864013672,
+          -0.1868859976530075,
+          0.5465635657310486
+        ]
+      ]
+    }
+  ],
+  "scriptSha256": "b4274a9f1a4d75767df2bef806b0aab86649758713f730634a52d5560f35d8df",
+  "sourceGlbUnchanged": true,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "pathsRelativeTo": "study package root"
+}

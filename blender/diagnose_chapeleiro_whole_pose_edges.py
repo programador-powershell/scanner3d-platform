@@ -6,6 +6,7 @@ import numpy as np
 
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--generation',required=True);parser.add_argument('--output',required=True)
+parser.add_argument('--region',choices=['all','hands'],default='all')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
 record=json.loads(Path(args.generation).read_text(encoding='utf-8'))
 file=Path(record['model']);expected=record['modelSha256']
@@ -40,6 +41,14 @@ groups={g.index:g.name for g in obj.vertex_groups if g.name in bone_names}
 def weights(index):
     return {groups[g.group]:g.weight for g in obj.data.vertices[index].groups if g.group in groups and g.weight>0}
 
+if args.region=='hands':
+    selected=np.zeros(len(rest),bool)
+    for side,sign in [('Left',1),('Right',-1)]:
+        total=np.array([sum(g.weight for g in v.groups if groups.get(g.group,'').startswith(side+'Hand')) for v in obj.data.vertices])
+        selected|=(total>.995)&(rest[:,0]*sign>.12)&(rest[:,2]<.535)&(rest[:,2]>.415)
+    valid&=np.any(selected[edges],axis=1)
+valid_indices=np.flatnonzero(valid);assert len(valid_indices)>0
+
 poses=[]
 for label,fraction in [('Walk',.33),('Run',.66),('Attack',.18),('Attack',.50),('Attack',.78)]:
     actions=[a for a in bpy.data.actions if a.name.startswith(label+' /')];assert len(actions)==1
@@ -52,17 +61,18 @@ for label,fraction in [('Walk',.33),('Run',.66),('Attack',.18),('Attack',.50),('
     posed=np.linalg.norm(points[edges[:,0]]-points[edges[:,1]],axis=1)
     ratio=np.ones(len(edges));ratio[valid]=posed[valid]/lengths[valid]
     rows=[]
-    for edge_index in np.argsort(ratio)[-8:][::-1]:
+    for edge_index in valid_indices[np.argsort(ratio[valid_indices])[-8:][::-1]]:
         pair=edges[edge_index]
         rows.append({'edgeIndex':int(edge_index),'vertexIndices':pair.tolist(),'stretchRatio':float(ratio[edge_index]),
                      'restLength':float(lengths[edge_index]),'posedLength':float(posed[edge_index]),
                      'restEndpointsSourceBlender':rest[pair].tolist(),'posedEndpointsSourceBlender':points[pair].tolist(),
                      'actualEndpointWeights':[weights(int(v)) for v in pair]})
-    pose={'clip':action.name,'fraction':fraction,'frame':frame,'worstActualEdges':rows}
+    pose={'clip':action.name,'fraction':fraction,'frame':frame,'worstActualEdges':rows,'actualRegionEdgesAbove10':int((ratio[valid]>10).sum())}
     poses.append(pose)
     print(json.dumps({'clip':label,'fraction':fraction,'worstActualEdge':rows[0]}),flush=True)
 
 report={'model':str(file),'modelSha256':expected,'method':'actual reimported one-mesh skin; same topology and exact endpoint weights',
+        'region':args.region,'actualMeasuredEdges':int(valid.sum()),'scriptSha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'poses':poses,'geometryChanged':False,'fidelityVerified':False,'motionVerified':False,'clothCollisionVerified':False,
         'limitation':'A numeric edge diagnosis does not approve movement, geometry, or physical cloth.'}
 Path(args.output).write_text(json.dumps(report,indent=2),encoding='utf-8')

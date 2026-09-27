@@ -176,5 +176,5 @@ if args.native_surface_weights:
     result['nativeSurfaceWeightInferenceSha256']=sha(out/'native_surface_weight_inference.json')
     result['nativeSurfaceWeightScriptSha256']=sha(Path(__file__).with_name('chapeleiro_native_surface_weights.py'))
     result['nativeSurfaceOwnershipVerified']=False
-    result['method']='same_230_piece_shared_rig_with_intact_native_geodesic_surface_weight_refinement'
+    result['method']='same_230_piece_shared_rig_with_intact_native_surface_weight_refinement'
 write('generation',result);progress('complete_local_attachment_refinement',actualPieces=len(previews))

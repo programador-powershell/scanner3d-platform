@@ -1,0 +1,226 @@
+{
+  "artifacts": [
+    {
+      "file": "executed_chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_refine_chapeleiro_shared_rig_attachments.py",
+      "sha256": "252804bba7accef903eb7f415b2981f63b1ad220fd46f9be3ccc1580b79ccb2e",
+      "bytes": 14739
+    },
+    {
+      "file": "executed_chapeleiro_native_surface_weights.py",
+      "sha256": "b15503ea12d11cb26f01d4769c8b7e150c770a2057578dbdd6ce34c1ead78f7c",
+      "bytes": 3983
+    },
+    {
+      "file": "full_editable_reopen.json",
+      "sha256": "4a14e016aa0807a649ee3af5d6458324462e4b34fa4d78333f1aca2e0791676d",
+      "bytes": 48820
+    },
+    {
+      "file": "native_hand_bind_fit.json",
+      "sha256": "8ddddec2cffc33f7382b160881f491fdf28a8a2cc0266a4147b8238af1055c03",
+      "bytes": 1174101
+    },
+    {
+      "file": "native_individual_finger_targets.json",
+      "sha256": "cb216e4da7986cecce58dc36b73114944b234c7c309c90fed6afd5dbad68968d",
+      "bytes": 922775
+    },
+    {
+      "file": "refitted_motion_retarget.json",
+      "sha256": "248690baeafbc1cbcfad6c00e0a2530b4ff273844655738d12b302774fda56f2",
+      "bytes": 10836
+    },
+    {
+      "file": "native_surface_weight_inference.json",
+      "sha256": "e2ca051bf36ad0a433b03d1c248315648a3aca681ba4d6d478e34ee892850014",
+      "bytes": 7780
+    },
+    {
+      "file": "native_surface_weights.npz",
+      "sha256": "0c76a0aa13df5421973afe25da8392f9ff77089ce2b7545d713c13c26198b08e",
+      "bytes": 2317682
+    },
+    {
+      "file": "foundation_evidence_reuse.json",
+      "sha256": "449cb3e2bb5bacdb90e42afd1f6452623272de235cc71c484762330714169c5f",
+      "bytes": 570
+    },
+    {
+      "file": "surface_measurements/measurement.json",
+      "sha256": "13d239a232d18b2279ff197c4b6725254ad9a16ea49e47672e8a77ace79a15fe",
+      "bytes": 56388
+    },
+    {
+      "file": "surface_measurements/native_surface_weights.npz",
+      "sha256": "f00c56f56fa2e0d27ee6d83ad549e3c877feccba20bcbed9e5bc547fe526be3d",
+      "bytes": 17461416
+    },
+    {
+      "file": "surface_measurements/surface_boundary_diagnosis.json",
+      "sha256": "9a8ccafe289152ccc48f99c5e20971dbfa4c867070f07d18e7bfb78a5da9f192",
+      "bytes": 355316
+    },
+    {
+      "file": "surface_measurements/executed_measure_chapeleiro_native_surface_weights.py",
+      "sha256": "374ca2570490899f870dddc8bf0e056053fe5a295ac9f4e40168e5476b1738f6",
+      "bytes": 6285
+    },
+    {
+      "file": "surface_measurements/executed_analyze_chapeleiro_native_surface_weights_v092.py",
+      "sha256": "3c78ab86ecf982cdfa5ad602aab11b1f29575bac1fb110245db739bbd79d9ac8",
+      "bytes": 2968
+    },
+    {
+      "file": "hand_diffusion/executed_probe_chapeleiro_hand_surface_diffusion.py",
+      "sha256": "e9d969252f18a5d541befbd6f8eb5c6a53c37c54897d4cb631e4f0329a2514cc",
+      "bytes": 5729
+    },
+    {
+      "file": "hand_diffusion/probes.json",
+      "sha256": "427e673086bf99bd4b99addf3c39077637d4eb471fc3d66c527e7b8ad225707d",
+      "bytes": 23934
+    },
+    {
+      "file": "hand_diffusion/steps_08.json",
+      "sha256": "13356e7389a264b340580b38f7400471205678e3b7c94a83b8d3e61b4ed2e166",
+      "bytes": 7434
+    },
+    {
+      "file": "hand_diffusion/steps_24.json",
+      "sha256": "25cefe5469afdb76d1d59e20b586c0721d57e2477bde5a7f21a6ebb14d28bec4",
+      "bytes": 7435
+    },
+    {
+      "file": "hand_diffusion/steps_48.json",
+      "sha256": "f6f115ad90c75ac047ffbea7d118daff07291628d99824497d2bf1e4f464f146",
+      "bytes": 7433
+    },
+    {
+      "file": "hand_diffusion/steps_48.npz",
+      "sha256": "0c76a0aa13df5421973afe25da8392f9ff77089ce2b7545d713c13c26198b08e",
+      "bytes": 2317682
+    },
+    {
+      "file": "executed_inspect_chapeleiro_cloth_authoring.py",
+      "sha256": "215448123e2e7bb92dca4516fe35f7f9d71566be060f9a77f1c7dfe38632f5c3",
+      "bytes": 3719
+    },
+    {
+      "file": "executed_probe_chapeleiro_ivory_cloth_motion.py",
+      "sha256": "0eb795104283796648ebdf0b2b15d298378179ebd09500bc286a6a9388c8b508",
+      "bytes": 5599
+    },
+    {
+      "file": "executed_render_chapeleiro_actual_hand_motion.py",
+      "sha256": "b4274a9f1a4d75767df2bef806b0aab86649758713f730634a52d5560f35d8df",
+      "bytes": 5307
+    },
+    {
+      "file": "executed_diagnose_chapeleiro_whole_pose_edges.py",
+      "sha256": "9e8cb2af6581414602d4544025bd25b2e8703fa4950c65581b354897ac46ace4",
+      "bytes": 4637
+    },
+    {
+      "file": "executed_audit_chapeleiro_shared_rig_checkpoint.py",
+      "sha256": "dd8163d6139090c8d354c4d9fd3562f8eb220a4c79dd0b2e60c91a3ebf6d5794",
+      "bytes": 4703
+    },
+    {
+      "file": "cloth_authoring_inspection.json",
+      "sha256": "0eff7604b9f9416c3b86b0b7e94d3614450c1fbba08d9769bb1b459d42c5f826",
+      "bytes": 47702
+    },
+    {
+      "file": "hand_motion/before/left_run_0.66.png",
+      "sha256": "9228e1dad9286b64a185674f047cae1b7037e9a1efcd12c3c9acc9d35b6a652f",
+      "bytes": 396830
+    },
+    {
+      "file": "hand_motion/before/right_run_0.66.png",
+      "sha256": "8b02187e07c05eb85fce38f3bacfdbc4eae75f27e8f8b130b39718156d4d526f",
+      "bytes": 580144
+    },
+    {
+      "file": "hand_motion/before/left_attack_0.18.png",
+      "sha256": "4ef811a8bd02364d03d3d7153deb833d6b5a3b52df1d7f25e6a123f03bb2f673",
+      "bytes": 355052
+    },
+    {
+      "file": "hand_motion/before/right_attack_0.18.png",
+      "sha256": "52e9c55fdd4e5105b0f0d40a78d39956dcdfd508f32dd3fe658b6bde646a0e0a",
+      "bytes": 254736
+    },
+    {
+      "file": "hand_motion/before/left_attack_0.78.png",
+      "sha256": "62513de4a442c18e083acc360562ffd44870f1c84ee010c113b96ef9c85f8e1d",
+      "bytes": 409510
+    },
+    {
+      "file": "hand_motion/before/right_attack_0.78.png",
+      "sha256": "ca6b8b5dbcb44eafacc0cb97d4d31c4196ee677a91687e31d1e595768e973d93",
+      "bytes": 214002
+    },
+    {
+      "file": "hand_motion/after/left_run_0.66.png",
+      "sha256": "985329a30d56aeef2e590722970ee6f02189a70b0b569243fa251f240e057d20",
+      "bytes": 396136
+    },
+    {
+      "file": "hand_motion/after/right_run_0.66.png",
+      "sha256": "2ddb6ddbb40f7162e1f9bd01f633574b28722b34d6d89180723c95450173d4b7",
+      "bytes": 580137
+    },
+    {
+      "file": "hand_motion/after/left_attack_0.18.png",
+      "sha256": "e87ff19aaabdad36c50ca1b71629b608109f3c1421ba7b898c57b35ac002f0f2",
+      "bytes": 353630
+    },
+    {
+      "file": "hand_motion/after/right_attack_0.18.png",
+      "sha256": "5943e4e9862a5e26b00086ab54ac49cabf24476a2d5d84499bfc95924c63802d",
+      "bytes": 252269
+    },
+    {
+      "file": "hand_motion/after/left_attack_0.78.png",
+      "sha256": "b228099048dc6a6da5e9641bc7894f73530dd21b0bfeb3750f4a51f1b6bda17f",
+      "bytes": 410427
+    },
+    {
+      "file": "hand_motion/after/right_attack_0.78.png",
+      "sha256": "10c376beccc5665a55e8d30d8a3f06e44672380afadcda9d70b7156d6c5c253d",
+      "bytes": 214356
+    },
+    {
+      "file": "photo_vs_actual_hand_motion_before_after.jpg",
+      "sha256": "75d8bba4a90209d608b6185414d236e00d20c1b3149be8cd229a66b4064c2a26",
+      "bytes": 299526
+    },
+    {
+      "file": "hand_motion_before_after_board.json",
+      "sha256": "d722627e7119ed521fa448279482f8f5a8d4f2e3b2f5823352e8d5b3e84342c6",
+      "bytes": 739
+    },
+    {
+      "file": "executed_package_chapeleiro_v093_review.py",
+      "sha256": "eddf94689fd167025baf5722318a48acaaecfcb3aadabfba7f1c29a0e283011b",
+      "bytes": 4519
+    },
+    {
+      "file": "whole_actual_pose_edge_diagnosis.json",
+      "sha256": "a501193efac5c875ae5ce2bd6f83fde49a862d75b01ab8b68f3b420adb8fcb43",
+      "bytes": 57004
+    },
+    {
+      "file": "executed_compose_chapeleiro_v093_hand_review.py",
+      "sha256": "39770ac3bb0570755ed9265cd593f2faf37e435d85cb0473fe0ce94319a0f77e",
+      "bytes": 2698
+    }
+  ],
+  "allLayersFinished": false,
+  "finalFbxExported": false
+}

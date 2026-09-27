@@ -26,7 +26,7 @@ def assign_native_surface_weights(obj,rig,guide,parent,whole):
     for v in obj.data.vertices:
         for group in v.groups:
             if group.group in groups:original[v.index,groups[group.group]]=group.weight
-    if not np.array_equal(original[preserve],weights[preserve]):raise ValueError('Changed protected separate arm/hand weights.')
+    if not np.array_equal(original[preserve],weights[preserve]):raise ValueError('Changed vertices marked for exact weight preservation.')
     obj.vertex_groups.clear()
     if any(v.groups for v in obj.data.vertices):raise ValueError('Inherited native weights remain.')
     used=[];group_columns={}
@@ -45,9 +45,11 @@ def assign_native_surface_weights(obj,rig,guide,parent,whole):
         actual=[g.weight for g in v.groups if g.weight>0]
         unweighted+=not bool(actual);error=max(error,abs(sum(actual)-1));maximum=max(maximum,len(actual))
     if unweighted or error>1e-7 or maximum>4:raise ValueError('Applied native weights failed actual vertex verification.')
-    return {'mesh':obj.name,'role':'whole_native','vertices':len(obj.data.vertices),'boneGroups':used,
+    result={'mesh':obj.name,'role':'whole_native','vertices':len(obj.data.vertices),'boneGroups':used,
         'unweightedVertices':unweighted,'maximumNormalizationError':error,'maximumInfluences':maximum,
-        'quantization':65536,'preservedClothFields':False,'preservedSeparateArmVertices':int(preserve.sum()),
+        'quantization':65536,'preservedClothFields':False,'preservedVertices':int(preserve.sum()),
         'method':record['method'],'inferenceSha256':sha(guide),'weightsSha256':record['weightsSha256'],
         'nativeSurfaceOwnershipInferred':True,'nativeSurfaceOwnershipVerified':False,
         'geometryChanged':False,'motionVerified':False,'clothCollisionVerified':False}
+    if 'preservedSeparateArmVertices' in record:result['preservedSeparateArmVertices']=record['preservedSeparateArmVertices']
+    return result

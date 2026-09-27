@@ -1,0 +1,1566 @@
+{
+  "editableSha256": "40296b35fcd6551a781eb13628e179a19a4243895ea7389f471312c9ef58861b",
+  "actualAuthoringCages": [
+    {
+      "mesh": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "receiver": "01 / gathered blouse / real open armholes",
+      "vertices": 6554,
+      "faces": 6320,
+      "bounds": [
+        [
+          -0.08810394257307053,
+          -0.06347133219242096,
+          0.703000009059906
+        ],
+        [
+          0.08804827928543091,
+          0.06335627287626266,
+          0.8119999766349792
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.44999998807907104,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Valid evaluated midsurface for deformation bindings",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its single simulation midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / gathered blouse / real open armholes / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 640,
+          "fullyPinnedVertices": 320
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 6554,
+          "fullyPinnedVertices": 6554
+        }
+      },
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "receiver": "01 / right gathered puff sleeve / sewn armhole",
+      "vertices": 4712,
+      "faces": 4560,
+      "bounds": [
+        [
+          0.07385790348052979,
+          -0.039309531450271606,
+          0.7212709784507751
+        ],
+        [
+          0.12905322015285492,
+          0.038026243448257446,
+          0.8045681715011597
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / gathered blouse / real open armholes / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.44999998807907104,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Valid evaluated midsurface for deformation bindings",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its single simulation midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 456,
+          "fullyPinnedVertices": 304
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 4712,
+          "fullyPinnedVertices": 4712
+        }
+      },
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "receiver": "01 / left gathered puff sleeve / sewn armhole",
+      "vertices": 4712,
+      "faces": 4560,
+      "bounds": [
+        [
+          -0.128363698720932,
+          -0.03867269307374954,
+          0.720769464969635
+        ],
+        [
+          -0.073790043592453,
+          0.03735770285129547,
+          0.8045681715011597
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / gathered blouse / real open armholes / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.44999998807907104,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Valid evaluated midsurface for deformation bindings",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its single simulation midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 456,
+          "fullyPinnedVertices": 304
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 4712,
+          "fullyPinnedVertices": 4712
+        }
+      },
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "receiver": "01 / bloomers / continuous waist and sewn crotch",
+      "vertices": 6287,
+      "faces": 6144,
+      "bounds": [
+        [
+          -0.09757381677627563,
+          -0.05292341858148575,
+          0.42100000381469727
+        ],
+        [
+          0.09611490368843079,
+          0.05296115577220917,
+          0.6240000128746033
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.44999998807907104,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Valid evaluated midsurface for deformation bindings",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its single simulation midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 416,
+          "fullyPinnedVertices": 288
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 6287,
+          "fullyPinnedVertices": 6287
+        }
+      },
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "receiver": "01 / left stocking / fitted leg ankle and closed toe",
+      "vertices": 4289,
+      "faces": 4288,
+      "bounds": [
+        [
+          0.015853215008974075,
+          -0.0636446624994278,
+          0.0060196528211236
+        ],
+        [
+          0.11195690929889679,
+          0.038981616497039795,
+          0.5171178579330444
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "receiver": "01 / right stocking / fitted leg ankle and closed toe",
+      "vertices": 4289,
+      "faces": 4288,
+      "bounds": [
+        [
+          -0.11474873125553131,
+          -0.06364025175571442,
+          0.0060196528211236
+        ],
+        [
+          -0.015844210982322693,
+          0.038981616497039795,
+          0.5171178579330444
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "receiver": "01 / garter belt / gathered waist casing",
+      "vertices": 12800,
+      "faces": 12288,
+      "bounds": [
+        [
+          -0.06358624249696732,
+          -0.043524160981178284,
+          0.5860000252723694
+        ],
+        [
+          0.06372160464525223,
+          0.043240904808044434,
+          0.5940000414848328
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.44999998807907104,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Valid evaluated midsurface for deformation bindings",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its single simulation midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / garter belt / gathered waist casing / simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 1024,
+          "fullyPinnedVertices": 512
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 12800,
+          "fullyPinnedVertices": 12800
+        }
+      },
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / left garter / front suspension web / skin midsurface",
+      "receiver": "01 / left garter / front suspension web",
+      "vertices": 285,
+      "faces": 224,
+      "bounds": [
+        [
+          0.03323046863079071,
+          -0.04144751653075218,
+          0.4659999907016754
+        ],
+        [
+          0.04915321618318558,
+          -0.032999999821186066,
+          0.5860000252723694
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / left garter / front suspension web / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / left garter / rear suspension web / skin midsurface",
+      "receiver": "01 / left garter / rear suspension web",
+      "vertices": 50,
+      "faces": 24,
+      "bounds": [
+        [
+          0.03323046863079071,
+          0.03400000184774399,
+          0.4830000102519989
+        ],
+        [
+          0.04915321618318558,
+          0.0356186181306839,
+          0.5860000252723694
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / left garter / rear suspension web / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / right garter / front suspension web / skin midsurface",
+      "receiver": "01 / right garter / front suspension web",
+      "vertices": 285,
+      "faces": 224,
+      "bounds": [
+        [
+          -0.049144212156534195,
+          -0.041438352316617966,
+          0.4659999907016754
+        ],
+        [
+          -0.03323046863079071,
+          -0.032999999821186066,
+          0.5860000252723694
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / right garter / front suspension web / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / right garter / rear suspension web / skin midsurface",
+      "receiver": "01 / right garter / rear suspension web",
+      "vertices": 50,
+      "faces": 24,
+      "bounds": [
+        [
+          -0.049144212156534195,
+          0.03400000184774399,
+          0.4830000102519989
+        ],
+        [
+          -0.03323046863079071,
+          0.0356186181306839,
+          0.5860000252723694
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Valid evaluated skin midsurface",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible fabric follows its skin midsurface",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / right garter / rear suspension web / skin midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {},
+      "clothFamily": null
+    },
+    {
+      "mesh": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "receiver": "01 / long ivory gathered petticoat",
+      "vertices": 7104,
+      "faces": 6912,
+      "bounds": [
+        [
+          -0.17590384185314178,
+          -0.10797129571437836,
+          0.39753785729408264
+        ],
+        [
+          0.17614640295505524,
+          0.10690587759017944,
+          0.6370000243186951
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.11999999731779099,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.6000000238418579,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": false
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Stable evaluated thin target / fixed diagonals",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Visible petticoat follows its single thin solver",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / Post sim cloth / new internal surface",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 384,
+          "fullyPinnedVertices": 192
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 7104,
+          "fullyPinnedVertices": 7104
+        }
+      },
+      "clothFamily": "IvoryCloth"
+    },
+    {
+      "mesh": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "receiver": "01 / left petticoat / sewn drawstring casing tape",
+      "vertices": 3201,
+      "faces": 3072,
+      "bounds": [
+        [
+          -0.18689154088497162,
+          -0.0782577395439148,
+          0.373726487159729
+        ],
+        [
+          -0.009367906488478184,
+          0.11145977675914764,
+          0.6370000243186951
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.25,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Stable evaluated thin target / fixed diagonals",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 72,
+          "fullyPinnedVertices": 39
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 3201,
+          "fullyPinnedVertices": 3201
+        }
+      },
+      "clothFamily": "IvoryCloth"
+    },
+    {
+      "mesh": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "receiver": "01 / right petticoat / sewn drawstring casing tape",
+      "vertices": 3201,
+      "faces": 3072,
+      "bounds": [
+        [
+          0.009331855922937393,
+          -0.08020445704460144,
+          0.3737661838531494
+        ],
+        [
+          0.18612229824066162,
+          0.11081783473491669,
+          0.6370000243186951
+        ]
+      ],
+      "supportModifiers": [
+        {
+          "name": "Skin before physical garment solver",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        },
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Cloth",
+          "type": "CLOTH",
+          "showViewport": true,
+          "showRender": true,
+          "settings": {
+            "quality": 12,
+            "mass": 0.07999999821186066,
+            "time_scale": 1.0,
+            "air_damping": 1.0,
+            "tension_stiffness": 35.0,
+            "compression_stiffness": 35.0,
+            "shear_stiffness": 12.0,
+            "bending_stiffness": 0.25,
+            "pin_stiffness": 1.0,
+            "vertex_group_mass": "pinned",
+            "use_dynamic_mesh": true
+          },
+          "collision": {
+            "use_collision": true,
+            "collision_quality": 5,
+            "distance_min": 0.0010000000474974513,
+            "friction": 5.0,
+            "use_self_collision": true,
+            "self_distance_min": 0.0010000000474974513,
+            "self_friction": 5.0
+          },
+          "cache": {
+            "frame_start": 1,
+            "frame_end": 48,
+            "is_baked": false,
+            "is_outdated": false,
+            "use_disk_cache": false
+          }
+        },
+        {
+          "name": "Stable evaluated thin target / fixed diagonals",
+          "type": "TRIANGULATE",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "authoringReceiverModifiers": [
+        {
+          "name": "Sewn blouse attachment follows actual fabric",
+          "type": "SURFACE_DEFORM",
+          "showViewport": true,
+          "showRender": true,
+          "target": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+          "isBound": true
+        },
+        {
+          "name": "Bystedt / blouse thickness and UV",
+          "type": "NODES",
+          "showViewport": true,
+          "showRender": true
+        }
+      ],
+      "exportedPreviewModifiers": [
+        {
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "rig": "Alice Chapeleiro / shared rig study"
+        }
+      ],
+      "authoredFields": {
+        "pinned": {
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "positiveVertices": 72,
+          "fullyPinnedVertices": 39
+        },
+        "stiffness": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "shrinking": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "positiveVertices": 0,
+          "fullyPinnedVertices": 0
+        },
+        "pressure": {
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "positiveVertices": 3201,
+          "fullyPinnedVertices": 3201
+        }
+      },
+      "clothFamily": "IvoryCloth"
+    }
+  ],
+  "clothFamilies": {
+    "IvoryCloth": {
+      "sectors": 12,
+      "levels": [
+        0.6373582482337952,
+        0.5359140435854594,
+        0.43446983893712365,
+        0.33302563428878784
+      ],
+      "radii": [
+        [
+          0.08122938573360443,
+          0.050240329980850214
+        ],
+        [
+          0.12341780960559845,
+          0.07486168870329857
+        ],
+        [
+          0.16608456149697304,
+          0.09870876337885856
+        ],
+        [
+          0.19089916571974752,
+          0.11614403319358826
+        ]
+      ],
+      "response": "unbaked; parent motion only",
+      "collisionVerified": false
+    },
+    "BlackCloth": {
+      "sectors": 12,
+      "levels": [
+        0.6333376169204712,
+        0.5006999323765436,
+        0.36806224783261615,
+        0.23542456328868866
+      ],
+      "radii": [
+        [
+          0.07921276651322842,
+          0.050445295356214045
+        ],
+        [
+          0.12285363525152206,
+          0.07368603446185588
+        ],
+        [
+          0.19347644001245498,
+          0.1116563155800104
+        ],
+        [
+          0.21386277377605437,
+          0.12733763699531556
+        ]
+      ],
+      "response": "unbaked; parent motion only",
+      "collisionVerified": false
+    },
+    "ExteriorCloth": {
+      "sectors": 12,
+      "levels": [
+        0.639989972114563,
+        0.5066656023263931,
+        0.37334123253822327,
+        0.2400168627500534
+      ],
+      "radii": [
+        [
+          0.14512373507022858,
+          0.07397659090161324
+        ],
+        [
+          0.1822074890136719,
+          0.1036474465340376
+        ],
+        [
+          0.20048022270202637,
+          0.14165701311826706
+        ],
+        [
+          0.19298020899295806,
+          0.13556352066993713
+        ]
+      ],
+      "response": "unbaked; parent motion only",
+      "collisionVerified": false
+    }
+  },
+  "secondaryBoneParents": {
+    "IvoryCloth_00_0": "Hips",
+    "IvoryCloth_00_1": "IvoryCloth_00_0",
+    "IvoryCloth_00_2": "IvoryCloth_00_1",
+    "IvoryCloth_01_0": "Hips",
+    "IvoryCloth_01_1": "IvoryCloth_01_0",
+    "IvoryCloth_01_2": "IvoryCloth_01_1",
+    "IvoryCloth_02_0": "Hips",
+    "IvoryCloth_02_1": "IvoryCloth_02_0",
+    "IvoryCloth_02_2": "IvoryCloth_02_1",
+    "IvoryCloth_03_0": "Hips",
+    "IvoryCloth_03_1": "IvoryCloth_03_0",
+    "IvoryCloth_03_2": "IvoryCloth_03_1",
+    "IvoryCloth_04_0": "Hips",
+    "IvoryCloth_04_1": "IvoryCloth_04_0",
+    "IvoryCloth_04_2": "IvoryCloth_04_1",
+    "IvoryCloth_05_0": "Hips",
+    "IvoryCloth_05_1": "IvoryCloth_05_0",
+    "IvoryCloth_05_2": "IvoryCloth_05_1",
+    "IvoryCloth_06_0": "Hips",
+    "IvoryCloth_06_1": "IvoryCloth_06_0",
+    "IvoryCloth_06_2": "IvoryCloth_06_1",
+    "IvoryCloth_07_0": "Hips",
+    "IvoryCloth_07_1": "IvoryCloth_07_0",
+    "IvoryCloth_07_2": "IvoryCloth_07_1",
+    "IvoryCloth_08_0": "Hips",
+    "IvoryCloth_08_1": "IvoryCloth_08_0",
+    "IvoryCloth_08_2": "IvoryCloth_08_1",
+    "IvoryCloth_09_0": "Hips",
+    "IvoryCloth_09_1": "IvoryCloth_09_0",
+    "IvoryCloth_09_2": "IvoryCloth_09_1",
+    "IvoryCloth_10_0": "Hips",
+    "IvoryCloth_10_1": "IvoryCloth_10_0",
+    "IvoryCloth_10_2": "IvoryCloth_10_1",
+    "IvoryCloth_11_0": "Hips",
+    "IvoryCloth_11_1": "IvoryCloth_11_0",
+    "IvoryCloth_11_2": "IvoryCloth_11_1",
+    "BlackCloth_00_0": "Hips",
+    "BlackCloth_00_1": "BlackCloth_00_0",
+    "BlackCloth_00_2": "BlackCloth_00_1",
+    "BlackCloth_01_0": "Hips",
+    "BlackCloth_01_1": "BlackCloth_01_0",
+    "BlackCloth_01_2": "BlackCloth_01_1",
+    "BlackCloth_02_0": "Hips",
+    "BlackCloth_02_1": "BlackCloth_02_0",
+    "BlackCloth_02_2": "BlackCloth_02_1",
+    "BlackCloth_03_0": "Hips",
+    "BlackCloth_03_1": "BlackCloth_03_0",
+    "BlackCloth_03_2": "BlackCloth_03_1",
+    "BlackCloth_04_0": "Hips",
+    "BlackCloth_04_1": "BlackCloth_04_0",
+    "BlackCloth_04_2": "BlackCloth_04_1",
+    "BlackCloth_05_0": "Hips",
+    "BlackCloth_05_1": "BlackCloth_05_0",
+    "BlackCloth_05_2": "BlackCloth_05_1",
+    "BlackCloth_06_0": "Hips",
+    "BlackCloth_06_1": "BlackCloth_06_0",
+    "BlackCloth_06_2": "BlackCloth_06_1",
+    "BlackCloth_07_0": "Hips",
+    "BlackCloth_07_1": "BlackCloth_07_0",
+    "BlackCloth_07_2": "BlackCloth_07_1",
+    "BlackCloth_08_0": "Hips",
+    "BlackCloth_08_1": "BlackCloth_08_0",
+    "BlackCloth_08_2": "BlackCloth_08_1",
+    "BlackCloth_09_0": "Hips",
+    "BlackCloth_09_1": "BlackCloth_09_0",
+    "BlackCloth_09_2": "BlackCloth_09_1",
+    "BlackCloth_10_0": "Hips",
+    "BlackCloth_10_1": "BlackCloth_10_0",
+    "BlackCloth_10_2": "BlackCloth_10_1",
+    "BlackCloth_11_0": "Hips",
+    "BlackCloth_11_1": "BlackCloth_11_0",
+    "BlackCloth_11_2": "BlackCloth_11_1",
+    "ExteriorCloth_00_0": "Hips",
+    "ExteriorCloth_00_1": "ExteriorCloth_00_0",
+    "ExteriorCloth_00_2": "ExteriorCloth_00_1",
+    "ExteriorCloth_01_0": "Hips",
+    "ExteriorCloth_01_1": "ExteriorCloth_01_0",
+    "ExteriorCloth_01_2": "ExteriorCloth_01_1",
+    "ExteriorCloth_02_0": "Hips",
+    "ExteriorCloth_02_1": "ExteriorCloth_02_0",
+    "ExteriorCloth_02_2": "ExteriorCloth_02_1",
+    "ExteriorCloth_03_0": "Hips",
+    "ExteriorCloth_03_1": "ExteriorCloth_03_0",
+    "ExteriorCloth_03_2": "ExteriorCloth_03_1",
+    "ExteriorCloth_04_0": "Hips",
+    "ExteriorCloth_04_1": "ExteriorCloth_04_0",
+    "ExteriorCloth_04_2": "ExteriorCloth_04_1",
+    "ExteriorCloth_05_0": "Hips",
+    "ExteriorCloth_05_1": "ExteriorCloth_05_0",
+    "ExteriorCloth_05_2": "ExteriorCloth_05_1",
+    "ExteriorCloth_06_0": "Hips",
+    "ExteriorCloth_06_1": "ExteriorCloth_06_0",
+    "ExteriorCloth_06_2": "ExteriorCloth_06_1",
+    "ExteriorCloth_07_0": "Hips",
+    "ExteriorCloth_07_1": "ExteriorCloth_07_0",
+    "ExteriorCloth_07_2": "ExteriorCloth_07_1",
+    "ExteriorCloth_08_0": "Hips",
+    "ExteriorCloth_08_1": "ExteriorCloth_08_0",
+    "ExteriorCloth_08_2": "ExteriorCloth_08_1",
+    "ExteriorCloth_09_0": "Hips",
+    "ExteriorCloth_09_1": "ExteriorCloth_09_0",
+    "ExteriorCloth_09_2": "ExteriorCloth_09_1",
+    "ExteriorCloth_10_0": "Hips",
+    "ExteriorCloth_10_1": "ExteriorCloth_10_0",
+    "ExteriorCloth_10_2": "ExteriorCloth_10_1",
+    "ExteriorCloth_11_0": "Hips",
+    "ExteriorCloth_11_1": "ExteriorCloth_11_0",
+    "ExteriorCloth_11_2": "ExteriorCloth_11_1"
+  },
+  "actualCollisionObjects": [],
+  "sceneUnits": {
+    "system": "METRIC",
+    "scaleLength": 1.0,
+    "fps": 30
+  },
+  "sourceEditableUnchanged": true,
+  "saved": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false
+}

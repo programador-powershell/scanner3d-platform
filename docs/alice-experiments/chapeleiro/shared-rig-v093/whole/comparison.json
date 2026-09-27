@@ -1,0 +1,113 @@
+{
+  "stageId": "alice_chapeleiro_full",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourceCrop": null,
+  "reviewScope": "complete_stage_geometry",
+  "selectedRolePrefix": null,
+  "selectedComponentGroup": null,
+  "renderedComponents": [
+    "Chapeleiro / intact whole exterior / skin study"
+  ],
+  "model": "whole/skin_study.glb",
+  "modelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+  "renders": {
+    "front": {
+      "file": "whole/rest/front.png",
+      "sha256": "009b19a17ad0523edbcf17cfd6bd70f2ef87805d85ec5265cde1d97039343d16",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        -3.9198248386383057,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 556794
+    },
+    "side": {
+      "file": "whole/rest/side.png",
+      "sha256": "b86b5de4276ec6205625bfb5ffadbfe2091ae55786c93ce2a70dea61ccc194bc",
+      "cameraPosition": [
+        3.9197239875793457,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 451647
+    },
+    "back": {
+      "file": "whole/rest/back.png",
+      "sha256": "13d0569c45e72be61066b7c8d7b3adab42d1ccb49f738f660afe70e99cc3f4ca",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        3.9196274280548096,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 555287
+    },
+    "threequarter": {
+      "file": "whole/rest/threequarter.png",
+      "sha256": "1a04abd9f53b163cb8e15728869b00db2adad56df03b855ae00d574d5f2eff8a",
+      "cameraPosition": [
+        2.1195058822631836,
+        -3.260880708694458,
+        0.9791184663772583
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 542566
+    }
+  },
+  "bounds": {
+    "min": [
+      -0.22196771204471588,
+      -0.15589569509029388,
+      3.5339067835593596e-05
+    ],
+    "max": [
+      0.22196318209171295,
+      0.1556984782218933,
+      0.9799668788909912
+    ]
+  },
+  "frontAxis": "-y",
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "O exterior mantém a geometria inteira, UVs, atlas e rig. Foram suavizados os pesos de 22.542 vértices das mãos, com âncoras nos punhos e pontas reais dos dedos; os pesos fora da região foram preservados.",
+    "Nas cinco poses medidas dos GLBs, o maior esticamento nas mãos durante o ataque passou de 32,58 para 11,50 vezes. Os seis detalhes renderizados antes/depois mostram menos faixas alongadas na luva, mas a palma, anatomia dos dedos e acabamento da luva permanecem provisórios.",
+    "Abertura na axila, colapso da manga, transição entre cabelo e braço e penetração da perna na saia continuam pendentes. As quatro vistas com a foto própria e as doze poses reais conservam essas diferenças.",
+    "O solver da anágua foi iniciado separadamente sobre as superfícies animadas das meias e bloomers. Esse ensaio não foi incorporado aos GLBs; corpo oculto, todas as outras camadas, tecido, colisões e todas as fichas ainda exigem conclusão."
+  ],
+  "limitation": "Unseen surfaces are inferred; camera registration and details require review.",
+  "displayModel": {
+    "file": "whole/skin_study.glb",
+    "sha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+    "bytes": 65149880
+  },
+  "comparisonBoard": {
+    "file": "whole/photo_vs_geometry.jpg",
+    "sha256": "df67dce1e9782d7182901bcc04c79621a42ebb66a740862028586104f5ba93f2",
+    "bytes": 506100
+  },
+  "visualReviewPerformed": true
+}
