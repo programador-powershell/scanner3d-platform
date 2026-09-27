@@ -15,10 +15,7 @@ def ray_inside(tree,point,direction):
         location,normal,index,distance=tree.ray_cast(origin,direction,10)
         if location is None:return bool(hits%2)
         hits+=1;origin=location+direction*1e-6
-    # A folded sheet or repeated boundary hit can exhaust the query budget.
-    # Preserve this as unknown; never infer an outside/inside parity from an
-    # unfinished ray and never turn one ambiguous contact into a solver crash.
-    return None
+    raise ValueError('Unexpected repeated closed-volume ray intersections')
 
 def closed_state(tree,point):
     results=[ray_inside(tree,point,direction) for direction in RAYS]

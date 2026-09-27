@@ -1,0 +1,11 @@
+{
+  "actualClosedCubeInsideOutsideAndRecoveredCandidatePassed": true,
+  "repeatedBoundaryApiFaultInjected": true,
+  "incompleteRayClassifiedAsUnknown": true,
+  "unknownVolumeNeverAcceptedAsVerifiedExterior": true,
+  "sourceHelperSha256": "d1f39d337b07eb2ecf6f40ee41c0ce3b043d0fd7c3cdf8c6f7888839f98f7fa6",
+  "clothTrajectoryVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Static geometric and API fault-injection checks. The full moving cloth calculation still requires completion and visual review."
+}

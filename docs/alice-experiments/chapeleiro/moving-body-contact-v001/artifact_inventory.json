@@ -279,7 +279,52 @@
       "file": "actual_visual_review.json",
       "bytes": 684,
       "sha256": "10910d33cecf4318f09294149d9fe85099d19f10ca845539ee02fe7e4cba52c2"
+    },
+    {
+      "file": "followup/bounded_volume_query_guard.json",
+      "bytes": 554,
+      "sha256": "6cee4713e39e78f6b9d8edd608f7b5b38b678d1640e874384a890845edbeacda"
+    },
+    {
+      "file": "followup/executed_guard_check.py",
+      "bytes": 2143,
+      "sha256": "f2a0a66af3f91f4fd9cf147de97ba4442f87cfd44e4412e96734a06300404c6b"
+    },
+    {
+      "file": "followup/guarded_surface_contact_helper.py",
+      "bytes": 5137,
+      "sha256": "d1f39d337b07eb2ecf6f40ee41c0ce3b043d0fd7c3cdf8c6f7888839f98f7fa6"
+    },
+    {
+      "file": "followup/failed_v005_progress.json",
+      "bytes": 15555,
+      "sha256": "ac4e569f2029789d6a73c730fcc83636cf04b86d3e71c9f16e35df7b70a0a9b4"
+    },
+    {
+      "file": "followup/failed_v005_execution.log",
+      "bytes": 1855,
+      "sha256": "2a70e93742fb48b3c877ae10d10f4c5100af657b8ceb7f301150addd1b6ce0c3"
+    },
+    {
+      "file": "followup/failed_v005_probe.py",
+      "bytes": 24064,
+      "sha256": "62d4a22b0440294a3ae80b5621697e6e4f09a2729753cf20fc87d24c8ee8ee4b"
+    },
+    {
+      "file": "followup/failed_v005_surface_contact_helper.py",
+      "bytes": 4965,
+      "sha256": "157fe255fde003e4735efd3ddead13e6eb04db7f844f6dff8a5711e0d01b8ade"
+    },
+    {
+      "file": "followup/failed_v005_moving_point_face_helper.py",
+      "bytes": 7385,
+      "sha256": "3f143992efffb51892c91490c19b41751538feb3bdc02ac17adc27d9f529eee5"
+    },
+    {
+      "file": "followup/failed_v005_status.json",
+      "bytes": 459,
+      "sha256": "6aba8c0368af66b11e06ca852ddd3490d1e0ab381ee81fe8e7189dc0039346f2"
     }
   ],
-  "totalBytes": 68956591
+  "totalBytes": 69018708
 }

@@ -1,0 +1,34 @@
+'clear' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+importing .addon
+importing .ui
+importing .simulation
+importing .addon
+importing .ui
+importing .simulation
+ACTUAL_XPBD_FRAME 2 29 42.36
+ACTUAL_XPBD_FRAME 3 29 82.51
+ACTUAL_XPBD_FRAME 4 29 119.76
+ACTUAL_XPBD_FRAME 5 29 162.0
+ACTUAL_XPBD_FRAME 6 29 211.05
+ACTUAL_XPBD_FRAME 7 29 262.93
+ACTUAL_XPBD_FRAME 8 29 318.32
+ACTUAL_XPBD_FRAME 9 29 376.1
+ACTUAL_XPBD_FRAME 10 29 438.78
+ACTUAL_XPBD_FRAME 11 29 505.74
+Traceback (most recent call last):
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\probe_chapeleiro_xpbd_petticoats.py", line 336, in <module>
+    result=ordered_layer_contact(positions,inverse,part_grids[1],outer,margin)
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\chapeleiro_xpbd_surface_contacts.py", line 82, in ordered_layer_contact
+    state=closed_state(closed,snapshot[i])
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\chapeleiro_xpbd_surface_contacts.py", line 21, in closed_state
+    results=[ray_inside(tree,point,direction) for direction in RAYS]
+             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paim\Documents\Codex\2026-09-26\github-plugin-github-openai-curated-remote\scanner3d-platform\blender\chapeleiro_xpbd_surface_contacts.py", line 18, in ray_inside
+    raise ValueError('Unexpected repeated closed-volume ray intersections')
+ValueError: Unexpected repeated closed-volume ray intersections
+
+Error: script failed, file: 'blender/probe_chapeleiro_xpbd_petticoats.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
