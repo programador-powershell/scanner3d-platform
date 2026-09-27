@@ -1,0 +1,1603 @@
+{
+  "method": "fixed actual skin weights; alternating rigid weighted Kabsch joint transforms",
+  "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualPhysicsDataSha256": "4233d4151ed07d14d1147818560e2e27c126621e9051189c8bec6c57ef784e95",
+  "actualSeedDataSha256": "6b483735582e607d2af6a14f4e3e6b426e57f1578b9bb01aa1b832d8ba67f30d",
+  "seedReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v093\\ivory_cloth_bake_seed_v001\\seed.json",
+  "physicsReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_thin_colliders_v001\\actual_continuous_solver_motion.json",
+  "actualFrames": 29,
+  "iterationsPerFrame": 64,
+  "modifiedBones": [
+    "IvoryCloth_00_0",
+    "IvoryCloth_00_1",
+    "IvoryCloth_00_2",
+    "IvoryCloth_01_0",
+    "IvoryCloth_01_1",
+    "IvoryCloth_01_2",
+    "IvoryCloth_02_0",
+    "IvoryCloth_02_1",
+    "IvoryCloth_02_2",
+    "IvoryCloth_03_0",
+    "IvoryCloth_03_1",
+    "IvoryCloth_03_2",
+    "IvoryCloth_04_0",
+    "IvoryCloth_04_1",
+    "IvoryCloth_04_2",
+    "IvoryCloth_05_0",
+    "IvoryCloth_05_1",
+    "IvoryCloth_05_2",
+    "IvoryCloth_06_0",
+    "IvoryCloth_06_1",
+    "IvoryCloth_06_2",
+    "IvoryCloth_07_0",
+    "IvoryCloth_07_1",
+    "IvoryCloth_07_2",
+    "IvoryCloth_08_0",
+    "IvoryCloth_08_1",
+    "IvoryCloth_08_2",
+    "IvoryCloth_09_0",
+    "IvoryCloth_09_1",
+    "IvoryCloth_09_2",
+    "IvoryCloth_10_0",
+    "IvoryCloth_10_1",
+    "IvoryCloth_10_2",
+    "IvoryCloth_11_0",
+    "IvoryCloth_11_1",
+    "IvoryCloth_11_2"
+  ],
+  "other137BonesUnchanged": true,
+  "actualGeometryAndWeightsUnchanged": true,
+  "frames": [
+    {
+      "frame": 1,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 8.043605207747572e-08,
+        "mean": 2.3458448991800038e-08,
+        "p95": 5.8364838933492077e-08
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 5.084152206437858e-08,
+        "mean": 1.142596323286427e-08,
+        "p95": 3.127657357264055e-08
+      },
+      "maximumFullyPinnedErrorToActualSolver": 1.4299884914415882e-08,
+      "unchangedSourceSkinReconstructionMaximumError": 8.043605207747572e-08,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 2.6449158985843063e-12
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 2.078390310631282e-12
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 2.0719601459337438e-12
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 2.070739868130419e-12
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 2.070475683489095e-12
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 2.0704141852960353e-12
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 2.0703990025685517e-12
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 2.0703950603465966e-12
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 2.070394063513572e-12
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.006885430997546742,
+        "mean": 0.0024020829721625877,
+        "p95": 0.0050996378716821255
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.0015846196925524685,
+        "mean": 0.0002991902422435949,
+        "p95": 0.0007441927009896948
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0005911439889562543,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1779984997221334e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.005761706313076493
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.0016863205901427414
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0015920417503210522
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.0015806551935126556
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.0015790052673075848
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.0015787290253902078
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.0015786752441224485
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.001578663085957815
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.0015786601705083413
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.014607639267077251,
+        "mean": 0.0049601640395811565,
+        "p95": 0.009781095690899607
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.002917038802473165,
+        "mean": 0.0006200930386064649,
+        "p95": 0.0015959371651292887
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0005943278347910772,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1289796376108664e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.010449244350093936
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.005329269910941927
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0049210537053938595
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.0048511625136195636
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.00483820357342325
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.004835698345138698
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.004835198070753901
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.0048350950605502135
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.004835074430678836
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.023827860895056105,
+        "mean": 0.00817310629318422,
+        "p95": 0.015923982917356534
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.0045311382530729485,
+        "mean": 0.0010300065800367046,
+        "p95": 0.002488770437771579
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0005972894549299432,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1654530730213376e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.0209966425950001
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.012636144023815911
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.011867290973391672
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.011731141010957362
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.011705397508568256
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.011700324353404049
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.011699285875411018
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.011699064449821123
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.011699017934629838
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.03532613030016777,
+        "mean": 0.011754834457969498,
+        "p95": 0.02413621020783127
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.005663954874158296,
+        "mean": 0.0014235892230375017,
+        "p95": 0.003290957595251202
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006003370311544634,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2492071269019273e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.032686453310488764
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.022435974879420572
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.021647384549487527
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.021512481926649216
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.02148716261904482
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.02148211640173537
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.02148105253126801
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.021480813712296484
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.021480759559253798
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.04945063932631599,
+        "mean": 0.015332443109241973,
+        "p95": 0.03369024977731929
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.007254005971452399,
+        "mean": 0.0017607379462238105,
+        "p95": 0.004153689021054391
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006031648650620291,
+      "unchangedSourceSkinReconstructionMaximumError": 1.264803680266789e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.044481377841684766
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.03387325306414741
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.03324615441348402
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.033141959325062295
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.033121121401118364
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.03311624818792596
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.033114930240191603
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.03311452806032186
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.033114404089487445
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.06593302081065698,
+        "mean": 0.018939806448988794,
+        "p95": 0.04451309243296279
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.00929363123807569,
+        "mean": 0.0020419549997436333,
+        "p95": 0.004988974452705555
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.000605854015544101,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1556558428309975e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.06009194468647509
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.046287266092963034
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.04573284847763748
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.04565775512622997
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.04564551468972258
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.04564326790851539
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.04564280026654067
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.04564268816095439
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.045642659427677666
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.0828610728771047,
+        "mean": 0.022998588685323184,
+        "p95": 0.05612256751624686
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.011703724652705215,
+        "mean": 0.002241092725469571,
+        "p95": 0.005500495228780388
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006083828866293415,
+      "unchangedSourceSkinReconstructionMaximumError": 1.243584582246067e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.07924391312302041
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.05688958488350771
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.05625337576727896
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.05615899361160168
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.056142469147569846
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.05613928166775792
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.05613858967689664
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.05613841547164325
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.05613836803305614
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.09681269127507838,
+        "mean": 0.02719698947068818,
+        "p95": 0.06775903920587599
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.013068981424338664,
+        "mean": 0.0023699872870786894,
+        "p95": 0.006115251515118341
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006099413266139312,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2162787341208632e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.09369401199708086
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.0657524289358075
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.06474993884218533
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.06459457807600281
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.06456823180020657
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.06456356020377607
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.06456269554045424
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.06456252806876787
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.06456249600634244
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.10639674838346563,
+        "mean": 0.031222370807467162,
+        "p95": 0.0782809394365965
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.012277971598452307,
+        "mean": 0.0025409151899590684,
+        "p95": 0.006614417895384334
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006118126465625019,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1223682704468278e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.10604993366742885
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.0750302851751812
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.07419617725965028
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.07408825859139193
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.0740698569613166
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.0740661980398897
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.07406539060233165
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.07406519847292595
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.07406515321657504
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.11824376208320135,
+        "mean": 0.035079741236211506,
+        "p95": 0.08821748021762149
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.014060581363723483,
+        "mean": 0.00268507683236096,
+        "p95": 0.006883155476608888
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006134508331399009,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2078957281140412e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.11669099009678659
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.08105275429354511
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.08054884831367567
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.0804860604919725
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.0804757289395319
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.08047380484800648
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.08047340708950115
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.0804733166647763
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.08047329573834833
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.12597656857602477,
+        "mean": 0.03845299837529318,
+        "p95": 0.09590428879564204
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.015776342355466245,
+        "mean": 0.00284886519550307,
+        "p95": 0.006958054471912566
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006151335394945713,
+      "unchangedSourceSkinReconstructionMaximumError": 1.457782478238759e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.12044921598948967
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.0883500544477493
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.0880321927472303
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.08799794203620989
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.08799328736663158
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.08799259560571931
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.08799248445662633
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.08799246517190484
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.08799246176912635
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.13748875315636008,
+        "mean": 0.04114728712524798,
+        "p95": 0.1033005810755498
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.015455372090162955,
+        "mean": 0.0030383757645073956,
+        "p95": 0.007422767162649268
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006164247970049622,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2539130691213207e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.12487943302234514
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.09986565322291935
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.09954952811647272
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.0995084702999771
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.09950185897941459
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.0995006381290725
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.09950037775706733
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.09950031366162876
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.0995002971090097
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.16668092466049256,
+        "mean": 0.04160311863724148,
+        "p95": 0.11378033823132781
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.014597340201935132,
+        "mean": 0.003172690438544524,
+        "p95": 0.007533746843212537
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0009718833856372101,
+      "unchangedSourceSkinReconstructionMaximumError": 1.0072126987330544e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.22777770522296895
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.11003616116252724
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.1080008707107303
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.10768367004283531
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.10762092676120652
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.10760643501137176
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.10760266293138318
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.1076015799023491
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.10760126634581761
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.1800637030832846,
+        "mean": 0.044135104899218555,
+        "p95": 0.13288976504651495
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.013646040432188856,
+        "mean": 0.00349023815937131,
+        "p95": 0.007974347209276575
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0012012590423539802,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1098284745555218e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.32014430933159593
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.14169262067156055
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.13774135885361422
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.13713136666380182
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.1370203129366573
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.1369981936516007
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.13699352104719026
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.13699249228206387
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.13699227225270133
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.18234336357885228,
+        "mean": 0.04554773669825624,
+        "p95": 0.1355322833989352
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.017144250950442162,
+        "mean": 0.003582342093256533,
+        "p95": 0.008252973767173315
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0011015059058836006,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2097439858704756e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.18445162787834124
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.1464123086028529
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.1458586747192668
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.1457823564484446
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.14576901735439615
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.1457663824968562
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.1457658087400292
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.14576567079886327
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.14576563646678714
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.17100004151868126,
+        "mean": 0.04330939253862943,
+        "p95": 0.12165062995599575
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.02057200982551031,
+        "mean": 0.003649389981015219,
+        "p95": 0.008784761563867757
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.001480394794079276,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2008160146251515e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.20437247271489137
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.15373554142418666
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.15299024916916135
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.15288431257316842
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.15285780839226848
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.15284850247829487
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.15284461908573424
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.15284285556060864
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.15284209522252512
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.17409141866995584,
+        "mean": 0.04116919853933294,
+        "p95": 0.1148867931785024
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.023151661738200918,
+        "mean": 0.0038854561381428373,
+        "p95": 0.009525035005712302
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0006436841136427723,
+      "unchangedSourceSkinReconstructionMaximumError": 1.2407914980811982e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2100900434101843
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.169878263740342
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.16893984521249608
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.16879902988885495
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.16876939896136545
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.16876186792008152
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.1687597742588576
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.1687591683565311
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.16875900193968701
+        }
+      ]
+    },
+    {
+      "frame": 19,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.18318636115314996,
+        "mean": 0.04053537109894964,
+        "p95": 0.11588370130463016
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.024099197514231393,
+        "mean": 0.004071306628357069,
+        "p95": 0.009893264687623582
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0008692347677865302,
+      "unchangedSourceSkinReconstructionMaximumError": 9.580738790573735e-08,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.23954009644909802
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.18564377061398685
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.18445522278570475
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.18427006646824992
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.18423616226088207
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.18422926181709126
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.18422772513772764
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.18422735658911585
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.18422726897084987
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.18808916732639763,
+        "mean": 0.04036494902714516,
+        "p95": 0.11965564707979093
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.023697887952732522,
+        "mean": 0.004136654706452161,
+        "p95": 0.010245096423870175
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0007970578955289464,
+      "unchangedSourceSkinReconstructionMaximumError": 1.0457644365544339e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2699069368597215
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.19483517392968858
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.19283565330877228
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.1925918236663246
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.19254002156933264
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.19252264416270287
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.19251530795483004
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.19251185616791927
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.19251028332542214
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.17711552420534904,
+        "mean": 0.0404912214052486,
+        "p95": 0.12395780651627268
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.024130825512565044,
+        "mean": 0.003915846841731454,
+        "p95": 0.010055392923718192
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.000526591815691483,
+      "unchangedSourceSkinReconstructionMaximumError": 1.311683770771953e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.26177999761415327
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.18327585269043972
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.1815600425604742
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.18116843242423092
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.1807749923683037
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.17947779399335606
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.1782892631831541
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.1781063160446658
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.17808349896429787
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.16454045929647165,
+        "mean": 0.0397946093329101,
+        "p95": 0.12994439727680157
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.01951818650431099,
+        "mean": 0.003790811922956939,
+        "p95": 0.00912834571980343
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0012982436936009086,
+      "unchangedSourceSkinReconstructionMaximumError": 1.315821600061027e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2646193590583725
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.16201729444104834
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.15952558662926147
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.1590888175095947
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.15898642107183064
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.15895940069756112
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.15895187881071446
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.15894971636362737
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.15894912362436472
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.17926028463935656,
+        "mean": 0.04267629722088148,
+        "p95": 0.13963712004632356
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.0159811360573532,
+        "mean": 0.0038274423093358307,
+        "p95": 0.009004966733351539
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.00101538598800444,
+      "unchangedSourceSkinReconstructionMaximumError": 1.0198167508812869e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.25990023884838526
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.17543300627234906
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.17281421301240102
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.17248182213018742
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.17242441390146754
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.17241199242932354
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.17240881821808712
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.17240789822550845
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.17240762754725955
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.1759316999426441,
+        "mean": 0.0424417544525192,
+        "p95": 0.1376358550506536
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.016552098487987943,
+        "mean": 0.003822590771529807,
+        "p95": 0.009290776477037457
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0011955929966625544,
+      "unchangedSourceSkinReconstructionMaximumError": 1.257643589874141e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2592439568974526
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.17954756484676532
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.176498697963541
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.17598792684786535
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.1758019293490716
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.17570710276985976
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.17565892206731631
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.17563595122938053
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.17562643244750098
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.16747206900365563,
+        "mean": 0.04086449677923007,
+        "p95": 0.12451429259405049
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.018702569613464764,
+        "mean": 0.004186833264792577,
+        "p95": 0.009577295371058281
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.00081047748689597,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1285941550654774e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2855586352799441
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.19475913782743604
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.19362344943348053
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.19350033968909902
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.19347972621914145
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.19347550182209036
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.19347453044496352
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.19347429122020052
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.19347423375364226
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.15801333151161503,
+        "mean": 0.03965673833140583,
+        "p95": 0.11273507997834571
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.020972035763466075,
+        "mean": 0.004432643211261074,
+        "p95": 0.010059618030454241
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0004921726812021729,
+      "unchangedSourceSkinReconstructionMaximumError": 1.0810183588287566e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.26855913464294057
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.20789528814820185
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.20729857408624744
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.20724683718166115
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.20723888675006497
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.20723725005714685
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.20723686285827897
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.20723676500778368
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.20723674108136875
+        }
+      ]
+    },
+    {
+      "frame": 27,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.15905300212459747,
+        "mean": 0.03969905889450405,
+        "p95": 0.10936613206944186
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.02377603164264528,
+        "mean": 0.00486585241328462,
+        "p95": 0.010538776272199343
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0011066610225309362,
+      "unchangedSourceSkinReconstructionMaximumError": 1.4181078812809697e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.2833954457439476
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.2410198404235915
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.24042470490682452
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.24033169319371622
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.2403082329099929
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.240300842276786
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.24029823209488765
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.2402972386105673
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.24029686991009336
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.15983336522460864,
+        "mean": 0.038334385545466705,
+        "p95": 0.10801443835087708
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.02373193394692418,
+        "mean": 0.004946671712846426,
+        "p95": 0.011206115965426477
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0008400549684844522,
+      "unchangedSourceSkinReconstructionMaximumError": 1.1426554141663902e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.3879593872745778
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.25598199683819056
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.25456936901434357
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.2542996477209347
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.2542188644273042
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.25419145277955
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.2541817452608698
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.25417824830481844
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.2541770759381409
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "originalParentSkinErrorToActualSolver": {
+        "maximum": 0.1463448979262204,
+        "mean": 0.03965794393816498,
+        "p95": 0.11051671065914528
+      },
+      "fittedSkinErrorToActualSolver": {
+        "maximum": 0.025455413495607326,
+        "mean": 0.004469862797258556,
+        "p95": 0.012057285318346732
+      },
+      "maximumFullyPinnedErrorToActualSolver": 0.0005124685450360676,
+      "unchangedSourceSkinReconstructionMaximumError": 1.107819227999636e-07,
+      "optimization": [
+        {
+          "iteration": 1,
+          "weightedSquaredError": 0.39189460203218424
+        },
+        {
+          "iteration": 9,
+          "weightedSquaredError": 0.24066539710163343
+        },
+        {
+          "iteration": 17,
+          "weightedSquaredError": 0.23547545974783526
+        },
+        {
+          "iteration": 25,
+          "weightedSquaredError": 0.2346556978960474
+        },
+        {
+          "iteration": 33,
+          "weightedSquaredError": 0.23435713078935413
+        },
+        {
+          "iteration": 41,
+          "weightedSquaredError": 0.23420469984695108
+        },
+        {
+          "iteration": 49,
+          "weightedSquaredError": 0.23414464926390238
+        },
+        {
+          "iteration": 57,
+          "weightedSquaredError": 0.23411924977285714
+        },
+        {
+          "iteration": 64,
+          "weightedSquaredError": 0.23410754594407795
+        }
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\fitted_ivory_joint_motion.npz",
+  "dataSha256": "6d8591053037341c685a365bce13979a85047419e0a4e295c4e198a8ff20c8d8",
+  "scriptSha256": "ac0002f433891a4e42d1d750e37ae3e2d9762a047f282d981ac8fc12eca65656",
+  "elapsedSeconds": 37.01978898048401,
+  "responseFitted": true,
+  "responseBaked": false,
+  "scope": "Ivory carrier approximation; all wrinkles, chain constraints, transitions and other layers require review",
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

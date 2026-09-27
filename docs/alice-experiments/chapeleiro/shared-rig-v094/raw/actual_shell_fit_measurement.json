@@ -1,0 +1,220 @@
+{
+  "modelSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualExportDataSha256": "12df5d68a77942389f6b02eef56bcb9b6267a021c0087a41df8a5d88bc53028f",
+  "fitDataSha256": "6d8591053037341c685a365bce13979a85047419e0a4e295c4e198a8ff20c8d8",
+  "actualRestShellCorrespondenceMaximumMeters": 3.0917665245006127e-07,
+  "actualCarrierVerticesCompared": 7104,
+  "actualExportedShellVertices": 15104,
+  "frames": [
+    {
+      "sourcePhysicsFrame": 1,
+      "actualShellToFittedCarrierMaximumMeters": 3.921828936371694e-07,
+      "actualShellToFittedCarrier95PercentileMeters": 2.5814869626798693e-07,
+      "actualShellToSolverMaximumMeters": 4.178473984723534e-07,
+      "actualShellToSolver95PercentileMeters": 2.5333341695191866e-07
+    },
+    {
+      "sourcePhysicsFrame": 2,
+      "actualShellToFittedCarrierMaximumMeters": 6.016772138657226e-07,
+      "actualShellToFittedCarrier95PercentileMeters": 3.360195745319121e-07,
+      "actualShellToSolverMaximumMeters": 0.001584784242920364,
+      "actualShellToSolver95PercentileMeters": 0.0007440690244242472
+    },
+    {
+      "sourcePhysicsFrame": 3,
+      "actualShellToFittedCarrierMaximumMeters": 1.1440805663510507e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 2.352261842831286e-07,
+      "actualShellToSolverMaximumMeters": 0.0029171340974251544,
+      "actualShellToSolver95PercentileMeters": 0.0015959703197812706
+    },
+    {
+      "sourcePhysicsFrame": 4,
+      "actualShellToFittedCarrierMaximumMeters": 1.6287362007380054e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 2.8196429576414276e-07,
+      "actualShellToSolverMaximumMeters": 0.004531042812793806,
+      "actualShellToSolver95PercentileMeters": 0.002488761862025604
+    },
+    {
+      "sourcePhysicsFrame": 5,
+      "actualShellToFittedCarrierMaximumMeters": 2.5494107527189727e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 2.7043362331434524e-07,
+      "actualShellToSolverMaximumMeters": 0.005663943714131467,
+      "actualShellToSolver95PercentileMeters": 0.0032909948785553597
+    },
+    {
+      "sourcePhysicsFrame": 6,
+      "actualShellToFittedCarrierMaximumMeters": 3.119158071454917e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 2.523115149463069e-07,
+      "actualShellToSolverMaximumMeters": 0.007253953960732587,
+      "actualShellToSolver95PercentileMeters": 0.004153697889232898
+    },
+    {
+      "sourcePhysicsFrame": 7,
+      "actualShellToFittedCarrierMaximumMeters": 5.240017243949969e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.217546105643345e-07,
+      "actualShellToSolverMaximumMeters": 0.009293638593500953,
+      "actualShellToSolver95PercentileMeters": 0.004988978776648972
+    },
+    {
+      "sourcePhysicsFrame": 8,
+      "actualShellToFittedCarrierMaximumMeters": 6.885529657458156e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.08962127665135e-07,
+      "actualShellToSolverMaximumMeters": 0.011703820695625868,
+      "actualShellToSolver95PercentileMeters": 0.005500423286427041
+    },
+    {
+      "sourcePhysicsFrame": 9,
+      "actualShellToFittedCarrierMaximumMeters": 7.584931146078569e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.0543417784003425e-07,
+      "actualShellToSolverMaximumMeters": 0.01306892367955205,
+      "actualShellToSolver95PercentileMeters": 0.006115324889227693
+    },
+    {
+      "sourcePhysicsFrame": 10,
+      "actualShellToFittedCarrierMaximumMeters": 8.165021539860694e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.4053154638352624e-07,
+      "actualShellToSolverMaximumMeters": 0.012278108316058838,
+      "actualShellToSolver95PercentileMeters": 0.006614781140945198
+    },
+    {
+      "sourcePhysicsFrame": 11,
+      "actualShellToFittedCarrierMaximumMeters": 8.888000210410293e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 2.9340065155893417e-07,
+      "actualShellToSolverMaximumMeters": 0.01406066754564675,
+      "actualShellToSolver95PercentileMeters": 0.00688320084845925
+    },
+    {
+      "sourcePhysicsFrame": 12,
+      "actualShellToFittedCarrierMaximumMeters": 9.48613300215576e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.375373648761007e-07,
+      "actualShellToSolverMaximumMeters": 0.015776351528013113,
+      "actualShellToSolver95PercentileMeters": 0.006959209616317711
+    },
+    {
+      "sourcePhysicsFrame": 13,
+      "actualShellToFittedCarrierMaximumMeters": 1.0412130842326693e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.204187492189662e-07,
+      "actualShellToSolverMaximumMeters": 0.015455336136977174,
+      "actualShellToSolver95PercentileMeters": 0.007422735465230856
+    },
+    {
+      "sourcePhysicsFrame": 14,
+      "actualShellToFittedCarrierMaximumMeters": 1.0833804110013502e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.131250674036483e-07,
+      "actualShellToSolverMaximumMeters": 0.014597459114106079,
+      "actualShellToSolver95PercentileMeters": 0.007533773271178293
+    },
+    {
+      "sourcePhysicsFrame": 15,
+      "actualShellToFittedCarrierMaximumMeters": 1.0112267532490387e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.093231738612888e-07,
+      "actualShellToSolverMaximumMeters": 0.013646129326662945,
+      "actualShellToSolver95PercentileMeters": 0.007974440145678517
+    },
+    {
+      "sourcePhysicsFrame": 16,
+      "actualShellToFittedCarrierMaximumMeters": 1.068098933966095e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.148029993806663e-07,
+      "actualShellToSolverMaximumMeters": 0.017144174082680076,
+      "actualShellToSolver95PercentileMeters": 0.00825312480691108
+    },
+    {
+      "sourcePhysicsFrame": 17,
+      "actualShellToFittedCarrierMaximumMeters": 1.0374310973117978e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.588117162962471e-07,
+      "actualShellToSolverMaximumMeters": 0.020571940103929185,
+      "actualShellToSolver95PercentileMeters": 0.008784693016409393
+    },
+    {
+      "sourcePhysicsFrame": 18,
+      "actualShellToFittedCarrierMaximumMeters": 1.1214640226999824e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.077268411765623e-07,
+      "actualShellToSolverMaximumMeters": 0.023151736258807752,
+      "actualShellToSolver95PercentileMeters": 0.009525034721215965
+    },
+    {
+      "sourcePhysicsFrame": 19,
+      "actualShellToFittedCarrierMaximumMeters": 1.057561592746941e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 2.801314905212743e-07,
+      "actualShellToSolverMaximumMeters": 0.024099195093211307,
+      "actualShellToSolver95PercentileMeters": 0.009893388925466753
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualShellToFittedCarrierMaximumMeters": 1.0530700228670829e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.6176012401142097e-07,
+      "actualShellToSolverMaximumMeters": 0.023697880961967593,
+      "actualShellToSolver95PercentileMeters": 0.010245071923247778
+    },
+    {
+      "sourcePhysicsFrame": 21,
+      "actualShellToFittedCarrierMaximumMeters": 9.589089660809482e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.9677019095751895e-07,
+      "actualShellToSolverMaximumMeters": 0.024131055572345024,
+      "actualShellToSolver95PercentileMeters": 0.010055398980352187
+    },
+    {
+      "sourcePhysicsFrame": 22,
+      "actualShellToFittedCarrierMaximumMeters": 7.3514894342890545e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.446094472117648e-07,
+      "actualShellToSolverMaximumMeters": 0.019518384290087194,
+      "actualShellToSolver95PercentileMeters": 0.009128531013369747
+    },
+    {
+      "sourcePhysicsFrame": 23,
+      "actualShellToFittedCarrierMaximumMeters": 8.83976565603237e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.664526645663165e-07,
+      "actualShellToSolverMaximumMeters": 0.015981237537437017,
+      "actualShellToSolver95PercentileMeters": 0.009005035886124332
+    },
+    {
+      "sourcePhysicsFrame": 24,
+      "actualShellToFittedCarrierMaximumMeters": 9.460246473467293e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.3365017358529174e-07,
+      "actualShellToSolverMaximumMeters": 0.01655221686865624,
+      "actualShellToSolver95PercentileMeters": 0.009290737589084549
+    },
+    {
+      "sourcePhysicsFrame": 25,
+      "actualShellToFittedCarrierMaximumMeters": 9.66493273781319e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.469560458431758e-07,
+      "actualShellToSolverMaximumMeters": 0.018702445494569495,
+      "actualShellToSolver95PercentileMeters": 0.00957728518191404
+    },
+    {
+      "sourcePhysicsFrame": 26,
+      "actualShellToFittedCarrierMaximumMeters": 1.0251180136171762e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.591903115300748e-07,
+      "actualShellToSolverMaximumMeters": 0.020971922364741526,
+      "actualShellToSolver95PercentileMeters": 0.010059741953382387
+    },
+    {
+      "sourcePhysicsFrame": 27,
+      "actualShellToFittedCarrierMaximumMeters": 1.0210954548078628e-05,
+      "actualShellToFittedCarrier95PercentileMeters": 3.656617747986635e-07,
+      "actualShellToSolverMaximumMeters": 0.023776056691319825,
+      "actualShellToSolver95PercentileMeters": 0.010538765847492016
+    },
+    {
+      "sourcePhysicsFrame": 28,
+      "actualShellToFittedCarrierMaximumMeters": 9.784940508864922e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 3.154149250271462e-07,
+      "actualShellToSolverMaximumMeters": 0.023731957977181358,
+      "actualShellToSolver95PercentileMeters": 0.01120617142625579
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualShellToFittedCarrierMaximumMeters": 9.509318408120222e-06,
+      "actualShellToFittedCarrier95PercentileMeters": 5.226021816155761e-07,
+      "actualShellToSolverMaximumMeters": 0.025455487534955138,
+      "actualShellToSolver95PercentileMeters": 0.012057233001579848
+    }
+  ],
+  "scriptSha256": "f728c5cc94f021b9b1707bcd790ecb6ad2cb7d6ebe31fa48a1758c6cfedaffce",
+  "limitation": "Nearest rest-position correspondence includes shell thickness. Signed contact, fine folds and other components remain unapproved.",
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "allLayersFinished": false
+}

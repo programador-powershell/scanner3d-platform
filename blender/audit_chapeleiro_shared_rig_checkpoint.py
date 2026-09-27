@@ -39,14 +39,19 @@ counts=np.empty(len(mesh.polygons),np.int32);mesh.polygons.foreach_get('loop_tot
 geometry_sha=hashlib.sha256(xyz.tobytes()+loops.tobytes()+counts.tobytes()).hexdigest()
 if geometry_sha!='10d6825fa75b34de11fbd71b7b61f69c71ec14589fb1cd035d36a6c07c5d7ece':raise ValueError('Changed actual uncut whole geometry.')
 tracks=[t for t in rig.animation_data.nla_tracks if t.strips]
-if len(tracks)!=4 or not all(any(t.name.startswith(label+' /') for t in tracks) for label in ['Walk','Run','Jump','Attack']):
+additional_clip=record.get('ivoryStudyClip') if record.get('ivoryResponseBaked') else None
+expected_tracks=5 if additional_clip else 4
+if len(tracks)!=expected_tracks or not all(any(t.name.startswith(label+' /') for t in tracks) for label in ['Walk','Run','Jump','Attack']):
     raise ValueError('Lost actual action tracks on reopen.')
+if additional_clip and not any(t.name==additional_clip and len(t.strips)==1 and t.strips[0].action.name==additional_clip for t in tracks):
+    raise ValueError('Lost the additional measured Ivory study action on reopen.')
 images=[i for i in bpy.data.images if i.type=='IMAGE' and i.source=='FILE' and i.users]
 if any(not i.packed_file for i in images):raise ValueError('A used file image is unpacked.')
 report={'editableSha256':record['editableBlendSha256'],'editableBytes':Path(record['editableBlend']).stat().st_size,
     'actualArmatures':1,'actualBones':len(bones),'actualSkinnedPreviewPieces':len(pieces),'pieces':pieces,'authoringCages':cages,
     'protectedLibrarySha256':sha(file),'protectedWholeGeometrySha256':geometry_sha,'protectedWholeVertices':len(mesh.vertices),
     'actualActionTracks':[t.name for t in tracks],'packedUsedFileImages':len(images),'reopenedWithoutSaving':True,
+    'additionalIvoryStudyAction':additional_clip,'originalFourActionsRetained':True,
     'motionVerified':False,'fidelityVerified':False,'clothCollisionVerified':False,'allLayersFinished':False,
     'limitation':'Preserved skins/actions/cloth fields are construction evidence, not full pose/contact or physical simulation approval.'}
 Path(args.output).write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');print('ACTUAL_FULL_RIG_CHECKPOINT_REOPENED',len(pieces),flush=True)

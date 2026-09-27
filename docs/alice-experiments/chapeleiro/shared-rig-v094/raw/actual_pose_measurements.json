@@ -1,0 +1,741 @@
+{
+  "modelSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "clip": "Corrida com tecido / anágua em refinamento",
+  "actualSkinnedMeshes": 229,
+  "actualSkeletons": 1,
+  "measuredJointNames": [
+    "Hips",
+    "Spine",
+    "Spine1",
+    "Spine2",
+    "Neck",
+    "Head",
+    "HeadTop_End",
+    "LeftShoulder",
+    "LeftArm",
+    "LeftForeArm",
+    "LeftHand",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3",
+    "LeftHandThumb4",
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandIndex4",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandMiddle4",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandRing4",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3",
+    "LeftHandPinky4",
+    "RightShoulder",
+    "RightArm",
+    "RightForeArm",
+    "RightHand",
+    "RightHandThumb1",
+    "RightHandThumb2",
+    "RightHandThumb3",
+    "RightHandThumb4",
+    "RightHandIndex1",
+    "RightHandIndex2",
+    "RightHandIndex3",
+    "RightHandIndex4",
+    "RightHandMiddle1",
+    "RightHandMiddle2",
+    "RightHandMiddle3",
+    "RightHandMiddle4",
+    "RightHandRing1",
+    "RightHandRing2",
+    "RightHandRing3",
+    "RightHandRing4",
+    "RightHandPinky1",
+    "RightHandPinky2",
+    "RightHandPinky3",
+    "RightHandPinky4",
+    "RightUpLeg",
+    "RightLeg",
+    "RightFoot",
+    "RightToeBase",
+    "RightToe_End",
+    "LeftUpLeg",
+    "LeftLeg",
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftToe_End",
+    "IvoryCloth_00_0",
+    "IvoryCloth_00_1",
+    "IvoryCloth_00_2",
+    "IvoryCloth_01_0",
+    "IvoryCloth_01_1",
+    "IvoryCloth_01_2",
+    "IvoryCloth_02_0",
+    "IvoryCloth_02_1",
+    "IvoryCloth_02_2",
+    "IvoryCloth_03_0",
+    "IvoryCloth_03_1",
+    "IvoryCloth_03_2",
+    "IvoryCloth_04_0",
+    "IvoryCloth_04_1",
+    "IvoryCloth_04_2",
+    "IvoryCloth_05_0",
+    "IvoryCloth_05_1",
+    "IvoryCloth_05_2",
+    "IvoryCloth_06_0",
+    "IvoryCloth_06_1",
+    "IvoryCloth_06_2",
+    "IvoryCloth_07_0",
+    "IvoryCloth_07_1",
+    "IvoryCloth_07_2",
+    "IvoryCloth_08_0",
+    "IvoryCloth_08_1",
+    "IvoryCloth_08_2",
+    "IvoryCloth_09_0",
+    "IvoryCloth_09_1",
+    "IvoryCloth_09_2",
+    "IvoryCloth_10_0",
+    "IvoryCloth_10_1",
+    "IvoryCloth_10_2",
+    "IvoryCloth_11_0",
+    "IvoryCloth_11_1",
+    "IvoryCloth_11_2",
+    "BlackCloth_00_0",
+    "BlackCloth_00_1",
+    "BlackCloth_00_2",
+    "BlackCloth_01_0",
+    "BlackCloth_01_1",
+    "BlackCloth_01_2",
+    "BlackCloth_02_0",
+    "BlackCloth_02_1",
+    "BlackCloth_02_2",
+    "BlackCloth_03_0",
+    "BlackCloth_03_1",
+    "BlackCloth_03_2",
+    "BlackCloth_04_0",
+    "BlackCloth_04_1",
+    "BlackCloth_04_2",
+    "BlackCloth_05_0",
+    "BlackCloth_05_1",
+    "BlackCloth_05_2",
+    "BlackCloth_06_0",
+    "BlackCloth_06_1",
+    "BlackCloth_06_2",
+    "BlackCloth_07_0",
+    "BlackCloth_07_1",
+    "BlackCloth_07_2",
+    "BlackCloth_08_0",
+    "BlackCloth_08_1",
+    "BlackCloth_08_2",
+    "BlackCloth_09_0",
+    "BlackCloth_09_1",
+    "BlackCloth_09_2",
+    "BlackCloth_10_0",
+    "BlackCloth_10_1",
+    "BlackCloth_10_2",
+    "BlackCloth_11_0",
+    "BlackCloth_11_1",
+    "BlackCloth_11_2",
+    "ExteriorCloth_00_0",
+    "ExteriorCloth_00_1",
+    "ExteriorCloth_00_2",
+    "ExteriorCloth_01_0",
+    "ExteriorCloth_01_1",
+    "ExteriorCloth_01_2",
+    "ExteriorCloth_02_0",
+    "ExteriorCloth_02_1",
+    "ExteriorCloth_02_2",
+    "ExteriorCloth_03_0",
+    "ExteriorCloth_03_1",
+    "ExteriorCloth_03_2",
+    "ExteriorCloth_04_0",
+    "ExteriorCloth_04_1",
+    "ExteriorCloth_04_2",
+    "ExteriorCloth_05_0",
+    "ExteriorCloth_05_1",
+    "ExteriorCloth_05_2",
+    "ExteriorCloth_06_0",
+    "ExteriorCloth_06_1",
+    "ExteriorCloth_06_2",
+    "ExteriorCloth_07_0",
+    "ExteriorCloth_07_1",
+    "ExteriorCloth_07_2",
+    "ExteriorCloth_08_0",
+    "ExteriorCloth_08_1",
+    "ExteriorCloth_08_2",
+    "ExteriorCloth_09_0",
+    "ExteriorCloth_09_1",
+    "ExteriorCloth_09_2",
+    "ExteriorCloth_10_0",
+    "ExteriorCloth_10_1",
+    "ExteriorCloth_10_2",
+    "ExteriorCloth_11_0",
+    "ExteriorCloth_11_1",
+    "ExteriorCloth_11_2"
+  ],
+  "frames": [
+    {
+      "sourcePhysicsFrame": 1,
+      "actualImportedFrame": 0.8000000715255737,
+      "actualExportedJointDeformationMaximumError": 1.0013580322265625e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.000022053718567,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0000066757202148,
+      "actualMainPetticoatBounds": [
+        [
+          -0.17610056698322296,
+          -0.10818539559841156,
+          0.39753779768943787
+        ],
+        [
+          0.17633476853370667,
+          0.10712453722953796,
+          0.6373581886291504
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 2,
+      "actualImportedFrame": 1.6000000280993325,
+      "actualExportedJointDeformationMaximumError": 9.953975677490234e-06,
+      "actualMainPetticoatEdgeStretchMaximum": 1.130066990852356,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0155928134918213,
+      "actualMainPetticoatBounds": [
+        [
+          -0.17681699991226196,
+          -0.10856152325868607,
+          0.39051446318626404
+        ],
+        [
+          0.1771724671125412,
+          0.10697876662015915,
+          0.6340965628623962
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 3,
+      "actualImportedFrame": 2.3999999846730913,
+      "actualExportedJointDeformationMaximumError": 9.894371032714844e-06,
+      "actualMainPetticoatEdgeStretchMaximum": 1.0531361103057861,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0162360668182373,
+      "actualMainPetticoatBounds": [
+        [
+          -0.17516808211803436,
+          -0.10712768137454987,
+          0.38339364528656006
+        ],
+        [
+          0.1756594479084015,
+          0.10570459812879562,
+          0.6308038234710693
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 4,
+      "actualImportedFrame": 3.1999999412468503,
+      "actualExportedJointDeformationMaximumError": 1.0073184967041016e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.0753976106643677,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0170657634735107,
+      "actualMainPetticoatBounds": [
+        [
+          -0.17200049757957458,
+          -0.1038786768913269,
+          0.3755304217338562
+        ],
+        [
+          0.17288492619991302,
+          0.10416674613952637,
+          0.6274315118789673
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 5,
+      "actualImportedFrame": 3.999999897820609,
+      "actualExportedJointDeformationMaximumError": 1.0967254638671875e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.1288352012634277,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.017465353012085,
+      "actualMainPetticoatBounds": [
+        [
+          -0.16691333055496216,
+          -0.09980174154043198,
+          0.3677060008049011
+        ],
+        [
+          0.1673065572977066,
+          0.10050712525844574,
+          0.62397700548172
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 6,
+      "actualImportedFrame": 4.799999854394368,
+      "actualExportedJointDeformationMaximumError": 1.150369644165039e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.4413641691207886,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.017143964767456,
+      "actualMainPetticoatBounds": [
+        [
+          -0.15863238275051117,
+          -0.09537062048912048,
+          0.35974928736686707
+        ],
+        [
+          0.15864643454551697,
+          0.09333911538124084,
+          0.6204381585121155
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 7,
+      "actualImportedFrame": 5.599999810968127,
+      "actualExportedJointDeformationMaximumError": 1.2040138244628906e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.3811163902282715,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0187562704086304,
+      "actualMainPetticoatBounds": [
+        [
+          -0.14983171224594116,
+          -0.10529515892267227,
+          0.3521181344985962
+        ],
+        [
+          0.14816910028457642,
+          0.08440333604812622,
+          0.6168123483657837
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 8,
+      "actualImportedFrame": 6.399999767541885,
+      "actualExportedJointDeformationMaximumError": 1.2636184692382812e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.9073362350463867,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.025961995124817,
+      "actualMainPetticoatBounds": [
+        [
+          -0.13907046616077423,
+          -0.11732731014490128,
+          0.3439142405986786
+        ],
+        [
+          0.13442307710647583,
+          0.07542920112609863,
+          0.6130974292755127
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 9,
+      "actualImportedFrame": 7.199999724115644,
+      "actualExportedJointDeformationMaximumError": 1.33514404296875e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.918413758277893,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0329289436340332,
+      "actualMainPetticoatBounds": [
+        [
+          -0.1268906593322754,
+          -0.12913775444030762,
+          0.3364753723144531
+        ],
+        [
+          0.11411669105291367,
+          0.06853830814361572,
+          0.6092914938926697
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 10,
+      "actualImportedFrame": 7.999999680689403,
+      "actualExportedJointDeformationMaximumError": 1.4185905456542969e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 1.784014344215393,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0388903617858887,
+      "actualMainPetticoatBounds": [
+        [
+          -0.11287754774093628,
+          -0.14075511693954468,
+          0.33047324419021606
+        ],
+        [
+          0.09818854182958603,
+          0.06993464380502701,
+          0.6053926348686218
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 11,
+      "actualImportedFrame": 8.799999637263163,
+      "actualExportedJointDeformationMaximumError": 1.4483928680419922e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 2.068176031112671,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0477498769760132,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10092121362686157,
+          -0.15153472125530243,
+          0.3256956934928894
+        ],
+        [
+          0.0978470891714096,
+          0.07185783982276917,
+          0.6013991832733154
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 12,
+      "actualImportedFrame": 9.599999593836921,
+      "actualExportedJointDeformationMaximumError": 1.5139579772949219e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 2.3796584606170654,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0557540655136108,
+      "actualMainPetticoatBounds": [
+        [
+          -0.09839746356010437,
+          -0.16029183566570282,
+          0.32158592343330383
+        ],
+        [
+          0.0985264852643013,
+          0.07374788820743561,
+          0.5973095893859863
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 13,
+      "actualImportedFrame": 10.39999955041068,
+      "actualExportedJointDeformationMaximumError": 1.5556812286376953e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 3.126891851425171,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0618752241134644,
+      "actualMainPetticoatBounds": [
+        [
+          -0.09759777039289474,
+          -0.16712746024131775,
+          0.3205377459526062
+        ],
+        [
+          0.09890718758106232,
+          0.0758495107293129,
+          0.5931226015090942
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 14,
+      "actualImportedFrame": 11.199999506984438,
+      "actualExportedJointDeformationMaximumError": 1.6033649444580078e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 4.138052463531494,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0697356462478638,
+      "actualMainPetticoatBounds": [
+        [
+          -0.09441579878330231,
+          -0.181464284658432,
+          0.3207505941390991
+        ],
+        [
+          0.10028877854347229,
+          0.10026265680789948,
+          0.5903449654579163
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 15,
+      "actualImportedFrame": 11.999999463558197,
+      "actualExportedJointDeformationMaximumError": 1.633167266845703e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 5.077756404876709,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0713996887207031,
+      "actualMainPetticoatBounds": [
+        [
+          -0.09012908488512039,
+          -0.18277272582054138,
+          0.3229723870754242
+        ],
+        [
+          0.10443707555532455,
+          0.1289149522781372,
+          0.5875253677368164
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 16,
+      "actualImportedFrame": 12.799999420131956,
+      "actualExportedJointDeformationMaximumError": 1.6570091247558594e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 5.03752326965332,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0636045932769775,
+      "actualMainPetticoatBounds": [
+        [
+          -0.08859260380268097,
+          -0.17500001192092896,
+          0.3327975273132324
+        ],
+        [
+          0.10477136075496674,
+          0.13243572413921356,
+          0.5978712439537048
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 17,
+      "actualImportedFrame": 13.599999376705714,
+      "actualExportedJointDeformationMaximumError": 1.6927719116210938e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 5.026873588562012,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0698500871658325,
+      "actualMainPetticoatBounds": [
+        [
+          -0.09439361095428467,
+          -0.16278265416622162,
+          0.34625592827796936
+        ],
+        [
+          0.10939554125070572,
+          0.13139259815216064,
+          0.6108842492103577
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 18,
+      "actualImportedFrame": 14.399999333279473,
+      "actualExportedJointDeformationMaximumError": 1.6808509826660156e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 5.173004150390625,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0725797414779663,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10316883027553558,
+          -0.16027402877807617,
+          0.35266926884651184
+        ],
+        [
+          0.12777763605117798,
+          0.1301504373550415,
+          0.6114365458488464
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 19,
+      "actualImportedFrame": 15.199999289853233,
+      "actualExportedJointDeformationMaximumError": 1.7344951629638672e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 5.074401378631592,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0852004289627075,
+      "actualMainPetticoatBounds": [
+        [
+          -0.1083357036113739,
+          -0.1617005467414856,
+          0.34691938757896423
+        ],
+        [
+          0.1405264139175415,
+          0.12782922387123108,
+          0.6034982204437256
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "actualExportedJointDeformationMaximumError": 1.7762184143066406e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 4.463022708892822,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0971473455429077,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10842487215995789,
+          -0.16190074384212494,
+          0.34281274676322937
+        ],
+        [
+          0.15147307515144348,
+          0.12463819980621338,
+          0.5948483347892761
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 21,
+      "actualImportedFrame": 16.799999203000752,
+      "actualExportedJointDeformationMaximumError": 1.7642974853515625e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 4.009739875793457,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.093030333518982,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10827116668224335,
+          -0.164422407746315,
+          0.3468457758426666
+        ],
+        [
+          0.15924948453903198,
+          0.11582817137241364,
+          0.5958534479141235
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 22,
+      "actualImportedFrame": 17.59999915957451,
+      "actualExportedJointDeformationMaximumError": 1.5676021575927734e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 3.2624354362487793,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0800179243087769,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10572919249534607,
+          -0.17443425953388214,
+          0.35005539655685425
+        ],
+        [
+          0.16089430451393127,
+          0.10492456704378128,
+          0.6009742617607117
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 23,
+      "actualImportedFrame": 18.39999911614827,
+      "actualExportedJointDeformationMaximumError": 1.3887882232666016e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 4.373578071594238,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0809310674667358,
+      "actualMainPetticoatBounds": [
+        [
+          -0.1083083227276802,
+          -0.1710747331380844,
+          0.3395182192325592
+        ],
+        [
+          0.15170183777809143,
+          0.10442009568214417,
+          0.6003946661949158
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 24,
+      "actualImportedFrame": 19.199999072722026,
+      "actualExportedJointDeformationMaximumError": 1.3649463653564453e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 6.70431661605835,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.090220332145691,
+      "actualMainPetticoatBounds": [
+        [
+          -0.10870623588562012,
+          -0.16240958869457245,
+          0.3400152325630188
+        ],
+        [
+          0.1311442255973816,
+          0.11370106786489487,
+          0.6120653748512268
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 25,
+      "actualImportedFrame": 19.999999029295786,
+      "actualExportedJointDeformationMaximumError": 1.4483928680419922e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 8.282185554504395,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.086054801940918,
+      "actualMainPetticoatBounds": [
+        [
+          -0.11228516697883606,
+          -0.1542724221944809,
+          0.343021959066391
+        ],
+        [
+          0.12611964344978333,
+          0.1099020317196846,
+          0.6163219213485718
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 26,
+      "actualImportedFrame": 20.799998985869543,
+      "actualExportedJointDeformationMaximumError": 1.4901161193847656e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 8.735346794128418,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.085997223854065,
+      "actualMainPetticoatBounds": [
+        [
+          -0.11332336813211441,
+          -0.1462140679359436,
+          0.34553587436676025
+        ],
+        [
+          0.1275867521762848,
+          0.10517285019159317,
+          0.6146553158760071
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 27,
+      "actualImportedFrame": 21.599998942443303,
+      "actualExportedJointDeformationMaximumError": 1.519918441772461e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 8.613781929016113,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0900214910507202,
+      "actualMainPetticoatBounds": [
+        [
+          -0.11426164954900742,
+          -0.14028453826904297,
+          0.34672242403030396
+        ],
+        [
+          0.13286173343658447,
+          0.1039365902543068,
+          0.6017559170722961
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 28,
+      "actualImportedFrame": 22.39999889901706,
+      "actualExportedJointDeformationMaximumError": 1.519918441772461e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 7.901593208312988,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0943080186843872,
+      "actualMainPetticoatBounds": [
+        [
+          -0.11796678602695465,
+          -0.1366121768951416,
+          0.3440587818622589
+        ],
+        [
+          0.11524149030447006,
+          0.10408268868923187,
+          0.5917819738388062
+        ]
+      ]
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "actualExportedJointDeformationMaximumError": 1.3583488317592263e-05,
+      "actualMainPetticoatEdgeStretchMaximum": 6.2679290771484375,
+      "actualMainPetticoatEdgeStretch95Percentile": 1.0929760932922363,
+      "actualMainPetticoatBounds": [
+        [
+          -0.12358956038951874,
+          -0.155481219291687,
+          0.33739912509918213
+        ],
+        [
+          0.10598456859588623,
+          0.10331636667251587,
+          0.5931226015090942
+        ]
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\actual_exported_ivory_poses.npz",
+  "dataSha256": "12df5d68a77942389f6b02eef56bcb9b6267a021c0087a41df8a5d88bc53028f",
+  "scriptSha256": "af7ea01cd741403290336c1594ea9cd0ee26a26f27bcc5e29c05d54529759f14",
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

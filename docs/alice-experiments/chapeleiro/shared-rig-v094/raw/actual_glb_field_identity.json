@@ -1,0 +1,30 @@
+{
+  "oldModelSha256": "ecb91c104cd743642c3d60684835fd778eaab9f1beabeaf09db1fa3df69feb19",
+  "newModelSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "actualMeshNodes": 229,
+  "actualAttributeArraysCompared": 1153,
+  "geometryUvNormalsSkinWeightsIndicesMaterialsImagesBindJointsIdentical": true,
+  "fourOriginalAnimationsCompared": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "maximumChannelDifference": 0.0
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "maximumChannelDifference": 0.0
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "maximumChannelDifference": 0.0
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "maximumChannelDifference": 0.0
+    }
+  ],
+  "additionalActualAnimation": "Corrida com tecido / an\u00e1gua em refinamento",
+  "scriptSha256": "297fc1345a7905c81855be4b032ba4c836313e25756132b427539396a20b0246",
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false
+}

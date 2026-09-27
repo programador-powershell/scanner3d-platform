@@ -1,0 +1,285 @@
+{
+  "method": "existing shared rig with measured Ivory response study; intact exterior unchanged",
+  "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v093\\generation.json",
+  "parentGenerationSha256": "4b31d91aafad59ad9ba677beed9aca0e776c40d688e219076bd2b8bf212a33aa",
+  "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\chapeleiro_shared_rig_ivory_response.blend",
+  "editableBlendSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "editableBytes": 129770853,
+  "exports": {
+    "foundation": {
+      "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\foundation_shared_rig_study.glb",
+      "modelSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+      "bytes": 69452960,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study",
+        "Corrida com tecido / anágua em refinamento"
+      ],
+      "actualSkinnedNodes": 229,
+      "actualSkins": 1,
+      "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    "whole": {
+      "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_shared_rig_study.glb",
+      "modelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+      "bytes": 65149880,
+      "actualSkinnedNodes": 1,
+      "actualSkins": 1,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+      "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab"
+    }
+  },
+  "riggedActualPieces": 230,
+  "sharedArmatures": 1,
+  "bones": 173,
+  "sourceWholeGeometrySha256": "10d6825fa75b34de11fbd71b7b61f69c71ec14589fb1cd035d36a6c07c5d7ece",
+  "sourceWholeUncut": true,
+  "actualAuthoringGeometryUnchanged": true,
+  "authoringCages": 14,
+  "motionAudit": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "frames": 42,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        83.0
+      ],
+      "source": "Walk",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 42,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 4.5299530029296875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "frames": 17,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        32.0
+      ],
+      "source": "Run",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 17,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 7.1302056312561035e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "frames": 137,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        273.0
+      ],
+      "source": "Attack",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 137,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 6.67572021484375e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "frames": 53,
+      "fps": 30,
+      "source": "locally rebuilt planted-key IK probe in the current fitted bind",
+      "plantedKeys": [
+        1,
+        9,
+        41,
+        53
+      ],
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 7,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 2.6226043701171875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "surfaceContactVerified": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "scriptSha256": "bb162631279d24c58fbf89b4e2a86b72c95eab1fa1c2a48df509431bb4c10caf",
+  "fieldScriptSha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+  "additionalCreditsConsumed": 0,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "publicationStatus": "local_only_pending_new_visual_motion_review",
+  "actualGeometryUnchanged": true,
+  "actualClothFieldWeightsUnchanged": true,
+  "torsoSkirtArmContaminationAbsent": true,
+  "nativeHandBindFit": true,
+  "inheritedActionsRequireRetargetReview": false,
+  "handFitScriptSha256": "dce4ce14fceaa647bee80bd0917e2fb4f383292392e3a2e8bb651bb05263975d",
+  "nativeArmComponentScriptSha256": "ee4da052995622f5578dfe6bb76c43b80ea006cc47ba68471f078032c1383364",
+  "nativeArmMembershipClassificationVerified": false,
+  "nativeHandFitInheritedFrom": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v092\\generation.json",
+  "nativeIndividualFingerGuideSha256": "cb216e4da7986cecce58dc36b73114944b234c7c309c90fed6afd5dbad68968d",
+  "retargetRequiresPoseReview": true,
+  "motionRetargetScriptSha256": "cbb4a3a9426333dc788d7407d13ae4ce9eb4c79e6212ba3488735256079fa4e0",
+  "nativeSurfaceWeightInferenceSha256": "e2ca051bf36ad0a433b03d1c248315648a3aca681ba4d6d478e34ee892850014",
+  "nativeSurfaceWeightScriptSha256": "b15503ea12d11cb26f01d4769c8b7e150c770a2057578dbdd6ce34c1ead78f7c",
+  "nativeSurfaceOwnershipVerified": false,
+  "sourceFourActionCurveHashes": {
+    "Attack / current fitted Chapeleiro motion study": "6d4ed16b42b8b1902ad57586babc358090634d43bf700ef86512620d2c083c43",
+    "Jump / current fitted planted-key IK motion study": "e52e1fcf823cffdb716ceb9550470e13d6a9e3534a32c6f7965ea3b0abc83dd8",
+    "Run / current fitted Chapeleiro motion study": "28ba81a375684fc0fd17fd935616d2c718a16f184951e1767fefdfaf11406536",
+    "Walk / current fitted Chapeleiro motion study": "c30ad39e29f93d14f6a1bf1f691e0781a1a00268ba9a317666a2b731fe44ae66"
+  },
+  "ivoryFitReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\fit.json",
+  "ivoryFitDataSha256": "6d8591053037341c685a365bce13979a85047419e0a4e295c4e198a8ff20c8d8",
+  "ivoryResponseBaked": true,
+  "ivoryStudyClip": "Corrida com tecido / anágua em refinamento",
+  "actualBakedJointMatrixChecks": [
+    {
+      "frame": 1,
+      "actualBakedJointMatrixMaximumError": 6.556510925292969e-07
+    },
+    {
+      "frame": 2,
+      "actualBakedJointMatrixMaximumError": 9.5367431640625e-07
+    },
+    {
+      "frame": 3,
+      "actualBakedJointMatrixMaximumError": 6.556510925292969e-07
+    },
+    {
+      "frame": 4,
+      "actualBakedJointMatrixMaximumError": 7.226445961905359e-07
+    },
+    {
+      "frame": 5,
+      "actualBakedJointMatrixMaximumError": 1.1784200257825006e-06
+    },
+    {
+      "frame": 6,
+      "actualBakedJointMatrixMaximumError": 1.4503578245061988e-06
+    },
+    {
+      "frame": 7,
+      "actualBakedJointMatrixMaximumError": 1.9575607426158825e-06
+    },
+    {
+      "frame": 8,
+      "actualBakedJointMatrixMaximumError": 2.9251838278288034e-06
+    },
+    {
+      "frame": 9,
+      "actualBakedJointMatrixMaximumError": 1.6357207237582827e-06
+    },
+    {
+      "frame": 10,
+      "actualBakedJointMatrixMaximumError": 1.9976596854487383e-06
+    },
+    {
+      "frame": 11,
+      "actualBakedJointMatrixMaximumError": 2.2926013341084683e-06
+    },
+    {
+      "frame": 12,
+      "actualBakedJointMatrixMaximumError": 3.062120309871297e-06
+    },
+    {
+      "frame": 13,
+      "actualBakedJointMatrixMaximumError": 3.1684007099075373e-06
+    },
+    {
+      "frame": 14,
+      "actualBakedJointMatrixMaximumError": 3.0441391592472833e-06
+    },
+    {
+      "frame": 15,
+      "actualBakedJointMatrixMaximumError": 2.1913708000420584e-06
+    },
+    {
+      "frame": 16,
+      "actualBakedJointMatrixMaximumError": 2.7696319161440996e-06
+    },
+    {
+      "frame": 17,
+      "actualBakedJointMatrixMaximumError": 2.3527968705042146e-06
+    },
+    {
+      "frame": 18,
+      "actualBakedJointMatrixMaximumError": 2.448645792130222e-06
+    },
+    {
+      "frame": 19,
+      "actualBakedJointMatrixMaximumError": 2.4154240835239094e-06
+    },
+    {
+      "frame": 20,
+      "actualBakedJointMatrixMaximumError": 3.0877970177145553e-06
+    },
+    {
+      "frame": 21,
+      "actualBakedJointMatrixMaximumError": 2.2645737733917315e-06
+    },
+    {
+      "frame": 22,
+      "actualBakedJointMatrixMaximumError": 2.182956388041557e-06
+    },
+    {
+      "frame": 23,
+      "actualBakedJointMatrixMaximumError": 2.674256697643429e-06
+    },
+    {
+      "frame": 24,
+      "actualBakedJointMatrixMaximumError": 4.15812711440644e-06
+    },
+    {
+      "frame": 25,
+      "actualBakedJointMatrixMaximumError": 3.55975531673991e-06
+    },
+    {
+      "frame": 26,
+      "actualBakedJointMatrixMaximumError": 4.10947650952842e-06
+    },
+    {
+      "frame": 27,
+      "actualBakedJointMatrixMaximumError": 3.96326236984379e-06
+    },
+    {
+      "frame": 28,
+      "actualBakedJointMatrixMaximumError": 4.048396733513648e-06
+    },
+    {
+      "frame": 29,
+      "actualBakedJointMatrixMaximumError": 3.2718847714496846e-06
+    }
+  ],
+  "wholePhysicsResponseBaked": false,
+  "otherLayersPhysicsResponseBaked": false,
+  "sourcePhotoComparisonAndExportReimportPending": true,
+  "elapsedSeconds": 64.79307198524475
+}

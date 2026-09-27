@@ -1,0 +1,123 @@
+{
+  "variant": "alice_chapeleiro",
+  "reusedGeometry": false,
+  "pieces": [],
+  "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_shared_rig_study.glb",
+  "modelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+  "bytes": 65149880,
+  "actualSkinnedNodes": 1,
+  "actualSkins": 1,
+  "actualClips": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "modelUpAxis": "Y",
+  "status": "generated_awaiting_visual_review",
+  "rigPresent": true,
+  "method": "shared_rig_attachment_field_refinement_without_geometry_cuts",
+  "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\chapeleiro_shared_rig_ivory_response.blend",
+  "editableBlendSha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38",
+  "motionVerified": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "additionalCreditsConsumed": 0,
+  "limitations": [
+    "Skin and clips are present; visible deformation, body fit and physical collisions are not approved.",
+    "Secondary cloth bones follow the parent pose; no physical secondary animation is baked.",
+    "The preserved authoring originals retain procedural BCB graphs; their cloth motion remains unverified."
+  ],
+  "parentRigModelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "nextVariantMayStart": false,
+  "nativeHandBindFit": true,
+  "inheritedActionsRequireRetargetReview": false,
+  "motionAudit": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "frames": 42,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        83.0
+      ],
+      "source": "Walk",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 42,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 4.5299530029296875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "frames": 17,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        32.0
+      ],
+      "source": "Run",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 17,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 7.1302056312561035e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "frames": 137,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        273.0
+      ],
+      "source": "Attack",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 137,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 6.67572021484375e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "frames": 53,
+      "fps": 30,
+      "source": "locally rebuilt planted-key IK probe in the current fitted bind",
+      "plantedKeys": [
+        1,
+        9,
+        41,
+        53
+      ],
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 7,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 2.6226043701171875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "surfaceContactVerified": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "nativeHandFitReport": "native_hand_bind_fit.json",
+  "retargetStatus": "rebuilt from original source orientations and current fitted bind; pose and cloth review pending",
+  "retargetRequiresPoseReview": true,
+  "wholeResponseUnchangedFromParent": true,
+  "ivoryStudyClipNotIncludedInWholeExport": true
+}

@@ -1,0 +1,461 @@
+{
+  "artifacts": [
+    {
+      "file": "foundation/photo_vs_geometry.jpg",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\photo_vs_geometry.jpg",
+      "sha256": "25034fbfcbd56063fde1fbe091cf8933def68339ea4dc3941fde00933865a770",
+      "bytes": 434079
+    },
+    {
+      "file": "foundation/photo_vs_shared_skin_motion.jpg",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\photo_vs_shared_skin_motion.jpg",
+      "sha256": "a8827f3f333f539ecddd585b9065a36148bee3df2839cf55513ae7a79c47e49a",
+      "bytes": 452592
+    },
+    {
+      "file": "foundation/source_photo.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\source_photo.png",
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "bytes": 2255895
+    },
+    {
+      "file": "foundation/motion/attack_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\attack_1.png",
+      "sha256": "920bdfcf8e50a2250676df2efb5c49d039f3166e3223efe6dad3e77d33dec210",
+      "bytes": 177762
+    },
+    {
+      "file": "foundation/motion/attack_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\attack_2.png",
+      "sha256": "540f3a81d60b57756cc890cbfd16277c1cd401ee338b76713f44102902289f19",
+      "bytes": 183249
+    },
+    {
+      "file": "foundation/motion/attack_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\attack_3.png",
+      "sha256": "59271c1fcb793f7e76e16d7e9570b768d8b779e1fd2a25025528bbaf33ab387d",
+      "bytes": 182471
+    },
+    {
+      "file": "foundation/motion/jump_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\jump_1.png",
+      "sha256": "1d29bf9523256d2e05df4f95e5b98a423deb5c2ecaf44da922770081103fc7ac",
+      "bytes": 189904
+    },
+    {
+      "file": "foundation/motion/jump_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\jump_2.png",
+      "sha256": "4f1fe05165bbe25b395539753b778ef244660e07864ca3fe1fab02f7a67181ba",
+      "bytes": 189942
+    },
+    {
+      "file": "foundation/motion/jump_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\jump_3.png",
+      "sha256": "a45e1a81fe14bdad5918db8449ffeceb6ebbc2039b65c4853924112951ee61bd",
+      "bytes": 190101
+    },
+    {
+      "file": "foundation/motion/run_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\run_1.png",
+      "sha256": "ab9e7c09520663542c1b426c8cb39a8630b836f6e8c34d0fe42b0883b3950cc9",
+      "bytes": 181579
+    },
+    {
+      "file": "foundation/motion/run_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\run_2.png",
+      "sha256": "b6d8d9d7e2be3ec8e395fea98aff7875d694ebbc96e614806eb76d356c27b558",
+      "bytes": 187599
+    },
+    {
+      "file": "foundation/motion/run_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\run_3.png",
+      "sha256": "92d202844d50faa71cc26ad09c815f97303e692b8f0d87088506b32eeafe4b75",
+      "bytes": 182844
+    },
+    {
+      "file": "foundation/motion/walk_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\walk_1.png",
+      "sha256": "e5df72d208ac7c54df24de8e0bd99f64490770079069e6878a1a1e2988512f67",
+      "bytes": 194808
+    },
+    {
+      "file": "foundation/motion/walk_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\walk_2.png",
+      "sha256": "8b394cc4696d98067bf385b04883dc45bce8cfac8708f95604dd51148b78fd50",
+      "bytes": 190901
+    },
+    {
+      "file": "foundation/motion/walk_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\motion\\walk_3.png",
+      "sha256": "6514d9a2c59543a54c9405d7825d38d702fb379b55175e3d970d2ef628124213",
+      "bytes": 192744
+    },
+    {
+      "file": "foundation/rest/back.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\rest\\back.png",
+      "sha256": "7ac38b2190d12db2113284dacba46640a60a8509203d1fdf5c52aa80dd1a039a",
+      "bytes": 467353
+    },
+    {
+      "file": "foundation/rest/front.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\rest\\front.png",
+      "sha256": "c631364df39287e0e97f37dafa4160226638de60f4754b986c3777460e6cacb3",
+      "bytes": 471182
+    },
+    {
+      "file": "foundation/rest/side.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\rest\\side.png",
+      "sha256": "bac7e19f21d970e1d0156e17f6d17e200cd824d3d24c2d8f148d1cc49373e8a2",
+      "bytes": 384851
+    },
+    {
+      "file": "foundation/rest/threequarter.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\foundation\\rest\\threequarter.png",
+      "sha256": "b0675a9ed2047b901edd924773cddfcd60b927a830bb301670ece3c1be31723f",
+      "bytes": 464921
+    },
+    {
+      "file": "foundation/skin_study.glb",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\foundation_shared_rig_study.glb",
+      "sha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+      "bytes": 69452960
+    },
+    {
+      "file": "foundation/source_photo.png",
+      "sourceFile": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "bytes": 2255895
+    },
+    {
+      "file": "whole/photo_vs_geometry.jpg",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\photo_vs_geometry.jpg",
+      "sha256": "df67dce1e9782d7182901bcc04c79621a42ebb66a740862028586104f5ba93f2",
+      "bytes": 506100
+    },
+    {
+      "file": "whole/photo_vs_shared_skin_motion.jpg",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\photo_vs_shared_skin_motion.jpg",
+      "sha256": "a417346c2ed31383e8295dfbfb2a2149db9e3bedeff54c2c1c41fd1a446922ec",
+      "bytes": 429248
+    },
+    {
+      "file": "whole/source_photo.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\source_photo.png",
+      "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+      "bytes": 2098720
+    },
+    {
+      "file": "whole/motion/attack_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\attack_1.png",
+      "sha256": "08942a05aba4e2935dfa32033f4ebb603b807d68c5b395c7f71edeebdc356184",
+      "bytes": 234165
+    },
+    {
+      "file": "whole/motion/attack_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\attack_2.png",
+      "sha256": "5e346704ca3fe968f1b5b1b2e2f58c2c6b05e3be70e66b6d3bb664de8db0a84a",
+      "bytes": 229526
+    },
+    {
+      "file": "whole/motion/attack_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\attack_3.png",
+      "sha256": "c9885c02c95d25ae2332c90e65bfa8d65828b7d0f9e903ab3714c9571f7bc5d6",
+      "bytes": 225680
+    },
+    {
+      "file": "whole/motion/jump_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\jump_1.png",
+      "sha256": "1bf727a830dfdd0a272fb45ffb4a2ac037f68faf43f8043c84bb1744a1b599d1",
+      "bytes": 249951
+    },
+    {
+      "file": "whole/motion/jump_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\jump_2.png",
+      "sha256": "1cdae34646d3870b5c874aa5b183a197c4647805061d0de9be5a051aac4b3379",
+      "bytes": 253174
+    },
+    {
+      "file": "whole/motion/jump_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\jump_3.png",
+      "sha256": "62c830368b0c2a90665b3ee0f42fe15749c30969f90c2ffc207dcbe3ca83dca7",
+      "bytes": 251109
+    },
+    {
+      "file": "whole/motion/run_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\run_1.png",
+      "sha256": "3f6d73c12e59ff3082b6a18dd1049f1d3542e670e207d98ba7a9eccc48aa3605",
+      "bytes": 230483
+    },
+    {
+      "file": "whole/motion/run_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\run_2.png",
+      "sha256": "9de04c7639dc66b90fda900452840c39c28dd2c59f6b4b4f1fc99948d9a01809",
+      "bytes": 231634
+    },
+    {
+      "file": "whole/motion/run_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\run_3.png",
+      "sha256": "9bc653a688b29552c09bc1d26b254810e5e31d68ad96d3aaab551b57e29cc2d3",
+      "bytes": 225606
+    },
+    {
+      "file": "whole/motion/walk_1.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\walk_1.png",
+      "sha256": "d59da57e48816d680f11e04a2047bb8a1a6db3058ba751c160baa3bc870c2919",
+      "bytes": 247669
+    },
+    {
+      "file": "whole/motion/walk_2.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\walk_2.png",
+      "sha256": "c3731f4c5fc9df47204465f37af388f8a0a5d695f3bd367498b43ca4811a7e10",
+      "bytes": 245188
+    },
+    {
+      "file": "whole/motion/walk_3.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\motion\\walk_3.png",
+      "sha256": "be7a14793175bb37afb5ab469360aee37f6be5500691bdd20bc0430cf8b3aa72",
+      "bytes": 243200
+    },
+    {
+      "file": "whole/rest/back.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\rest\\back.png",
+      "sha256": "13d0569c45e72be61066b7c8d7b3adab42d1ccb49f738f660afe70e99cc3f4ca",
+      "bytes": 555287
+    },
+    {
+      "file": "whole/rest/front.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\rest\\front.png",
+      "sha256": "009b19a17ad0523edbcf17cfd6bd70f2ef87805d85ec5265cde1d97039343d16",
+      "bytes": 556794
+    },
+    {
+      "file": "whole/rest/side.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\rest\\side.png",
+      "sha256": "b86b5de4276ec6205625bfb5ffadbfe2091ae55786c93ce2a70dea61ccc194bc",
+      "bytes": 451647
+    },
+    {
+      "file": "whole/rest/threequarter.png",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\whole\\rest\\threequarter.png",
+      "sha256": "1a04abd9f53b163cb8e15728869b00db2adad56df03b855ae00d574d5f2eff8a",
+      "bytes": 542566
+    },
+    {
+      "file": "whole/skin_study.glb",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_shared_rig_study.glb",
+      "sha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+      "bytes": 65149880
+    },
+    {
+      "file": "whole/source_photo.png",
+      "sourceFile": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+      "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+      "bytes": 2098720
+    },
+    {
+      "file": "ivory_response/renders/foundation_01_front.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\foundation_01_front.png",
+      "sha256": "920615c2f0ab8ec6b989ee4c11b2144c32072a9d9f402f5a1961f8b978c58f41",
+      "bytes": 343599
+    },
+    {
+      "file": "ivory_response/renders/foundation_12_front.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\foundation_12_front.png",
+      "sha256": "a4eeacc61aaa4e79ee3226aad271b43a4bd18b377903984219255a6095927f4f",
+      "bytes": 324312
+    },
+    {
+      "file": "ivory_response/renders/foundation_20_front.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\foundation_20_front.png",
+      "sha256": "c5a17aed3bdea7c0e4e865984e6ce9ef4fa0f3d2f29a8835fe3e5967542139bf",
+      "bytes": 334138
+    },
+    {
+      "file": "ivory_response/renders/foundation_29_front.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\foundation_29_front.png",
+      "sha256": "d6467a4e8e88496bae533b63e2e23c0fdaa0efae90fb3ee2a62a9529b2bc02c4",
+      "bytes": 327542
+    },
+    {
+      "file": "ivory_response/renders/foundation_29_threequarter.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\foundation_29_threequarter.png",
+      "sha256": "7c7ecf5f9c1fea2968bd96475ddc965196699d13ba435e84d023ee8d41bb5d32",
+      "bytes": 313948
+    },
+    {
+      "file": "ivory_response/renders/ivory_family_20_front.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\ivory_family_20_front.png",
+      "sha256": "4e91d44f334f7d437f16592688102e9ab3c8d6eacef5e6e73bc0f39a4f02d981",
+      "bytes": 197027
+    },
+    {
+      "file": "ivory_response/renders/ivory_family_29_threequarter.png",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\ivory_family_29_threequarter.png",
+      "sha256": "da2961f6b018e49c9a12c2d48173743643a871f455621e83f5b1a2a2852fd359",
+      "bytes": 201075
+    },
+    {
+      "file": "photo_vs_actual_ivory_joint_motion.jpg",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\photo_vs_actual_ivory_joint_motion.jpg",
+      "sha256": "0591772e1164ab4a596938b8b638423e8674ca1a2af109cde71c138031c3b712",
+      "bytes": 421233
+    },
+    {
+      "file": "raw/generation.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\generation.json",
+      "sha256": "2aefb850ba6b2b66e722469a1db78519126524c81326ed2b9acd6fed62557380",
+      "bytes": 10734
+    },
+    {
+      "file": "raw/foundation_generation.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\foundation_generation.json",
+      "sha256": "d0678e4eec047cbab89639db52312dbb897d5fc414c350974f3e750878dd6f3d",
+      "bytes": 847756
+    },
+    {
+      "file": "raw/whole_generation.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_generation.json",
+      "sha256": "5c76e21ee79dea0c9bf607e620fb946b47a3e59475aea9098656543d454e196b",
+      "bytes": 4958
+    },
+    {
+      "file": "raw/inherited_shared_rig_bind.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\shared_rig_bind.json",
+      "sha256": "75ed1eb6fab3a4350d276512d97391562d240ce0140efb8f8ccb173f212223e0",
+      "bytes": 1598604
+    },
+    {
+      "file": "raw/executed_bake.py",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\executed_bake.py",
+      "sha256": "bb162631279d24c58fbf89b4e2a86b72c95eab1fa1c2a48df509431bb4c10caf",
+      "bytes": 10019
+    },
+    {
+      "file": "raw/fit.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\fit.json",
+      "sha256": "6055c6f9a1fc1e94b250acf9c01340a1c31afbaf74bb92d9c89b7bdf0b3bedd5",
+      "bytes": 44905
+    },
+    {
+      "file": "raw/fitted_ivory_joint_motion.npz",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\fitted_ivory_joint_motion.npz",
+      "sha256": "6d8591053037341c685a365bce13979a85047419e0a4e295c4e198a8ff20c8d8",
+      "bytes": 7640617
+    },
+    {
+      "file": "raw/executed_fit.py",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_joint_fit_v002\\executed_fit.py",
+      "sha256": "ac0002f433891a4e42d1d750e37ae3e2d9762a047f282d981ac8fc12eca65656",
+      "bytes": 6951
+    },
+    {
+      "file": "raw/seed.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v093\\ivory_cloth_bake_seed_v001\\seed.json",
+      "sha256": "3b12e675a2c8ca52ef5011dfad8b4728e097c2df1bdf7d7d4637073b10352b0d",
+      "bytes": 981
+    },
+    {
+      "file": "raw/actual_ivory_skin_seed.npz",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v093\\ivory_cloth_bake_seed_v001\\actual_ivory_skin_seed.npz",
+      "sha256": "6b483735582e607d2af6a14f4e3e6b426e57f1578b9bb01aa1b832d8ba67f30d",
+      "bytes": 186035
+    },
+    {
+      "file": "raw/executed_extraction.py",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v093\\ivory_cloth_bake_seed_v001\\executed_extraction.py",
+      "sha256": "789111bd40a9c144b6ebd36bed2ba6d047b3463e4a1a40e903d724a733276b2d",
+      "bytes": 2856
+    },
+    {
+      "file": "raw/actual_continuous_solver_motion.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_thin_colliders_v001\\actual_continuous_solver_motion.json",
+      "sha256": "d187cf21c885fdc2f1d4cbc257457b602c1e99f641530c94a08d3fa03c44dc34",
+      "bytes": 23462
+    },
+    {
+      "file": "raw/actual_continuous_cloth_frames.npz",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_thin_colliders_v001\\actual_continuous_cloth_frames.npz",
+      "sha256": "4233d4151ed07d14d1147818560e2e27c126621e9051189c8bec6c57ef784e95",
+      "bytes": 4776337
+    },
+    {
+      "file": "raw/actual_glb_field_identity.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_glb_field_identity.json",
+      "sha256": "2f619044d9fef45abd09423c6e29dd909743f56d39ad2e9d534521174bbf6928",
+      "bytes": 1089
+    },
+    {
+      "file": "raw/executed_compare_glb_fields.py",
+      "sourceFile": "C:\\Users\\Paim\\Documents\\Codex\\2026-09-26\\github-plugin-github-openai-curated-remote\\tools\\compare_chapeleiro_v094_glb_fields.py",
+      "sha256": "297fc1345a7905c81855be4b032ba4c836313e25756132b427539396a20b0246",
+      "bytes": 3565
+    },
+    {
+      "file": "raw/full_editable_reopen.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\full_editable_reopen.json",
+      "sha256": "2aaa14da9536e33b8f344a044641dbb7262d917741c4c1d46bf7f1c5243bf31d",
+      "bytes": 48992
+    },
+    {
+      "file": "raw/executed_full_editable_audit.py",
+      "sourceFile": "C:\\Users\\Paim\\Documents\\Codex\\2026-09-26\\github-plugin-github-openai-curated-remote\\scanner3d-platform\\blender\\audit_chapeleiro_shared_rig_checkpoint.py",
+      "sha256": "f16a8fb4e0c5feb79eccdbbd09530c45217873c0febccae6d90dbd281822a33a",
+      "bytes": 5159
+    },
+    {
+      "file": "raw/actual_export_comparison.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\comparison.json",
+      "sha256": "ff44fda74cb6a969432a929890376f208f6aac575c34fcfe973a244e8e07aa79",
+      "bytes": 4665
+    },
+    {
+      "file": "raw/actual_pose_measurements.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\actual_pose_measurements.json",
+      "sha256": "aecc727e76afa811103d1172ca094767d9c79569ea04acf0c8e0ea85148d4bc4",
+      "bytes": 21392
+    },
+    {
+      "file": "raw/actual_exported_ivory_poses.npz",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\actual_exported_ivory_poses.npz",
+      "sha256": "12df5d68a77942389f6b02eef56bcb9b6267a021c0087a41df8a5d88bc53028f",
+      "bytes": 4975545
+    },
+    {
+      "file": "raw/executed_review.py",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_ivory_export_review_v001\\executed_review.py",
+      "sha256": "af7ea01cd741403290336c1594ea9cd0ee26a26f27bcc5e29c05d54529759f14",
+      "bytes": 8621
+    },
+    {
+      "file": "raw/actual_shell_fit_measurement.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\actual_shell_fit_measurement.json",
+      "sha256": "7755580494f2966885600118acec5a3e88ad7fa5d5353699d9f41aeb526f31d1",
+      "bytes": 10351
+    },
+    {
+      "file": "raw/executed_measure_exported_fit.py",
+      "sourceFile": "C:\\Users\\Paim\\Documents\\Codex\\2026-09-26\\github-plugin-github-openai-curated-remote\\scanner3d-platform\\scripts\\measure_chapeleiro_exported_ivory_fit.py",
+      "sha256": "f728c5cc94f021b9b1707bcd790ecb6ad2cb7d6ebe31fa48a1758c6cfedaffce",
+      "bytes": 3035
+    },
+    {
+      "file": "raw/executed_package.py",
+      "sourceFile": "C:\\Users\\Paim\\Documents\\Codex\\2026-09-26\\github-plugin-github-openai-curated-remote\\scanner3d-platform\\scripts\\package_chapeleiro_ivory_joint_study.py",
+      "sha256": "42e0de49c00097126cf0a1a67c31b2e954676df7b9aedcdcc97c8ccfe5a400cf",
+      "bytes": 14514
+    },
+    {
+      "file": "skin_audit.json",
+      "sourceFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\skin_audit.json",
+      "sha256": "568c8a827ec335a908ce35964c505f10b422ad2930b7a66d2a61b67c151541f3",
+      "bytes": 120027
+    },
+    {
+      "file": "photo_vs_actual_hand_motion_before_after.jpg",
+      "sourceFile": "docs\\alice-experiments\\chapeleiro\\shared-rig-v093\\photo_vs_actual_hand_motion_before_after.jpg",
+      "sha256": "75d8bba4a90209d608b6185414d236e00d20c1b3149be8cd229a66b4064c2a26",
+      "bytes": 299526
+    }
+  ],
+  "preservedExactlyAsBytes": true
+}

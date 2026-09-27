@@ -1,0 +1,78 @@
+{
+  "status": "needs_refinement",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+        "bytes": 69452960
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study",
+        "Corrida com tecido / anágua em refinamento"
+      ],
+      "visualStatus": "needs_refinement"
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+        "bytes": 65149880
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "visualStatus": "needs_refinement"
+    }
+  },
+  "fullLocalEditable": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\chapeleiro_shared_rig_ivory_response.blend",
+    "bytes": 129770853,
+    "sha256": "53e3fb226166e6dccfe12190f65777d29ee982a1c8377b262d5689b681654e38"
+  },
+  "additionalIvoryResponseBaked": true,
+  "otherLayersPhysicsResponseBaked": false,
+  "wholeGlbUnchanged": true,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "A geometria, os UVs, materiais, pesos, bind e quatro ações anteriores permanecem exatamente iguais. As quatro vistas e doze poses de referência foram conservadas com prova de igualdade dos campos; não foram renderizadas novamente.",
+      "O novo clipe Corrida com tecido / anágua em refinamento contém a aproximação da simulação por 36 ossos IvoryCloth em 29 poses. Sete renders novos foram feitos do GLB reimportado, com a fundação completa e as 33 peças da família Ivory.",
+      "A aproximação ainda chega a 2,55 cm de diferença da simulação. A saia preta atravessa a anágua perto do quadril; as pernas e adornos também exigem revisão de contato. A saia preta e as demais famílias ainda não têm a mesma resposta física.",
+      "Corset, costuras finas, franzidos, cascatas diagonais, trama das meias e renda continuam diferentes da foto. O clipe de estudo inclui uma entrada da pose de referência na corrida e ainda não é um ciclo fechado. As quatro ações originais não receberam esta resposta física."
+    ],
+    "whole": [
+      "O GLB exterior permanece exatamente o da v093, inclusive as quatro ações e o refinamento dos pesos das mãos. As quatro vistas e doze poses conservam sua própria foto e os renders anteriores.",
+      "Palma, dedos, acabamento das luvas, abertura na axila, colapso da manga, transição do cabelo para o braço e penetração da perna na saia continuam pendentes. A resposta física da anágua desta versão pertence somente ao export da fundação."
+    ]
+  },
+  "referenceEvidenceSourceRevision": "4b56a7268c7f206c76f2dfd512deb90ed1df1604"
+}
