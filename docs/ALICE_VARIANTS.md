@@ -105,6 +105,24 @@ O renderizador permite `--component-group corset` para incluir também o tecido,
 canais, fechos e ilhoses anteriores na comparação isolada, sem perder as
 peças cuja função não começa pelo mesmo prefixo.
 
+`refine_chapeleiro_petticoat_cascades.py` acrescenta dois painéis laterais de
+tecido, canais para os cordões, seis estações de franzido por lado, ilhoses
+de latão e laços com pontas de fita. As raízes partem da borda real da anágua
+creme; não são recortes do vestido exterior. Cada painel usa uma única malha
+fina de Cloth, ligada à anágua antes da simulação. A superfície visível amostra
+as posições avaliadas do suporte por índice de vértice, antes da espessura e
+do UV original do Bystedt. As duas malhas têm a mesma ordem de vértices.
+Os alvos avaliados usam diagonais fixas; os quads editáveis são preservados.
+
+O auditor aplica temporariamente uma deformação somente ao suporte avaliado
+e mede a resposta da superfície visível, sem salvar nem editar a malha bruta.
+Confere também as raízes na cintura, os pontos de franzido, UVs e vínculos dos
+acabamentos. Isso verifica a construção, não uma animação física ou rig.
+`--component-group petticoats` inclui todas as anáguas e suas rendas na revisão
+isolada. A primeira tentativa com pregas infladas foi rejeitada na comparação;
+o refinamento reduz o volume, mas ainda exige vincos, caimento e acabamento
+mais próximos da ficha 1. As costas não visíveis continuam inferidas.
+
 `probe_chapeleiro_bloomers_cloth.py` realizou um ensaio de 24 quadros reais
 contra volumes aproximados de pelve e coxas. O GLB resolvido foi comparado à
 foto própria em quatro vistas. Dobras, cintura e punhos ainda diferem da

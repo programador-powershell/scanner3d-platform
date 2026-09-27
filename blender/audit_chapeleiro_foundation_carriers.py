@@ -147,6 +147,95 @@ if blouses:
                                   'dynamicSimulationVerified':False})
     if len(solver_partition)!=3:
         raise ValueError('The torso and both sleeves need exactly three simulation carriers.')
+petticoat_partition=[]
+for entry in record.get('petticoatSimulationCages',[]):
+    cage=bpy.data.objects[entry['name']]
+    visible=objects[entry['visibleFabric']]
+    binding_error=None
+    evaluated_displacement_probe=None
+    point_followers=[m for m in visible.modifiers if m.type=='NODES' and m.node_group
+                     and m.node_group.get('sameTopologySimulationTarget')==cage.name]
+    surface_binding=any(m.type=='SURFACE_DEFORM' and m.target==cage and m.is_bound
+                        for m in visible.modifiers)
+    if point_followers:
+        if len(point_followers)!=1 or list(visible.modifiers).index(point_followers[0])!=0:
+            raise ValueError('The solved point positions must precede thickness and UV operations.')
+        group=point_followers[0].node_group
+        info=[n for n in group.nodes if n.bl_idname=='GeometryNodeObjectInfo']
+        sample=[n for n in group.nodes if n.bl_idname=='GeometryNodeSampleIndex']
+        if (len(info)!=1 or info[0].inputs['Object'].default_value!=cage
+                or info[0].transform_space!='RELATIVE' or len(sample)!=1
+                or sample[0].data_type!='FLOAT_VECTOR' or sample[0].domain!='POINT'):
+            raise ValueError('Incorrect actual simulation point sampling graph.')
+        downstream=list(visible.modifiers)[1:]
+        flags=[m.show_viewport for m in downstream]
+        perturbation=None
+        try:
+            for m in downstream:m.show_viewport=False
+            source_points,target_points=coords(visible),coords(cage)
+            if source_points.shape!=target_points.shape:
+                raise ValueError('The actual solved point order changed.')
+            binding_error=float(np.linalg.norm(source_points-target_points,axis=1).max())
+            if not np.isfinite(source_points).all() or binding_error>1e-6:
+                raise ValueError('Visible fabric does not sample actual solved positions.')
+            # Deform only the evaluated target, without editing the shared raw
+            # mesh. This distinguishes a working point follower from a pass-
+            # through graph that happens to agree in the static rest shape.
+            perturbation=cage.modifiers.new('Read-only evaluated carrier displacement probe','DISPLACE')
+            perturbation.direction='NORMAL';perturbation.strength=.0015;perturbation.mid_level=0
+            moved_source,moved_target=coords(visible),coords(cage)
+            displacement=np.linalg.norm(moved_target-target_points,axis=1)
+            error=float(np.linalg.norm(moved_source-moved_target,axis=1).max())
+            if not np.isfinite(moved_source).all() or displacement.max()<.0005 or error>1e-6:
+                raise ValueError('Visible petticoat did not follow the evaluated carrier deformation.')
+            evaluated_displacement_probe={'maximumCarrierDisplacement':float(displacement.max()),
+                'maximumFollowingError':error,'rawMeshEdited':False,'clothSimulationVerified':False}
+        finally:
+            if perturbation:cage.modifiers.remove(perturbation)
+            for m,flag in zip(downstream,flags):m.show_viewport=flag
+            bpy.context.view_layer.update()
+    if (not cage.hide_render or cage.data!=visible.data
+            or sum(m.type=='CLOTH' for m in cage.modifiers)!=1
+            or any(m.type in {'NODES','SOLIDIFY'} for m in cage.modifiers)
+            or any(m.type=='CLOTH' for m in visible.modifiers)
+            or not any(m.type=='TRIANGULATE' and m.quad_method=='FIXED' for m in cage.modifiers)
+            or not (surface_binding or binding_error is not None)):
+        raise ValueError('A petticoat needs a single thin solver and an actual visible binding.')
+    evaluated=visible.evaluated_get(bpy.context.evaluated_depsgraph_get())
+    mesh=evaluated.to_mesh();mesh.calc_loop_triangles()
+    uv=mesh.uv_layers.get('UVMap')
+    if not uv:raise ValueError('Actual petticoat UVs are missing.')
+    data=np.asarray([v.uv[:] for v in uv.data])
+    indices=np.asarray([t.loops[:] for t in mesh.loop_triangles])
+    a,b,c=data[indices[:,0]],data[indices[:,1]],data[indices[:,2]]
+    ab,ac=b-a,c-a
+    fraction=float(np.mean(np.abs(ab[:,0]*ac[:,1]-ab[:,1]*ac[:,0])*.5>1e-12))
+    evaluated.to_mesh_clear()
+    if not np.isfinite(data).all() or fraction<.95:raise ValueError('Degenerate petticoat UV evaluation.')
+    result={'visibleFabric':visible.name,'simulationCage':cage.name,'singleThinSolver':True,
+            'fixedBindingTargetDiagonals':True,'uvNonDegenerateTriangleFraction':fraction,
+            'dynamicSimulationVerified':False}
+    if binding_error is not None:
+        result.update(followMethod='same_topology_point_index',maximumSolvedPositionError=binding_error,
+                      evaluatedCarrierDisplacementProbe=evaluated_displacement_probe)
+    else:result['followMethod']='surface_deform'
+    if visible.get('role')=='foundation_petticoat_cascade':
+        columns=int(visible['cascadeColumns'])
+        root=np.asarray([(visible.matrix_world @ v.co)[:] for v in visible.data.vertices[:columns]])
+        main=bpy.data.objects['01 / long ivory gathered petticoat']
+        seam=np.asarray([(main.matrix_world @ v.co)[:] for v in main.data.vertices[:192]])
+        gap=float(distance_to_seam(root,seam).max())
+        group=cage.vertex_groups['pinned']
+        pin_rows=json.loads(visible['actualGatherPinRows'])
+        expected=list(range(columns))+[r*columns for r in pin_rows]
+        if gap>1e-6 or any(group.weight(i)<.999 for i in expected):
+            raise ValueError('A gathered panel has a detached waist or missing drawstring pins.')
+        if not any(m.type=='SURFACE_DEFORM' and m.target.name==main['simulationCage'] and m.is_bound
+                   for m in cage.modifiers):raise ValueError('The gathered panel has no actual thin waist carrier.')
+        result.update(maximumWaistRootGap=gap,measuredRootVertices=columns,
+                      actualPinnedGatherStations=len(pin_rows),actualWaistAndGatherPinsVerified=True)
+    petticoat_partition.append(result)
+if petticoat_partition:print('PETTICOAT_THIN_SOLVERS_AND_SEAMS_VERIFIED',json.dumps(petticoat_partition),flush=True)
 apertures=[]
 trace=json.loads(Path(record['laceTrace']).read_text(encoding='utf-8'))
 if record.get('additionalLaceTrace'):
@@ -267,6 +356,7 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'actualApertureAudit':apertures,'carrierTranslationProbe':probes,
         'actualBlouseSeamAudit':blouse_seams,
         'blouseSolverPartitionAudit':solver_partition,
+        'petticoatSolverPartitionAudit':petticoat_partition,
         'actualLowerConstructionAudit':lower_construction,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,

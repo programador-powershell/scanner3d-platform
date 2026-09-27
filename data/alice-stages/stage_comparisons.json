@@ -129,11 +129,11 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "A anágua longa ainda tem dobras regulares e faltam os franzidos e cascatas laterais visíveis na foto; o babado inferior precisa de mais volume.",
-          "Camisa, mangas e corsete precisam de dobras de tecido menos regulares, franzidos superiores mais definidos, costuras e ferragens mais próximas da ficha.",
-          "Bloomers precisam de cintura e punhos mais franzidos; ligas precisam de acabamento nas copas e os pés das meias precisam de dedos e calcanhares mais arredondados.",
-          "A renda inferior e as fitas traseiras do corsete foram acrescentadas em geometria; seus motivos, bordas e caimento continuam em refinamento.",
-          "Este conjunto parcial ainda não tem corpo final nem rig compartilhado; caminhada, corrida, salto, ataque e colisões entre camadas estão pendentes."
+          "As cascatas laterais novas acrescentam tecido, canais, cordões, ferragens e laços; suas dobras ainda são regulares demais e precisam do caimento fino e assimétrico da ficha 1.",
+          "O painel central, o babado creme e os plissados pretos precisam de vincos e acabamento menos repetitivos.",
+          "Camisa, rendas e painéis do corsete ainda têm franzidos e detalhes diferentes da foto; os bloomers, as ligas e as meias mantêm as diferenças apontadas nas comparações isoladas.",
+          "Faltam os motivos dos copos das ligas e melhor volume no calcanhar e nas pontas das meias; as superfícies ocultas e as costas são inferidas.",
+          "A fundação não tem rig, clipes ou colisões validados. O vestido exterior completo permanece inteiro em seu item separado."
         ]
       },
       "motionRequirements": {
@@ -154,14 +154,14 @@
         "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
         "displayModel": {
           "file": "alice_chapeleiro_stage_01/inspection.glb",
-          "sha256": "151d3bef5e1dbf28966614c1060d311410069f70df4e079bdf5622ab5fe7e49c"
+          "sha256": "4cb25ea2fb890d4ddab567179452bd835801504e76c990c2a292b26803fb9d03"
         },
         "board": {
           "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
-          "sha256": "3795b3abbc5db5f43fe40dd9e9363ffb75c0b46e821c42bd34e7a7d7a7707254"
+          "sha256": "a6449d1b234171194b3c45c1128335b94ce89ea4bbb092ece42ce7a67a721a3f"
         },
-        "modelSha256": "249bbe2fe867071318dfcce7b8d38f51a2c84f365af5037ad596e4cc35ed0a3f",
-        "method": "own_photo_corset_frills_inclined_seam_lace_and_rear_fabric_ribbons",
+        "modelSha256": "ce385c2839886343ed5177ea279cb39444f2dea2a29749b041cd2ad63604dc7f",
+        "method": "own_photo_gathered_side_cascades_with_sewn_drawstring_tapes_and_thin_cloth_carriers",
         "frontAxis": "-y"
       }
     }

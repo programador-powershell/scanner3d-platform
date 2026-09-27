@@ -44,6 +44,21 @@ if any(p['role']=='foundation_gathered_blouse' for p in generation['pieces']):
     solvers=audit.get('blouseSolverPartitionAudit',[])
     if len(solvers)!=3 or any(not s['singleSolver'] or s['uvNonDegenerateTriangleFraction']<.95 for s in solvers):
         raise ValueError('Requires actual single-solver and evaluated blouse UV evidence.')
+if generation.get('petticoatSimulationCages'):
+    partition=audit.get('petticoatSolverPartitionAudit',[])
+    expected={p['name'] for p in generation['petticoatSimulationCages']}
+    if ({p['simulationCage'] for p in partition}!=expected
+            or any(not p['singleThinSolver'] or not p['fixedBindingTargetDiagonals']
+                   or p['uvNonDegenerateTriangleFraction']<.95 for p in partition)
+            or sum(bool(p.get('actualWaistAndGatherPinsVerified')) for p in partition)!=2):
+        raise ValueError('Requires actual thin petticoat solvers, UVs, waist seams and drawstring pins.')
+    point_followers=[p for p in partition if p.get('followMethod')=='same_topology_point_index']
+    if len(point_followers)!=2 or any(
+            p.get('maximumSolvedPositionError',1)>1e-6
+            or p.get('evaluatedCarrierDisplacementProbe',{}).get('maximumCarrierDisplacement',0)<.0005
+            or p.get('evaluatedCarrierDisplacementProbe',{}).get('maximumFollowingError',1)>1e-6
+            for p in point_followers):
+        raise ValueError('Requires actual evaluated deformation of both visible side panels.')
 if (generation['sourcePhotoSha256'] != comparison['sourcePhotoSha256']
         or comparison['stageId'] != 'alice_chapeleiro_stage_01'
         or comparison['status'] != 'needs_refinement'
@@ -109,7 +124,7 @@ for name, artifact in comparison['renders'].items():
 portable_parts=[]
 for part in part_reviews:
     prefix=part.get('selectedComponentGroup') or part['selectedRolePrefix']
-    if prefix not in ['foundation_bloomers','foundation_garter_','foundation_stocking','corset']:
+    if prefix not in ['foundation_bloomers','foundation_garter_','foundation_stocking','corset','petticoats']:
         raise ValueError('Unknown foundation part review.')
     folder=docs/'parts'/prefix.removeprefix('foundation_').rstrip('_')
     copy(part['comparisonBoard']['file'],folder/'photo_vs_geometry.jpg')
@@ -145,6 +160,7 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                            'actualApertureAudit':audit['actualApertureAudit'],
                            'actualBlouseSeamAudit':audit.get('actualBlouseSeamAudit',[]),
                            'blouseSolverPartitionAudit':audit.get('blouseSolverPartitionAudit',[]),
+                           'petticoatSolverPartitionAudit':audit.get('petticoatSolverPartitionAudit',[]),
                            'actualLowerConstructionAudit':audit.get('actualLowerConstructionAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
@@ -160,7 +176,14 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
     'fazem parte desta construção. As comparações isoladas estão em parts/. O GLB do vestido '
     'completo permanece inteiro no seu item original. As rendas acompanham '
     'os respectivos suportes no arquivo Blender por Surface Deform; isso '
-    'ainda não valida rig, simulação em gameplay ou colisões.\n\n'
+    'ainda não valida rig, simulação em gameplay ou colisões.\n\n'+
+    ('As cascatas laterais da anágua são superfícies novas de tecido, com '
+     'canais de franzido, cordões, ilhoses e laços. Cada painel tem uma única '
+     'malha fina de Cloth; sua superfície visível amostra os vértices resolvidos '
+     'por índice antes da espessura e do UV do Bystedt. O vínculo à cintura e '
+     'os pontos de franzido foram medidos no arquivo editável. Essa verificação '
+     'é estática e ainda exige simulação com o corpo, rig e movimentos.\n\n'
+     if generation.get('petticoatSimulationCages') else '')+
     'O add-on fornecido pelo usuário é Bystedts Cloth Builder 1.0.1, de Daniel '
     'Bystedt. O arquivo editável contém os grupos originais Post sim cloth / '
     'Solidify / UV unwrap solidified. A cópia carregada recebe a adaptação '
