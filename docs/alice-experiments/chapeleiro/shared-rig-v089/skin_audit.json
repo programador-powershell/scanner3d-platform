@@ -1,0 +1,4534 @@
+{
+  "pieces": [
+    {
+      "mesh": "01 / long ivory gathered petticoat",
+      "role": "internal_petticoat",
+      "vertices": 14208,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_00_0",
+        "IvoryCloth_00_1",
+        "IvoryCloth_00_2",
+        "IvoryCloth_01_0",
+        "IvoryCloth_01_1",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_0",
+        "IvoryCloth_04_1",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_0",
+        "IvoryCloth_05_1",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_0",
+        "IvoryCloth_07_1",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_0",
+        "IvoryCloth_08_1",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_0",
+        "IvoryCloth_11_1",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / ivory lower gathered flounce",
+      "role": "internal_petticoat",
+      "vertices": 4992,
+      "boneGroups": [
+        "IvoryCloth_00_2",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black petticoat continuous waist support",
+      "role": "internal_petticoat",
+      "vertices": 14976,
+      "boneGroups": [
+        "BlackCloth_00_0",
+        "BlackCloth_00_1",
+        "BlackCloth_00_2",
+        "BlackCloth_01_0",
+        "BlackCloth_01_1",
+        "BlackCloth_01_2",
+        "BlackCloth_02_0",
+        "BlackCloth_02_1",
+        "BlackCloth_02_2",
+        "BlackCloth_03_0",
+        "BlackCloth_03_1",
+        "BlackCloth_03_2",
+        "BlackCloth_04_0",
+        "BlackCloth_04_1",
+        "BlackCloth_04_2",
+        "BlackCloth_05_0",
+        "BlackCloth_05_1",
+        "BlackCloth_05_2",
+        "BlackCloth_06_0",
+        "BlackCloth_06_1",
+        "BlackCloth_06_2",
+        "BlackCloth_07_0",
+        "BlackCloth_07_1",
+        "BlackCloth_07_2",
+        "BlackCloth_08_0",
+        "BlackCloth_08_1",
+        "BlackCloth_08_2",
+        "BlackCloth_09_0",
+        "BlackCloth_09_1",
+        "BlackCloth_09_2",
+        "BlackCloth_10_0",
+        "BlackCloth_10_1",
+        "BlackCloth_10_2",
+        "BlackCloth_11_0",
+        "BlackCloth_11_1",
+        "BlackCloth_11_2",
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black gathered flounce 1",
+      "role": "internal_petticoat",
+      "vertices": 4992,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black gathered flounce 2",
+      "role": "internal_petticoat",
+      "vertices": 4992,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black gathered flounce 3",
+      "role": "internal_petticoat",
+      "vertices": 4992,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / ivory scalloped floral lace / real apertures",
+      "role": "internal_photographic_lace",
+      "vertices": 30453,
+      "boneGroups": [
+        "IvoryCloth_00_2",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black floral lace tier 1 / real apertures",
+      "role": "internal_photographic_lace",
+      "vertices": 46677,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black floral lace tier 2 / real apertures",
+      "role": "internal_photographic_lace",
+      "vertices": 46933,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / black floral lace tier 3 / real apertures",
+      "role": "internal_photographic_lace",
+      "vertices": 47084,
+      "boneGroups": [
+        "BlackCloth_00_2",
+        "BlackCloth_01_2",
+        "BlackCloth_02_2",
+        "BlackCloth_03_2",
+        "BlackCloth_04_2",
+        "BlackCloth_05_2",
+        "BlackCloth_06_2",
+        "BlackCloth_07_2",
+        "BlackCloth_08_2",
+        "BlackCloth_09_2",
+        "BlackCloth_10_2",
+        "BlackCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / ivory fitted boned corset / pointed front",
+      "role": "boned_foundation_corset",
+      "vertices": 6400,
+      "boneGroups": [
+        "Hips",
+        "Neck",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 00 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Hips",
+        "Neck",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 00 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Hips",
+        "Neck",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 01 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 01 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 02 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 02 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 03 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 03 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 04 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 04 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 05 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 05 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 06 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 06 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 07 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Neck",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 07 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Neck",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 08 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 08 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 09 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 09 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 10 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 10 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 11 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 11 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 12 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 12 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 13 edge -1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset boning channel 13 edge 1",
+      "role": "corset_structural_detail",
+      "vertices": 198,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset bound upper edge",
+      "role": "corset_structural_detail",
+      "vertices": 1158,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset bound lower edge",
+      "role": "corset_structural_detail",
+      "vertices": 1158,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 0",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 0",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 1",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 2",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 2",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 3",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 3",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 4",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 4",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk hook 5",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / brass busk catch 5",
+      "role": "corset_structural_detail",
+      "vertices": 12,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 0 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 0 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 1 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 1 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 2 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 2 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 3 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 3 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 4 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 4 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 5 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 5 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 6 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 6 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 7 side -1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear eyelet 7 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 78,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 0 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 0 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 1 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 1 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 2 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 2 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 3 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 3 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 4 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 4 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 5 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 5 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 6 side 0",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / rear corset crossing 6 side 1",
+      "role": "corset_structural_detail",
+      "vertices": 42,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / gathered blouse / real open armholes",
+      "role": "foundation_gathered_blouse",
+      "vertices": 13116,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right gathered puff sleeve / sewn armhole",
+      "role": "foundation_puffed_sleeve",
+      "vertices": 9355,
+      "boneGroups": [
+        "LeftArm",
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right sleeve elastic binding",
+      "role": "foundation_blouse_trim",
+      "vertices": 1224,
+      "boneGroups": [
+        "LeftArm",
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right gathered cuff frill",
+      "role": "foundation_blouse_cuff",
+      "vertices": 2624,
+      "boneGroups": [
+        "LeftArm",
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right cuff looped needle lace",
+      "role": "foundation_blouse_needle_lace",
+      "vertices": 2856,
+      "boneGroups": [
+        "LeftArm"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left gathered puff sleeve / sewn armhole",
+      "role": "foundation_puffed_sleeve",
+      "vertices": 9354,
+      "boneGroups": [
+        "Neck",
+        "RightArm",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left sleeve elastic binding",
+      "role": "foundation_blouse_trim",
+      "vertices": 1224,
+      "boneGroups": [
+        "Neck",
+        "RightArm",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left gathered cuff frill",
+      "role": "foundation_blouse_cuff",
+      "vertices": 2624,
+      "boneGroups": [
+        "Neck",
+        "RightArm",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left cuff looped needle lace",
+      "role": "foundation_blouse_needle_lace",
+      "vertices": 2856,
+      "boneGroups": [
+        "RightArm"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / gathered scoop neckline frill",
+      "role": "foundation_neckline_frill",
+      "vertices": 5746,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / neckline looped needle lace",
+      "role": "foundation_blouse_needle_lace",
+      "vertices": 6936,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / neckline stitched binding",
+      "role": "foundation_blouse_trim",
+      "vertices": 1288,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse center placket rail -1",
+      "role": "foundation_blouse_trim",
+      "vertices": 232,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse center placket rail 1",
+      "role": "foundation_blouse_trim",
+      "vertices": 232,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse aged brass key ornament 0",
+      "role": "foundation_blouse_ornament",
+      "vertices": 40,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse aged brass key ornament 1",
+      "role": "foundation_blouse_ornament",
+      "vertices": 16,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse aged brass key ornament 2",
+      "role": "foundation_blouse_ornament",
+      "vertices": 16,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse aged brass key ornament 3",
+      "role": "foundation_blouse_ornament",
+      "vertices": 16,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse center sewn button 0",
+      "role": "foundation_blouse_trim",
+      "vertices": 136,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse center sewn button 1",
+      "role": "foundation_blouse_trim",
+      "vertices": 136,
+      "boneGroups": [
+        "Neck",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / blouse center sewn button 2",
+      "role": "foundation_blouse_trim",
+      "vertices": 136,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch",
+      "role": "foundation_bloomers",
+      "vertices": 12536,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / gathered waist elastic casing",
+      "role": "foundation_bloomers_trim",
+      "vertices": 1792,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / front placket seam -1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / front placket seam 1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 0",
+      "role": "foundation_bloomers_trim",
+      "vertices": 104,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 104,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 2",
+      "role": "foundation_bloomers_trim",
+      "vertices": 104,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 3",
+      "role": "foundation_bloomers_trim",
+      "vertices": 104,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 4",
+      "role": "foundation_bloomers_trim",
+      "vertices": 104,
+      "boneGroups": [
+        "Hips"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left bloomers / cuff elastic casing",
+      "role": "foundation_bloomers_trim",
+      "vertices": 648,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left bloomers / gathered cuff frill",
+      "role": "foundation_bloomers_trim",
+      "vertices": 1096,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left bloomers / bloomer hem floral lace",
+      "role": "foundation_bloomers_photographic_lace",
+      "vertices": 6721,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left bloomers / cuff bow wing -1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 168,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left bloomers / cuff bow wing 1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 168,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right bloomers / cuff elastic casing",
+      "role": "foundation_bloomers_trim",
+      "vertices": 648,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right bloomers / gathered cuff frill",
+      "role": "foundation_bloomers_trim",
+      "vertices": 1104,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right bloomers / bloomer hem floral lace",
+      "role": "foundation_bloomers_photographic_lace",
+      "vertices": 6731,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right bloomers / cuff bow wing -1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 168,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right bloomers / cuff bow wing 1",
+      "role": "foundation_bloomers_trim",
+      "vertices": 168,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe",
+      "role": "foundation_stocking",
+      "vertices": 8578,
+      "boneGroups": [
+        "LeftFoot",
+        "LeftLeg",
+        "LeftToeBase",
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / horizontal knitted bands",
+      "role": "foundation_stocking_trim",
+      "vertices": 12288,
+      "boneGroups": [
+        "LeftFoot",
+        "LeftLeg",
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / sewn front panel seam",
+      "role": "foundation_stocking_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "LeftFoot",
+        "LeftLeg",
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left stocking / sewn rear panel seam",
+      "role": "foundation_stocking_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "LeftFoot",
+        "LeftLeg",
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe",
+      "role": "foundation_stocking",
+      "vertices": 8578,
+      "boneGroups": [
+        "RightFoot",
+        "RightLeg",
+        "RightToeBase",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / horizontal knitted bands",
+      "role": "foundation_stocking_trim",
+      "vertices": 12288,
+      "boneGroups": [
+        "RightFoot",
+        "RightLeg",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / sewn front panel seam",
+      "role": "foundation_stocking_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "RightFoot",
+        "RightLeg",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / sewn rear panel seam",
+      "role": "foundation_stocking_trim",
+      "vertices": 248,
+      "boneGroups": [
+        "RightFoot",
+        "RightLeg",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / gathered waist casing",
+      "role": "foundation_garter_belt",
+      "vertices": 25088,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / ruffled edge 0",
+      "role": "foundation_garter_trim",
+      "vertices": 12901,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / looped lace edge 0",
+      "role": "foundation_garter_trim",
+      "vertices": 4896,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / ruffled edge 1",
+      "role": "foundation_garter_trim",
+      "vertices": 12897,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / garter belt hem photographic lace",
+      "role": "foundation_garter_trim",
+      "vertices": 164952,
+      "boneGroups": [
+        "Hips",
+        "Spine"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / pointed thigh reinforcement",
+      "role": "foundation_garter_cup",
+      "vertices": 8256,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / cup bound edge 0",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / cup bound edge 1",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / cup front stitch -0.003",
+      "role": "foundation_garter_trim",
+      "vertices": 200,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / cup front stitch 0.003",
+      "role": "foundation_garter_trim",
+      "vertices": 200,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / gathered thigh cup frill",
+      "role": "foundation_garter_trim",
+      "vertices": 1344,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / thigh cup needle lace",
+      "role": "foundation_garter_trim",
+      "vertices": 2856,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / front suspension web",
+      "role": "foundation_garter_strap",
+      "vertices": 570,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / True brass slider 0",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / True brass slider 1",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / True brass stocking clasp",
+      "role": "foundation_garter_hardware",
+      "vertices": 200,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / rear suspension web",
+      "role": "foundation_garter_strap",
+      "vertices": 100,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / False brass slider 0",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / False brass slider 1",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / False brass stocking clasp",
+      "role": "foundation_garter_hardware",
+      "vertices": 200,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / pointed thigh reinforcement",
+      "role": "foundation_garter_cup",
+      "vertices": 8256,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / cup bound edge 0",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / cup bound edge 1",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / cup front stitch -0.003",
+      "role": "foundation_garter_trim",
+      "vertices": 200,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / cup front stitch 0.003",
+      "role": "foundation_garter_trim",
+      "vertices": 200,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / gathered thigh cup frill",
+      "role": "foundation_garter_trim",
+      "vertices": 1344,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / thigh cup needle lace",
+      "role": "foundation_garter_trim",
+      "vertices": 2856,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / front suspension web",
+      "role": "foundation_garter_strap",
+      "vertices": 570,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / True brass slider 0",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / True brass slider 1",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / True brass stocking clasp",
+      "role": "foundation_garter_hardware",
+      "vertices": 200,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / rear suspension web",
+      "role": "foundation_garter_strap",
+      "vertices": 100,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / False brass slider 0",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / False brass slider 1",
+      "role": "foundation_garter_hardware",
+      "vertices": 40,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / False brass stocking clasp",
+      "role": "foundation_garter_hardware",
+      "vertices": 200,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / upper gathered frill",
+      "role": "foundation_corset_trim",
+      "vertices": 2304,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / lower pointed gathered frill",
+      "role": "foundation_corset_trim",
+      "vertices": 2304,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / upper needle lace edging",
+      "role": "foundation_corset_trim",
+      "vertices": 7344,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / corset hem scalloped floral lace",
+      "role": "internal_photographic_lace",
+      "vertices": 3557,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / rear ribbon bow wing -1",
+      "role": "foundation_corset_ribbon",
+      "vertices": 242,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / rear hanging ribbon tail -1",
+      "role": "foundation_corset_ribbon",
+      "vertices": 330,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / rear ribbon bow wing 1",
+      "role": "foundation_corset_ribbon",
+      "vertices": 242,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / rear hanging ribbon tail 1",
+      "role": "foundation_corset_ribbon",
+      "vertices": 330,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / corset / rear ribbon sewn knot",
+      "role": "foundation_corset_ribbon",
+      "vertices": 200,
+      "boneGroups": [
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / gathered side cascade panel",
+      "role": "foundation_petticoat_cascade",
+      "vertices": 6398,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_0",
+        "IvoryCloth_07_1",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_0",
+        "IvoryCloth_08_1",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / sewn drawstring casing tape",
+      "role": "foundation_petticoat_detail",
+      "vertices": 573,
+      "boneGroups": [
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / rolled cascade lower hem",
+      "role": "foundation_petticoat_detail",
+      "vertices": 264,
+      "boneGroups": [
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / continuous gathering drawcord",
+      "role": "foundation_petticoat_detail",
+      "vertices": 776,
+      "boneGroups": [
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 0",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_0",
+        "IvoryCloth_10_0",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 1",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 2",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 3",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 4",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / drawstring brass eyelet 5",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / gathered tie bow wing -1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 233,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / hanging gathered tie ribbon -1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 480,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / gathered tie bow wing 1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 233,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / hanging gathered tie ribbon 1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 482,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left petticoat / gathered tie sewn knot",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 168,
+      "boneGroups": [
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / gathered side cascade panel",
+      "role": "foundation_petticoat_cascade",
+      "vertices": 6398,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_0",
+        "IvoryCloth_04_1",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_0",
+        "IvoryCloth_05_1",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / sewn drawstring casing tape",
+      "role": "foundation_petticoat_detail",
+      "vertices": 574,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / rolled cascade lower hem",
+      "role": "foundation_petticoat_detail",
+      "vertices": 264,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / continuous gathering drawcord",
+      "role": "foundation_petticoat_detail",
+      "vertices": 776,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 0",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_0",
+        "IvoryCloth_03_0",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 1",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 2",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 3",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 4",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / drawstring brass eyelet 5",
+      "role": "foundation_petticoat_detail",
+      "vertices": 136,
+      "boneGroups": [
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / gathered tie bow wing -1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 233,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / hanging gathered tie ribbon -1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 484,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / gathered tie bow wing 1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 233,
+      "boneGroups": [
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / hanging gathered tie ribbon 1",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 482,
+      "boneGroups": [
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right petticoat / gathered tie sewn knot",
+      "role": "foundation_petticoat_ribbon",
+      "vertices": 168,
+      "boneGroups": [
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / narrow top facing band",
+      "role": "foundation_garter_trim",
+      "vertices": 960,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / top facing stitch 0",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / top facing stitch 1",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved panel seam -1",
+      "role": "foundation_garter_trim",
+      "vertices": 296,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved panel seam 1",
+      "role": "foundation_garter_trim",
+      "vertices": 296,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved seam sewing threads",
+      "role": "foundation_garter_trim",
+      "vertices": 1200,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow folded wing -1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 259,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow hanging ribbon -1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 262,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow folded wing 1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 257,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow hanging ribbon 1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 264,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow wrapped knot",
+      "role": "foundation_garter_ribbon",
+      "vertices": 275,
+      "boneGroups": [
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / narrow top facing band",
+      "role": "foundation_garter_trim",
+      "vertices": 960,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / top facing stitch 0",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / top facing stitch 1",
+      "role": "foundation_garter_trim",
+      "vertices": 1032,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved panel seam -1",
+      "role": "foundation_garter_trim",
+      "vertices": 296,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved panel seam 1",
+      "role": "foundation_garter_trim",
+      "vertices": 296,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved seam sewing threads",
+      "role": "foundation_garter_trim",
+      "vertices": 1200,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow folded wing -1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 257,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow hanging ribbon -1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 262,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow folded wing 1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 259,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow hanging ribbon 1",
+      "role": "foundation_garter_ribbon",
+      "vertices": 262,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow wrapped knot",
+      "role": "foundation_garter_ribbon",
+      "vertices": 277,
+      "boneGroups": [
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 1,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / elastic casing upper stitch",
+      "role": "foundation_garter_trim",
+      "vertices": 3072,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / garter belt / elastic casing lower stitch",
+      "role": "foundation_garter_trim",
+      "vertices": 3072,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "Chapeleiro / intact whole exterior / skin study",
+      "role": "whole_native",
+      "vertices": 197575,
+      "boneGroups": [
+        "ExteriorCloth_00_0",
+        "ExteriorCloth_00_1",
+        "ExteriorCloth_00_2",
+        "ExteriorCloth_01_0",
+        "ExteriorCloth_01_1",
+        "ExteriorCloth_01_2",
+        "ExteriorCloth_02_0",
+        "ExteriorCloth_02_1",
+        "ExteriorCloth_02_2",
+        "ExteriorCloth_03_0",
+        "ExteriorCloth_03_1",
+        "ExteriorCloth_03_2",
+        "ExteriorCloth_04_0",
+        "ExteriorCloth_04_1",
+        "ExteriorCloth_04_2",
+        "ExteriorCloth_05_0",
+        "ExteriorCloth_05_1",
+        "ExteriorCloth_05_2",
+        "ExteriorCloth_06_0",
+        "ExteriorCloth_06_1",
+        "ExteriorCloth_06_2",
+        "ExteriorCloth_07_0",
+        "ExteriorCloth_07_1",
+        "ExteriorCloth_07_2",
+        "ExteriorCloth_08_0",
+        "ExteriorCloth_08_1",
+        "ExteriorCloth_08_2",
+        "ExteriorCloth_09_0",
+        "ExteriorCloth_09_1",
+        "ExteriorCloth_09_2",
+        "ExteriorCloth_10_0",
+        "ExteriorCloth_10_1",
+        "ExteriorCloth_10_2",
+        "ExteriorCloth_11_0",
+        "ExteriorCloth_11_1",
+        "ExteriorCloth_11_2",
+        "Head",
+        "Hips",
+        "LeftArm",
+        "LeftFoot",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftHandIndex1",
+        "LeftHandIndex2",
+        "LeftHandIndex3",
+        "LeftHandIndex4",
+        "LeftHandMiddle1",
+        "LeftHandMiddle2",
+        "LeftHandMiddle3",
+        "LeftHandMiddle4",
+        "LeftHandPinky1",
+        "LeftHandPinky2",
+        "LeftHandPinky3",
+        "LeftHandPinky4",
+        "LeftHandRing1",
+        "LeftHandRing2",
+        "LeftHandRing3",
+        "LeftHandRing4",
+        "LeftHandThumb1",
+        "LeftHandThumb2",
+        "LeftHandThumb3",
+        "LeftHandThumb4",
+        "LeftLeg",
+        "LeftShoulder",
+        "LeftToeBase",
+        "LeftUpLeg",
+        "Neck",
+        "RightArm",
+        "RightFoot",
+        "RightForeArm",
+        "RightHand",
+        "RightHandIndex1",
+        "RightHandIndex2",
+        "RightHandIndex3",
+        "RightHandIndex4",
+        "RightHandMiddle1",
+        "RightHandMiddle2",
+        "RightHandMiddle3",
+        "RightHandMiddle4",
+        "RightHandPinky1",
+        "RightHandPinky2",
+        "RightHandPinky3",
+        "RightHandPinky4",
+        "RightHandRing1",
+        "RightHandRing2",
+        "RightHandRing3",
+        "RightHandRing4",
+        "RightHandThumb1",
+        "RightHandThumb2",
+        "RightHandThumb3",
+        "RightHandThumb4",
+        "RightLeg",
+        "RightShoulder",
+        "RightToeBase",
+        "RightUpLeg",
+        "Spine",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": false,
+      "motionVerified": false,
+      "nativeArmComponents": {
+        "method": "inferred common arm label per original surface component with coincident UV aliases",
+        "actualVertices": 197575,
+        "actualSurfaceComponents": 92,
+        "measurementAliasDecimalPlaces": 7,
+        "leftArmVertices": 17264,
+        "rightArmVertices": 16231,
+        "originalEdgesCrossingArmClass": 0,
+        "componentMeasurements": [
+          {
+            "component": 3,
+            "vertices": 16021,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                -0.18663787841796875,
+                -0.05336762219667435,
+                0.44710540771484375
+              ],
+              [
+                -0.14231662452220917,
+                0.004286843352019787,
+                0.5560044050216675
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Right"
+          },
+          {
+            "component": 5,
+            "vertices": 112,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                -0.1654013693332672,
+                -0.020771652460098267,
+                0.5501899719238281
+              ],
+              [
+                -0.14214059710502625,
+                0.005161514040082693,
+                0.5732809901237488
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Right"
+          },
+          {
+            "component": 15,
+            "vertices": 98,
+            "armCoverage": 0.7448979591836735,
+            "bounds": [
+              [
+                -0.08627230674028397,
+                0.021098660305142403,
+                0.6787019968032837
+              ],
+              [
+                -0.06106846034526825,
+                0.05007001385092735,
+                0.697466254234314
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Right"
+          },
+          {
+            "component": 20,
+            "vertices": 157856,
+            "armCoverage": 0.08602777214676667,
+            "bounds": [
+              [
+                -0.2219676971435547,
+                -0.1558958739042282,
+                3.525985812302679e-05
+              ],
+              [
+                0.221963033080101,
+                0.15569806098937988,
+                0.9799668192863464
+              ]
+            ],
+            "inferredArmClass": false,
+            "inferredSide": null
+          },
+          {
+            "component": 81,
+            "vertices": 787,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.06912734359502792,
+                -0.0107952281832695,
+                0.5767216086387634
+              ],
+              [
+                0.14270275831222534,
+                0.03957202658057213,
+                0.7088316679000854
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          },
+          {
+            "component": 82,
+            "vertices": 151,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.1334802806377411,
+                0.008192666806280613,
+                0.5785989165306091
+              ],
+              [
+                0.15150481462478638,
+                0.02327347733080387,
+                0.6038348078727722
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          },
+          {
+            "component": 83,
+            "vertices": 16244,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.11869777739048004,
+                -0.053268395364284515,
+                0.4468345642089844
+              ],
+              [
+                0.18378448486328125,
+                0.019831785932183266,
+                0.611994743347168
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          },
+          {
+            "component": 84,
+            "vertices": 69,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.13782501220703125,
+                0.002769877901300788,
+                0.5600516200065613
+              ],
+              [
+                0.154835507273674,
+                0.02043023146688938,
+                0.587247371673584
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          },
+          {
+            "component": 85,
+            "vertices": 10,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.14339524507522583,
+                -0.015053660608828068,
+                0.5838750004768372
+              ],
+              [
+                0.14676779508590698,
+                -0.01362892147153616,
+                0.5871509909629822
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          },
+          {
+            "component": 86,
+            "vertices": 3,
+            "armCoverage": 1.0,
+            "bounds": [
+              [
+                0.1447286158800125,
+                -0.01812182180583477,
+                0.5669324398040771
+              ],
+              [
+                0.14558489620685577,
+                -0.017740286886692047,
+                0.5684770345687866
+              ]
+            ],
+            "inferredArmClass": true,
+            "inferredSide": "Left"
+          }
+        ],
+        "geometryEdited": false,
+        "classificationVerified": false,
+        "limitation": "Bounds and bone proximity infer semantic membership; arm-to-torso and cloth seams still require review."
+      }
+    }
+  ],
+  "authoringCages": [
+    {
+      "mesh": "01 / gathered blouse / real open armholes / simulation midsurface",
+      "role": "foundation_gathered_blouse",
+      "vertices": 6554,
+      "boneGroups": [
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 2,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / gathered blouse / real open armholes",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / right gathered puff sleeve / sewn armhole / simulation midsurface",
+      "role": "foundation_puffed_sleeve",
+      "vertices": 4712,
+      "boneGroups": [
+        "LeftArm",
+        "Neck",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "SURFACE_DEFORM",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / right gathered puff sleeve / sewn armhole",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / left gathered puff sleeve / sewn armhole / simulation midsurface",
+      "role": "foundation_puffed_sleeve",
+      "vertices": 4712,
+      "boneGroups": [
+        "Neck",
+        "RightArm",
+        "Spine1",
+        "Spine2"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "SURFACE_DEFORM",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / left gathered puff sleeve / sewn armhole",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "role": "foundation_bloomers",
+      "vertices": 6287,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / bloomers / continuous waist and sewn crotch",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "role": "foundation_stocking",
+      "vertices": 4289,
+      "boneGroups": [
+        "LeftFoot",
+        "LeftLeg",
+        "LeftToeBase",
+        "LeftUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / left stocking / fitted leg ankle and closed toe",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "role": "foundation_stocking",
+      "vertices": 4289,
+      "boneGroups": [
+        "RightFoot",
+        "RightLeg",
+        "RightToeBase",
+        "RightUpLeg"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / right stocking / fitted leg ankle and closed toe",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "role": "foundation_garter_belt",
+      "vertices": 12800,
+      "boneGroups": [
+        "Hips",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 3,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / garter belt / gathered waist casing",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / left garter / front suspension web / skin midsurface",
+      "role": "foundation_garter_strap",
+      "vertices": 285,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / left garter / front suspension web",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / left garter / rear suspension web / skin midsurface",
+      "role": "foundation_garter_strap",
+      "vertices": 50,
+      "boneGroups": [
+        "Hips",
+        "LeftUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / left garter / rear suspension web",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / right garter / front suspension web / skin midsurface",
+      "role": "foundation_garter_strap",
+      "vertices": 285,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / right garter / front suspension web",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / right garter / rear suspension web / skin midsurface",
+      "role": "foundation_garter_strap",
+      "vertices": 50,
+      "boneGroups": [
+        "Hips",
+        "RightUpLeg",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [],
+      "modifierOrder": [
+        "ARMATURE",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / right garter / rear suspension web",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "role": "internal_petticoat",
+      "vertices": 7104,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_00_0",
+        "IvoryCloth_00_1",
+        "IvoryCloth_00_2",
+        "IvoryCloth_01_0",
+        "IvoryCloth_01_1",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_0",
+        "IvoryCloth_04_1",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_0",
+        "IvoryCloth_05_1",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_0",
+        "IvoryCloth_07_1",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_0",
+        "IvoryCloth_08_1",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_0",
+        "IvoryCloth_11_1",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / long ivory gathered petticoat",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / left petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "role": "foundation_petticoat_detail",
+      "vertices": 3201,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "IvoryCloth_07_0",
+        "IvoryCloth_07_1",
+        "IvoryCloth_07_2",
+        "IvoryCloth_08_0",
+        "IvoryCloth_08_1",
+        "IvoryCloth_08_2",
+        "IvoryCloth_09_0",
+        "IvoryCloth_09_1",
+        "IvoryCloth_09_2",
+        "IvoryCloth_10_0",
+        "IvoryCloth_10_1",
+        "IvoryCloth_10_2",
+        "IvoryCloth_11_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "SURFACE_DEFORM",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / left petticoat / sewn drawstring casing tape",
+      "actualClothFieldWeightsUnchanged": true
+    },
+    {
+      "mesh": "01 / right petticoat / gathered side cascade panel / petticoat simulation midsurface",
+      "role": "foundation_petticoat_detail",
+      "vertices": 3201,
+      "boneGroups": [
+        "Hips",
+        "IvoryCloth_01_2",
+        "IvoryCloth_02_0",
+        "IvoryCloth_02_1",
+        "IvoryCloth_02_2",
+        "IvoryCloth_03_0",
+        "IvoryCloth_03_1",
+        "IvoryCloth_03_2",
+        "IvoryCloth_04_0",
+        "IvoryCloth_04_1",
+        "IvoryCloth_04_2",
+        "IvoryCloth_05_0",
+        "IvoryCloth_05_1",
+        "IvoryCloth_05_2",
+        "IvoryCloth_06_0",
+        "IvoryCloth_06_1",
+        "IvoryCloth_06_2",
+        "Spine",
+        "Spine1"
+      ],
+      "unweightedVertices": 0,
+      "maximumNormalizationError": 0.0,
+      "maximumInfluences": 4,
+      "quantization": 65536,
+      "preservedClothFields": true,
+      "motionVerified": false,
+      "authoredFields": [
+        "pinned",
+        "stiffness",
+        "shrinking",
+        "pressure"
+      ],
+      "modifierOrder": [
+        "ARMATURE",
+        "SURFACE_DEFORM",
+        "CLOTH",
+        "TRIANGULATE"
+      ],
+      "receiver": "01 / right petticoat / sewn drawstring casing tape",
+      "actualClothFieldWeightsUnchanged": true
+    }
+  ],
+  "actualRawGeometryUnchanged": true,
+  "actualClothFieldWeightsUnchanged": true,
+  "torsoSkirtArmContaminationAbsent": true
+}

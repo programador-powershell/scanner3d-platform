@@ -11,6 +11,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from chapeleiro_shared_rig_fields import GarmentFields,attachment_regions,quantized_assign
 
 parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--parent',required=True);parser.add_argument('--output',required=True)
+parser.add_argument('--fit-native-hands',action='store_true',help='Infer arm/hand bind from the unchanged whole geometry and native atlas; inherited motions require renewed review.')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);parent_path=Path(args.parent);parent=json.loads(parent_path.read_text(encoding='utf-8'))
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 if sha(parent['editableBlend'])!=parent['editableBlendSha256'] or parent['riggedActualPieces']!=230:raise ValueError('Changed actual complete rig checkpoint.')
@@ -36,6 +37,17 @@ for track in rig.animation_data.nla_tracks:track.mute=True
 rig.animation_data.action=None
 names={p['name']:p for p in foundation['pieces']}
 authored={name:bpy.data.objects['Authoring / '+name] for name in names}
+hand_fit=None
+if not args.fit_native_hands and parent.get('nativeHandBindFit'):
+    inherited_fit=json.loads((parent_path.parent/'native_hand_bind_fit.json').read_text(encoding='utf-8'))
+    write('native_hand_bind_fit',inherited_fit)
+if args.fit_native_hands:
+    from chapeleiro_native_hand_fit import fit_native_hands
+    native_entry=next(p for p in old_audit['pieces'] if p['role']=='whole_native')
+    hand_fit=fit_native_hands(rig,bpy.data.objects[native_entry['mesh']]);write('native_hand_bind_fit',hand_fit)
+    schema['bones']=[{'name':b.name,'parent':b.parent.name if b.parent else None,'head':list(b.head_local),
+        'tail':list(b.tail_local),'matrix':[[v for v in row] for row in b.matrix_local]} for b in rig.data.bones]
+    schema['nativeHandBindFit']=hand_fit
 regions=attachment_regions(foundation['pieces'],authored)
 fields=GarmentFields(rig,schema['clothFamilies'],schema['pieceFamilies'],regions)
 previews=[bpy.data.objects[p['mesh']] for p in old_audit['pieces']]
@@ -108,4 +120,14 @@ result=dict(parent);result.update(parentGeneration=str(parent_path.resolve()),pa
     scriptSha256=sha(__file__),fieldScriptSha256=sha(Path(__file__).with_name('chapeleiro_shared_rig_fields.py')),
     actualGeometryUnchanged=True,actualClothFieldWeightsUnchanged=True,torsoSkirtArmContaminationAbsent=True,
     publicationStatus='local_only_pending_new_visual_motion_review')
+result['nativeArmComponentScriptSha256']=sha(Path(__file__).with_name('chapeleiro_whole_arm_components.py'))
+result['nativeArmMembershipClassificationVerified']=False
+if not args.fit_native_hands and parent.get('nativeHandBindFit'):
+    result['nativeHandFitInheritedFrom']=str(parent_path.resolve())
+if hand_fit:
+    result['nativeHandBindFit']=True;result['inheritedActionsRequireRetargetReview']=True
+    result['handFitScriptSha256']=sha(Path(__file__).with_name('chapeleiro_native_hand_fit.py'))
+    result['motionAudit']=[dict(m,previousRetarget=m.get('retarget'),
+        retarget='inherited local channels in a refitted arm/hand bind; experimental deformation probe',motionVerified=False)
+        for m in result['motionAudit']]
 write('generation',result);progress('complete_local_attachment_refinement',actualPieces=len(previews))

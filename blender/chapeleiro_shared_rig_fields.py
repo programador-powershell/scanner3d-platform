@@ -63,6 +63,8 @@ class GarmentFields:
         self.cloth_families=cloth_families
         self.piece_families=piece_families or {}
         self.piece_regions=piece_regions or {};self.root_trees={}
+        self.arm_names={side:[side+'Arm',side+'ForeArm',side+'Hand']+
+            [n for n in self.bones if n.startswith(side+'Hand') and n!=side+'Hand'] for side in ['Left','Right']}
         for name,rule in self.piece_regions.items():
             if rule['kind']!='sleeve':continue
             tree=KDTree(len(rule['rootPoints']))
@@ -132,8 +134,9 @@ class GarmentFields:
             # The whole exterior stays a single unchanged mesh. Regions are
             # weighted, never cut into replacement layers.
             side='Left' if p.x>=0 else 'Right'
-            arm_distance=min(segment_distance(p,*self.bones[n]) for n in [side+'Arm',side+'ForeArm',side+'Hand'])
-            if abs(p.x)>.12 and p.z<.66 and arm_distance<.033:return self.body(p)
+            # Arm surface membership is assigned per original connected
+            # component in quantized_assign. A per-point capsule here would
+            # steal adjacent skirt vertices and split their deformation field.
             leg_distance=min(segment_distance(p,*self.bones[n]) for n in [side+'UpLeg',side+'Leg',side+'Foot',side+'ToeBase'])
             if p.z<.45 and leg_distance<.045:return self.body(p)
             if .24<p.z<.64 and abs(p.x)<.16+(.64-p.z)*.38:
@@ -165,6 +168,10 @@ class GarmentFields:
 
 def quantized_assign(obj,rig,fields,role,name,preserve_other_groups=False,replace_skin=False):
     """Exact binary sums; enough weight precision for actual fine lace yarns."""
+    native_arms=None;native_arm_audit=None
+    if role=='whole_native':
+        from chapeleiro_whole_arm_components import native_arm_components
+        native_arms,native_arm_audit=native_arm_components(obj,fields.bones,fields.arm_names)
     if not preserve_other_groups:
         maximum=max((g.group for v in obj.data.vertices for g in v.groups),default=-1)
         while len(obj.vertex_groups)<=maximum:obj.vertex_groups.new(name='Discard inherited non-skin field')
@@ -178,7 +185,11 @@ def quantized_assign(obj,rig,fields,role,name,preserve_other_groups=False,replac
         raise ValueError('The actual authoring cage was already skinned.')
     batches=defaultdict(list);used=set();error=0.
     for v in obj.data.vertices:
-        weights=fields.weights(obj.matrix_world@v.co,role,name)
+        point=obj.matrix_world@v.co
+        if native_arms is not None and native_arms[v.index]:
+            side='Left' if native_arms[v.index]==1 else 'Right'
+            weights=fields.near(point,fields.arm_names[side],.005)
+        else:weights=fields.weights(point,role,name)
         integers={bone:round(value*WEIGHT_QUANTIZATION) for bone,value in weights.items()}
         largest=max(weights,key=weights.get);integers[largest]+=WEIGHT_QUANTIZATION-sum(integers.values())
         for bone,value in integers.items():
@@ -192,9 +203,11 @@ def quantized_assign(obj,rig,fields,role,name,preserve_other_groups=False,replac
         if not actual:unweighted+=1
         error=max(error,abs(sum(actual)-1));maximum_influences=max(maximum_influences,len(actual))
     if unweighted or error>1e-7 or maximum_influences>4:raise ValueError('Invalid real shared-rig weights.')
-    return {'mesh':obj.name,'role':role,'vertices':len(obj.data.vertices),'boneGroups':sorted(used),
+    result={'mesh':obj.name,'role':role,'vertices':len(obj.data.vertices),'boneGroups':sorted(used),
         'unweightedVertices':unweighted,'maximumNormalizationError':error,'maximumInfluences':maximum_influences,
         'quantization':WEIGHT_QUANTIZATION,'preservedClothFields':preserve_other_groups,'motionVerified':False}
+    if native_arm_audit:result['nativeArmComponents']=native_arm_audit
+    return result
 
 def solve_leg(hip,ankle,upper_length,lower_length):
     """Two-bone IK for planted crouch/landing; forward knee pole in world -Y."""

@@ -1,0 +1,117 @@
+{
+  "status": "rejected_for_hand_to_skirt_weight_discontinuity",
+  "referenceWholeGlbSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+  "actualRejectedWholeGlbSha256": "921a445e5ad79b275e8aac41ae33b64c30ec14d72e1475bc630777f680077cc7",
+  "fullLocalEditable": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v088\\chapeleiro_shared_rig_attachment_refinement.blend",
+    "bytes": 128070044,
+    "sha256": "8c08d66c8abc5f14bc2703fdff4a7712bd90d67a63d9b811515a189a5aef6063"
+  },
+  "actualPoseComparison": [
+    {
+      "clip": "Walk / shared Chapeleiro deformation study",
+      "fraction": 0.33,
+      "oldMaximumEdgeStretch": 717.6500244140625,
+      "v088MaximumEdgeStretch": 1478.5477294921875,
+      "v088WorstWeights": [
+        {
+          "RightHandIndex4": 0.37481689453125,
+          "RightHandIndex3": 0.36376953125,
+          "RightHandIndex2": 0.26141357421875
+        },
+        {
+          "ExteriorCloth_10_2": 0.4248046875,
+          "ExteriorCloth_09_2": 0.23931884765625,
+          "ExteriorCloth_10_1": 0.21484375,
+          "ExteriorCloth_09_1": 0.12103271484375
+        }
+      ]
+    },
+    {
+      "clip": "Run / shared Chapeleiro deformation study",
+      "fraction": 0.66,
+      "oldMaximumEdgeStretch": 867.0966796875,
+      "v088MaximumEdgeStretch": 905.8358154296875,
+      "v088WorstWeights": [
+        {
+          "ExteriorCloth_02_2": 0.5358123779296875,
+          "ExteriorCloth_02_1": 0.2253570556640625,
+          "ExteriorCloth_03_2": 0.168121337890625,
+          "ExteriorCloth_03_1": 0.070709228515625
+        },
+        {
+          "LeftHandIndex4": 0.4115753173828125,
+          "LeftHandIndex3": 0.3246002197265625,
+          "LeftHandMiddle4": 0.263824462890625
+        }
+      ]
+    },
+    {
+      "clip": "Attack / shared Chapeleiro deformation study",
+      "fraction": 0.18,
+      "oldMaximumEdgeStretch": 1156.0718994140625,
+      "v088MaximumEdgeStretch": 1856.7403564453125,
+      "v088WorstWeights": [
+        {
+          "RightHandIndex4": 0.37481689453125,
+          "RightHandIndex3": 0.36376953125,
+          "RightHandIndex2": 0.26141357421875
+        },
+        {
+          "ExteriorCloth_10_2": 0.4248046875,
+          "ExteriorCloth_09_2": 0.23931884765625,
+          "ExteriorCloth_10_1": 0.21484375,
+          "ExteriorCloth_09_1": 0.12103271484375
+        }
+      ]
+    },
+    {
+      "clip": "Attack / shared Chapeleiro deformation study",
+      "fraction": 0.5,
+      "oldMaximumEdgeStretch": 638.2874145507812,
+      "v088MaximumEdgeStretch": 1112.4132080078125,
+      "v088WorstWeights": [
+        {
+          "RightHandIndex4": 0.37481689453125,
+          "RightHandIndex3": 0.36376953125,
+          "RightHandIndex2": 0.26141357421875
+        },
+        {
+          "ExteriorCloth_10_2": 0.4248046875,
+          "ExteriorCloth_09_2": 0.23931884765625,
+          "ExteriorCloth_10_1": 0.21484375,
+          "ExteriorCloth_09_1": 0.12103271484375
+        }
+      ]
+    },
+    {
+      "clip": "Attack / shared Chapeleiro deformation study",
+      "fraction": 0.78,
+      "oldMaximumEdgeStretch": 1052.6240234375,
+      "v088MaximumEdgeStretch": 1623.0450439453125,
+      "v088WorstWeights": [
+        {
+          "RightHandIndex4": 0.37481689453125,
+          "RightHandIndex3": 0.36376953125,
+          "RightHandIndex2": 0.26141357421875
+        },
+        {
+          "ExteriorCloth_10_2": 0.4248046875,
+          "ExteriorCloth_09_2": 0.23931884765625,
+          "ExteriorCloth_10_1": 0.21484375,
+          "ExteriorCloth_09_1": 0.12103271484375
+        }
+      ]
+    }
+  ],
+  "actualOwnPhotoMotionBoardsViewed": [
+    "motion_foundation/photo_vs_shared_skin_motion.jpg",
+    "motion_whole/photo_vs_shared_skin_motion.jpg"
+  ],
+  "geometryChanged": false,
+  "canonicalGalleryPromoted": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "additionalCreditsConsumed": 0
+}

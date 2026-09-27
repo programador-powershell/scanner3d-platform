@@ -432,3 +432,14 @@ dos punhos continua medida e pendente. O v085 foi rejeitado por regressão no
 tecido. O novo editável completo de 128.165.008 bytes está preservado localmente;
 luvas, mangas, tecido secundário, colisões e fidelidade das fichas ainda exigem
 refinamento, e o FBX final continua pendente.
+
+O [shared-rig-v089](alice-experiments/chapeleiro/shared-rig-v089/README.md)
+refina o encaixe dos braços e mãos no mesmo esqueleto, preservando a geometria
+inteira. A atribuição por superfície original evita que a proximidade dos dedos
+roube pontos da saia. A comparação real com as fotos próprias, quatro vistas,
+doze poses e sobreposições dos ossos registra a melhora e os defeitos: algumas
+pontas dos dedos ainda ficam fora da mão e a barra apresenta uma fronteira
+excessiva com os pesos da perna. O v088 foi rejeitado por regressão nessa
+atribuição. O editável completo de 128.128.124 bytes foi preservado; retarget,
+fidelidade, tecido secundário e colisões continuam pendentes. O FBX final e a
+próxima variante aguardam concluir todas as fichas do Chapeleiro.

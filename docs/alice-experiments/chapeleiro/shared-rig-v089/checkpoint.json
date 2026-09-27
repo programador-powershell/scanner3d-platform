@@ -1,0 +1,95 @@
+{
+  "status": "needs_refinement",
+  "scope": "shared rig for current 229 foundation pieces and intact native exterior",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "31f2afcdd722131d435775309f31ed23dd0df7780014d7bfaddaae2a1ce9401f",
+        "bytes": 69264876
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+        "bytes": 65147744
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    }
+  },
+  "fullLocalEditableBytes": 128128124,
+  "fullLocalEditableSha256": "37c946021cba0bc304f7a43a694c810e02ec33fa5ab1cc209c9a8eb3be9cbce8",
+  "actualClothFieldWeightsUnchanged": true,
+  "actualRawGeometryUnchanged": true,
+  "canonicalGalleryPromoted": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "O GLB é idêntico byte a byte ao v088. A foto completa da ficha 1 e suas quatro vistas e doze poses reais foram preservadas com prova explícita dessa identidade.",
+      "As pernas ainda atravessam as anáguas na corrida e no ataque. Os ossos secundários seguem os quadris; a resposta física do tecido e as colisões entre as camadas não foram assadas nem aprovadas.",
+      "As mangas ainda deformam em poses fortes. Decote, microfranzidos, canais do corset, cascatas diagonais, trama das meias e acabamento continuam diferentes da ficha própria.",
+      "O encaixe novo do braço modifica o mesmo rig das 229 peças. As ações locais foram herdadas e ainda precisam de retarget, transições, contato dos pés e conferência nas botas."
+    ],
+    "whole": [
+      "O exterior inteiro foi reimportado e conferido com sua própria foto completa, quatro vistas e doze poses. A geometria, UVs e atlas não foram recortados ou substituídos.",
+      "O pulso e o antebraço se aproximaram da superfície real, mas as sobreposições frontais e de perfil mostram que as pontas de alguns dedos ainda ficam fora da mão. A anatomia interna e as articulações continuam inferidas.",
+      "A atribuição por superfície original elimina a fronteira entre dedos e saia nas arestas dessas regiões. A tentativa v088, baseada apenas em cápsulas espaciais, foi rejeitada por piorar essa fronteira.",
+      "Nas cinco poses diagnosticadas, o maior esticamento observado cai de 1156,07 no v084/v086 para 304,93 no v089. Esse valor continua excessivo. A pior aresta agora cruza a fronteira entre barra da saia e pesos da perna.",
+      "A cintura, mangas, luvas e dedos exigem retarget e pesos mais precisos. As pernas ainda penetram o vestido em poses fortes; pano secundário e colisões entre corpo e camadas continuam pendentes.",
+      "Rosto, cabelo, bordados, cartões, relógios, costas e acabamentos ainda precisam do polimento conforme a foto própria. A presença do rig e de quatro ações não aprova fidelidade nem prontidão para Soulslike.",
+      "O visualizador 3D foi conferido em perspectiva de três quartos com a foto própria e o ataque real. O cabelo abre em placas nas costas em movimento; sua atribuição ao couro cabeludo e ao pescoço precisa ser corrigida antes de aprovação."
+    ]
+  },
+  "interactivePreviewObserved": {
+    "scope": "local experimental viewer only",
+    "url": "http://localhost:3941/alice/layers?stage=alice_chapeleiro_full",
+    "actualWholeJointsShown": 173,
+    "actualWholeTrianglesShown": 302532,
+    "threeQuarterAttackViewed": true,
+    "poseRestoredToReference": true,
+    "wholeOwnPhotoShown": true,
+    "productionGalleryPromoted": false
+  }
+}

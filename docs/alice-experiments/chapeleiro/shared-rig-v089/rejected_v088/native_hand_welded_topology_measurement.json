@@ -1,0 +1,203 @@
+{
+  "originalEdgeComponents": 1533,
+  "positionWeldedMeasurementComponents": 92,
+  "actualWholeVertices": 197575,
+  "measurementWeldTolerance": 1e-07,
+  "geometryEdited": false,
+  "scope": "inferred semantic region per original surface component, only positional aliases in the measurement graph",
+  "rows": [
+    {
+      "component": 0,
+      "vertices": 157856,
+      "armCoverage": 0.08496984593553618,
+      "warmCandidates": 2059,
+      "bounds": [
+        [
+          -0.2219676971435547,
+          -0.1558958739042282,
+          3.525985812302679e-05
+        ],
+        [
+          0.221963033080101,
+          0.15569806098937988,
+          0.9799668192863464
+        ]
+      ],
+      "inferredArmClass": false
+    },
+    {
+      "component": 81,
+      "vertices": 16244,
+      "armCoverage": 1.0,
+      "warmCandidates": 9331,
+      "bounds": [
+        [
+          0.11869777739048004,
+          -0.053268395364284515,
+          0.4468345642089844
+        ],
+        [
+          0.18378448486328125,
+          0.019831785932183266,
+          0.611994743347168
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 3,
+      "vertices": 16021,
+      "armCoverage": 1.0,
+      "warmCandidates": 9582,
+      "bounds": [
+        [
+          -0.18663787841796875,
+          -0.05336762219667435,
+          0.44710540771484375
+        ],
+        [
+          -0.14231662452220917,
+          0.004286843352019787,
+          0.5560044050216675
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 65,
+      "vertices": 787,
+      "armCoverage": 0.9949174078780177,
+      "warmCandidates": 0,
+      "bounds": [
+        [
+          0.06912734359502792,
+          -0.0107952281832695,
+          0.5767216086387634
+        ],
+        [
+          0.14270275831222534,
+          0.03957202658057213,
+          0.7088316679000854
+        ]
+      ],
+      "inferredArmClass": false
+    },
+    {
+      "component": 83,
+      "vertices": 151,
+      "armCoverage": 1.0,
+      "warmCandidates": 2,
+      "bounds": [
+        [
+          0.1334802806377411,
+          0.008192666806280613,
+          0.5785989165306091
+        ],
+        [
+          0.15150481462478638,
+          0.02327347733080387,
+          0.6038348078727722
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 6,
+      "vertices": 112,
+      "armCoverage": 1.0,
+      "warmCandidates": 57,
+      "bounds": [
+        [
+          -0.1654013693332672,
+          -0.020771652460098267,
+          0.5501899719238281
+        ],
+        [
+          -0.14214059710502625,
+          0.005161514040082693,
+          0.5732809901237488
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 18,
+      "vertices": 98,
+      "armCoverage": 0.6632653061224489,
+      "warmCandidates": 0,
+      "bounds": [
+        [
+          -0.08627230674028397,
+          0.021098660305142403,
+          0.6787019968032837
+        ],
+        [
+          -0.06106846034526825,
+          0.05007001385092735,
+          0.697466254234314
+        ]
+      ],
+      "inferredArmClass": false
+    },
+    {
+      "component": 84,
+      "vertices": 69,
+      "armCoverage": 1.0,
+      "warmCandidates": 13,
+      "bounds": [
+        [
+          0.13782501220703125,
+          0.002769877901300788,
+          0.5600516200065613
+        ],
+        [
+          0.154835507273674,
+          0.02043023146688938,
+          0.587247371673584
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 85,
+      "vertices": 10,
+      "armCoverage": 1.0,
+      "warmCandidates": 0,
+      "bounds": [
+        [
+          0.14339524507522583,
+          -0.015053660608828068,
+          0.5838750004768372
+        ],
+        [
+          0.14676779508590698,
+          -0.01362892147153616,
+          0.5871509909629822
+        ]
+      ],
+      "inferredArmClass": true
+    },
+    {
+      "component": 86,
+      "vertices": 3,
+      "armCoverage": 1.0,
+      "warmCandidates": 0,
+      "bounds": [
+        [
+          0.1447286158800125,
+          -0.01812182180583477,
+          0.5669324398040771
+        ],
+        [
+          0.14558489620685577,
+          -0.017740286886692047,
+          0.5684770345687866
+        ]
+      ],
+      "inferredArmClass": true
+    }
+  ],
+  "armClassVertices": 32610,
+  "rigFitVerified": false,
+  "fidelityVerified": false
+}

@@ -1,0 +1,116 @@
+{
+  "stageId": "alice_chapeleiro_full",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourceCrop": null,
+  "reviewScope": "complete_stage_geometry",
+  "selectedRolePrefix": null,
+  "selectedComponentGroup": null,
+  "renderedComponents": [
+    "Chapeleiro / intact whole exterior / skin study"
+  ],
+  "model": "whole/skin_study.glb",
+  "modelSha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+  "renders": {
+    "front": {
+      "file": "whole/rest/front.png",
+      "sha256": "2468cdd91ef96a68a3d26718b7045969938f345ff8b4e4613af76ddfd3174582",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        -3.9198248386383057,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 556861
+    },
+    "side": {
+      "file": "whole/rest/side.png",
+      "sha256": "058c13c5eb11bb88281b1c029380958289e7f6af73c51b60f1c73ba8ea4ea91f",
+      "cameraPosition": [
+        3.9197239875793457,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 451552
+    },
+    "back": {
+      "file": "whole/rest/back.png",
+      "sha256": "d504dcc7430e23b0aecf6453d36d0d2feee924299d311a745c706328f06c9893",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        3.9196274280548096,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 555280
+    },
+    "threequarter": {
+      "file": "whole/rest/threequarter.png",
+      "sha256": "cff6f27c2a2252ff4eefdf0e8b6ed93eab02e5f2a0976746f7ac4c2c1a63b596",
+      "cameraPosition": [
+        2.1195058822631836,
+        -3.260880708694458,
+        0.9791184663772583
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 542434
+    }
+  },
+  "bounds": {
+    "min": [
+      -0.22196771204471588,
+      -0.15589569509029388,
+      3.5339067835593596e-05
+    ],
+    "max": [
+      0.22196318209171295,
+      0.1556984782218933,
+      0.9799668788909912
+    ]
+  },
+  "frontAxis": "-y",
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "O exterior inteiro foi reimportado e conferido com sua própria foto completa, quatro vistas e doze poses. A geometria, UVs e atlas não foram recortados ou substituídos.",
+    "O pulso e o antebraço se aproximaram da superfície real, mas as sobreposições frontais e de perfil mostram que as pontas de alguns dedos ainda ficam fora da mão. A anatomia interna e as articulações continuam inferidas.",
+    "A atribuição por superfície original elimina a fronteira entre dedos e saia nas arestas dessas regiões. A tentativa v088, baseada apenas em cápsulas espaciais, foi rejeitada por piorar essa fronteira.",
+    "Nas cinco poses diagnosticadas, o maior esticamento observado cai de 1156,07 no v084/v086 para 304,93 no v089. Esse valor continua excessivo. A pior aresta agora cruza a fronteira entre barra da saia e pesos da perna.",
+    "A cintura, mangas, luvas e dedos exigem retarget e pesos mais precisos. As pernas ainda penetram o vestido em poses fortes; pano secundário e colisões entre corpo e camadas continuam pendentes.",
+    "Rosto, cabelo, bordados, cartões, relógios, costas e acabamentos ainda precisam do polimento conforme a foto própria. A presença do rig e de quatro ações não aprova fidelidade nem prontidão para Soulslike.",
+    "O visualizador 3D foi conferido em perspectiva de três quartos com a foto própria e o ataque real. O cabelo abre em placas nas costas em movimento; sua atribuição ao couro cabeludo e ao pescoço precisa ser corrigida antes de aprovação."
+  ],
+  "limitation": "Unseen surfaces are inferred; camera registration and details require review.",
+  "displayModel": {
+    "file": "whole/skin_study.glb",
+    "sha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+    "bytes": 65147744
+  },
+  "comparisonBoard": {
+    "file": "whole/photo_vs_geometry.jpg",
+    "sha256": "fae0383c6fbb57a2328fdd503f651e1545eedca2545b5a2311fa26373f07814d",
+    "bytes": 506130
+  },
+  "visualReviewPerformed": true
+}

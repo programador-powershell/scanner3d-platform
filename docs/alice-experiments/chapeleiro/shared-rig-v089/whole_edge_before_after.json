@@ -1,0 +1,789 @@
+{
+  "actualPoseComparisons": [
+    {
+      "version": "v084",
+      "actualModelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+      "poses": [
+        {
+          "clip": "Walk / shared Chapeleiro deformation study",
+          "fraction": 0.33,
+          "maximumEdgeStretch": 717.6500244140625,
+          "actualWorstEdge": {
+            "edgeIndex": 255216,
+            "vertexIndices": [
+              8446,
+              8447
+            ],
+            "stretchRatio": 717.6500244140625,
+            "restLength": 0.00039616963476873934,
+            "posedLength": 0.2843111455440521,
+            "restEndpointsSourceBlender": [
+              [
+                -0.17653657495975494,
+                -0.02165987901389599,
+                0.5166037678718567
+              ],
+              [
+                -0.17623141407966614,
+                -0.021886836737394333,
+                0.5164927840232849
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.04442879557609558,
+                -0.19405212998390198,
+                0.6460897922515869
+              ],
+              [
+                -0.16545696556568146,
+                -0.008273418992757797,
+                0.46812552213668823
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandThumb1": 0.577362060546875,
+                "RightHandThumb2": 0.3161468505859375,
+                "RightHand": 0.1064910888671875
+              },
+              {
+                "ExteriorCloth_09_1": 0.8459014892578125,
+                "ExteriorCloth_10_1": 0.1385955810546875,
+                "ExteriorCloth_09_0": 0.0133209228515625,
+                "ExteriorCloth_10_0": 0.0021820068359375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Run / shared Chapeleiro deformation study",
+          "fraction": 0.66,
+          "maximumEdgeStretch": 867.0966796875,
+          "actualWorstEdge": {
+            "edgeIndex": 468793,
+            "vertexIndices": [
+              146963,
+              146966
+            ],
+            "stretchRatio": 867.0966796875,
+            "restLength": 0.00044460431672632694,
+            "posedLength": 0.38551491498947144,
+            "restEndpointsSourceBlender": [
+              [
+                0.1565476655960083,
+                -0.006794922985136509,
+                0.5067691802978516
+              ],
+              [
+                0.15682226419448853,
+                -0.006460167001932859,
+                0.5066681504249573
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.14264196157455444,
+                0.011478467844426632,
+                0.43007346987724304
+              ],
+              [
+                0.0014341771602630615,
+                -0.23923587799072266,
+                0.686636209487915
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_03_1": 0.9805450439453125,
+                "ExteriorCloth_02_1": 0.0194549560546875
+              },
+              {
+                "LeftHandThumb1": 0.5594024658203125,
+                "LeftHandThumb2": 0.3814849853515625,
+                "LeftHand": 0.059112548828125
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.18,
+          "maximumEdgeStretch": 1156.0718994140625,
+          "actualWorstEdge": {
+            "edgeIndex": 255216,
+            "vertexIndices": [
+              8446,
+              8447
+            ],
+            "stretchRatio": 1156.0718994140625,
+            "restLength": 0.00039616963476873934,
+            "posedLength": 0.4580005705356598,
+            "restEndpointsSourceBlender": [
+              [
+                -0.17653657495975494,
+                -0.02165987901389599,
+                0.5166037678718567
+              ],
+              [
+                -0.17623141407966614,
+                -0.021886836737394333,
+                0.5164927840232849
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.07940938323736191,
+                0.10598166286945343,
+                0.9359264373779297
+              ],
+              [
+                -0.14871710538864136,
+                0.1040257140994072,
+                0.48320451378822327
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandThumb1": 0.577362060546875,
+                "RightHandThumb2": 0.3161468505859375,
+                "RightHand": 0.1064910888671875
+              },
+              {
+                "ExteriorCloth_09_1": 0.8459014892578125,
+                "ExteriorCloth_10_1": 0.1385955810546875,
+                "ExteriorCloth_09_0": 0.0133209228515625,
+                "ExteriorCloth_10_0": 0.0021820068359375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.5,
+          "maximumEdgeStretch": 638.2874145507812,
+          "actualWorstEdge": {
+            "edgeIndex": 255216,
+            "vertexIndices": [
+              8446,
+              8447
+            ],
+            "stretchRatio": 638.2874145507812,
+            "restLength": 0.00039616963476873934,
+            "posedLength": 0.2528700828552246,
+            "restEndpointsSourceBlender": [
+              [
+                -0.17653657495975494,
+                -0.02165987901389599,
+                0.5166037678718567
+              ],
+              [
+                -0.17623141407966614,
+                -0.021886836737394333,
+                0.5164927840232849
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.10242659598588943,
+                0.30340149998664856,
+                0.5403563380241394
+              ],
+              [
+                -0.15935993194580078,
+                0.07613228261470795,
+                0.44522184133529663
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandThumb1": 0.577362060546875,
+                "RightHandThumb2": 0.3161468505859375,
+                "RightHand": 0.1064910888671875
+              },
+              {
+                "ExteriorCloth_09_1": 0.8459014892578125,
+                "ExteriorCloth_10_1": 0.1385955810546875,
+                "ExteriorCloth_09_0": 0.0133209228515625,
+                "ExteriorCloth_10_0": 0.0021820068359375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.78,
+          "maximumEdgeStretch": 1052.6240234375,
+          "actualWorstEdge": {
+            "edgeIndex": 255216,
+            "vertexIndices": [
+              8446,
+              8447
+            ],
+            "stretchRatio": 1052.6240234375,
+            "restLength": 0.00039616963476873934,
+            "posedLength": 0.41701769828796387,
+            "restEndpointsSourceBlender": [
+              [
+                -0.17653657495975494,
+                -0.02165987901389599,
+                0.5166037678718567
+              ],
+              [
+                -0.17623141407966614,
+                -0.021886836737394333,
+                0.5164927840232849
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.15199308097362518,
+                -0.20718491077423096,
+                0.5367595553398132
+              ],
+              [
+                -0.17385177314281464,
+                0.03511913865804672,
+                0.4417983293533325
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandThumb1": 0.577362060546875,
+                "RightHandThumb2": 0.3161468505859375,
+                "RightHand": 0.1064910888671875
+              },
+              {
+                "ExteriorCloth_09_1": 0.8459014892578125,
+                "ExteriorCloth_10_1": 0.1385955810546875,
+                "ExteriorCloth_09_0": 0.0133209228515625,
+                "ExteriorCloth_10_0": 0.0021820068359375
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "version": "v088",
+      "actualModelSha256": "921a445e5ad79b275e8aac41ae33b64c30ec14d72e1475bc630777f680077cc7",
+      "poses": [
+        {
+          "clip": "Walk / shared Chapeleiro deformation study",
+          "fraction": 0.33,
+          "maximumEdgeStretch": 1478.5477294921875,
+          "actualWorstEdge": {
+            "edgeIndex": 268150,
+            "vertexIndices": [
+              13831,
+              13898
+            ],
+            "stretchRatio": 1478.5477294921875,
+            "restLength": 0.00028281682170927525,
+            "posedLength": 0.4181581735610962,
+            "restEndpointsSourceBlender": [
+              [
+                -0.16162864863872528,
+                -0.051963839679956436,
+                0.4254534840583801
+              ],
+              [
+                -0.16162873804569244,
+                -0.051975272595882416,
+                0.4251708984375
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.005767330527305603,
+                -0.2642818093299866,
+                0.7087327241897583
+              ],
+              [
+                -0.1346941590309143,
+                -0.043237678706645966,
+                0.3827475607395172
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandIndex4": 0.37481689453125,
+                "RightHandIndex3": 0.36376953125,
+                "RightHandIndex2": 0.26141357421875
+              },
+              {
+                "ExteriorCloth_10_2": 0.4248046875,
+                "ExteriorCloth_09_2": 0.23931884765625,
+                "ExteriorCloth_10_1": 0.21484375,
+                "ExteriorCloth_09_1": 0.12103271484375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Run / shared Chapeleiro deformation study",
+          "fraction": 0.66,
+          "maximumEdgeStretch": 905.8358154296875,
+          "actualWorstEdge": {
+            "edgeIndex": 177767,
+            "vertexIndices": [
+              138612,
+              139260
+            ],
+            "stretchRatio": 905.8358154296875,
+            "restLength": 0.0004719002463389188,
+            "posedLength": 0.42746415734291077,
+            "restEndpointsSourceBlender": [
+              [
+                0.15784455835819244,
+                -0.05890653654932976,
+                0.42139434814453125
+              ],
+              [
+                0.15767669677734375,
+                -0.0586852952837944,
+                0.4217758774757385
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.12365169823169708,
+                -0.010424889624118805,
+                0.3343352675437927
+              ],
+              [
+                0.017785251140594482,
+                -0.19407963752746582,
+                0.7055344581604004
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_02_2": 0.5358123779296875,
+                "ExteriorCloth_02_1": 0.2253570556640625,
+                "ExteriorCloth_03_2": 0.168121337890625,
+                "ExteriorCloth_03_1": 0.070709228515625
+              },
+              {
+                "LeftHandIndex4": 0.4115753173828125,
+                "LeftHandIndex3": 0.3246002197265625,
+                "LeftHandMiddle4": 0.263824462890625
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.18,
+          "maximumEdgeStretch": 1856.7403564453125,
+          "actualWorstEdge": {
+            "edgeIndex": 268150,
+            "vertexIndices": [
+              13831,
+              13898
+            ],
+            "stretchRatio": 1856.7403564453125,
+            "restLength": 0.00028281682170927525,
+            "posedLength": 0.5251173973083496,
+            "restEndpointsSourceBlender": [
+              [
+                -0.16162864863872528,
+                -0.051963839679956436,
+                0.4254534840583801
+              ],
+              [
+                -0.16162873804569244,
+                -0.051975272595882416,
+                0.4251708984375
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.021871417760849,
+                0.10745269060134888,
+                0.895317792892456
+              ],
+              [
+                -0.16069455444812775,
+                0.08051018416881561,
+                0.3895999789237976
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandIndex4": 0.37481689453125,
+                "RightHandIndex3": 0.36376953125,
+                "RightHandIndex2": 0.26141357421875
+              },
+              {
+                "ExteriorCloth_10_2": 0.4248046875,
+                "ExteriorCloth_09_2": 0.23931884765625,
+                "ExteriorCloth_10_1": 0.21484375,
+                "ExteriorCloth_09_1": 0.12103271484375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.5,
+          "maximumEdgeStretch": 1112.4132080078125,
+          "actualWorstEdge": {
+            "edgeIndex": 268150,
+            "vertexIndices": [
+              13831,
+              13898
+            ],
+            "stretchRatio": 1112.4132080078125,
+            "restLength": 0.00028281682170927525,
+            "posedLength": 0.314609169960022,
+            "restEndpointsSourceBlender": [
+              [
+                -0.16162864863872528,
+                -0.051963839679956436,
+                0.4254534840583801
+              ],
+              [
+                -0.16162873804569244,
+                -0.051975272595882416,
+                0.4251708984375
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.14806778728961945,
+                0.3064580261707306,
+                0.5388959050178528
+              ],
+              [
+                -0.15200375020503998,
+                0.05435800179839134,
+                0.3507230877876282
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandIndex4": 0.37481689453125,
+                "RightHandIndex3": 0.36376953125,
+                "RightHandIndex2": 0.26141357421875
+              },
+              {
+                "ExteriorCloth_10_2": 0.4248046875,
+                "ExteriorCloth_09_2": 0.23931884765625,
+                "ExteriorCloth_10_1": 0.21484375,
+                "ExteriorCloth_09_1": 0.12103271484375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.78,
+          "maximumEdgeStretch": 1623.0450439453125,
+          "actualWorstEdge": {
+            "edgeIndex": 268150,
+            "vertexIndices": [
+              13831,
+              13898
+            ],
+            "stretchRatio": 1623.0450439453125,
+            "restLength": 0.00028281682170927525,
+            "posedLength": 0.45902442932128906,
+            "restEndpointsSourceBlender": [
+              [
+                -0.16162864863872528,
+                -0.051963839679956436,
+                0.4254534840583801
+              ],
+              [
+                -0.16162873804569244,
+                -0.051975272595882416,
+                0.4251708984375
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.16367049515247345,
+                -0.2123258262872696,
+                0.5692110061645508
+              ],
+              [
+                -0.16289471089839935,
+                0.020782683044672012,
+                0.34623342752456665
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightHandIndex4": 0.37481689453125,
+                "RightHandIndex3": 0.36376953125,
+                "RightHandIndex2": 0.26141357421875
+              },
+              {
+                "ExteriorCloth_10_2": 0.4248046875,
+                "ExteriorCloth_09_2": 0.23931884765625,
+                "ExteriorCloth_10_1": 0.21484375,
+                "ExteriorCloth_09_1": 0.12103271484375
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "version": "v089",
+      "actualModelSha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+      "poses": [
+        {
+          "clip": "Walk / shared Chapeleiro deformation study",
+          "fraction": 0.33,
+          "maximumEdgeStretch": 214.5092010498047,
+          "actualWorstEdge": {
+            "edgeIndex": 163248,
+            "vertexIndices": [
+              126970,
+              126971
+            ],
+            "stretchRatio": 214.5092010498047,
+            "restLength": 0.0007315665134228766,
+            "posedLength": 0.15692774951457977,
+            "restEndpointsSourceBlender": [
+              [
+                0.07341007888317108,
+                0.14178435504436493,
+                0.2400359809398651
+              ],
+              [
+                0.07379554212093353,
+                0.14168907701969147,
+                0.239421546459198
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.15111422538757324,
+                0.12187793850898743,
+                0.2481687068939209
+              ],
+              [
+                0.02651878446340561,
+                0.026550762355327606,
+                0.2520449161529541
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_05_2": 0.9783477783203125,
+                "ExteriorCloth_06_2": 0.0216522216796875
+              },
+              {
+                "LeftLeg": 0.7422027587890625,
+                "LeftUpLeg": 0.2577972412109375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Run / shared Chapeleiro deformation study",
+          "fraction": 0.66,
+          "maximumEdgeStretch": 153.88002014160156,
+          "actualWorstEdge": {
+            "edgeIndex": 281152,
+            "vertexIndices": [
+              24025,
+              24027
+            ],
+            "stretchRatio": 153.88002014160156,
+            "restLength": 0.0017392720328643918,
+            "posedLength": 0.2676392197608948,
+            "restEndpointsSourceBlender": [
+              [
+                -0.05703771859407425,
+                0.042456429451704025,
+                0.3339342176914215
+              ],
+              [
+                -0.056125715374946594,
+                0.04390329122543335,
+                0.3336181342601776
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                -0.0008558183908462524,
+                -0.1321171671152115,
+                0.3818228244781494
+              ],
+              [
+                -0.09779340028762817,
+                0.11208018660545349,
+                0.3308178782463074
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "RightUpLeg": 0.76171875,
+                "RightLeg": 0.23828125
+              },
+              {
+                "ExteriorCloth_08_2": 0.823272705078125,
+                "ExteriorCloth_07_2": 0.176727294921875
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.18,
+          "maximumEdgeStretch": 265.6569519042969,
+          "actualWorstEdge": {
+            "edgeIndex": 163248,
+            "vertexIndices": [
+              126970,
+              126971
+            ],
+            "stretchRatio": 265.6569519042969,
+            "restLength": 0.0007315665134228766,
+            "posedLength": 0.19434572756290436,
+            "restEndpointsSourceBlender": [
+              [
+                0.07341007888317108,
+                0.14178435504436493,
+                0.2400359809398651
+              ],
+              [
+                0.07379554212093353,
+                0.14168907701969147,
+                0.239421546459198
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.13767109811306,
+                0.08740025758743286,
+                0.19468586146831512
+              ],
+              [
+                0.0903659239411354,
+                -0.0969371646642685,
+                0.2340838611125946
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_05_2": 0.9783477783203125,
+                "ExteriorCloth_06_2": 0.0216522216796875
+              },
+              {
+                "LeftLeg": 0.7422027587890625,
+                "LeftUpLeg": 0.2577972412109375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.5,
+          "maximumEdgeStretch": 120.10704040527344,
+          "actualWorstEdge": {
+            "edgeIndex": 163248,
+            "vertexIndices": [
+              126970,
+              126971
+            ],
+            "stretchRatio": 120.10704040527344,
+            "restLength": 0.0007315665134228766,
+            "posedLength": 0.08786629140377045,
+            "restEndpointsSourceBlender": [
+              [
+                0.07341007888317108,
+                0.14178435504436493,
+                0.2400359809398651
+              ],
+              [
+                0.07379554212093353,
+                0.14168907701969147,
+                0.239421546459198
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.1666126847267151,
+                0.12269341945648193,
+                0.20624175667762756
+              ],
+              [
+                0.11052045971155167,
+                0.1614273637533188,
+                0.2616838812828064
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_05_2": 0.9783477783203125,
+                "ExteriorCloth_06_2": 0.0216522216796875
+              },
+              {
+                "LeftLeg": 0.7422027587890625,
+                "LeftUpLeg": 0.2577972412109375
+              }
+            ]
+          }
+        },
+        {
+          "clip": "Attack / shared Chapeleiro deformation study",
+          "fraction": 0.78,
+          "maximumEdgeStretch": 304.92633056640625,
+          "actualWorstEdge": {
+            "edgeIndex": 163248,
+            "vertexIndices": [
+              126970,
+              126971
+            ],
+            "stretchRatio": 304.92633056640625,
+            "restLength": 0.0007315665134228766,
+            "posedLength": 0.22307388484477997,
+            "restEndpointsSourceBlender": [
+              [
+                0.07341007888317108,
+                0.14178435504436493,
+                0.2400359809398651
+              ],
+              [
+                0.07379554212093353,
+                0.14168907701969147,
+                0.239421546459198
+              ]
+            ],
+            "posedEndpointsSourceBlender": [
+              [
+                0.12497451156377792,
+                0.17573411762714386,
+                0.2041686773300171
+              ],
+              [
+                0.08804132789373398,
+                -0.04246839880943298,
+                0.23219653964042664
+              ]
+            ],
+            "actualEndpointWeights": [
+              {
+                "ExteriorCloth_05_2": 0.9783477783203125,
+                "ExteriorCloth_06_2": 0.0216522216796875
+              },
+              {
+                "LeftLeg": 0.7422027587890625,
+                "LeftUpLeg": 0.2577972412109375
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Largest edge ratios describe defects in sampled exported poses; they do not approve hands, cloth or all frames."
+}

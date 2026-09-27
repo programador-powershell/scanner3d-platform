@@ -1,0 +1,54 @@
+{
+  "model": "whole/skin_study.glb",
+  "modelSha256": "b85a03cb5a744bf1bb8d4dc07bf7a52d5f67e7ba93355a63b802d73e66bb471b",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "scope": "Right forearm and hand bind diagnostic only",
+  "nativeMaterialDiagnosticAlpha": 0.28,
+  "bonesShown": [
+    "RightArm",
+    "RightForeArm",
+    "RightHand",
+    "RightHandIndex1",
+    "RightHandIndex2",
+    "RightHandIndex3",
+    "RightHandIndex4",
+    "RightHandMiddle1",
+    "RightHandMiddle2",
+    "RightHandMiddle3",
+    "RightHandMiddle4",
+    "RightHandPinky1",
+    "RightHandPinky2",
+    "RightHandPinky3",
+    "RightHandPinky4",
+    "RightHandRing1",
+    "RightHandRing2",
+    "RightHandRing3",
+    "RightHandRing4",
+    "RightHandThumb1",
+    "RightHandThumb2",
+    "RightHandThumb3",
+    "RightHandThumb4"
+  ],
+  "renders": {
+    "front": {
+      "file": "hand_bind_right/front.png",
+      "sha256": "b9e3346e1fbc61c5b543db76722920f256ade9b384c81bd4b74d76f830ac6ace"
+    },
+    "side": {
+      "file": "hand_bind_right/side.png",
+      "sha256": "209111d5686f0455bb0d5872f80b9ab5e2c18a53154a5e3900f5c00b6f3c0b06"
+    },
+    "back": {
+      "file": "hand_bind_right/back.png",
+      "sha256": "a201ec10065dd775189c0353a771d3f70438ed7a1a6a2d272b9c56be80b9f80e"
+    }
+  },
+  "actualModelGeometryChanged": false,
+  "sourceGlbUnchanged": true,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Transparent native material and colored actual bones are diagnostic overlays, not a new character, layer, or fidelity render.",
+  "pathsRelativeTo": "study package root"
+}
