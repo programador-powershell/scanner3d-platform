@@ -1,0 +1,31 @@
+{
+  "files": {
+    "executed_authoring_recipe.py": {
+      "bytes": 15005,
+      "sha256": "0b4bb72fd8a37edeeca70ec905935e6b6acde4351cb6d37a3f0167cfa57c313c"
+    },
+    "authoring_recipe.py": {
+      "bytes": 15060,
+      "sha256": "5ae190a6089783c4dbe5427a0ca1c676d2a703904b6b49469b6cf885b33410a4"
+    },
+    "generation_before_metadata_clarification.json": {
+      "bytes": 870262,
+      "sha256": "681346f1ef37b2c0a5d6d4a34cc9ec7d8573a4bf396648fb681e39421f515f0f"
+    },
+    "generation.json": {
+      "bytes": 870515,
+      "sha256": "9afa738164e2a090bcb22556be372eb99db1801635d9fb19a0f06a7901c2a65b"
+    }
+  },
+  "modelBytes": 48297468,
+  "modelSha256": "ad3ac8be61c9365780a78cb95e0a265abcf00eb5ba066085b7512baa27ba4ae3",
+  "editableBlendBytes": 72356541,
+  "editableBlendSha256": "55ae0b5e32aa7b6374d02e82752e7a21893bc95bc480397f56172ad9236e9fbd",
+  "actualOtherRawMeshesUnchanged": true,
+  "metadataClarificationOnly": true,
+  "actualAssetHashesUnchanged": true,
+  "fidelityVerified": false,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false
+}

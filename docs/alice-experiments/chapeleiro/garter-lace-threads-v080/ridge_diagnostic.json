@@ -1,0 +1,47 @@
+{
+  "photo": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "photoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "crop": [
+    649,
+    344,
+    727,
+    368
+  ],
+  "workingScale": 4,
+  "originalPhotoChanged": false,
+  "candidates": [
+    {
+      "name": "meijering_0.22",
+      "skeletonPixels": 2018,
+      "approved": false
+    },
+    {
+      "name": "meijering_0.35",
+      "skeletonPixels": 1765,
+      "approved": false
+    },
+    {
+      "name": "sato_0.22",
+      "skeletonPixels": 2225,
+      "approved": false
+    },
+    {
+      "name": "sato_0.35",
+      "skeletonPixels": 1682,
+      "approved": false
+    },
+    {
+      "name": "frangi_0.22",
+      "skeletonPixels": 1508,
+      "approved": false
+    },
+    {
+      "name": "frangi_0.35",
+      "skeletonPixels": 971,
+      "approved": false
+    }
+  ],
+  "fidelityVerified": false,
+  "newModelAuthored": false,
+  "methodDocumentation": "https://scikit-image.org/docs/stable/auto_examples/edges/plot_ridge_filter.html"
+}

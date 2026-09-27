@@ -81,6 +81,23 @@ if generation.get('garterBeltGatherConstruction'):
             or {p['mesh'] for p in belts[0]['actualElasticSeamMeshes']}!=set(expected['actualElasticSeamMeshes'])
             or any(not p['actualClosedThreadLoopVerified'] for p in belts[0]['actualElasticSeamMeshes'])):
         raise ValueError('Requires actual casing, sewn frill, cloth fields, UV, thread and sampled lace-edge seam evidence.')
+    if generation.get('garterLaceThreadRefinement'):
+        threads=belts[0].get('actualRoundedLaceThreadAudit') or {}
+        expected_threads=generation['garterLaceThreadRefinement']
+        if (threads.get('mesh')!=expected_threads['mesh']
+                or not threads.get('measuredFromActualRawMesh')
+                or not threads.get('allEdgesManifoldVerified')
+                or not threads.get('allYarnsCappedOrClosedVerified')
+                or not threads.get('duplicateThicknessAbsentVerified')
+                or threads.get('minimumRawTriangleArea',0)<=1e-14
+                or threads.get('actualClosedYarnComponents')!=len(expected_threads['components'])
+                or threads.get('sourceThreadGraphSha256')!=expected_threads['sourceThreadGraphSha256']):
+            raise ValueError('Requires actual closed yarn topology, UVs and the own-photo filament graph.')
+        exported=json.loads((Path(args.generation).resolve().parent/'exported_lace_threads_audit.json').read_text(encoding='utf-8'))
+        if (exported['modelSha256']!=generation['modelSha256'] or not exported.get('passed')
+                or not exported.get('measuredActualExportedMesh') or not exported.get('primaryUvMeasured')
+                or exported['mesh']!=expected_threads['mesh']):
+            raise ValueError('Requires independent measurements of actual exported round yarn geometry and UVs.')
 if generation.get('garterFrontWebConstruction'):
     webs=audit.get('actualGarterWebContactAudit',[])
     if ({p['mesh'] for p in webs}!={p['mesh'] for p in generation['garterFrontWebConstruction']}
@@ -174,6 +191,17 @@ copy(comparison['comparisonBoard']['file'],docs/'photo_vs_geometry.jpg')
 copy(args.audit,docs/'carrier_audit.json')
 if args.exported_contact_audit:
     copy(args.exported_contact_audit,docs/'exported_contact_diagnostic.json')
+if generation.get('garterLaceThreadRefinement'):
+    yarn_source=Path(args.generation).resolve().parent/'exported_lace_threads_audit.json'
+    copy(yarn_source,docs/'exported_lace_threads_audit.json')
+    thread_source=Path(generation['garterLaceThreadRefinement']['sourceThreadGraph'])
+    copy(thread_source,docs/'thread_paths_local_provenance.json')
+    thread_graph=json.loads(thread_source.read_text(encoding='utf-8'))
+    if sha(thread_graph['interpretedMask'])!=thread_graph['interpretedMaskSha256']:
+        raise ValueError('Changed own-photo ridge skeleton.')
+    copy(thread_graph['interpretedMask'],docs/'photographic_filament_skeleton.png')
+    thread_graph.update(sourcePhoto='source_photo.png',interpretedMask='photographic_filament_skeleton.png')
+    (docs/'thread_paths.json').write_text(json.dumps(thread_graph,ensure_ascii=False,indent=2),encoding='utf-8')
 for name, artifact in comparison['renders'].items():
     copy(artifact['file'],docs/(name+'.png'))
 portable_parts=[]
@@ -234,6 +262,23 @@ if args.exported_contact_audit:
     report['exportedRestContactAudit']={'file':'Docs/alice-variants/chapeleiro/foundation/exported_contact_diagnostic.json',
         'sha256':sha(args.exported_contact_audit),'modelSha256':generation['modelSha256'],
         'sampledRestClearancePassed':True,'motionVerified':False,'clothCollisionVerified':False}
+if generation.get('garterLaceThreadRefinement'):
+    report['exportedLaceThreadsAudit']={'file':(docs/'exported_lace_threads_audit.json').relative_to(game).as_posix(),
+        'sha256':sha(yarn_source),'modelSha256':generation['modelSha256'],
+        'measuredActualGeneratedModel':True,'passed':True,'fidelityVerified':False}
+    report['photographicFilamentPaths']={'file':(docs/'thread_paths.json').relative_to(game).as_posix(),
+        'sha256':sha(docs/'thread_paths.json'),'localProvenanceFile':(docs/'thread_paths_local_provenance.json').relative_to(game).as_posix(),
+        'localProvenanceSha256':sha(thread_source),'sourcePhotoSha256':generation['sourcePhotoSha256'],
+        'fineGroundAndUnseenRepeatsInferred':True,'fidelityVerified':False}
+    canonical_audit=Path(args.generation).resolve().parent/'canonical_lace_threads_audit.json'
+    if canonical_audit.exists():
+        canonical_record=json.loads(canonical_audit.read_text(encoding='utf-8'))
+        if not canonical_record['passed'] or canonical_record['modelSha256']!=sha(model_path):
+            raise ValueError('Canonical round-yarn export evidence belongs to another actual model.')
+        copy(canonical_audit,docs/'canonical_lace_threads_audit.json')
+        report['canonicalLaceThreadsAudit']={'file':(docs/'canonical_lace_threads_audit.json').relative_to(game).as_posix(),
+            'sha256':sha(canonical_audit),'modelSha256':sha(model_path),
+            'measuredActualGalleryModel':True,'passed':True,'fidelityVerified':False}
 (docs/'checkpoint.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 (docs/'README.md').write_text(
     '# Chapeleiro: fundação da ficha 1 em refinamento\n\n'
@@ -274,12 +319,20 @@ if args.exported_contact_audit:
      'fina com a foto, ajuste ao corpo e testes de deformação e colisão.\n\n'
      if generation.get('garterCupDrapeConstruction') else '')+
     ('O cinto das ligas recebeu uma faixa central mais estreita, franzidos '
-     'menores e babados ligados às suas bordas reais. A renda inferior usa '
-     'contornos e UVs da foto desta peça, com vazados em geometria e espessura '
-     'procedural. Duas costuras contínuas seguem o mesmo suporte fino de Cloth. '
+     'menores e babados ligados às suas bordas reais. '
+     'Duas costuras contínuas seguem o mesmo suporte fino de Cloth. '
      'O encontro das tiras foi preservado e os vínculos foram refeitos; '
      'proporções, encaixe no corpo, rig e resposta em movimento continuam em revisão.\n\n'
      if generation.get('garterBeltGatherConstruction') else '')+
+    ('A renda inferior das ligas usa fios claros do recorte original, '
+     'reconstruídos com seção arredondada, pontas fechadas e UVs próprios. '
+     'Uma trama fina inferida cobre as regiões sombreadas; as sombras da foto '
+     'não se tornam grandes vazados recortados. A união segue o babado real. '
+     'Esses fios já têm volume, portanto não recebem espessura adicional dos '
+     'Geometry Nodes. Desenho, densidade, dobras, escala e partes ocultas '
+     'continuam em revisão nas quatro vistas, sem aprovação de fidelidade, '
+     'LOD final, rig ou colisões. O diagnóstico e os caminhos estão nesta pasta.\n\n'
+     if generation.get('garterLaceThreadRefinement') else '')+
     ('A renda inferior do cinto foi subdividida ainda plana, antes de envolver '
      'o contorno franzido. Seus vazados e UVs próprios foram preservados. '
      'O auditador mede também pontos ao longo das bordas da renda para impedir '

@@ -1,0 +1,7 @@
+# Renda reconstruída com fios arredondados — refinamento parcial
+
+A renda inferior agora tem fios arredondados e fundo fino em 3D, sem os grandes vazados produzidos pelas sombras no traçado anterior. Ainda parece vertical, uniforme e próxima de uma franja; o desenho, a densidade e as dobras precisam acompanhar melhor a ficha 1. O cinto recebeu cintura mais estreita, franzidos e costuras contínuas. Os babados e os laços da borda superior ainda estão regulares demais e precisam de polimento na tensão do tecido. Os reforços das coxas têm volume frontal e costuras curvas, mas continuam lisos frente aos vincos da foto. Os laços e suas fitas precisam de caimento mais natural. Fundo fino, repetições ocultas e escala são inferidos. União e separação em repouso não validam encaixe no corpo, pesos entre quadril e coxa, rig, ações ou colisões em movimento.
+
+A ficha 1 completa permanece sem alterações. Os quatro renders vieram do GLB real desta construção. O fundo fino, a escala e as repetições ocultas são interpretações, sem aprovação de fidelidade. Os candidatos de linhas claras e o grafo são diagnósticos, não fotos substitutas. Os fios têm volume fechado e UVs próprios, e se ligam ao mesmo suporte de tecido. O vestido exterior inteiro e as outras malhas não foram recortados nem modificados neste passo.
+
+O editável e o GLB completos permanecem em F:\Alice\Deliverables\Alice_Variants\alice_chapeleiro\foundation_garter_lace_threads_v080. O FBX final depende do rig compartilhado, das quatro ações e da validação de tecido e colisões.

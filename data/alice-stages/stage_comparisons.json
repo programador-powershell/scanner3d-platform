@@ -129,11 +129,10 @@
       "review": {
         "verdict": "needs_refinement",
         "visibleDifferences": [
-          "As cascatas laterais acrescentam tecido, canais, cordões, ferragens e laços; suas dobras ainda precisam do caimento fino e assimétrico da ficha 1.",
-          "O painel central, o babado creme e os plissados pretos precisam de vincos e acabamento menos repetitivos.",
-          "Camisa, rendas e painéis do corsete ainda têm franzidos e detalhes diferentes da foto. As ligas receberam volume frontal, vincos e tiras que acompanham a curvatura, mas renda, franzidos e tensão do tecido continuam pendentes; bloomers e demais detalhes mantêm as diferenças das comparações isoladas.",
-          "Os pés das meias têm volume arredondado e transição contínua, mas ainda faltam dobras, trama e compressão dos dedos. O eixo das pernas segue medidas das botas do mestre; encaixe completo e áreas ocultas continuam sem aprovação.",
-          "A fundação não tem rig, clipes ou colisões validados. O vestido exterior completo permanece inteiro em seu item separado."
+          "O conjunto conserva as peças existentes. A renda inferior das ligas e o cinto foram refinados, mas as cascatas laterais, o painel central, os babados e os plissados ainda têm dobras regulares demais frente à ficha 1.",
+          "A camisa precisa do formato e do franzido fino do decote e das mangas. Os painéis do corsete ainda estão lisos; costuras, fechos e acabamentos não reproduzem integralmente a foto.",
+          "Bloomers, meias e rendas das demais peças mantêm as diferenças das comparações isoladas. Escala, partes ocultas e encaixe completo no corpo continuam sem aprovação.",
+          "A fundação é um estudo estático sem rig, clipes ou colisões validados. O vestido exterior completo permanece inteiro no seu item separado."
         ]
       },
       "motionRequirements": {
@@ -154,14 +153,14 @@
         "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
         "displayModel": {
           "file": "alice_chapeleiro_stage_01/inspection.glb",
-          "sha256": "add8af078f9490c429558f01112890459f9e12cb83379d0754499531d7ebea19"
+          "sha256": "d8ae24de525947e104218c5e518e217535b2c8bc0ce452338590ba738abea2e1"
         },
         "board": {
           "file": "alice_chapeleiro_stage_01/photo_vs_geometry.jpg",
-          "sha256": "4f6c9a26d7b6f4716370a0ae3a349520d4f2eb5fa89c21b5e7b27c317173128b"
+          "sha256": "6578aad24a8b0df83be9adb6c6546eb90a92fb0c804bda2f7e6e59c21c636722"
         },
-        "modelSha256": "d08a575ddab3bc5e2c5869177c389355bbce9d6188f6dbdd05e0527e630344b9",
-        "method": "own_photo_garter_front_dome_and_diagonal_seam_tension_folds",
+        "modelSha256": "ad3ac8be61c9365780a78cb95e0a265abcf00eb5ba066085b7512baa27ba4ae3",
+        "method": "own_photo_bright_filaments_with_closed_yarns_and_inferred_fine_ground",
         "frontAxis": "-y"
       }
     }

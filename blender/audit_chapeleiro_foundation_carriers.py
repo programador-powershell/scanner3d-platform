@@ -405,12 +405,44 @@ if record.get('garterBeltGatherConstruction'):
         if topology['components']!=1 or topology['eulerCharacteristic']!=0 or boundary_loops(obj.data):
             raise ValueError('A real continuous elastic stitch has an open seam.')
         threads.append({'mesh':name,'actualClosedThreadLoopVerified':True})
+    rounded_lace=None
+    if record.get('garterLaceThreadRefinement'):
+        expected=record['garterLaceThreadRefinement']
+        if expected['mesh']!=lace.name:raise ValueError('Wrong rounded lace mesh evidence.')
+        if digest(expected['sourceThreadGraph'])!=expected['sourceThreadGraphSha256']:
+            raise ValueError('Changed own-photo filament paths.')
+        topology=holes(lace.data)
+        actual_edges=Counter(tuple(sorted((p.vertices[i],p.vertices[(i+1)%len(p.vertices)])))
+            for p in lace.data.polygons for i in range(len(p.vertices)))
+        components=expected['components'];closed_paths=sum(c['closedPath'] for c in components)
+        if (topology['components']!=len(components)
+                or topology['eulerCharacteristic']!=2*(len(components)-closed_paths)
+                or any(n!=2 for n in actual_edges.values())
+                or lace.get('actualClosedLaceYarns')!=len(components)
+                or any(m.type=='NODES' for m in lace.modifiers)):
+            raise ValueError('A rounded photographic yarn is open, nonmanifold or has duplicate thickness.')
+        lace.data.calc_loop_triangles()
+        indices=np.asarray([t.vertices[:] for t in lace.data.loop_triangles])
+        xyz=np.asarray([v.co[:] for v in lace.data.vertices])
+        a,b,c=xyz[indices[:,0]],xyz[indices[:,1]],xyz[indices[:,2]]
+        areas=np.linalg.norm(np.cross(b-a,c-a),axis=1)*.5
+        if not np.isfinite(areas).all() or float(areas.min())<=1e-14:
+            raise ValueError('The rounded yarn construction has a collapsed triangle.')
+        rounded_lace={'mesh':lace.name,'measuredFromActualRawMesh':True,
+            'actualClosedYarnComponents':topology['components'],
+            'actualEulerCharacteristic':topology['eulerCharacteristic'],
+            'allEdgesManifoldVerified':True,'allYarnsCappedOrClosedVerified':True,
+            'minimumRawTriangleArea':float(areas.min()),'duplicateThicknessAbsentVerified':True,
+            'sourceThreadGraphSha256':expected['sourceThreadGraphSha256'],
+            'fineGroundAndUnseenRepeatsInferred':True,'visualFidelityVerified':False,
+            'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False}
     garter_belt.append({'mesh':belt.name,'simulationCage':cage.name,'measuredFromActualMeshes':True,
         'singleThinClothSolver':True,'originalStrapRootRingVerified':True,'actualWaistPinsVerified':True,
         'actualClothGroupSchemaVerified':True,'actualPressureFieldVerified':True,
         'rawColumns':columns,'rawRows':rows,'frillSeams':gaps,'evaluatedUvQuality':uv_quality,
         'actualElasticSeamMeshes':threads,'lowerPhotographicLace':entry['lowerPhotographicLace'],
         'actualLaceHeaderSeam':lace_header,
+        'actualRoundedLaceThreadAudit':rounded_lace,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False})
     print('FOUNDATION_GARTER_BELT_CONSTRUCTION_VERIFIED',json.dumps(garter_belt),flush=True)
 

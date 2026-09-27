@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "4429e5e229f28be066a1908e3ca51193d3bfd23ab7ee3df6b5b8f521c903fb8f",
+  "editableBlendSha256": "55ae0b5e32aa7b6374d02e82752e7a21893bc95bc480397f56172ad9236e9fbd",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -2282,7 +2282,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / garter belt / gathered waist casing",
-      "measuredVertices": 2304,
+      "measuredVertices": 25088,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2296,7 +2296,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / garter belt / ruffled edge 0",
-      "measuredVertices": 1792,
+      "measuredVertices": 12901,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2324,7 +2324,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / garter belt / ruffled edge 1",
-      "measuredVertices": 1792,
+      "measuredVertices": 12897,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2337,8 +2337,8 @@
     },
     {
       "support": "01 / ivory fitted boned corset / pointed front",
-      "follower": "01 / garter belt / looped lace edge 1",
-      "measuredVertices": 4896,
+      "follower": "01 / garter belt / garter belt hem photographic lace",
+      "measuredVertices": 164952,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -3202,6 +3202,34 @@
       "maximumTranslationError": 2.741813659792869e-09,
       "frame": 1,
       "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / elastic casing upper stitch",
+      "measuredVertices": 3072,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / garter belt / elastic casing lower stitch",
+      "measuredVertices": 3072,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
     }
   ],
   "actualBlouseSeamAudit": [
@@ -4018,13 +4046,112 @@
       "clothCollisionVerified": false
     }
   ],
-  "actualInternalObjects": 227,
+  "actualGarterBeltAudit": [
+    {
+      "mesh": "01 / garter belt / gathered waist casing",
+      "simulationCage": "01 / garter belt / gathered waist casing / simulation midsurface",
+      "measuredFromActualMeshes": true,
+      "singleThinClothSolver": true,
+      "originalStrapRootRingVerified": true,
+      "actualWaistPinsVerified": true,
+      "actualClothGroupSchemaVerified": true,
+      "actualPressureFieldVerified": true,
+      "rawColumns": 512,
+      "rawRows": 25,
+      "frillSeams": [
+        {
+          "mesh": "01 / garter belt / ruffled edge 0",
+          "maximumRawSeamGap": 0.0
+        },
+        {
+          "mesh": "01 / garter belt / ruffled edge 1",
+          "maximumRawSeamGap": 0.0
+        }
+      ],
+      "evaluatedUvQuality": [
+        {
+          "mesh": "01 / garter belt / gathered waist casing",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / ruffled edge 0",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / ruffled edge 1",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / garter belt hem photographic lace",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / looped lace edge 0",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / elastic casing upper stitch",
+          "uvNonDegenerateTriangleFraction": 1.0
+        },
+        {
+          "mesh": "01 / garter belt / elastic casing lower stitch",
+          "uvNonDegenerateTriangleFraction": 1.0
+        }
+      ],
+      "actualElasticSeamMeshes": [
+        {
+          "mesh": "01 / garter belt / elastic casing upper stitch",
+          "actualClosedThreadLoopVerified": true
+        },
+        {
+          "mesh": "01 / garter belt / elastic casing lower stitch",
+          "actualClosedThreadLoopVerified": true
+        }
+      ],
+      "lowerPhotographicLace": "01 / garter belt / garter belt hem photographic lace",
+      "actualLaceHeaderSeam": {
+        "mesh": "01 / garter belt / garter belt hem photographic lace",
+        "actualHeaderEdges": 8484,
+        "actualHeaderEdgeSamples": 42420,
+        "sampleFractions": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "maximumRawHeaderEdgeGap": 0.00010002757960951301,
+        "measuredFromActualRawEdges": true,
+        "maximumAllowedRawHeaderEdgeGap": 0.00025
+      },
+      "actualRoundedLaceThreadAudit": {
+        "mesh": "01 / garter belt / garter belt hem photographic lace",
+        "measuredFromActualRawMesh": true,
+        "actualClosedYarnComponents": 2321,
+        "actualEulerCharacteristic": 4640,
+        "allEdgesManifoldVerified": true,
+        "allYarnsCappedOrClosedVerified": true,
+        "minimumRawTriangleArea": 1.3932288552353188e-10,
+        "duplicateThicknessAbsentVerified": true,
+        "sourceThreadGraphSha256": "20f6a9513e000f4c5fa7e275eeb7388b739545940a25b421b7cede0b27b0d8c5",
+        "fineGroundAndUnseenRepeatsInferred": true,
+        "visualFidelityVerified": false,
+        "rigPresent": false,
+        "motionVerified": false,
+        "clothCollisionVerified": false
+      },
+      "rigPresent": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "actualInternalObjects": 229,
   "attachmentRoots": [
     "01 / long ivory gathered petticoat",
     "01 / black petticoat continuous waist support",
     "01 / ivory fitted boned corset / pointed front"
   ],
-  "verifiedFollowers": 224,
+  "verifiedFollowers": 226,
   "allActualFollowersCovered": true,
   "savedModelUnchanged": true,
   "rigPresent": false,

@@ -375,6 +375,23 @@ ensaios substitui a fundação publicada. Corrigir a união e o UV é progresso
 de construção; ainda é necessário refazer a interpretação da renda e testar
 o personagem com todas as camadas, o rig, as ações e as colisões.
 
+O ensaio v080 usa os fios claros do recorte original e uma trama fina inferida,
+construídos como fios arredondados com pontas fechadas e UVs próprios. As sombras
+das dobras deixam de produzir grandes recortes na superfície. A união segue
+o babado real; não se aplica espessura adicional do Geometry Nodes sobre fios
+que já possuem volume fechado. Os demais tecidos mantêm seus modificadores
+e suportes, e o exterior inteiro permanece preservado.
+
+`probe_chapeleiro_garter_filaments.py` compara candidatos de linhas claras,
+`trace_chapeleiro_garter_threads.py` registra os caminhos e
+`refine_chapeleiro_garter_lace_threads.py` constrói a renda no editável.
+O auditador mede fechamento, componentes, triângulos, UVs e a união com o babado.
+Esses testes não aprovam fidelidade: a trama ainda parece vertical e uniforme
+demais frente à ficha 1, e a escala, o fundo fino e as repetições ocultas são
+inferidos. As quatro vistas devem permanecer junto à foto original, sem
+substituí-la por uma referência gerada. O LOD, o rig e as colisões continuam
+pendentes; este refinamento estático não é o FBX final.
+
 O refinamento `refine_chapeleiro_stocking_anatomy.py` conserva a topologia conectada
 das duas meias e suas aberturas na coxa. Mede o eixo das botas no mestre inteiro,
 sem extrair nem modificar sua geometria. O primeiro ensaio incluiu a saia na

@@ -1,0 +1,114 @@
+{
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "A renda inferior agora tem fios arredondados e fundo fino em 3D, sem os grandes vazados produzidos pelas sombras no traçado anterior. Ainda parece vertical, uniforme e próxima de uma franja; o desenho, a densidade e as dobras precisam acompanhar melhor a ficha 1.",
+    "O cinto recebeu cintura mais estreita, franzidos e costuras contínuas. Os babados e os laços da borda superior ainda estão regulares demais e precisam de polimento na tensão do tecido.",
+    "Os reforços das coxas têm volume frontal e costuras curvas, mas continuam lisos frente aos vincos da foto. Os laços e suas fitas precisam de caimento mais natural.",
+    "Fundo fino, repetições ocultas e escala são inferidos. União e separação em repouso não validam encaixe no corpo, pesos entre quadril e coxa, rig, ações ou colisões em movimento."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "ad3ac8be61c9365780a78cb95e0a265abcf00eb5ba066085b7512baa27ba4ae3",
+  "files": {
+    "front.png": {
+      "sha256": "69f6d87e3751c6a624dfc667ca593ea1027cfadabf26837892c694d4d6f49912",
+      "bytes": 421968
+    },
+    "side.png": {
+      "sha256": "d47b00c7974146d7f92e1b718f3c35656d05c7994bec79a96e3387f2eb2ee7e7",
+      "bytes": 332860
+    },
+    "back.png": {
+      "sha256": "c4f85cdbb562a48ed8c14a83ab75a3c0299f9dac5b8d5f9ee2392aca25213975",
+      "bytes": 411856
+    },
+    "threequarter.png": {
+      "sha256": "cbc02fc9f177577a569822c61f740d4e315a2512ef353ff48b9b718fe5e62c0f",
+      "bytes": 459997
+    },
+    "photo_vs_geometry.jpg": {
+      "sha256": "11aa5f0153d23b150b4ff489c29769a115e47cfecdc788dfb70612c98b56c072",
+      "bytes": 371203
+    },
+    "carrier_audit.json": {
+      "sha256": "725a90c37a191f4cd1f28b68bed8e0bf793f87ddb0476ec0fa6ed3c8b304711f",
+      "bytes": 132087
+    },
+    "exported_lace_threads_audit.json": {
+      "sha256": "d9b782396ef0a967da12345412f8cb086b6f5c95c3ae3f5b6078928b2abe6cd1",
+      "bytes": 897
+    },
+    "canonical_lace_threads_audit.json": {
+      "sha256": "06b762594acf85cb3b8054bebec7289c0c04c8f5adf7f97d8434771744cf70f7",
+      "bytes": 941
+    },
+    "authoring_recipe_receipt.json": {
+      "sha256": "1c089e2e62c15bb9bfc878b00c1ed62d6b2cd6dda5a3d8e0a86b8f8d5e284180",
+      "bytes": 1114
+    },
+    "review_notes.json": {
+      "sha256": "13b8e3e315aa2013306013df68c802759955c15194ef9ffc1c25444d98c592b5",
+      "bytes": 3345
+    },
+    "executed_authoring_recipe.py": {
+      "sha256": "0b4bb72fd8a37edeeca70ec905935e6b6acde4351cb6d37a3f0167cfa57c313c",
+      "bytes": 15005
+    },
+    "meijering_0.22.png": {
+      "sha256": "84bfa939372c87348174bfc73af8e644aa00a28d526298e82194441c6a5ae9e7",
+      "bytes": 2014
+    },
+    "meijering_0.35.png": {
+      "sha256": "b4a9d681fcb228735f396fcc92b3a409ec11d4f2d86ba35da40d1b573c059ff8",
+      "bytes": 1857
+    },
+    "sato_0.22.png": {
+      "sha256": "68c72d9470f601881727d9a6218da843278334cb0d34d21ffa0e83a1528dfc9d",
+      "bytes": 2096
+    },
+    "sato_0.35.png": {
+      "sha256": "ccf6ee408c0da178d26db5027c07a295b2edf165eac3328769fc1a4286d44a1b",
+      "bytes": 1766
+    },
+    "frangi_0.22.png": {
+      "sha256": "7e369735100bdd3d540193158abce6b4db3fb9faa0a43181b9942ad178d9d046",
+      "bytes": 1755
+    },
+    "frangi_0.35.png": {
+      "sha256": "2374fa4aee82d204322d2ccc2344516af5cc26768d13773642705b0a9ae5548a",
+      "bytes": 1268
+    },
+    "ridge_candidates.png": {
+      "sha256": "6b7c63f21b12a7662b96348a43149aeb9f816b7abef4e58e9030544ee947abf4",
+      "bytes": 551342
+    },
+    "ridge_diagnostic.json": {
+      "sha256": "5d18a1d34fc732fe70d5584297f5d8eb89568090bde35c378ac838389317ffb7",
+      "bytes": 1108
+    },
+    "original_source_crop.png": {
+      "sha256": "3bae7428c7943f498eef0513516f19e52367693974b550c8dfa780c26539a1eb",
+      "bytes": 4781
+    },
+    "original_vs_thread_paths.png": {
+      "sha256": "c2c151ea91332a102c80fcc1a4aad225d75c10d3c83857a8f05a96ff444ff47f",
+      "bytes": 125469
+    },
+    "thread_paths_local_provenance.json": {
+      "sha256": "20f6a9513e000f4c5fa7e275eeb7388b739545940a25b421b7cede0b27b0d8c5",
+      "bytes": 149524
+    }
+  },
+  "sourcePhoto": "source_photo.png",
+  "originalPhotoChanged": false,
+  "actualRawYarnVertices": 164952,
+  "actualYarnComponents": 2321,
+  "restSeamsAndExportUvVerified": true,
+  "fineGroundAndUnseenRepeatsInferred": true,
+  "fidelityVerified": false,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "allLayersFinished": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0
+}
