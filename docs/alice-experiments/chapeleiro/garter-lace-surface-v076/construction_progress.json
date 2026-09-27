@@ -1,0 +1,37 @@
+{
+  "status": "construction_progress_fidelity_rejected",
+  "modelSha256": "e5cb02e2d762c15c35b388c7c598a1c5f329a97d359820fb57b5803be4addbd8",
+  "modelBytes": 42042200,
+  "editableBlendSha256": "f9d6606fbdcd82cc1f281d0579a4ec6e6120d24c7732f53fac5d3e74e1481f91",
+  "editableBytes": 63728414,
+  "actualInternalPieces": 229,
+  "actualFollowersAudited": 226,
+  "actualLaceRawVertices": 34165,
+  "actualLaceHeaderSeam": {
+    "mesh": "01 / garter belt / garter belt hem photographic lace",
+    "actualHeaderEdges": 980,
+    "actualHeaderEdgeSamples": 4900,
+    "sampleFractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "maximumRawHeaderEdgeGap": 0.00014411196590215136,
+    "measuredFromActualRawEdges": true,
+    "maximumAllowedRawHeaderEdgeGap": 0.00025
+  },
+  "sourceTestsPassed": 11,
+  "modelPublished": false,
+  "liveStageChanged": false,
+  "additionalCreditsConsumed": 0,
+  "fidelityVerified": false,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "allLayersFinished": false,
+  "nextVariantMayStart": false,
+  "nextWork": "Interpret and reconstruct fine lace threads and folded fabric from the own original photo; do not equate dark photographic regions with geometric holes.",
+  "finalFbxDelivery": "GitHub after shared rig, walk/run/jump/attack and cloth/collision validation; preserve complete local checkpoints regardless of size."
+}

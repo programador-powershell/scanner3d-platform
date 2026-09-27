@@ -1,0 +1,189 @@
+{
+  "modelSha256": "e5cb02e2d762c15c35b388c7c598a1c5f329a97d359820fb57b5803be4addbd8",
+  "measuredActualExportedGeometry": true,
+  "contacts": [
+    {
+      "side": "left",
+      "sampledContacts": 721,
+      "minimumClearance": 0.0003089132625177654,
+      "vertexSamples": 303,
+      "triangleCentroidSamples": 418,
+      "worstSamples": [
+        {
+          "clearance": 0.0003089132625177654,
+          "webPoint": [
+            0.045342965672413506,
+            -0.035801712423563004,
+            0.47556747992833454
+          ],
+          "cupFrontY": -0.03549279916104524,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00031985386084161516,
+          "webPoint": [
+            0.045200967540343605,
+            -0.03746405119697253,
+            0.47769254446029663
+          ],
+          "cupFrontY": -0.03714419733613091,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00035556539463318243,
+          "webPoint": [
+            0.04335490489999453,
+            -0.03727106129129728,
+            0.47769107421239215
+          ],
+          "cupFrontY": -0.0369154958966641,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003573417280345534,
+          "webPoint": [
+            0.04590805619955063,
+            -0.03636401643355688,
+            0.47627758979797363
+          ],
+          "cupFrontY": -0.036006674705522324,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00035759914333713394,
+          "webPoint": [
+            0.04349806408087412,
+            -0.03563246627648672,
+            0.47556482752164203
+          ],
+          "cupFrontY": -0.03527486713314958,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00035763823581985016,
+          "webPoint": [
+            0.045767014225324,
+            -0.037975975622733436,
+            0.4783981740474701
+          ],
+          "cupFrontY": -0.037618337386913586,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003591061506098073,
+          "webPoint": [
+            0.04548939069112142,
+            -0.0339785764614741,
+            0.4733654359976451
+          ],
+          "cupFrontY": -0.03361947031086429,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003631704159726343,
+          "webPoint": [
+            0.04720353459318479,
+            -0.03567946826418241,
+            0.4755946397781372
+          ],
+          "cupFrontY": -0.03531629784820978,
+          "sampleKind": "triangle_centroid"
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sampledContacts": 721,
+      "minimumClearance": 0.00032870211222638807,
+      "vertexSamples": 303,
+      "triangleCentroidSamples": 418,
+      "worstSamples": [
+        {
+          "clearance": 0.00032870211222638807,
+          "webPoint": [
+            -0.045284600307544075,
+            -0.03638796011606852,
+            0.4762778381506602
+          ],
+          "cupFrontY": -0.03605925800384213,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003416227521517365,
+          "webPoint": [
+            -0.04329793031016985,
+            -0.03781659652789434,
+            0.4783986310164134
+          ],
+          "cupFrontY": -0.037474973775742604,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00034309912570955337,
+          "webPoint": [
+            -0.04542937129735947,
+            -0.034610264003276825,
+            0.47411330540974933
+          ],
+          "cupFrontY": -0.03426716487756727,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00034715776383126284,
+          "webPoint": [
+            -0.0434432215988636,
+            -0.036213722079992294,
+            0.47627581159273785
+          ],
+          "cupFrontY": -0.03586656431616103,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003501712547651914,
+          "webPoint": [
+            -0.045800612618525825,
+            -0.03745632370313009,
+            0.4776923755804698
+          ],
+          "cupFrontY": -0.0371061524483649,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003509311477722654,
+          "webPoint": [
+            -0.04513869807124138,
+            -0.03798780217766762,
+            0.47839797536532086
+          ],
+          "cupFrontY": -0.03763687102989535,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.000361079816152958,
+          "webPoint": [
+            -0.04594621683160464,
+            -0.035784480472405754,
+            0.4755673905213674
+          ],
+          "cupFrontY": -0.035423400656252796,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.0003664313795380611,
+          "webPoint": [
+            -0.043960899114608765,
+            -0.037397937228282295,
+            0.4776931305726369
+          ],
+          "cupFrontY": -0.037031505848744234,
+          "sampleKind": "triangle_centroid"
+        }
+      ]
+    }
+  ],
+  "minimumRequiredClearance": 0.00015,
+  "sampledRestClearancePassed": true,
+  "rigPresent": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "rejected_fidelity",
+  "visibleDifferences": [
+    "A renda inferior parece quebrada e excessivamente áspera nas quatro vistas, em vez da renda delicada da ficha 1.",
+    "A cor e o relevo extraídos da fotografia incorporam sua iluminação ao material e escurecem a renda.",
+    "Os franzidos e a proporção da faixa melhoraram, mas o resultado da renda impede a publicação deste ensaio."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "a290a8cb43334336742d5a349be0ed9221eb4273b67759cb48e0e44ea02db0f1",
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "26c141b0c0745f1609d0ffd6bf86d60aa6256b8fa8edbbb0c239c93b5797d991"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "cbf51ed9dd47a24537ead77e4c1f9302f6fe54fe7310c1ba75642e86030dc5e1"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "e6d51b5d8b67c403a9954d002718ab4a1c3db300a994f4b6547739bbc41b12e6"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "afc485e358ed4e74b7df64ff1f592a3428b8d0c9f08110fe34a1cc8c18e6f7f6"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "ecb29f2d227f1afa8969d0490ad0ce6a596b1c0d159a5fcaed1810c19ad8e32a"
+  },
+  "fidelityVerified": false,
+  "liveStageChanged": false,
+  "modelPublished": false
+}

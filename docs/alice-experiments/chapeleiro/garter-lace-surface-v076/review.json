@@ -1,0 +1,36 @@
+{
+  "status": "rejected_fidelity",
+  "visibleDifferences": [
+    "A união da renda acompanha agora o babado nas quatro vistas, mas os vazados continuam grandes, angulosos e grosseiros em relação à trama delicada da ficha 1.",
+    "O recorte original tem fios claros sobre regiões sombreadas. O limiar simples mistura essas regiões com aberturas reais; o traçado precisa distinguir o desenho dos fios das sombras de dobras.",
+    "A verificação de UVs, topologia e bordas não aprova esse acabamento. Este ensaio não substitui a fundação publicada.",
+    "O franzido, a tensão dos laços, o encaixe no corpo, o rig compartilhado, as quatro ações e as colisões entre camadas continuam pendentes."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "e5cb02e2d762c15c35b388c7c598a1c5f329a97d359820fb57b5803be4addbd8",
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "a7d577444a385d20583d24195ca5b925cbe22192e45de4a257f1dfeccb113a6c"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "b64654f64e19fcd0f63a1b0f692579cde82b878ca790b7a851e70d50289df83d"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "c1d46c700675ccb4dbb9d9bdb86454709bbb7e7a644b731354dc578ffa4452cd"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "184c1f6443a1b5be7fcf0cb31b32b44f4628265370aba1c990df9dda4dcdef86"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "13eeee674ef7fa4af344a91a889b28c1b1df9b2d1ae4cfa4977243168652f4fe"
+  },
+  "fidelityVerified": false,
+  "modelPublished": false,
+  "liveStageChanged": false
+}

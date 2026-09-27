@@ -1,0 +1,45 @@
+{
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "sourcePhotoCrop": [
+    649,
+    344,
+    727,
+    368
+  ],
+  "originalPhotoChanged": false,
+  "gaussianSigmaPixels": 4,
+  "method": "Local luminance contrast within the unchanged original external cloth contour.",
+  "candidates": [
+    {
+      "name": "fixed luminance: rejected fold holes",
+      "mask": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\garter_shadow_interpretation_v077\\mask_0.png",
+      "occupiedFraction": 0.6201923076923077,
+      "holesAtLeastOneAndHalfPixels": 17,
+      "maximumHoleAreaPixels": 172.5
+    },
+    {
+      "name": "local contrast 8",
+      "mask": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\garter_shadow_interpretation_v077\\mask_1.png",
+      "occupiedFraction": 0.5518162393162394,
+      "holesAtLeastOneAndHalfPixels": 25,
+      "maximumHoleAreaPixels": 177.0
+    },
+    {
+      "name": "local contrast 14",
+      "mask": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\garter_shadow_interpretation_v077\\mask_2.png",
+      "occupiedFraction": 0.5860042735042735,
+      "holesAtLeastOneAndHalfPixels": 27,
+      "maximumHoleAreaPixels": 170.5
+    },
+    {
+      "name": "local contrast 20",
+      "mask": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\garter_shadow_interpretation_v077\\mask_3.png",
+      "occupiedFraction": 0.6212606837606838,
+      "holesAtLeastOneAndHalfPixels": 28,
+      "maximumHoleAreaPixels": 82.0
+    }
+  ],
+  "contourInterpretationApproved": false,
+  "visualFidelityVerified": false
+}

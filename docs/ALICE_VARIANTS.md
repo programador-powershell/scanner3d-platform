@@ -317,6 +317,64 @@ de pelo menos 0,15 mm nas amostras em repouso.
 O teste de topologia e dos encontros não aprova o caimento, encaixe no corpo,
 pesos de skin, movimentos ou colisões.
 
+`refine_chapeleiro_garter_belt.py` ajusta a faixa central e os franzidos do
+cinto conforme a mesma ficha 1. Mantém o anel original onde começam as tiras,
+liga os dois babados às bordas reais e acrescenta duas costuras contínuas.
+A opção `--section garter` do traçador usa um trecho da renda deste cinto,
+preservando a foto inteira como referência. A renda inferior tem contornos
+vazados em geometria, UVs da própria foto e espessura do Bystedt; sombras do
+tecido e repetições nas áreas não visíveis continuam sujeitos a revisão.
+
+A troca da malha no Blender 5.2 remove os grupos de vértices do Cloth.
+A construção repõe o esquema original, interpola os campos existentes e
+recria os pinos da cintura na nova malha. O primeiro ensaio parou antes de
+exportar; o diagnóstico e a ficha original estão preservados em
+`docs/alice-experiments/chapeleiro/garter-belt-pin-v070/`.
+O auditador confere os grupos, o suporte fino único, o anel das tiras,
+os encontros dos babados, os fios fechados e os UVs avaliados. Essas medidas
+não aprovam proporções finais, escala corporal, rig, movimentos ou colisões.
+
+As quatro vistas rejeitaram a renda dos ensaios v072 e v073: mudar apenas o
+material para algodão corrigiu a cor, mas não a aparência quebrada. A leitura
+das bordas reais encontrou cinco segmentos longos na união da renda; pontos
+ao longo desses segmentos chegaram a 11,77 mm do babado, apesar de seus
+vértices terminais coincidirem com a borda. A ficha original, os quatro renders
+e a rejeição estão em `docs/alice-experiments/chapeleiro/garter-belt-lace-v072/`
+e `garter-belt-lace-v073/`; nenhum desses ensaios foi publicado como fundação.
+
+`refine_chapeleiro_garter_lace_surface.py` subdivide adaptativamente a superfície
+plana traçada antes de envolvê-la no babado. A métrica usa a circunferência real
+do cinto e a profundidade da renda, mantém a topologia dos vazados e recompõe
+os UVs próprios em cada repetição. Somente essa renda pode mudar; as outras
+malhas, os suportes e o exterior inteiro precisam conservar seus hashes.
+O auditador amostra os vértices e os quartos de cada segmento da união com
+o babado e limita a folga de repouso a 0,25 mm. A publicação exige esse dado,
+além das quatro vistas comparadas com a ficha própria. Nenhuma dessas medidas
+substitui a aprovação visual nem os testes posteriores de rig e colisão.
+
+A opção `--tessellation constrained_grid` distribui pontos conforme as dimensões
+da peça e triangula as bordas no espaço original da foto, sem obrigar a malha nova
+a repetir suas diagonais internas longas. `chapeleiro_lace_tessellation.py`
+amostra apenas a área realmente preenchida do traçado e exige a mesma
+topologia de aberturas. O espaçamento de 0,6 mm controla a amostragem plana;
+o comprimento máximo final das arestas é medido separadamente. A fase da
+grade evita coincidências numéricas com vértices das bordas. Essa construção
+precisa passar pela leitura das malhas reais e pela comparação visual,
+e ainda não representa o LOD final nem aprovação de gameplay.
+
+O v076 conserva os vazados do traçado e reduz essa renda de 258.615 vértices
+no ensaio denso para 34.165 vértices. O auditador encontrou 980 arestas na
+união, com 4.900 amostras e afastamento máximo de 0,144 mm; antes, cinco
+segmentos retos chegaram a 11,77 mm de afastamento. Mesmo assim, as quatro
+vistas rejeitaram o acabamento: o traçado continua transformando regiões
+sombreadas, onde a foto mostra fios, em aberturas grosseiras. As fotos,
+renders e rejeição estão em `docs/alice-experiments/chapeleiro/garter-lace-surface-v076/`.
+O diagnóstico `garter-shadow-interpretation-v077/` compara três alternativas
+de contraste local, ainda sem aprovação para construir a trama. Nenhum desses
+ensaios substitui a fundação publicada. Corrigir a união e o UV é progresso
+de construção; ainda é necessário refazer a interpretação da renda e testar
+o personagem com todas as camadas, o rig, as ações e as colisões.
+
 O refinamento `refine_chapeleiro_stocking_anatomy.py` conserva a topologia conectada
 das duas meias e suas aberturas na coxa. Mede o eixo das botas no mestre inteiro,
 sem extrair nem modificar sua geometria. O primeiro ensaio incluiu a saia na

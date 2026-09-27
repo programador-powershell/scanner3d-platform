@@ -14,7 +14,7 @@ from PIL import Image, ImageDraw
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--photo', required=True)
 parser.add_argument('--output', required=True)
-parser.add_argument('--section', choices=['petticoats', 'bloomers', 'corset'], default='petticoats')
+parser.add_argument('--section', choices=['petticoats', 'bloomers', 'corset', 'garter'], default='petticoats')
 args = parser.parse_args()
 photo = Path(args.photo)
 photo_hash = hashlib.sha256(photo.read_bytes()).hexdigest()
@@ -34,6 +34,8 @@ if args.section == 'bloomers':
     tiles = [('bloomer hem', (62, 1283, 141, 1308), 85, 3)]
 if args.section == 'corset':
     tiles = [('corset hem', (663, 251, 703, 286), 88, 2)]
+if args.section == 'garter':
+    tiles = [('garter belt hem', (649, 344, 727, 368), 86, 3)]
 for label, box, threshold, header in tiles:
     x0, y0, x1, y1 = box
     tile = source[y0:y1, x0:x1].copy()

@@ -1,0 +1,20 @@
+{
+  "modelSha256": "e5cb02e2d762c15c35b388c7c598a1c5f329a97d359820fb57b5803be4addbd8",
+  "measuredActualExportedMesh": true,
+  "threadUv": [
+    {
+      "mesh": "01 / left garter / curved seam sewing threads",
+      "actualExportedTriangles": 2240,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "passed": true
+    },
+    {
+      "mesh": "01 / right garter / curved seam sewing threads",
+      "actualExportedTriangles": 2240,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "fidelityVerified": false
+}

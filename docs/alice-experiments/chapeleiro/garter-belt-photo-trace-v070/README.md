@@ -1,0 +1,3 @@
+# Traçado da renda própria do cinto
+
+A ficha 1 original permanece íntegra. O recorte [649, 344, 727, 368] é apenas um diagnóstico do traçado da renda inferior das ligas. Os pixels, a máscara, os contornos e a comparação do traçado estão preservados. portable_contours.json conserva os mesmos contornos com caminhos relativos; lace_contours.json é o registro local original. A borda contínua do traçado foi subdividida antes de envolver a superfície franzida do cinto. Sombras, profundidade, escala e repetição em regiões invisíveis exigem revisão nas quatro vistas; o traçado não é aprovação de fidelidade ou de rig.

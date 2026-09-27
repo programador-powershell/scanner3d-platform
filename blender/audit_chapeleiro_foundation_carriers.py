@@ -333,6 +333,87 @@ if bloomers:
                                     'actualClothSolvers':expected_cloth,'bindingVerified':True,
                                     'rigPresent':False,'motionVerified':False})
     print('FOUNDATION_LOWER_CONSTRUCTION_VERIFIED',json.dumps(lower_construction),flush=True)
+garter_belt=[]
+if record.get('garterBeltGatherConstruction'):
+    entry=record['garterBeltGatherConstruction']
+    belt=objects[entry['mesh']];cage=bpy.data.objects[entry['simulationCage']]
+    columns=entry['rawColumns'];rows=entry['rawRows']
+    if (len(belt.data.vertices)!=columns*rows or cage.data!=belt.data or not cage.hide_render
+            or sum(m.type=='CLOTH' for m in cage.modifiers)!=1
+            or any(m.type=='CLOTH' for m in belt.modifiers)):
+        raise ValueError('The refined belt must retain one actual shared thin cloth solver.')
+    if columns%entry['originalRootColumns']:raise ValueError('The original belt-ring samples must remain identifiable.')
+    stride=columns//entry['originalRootColumns']
+    rim=np.asarray([v.co[:] for v in belt.data.vertices[-columns:][::stride]],np.float32)
+    if hashlib.sha256(rim.tobytes()).hexdigest()!=entry['originalStrapRootRingSha256']:
+        raise ValueError('The original suspension-root ring changed.')
+    pin=cage.vertex_groups['pinned']
+    if {g.name for g in cage.vertex_groups}!=set(entry['originalClothGroupSchema']):
+        raise ValueError('The new belt midsurface lost an actual Cloth group definition.')
+    if next(m for m in cage.modifiers if m.type=='CLOTH').settings.vertex_group_mass!='pinned':
+        raise ValueError('The actual thin belt solver no longer reads its restored pin field.')
+    if entry['originalClothGroupSchema'].get('pressure')==entry['originalRootColumns']*9:
+        pressure=cage.vertex_groups['pressure']
+        if any(pressure.weight(i)<.999 for i in range(columns*rows)):
+            raise ValueError('The original constant pressure field was not resampled onto the actual new mesh.')
+    if any(pin.weight(i)<.999 for i in range(columns)):
+        raise ValueError('The narrower elastic casing lost its actual waist pins.')
+    gaps=[]
+    for edge,name in enumerate(entry['frills']):
+        frill=objects[name]
+        root=np.asarray([v.co[:] for v in frill.data.vertices[:columns]])
+        reference=np.asarray([v.co[:] for v in (belt.data.vertices[:columns] if edge==0 else belt.data.vertices[-columns:])])
+        gap=float(np.linalg.norm(root-reference,axis=1).max())
+        if gap>1e-6:raise ValueError('The real gathered belt frill has a detached seam.')
+        gaps.append({'mesh':name,'maximumRawSeamGap':gap})
+    # Test points along the real lace edges, not only their endpoints. A long
+    # chord can have perfectly attached vertices while bridging a folded rim.
+    lace=objects[entry['lowerPhotographicLace']]
+    lower_frill=objects[entry['frills'][1]]
+    lace_points=np.asarray([v.co[:] for v in lace.data.vertices])
+    top_vertices={loop.vertex_index for loop,datum in zip(lace.data.loops,lace.data.uv_layers['PhotoLaceUV'].data)
+                  if abs(datum.uv.y-1.)<1e-6}
+    header_edges=[(a,b) for edge in lace.data.edges for a,b in [edge.vertices]
+                  if a in top_vertices and b in top_vertices]
+    if not header_edges:raise ValueError('The own-photo lace has no actual header edges.')
+    header_samples=np.asarray([lace_points[a]*(1-t)+lace_points[b]*t
+                               for a,b in header_edges for t in (0.,.25,.5,.75,1.)])
+    frill_rim=np.asarray([v.co[:] for v in lower_frill.data.vertices[-columns:]])
+    header_distances=np.concatenate([distance_to_seam(batch,frill_rim) for batch in
+        np.array_split(header_samples,max(1,len(header_samples)//1024+1))])
+    lace_header={'mesh':lace.name,'actualHeaderEdges':len(header_edges),'actualHeaderEdgeSamples':len(header_samples),
+                 'sampleFractions':[0.,.25,.5,.75,1.],'maximumRawHeaderEdgeGap':float(header_distances.max()),
+                 'measuredFromActualRawEdges':True,'maximumAllowedRawHeaderEdgeGap':.00025}
+    if lace_header['maximumRawHeaderEdgeGap']>.00025:
+        raise ValueError('The own-photo lace bridges or detaches from its actual curved frill: '+str(lace_header))
+    uv_quality=[]
+    for name in [belt.name,*entry['frills'],entry['lowerPhotographicLace'],
+                 '01 / garter belt / looped lace edge 0',*entry['actualElasticSeamMeshes']]:
+        obj=objects[name];evaluated=obj.evaluated_get(bpy.context.evaluated_depsgraph_get())
+        mesh=evaluated.to_mesh();mesh.calc_loop_triangles()
+        uv=mesh.uv_layers.get('UVMap')
+        if not uv:raise ValueError('The actual belt piece has no evaluated UVMap: '+name)
+        values=np.asarray([d.uv[:] for d in uv.data]);indices=np.asarray([t.loops[:] for t in mesh.loop_triangles])
+        a,b,c=values[indices[:,0]],values[indices[:,1]],values[indices[:,2]]
+        ab,ac=b-a,c-a;fraction=float(np.mean(np.abs(ab[:,0]*ac[:,1]-ab[:,1]*ac[:,0])*.5>1e-12))
+        evaluated.to_mesh_clear()
+        if not np.isfinite(values).all() or fraction<.95:raise ValueError('Degenerate evaluated belt UVs: '+name)
+        uv_quality.append({'mesh':name,'uvNonDegenerateTriangleFraction':fraction})
+    threads=[]
+    for name in entry['actualElasticSeamMeshes']:
+        obj=objects[name];topology=holes(obj.data)
+        if topology['components']!=1 or topology['eulerCharacteristic']!=0 or boundary_loops(obj.data):
+            raise ValueError('A real continuous elastic stitch has an open seam.')
+        threads.append({'mesh':name,'actualClosedThreadLoopVerified':True})
+    garter_belt.append({'mesh':belt.name,'simulationCage':cage.name,'measuredFromActualMeshes':True,
+        'singleThinClothSolver':True,'originalStrapRootRingVerified':True,'actualWaistPinsVerified':True,
+        'actualClothGroupSchemaVerified':True,'actualPressureFieldVerified':True,
+        'rawColumns':columns,'rawRows':rows,'frillSeams':gaps,'evaluatedUvQuality':uv_quality,
+        'actualElasticSeamMeshes':threads,'lowerPhotographicLace':entry['lowerPhotographicLace'],
+        'actualLaceHeaderSeam':lace_header,
+        'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False})
+    print('FOUNDATION_GARTER_BELT_CONSTRUCTION_VERIFIED',json.dumps(garter_belt),flush=True)
+
 garter_drapes=[]
 for entry in record.get('garterCupDrapeConstruction',[]):
     cup=objects[entry['mesh']]
@@ -476,6 +557,7 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'actualGarterDetailAudit':garter_details,
         'actualGarterDrapeAudit':garter_drapes,
         'actualGarterWebContactAudit':garter_webs,
+        'actualGarterBeltAudit':garter_belt,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,
         'savedModelUnchanged':True,'rigPresent':False,'motionVerified':False,

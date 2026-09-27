@@ -67,6 +67,20 @@ if generation.get('garterCupDrapeConstruction'):
             or any(not p['measuredFromActualCage'] or not p['originalTopAndHemVerified']
                    or not p['originalTopFacingVerified'] or p['minimumTriangleArea']<=1e-12 for p in drapes)):
         raise ValueError('Requires actual sculpted cup topology, original rims and facing geometry.')
+if generation.get('garterBeltGatherConstruction'):
+    belts=audit.get('actualGarterBeltAudit',[])
+    expected=generation['garterBeltGatherConstruction']
+    if (len(belts)!=1 or belts[0]['mesh']!=expected['mesh']
+            or not belts[0]['measuredFromActualMeshes'] or not belts[0]['singleThinClothSolver']
+            or not belts[0]['originalStrapRootRingVerified'] or not belts[0]['actualWaistPinsVerified']
+            or not belts[0].get('actualClothGroupSchemaVerified') or not belts[0].get('actualPressureFieldVerified')
+            or not belts[0].get('actualLaceHeaderSeam',{}).get('measuredFromActualRawEdges')
+            or belts[0]['actualLaceHeaderSeam']['maximumRawHeaderEdgeGap']>.00025
+            or any(p['maximumRawSeamGap']>1e-6 for p in belts[0]['frillSeams'])
+            or any(p['uvNonDegenerateTriangleFraction']<.95 for p in belts[0]['evaluatedUvQuality'])
+            or {p['mesh'] for p in belts[0]['actualElasticSeamMeshes']}!=set(expected['actualElasticSeamMeshes'])
+            or any(not p['actualClosedThreadLoopVerified'] for p in belts[0]['actualElasticSeamMeshes'])):
+        raise ValueError('Requires actual casing, sewn frill, cloth fields, UV, thread and sampled lace-edge seam evidence.')
 if generation.get('garterFrontWebConstruction'):
     webs=audit.get('actualGarterWebContactAudit',[])
     if ({p['mesh'] for p in webs}!={p['mesh'] for p in generation['garterFrontWebConstruction']}
@@ -199,6 +213,7 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
         'garterCupConstruction':generation.get('garterCupConstruction',[]),
         'garterCupDrapeConstruction':generation.get('garterCupDrapeConstruction',[]),
         'garterFrontWebConstruction':generation.get('garterFrontWebConstruction',[]),
+        'garterBeltGatherConstruction':generation.get('garterBeltGatherConstruction'),
         'isolatedPartReviews':portable_parts,
         'attachmentAudit':{'file':'Docs/alice-variants/chapeleiro/foundation/carrier_audit.json',
                            'sha256':sha(args.audit),'frame':1,'verifiedFollowers':audit['verifiedFollowers'],
@@ -211,6 +226,7 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                            'actualGarterDetailAudit':audit.get('actualGarterDetailAudit',[]),
                            'actualGarterDrapeAudit':audit.get('actualGarterDrapeAudit',[]),
                            'actualGarterWebContactAudit':audit.get('actualGarterWebContactAudit',[]),
+                           'actualGarterBeltAudit':audit.get('actualGarterBeltAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False,'nextVariantMayStart':False}
@@ -257,6 +273,19 @@ if args.exported_contact_audit:
      'geometria, conferida no editável. Esses volumes ainda exigem comparação '
      'fina com a foto, ajuste ao corpo e testes de deformação e colisão.\n\n'
      if generation.get('garterCupDrapeConstruction') else '')+
+    ('O cinto das ligas recebeu uma faixa central mais estreita, franzidos '
+     'menores e babados ligados às suas bordas reais. A renda inferior usa '
+     'contornos e UVs da foto desta peça, com vazados em geometria e espessura '
+     'procedural. Duas costuras contínuas seguem o mesmo suporte fino de Cloth. '
+     'O encontro das tiras foi preservado e os vínculos foram refeitos; '
+     'proporções, encaixe no corpo, rig e resposta em movimento continuam em revisão.\n\n'
+     if generation.get('garterBeltGatherConstruction') else '')+
+    ('A renda inferior do cinto foi subdividida ainda plana, antes de envolver '
+     'o contorno franzido. Seus vazados e UVs próprios foram preservados. '
+     'O auditador mede também pontos ao longo das bordas da renda para impedir '
+     'que segmentos retos atravessem a curvatura entre vértices aparentemente '
+     'unidos ao babado. Essa medida é de repouso, sem aprovação de movimento.\n\n'
+     if generation.get('garterLaceSurfaceRefinement') else '')+
     'O add-on fornecido pelo usuário é Bystedts Cloth Builder 1.0.1, de Daniel '
     'Bystedt. O arquivo editável contém os grupos originais Post sim cloth / '
     'Solidify / UV unwrap solidified. A cópia carregada recebe a adaptação '

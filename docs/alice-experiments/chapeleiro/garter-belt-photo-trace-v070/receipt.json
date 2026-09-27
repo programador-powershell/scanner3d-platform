@@ -1,0 +1,26 @@
+{
+  "originalTraceSha256": "0b404cb16f2039693fa87588991bdf2b6e320ab0f37f57925544a60e11b06ac4",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "files": {
+    "garter belt hem_contour_mask.png": {
+      "sha256": "75205e34399fb0e7b787e95ed2adf479643b49504d2e33cb32ceea98ab855df8",
+      "bytes": 344
+    },
+    "garter belt hem_source_crop.png": {
+      "sha256": "3bae7428c7943f498eef0513516f19e52367693974b550c8dfa780c26539a1eb",
+      "bytes": 4781
+    },
+    "garter belt hem_trace_review.png": {
+      "sha256": "44bb93e196875cd3d201315055b81e3704dec0bcffde05ba7b9b98e717df7de4",
+      "bytes": 57929
+    },
+    "lace_contours.json": {
+      "sha256": "0b404cb16f2039693fa87588991bdf2b6e320ab0f37f57925544a60e11b06ac4",
+      "bytes": 21148
+    }
+  },
+  "contoursChanged": false,
+  "originalPhotoChanged": false,
+  "fidelityVerified": false,
+  "limitation": "Photo shadows affect contour selection; hidden repeats remain inferred."
+}

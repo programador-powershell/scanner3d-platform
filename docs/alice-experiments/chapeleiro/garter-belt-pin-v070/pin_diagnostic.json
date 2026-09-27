@@ -1,0 +1,252 @@
+{
+  "parentEditableSha256": "4429e5e229f28be066a1908e3ca51193d3bfd23ab7ee3df6b5b8f521c903fb8f",
+  "actualSharedBeltMesh": true,
+  "clothPinGroupSetting": "pinned",
+  "originalCageGroups": [
+    {
+      "name": "pinned",
+      "index": 0,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": 1.0
+        },
+        {
+          "vertex": 127,
+          "weight": 1.0
+        },
+        {
+          "vertex": 128,
+          "weight": 0.699999988079071
+        },
+        {
+          "vertex": 255,
+          "weight": 0.699999988079071
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "stiffness",
+      "index": 1,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": null
+        },
+        {
+          "vertex": 127,
+          "weight": null
+        },
+        {
+          "vertex": 128,
+          "weight": null
+        },
+        {
+          "vertex": 255,
+          "weight": null
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "shrinking",
+      "index": 2,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": null
+        },
+        {
+          "vertex": 127,
+          "weight": null
+        },
+        {
+          "vertex": 128,
+          "weight": null
+        },
+        {
+          "vertex": 255,
+          "weight": null
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "pressure",
+      "index": 3,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": 1.0
+        },
+        {
+          "vertex": 127,
+          "weight": 1.0
+        },
+        {
+          "vertex": 128,
+          "weight": 1.0
+        },
+        {
+          "vertex": 255,
+          "weight": 1.0
+        },
+        {
+          "vertex": 256,
+          "weight": 1.0
+        },
+        {
+          "vertex": 1151,
+          "weight": 1.0
+        }
+      ]
+    }
+  ],
+  "copiedCageGroups": [
+    {
+      "name": "pinned",
+      "index": 0,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": 1.0
+        },
+        {
+          "vertex": 127,
+          "weight": 1.0
+        },
+        {
+          "vertex": 128,
+          "weight": 0.699999988079071
+        },
+        {
+          "vertex": 255,
+          "weight": 0.699999988079071
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "stiffness",
+      "index": 1,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": null
+        },
+        {
+          "vertex": 127,
+          "weight": null
+        },
+        {
+          "vertex": 128,
+          "weight": null
+        },
+        {
+          "vertex": 255,
+          "weight": null
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "shrinking",
+      "index": 2,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": null
+        },
+        {
+          "vertex": 127,
+          "weight": null
+        },
+        {
+          "vertex": 128,
+          "weight": null
+        },
+        {
+          "vertex": 255,
+          "weight": null
+        },
+        {
+          "vertex": 256,
+          "weight": null
+        },
+        {
+          "vertex": 1151,
+          "weight": null
+        }
+      ]
+    },
+    {
+      "name": "pressure",
+      "index": 3,
+      "samples": [
+        {
+          "vertex": 0,
+          "weight": 1.0
+        },
+        {
+          "vertex": 127,
+          "weight": 1.0
+        },
+        {
+          "vertex": 128,
+          "weight": 1.0
+        },
+        {
+          "vertex": 255,
+          "weight": 1.0
+        },
+        {
+          "vertex": 256,
+          "weight": 1.0
+        },
+        {
+          "vertex": 1151,
+          "weight": 1.0
+        }
+      ]
+    }
+  ],
+  "afterFreshMeshGroups": [],
+  "sceneSaved": false,
+  "originalParentUnchanged": true
+}

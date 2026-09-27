@@ -1,0 +1,36 @@
+{
+  "status": "rejected_fidelity",
+  "visibleDifferences": [
+    "O material de algodão corrige a cor, mas a renda inferior continua fragmentada nas quatro vistas.",
+    "A borda da renda tem apenas cinco segmentos longos. Amostras reais ao longo desses segmentos chegam a 11,77 mm de distância da união com o babado.",
+    "A próxima correção subdivide a superfície plana da renda antes de envolvê-la no babado, preservando os vazados e os UVs da própria foto."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "9634aad43b84731a249f583c0d6428c86ae16ad1275eb4f37ca06221f3bf5595",
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "95f8b74964b99f114b1d2322169e86a1605643dc3dce504154399a32b6e193fd"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "a3e7892c4e7166144ba724526f137bca2634a43f7afd12654689bc61cb8ec99b"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "22f4b4fc22d1824ba08307469a15b1292d6d721ac638d93ddf77dd0d4ac8e716"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "bc1c443a9896b74f9e2158520153f65828a4444195ebd0ebdec6b1d5f79d16f5"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "00bfd5dc3f047fedf1e63391e5ab0e73428f551ae5c7b002d36a754e7342223b"
+  },
+  "fidelityVerified": false,
+  "liveStageChanged": false,
+  "modelPublished": false,
+  "actualRawEdgeDiagnostic": "lace_join_diagnostic.json"
+}
