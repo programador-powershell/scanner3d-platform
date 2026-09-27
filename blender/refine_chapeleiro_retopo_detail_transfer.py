@@ -29,10 +29,13 @@ scene = bpy.context.scene
 rig = next(o for o in scene.objects if o.type == 'ARMATURE')
 sys.path.insert(0, str(Path(__file__).parent))
 from chapeleiro_retopo_cloth_assembly import assemble_retopo_petticoats, RestDetailTransfer
-schema = read(path.parent / 'shared_rig_bind.json')
+reference_root = Path(g.get('authoringReferenceRoot', path.parent))
+schema = read(reference_root / 'shared_rig_bind.json')
 cage, parts, assembly = assemble_retopo_petticoats(scene, rig, schema, r['parts'][0]['simulationAround'],
                                                   r['assembly']['angularLowpass'], r['parts'][2]['simulationRows'] - 1,
-                                                  smooth_detail=True, outward_winding=r['assembly'].get('outwardWinding', False))
+                                                  smooth_detail=True, outward_winding=r['assembly'].get('outwardWinding', False),
+                                                  seam_mode=r['assembly'].get('seamMode', 'welded'),
+                                                  seam_clearance=r['assembly'].get('independentSeamClearanceMeters', .0015) or .0015)
 transfer = assembly.pop('detailTransfer')
 original = assembly.pop('originalPointsByPart')
 assembly.pop('partSolverOwnership')

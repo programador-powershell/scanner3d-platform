@@ -1,0 +1,117 @@
+{
+  "modelSha256": "bccd78d0312de37a67b5b5b5bc49c21079943fc88c670535020a6ac92462295b",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "clip": "Corrida com tecido / anágua em refinamento",
+  "renders": [
+    {
+      "sourcePhysicsFrame": 1,
+      "actualImportedFrame": 0.8000000715255737,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\foundation_01_front.png",
+      "sha256": "af951405010bc132e1a816cf16577a6f47d0a6e8ced6ec37c6a985f3614b61cb",
+      "cameraPosition": [
+        0.0008925050497055054,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 12,
+      "actualImportedFrame": 9.599999593836921,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\foundation_12_front.png",
+      "sha256": "d06ac9e1b05aba8bfe40f0f01968fe04c31aa840baea225326a1579b206957c9",
+      "cameraPosition": [
+        0.0008925050497055054,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\foundation_20_front.png",
+      "sha256": "70245e76c0efd5950eccab47d172b4ddf193cdabab4e8f8a24fce1d32ae269b2",
+      "cameraPosition": [
+        0.0008925050497055054,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\foundation_29_front.png",
+      "sha256": "1ca8ad1fd5c7b0b0c6f90479d8f8c81042d39267a4b664cc3a038832996187cd",
+      "cameraPosition": [
+        0.0008925050497055054,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\foundation_29_threequarter.png",
+      "sha256": "ad6a1ad4b86e105010235f54faa53733110667d74e8ca4c3ec076f5719a9019b",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.49074387550354,
+        0.7127175331115723
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "view": "front",
+      "scope": "ivory_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\ivory_family_20_front.png",
+      "sha256": "7f397a3e790f8b8db2098cd0f05bbdafd30955123c82df5263c308b5aa111a85",
+      "cameraPosition": [
+        0.0008925050497055054,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 33
+    },
+    {
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "threequarter",
+      "scope": "ivory_family",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095_export_v002\\actual_ivory_export_review_v001\\ivory_family_29_threequarter.png",
+      "sha256": "951d94a69d8299d34e32f1b61b9c360dd8467aac2e4f4c8b245c4b953a89ba89",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.49074387550354,
+        0.7127175331115723
+      ],
+      "visibleSkinnedMeshes": 33
+    }
+  ],
+  "actualIvoryFamilyMeshes": 33,
+  "actualSkinnedMeshes": 229,
+  "actualSkeletons": 1,
+  "actualMaterialAndGeometryUnchanged": true,
+  "actualExportDataSha256": "12df5d68a77942389f6b02eef56bcb9b6267a021c0087a41df8a5d88bc53028f",
+  "scriptSha256": "36d057269421a8c1cb079f1a9447953188a072691ea5c869fd00dc0896a1f3d0",
+  "modelUnchanged": true,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "allLayersFinished": false
+}

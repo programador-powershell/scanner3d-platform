@@ -1,0 +1,50 @@
+{
+  "fullLocalEditable": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v095\\chapeleiro_shared_rig_bloomer_waist.blend",
+    "bytes": 129796311,
+    "sha256": "e03074bc5a8f3de32b688b50161d91a4cde245c76cc61fbc35bfda3ae1347e5c"
+  },
+  "actualFoundationGlb": {
+    "file": "foundation/skin_study.glb",
+    "bytes": 69452960,
+    "sha256": "bccd78d0312de37a67b5b5b5bc49c21079943fc88c670535020a6ac92462295b"
+  },
+  "actualSkinnedMeshes": 229,
+  "actualJoints": 173,
+  "actualClips": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study",
+    "Corrida com tecido / anágua em refinamento"
+  ],
+  "wholeGlbInheritedUnchanged": {
+    "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v094\\whole_shared_rig_study.glb",
+    "modelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+    "bytes": 65149880,
+    "actualSkinnedNodes": 1,
+    "actualSkins": 1,
+    "actualClips": [
+      "Walk / current fitted Chapeleiro motion study",
+      "Run / current fitted Chapeleiro motion study",
+      "Attack / current fitted Chapeleiro motion study",
+      "Jump / current fitted planted-key IK motion study"
+    ],
+    "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+    "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab"
+  },
+  "wholeModelRevision": "f02c7040e4312d3839d0900394d3a01886079961",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualNewWeightMeshes": 9,
+  "actualOriginalWeightMeshesUnchanged": 220,
+  "actualFullEditableWaistObjectsChanged": 10,
+  "allActualRestGeometryUvMaterialsFiveAnimationsPreserved": true,
+  "physicalSpringStudiesBakedIntoGlb": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0
+}

@@ -1,0 +1,110 @@
+{
+  "beforeModelSha256": "0b3fa6e369b9bc911b91118ff71c5ee9a52f622c0a889d77ab2f18f22b7ba80b",
+  "afterModelSha256": "bccd78d0312de37a67b5b5b5bc49c21079943fc88c670535020a6ac92462295b",
+  "actualMeshNodes": 229,
+  "actualJoints": 173,
+  "actualAttributeArraysCompared": 1153,
+  "changedWeightMeshes": [
+    {
+      "mesh": "01 / bloomers / continuous waist and sewn crotch",
+      "changedWeightVertices": 6320,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.5599475502967834,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / front placket seam 1",
+      "changedWeightVertices": 248,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.5689491033554077,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / front placket seam -1",
+      "changedWeightVertices": 248,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.568929135799408,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / gathered waist elastic casing",
+      "changedWeightVertices": 2340,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.6172798871994019,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 0",
+      "changedWeightVertices": 104,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.6121701002120972,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 1",
+      "changedWeightVertices": 104,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.6054500341415405,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 2",
+      "changedWeightVertices": 104,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.5987299680709839,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 3",
+      "changedWeightVertices": 104,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.5920100808143616,
+      "maximumNormalizationError": 0.0
+    },
+    {
+      "mesh": "01 / bloomers / sewn ivory button 4",
+      "changedWeightVertices": 104,
+      "changedVerticesAtOrBelowTransition": 0,
+      "minimumChangedRestHeightMeters": 0.5852900743484497,
+      "maximumNormalizationError": 0.0
+    }
+  ],
+  "unchangedWeightMeshes": 220,
+  "restGeometryUvNormalsIndicesMaterialsImagesBindJointsIdentical": true,
+  "allFiveAnimationChannelArraysIdentical": true,
+  "animations": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "actualChannelArraysIdentical": true,
+      "channels": 519
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "actualChannelArraysIdentical": true,
+      "channels": 519
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "actualChannelArraysIdentical": true,
+      "channels": 519
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "actualChannelArraysIdentical": true,
+      "channels": 519
+    },
+    {
+      "clip": "Corrida com tecido / an\u00e1gua em refinamento",
+      "actualChannelArraysIdentical": true,
+      "channels": 519
+    }
+  ],
+  "noChangesAtOrBelowWaistTransition": true,
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "scriptSha256": "f084f9b192981f25d3f7e52d77dcf2847b9cc9989d3f0b904e71bbe7990dc891",
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "finalFbxExported": false
+}

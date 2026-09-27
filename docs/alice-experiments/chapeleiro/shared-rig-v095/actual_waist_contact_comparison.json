@@ -1,0 +1,230 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "beforePhysicalDataSha256": "5a9caa6b225a7e0a04a7de107bf85e940b44b7d89945ff5546bc2547905373e5",
+  "afterPhysicalDataSha256": "a52cfe076069b1a38b8bf07b2333280f3afe600bb3c009e170ff69ef9fa1f3bc",
+  "actualFramesPerCase": 29,
+  "identicalActualInputArrays": [
+    "bone_names",
+    "rig_deformations",
+    "simulation_rest_points",
+    "simulation_edges",
+    "simulation_faces",
+    "simulation_pin_weights",
+    "simulation_loose_edges",
+    "physical_seam_pairs",
+    "actual_simulation_skin_targets",
+    "actual_skin_targets",
+    "rest_points"
+  ],
+  "solverMaterialMassPinsTopologySeamsUnchanged": true,
+  "animatedProxyComparison": [
+    {
+      "proxyIndex": 0,
+      "actualTrianglesIdentical": true,
+      "changedAnimatedTriangleIndexValues": 0,
+      "animatedWorldCoordinatesIdentical": true,
+      "bloomerQuadTessellationMayChangeWithWaistDeformation": false
+    },
+    {
+      "proxyIndex": 1,
+      "actualTrianglesIdentical": true,
+      "changedAnimatedTriangleIndexValues": 0,
+      "animatedWorldCoordinatesIdentical": true,
+      "bloomerQuadTessellationMayChangeWithWaistDeformation": false
+    },
+    {
+      "proxyIndex": 2,
+      "actualTrianglesIdentical": false,
+      "changedAnimatedTriangleIndexValues": 63405,
+      "animatedWorldCoordinatesIdentical": false,
+      "bloomerQuadTessellationMayChangeWithWaistDeformation": true
+    }
+  ],
+  "before": {
+    "physical": {
+      "maximumSeamGapMeters": 0.011140505783259869,
+      "maximumPhysicalFullyPinnedInputErrorMeters": 0.0014799544587731361,
+      "parts": [
+        {
+          "key": "ivory",
+          "maximumPhysicalEdgeStretch": 3.2298226356506348,
+          "maximumDetailEdgeStretch": 3.2993898391723633
+        },
+        {
+          "key": "support",
+          "maximumPhysicalEdgeStretch": 4.956172466278076,
+          "maximumDetailEdgeStretch": 4.885137557983398
+        },
+        {
+          "key": "tier1",
+          "maximumPhysicalEdgeStretch": 1.8418409824371338,
+          "maximumDetailEdgeStretch": 8.52897834777832
+        },
+        {
+          "key": "tier2",
+          "maximumPhysicalEdgeStretch": 1.828576922416687,
+          "maximumDetailEdgeStretch": 5.43459415435791
+        },
+        {
+          "key": "tier3",
+          "maximumPhysicalEdgeStretch": 3.196082830429077,
+          "maximumDetailEdgeStretch": 6.542153835296631
+        }
+      ]
+    },
+    "pinned_input_clearance_inspection": {
+      "queriedField": "actual_simulation_skin_targets",
+      "queriedVertices": 384,
+      "dataSha256": "c3380da6e529e97ced083246721a8294c67a79d10dd2ae5d890dda07dd6bb098",
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "peakCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousQueriesAcrossSequence": 0
+        },
+        {
+          "proxyIndex": 1,
+          "peakCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousQueriesAcrossSequence": 0
+        },
+        {
+          "proxyIndex": 2,
+          "peakCertainInsideVertices": 63,
+          "maximumCertainPenetrationMeters": 0.0050005558878183365,
+          "ambiguousQueriesAcrossSequence": 1
+        }
+      ],
+      "fullyPinnedVerticesQueried": 192,
+      "fullyPinnedBloomerInsidePeak": 34,
+      "fullyPinnedBloomerMaximumPenetrationMeters": 0.0050005558878183365,
+      "fullyPinnedBloomerAmbiguousPeak": 0,
+      "fullyPinnedBloomerAmbiguousQueriesAcrossSequence": 0
+    },
+    "dynamic_clearance_inspection": {
+      "queriedField": "actual_simulation_points",
+      "queriedVertices": 9024,
+      "dataSha256": "b2d10625f161efe5b3c1010a8864d7500ad173cf2d9157ce7c48b63e011359c9",
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "peakCertainInsideVertices": 5,
+          "maximumCertainPenetrationMeters": 0.005668637342751026,
+          "ambiguousQueriesAcrossSequence": 2
+        },
+        {
+          "proxyIndex": 1,
+          "peakCertainInsideVertices": 10,
+          "maximumCertainPenetrationMeters": 0.0067420233972370625,
+          "ambiguousQueriesAcrossSequence": 2
+        },
+        {
+          "proxyIndex": 2,
+          "peakCertainInsideVertices": 431,
+          "maximumCertainPenetrationMeters": 0.035751715302467346,
+          "ambiguousQueriesAcrossSequence": 54
+        }
+      ]
+    }
+  },
+  "after": {
+    "physical": {
+      "maximumSeamGapMeters": 0.00949137657880783,
+      "maximumPhysicalFullyPinnedInputErrorMeters": 0.0014799544587731361,
+      "parts": [
+        {
+          "key": "ivory",
+          "maximumPhysicalEdgeStretch": 3.7213337421417236,
+          "maximumDetailEdgeStretch": 3.8459794521331787
+        },
+        {
+          "key": "support",
+          "maximumPhysicalEdgeStretch": 5.1969685554504395,
+          "maximumDetailEdgeStretch": 5.045090198516846
+        },
+        {
+          "key": "tier1",
+          "maximumPhysicalEdgeStretch": 1.803017258644104,
+          "maximumDetailEdgeStretch": 7.801544189453125
+        },
+        {
+          "key": "tier2",
+          "maximumPhysicalEdgeStretch": 2.3811914920806885,
+          "maximumDetailEdgeStretch": 5.822774410247803
+        },
+        {
+          "key": "tier3",
+          "maximumPhysicalEdgeStretch": 2.7435336112976074,
+          "maximumDetailEdgeStretch": 6.36641788482666
+        }
+      ]
+    },
+    "pinned_input_clearance_inspection": {
+      "queriedField": "actual_simulation_skin_targets",
+      "queriedVertices": 384,
+      "dataSha256": "d251c371fc6e32961b6690866a091bbb96833950b50b9a28a5e8bc122fd54c21",
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "peakCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousQueriesAcrossSequence": 0
+        },
+        {
+          "proxyIndex": 1,
+          "peakCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousQueriesAcrossSequence": 0
+        },
+        {
+          "proxyIndex": 2,
+          "peakCertainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousQueriesAcrossSequence": 51
+        }
+      ],
+      "fullyPinnedVerticesQueried": 192,
+      "fullyPinnedBloomerInsidePeak": 0,
+      "fullyPinnedBloomerMaximumPenetrationMeters": 0.0,
+      "fullyPinnedBloomerAmbiguousPeak": 0,
+      "fullyPinnedBloomerAmbiguousQueriesAcrossSequence": 0
+    },
+    "dynamic_clearance_inspection": {
+      "queriedField": "actual_simulation_points",
+      "queriedVertices": 9024,
+      "dataSha256": "dbc5d1d3666c4984bb6ded5d5583138ad9245ab0e11ff13c15d3af860eb78cfb",
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "peakCertainInsideVertices": 28,
+          "maximumCertainPenetrationMeters": 0.0188152939081192,
+          "ambiguousQueriesAcrossSequence": 0
+        },
+        {
+          "proxyIndex": 1,
+          "peakCertainInsideVertices": 36,
+          "maximumCertainPenetrationMeters": 0.011003131978213787,
+          "ambiguousQueriesAcrossSequence": 4
+        },
+        {
+          "proxyIndex": 2,
+          "peakCertainInsideVertices": 677,
+          "maximumCertainPenetrationMeters": 0.03720106929540634,
+          "ambiguousQueriesAcrossSequence": 97
+        }
+      ]
+    }
+  },
+  "waistAnchorConflictEliminatedInMeasuredSequence": true,
+  "freeClothPenetrationStillPresent": true,
+  "physicalSpringStudyBakedIntoPublishedRig": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "additionalCreditsConsumed": 0,
+  "scriptSha256": "1b523a53ffd383fa7ad6eccb8cf9c1cd3c7c8340ac1fefb7efccd92c4c359f58",
+  "limitation": "Actual 29-frame vertex diagnostics only. Waist input conflict is resolved in this sequence; free-cloth penetration worsens. No continuous contact, complete photo fidelity or all-action physics approval."
+}

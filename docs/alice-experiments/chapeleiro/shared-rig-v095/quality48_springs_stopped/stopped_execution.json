@@ -1,0 +1,27 @@
+{
+  "completed": false,
+  "requestedSolverQuality": 48,
+  "seamMode": "springs_regular_carriers",
+  "lastCompletedFrameInPreservedProgress": 20,
+  "plannedFrames": 29,
+  "sequenceMeasuredMaximumPhysicalEdgeStretch": 6.8081841468811035,
+  "stoppedDueToMeasuredDivergence": true,
+  "reason": "Measured physical edge stretch already exceeds six times rest length. Extra steps did not stabilize this spring cloth control.",
+  "progressSha256": "c5e095e347073706a05e9e422eaae38050dc013f0104f2499101e7c93b34bd10",
+  "executedSources": {
+    "executed_probe_chapeleiro_retopo_petticoats.py": "2d4a89b15c9631ba83a959d0763e0495727d2315e6fd2a6ee85f8bc998439891",
+    "executed_chapeleiro_retopo_cloth_assembly.py": "d9acd115b2b392281790db99c639a808624c617aa517d0d9757052f5b271d54e",
+    "executed_chapeleiro_sewn_cloth_assembly.py": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e",
+    "executed_chapeleiro_cloth_material_settings.py": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66",
+    "executed_chapeleiro_cloth_colliders.py": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76",
+    "executed_chapeleiro_cloth_motion_entry.py": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57",
+    "executed_chapeleiro_shared_rig_fields.py": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a"
+  },
+  "completePhysicalTrajectorySaved": false,
+  "renderProduced": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false
+}

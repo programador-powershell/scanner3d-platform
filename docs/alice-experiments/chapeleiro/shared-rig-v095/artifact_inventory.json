@@ -1,0 +1,675 @@
+{
+  "artifacts": [
+    {
+      "file": "foundation/skin_study.glb",
+      "bytes": 69452960,
+      "sha256": "bccd78d0312de37a67b5b5b5bc49c21079943fc88c670535020a6ac92462295b"
+    },
+    {
+      "file": "foundation/source_photo.png",
+      "bytes": 2255895,
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    {
+      "file": "actual_export_generation.json",
+      "bytes": 59626,
+      "sha256": "c4572f4c74ceede7cbcce0c60fe32ec32dfaac9f6e70ecbbf771d0d6722acc5b"
+    },
+    {
+      "file": "executed_export.py",
+      "bytes": 4328,
+      "sha256": "cedf87b060ee10cd03ba241ffae4494a0590825293f5734f5a2f63d66beb3384"
+    },
+    {
+      "file": "actual_glb_waist_field_comparison.json",
+      "bytes": 3831,
+      "sha256": "b6597af01d131db70a1a7dbc4f5ec5b2386454f63bbdfa2a27f5a5612fb3910a"
+    },
+    {
+      "file": "executed_glb_field_comparison.py",
+      "bytes": 7760,
+      "sha256": "f084f9b192981f25d3f7e52d77dcf2847b9cc9989d3f0b904e71bbe7990dc891"
+    },
+    {
+      "file": "actual_export_execution.log",
+      "bytes": 31466,
+      "sha256": "80fa951f6b138066f84b839168ef4dc0326a5aec68b9a7ab21d12cb7270e701c"
+    },
+    {
+      "file": "waist_skin_refinement.json",
+      "bytes": 6238,
+      "sha256": "31c23ba5d7af5f6856f3aa962d41c48bda5d27f53dc25c15143145b88086ece4"
+    },
+    {
+      "file": "actual_authoring_generation.json",
+      "bytes": 11098,
+      "sha256": "ef82742307867f4d0d3b4637d3104da6ea60a348a1aa9f78ca405c52341c11b1"
+    },
+    {
+      "file": "executed_waist_skin_refinement.py",
+      "bytes": 8804,
+      "sha256": "7ac20884765a1d2128aa861af4f1f21837387f6d9232c67c74aa37802c60c8d6"
+    },
+    {
+      "file": "actual_waist_skin_execution.log",
+      "bytes": 770,
+      "sha256": "90188fb7fecf29de06240d39be507787e16478ba89963d2e19fb0c11b1c5b65a"
+    },
+    {
+      "file": "export_dependencies_inspection.log",
+      "bytes": 13977,
+      "sha256": "512adc39c086d868bd460ad8c139f06ac6b80dbf1708633b1a6a025ea2963f1e"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_shared_rig_fields.py",
+      "bytes": 12773,
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_sewn_cloth_assembly.py",
+      "bytes": 7374,
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_colliders.py",
+      "bytes": 1803,
+      "sha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_motion_entry.py",
+      "bytes": 2417,
+      "sha256": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_closed_underlayer_proxies.py",
+      "bytes": 2319,
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5"
+    },
+    {
+      "file": "executed_helpers/chapeleiro_cloth_material_settings.py",
+      "bytes": 743,
+      "sha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66"
+    },
+    {
+      "file": "foundation/motion_comparison.json",
+      "bytes": 3085632,
+      "sha256": "c6da70a7a645a8a53b7b133a89b7bc66860aa9d2dcbfcde66587918b500a6da4"
+    },
+    {
+      "file": "foundation/executed_review.py",
+      "bytes": 10655,
+      "sha256": "b6170a3530697b4af20f73834bc2abddab92ed88df7e8f6cff4725b8b1508a30"
+    },
+    {
+      "file": "foundation/actual_review_execution.log",
+      "bytes": 24859,
+      "sha256": "e262575185e1ef1fbfdade17a3a7c79163cbcd610d77915f29c0144b5fb878a4"
+    },
+    {
+      "file": "foundation/rest/rest_front.png",
+      "bytes": 192362,
+      "sha256": "0fe5b9731fc95c02fa0b9b374d55f36ae40131b3149946f22f5a052b6919e177"
+    },
+    {
+      "file": "foundation/rest/rest_side.png",
+      "bytes": 169102,
+      "sha256": "de08be2fc0ac88d1c583c144ddd5af4801c056e0d9446c4e7ed9a6ebf70c77e6"
+    },
+    {
+      "file": "foundation/rest/rest_back.png",
+      "bytes": 191224,
+      "sha256": "4b09d723e7a02d736c0bbf4f03492acf79c5397b8ab24b7b4c62307ace5e41e8"
+    },
+    {
+      "file": "foundation/rest/rest_threequarter.png",
+      "bytes": 192511,
+      "sha256": "388ea2c6158a65aea43e04e4e4837cc1ac92a0fe281ce4920f98b12d30793e3b"
+    },
+    {
+      "file": "foundation/motion/walk_1.png",
+      "bytes": 194760,
+      "sha256": "86f38738367719358f1cbe50e11dc25a5312622cd7c955a5a25f1db0504fadf8"
+    },
+    {
+      "file": "foundation/motion/walk_2.png",
+      "bytes": 190905,
+      "sha256": "3b77aad396a048d63c2e82b0821c67663d854151534f4f2fa9e52a10380aede5"
+    },
+    {
+      "file": "foundation/motion/walk_3.png",
+      "bytes": 192738,
+      "sha256": "4af958273a195b70d4288356d6938845026b3f34a298c5fb2ce2fc1087487e1e"
+    },
+    {
+      "file": "foundation/motion/run_1.png",
+      "bytes": 181569,
+      "sha256": "b5c082af7d29081904b3b6f99df82dacc338acfaaeb49c536bf57d358596445b"
+    },
+    {
+      "file": "foundation/motion/run_2.png",
+      "bytes": 187660,
+      "sha256": "0d2e12352b3499ab9f303fb08c7db94e6bd328bba3e86c07908b88455064d940"
+    },
+    {
+      "file": "foundation/motion/run_3.png",
+      "bytes": 182891,
+      "sha256": "d83bbb49f9b073357c20f00219b8b4a15d3f2a58bb5d9ea44ba92d9d45397994"
+    },
+    {
+      "file": "foundation/motion/jump_1.png",
+      "bytes": 189859,
+      "sha256": "726adb39151e7185f7891233674ae97dd3eb2cf93d8f75ae8385f6a2fe8be8d4"
+    },
+    {
+      "file": "foundation/motion/jump_2.png",
+      "bytes": 189950,
+      "sha256": "6ccf2a5f18f3bc1c502f3ef3b0190696ef2d00826cfabe87e967a145db173471"
+    },
+    {
+      "file": "foundation/motion/jump_3.png",
+      "bytes": 190144,
+      "sha256": "75cf903d2c5624fd90063b91c9dfb1faafa8f60b718a7394be11ac584bcc63aa"
+    },
+    {
+      "file": "foundation/motion/attack_1.png",
+      "bytes": 177727,
+      "sha256": "0aec2b917abed3585f44aa5b21bbe7b7fe2dc6c15b36028348aa3b2ca4e0dd43"
+    },
+    {
+      "file": "foundation/motion/attack_2.png",
+      "bytes": 183139,
+      "sha256": "8f994c78e3366dbaf689bfae058d0bd1fc458823eb11e05d76ffdd0b6371f48d"
+    },
+    {
+      "file": "foundation/motion/attack_3.png",
+      "bytes": 182574,
+      "sha256": "d2fac4d887d58351ff0f27e537c43489db7ace86e565f8db5a286abc644dedc8"
+    },
+    {
+      "file": "actual_ivory_export_review/comparison.json",
+      "bytes": 4749,
+      "sha256": "cf5c35b504ac0f3f43a4d74aef6905d950e1df4fba84fedec39cea9f7641f142"
+    },
+    {
+      "file": "actual_ivory_export_review/actual_pose_measurements.json",
+      "bytes": 21404,
+      "sha256": "b9cdbfec889c3963ef91f456434620da1a3ff18b2b51d6b1c8d9e197e4316f6e"
+    },
+    {
+      "file": "actual_ivory_export_review/actual_exported_ivory_poses.npz",
+      "bytes": 4975545,
+      "sha256": "12df5d68a77942389f6b02eef56bcb9b6267a021c0087a41df8a5d88bc53028f"
+    },
+    {
+      "file": "actual_ivory_export_review/executed_review.py",
+      "bytes": 8692,
+      "sha256": "36d057269421a8c1cb079f1a9447953188a072691ea5c869fd00dc0896a1f3d0"
+    },
+    {
+      "file": "actual_ivory_export_review/actual_execution.log",
+      "bytes": 24143,
+      "sha256": "da8898f600e64eb16ca30acd030b96cfed9e5d399cf7823e6f9720263f917a36"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/foundation_01_front.png",
+      "bytes": 343575,
+      "sha256": "af951405010bc132e1a816cf16577a6f47d0a6e8ced6ec37c6a985f3614b61cb"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/foundation_12_front.png",
+      "bytes": 324256,
+      "sha256": "d06ac9e1b05aba8bfe40f0f01968fe04c31aa840baea225326a1579b206957c9"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/foundation_20_front.png",
+      "bytes": 334039,
+      "sha256": "70245e76c0efd5950eccab47d172b4ddf193cdabab4e8f8a24fce1d32ae269b2"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/foundation_29_front.png",
+      "bytes": 327625,
+      "sha256": "1ca8ad1fd5c7b0b0c6f90479d8f8c81042d39267a4b664cc3a038832996187cd"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/foundation_29_threequarter.png",
+      "bytes": 313988,
+      "sha256": "ad6a1ad4b86e105010235f54faa53733110667d74e8ca4c3ec076f5719a9019b"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/ivory_family_20_front.png",
+      "bytes": 197021,
+      "sha256": "7f397a3e790f8b8db2098cd0f05bbdafd30955123c82df5263c308b5aa111a85"
+    },
+    {
+      "file": "actual_ivory_export_review/renders/ivory_family_29_threequarter.png",
+      "bytes": 201096,
+      "sha256": "951d94a69d8299d34e32f1b61b9c360dd8467aac2e4f4c8b245c4b953a89ba89"
+    },
+    {
+      "file": "cloth_control_007/actual_sewn_solver_motion.json",
+      "bytes": 110985,
+      "sha256": "271a712c10e86b9830c8da13b1830beb5f1d636d4c65746bbb539f36566566ea"
+    },
+    {
+      "file": "cloth_control_007/actual_cloth_frames.npz",
+      "bytes": 20989157,
+      "sha256": "5a9caa6b225a7e0a04a7de107bf85e940b44b7d89945ff5546bc2547905373e5"
+    },
+    {
+      "file": "cloth_control_007/executed_probe.py",
+      "bytes": 17158,
+      "sha256": "aa6ef2b2e2246e1faf207139b956074c1bd4cbb1a15a53074f8ab6395cbb9f27"
+    },
+    {
+      "file": "cloth_control_007/executed_assembly.py",
+      "bytes": 7374,
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e"
+    },
+    {
+      "file": "cloth_control_007/executed_retopo_assembly.py",
+      "bytes": 15868,
+      "sha256": "d9acd115b2b392281790db99c639a808624c617aa517d0d9757052f5b271d54e"
+    },
+    {
+      "file": "cloth_control_007/executed_material_settings.py",
+      "bytes": 743,
+      "sha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66"
+    },
+    {
+      "file": "cloth_control_007/mass_calibration.json",
+      "bytes": 2147,
+      "sha256": "0a1552db847950a90aa99d22f863c5682c58a84f5c2eabbab5fc99f76ece986d"
+    },
+    {
+      "file": "cloth_control_007/actual_execution.log",
+      "bytes": 3662,
+      "sha256": "fcb8aa405d8020bc50223a378bb396bff62e158a6f1371b6d0b56c8ea2b5be9a"
+    },
+    {
+      "file": "cloth_control_007/review/comparison.json",
+      "bytes": 2941,
+      "sha256": "f4af6666da90ed342350265805b4f924f6d33bd6d2a0193f3cfb4a88e4149eb3"
+    },
+    {
+      "file": "cloth_control_007/review/executed_render.py",
+      "bytes": 10948,
+      "sha256": "0f3f77750077d2cac39be624c30f6abed45de239c0e9f4d320eabb81d5c7fa26"
+    },
+    {
+      "file": "cloth_control_007/review/actual_execution.log",
+      "bytes": 1386,
+      "sha256": "64614afb4624d30488673a5d4c952f6337d78a943708df5bed8eabde71194392"
+    },
+    {
+      "file": "cloth_control_007/review/foundation_20_front.png",
+      "bytes": 316705,
+      "sha256": "8daab8ac0f05759e4182b84d159cfad727355c3f75b5467436f651c2a504d841"
+    },
+    {
+      "file": "cloth_control_007/review/foundation_29_threequarter.png",
+      "bytes": 298735,
+      "sha256": "5151d4447f3c4a0aed8619e9b9b5215ca4970dd61eef6385cf0e8b9518a857f5"
+    },
+    {
+      "file": "cloth_control_007/pinned_input_clearance_inspection/dynamic_clearance_inspection.json",
+      "bytes": 131650,
+      "sha256": "55efe45b2ee28cd6d35e771e3eab3e94cc8e3aadc4866dc922163368c4df99da"
+    },
+    {
+      "file": "cloth_control_007/pinned_input_clearance_inspection/actual_dynamic_clearance.npz",
+      "bytes": 8153104,
+      "sha256": "c3380da6e529e97ced083246721a8294c67a79d10dd2ae5d890dda07dd6bb098"
+    },
+    {
+      "file": "cloth_control_007/pinned_input_clearance_inspection/executed_inspection.py",
+      "bytes": 9133,
+      "sha256": "e9a9bff0009770e40fc67369db3ba55111c2639149b3308dab8af5e515f78b08"
+    },
+    {
+      "file": "cloth_control_007/pinned_input_clearance_inspection/executed_closed_proxy_helper.py",
+      "bytes": 2319,
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5"
+    },
+    {
+      "file": "cloth_control_007/pinned_input_clearance_inspection/actual_execution.log",
+      "bytes": 1787,
+      "sha256": "57d0bb69e8ac51ff106b125f44ca18ca118cf76f5875a56d35cfda6e1654db29"
+    },
+    {
+      "file": "cloth_control_007/dynamic_clearance_inspection/dynamic_clearance_inspection.json",
+      "bytes": 132794,
+      "sha256": "4951519c02819a17de73c83679c2a7542366e4600c8f09c8a226c07f72ce97e5"
+    },
+    {
+      "file": "cloth_control_007/dynamic_clearance_inspection/actual_dynamic_clearance.npz",
+      "bytes": 10838163,
+      "sha256": "b2d10625f161efe5b3c1010a8864d7500ad173cf2d9157ce7c48b63e011359c9"
+    },
+    {
+      "file": "cloth_control_007/dynamic_clearance_inspection/executed_inspection.py",
+      "bytes": 8284,
+      "sha256": "550ff4c5a9d2557f90990b5322192dc063fd71491cefa6624d160902b29afe74"
+    },
+    {
+      "file": "cloth_control_007/dynamic_clearance_inspection/executed_closed_proxy_helper.py",
+      "bytes": 2319,
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5"
+    },
+    {
+      "file": "cloth_control_007/dynamic_clearance_inspection/actual_execution.log",
+      "bytes": 1783,
+      "sha256": "d48a48450f113754787395d77dbd2302a5841edb3c78f13271684987ee1380bd"
+    },
+    {
+      "file": "cloth_control_008/actual_sewn_solver_motion.json",
+      "bytes": 116745,
+      "sha256": "7144ea5a98550e3b4d6dce87b7b7f8fcaacad8d7a746ea18cdb2c4005ea22464"
+    },
+    {
+      "file": "cloth_control_008/actual_cloth_frames.npz",
+      "bytes": 20989794,
+      "sha256": "2edf3ac27c7bbce80b1a709d9f861cf826a8167b7c5d2956a48b4442336d67fc"
+    },
+    {
+      "file": "cloth_control_008/executed_surface_deform_refinement.py",
+      "bytes": 9163,
+      "sha256": "61a1612194c27dd4fb1c569ce6cf85349daa320b5b3f55bdcf1d33350ab5beee"
+    },
+    {
+      "file": "cloth_control_008/review/comparison.json",
+      "bytes": 2941,
+      "sha256": "8606b21eb62c3113cd1892b9056a10f82967461fbd974e81f25b27e6273e9c4f"
+    },
+    {
+      "file": "cloth_control_008/review/executed_render.py",
+      "bytes": 10948,
+      "sha256": "0f3f77750077d2cac39be624c30f6abed45de239c0e9f4d320eabb81d5c7fa26"
+    },
+    {
+      "file": "cloth_control_008/review/actual_execution.log",
+      "bytes": 1386,
+      "sha256": "209cf4df68529d93029f0e65f15271174a230be384fd00d19fe65c997a5631b1"
+    },
+    {
+      "file": "cloth_control_008/review/foundation_20_front.png",
+      "bytes": 316413,
+      "sha256": "42063dae3c2d633efa4e945540d553094645b7ec610dec55d049127ed57cdba5"
+    },
+    {
+      "file": "cloth_control_008/review/foundation_29_threequarter.png",
+      "bytes": 297560,
+      "sha256": "33e366ac9dc7347b8043f537314d9d1d20940ac3ff055f952a934fbdc638e645"
+    },
+    {
+      "file": "cloth_control_009/actual_sewn_solver_motion.json",
+      "bytes": 110983,
+      "sha256": "1dadd8605a7e5aba5beced7c9e3f84d0612a43263f9cfbf8e30b65b826796597"
+    },
+    {
+      "file": "cloth_control_009/actual_cloth_frames.npz",
+      "bytes": 20983240,
+      "sha256": "a52cfe076069b1a38b8bf07b2333280f3afe600bb3c009e170ff69ef9fa1f3bc"
+    },
+    {
+      "file": "cloth_control_009/executed_probe.py",
+      "bytes": 17232,
+      "sha256": "2d4a89b15c9631ba83a959d0763e0495727d2315e6fd2a6ee85f8bc998439891"
+    },
+    {
+      "file": "cloth_control_009/executed_assembly.py",
+      "bytes": 7374,
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e"
+    },
+    {
+      "file": "cloth_control_009/executed_retopo_assembly.py",
+      "bytes": 15868,
+      "sha256": "d9acd115b2b392281790db99c639a808624c617aa517d0d9757052f5b271d54e"
+    },
+    {
+      "file": "cloth_control_009/executed_material_settings.py",
+      "bytes": 743,
+      "sha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66"
+    },
+    {
+      "file": "cloth_control_009/mass_calibration.json",
+      "bytes": 2147,
+      "sha256": "0a1552db847950a90aa99d22f863c5682c58a84f5c2eabbab5fc99f76ece986d"
+    },
+    {
+      "file": "cloth_control_009/actual_execution.log",
+      "bytes": 3696,
+      "sha256": "eb50d8323d19aeb83f05e40a7eee8448cc7245da3ff498a638d2d546ba78bca3"
+    },
+    {
+      "file": "cloth_control_009/review/comparison.json",
+      "bytes": 2941,
+      "sha256": "c567f5ae3e888279bdedd819e3731a40ba384c7324362d8f073f145e5002c0e3"
+    },
+    {
+      "file": "cloth_control_009/review/executed_render.py",
+      "bytes": 11025,
+      "sha256": "d9898aa7b356726df42a2aed4f7cbc7d3d473793226d55bcaf4e42246dc5f7a8"
+    },
+    {
+      "file": "cloth_control_009/review/actual_execution.log",
+      "bytes": 1415,
+      "sha256": "bce267a4975adae7cc154376e680b53f859b8dc2fdd42d95cf71ba5eb9bf0748"
+    },
+    {
+      "file": "cloth_control_009/review/foundation_20_front.png",
+      "bytes": 317499,
+      "sha256": "1e97ccd25cfe0b31676c53aa008ff4a3ef72b4817d7ef61ff7d33c55ae35068a"
+    },
+    {
+      "file": "cloth_control_009/review/foundation_29_threequarter.png",
+      "bytes": 294139,
+      "sha256": "e2b1e3e3defd0639cf5ee6a564371bb6006da6d741e22e8865ae0927cdf22988"
+    },
+    {
+      "file": "cloth_control_009/pinned_input_clearance_inspection/dynamic_clearance_inspection.json",
+      "bytes": 130610,
+      "sha256": "bd5e5e1be5f4d80213a93fbc9837d9aeaab968b0328add79bd96217f43f7002e"
+    },
+    {
+      "file": "cloth_control_009/pinned_input_clearance_inspection/actual_dynamic_clearance.npz",
+      "bytes": 8157573,
+      "sha256": "d251c371fc6e32961b6690866a091bbb96833950b50b9a28a5e8bc122fd54c21"
+    },
+    {
+      "file": "cloth_control_009/pinned_input_clearance_inspection/executed_inspection.py",
+      "bytes": 9204,
+      "sha256": "bdb35a9e792b1df3ade1373aeb65b3c67e380ac8f245080edf02ecb01b4f4e71"
+    },
+    {
+      "file": "cloth_control_009/pinned_input_clearance_inspection/executed_closed_proxy_helper.py",
+      "bytes": 2319,
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5"
+    },
+    {
+      "file": "cloth_control_009/pinned_input_clearance_inspection/actual_execution.log",
+      "bytes": 1812,
+      "sha256": "ec1449bb1e3dd2b3f8d2724af415a891eeeaade3ea6131ad6d13397dd4b1e934"
+    },
+    {
+      "file": "cloth_control_009/dynamic_clearance_inspection/dynamic_clearance_inspection.json",
+      "bytes": 132963,
+      "sha256": "a8d52b4f7b6e1e3d7860bc03a3c88f4b97a491a5ea162d6c1900a23a8cb82806"
+    },
+    {
+      "file": "cloth_control_009/dynamic_clearance_inspection/actual_dynamic_clearance.npz",
+      "bytes": 10858164,
+      "sha256": "dbc5d1d3666c4984bb6ded5d5583138ad9245ab0e11ff13c15d3af860eb78cfb"
+    },
+    {
+      "file": "cloth_control_009/dynamic_clearance_inspection/executed_inspection.py",
+      "bytes": 9204,
+      "sha256": "bdb35a9e792b1df3ade1373aeb65b3c67e380ac8f245080edf02ecb01b4f4e71"
+    },
+    {
+      "file": "cloth_control_009/dynamic_clearance_inspection/executed_closed_proxy_helper.py",
+      "bytes": 2319,
+      "sha256": "cac73d4862cc9eb6a2ed17ffbe436f79c332b1d25d5bb68dd59a35779d6d77d5"
+    },
+    {
+      "file": "cloth_control_009/dynamic_clearance_inspection/actual_execution.log",
+      "bytes": 1811,
+      "sha256": "7ae551c8f23130370ea73fa4b8e087040c6b4f05efd7dc463b0426e627093521"
+    },
+    {
+      "file": "actual_waist_contact_comparison.json",
+      "bytes": 7974,
+      "sha256": "baf9ab00a1fd677d43978925b982cc214dec56aacefc811202d4655e7c8cd7f0"
+    },
+    {
+      "file": "executed_contact_comparison.py",
+      "bytes": 7225,
+      "sha256": "1b523a53ffd383fa7ad6eccb8cf9c1cd3c7c8340ac1fefb7efccd92c4c359f58"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_cloth_colliders.py",
+      "bytes": 1803,
+      "sha256": "01ac66f8521d1f4ca7264f3b3686eb72c0678026bd72084e0d6c87fe38388e76"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_cloth_material_settings.py",
+      "bytes": 743,
+      "sha256": "e20fd5b484c445b905e01db974e748a176b90fb8460609c114d5083dbc13fa66"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_cloth_motion_entry.py",
+      "bytes": 2417,
+      "sha256": "0657b5a8fbcb6b16dd2b5f7ebd78f3ff4cb017026dfdfc47b39cc2ea9d353a57"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_retopo_cloth_assembly.py",
+      "bytes": 15868,
+      "sha256": "d9acd115b2b392281790db99c639a808624c617aa517d0d9757052f5b271d54e"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_sewn_cloth_assembly.py",
+      "bytes": 7374,
+      "sha256": "630dd9db55fcbd5501ceebbe92fe7427a72b96f602b0aa646b30c39a05fd800e"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_chapeleiro_shared_rig_fields.py",
+      "bytes": 12773,
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a"
+    },
+    {
+      "file": "quality48_springs_stopped/executed_probe_chapeleiro_retopo_petticoats.py",
+      "bytes": 17232,
+      "sha256": "2d4a89b15c9631ba83a959d0763e0495727d2315e6fd2a6ee85f8bc998439891"
+    },
+    {
+      "file": "quality48_springs_stopped/mass_calibration.json",
+      "bytes": 2147,
+      "sha256": "0a1552db847950a90aa99d22f863c5682c58a84f5c2eabbab5fc99f76ece986d"
+    },
+    {
+      "file": "quality48_springs_stopped/progress.json",
+      "bytes": 41167,
+      "sha256": "c5e095e347073706a05e9e422eaae38050dc013f0104f2499101e7c93b34bd10"
+    },
+    {
+      "file": "quality48_springs_stopped/stopped_execution.json",
+      "bytes": 1586,
+      "sha256": "78fd05790a9681c9ef6238d3769920c893e8268d91f9d4a11ab433056d123824"
+    },
+    {
+      "file": "quality48_springs_stopped/actual_execution.log",
+      "bytes": 3297,
+      "sha256": "cbba134c29550b461a0d9501d6f8c72f0d8d2becc4461574228e002901606256"
+    },
+    {
+      "file": "unoptimized_export_stopped/executed_export_unoptimized.py",
+      "bytes": 3509,
+      "sha256": "4c0e416a6a1ecfc1ea0275e4a2cb527858be78fd62b69a444392cea11b62df95"
+    },
+    {
+      "file": "unoptimized_export_stopped/stopped_execution.json",
+      "bytes": 700,
+      "sha256": "11192175db221d9e905c4ef82ec84175d5f49522da36d33150f9dbec55b2b5c4"
+    },
+    {
+      "file": "unoptimized_export_stopped/actual_execution.log",
+      "bytes": 36400,
+      "sha256": "bfc57a15eb8a245938931c359d7fab9b6d40e87c6d06489d3eb40f0eb0e9eec7"
+    },
+    {
+      "file": "visual_assessment.json",
+      "bytes": 12456,
+      "sha256": "5ef9784bfc1502aed97ca882434bf01a98729fd695d593df1e4020492d7361cc"
+    },
+    {
+      "file": "photo_review_boards.json",
+      "bytes": 16916,
+      "sha256": "534f390e03734148e5871351f316ed7b28d64afc15052f222623e2e332af405b"
+    },
+    {
+      "file": "foundation/photo_vs_geometry.jpg",
+      "bytes": 252585,
+      "sha256": "42a1c06fe85d5ce4c65977c922202e045e542172d25b0f53861588e136f81d40"
+    },
+    {
+      "file": "foundation/photo_vs_walk.jpg",
+      "bytes": 219460,
+      "sha256": "aec89a8ef0136f41a124496ddc82d9a0b4c70622e07d6188f69cc464a75ff533"
+    },
+    {
+      "file": "foundation/photo_vs_run.jpg",
+      "bytes": 215211,
+      "sha256": "d9b9e25d8de3931d07be44b39d86a9f6220e453b6f8c0aa14c7328ae31a2f609"
+    },
+    {
+      "file": "foundation/photo_vs_jump.jpg",
+      "bytes": 219284,
+      "sha256": "47aeba55afceca4f4c30c0babca402bb44d376e05d178df4e614b3f5e0d90479"
+    },
+    {
+      "file": "foundation/photo_vs_attack.jpg",
+      "bytes": 214713,
+      "sha256": "784f071f6703cac0e6fc227a49121fa8a46c5ff9a20af625adea422900b89274"
+    },
+    {
+      "file": "foundation/photo_vs_shared_skin_motion.jpg",
+      "bytes": 441664,
+      "sha256": "79df63c6f1213794720fed60c1f397ba616e0f34fc2279b16af121dc2d72c97d"
+    },
+    {
+      "file": "foundation/photo_vs_actual_ivory_joint_motion.jpg",
+      "bytes": 390502,
+      "sha256": "1311eff30d3a2ca4e1442f50e68075a091f5df3030cbb4047ce4af8d07c1cf5d"
+    },
+    {
+      "file": "foundation/photo_vs_actual_waist_cloth_contact.jpg",
+      "bytes": 365132,
+      "sha256": "bc4acabb830aec61b234525886ea08ade0d29741886a139bf57332fa3ada110f"
+    },
+    {
+      "file": "executed_photo_boards.py",
+      "bytes": 4961,
+      "sha256": "f1522c1a46c55bea2b76a3e97fbe8712a11cf61835b8de691a9abac54e733c4a"
+    },
+    {
+      "file": "checkpoint.json",
+      "bytes": 2171,
+      "sha256": "2ee724df8418c91ace5afa49dfe30207ee8dc211f21820738507bb1c1ba00af2"
+    },
+    {
+      "file": ".gitattributes",
+      "bytes": 72,
+      "sha256": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3563,
+      "sha256": "b94d82da62e6714831474abc379614c36a65cc31e8bdf6f1904a353881667f51"
+    },
+    {
+      "file": "executed_package.py",
+      "bytes": 15362,
+      "sha256": "d1626bd0950244bd6e6d56ca1de54472e141931e7c1b9c3dd2d9feca1c28c860"
+    }
+  ],
+  "preservedExactlyAsExecutedBytes": true
+}
