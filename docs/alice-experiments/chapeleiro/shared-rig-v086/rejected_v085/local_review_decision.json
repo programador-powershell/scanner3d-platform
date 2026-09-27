@@ -1,0 +1,21 @@
+{
+  "decision": "rejected_global_bloomer_lateral_field",
+  "actualModelSha256": "980d2d2a01b5d780481b1b1b3dad563f5c6b7068ddde76a58a1188161db2161a",
+  "reason": "The separate cuffs/renda improved, but the common crotch/body regressed. The globally narrow lateral field must not be promoted.",
+  "actualAttackFraction": 0.18,
+  "oldCrotchMaximumEdgeStretch": 4.513949394226074,
+  "newCrotchMaximumEdgeStretch": 7.785220623016357,
+  "oldLaceMaximumEdgeStretch": 7.753902435302734,
+  "newLaceMaximumEdgeStretch": 1.0024757385253906,
+  "nextStep": "Keep the v084 common body/crotch weights; bind the existing separate leg-opening trims to their own thigh. Inspect the sewn junction and actual posed geometry again.",
+  "fourActionPoseBoard": "motion_foundation/photo_vs_shared_skin_motion.jpg",
+  "ownFullPhotoUsed": true,
+  "fullEditableRetained": true,
+  "canonicalGalleryPromoted": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0
+}

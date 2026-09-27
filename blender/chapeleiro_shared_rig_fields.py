@@ -153,6 +153,12 @@ class GarmentFields:
             return self.cloth(p,'BlackCloth' if 'black' in name else 'IvoryCloth')
         if role.startswith('foundation_bloomers'):
             if 'sewn ivory button' in name:return {'Hips':1.}
+            # Existing separate leg-opening trims must not inherit the other
+            # thigh. Their actual bounds stay below z=.430 and on their own
+            # side. Keep the continuous body/crotch's original blend: a narrow
+            # lateral field across that shared surface regressed in v085.
+            if name.startswith('01 / left bloomers /'):return {'LeftUpLeg':1.}
+            if name.startswith('01 / right bloomers /'):return {'RightUpLeg':1.}
             legs=self.near(p,['Hips','LeftUpLeg','RightUpLeg','LeftLeg','RightLeg'],.012)
             return blend({'Hips':1.},legs,smooth((.52-p.z)/.07))
         return self.body(p)

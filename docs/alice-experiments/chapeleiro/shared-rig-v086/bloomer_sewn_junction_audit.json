@@ -1,0 +1,338 @@
+{
+  "model": "foundation/skin_study.glb",
+  "modelSha256": "dd13aa3f76dbf7d985945ab3127d2c74acdf8af96c0a025fd797c5a46d1be8a5",
+  "sourcePhoto": "foundation/source_photo.png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "method": "rest nearest body triangle within 1.5 mm; preserve its barycentric attachment through twelve actual exported poses",
+  "poses": [
+    {
+      "clip": "Walk",
+      "fraction": 0,
+      "frame": 0.8000000715255737,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0011695926077663898,
+          "posedGap95Percentile": 0.0008292262209579349,
+          "maximumGapIncrease": 0.0004570424207486212,
+          "gapIncrease95Percentile": 0.00011542253937477651
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0014356548199430108,
+          "posedGap95Percentile": 0.0008491884800605476,
+          "maximumGapIncrease": 0.0007530627190135419,
+          "gapIncrease95Percentile": 0.00023529426944150984
+        }
+      ]
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.33,
+      "frame": 11.623999544382096,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.001280542928725481,
+          "posedGap95Percentile": 0.0008353606681339443,
+          "maximumGapIncrease": 0.0006254400941543281,
+          "gapIncrease95Percentile": 0.00013319442514330148
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0017849761061370373,
+          "posedGap95Percentile": 0.0011346074752509594,
+          "maximumGapIncrease": 0.0012489786022342741,
+          "gapIncrease95Percentile": 0.0005525440763449292
+        }
+      ]
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.66,
+      "frame": 22.44799901723862,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0012757953954860568,
+          "posedGap95Percentile": 0.0008757739560678601,
+          "maximumGapIncrease": 0.0006889667438372271,
+          "gapIncrease95Percentile": 0.00023487638004553445
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0014573754742741585,
+          "posedGap95Percentile": 0.0009980660397559404,
+          "maximumGapIncrease": 0.0009868601919151843,
+          "gapIncrease95Percentile": 0.00036196547080180575
+        }
+      ]
+    },
+    {
+      "clip": "Run",
+      "fraction": 0,
+      "frame": 0.8000000715255737,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.001549052307382226,
+          "posedGap95Percentile": 0.0009925441117957234,
+          "maximumGapIncrease": 0.0009515540750726359,
+          "gapIncrease95Percentile": 0.00040810919308569265
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.002325478009879589,
+          "posedGap95Percentile": 0.0015566261718049645,
+          "maximumGapIncrease": 0.0018518102006055415,
+          "gapIncrease95Percentile": 0.0010329515003832054
+        }
+      ]
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.33,
+      "frame": 5.024000173807145,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0013247578172013164,
+          "posedGap95Percentile": 0.0008644562331028283,
+          "maximumGapIncrease": 0.0006738126394338906,
+          "gapIncrease95Percentile": 0.0001598641654709353
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0019273778889328241,
+          "posedGap95Percentile": 0.0012695332989096642,
+          "maximumGapIncrease": 0.0014121424756012857,
+          "gapIncrease95Percentile": 0.0007465002243407068
+        }
+      ]
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.66,
+      "frame": 9.248000276088716,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0022269301116466522,
+          "posedGap95Percentile": 0.0013320955913513899,
+          "maximumGapIncrease": 0.001617259404156357,
+          "gapIncrease95Percentile": 0.0007464853697456417
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.003094953950494528,
+          "posedGap95Percentile": 0.002087988192215562,
+          "maximumGapIncrease": 0.0028105707024224102,
+          "gapIncrease95Percentile": 0.0015352574322605504
+        }
+      ]
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.15384615384615385,
+      "frame": 7.200000295272241,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0008687666268087924,
+          "posedGap95Percentile": 0.000802285154350102,
+          "maximumGapIncrease": 4.4305314077064395e-05,
+          "gapIncrease95Percentile": 3.160379128530607e-06
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0008504333673045039,
+          "posedGap95Percentile": 0.0008012079633772373,
+          "maximumGapIncrease": 7.979035581229255e-05,
+          "gapIncrease95Percentile": 8.79003782756621e-06
+        }
+      ]
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.46153846153846156,
+      "frame": 20.000000742765575,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0008687286172062159,
+          "posedGap95Percentile": 0.0008022688562050462,
+          "maximumGapIncrease": 4.499284113990143e-05,
+          "gapIncrease95Percentile": 3.2002673833630807e-06
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0008511141058988869,
+          "posedGap95Percentile": 0.0008012023754417896,
+          "maximumGapIncrease": 8.055536454776302e-05,
+          "gapIncrease95Percentile": 8.693747804500106e-06
+        }
+      ]
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.7692307692307693,
+      "frame": 32.80000119025891,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0008687532972544432,
+          "posedGap95Percentile": 0.000802279100753367,
+          "maximumGapIncrease": 4.2900552216451615e-05,
+          "gapIncrease95Percentile": 3.091215330641707e-06
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0008490717737004161,
+          "posedGap95Percentile": 0.0008012090693227947,
+          "maximumGapIncrease": 7.833890413166955e-05,
+          "gapIncrease95Percentile": 8.529977640137037e-06
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.18,
+      "frame": 20.383999783992767,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0021886115428060293,
+          "posedGap95Percentile": 0.0013486966490745544,
+          "maximumGapIncrease": 0.0015103901114343898,
+          "gapIncrease95Percentile": 0.0006733261710905934
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.003457683138549328,
+          "posedGap95Percentile": 0.002129532862454653,
+          "maximumGapIncrease": 0.0027872308273799717,
+          "gapIncrease95Percentile": 0.001561882780515588
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.5,
+      "frame": 55.199999272823334,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.001437719794921577,
+          "posedGap95Percentile": 0.0009461559820920229,
+          "maximumGapIncrease": 0.0008461464622087078,
+          "gapIncrease95Percentile": 0.00033345793090120394
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0018657692708075047,
+          "posedGap95Percentile": 0.001259261043742299,
+          "maximumGapIncrease": 0.0014212005189619958,
+          "gapIncrease95Percentile": 0.0007072498628986062
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.78,
+      "frame": 85.66399882555008,
+      "actualCuffBodyJunctions": [
+        {
+          "mesh": "01 / left bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008687511435709894,
+          "maximumPosedGap": 0.0016133019234985113,
+          "posedGap95Percentile": 0.0010257503017783165,
+          "maximumGapIncrease": 0.001075750014933874,
+          "gapIncrease95Percentile": 0.00039469915368499614
+        },
+        {
+          "mesh": "01 / right bloomers / cuff elastic casing",
+          "mappedActualVertices": 648,
+          "totalActualVertices": 648,
+          "maximumRestGap": 0.0008476120419800282,
+          "maximumPosedGap": 0.0026551096234470606,
+          "posedGap95Percentile": 0.001644595293328166,
+          "maximumGapIncrease": 0.0019351705777808093,
+          "gapIncrease95Percentile": 0.0010825660428963602
+        }
+      ]
+    }
+  ],
+  "geometryChanged": false,
+  "sewnJunctionMotionVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "limitation": "Only nearby elastic-casing vertices are mapped. This is a measured attachment diagnostic, not an approval of every seam, cloth contact, or pose."
+}

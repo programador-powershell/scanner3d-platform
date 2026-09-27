@@ -1,0 +1,268 @@
+{
+  "localGeneration": {
+    "method": "same_230_piece_shared_rig_with_sewn_torso_and_cava_attachment_field_refinement",
+    "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v085\\generation.json",
+    "parentGenerationSha256": "bf3704e984d9651cfbe5cc10150cf5b7771a2eb3bae1ca333f05ed610a6cca21",
+    "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086\\chapeleiro_shared_rig_attachment_refinement.blend",
+    "editableBlendSha256": "18722d7f7967c7d3ad15d1240518fe5003a2d3553a7bbc7eb114af433e45c2f1",
+    "editableBytes": 128165008,
+    "exports": {
+      "foundation": {
+        "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086\\foundation_shared_rig_study.glb",
+        "modelSha256": "dd13aa3f76dbf7d985945ab3127d2c74acdf8af96c0a025fd797c5a46d1be8a5",
+        "bytes": 69265528,
+        "actualSkinnedNodes": 229,
+        "actualSkins": 1,
+        "actualClips": [
+          "Walk / shared Chapeleiro deformation study",
+          "Run / shared Chapeleiro deformation study",
+          "Attack / shared Chapeleiro deformation study",
+          "Jump / planted-key IK deformation study"
+        ],
+        "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+        "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+      },
+      "whole": {
+        "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086\\whole_shared_rig_study.glb",
+        "modelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+        "bytes": 65148404,
+        "actualSkinnedNodes": 1,
+        "actualSkins": 1,
+        "actualClips": [
+          "Walk / shared Chapeleiro deformation study",
+          "Run / shared Chapeleiro deformation study",
+          "Attack / shared Chapeleiro deformation study",
+          "Jump / planted-key IK deformation study"
+        ],
+        "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+        "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab"
+      }
+    },
+    "riggedActualPieces": 230,
+    "sharedArmatures": 1,
+    "bones": 173,
+    "sourceWholeGeometrySha256": "10d6825fa75b34de11fbd71b7b61f69c71ec14589fb1cd035d36a6c07c5d7ece",
+    "sourceWholeUncut": true,
+    "actualAuthoringGeometryUnchanged": true,
+    "authoringCages": 14,
+    "motionAudit": [
+      {
+        "clip": "Walk / shared Chapeleiro deformation study",
+        "frames": 42,
+        "fps": 30,
+        "sourceFrameRange": [
+          1.0,
+          83.0
+        ],
+        "source": "Walk",
+        "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+        "motionVerified": false,
+        "clothCollisionVerified": false
+      },
+      {
+        "clip": "Run / shared Chapeleiro deformation study",
+        "frames": 17,
+        "fps": 30,
+        "sourceFrameRange": [
+          1.0,
+          32.0
+        ],
+        "source": "Run",
+        "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+        "motionVerified": false,
+        "clothCollisionVerified": false
+      },
+      {
+        "clip": "Attack / shared Chapeleiro deformation study",
+        "frames": 137,
+        "fps": 30,
+        "sourceFrameRange": [
+          1.0,
+          273.0
+        ],
+        "source": "Attack",
+        "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+        "motionVerified": false,
+        "clothCollisionVerified": false
+      },
+      {
+        "clip": "Jump / planted-key IK deformation study",
+        "frames": 53,
+        "fps": 30,
+        "source": "locally authored two-bone IK probe",
+        "plantedKeys": [
+          1,
+          9,
+          41,
+          53
+        ],
+        "surfaceContactVerified": false,
+        "motionVerified": false,
+        "clothCollisionVerified": false
+      }
+    ],
+    "scriptSha256": "a6f04939412345d077c6ee42d2cd3868a110c7a53fe428b1af74ca09ed347efd",
+    "fieldScriptSha256": "9b60a1c89ac36321fe2bcdcfbb2dba27462e75ed4a8265f3c7488bfb151e9ad9",
+    "additionalCreditsConsumed": 0,
+    "allLayersFinished": false,
+    "fidelityVerified": false,
+    "motionVerified": false,
+    "clothCollisionVerified": false,
+    "finalFbxExported": false,
+    "nextVariantMayStart": false,
+    "publicationStatus": "local_only_pending_new_visual_motion_review",
+    "actualGeometryUnchanged": true,
+    "actualClothFieldWeightsUnchanged": true,
+    "torsoSkirtArmContaminationAbsent": true
+  },
+  "sourceGenerationFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086\\generation.json",
+  "fullEditableRetained": {
+    "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086\\chapeleiro_shared_rig_attachment_refinement.blend",
+    "sha256": "18722d7f7967c7d3ad15d1240518fe5003a2d3553a7bbc7eb114af433e45c2f1",
+    "bytes": 128165008
+  },
+  "historicalLocalCheckpoints": [
+    {
+      "folder": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v084",
+      "generation": {
+        "method": "same_230_piece_shared_rig_with_sewn_torso_and_cava_attachment_field_refinement",
+        "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v083\\generation.json",
+        "parentGenerationSha256": "53d33508dadccafa455c2546c61bddab1df455a3d23d4fb93e86e0dc548f9b6d",
+        "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v084\\chapeleiro_shared_rig_attachment_refinement.blend",
+        "editableBlendSha256": "70775c1bd7a800c4c63bf652add7a2261475565fd5e674be86745abab21c93b3",
+        "editableBytes": 128220742,
+        "exports": {
+          "foundation": {
+            "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v084\\foundation_shared_rig_study.glb",
+            "modelSha256": "2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0",
+            "bytes": 69265528,
+            "actualSkinnedNodes": 229,
+            "actualSkins": 1,
+            "actualClips": [
+              "Walk / shared Chapeleiro deformation study",
+              "Run / shared Chapeleiro deformation study",
+              "Attack / shared Chapeleiro deformation study",
+              "Jump / planted-key IK deformation study"
+            ],
+            "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+            "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+          },
+          "whole": {
+            "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v084\\whole_shared_rig_study.glb",
+            "modelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+            "bytes": 65148404,
+            "actualSkinnedNodes": 1,
+            "actualSkins": 1,
+            "actualClips": [
+              "Walk / shared Chapeleiro deformation study",
+              "Run / shared Chapeleiro deformation study",
+              "Attack / shared Chapeleiro deformation study",
+              "Jump / planted-key IK deformation study"
+            ],
+            "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\alice-chapeleiro.png",
+            "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab"
+          }
+        },
+        "riggedActualPieces": 230,
+        "sharedArmatures": 1,
+        "bones": 173,
+        "sourceWholeGeometrySha256": "10d6825fa75b34de11fbd71b7b61f69c71ec14589fb1cd035d36a6c07c5d7ece",
+        "sourceWholeUncut": true,
+        "actualAuthoringGeometryUnchanged": true,
+        "authoringCages": 14,
+        "motionAudit": [
+          {
+            "clip": "Walk / shared Chapeleiro deformation study",
+            "frames": 42,
+            "fps": 30,
+            "sourceFrameRange": [
+              1.0,
+              83.0
+            ],
+            "source": "Walk",
+            "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+            "motionVerified": false,
+            "clothCollisionVerified": false
+          },
+          {
+            "clip": "Run / shared Chapeleiro deformation study",
+            "frames": 17,
+            "fps": 30,
+            "sourceFrameRange": [
+              1.0,
+              32.0
+            ],
+            "source": "Run",
+            "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+            "motionVerified": false,
+            "clothCollisionVerified": false
+          },
+          {
+            "clip": "Attack / shared Chapeleiro deformation study",
+            "frames": 137,
+            "fps": 30,
+            "sourceFrameRange": [
+              1.0,
+              273.0
+            ],
+            "source": "Attack",
+            "retarget": "absolute source world orientation into the fitted bind; horizontal root travel removed",
+            "motionVerified": false,
+            "clothCollisionVerified": false
+          },
+          {
+            "clip": "Jump / planted-key IK deformation study",
+            "frames": 53,
+            "fps": 30,
+            "source": "locally authored two-bone IK probe",
+            "plantedKeys": [
+              1,
+              9,
+              41,
+              53
+            ],
+            "surfaceContactVerified": false,
+            "motionVerified": false,
+            "clothCollisionVerified": false
+          }
+        ],
+        "scriptSha256": "6d3e6d9963f30d8549d154f45c58876f735395950d4161e575870317280abe7a",
+        "fieldScriptSha256": "b8ec5eda8f32d24aa60c27d117da5005bee91d78018ff91051f3b72705e3c836",
+        "additionalCreditsConsumed": 0,
+        "allLayersFinished": false,
+        "fidelityVerified": false,
+        "motionVerified": false,
+        "clothCollisionVerified": false,
+        "finalFbxExported": false,
+        "nextVariantMayStart": false,
+        "publicationStatus": "local_only_pending_new_visual_motion_review",
+        "actualGeometryUnchanged": true,
+        "actualClothFieldWeightsUnchanged": true,
+        "torsoSkirtArmContaminationAbsent": true
+      },
+      "actualBoards": {
+        "foundation_motion": {
+          "file": "historical/foundation_shared_rig_v084/foundation_photo_vs_shared_skin_motion.jpg",
+          "sha256": "21d42f784a637c37e806f9ada99f90ad492304bec8c09ce3a73696f8fe5ad288",
+          "bytes": 452251
+        },
+        "foundation_rest": {
+          "file": "historical/foundation_shared_rig_v084/foundation_photo_vs_geometry.jpg",
+          "sha256": "9bcc881cef04a134cce51f489f33d078b7add55da96363238668a6f7abfd931f",
+          "bytes": 434075
+        },
+        "whole_motion": {
+          "file": "historical/foundation_shared_rig_v084/whole_photo_vs_shared_skin_motion.jpg",
+          "sha256": "1a81dc74feb0d23c0266548fe66a7081688ae264628b28b86c5bc1f251f1415e",
+          "bytes": 428833
+        },
+        "whole_rest": {
+          "file": "historical/foundation_shared_rig_v084/whole_photo_vs_geometry.jpg",
+          "sha256": "5061d8da0452372e38627e9e25e09c3d72d454da0f9faef0b851c8021ffc7177",
+          "bytes": 506125
+        }
+      }
+    }
+  ],
+  "additionalCreditsConsumed": 0
+}

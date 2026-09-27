@@ -1,0 +1,117 @@
+{
+  "parentSha256": "2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0",
+  "modelSha256": "980d2d2a01b5d780481b1b1b3dad563f5c6b7068ddde76a58a1188161db2161a",
+  "poses": [
+    {
+      "clip": "Walk",
+      "fraction": 0,
+      "oldLaceMax": 1.5680222511291504,
+      "newLaceMax": 1.0011961460113525,
+      "bodyMax": 2.1603145599365234,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 2.1603145599365234
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.33,
+      "oldLaceMax": 2.7102391719818115,
+      "newLaceMax": 1.0005780458450317,
+      "bodyMax": 2.82304310798645,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 2.82304310798645
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.66,
+      "oldLaceMax": 3.1761844158172607,
+      "newLaceMax": 1.000899076461792,
+      "bodyMax": 2.9608359336853027,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 2.9608359336853027
+    },
+    {
+      "clip": "Run",
+      "fraction": 0,
+      "oldLaceMax": 4.8924560546875,
+      "newLaceMax": 1.000801682472229,
+      "bodyMax": 5.534928798675537,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 5.534928798675537
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.33,
+      "oldLaceMax": 3.4448463916778564,
+      "newLaceMax": 1.001225471496582,
+      "bodyMax": 3.482929229736328,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 3.482929229736328
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.66,
+      "oldLaceMax": 6.6782546043396,
+      "newLaceMax": 1.0013421773910522,
+      "bodyMax": 6.757513046264648,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 6.757513046264648
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.15384615384615385,
+      "oldLaceMax": 1.2179137468338013,
+      "newLaceMax": 1.001023530960083,
+      "bodyMax": 1.4108655452728271,
+      "worstActualPiece": "01 / left stocking / horizontal knitted bands",
+      "worstActualMax": 1.4597669839859009
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.46153846153846156,
+      "oldLaceMax": 1.2208857536315918,
+      "newLaceMax": 1.0011749267578125,
+      "bodyMax": 1.4374239444732666,
+      "worstActualPiece": "01 / left stocking / horizontal knitted bands",
+      "worstActualMax": 1.4823248386383057
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.7692307692307693,
+      "oldLaceMax": 1.2119816541671753,
+      "newLaceMax": 1.00084388256073,
+      "bodyMax": 1.3546346426010132,
+      "worstActualPiece": "01 / left stocking / horizontal knitted bands",
+      "worstActualMax": 1.407857060432434
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.18,
+      "oldLaceMax": 7.753902435302734,
+      "newLaceMax": 1.0024757385253906,
+      "bodyMax": 7.785220623016357,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 7.785220623016357
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.5,
+      "oldLaceMax": 4.098927021026611,
+      "newLaceMax": 1.0010099411010742,
+      "bodyMax": 3.6875972747802734,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 3.6875972747802734
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.78,
+      "oldLaceMax": 5.636709690093994,
+      "newLaceMax": 1.00090491771698,
+      "bodyMax": 5.2107415199279785,
+      "worstActualPiece": "01 / bloomers / continuous waist and sewn crotch",
+      "worstActualMax": 5.2107415199279785
+    }
+  ],
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

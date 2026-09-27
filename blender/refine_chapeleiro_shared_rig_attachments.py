@@ -70,6 +70,13 @@ for entry in old_audit['authoringCages']:
 if any(mesh_hash(obj.data)!=digest for obj,digest in before.items()):raise ValueError('Geometry changed during weight refinement.')
 collection.hide_viewport=False;scene.frame_set(1);bpy.context.view_layer.update()
 schema['pieceRegions']=regions;schema['attachmentFieldRefinement']='torso-only corset/waist anchors, actual cava roots, native hands/legs excluded from skirt field'
+schema['bloomerLegAttachment']={'method':'existing separate leg-opening trims follow their own thigh; continuous body keeps v084 weights',
+    'existingTrimNamePrefixes':['01 / left bloomers /','01 / right bloomers /'],
+    'measuredActualTrimZBounds':[.39512595534324646,.42955002188682556],
+    'continuousCrotchFieldUnchangedFromV084':True,'originalHipBlendZ':[.45,.52],
+    'measuredActualV084ModelSha256':'2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0',
+    'sewnJunctionMotionVerified':False,
+    'motionVerified':False,'clothCollisionVerified':False}
 write('shared_rig_bind',schema);write('skin_audit',{'pieces':skin_audit,'authoringCages':cage_audit,'actualRawGeometryUnchanged':True,
     'actualClothFieldWeightsUnchanged':True,'torsoSkirtArmContaminationAbsent':True})
 for library in bpy.data.libraries:library.filepath='//'+Path(bpy.path.abspath(library.filepath)).name

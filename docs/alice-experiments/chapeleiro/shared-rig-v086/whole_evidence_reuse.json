@@ -1,0 +1,16 @@
+{
+  "method": "reuse actual reviewed evidence only for the exact unchanged whole GLB bytes",
+  "actualModelSha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+  "originalReviewRoot": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v084",
+  "currentExportRoot": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_v086",
+  "originalReviewFamilies": [
+    "rest_whole",
+    "motion_whole"
+  ],
+  "wholeReRendered": false,
+  "foundationReRendered": true,
+  "geometryChanged": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false
+}

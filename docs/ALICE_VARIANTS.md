@@ -424,3 +424,11 @@ continuam pendentes. Os GLBs experimentais ficam no GitHub, sem promover esse
 ensaio à galeria canônica. O Blender completo de 128.220.742 bytes foi preservado
 localmente; o FBX final continua dependendo da conclusão das fichas e dos testes
 reais de movimento, tecido e colisão.
+
+No [shared-rig-v086](alice-experiments/chapeleiro/shared-rig-v086/README.md),
+os acabamentos dos bloomers seguem sua própria coxa. Doze poses reais reduzem
+o esticamento da renda sem alterar as medições da entreperna. A folga da junção
+dos punhos continua medida e pendente. O v085 foi rejeitado por regressão no
+tecido. O novo editável completo de 128.165.008 bytes está preservado localmente;
+luvas, mangas, tecido secundário, colisões e fidelidade das fichas ainda exigem
+refinamento, e o FBX final continua pendente.

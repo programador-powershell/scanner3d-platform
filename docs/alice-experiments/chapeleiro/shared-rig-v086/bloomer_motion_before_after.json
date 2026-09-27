@@ -1,0 +1,105 @@
+{
+  "parentSha256": "2d5997151d87fa67d740ff273316e6980895e31899439f5a01f6afc590b98fe0",
+  "modelSha256": "dd13aa3f76dbf7d985945ab3127d2c74acdf8af96c0a025fd797c5a46d1be8a5",
+  "poses": [
+    {
+      "clip": "Walk",
+      "fraction": 0,
+      "oldLaceMax": 1.5680222511291504,
+      "newLaceMax": 1.0011961460113525,
+      "oldBodyMax": 1.5680454969406128,
+      "newBodyMax": 1.5680454969406128
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.33,
+      "oldLaceMax": 2.7102391719818115,
+      "newLaceMax": 1.0005780458450317,
+      "oldBodyMax": 1.8569821119308472,
+      "newBodyMax": 1.8569821119308472
+    },
+    {
+      "clip": "Walk",
+      "fraction": 0.66,
+      "oldLaceMax": 3.1761844158172607,
+      "newLaceMax": 1.000899076461792,
+      "oldBodyMax": 2.105283498764038,
+      "newBodyMax": 2.105283498764038
+    },
+    {
+      "clip": "Run",
+      "fraction": 0,
+      "oldLaceMax": 4.8924560546875,
+      "newLaceMax": 1.000801682472229,
+      "oldBodyMax": 2.9055771827697754,
+      "newBodyMax": 2.9055771827697754
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.33,
+      "oldLaceMax": 3.4448463916778564,
+      "newLaceMax": 1.001225471496582,
+      "oldBodyMax": 2.141838312149048,
+      "newBodyMax": 2.141838312149048
+    },
+    {
+      "clip": "Run",
+      "fraction": 0.66,
+      "oldLaceMax": 6.6782546043396,
+      "newLaceMax": 1.0013421773910522,
+      "oldBodyMax": 3.4549942016601562,
+      "newBodyMax": 3.4549942016601562
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.15384615384615385,
+      "oldLaceMax": 1.2179137468338013,
+      "newLaceMax": 1.001023530960083,
+      "oldBodyMax": 1.4407767057418823,
+      "newBodyMax": 1.4407767057418823
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.46153846153846156,
+      "oldLaceMax": 1.2208857536315918,
+      "newLaceMax": 1.0011749267578125,
+      "oldBodyMax": 1.4673449993133545,
+      "newBodyMax": 1.4673449993133545
+    },
+    {
+      "clip": "Jump",
+      "fraction": 0.7692307692307693,
+      "oldLaceMax": 1.2119816541671753,
+      "newLaceMax": 1.00084388256073,
+      "oldBodyMax": 1.382914423942566,
+      "newBodyMax": 1.382914423942566
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.18,
+      "oldLaceMax": 7.753902435302734,
+      "newLaceMax": 1.0024757385253906,
+      "oldBodyMax": 4.513949394226074,
+      "newBodyMax": 4.513949394226074
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.5,
+      "oldLaceMax": 4.098927021026611,
+      "newLaceMax": 1.0010099411010742,
+      "oldBodyMax": 2.4569010734558105,
+      "newBodyMax": 2.4569010734558105
+    },
+    {
+      "clip": "Attack",
+      "fraction": 0.78,
+      "oldLaceMax": 5.636709690093994,
+      "newLaceMax": 1.00090491771698,
+      "oldBodyMax": 3.171849489212036,
+      "newBodyMax": 3.171849489212036
+    }
+  ],
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

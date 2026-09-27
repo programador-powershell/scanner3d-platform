@@ -1,0 +1,86 @@
+{
+  "status": "needs_refinement",
+  "scope": "shared rig for current 229 foundation pieces and intact native exterior",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "dd13aa3f76dbf7d985945ab3127d2c74acdf8af96c0a025fd797c5a46d1be8a5",
+        "bytes": 69265528
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "2b271f519c459f7da7163a0cd829839f355543db194f572b22fe0025e11d464e",
+        "bytes": 65148404
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / shared Chapeleiro deformation study",
+        "Run / shared Chapeleiro deformation study",
+        "Attack / shared Chapeleiro deformation study",
+        "Jump / planted-key IK deformation study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    }
+  },
+  "fullLocalEditableBytes": 128165008,
+  "fullLocalEditableSha256": "18722d7f7967c7d3ad15d1240518fe5003a2d3553a7bbc7eb114af433e45c2f1",
+  "actualClothFieldWeightsUnchanged": true,
+  "actualRawGeometryUnchanged": true,
+  "canonicalGalleryPromoted": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "O GLB atual foi reimportado e renderizado em doze poses com a foto completa da ficha 1. As pernas ainda atravessam as anáguas na corrida e no ataque; a saia continua seguindo os quadris sem resposta física assada.",
+      "Os acabamentos separados de cada perna dos bloomers deixaram de receber a coxa oposta. A renda chegou a razão máxima de aresta 1,00248 nas amostras; o corpo e a entreperna conservam exatamente as medições do v084, ainda com deformação excessiva.",
+      "A auditoria acompanha os 648 vértices reais de cada punho por sua posição baricêntrica no tecido: a distância máxima da junção chega a 3,46 mm, com aumento máximo de 2,81 mm. Costuras, contato e todas as poses ainda precisam de refinamento.",
+      "O v085 foi rejeitado porque melhorou a renda, mas elevou o máximo de esticamento na entreperna de 4,51 para 7,79 na mesma pose de ataque. O checkpoint e seus renders foram preservados localmente.",
+      "Decote, microfranzidos, canais do corset, cascatas diagonais das anáguas, trama e acabamento ainda diferem da foto própria. As mangas continuam esticando nas poses fortes.",
+      "O salto usa IK em chaves plantadas; contato real dos pés, encaixe nas botas, poses intermediárias, transições de gameplay e colisões entre as camadas continuam pendentes."
+    ],
+    "whole": [
+      "O exterior inteiro mantém sua geometria, atlas e detalhes Tripo originais nas quatro vistas. Silhueta, cabelo, rosto, dobras, materiais e ornamentos ainda precisam do acabamento e da comparação detalhada de cada ficha.",
+      "As quatro ações deformam o exterior no mesmo esqueleto da fundação. A abertura das pernas foi ajustada a partir das malhas atuais; isso não comprova contato dos pés ou contenção das meias nas botas.",
+      "Nas poses de caminhada, corrida e ataque aparecem superfícies muito esticadas junto às mãos e luvas, ligadas à região lateral da saia. É necessário diagnosticar a malha e os pesos mantendo o conjunto inteiro, sem extrair camadas substitutas.",
+      "As coxas levantadas entram na saia durante a corrida e o ataque. O exterior continua sem resposta física secundária e sem colisão validada com corpo ou camadas inferiores.",
+      "A folha de poses usa três amostras por ação. Ela mostra defeitos concretos e não aprova movimento em todos os quadros, rig final ou prontidão para o jogo.",
+      "O GLB do exterior é idêntico byte a byte ao v084. As suas quatro vistas e doze poses conservam essa revisão real anterior; esta correção altera apenas os acabamentos da fundação."
+    ]
+  }
+}
