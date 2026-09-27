@@ -331,6 +331,46 @@ if bloomers:
                                     'actualClothSolvers':expected_cloth,'bindingVerified':True,
                                     'rigPresent':False,'motionVerified':False})
     print('FOUNDATION_LOWER_CONSTRUCTION_VERIFIED',json.dumps(lower_construction),flush=True)
+garter_details=[]
+if record.get('garterCupConstruction'):
+    details=[o for o in objects.values() if o.get('garterOwnPhotoDetail')]
+    cups=[objects[p['mesh']] for p in record['garterCupConstruction']]
+    for obj in cups+details:
+        cup=obj if obj in cups else obj.parent
+        if cup not in cups:
+            raise ValueError('The garter detail has no actual cup carrier.')
+        stocking=cup.parent
+        target=bpy.data.objects[stocking['skinCage']]
+        if not any(m.type=='SURFACE_DEFORM' and m.target==target and m.is_bound for m in obj.modifiers):
+            raise ValueError('An actual garter detail is not bound to its stocking carrier.')
+        evaluated=obj.evaluated_get(bpy.context.evaluated_depsgraph_get())
+        mesh=evaluated.to_mesh()
+        mesh.calc_loop_triangles()
+        uv=mesh.uv_layers.get('UVMap')
+        if not uv:
+            raise ValueError('A refined garter piece has no evaluated UVs.')
+        values=np.asarray([d.uv[:] for d in uv.data])
+        loops=np.asarray([t.loops[:] for t in mesh.loop_triangles])
+        a,b,c=values[loops[:,0]],values[loops[:,1]],values[loops[:,2]]
+        ab,ac=b-a,c-a
+        fraction=float(np.mean(np.abs(ab[:,0]*ac[:,1]-ab[:,1]*ac[:,0])*.5>1e-12))
+        evaluated.to_mesh_clear()
+        if not np.isfinite(values).all() or fraction<.95:
+            raise ValueError('Excessive collapsed UV triangles in an actual garter detail: '+obj.name)
+        topology=holes(obj.data)
+        if obj in cups and (topology['components']!=1 or len(boundary_loops(obj.data))!=2):
+            raise ValueError('A refined cup lost its continuous open garment topology.')
+        if obj.get('actualSewingDashes') and (topology['components']!=obj['actualSewingDashes']
+                or topology['eulerCharacteristic']!=2*obj['actualSewingDashes']):
+            raise ValueError('The visible sewing dashes are not actual closed thread geometry.')
+        garter_details.append({'mesh':obj.name,'cup':cup.name,'actualSkinCarrier':target.name,
+            'bindingVerified':True,'measuredFromActualMesh':True,
+            'uvNonDegenerateTriangleFraction':fraction,'rawTopology':topology,
+            'actualSewingDashes':int(obj.get('actualSewingDashes',0)),
+            'rigPresent':False,'motionVerified':False})
+    if len(details)!=record['addedInternalPieces']:
+        raise ValueError('A newly authored garter piece escaped the actual detail audit.')
+    print('FOUNDATION_GARTER_DETAILS_VERIFIED',len(garter_details),flush=True)
 roots=[o for o in objects.values() if o.parent is None or o.parent.name not in objects]
 def descendants(support):
     family={support.name}
@@ -380,6 +420,7 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'petticoatSolverPartitionAudit':petticoat_partition,
         'actualLowerConstructionAudit':lower_construction,
         'actualStockingAnatomyAudit':stocking_anatomy,
+        'actualGarterDetailAudit':garter_details,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,
         'savedModelUnchanged':True,'rigPresent':False,'motionVerified':False,

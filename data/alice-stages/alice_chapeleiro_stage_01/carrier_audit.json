@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "18fab7e7dcf09db1ea6c99caeba4ba0d0df0f04a73468b308bac4080b6984fdd",
+  "editableBlendSha256": "7abf1cdac579adbe9e755299629cce48d3d56fd410f99939f45b827be19ea6c7",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -2354,7 +2354,7 @@
       "follower": "01 / left garter / pointed thigh reinforcement",
       "measuredVertices": 2880,
       "medianDelta": [
-        0.006000000052154064,
+        0.0059999991208314896,
         0.0,
         0.0
       ],
@@ -2894,6 +2894,314 @@
       "maximumTranslationError": 5.17815351361306e-10,
       "frame": 1,
       "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / narrow top facing band",
+      "measuredVertices": 960,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / top facing stitch 0",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.0059999991208314896,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / top facing stitch 1",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / curved panel seam -1",
+      "measuredVertices": 296,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / curved panel seam 1",
+      "measuredVertices": 296,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / curved seam sewing threads",
+      "measuredVertices": 1200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / side bow folded wing -1",
+      "measuredVertices": 254,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / side bow hanging ribbon -1",
+      "measuredVertices": 262,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / side bow folded wing 1",
+      "measuredVertices": 254,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / side bow hanging ribbon 1",
+      "measuredVertices": 262,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / left garter / side bow wrapped knot",
+      "measuredVertices": 277,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / narrow top facing band",
+      "measuredVertices": 960,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / top facing stitch 0",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / top facing stitch 1",
+      "measuredVertices": 1032,
+      "medianDelta": [
+        0.006000000052154064,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / curved panel seam -1",
+      "measuredVertices": 296,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / curved panel seam 1",
+      "measuredVertices": 296,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / curved seam sewing threads",
+      "measuredVertices": 1200,
+      "medianDelta": [
+        0.006000000983476639,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 9.834766386690452e-10,
+      "maximumTranslationError": 9.834766386690452e-10,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / side bow folded wing -1",
+      "measuredVertices": 254,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / side bow hanging ribbon -1",
+      "measuredVertices": 262,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / side bow folded wing 1",
+      "measuredVertices": 254,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / side bow hanging ribbon 1",
+      "measuredVertices": 262,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
+    },
+    {
+      "support": "01 / ivory fitted boned corset / pointed front",
+      "follower": "01 / right garter / side bow wrapped knot",
+      "measuredVertices": 277,
+      "medianDelta": [
+        0.00599999725818634,
+        0.0,
+        0.0
+      ],
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
+      "frame": 1,
+      "clothAnimationVerified": false
     }
   ],
   "actualBlouseSeamAudit": [
@@ -3276,13 +3584,399 @@
       "clothCollisionVerified": false
     }
   ],
-  "actualInternalObjects": 205,
+  "actualGarterDetailAudit": [
+    {
+      "mesh": "01 / left garter / pointed thigh reinforcement",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 0,
+        "openSurfaceHoles": 1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / pointed thigh reinforcement",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 0,
+        "openSurfaceHoles": 1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / narrow top facing band",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 0,
+        "openSurfaceHoles": 1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / top facing stitch 0",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9941747572815534,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / top facing stitch 1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9941747572815534,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved panel seam -1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9795918367346939,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved panel seam 1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9795918367346939,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / curved seam sewing threads",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 40,
+        "eulerCharacteristic": 80,
+        "openSurfaceHoles": -40
+      },
+      "actualSewingDashes": 40,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow folded wing -1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow hanging ribbon -1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow folded wing 1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow hanging ribbon 1",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / left garter / side bow wrapped knot",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / narrow top facing band",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 0,
+        "openSurfaceHoles": 1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / top facing stitch 0",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9941747572815534,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / top facing stitch 1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9941747572815534,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved panel seam -1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9795918367346939,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved panel seam 1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 0.9795918367346939,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 2,
+        "openSurfaceHoles": -1
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / curved seam sewing threads",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 40,
+        "eulerCharacteristic": 80,
+        "openSurfaceHoles": -40
+      },
+      "actualSewingDashes": 40,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow folded wing -1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow hanging ribbon -1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow folded wing 1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow hanging ribbon 1",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / side bow wrapped knot",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "actualSkinCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "bindingVerified": true,
+      "measuredFromActualMesh": true,
+      "uvNonDegenerateTriangleFraction": 1.0,
+      "rawTopology": {
+        "components": 1,
+        "eulerCharacteristic": 1,
+        "openSurfaceHoles": 0
+      },
+      "actualSewingDashes": 0,
+      "rigPresent": false,
+      "motionVerified": false
+    }
+  ],
+  "actualInternalObjects": 227,
   "attachmentRoots": [
     "01 / long ivory gathered petticoat",
     "01 / black petticoat continuous waist support",
     "01 / ivory fitted boned corset / pointed front"
   ],
-  "verifiedFollowers": 202,
+  "verifiedFollowers": 224,
   "allActualFollowersCovered": true,
   "savedModelUnchanged": true,
   "rigPresent": false,

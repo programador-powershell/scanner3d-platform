@@ -287,6 +287,17 @@ lista os 35 modelos diretamente do GitHub, sem banco Supabase.
 
 ## Auditoria exigida antes da conclusão
 
+`refine_chapeleiro_garter_cups.py` arredonda os dois reforços das ligas sem
+deslocar suas bordas de união. As costuras centrais são reposicionadas sobre
+o tecido e seus vínculos são refeitos. Costuras curvas com pontos reais,
+faixas superiores e laços laterais com fitas planas seguem os suportes das
+meias. O enquadramento da referência isolada inclui agora os dois reforços,
+o cinto e as fitas; a foto original inteira continua ao lado das quatro vistas.
+O auditador mede o UV e os vínculos das peças novas e verifica que os pontos
+de costura são volumes fechados. O primeiro checkpoint teve tampas de fios
+com UV colapsado e foi preservado localmente para rastrear a correção.
+Essas verificações não aprovam tensão do tecido, rendas, rig ou movimento.
+
 O refinamento `refine_chapeleiro_stocking_anatomy.py` conserva a topologia conectada
 das duas meias e suas aberturas na coxa. Mede o eixo das botas no mestre inteiro,
 sem extrair nem modificar sua geometria. O primeiro ensaio incluiu a saia na
