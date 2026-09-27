@@ -1,0 +1,180 @@
+{
+  "status": "in_refinement",
+  "publicationUnit": "whole Alice character with dress",
+  "model": {
+    "file": "whole/alice_chapeleiro_dress_uv4k.glb",
+    "sha256": "276a40673f2c0763326950c5592d3edf8bea731cc33106a4e76ee4a85f02b3a8",
+    "bytes": 85569832
+  },
+  "sourcePhoto": {
+    "file": "whole/source_photo.png",
+    "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+    "bytes": 2098720
+  },
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "skins": 1,
+  "skinJoints": 209,
+  "nativeTriangles": 302532,
+  "garmentTextureResolution": [
+    4096,
+    4096
+  ],
+  "garmentUvTexCoord": 1,
+  "originalNormalAndOrmTexCoord": 0,
+  "embeddedGarmentAlbedoPixelsExact": true,
+  "newlyProjectedSleeveFaces": 564,
+  "assignedGarmentPolygons": 65626,
+  "visibleFaceOcclusionChecked": true,
+  "conflictingUvOverlapTexels": 0,
+  "originalGeometryAndSkinWeightsPreserved": true,
+  "sourceProtectedPixelMaximumDifference": 0,
+  "sourceCamerasIdentical": true,
+  "actualGlbReimport": {
+    "meshes": 1,
+    "skeletons": 1,
+    "bones": 209,
+    "maximumSurfaceErrorMeters": 6.980063744776999e-07
+  },
+  "fullLocalEditableBytes": 149334303,
+  "fullLocalEditableSha256": "5da7df8c1059bc24cbb057803c39cbcb1555871a6b6e174b0b5485adcd45da40",
+  "completeAuthoringLayersRetainedLocally": true,
+  "allLayersFinished": false,
+  "characterFidelityVerified": false,
+  "clothMotionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalTripoCreditsConsumed": 0,
+  "remainingWork": [
+    "Remaining small unprojected garment folds and profile transitions need local review.",
+    "Original sculpted ruffles, embroidery relief and normal-map artifacts still require geometry and PBR polish against the own-stage photo.",
+    "Canonical face and hair UV refinement remain pending.",
+    "Interior layers, cloth collision and walk/run/jump/attack deformation are still in refinement."
+  ],
+  "artifacts": [
+    {
+      "file": "whole/alice_chapeleiro_dress_uv4k.glb",
+      "sha256": "276a40673f2c0763326950c5592d3edf8bea731cc33106a4e76ee4a85f02b3a8",
+      "bytes": 85569832
+    },
+    {
+      "file": "whole/source_photo.png",
+      "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+      "bytes": 2098720
+    },
+    {
+      "file": "projection_sources/front.png",
+      "sha256": "d85a3babfb948cb3b1da4e6635f82de64b0abc0c10017867aa937a4d59f788df",
+      "bytes": 1937569
+    },
+    {
+      "file": "projection_sources/front_prompt.txt",
+      "sha256": "81dd27ef2e4f2e6332ddb3ea0a4f9ec42c1f37b9300b7ec065c9d1ac3f3395c9",
+      "bytes": 2178
+    },
+    {
+      "file": "projection_sources/left.png",
+      "sha256": "00d30d1bbcd96166205561a6447aee1f6c9abfcc294b33a641adc578308f0e5d",
+      "bytes": 1549391
+    },
+    {
+      "file": "projection_sources/left_prompt.txt",
+      "sha256": "547a1f9ae88e82278fa887bebba72637afcb55efa64413a6f64c89f04d86093b",
+      "bytes": 1919
+    },
+    {
+      "file": "projection_sources/right.png",
+      "sha256": "7e7c7ce47800940004e4dbcb346f70188a0690e75fbadedb8ad25d00883454a7",
+      "bytes": 1532960
+    },
+    {
+      "file": "projection_sources/right_prompt.txt",
+      "sha256": "981e5cdfa74ef10ff19e9272d4f6dd14321f566ab60be01493d1df60500adea0",
+      "bytes": 1845
+    },
+    {
+      "file": "projection_sources/back.png",
+      "sha256": "a76a2bb494a169d35f813806321ad77da4a3c8f8a05353d754f8ee4b1b9de406",
+      "bytes": 1813123
+    },
+    {
+      "file": "projection_sources/back_prompt.txt",
+      "sha256": "fa9c4c8990c28897b2a4c9e16061f60fc74be3d04072bde944e58feb50ef2fbd",
+      "bytes": 1996
+    },
+    {
+      "file": "whole/comparisons/front_photo_before_after.png",
+      "sha256": "7ed6f267b23a31f3f633a8a68b944dc3a4a35dd4eeabccce840a3bac8563ab9d",
+      "bytes": 3390802
+    },
+    {
+      "file": "whole/before/front.png",
+      "sha256": "d3ee9766fc7514f83562ba584768bc8a4e079218beda7e2892b9b60a3dfe0e12",
+      "bytes": 1448208
+    },
+    {
+      "file": "whole/comparisons/left_photo_before_after.png",
+      "sha256": "3b26e2cf055b7a08b9b5c5d6168a843f5da2a8347bf1c74eb5e47e7e2466d60c",
+      "bytes": 2890307
+    },
+    {
+      "file": "whole/before/left.png",
+      "sha256": "bd5b4116a97f191bc300bdc057cf30e9ec4fdcea764877921886f21f667cfa85",
+      "bytes": 1151497
+    },
+    {
+      "file": "whole/comparisons/right_photo_before_after.png",
+      "sha256": "856f35d16a0a66f15e0501b093e6233c86b8f83ca6a812978566edf81ee65634",
+      "bytes": 2888752
+    },
+    {
+      "file": "whole/before/right.png",
+      "sha256": "fb59da7d7d44062edf1b59b133b412f39f650562a522178fd01bc1b051106999",
+      "bytes": 1150457
+    },
+    {
+      "file": "whole/comparisons/back_photo_before_after.png",
+      "sha256": "39e647ff3fca6e19779644e5b45b2bf7c58c068a0ac74b59764202ba82972947",
+      "bytes": 3299251
+    },
+    {
+      "file": "whole/before/back.png",
+      "sha256": "77266d26d7395ed88a956f4d16192568c5964111d70b0c3119932199b9e500f2",
+      "bytes": 1444944
+    },
+    {
+      "file": "whole/reimported/front_surface.png",
+      "sha256": "233bc55f312e2e7c11232a5f7e82254165b0c7c2bdb7b1c50b63e35485884f47",
+      "bytes": 1347152
+    },
+    {
+      "file": "whole/reimported/back_surface.png",
+      "sha256": "0f40909ef3f45c73d98f3179836783fdc4484d04e7e3e8205fcc6d898abd6ae0",
+      "bytes": 1322912
+    },
+    {
+      "file": "whole/reimported/front_basecolor.png",
+      "sha256": "4e38b24734a47a6e64b8f914d2fbd1dd37d391b48e54c59d6d03592c87f4c958",
+      "bytes": 1448945
+    },
+    {
+      "file": "whole/reimported/left_basecolor.png",
+      "sha256": "7b829b030606e5d1f37d39fa67c05823fd326ca3d4b07399395fa3195618c9ae",
+      "bytes": 1157202
+    },
+    {
+      "file": "whole/reimported/right_basecolor.png",
+      "sha256": "d07d38a0af8502f2f280e14357e455dc4f9cb47af43996749fc97b2d533e5daa",
+      "bytes": 1169367
+    },
+    {
+      "file": "whole/reimported/back_basecolor.png",
+      "sha256": "56236ede9e5079bc8fd941fac763df61c2ef83a1c87db1336f2cc88a3c8f751f",
+      "bytes": 1418915
+    }
+  ]
+}

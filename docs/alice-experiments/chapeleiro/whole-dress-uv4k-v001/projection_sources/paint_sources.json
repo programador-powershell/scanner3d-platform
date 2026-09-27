@@ -1,0 +1,52 @@
+{
+  "mode": "built-in image_gen edits",
+  "sources": [
+    {
+      "view": "front",
+      "image": "projection_sources/front.png",
+      "sha256": "d85a3babfb948cb3b1da4e6635f82de64b0abc0c10017867aa937a4d59f788df",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "prompt": "projection_sources/front_prompt.txt",
+      "promptSha256": "81dd27ef2e4f2e6332ddb3ea0a4f9ec42c1f37b9300b7ec065c9d1ac3f3395c9"
+    },
+    {
+      "view": "left",
+      "image": "projection_sources/left.png",
+      "sha256": "00d30d1bbcd96166205561a6447aee1f6c9abfcc294b33a641adc578308f0e5d",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "prompt": "projection_sources/left_prompt.txt",
+      "promptSha256": "547a1f9ae88e82278fa887bebba72637afcb55efa64413a6f64c89f04d86093b"
+    },
+    {
+      "view": "right",
+      "image": "projection_sources/right.png",
+      "sha256": "7e7c7ce47800940004e4dbcb346f70188a0690e75fbadedb8ad25d00883454a7",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "prompt": "projection_sources/right_prompt.txt",
+      "promptSha256": "981e5cdfa74ef10ff19e9272d4f6dd14321f566ab60be01493d1df60500adea0"
+    },
+    {
+      "view": "back",
+      "image": "projection_sources/back.png",
+      "sha256": "a76a2bb494a169d35f813806321ad77da4a3c8f8a05353d754f8ee4b1b9de406",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "prompt": "projection_sources/back_prompt.txt",
+      "promptSha256": "fa9c4c8990c28897b2a4c9e16061f60fc74be3d04072bde944e58feb50ef2fbd"
+    }
+  ],
+  "garmentReference": "whole/source_photo.png",
+  "garmentReferenceSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "paintingsAreProjectionSourcesOnly": true
+}
