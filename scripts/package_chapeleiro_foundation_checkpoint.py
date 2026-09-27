@@ -13,6 +13,7 @@ parser.add_argument('--comparison', required=True)
 parser.add_argument('--audit', required=True)
 parser.add_argument('--game', required=True)
 parser.add_argument('--part-comparison', action='append', default=[])
+parser.add_argument('--exported-contact-audit')
 args = parser.parse_args()
 sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
 generation = json.loads(Path(args.generation).read_text(encoding='utf-8'))
@@ -60,6 +61,28 @@ if generation.get('garterCupConstruction'):
             not p['bindingVerified'] or not p['measuredFromActualMesh']
             or p['uvNonDegenerateTriangleFraction']<.95 for p in details)):
         raise ValueError('Requires actual refined cup, sewing-thread and ribbon attachment/UV evidence.')
+if generation.get('garterCupDrapeConstruction'):
+    drapes=audit.get('actualGarterDrapeAudit',[])
+    if ({p['mesh'] for p in drapes}!={p['mesh'] for p in generation['garterCupDrapeConstruction']}
+            or any(not p['measuredFromActualCage'] or not p['originalTopAndHemVerified']
+                   or not p['originalTopFacingVerified'] or p['minimumTriangleArea']<=1e-12 for p in drapes)):
+        raise ValueError('Requires actual sculpted cup topology, original rims and facing geometry.')
+if generation.get('garterFrontWebConstruction'):
+    webs=audit.get('actualGarterWebContactAudit',[])
+    if ({p['mesh'] for p in webs}!={p['mesh'] for p in generation['garterFrontWebConstruction']}
+            or any(not p['measuredFromEvaluatedGeometry'] or not p['restSeparationVerified']
+                   or p['minimumMeasuredFrontClearance']<.00015 for p in webs)):
+        raise ValueError('Requires actual evaluated separation of both webs from their sculpted cups.')
+    if not args.exported_contact_audit:
+        raise ValueError('Requires an independent actual exported GLB rest-contact audit.')
+    exported_contacts=json.loads(Path(args.exported_contact_audit).read_text(encoding='utf-8'))
+    if (exported_contacts['modelSha256']!=generation['modelSha256']
+            or not exported_contacts.get('measuredActualExportedGeometry')
+            or not exported_contacts.get('sampledRestClearancePassed')
+            or {p['side'] for p in exported_contacts.get('contacts',[])}!={'left','right'}
+            or any(p['minimumClearance']<.00015 or p['sampledContacts']<15
+                   for p in exported_contacts['contacts'])):
+        raise ValueError('The actual exported web/cup rest separation failed.')
 if generation.get('petticoatSimulationCages'):
     partition=audit.get('petticoatSolverPartitionAudit',[])
     expected={p['name'] for p in generation['petticoatSimulationCages']}
@@ -135,6 +158,8 @@ copy(generation['editableBlend'],blend_path)
 copy(generation['sourcePhoto'],docs/'source_photo.png')
 copy(comparison['comparisonBoard']['file'],docs/'photo_vs_geometry.jpg')
 copy(args.audit,docs/'carrier_audit.json')
+if args.exported_contact_audit:
+    copy(args.exported_contact_audit,docs/'exported_contact_diagnostic.json')
 for name, artifact in comparison['renders'].items():
     copy(artifact['file'],docs/(name+'.png'))
 portable_parts=[]
@@ -172,6 +197,8 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
         'newInternalPieces':generation['pieces'],'visibleDifferences':comparison['visibleDifferences'],
         'stockingAnatomyConstruction':generation.get('stockingAnatomyConstruction',[]),
         'garterCupConstruction':generation.get('garterCupConstruction',[]),
+        'garterCupDrapeConstruction':generation.get('garterCupDrapeConstruction',[]),
+        'garterFrontWebConstruction':generation.get('garterFrontWebConstruction',[]),
         'isolatedPartReviews':portable_parts,
         'attachmentAudit':{'file':'Docs/alice-variants/chapeleiro/foundation/carrier_audit.json',
                            'sha256':sha(args.audit),'frame':1,'verifiedFollowers':audit['verifiedFollowers'],
@@ -182,9 +209,15 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                            'actualLowerConstructionAudit':audit.get('actualLowerConstructionAudit',[]),
                            'actualStockingAnatomyAudit':audit.get('actualStockingAnatomyAudit',[]),
                            'actualGarterDetailAudit':audit.get('actualGarterDetailAudit',[]),
+                           'actualGarterDrapeAudit':audit.get('actualGarterDrapeAudit',[]),
+                           'actualGarterWebContactAudit':audit.get('actualGarterWebContactAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False,'nextVariantMayStart':False}
+if args.exported_contact_audit:
+    report['exportedRestContactAudit']={'file':'Docs/alice-variants/chapeleiro/foundation/exported_contact_diagnostic.json',
+        'sha256':sha(args.exported_contact_audit),'modelSha256':generation['modelSha256'],
+        'sampledRestClearancePassed':True,'motionVerified':False,'clothCollisionVerified':False}
 (docs/'checkpoint.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 (docs/'README.md').write_text(
     '# Chapeleiro: fundação da ficha 1 em refinamento\n\n'
@@ -217,6 +250,13 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
      'a tensão do tecido, as rendas e a resposta em movimento continuam '
      'pendentes de refinamento e validação.\n\n'
      if generation.get('garterCupConstruction') else '')+
+    ('Os painéis frontais dos reforços foram abaulados e receberam pequenos '
+     'vincos diagonais. A malha de quadriláteros ganhou amostras verticais; '
+     'fios e laços foram transferidos pelas coordenadas das faces reais do '
+     'tecido anterior. As duas bordas e as faixas superiores mantêm sua '
+     'geometria, conferida no editável. Esses volumes ainda exigem comparação '
+     'fina com a foto, ajuste ao corpo e testes de deformação e colisão.\n\n'
+     if generation.get('garterCupDrapeConstruction') else '')+
     'O add-on fornecido pelo usuário é Bystedts Cloth Builder 1.0.1, de Daniel '
     'Bystedt. O arquivo editável contém os grupos originais Post sim cloth / '
     'Solidify / UV unwrap solidified. A cópia carregada recebe a adaptação '

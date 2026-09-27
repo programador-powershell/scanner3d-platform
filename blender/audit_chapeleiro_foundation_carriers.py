@@ -7,6 +7,8 @@ from pathlib import Path
 from collections import Counter, defaultdict
 import bpy
 import numpy as np
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
 
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--generation',required=True)
@@ -331,6 +333,55 @@ if bloomers:
                                     'actualClothSolvers':expected_cloth,'bindingVerified':True,
                                     'rigPresent':False,'motionVerified':False})
     print('FOUNDATION_LOWER_CONSTRUCTION_VERIFIED',json.dumps(lower_construction),flush=True)
+garter_drapes=[]
+for entry in record.get('garterCupDrapeConstruction',[]):
+    cup=objects[entry['mesh']]
+    columns=entry['rawColumns']
+    rim_hash=lambda pts:hashlib.sha256(np.asarray([v.co[:] for v in pts],np.float32).tobytes()).hexdigest()
+    if (len(cup.data.vertices)!=columns*entry['rawRows']
+            or rim_hash(cup.data.vertices[:columns])!=entry['originalTopRimSha256']
+            or rim_hash(cup.data.vertices[-columns:])!=entry['originalHemRimSha256']):
+        raise ValueError('A sculpted garter cup lost its original rim geometry.')
+    for name,expected in entry['originalTopFacingRawHashes'].items():
+        obj=objects[name]
+        values=np.empty(len(obj.data.vertices)*3,np.float32)
+        obj.data.vertices.foreach_get('co',values)
+        actual=hashlib.sha256(values.tobytes()+json.dumps([tuple(p.vertices) for p in obj.data.polygons]).encode()).hexdigest()
+        if actual!=expected:raise ValueError('The original garter facing geometry changed: '+name)
+    cup.data.calc_loop_triangles()
+    values=np.asarray([v.co[:] for v in cup.data.vertices])
+    triangles=np.asarray([t.vertices[:] for t in cup.data.loop_triangles])
+    a,b,c=values[triangles[:,0]],values[triangles[:,1]],values[triangles[:,2]]
+    areas=np.linalg.norm(np.cross(b-a,c-a),axis=1)*.5
+    if not np.isfinite(values).all() or areas.min()<=1e-12:
+        raise ValueError('The sculpted cup has collapsed actual fabric triangles.')
+    garter_drapes.append({'mesh':cup.name,'measuredFromActualCage':True,
+        'originalTopAndHemVerified':True,'originalTopFacingVerified':True,
+        'rawVertices':len(values),'minimumTriangleArea':float(areas.min()),
+        'rigPresent':False,'motionVerified':False})
+garter_webs=[]
+for entry in record.get('garterFrontWebConstruction',[]):
+    cup=objects[entry['cup']]
+    web=objects[entry['mesh']]
+    deps=bpy.context.evaluated_depsgraph_get()
+    evaluated=cup.evaluated_get(deps);mesh=evaluated.to_mesh();mesh.calc_loop_triangles()
+    points=[evaluated.matrix_world @ v.co for v in mesh.vertices]
+    tree=BVHTree.FromPolygons(points,[tuple(t.vertices) for t in mesh.loop_triangles],all_triangles=True)
+    evaluated.to_mesh_clear()
+    evaluated=web.evaluated_get(deps);mesh=evaluated.to_mesh();mesh.calc_loop_triangles()
+    vertices=[evaluated.matrix_world @ v.co for v in mesh.vertices]
+    samples=vertices+[sum((vertices[i] for i in triangle.vertices),Vector())/3 for triangle in mesh.loop_triangles]
+    evaluated.to_mesh_clear()
+    clearances=[]
+    for point in samples:
+        hit,normal,index,distance=tree.ray_cast(Vector((point.x,-.20,point.z)),Vector((0,1,0)),.4)
+        if hit is not None:clearances.append(float(hit.y-point.y))
+    if len(clearances)<15 or min(clearances)<.00015:
+        raise ValueError('The evaluated suspension web intersects its sculpted cup: '+web.name+' '+str(min(clearances,default=0.)))
+    garter_webs.append({'mesh':web.name,'cup':cup.name,'measuredFromEvaluatedGeometry':True,
+        'actualSampledClearances':len(clearances),'minimumMeasuredFrontClearance':min(clearances),
+        'verticesAndTriangleCentroidsSampled':True,'restSeparationVerified':True,
+        'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False})
 garter_details=[]
 if record.get('garterCupConstruction'):
     details=[o for o in objects.values() if o.get('garterOwnPhotoDetail')]
@@ -368,7 +419,9 @@ if record.get('garterCupConstruction'):
             'uvNonDegenerateTriangleFraction':fraction,'rawTopology':topology,
             'actualSewingDashes':int(obj.get('actualSewingDashes',0)),
             'rigPresent':False,'motionVerified':False})
-    if len(details)!=record['addedInternalPieces']:
+    expected_details=set(record.get('garterDetailMeshes',[]))
+    if ((expected_details and {o.name for o in details}!=expected_details)
+            or (not expected_details and len(details)!=record['addedInternalPieces'])):
         raise ValueError('A newly authored garter piece escaped the actual detail audit.')
     print('FOUNDATION_GARTER_DETAILS_VERIFIED',len(garter_details),flush=True)
 roots=[o for o in objects.values() if o.parent is None or o.parent.name not in objects]
@@ -421,6 +474,8 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'actualLowerConstructionAudit':lower_construction,
         'actualStockingAnatomyAudit':stocking_anatomy,
         'actualGarterDetailAudit':garter_details,
+        'actualGarterDrapeAudit':garter_drapes,
+        'actualGarterWebContactAudit':garter_webs,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,
         'savedModelUnchanged':True,'rigPresent':False,'motionVerified':False,

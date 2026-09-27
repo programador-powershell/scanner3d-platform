@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "7abf1cdac579adbe9e755299629cce48d3d56fd410f99939f45b827be19ea6c7",
+  "editableBlendSha256": "4429e5e229f28be066a1908e3ca51193d3bfd23ab7ee3df6b5b8f521c903fb8f",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -2352,7 +2352,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / pointed thigh reinforcement",
-      "measuredVertices": 2880,
+      "measuredVertices": 8256,
       "medianDelta": [
         0.0059999991208314896,
         0.0,
@@ -2450,7 +2450,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / front suspension web",
-      "measuredVertices": 100,
+      "measuredVertices": 570,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2562,7 +2562,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / right garter / pointed thigh reinforcement",
-      "measuredVertices": 2880,
+      "measuredVertices": 8256,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2660,7 +2660,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / right garter / front suspension web",
-      "measuredVertices": 100,
+      "measuredVertices": 570,
       "medianDelta": [
         0.006000000983476639,
         0.0,
@@ -2982,7 +2982,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / side bow folded wing -1",
-      "measuredVertices": 254,
+      "measuredVertices": 259,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3010,7 +3010,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / side bow folded wing 1",
-      "measuredVertices": 254,
+      "measuredVertices": 257,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3024,7 +3024,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / side bow hanging ribbon 1",
-      "measuredVertices": 262,
+      "measuredVertices": 264,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3038,7 +3038,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / left garter / side bow wrapped knot",
-      "measuredVertices": 277,
+      "measuredVertices": 275,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3136,7 +3136,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / right garter / side bow folded wing -1",
-      "measuredVertices": 254,
+      "measuredVertices": 257,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3164,7 +3164,7 @@
     {
       "support": "01 / ivory fitted boned corset / pointed front",
       "follower": "01 / right garter / side bow folded wing 1",
-      "measuredVertices": 254,
+      "measuredVertices": 259,
       "medianDelta": [
         0.00599999725818634,
         0.0,
@@ -3968,6 +3968,54 @@
       "actualSewingDashes": 0,
       "rigPresent": false,
       "motionVerified": false
+    }
+  ],
+  "actualGarterDrapeAudit": [
+    {
+      "mesh": "01 / left garter / pointed thigh reinforcement",
+      "measuredFromActualCage": true,
+      "originalTopAndHemVerified": true,
+      "originalTopFacingVerified": true,
+      "rawVertices": 4128,
+      "minimumTriangleArea": 6.127431601276925e-07,
+      "rigPresent": false,
+      "motionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / pointed thigh reinforcement",
+      "measuredFromActualCage": true,
+      "originalTopAndHemVerified": true,
+      "originalTopFacingVerified": true,
+      "rawVertices": 4128,
+      "minimumTriangleArea": 6.127431601276925e-07,
+      "rigPresent": false,
+      "motionVerified": false
+    }
+  ],
+  "actualGarterWebContactAudit": [
+    {
+      "mesh": "01 / left garter / front suspension web",
+      "cup": "01 / left garter / pointed thigh reinforcement",
+      "measuredFromEvaluatedGeometry": true,
+      "actualSampledClearances": 628,
+      "minimumMeasuredFrontClearance": 0.0003089532256126404,
+      "verticesAndTriangleCentroidsSampled": true,
+      "restSeparationVerified": true,
+      "rigPresent": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "mesh": "01 / right garter / front suspension web",
+      "cup": "01 / right garter / pointed thigh reinforcement",
+      "measuredFromEvaluatedGeometry": true,
+      "actualSampledClearances": 628,
+      "minimumMeasuredFrontClearance": 0.0003287307918071747,
+      "verticesAndTriangleCentroidsSampled": true,
+      "restSeparationVerified": true,
+      "rigPresent": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
     }
   ],
   "actualInternalObjects": 227,

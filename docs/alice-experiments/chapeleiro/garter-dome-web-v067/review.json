@@ -1,0 +1,32 @@
+{
+  "status": "rejected_fidelity",
+  "visibleDifferences": [
+    "O volume frontal está mais abaulado, mas as tiras de suspensão atravessam os reforços e desaparecem no meio deles. O trajeto das tiras e seus suportes precisam acompanhar a nova superfície.",
+    "A renda, os franzidos do cinto e os vincos finos ainda divergem da ficha 1. Este ensaio não tem rig nem ações ou colisões validados."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "f72c1d1e739f6386b0c6967ddd4268b396fa0499c70212b458e8eea62b997254",
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "e4496ee80111e951897ca9eb4a601089cc18980d5741d3f961a024acb8c5989c"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "2b1431f0ea3df4ee3f12e18edfbbf4da34ffa45ded02df32746a6f81cf114486"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "3928e76d272dfebb91c1c14bbace1b27d147ee353a184d6f2c44567e23a3f897"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "8ee44b396506a3e04210ba80a18eefc2a04d0bbd4ecf8b0852d1522972e11322"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "7faae6519a031fbf7907a53f41028af81fa8c1e178c74023774fee13d7ee2717"
+  },
+  "fidelityVerified": false
+}

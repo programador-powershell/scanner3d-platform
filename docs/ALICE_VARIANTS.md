@@ -298,6 +298,25 @@ de costura são volumes fechados. O primeiro checkpoint teve tampas de fios
 com UV colapsado e foi preservado localmente para rastrear a correção.
 Essas verificações não aprovam tensão do tecido, rendas, rig ou movimento.
 
+`refine_chapeleiro_garter_drape.py` trabalha o abaulado frontal e os vincos
+diagonais nos reforços reais da mesma ficha. Refina os quadriláteros na direção
+vertical e transfere os fios e laços existentes pelas faces da superfície
+anterior. O campo de volume preserva as faixas superiores e as bordas de união;
+seus hashes são conferidos no editável reaberto. O ensaio v066 deslocou a faixa
+e não foi publicado; a construção seguinte limita o relevo abaixo dela.
+O ensaio v067 mostrou tiras desaparecendo no novo volume, e o v068 manteve
+penetração residual de cerca de 0,10 mm nos centros das faces. As fotos próprias,
+quatro vistas e rejeições estão em `docs/alice-experiments/chapeleiro/`.
+O v069 acrescenta amostras ao longo da largura das tiras, ajusta seus suportes
+reais e transfere os fechos pela superfície anterior, preservando os encontros
+no cinto e na ponta. Cada tira tem 57 linhas e cinco colunas de vértices.
+`inspect_chapeleiro_garter_contacts.py` mede a projeção das superfícies reais
+do GLB exportado, incluindo vértices e centros dos triângulos; o auditador do
+Blender mede separadamente as malhas avaliadas. Ambos exigem folga positiva
+de pelo menos 0,15 mm nas amostras em repouso.
+O teste de topologia e dos encontros não aprova o caimento, encaixe no corpo,
+pesos de skin, movimentos ou colisões.
+
 O refinamento `refine_chapeleiro_stocking_anatomy.py` conserva a topologia conectada
 das duas meias e suas aberturas na coxa. Mede o eixo das botas no mestre inteiro,
 sem extrair nem modificar sua geometria. O primeiro ensaio incluiu a saia na

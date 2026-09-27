@@ -1,0 +1,33 @@
+{
+  "status": "rejected_fidelity",
+  "visibleDifferences": [
+    "As tiras voltaram a aparecer sobre o volume abaulado, mas a geometria exportada ainda penetra cerca de 0,10 mm no centro de algumas faces. A revisão de repouso foi rejeitada antes da publicação.",
+    "A superfície das tiras tem apenas duas colunas de vértices. As faces atravessam a curvatura transversal do reforço apesar da folga medida nas bordas; a correção precisa acompanhar essa seção.",
+    "Rendas, franzidos, detalhes finos da ficha, encaixe no corpo, rig, ações e colisões em movimento continuam pendentes."
+  ],
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "modelSha256": "6623538b8c6295eeb0da631b863c9d402a43df182545a5c84c1d3850d4e39443",
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "16e912ef5a0a962cec6c32d21a61bea214583f0113487d657d19be0bdad6d49e"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "c2e0c439a9d7c554785ab0867433adb6788e9473ce9bb20b43a6087dd0df0b79"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "dcfc0b0303d2fb4b3f1726d91d11bfd8aafb4c2e513f69b814e49050cf5df0c4"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "9f611bcfd678a4776b912b71a22c2380efdfea1c74882b660832f59752481e4e"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "85f04e62a7e4156a7b776370178f6bc4012942d46a3a8be4dab422b45e636332"
+  },
+  "fidelityVerified": false
+}

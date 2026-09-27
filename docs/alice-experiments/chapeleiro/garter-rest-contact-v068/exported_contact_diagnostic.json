@@ -1,0 +1,178 @@
+{
+  "modelSha256": "6623538b8c6295eeb0da631b863c9d402a43df182545a5c84c1d3850d4e39443",
+  "measuredActualExportedGeometry": true,
+  "contacts": [
+    {
+      "side": "left",
+      "sampledContacts": 334,
+      "worstSamples": [
+        {
+          "clearance": -9.344169598990426e-05,
+          "webPoint": [
+            0.04593543956677119,
+            -0.03597993652025858,
+            0.4763646225134532
+          ],
+          "cupFrontY": -0.03607337821624849,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -8.292367555177982e-05,
+          "webPoint": [
+            0.043450343112150826,
+            -0.03525657455126444,
+            0.4756503999233246
+          ],
+          "cupFrontY": -0.03533949822681622,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -7.530312533625405e-05,
+          "webPoint": [
+            0.04607995351155599,
+            -0.03419186050693194,
+            0.47419967254002887
+          ],
+          "cupFrontY": -0.03426716363226819,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -2.8865597668660536e-05,
+          "webPoint": [
+            0.045789855221907295,
+            -0.037655800580978394,
+            0.47849904497464496
+          ],
+          "cupFrontY": -0.037684666178647054,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -2.7364561737394655e-05,
+          "webPoint": [
+            0.043305193384488426,
+            -0.036955652137597404,
+            0.4777889351050059
+          ],
+          "cupFrontY": -0.0369830166993348,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 7.229308276290869e-05,
+          "webPoint": [
+            0.04359465713302294,
+            -0.033586349338293076,
+            0.47346315781275433
+          ],
+          "cupFrontY": -0.03351405625553017,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 8.279768598384168e-05,
+          "webPoint": [
+            0.04564309120178223,
+            -0.03907756507396698,
+            0.4806226889292399
+          ],
+          "cupFrontY": -0.03899476738798314,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 0.00011511232484052308,
+          "webPoint": [
+            0.043158801893393196,
+            -0.038452653835217156,
+            0.47991591691970825
+          ],
+          "cupFrontY": -0.03833754151037663,
+          "sampleKind": "triangle_centroid"
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sampledContacts": 336,
+      "worstSamples": [
+        {
+          "clearance": -0.00010114409333165236,
+          "webPoint": [
+            -0.04339457303285599,
+            -0.03583220640818278,
+            0.4763643244902293
+          ],
+          "cupFrontY": -0.03593335050151443,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -9.154372642436459e-05,
+          "webPoint": [
+            -0.04597636933128039,
+            -0.03539634123444557,
+            0.47565000255902606
+          ],
+          "cupFrontY": -0.035487884960869936,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -7.157309096832848e-05,
+          "webPoint": [
+            -0.04583014423648516,
+            -0.03710440670450529,
+            0.4777887761592865
+          ],
+          "cupFrontY": -0.037175979795473615,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": -6.16511209156137e-05,
+          "webPoint": [
+            -0.04324750602245331,
+            -0.037477598836024605,
+            0.4784988760948181
+          ],
+          "cupFrontY": -0.03753924995694022,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 2.0550270574501428e-05,
+          "webPoint": [
+            -0.04568218688170115,
+            -0.03860082601507505,
+            0.47991559902826947
+          ],
+          "cupFrontY": -0.03858027574450055,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 3.912900242281775e-05,
+          "webPoint": [
+            -0.043539238472779594,
+            -0.03418250381946564,
+            0.47419921557108563
+          ],
+          "cupFrontY": -0.03414337481704282,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 5.6015272653892056e-05,
+          "webPoint": [
+            -0.04309950272242228,
+            -0.03888277585307757,
+            0.48062222202618915
+          ],
+          "cupFrontY": -0.038826760580423676,
+          "sampleKind": "triangle_centroid"
+        },
+        {
+          "clearance": 8.252104387845849e-05,
+          "webPoint": [
+            -0.046120318273703255,
+            -0.03371055300037066,
+            0.4734627703825633
+          ],
+          "cupFrontY": -0.0336280319564922,
+          "sampleKind": "triangle_centroid"
+        }
+      ]
+    }
+  ]
+}
