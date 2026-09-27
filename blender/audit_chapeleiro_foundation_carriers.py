@@ -275,6 +275,7 @@ for obj in objects.values():
         apertures.append(result)
         print('FOUNDATION_APERTURES_VERIFIED',json.dumps(result),flush=True)
 lower_construction=[]
+stocking_anatomy=[]
 bloomers=[o for o in objects.values() if o.get('role')=='foundation_bloomers']
 if bloomers:
     if len(bloomers)!=1:
@@ -297,6 +298,26 @@ if bloomers:
             raise ValueError('The stocking foot must be closed with outward faces and one thigh opening.')
         lower_construction.append({'mesh':obj.name,**topology,'boundaryLoops':len(boundary),
                                     'closedToeVerified':True,'outwardLegFacesVerified':True,'motionVerified':False})
+        if record.get('stockingAnatomyConstruction'):
+            raw=np.asarray([v.co[:] for v in obj.data.vertices])
+            if raw.shape!=(4289,3) or not np.isfinite(raw).all():
+                raise ValueError('The refined stocking lost its connected ring topology.')
+            obj.data.calc_loop_triangles()
+            triangles=np.asarray([t.vertices[:] for t in obj.data.loop_triangles])
+            area=np.linalg.norm(np.cross(raw[triangles[:,1]]-raw[triangles[:,0]],
+                                        raw[triangles[:,2]]-raw[triangles[:,0]]),axis=1)*.5
+            if float(area.min())<=1e-12:
+                raise ValueError('The refined foot contains collapsed triangles.')
+            rings=raw[:-1].reshape(67,64,3)
+            foot=rings[30:].reshape(-1,3)
+            centers=rings.mean(axis=1)
+            stocking_anatomy.append({'mesh':obj.name,'measuredFromActualCage':True,
+                'connectedFootVerified':True,'minimumTriangleArea':float(area.min()),
+                'footBounds':{'min':foot.min(axis=0).tolist(),'max':foot.max(axis=0).tolist()},
+                'measuredCenterline':centers[::6].tolist(),
+                'ballSectionWidth':float(np.ptp(rings[54,:,0])),
+                'closedToeVerified':True,'rigPresent':False,'bootContainmentVerified':False,
+                'fidelityVerified':False,'clothCollisionVerified':False})
     for entry in record.get('additionalSimulationCages',[])+record.get('additionalSkinCages',[]):
         cage=bpy.data.objects[entry['name']]
         visible=objects[entry['visibleFabric']]
@@ -358,6 +379,7 @@ report={'stage':'alice_chapeleiro_stage_01','editableBlendSha256':record['editab
         'blouseSolverPartitionAudit':solver_partition,
         'petticoatSolverPartitionAudit':petticoat_partition,
         'actualLowerConstructionAudit':lower_construction,
+        'actualStockingAnatomyAudit':stocking_anatomy,
         'actualInternalObjects':len(objects),'attachmentRoots':[o.name for o in roots],
         'verifiedFollowers':len(covered),'allActualFollowersCovered':True,
         'savedModelUnchanged':True,'rigPresent':False,'motionVerified':False,

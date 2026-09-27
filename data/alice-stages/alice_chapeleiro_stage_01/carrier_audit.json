@@ -1,6 +1,6 @@
 {
   "stage": "alice_chapeleiro_stage_01",
-  "editableBlendSha256": "94b4ca419e42bda41a4469b183462dc32f29f5f042e87d620ad4bb76a55008b8",
+  "editableBlendSha256": "18fab7e7dcf09db1ea6c99caeba4ba0d0df0f04a73468b308bac4080b6984fdd",
   "actualApertureAudit": [
     {
       "components": 54,
@@ -2172,7 +2172,7 @@
       "follower": "01 / left stocking / fitted leg ankle and closed toe",
       "measuredVertices": 8578,
       "medianDelta": [
-        0.006000000983476639,
+        0.00599999725818634,
         0.0,
         0.0
       ],
@@ -2186,7 +2186,7 @@
       "follower": "01 / left stocking / horizontal knitted bands",
       "measuredVertices": 12288,
       "medianDelta": [
-        0.006000000983476639,
+        0.00599999725818634,
         0.0,
         0.0
       ],
@@ -2200,12 +2200,12 @@
       "follower": "01 / left stocking / sewn front panel seam",
       "measuredVertices": 248,
       "medianDelta": [
-        0.006000000983476639,
+        0.00599999725818634,
         0.0,
         0.0
       ],
-      "p95TranslationError": 9.834766386690452e-10,
-      "maximumTranslationError": 9.834766386690452e-10,
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
       "frame": 1,
       "clothAnimationVerified": false
     },
@@ -2214,12 +2214,12 @@
       "follower": "01 / left stocking / sewn rear panel seam",
       "measuredVertices": 248,
       "medianDelta": [
-        0.006000000983476639,
+        0.00599999725818634,
         0.0,
         0.0
       ],
-      "p95TranslationError": 9.834766386690452e-10,
-      "maximumTranslationError": 9.834766386690452e-10,
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
       "frame": 1,
       "clothAnimationVerified": false
     },
@@ -2228,7 +2228,7 @@
       "follower": "01 / right stocking / fitted leg ankle and closed toe",
       "measuredVertices": 8578,
       "medianDelta": [
-        0.006000000983476639,
+        0.00599999725818634,
         0.0,
         0.0
       ],
@@ -2242,7 +2242,7 @@
       "follower": "01 / right stocking / horizontal knitted bands",
       "measuredVertices": 12288,
       "medianDelta": [
-        0.006000000983476639,
+        0.006000000052154064,
         0.0,
         0.0
       ],
@@ -2260,8 +2260,8 @@
         0.0,
         0.0
       ],
-      "p95TranslationError": 9.834766386690452e-10,
-      "maximumTranslationError": 9.834766386690452e-10,
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
       "frame": 1,
       "clothAnimationVerified": false
     },
@@ -2274,8 +2274,8 @@
         0.0,
         0.0
       ],
-      "p95TranslationError": 9.834766386690452e-10,
-      "maximumTranslationError": 9.834766386690452e-10,
+      "p95TranslationError": 2.741813659792869e-09,
+      "maximumTranslationError": 2.741813659792869e-09,
       "frame": 1,
       "clothAnimationVerified": false
     },
@@ -2354,7 +2354,7 @@
       "follower": "01 / left garter / pointed thigh reinforcement",
       "measuredVertices": 2880,
       "medianDelta": [
-        0.0059999991208314896,
+        0.006000000052154064,
         0.0,
         0.0
       ],
@@ -2424,7 +2424,7 @@
       "follower": "01 / left garter / gathered thigh cup frill",
       "measuredVertices": 1344,
       "medianDelta": [
-        0.0059999991208314896,
+        0.006000000052154064,
         0.0,
         0.0
       ],
@@ -2578,7 +2578,7 @@
       "follower": "01 / right garter / cup bound edge 0",
       "measuredVertices": 1032,
       "medianDelta": [
-        0.006000000983476639,
+        0.006000000052154064,
         0.0,
         0.0
       ],
@@ -3100,6 +3100,180 @@
       "bindingVerified": true,
       "rigPresent": false,
       "motionVerified": false
+    }
+  ],
+  "actualStockingAnatomyAudit": [
+    {
+      "mesh": "01 / left stocking / fitted leg ankle and closed toe",
+      "measuredFromActualCage": true,
+      "connectedFootVerified": true,
+      "minimumTriangleArea": 3.1364072838879764e-08,
+      "footBounds": {
+        "min": [
+          0.06777587532997131,
+          -0.0636446624994278,
+          0.0060196528211236
+        ],
+        "max": [
+          0.11195690929889679,
+          0.035483937710523605,
+          0.07699999958276749
+        ]
+      },
+      "measuredCenterline": [
+        [
+          0.04535321501316503,
+          0.004999999924621079,
+          0.515999972820282
+        ],
+        [
+          0.04535321512958035,
+          0.0020000000949949026,
+          0.4300000071525574
+        ],
+        [
+          0.05829517199890688,
+          -0.003724828260601498,
+          0.3100000023841858
+        ],
+        [
+          0.06759710918413475,
+          0.002000000276893843,
+          0.24500000476837158
+        ],
+        [
+          0.08080950245494023,
+          0.008999999496154487,
+          0.1599999964237213
+        ],
+        [
+          0.08251863706391305,
+          0.015316351273213513,
+          0.07699999958276749
+        ],
+        [
+          0.08802415477111936,
+          0.013530630611057859,
+          0.049074072390794754
+        ],
+        [
+          0.09045690286438912,
+          0.00545238754057209,
+          0.02825925880461
+        ],
+        [
+          0.09045690321363509,
+          -0.013000000268220901,
+          0.01899999941815622
+        ],
+        [
+          0.09045690356288105,
+          -0.03507233038544655,
+          0.018999999432708137
+        ],
+        [
+          0.09045690356288105,
+          -0.05264466255903244,
+          0.018999999403604306
+        ],
+        [
+          0.09045690228231251,
+          -0.0636446624994278,
+          0.01899999938905239
+        ]
+      ],
+      "ballSectionWidth": 0.041966475546360016,
+      "closedToeVerified": true,
+      "rigPresent": false,
+      "bootContainmentVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "mesh": "01 / right stocking / fitted leg ankle and closed toe",
+      "measuredFromActualCage": true,
+      "connectedFootVerified": true,
+      "minimumTriangleArea": 3.1364072838879764e-08,
+      "footBounds": {
+        "min": [
+          -0.11474873125553131,
+          -0.06364025175571442,
+          0.0060196528211236
+        ],
+        "max": [
+          -0.07048027962446213,
+          0.035483937710523605,
+          0.07699999958276749
+        ]
+      },
+      "measuredCenterline": [
+        [
+          -0.04534421116113663,
+          0.004999999924621079,
+          0.515999972820282
+        ],
+        [
+          -0.045344211044721305,
+          0.0020000000949949026,
+          0.4300000071525574
+        ],
+        [
+          -0.06001320970244706,
+          -0.0037248303269734606,
+          0.3100000023841858
+        ],
+        [
+          -0.07067064568400383,
+          0.002000000276893843,
+          0.24500000476837158
+        ],
+        [
+          -0.083247589180246,
+          0.008999999496154487,
+          0.1599999964237213
+        ],
+        [
+          -0.08514224004466087,
+          0.015316351273213513,
+          0.07699999958276749
+        ],
+        [
+          -0.09077072096988559,
+          0.013530630611057859,
+          0.049074072390794754
+        ],
+        [
+          -0.0932487027021125,
+          0.00545238754057209,
+          0.02825925880461
+        ],
+        [
+          -0.09324870200362056,
+          -0.013000000268220901,
+          0.01899999941815622
+        ],
+        [
+          -0.0932487027021125,
+          -0.03507012501358986,
+          0.018999999432708137
+        ],
+        [
+          -0.09324870293494314,
+          -0.05264025181531906,
+          0.018999999403604306
+        ],
+        [
+          -0.0932487032841891,
+          -0.06364025175571442,
+          0.01899999938905239
+        ]
+      ],
+      "ballSectionWidth": 0.04237949103116989,
+      "closedToeVerified": true,
+      "rigPresent": false,
+      "bootContainmentVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
     }
   ],
   "actualInternalObjects": 205,

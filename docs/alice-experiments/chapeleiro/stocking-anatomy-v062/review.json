@@ -1,0 +1,40 @@
+{
+  "status": "rejected_fidelity",
+  "sourcePhoto": {
+    "file": "source_photo.png",
+    "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+  },
+  "modelSha256": "ce6a5af7fdebbb6934d78846e617cea03eb6bd00a565eb5426ff8ce5112b57c0",
+  "editableBlendSha256": "e9ac845e4d6155de6c27445fcc9ee1d7648ae83b6f8c1c1e7f6c670f4da640bf",
+  "localGeometryPreserved": true,
+  "rejectedModelPublished": false,
+  "renders": {
+    "front": {
+      "file": "front.png",
+      "sha256": "1764362e6e4a546246aca70c2f3f09990225c5c271c9d07c1df5ceaa768f9499"
+    },
+    "side": {
+      "file": "side.png",
+      "sha256": "fdb2074b076b8822b10ef7f465ffa79717e943e5aaffabfc8feabdf3d37e740a"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "d9e942c1c0edc0b73895dd4c02e4a987b59ab9dd9d8a4d4a48c43b65081a132f"
+    },
+    "threequarter": {
+      "file": "threequarter.png",
+      "sha256": "707241d2690ca368307e306602acca3ef3bdb5dc57b959f55ff209ae68927cbe"
+    }
+  },
+  "comparisonBoard": {
+    "file": "photo_vs_geometry.jpg",
+    "sha256": "46f330a11542e2bdb47f1ea70e802b5755c94c2eefadfa5906f2d697876d6daf"
+  },
+  "visibleDifferences": [
+    "O eixo do joelho ficou arqueado porque a amostra de altura 0.235 incluía geometria da saia; a foto própria exige uma silhueta contínua de perna.",
+    "O peito do pé tem uma ponta abrupta e o calcanhar não tem a transição suave da ficha 1; esta versão não deve ser publicada."
+  ],
+  "fidelityVerified": false,
+  "rigPresent": false,
+  "clothCollisionVerified": false
+}

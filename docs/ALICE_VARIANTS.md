@@ -287,6 +287,23 @@ lista os 35 modelos diretamente do GitHub, sem banco Supabase.
 
 ## Auditoria exigida antes da conclusão
 
+O refinamento `refine_chapeleiro_stocking_anatomy.py` conserva a topologia conectada
+das duas meias e suas aberturas na coxa. Mede o eixo das botas no mestre inteiro,
+sem extrair nem modificar sua geometria. O primeiro ensaio incluiu a saia na
+medição do joelho e produziu um arco excessivo; a comparação real com a ficha 1
+rejeitou esse resultado. A medição atual restringe o guia à região das botas e
+usa uma transição contínua no eixo das pernas, calcanhar, peito do pé e dedos.
+As ligações superiores permanecem idênticas e os vínculos das costuras foram
+refeitos na forma de repouso. As quatro vistas e a foto própria continuam juntas
+na revisão da fundação. Trama, compressão dos dedos, vincos, encaixe completo
+nas botas e deformação em movimento permanecem pendentes.
+
+O auditador mede as superfícies reais dos pés e recusa triângulos colapsados.
+Essa verificação e os vínculos estáticos não equivalem a rig, UV final,
+fidelidade aprovada ou colisões. O FBX final vai para o GitHub depois de validar
+as camadas e os quatro movimentos; arquivos locais completos continuam sendo
+preservados durante o refinamento, independentemente do tamanho.
+
 Todas as camadas reais devem compartilhar um rig compatível com Alice. Caminhada, corrida, salto e ataque precisam deformar a malha, e o vestido precisa acompanhar os movimentos de um jogo Soulslike. Nas camadas soltas, conferir resposta secundária do tecido, colisão com corpo/pernas e colisões entre forro, anáguas, saia, avental, mangas e acessórios. Pesos rígidos nos quadris ou ossos extras sem comportamento testado não satisfazem esse requisito. Materiais e fotos de biblioteca não são camadas riggadas; suas peças correspondentes precisam cumprir os testes.
 
 Para cada versão: corpo/rosto/cabelo coerentes com a referência; todas as camadas internas e externas; mangas, costas, laços, rendas e acabamentos; meias/botas; todos os ornamentos e acessórios de sua ficha; UVs, estampas, materiais e detalhes; conferência de frente/perfil/costas e cortes entre camadas; geometria tridimensional verificável e arquivos editáveis. Fichas de panorama/material/montagem exigem conferir o conjunto, não criar uma cópia com outro nome.

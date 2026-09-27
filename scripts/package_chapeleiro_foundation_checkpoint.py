@@ -44,6 +44,12 @@ if any(p['role']=='foundation_gathered_blouse' for p in generation['pieces']):
     solvers=audit.get('blouseSolverPartitionAudit',[])
     if len(solvers)!=3 or any(not s['singleSolver'] or s['uvNonDegenerateTriangleFraction']<.95 for s in solvers):
         raise ValueError('Requires actual single-solver and evaluated blouse UV evidence.')
+if generation.get('stockingAnatomyConstruction'):
+    feet=audit.get('actualStockingAnatomyAudit',[])
+    if ({p['mesh'] for p in feet}!={p['mesh'] for p in generation['stockingAnatomyConstruction']}
+            or any(not p['measuredFromActualCage'] or not p['connectedFootVerified']
+                   or not p['closedToeVerified'] or p['minimumTriangleArea']<=1e-12 for p in feet)):
+        raise ValueError('Requires actual connected, non-collapsed refined stocking feet.')
 if generation.get('petticoatSimulationCages'):
     partition=audit.get('petticoatSolverPartitionAudit',[])
     expected={p['name'] for p in generation['petticoatSimulationCages']}
@@ -154,6 +160,7 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
         'addon':{'name':generation['addon'],'author':generation['author'],
                  'version':generation['addonVersion'],'originalAssetSha256':generation['originalAssetSha256']},
         'newInternalPieces':generation['pieces'],'visibleDifferences':comparison['visibleDifferences'],
+        'stockingAnatomyConstruction':generation.get('stockingAnatomyConstruction',[]),
         'isolatedPartReviews':portable_parts,
         'attachmentAudit':{'file':'Docs/alice-variants/chapeleiro/foundation/carrier_audit.json',
                            'sha256':sha(args.audit),'frame':1,'verifiedFollowers':audit['verifiedFollowers'],
@@ -162,6 +169,7 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
                            'blouseSolverPartitionAudit':audit.get('blouseSolverPartitionAudit',[]),
                            'petticoatSolverPartitionAudit':audit.get('petticoatSolverPartitionAudit',[]),
                            'actualLowerConstructionAudit':audit.get('actualLowerConstructionAudit',[]),
+                           'actualStockingAnatomyAudit':audit.get('actualStockingAnatomyAudit',[]),
                            'dynamicSimulationVerified':False},
         'additionalCreditsConsumed':0,'fidelityVerified':False,'allLayersFinished':False,
         'rigPresent':False,'motionVerified':False,'clothCollisionVerified':False,'nextVariantMayStart':False}
@@ -184,6 +192,12 @@ report={'variant':'alice_chapeleiro','stage':'alice_chapeleiro_stage_01',
      'os pontos de franzido foram medidos no arquivo editável. Essa verificação '
      'é estática e ainda exige simulação com o corpo, rig e movimentos.\n\n'
      if generation.get('petticoatSimulationCages') else '')+
+    ('As meias receberam uma transição contínua de calcanhar e peito do pé, '
+     'pontas arredondadas e ajuste do eixo das pernas às medidas das botas do '
+     'mestre inteiro. Essas medidas não extraem nem alteram sua geometria. '
+     'O formato das áreas ocultas é inferido; o teste estático de topologia '
+     'não valida encaixe completo nas botas, UV final, rig ou colisões.\n\n'
+     if generation.get('stockingAnatomyConstruction') else '')+
     'O add-on fornecido pelo usuário é Bystedts Cloth Builder 1.0.1, de Daniel '
     'Bystedt. O arquivo editável contém os grupos originais Post sim cloth / '
     'Solidify / UV unwrap solidified. A cópia carregada recebe a adaptação '
