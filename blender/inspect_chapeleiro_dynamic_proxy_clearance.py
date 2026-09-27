@@ -16,6 +16,7 @@ p.add_argument('--probe', required=True)
 p.add_argument('--output', required=True)
 p.add_argument('--points-field', choices=['actual_simulation_points', 'actual_simulation_skin_targets', 'points', 'actual_skin_targets'], default='actual_simulation_points')
 p.add_argument('--minimum-pin-weight', type=float)
+p.add_argument('--fixed-body-triangles',action='store_true')
 a = p.parse_args(sys.argv[sys.argv.index('--') + 1:])
 read = lambda f: json.loads(Path(f).read_text(encoding='utf-8'))
 sha = lambda f: hashlib.sha256(Path(f).read_bytes()).hexdigest()
@@ -51,7 +52,8 @@ from chapeleiro_closed_underlayer_proxies import closed_thin_underlayer_proxies
 names = ['01 / left stocking / fitted leg ankle and closed toe', '01 / right stocking / fitted leg ankle and closed toe',
          '01 / bloomers / continuous waist and sewn crotch']
 reference_root = Path(g.get('authoringReferenceRoot', path.parent))
-proxies, proxy_rows = closed_thin_underlayer_proxies(scene, read(reference_root / 'skin_audit.json'), names, rig)
+proxies, proxy_rows = closed_thin_underlayer_proxies(scene, read(reference_root / 'skin_audit.json'), names, rig,
+                                                 triangulate_before_deformation=a.fixed_body_triangles)
 for collection in bpy.data.collections: collection.hide_viewport = False
 for obj in scene.objects:
     obj.hide_viewport = obj not in [rig, *proxies]
@@ -94,6 +96,8 @@ for frame, all_points in enumerate(data[a.points_field], 1):
         mesh.calc_loop_triangles()
         points = np.asarray([tuple(ev.matrix_world @ v.co) for v in mesh.vertices], np.float32)
         triangles = np.asarray([tuple(t.vertices) for t in mesh.loop_triangles], np.int32)
+        if a.fixed_body_triangles and proxy_triangles[index]:
+            assert np.array_equal(triangles,proxy_triangles[index][0]), 'Body calculation faces changed during pose'
         tree = BVHTree.FromPolygons([Vector(v) for v in points], triangles.tolist(), all_triangles=True, epsilon=0.)
         ev.to_mesh_clear()
         proxy_points[index].append(points)
@@ -135,6 +139,7 @@ for index in range(len(proxies)):
 datafile = out / 'actual_dynamic_clearance.npz'
 np.savez_compressed(datafile, **arrays)
 report = {'sourcePhysicalDataSha256': r['dataSha256'], 'sourcePhotoSha256': r['sourcePhotoSha256'],
+          'actualBodyTrianglesFrozenBeforeDeformation':a.fixed_body_triangles,
           'actualQueriedPointField': a.points_field, 'actualQueriedSurface': 'original_fine_garment_detail' if fine_points else 'coarse_physical_calculator',
           'minimumPinWeight': a.minimum_pin_weight, 'actualVerticesQueriedPerProxyAndFrame': len(query_ids),
           'actualClosedProxies': proxy_rows, 'frames': rows,

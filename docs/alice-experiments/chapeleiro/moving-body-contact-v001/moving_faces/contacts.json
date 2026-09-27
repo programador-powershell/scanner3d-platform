@@ -1,0 +1,83 @@
+{
+  "sourceClothReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003\\actual_sewn_solver_motion.json",
+  "sourceClothDataSha256": "e9f59edc694ca15d10dd4636f673623084cfc1f88bccf964de63df4dbafbd22e",
+  "sourceBodyReport": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\fixed_closed_body_reference_v001\\dynamic_clearance_inspection.json",
+  "sourceBodyDataSha256": "2c6e5081ced02b8416fe696e7bbf7c65021af43b366f7639016ba3d13ce6aef3",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "analyticEnteringExitingTranslatingAndCubicCasesPassed": true,
+  "actualFramesAndProxies": [
+    {
+      "frame": 15,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 15,
+      "sweptCandidatePairs": 33194,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 15,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 10785,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 15,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 92,
+      "sweptCandidatePairs": 59365,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 1157,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 28,
+      "sweptCandidatePairs": 118554,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 23,
+      "sweptCandidatePairs": 20070,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 70,
+      "sweptCandidatePairs": 234277,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 1221,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 55,
+      "sweptCandidatePairs": 20842,
+      "coplanarAmbiguousPairs": 0
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\moving_body_face_diagnostic_v003\\actual_moving_body_face_contacts.npz",
+  "dataSha256": "333f19d9a7a60c985608130cd379e015d457c44b9022994db9cce74fc3a1ed73",
+  "elapsedSeconds": 8.499081134796143,
+  "clothAndBodyCoordinatesUnchanged": true,
+  "scriptSha256": "44e3da1da70af69a05e8c466188d6978c072679d934a1e666be495434b028212",
+  "pointFaceHelperSha256": "3f143992efffb51892c91490c19b41751538feb3bdc02ac17adc27d9f529eee5",
+  "collisionResponseApplied": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Linear interpolation of recorded frames and moving point/face candidates only. Inside/outside classification, edge/edge contacts, friction, actual solver substeps and full collision approval remain separate."
+}

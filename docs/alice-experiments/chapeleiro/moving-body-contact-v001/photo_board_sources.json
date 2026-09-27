@@ -1,0 +1,160 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualRenders": [
+    {
+      "column": 0,
+      "label": "Tecido anterior",
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003_surface_deform_v001\\actual_receiver_review\\foundation_20_front.png",
+      "sha256": "0f174c55b442cdc78c737fff402cbe9b9229d224de0dbf37fc2c1b60ec14bf67",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "column": 0,
+      "label": "Tecido anterior",
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v003_surface_deform_v001\\actual_receiver_review\\foundation_29_threequarter.png",
+      "sha256": "8da7fb597e3ebdad6856af0eb867508af51fae8716c2689ab6915315480f685b",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 5.066394805908203e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "column": 1,
+      "label": "GLB publicado / v096",
+      "sourcePhysicsFrame": 20,
+      "actualImportedFrame": 15.999999246426992,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_20_front.png",
+      "sha256": "8739195a60b775dae4132ee5b849d250815733d08174f7b26577361e0f219aaa",
+      "cameraPosition": [
+        0.0008925125002861023,
+        -2.985624313354492,
+        0.413858026266098
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "column": 1,
+      "label": "GLB publicado / v096",
+      "sourcePhysicsFrame": 29,
+      "actualImportedFrame": 23.19999885559082,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\actual_joint_export_review_v001\\foundation_29_threequarter.png",
+      "sha256": "5fd93ce99212367be14e4309dcb6fa439cee670086c76abb61f6497ea94abdb2",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.49074387550354,
+        0.7127175331115723
+      ],
+      "visibleSkinnedMeshes": 229
+    },
+    {
+      "column": 2,
+      "label": "Ensaio de estiramento",
+      "sourcePhysicsFrame": 20,
+      "view": "front",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v004_surface_deform_v001\\actual_receiver_review\\foundation_20_front.png",
+      "sha256": "f31a07375f0ad283baf744e3cf281d826c217dbb4c9e5eff2d47afc161dc8436",
+      "cameraPosition": [
+        0.0008925348520278931,
+        -2.985624313354492,
+        0.41385793685913086
+      ],
+      "previousIvoryRenderCameraMaximumError": 8.940696716308594e-08,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    },
+    {
+      "column": 2,
+      "label": "Ensaio de estiramento",
+      "sourcePhysicsFrame": 29,
+      "view": "threequarter",
+      "scope": "foundation",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v004_surface_deform_v001\\actual_receiver_review\\foundation_29_threequarter.png",
+      "sha256": "67068a4a5b79a1c09bc8ceaca61dc232a058701c44e0ae922de2d3d7166069c8",
+      "cameraPosition": [
+        1.6197147369384766,
+        -2.490743637084961,
+        0.7127174139022827
+      ],
+      "previousIvoryRenderCameraMaximumError": 2.384185791015625e-07,
+      "recordedRigMatrixMaximumError": 5.066394805908203e-07,
+      "sourceReconstructionMaximumErrors": {
+        "ivory": 0.0,
+        "support": 0.0,
+        "tier1": 0.0,
+        "tier2": 0.0,
+        "tier3": 0.0
+      },
+      "actualStableLaceTargetVertices": [
+        2496,
+        2496,
+        2496
+      ],
+      "actualLaceBindingsPresent": true,
+      "actualVisibleSurfaces": 229
+    }
+  ],
+  "sameCameraVerified": true,
+  "photoBoardSha256": "1bdb46329173cd172c9a5747f81fa8c36581291b24afb4c2bc376d306c48cae0",
+  "visualApproval": false
+}

@@ -1,0 +1,611 @@
+{
+  "sourcePhysicalDataSha256": "e9f59edc694ca15d10dd4636f673623084cfc1f88bccf964de63df4dbafbd22e",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "frames": [
+    {
+      "frame": 1,
+      "parts": [
+        {
+          "key": "ivory",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0,
+          "p95Stretch": 1.0,
+          "worstEdge": [
+            0,
+            1
+          ],
+          "worstWorldPoints": [
+            [
+              -4.4713527813655674e-07,
+              -0.042997270822525024,
+              0.6370000243186951
+            ],
+            [
+              0.004122294019907713,
+              -0.042906343936920166,
+              0.6370000243186951
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 1.0000003576278687
+        },
+        {
+          "key": "support",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0,
+          "p95Stretch": 1.0,
+          "worstEdge": [
+            3552,
+            3553
+          ],
+          "worstWorldPoints": [
+            [
+              2.3383863663184457e-06,
+              -0.04099974408745766,
+              0.6330000162124634
+            ],
+            [
+              0.0040584453381598,
+              -0.040913768112659454,
+              0.6330000162124634
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 1.0000003576278687
+        },
+        {
+          "key": "tier1",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0,
+          "p95Stretch": 1.0,
+          "worstEdge": [
+            7296,
+            7297
+          ],
+          "worstWorldPoints": [
+            [
+              1.0812216714839451e-05,
+              -0.09946442395448685,
+              0.3471258878707886
+            ],
+            [
+              0.01119248941540718,
+              -0.09925059974193573,
+              0.34721195697784424
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier2",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0,
+          "p95Stretch": 1.0,
+          "worstEdge": [
+            7872,
+            7873
+          ],
+          "worstWorldPoints": [
+            [
+              1.172267639049096e-05,
+              -0.10423166304826736,
+              0.3194606304168701
+            ],
+            [
+              0.011776050552725792,
+              -0.1040077656507492,
+              0.31955504417419434
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier3",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0,
+          "p95Stretch": 1.0,
+          "worstEdge": [
+            8448,
+            8449
+          ],
+          "worstWorldPoints": [
+            [
+              1.2940826309204567e-05,
+              -0.11050424724817276,
+              0.2825736403465271
+            ],
+            [
+              0.012543736025691032,
+              -0.11026710271835327,
+              0.28267914056777954
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "parts": [
+        {
+          "key": "ivory",
+          "edgesOver1_1": 52,
+          "maximumStretch": 1.376562237739563,
+          "p95Stretch": 1.04570152759552,
+          "worstEdge": [
+            365,
+            366
+          ],
+          "worstWorldPoints": [
+            [
+              -0.06973959505558014,
+              -0.03747539967298508,
+              0.5536130666732788
+            ],
+            [
+              -0.0669110044836998,
+              -0.04099361225962639,
+              0.5518020987510681
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 0.9998824000358582
+        },
+        {
+          "key": "support",
+          "edgesOver1_1": 176,
+          "maximumStretch": 1.8073800802230835,
+          "p95Stretch": 1.0643071174621581,
+          "worstEdge": [
+            3909,
+            3910
+          ],
+          "worstWorldPoints": [
+            [
+              -0.07509040087461472,
+              -0.016587287187576294,
+              0.5502436757087708
+            ],
+            [
+              -0.07554096728563309,
+              -0.022221770137548447,
+              0.5487547516822815
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 0.9998714923858643
+        },
+        {
+          "key": "tier1",
+          "edgesOver1_1": 17,
+          "maximumStretch": 2.162032127380371,
+          "p95Stretch": 1.038292646408081,
+          "worstEdge": [
+            7517,
+            7613
+          ],
+          "worstWorldPoints": [
+            [
+              0.07975741475820541,
+              0.04553543031215668,
+              0.27433377504348755
+            ],
+            [
+              0.08675064891576767,
+              0.051488183438777924,
+              0.2664763033390045
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier2",
+          "edgesOver1_1": 3,
+          "maximumStretch": 1.3510448932647705,
+          "p95Stretch": 1.0300470292568207,
+          "worstEdge": [
+            8299,
+            8395
+          ],
+          "worstWorldPoints": [
+            [
+              0.02614053525030613,
+              0.15673433244228363,
+              0.31528833508491516
+            ],
+            [
+              0.027691902592778206,
+              0.16240139305591583,
+              0.31059226393699646
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier3",
+          "edgesOver1_1": 14,
+          "maximumStretch": 1.4655098915100098,
+          "p95Stretch": 1.0411944091320038,
+          "worstEdge": [
+            8782,
+            8878
+          ],
+          "worstWorldPoints": [
+            [
+              0.0006434396491385996,
+              0.15201185643672943,
+              0.31527137756347656
+            ],
+            [
+              -0.002161191776394844,
+              0.15477107465267181,
+              0.3199794590473175
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "parts": [
+        {
+          "key": "ivory",
+          "edgesOver1_1": 218,
+          "maximumStretch": 1.5348684787750244,
+          "p95Stretch": 1.0846048593521118,
+          "worstEdge": [
+            504,
+            505
+          ],
+          "worstWorldPoints": [
+            [
+              0.07179409265518188,
+              -0.03302765637636185,
+              0.537979781627655
+            ],
+            [
+              0.07166769355535507,
+              -0.027802884578704834,
+              0.539475679397583
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 0.9997718930244446
+        },
+        {
+          "key": "support",
+          "edgesOver1_1": 449,
+          "maximumStretch": 3.0606400966644287,
+          "p95Stretch": 1.1141936659812928,
+          "worstEdge": [
+            6151,
+            6152
+          ],
+          "worstWorldPoints": [
+            [
+              0.047438763082027435,
+              -0.1815682351589203,
+              0.36871057748794556
+            ],
+            [
+              0.07563770562410355,
+              -0.17512013018131256,
+              0.3673648238182068
+            ]
+          ],
+          "fixedEdgeCount": 96,
+          "maximumFixedEdgeTargetStretch": 0.999758780002594
+        },
+        {
+          "key": "tier1",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.0880640745162964,
+          "p95Stretch": 1.0250267386436462,
+          "worstEdge": [
+            7587,
+            7683
+          ],
+          "worstWorldPoints": [
+            [
+              0.014338926412165165,
+              -0.18465541303157806,
+              0.31297746300697327
+            ],
+            [
+              0.012938352301716805,
+              -0.18872730433940887,
+              0.31013166904449463
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier2",
+          "edgesOver1_1": 0,
+          "maximumStretch": 1.078723430633545,
+          "p95Stretch": 1.0290851891040802,
+          "worstEdge": [
+            8109,
+            8205
+          ],
+          "worstWorldPoints": [
+            [
+              0.04833371192216873,
+              0.05751218646764755,
+              0.3030778765678406
+            ],
+            [
+              0.048978954553604126,
+              0.05984187498688698,
+              0.3084240257740021
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        },
+        {
+          "key": "tier3",
+          "edgesOver1_1": 15,
+          "maximumStretch": 1.2788803577423096,
+          "p95Stretch": 1.0493078827857971,
+          "worstEdge": [
+            8697,
+            8793
+          ],
+          "worstWorldPoints": [
+            [
+              -0.0489666685461998,
+              0.07964421808719635,
+              0.2347455620765686
+            ],
+            [
+              -0.053850218653678894,
+              0.08206333965063095,
+              0.23555229604244232
+            ]
+          ],
+          "fixedEdgeCount": 0,
+          "maximumFixedEdgeTargetStretch": null
+        }
+      ]
+    }
+  ],
+  "actualPhysicalMassPerVertex": 9.335945833299775e-06,
+  "sourceSolverSettings": {
+    "fps": 30,
+    "substeps": 8,
+    "iterations": 24,
+    "structuralCompliance": 1e-07,
+    "twoRingBendingCompliance": 0.2,
+    "massPerVertex": 9.335945833299775e-06,
+    "bodyClearanceMeters": 0.0015,
+    "selfParticleDistanceMeters": 0.0015,
+    "partialPinIterationTether": 0.15,
+    "velocityRetentionPerSubstep": 0.985,
+    "deepBodyRecoveryRequiresTwoRayInteriorAgreement": true,
+    "allBodySignsQueriedAndRecoveryCandidateVerifiedOutside": true,
+    "authoredOuterSheetsOrderedOutsideBlackSupport": true,
+    "orderedLayerCorrectionsUseOriginalTriangleMasses": true,
+    "orderedLayerVirtualCapsAreOnlyClassificationVolumes": true,
+    "seamsKeepAuthoredCalculationClearance": true,
+    "distanceConstraintPrimarySource": "https://mmacklin.com/xpbd.pdf",
+    "parametersAreProvisional": true
+  },
+  "physicalFields": {
+    "points": [
+      29,
+      22080,
+      3
+    ],
+    "actual_skin_targets": [
+      29,
+      22080,
+      3
+    ],
+    "rest_points": [
+      22080,
+      3
+    ],
+    "edges": [
+      43200,
+      2
+    ],
+    "loose_edges": [
+      43200
+    ],
+    "pin_weights": [
+      22080
+    ],
+    "rig_deformations": [
+      29,
+      173,
+      4,
+      4
+    ],
+    "bone_names": [
+      173
+    ],
+    "actual_simulation_points": [
+      29,
+      9024,
+      3
+    ],
+    "actual_simulation_skin_targets": [
+      29,
+      9024,
+      3
+    ],
+    "simulation_rest_points": [
+      9024,
+      3
+    ],
+    "simulation_edges": [
+      17856,
+      2
+    ],
+    "simulation_pin_weights": [
+      9024
+    ],
+    "simulation_loose_edges": [
+      17856
+    ],
+    "physical_seam_pairs": [
+      288,
+      2
+    ],
+    "simulation_faces": [
+      8544,
+      4
+    ],
+    "detail_corner_indices": [
+      22080,
+      4
+    ],
+    "detail_weights": [
+      22080,
+      4
+    ],
+    "detail_u": [
+      22080
+    ],
+    "detail_v": [
+      22080
+    ],
+    "detail_frame_offsets": [
+      22080,
+      3
+    ],
+    "ivory_original_world_points": [
+      7104,
+      3
+    ],
+    "support_original_world_points": [
+      7488,
+      3
+    ],
+    "tier1_original_world_points": [
+      2496,
+      3
+    ],
+    "tier2_original_world_points": [
+      2496,
+      3
+    ],
+    "tier3_original_world_points": [
+      2496,
+      3
+    ]
+  },
+  "fitFields": {
+    "rig_deformations": [
+      29,
+      209,
+      4,
+      4
+    ],
+    "fitted_points": [
+      29,
+      22080,
+      3
+    ],
+    "actual_solver_points": [
+      29,
+      22080,
+      3
+    ],
+    "original_rig_deformations": [
+      29,
+      209,
+      4,
+      4
+    ],
+    "bone_names": [
+      209
+    ],
+    "modified_bone_indices": [
+      108
+    ]
+  },
+  "fineParts": [
+    {
+      "key": "ivory",
+      "source": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+      "actualWeightedPreview": "01 / long ivory gathered petticoat",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        7104
+      ],
+      "start": 0,
+      "vertices": 7104,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 4
+    },
+    {
+      "key": "support",
+      "source": "Authoring / 01 / black petticoat continuous waist support",
+      "actualWeightedPreview": "01 / black petticoat continuous waist support",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        7488
+      ],
+      "start": 7104,
+      "vertices": 7488,
+      "originalWorldPointsMaximumError": 0.0,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 4
+    },
+    {
+      "key": "tier1",
+      "source": "Authoring / 01 / black gathered flounce 1",
+      "actualWeightedPreview": "01 / black gathered flounce 1",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 14592,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    },
+    {
+      "key": "tier2",
+      "source": "Authoring / 01 / black gathered flounce 2",
+      "actualWeightedPreview": "01 / black gathered flounce 2",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 17088,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 1.1920928955078125e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    },
+    {
+      "key": "tier3",
+      "source": "Authoring / 01 / black gathered flounce 3",
+      "actualWeightedPreview": "01 / black gathered flounce 3",
+      "previewOriginalSurfaceIndexRange": [
+        0,
+        2496
+      ],
+      "start": 19584,
+      "vertices": 2496,
+      "originalWorldPointsMaximumError": 3.5762786865234375e-07,
+      "maximumWeightSumError": 0.0,
+      "maximumInfluences": 2
+    }
+  ],
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

@@ -1,0 +1,138 @@
+{
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "exactPreservedPhysicalInputArrays": [
+    "actual_skin_targets",
+    "rest_points",
+    "edges",
+    "loose_edges",
+    "pin_weights",
+    "rig_deformations",
+    "bone_names",
+    "actual_simulation_skin_targets",
+    "simulation_rest_points",
+    "simulation_edges",
+    "simulation_pin_weights",
+    "simulation_loose_edges",
+    "physical_seam_pairs",
+    "simulation_faces",
+    "detail_corner_indices",
+    "detail_weights",
+    "detail_u",
+    "detail_v",
+    "detail_frame_offsets",
+    "ivory_original_world_points",
+    "support_original_world_points",
+    "tier1_original_world_points",
+    "tier2_original_world_points",
+    "tier3_original_world_points"
+  ],
+  "closedBodyCoordinatesAndFixedTrianglesExactlyEqualInBothStudies": true,
+  "movingBroadPhaseOptimizationPreservesAll45RecordedOutputArraysExactly": true,
+  "movingAnalyticTestsPassed": true,
+  "actualMovingContacts": [
+    {
+      "frame": 15,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 15,
+      "sweptCandidatePairs": 33194,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 15,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 10785,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 15,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 92,
+      "sweptCandidatePairs": 59365,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 1157,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 28,
+      "sweptCandidatePairs": 118554,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 20,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 23,
+      "sweptCandidatePairs": 20070,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 0,
+      "enteringPointFaceContacts": 70,
+      "sweptCandidatePairs": 234277,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 1,
+      "enteringPointFaceContacts": 0,
+      "sweptCandidatePairs": 1221,
+      "coplanarAmbiguousPairs": 0
+    },
+    {
+      "frame": 29,
+      "proxyIndex": 2,
+      "enteringPointFaceContacts": 55,
+      "sweptCandidatePairs": 20842,
+      "coplanarAmbiguousPairs": 0
+    }
+  ],
+  "visualAssessment": {
+    "actualNewTwoRendersReviewed": true,
+    "observations": [
+      "Front pose still exposes black support through the ivory layer.",
+      "The raised leg still passes through the ivory surface in pose 29.",
+      "Waist discontinuities and reference folds, cascades and lace remain unfinished."
+    ],
+    "strainStudyApprovedForRigBakeOrPublication": false
+  },
+  "maximumPhysicalStretch": {
+    "previous": {
+      "ivory": 2.4736334576527965,
+      "support": 5.468882320064491,
+      "tier1": 2.1620329681651285,
+      "tier2": 1.3959464312755014,
+      "tier3": 1.743869127563532
+    },
+    "new": {
+      "ivory": 2.3716088566847104,
+      "support": 5.233543923335575,
+      "tier1": 1.9419979985166347,
+      "tier2": 1.3589855405488405,
+      "tier3": 1.834716817134524
+    }
+  },
+  "completeAuthoring": {
+    "path": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_v001\\chapeleiro_shared_rig_sewn_cloth_study.blend",
+    "bytes": 130167778,
+    "sha256": "ea6205d9e7101cadba9572c4f1d331f809153ba234b9a135105622873957244d",
+    "trimmed": false
+  },
+  "publishedGlbSha256": "1c2e1a9a3af242acaaf2dd48e8c482e57e6013f8f7f84e0744012dd13752dc45",
+  "publishedGlbUnchanged": true,
+  "nextCalculation": "Moving point/face response using fixed closed body triangles; full new trajectory still pending.",
+  "additionalTripoCreditsConsumed": 0,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

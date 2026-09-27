@@ -10,7 +10,7 @@ def _state(obj):
             'groups': [g.name for g in obj.vertex_groups],
             'weights': [[(w.group, w.weight) for w in v.groups] for v in obj.data.vertices]}
 
-def closed_thin_underlayer_proxies(scene, audit, names, rig):
+def closed_thin_underlayer_proxies(scene, audit, names, rig, triangulate_before_deformation=False):
     proxies, rows = thin_underlayer_colliders(scene, audit, names, rig)
     for obj, row in zip(proxies, rows):
         source_data = obj.data
@@ -25,6 +25,14 @@ def closed_thin_underlayer_proxies(scene, audit, names, rig):
         bm.normal_update()
         assert not any(e.is_boundary or not e.is_manifold for e in bm.edges)
         cap_count = len(created)
+        if triangulate_before_deformation:
+            # Freeze only this capped calculation copy in its bind geometry.
+            # Evaluated ngon/quad tessellation can otherwise switch diagonals
+            # with the pose, invalidating moving-triangle correspondence.
+            bmesh.ops.triangulate(bm,faces=list(bm.faces),quad_method='FIXED',ngon_method='EAR_CLIP')
+            bm.normal_update()
+            assert all(len(face.verts)==3 for face in bm.faces)
+            assert not any(e.is_boundary or not e.is_manifold for e in bm.edges)
         bm.to_mesh(obj.data)
         bm.free()
         obj.data.update()
@@ -37,6 +45,7 @@ def closed_thin_underlayer_proxies(scene, audit, names, rig):
         row.update({'sharedActualMeshData': False, 'closedIndependentProxy': True, 'boundaryEdgesBefore': len(boundary),
                     'boundaryEdgesAfter': 0, 'capsCreated': cap_count,
                     'verticesBoneGroupsAndWeightsExactlyPreserved': True,
+                    'calculationTrianglesFrozenBeforeRigDeformation':triangulate_before_deformation,
                     'originalSharedMeshCoordinatesAndFacesExactlyPreserved': True,
                     'proxyRawGeometrySha256': hashlib.sha256(after['points'].tobytes() + json.dumps(after['faces']).encode()).hexdigest()})
     return proxies, rows

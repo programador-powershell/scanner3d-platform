@@ -1,0 +1,4087 @@
+{
+  "sourcePhysicalDataSha256": "edcb6135f501f4a535b7a60497717c2d669906c1ed373065ef410255b0953dc5",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "actualBodyTrianglesFrozenBeforeDeformation": true,
+  "actualQueriedPointField": "actual_simulation_points",
+  "actualQueriedSurface": "coarse_physical_calculator",
+  "minimumPinWeight": null,
+  "actualVerticesQueriedPerProxyAndFrame": 9024,
+  "actualClosedProxies": [
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / left stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / left stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / left stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": false,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 64,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 1,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "calculationTrianglesFrozenBeforeRigDeformation": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "ff97b5e6793867852b386bb05579d95a6feaedabe56a02c00000cae97f318102"
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / right stocking / fitted leg ankle and closed toe",
+      "actualSourceCarrier": "01 / right stocking / fitted leg ankle and closed toe / skin midsurface",
+      "visibleGarment": "01 / right stocking / fitted leg ankle and closed toe",
+      "sourceVertices": 4289,
+      "sourceFaces": 4288,
+      "sharedActualMeshData": false,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 64,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 1,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "calculationTrianglesFrozenBeforeRigDeformation": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "310a992f3ba0e2d63e46402e6792c5b27960b287c8c218d3cfa31ebdbe6be819"
+    },
+    {
+      "proxy": "Local collision only / existing thin carrier / 01 / bloomers / continuous waist and sewn crotch",
+      "actualSourceCarrier": "01 / bloomers / continuous waist and sewn crotch / simulation midsurface",
+      "visibleGarment": "01 / bloomers / continuous waist and sewn crotch",
+      "sourceVertices": 6287,
+      "sourceFaces": 6144,
+      "sharedActualMeshData": false,
+      "sameActualSkinGroups": true,
+      "sourceGeometryChanged": false,
+      "foreignBodyMesh": false,
+      "sourceClothAndThicknessExcludedFromLocalCollider": true,
+      "closedIndependentProxy": true,
+      "boundaryEdgesBefore": 288,
+      "boundaryEdgesAfter": 0,
+      "capsCreated": 3,
+      "verticesBoneGroupsAndWeightsExactlyPreserved": true,
+      "calculationTrianglesFrozenBeforeRigDeformation": true,
+      "originalSharedMeshCoordinatesAndFacesExactlyPreserved": true,
+      "proxyRawGeometrySha256": "4a3df8dc208c451586013c6e0093e2da5091f83e771caf7676c40a27cc49f1e5"
+    }
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009790360927581787,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009794398210942745,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002303197281435132,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "recordedRigMatrixMaximumError": 9.5367431640625e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009779316606000066,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009802925633266568,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022995697800070047,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009760901448316872,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009810414630919695,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002295044483616948,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009735419298522174,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009816858218982816,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002289696829393506,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "recordedRigMatrixMaximumError": 5.960464477539062e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009703352116048336,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009822231950238347,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002283603185787797,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "recordedRigMatrixMaximumError": 7.748603820800781e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009665408288128674,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009826564928516746,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022768473718315363,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009622429497539997,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009829815244302154,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022695136722177267,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "recordedRigMatrixMaximumError": 7.152557373046875e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009575427393428981,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009831987554207444,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022617019712924957,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "recordedRigMatrixMaximumError": 7.748603820800781e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009525556233711541,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009833094663918018,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002253500046208501,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009473952814005315,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009833126096054912,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022450147662311792,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "recordedRigMatrixMaximumError": 1.1920928955078125e-06,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009421877912245691,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009832087671384215,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002236347645521164,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "recordedRigMatrixMaximumError": 7.525086402893066e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009370640036650002,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009829989867284894,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022276006639003754,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "recordedRigMatrixMaximumError": 8.940696716308594e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009321398101747036,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.000982683151960373,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022188667207956314,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 3,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "recordedRigMatrixMaximumError": 7.748603820800781e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009400730486959219,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.000986444647423923,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022076882887631655,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 3,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009512221440672874,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.000982155674137175,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0021787427831441164,
+          "certainInsideVertices": 15,
+          "maximumCertainPenetrationMeters": 0.005793666001409292,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 1,
+              "maximumCertainPenetrationMeters": 1.207364311994752e-05,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 14,
+              "maximumCertainPenetrationMeters": 0.005793666001409292,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "recordedRigMatrixMaximumError": 7.227063179016113e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009639236959628761,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009683967218734324,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0021848322357982397,
+          "certainInsideVertices": 33,
+          "maximumCertainPenetrationMeters": 0.005863730795681477,
+          "ambiguousRayQueries": 6,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 4,
+              "maximumCertainPenetrationMeters": 0.0024553281255066395,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 29,
+              "maximumCertainPenetrationMeters": 0.005863730795681477,
+              "ambiguousRayQueries": 3
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "recordedRigMatrixMaximumError": 9.5367431640625e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009715997148305178,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009612261201255023,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022135607432574034,
+          "certainInsideVertices": 4,
+          "maximumCertainPenetrationMeters": 0.0027990371454507113,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 4,
+              "maximumCertainPenetrationMeters": 0.0027990371454507113,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "recordedRigMatrixMaximumError": 9.5367431640625e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009744104463607073,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009506357018835843,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.00223010522313416,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 3,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 3
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 19,
+      "recordedRigMatrixMaximumError": 7.152557373046875e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009761901455931365,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009383517317473888,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022251515183597803,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009777757804840803,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009323020349256694,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022078286856412888,
+          "certainInsideVertices": 1,
+          "maximumCertainPenetrationMeters": 0.0004687088367063552,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 1,
+              "maximumCertainPenetrationMeters": 0.0004687088367063552,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "recordedRigMatrixMaximumError": 7.748603820800781e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009818918770179152,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009363192948512733,
+          "certainInsideVertices": 5,
+          "maximumCertainPenetrationMeters": 0.011520174331963062,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 5,
+              "maximumCertainPenetrationMeters": 0.011520174331963062,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002204972319304943,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009865794563665986,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009448626078665257,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0021894241217523813,
+          "certainInsideVertices": 30,
+          "maximumCertainPenetrationMeters": 0.006447827909141779,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 30,
+              "maximumCertainPenetrationMeters": 0.006447827909141779,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "recordedRigMatrixMaximumError": 6.556510925292969e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.000979505362920463,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.000956747739110142,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0021636246237903833,
+          "certainInsideVertices": 62,
+          "maximumCertainPenetrationMeters": 0.008488751016557217,
+          "ambiguousRayQueries": 6,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 3,
+              "maximumCertainPenetrationMeters": 0.003189077600836754,
+              "ambiguousRayQueries": 3
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 59,
+              "maximumCertainPenetrationMeters": 0.008488751016557217,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "recordedRigMatrixMaximumError": 7.152557373046875e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009644012898206711,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009685053373686969,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002182482974603772,
+          "certainInsideVertices": 53,
+          "maximumCertainPenetrationMeters": 0.010782664641737938,
+          "ambiguousRayQueries": 5,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 1,
+              "maximumCertainPenetrationMeters": 0.0004621812258847058,
+              "ambiguousRayQueries": 2
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 52,
+              "maximumCertainPenetrationMeters": 0.010782664641737938,
+              "ambiguousRayQueries": 3
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009560670587234199,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009739942033775151,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022120075300335884,
+          "certainInsideVertices": 29,
+          "maximumCertainPenetrationMeters": 0.00782886054366827,
+          "ambiguousRayQueries": 6,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 5
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 29,
+              "maximumCertainPenetrationMeters": 0.00782886054366827,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "recordedRigMatrixMaximumError": 7.152557373046875e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009444814058952034,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009747024159878492,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002231683349236846,
+          "certainInsideVertices": 1,
+          "maximumCertainPenetrationMeters": 0.0005504556465893984,
+          "ambiguousRayQueries": 2,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 1,
+              "maximumCertainPenetrationMeters": 0.0005504556465893984,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 27,
+      "recordedRigMatrixMaximumError": 9.5367431640625e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009303999249823391,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009761595283634961,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022273610811680555,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "recordedRigMatrixMaximumError": 8.344650268554688e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009256119374185801,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.0009779956890270114,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.0022167384158819914,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "recordedRigMatrixMaximumError": 5.066394805908203e-07,
+      "proxies": [
+        {
+          "proxyIndex": 0,
+          "signedVolumeCubicMeters": 0.0009321401012130082,
+          "certainInsideVertices": 6,
+          "maximumCertainPenetrationMeters": 0.013896049000322819,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 6,
+              "maximumCertainPenetrationMeters": 0.013896049000322819,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 1,
+          "signedVolumeCubicMeters": 0.000982683035545051,
+          "certainInsideVertices": 0,
+          "maximumCertainPenetrationMeters": 0.0,
+          "ambiguousRayQueries": 0,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        },
+        {
+          "proxyIndex": 2,
+          "signedVolumeCubicMeters": 0.002218869747593999,
+          "certainInsideVertices": 1,
+          "maximumCertainPenetrationMeters": 0.00028694147476926446,
+          "ambiguousRayQueries": 1,
+          "parts": [
+            {
+              "key": "ivory",
+              "verticesTested": 3552,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "support",
+              "verticesTested": 3744,
+              "certainInsideVertices": 1,
+              "maximumCertainPenetrationMeters": 0.00028694147476926446,
+              "ambiguousRayQueries": 1
+            },
+            {
+              "key": "tier1",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier2",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            },
+            {
+              "key": "tier3",
+              "verticesTested": 576,
+              "certainInsideVertices": 0,
+              "maximumCertainPenetrationMeters": 0.0,
+              "ambiguousRayQueries": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\xpbd_ivory_black_cloth_v004\\fixed_dynamic_clearance_inspection\\actual_dynamic_clearance.npz",
+  "dataSha256": "0f0a5a6f45e318f04878a08563037a692e5d21a40ee96e8db4d0d7426b68ddb9",
+  "scriptSha256": "da58b2e270c2aad93a60c7fe1ddbe5af0a6813a767247bd93aade4cbef17575a",
+  "closedProxyHelperSha256": "47e0f161c6f4b5945afaa04bd1096478162aae41d13b6ff46133dec42b7aeaeb",
+  "parentEditableUnchanged": true,
+  "parentGlbUnchanged": true,
+  "noVisualSourceOrPhysicalTrajectoryChanged": true,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false,
+  "limitation": "Recorded vertex queries only; edges/faces crossing and continuous-time contacts are not tested. Proxy caps close garment boundaries for the diagnostic, not the visible garments.",
+  "elapsedSeconds": 40.87873101234436
+}
