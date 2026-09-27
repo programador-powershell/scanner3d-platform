@@ -1,0 +1,44 @@
+{
+  "photo": "source_photo.png",
+  "photoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "fullPhotoUncropped": true,
+  "sameCameraBeforeAndAfter": true,
+  "renders": [
+    {
+      "scope": "before",
+      "view": "front",
+      "file": "before/front.png",
+      "sha256": "60e75da56f3fef4e216e16d1d2152f76336ff1f957964c150d986e6a93ff1343"
+    },
+    {
+      "scope": "after",
+      "view": "front",
+      "file": "after/front.png",
+      "sha256": "13517f4e0661f5aa6bc387dc73ef6603a1bcf96e7fe67003f5a9abb863a3d84c"
+    },
+    {
+      "scope": "before",
+      "view": "back",
+      "file": "before/back.png",
+      "sha256": "9da907ca0ea6e0706e074a9fcac7e7ad2e225be913a8e1081ae292aacdd9646b"
+    },
+    {
+      "scope": "after",
+      "view": "back",
+      "file": "after/back.png",
+      "sha256": "a64a898263d10cb8ce45a0adb09de04fc2d730b221013f4a41c432813b462df4"
+    },
+    {
+      "scope": "before",
+      "view": "profile",
+      "file": "before/profile.png",
+      "sha256": "b054baa2322f20db2fe8058ce4ababbd3741d937caccc4f8d908b2db5f418765"
+    },
+    {
+      "scope": "after",
+      "view": "profile",
+      "file": "after/profile.png",
+      "sha256": "2620b280bcdf9985f4da6ba9b34c1ad75329bc430326d6716fe121a753cd7ade"
+    }
+  ]
+}

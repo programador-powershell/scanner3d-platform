@@ -1,0 +1,5362 @@
+{
+  "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\generation.json",
+  "editableBlendSha256": "ea6205d9e7101cadba9572c4f1d331f809153ba234b9a135105622873957244d",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "pieces": [
+    {
+      "name": "01 / ivory fitted boned corset / pointed front",
+      "vertices": 6400,
+      "polygons": 6400,
+      "bounds": [
+        [
+          -0.07825513184070587,
+          -0.0652717798948288,
+          0.5950000286102295
+        ],
+        [
+          0.07825513184070587,
+          0.05330032855272293,
+          0.7322263717651367
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 00 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.0012500506127253175,
+          -0.06595351547002792,
+          0.5948342680931091
+        ],
+        [
+          -0.00026996235828846693,
+          -0.04113653302192688,
+          0.7319155335426331
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 00 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.00026996235828846693,
+          -0.06595351547002792,
+          0.5948342680931091
+        ],
+        [
+          0.0012500506127253175,
+          -0.04113653302192688,
+          0.7319155335426331
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 01 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.023239117115736008,
+          -0.05699042230844498,
+          0.6045982837677002
+        ],
+        [
+          0.03369145095348358,
+          -0.036886632442474365,
+          0.7253579497337341
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 01 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.02437426894903183,
+          -0.05612009018659592,
+          0.6054592728614807
+        ],
+        [
+          0.03529400750994682,
+          -0.036451492458581924,
+          0.7250336408615112
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 02 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.0427941232919693,
+          -0.03616781532764435,
+          0.6199960708618164
+        ],
+        [
+          0.06128492206335068,
+          -0.025120064616203308,
+          0.7197809815406799
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 02 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.04357967525720596,
+          -0.035013601183891296,
+          0.6205068826675415
+        ],
+        [
+          0.06239284574985504,
+          -0.024385973811149597,
+          0.7195587754249573
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 03 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.05380193889141083,
+          -0.012886534444987774,
+          0.6246600151062012
+        ],
+        [
+          0.07680941373109818,
+          -0.008966127410531044,
+          0.7166616320610046
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 03 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.054082296788692474,
+          -0.011690961197018623,
+          0.6246883869171143
+        ],
+        [
+          0.07720484584569931,
+          -0.008088559843599796,
+          0.7165820002555847
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 04 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.054082296788692474,
+          0.008084287866950035,
+          0.6247482895851135
+        ],
+        [
+          0.07720477879047394,
+          0.011667279526591301,
+          0.7165820598602295
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 04 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.05380193889141083,
+          0.008959774859249592,
+          0.6247490644454956
+        ],
+        [
+          0.07680930942296982,
+          0.01285124197602272,
+          0.7166617512702942
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 05 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.04357967898249626,
+          0.02408895082771778,
+          0.6247814297676086
+        ],
+        [
+          0.06238928437232971,
+          0.033307239413261414,
+          0.7195647954940796
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 05 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.0427941270172596,
+          0.024791037663817406,
+          0.6247842907905579
+        ],
+        [
+          0.06128106638789177,
+          0.03425632789731026,
+          0.7197876572608948
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 06 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.02437427267432213,
+          0.035260751843452454,
+          0.624811053276062
+        ],
+        [
+          0.03528912737965584,
+          0.048407282680273056,
+          0.7250547409057617
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 06 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.023239118978381157,
+          0.035650379955768585,
+          0.6248116493225098
+        ],
+        [
+          0.033686842769384384,
+          0.04893385246396065,
+          0.7253798842430115
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 07 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.00026996235828846693,
+          0.03938698023557663,
+          0.6248542666435242
+        ],
+        [
+          0.0012500465381890535,
+          0.05398484691977501,
+          0.7319391369819641
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 07 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.0012500465381890535,
+          0.03938698023557663,
+          0.6248542666435242
+        ],
+        [
+          -0.00026996235828846693,
+          0.05398484691977501,
+          0.7319391369819641
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 08 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.033686842769384384,
+          0.035650379955768585,
+          0.6248116493225098
+        ],
+        [
+          -0.023239118978381157,
+          0.04893385246396065,
+          0.7253798842430115
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 08 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03528912737965584,
+          0.035260751843452454,
+          0.624811053276062
+        ],
+        [
+          -0.02437427267432213,
+          0.048407282680273056,
+          0.7250547409057617
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 09 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06128106638789177,
+          0.024791037663817406,
+          0.6247842907905579
+        ],
+        [
+          -0.0427941270172596,
+          0.03425632789731026,
+          0.7197876572608948
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 09 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06238928437232971,
+          0.02408895082771778,
+          0.6247814297676086
+        ],
+        [
+          -0.04357967898249626,
+          0.033307239413261414,
+          0.7195647954940796
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 10 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07680930942296982,
+          0.008959774859249592,
+          0.6247490644454956
+        ],
+        [
+          -0.05380193889141083,
+          0.01285124197602272,
+          0.7166617512702942
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 10 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07720477879047394,
+          0.008084287866950035,
+          0.6247482895851135
+        ],
+        [
+          -0.054082296788692474,
+          0.011667279526591301,
+          0.7165820598602295
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 11 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07720484584569931,
+          -0.011690961197018623,
+          0.6246883869171143
+        ],
+        [
+          -0.054082296788692474,
+          -0.008088559843599796,
+          0.7165820002555847
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 11 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07680941373109818,
+          -0.012886534444987774,
+          0.6246600151062012
+        ],
+        [
+          -0.05380193889141083,
+          -0.008966127410531044,
+          0.7166616320610046
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 12 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06239284574985504,
+          -0.035013601183891296,
+          0.6205068826675415
+        ],
+        [
+          -0.04357967525720596,
+          -0.024385973811149597,
+          0.7195587754249573
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 12 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06128492206335068,
+          -0.03616781532764435,
+          0.6199960708618164
+        ],
+        [
+          -0.0427941232919693,
+          -0.025120064616203308,
+          0.7197809815406799
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 13 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03529400750994682,
+          -0.05612009018659592,
+          0.6054592728614807
+        ],
+        [
+          -0.02437426894903183,
+          -0.036451492458581924,
+          0.7250336408615112
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset boning channel 13 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03369145095348358,
+          -0.05699042230844498,
+          0.6045982837677002
+        ],
+        [
+          -0.023239117115736008,
+          -0.036886632442474365,
+          0.7253579497337341
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset bound upper edge",
+      "vertices": 1158,
+      "polygons": 1154,
+      "bounds": [
+        [
+          -0.0792735368013382,
+          -0.054262883961200714,
+          0.7153500318527222
+        ],
+        [
+          0.0792735368013382,
+          0.0542629174888134,
+          0.7326499819755554
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset bound lower edge",
+      "vertices": 1158,
+      "polygons": 1154,
+      "bounds": [
+        [
+          -0.07926291227340698,
+          -0.06626279652118683,
+          0.5943502187728882
+        ],
+        [
+          0.07926291227340698,
+          0.0542629174888134,
+          0.6256499886512756
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 0",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.049551427364349365,
+          0.713920533657074
+        ],
+        [
+          0.0052225906401872635,
+          -0.04880664497613907,
+          0.7158299684524536
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 0",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.049825143069028854,
+          0.7122634053230286
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04793292656540871,
+          0.7157365679740906
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.045841798186302185,
+          0.6974205374717712
+        ],
+        [
+          0.0052225906401872635,
+          -0.04509701579809189,
+          0.6993299722671509
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 1",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.046115513890981674,
+          0.6957634091377258
+        ],
+        [
+          -0.0018499998841434717,
+          -0.044223297387361526,
+          0.6992365717887878
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 2",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04344930127263069,
+          0.6809205412864685
+        ],
+        [
+          0.0052225906401872635,
+          -0.042704518884420395,
+          0.6828299760818481
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 2",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04372301697731018,
+          0.6792634129524231
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04183080047369003,
+          0.6827365756034851
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 3",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04261654615402222,
+          0.6644205451011658
+        ],
+        [
+          0.0052225906401872635,
+          -0.04187176376581192,
+          0.6663299798965454
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 3",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.042890261858701706,
+          0.6627634167671204
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04099804535508156,
+          0.6662365794181824
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 4",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04395006597042084,
+          0.647920548915863
+        ],
+        [
+          0.0052225906401872635,
+          -0.04320528358221054,
+          0.6498299837112427
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 4",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04422378167510033,
+          0.6462634205818176
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04233156517148018,
+          0.6497365832328796
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk hook 5",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.0482337512075901,
+          0.6314205527305603
+        ],
+        [
+          0.0052225906401872635,
+          -0.047488968819379807,
+          0.6333299875259399
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / brass busk catch 5",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04850746691226959,
+          0.6297634243965149
+        ],
+        [
+          -0.0018499998841434717,
+          -0.046615250408649445,
+          0.6332365870475769
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 0 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.00824445765465498,
+          0.04935815557837486,
+          0.7185937762260437
+        ],
+        [
+          0.011773553676903248,
+          0.04991241171956062,
+          0.7221338152885437
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 0 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.011784457601606846,
+          0.04935815557837486,
+          0.7185937762260437
+        ],
+        [
+          -0.008255361579358578,
+          0.04991241171956062,
+          0.7221338152885437
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 1 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.007341801188886166,
+          0.04540865868330002,
+          0.7067518830299377
+        ],
+        [
+          0.010870897211134434,
+          0.04596291482448578,
+          0.7102919220924377
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 1 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010881801135838032,
+          0.04540865868330002,
+          0.7067518830299377
+        ],
+        [
+          -0.007352706044912338,
+          0.04596291482448578,
+          0.7102919220924377
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 2 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0066428883001208305,
+          0.04235062375664711,
+          0.6949099898338318
+        ],
+        [
+          0.010171984322369099,
+          0.04290487989783287,
+          0.6984500288963318
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 2 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010182888247072697,
+          0.04235062375664711,
+          0.6949099898338318
+        ],
+        [
+          -0.006653793156147003,
+          0.04290487989783287,
+          0.6984500288963318
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 3 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006164374761283398,
+          0.04025693237781525,
+          0.6830681562423706
+        ],
+        [
+          0.009693470783531666,
+          0.04081118851900101,
+          0.6866081953048706
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 3 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.009704374708235264,
+          0.04025693237781525,
+          0.6830681562423706
+        ],
+        [
+          -0.00617527961730957,
+          0.04081118851900101,
+          0.6866081953048706
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 4 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.005938989110291004,
+          0.03927077353000641,
+          0.6712262630462646
+        ],
+        [
+          0.009468085132539272,
+          0.03982502967119217,
+          0.6747663021087646
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 4 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.00947898905724287,
+          0.03927077353000641,
+          0.6712262630462646
+        ],
+        [
+          -0.005949893966317177,
+          0.03982502967119217,
+          0.6747663021087646
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 5 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006133217364549637,
+          0.04012060537934303,
+          0.6593843698501587
+        ],
+        [
+          0.009662313386797905,
+          0.04067486152052879,
+          0.6629244089126587
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 5 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.009673217311501503,
+          0.04012060537934303,
+          0.6593843698501587
+        ],
+        [
+          -0.0061441222205758095,
+          0.04067486152052879,
+          0.6629244089126587
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 6 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006755185313522816,
+          0.042841970920562744,
+          0.6475424766540527
+        ],
+        [
+          0.010284281335771084,
+          0.043396227061748505,
+          0.6510825157165527
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 6 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010295185260474682,
+          0.042841970920562744,
+          0.6475424766540527
+        ],
+        [
+          -0.006766090169548988,
+          0.043396227061748505,
+          0.6510825157165527
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 7 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.007729032542556524,
+          0.04710295796394348,
+          0.6357006430625916
+        ],
+        [
+          0.01125812903046608,
+          0.04765721410512924,
+          0.6392406821250916
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear eyelet 7 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.011269032955169678,
+          0.04710295796394348,
+          0.6357006430625916
+        ],
+        [
+          -0.007739937398582697,
+          0.04765721410512924,
+          0.6392406821250916
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 0 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.009385533630847931,
+          0.04594811424612999,
+          0.7080797553062439
+        ],
+        [
+          0.010288190096616745,
+          0.05078297108411789,
+          0.7208059430122375
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 0 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.010288190096616745,
+          0.04594811424612999,
+          0.7080797553062439
+        ],
+        [
+          0.009385533630847931,
+          0.05078297108411789,
+          0.7208059430122375
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 1 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008704027161002159,
+          0.042887527495622635,
+          0.6962491273880005
+        ],
+        [
+          0.009402940049767494,
+          0.046834904700517654,
+          0.708952784538269
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 1 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.009402940049767494,
+          0.042887527495622635,
+          0.6962491273880005
+        ],
+        [
+          0.008704027161002159,
+          0.046834904700517654,
+          0.708952784538269
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 2 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.00823942944407463,
+          0.04079069942235947,
+          0.6844170689582825
+        ],
+        [
+          0.008717948570847511,
+          0.043777890503406525,
+          0.6971011161804199
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 2 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008717948570847511,
+          0.04079069942235947,
+          0.6844170689582825
+        ],
+        [
+          0.00823942944407463,
+          0.043777890503406525,
+          0.6971011161804199
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 3 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008022839203476906,
+          0.03980114310979843,
+          0.672581672668457
+        ],
+        [
+          0.008248230442404747,
+          0.04178865626454353,
+          0.6852527856826782
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 3 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008248230442404747,
+          0.03980114310979843,
+          0.672581672668457
+        ],
+        [
+          0.008022839203476906,
+          0.04178865626454353,
+          0.6852527856826782
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 4 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.0082174651324749,
+          0.039800774306058884,
+          0.660740077495575
+        ],
+        [
+          0.008023236878216267,
+          0.04169779643416405,
+          0.6734105944633484
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 4 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008023236878216267,
+          0.039800774306058884,
+          0.660740077495575
+        ],
+        [
+          0.0082174651324749,
+          0.04169779643416405,
+          0.6734105944633484
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 5 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008829249069094658,
+          0.04065687581896782,
+          0.6488906741142273
+        ],
+        [
+          0.008207281120121479,
+          0.044268615543842316,
+          0.6615762114524841
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 5 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008207281120121479,
+          0.04065687581896782,
+          0.6488906741142273
+        ],
+        [
+          0.008829249069094658,
+          0.044268615543842316,
+          0.6615762114524841
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 6 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.00978456623852253,
+          0.04338402301073074,
+          0.6370360851287842
+        ],
+        [
+          0.008810717612504959,
+          0.04852677509188652,
+          0.6497470736503601
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / rear corset crossing 6 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008810717612504959,
+          0.04338402301073074,
+          0.6370360851287842
+        ],
+        [
+          0.00978456623852253,
+          0.04852677509188652,
+          0.6497470736503601
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / upper gathered frill",
+      "vertices": 2304,
+      "polygons": 2304,
+      "bounds": [
+        [
+          -0.08218878507614136,
+          -0.057300012558698654,
+          0.7160000205039978
+        ],
+        [
+          0.08218877762556076,
+          0.05692305788397789,
+          0.7373483777046204
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / lower pointed gathered frill",
+      "vertices": 2304,
+      "polygons": 2304,
+      "bounds": [
+        [
+          -0.08218877017498016,
+          -0.06930001080036163,
+          0.5898000001907349
+        ],
+        [
+          0.08218877017498016,
+          0.05692305043339729,
+          0.6250630021095276
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / upper needle lace edging",
+      "vertices": 7344,
+      "polygons": 7056,
+      "bounds": [
+        [
+          -0.08188733458518982,
+          -0.057521965354681015,
+          0.7201359272003174
+        ],
+        [
+          0.08188731968402863,
+          0.05680376663804054,
+          0.7386901378631592
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / corset hem scalloped floral lace",
+      "vertices": 3557,
+      "polygons": 5110,
+      "bounds": [
+        [
+          -0.08206678181886673,
+          -0.06930004060268402,
+          0.5846437215805054
+        ],
+        [
+          0.08206680417060852,
+          0.056807342916727066,
+          0.621203601360321
+        ]
+      ],
+      "materials": [
+        "Photo 1 / corset hem lace / opaque actual holes"
+      ],
+      "uvLayers": [
+        "PhotoLaceUV",
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / rear ribbon bow wing -1",
+      "vertices": 242,
+      "polygons": 248,
+      "bounds": [
+        [
+          -0.023250028491020203,
+          0.05414150655269623,
+          0.626720666885376
+        ],
+        [
+          0.00039128062780946493,
+          0.06015482172369957,
+          0.6423227787017822
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / rear hanging ribbon tail -1",
+      "vertices": 330,
+      "polygons": 328,
+      "bounds": [
+        [
+          -0.011750019155442715,
+          0.05222219228744507,
+          0.5737196803092957
+        ],
+        [
+          0.0007500003557652235,
+          0.06847961246967316,
+          0.634624183177948
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / rear ribbon bow wing 1",
+      "vertices": 242,
+      "polygons": 248,
+      "bounds": [
+        [
+          -0.00039128042408265173,
+          0.05414153262972832,
+          0.626720666885376
+        ],
+        [
+          0.023249972611665726,
+          0.060154810547828674,
+          0.6423226594924927
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / rear hanging ribbon tail 1",
+      "vertices": 330,
+      "polygons": 328,
+      "bounds": [
+        [
+          -0.0007514996686950326,
+          0.05222221463918686,
+          0.5737202167510986
+        ],
+        [
+          0.011749960482120514,
+          0.0684795156121254,
+          0.6346238255500793
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / corset / rear ribbon sewn knot",
+      "vertices": 200,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.004400001838803291,
+          0.05495477840304375,
+          0.631070613861084
+        ],
+        [
+          0.004373479634523392,
+          0.05775485187768936,
+          0.6378705501556396
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 0",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.07456116378307343,
+          -0.020322218537330627,
+          0.6149381995201111
+        ],
+        [
+          -0.07340429723262787,
+          -0.017362570390105247,
+          0.6186782121658325
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 1",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.09174774587154388,
+          -0.028644196689128876,
+          0.5762056112289429
+        ],
+        [
+          -0.09049342572689056,
+          -0.025711439549922943,
+          0.5799456834793091
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 2",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.10283210128545761,
+          -0.036677286028862,
+          0.5354671478271484
+        ],
+        [
+          -0.10147741436958313,
+          -0.033776722848415375,
+          0.5392072200775146
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 3",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.1111002117395401,
+          -0.04543246701359749,
+          0.49350404739379883
+        ],
+        [
+          -0.10963477939367294,
+          -0.0425729975104332,
+          0.49724406003952026
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 4",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.12262234836816788,
+          -0.05716504901647568,
+          0.4523882567882538
+        ],
+        [
+          -0.12104248255491257,
+          -0.0543544702231884,
+          0.45612823963165283
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / left petticoat / drawstring brass eyelet 5",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.13017868995666504,
+          -0.06945084780454636,
+          0.41280633211135864
+        ],
+        [
+          -0.1284748911857605,
+          -0.06670112162828445,
+          0.41654643416404724
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 0",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.07373201847076416,
+          -0.020413914695382118,
+          0.6149346232414246
+        ],
+        [
+          0.07488906383514404,
+          -0.01745430752635002,
+          0.6186747550964355
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 1",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.09014483541250229,
+          -0.028533678501844406,
+          0.5759490728378296
+        ],
+        [
+          0.0913989469408989,
+          -0.025600846856832504,
+          0.579689085483551
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 2",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.10196235030889511,
+          -0.03687002882361412,
+          0.5347244143486023
+        ],
+        [
+          0.10331752151250839,
+          -0.03396962583065033,
+          0.5384644269943237
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 3",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.11060138791799545,
+          -0.0458802804350853,
+          0.4930664598941803
+        ],
+        [
+          0.11206790804862976,
+          -0.04302123188972473,
+          0.49680647253990173
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 4",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.11942366510629654,
+          -0.0562935397028923,
+          0.45265623927116394
+        ],
+        [
+          0.1210014745593071,
+          -0.05348201468586922,
+          0.456396222114563
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "01 / right petticoat / drawstring brass eyelet 5",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.1272866129875183,
+          -0.06873038411140442,
+          0.41262879967689514
+        ],
+        [
+          0.1289890855550766,
+          -0.0659799873828888,
+          0.4163688123226166
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Common Chapeleiro rig / actual weighted skin",
+          "enabled": true,
+          "target": "Alice Chapeleiro / shared rig study"
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / ivory fitted boned corset / pointed front",
+      "vertices": 3200,
+      "polygons": 3072,
+      "bounds": [
+        [
+          -0.07800000160932541,
+          -0.06499999761581421,
+          0.5950000286102295
+        ],
+        [
+          0.07800000160932541,
+          0.05299999937415123,
+          0.7319999933242798
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "NODES",
+          "name": "Bystedt / Post sim cloth / new internal surface",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 00 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.0012500506127253175,
+          -0.06595351547002792,
+          0.5948342680931091
+        ],
+        [
+          -0.00026996235828846693,
+          -0.04113653302192688,
+          0.7319155335426331
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 00 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.00026996235828846693,
+          -0.06595351547002792,
+          0.5948342680931091
+        ],
+        [
+          0.0012500506127253175,
+          -0.04113653302192688,
+          0.7319155335426331
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 01 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.023239117115736008,
+          -0.05699042230844498,
+          0.6045982837677002
+        ],
+        [
+          0.03369145095348358,
+          -0.036886632442474365,
+          0.7253579497337341
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 01 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.02437426894903183,
+          -0.05612009018659592,
+          0.6054592728614807
+        ],
+        [
+          0.03529400750994682,
+          -0.036451492458581924,
+          0.7250336408615112
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 02 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.0427941232919693,
+          -0.03616781532764435,
+          0.6199960708618164
+        ],
+        [
+          0.06128492206335068,
+          -0.025120064616203308,
+          0.7197809815406799
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 02 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.04357967525720596,
+          -0.035013601183891296,
+          0.6205068826675415
+        ],
+        [
+          0.06239284574985504,
+          -0.024385973811149597,
+          0.7195587754249573
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 03 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.05380193889141083,
+          -0.012886534444987774,
+          0.6246600151062012
+        ],
+        [
+          0.07680941373109818,
+          -0.008966127410531044,
+          0.7166616320610046
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 03 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.054082296788692474,
+          -0.011690961197018623,
+          0.6246883869171143
+        ],
+        [
+          0.07720484584569931,
+          -0.008088559843599796,
+          0.7165820002555847
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 04 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.054082296788692474,
+          0.008084287866950035,
+          0.6247482895851135
+        ],
+        [
+          0.07720477879047394,
+          0.011667279526591301,
+          0.7165820598602295
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 04 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.05380193889141083,
+          0.008959774859249592,
+          0.6247490644454956
+        ],
+        [
+          0.07680930942296982,
+          0.01285124197602272,
+          0.7166617512702942
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 05 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.04357967898249626,
+          0.02408895082771778,
+          0.6247814297676086
+        ],
+        [
+          0.06238928437232971,
+          0.033307239413261414,
+          0.7195647954940796
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 05 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.0427941270172596,
+          0.024791037663817406,
+          0.6247842907905579
+        ],
+        [
+          0.06128106638789177,
+          0.03425632789731026,
+          0.7197876572608948
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 06 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.02437427267432213,
+          0.035260751843452454,
+          0.624811053276062
+        ],
+        [
+          0.03528912737965584,
+          0.048407282680273056,
+          0.7250547409057617
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 06 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.023239118978381157,
+          0.035650379955768585,
+          0.6248116493225098
+        ],
+        [
+          0.033686842769384384,
+          0.04893385246396065,
+          0.7253798842430115
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 07 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          0.00026996235828846693,
+          0.03938698023557663,
+          0.6248542666435242
+        ],
+        [
+          0.0012500465381890535,
+          0.05398484691977501,
+          0.7319391369819641
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 07 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.0012500465381890535,
+          0.03938698023557663,
+          0.6248542666435242
+        ],
+        [
+          -0.00026996235828846693,
+          0.05398484691977501,
+          0.7319391369819641
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 08 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.033686842769384384,
+          0.035650379955768585,
+          0.6248116493225098
+        ],
+        [
+          -0.023239118978381157,
+          0.04893385246396065,
+          0.7253798842430115
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 08 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03528912737965584,
+          0.035260751843452454,
+          0.624811053276062
+        ],
+        [
+          -0.02437427267432213,
+          0.048407282680273056,
+          0.7250547409057617
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 09 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06128106638789177,
+          0.024791037663817406,
+          0.6247842907905579
+        ],
+        [
+          -0.0427941270172596,
+          0.03425632789731026,
+          0.7197876572608948
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 09 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06238928437232971,
+          0.02408895082771778,
+          0.6247814297676086
+        ],
+        [
+          -0.04357967898249626,
+          0.033307239413261414,
+          0.7195647954940796
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 10 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07680930942296982,
+          0.008959774859249592,
+          0.6247490644454956
+        ],
+        [
+          -0.05380193889141083,
+          0.01285124197602272,
+          0.7166617512702942
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 10 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07720477879047394,
+          0.008084287866950035,
+          0.6247482895851135
+        ],
+        [
+          -0.054082296788692474,
+          0.011667279526591301,
+          0.7165820598602295
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 11 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07720484584569931,
+          -0.011690961197018623,
+          0.6246883869171143
+        ],
+        [
+          -0.054082296788692474,
+          -0.008088559843599796,
+          0.7165820002555847
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 11 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.07680941373109818,
+          -0.012886534444987774,
+          0.6246600151062012
+        ],
+        [
+          -0.05380193889141083,
+          -0.008966127410531044,
+          0.7166616320610046
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 12 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06239284574985504,
+          -0.035013601183891296,
+          0.6205068826675415
+        ],
+        [
+          -0.04357967525720596,
+          -0.024385973811149597,
+          0.7195587754249573
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 12 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.06128492206335068,
+          -0.03616781532764435,
+          0.6199960708618164
+        ],
+        [
+          -0.0427941232919693,
+          -0.025120064616203308,
+          0.7197809815406799
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 13 edge -1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03529400750994682,
+          -0.05612009018659592,
+          0.6054592728614807
+        ],
+        [
+          -0.02437426894903183,
+          -0.036451492458581924,
+          0.7250336408615112
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset boning channel 13 edge 1",
+      "vertices": 198,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.03369145095348358,
+          -0.05699042230844498,
+          0.6045982837677002
+        ],
+        [
+          -0.023239117115736008,
+          -0.036886632442474365,
+          0.7253579497337341
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset bound upper edge",
+      "vertices": 1158,
+      "polygons": 1154,
+      "bounds": [
+        [
+          -0.0792735368013382,
+          -0.054262883961200714,
+          0.7153500318527222
+        ],
+        [
+          0.0792735368013382,
+          0.0542629174888134,
+          0.7326499819755554
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset bound lower edge",
+      "vertices": 1158,
+      "polygons": 1154,
+      "bounds": [
+        [
+          -0.07926291227340698,
+          -0.06626279652118683,
+          0.5943502187728882
+        ],
+        [
+          0.07926291227340698,
+          0.0542629174888134,
+          0.6256499886512756
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 0",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.049551427364349365,
+          0.713920533657074
+        ],
+        [
+          0.0052225906401872635,
+          -0.04880664497613907,
+          0.7158299684524536
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 0",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.049825143069028854,
+          0.7122634053230286
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04793292656540871,
+          0.7157365679740906
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.045841798186302185,
+          0.6974205374717712
+        ],
+        [
+          0.0052225906401872635,
+          -0.04509701579809189,
+          0.6993299722671509
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 1",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.046115513890981674,
+          0.6957634091377258
+        ],
+        [
+          -0.0018499998841434717,
+          -0.044223297387361526,
+          0.6992365717887878
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 2",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04344930127263069,
+          0.6809205412864685
+        ],
+        [
+          0.0052225906401872635,
+          -0.042704518884420395,
+          0.6828299760818481
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 2",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04372301697731018,
+          0.6792634129524231
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04183080047369003,
+          0.6827365756034851
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 3",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04261654615402222,
+          0.6644205451011658
+        ],
+        [
+          0.0052225906401872635,
+          -0.04187176376581192,
+          0.6663299798965454
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 3",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.042890261858701706,
+          0.6627634167671204
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04099804535508156,
+          0.6662365794181824
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 4",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.04395006597042084,
+          0.647920548915863
+        ],
+        [
+          0.0052225906401872635,
+          -0.04320528358221054,
+          0.6498299837112427
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 4",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04422378167510033,
+          0.6462634205818176
+        ],
+        [
+          -0.0018499998841434717,
+          -0.04233156517148018,
+          0.6497365832328796
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk hook 5",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0003774094220716506,
+          -0.0482337512075901,
+          0.6314205527305603
+        ],
+        [
+          0.0052225906401872635,
+          -0.047488968819379807,
+          0.6333299875259399
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / brass busk catch 5",
+      "vertices": 12,
+      "polygons": 8,
+      "bounds": [
+        [
+          -0.0031500000040978193,
+          -0.04850746691226959,
+          0.6297634243965149
+        ],
+        [
+          -0.0018499998841434717,
+          -0.046615250408649445,
+          0.6332365870475769
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 0 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.00824445765465498,
+          0.04935815557837486,
+          0.7185937762260437
+        ],
+        [
+          0.011773553676903248,
+          0.04991241171956062,
+          0.7221338152885437
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 0 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.011784457601606846,
+          0.04935815557837486,
+          0.7185937762260437
+        ],
+        [
+          -0.008255361579358578,
+          0.04991241171956062,
+          0.7221338152885437
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 1 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.007341801188886166,
+          0.04540865868330002,
+          0.7067518830299377
+        ],
+        [
+          0.010870897211134434,
+          0.04596291482448578,
+          0.7102919220924377
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 1 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010881801135838032,
+          0.04540865868330002,
+          0.7067518830299377
+        ],
+        [
+          -0.007352706044912338,
+          0.04596291482448578,
+          0.7102919220924377
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 2 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.0066428883001208305,
+          0.04235062375664711,
+          0.6949099898338318
+        ],
+        [
+          0.010171984322369099,
+          0.04290487989783287,
+          0.6984500288963318
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 2 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010182888247072697,
+          0.04235062375664711,
+          0.6949099898338318
+        ],
+        [
+          -0.006653793156147003,
+          0.04290487989783287,
+          0.6984500288963318
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 3 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006164374761283398,
+          0.04025693237781525,
+          0.6830681562423706
+        ],
+        [
+          0.009693470783531666,
+          0.04081118851900101,
+          0.6866081953048706
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 3 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.009704374708235264,
+          0.04025693237781525,
+          0.6830681562423706
+        ],
+        [
+          -0.00617527961730957,
+          0.04081118851900101,
+          0.6866081953048706
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 4 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.005938989110291004,
+          0.03927077353000641,
+          0.6712262630462646
+        ],
+        [
+          0.009468085132539272,
+          0.03982502967119217,
+          0.6747663021087646
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 4 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.00947898905724287,
+          0.03927077353000641,
+          0.6712262630462646
+        ],
+        [
+          -0.005949893966317177,
+          0.03982502967119217,
+          0.6747663021087646
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 5 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006133217364549637,
+          0.04012060537934303,
+          0.6593843698501587
+        ],
+        [
+          0.009662313386797905,
+          0.04067486152052879,
+          0.6629244089126587
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 5 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.009673217311501503,
+          0.04012060537934303,
+          0.6593843698501587
+        ],
+        [
+          -0.0061441222205758095,
+          0.04067486152052879,
+          0.6629244089126587
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 6 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.006755185313522816,
+          0.042841970920562744,
+          0.6475424766540527
+        ],
+        [
+          0.010284281335771084,
+          0.043396227061748505,
+          0.6510825157165527
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 6 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.010295185260474682,
+          0.042841970920562744,
+          0.6475424766540527
+        ],
+        [
+          -0.006766090169548988,
+          0.043396227061748505,
+          0.6510825157165527
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 7 side -1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          0.007729032542556524,
+          0.04710295796394348,
+          0.6357006430625916
+        ],
+        [
+          0.01125812903046608,
+          0.04765721410512924,
+          0.6392406821250916
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear eyelet 7 side 1",
+      "vertices": 78,
+      "polygons": 74,
+      "bounds": [
+        [
+          -0.011269032955169678,
+          0.04710295796394348,
+          0.6357006430625916
+        ],
+        [
+          -0.007739937398582697,
+          0.04765721410512924,
+          0.6392406821250916
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 0 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.009385533630847931,
+          0.04594811424612999,
+          0.7080797553062439
+        ],
+        [
+          0.010288190096616745,
+          0.05078297108411789,
+          0.7208059430122375
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 0 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.010288190096616745,
+          0.04594811424612999,
+          0.7080797553062439
+        ],
+        [
+          0.009385533630847931,
+          0.05078297108411789,
+          0.7208059430122375
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 1 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008704027161002159,
+          0.042887527495622635,
+          0.6962491273880005
+        ],
+        [
+          0.009402940049767494,
+          0.046834904700517654,
+          0.708952784538269
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 1 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.009402940049767494,
+          0.042887527495622635,
+          0.6962491273880005
+        ],
+        [
+          0.008704027161002159,
+          0.046834904700517654,
+          0.708952784538269
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 2 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.00823942944407463,
+          0.04079069942235947,
+          0.6844170689582825
+        ],
+        [
+          0.008717948570847511,
+          0.043777890503406525,
+          0.6971011161804199
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 2 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008717948570847511,
+          0.04079069942235947,
+          0.6844170689582825
+        ],
+        [
+          0.00823942944407463,
+          0.043777890503406525,
+          0.6971011161804199
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 3 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008022839203476906,
+          0.03980114310979843,
+          0.672581672668457
+        ],
+        [
+          0.008248230442404747,
+          0.04178865626454353,
+          0.6852527856826782
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 3 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008248230442404747,
+          0.03980114310979843,
+          0.672581672668457
+        ],
+        [
+          0.008022839203476906,
+          0.04178865626454353,
+          0.6852527856826782
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 4 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.0082174651324749,
+          0.039800774306058884,
+          0.660740077495575
+        ],
+        [
+          0.008023236878216267,
+          0.04169779643416405,
+          0.6734105944633484
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 4 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008023236878216267,
+          0.039800774306058884,
+          0.660740077495575
+        ],
+        [
+          0.0082174651324749,
+          0.04169779643416405,
+          0.6734105944633484
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 5 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008829249069094658,
+          0.04065687581896782,
+          0.6488906741142273
+        ],
+        [
+          0.008207281120121479,
+          0.044268615543842316,
+          0.6615762114524841
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 5 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008207281120121479,
+          0.04065687581896782,
+          0.6488906741142273
+        ],
+        [
+          0.008829249069094658,
+          0.044268615543842316,
+          0.6615762114524841
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 6 side 0",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.00978456623852253,
+          0.04338402301073074,
+          0.6370360851287842
+        ],
+        [
+          0.008810717612504959,
+          0.04852677509188652,
+          0.6497470736503601
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / rear corset crossing 6 side 1",
+      "vertices": 42,
+      "polygons": 38,
+      "bounds": [
+        [
+          -0.008810717612504959,
+          0.04338402301073074,
+          0.6370360851287842
+        ],
+        [
+          0.00978456623852253,
+          0.04852677509188652,
+          0.6497470736503601
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Authoring / 01 / corset / upper gathered frill",
+      "vertices": 1152,
+      "polygons": 1024,
+      "bounds": [
+        [
+          -0.08218877017498016,
+          -0.05730000138282776,
+          0.7160000205039978
+        ],
+        [
+          0.08218877017498016,
+          0.05692305043339729,
+          0.7372000217437744
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / lower pointed gathered frill",
+      "vertices": 1152,
+      "polygons": 1024,
+      "bounds": [
+        [
+          -0.08218877017498016,
+          -0.06929999589920044,
+          0.5898000001907349
+        ],
+        [
+          0.08218877017498016,
+          0.05692305043339729,
+          0.625
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / upper needle lace edging",
+      "vertices": 7344,
+      "polygons": 7056,
+      "bounds": [
+        [
+          -0.08188731968402863,
+          -0.05752196162939072,
+          0.7201359868049622
+        ],
+        [
+          0.08188731968402863,
+          0.056803762912750244,
+          0.7386901378631592
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / corset hem scalloped floral lace",
+      "vertices": 1470,
+      "polygons": 1820,
+      "bounds": [
+        [
+          -0.08206678926944733,
+          -0.06929999589920044,
+          0.5846437215805054
+        ],
+        [
+          0.08206678926944733,
+          0.05680733174085617,
+          0.6212000250816345
+        ]
+      ],
+      "materials": [
+        "Photo 1 / corset hem lace / opaque actual holes"
+      ],
+      "uvLayers": [
+        "PhotoLaceUV"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / rear ribbon bow wing -1",
+      "vertices": 125,
+      "polygons": 96,
+      "bounds": [
+        [
+          -0.023249998688697815,
+          0.054335590451955795,
+          0.626720666885376
+        ],
+        [
+          0.00039128062780946493,
+          0.06015482172369957,
+          0.6422206163406372
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / rear hanging ribbon tail -1",
+      "vertices": 165,
+      "polygons": 128,
+      "bounds": [
+        [
+          -0.011750000528991222,
+          0.0523548349738121,
+          0.5737206339836121
+        ],
+        [
+          0.0007499998901039362,
+          0.0684795156121254,
+          0.6344706416130066
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / rear ribbon bow wing 1",
+      "vertices": 125,
+      "polygons": 96,
+      "bounds": [
+        [
+          -0.00039128062780946493,
+          0.054335590451955795,
+          0.626720666885376
+        ],
+        [
+          0.023249998688697815,
+          0.06015482172369957,
+          0.6422206163406372
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / rear hanging ribbon tail 1",
+      "vertices": 165,
+      "polygons": 128,
+      "bounds": [
+        [
+          -0.0007499998901039362,
+          0.0523548349738121,
+          0.5737206339836121
+        ],
+        [
+          0.011750000528991222,
+          0.0684795156121254,
+          0.6344706416130066
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        },
+        {
+          "type": "NODES",
+          "name": "Bystedt / blouse thickness and UV",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / corset / rear ribbon sewn knot",
+      "vertices": 200,
+      "polygons": 194,
+      "bounds": [
+        [
+          -0.004399999976158142,
+          0.05495482310652733,
+          0.6310706734657288
+        ],
+        [
+          0.0043734777718782425,
+          0.05775482580065727,
+          0.6378706097602844
+        ]
+      ],
+      "materials": [
+        "Foundation / warm ivory cotton"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 0",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.07456116378307343,
+          -0.020322216674685478,
+          0.6149381399154663
+        ],
+        [
+          -0.07340428978204727,
+          -0.017362574115395546,
+          0.6186782121658325
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 1",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.09174774587154388,
+          -0.028644196689128876,
+          0.5762056112289429
+        ],
+        [
+          -0.09049342572689056,
+          -0.025711439549922943,
+          0.5799456834793091
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 2",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.10283209383487701,
+          -0.0366772785782814,
+          0.5354670882225037
+        ],
+        [
+          -0.10147740691900253,
+          -0.033776722848415375,
+          0.5392071604728699
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 3",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.1111002191901207,
+          -0.04543246701359749,
+          0.49350404739379883
+        ],
+        [
+          -0.10963477939367294,
+          -0.042573001235723495,
+          0.49724406003952026
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 4",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.12262235581874847,
+          -0.05716504901647568,
+          0.4523882567882538
+        ],
+        [
+          -0.12104249000549316,
+          -0.0543544739484787,
+          0.4561282694339752
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / left petticoat / drawstring brass eyelet 5",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          -0.13017868995666504,
+          -0.06945084780454636,
+          0.41280636191368103
+        ],
+        [
+          -0.1284749060869217,
+          -0.06670112162828445,
+          0.41654637455940247
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 0",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.07373201102018356,
+          -0.02041391283273697,
+          0.6149346828460693
+        ],
+        [
+          0.07488903403282166,
+          -0.01745431125164032,
+          0.6186747550964355
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 1",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.09014485031366348,
+          -0.028533676639199257,
+          0.5759490132331848
+        ],
+        [
+          0.0913989320397377,
+          -0.025600848719477654,
+          0.579689085483551
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 2",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.10196235775947571,
+          -0.03687002509832382,
+          0.5347244143486023
+        ],
+        [
+          0.1033175066113472,
+          -0.033969633281230927,
+          0.5384644865989685
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 3",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.11060139536857605,
+          -0.0458802804350853,
+          0.4930664598941803
+        ],
+        [
+          0.11206790804862976,
+          -0.04302123561501503,
+          0.49680647253990173
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 4",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.11942367255687714,
+          -0.0562935434281826,
+          0.45265623927116394
+        ],
+        [
+          0.1210014596581459,
+          -0.053482018411159515,
+          0.4563962519168854
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    },
+    {
+      "name": "Authoring / 01 / right petticoat / drawstring brass eyelet 5",
+      "vertices": 136,
+      "polygons": 130,
+      "bounds": [
+        [
+          0.1272866129875183,
+          -0.06873039156198502,
+          0.41262882947921753
+        ],
+        [
+          0.1289890855550766,
+          -0.0659799873828888,
+          0.41636884212493896
+        ]
+      ],
+      "materials": [
+        "Foundation / aged brass eyelets and busk"
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "Sewn blouse attachment follows actual fabric",
+          "enabled": true,
+          "target": null
+        }
+      ]
+    }
+  ],
+  "sourceUnchanged": true
+}

@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "file": "source_photo.png",
+      "bytes": 2255895,
+      "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    },
+    {
+      "file": "before/front.png",
+      "bytes": 441484,
+      "sha256": "60e75da56f3fef4e216e16d1d2152f76336ff1f957964c150d986e6a93ff1343"
+    },
+    {
+      "file": "after/front.png",
+      "bytes": 442008,
+      "sha256": "13517f4e0661f5aa6bc387dc73ef6603a1bcf96e7fe67003f5a9abb863a3d84c"
+    },
+    {
+      "file": "before/back.png",
+      "bytes": 457526,
+      "sha256": "9da907ca0ea6e0706e074a9fcac7e7ad2e225be913a8e1081ae292aacdd9646b"
+    },
+    {
+      "file": "after/back.png",
+      "bytes": 457321,
+      "sha256": "a64a898263d10cb8ce45a0adb09de04fc2d730b221013f4a41c432813b462df4"
+    },
+    {
+      "file": "before/profile.png",
+      "bytes": 418273,
+      "sha256": "b054baa2322f20db2fe8058ce4ababbd3741d937caccc4f8d908b2db5f418765"
+    },
+    {
+      "file": "after/profile.png",
+      "bytes": 418037,
+      "sha256": "2620b280bcdf9985f4da6ba9b34c1ad75329bc430326d6716fe121a753cd7ade"
+    },
+    {
+      "file": "before/comparison.json",
+      "bytes": 5332,
+      "sha256": "40b687dccd0e456797b7f39e3c5cc244bcd7f903b4fbbe4982fb5d51884dd843"
+    },
+    {
+      "file": "after/comparison.json",
+      "bytes": 5336,
+      "sha256": "80581831c554f7109d0e7cd9a322264ec60dd3c598a23613ae260a5bbb2eb100"
+    },
+    {
+      "file": "generation.json",
+      "bytes": 11872,
+      "sha256": "eecdb50b546c3a36f12557b8e3f20eeed5dc29699df833f19659266d8625c2c1"
+    },
+    {
+      "file": "executed_refinement.py",
+      "bytes": 7744,
+      "sha256": "e13a4dbac48aa47ace78ffdbdfd87726b1611acb8fbbede2ac9931813fe33724"
+    },
+    {
+      "file": "executed_render.py",
+      "bytes": 5104,
+      "sha256": "d7c8f680c141919cb7551c5f035228f9e0c31a05f3bff274290c51c0dd31ebd6"
+    },
+    {
+      "file": "refinement_execution.log",
+      "bytes": 812,
+      "sha256": "a5fb607d71c10fac887bb946bb39faa35c1f711c239e0d4d8082f00e97cfccb6"
+    },
+    {
+      "file": "before/render_execution.log",
+      "bytes": 1487,
+      "sha256": "3a4f3ed5836085684edb0b0382a87f6254a5c2d06af13fbda37d793893a913e6"
+    },
+    {
+      "file": "after/render_execution.log",
+      "bytes": 1491,
+      "sha256": "f67109cb4618dccb7bda9750bef3aa69f85dc4d1437410ca8b88f3af643574fa"
+    },
+    {
+      "file": "actual_corset_inventory.json",
+      "bytes": 126661,
+      "sha256": "683a9fa4fce3cbc864b89fa55af44784dbb8e389b84f686160991467af6b64ed"
+    },
+    {
+      "file": "photo_comparison.jpg",
+      "bytes": 467824,
+      "sha256": "d2e78fd9316ed8b0beb97c8b31771d25ac5d5c00598d5fa5cf2ae301324570df"
+    },
+    {
+      "file": "photo_board_sources.json",
+      "bytes": 1270,
+      "sha256": "f4b0ef8a063fadaba7215a22e681aca2ee892beb987f1b33b3a123a1f4cf6bfe"
+    },
+    {
+      "file": "visual_review.json",
+      "bytes": 1158,
+      "sha256": "c0602cf70a16e85a800f5099e589438638b8e15af8e3e31ea8e45a10e4299518"
+    },
+    {
+      "file": ".gitattributes",
+      "bytes": 73,
+      "sha256": "2cacd8c5b88d28a6324a5b106d17970ce30df8e32f9b76c87d00d4ca430747a8"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1268,
+      "sha256": "2758663aade8fa53f4662b6793b8d16069794f6418143e9f4078da6e91aa2e82"
+    }
+  ],
+  "totalBytes": 5527976
+}

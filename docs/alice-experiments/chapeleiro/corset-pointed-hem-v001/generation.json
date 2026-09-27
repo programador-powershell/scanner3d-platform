@@ -1,0 +1,224 @@
+{
+  "method": "Local pointed front hem refinement of existing authored skinned corset and its trim",
+  "parentGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\foundation_shared_rig_sewn_cloth_export_v001\\generation.json",
+  "parentGenerationSha256": "467ce08aa172efc6cb4aeafb9fc09c3d53de7a76c61eee815d61d02df4df0b10",
+  "editableBlend": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\corset_pointed_hem_study_v001\\chapeleiro_corset_pointed_hem_study.blend",
+  "editableBlendSha256": "4d8207687feb6b6040b3955e50d18fdebeef0371f399bd0fb9f3f95c571268af",
+  "editableBytes": 130179227,
+  "exports": {
+    "foundation": {
+      "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4"
+    }
+  },
+  "referenceChoice": "Pointed front of assembled foundation on the full own-stage sheet; isolated drawings inform construction details.",
+  "modifiedSkinnedPieces": [
+    {
+      "name": "01 / ivory fitted boned corset / pointed front",
+      "maximumVerticalChangeMeters": 0.003865659236907959,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "decd844d4d88237192365821f7cb582720808b73e342e2c6f162498337ccf467",
+      "geometryAfterSha256": "7151165071426820ab4788273604fbdb71098056997dbef4e72dedee6c43cb32"
+    },
+    {
+      "name": "01 / corset boning channel 00 edge -1",
+      "maximumVerticalChangeMeters": 0.00043365905115877457,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "f46919e78597f729b05cefedf39aadfc58b13a709591379544981effdf223658",
+      "geometryAfterSha256": "655bd577b2a6b4faa28d500c9c8ef7630bdb411ae5aeb275d4f908dd118e6cbd"
+    },
+    {
+      "name": "01 / corset boning channel 00 edge 1",
+      "maximumVerticalChangeMeters": 0.00043365905115877457,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "a1f83ecf071e24d7f76e742096b0a3b4b4e22edf0f7d45897225d8c88c973695",
+      "geometryAfterSha256": "129d5ae364779818ff7ea8a0039b6a29454fcea892fff195bd0938190a28c117"
+    },
+    {
+      "name": "01 / corset boning channel 01 edge -1",
+      "maximumVerticalChangeMeters": 0.0029085045582123437,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "17cf0dafcb973fa9ff697bb2b3984adb34a976cfe88bc02197bfa7b5eb6e6609",
+      "geometryAfterSha256": "7c695bfbae6bc354c83492489a3f14b5f6b0af84ee2a6cf85887a65f386a31ad"
+    },
+    {
+      "name": "01 / corset boning channel 01 edge 1",
+      "maximumVerticalChangeMeters": 0.002651374435026943,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "29a80a6f7b32edb7db40162c88f8b5ade14402860ddf001a03173724d5b7a642",
+      "geometryAfterSha256": "ff8913778150ccbaff5891a3f9dbe29a074f7fedccd840ca64ca635391847156"
+    },
+    {
+      "name": "01 / corset boning channel 02 edge -1",
+      "maximumVerticalChangeMeters": 0.0020228388799063968,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "717bfb84409b34ceb78e0ae7588a08fdd23cda5ab009f3dca120c75eed636605",
+      "geometryAfterSha256": "e9b174690b1ebacb0c807ab6e72c460e0f229a8b8e6d72d8e162682f039afded"
+    },
+    {
+      "name": "01 / corset boning channel 02 edge 1",
+      "maximumVerticalChangeMeters": 0.00210527760531376,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "dce73cb0a252953f213655b59709415a8e5adbb453c3dbf4bba68b1524e085d5",
+      "geometryAfterSha256": "2789cab06c8cf195b21a0767cb78405d16592c2876a099079b644a9a39128d75"
+    },
+    {
+      "name": "01 / corset boning channel 03 edge -1",
+      "maximumVerticalChangeMeters": 0.001304401020524527,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "570b660dac3b910e1f527f2be9d17ae4765a436d802b1a964117b88aafca9f98",
+      "geometryAfterSha256": "0ddf56a47533c27bfd5bf468de87dce3756481edd8d3612f3536475a9f493bcb"
+    },
+    {
+      "name": "01 / corset boning channel 03 edge 1",
+      "maximumVerticalChangeMeters": 0.0012677002152411108,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "a9be97d91c13ca14a101c6868ea212ffb239ceac1df8c10242856e9745010e0c",
+      "geometryAfterSha256": "2ef045c77022467c6af54e6224edb79b3ceafc2685afa51842d20419aac29f1c"
+    },
+    {
+      "name": "01 / corset boning channel 11 edge -1",
+      "maximumVerticalChangeMeters": 0.0012677002152411108,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "059711c0965489136e47eaa8a811b01d9817be249ae193f32fa5ffe3bc6c0ee3",
+      "geometryAfterSha256": "f6f6194a58d120c6d002d506d2f4f7aa3e4425e0aa4f81496bb9ffe4cc6710c7"
+    },
+    {
+      "name": "01 / corset boning channel 11 edge 1",
+      "maximumVerticalChangeMeters": 0.001304401020524527,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "3a0d3362bc7e8f801c01ae03d18c9681c26971421d4051f1b3b364e6b8247946",
+      "geometryAfterSha256": "3ba5ec86c9064a1059af72d42c367a350d92c228f8c5f6dc3f23352956719317"
+    },
+    {
+      "name": "01 / corset boning channel 12 edge -1",
+      "maximumVerticalChangeMeters": 0.00210527760531376,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "97f8645e563aa186a3cc41f8e916ef8eeb83fc3d858ce67e51fb10649f58ab3b",
+      "geometryAfterSha256": "b5c1652f1dd3ef285447d84a433553072f2e2ab1c988cb6c62176726bd7f3fb1"
+    },
+    {
+      "name": "01 / corset boning channel 12 edge 1",
+      "maximumVerticalChangeMeters": 0.0020228388799063968,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "d59117aaaba3f179bea2428ca409aaf25af2e2f0f9d4e428ac442b48559a1ca5",
+      "geometryAfterSha256": "e9eafae90f646d27fd19a15617698bea022d5735465bc7cbf99b4055e3ba60d1"
+    },
+    {
+      "name": "01 / corset boning channel 13 edge -1",
+      "maximumVerticalChangeMeters": 0.002651374435026943,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "f1bb92b0740f3ce404522b3ed1fac92bf29d4ed980c266ac577ff7fb10a967f3",
+      "geometryAfterSha256": "82d0dd9da19e61cc462549e2230b41fc35837c8ddf3233ab2da2100aaad162d9"
+    },
+    {
+      "name": "01 / corset boning channel 13 edge 1",
+      "maximumVerticalChangeMeters": 0.0029085045582123437,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "b65dfc5bf30c2850f721a7689656fee1f647133ba03e9044c37bda679f0b8183",
+      "geometryAfterSha256": "4c9055eff11012ed96ae363149d106d742e7ae916de90a3482a6b3e09a8def3c"
+    },
+    {
+      "name": "01 / corset bound lower edge",
+      "maximumVerticalChangeMeters": 0.0038580486462501673,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "518a231d882a24d7dc83863e47841fb088d7e109ab5a244f1d6c7963cb20cf41",
+      "geometryAfterSha256": "1eefd7d17e0fb1b1dc36044d84931880204cc6534fa94a4e93f258c823979813"
+    },
+    {
+      "name": "01 / brass busk hook 3",
+      "maximumVerticalChangeMeters": 1.0184943158932486e-07,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "a95f36b28876efde64947f4194bbd493c4b51d30168522aee84a7d7cdac5dd9b",
+      "geometryAfterSha256": "5d4abb6410ae0ce25bf4595083dd174b51d9709a80e47426e7bde9fdb44ee99d"
+    },
+    {
+      "name": "01 / brass busk catch 3",
+      "maximumVerticalChangeMeters": 1.00359676661552e-06,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "751576fbef762b887fda8bd6056bbc0caa0dea69195b76d65b71cb05a2d384f1",
+      "geometryAfterSha256": "9eb65397745ec993124d7a08dcc9a5618250d416661d9e9b0e855d11a4b1d903"
+    },
+    {
+      "name": "01 / brass busk hook 4",
+      "maximumVerticalChangeMeters": 0.00010063355457237684,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "ae444f60eba18e2a6fddf7a93d4863d3042de9f1b9626767ae19bc2f5e9d56bf",
+      "geometryAfterSha256": "2fcb65fbe3124c6168a0545d8052ed50a35694b8cb84259db6a745916844f5ff"
+    },
+    {
+      "name": "01 / brass busk catch 4",
+      "maximumVerticalChangeMeters": 7.74194057784067e-05,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "b18faa375f08262fad79a82d34784c2bdeaa82243d2673d12131e12ccaccbfd7",
+      "geometryAfterSha256": "e01a76b65e31b19bc8e4fa62e71da2ac6199f91b3c580207d4716a946004a415"
+    },
+    {
+      "name": "01 / brass busk hook 5",
+      "maximumVerticalChangeMeters": 0.0003925911710909924,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "43ffa73f0cf9977a9a25669fda1cf163f63ffc3612dc54f209e6ba788e48aaf6",
+      "geometryAfterSha256": "fce614c90304f391a0144bb849c00dcdce6d4d64fad8a57ba7ed9b39d852fd6c"
+    },
+    {
+      "name": "01 / brass busk catch 5",
+      "maximumVerticalChangeMeters": 0.0002757001865678445,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "e422130eb7c922dd45a03ad902dafabac06bed590be6e8f664733b2f4b784899",
+      "geometryAfterSha256": "3ce43742c50cd1d926b345f01f06fb948b962de625d0dc3099c39789984226a9"
+    },
+    {
+      "name": "01 / corset / lower pointed gathered frill",
+      "maximumVerticalChangeMeters": 0.003858892469085329,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "7ac4554af34fee3f020e0a2c24217ed327ff5d908226b584b16ee84f9752e65c",
+      "geometryAfterSha256": "1b7f0b7240a92b53a84e28081aa69396f1759fcc01cd9731ac14e82b80bb3374"
+    },
+    {
+      "name": "01 / corset / corset hem scalloped floral lace",
+      "maximumVerticalChangeMeters": 0.003863847662695652,
+      "uvSkinWeightsAndMaterialSlotsExactlyPreserved": true,
+      "obsoleteCustomNormalsCleared": false,
+      "geometryBeforeSha256": "ef0c49008e08b2f59c76a7b6203fa3ffa3ab896301fbe3c9647d9b54a83ee9dd",
+      "geometryAfterSha256": "c8218681bfdb19c80572122418943546e08574a348bebf205a2793f674182ed0"
+    }
+  ],
+  "otherMeshesIncludingHiddenAuthoringAndWholeExteriorUnchanged": true,
+  "allActionsExact": true,
+  "actionDataSha256": "f3f0ef67905535bd2ad7906ca60be0d8d96f51b58e8d2efca04fb6269cb72411",
+  "sharedBones": 209,
+  "fullAuthoringRetained": true,
+  "hiddenProceduralAuthoringShapePropagationPending": true,
+  "scriptSha256": "e13a4dbac48aa47ace78ffdbdfd87726b1611acb8fbbede2ac9931813fe33724",
+  "sourceCheckpointUnchanged": true,
+  "newGlbExported": false,
+  "finalFbxExported": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "allLayersFinished": false,
+  "additionalTripoCreditsConsumed": 0
+}
