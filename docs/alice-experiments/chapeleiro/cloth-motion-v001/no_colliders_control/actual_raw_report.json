@@ -1,0 +1,695 @@
+{
+  "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+  "parentWholeModelSha256": "ef01dd66b311bc821e43e8e953123b16a86dcdfb28ab2d0229c0d942bb72dc2f",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "clothCage": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+  "receiver": "Authoring / 01 / long ivory gathered petticoat",
+  "actualColliderSurfaces": [],
+  "collisionScope": "none",
+  "collisionControlsOnly": true,
+  "collisionSurfaceScope": "existing animated stockings and bloomers; hidden anatomy and other layers pending",
+  "actualSolver": "Blender CLOTH on the existing authored midsurface",
+  "solverSettingsUnchanged": true,
+  "clothNeverBypassedDuringSequence": true,
+  "actualSolverSettings": {
+    "quality": 12,
+    "mass": 0.11999999731779099,
+    "time_scale": 1.0,
+    "air_damping": 1.0,
+    "tension_stiffness": 35.0,
+    "compression_stiffness": 35.0,
+    "shear_stiffness": 12.0,
+    "bending_stiffness": 0.6000000238418579,
+    "tension_damping": 5.0,
+    "compression_damping": 5.0,
+    "shear_damping": 5.0,
+    "bending_damping": 0.5,
+    "pin_stiffness": 1.0,
+    "vertex_group_mass": "pinned",
+    "use_dynamic_mesh": false,
+    "use_pressure": false,
+    "uniform_pressure_force": 0.0,
+    "shrink_min": 0.0,
+    "shrink_max": 0.0,
+    "vertex_group_shrink": "shrinking"
+  },
+  "targetMeasurement": "separate identical mesh and skin groups with Armature only; no solver mutation",
+  "actualWarmupFrames": 12,
+  "sourceAction": "Run / current fitted Chapeleiro motion study",
+  "sourceActionFrameRange": [
+    1.0,
+    17.0
+  ],
+  "cycles": 1,
+  "frames": [
+    {
+      "frame": 1,
+      "maximumEdgeStretch": 1.2792550325393677,
+      "edgeStretch95Percentile": 1.0314267873764038,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.0,
+      "solverOffset95Percentile": 0.0,
+      "maximumFullyPinnedTargetError": 0.0,
+      "cacheOutdated": false,
+      "cacheInfo": "0 frames in memory (0 B).",
+      "bounds": [
+        [
+          -0.17524100840091705,
+          -0.06913705170154572,
+          0.31084954738616943
+        ],
+        [
+          0.17191365361213684,
+          0.15606899559497833,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 2,
+      "maximumEdgeStretch": 1.2878862619400024,
+      "edgeStretch95Percentile": 1.039211392402649,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.004844601731747389,
+      "solverOffset95Percentile": 0.003326170612126589,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "2 frames in memory (500 KiB).",
+      "bounds": [
+        [
+          -0.1738683134317398,
+          -0.06883131712675095,
+          0.3104415535926819
+        ],
+        [
+          0.1704394817352295,
+          0.15421226620674133,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 3,
+      "maximumEdgeStretch": 1.2886815071105957,
+      "edgeStretch95Percentile": 1.046892523765564,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.01156479213386774,
+      "solverOffset95Percentile": 0.010039265267550945,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "3 frames in memory (750 KiB).",
+      "bounds": [
+        [
+          -0.17072118818759918,
+          -0.06901383399963379,
+          0.3101401627063751
+        ],
+        [
+          0.1674036681652069,
+          0.15014022588729858,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 4,
+      "maximumEdgeStretch": 1.3225352764129639,
+      "edgeStretch95Percentile": 1.0520070791244507,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.02034364454448223,
+      "solverOffset95Percentile": 0.018026474863290787,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "4 frames in memory (999 KiB).",
+      "bounds": [
+        [
+          -0.1664862334728241,
+          -0.06917254626750946,
+          0.31009596586227417
+        ],
+        [
+          0.16348794102668762,
+          0.1450839638710022,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 5,
+      "maximumEdgeStretch": 1.2893085479736328,
+      "edgeStretch95Percentile": 1.054882526397705,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.02938193641602993,
+      "solverOffset95Percentile": 0.027003901079297066,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "5 frames in memory (1.2 MiB).",
+      "bounds": [
+        [
+          -0.1603042185306549,
+          -0.06918154656887054,
+          0.3103610575199127
+        ],
+        [
+          0.1571214348077774,
+          0.1374860405921936,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 6,
+      "maximumEdgeStretch": 1.2829599380493164,
+      "edgeStretch95Percentile": 1.0549641847610474,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.04161130636930466,
+      "solverOffset95Percentile": 0.036804456263780594,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "6 frames in memory (1.5 MiB).",
+      "bounds": [
+        [
+          -0.15226462483406067,
+          -0.06928776949644089,
+          0.31075453758239746
+        ],
+        [
+          0.1492648869752884,
+          0.12909471988677979,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 7,
+      "maximumEdgeStretch": 1.29364812374115,
+      "edgeStretch95Percentile": 1.055145502090454,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.05638612434267998,
+      "solverOffset95Percentile": 0.04783780127763748,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "7 frames in memory (1.7 MiB).",
+      "bounds": [
+        [
+          -0.14384563267230988,
+          -0.06935063749551773,
+          0.31117114424705505
+        ],
+        [
+          0.1408858299255371,
+          0.11893386393785477,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 8,
+      "maximumEdgeStretch": 1.2893744707107544,
+      "edgeStretch95Percentile": 1.054463267326355,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.07259104400873184,
+      "solverOffset95Percentile": 0.06025535613298416,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "8 frames in memory (2.0 MiB).",
+      "bounds": [
+        [
+          -0.134700208902359,
+          -0.06945531070232391,
+          0.31144532561302185
+        ],
+        [
+          0.13196784257888794,
+          0.10720638930797577,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 9,
+      "maximumEdgeStretch": 1.2769889831542969,
+      "edgeStretch95Percentile": 1.0544859170913696,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.09042853116989136,
+      "solverOffset95Percentile": 0.07326281070709229,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "9 frames in memory (2.2 MiB).",
+      "bounds": [
+        [
+          -0.12545810639858246,
+          -0.0695740282535553,
+          0.3114069700241089
+        ],
+        [
+          0.12251020967960358,
+          0.09349372982978821,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 10,
+      "maximumEdgeStretch": 1.2726918458938599,
+      "edgeStretch95Percentile": 1.0523446798324585,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.10852959007024765,
+      "solverOffset95Percentile": 0.08721951395273209,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "10 frames in memory (2.4 MiB).",
+      "bounds": [
+        [
+          -0.11714860051870346,
+          -0.0697433352470398,
+          0.3112450838088989
+        ],
+        [
+          0.11400590091943741,
+          0.0780860185623169,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 11,
+      "maximumEdgeStretch": 1.2730145454406738,
+      "edgeStretch95Percentile": 1.0538787841796875,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.12602269649505615,
+      "solverOffset95Percentile": 0.10159745812416077,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "11 frames in memory (2.7 MiB).",
+      "bounds": [
+        [
+          -0.1076006144285202,
+          -0.06979525834321976,
+          0.30960243940353394
+        ],
+        [
+          0.10533017665147781,
+          0.06090898811817169,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 12,
+      "maximumEdgeStretch": 1.275178074836731,
+      "edgeStretch95Percentile": 1.0547428131103516,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14394040405750275,
+      "solverOffset95Percentile": 0.11570753902196884,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "12 frames in memory (2.9 MiB).",
+      "bounds": [
+        [
+          -0.09929171949625015,
+          -0.06991510093212128,
+          0.308453768491745
+        ],
+        [
+          0.09645480662584305,
+          0.043613091111183167,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 13,
+      "maximumEdgeStretch": 1.2731812000274658,
+      "edgeStretch95Percentile": 1.0554755926132202,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16006018221378326,
+      "solverOffset95Percentile": 0.12955904006958008,
+      "maximumFullyPinnedTargetError": 5.960464477539063e-08,
+      "cacheOutdated": false,
+      "cacheInfo": "13 frames in memory (3.2 MiB).",
+      "bounds": [
+        [
+          -0.09108173847198486,
+          -0.0702304020524025,
+          0.3079362213611603
+        ],
+        [
+          0.08931966125965118,
+          0.031582675874233246,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 14,
+      "maximumEdgeStretch": 1.2814688682556152,
+      "edgeStretch95Percentile": 1.0717957019805908,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16797393560409546,
+      "solverOffset95Percentile": 0.14025548100471497,
+      "maximumFullyPinnedTargetError": 0.0009722090326249599,
+      "cacheOutdated": false,
+      "cacheInfo": "14 frames in memory (3.4 MiB).",
+      "bounds": [
+        [
+          -0.08484898507595062,
+          -0.0707901194691658,
+          0.3085838854312897
+        ],
+        [
+          0.08213526010513306,
+          0.019999515265226364,
+          0.589777946472168
+        ]
+      ]
+    },
+    {
+      "frame": 15,
+      "maximumEdgeStretch": 1.3105710744857788,
+      "edgeStretch95Percentile": 1.07523512840271,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19135122001171112,
+      "solverOffset95Percentile": 0.155589759349823,
+      "maximumFullyPinnedTargetError": 0.001200411468744278,
+      "cacheOutdated": false,
+      "cacheInfo": "15 frames in memory (3.7 MiB).",
+      "bounds": [
+        [
+          -0.08264372497797012,
+          -0.07113727927207947,
+          0.30827596783638
+        ],
+        [
+          0.0752953514456749,
+          0.01781480200588703,
+          0.5868934392929077
+        ]
+      ]
+    },
+    {
+      "frame": 16,
+      "maximumEdgeStretch": 1.3226805925369263,
+      "edgeStretch95Percentile": 1.0827819108963013,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.2044554501771927,
+      "solverOffset95Percentile": 0.16568084061145782,
+      "maximumFullyPinnedTargetError": 0.0011046378640457988,
+      "cacheOutdated": false,
+      "cacheInfo": "16 frames in memory (3.9 MiB).",
+      "bounds": [
+        [
+          -0.07763605564832687,
+          -0.07311000674962997,
+          0.3177124559879303
+        ],
+        [
+          0.0729149729013443,
+          0.01626676507294178,
+          0.5983394384384155
+        ]
+      ]
+    },
+    {
+      "frame": 17,
+      "maximumEdgeStretch": 1.2827651500701904,
+      "edgeStretch95Percentile": 1.0798088312149048,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1994582563638687,
+      "solverOffset95Percentile": 0.1657457947731018,
+      "maximumFullyPinnedTargetError": 0.0014811770524829626,
+      "cacheOutdated": false,
+      "cacheInfo": "17 frames in memory (4.1 MiB).",
+      "bounds": [
+        [
+          -0.07319781929254532,
+          -0.07631628960371017,
+          0.32987362146377563
+        ],
+        [
+          0.07386637479066849,
+          0.01644429937005043,
+          0.6116322875022888
+        ]
+      ]
+    },
+    {
+      "frame": 18,
+      "maximumEdgeStretch": 1.3324452638626099,
+      "edgeStretch95Percentile": 1.0866920948028564,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19896481931209564,
+      "solverOffset95Percentile": 0.1679127812385559,
+      "maximumFullyPinnedTargetError": 0.0006425789906643331,
+      "cacheOutdated": false,
+      "cacheInfo": "18 frames in memory (4.4 MiB).",
+      "bounds": [
+        [
+          -0.07390930503606796,
+          -0.0778624564409256,
+          0.33131322264671326
+        ],
+        [
+          0.07281988114118576,
+          0.01900881715118885,
+          0.6110961437225342
+        ]
+      ]
+    },
+    {
+      "frame": 19,
+      "maximumEdgeStretch": 1.3790186643600464,
+      "edgeStretch95Percentile": 1.0857226848602295,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.20620715618133545,
+      "solverOffset95Percentile": 0.17397747933864594,
+      "maximumFullyPinnedTargetError": 0.0008702627383172512,
+      "cacheOutdated": false,
+      "cacheInfo": "19 frames in memory (4.6 MiB).",
+      "bounds": [
+        [
+          -0.07523060590028763,
+          -0.08280058205127716,
+          0.3259434401988983
+        ],
+        [
+          0.07092838734388351,
+          0.019089961424469948,
+          0.6024823784828186
+        ]
+      ]
+    },
+    {
+      "frame": 20,
+      "maximumEdgeStretch": 1.2795499563217163,
+      "edgeStretch95Percentile": 1.0818105936050415,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.2179490029811859,
+      "solverOffset95Percentile": 0.1805781126022339,
+      "maximumFullyPinnedTargetError": 0.0007990434532985091,
+      "cacheOutdated": false,
+      "cacheInfo": "20 frames in memory (4.9 MiB).",
+      "bounds": [
+        [
+          -0.07595892995595932,
+          -0.08809245377779007,
+          0.317513644695282
+        ],
+        [
+          0.07201366126537323,
+          0.017099622637033463,
+          0.5937269330024719
+        ]
+      ]
+    },
+    {
+      "frame": 21,
+      "maximumEdgeStretch": 1.289555311203003,
+      "edgeStretch95Percentile": 1.0811203718185425,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.20967474579811096,
+      "solverOffset95Percentile": 0.17919552326202393,
+      "maximumFullyPinnedTargetError": 0.0005265610525384545,
+      "cacheOutdated": false,
+      "cacheInfo": "21 frames in memory (5.1 MiB).",
+      "bounds": [
+        [
+          -0.07403150200843811,
+          -0.09257815033197403,
+          0.31405338644981384
+        ],
+        [
+          0.07041206955909729,
+          0.01583806984126568,
+          0.5955315828323364
+        ]
+      ]
+    },
+    {
+      "frame": 22,
+      "maximumEdgeStretch": 1.3192179203033447,
+      "edgeStretch95Percentile": 1.0762321949005127,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.21496808528900146,
+      "solverOffset95Percentile": 0.1741679608821869,
+      "maximumFullyPinnedTargetError": 0.0012971528340131044,
+      "cacheOutdated": false,
+      "cacheInfo": "22 frames in memory (5.4 MiB).",
+      "bounds": [
+        [
+          -0.0707007646560669,
+          -0.09758509695529938,
+          0.3159253001213074
+        ],
+        [
+          0.07567058503627777,
+          0.017827752977609634,
+          0.6009960770606995
+        ]
+      ]
+    },
+    {
+      "frame": 23,
+      "maximumEdgeStretch": 1.3401044607162476,
+      "edgeStretch95Percentile": 1.0764983892440796,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.23387868702411652,
+      "solverOffset95Percentile": 0.18242418766021729,
+      "maximumFullyPinnedTargetError": 0.0010155559284612536,
+      "cacheOutdated": false,
+      "cacheInfo": "23 frames in memory (5.6 MiB).",
+      "bounds": [
+        [
+          -0.07435160875320435,
+          -0.10528207570314407,
+          0.3125418424606323
+        ],
+        [
+          0.07987097650766373,
+          0.0198737233877182,
+          0.5999443531036377
+        ]
+      ]
+    },
+    {
+      "frame": 24,
+      "maximumEdgeStretch": 1.3313930034637451,
+      "edgeStretch95Percentile": 1.077545166015625,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.22914281487464905,
+      "solverOffset95Percentile": 0.17834210395812988,
+      "maximumFullyPinnedTargetError": 0.0011976056266576052,
+      "cacheOutdated": false,
+      "cacheInfo": "24 frames in memory (5.9 MiB).",
+      "bounds": [
+        [
+          -0.08369005471467972,
+          -0.10744168609380722,
+          0.3246667981147766
+        ],
+        [
+          0.07477899640798569,
+          0.015780765563249588,
+          0.6126394271850586
+        ]
+      ]
+    },
+    {
+      "frame": 25,
+      "maximumEdgeStretch": 1.3561906814575195,
+      "edgeStretch95Percentile": 1.0862646102905273,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.21104110777378082,
+      "solverOffset95Percentile": 0.16752326488494873,
+      "maximumFullyPinnedTargetError": 0.0008113947696983814,
+      "cacheOutdated": false,
+      "cacheInfo": "25 frames in memory (6.1 MiB).",
+      "bounds": [
+        [
+          -0.09640864282846451,
+          -0.10499785840511322,
+          0.33131638169288635
+        ],
+        [
+          0.0726221427321434,
+          0.016615690663456917,
+          0.616324245929718
+        ]
+      ]
+    },
+    {
+      "frame": 26,
+      "maximumEdgeStretch": 1.3526942729949951,
+      "edgeStretch95Percentile": 1.0815644264221191,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19693812727928162,
+      "solverOffset95Percentile": 0.15869146585464478,
+      "maximumFullyPinnedTargetError": 0.0004908625851385295,
+      "cacheOutdated": false,
+      "cacheInfo": "26 frames in memory (6.3 MiB).",
+      "bounds": [
+        [
+          -0.10932894051074982,
+          -0.09722913056612015,
+          0.3339084982872009
+        ],
+        [
+          0.07535159587860107,
+          0.019737262278795242,
+          0.6141194105148315
+        ]
+      ]
+    },
+    {
+      "frame": 27,
+      "maximumEdgeStretch": 1.3924763202667236,
+      "edgeStretch95Percentile": 1.0917928218841553,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19490273296833038,
+      "solverOffset95Percentile": 0.15599462389945984,
+      "maximumFullyPinnedTargetError": 0.0011084583820775151,
+      "cacheOutdated": false,
+      "cacheInfo": "27 frames in memory (6.6 MiB).",
+      "bounds": [
+        [
+          -0.11708604544401169,
+          -0.09259007126092911,
+          0.32864829897880554
+        ],
+        [
+          0.07973826676607132,
+          0.02252332679927349,
+          0.6002824902534485
+        ]
+      ]
+    },
+    {
+      "frame": 28,
+      "maximumEdgeStretch": 1.491273045539856,
+      "edgeStretch95Percentile": 1.0852171182632446,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19961018860340118,
+      "solverOffset95Percentile": 0.15796546638011932,
+      "maximumFullyPinnedTargetError": 0.0008395414333790541,
+      "cacheOutdated": false,
+      "cacheInfo": "28 frames in memory (6.8 MiB).",
+      "bounds": [
+        [
+          -0.12149634957313538,
+          -0.09544727951288223,
+          0.31410184502601624
+        ],
+        [
+          0.08040240406990051,
+          0.018548589199781418,
+          0.5905569195747375
+        ]
+      ]
+    },
+    {
+      "frame": 29,
+      "maximumEdgeStretch": 1.3856419324874878,
+      "edgeStretch95Percentile": 1.0925037860870361,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.19067205488681793,
+      "solverOffset95Percentile": 0.15246683359146118,
+      "maximumFullyPinnedTargetError": 0.0005138819105923176,
+      "cacheOutdated": false,
+      "cacheInfo": "29 frames in memory (7.1 MiB).",
+      "bounds": [
+        [
+          -0.12083578109741211,
+          -0.09675785154104233,
+          0.3087315559387207
+        ],
+        [
+          0.07526896148920059,
+          0.01922549307346344,
+          0.5928376317024231
+        ]
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_collision_none_v001\\actual_continuous_cloth_frames.npz",
+  "dataSha256": "aa5e2bc57af641f417e1002c0bde8c8565fe39d01442166d58b0c815767900d1",
+  "scriptSha256": "070aa38df3a1cc4a44ab026984a9be386f292ad6c63b3a6d717ab7bb18ca4030",
+  "geometryChanged": false,
+  "parentEditableUnchanged": true,
+  "exportedPreviewReceivesSolverMotion": false,
+  "secondaryBoneResponseBaked": false,
+  "allLayersFinished": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "fidelityVerified": false
+}

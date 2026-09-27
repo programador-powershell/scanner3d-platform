@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "entryMode": "held_first",
+      "colliderSurface": "exported_shells",
+      "case": "first_toggle_probe",
+      "actualFrames": 45,
+      "lastMaximumEdgeStretch": 13.184292793273926,
+      "sequenceMaximumEdgeStretch": 13.287564277648926,
+      "lastEdgeStretch95Percentile": 3.536623239517212,
+      "cacheContinuityMeasured": false,
+      "allReportedCacheStatesCurrent": null,
+      "collisionSurfaces": [
+        "01 / left stocking / fitted leg ankle and closed toe",
+        "01 / right stocking / fitted leg ankle and closed toe",
+        "01 / bloomers / continuous waist and sewn crotch"
+      ],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "40296b35fcd6551a781eb13628e179a19a4243895ea7389f471312c9ef58861b",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    },
+    {
+      "entryMode": "held_first",
+      "colliderSurface": "exported_shells",
+      "case": "continuous_underlayers",
+      "actualFrames": 29,
+      "lastMaximumEdgeStretch": 13.59568977355957,
+      "sequenceMaximumEdgeStretch": 13.59568977355957,
+      "lastEdgeStretch95Percentile": 3.514507532119751,
+      "cacheContinuityMeasured": true,
+      "allReportedCacheStatesCurrent": true,
+      "collisionSurfaces": [
+        "01 / left stocking / fitted leg ankle and closed toe",
+        "01 / right stocking / fitted leg ankle and closed toe",
+        "01 / bloomers / continuous waist and sewn crotch"
+      ],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    },
+    {
+      "entryMode": "held_first",
+      "colliderSurface": "exported_shells",
+      "case": "no_colliders_control",
+      "actualFrames": 29,
+      "lastMaximumEdgeStretch": 1.3856419324874878,
+      "sequenceMaximumEdgeStretch": 1.491273045539856,
+      "lastEdgeStretch95Percentile": 1.0925037860870361,
+      "cacheContinuityMeasured": true,
+      "allReportedCacheStatesCurrent": true,
+      "collisionSurfaces": [],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    },
+    {
+      "entryMode": "held_first",
+      "colliderSurface": "exported_shells",
+      "case": "stockings_control",
+      "actualFrames": 29,
+      "lastMaximumEdgeStretch": 5.71290922164917,
+      "sequenceMaximumEdgeStretch": 6.945143222808838,
+      "lastEdgeStretch95Percentile": 2.0550715923309326,
+      "cacheContinuityMeasured": true,
+      "allReportedCacheStatesCurrent": true,
+      "collisionSurfaces": [
+        "01 / left stocking / fitted leg ankle and closed toe",
+        "01 / right stocking / fitted leg ankle and closed toe"
+      ],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    },
+    {
+      "entryMode": "rest_transition",
+      "colliderSurface": "exported_shells",
+      "case": "rest_transition_control",
+      "actualFrames": 29,
+      "lastMaximumEdgeStretch": 10.601844787597656,
+      "sequenceMaximumEdgeStretch": 11.8240966796875,
+      "lastEdgeStretch95Percentile": 3.357067584991455,
+      "cacheContinuityMeasured": true,
+      "allReportedCacheStatesCurrent": true,
+      "collisionSurfaces": [
+        "01 / left stocking / fitted leg ankle and closed toe",
+        "01 / right stocking / fitted leg ankle and closed toe",
+        "01 / bloomers / continuous waist and sewn crotch"
+      ],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    },
+    {
+      "entryMode": "rest_transition",
+      "colliderSurface": "authored_midsurfaces",
+      "case": "thin_underlayers",
+      "actualFrames": 29,
+      "lastMaximumEdgeStretch": 1.5956214666366577,
+      "sequenceMaximumEdgeStretch": 3.0459063053131104,
+      "lastEdgeStretch95Percentile": 1.0481566190719604,
+      "cacheContinuityMeasured": true,
+      "allReportedCacheStatesCurrent": true,
+      "collisionSurfaces": [
+        "01 / left stocking / fitted leg ankle and closed toe",
+        "01 / right stocking / fitted leg ankle and closed toe",
+        "01 / bloomers / continuous waist and sewn crotch"
+      ],
+      "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+      "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+      "clothCollisionVerified": false,
+      "motionVerified": false
+    }
+  ],
+  "scope": "collision isolation studies of the existing ivory carrier; no final rig response baked",
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

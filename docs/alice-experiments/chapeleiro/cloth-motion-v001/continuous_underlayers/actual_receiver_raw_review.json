@@ -1,0 +1,79 @@
+{
+  "parentEditableSha256": "43a005823420619e32df69d7805d26181f5afc56d65462baaffd31199aacb4bc",
+  "probeDataSha256": "d88d62f396915fb5add81881a77fd3f015a1a5538674f3363cd820cda1c0b526",
+  "sourcePhoto": "F:\\Alice\\prototipo\\Alice chapeleiro\\ChatGPT Image 7 de jun. de 2026, 11_05_53 (1).png",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "renders": [
+    {
+      "frame": 1,
+      "view": "front",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v003\\actual_receiver_review\\actual_solver_01_front.png",
+      "sha256": "de80c0a9b706661e26bed6ede7137ad0bba3ab7ccd906339eeeeb493ab7f8a7c",
+      "recordedCageReconstructionMaximumError": 0.0,
+      "cameraPosition": [
+        0.0,
+        -2.0,
+        0.3400000035762787
+      ]
+    },
+    {
+      "frame": 12,
+      "view": "front",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v003\\actual_receiver_review\\actual_solver_12_front.png",
+      "sha256": "3a55d7554820925d24b40a18e2f33b391b232a4e6f41a26f0ba93f3403b1cb15",
+      "recordedCageReconstructionMaximumError": 0.0,
+      "cameraPosition": [
+        0.0,
+        -2.0,
+        0.3400000035762787
+      ]
+    },
+    {
+      "frame": 20,
+      "view": "front",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v003\\actual_receiver_review\\actual_solver_20_front.png",
+      "sha256": "e0f4609b3baa492f10e281a2c5f5117215d9e8267ad956c269238b7877b67a03",
+      "recordedCageReconstructionMaximumError": 0.0,
+      "cameraPosition": [
+        0.0,
+        -2.0,
+        0.3400000035762787
+      ]
+    },
+    {
+      "frame": 29,
+      "view": "front",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v003\\actual_receiver_review\\actual_solver_29_front.png",
+      "sha256": "9ef04dc74d56956af73da9ade279dd41e9f96bdd174b0e2839a3cb09ba8fa844",
+      "recordedCageReconstructionMaximumError": 0.0,
+      "cameraPosition": [
+        0.0,
+        -2.0,
+        0.3400000035762787
+      ]
+    },
+    {
+      "frame": 29,
+      "view": "threequarter",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v003\\actual_receiver_review\\actual_solver_29_threequarter.png",
+      "sha256": "67c0bcdd484d84f8f62ac8df2b8f7ba89ca9f0e3e79f050c2f0755a0a30af59d",
+      "recordedCageReconstructionMaximumError": 0.0,
+      "cameraPosition": [
+        1.0845012664794922,
+        -1.6684635877609253,
+        0.5402156114578247
+      ]
+    }
+  ],
+  "visibleScope": "existing authored ivory receiver plus stockings and bloomers; other foundation parts hidden for diagnosis",
+  "actualReceiver": "Authoring / 01 / long ivory gathered petticoat",
+  "existingSurfaceDeformAndBystedtNodesPreserved": true,
+  "recordedSolverPositionsReconstructed": true,
+  "scriptSha256": "aa485d0b0d672e06824a79d35ba14abfd8ba9816e673014411735874d4a433b1",
+  "parentEditableUnchanged": true,
+  "finalGlbChanged": false,
+  "allLayersFinished": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "fidelityVerified": false
+}

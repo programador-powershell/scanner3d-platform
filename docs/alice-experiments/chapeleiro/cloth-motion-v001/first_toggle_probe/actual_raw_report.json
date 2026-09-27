@@ -1,0 +1,890 @@
+{
+  "parentEditableSha256": "40296b35fcd6551a781eb13628e179a19a4243895ea7389f471312c9ef58861b",
+  "parentWholeModelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "sourcePhotoSha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+  "clothCage": "01 / long ivory gathered petticoat / petticoat simulation midsurface",
+  "receiver": "Authoring / 01 / long ivory gathered petticoat",
+  "actualColliderSurfaces": [
+    "01 / left stocking / fitted leg ankle and closed toe",
+    "01 / right stocking / fitted leg ankle and closed toe",
+    "01 / bloomers / continuous waist and sewn crotch"
+  ],
+  "collisionSurfaceScope": "existing animated stockings and bloomers, not a complete hidden anatomical body or all layers",
+  "actualSolver": "Blender CLOTH on the existing authored midsurface",
+  "solverSettingsUnchanged": true,
+  "actualWarmupFrames": 12,
+  "sourceAction": "Run / current fitted Chapeleiro motion study",
+  "sourceActionFrameRange": [
+    1.0,
+    17.0
+  ],
+  "cycles": 2,
+  "frames": [
+    {
+      "frame": 1,
+      "maximumEdgeStretch": 1.2792550325393677,
+      "edgeStretch95Percentile": 1.0314267873764038,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.0,
+      "solverOffset95Percentile": 0.0,
+      "bounds": [
+        [
+          -0.17524100840091705,
+          -0.06913705170154572,
+          0.31084954738616943
+        ],
+        [
+          0.17191365361213684,
+          0.15606899559497833,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 2,
+      "maximumEdgeStretch": 1.4107959270477295,
+      "edgeStretch95Percentile": 1.0653202533721924,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.003205325920134783,
+      "solverOffset95Percentile": 0.0010822433978319168,
+      "bounds": [
+        [
+          -0.17499397695064545,
+          -0.06905229389667511,
+          0.31097477674484253
+        ],
+        [
+          0.17163553833961487,
+          0.15573877096176147,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 3,
+      "maximumEdgeStretch": 1.6581448316574097,
+      "edgeStretch95Percentile": 1.0839089155197144,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.006861192174255848,
+      "solverOffset95Percentile": 0.0027684401720762253,
+      "bounds": [
+        [
+          -0.17445406317710876,
+          -0.06837183237075806,
+          0.31167662143707275
+        ],
+        [
+          0.17102231085300446,
+          0.1549326628446579,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 4,
+      "maximumEdgeStretch": 1.7816907167434692,
+      "edgeStretch95Percentile": 1.1107711791992188,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.010502401739358902,
+      "solverOffset95Percentile": 0.004990001674741507,
+      "bounds": [
+        [
+          -0.1736993044614792,
+          -0.06846672296524048,
+          0.3118273615837097
+        ],
+        [
+          0.16979706287384033,
+          0.1539054960012436,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 5,
+      "maximumEdgeStretch": 1.9528636932373047,
+      "edgeStretch95Percentile": 1.1347883939743042,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.014499805867671967,
+      "solverOffset95Percentile": 0.008041216060519218,
+      "bounds": [
+        [
+          -0.1725628823041916,
+          -0.06913765519857407,
+          0.31212764978408813
+        ],
+        [
+          0.16764409840106964,
+          0.1524253636598587,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 6,
+      "maximumEdgeStretch": 2.406925916671753,
+      "edgeStretch95Percentile": 1.1593761444091797,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.022321458905935287,
+      "solverOffset95Percentile": 0.012399246916174889,
+      "bounds": [
+        [
+          -0.17077462375164032,
+          -0.06972334533929825,
+          0.3149436414241791
+        ],
+        [
+          0.16236528754234314,
+          0.1509755253791809,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 7,
+      "maximumEdgeStretch": 2.833822011947632,
+      "edgeStretch95Percentile": 1.1853581666946411,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.028131967410445213,
+      "solverOffset95Percentile": 0.01698770374059677,
+      "bounds": [
+        [
+          -0.1684088408946991,
+          -0.07012514770030975,
+          0.3149062693119049
+        ],
+        [
+          0.15744324028491974,
+          0.14861585199832916,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 8,
+      "maximumEdgeStretch": 3.2122466564178467,
+      "edgeStretch95Percentile": 1.2353472709655762,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.03780350461602211,
+      "solverOffset95Percentile": 0.022008631378412247,
+      "bounds": [
+        [
+          -0.164685919880867,
+          -0.07034526020288467,
+          0.31521204113960266
+        ],
+        [
+          0.15089760720729828,
+          0.14389385282993317,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 9,
+      "maximumEdgeStretch": 3.4731342792510986,
+      "edgeStretch95Percentile": 1.2889912128448486,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.04676138237118721,
+      "solverOffset95Percentile": 0.02718934416770935,
+      "bounds": [
+        [
+          -0.1593199372291565,
+          -0.07012928277254105,
+          0.31622400879859924
+        ],
+        [
+          0.1437053084373474,
+          0.13849279284477234,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 10,
+      "maximumEdgeStretch": 3.32383131980896,
+      "edgeStretch95Percentile": 1.3414233922958374,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.054991330951452255,
+      "solverOffset95Percentile": 0.03303830698132515,
+      "bounds": [
+        [
+          -0.15500660240650177,
+          -0.07066591829061508,
+          0.3162938356399536
+        ],
+        [
+          0.13624002039432526,
+          0.13289488852024078,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 11,
+      "maximumEdgeStretch": 3.2313506603240967,
+      "edgeStretch95Percentile": 1.4079875946044922,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.06088542565703392,
+      "solverOffset95Percentile": 0.04056693613529205,
+      "bounds": [
+        [
+          -0.1509319394826889,
+          -0.07378678023815155,
+          0.31573808193206787
+        ],
+        [
+          0.1302577257156372,
+          0.12551413476467133,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 12,
+      "maximumEdgeStretch": 3.4497203826904297,
+      "edgeStretch95Percentile": 1.4678339958190918,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.06713322550058365,
+      "solverOffset95Percentile": 0.04822227358818054,
+      "bounds": [
+        [
+          -0.14411570131778717,
+          -0.07121723890304565,
+          0.3175792396068573
+        ],
+        [
+          0.12446676194667816,
+          0.11656059324741364,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 13,
+      "maximumEdgeStretch": 3.554039716720581,
+      "edgeStretch95Percentile": 1.5524836778640747,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.07548607885837555,
+      "solverOffset95Percentile": 0.05650286003947258,
+      "bounds": [
+        [
+          -0.13586193323135376,
+          -0.07770819962024689,
+          0.3197906017303467
+        ],
+        [
+          0.11776198446750641,
+          0.1057475283741951,
+          0.5927258133888245
+        ]
+      ]
+    },
+    {
+      "frame": 14,
+      "maximumEdgeStretch": 5.784084796905518,
+      "edgeStretch95Percentile": 1.7185460329055786,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1009623184800148,
+      "solverOffset95Percentile": 0.06996246427297592,
+      "bounds": [
+        [
+          -0.13051587343215942,
+          -0.0816134661436081,
+          0.3215983211994171
+        ],
+        [
+          0.10631458461284637,
+          0.09951923042535782,
+          0.589777946472168
+        ]
+      ]
+    },
+    {
+      "frame": 15,
+      "maximumEdgeStretch": 8.028794288635254,
+      "edgeStretch95Percentile": 1.9538761377334595,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14348715543746948,
+      "solverOffset95Percentile": 0.09587675333023071,
+      "bounds": [
+        [
+          -0.12139536440372467,
+          -0.084207683801651,
+          0.3166736662387848
+        ],
+        [
+          0.10572142153978348,
+          0.11962104588747025,
+          0.5868934392929077
+        ]
+      ]
+    },
+    {
+      "frame": 16,
+      "maximumEdgeStretch": 8.50090217590332,
+      "edgeStretch95Percentile": 2.1026127338409424,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15324987471103668,
+      "solverOffset95Percentile": 0.10368887335062027,
+      "bounds": [
+        [
+          -0.116435207426548,
+          -0.07376233488321304,
+          0.3177013397216797
+        ],
+        [
+          0.10478117316961288,
+          0.1280391663312912,
+          0.5983394384384155
+        ]
+      ]
+    },
+    {
+      "frame": 17,
+      "maximumEdgeStretch": 7.426578521728516,
+      "edgeStretch95Percentile": 2.2482428550720215,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14204439520835876,
+      "solverOffset95Percentile": 0.0927349328994751,
+      "bounds": [
+        [
+          -0.10244641453027725,
+          -0.06898113340139389,
+          0.3373948931694031
+        ],
+        [
+          0.10420995205640793,
+          0.1082255020737648,
+          0.6116322875022888
+        ]
+      ]
+    },
+    {
+      "frame": 18,
+      "maximumEdgeStretch": 8.152310371398926,
+      "edgeStretch95Percentile": 2.3256173133850098,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.13933010399341583,
+      "solverOffset95Percentile": 0.09113827347755432,
+      "bounds": [
+        [
+          -0.10218789428472519,
+          -0.06671185791492462,
+          0.34967145323753357
+        ],
+        [
+          0.10374720394611359,
+          0.07088930159807205,
+          0.6110961437225342
+        ]
+      ]
+    },
+    {
+      "frame": 19,
+      "maximumEdgeStretch": 8.525655746459961,
+      "edgeStretch95Percentile": 2.483483076095581,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.13779810070991516,
+      "solverOffset95Percentile": 0.0994335189461708,
+      "bounds": [
+        [
+          -0.10218843072652817,
+          -0.06619740277528763,
+          0.34566614031791687
+        ],
+        [
+          0.10425963997840881,
+          0.06480672210454941,
+          0.6024823784828186
+        ]
+      ]
+    },
+    {
+      "frame": 20,
+      "maximumEdgeStretch": 6.764516830444336,
+      "edgeStretch95Percentile": 2.6806800365448,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.13153569400310516,
+      "solverOffset95Percentile": 0.10304079204797745,
+      "bounds": [
+        [
+          -0.10062558203935623,
+          -0.10553838312625885,
+          0.346757173538208
+        ],
+        [
+          0.10258831083774567,
+          0.06813617050647736,
+          0.5937269330024719
+        ]
+      ]
+    },
+    {
+      "frame": 21,
+      "maximumEdgeStretch": 6.878747463226318,
+      "edgeStretch95Percentile": 2.807126522064209,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14269347488880157,
+      "solverOffset95Percentile": 0.1111997589468956,
+      "bounds": [
+        [
+          -0.1014457494020462,
+          -0.12548565864562988,
+          0.3719339370727539
+        ],
+        [
+          0.09962127357721329,
+          0.07020813226699829,
+          0.5955315828323364
+        ]
+      ]
+    },
+    {
+      "frame": 22,
+      "maximumEdgeStretch": 10.09318733215332,
+      "edgeStretch95Percentile": 2.9794411659240723,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1743517369031906,
+      "solverOffset95Percentile": 0.12761960923671722,
+      "bounds": [
+        [
+          -0.10455121099948883,
+          -0.12372367084026337,
+          0.38420239090919495
+        ],
+        [
+          0.09393724054098129,
+          0.0826609656214714,
+          0.6009960770606995
+        ]
+      ]
+    },
+    {
+      "frame": 23,
+      "maximumEdgeStretch": 11.625354766845703,
+      "edgeStretch95Percentile": 3.128202199935913,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1957572102546692,
+      "solverOffset95Percentile": 0.14256860315799713,
+      "bounds": [
+        [
+          -0.10560225695371628,
+          -0.11130020767450333,
+          0.3919459879398346
+        ],
+        [
+          0.08971326798200607,
+          0.09612993896007538,
+          0.5999443531036377
+        ]
+      ]
+    },
+    {
+      "frame": 24,
+      "maximumEdgeStretch": 9.193784713745117,
+      "edgeStretch95Percentile": 3.0985958576202393,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.18550848960876465,
+      "solverOffset95Percentile": 0.1340666562318802,
+      "bounds": [
+        [
+          -0.10099580138921738,
+          -0.10331226140260696,
+          0.40908199548721313
+        ],
+        [
+          0.09008108079433441,
+          0.09671413153409958,
+          0.6126394271850586
+        ]
+      ]
+    },
+    {
+      "frame": 25,
+      "maximumEdgeStretch": 8.237518310546875,
+      "edgeStretch95Percentile": 3.1756718158721924,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1618940830230713,
+      "solverOffset95Percentile": 0.11973310261964798,
+      "bounds": [
+        [
+          -0.09615457057952881,
+          -0.08882877230644226,
+          0.4039114713668823
+        ],
+        [
+          0.09445229172706604,
+          0.08014135807752609,
+          0.616324245929718
+        ]
+      ]
+    },
+    {
+      "frame": 26,
+      "maximumEdgeStretch": 9.226969718933105,
+      "edgeStretch95Percentile": 3.21262526512146,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14812080562114716,
+      "solverOffset95Percentile": 0.1108725443482399,
+      "bounds": [
+        [
+          -0.09441054612398148,
+          -0.07526694238185883,
+          0.38655078411102295
+        ],
+        [
+          0.09918801486492157,
+          0.0617528110742569,
+          0.6141194105148315
+        ]
+      ]
+    },
+    {
+      "frame": 27,
+      "maximumEdgeStretch": 9.69766902923584,
+      "edgeStretch95Percentile": 3.3195714950561523,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.14468319714069366,
+      "solverOffset95Percentile": 0.11056852340698242,
+      "bounds": [
+        [
+          -0.09412131458520889,
+          -0.06699899584054947,
+          0.3761744797229767
+        ],
+        [
+          0.10194836556911469,
+          0.05749315395951271,
+          0.6002824902534485
+        ]
+      ]
+    },
+    {
+      "frame": 28,
+      "maximumEdgeStretch": 10.115718841552734,
+      "edgeStretch95Percentile": 3.428276777267456,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1449650228023529,
+      "solverOffset95Percentile": 0.11448586732149124,
+      "bounds": [
+        [
+          -0.09517176449298859,
+          -0.0685172751545906,
+          0.37875545024871826
+        ],
+        [
+          0.10249865055084229,
+          0.06538655608892441,
+          0.5905569195747375
+        ]
+      ]
+    },
+    {
+      "frame": 29,
+      "maximumEdgeStretch": 10.861702919006348,
+      "edgeStretch95Percentile": 3.42065167427063,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15140357613563538,
+      "solverOffset95Percentile": 0.11905670166015625,
+      "bounds": [
+        [
+          -0.09062239527702332,
+          -0.07132396101951599,
+          0.39128339290618896
+        ],
+        [
+          0.10152869671583176,
+          0.07828038930892944,
+          0.5928373336791992
+        ]
+      ]
+    },
+    {
+      "frame": 30,
+      "maximumEdgeStretch": 9.587772369384766,
+      "edgeStretch95Percentile": 3.451524019241333,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15913555026054382,
+      "solverOffset95Percentile": 0.124632827937603,
+      "bounds": [
+        [
+          -0.0876409038901329,
+          -0.06737488508224487,
+          0.39760223031044006
+        ],
+        [
+          0.10221172124147415,
+          0.08965326845645905,
+          0.589777946472168
+        ]
+      ]
+    },
+    {
+      "frame": 31,
+      "maximumEdgeStretch": 9.07459831237793,
+      "edgeStretch95Percentile": 3.510260820388794,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16293667256832123,
+      "solverOffset95Percentile": 0.13012796640396118,
+      "bounds": [
+        [
+          -0.08545751869678497,
+          -0.06702128797769547,
+          0.4038865268230438
+        ],
+        [
+          0.10731580853462219,
+          0.09334579855203629,
+          0.5868934392929077
+        ]
+      ]
+    },
+    {
+      "frame": 32,
+      "maximumEdgeStretch": 9.834632873535156,
+      "edgeStretch95Percentile": 3.3696694374084473,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1616213023662567,
+      "solverOffset95Percentile": 0.12931013107299805,
+      "bounds": [
+        [
+          -0.0819343701004982,
+          -0.06997891515493393,
+          0.4178849458694458
+        ],
+        [
+          0.10205040127038956,
+          0.09508038312196732,
+          0.5983394384384155
+        ]
+      ]
+    },
+    {
+      "frame": 33,
+      "maximumEdgeStretch": 10.417733192443848,
+      "edgeStretch95Percentile": 3.4068264961242676,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15784761309623718,
+      "solverOffset95Percentile": 0.12421687692403793,
+      "bounds": [
+        [
+          -0.0819847509264946,
+          -0.06947169452905655,
+          0.4280426800251007
+        ],
+        [
+          0.09889216721057892,
+          0.08489880710840225,
+          0.6116322875022888
+        ]
+      ]
+    },
+    {
+      "frame": 34,
+      "maximumEdgeStretch": 10.045284271240234,
+      "edgeStretch95Percentile": 3.453402042388916,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15213097631931305,
+      "solverOffset95Percentile": 0.11950504034757614,
+      "bounds": [
+        [
+          -0.08136651664972305,
+          -0.06771029531955719,
+          0.4128425121307373
+        ],
+        [
+          0.09802607446908951,
+          0.0678652748465538,
+          0.6110961437225342
+        ]
+      ]
+    },
+    {
+      "frame": 35,
+      "maximumEdgeStretch": 9.619029998779297,
+      "edgeStretch95Percentile": 3.507189989089966,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15257912874221802,
+      "solverOffset95Percentile": 0.11772167682647705,
+      "bounds": [
+        [
+          -0.07949040085077286,
+          -0.06734462082386017,
+          0.3953126072883606
+        ],
+        [
+          0.09647631645202637,
+          0.05796285718679428,
+          0.6024823784828186
+        ]
+      ]
+    },
+    {
+      "frame": 36,
+      "maximumEdgeStretch": 10.282235145568848,
+      "edgeStretch95Percentile": 3.53140926361084,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.1549297273159027,
+      "solverOffset95Percentile": 0.12023190408945084,
+      "bounds": [
+        [
+          -0.07878544181585312,
+          -0.06872136145830154,
+          0.3876442015171051
+        ],
+        [
+          0.0944899320602417,
+          0.060285937041044235,
+          0.5937269330024719
+        ]
+      ]
+    },
+    {
+      "frame": 37,
+      "maximumEdgeStretch": 10.873750686645508,
+      "edgeStretch95Percentile": 3.4814388751983643,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.15669450163841248,
+      "solverOffset95Percentile": 0.12447523325681686,
+      "bounds": [
+        [
+          -0.07831749320030212,
+          -0.0684240534901619,
+          0.4029041826725006
+        ],
+        [
+          0.08880174905061722,
+          0.07030786573886871,
+          0.5955315828323364
+        ]
+      ]
+    },
+    {
+      "frame": 38,
+      "maximumEdgeStretch": 10.364421844482422,
+      "edgeStretch95Percentile": 3.515932559967041,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.17001128196716309,
+      "solverOffset95Percentile": 0.13255509734153748,
+      "bounds": [
+        [
+          -0.08229051530361176,
+          -0.0672386884689331,
+          0.41960737109184265
+        ],
+        [
+          0.0840422734618187,
+          0.07841992378234863,
+          0.6009960770606995
+        ]
+      ]
+    },
+    {
+      "frame": 39,
+      "maximumEdgeStretch": 11.207263946533203,
+      "edgeStretch95Percentile": 3.5427446365356445,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.17991255223751068,
+      "solverOffset95Percentile": 0.1398354470729828,
+      "bounds": [
+        [
+          -0.08337134122848511,
+          -0.06841228157281876,
+          0.424210786819458
+        ],
+        [
+          0.08782948553562164,
+          0.08296181261539459,
+          0.5999443531036377
+        ]
+      ]
+    },
+    {
+      "frame": 40,
+      "maximumEdgeStretch": 10.058406829833984,
+      "edgeStretch95Percentile": 3.484959602355957,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.17507266998291016,
+      "solverOffset95Percentile": 0.13692456483840942,
+      "bounds": [
+        [
+          -0.08130984753370285,
+          -0.07099646329879761,
+          0.4401558041572571
+        ],
+        [
+          0.08389224857091904,
+          0.08552072197198868,
+          0.6126394271850586
+        ]
+      ]
+    },
+    {
+      "frame": 41,
+      "maximumEdgeStretch": 11.765603065490723,
+      "edgeStretch95Percentile": 3.584772825241089,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16715551912784576,
+      "solverOffset95Percentile": 0.1342703402042389,
+      "bounds": [
+        [
+          -0.0788441151380539,
+          -0.06883816421031952,
+          0.43431153893470764
+        ],
+        [
+          0.08200724422931671,
+          0.07574647665023804,
+          0.616324245929718
+        ]
+      ]
+    },
+    {
+      "frame": 42,
+      "maximumEdgeStretch": 12.338709831237793,
+      "edgeStretch95Percentile": 3.6013095378875732,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16932694613933563,
+      "solverOffset95Percentile": 0.1338549703359604,
+      "bounds": [
+        [
+          -0.08086711168289185,
+          -0.06671461462974548,
+          0.420544296503067
+        ],
+        [
+          0.07985638082027435,
+          0.06196707487106323,
+          0.6141194105148315
+        ]
+      ]
+    },
+    {
+      "frame": 43,
+      "maximumEdgeStretch": 12.845442771911621,
+      "edgeStretch95Percentile": 3.6078028678894043,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.17218175530433655,
+      "solverOffset95Percentile": 0.13448552787303925,
+      "bounds": [
+        [
+          -0.08151677995920181,
+          -0.0678563266992569,
+          0.41062867641448975
+        ],
+        [
+          0.07614889740943909,
+          0.05969565361738205,
+          0.6002824902534485
+        ]
+      ]
+    },
+    {
+      "frame": 44,
+      "maximumEdgeStretch": 13.287564277648926,
+      "edgeStretch95Percentile": 3.6365442276000977,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.16799119114875793,
+      "solverOffset95Percentile": 0.1321040689945221,
+      "bounds": [
+        [
+          -0.08029146492481232,
+          -0.0699683204293251,
+          0.40094712376594543
+        ],
+        [
+          0.0758725181221962,
+          0.0654037743806839,
+          0.5905569195747375
+        ]
+      ]
+    },
+    {
+      "frame": 45,
+      "maximumEdgeStretch": 13.184292793273926,
+      "edgeStretch95Percentile": 3.536623239517212,
+      "maximumActualSolverOffsetFromAnimatedSkin": 0.17403553426265717,
+      "solverOffset95Percentile": 0.13465431332588196,
+      "bounds": [
+        [
+          -0.08011163026094437,
+          -0.07062028348445892,
+          0.41063186526298523
+        ],
+        [
+          0.07497857511043549,
+          0.07360187917947769,
+          0.5928376317024231
+        ]
+      ]
+    }
+  ],
+  "dataFile": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\ivory_cloth_run_probe_v001\\actual_cloth_frames.npz",
+  "dataSha256": "6e5eb6eef0566ed2741b90cb39539b62df39f1e72a4fc4cdcf50e23276434569",
+  "scriptSha256": "0eb795104283796648ebdf0b2b15d298378179ebd09500bc286a6a9388c8b508",
+  "geometryChanged": false,
+  "parentEditableUnchanged": true,
+  "exportedPreviewReceivesSolverMotion": false,
+  "secondaryBoneResponseBaked": false,
+  "allLayersFinished": false,
+  "clothCollisionVerified": false,
+  "motionVerified": false,
+  "fidelityVerified": false
+}

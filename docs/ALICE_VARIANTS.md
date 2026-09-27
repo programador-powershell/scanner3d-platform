@@ -479,3 +479,7 @@ idêntica à anterior. Um ensaio físico separado da anágua foi iniciado contra
 as superfícies animadas das meias e bloomers, sem incorporar essa resposta
 aos GLBs nem aprovar todas as camadas. O FBX final e a próxima variante continuam
 aguardando a conclusão integral do Chapeleiro.
+
+## Chapeleiro — ensaios físicos da anágua
+
+O [estudo de colisões](alice-experiments/chapeleiro/cloth-motion-v001/README.md) registra posições reais do Cloth, alvos de skin e cache contínuo. Colisores sobre os suportes finos existentes reduzem a deformação em relação às cascas exportadas. A resposta ainda não está baked no rig; o GLB público v093 e o FBX final permanecem sem essa integração. Todas as camadas, quatro ações e colisões precisam de conclusão antes da próxima variante.
