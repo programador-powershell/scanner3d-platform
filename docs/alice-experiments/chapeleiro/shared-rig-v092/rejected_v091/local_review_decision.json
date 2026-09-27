@@ -1,0 +1,16 @@
+{
+  "status": "rejected_inferred_region_assignment_before_full_save",
+  "reason": "Candidate v001 still attributes native forearm/bracelet vertices to the skirt and regresses upper-lateral skin stretch despite reducing global hem/hair maxima.",
+  "candidateInference": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\native_surface_measurement_v090\\geodesic_surface_candidate_v001\\inference.json",
+  "measuredCandidateEvidence": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\native_surface_measurement_v090\\geodesic_surface_candidate_v001\\candidate_boundary_estimate.json",
+  "executedCodeSha256": {
+    "refine_chapeleiro_shared_rig_attachments.py": "acda49f20027638c8d3908287a6a28f7d1c05527d04bb2c849b54bacc6a8312a",
+    "chapeleiro_shared_rig_fields.py": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+    "chapeleiro_native_surface_weights.py": "705b54d11746cf496a7ff3b0cad5887ddc04482405159d958527369c1a411ddb"
+  },
+  "fullEditableSaved": false,
+  "parentFullEditablePreserved": "F:/Alice/Deliverables/Alice_Variants/alice_chapeleiro/foundation_shared_rig_v090/chapeleiro_shared_rig_attachment_refinement.blend",
+  "allLayersFinished": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

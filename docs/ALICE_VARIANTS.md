@@ -455,3 +455,15 @@ perna, e as pernas ainda atravessam as camadas. Anatomia, cabelo, acabamento,
 contatos, tecido secundário e colisões continuam pendentes. O editável completo
 de 129.351.994 bytes foi preservado; esse avanço parcial não é o FBX final nem
 autoriza iniciar outra variante.
+
+O [shared-rig-v092](alice-experiments/chapeleiro/shared-rig-v092/README.md)
+refina os pesos do exterior intacto por distâncias contínuas na própria
+superfície, sem recortar o vestido nem alterar UVs e atlas. As doze poses reais
+mostram continuidade melhor no braço levantado; nas cinco poses medidas do GLB,
+o maior esticamento cai de 304,9263 para 43,3960 vezes. Axila, palma/luva,
+transição saia/perna e colisões permanecem pendentes. A atribuição anatômica é
+inferida e não constitui aprovação. A fundação permanece idêntica à v090,
+com as mesmas quatro vistas, doze poses e foto própria preservadas. O candidato
+v091 foi rejeitado por regressão de atribuição no antebraço. O novo editável
+completo de 129.193.720 bytes foi preservado e reaberto; o FBX final e a próxima
+variante continuam aguardando a conclusão das fichas e testes de movimento.

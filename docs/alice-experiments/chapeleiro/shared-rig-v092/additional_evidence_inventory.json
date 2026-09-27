@@ -1,0 +1,201 @@
+{
+  "artifacts": [
+    {
+      "file": "executed_chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "executed_refine_chapeleiro_shared_rig_attachments.py",
+      "sha256": "acda49f20027638c8d3908287a6a28f7d1c05527d04bb2c849b54bacc6a8312a",
+      "bytes": 14748
+    },
+    {
+      "file": "executed_chapeleiro_native_surface_weights.py",
+      "sha256": "d3c0db2406c78fcc29f8a62fffed3b788875bd6512af0669f2a78236b15a2fb2",
+      "bytes": 3840
+    },
+    {
+      "file": "full_editable_reopen.json",
+      "sha256": "7fbab152f467548afed124d3a6fa3e38748446990490665cc4bbff2e1f36ae46",
+      "bytes": 48820
+    },
+    {
+      "file": "native_hand_bind_fit.json",
+      "sha256": "8ddddec2cffc33f7382b160881f491fdf28a8a2cc0266a4147b8238af1055c03",
+      "bytes": 1174101
+    },
+    {
+      "file": "native_individual_finger_targets.json",
+      "sha256": "cb216e4da7986cecce58dc36b73114944b234c7c309c90fed6afd5dbad68968d",
+      "bytes": 922775
+    },
+    {
+      "file": "refitted_motion_retarget.json",
+      "sha256": "248690baeafbc1cbcfad6c00e0a2530b4ff273844655738d12b302774fda56f2",
+      "bytes": 10836
+    },
+    {
+      "file": "native_surface_weight_inference.json",
+      "sha256": "2050e0cfad17f584d82c5dabb8b701e9d2f6d806d3d64b60bc965bbc428d7513",
+      "bytes": 7844
+    },
+    {
+      "file": "foundation_evidence_reuse.json",
+      "sha256": "b6c7391a4887198a799bdcbb070c0e6a6501e08e7a840451e07731ee04b9c759",
+      "bytes": 570
+    },
+    {
+      "file": "native_surface_weights.npz",
+      "sha256": "2ab64fe76e46ecfc3f3ea2d8417722f8247db988563e64c217cbe3de243f831f",
+      "bytes": 5769623
+    },
+    {
+      "file": "surface_measurements/measurement.json",
+      "sha256": "b43a2665d50e149ea90ef7071a29871ad62ed420ff451430f7c31ac947c0e866",
+      "bytes": 56388
+    },
+    {
+      "file": "surface_measurements/native_surface_weights.npz",
+      "sha256": "6256d2524eb0b6e30a94bd5a32b4b4469fc17bf02a3d81d4c67173b536d07b80",
+      "bytes": 17363514
+    },
+    {
+      "file": "surface_measurements/surface_boundary_diagnosis.json",
+      "sha256": "1fdfffbfbe373bcedc4cecba1e317e39cd63a0c9db849cf59ff231c06038fbc9",
+      "bytes": 335708
+    },
+    {
+      "file": "surface_measurements/native_region_components.json",
+      "sha256": "cf3dca6cbae043ec763ad7046e9fcb552578492eb651fd4661d09e290afbfec3",
+      "bytes": 81698
+    },
+    {
+      "file": "surface_measurements/native_region_components.npz",
+      "sha256": "337d615c13ab2b260cb07474871b0f001591876a28bbe76447faddcf8d3a0643",
+      "bytes": 2109146
+    },
+    {
+      "file": "executed_measure_chapeleiro_native_surface_weights.py",
+      "sha256": "374ca2570490899f870dddc8bf0e056053fe5a295ac9f4e40168e5476b1738f6",
+      "bytes": 6285
+    },
+    {
+      "file": "executed_render_chapeleiro_surface_weight_ownership.py",
+      "sha256": "0a39998a64d45d4cfd190c693d43c6e8e2d9ee2d5300aad1dd20a4f04078885e",
+      "bytes": 5758
+    },
+    {
+      "file": "executed_audit_chapeleiro_shared_rig_checkpoint.py",
+      "sha256": "dd8163d6139090c8d354c4d9fd3562f8eb220a4c79dd0b2e60c91a3ebf6d5794",
+      "bytes": 4703
+    },
+    {
+      "file": "executed_diagnose_chapeleiro_whole_pose_edges.py",
+      "sha256": "62abf79b24d838a27d5ffa75c65782baf31033f57e10e38febe7201e55429825",
+      "bytes": 3908
+    },
+    {
+      "file": "executed_review_chapeleiro_shared_rig_export.py",
+      "sha256": "14b720f268f5640f0d26ad2142783c657137f939f0bd5cbd4a9d32b68feb5e02",
+      "bytes": 9454
+    },
+    {
+      "file": "executed_render_fresh_alice_stage.py",
+      "sha256": "e1e824766c8b0a7db740dc41c75d8194ca9acbffe8479364ffede679feebcad3",
+      "bytes": 7487
+    },
+    {
+      "file": "surface_measurements/executed_analyze_chapeleiro_native_surface_weights.py",
+      "sha256": "ddb6dd906adfd95a0453d13a08bdb73ac78ab8a38d0d839cc31ef38c689e851a",
+      "bytes": 2968
+    },
+    {
+      "file": "surface_measurements/executed_analyze_chapeleiro_native_region_components.py",
+      "sha256": "44e141c02bfcce820e35f9178e1d393c30737db5e9c936df7efc94a14d961a61",
+      "bytes": 2230
+    },
+    {
+      "file": "surface_measurements/executed_infer_chapeleiro_geodesic_surface_weights_v002.py",
+      "sha256": "5b6a694c012fd11a835ac9b62eadad0fc8ebfafb255c956529925cb5f5f75779",
+      "bytes": 9941
+    },
+    {
+      "file": "candidate_v002/inference.json",
+      "sha256": "6cc430ce7772e7f2fc8c0e603aa2ebd40f3a548519c0b31b9801289a412c0d41",
+      "bytes": 7777
+    },
+    {
+      "file": "candidate_v002/surface_weights.npz",
+      "sha256": "2ab64fe76e46ecfc3f3ea2d8417722f8247db988563e64c217cbe3de243f831f",
+      "bytes": 5769623
+    },
+    {
+      "file": "candidate_v002/ownership_review/back.png",
+      "sha256": "c95f46629c826dbe8d05388171907ece933cc252674de00575e2f6debaed0570",
+      "bytes": 325300
+    },
+    {
+      "file": "candidate_v002/ownership_review/comparison.json",
+      "sha256": "eeb0c71a2305e706138a98e1168bfe35075a3c0ff40789bb816df6d460f3b665",
+      "bytes": 2382
+    },
+    {
+      "file": "candidate_v002/ownership_review/front.png",
+      "sha256": "f0e06f8f71ff5c638c6640e6df880dd7a940ee035eab9ab81eb4233681400456",
+      "bytes": 327949
+    },
+    {
+      "file": "candidate_v002/ownership_review/threequarter.png",
+      "sha256": "63b5a098e20bba1e69b26dc00b5dddd4c80272d3e184302fc971d238b7fb956f",
+      "bytes": 318049
+    },
+    {
+      "file": "rejected_v091/local_review_decision.json",
+      "sha256": "d6f95ea1af0599d29c9261a0ce7906d33d238d8dfe640b9f53def913f0a765c0",
+      "bytes": 1275
+    },
+    {
+      "file": "rejected_v091/executed_refine_chapeleiro_shared_rig_attachments.py",
+      "sha256": "acda49f20027638c8d3908287a6a28f7d1c05527d04bb2c849b54bacc6a8312a",
+      "bytes": 14748
+    },
+    {
+      "file": "rejected_v091/executed_chapeleiro_shared_rig_fields.py",
+      "sha256": "6985b166138e389a11021839d8a087bb362b985b836ab70c5cb9d35b0bf5559a",
+      "bytes": 12773
+    },
+    {
+      "file": "rejected_v091/executed_chapeleiro_native_surface_weights.py",
+      "sha256": "705b54d11746cf496a7ff3b0cad5887ddc04482405159d958527369c1a411ddb",
+      "bytes": 3534
+    },
+    {
+      "file": "rejected_v091/candidate_v001/inference.json",
+      "sha256": "d289f9248638c155886e7a84b4809c836b5b53c575d75af458d5d5c4990c4ecc",
+      "bytes": 7776
+    },
+    {
+      "file": "rejected_v091/candidate_v001/surface_weights.npz",
+      "sha256": "c1ffcc37250fb6d165e21714f75224e24e955343b7265abd0fbf708d21db4dcf",
+      "bytes": 5788821
+    },
+    {
+      "file": "rejected_v091/candidate_v001/candidate_boundary_estimate.json",
+      "sha256": "952a0a77b10df70268d938f61db1d96c0c4c0f64c9f9a1c5dc947762b5bfb749",
+      "bytes": 364371
+    },
+    {
+      "file": "rejected_v091/executed_infer_chapeleiro_geodesic_surface_weights.py",
+      "sha256": "6db858d92fabf87568df63d58fa28ab605668f034d878942ad368ddb88c99cea",
+      "bytes": 9930
+    },
+    {
+      "file": "rejected_v091/executed_analyze_chapeleiro_surface_candidate.py",
+      "sha256": "bcf0f84924b6703e2cd4b5f42622d2503dc869257c4a99ebee1da5605235ac2e",
+      "bytes": 2971
+    }
+  ],
+  "allLayersFinished": false,
+  "finalFbxExported": false
+}

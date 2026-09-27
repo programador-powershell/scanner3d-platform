@@ -1,0 +1,40 @@
+{
+  "scope": "five actual exported GLB poses of the same unchanged exterior and same fitted bind/actions; no cloth or fidelity approval",
+  "beforeModelSha256": "c1b6bdfbd1fee5cee23332846022f0ac87893d330c2a90936ea2a8db9163f638",
+  "afterModelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "rows": [
+    {
+      "motion": "Walk",
+      "fraction": 0.33,
+      "v090MaximumStretchRatio": 214.5092010498047,
+      "v092MaximumStretchRatio": 15.936659812927246
+    },
+    {
+      "motion": "Run",
+      "fraction": 0.66,
+      "v090MaximumStretchRatio": 153.88002014160156,
+      "v092MaximumStretchRatio": 43.396034240722656
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.18,
+      "v090MaximumStretchRatio": 265.6569519042969,
+      "v092MaximumStretchRatio": 32.582496643066406
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.5,
+      "v090MaximumStretchRatio": 120.10704040527344,
+      "v092MaximumStretchRatio": 32.58258056640625
+    },
+    {
+      "motion": "Attack",
+      "fraction": 0.78,
+      "v090MaximumStretchRatio": 304.92633056640625,
+      "v092MaximumStretchRatio": 32.58243942260742
+    }
+  ],
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false
+}

@@ -1,0 +1,113 @@
+{
+  "stageId": "alice_chapeleiro_full",
+  "sourcePhoto": "whole/source_photo.png",
+  "sourcePhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "sourceCrop": null,
+  "reviewScope": "complete_stage_geometry",
+  "selectedRolePrefix": null,
+  "selectedComponentGroup": null,
+  "renderedComponents": [
+    "Chapeleiro / intact whole exterior / skin study"
+  ],
+  "model": "whole/skin_study.glb",
+  "modelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "renders": {
+    "front": {
+      "file": "whole/rest/front.png",
+      "sha256": "3f00feb2cc870f767c02b7ef876218a1e21e47fc9e11da4043be48ca20c3e846",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        -3.9198248386383057,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 556687
+    },
+    "side": {
+      "file": "whole/rest/side.png",
+      "sha256": "967750dfe034d70c49c0fc46c36170df28ed670b9b41d5e5763b74de84be70ac",
+      "cameraPosition": [
+        3.9197239875793457,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 451656
+    },
+    "back": {
+      "file": "whole/rest/back.png",
+      "sha256": "e667f1f6dba37932c6d8592837332f899326ec811181a6704f0f30cf18737e59",
+      "cameraPosition": [
+        -2.2649765014648438e-06,
+        3.9196274280548096,
+        0.4900011122226715
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 555264
+    },
+    "threequarter": {
+      "file": "whole/rest/threequarter.png",
+      "sha256": "fcfa21e8ca064291b2bbaf1c7cd1b4df9ad01ca7fb3d13ac0018bae40d95e47b",
+      "cameraPosition": [
+        2.1195058822631836,
+        -3.260880708694458,
+        0.9791184663772583
+      ],
+      "cameraTarget": [
+        -2.2649765014648438e-06,
+        -9.860843420028687e-05,
+        0.4900011122226715
+      ],
+      "orthoScale": 1.1171219480037688,
+      "bytes": 542574
+    }
+  },
+  "bounds": {
+    "min": [
+      -0.22196771204471588,
+      -0.15589569509029388,
+      3.5339067835593596e-05
+    ],
+    "max": [
+      0.22196318209171295,
+      0.1556984782218933,
+      0.9799668788909912
+    ]
+  },
+  "frontAxis": "-y",
+  "fidelityVerified": false,
+  "status": "needs_refinement",
+  "visibleDifferences": [
+    "As quatro vistas reais mantêm o exterior original inteiro, sem recortes, junto à própria foto de frente, perfil e costas. Silhueta, mangas bufantes, ornamentos do corset, renda e cabelo ainda exigem polimento profissional.",
+    "Mudaram somente os pesos do exterior. No ataque em três quartos na fração 0,18, o braço levantado permanece conectado. Nas cinco poses medidas do GLB, o maior esticamento passou de 304,9263 para 43,3960 vezes; essa melhora não aprova fidelidade nem movimento.",
+    "O ataque ainda apresenta abertura na axila/lateral do torso e colapso da manga. Os pesos da palma/polegar ainda esticam; a perna atravessa a saia na fração 0,78 do ataque.",
+    "Na inspeção 3D posterior do ataque, o cabelo aparenta continuidade melhor, mas a superfície ainda exige polimento e validação ao longo de toda a ação. Os ossos secundários da saia ainda não têm resposta de tecido validada. Colisão com corpo e entre camadas, apoio dos pés e todas as demais fotos continuam pendentes."
+  ],
+  "limitation": "Unseen surfaces are inferred; camera registration and details require review.",
+  "displayModel": {
+    "file": "whole/skin_study.glb",
+    "sha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+    "bytes": 65149880
+  },
+  "comparisonBoard": {
+    "file": "whole/photo_vs_geometry.jpg",
+    "sha256": "09230147cdf4eb62488b8ab1252db139685d99c2fe47873a4100825a5433abd7",
+    "bytes": 506112
+  },
+  "visualReviewPerformed": true
+}

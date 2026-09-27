@@ -1,0 +1,18 @@
+{
+  "url": "http://localhost:3941/alice/layers?stage=alice_chapeleiro_full",
+  "actualModelSha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+  "ownPhotoSha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+  "reviewedWith": "actual browser WebGL screenshots during Attack, rear and three-quarter views",
+  "observed": [
+    "Hair appears more continuous at the inspected rear pose; surface polish and the full clip remain unapproved.",
+    "Raised arm connects through the shoulder and glove in the inspected three-quarter pose; puff sleeve visibly collapses and armpit opens.",
+    "Skirt has no validated secondary motion or body/interlayer collision; leg penetrations remain."
+  ],
+  "scope": "visual spot checks, not all frames or all four actions",
+  "endedInReferencePose": true,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false
+}

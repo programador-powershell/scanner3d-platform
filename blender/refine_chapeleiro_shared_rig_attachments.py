@@ -14,6 +14,7 @@ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--paren
 parser.add_argument('--fit-native-hands',action='store_true',help='Infer arm/hand bind from the unchanged whole geometry and native atlas; inherited motions require renewed review.')
 parser.add_argument('--finger-guides',help='Measured individual native finger target JSON for the exact parent whole export.')
 parser.add_argument('--retarget-motions',help='Directory containing the original Walking, Fast Run and One Hand Sword Combo FBX bones/actions.')
+parser.add_argument('--native-surface-weights',help='Measured geodesic surface inference JSON for the exact parent native exterior, without geometry edits.')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);parent_path=Path(args.parent);parent=json.loads(parent_path.read_text(encoding='utf-8'))
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 if sha(parent['editableBlend'])!=parent['editableBlendSha256'] or parent['riggedActualPieces']!=230:raise ValueError('Changed actual complete rig checkpoint.')
@@ -43,6 +44,9 @@ hand_fit=None
 if not args.fit_native_hands and parent.get('nativeHandBindFit'):
     inherited_fit=json.loads((parent_path.parent/'native_hand_bind_fit.json').read_text(encoding='utf-8'))
     write('native_hand_bind_fit',inherited_fit)
+    for filename in ['native_individual_finger_targets.json','refitted_motion_retarget.json']:
+        file=parent_path.parent/filename
+        if file.exists():shutil.copyfile(file,out/filename)
 if args.fit_native_hands:
     from chapeleiro_native_hand_fit import fit_native_hands
     native_entry=next(p for p in old_audit['pieces'] if p['role']=='whole_native')
@@ -81,7 +85,16 @@ def mesh_hash(mesh):
 before={obj:mesh_hash(obj.data) for obj in scene.objects if obj.type=='MESH'}
 skin_audit=[]
 for index,(obj,entry) in enumerate(zip(previews,old_audit['pieces'])):
-    audit=quantized_assign(obj,rig,fields,entry['role'],entry['mesh']);skin_audit.append(audit)
+    if entry['role']=='whole_native' and args.native_surface_weights:
+        from chapeleiro_native_surface_weights import assign_native_surface_weights
+        audit=assign_native_surface_weights(obj,rig,args.native_surface_weights,parent,whole_record)
+        inference=json.loads(Path(args.native_surface_weights).read_text(encoding='utf-8'))
+        shutil.copyfile(inference['weightsFile'],out/'native_surface_weights.npz')
+        inference['originalInferenceSha256']=sha(args.native_surface_weights)
+        inference['weightsFile']=str((out/'native_surface_weights.npz').resolve())
+        write('native_surface_weight_inference',inference)
+    else:audit=quantized_assign(obj,rig,fields,entry['role'],entry['mesh'])
+    skin_audit.append(audit)
     family=schema['pieceFamilies'].get(obj.name);region=regions.get(obj.name,{})
     if family or region.get('kind')=='torso':
         allowed={'Hips','Spine','Spine1','Spine2','Neck'}
@@ -149,6 +162,7 @@ result['nativeArmMembershipClassificationVerified']=False
 if not args.fit_native_hands and parent.get('nativeHandBindFit'):
     result['nativeHandFitInheritedFrom']=str(parent_path.resolve())
 if hand_fit:
+    result.pop('nativeHandFitInheritedFrom',None)
     result['nativeHandBindFit']=True;result['inheritedActionsRequireRetargetReview']=True
     result['handFitScriptSha256']=sha(Path(__file__).with_name('chapeleiro_native_hand_fit.py'))
     result['motionAudit']=[dict(m,previousRetarget=m.get('retarget'),
@@ -158,4 +172,9 @@ if args.finger_guides:result['nativeIndividualFingerGuideSha256']=sha(args.finge
 if retarget:
     result['motionAudit']=retarget['motionAudit'];result['inheritedActionsRequireRetargetReview']=False
     result['retargetRequiresPoseReview']=True;result['motionRetargetScriptSha256']=sha(Path(__file__).with_name('chapeleiro_refitted_motion_retarget.py'))
+if args.native_surface_weights:
+    result['nativeSurfaceWeightInferenceSha256']=sha(out/'native_surface_weight_inference.json')
+    result['nativeSurfaceWeightScriptSha256']=sha(Path(__file__).with_name('chapeleiro_native_surface_weights.py'))
+    result['nativeSurfaceOwnershipVerified']=False
+    result['method']='same_230_piece_shared_rig_with_intact_native_geodesic_surface_weight_refinement'
 write('generation',result);progress('complete_local_attachment_refinement',actualPieces=len(previews))

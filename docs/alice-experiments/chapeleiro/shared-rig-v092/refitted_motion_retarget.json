@@ -1,0 +1,412 @@
+{
+  "method": "rebuild all four actions for the current fitted common bind",
+  "motionAudit": [
+    {
+      "clip": "Walk / current fitted Chapeleiro motion study",
+      "frames": 42,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        83.0
+      ],
+      "source": "Walk",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 42,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 4.5299530029296875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Run / current fitted Chapeleiro motion study",
+      "frames": 17,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        32.0
+      ],
+      "source": "Run",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 17,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 7.1302056312561035e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Attack / current fitted Chapeleiro motion study",
+      "frames": 137,
+      "fps": 30,
+      "sourceFrameRange": [
+        1.0,
+        273.0
+      ],
+      "source": "Attack",
+      "retarget": "original source world orientations with current fitted bind joint positions and lengths; horizontal root travel removed",
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 137,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 6.67572021484375e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    },
+    {
+      "clip": "Jump / current fitted planted-key IK motion study",
+      "frames": 53,
+      "fps": 30,
+      "source": "locally rebuilt planted-key IK probe in the current fitted bind",
+      "plantedKeys": [
+        1,
+        9,
+        41,
+        53
+      ],
+      "bakedKeyMatrixAudit": {
+        "actualKeysChecked": 7,
+        "actualBonesPerKey": 173,
+        "maximumMatrixAbsoluteError": 2.6226043701171875e-06,
+        "scope": "baked key matrices only; intermediate poses, anatomy, foot contact and cloth remain unverified"
+      },
+      "surfaceContactVerified": false,
+      "motionVerified": false,
+      "clothCollisionVerified": false
+    }
+  ],
+  "actualOriginalMotionSources": [
+    {
+      "motion": "Walk",
+      "file": "F:\\Alice\\References\\model\\anims\\Walking.fbx",
+      "sha256": "f1ab7f6314e92972d08c1136cbb30515d333b3c17d0ee71f261a0fbf528f80e0",
+      "sourceFps": 60.0,
+      "discardedForeignMeshObjects": 0,
+      "foreignCharacterGeometryUsed": false
+    },
+    {
+      "motion": "Run",
+      "file": "F:\\Alice\\References\\model\\anims\\Fast Run.fbx",
+      "sha256": "cef54fa8bed0fdeef15b01c512f234350444f816a0483ba5ee568466fb951301",
+      "sourceFps": 60.0,
+      "discardedForeignMeshObjects": 0,
+      "foreignCharacterGeometryUsed": false
+    },
+    {
+      "motion": "Attack",
+      "file": "F:\\Alice\\References\\model\\anims\\One Hand Sword Combo.fbx",
+      "sha256": "0979a14715012ec4a642889b1cd4a1fe55790432a5812330623f8ab2017837d3",
+      "sourceFps": 60.0,
+      "discardedForeignMeshObjects": 0,
+      "foreignCharacterGeometryUsed": false
+    }
+  ],
+  "jumpKeyIK": [
+    {
+      "frame": 1,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.5284145474433899
+      ],
+      "knee": [
+        0.0643979012966156,
+        -0.004295586608350277,
+        0.30029401183128357
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 1,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.5284143686294556
+      ],
+      "knee": [
+        -0.0657338798046112,
+        -0.004114564508199692,
+        0.3002719581127167
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 9,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.48341453075408936
+      ],
+      "knee": [
+        0.06474646925926208,
+        -0.08771906048059464,
+        0.274836927652359
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 9,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.48341435194015503
+      ],
+      "knee": [
+        -0.06610741466283798,
+        -0.08769132941961288,
+        0.27481332421302795
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 15,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.5484145283699036
+      ],
+      "knee": [
+        0.0643979087471962,
+        -0.004295842722058296,
+        0.32029396295547485
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.10768517851829529
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 15,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.5484143495559692
+      ],
+      "knee": [
+        -0.0657338798046112,
+        -0.004114693030714989,
+        0.32027196884155273
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.10768517851829529
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 25,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.6734145283699036
+      ],
+      "knee": [
+        0.06478354334831238,
+        -0.09259533137083054,
+        0.4670785665512085
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.28268516063690186
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 25,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.6734143495559692
+      ],
+      "knee": [
+        -0.06614711880683899,
+        -0.09256883710622787,
+        0.46705514192581177
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.28268516063690186
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 34,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.5884145498275757
+      ],
+      "knee": [
+        0.06463921815156937,
+        -0.07089134305715561,
+        0.37312817573547363
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.1776851862668991
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 34,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.5884143710136414
+      ],
+      "knee": [
+        -0.06599254906177521,
+        -0.07085823267698288,
+        0.37310412526130676
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.1776851862668991
+      ],
+      "plantedKey": false,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 41,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.4934145212173462
+      ],
+      "knee": [
+        0.06467447429895401,
+        -0.07693548500537872,
+        0.2803601920604706
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 41,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.49341434240341187
+      ],
+      "knee": [
+        -0.06603030860424042,
+        -0.0769045427441597,
+        0.2803362011909485
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 53,
+      "side": "Left",
+      "hip": [
+        0.04535321518778801,
+        0.005063360556960106,
+        0.5284145474433899
+      ],
+      "knee": [
+        0.0643979012966156,
+        -0.004295586608350277,
+        0.30029401183128357
+      ],
+      "ankle": [
+        0.08214758336544037,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    },
+    {
+      "frame": 53,
+      "side": "Right",
+      "hip": [
+        -0.04534421116113663,
+        0.005063360556960106,
+        0.5284143686294556
+      ],
+      "knee": [
+        -0.0657338798046112,
+        -0.004114564508199692,
+        0.3002719581127167
+      ],
+      "ankle": [
+        -0.08473330736160278,
+        0.015060469508171082,
+        0.08768518269062042
+      ],
+      "plantedKey": true,
+      "surfaceContactVerified": false
+    }
+  ],
+  "sourceSkeletonsRemoved": true,
+  "foreignCharacterGeometryUsed": false,
+  "commonSkeletonTopologyPreserved": true,
+  "inheritedLocalChannelsUsed": false,
+  "motionVerified": false,
+  "fidelityVerified": false,
+  "clothCollisionVerified": false
+}

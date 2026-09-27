@@ -1,0 +1,81 @@
+{
+  "status": "needs_refinement",
+  "scope": "shared rig for current 229 foundation pieces and intact native exterior",
+  "families": {
+    "foundation": {
+      "model": {
+        "file": "foundation/skin_study.glb",
+        "sha256": "ecb91c104cd743642c3d60684835fd778eaab9f1beabeaf09db1fa3df69feb19",
+        "bytes": 69267012
+      },
+      "sourcePhoto": {
+        "file": "foundation/source_photo.png",
+        "sha256": "f8cb9734a26e1c78211b12e6a25aa5f56ca64bbc1d3b476e798a49ef5cfe26e4",
+        "bytes": 2255895
+      },
+      "actualSkinnedMeshes": 229,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    },
+    "whole": {
+      "model": {
+        "file": "whole/skin_study.glb",
+        "sha256": "13c7e07ad8e1738a6f09a582b71628cd521c5b48e78da763d178f79b3b5c7c8f",
+        "bytes": 65149880
+      },
+      "sourcePhoto": {
+        "file": "whole/source_photo.png",
+        "sha256": "69e81154d4fe0903f76883a049ea9c3e2e9f16f57e488cf2075a0d7158e8feab",
+        "bytes": 2098720
+      },
+      "actualSkinnedMeshes": 1,
+      "actualSkeletons": 1,
+      "actualJoints": 173,
+      "actualClips": [
+        "Walk / current fitted Chapeleiro motion study",
+        "Run / current fitted Chapeleiro motion study",
+        "Attack / current fitted Chapeleiro motion study",
+        "Jump / current fitted planted-key IK motion study"
+      ],
+      "visualStatus": "needs_refinement",
+      "motionVerified": false,
+      "fidelityVerified": false,
+      "clothCollisionVerified": false
+    }
+  },
+  "fullLocalEditableBytes": 129193720,
+  "fullLocalEditableSha256": "40296b35fcd6551a781eb13628e179a19a4243895ea7389f471312c9ef58861b",
+  "actualClothFieldWeightsUnchanged": true,
+  "actualRawGeometryUnchanged": true,
+  "canonicalGalleryPromoted": false,
+  "allLayersFinished": false,
+  "fidelityVerified": false,
+  "motionVerified": false,
+  "clothCollisionVerified": false,
+  "finalFbxExported": false,
+  "nextVariantMayStart": false,
+  "additionalCreditsConsumed": 0,
+  "visibleDifferences": {
+    "foundation": [
+      "A fundação é idêntica à v090. As quatro vistas e doze poses conservam a própria foto da etapa 01; não houve novo refinamento da fundação.",
+      "Frente à foto da etapa 01, o corset permanece liso demais e carece de costuras finas, franzidos e cascatas diagonais fiéis; a trama das meias e a renda exigem trabalho.",
+      "O rig compartilhado é provisório. Movimento das junções costuradas, contato entre camadas e resposta real do tecido continuam sem validação."
+    ],
+    "whole": [
+      "As quatro vistas reais mantêm o exterior original inteiro, sem recortes, junto à própria foto de frente, perfil e costas. Silhueta, mangas bufantes, ornamentos do corset, renda e cabelo ainda exigem polimento profissional.",
+      "Mudaram somente os pesos do exterior. No ataque em três quartos na fração 0,18, o braço levantado permanece conectado. Nas cinco poses medidas do GLB, o maior esticamento passou de 304,9263 para 43,3960 vezes; essa melhora não aprova fidelidade nem movimento.",
+      "O ataque ainda apresenta abertura na axila/lateral do torso e colapso da manga. Os pesos da palma/polegar ainda esticam; a perna atravessa a saia na fração 0,78 do ataque.",
+      "Na inspeção 3D posterior do ataque, o cabelo aparenta continuidade melhor, mas a superfície ainda exige polimento e validação ao longo de toda a ação. Os ossos secundários da saia ainda não têm resposta de tecido validada. Colisão com corpo e entre camadas, apoio dos pés e todas as demais fotos continuam pendentes."
+    ]
+  }
+}
