@@ -1,0 +1,33 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completo com vestido",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "3590b15a78ffe395d965b4937265642aa3a82d446aa9a7b96cae6260c3f2d6cb",
+  "modelBytes": 64134408,
+  "sourceGeneration": "rear_wave_silhouette_study_v002",
+  "sourceBlendSha256": "bea4c24c9f66c9c51cdc55cb2f9595969798e6269fdd2017671f15c652d4699b",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 101424,
+  "hairRibbonMeshCount": 50,
+  "fiberAttributes": ["_FIBER_ID", "_FIBER_T"],
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecularExtensionFactor": 0.24,
+  "reimportReviewedViews": ["front", "left", "back", "right"],
+  "checkpointOnly": true,
+  "runtimeMotion": "Per-fiber root-to-tip vertex sway in the Project Alice gallery during Walk, Run, Attack and Jump; rest has a subtle wind cycle.",
+  "physicsApproved": false,
+  "pending": [
+    "4K hair UV projection with visibility and occlusion",
+    "independent physically simulated strand motion and collision with face, body and dress",
+    "final photo fidelity of hair, dress and face",
+    "FBX export of the complete character"
+  ]
+}

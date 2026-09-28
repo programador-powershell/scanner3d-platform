@@ -18,6 +18,8 @@ p.add_argument('--projection-atlas',help='Local UV projection probe; requires --
 p.add_argument('--alignment',help='Four-view 2D registration report')
 p.add_argument('--hair-mask',help='Conservative 4K source-image hair-only mask')
 p.add_argument('--depth-gate-mm',type=float,default=0,help='Screen-space self-occlusion gate on painted fiber faces; 0 disables')
+p.add_argument('--strict-projection',action='store_true',help='Require endpoints and interior UV samples to remain in hair-only paint')
+p.add_argument('--runtime-hair-attributes',action='store_true',help='Export per-fiber identity and root-to-tip factor for verified runtime deformation')
 a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);out=Path(a.output);assert not out.exists();out.mkdir(parents=True)
 def sha(path):
     h=hashlib.sha256()
@@ -75,6 +77,7 @@ if a.projection_atlas:
     hair_mask_pixels=cv2.imread(a.hair_mask,cv2.IMREAD_GRAYSCALE) if a.hair_mask else None
     assert hair_mask_pixels is None or hair_mask_pixels.shape==(4096,4096)
     fallback_mat=mat.copy();fallback_mat.name='Alice / unpainted dark fiber / occluded or nonhair image pixels'
+    fallback_palette=[fallback_mat]
     fallback_bs=fallback_mat.node_tree.nodes.get('Principled BSDF')
     fallback_bs.inputs['Roughness'].default_value=.68
     if 'Specular IOR Level' in fallback_bs.inputs:
@@ -104,7 +107,7 @@ if a.projection_atlas:
     tiles={'front':(0,0),'right':(2048,0),'back':(0,2048),'left':(2048,2048)}
     projection=dict(atlas=a.projection_atlas,alignment=a.alignment,hairMask=a.hair_mask,
                     depthGateMm=a.depth_gate_mm,validLoopPoints=0,clampedLoopPoints=0,
-                    imageHairFaces=0,imageRejectedFaces=0,depthRejectedFaces=0)
+                    imageHairFaces=0,imageRejectedFaces=0,depthRejectedFaces=0,strictRejectedFaces=0)
     transforms={view:np.array(cam.matrix_world.inverted()@source_hair.matrix_world,dtype=np.float32)
                 for view,cam in cameras.items()}
     depth_maps={}
@@ -142,6 +145,18 @@ if a.projection_atlas:
         tx,ty=tiles[row['paintView']]
         return np.stack(((tx+sx*2048/1254)/4096,
                          1-(ty+sy*2048/1254)/4096),axis=1),valid
+
+    def safe_hair_uv(coordinate,strict=False):
+        px=int(np.clip(coordinate[0]*4095,0,4095));py=int(np.clip((1-coordinate[1])*4095,0,4095))
+        pixel=atlas_pixels[py,px]
+        blue,green,red=(int(pixel[0]),int(pixel[1]),int(pixel[2]))
+        bright=max(red,green,blue)
+        if strict:
+            color_ok=7<=bright<=105 and green<=red*.98+2 and blue<=red*1.10+4
+        else:
+            color_ok=7<=bright<=105 and green<=red*1.16+4 and blue<=red*1.3+5
+        return bool(color_ok and (len(pixel)<4 or int(pixel[3])>127)
+                    and (hair_mask_pixels is None or hair_mask_pixels[py,px]>127))
     probe=np.array([[0,.025,.808]],np.float32)
     for view,cam in cameras.items():
         reference=world_to_camera_view(bpy.context.scene,cam,source_hair.matrix_world@Vector(probe[0]))
@@ -151,7 +166,7 @@ if a.projection_atlas:
 hair_chunks=[]
 for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
     fibers=selected_fiber_ids[chunk_start:chunk_start+a.chunk_size]
-    verts=[];faces=[];uv=[];face_materials=[]
+    verts=[];faces=[];uv=[];face_materials=[];fiber_ids=[];fiber_factors=[]
     for fid in fibers:
         tone_index=int((int(fid)*2654435761 & 0xffffffff)%len(fallback_palette))
         path=v[fid,sample];radius=r[fid,sample]
@@ -163,6 +178,9 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
         for i in range(a.samples):
             width=max(float(radius[i])*a.fiber_width_scale,.000012)
             verts.extend([tuple(path[i]-side[i]*width),tuple(path[i]+side[i]*width)])
+            if a.runtime_hair_attributes:
+                fiber_ids.extend([float(fid),float(fid)])
+                fiber_factors.extend([i/(a.samples-1)]*2)
         if projection:
             projected={view:project_path(path,view) for view in cameras}
         for i in range(a.samples-1):
@@ -176,15 +194,14 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
                 projection['validLoopPoints']+=int(valid[i])+int(valid[i+1])
                 projection['clampedLoopPoints']+=2-int(valid[i])-int(valid[i+1])
                 uv.extend([a0,a0,a1,a1])
-                middle=(np.asarray(a0)+np.asarray(a1))*.5
-                px=int(np.clip(middle[0]*4095,0,4095));py=int(np.clip((1-middle[1])*4095,0,4095))
-                pixel=atlas_pixels[py,px]
-                blue,green,red=(int(pixel[0]),int(pixel[1]),int(pixel[2]))
-                bright=max(red,green,blue)
-                image_hair=bool(valid[i] and valid[i+1] and 7<=bright<=105
-                                and green<=red*1.16+4 and blue<=red*1.3+5
-                                and (len(pixel)<4 or int(pixel[3])>127)
-                                and (hair_mask_pixels is None or hair_mask_pixels[py,px]>127))
+                uv0=np.asarray(a0);uv1=np.asarray(a1)
+                middle=(uv0+uv1)*.5
+                image_hair=bool(valid[i] and valid[i+1] and safe_hair_uv(middle))
+                if image_hair and a.strict_projection:
+                    image_hair=bool(np.linalg.norm((uv1-uv0)*4096)<=85 and
+                                    all(safe_hair_uv(uv0*(1-t)+uv1*t,True)
+                                        for t in (0,.25,.5,.75,1)))
+                    projection['strictRejectedFaces']+=int(not image_hair)
                 if image_hair and a.depth_gate_mm and not depth_visible(midpoint,view):
                     image_hair=False
                     projection['depthRejectedFaces']+=1
@@ -197,10 +214,33 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
     mesh=bpy.data.meshes.new('Alice separated fiber ribbons '+str(chunk_start//a.chunk_size));mesh.from_pydata(verts,[],faces);mesh.update()
     layer=mesh.uv_layers.new(name='Hair UV')
     for loop,coordinate in zip(layer.data,uv):loop.uv=coordinate
+    if a.runtime_hair_attributes:
+        assert len(fiber_ids)==len(fiber_factors)==len(mesh.vertices)
+        mesh.attributes.new('_FIBER_ID','FLOAT','POINT').data.foreach_set('value',fiber_ids)
+        mesh.attributes.new('_FIBER_T','FLOAT','POINT').data.foreach_set('value',fiber_factors)
     if projection:
         for fallback in fallback_palette:mesh.materials.append(fallback)
         mesh.materials.append(mat)
         mesh.polygons.foreach_set('material_index',face_materials)
+        checked=bad=0
+        for polygon in mesh.polygons:
+            if polygon.material_index!=len(fallback_palette):continue
+            checked+=1
+            for loop_index in polygon.loop_indices:
+                if not safe_hair_uv(layer.data[loop_index].uv,a.strict_projection):
+                    bad+=1;break
+        projection['postMeshPaintedFaces']=projection.get('postMeshPaintedFaces',0)+checked
+        projection['postMeshPaintedFacesOutsideMask']=projection.get('postMeshPaintedFacesOutsideMask',0)+bad
+        print('POST_MESH_PAINT_AUDIT',checked,bad,flush=True)
+        if chunk_start==0:
+            samples=[]
+            for polygon in mesh.polygons:
+                if polygon.material_index!=len(fallback_palette):continue
+                point=source_hair.matrix_world@polygon.center
+                coordinate=layer.data[polygon.loop_indices[0]].uv
+                samples.append(dict(center=[round(float(x),6) for x in point],uv=[round(float(x),6) for x in coordinate]))
+                if len(samples)==20:break
+            (out/'preexport_painted_samples.json').write_text(json.dumps(samples,indent=2))
     else:mesh.materials.append(mat)
     obj=bpy.data.objects.new('Alice / individual hair fibers / '+str(chunk_start//a.chunk_size),mesh)
     bpy.context.scene.collection.objects.link(obj);obj.parent=rig;obj.matrix_world=source_hair.matrix_world.copy()
@@ -230,7 +270,7 @@ for obj in selected:
         if empty:unweighted[obj.name]=len(empty)
 assert not unweighted,unweighted
 model=out/'alice_chapeleiro_complete_individual_hair_checkpoint.glb'
-bpy.ops.export_scene.gltf(filepath=str(model),export_format='GLB',use_selection=True,export_yup=True,export_extras=True,export_animations=True,export_animation_mode='NLA_TRACKS',export_frame_range=False,export_all_influences=True,export_draco_mesh_compression_enable=a.draco,export_draco_mesh_compression_level=6,export_image_format=a.image_format,export_image_quality=a.image_quality)
+bpy.ops.export_scene.gltf(filepath=str(model),export_format='GLB',use_selection=True,export_yup=True,export_extras=True,export_attributes=a.runtime_hair_attributes,export_animations=True,export_animation_mode='NLA_TRACKS',export_frame_range=False,export_all_influences=True,export_draco_mesh_compression_enable=a.draco,export_draco_mesh_compression_level=6,export_image_format=a.image_format,export_image_quality=a.image_quality)
 with model.open('rb') as f:
     magic,version,total=struct.unpack('<4sII',f.read(12));length,kind=struct.unpack('<II',f.read(8));data=json.loads(f.read(length))
 assert magic==b'glTF' and total==model.stat().st_size
@@ -240,9 +280,11 @@ assert sum(n.get('extras',{}).get('hairFiberCount',0) for n in data['nodes'])==l
 assert any('finished posterior bodice' in n.get('name','') for n in data['nodes'])
 report=dict(sourceGeneration=a.generation,sourceBlend=g['editableBlend'],sourceBlendSha256=g['editableBlendSha256'],sourceEditableUnchanged=sha(g['editableBlend'])==g['editableBlendSha256'],model=str(model),modelSha256=sha(model),modelBytes=model.stat().st_size,wholeCharacterWithDress=True,sourceFaceCount=original_faces,sourceVertices=original_vertices,sourceHairFacesExcluded=len(hair_faces),originalTripoHairIncluded=False,hairRepresentation='One disconnected mesh ribbon per source fiber; Head skin only; independent wind dynamics remain Blender authoring',exportedFiberCount=len(selected_fiber_ids),sourceFiberCount=C,fiberSamples=a.samples,fiberWidthScale=a.fiber_width_scale,fiberToneVariation=a.fiber_tone_variation,hairRoughness=a.hair_roughness,hairSpecular=a.hair_specular,hairRibbonMeshCount=len(hair_chunks),meshCount=len(data['meshes']),skinCount=len(data['skins']),animations=names,posteriorBodiceObjects=g['posteriorBodice']['objects'],collisionProxiesExcluded=True,allRiggedVerticesWeighted=True,characterFinished=False,physicsApproved=False,published=False,dracoEnabled=a.draco,imageFormat=a.image_format,imageQuality=a.image_quality)
 report['hairProjectionProbe']=projection
+report['runtimeHairAttributes']=['_FIBER_ID','_FIBER_T'] if a.runtime_hair_attributes else []
 if projection:
     report['hairProjectionProbe']['visibleFaceOcclusionValidated']=False
     report['hairProjectionProbe']['selfOcclusionDepthGateApplied']=bool(a.depth_gate_mm)
+    report['hairProjectionProbe']['strictProjection']=a.strict_projection
     report['hairProjectionProbe']['depthGateScope']='Hair segment-center screen depth only; body, hat and subpixel ribbon coverage remain unverified.' if a.depth_gate_mm else None
     report['hairProjectionProbe']['rightViewRegistrationValidated']=False
     report['hairProjectionProbe']['uvFidelityApproved']=False
