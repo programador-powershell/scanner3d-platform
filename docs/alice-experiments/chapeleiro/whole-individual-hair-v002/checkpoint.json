@@ -1,0 +1,34 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completo com vestido",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "7815db857a52c948b519834c46492bba16803ac9ef864af7f9c1fe3d11f744d6",
+  "modelBytes": 57879028,
+  "sourceGeneration": "rear_wave_silhouette_study_v002",
+  "sourceBlendSha256": "bea4c24c9f66c9c51cdc55cb2f9595969798e6269fdd2017671f15c652d4699b",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 101424,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecular": 0.12,
+  "reimportReviewedViews": [
+    "front",
+    "left",
+    "back",
+    "right"
+  ],
+  "checkpointOnly": true,
+  "pending": [
+    "hair UV 4K projection and occlusion",
+    "independent hair dynamics and collision",
+    "final photo fidelity of hair, dress and face",
+    "FBX export"
+  ]
+}
