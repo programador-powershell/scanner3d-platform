@@ -1,0 +1,62 @@
+{
+  "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_bodice_export_v003\\alice_chapeleiro_complete_posterior_checkpoint.glb",
+  "modelSha256": "fa9b200c14d3740017fbd2b0307664635000f90125d220854f927cf7df2bdc68",
+  "actualImportedMeshes": 117,
+  "actualImportedBones": 209,
+  "hairObjects": [
+    "Alice / Tripo hair / checkpoint"
+  ],
+  "completeCharacter": true,
+  "defaultHairVisible": true,
+  "renders": [
+    {
+      "name": "back_hair_hidden",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_glb_review_v005\\back_hair_hidden.png",
+      "sha256": "1b87bd844ad409d7d6d5a99e7cdeb3c2e4855008a2dee130094979fea1c74f0a"
+    },
+    {
+      "name": "back_oblique_hair_hidden",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_glb_review_v005\\back_oblique_hair_hidden.png",
+      "sha256": "5064e200cc663b5df0cff23e47fe6af8c3fd3a7fd2418f93c3a685602a9c6eb8"
+    },
+    {
+      "name": "back_hair_restored",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_glb_review_v005\\back_hair_restored.png",
+      "sha256": "ac42a3e73b625d3865eb7c0a1e798419efc7b8acbd0e9eb1b03f022dc42f287a"
+    },
+    {
+      "name": "complete_hair_restored",
+      "file": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_glb_review_v005\\complete_hair_restored.png",
+      "sha256": "058e6052a9a6e9e00aea360e5d6ab0547cd6b9f6d4ef68aff8dab6a0fd3b0f32"
+    }
+  ],
+  "physicsApproved": false,
+  "finalFidelityApproved": false,
+  "motionChecks": [
+    {
+      "track": "Jump / current fitted planted-key IK motion study",
+      "sampledFrames": 3,
+      "maximumVertexDisplacement": 0.1392824649810791,
+      "finite": true
+    },
+    {
+      "track": "Attack / current fitted Chapeleiro motion study",
+      "sampledFrames": 3,
+      "maximumVertexDisplacement": 0.029208695515990257,
+      "finite": true
+    },
+    {
+      "track": "Run / current fitted Chapeleiro motion study",
+      "sampledFrames": 3,
+      "maximumVertexDisplacement": 0.025994740426540375,
+      "finite": true
+    },
+    {
+      "track": "Walk / current fitted Chapeleiro motion study",
+      "sampledFrames": 3,
+      "maximumVertexDisplacement": 0.02824929729104042,
+      "finite": true
+    }
+  ],
+  "motionCheckScope": "Finite evaluated posterior vertices at three samples per imported track; not a collision or cloth-quality approval."
+}

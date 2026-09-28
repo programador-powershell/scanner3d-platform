@@ -1,0 +1,47 @@
+{
+  "sourceGeneration": "F:/Alice/Deliverables/Alice_Variants/alice_chapeleiro/posterior_reference_geometry_v005/generation.json",
+  "sourceBlendSha256": "b2f314ebe793e915143ca57aae401f0fcfb4135139f4ef4b6bbb78b8aae916c2",
+  "painting": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\back_brocade_paint_v001\\back_brocade.png",
+  "paintingSha256": "87ba09c2a49922fed4db713f16c60b30ae76f1af8e6a962ab6d28797390e4c18",
+  "pixelCache": "F:/Alice/Deliverables/Alice_Variants/alice_chapeleiro/back_brocade_paint_v001/pixels.npy",
+  "pixelCacheSha256": "92b6f7ab280fef47235bd35458971c511374751d67951b92f5b2d7964e373ddd",
+  "resolution": [
+    4096,
+    4096
+  ],
+  "raysTested": 14541814,
+  "visibleTexels": 10072292,
+  "occludedTexelsRetainedAsDarkUnderlayer": 4469522,
+  "visibilityMethod": "Per-texel orthographic rear depth ray against actual rendered meshes with hair temporarily excluded; original whole-hair mask evaluated",
+  "objects": [
+    {
+      "name": "Chapeleiro / finished posterior bodice / checkpoint",
+      "key": "uv_0",
+      "loops": 16384,
+      "materialSlots": [
+        0
+      ]
+    },
+    {
+      "name": "Chapeleiro / posterior closure placket",
+      "key": "uv_2",
+      "loops": 256,
+      "materialSlots": [
+        0
+      ]
+    },
+    {
+      "name": "Chapeleiro / posterior bodice closure beneath hair / review",
+      "key": "uv_1",
+      "loops": 7680,
+      "materialSlots": [
+        1
+      ]
+    }
+  ],
+  "atlas": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_visible_bake_v001\\atlas_encoded_rgba.npy",
+  "uvCoordinates": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\posterior_visible_bake_v001\\uv_coordinates.npz",
+  "sourceUnchanged": true,
+  "published": false,
+  "finalFidelityApproved": false
+}
