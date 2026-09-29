@@ -1,0 +1,2028 @@
+{
+  "generation": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\full_rest_five_root_entries_blend_v001\\generation.json",
+  "blendSha256": "adf452ff0f6c84f002992682f4f6acb71645ad72532083855d679e88bea77c22",
+  "scalp": "Chapeleiro / hair contact proxy / 3",
+  "scalpBoundsWorld": {
+    "min": [
+      -0.049202905727386476,
+      -0.052920745445251466,
+      0.8069989814033508
+    ],
+    "max": [
+      0.04818565933203697,
+      0.0608692818710804,
+      0.9210010038146973
+    ]
+  },
+  "guides": {
+    "totalCurves": 2112,
+    "totalSegments": 65472,
+    "candidateSegments": 31492,
+    "rayCasts": 31492,
+    "crossings": [
+      {
+        "curve": 862,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00483533438324205
+      },
+      {
+        "curve": 863,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.030444927336569852
+      },
+      {
+        "curve": 868,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.004159237666464361
+      },
+      {
+        "curve": 869,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.027209779025469522
+      },
+      {
+        "curve": 1357,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.003597524061205608
+      },
+      {
+        "curve": 1358,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00361143411101202
+      },
+      {
+        "curve": 1577,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.005719676796234034
+      }
+    ],
+    "curvesWithCrossings": 7
+  },
+  "fibers": {
+    "totalCurves": 101424,
+    "totalSegments": 9635280,
+    "candidateSegments": 6145856,
+    "rayCasts": 6145763,
+    "crossings": [
+      {
+        "curve": 17207,
+        "segment": 0,
+        "face": 170,
+        "fraction": 0.03908312079383171
+      },
+      {
+        "curve": 17211,
+        "segment": 0,
+        "face": 170,
+        "fraction": 0.06337765259569575
+      },
+      {
+        "curve": 17224,
+        "segment": 0,
+        "face": 170,
+        "fraction": 0.11385029206832481
+      },
+      {
+        "curve": 55573,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.23542607427258103
+      },
+      {
+        "curve": 55578,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.10034719827816954
+      },
+      {
+        "curve": 55580,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.03185562498377202
+      },
+      {
+        "curve": 55582,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.09603890788524372
+      },
+      {
+        "curve": 55585,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.051776335794739156
+      },
+      {
+        "curve": 55587,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.05453168358303861
+      },
+      {
+        "curve": 55589,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.09308707445790064
+      },
+      {
+        "curve": 55591,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.24068398511304556
+      },
+      {
+        "curve": 55592,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.19781254605774576
+      },
+      {
+        "curve": 55596,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.027003203441332644
+      },
+      {
+        "curve": 55598,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.03291333280213856
+      },
+      {
+        "curve": 55601,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.13478070003391726
+      },
+      {
+        "curve": 55602,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.08417604903086565
+      },
+      {
+        "curve": 55607,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.3423908663115738
+      },
+      {
+        "curve": 55610,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.03360270255553337
+      },
+      {
+        "curve": 55612,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.029280304170827824
+      },
+      {
+        "curve": 55622,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.043549706001821925
+      },
+      {
+        "curve": 55625,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.06810008972688526
+      },
+      {
+        "curve": 55634,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.06282333330758988
+      },
+      {
+        "curve": 55635,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.04344446795903936
+      },
+      {
+        "curve": 55637,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.09105157919843135
+      },
+      {
+        "curve": 55638,
+        "segment": 0,
+        "face": 8743,
+        "fraction": 0.1730768277184196
+      },
+      {
+        "curve": 64872,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008666311688212833
+      },
+      {
+        "curve": 64873,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008561908575560623
+      },
+      {
+        "curve": 64874,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008462004406519244
+      },
+      {
+        "curve": 64875,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008067843224255158
+      },
+      {
+        "curve": 64876,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008266486444816075
+      },
+      {
+        "curve": 64877,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008644310719463852
+      },
+      {
+        "curve": 64878,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008341925907205448
+      },
+      {
+        "curve": 64879,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008360803866912738
+      },
+      {
+        "curve": 64880,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008425805720639404
+      },
+      {
+        "curve": 64881,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008368745138188218
+      },
+      {
+        "curve": 64882,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008385017896073823
+      },
+      {
+        "curve": 64883,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008326767370111905
+      },
+      {
+        "curve": 64884,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008443544126402804
+      },
+      {
+        "curve": 64885,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008337661554151138
+      },
+      {
+        "curve": 64886,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008447948267070524
+      },
+      {
+        "curve": 64887,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008086716812193098
+      },
+      {
+        "curve": 64888,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008641682490120246
+      },
+      {
+        "curve": 64889,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008566165064544468
+      },
+      {
+        "curve": 64890,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008293163458028845
+      },
+      {
+        "curve": 64891,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008456970681902674
+      },
+      {
+        "curve": 64892,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008487822108833294
+      },
+      {
+        "curve": 64893,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008648926007720586
+      },
+      {
+        "curve": 64894,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008243627042757787
+      },
+      {
+        "curve": 64895,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008476112265495047
+      },
+      {
+        "curve": 64896,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00846817112059345
+      },
+      {
+        "curve": 64897,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008322349476670005
+      },
+      {
+        "curve": 64898,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008103478778129664
+      },
+      {
+        "curve": 64899,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008262641270083828
+      },
+      {
+        "curve": 64900,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008330721115475215
+      },
+      {
+        "curve": 64901,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008530805574682485
+      },
+      {
+        "curve": 64902,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008176129980554345
+      },
+      {
+        "curve": 64903,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008584566040398115
+      },
+      {
+        "curve": 64904,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008351085136698966
+      },
+      {
+        "curve": 64905,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008187858580817886
+      },
+      {
+        "curve": 64906,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008595545946628216
+      },
+      {
+        "curve": 64907,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008211580379356036
+      },
+      {
+        "curve": 64908,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008458606259703674
+      },
+      {
+        "curve": 64909,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008423544868944616
+      },
+      {
+        "curve": 64910,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008169319810438017
+      },
+      {
+        "curve": 64911,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008642354184044873
+      },
+      {
+        "curve": 64912,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008558112587148016
+      },
+      {
+        "curve": 64913,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008439569172627302
+      },
+      {
+        "curve": 64914,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008427129504229691
+      },
+      {
+        "curve": 64915,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008132885443062081
+      },
+      {
+        "curve": 64916,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008414810605338972
+      },
+      {
+        "curve": 64917,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008257915223254822
+      },
+      {
+        "curve": 64918,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008498767426467121
+      },
+      {
+        "curve": 64919,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008272672303689972
+      },
+      {
+        "curve": 64920,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008579911887762333
+      },
+      {
+        "curve": 64921,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008649830865902547
+      },
+      {
+        "curve": 64922,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008177059445862252
+      },
+      {
+        "curve": 64923,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008369607090306897
+      },
+      {
+        "curve": 64924,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008238493281872662
+      },
+      {
+        "curve": 64925,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00821615912323439
+      },
+      {
+        "curve": 64926,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00833153875074195
+      },
+      {
+        "curve": 64927,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00820604516338076
+      },
+      {
+        "curve": 64928,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008357485923733319
+      },
+      {
+        "curve": 64929,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008626319662132008
+      },
+      {
+        "curve": 64930,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008468346069391734
+      },
+      {
+        "curve": 64931,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008280433177305067
+      },
+      {
+        "curve": 64932,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008480595666507574
+      },
+      {
+        "curve": 64933,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008407790642118506
+      },
+      {
+        "curve": 64934,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0082897803171001
+      },
+      {
+        "curve": 64935,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008556844622694217
+      },
+      {
+        "curve": 64936,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008337020484735416
+      },
+      {
+        "curve": 64937,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008280366405103655
+      },
+      {
+        "curve": 64938,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00824318249568405
+      },
+      {
+        "curve": 64939,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008499441608929915
+      },
+      {
+        "curve": 64940,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008498525018589774
+      },
+      {
+        "curve": 64941,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008461795496292083
+      },
+      {
+        "curve": 64942,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008241114609105224
+      },
+      {
+        "curve": 64943,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008376929643387557
+      },
+      {
+        "curve": 64944,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008325042748201469
+      },
+      {
+        "curve": 64945,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00843492988658386
+      },
+      {
+        "curve": 64946,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008212655928571008
+      },
+      {
+        "curve": 64947,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05991774527105487
+      },
+      {
+        "curve": 64948,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.057956506433182536
+      },
+      {
+        "curve": 64949,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05632189791491683
+      },
+      {
+        "curve": 64950,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05643774134108351
+      },
+      {
+        "curve": 64951,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05942020591753743
+      },
+      {
+        "curve": 64952,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058178815704074266
+      },
+      {
+        "curve": 64953,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.057617399756031855
+      },
+      {
+        "curve": 64954,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058944941073229756
+      },
+      {
+        "curve": 64955,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.057920295091408475
+      },
+      {
+        "curve": 64956,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05819607153044557
+      },
+      {
+        "curve": 64957,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0571882363168612
+      },
+      {
+        "curve": 64958,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05982015725971032
+      },
+      {
+        "curve": 64959,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05826831121590574
+      },
+      {
+        "curve": 64960,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05807156104926954
+      },
+      {
+        "curve": 64961,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05549260650026047
+      },
+      {
+        "curve": 64962,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.056761212089154085
+      },
+      {
+        "curve": 64963,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05722427790834983
+      },
+      {
+        "curve": 64964,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05675498321133211
+      },
+      {
+        "curve": 64965,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.06064915744893733
+      },
+      {
+        "curve": 64966,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.059083449903612854
+      },
+      {
+        "curve": 64967,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0580794908606081
+      },
+      {
+        "curve": 64968,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05882524852915337
+      },
+      {
+        "curve": 64969,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05679566527825531
+      },
+      {
+        "curve": 64970,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.06030224526154581
+      },
+      {
+        "curve": 64971,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05795030089980033
+      },
+      {
+        "curve": 64972,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058465319483162664
+      },
+      {
+        "curve": 64973,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.060476800559567764
+      },
+      {
+        "curve": 64974,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05787761722174683
+      },
+      {
+        "curve": 64975,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0560587064587269
+      },
+      {
+        "curve": 64976,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.06074893273438153
+      },
+      {
+        "curve": 64977,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058335450491197406
+      },
+      {
+        "curve": 64978,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.059518761873428964
+      },
+      {
+        "curve": 64979,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05809930064946872
+      },
+      {
+        "curve": 64980,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.057056905427072334
+      },
+      {
+        "curve": 64981,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05606010867723346
+      },
+      {
+        "curve": 64982,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.056636023997645564
+      },
+      {
+        "curve": 64983,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05906898945199266
+      },
+      {
+        "curve": 64984,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05842049487367353
+      },
+      {
+        "curve": 64985,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05824192095473863
+      },
+      {
+        "curve": 64986,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05687741715204264
+      },
+      {
+        "curve": 64987,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058469779766560696
+      },
+      {
+        "curve": 64988,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.059395867281900244
+      },
+      {
+        "curve": 64989,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05625912380798838
+      },
+      {
+        "curve": 64990,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058658253298911216
+      },
+      {
+        "curve": 64991,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05826725498231009
+      },
+      {
+        "curve": 64992,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.060265197988890476
+      },
+      {
+        "curve": 64993,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05699395169818068
+      },
+      {
+        "curve": 64994,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0583461612288872
+      },
+      {
+        "curve": 64995,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058546054203521644
+      },
+      {
+        "curve": 64996,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05671153875271759
+      },
+      {
+        "curve": 64997,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05789886136132865
+      },
+      {
+        "curve": 64998,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058542125741272204
+      },
+      {
+        "curve": 64999,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0587569171969869
+      },
+      {
+        "curve": 65000,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05706851953797913
+      },
+      {
+        "curve": 65001,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05727632204805551
+      },
+      {
+        "curve": 65002,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05948320266003057
+      },
+      {
+        "curve": 65003,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05904675350541035
+      },
+      {
+        "curve": 65004,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05766433245247391
+      },
+      {
+        "curve": 65005,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05961665369306419
+      },
+      {
+        "curve": 65006,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05845973409277103
+      },
+      {
+        "curve": 65007,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05981992417712405
+      },
+      {
+        "curve": 65008,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05780226127077566
+      },
+      {
+        "curve": 65009,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.058164110606859665
+      },
+      {
+        "curve": 65010,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05847178113424934
+      },
+      {
+        "curve": 65011,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05861680029150758
+      },
+      {
+        "curve": 65012,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05773312142953443
+      },
+      {
+        "curve": 65013,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.06011935683832968
+      },
+      {
+        "curve": 65014,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0580298390469567
+      },
+      {
+        "curve": 65015,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05884045452917532
+      },
+      {
+        "curve": 65016,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05679275066989989
+      },
+      {
+        "curve": 65017,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05996857471713197
+      },
+      {
+        "curve": 65018,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.057868136207013025
+      },
+      {
+        "curve": 65019,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05910856674577824
+      },
+      {
+        "curve": 65020,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05790871194050092
+      },
+      {
+        "curve": 65021,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05686320459344844
+      },
+      {
+        "curve": 65322,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007608720704958719
+      },
+      {
+        "curve": 65323,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007566856703793683
+      },
+      {
+        "curve": 65324,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007834215883355825
+      },
+      {
+        "curve": 65325,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00767054496805277
+      },
+      {
+        "curve": 65326,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007736367481108036
+      },
+      {
+        "curve": 65327,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0076805233133123455
+      },
+      {
+        "curve": 65328,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007853571594037986
+      },
+      {
+        "curve": 65329,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007532705817043456
+      },
+      {
+        "curve": 65330,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008045430974808084
+      },
+      {
+        "curve": 65331,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0076592975132638175
+      },
+      {
+        "curve": 65332,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00762221006981602
+      },
+      {
+        "curve": 65333,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007495808163874414
+      },
+      {
+        "curve": 65334,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007594192027003022
+      },
+      {
+        "curve": 65335,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00736481227793235
+      },
+      {
+        "curve": 65336,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007497824704270603
+      },
+      {
+        "curve": 65337,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00793153426180615
+      },
+      {
+        "curve": 65338,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00746944016943769
+      },
+      {
+        "curve": 65339,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007885020330066217
+      },
+      {
+        "curve": 65340,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00805105844515193
+      },
+      {
+        "curve": 65341,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007406970750541785
+      },
+      {
+        "curve": 65342,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007853699647589125
+      },
+      {
+        "curve": 65343,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007655239863104695
+      },
+      {
+        "curve": 65344,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007533948865122058
+      },
+      {
+        "curve": 65345,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007643817363453578
+      },
+      {
+        "curve": 65346,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007478383597722674
+      },
+      {
+        "curve": 65347,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0074045540221086064
+      },
+      {
+        "curve": 65348,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007611190420745702
+      },
+      {
+        "curve": 65349,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007705085962497617
+      },
+      {
+        "curve": 65350,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00768983013394426
+      },
+      {
+        "curve": 65351,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007608578343376714
+      },
+      {
+        "curve": 65352,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007862786507918936
+      },
+      {
+        "curve": 65353,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007628634419898948
+      },
+      {
+        "curve": 65354,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007675848654472053
+      },
+      {
+        "curve": 65355,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00766967480569695
+      },
+      {
+        "curve": 65356,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007641098775235036
+      },
+      {
+        "curve": 65357,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0075763344375753185
+      },
+      {
+        "curve": 65358,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007810338085281201
+      },
+      {
+        "curve": 65359,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0075942767429027355
+      },
+      {
+        "curve": 65360,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007794928740782554
+      },
+      {
+        "curve": 65361,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007633398111265709
+      },
+      {
+        "curve": 65362,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007552498000547596
+      },
+      {
+        "curve": 65363,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007670373829008077
+      },
+      {
+        "curve": 65364,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0077065921494157315
+      },
+      {
+        "curve": 65365,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007934569665416653
+      },
+      {
+        "curve": 65366,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00749622375896554
+      },
+      {
+        "curve": 65367,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007981117131454994
+      },
+      {
+        "curve": 65368,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007545044439763826
+      },
+      {
+        "curve": 65369,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007584727366975657
+      },
+      {
+        "curve": 65370,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007599290154200651
+      },
+      {
+        "curve": 65371,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007831440921774289
+      },
+      {
+        "curve": 65372,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0074686952496262424
+      },
+      {
+        "curve": 65373,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007875617073587282
+      },
+      {
+        "curve": 65374,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007409957969987492
+      },
+      {
+        "curve": 65375,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007310585773128092
+      },
+      {
+        "curve": 65376,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007497971194001677
+      },
+      {
+        "curve": 65377,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007337546787339129
+      },
+      {
+        "curve": 65378,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007687002368205085
+      },
+      {
+        "curve": 65379,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007559201492442872
+      },
+      {
+        "curve": 65380,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007671376490175577
+      },
+      {
+        "curve": 65381,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007681959430187145
+      },
+      {
+        "curve": 65382,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0074084003403637345
+      },
+      {
+        "curve": 65383,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.008070544991087563
+      },
+      {
+        "curve": 65384,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007632126038895897
+      },
+      {
+        "curve": 65385,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007680496355306769
+      },
+      {
+        "curve": 65386,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007768663916312929
+      },
+      {
+        "curve": 65387,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007422843363069771
+      },
+      {
+        "curve": 65388,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00756817962327243
+      },
+      {
+        "curve": 65389,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007534500396792248
+      },
+      {
+        "curve": 65390,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007855410615152379
+      },
+      {
+        "curve": 65391,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007580415972885821
+      },
+      {
+        "curve": 65392,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.00762148367273698
+      },
+      {
+        "curve": 65393,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007773324922696463
+      },
+      {
+        "curve": 65394,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007580628841855056
+      },
+      {
+        "curve": 65395,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007597779166611796
+      },
+      {
+        "curve": 65396,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.007766102235381533
+      },
+      {
+        "curve": 65397,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05636603006500769
+      },
+      {
+        "curve": 65398,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0538115035287162
+      },
+      {
+        "curve": 65399,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05448369005040805
+      },
+      {
+        "curve": 65400,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05236513693275175
+      },
+      {
+        "curve": 65401,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053143162221173525
+      },
+      {
+        "curve": 65402,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05490512223310937
+      },
+      {
+        "curve": 65403,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053609301021134086
+      },
+      {
+        "curve": 65404,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05282559290911266
+      },
+      {
+        "curve": 65405,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05341795277438515
+      },
+      {
+        "curve": 65406,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05203760289821545
+      },
+      {
+        "curve": 65407,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.055689723926805115
+      },
+      {
+        "curve": 65408,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05485707827243976
+      },
+      {
+        "curve": 65409,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054230076405471145
+      },
+      {
+        "curve": 65410,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05282327943424596
+      },
+      {
+        "curve": 65411,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05489190404313981
+      },
+      {
+        "curve": 65412,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053111320105287074
+      },
+      {
+        "curve": 65413,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05383711354094322
+      },
+      {
+        "curve": 65414,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.051656027318280756
+      },
+      {
+        "curve": 65415,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.052918148311613504
+      },
+      {
+        "curve": 65416,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05254473587396642
+      },
+      {
+        "curve": 65417,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05324802716558908
+      },
+      {
+        "curve": 65418,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053678989355078824
+      },
+      {
+        "curve": 65419,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05387763773323145
+      },
+      {
+        "curve": 65420,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05354905240622919
+      },
+      {
+        "curve": 65421,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05457215252421211
+      },
+      {
+        "curve": 65422,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054249152271078314
+      },
+      {
+        "curve": 65423,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05435239294714988
+      },
+      {
+        "curve": 65424,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0529483010282008
+      },
+      {
+        "curve": 65425,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054895054478146015
+      },
+      {
+        "curve": 65426,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05423925226190228
+      },
+      {
+        "curve": 65427,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05239825613063896
+      },
+      {
+        "curve": 65428,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05205482553157619
+      },
+      {
+        "curve": 65429,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05388223307181388
+      },
+      {
+        "curve": 65430,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054831721073819686
+      },
+      {
+        "curve": 65431,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054300936300943334
+      },
+      {
+        "curve": 65432,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0542131851654863
+      },
+      {
+        "curve": 65433,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05449536526698412
+      },
+      {
+        "curve": 65434,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053670268588516645
+      },
+      {
+        "curve": 65435,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054862646726932106
+      },
+      {
+        "curve": 65436,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05372693619472009
+      },
+      {
+        "curve": 65437,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05192240066975652
+      },
+      {
+        "curve": 65438,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05276718732920399
+      },
+      {
+        "curve": 65439,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05219073315892103
+      },
+      {
+        "curve": 65440,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.055385330239300076
+      },
+      {
+        "curve": 65441,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05402777097566666
+      },
+      {
+        "curve": 65442,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054764729515284834
+      },
+      {
+        "curve": 65443,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05380703726318984
+      },
+      {
+        "curve": 65444,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053114237870822444
+      },
+      {
+        "curve": 65445,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05584221080224049
+      },
+      {
+        "curve": 65446,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05376747054862412
+      },
+      {
+        "curve": 65447,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05273198541603414
+      },
+      {
+        "curve": 65448,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05276765930426897
+      },
+      {
+        "curve": 65449,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054269844589541656
+      },
+      {
+        "curve": 65450,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05375418082046052
+      },
+      {
+        "curve": 65451,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.052569168253680056
+      },
+      {
+        "curve": 65452,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05442416429991293
+      },
+      {
+        "curve": 65453,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.051930720770613316
+      },
+      {
+        "curve": 65454,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05546717465135179
+      },
+      {
+        "curve": 65455,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05403509644906271
+      },
+      {
+        "curve": 65456,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.054646151502697374
+      },
+      {
+        "curve": 65457,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05289672622390913
+      },
+      {
+        "curve": 65458,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.053539791996290574
+      },
+      {
+        "curve": 65459,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05543174120460338
+      },
+      {
+        "curve": 65460,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05346367740927543
+      },
+      {
+        "curve": 65461,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05424485352378769
+      },
+      {
+        "curve": 65462,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05315469996136786
+      },
+      {
+        "curve": 65463,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05515090039803274
+      },
+      {
+        "curve": 65464,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05250176148862447
+      },
+      {
+        "curve": 65465,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05379902392602287
+      },
+      {
+        "curve": 65466,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0543664252531849
+      },
+      {
+        "curve": 65467,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05432564892136374
+      },
+      {
+        "curve": 65468,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.055750927091633616
+      },
+      {
+        "curve": 65469,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05367621783290156
+      },
+      {
+        "curve": 65470,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.05382865354963582
+      },
+      {
+        "curve": 65471,
+        "segment": 0,
+        "face": 990,
+        "fraction": 0.0532194580137054
+      }
+    ],
+    "curvesWithCrossings": 325
+  },
+  "scope": "Every raw authored rest guide/fiber segment against raw scalp proxy 3; no evaluated action, wind, body/dress collision or game physics"
+}

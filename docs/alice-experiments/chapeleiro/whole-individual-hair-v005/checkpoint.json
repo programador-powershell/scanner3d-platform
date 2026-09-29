@@ -1,0 +1,49 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completa com vestido",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "40fc16a806ddea8c75ddd7f4f47d42638195ccce366183a23683ae3bee483d7a",
+  "modelBytes": 65049116,
+  "sourceGeneration": "full_rest_five_root_entries_blend_v001",
+  "sourceBlendSha256": "adf452ff0f6c84f002992682f4f6acb71645ad72532083855d679e88bea77c22",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 101424,
+  "hairGuideCount": 2112,
+  "hairRibbonMeshCount": 50,
+  "fiberAttributes": ["_FIBER_ID", "_FIBER_T", "_GUIDE_ID"],
+  "guideMappingReimportVerified": true,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecularExtensionFactor": 0.24,
+  "dracoGenericQuantizationBits": 18,
+  "reimportReviewedViews": ["front", "right", "back", "left"],
+  "checkpointOnly": true,
+  "changesSinceV004": "Ajustes locais em cruzamentos reais dos fios e guias com o couro cabeludo na pose de repouso e suavização das ondas traseiras; a Alice inteira com vestido foi reexportada.",
+  "restScalpAudit": "Todos os 101.424 fios e 2.112 guias foram testados contra o proxy do couro cabeludo na pose de repouso; nenhum cruzamento após o primeiro segmento. Os cruzamentos remanescentes no primeiro segmento são saídas normais das raízes embutidas.",
+  "runtimeMotion": "A galeria usa oscilação leve por fio. A física nativa do Blender e as colisões não são transferidas automaticamente ao GLB ou navegador.",
+  "physicsApproved": false,
+  "appearanceApproved": false,
+  "evidence": {
+    "guideMapping": "guide_mapping_audit.json",
+    "restScalp": "rest_scalp_crossing_audit.json",
+    "headBinding": "head_binding_audit.json",
+    "reimportedViews": ["front_reimport.png", "right_reimport.png", "back_reimport.png", "left_reimport.png"],
+    "exportScript": "executed_export.py",
+    "materialScript": "executed_material_match.py"
+  },
+  "pending": [
+    "fidelidade final do rosto e do penteado específico do Chapeleiro contra as fotos",
+    "projeção UV 4K do cabelo com visibilidade e oclusão verificadas",
+    "simulação e colisões dos fios com rosto, corpo e vestido em Walk, Run, Attack e Jump completos",
+    "física por guia no runtime da galeria",
+    "polimento final de vestido, renda, camadas interiores e movimento",
+    "FBX final da personagem inteira após validação"
+  ]
+}
