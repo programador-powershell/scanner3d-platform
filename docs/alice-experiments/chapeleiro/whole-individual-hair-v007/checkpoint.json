@@ -1,0 +1,72 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completa com vestido",
+  "version": "v007",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "b41e06de1049f558d95499ba0804b79b6977eb20b9318062379f77793860963a",
+  "modelBytes": 65065436,
+  "sourceGeneration": "source_garment_restoration_study_v002",
+  "sourceBlendSha256": "d5d12af090830c94062445f53640b5ff60142326809a9c493b3f3ba4bd43785b",
+  "wholeCharacterWithDress": true,
+  "restoredPreviouslyHiddenFaces": 776,
+  "exportedFiberCount": 101424,
+  "hairGuideCount": 2112,
+  "hairRibbonMeshCount": 50,
+  "fiberAttributes": [
+    "_FIBER_ID",
+    "_FIBER_T",
+    "_GUIDE_ID"
+  ],
+  "guideMappingReimportVerified": true,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecularExtensionFactor": 0.24,
+  "dracoGenericQuantizationBits": 18,
+  "reimportReviewedViews": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "motionReviewedActions": [
+    "Walk frame 15",
+    "Jump frame 18"
+  ],
+  "checkpointOnly": true,
+  "changesSinceV006": "A máscara do exterior Tripo restaurou 776 faces antes ocultas, restritas principalmente ao decote frontal; o tecido marfim e o acabamento do corpete reaparecem sem alterar a topologia, os 101.424 fios ou o rig. O GLB inteiro foi reimportado e revisado nas quatro vistas, Walk e Jump.",
+  "runtimeMotion": "O GLB carrega skin da cabeça e atributos por fio; a galeria aplica oscilação leve. Simulação física independente e colisões do Blender não foram transferidas ao navegador.",
+  "physicsApproved": false,
+  "appearanceApproved": false,
+  "evidence": {
+    "guideMapping": "guide_mapping_audit.json",
+    "reimportedViews": [
+      "front_reimport.png",
+      "left_reimport.png",
+      "right_reimport.png",
+      "back_reimport.png"
+    ],
+    "motionViews": [
+      "walk_front.png",
+      "jump_front.png"
+    ],
+    "sourceRestorationScript": "executed_garment_mask_restoration.py",
+    "exportScript": "executed_export.py",
+    "materialMatchScript": "executed_material_match.py"
+  },
+  "pending": [
+    "fidelidade final do rosto e penteado Chapeleiro contra as fotos",
+    "remoção completa das placas de cabelo Tripo sem danificar o vestido",
+    "UV 4K do cabelo com visibilidade e oclusão",
+    "simulação independente, vento e colisões dos fios em todas as ações",
+    "física por guia no runtime da galeria",
+    "polimento final do vestido, renda, camadas interiores e movimento",
+    "FBX final da personagem inteira após validação"
+  ]
+}
