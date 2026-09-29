@@ -11,6 +11,7 @@ p.add_argument('--image-quality',type=int,default=100)
 p.add_argument('--fiber-count',type=int,default=-1,help='Bounded full-character export probe; -1 means every fiber')
 p.add_argument('--fiber-width-scale',type=float,default=1.0,help='Non-destructive ribbon-width study; 1 preserves source radius')
 p.add_argument('--fiber-tone-variation',action='store_true',help='Use stable dark per-fiber fallback tone instead of one uniform fallback')
+p.add_argument('--individual-reflection-tones',action='store_true',help='Export two stable PBR tones for individual black hair strands')
 p.add_argument('--hair-roughness',type=float,default=.42,help='Base roughness of unprojected dark fibers')
 p.add_argument('--hair-specular',type=float,default=.5,help='Specular IOR level of unprojected dark fibers')
 p.add_argument('--samples',type=int,default=24)
@@ -39,6 +40,8 @@ def sha(path):
     return h.hexdigest()
 g=json.loads(Path(a.generation).read_text());assert sha(g['editableBlend'])==g['editableBlendSha256']
 bpy.ops.wm.open_mainfile(filepath=g['editableBlend'])
+bpy.context.scene.frame_set(1)
+bpy.context.view_layer.update()
 whole=bpy.data.objects['Chapeleiro / intact whole exterior / skin study']
 rig=next(m.object for m in whole.modifiers if m.type=='ARMATURE')
 mask=whole.data.attributes['alice_original_hair_review_mask'];hair_faces={i for i,v in enumerate(mask.data) if v.value}
@@ -58,6 +61,7 @@ C=len(source_hair.data.curves);N=len(source_hair.data.points)//C
 assert 8<=a.samples<=N and a.chunk_size>0 and (a.fiber_count==-1 or 1<=a.fiber_count<=C)
 assert .15<=a.fiber_width_scale<=1.5
 assert 0<=a.hair_roughness<=1 and 0<=a.hair_specular<=1
+assert not (a.individual_reflection_tones and a.projection_atlas)
 v=np.empty(len(source_hair.data.points)*3,np.float32);source_hair.data.attributes['position'].data.foreach_get('vector',v);v=v.reshape(C,N,3)
 r=np.empty(len(source_hair.data.points),np.float32);source_hair.data.attributes['radius'].data.foreach_get('value',r);r=r.reshape(C,N)
 selected_fiber_ids=np.arange(C) if a.fiber_count==-1 else np.linspace(0,C-1,a.fiber_count,dtype=int)
@@ -99,6 +103,18 @@ assert 0<=a.flow_coherence_min<=1
 assert 0<=a.depth_gate_mm<=20 and (not a.depth_gate_mm or a.projection_atlas)
 projection=None
 fallback_palette=[fallback_mat]
+if a.individual_reflection_tones:
+    dark=fallback_mat.copy();dark.name='Alice / black individual fiber base / PBR'
+    dark_bs=dark.node_tree.nodes.get('Principled BSDF')
+    dark_bs.inputs['Base Color'].default_value=(.012,.010,.013,1)
+    dark_bs.inputs['Roughness'].default_value=.46
+    if 'Specular IOR Level' in dark_bs.inputs:dark_bs.inputs['Specular IOR Level'].default_value=.65
+    light=fallback_mat.copy();light.name='Alice / individual fiber reflected tone / PBR'
+    light_bs=light.node_tree.nodes.get('Principled BSDF')
+    light_bs.inputs['Base Color'].default_value=(.022,.019,.019,1)
+    light_bs.inputs['Roughness'].default_value=.38
+    if 'Specular IOR Level' in light_bs.inputs:light_bs.inputs['Specular IOR Level'].default_value=.65
+    fallback_palette=[dark,light]
 if a.projection_atlas:
     from mathutils import Vector
     from bpy_extras.object_utils import world_to_camera_view
@@ -262,7 +278,8 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
     fibers=selected_fiber_ids[chunk_start:chunk_start+a.chunk_size]
     verts=[];faces=[];uv=[];face_materials=[];fiber_ids=[];fiber_factors=[];fiber_guide_ids=[]
     for fid in fibers:
-        tone_index=int((int(fid)*2654435761 & 0xffffffff)%len(fallback_palette))
+        tone_hash=(int(fid)*2654435761 & 0xffffffff)
+        tone_index=int(tone_hash/4294967296.0>=.94) if a.individual_reflection_tones else int(tone_hash%len(fallback_palette))
         path=v[fid,sample];radius=r[fid,sample]
         tangent=np.gradient(path,axis=0);tangent/=np.maximum(np.linalg.norm(tangent,axis=1,keepdims=True),1e-9)
         radial=path-np.array([0,.012,.82],np.float32);radial[:,2]=0
@@ -343,6 +360,7 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
             else:
                 t0=i/(a.samples-1);t1=(i+1)/(a.samples-1)
                 uv.extend([(0,t0),(1,t0),(1,t1),(0,t1)])
+                if a.individual_reflection_tones:face_materials.append(tone_index)
     mesh=bpy.data.meshes.new('Alice separated fiber ribbons '+str(chunk_start//a.chunk_size));mesh.from_pydata(verts,[],faces);mesh.update()
     layer=mesh.uv_layers.new(name='Hair UV')
     for loop,coordinate in zip(layer.data,uv):loop.uv=coordinate
@@ -374,9 +392,15 @@ for chunk_start in range(0,len(selected_fiber_ids),a.chunk_size):
                 samples.append(dict(center=[round(float(x),6) for x in point],uv=[round(float(x),6) for x in coordinate]))
                 if len(samples)==20:break
             (out/'preexport_painted_samples.json').write_text(json.dumps(samples,indent=2))
+    elif a.individual_reflection_tones:
+        for tone in fallback_palette:mesh.materials.append(tone)
+        mesh.polygons.foreach_set('material_index',face_materials)
     else:mesh.materials.append(mat)
     obj=bpy.data.objects.new('Alice / individual hair fibers / '+str(chunk_start//a.chunk_size),mesh)
-    bpy.context.scene.collection.objects.link(obj);obj.parent=rig;obj.matrix_world=source_hair.matrix_world.copy()
+    bpy.context.scene.collection.objects.link(obj);obj.parent=rig
+    # Raw curve positions are in the character's rest coordinates. Reusing the
+    # evaluated hair object's Head transform also skins that pose a second time.
+    obj.matrix_world=Matrix.Identity(4)
     group=obj.vertex_groups.new(name='Head');group.add(list(range(len(mesh.vertices))),1.0,'REPLACE')
     modifier=obj.modifiers.new('Alice Head skin','ARMATURE');modifier.object=rig
     obj['aliceRole']='hair';obj['hairFiberCount']=len(fibers);obj['hairRepresentation']='separate mesh ribbon per source fiber; static Head skin, runtime dynamics pending'
@@ -451,6 +475,9 @@ assert any('finished posterior bodice' in n.get('name','') for n in data['nodes'
 report=dict(sourceGeneration=a.generation,sourceBlend=g['editableBlend'],sourceBlendSha256=g['editableBlendSha256'],sourceEditableUnchanged=sha(g['editableBlend'])==g['editableBlendSha256'],model=str(model),modelSha256=sha(model),modelBytes=model.stat().st_size,wholeCharacterWithDress=True,sourceFaceCount=original_faces,sourceVertices=original_vertices,sourceHairFacesExcluded=len(hair_faces),originalTripoHairIncluded=False,hairRepresentation='One disconnected mesh ribbon per source fiber; Head skin only; independent wind dynamics remain Blender authoring',exportedFiberCount=len(selected_fiber_ids),sourceFiberCount=C,fiberSamples=a.samples,fiberWidthScale=a.fiber_width_scale,fiberToneVariation=a.fiber_tone_variation,hairRoughness=a.hair_roughness,hairSpecular=a.hair_specular,hairRibbonMeshCount=len(hair_chunks),meshCount=len(data['meshes']),skinCount=len(data['skins']),animations=names,posteriorBodiceObjects=g['posteriorBodice']['objects'],collisionProxiesExcluded=True,allRiggedVerticesWeighted=True,characterFinished=False,physicsApproved=False,published=False,dracoEnabled=a.draco,imageFormat=a.image_format,imageQuality=a.image_quality)
 report['hairProjectionProbe']=projection
 report['runtimeHairAttributes']=['_FIBER_ID','_FIBER_T','_GUIDE_ID'] if a.runtime_hair_attributes else []
+report['individualReflectionTones']=dict(enabled=a.individual_reflection_tones,
+    highlightThreshold=.94 if a.individual_reflection_tones else None,
+    materialNames=[item.name for item in fallback_palette] if a.individual_reflection_tones else [])
 report['dracoGenericQuantizationBits']=a.draco_generic_bits if a.draco else None
 if projection:
     report['hairProjectionProbe']['visibleFaceOcclusionValidated']=False

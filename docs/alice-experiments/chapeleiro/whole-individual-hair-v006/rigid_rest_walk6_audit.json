@@ -1,0 +1,53 @@
+{
+  "generation": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\rigid_rest_head_binding_study_v001\\generation.json",
+  "blendSha256": "78328a022ff2ae4e74dc95aa7c4fb0ad3dee212204e08b71476b91b7cea05716",
+  "rows": [
+    {
+      "frame": 1,
+      "matrixMaxError": 8.381903171539307e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2495
+    },
+    {
+      "frame": 2,
+      "matrixMaxError": 8.568167686462402e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2495
+    },
+    {
+      "frame": 3,
+      "matrixMaxError": 8.381903171539307e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2117
+    },
+    {
+      "frame": 4,
+      "matrixMaxError": 8.568167686462402e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2117
+    },
+    {
+      "frame": 5,
+      "matrixMaxError": 8.381903171539307e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2117
+    },
+    {
+      "frame": 6,
+      "matrixMaxError": 8.381903171539307e-08,
+      "restLocalPointMaxErrorM": 0.0,
+      "sampledFollowerMaxErrorM": 0.0,
+      "sampledFiberCount": 2117
+    }
+  ],
+  "reopened": true,
+  "savedBindingVerified": true,
+  "fullActionPhysicsApproved": false,
+  "published": false,
+  "scope": "Reopened full blend, six captured Walk frames with physical guides injected, deterministic sample followers; no continuous collision or runtime approval"
+}
