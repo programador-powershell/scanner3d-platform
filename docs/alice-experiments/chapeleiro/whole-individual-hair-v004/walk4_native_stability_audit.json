@@ -1,0 +1,82 @@
+{
+  "sourceGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\guide1249_turn_separation_study_v003\\generation.json",
+  "action": "Walk",
+  "track": {
+    "name": "Walk / current fitted Chapeleiro motion study",
+    "strips": [
+      {
+        "name": "Walk / current fitted Chapeleiro motion study",
+        "frameStart": 1.0,
+        "frameEnd": 42.0,
+        "actionStart": 1.0,
+        "actionEnd": 42.0
+      }
+    ]
+  },
+  "guideCount": 2112,
+  "controlsPerGuide": 32,
+  "frames": [
+    {
+      "frame": 1,
+      "maxRootErrorM": 0.0001567408035043627,
+      "rootErrorP95M": 9.025653707794845e-05,
+      "maxSegmentStretch": 1.0186794996261597,
+      "segmentStretchP95": 1.0001332759857178,
+      "worstGuideId": 1173,
+      "worstSegmentIndex": 0,
+      "worstRestSegmentMm": 3.681537389755249,
+      "worstDeformedSegmentMm": 3.7503068447113037,
+      "meanTipDisplacementFromRestM": 0.014112361706793308,
+      "maxPointStepM": 0.0
+    },
+    {
+      "frame": 2,
+      "maxRootErrorM": 0.00014898851804900914,
+      "rootErrorP95M": 8.750624692765996e-05,
+      "maxSegmentStretch": 1.1765165328979492,
+      "segmentStretchP95": 1.040088415145874,
+      "worstGuideId": 804,
+      "worstSegmentIndex": 1,
+      "worstRestSegmentMm": 0.8408011198043823,
+      "worstDeformedSegmentMm": 0.9892163872718811,
+      "meanTipDisplacementFromRestM": 0.01424750778824091,
+      "maxPointStepM": 0.008602641522884369
+    },
+    {
+      "frame": 3,
+      "maxRootErrorM": 0.00014814871246926486,
+      "rootErrorP95M": 0.00010266130993841216,
+      "maxSegmentStretch": 1.1168426275253296,
+      "segmentStretchP95": 1.0311130285263062,
+      "worstGuideId": 2086,
+      "worstSegmentIndex": 16,
+      "worstRestSegmentMm": 0.8597922921180725,
+      "worstDeformedSegmentMm": 0.9602527022361755,
+      "meanTipDisplacementFromRestM": 0.01855085976421833,
+      "maxPointStepM": 0.01967414654791355
+    },
+    {
+      "frame": 4,
+      "maxRootErrorM": 0.00014834693865850568,
+      "rootErrorP95M": 0.00010948361159535125,
+      "maxSegmentStretch": 1.1382834911346436,
+      "segmentStretchP95": 1.0312288999557495,
+      "worstGuideId": 2106,
+      "worstSegmentIndex": 3,
+      "worstRestSegmentMm": 0.9536716938018799,
+      "worstDeformedSegmentMm": 1.085548758506775,
+      "meanTipDisplacementFromRestM": 0.024194583296775818,
+      "maxPointStepM": 0.0270402729511261
+    }
+  ],
+  "rootThresholdM": 0.0005,
+  "stretchThreshold": 1.2,
+  "pointStepThresholdM": 0.1,
+  "stable": true,
+  "bodyDressCollisionVerified": false,
+  "fullFiberMotionVerified": false,
+  "exportedGamePhysicsVerified": false,
+  "finalPhysicsApproved": false,
+  "published": false,
+  "sourceUnchanged": true
+}

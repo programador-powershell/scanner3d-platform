@@ -1,0 +1,942 @@
+{
+  "sourceGeneration": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\guide1249_turn_separation_study_v003\\generation.json",
+  "sourceBlendSha256": "3ee57656258726bb014384542565d35a4c3d59fce9973bd0d1b48e43e59ab475",
+  "actionTrack": "Walk / current fitted Chapeleiro motion study",
+  "frames": [
+    1,
+    21,
+    42
+  ],
+  "materialGroups": [
+    {
+      "materialIndex": 2,
+      "materialName": "tripo_material_dd3c9b7f-f513-4b29-a8c2-f54a57051c8f.002 / dress UV 4K first pass",
+      "vertexCount": 49095,
+      "walk21MedianDisplacementM": 0.06792990863323212,
+      "walk21MaxDisplacementM": 0.14226378500461578,
+      "walk42MedianDisplacementM": 0.00011828437709482387,
+      "walk42MaxDisplacementM": 0.0002209814265370369
+    },
+    {
+      "materialIndex": 0,
+      "materialName": "tripo_material_dd3c9b7f-f513-4b29-a8c2-f54a57051c8f.002",
+      "vertexCount": 68446,
+      "walk21MedianDisplacementM": 0.0586886964738369,
+      "walk21MaxDisplacementM": 0.20980051159858704,
+      "walk42MedianDisplacementM": 8.90960727701895e-05,
+      "walk42MaxDisplacementM": 0.005293564405292273
+    },
+    {
+      "materialIndex": 1,
+      "materialName": "Chapeleiro / exposed skin / local PBR polish.002",
+      "vertexCount": 38586,
+      "walk21MedianDisplacementM": 0.03325612097978592,
+      "walk21MaxDisplacementM": 0.20972804725170135,
+      "walk42MedianDisplacementM": 8.90946394065395e-05,
+      "walk42MaxDisplacementM": 0.00017662822210695595
+    }
+  ],
+  "dressComponentCount": 610,
+  "dressComponentsAtLeast100Vertices": [
+    {
+      "vertexCount": 2070,
+      "weightedVertices": 2070,
+      "medianWalk21DisplacementM": 0.06658217310905457,
+      "maxWalk21DisplacementM": 0.08210645616054535
+    },
+    {
+      "vertexCount": 1312,
+      "weightedVertices": 1312,
+      "medianWalk21DisplacementM": 0.07569620013237,
+      "maxWalk21DisplacementM": 0.08280682563781738
+    },
+    {
+      "vertexCount": 1235,
+      "weightedVertices": 1235,
+      "medianWalk21DisplacementM": 0.05792809650301933,
+      "maxWalk21DisplacementM": 0.07716044783592224
+    },
+    {
+      "vertexCount": 1075,
+      "weightedVertices": 1075,
+      "medianWalk21DisplacementM": 0.07959620654582977,
+      "maxWalk21DisplacementM": 0.09573522955179214
+    },
+    {
+      "vertexCount": 768,
+      "weightedVertices": 768,
+      "medianWalk21DisplacementM": 0.07447575032711029,
+      "maxWalk21DisplacementM": 0.07960875332355499
+    },
+    {
+      "vertexCount": 740,
+      "weightedVertices": 740,
+      "medianWalk21DisplacementM": 0.0802074521780014,
+      "maxWalk21DisplacementM": 0.09908875823020935
+    },
+    {
+      "vertexCount": 737,
+      "weightedVertices": 737,
+      "medianWalk21DisplacementM": 0.07290857285261154,
+      "maxWalk21DisplacementM": 0.07789011299610138
+    },
+    {
+      "vertexCount": 587,
+      "weightedVertices": 587,
+      "medianWalk21DisplacementM": 0.06717635691165924,
+      "maxWalk21DisplacementM": 0.07325790822505951
+    },
+    {
+      "vertexCount": 539,
+      "weightedVertices": 539,
+      "medianWalk21DisplacementM": 0.07796235382556915,
+      "maxWalk21DisplacementM": 0.09368153661489487
+    },
+    {
+      "vertexCount": 510,
+      "weightedVertices": 510,
+      "medianWalk21DisplacementM": 0.0761040449142456,
+      "maxWalk21DisplacementM": 0.08233856409788132
+    },
+    {
+      "vertexCount": 430,
+      "weightedVertices": 430,
+      "medianWalk21DisplacementM": 0.03895661234855652,
+      "maxWalk21DisplacementM": 0.055146802216768265
+    },
+    {
+      "vertexCount": 370,
+      "weightedVertices": 370,
+      "medianWalk21DisplacementM": 0.017212234437465668,
+      "maxWalk21DisplacementM": 0.026000410318374634
+    },
+    {
+      "vertexCount": 365,
+      "weightedVertices": 365,
+      "medianWalk21DisplacementM": 0.04511910676956177,
+      "maxWalk21DisplacementM": 0.05651531368494034
+    },
+    {
+      "vertexCount": 361,
+      "weightedVertices": 361,
+      "medianWalk21DisplacementM": 0.0756266638636589,
+      "maxWalk21DisplacementM": 0.08848244696855545
+    },
+    {
+      "vertexCount": 358,
+      "weightedVertices": 358,
+      "medianWalk21DisplacementM": 0.012593599036335945,
+      "maxWalk21DisplacementM": 0.02943161129951477
+    },
+    {
+      "vertexCount": 353,
+      "weightedVertices": 353,
+      "medianWalk21DisplacementM": 0.0823272317647934,
+      "maxWalk21DisplacementM": 0.09377311170101166
+    },
+    {
+      "vertexCount": 348,
+      "weightedVertices": 348,
+      "medianWalk21DisplacementM": 0.07503063976764679,
+      "maxWalk21DisplacementM": 0.07856627553701401
+    },
+    {
+      "vertexCount": 341,
+      "weightedVertices": 341,
+      "medianWalk21DisplacementM": 0.06807927787303925,
+      "maxWalk21DisplacementM": 0.08445651084184647
+    },
+    {
+      "vertexCount": 333,
+      "weightedVertices": 333,
+      "medianWalk21DisplacementM": 0.08403977751731873,
+      "maxWalk21DisplacementM": 0.09970586746931076
+    },
+    {
+      "vertexCount": 333,
+      "weightedVertices": 333,
+      "medianWalk21DisplacementM": 0.03686409071087837,
+      "maxWalk21DisplacementM": 0.040304034948349
+    },
+    {
+      "vertexCount": 329,
+      "weightedVertices": 329,
+      "medianWalk21DisplacementM": 0.06930585950613022,
+      "maxWalk21DisplacementM": 0.07225516438484192
+    },
+    {
+      "vertexCount": 328,
+      "weightedVertices": 328,
+      "medianWalk21DisplacementM": 0.10519172251224518,
+      "maxWalk21DisplacementM": 0.12318671494722366
+    },
+    {
+      "vertexCount": 322,
+      "weightedVertices": 322,
+      "medianWalk21DisplacementM": 0.07312067598104477,
+      "maxWalk21DisplacementM": 0.09245941787958145
+    },
+    {
+      "vertexCount": 319,
+      "weightedVertices": 319,
+      "medianWalk21DisplacementM": 0.09666465222835541,
+      "maxWalk21DisplacementM": 0.11490876972675323
+    },
+    {
+      "vertexCount": 314,
+      "weightedVertices": 314,
+      "medianWalk21DisplacementM": 0.02038392424583435,
+      "maxWalk21DisplacementM": 0.029437217861413956
+    },
+    {
+      "vertexCount": 312,
+      "weightedVertices": 312,
+      "medianWalk21DisplacementM": 0.06911220401525497,
+      "maxWalk21DisplacementM": 0.07026179134845734
+    },
+    {
+      "vertexCount": 310,
+      "weightedVertices": 310,
+      "medianWalk21DisplacementM": 0.06958675384521484,
+      "maxWalk21DisplacementM": 0.0938897430896759
+    },
+    {
+      "vertexCount": 307,
+      "weightedVertices": 307,
+      "medianWalk21DisplacementM": 0.08770722150802612,
+      "maxWalk21DisplacementM": 0.10867799073457718
+    },
+    {
+      "vertexCount": 306,
+      "weightedVertices": 306,
+      "medianWalk21DisplacementM": 0.053789712488651276,
+      "maxWalk21DisplacementM": 0.05703252553939819
+    },
+    {
+      "vertexCount": 305,
+      "weightedVertices": 305,
+      "medianWalk21DisplacementM": 0.09472589194774628,
+      "maxWalk21DisplacementM": 0.10462713986635208
+    },
+    {
+      "vertexCount": 297,
+      "weightedVertices": 297,
+      "medianWalk21DisplacementM": 0.07239913940429688,
+      "maxWalk21DisplacementM": 0.07783839106559753
+    },
+    {
+      "vertexCount": 287,
+      "weightedVertices": 287,
+      "medianWalk21DisplacementM": 0.02273581363260746,
+      "maxWalk21DisplacementM": 0.0352373868227005
+    },
+    {
+      "vertexCount": 285,
+      "weightedVertices": 285,
+      "medianWalk21DisplacementM": 0.05954550951719284,
+      "maxWalk21DisplacementM": 0.08147287368774414
+    },
+    {
+      "vertexCount": 284,
+      "weightedVertices": 284,
+      "medianWalk21DisplacementM": 0.09372788667678833,
+      "maxWalk21DisplacementM": 0.10395954549312592
+    },
+    {
+      "vertexCount": 283,
+      "weightedVertices": 283,
+      "medianWalk21DisplacementM": 0.036803897470235825,
+      "maxWalk21DisplacementM": 0.03894982486963272
+    },
+    {
+      "vertexCount": 275,
+      "weightedVertices": 275,
+      "medianWalk21DisplacementM": 0.032618097960948944,
+      "maxWalk21DisplacementM": 0.03529863432049751
+    },
+    {
+      "vertexCount": 270,
+      "weightedVertices": 270,
+      "medianWalk21DisplacementM": 0.021098336204886436,
+      "maxWalk21DisplacementM": 0.03190156817436218
+    },
+    {
+      "vertexCount": 266,
+      "weightedVertices": 266,
+      "medianWalk21DisplacementM": 0.11726290732622147,
+      "maxWalk21DisplacementM": 0.1300412118434906
+    },
+    {
+      "vertexCount": 265,
+      "weightedVertices": 265,
+      "medianWalk21DisplacementM": 0.054025374352931976,
+      "maxWalk21DisplacementM": 0.07907534390687943
+    },
+    {
+      "vertexCount": 264,
+      "weightedVertices": 264,
+      "medianWalk21DisplacementM": 0.07599403709173203,
+      "maxWalk21DisplacementM": 0.09615205973386765
+    },
+    {
+      "vertexCount": 260,
+      "weightedVertices": 260,
+      "medianWalk21DisplacementM": 0.0553554967045784,
+      "maxWalk21DisplacementM": 0.06676728278398514
+    },
+    {
+      "vertexCount": 260,
+      "weightedVertices": 260,
+      "medianWalk21DisplacementM": 0.0329708568751812,
+      "maxWalk21DisplacementM": 0.03527182713150978
+    },
+    {
+      "vertexCount": 257,
+      "weightedVertices": 257,
+      "medianWalk21DisplacementM": 0.12455107271671295,
+      "maxWalk21DisplacementM": 0.13268762826919556
+    },
+    {
+      "vertexCount": 255,
+      "weightedVertices": 255,
+      "medianWalk21DisplacementM": 0.04218180477619171,
+      "maxWalk21DisplacementM": 0.05379384383559227
+    },
+    {
+      "vertexCount": 254,
+      "weightedVertices": 254,
+      "medianWalk21DisplacementM": 0.05371599644422531,
+      "maxWalk21DisplacementM": 0.059056662023067474
+    },
+    {
+      "vertexCount": 249,
+      "weightedVertices": 249,
+      "medianWalk21DisplacementM": 0.09892992675304413,
+      "maxWalk21DisplacementM": 0.1087888702750206
+    },
+    {
+      "vertexCount": 246,
+      "weightedVertices": 246,
+      "medianWalk21DisplacementM": 0.12018989771604538,
+      "maxWalk21DisplacementM": 0.13114319741725922
+    },
+    {
+      "vertexCount": 240,
+      "weightedVertices": 240,
+      "medianWalk21DisplacementM": 0.03001347929239273,
+      "maxWalk21DisplacementM": 0.044214677065610886
+    },
+    {
+      "vertexCount": 240,
+      "weightedVertices": 240,
+      "medianWalk21DisplacementM": 0.07205851376056671,
+      "maxWalk21DisplacementM": 0.07806701958179474
+    },
+    {
+      "vertexCount": 235,
+      "weightedVertices": 235,
+      "medianWalk21DisplacementM": 0.02338605374097824,
+      "maxWalk21DisplacementM": 0.03528881072998047
+    },
+    {
+      "vertexCount": 232,
+      "weightedVertices": 232,
+      "medianWalk21DisplacementM": 0.11018106341362,
+      "maxWalk21DisplacementM": 0.12361082434654236
+    },
+    {
+      "vertexCount": 228,
+      "weightedVertices": 228,
+      "medianWalk21DisplacementM": 0.012401456944644451,
+      "maxWalk21DisplacementM": 0.03570086508989334
+    },
+    {
+      "vertexCount": 221,
+      "weightedVertices": 221,
+      "medianWalk21DisplacementM": 0.01849111169576645,
+      "maxWalk21DisplacementM": 0.03280467912554741
+    },
+    {
+      "vertexCount": 221,
+      "weightedVertices": 221,
+      "medianWalk21DisplacementM": 0.11283126473426819,
+      "maxWalk21DisplacementM": 0.1214057058095932
+    },
+    {
+      "vertexCount": 220,
+      "weightedVertices": 220,
+      "medianWalk21DisplacementM": 0.04130909591913223,
+      "maxWalk21DisplacementM": 0.04739716649055481
+    },
+    {
+      "vertexCount": 219,
+      "weightedVertices": 219,
+      "medianWalk21DisplacementM": 0.08370524644851685,
+      "maxWalk21DisplacementM": 0.09329992532730103
+    },
+    {
+      "vertexCount": 218,
+      "weightedVertices": 218,
+      "medianWalk21DisplacementM": 0.04170961678028107,
+      "maxWalk21DisplacementM": 0.048329245299100876
+    },
+    {
+      "vertexCount": 217,
+      "weightedVertices": 217,
+      "medianWalk21DisplacementM": 0.11599937826395035,
+      "maxWalk21DisplacementM": 0.12826015055179596
+    },
+    {
+      "vertexCount": 215,
+      "weightedVertices": 215,
+      "medianWalk21DisplacementM": 0.09712046384811401,
+      "maxWalk21DisplacementM": 0.11616232991218567
+    },
+    {
+      "vertexCount": 213,
+      "weightedVertices": 213,
+      "medianWalk21DisplacementM": 0.046811792999506,
+      "maxWalk21DisplacementM": 0.06187501922249794
+    },
+    {
+      "vertexCount": 206,
+      "weightedVertices": 206,
+      "medianWalk21DisplacementM": 0.02696984075009823,
+      "maxWalk21DisplacementM": 0.04335218295454979
+    },
+    {
+      "vertexCount": 196,
+      "weightedVertices": 196,
+      "medianWalk21DisplacementM": 0.02070208080112934,
+      "maxWalk21DisplacementM": 0.026213273406028748
+    },
+    {
+      "vertexCount": 191,
+      "weightedVertices": 191,
+      "medianWalk21DisplacementM": 0.06389372795820236,
+      "maxWalk21DisplacementM": 0.07560655474662781
+    },
+    {
+      "vertexCount": 190,
+      "weightedVertices": 190,
+      "medianWalk21DisplacementM": 0.044366706162691116,
+      "maxWalk21DisplacementM": 0.051017627120018005
+    },
+    {
+      "vertexCount": 188,
+      "weightedVertices": 188,
+      "medianWalk21DisplacementM": 0.06074763089418411,
+      "maxWalk21DisplacementM": 0.0690297782421112
+    },
+    {
+      "vertexCount": 187,
+      "weightedVertices": 187,
+      "medianWalk21DisplacementM": 0.03542139381170273,
+      "maxWalk21DisplacementM": 0.04443952813744545
+    },
+    {
+      "vertexCount": 179,
+      "weightedVertices": 179,
+      "medianWalk21DisplacementM": 0.017009900882840157,
+      "maxWalk21DisplacementM": 0.022353367879986763
+    },
+    {
+      "vertexCount": 179,
+      "weightedVertices": 179,
+      "medianWalk21DisplacementM": 0.11776445806026459,
+      "maxWalk21DisplacementM": 0.12780076265335083
+    },
+    {
+      "vertexCount": 178,
+      "weightedVertices": 178,
+      "medianWalk21DisplacementM": 0.101295605301857,
+      "maxWalk21DisplacementM": 0.11758095771074295
+    },
+    {
+      "vertexCount": 172,
+      "weightedVertices": 172,
+      "medianWalk21DisplacementM": 0.028330843895673752,
+      "maxWalk21DisplacementM": 0.03907281160354614
+    },
+    {
+      "vertexCount": 172,
+      "weightedVertices": 172,
+      "medianWalk21DisplacementM": 0.07210659980773926,
+      "maxWalk21DisplacementM": 0.07459235936403275
+    },
+    {
+      "vertexCount": 170,
+      "weightedVertices": 170,
+      "medianWalk21DisplacementM": 0.04582979530096054,
+      "maxWalk21DisplacementM": 0.05487752705812454
+    },
+    {
+      "vertexCount": 169,
+      "weightedVertices": 169,
+      "medianWalk21DisplacementM": 0.04761243984103203,
+      "maxWalk21DisplacementM": 0.05425725877285004
+    },
+    {
+      "vertexCount": 168,
+      "weightedVertices": 168,
+      "medianWalk21DisplacementM": 0.05477798730134964,
+      "maxWalk21DisplacementM": 0.06815092265605927
+    },
+    {
+      "vertexCount": 160,
+      "weightedVertices": 160,
+      "medianWalk21DisplacementM": 0.05946901813149452,
+      "maxWalk21DisplacementM": 0.065170057117939
+    },
+    {
+      "vertexCount": 159,
+      "weightedVertices": 159,
+      "medianWalk21DisplacementM": 0.08598686754703522,
+      "maxWalk21DisplacementM": 0.09205783903598785
+    },
+    {
+      "vertexCount": 158,
+      "weightedVertices": 158,
+      "medianWalk21DisplacementM": 0.10070248693227768,
+      "maxWalk21DisplacementM": 0.1054004579782486
+    },
+    {
+      "vertexCount": 157,
+      "weightedVertices": 157,
+      "medianWalk21DisplacementM": 0.03925953432917595,
+      "maxWalk21DisplacementM": 0.044920675456523895
+    },
+    {
+      "vertexCount": 154,
+      "weightedVertices": 154,
+      "medianWalk21DisplacementM": 0.10221599787473679,
+      "maxWalk21DisplacementM": 0.11063053458929062
+    },
+    {
+      "vertexCount": 154,
+      "weightedVertices": 154,
+      "medianWalk21DisplacementM": 0.0494755282998085,
+      "maxWalk21DisplacementM": 0.05894717574119568
+    },
+    {
+      "vertexCount": 152,
+      "weightedVertices": 152,
+      "medianWalk21DisplacementM": 0.028262468054890633,
+      "maxWalk21DisplacementM": 0.040217332541942596
+    },
+    {
+      "vertexCount": 152,
+      "weightedVertices": 152,
+      "medianWalk21DisplacementM": 0.06013008952140808,
+      "maxWalk21DisplacementM": 0.06432158499956131
+    },
+    {
+      "vertexCount": 151,
+      "weightedVertices": 151,
+      "medianWalk21DisplacementM": 0.06989838927984238,
+      "maxWalk21DisplacementM": 0.08328542858362198
+    },
+    {
+      "vertexCount": 151,
+      "weightedVertices": 151,
+      "medianWalk21DisplacementM": 0.030549170449376106,
+      "maxWalk21DisplacementM": 0.03307134658098221
+    },
+    {
+      "vertexCount": 151,
+      "weightedVertices": 151,
+      "medianWalk21DisplacementM": 0.07851613312959671,
+      "maxWalk21DisplacementM": 0.09219809621572495
+    },
+    {
+      "vertexCount": 151,
+      "weightedVertices": 151,
+      "medianWalk21DisplacementM": 0.09642481803894043,
+      "maxWalk21DisplacementM": 0.11133873462677002
+    },
+    {
+      "vertexCount": 150,
+      "weightedVertices": 150,
+      "medianWalk21DisplacementM": 0.04305044561624527,
+      "maxWalk21DisplacementM": 0.048887040466070175
+    },
+    {
+      "vertexCount": 150,
+      "weightedVertices": 150,
+      "medianWalk21DisplacementM": 0.02899083122611046,
+      "maxWalk21DisplacementM": 0.03257640078663826
+    },
+    {
+      "vertexCount": 146,
+      "weightedVertices": 146,
+      "medianWalk21DisplacementM": 0.07281522452831268,
+      "maxWalk21DisplacementM": 0.08148495107889175
+    },
+    {
+      "vertexCount": 145,
+      "weightedVertices": 145,
+      "medianWalk21DisplacementM": 0.005239660851657391,
+      "maxWalk21DisplacementM": 0.009995232336223125
+    },
+    {
+      "vertexCount": 144,
+      "weightedVertices": 144,
+      "medianWalk21DisplacementM": 0.009284012019634247,
+      "maxWalk21DisplacementM": 0.024303242564201355
+    },
+    {
+      "vertexCount": 144,
+      "weightedVertices": 144,
+      "medianWalk21DisplacementM": 0.0853453204035759,
+      "maxWalk21DisplacementM": 0.09442600607872009
+    },
+    {
+      "vertexCount": 143,
+      "weightedVertices": 143,
+      "medianWalk21DisplacementM": 0.11532652378082275,
+      "maxWalk21DisplacementM": 0.11890910565853119
+    },
+    {
+      "vertexCount": 142,
+      "weightedVertices": 142,
+      "medianWalk21DisplacementM": 0.031847115606069565,
+      "maxWalk21DisplacementM": 0.041157372295856476
+    },
+    {
+      "vertexCount": 142,
+      "weightedVertices": 142,
+      "medianWalk21DisplacementM": 0.08792884647846222,
+      "maxWalk21DisplacementM": 0.10084118694067001
+    },
+    {
+      "vertexCount": 142,
+      "weightedVertices": 142,
+      "medianWalk21DisplacementM": 0.09219895303249359,
+      "maxWalk21DisplacementM": 0.10640032589435577
+    },
+    {
+      "vertexCount": 141,
+      "weightedVertices": 141,
+      "medianWalk21DisplacementM": 0.11094771325588226,
+      "maxWalk21DisplacementM": 0.11617106199264526
+    },
+    {
+      "vertexCount": 140,
+      "weightedVertices": 140,
+      "medianWalk21DisplacementM": 0.05989580601453781,
+      "maxWalk21DisplacementM": 0.06920972466468811
+    },
+    {
+      "vertexCount": 139,
+      "weightedVertices": 139,
+      "medianWalk21DisplacementM": 0.028576044365763664,
+      "maxWalk21DisplacementM": 0.03145990148186684
+    },
+    {
+      "vertexCount": 139,
+      "weightedVertices": 139,
+      "medianWalk21DisplacementM": 0.020738348364830017,
+      "maxWalk21DisplacementM": 0.023800216615200043
+    },
+    {
+      "vertexCount": 139,
+      "weightedVertices": 139,
+      "medianWalk21DisplacementM": 0.01110535766929388,
+      "maxWalk21DisplacementM": 0.03041277453303337
+    },
+    {
+      "vertexCount": 138,
+      "weightedVertices": 138,
+      "medianWalk21DisplacementM": 0.10595767199993134,
+      "maxWalk21DisplacementM": 0.11194612830877304
+    },
+    {
+      "vertexCount": 138,
+      "weightedVertices": 138,
+      "medianWalk21DisplacementM": 0.09719489514827728,
+      "maxWalk21DisplacementM": 0.10473659634590149
+    },
+    {
+      "vertexCount": 137,
+      "weightedVertices": 137,
+      "medianWalk21DisplacementM": 0.028543317690491676,
+      "maxWalk21DisplacementM": 0.03341208025813103
+    },
+    {
+      "vertexCount": 136,
+      "weightedVertices": 136,
+      "medianWalk21DisplacementM": 0.03071553260087967,
+      "maxWalk21DisplacementM": 0.0448550209403038
+    },
+    {
+      "vertexCount": 135,
+      "weightedVertices": 135,
+      "medianWalk21DisplacementM": 0.008173748850822449,
+      "maxWalk21DisplacementM": 0.0192617978900671
+    },
+    {
+      "vertexCount": 135,
+      "weightedVertices": 135,
+      "medianWalk21DisplacementM": 0.0464414618909359,
+      "maxWalk21DisplacementM": 0.05691472068428993
+    },
+    {
+      "vertexCount": 135,
+      "weightedVertices": 135,
+      "medianWalk21DisplacementM": 0.010648541152477264,
+      "maxWalk21DisplacementM": 0.021464752033352852
+    },
+    {
+      "vertexCount": 134,
+      "weightedVertices": 134,
+      "medianWalk21DisplacementM": 0.08157460391521454,
+      "maxWalk21DisplacementM": 0.09590833634138107
+    },
+    {
+      "vertexCount": 134,
+      "weightedVertices": 134,
+      "medianWalk21DisplacementM": 0.09686055779457092,
+      "maxWalk21DisplacementM": 0.10355805605649948
+    },
+    {
+      "vertexCount": 134,
+      "weightedVertices": 134,
+      "medianWalk21DisplacementM": 0.0800701230764389,
+      "maxWalk21DisplacementM": 0.08885407447814941
+    },
+    {
+      "vertexCount": 133,
+      "weightedVertices": 133,
+      "medianWalk21DisplacementM": 0.031548548489809036,
+      "maxWalk21DisplacementM": 0.04271823167800903
+    },
+    {
+      "vertexCount": 133,
+      "weightedVertices": 133,
+      "medianWalk21DisplacementM": 0.02636655606329441,
+      "maxWalk21DisplacementM": 0.0397426038980484
+    },
+    {
+      "vertexCount": 133,
+      "weightedVertices": 133,
+      "medianWalk21DisplacementM": 0.12021777033805847,
+      "maxWalk21DisplacementM": 0.13235808908939362
+    },
+    {
+      "vertexCount": 133,
+      "weightedVertices": 133,
+      "medianWalk21DisplacementM": 0.13053974509239197,
+      "maxWalk21DisplacementM": 0.13621987402439117
+    },
+    {
+      "vertexCount": 131,
+      "weightedVertices": 131,
+      "medianWalk21DisplacementM": 0.08992605656385422,
+      "maxWalk21DisplacementM": 0.09772960841655731
+    },
+    {
+      "vertexCount": 131,
+      "weightedVertices": 131,
+      "medianWalk21DisplacementM": 0.03850672394037247,
+      "maxWalk21DisplacementM": 0.03963613137602806
+    },
+    {
+      "vertexCount": 131,
+      "weightedVertices": 131,
+      "medianWalk21DisplacementM": 0.04350251704454422,
+      "maxWalk21DisplacementM": 0.04942607879638672
+    },
+    {
+      "vertexCount": 127,
+      "weightedVertices": 127,
+      "medianWalk21DisplacementM": 0.04395772144198418,
+      "maxWalk21DisplacementM": 0.04788901284337044
+    },
+    {
+      "vertexCount": 124,
+      "weightedVertices": 124,
+      "medianWalk21DisplacementM": 0.01892460137605667,
+      "maxWalk21DisplacementM": 0.024524111300706863
+    },
+    {
+      "vertexCount": 121,
+      "weightedVertices": 121,
+      "medianWalk21DisplacementM": 0.03542710468173027,
+      "maxWalk21DisplacementM": 0.03683386370539665
+    },
+    {
+      "vertexCount": 121,
+      "weightedVertices": 121,
+      "medianWalk21DisplacementM": 0.05317777767777443,
+      "maxWalk21DisplacementM": 0.059660591185092926
+    },
+    {
+      "vertexCount": 119,
+      "weightedVertices": 119,
+      "medianWalk21DisplacementM": 0.12324939668178558,
+      "maxWalk21DisplacementM": 0.13387151062488556
+    },
+    {
+      "vertexCount": 118,
+      "weightedVertices": 118,
+      "medianWalk21DisplacementM": 0.10562032461166382,
+      "maxWalk21DisplacementM": 0.11444534361362457
+    },
+    {
+      "vertexCount": 116,
+      "weightedVertices": 116,
+      "medianWalk21DisplacementM": 0.10858910530805588,
+      "maxWalk21DisplacementM": 0.11675617098808289
+    },
+    {
+      "vertexCount": 116,
+      "weightedVertices": 116,
+      "medianWalk21DisplacementM": 0.01147560216486454,
+      "maxWalk21DisplacementM": 0.02131577394902706
+    },
+    {
+      "vertexCount": 115,
+      "weightedVertices": 115,
+      "medianWalk21DisplacementM": 0.054286595433950424,
+      "maxWalk21DisplacementM": 0.06328464299440384
+    },
+    {
+      "vertexCount": 114,
+      "weightedVertices": 114,
+      "medianWalk21DisplacementM": 0.030533138662576675,
+      "maxWalk21DisplacementM": 0.03759441152215004
+    },
+    {
+      "vertexCount": 114,
+      "weightedVertices": 114,
+      "medianWalk21DisplacementM": 0.029579510912299156,
+      "maxWalk21DisplacementM": 0.031175794079899788
+    },
+    {
+      "vertexCount": 113,
+      "weightedVertices": 113,
+      "medianWalk21DisplacementM": 0.08310487121343613,
+      "maxWalk21DisplacementM": 0.09413555264472961
+    },
+    {
+      "vertexCount": 113,
+      "weightedVertices": 113,
+      "medianWalk21DisplacementM": 0.06863904744386673,
+      "maxWalk21DisplacementM": 0.07396648079156876
+    },
+    {
+      "vertexCount": 113,
+      "weightedVertices": 113,
+      "medianWalk21DisplacementM": 0.1034541130065918,
+      "maxWalk21DisplacementM": 0.10680747777223587
+    },
+    {
+      "vertexCount": 113,
+      "weightedVertices": 113,
+      "medianWalk21DisplacementM": 0.09456246346235275,
+      "maxWalk21DisplacementM": 0.10251932591199875
+    },
+    {
+      "vertexCount": 113,
+      "weightedVertices": 113,
+      "medianWalk21DisplacementM": 0.05030538886785507,
+      "maxWalk21DisplacementM": 0.057829879224300385
+    },
+    {
+      "vertexCount": 110,
+      "weightedVertices": 110,
+      "medianWalk21DisplacementM": 0.047339633107185364,
+      "maxWalk21DisplacementM": 0.05904966965317726
+    },
+    {
+      "vertexCount": 109,
+      "weightedVertices": 109,
+      "medianWalk21DisplacementM": 0.029329273849725723,
+      "maxWalk21DisplacementM": 0.03218338266015053
+    },
+    {
+      "vertexCount": 108,
+      "weightedVertices": 108,
+      "medianWalk21DisplacementM": 0.05236630141735077,
+      "maxWalk21DisplacementM": 0.054585106670856476
+    },
+    {
+      "vertexCount": 108,
+      "weightedVertices": 108,
+      "medianWalk21DisplacementM": 0.034444935619831085,
+      "maxWalk21DisplacementM": 0.04550933092832565
+    },
+    {
+      "vertexCount": 107,
+      "weightedVertices": 107,
+      "medianWalk21DisplacementM": 0.045629799365997314,
+      "maxWalk21DisplacementM": 0.050287481397390366
+    },
+    {
+      "vertexCount": 105,
+      "weightedVertices": 105,
+      "medianWalk21DisplacementM": 0.028899062424898148,
+      "maxWalk21DisplacementM": 0.03595241904258728
+    },
+    {
+      "vertexCount": 105,
+      "weightedVertices": 105,
+      "medianWalk21DisplacementM": 0.10551908612251282,
+      "maxWalk21DisplacementM": 0.10937678813934326
+    },
+    {
+      "vertexCount": 105,
+      "weightedVertices": 105,
+      "medianWalk21DisplacementM": 0.022044828161597252,
+      "maxWalk21DisplacementM": 0.0243389792740345
+    },
+    {
+      "vertexCount": 105,
+      "weightedVertices": 105,
+      "medianWalk21DisplacementM": 0.10570527613162994,
+      "maxWalk21DisplacementM": 0.11134074628353119
+    },
+    {
+      "vertexCount": 104,
+      "weightedVertices": 104,
+      "medianWalk21DisplacementM": 0.03189432621002197,
+      "maxWalk21DisplacementM": 0.037110961973667145
+    },
+    {
+      "vertexCount": 104,
+      "weightedVertices": 104,
+      "medianWalk21DisplacementM": 0.03638492897152901,
+      "maxWalk21DisplacementM": 0.04300033301115036
+    },
+    {
+      "vertexCount": 103,
+      "weightedVertices": 103,
+      "medianWalk21DisplacementM": 0.10576646775007248,
+      "maxWalk21DisplacementM": 0.11002487689256668
+    },
+    {
+      "vertexCount": 102,
+      "weightedVertices": 102,
+      "medianWalk21DisplacementM": 0.056913722306489944,
+      "maxWalk21DisplacementM": 0.06055239588022232
+    },
+    {
+      "vertexCount": 101,
+      "weightedVertices": 101,
+      "medianWalk21DisplacementM": 0.03373808413743973,
+      "maxWalk21DisplacementM": 0.03794030100107193
+    },
+    {
+      "vertexCount": 100,
+      "weightedVertices": 100,
+      "medianWalk21DisplacementM": 0.02184818685054779,
+      "maxWalk21DisplacementM": 0.035561688244342804
+    }
+  ],
+  "smallerDressComponentCount": 461,
+  "unweightedDressComponentCount": 0,
+  "lowMotionDressComponentCount": 0,
+  "smallestDressComponentMotionM": 0.005967285484075546,
+  "scope": "Authored kinematic Walk on intact body/dress, excluding original hair faces; no cloth physics or collision claim",
+  "published": false
+}

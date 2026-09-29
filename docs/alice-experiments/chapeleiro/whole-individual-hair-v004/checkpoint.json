@@ -1,0 +1,45 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completa com vestido",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "fa8bda2f0ee03c57d37e15b2b59ebc998b73107023bbf9f502b2c7947212f255",
+  "modelBytes": 65124200,
+  "sourceGeneration": "guide1249_turn_separation_study_v003",
+  "sourceBlendSha256": "3ee57656258726bb014384542565d35a4c3d59fce9973bd0d1b48e43e59ab475",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 101424,
+  "hairGuideCount": 2112,
+  "hairRibbonMeshCount": 50,
+  "fiberAttributes": ["_FIBER_ID", "_FIBER_T", "_GUIDE_ID"],
+  "guideMappingReimportVerified": true,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecularExtensionFactor": 0.24,
+  "dracoGenericQuantizationBits": 18,
+  "reimportReviewedViews": ["front", "right", "back", "left"],
+  "checkpointOnly": true,
+  "runtimeMotion": "A galeria ainda usa oscilação leve por fio. O novo ID de guia preservado no GLB prepara a física por mecha, mas a simulação nativa do Blender não é transferida automaticamente ao navegador.",
+  "walk4NativeGuideStability": "Os 2.112 guias passaram nos quatro quadros iniciais sob os limites provisórios de raiz, alongamento e passo; não valida toda a caminhada nem colisões.",
+  "physicsApproved": false,
+  "evidence": {
+    "guideMapping": "guide_mapping_audit.json",
+    "walk4GuideStability": "walk4_native_stability_audit.json",
+    "walkDressDeformation": "walk_dress_deformation_audit.json",
+    "nativePhysicsUpperBody": "walk4_physics_upper_body_review.json"
+  },
+  "pending": [
+    "fidelidade final do rosto e do penteado específico do Chapeleiro nas fotos de cada etapa",
+    "projeção UV 4K do cabelo com visibilidade e oclusão verificadas",
+    "simulação e colisões do cabelo com rosto, corpo e vestido em Walk, Run, Attack e Jump completos",
+    "física por guia no runtime da galeria; o ID de guia sozinho não implementa a simulação",
+    "polimento final de vestido, renda, camadas interiores e movimento",
+    "FBX final da personagem inteira após validação"
+  ]
+}
