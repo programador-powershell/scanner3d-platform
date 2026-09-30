@@ -1,0 +1,31 @@
+{
+  "generation": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\rear_braid_strands_study_v009\\generation.json",
+  "sourceBlendSha256": "e12f4f7443460fade72b6769d64a3d6750a3f2c2733fd03ea67085fe31ec99d2",
+  "braidFiberCount": 1500,
+  "sampledNonrootPoints": 1650,
+  "insideClosedHeadProxy": 0,
+  "rayDisagreements": 0,
+  "headBinding": [
+    {
+      "frame": 1,
+      "matchingHeadTransform": true,
+      "maxMatrixDelta": 1.4901161193847656e-08,
+      "movementFromRestM": 0.0
+    },
+    {
+      "frame": 15,
+      "matchingHeadTransform": true,
+      "maxMatrixDelta": 1.4901161193847656e-08,
+      "movementFromRestM": 0.1278442901490847
+    },
+    {
+      "frame": 18,
+      "matchingHeadTransform": true,
+      "maxMatrixDelta": 1.4901161193847656e-08,
+      "movementFromRestM": 0.1228963641539766
+    }
+  ],
+  "scope": "Rest-pose sample against reconstructed closed head interior and rigid Head parenting at frames 1/15/18; no strand dynamics, body/dress collision or GLB proof",
+  "appearanceApproved": false,
+  "physicsApproved": false
+}

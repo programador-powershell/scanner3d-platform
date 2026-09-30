@@ -1,0 +1,83 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completa com vestido",
+  "version": "v010",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "8e9e43b910b496219a0936969b4664d8a8d5f4d0edf4970a29c0235dee99c9f5",
+  "modelBytes": 65619840,
+  "checkpointReason": "Checkpoint solicitado em 30/09/2026 antes da próxima etapa de trabalho. O GLB completo é byte a byte idêntico ao v009; não há novo refinamento de geometria, UV ou física publicado neste checkpoint.",
+  "sourceModelCheckpoint": "whole-individual-hair-v009",
+  "modelIdenticalToSourceCheckpoint": true,
+  "sourceGeneration": "rear_braid_strands_study_v009",
+  "sourceBlendSha256": "e12f4f7443460fade72b6769d64a3d6750a3f2c2733fd03ea67085fe31ec99d2",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 102924,
+  "addedRearBraidFiberCount": 1500,
+  "hairGuideCount": 2118,
+  "hairRibbonMeshCount": 51,
+  "fiberAttributes": [
+    "_FIBER_ID",
+    "_FIBER_T",
+    "_GUIDE_ID"
+  ],
+  "guideMappingReimportVerified": true,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "reimportReviewedViews": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "fullBodyReviewedViews": [
+    "front",
+    "back"
+  ],
+  "motionReviewedActions": [
+    "Walk frame 15",
+    "Jump frame 18"
+  ],
+  "braidRestProxySamples": 1650,
+  "braidRestProxyInsideSamples": 0,
+  "checkpointOnly": true,
+  "uv4kExperimentPublished": false,
+  "changesSinceV008": "Foram acrescentados 1.500 fios geométricos individuais em uma faixa trançada discreta nas costas, mantendo os 101.424 fios anteriores e o vestido completo. O GLB inteiro foi reimportado e revisado em quatro vistas, corpo inteiro, Walk e Jump.",
+  "runtimeMotion": "O GLB carrega skin da cabeça e atributos por fio; a galeria aplica oscilação leve. As novas tranças seguem rigidamente a cabeça, sem física independente ou colisões transferidas ao navegador.",
+  "physicsApproved": false,
+  "appearanceApproved": false,
+  "evidence": {
+    "mapping": "guide_mapping_audit.json",
+    "restContact": "braid_rest_binding_audit.json",
+    "motion": "motion_review.json",
+    "reimportedViews": [
+      "front_reimport.png",
+      "left_reimport.png",
+      "right_reimport.png",
+      "back_reimport.png"
+    ],
+    "fullBodyViews": [
+      "front_fullbody.png",
+      "back_fullbody.png"
+    ],
+    "motionViews": [
+      "walk_front.png",
+      "jump_front.png"
+    ],
+    "authoringScript": "executed_braid_authoring.py",
+    "exportScript": "executed_export.py"
+  },
+  "pending": [
+    "fidelidade fina e ondas individuais do cabelo contra as fotos",
+    "UV 4K do cabelo com visibilidade e oclusão",
+    "simulação independente, vento e colisões em todas as ações",
+    "física por guia no runtime da galeria",
+    "polimento final do rosto, vestido e suas camadas em movimento",
+    "FBX final da personagem inteira após validação"
+  ]
+}
