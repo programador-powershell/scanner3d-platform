@@ -1,0 +1,21 @@
+{
+  "candidate": "rear_braid_strands_study_v009",
+  "scope": "intermediate whole-character gallery checkpoint",
+  "checkpointApproved": true,
+  "finalAppearanceApproved": false,
+  "physicsApproved": false,
+  "modelSha256": "8e9e43b910b496219a0936969b4664d8a8d5f4d0edf4970a29c0235dee99c9f5",
+  "evidence": [
+    "Four close camera views from reimported complete GLB",
+    "Front and back full-body views from the same GLB",
+    "Walk and Jump renders from the reimported GLB",
+    "102924 fiber and 2118 guide IDs verified after Draco reimport",
+    "1650 sampled braid points outside the closed head proxy in rest pose"
+  ],
+  "rationale": "The reference image shows a narrow, subtle pinned braid. V009 adds that narrow band without distorting the full character. Later v010-v012 trials introduced profile protrusions or frontal stray hair and were rejected. V009 is checkpoint-only, not final hairstyle approval.",
+  "pending": [
+    "lower hair waves and fine strand flow differ from reference",
+    "independent physics and collision for new braid",
+    "hair UV 4K and detailed dress/face validation"
+  ]
+}
