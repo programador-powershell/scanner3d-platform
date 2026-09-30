@@ -1,0 +1,14 @@
+{
+  "baseline": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\v009_head_residue_cleanup_whole_glb_export_v001\\alice_chapeleiro_complete_individual_hair_checkpoint.glb",
+  "candidate": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\v011_reviewed_brim_cleanup_restored_whole_glb_export_v002\\alice_chapeleiro_complete_individual_hair_checkpoint.glb",
+  "hairChunkCount": 51,
+  "animationCount": 4,
+  "exactPayloadMatches": {
+    "hair": true,
+    "skins": true,
+    "jointNodes": true,
+    "animations": true
+  },
+  "changedHairChunks": [],
+  "scope": "Byte-exact compressed hair and sampled animation/skin payload comparisons; does not verify source face semantics, reference fidelity or runtime physics."
+}

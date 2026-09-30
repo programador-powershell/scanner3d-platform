@@ -1,0 +1,30 @@
+{
+  "version": "v012",
+  "kind": "whole_character_checkpoint",
+  "wholeCharacterWithDress": true,
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "39a668c12a5f6825bda606afdd5848437428c1cc1695cf8a232721001c8c4285",
+  "modelBytes": 65619236,
+  "sourceBlendSha256": "4a2b9876ab1857accb05a147382ada9d1ea47f7947ffbde06ce2c4e5d349dce9",
+  "exportedFiberCount": 102924,
+  "hairGuideCount": 2118,
+  "changesSinceV011": "Restaurada a máscara reversível de 103 faces residuais sob o chapéu, anteriormente revisadas; corpo, vestido, fios, rig e animações preservados.",
+  "fullBodyReviewedViews": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "checkpointOnly": true,
+  "appearanceApproved": false,
+  "physicsApproved": false,
+  "runtimeMotion": "Skin da cabeça; física independente e colisões não transferidas automaticamente.",
+  "pending": [
+    "fidelidade e separação das mechas",
+    "UV 4K validado",
+    "identidade facial canônica e base compartilhada",
+    "física e colisões do cabelo/vestido em todas as ações",
+    "FBX final",
+    "todas as variantes"
+  ]
+}
