@@ -1,0 +1,79 @@
+{
+  "kind": "whole_character_checkpoint",
+  "stage": "Alice Chapeleiro completa com vestido",
+  "version": "v008",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "3d9a48ba781686d2b70934af093476b9815c07de215e5ee795e41ce8c7a1b686",
+  "modelBytes": 65000124,
+  "sourceGeneration": "between_channels_layered_length_study_v003",
+  "sourceBlendSha256": "7a1d2ef08ac4f82368835f2bf003e3d271846c3920499d517659d9241a4838b8",
+  "wholeCharacterWithDress": true,
+  "exportedFiberCount": 101424,
+  "hairGuideCount": 2112,
+  "hairRibbonMeshCount": 50,
+  "fiberAttributes": [
+    "_FIBER_ID",
+    "_FIBER_T",
+    "_GUIDE_ID"
+  ],
+  "guideMappingReimportVerified": true,
+  "skinCount": 1,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "allRiggedVerticesWeighted": true,
+  "hairRoughness": 0.68,
+  "hairSpecularExtensionFactor": 0.24,
+  "dracoGenericQuantizationBits": 18,
+  "reimportReviewedViews": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "motionReviewedActions": [
+    "Walk frame 15",
+    "Jump frame 18"
+  ],
+  "changedGuidesBetweenWaves": 672,
+  "lengthAdjustedRearGuides": 888,
+  "restProxyGuideSamplesPerGuide": 125,
+  "newRestProxyPenetrations": 0,
+  "checkpointOnly": true,
+  "changesSinceV007": "Canais discretos entre as ondas traseiras e pontas escalonadas de até 35 mm aproximam o comprimento e a separação do cabelo da referência. O vestido, as raízes, os pinos e os demais fios permanecem preservados. O GLB inteiro foi reimportado nas quatro vistas e em Walk/Jump.",
+  "runtimeMotion": "O GLB carrega skin da cabeça e atributos por fio; a galeria aplica oscilação leve. Simulação física independente e colisões do Blender não foram transferidas ao navegador.",
+  "physicsApproved": false,
+  "appearanceApproved": false,
+  "evidence": {
+    "guideMapping": "guide_mapping_audit.json",
+    "motion": "motion_review.json",
+    "reimportedViews": [
+      "front_reimport.png",
+      "left_reimport.png",
+      "right_reimport.png",
+      "back_reimport.png"
+    ],
+    "motionViews": [
+      "walk_front.png",
+      "jump_front.png"
+    ],
+    "sourceScripts": [
+      "executed_between_wave_channels.py",
+      "executed_layered_length.py"
+    ],
+    "exportScript": "executed_export.py",
+    "materialMatchScript": "executed_material_match.py"
+  },
+  "pending": [
+    "fidelidade final do rosto e penteado Chapeleiro contra as fotos",
+    "remoção completa das placas de cabelo Tripo sem danificar o vestido",
+    "UV 4K do cabelo com visibilidade e oclusão",
+    "simulação independente, vento e colisões dos fios em todas as ações",
+    "física por guia no runtime da galeria",
+    "polimento final do vestido, renda, camadas interiores e movimento",
+    "FBX final da personagem inteira após validação"
+  ]
+}

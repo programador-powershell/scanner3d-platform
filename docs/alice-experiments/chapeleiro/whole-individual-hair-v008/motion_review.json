@@ -1,0 +1,25 @@
+{
+  "model": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\checkpoint_v008_raw_export_v001\\alice_chapeleiro_complete_material_matched.glb",
+  "modelSha256": "3d9a48ba781686d2b70934af093476b9815c07de215e5ee795e41ce8c7a1b686",
+  "wholeCharacterWithDress": true,
+  "importedHairFiberCount": 101424,
+  "reviews": [
+    {
+      "action": "Walk / current fitted Chapeleiro motion study.001",
+      "frame": 15,
+      "first": 1.0,
+      "last": 42.0,
+      "render": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\checkpoint_v008_motion_review_v001\\walk_front.png"
+    },
+    {
+      "action": "Jump / current fitted planted-key IK motion study.001",
+      "frame": 18,
+      "first": 1.0,
+      "last": 53.0,
+      "render": "F:\\Alice\\Deliverables\\Alice_Variants\\alice_chapeleiro\\checkpoint_v008_motion_review_v001\\jump_front.png"
+    }
+  ],
+  "physicsTransferred": false,
+  "appearanceApproved": false,
+  "renderOnlyNoBlendSaved": true
+}
