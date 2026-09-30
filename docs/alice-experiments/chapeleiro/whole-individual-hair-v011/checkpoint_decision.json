@@ -1,0 +1,21 @@
+{
+  "version": "v011",
+  "checkpointApproved": true,
+  "finalAppearanceApproved": false,
+  "physicsApproved": false,
+  "modelSha256": "08e9d7f475fcb48df51961bb4cd660c890378836b68e34e013bfb24cb8fcb9f1",
+  "scope": "Intermediate complete dressed Alice checkpoint after nine-face source hair residue cleanup",
+  "reviewedViews": ["front", "left", "right", "back", "front_fullbody", "back_fullbody"],
+  "evidence": [
+    "All six actual complete-GLB reimport renders inspected; dress and character remain present.",
+    "102924 fiber IDs and 2118 guide mappings verified after independent Draco reimport.",
+    "Compressed hair geometry, skin/inverse bind matrices, joint transforms and four animation payloads are byte-identical to v010.",
+    "Blender reopened geometry hashes unchanged; precisely nine recoverable source-face mask entries changed."
+  ],
+  "limitations": [
+    "This is a small residual fragment cleanup, not a new faithful hairstyle.",
+    "Broad locks, fine wave separation, UV 4K, face identity and dress polish remain unfinished.",
+    "No new native cloth/hair collision or wind approval; exported hair retains Head skin and gallery oscillation.",
+    "Current checkpoint does not finalize Chapeleiro or authorize starting another variant."
+  ]
+}

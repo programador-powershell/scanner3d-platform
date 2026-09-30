@@ -1,0 +1,45 @@
+{
+  "kind": "whole_character_checkpoint",
+  "version": "v011",
+  "stage": "Alice Chapeleiro inteira com vestido",
+  "model": "alice_chapeleiro_complete.glb",
+  "modelSha256": "08e9d7f475fcb48df51961bb4cd660c890378836b68e34e013bfb24cb8fcb9f1",
+  "modelBytes": 65619724,
+  "sourceBlendSha256": "7070a436f58aed4e67a38d2840ba58967a05f4dac860c5a3d6e7747ef8a216d1",
+  "wholeCharacterWithDress": true,
+  "changesSinceV010": "Nove faces residuais do cabelo original próximas à cabeça foram ocultadas por máscara reversível no projeto completo e excluídas do GLB. Demais estudos rejeitados não foram integrados.",
+  "exportedFiberCount": 102924,
+  "hairGuideCount": 2118,
+  "skinCount": 1,
+  "allRiggedVerticesWeighted": true,
+  "animations": [
+    "Walk / current fitted Chapeleiro motion study",
+    "Run / current fitted Chapeleiro motion study",
+    "Attack / current fitted Chapeleiro motion study",
+    "Jump / current fitted planted-key IK motion study"
+  ],
+  "exactHairSkinAndAnimationPayloadsMatchV010": true,
+  "reimportReviewedViews": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "fullBodyReviewedViews": [
+    "front",
+    "back"
+  ],
+  "appearanceApproved": false,
+  "physicsApproved": false,
+  "checkpointOnly": true,
+  "runtimeMotion": "Skin da cabeça e oscilação leve na galeria; simulação independente e colisões não transferidas.",
+  "pending": [
+    "resíduos adicionais de cabelo e acabamento da cabeça",
+    "fluxo, volume e separação fina das mechas contra a referência",
+    "identidade facial canônica e fidelidade 3D",
+    "UV 4K com oclusão",
+    "física/colisões de cabelo e vestido em todas as ações",
+    "FBX final após validação",
+    "concluir Chapeleiro e todas as outras variantes"
+  ]
+}
