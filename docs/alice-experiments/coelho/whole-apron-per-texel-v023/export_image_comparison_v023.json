@@ -1,0 +1,27 @@
+{
+  "sameCameraLightsWorldAndColorManagement": true,
+  "comparesExportConsistencyOnly": true,
+  "notPhotoFidelityMetric": true,
+  "metrics": {
+    "front": {
+      "meanAbsRGB": 0.001649673202614379,
+      "p95AbsRGB": 0.0,
+      "maxAbsRGB": 3
+    },
+    "right": {
+      "meanAbsRGB": 0.0018281045751633988,
+      "p95AbsRGB": 0.0,
+      "maxAbsRGB": 16
+    },
+    "back": {
+      "meanAbsRGB": 0.002083660130718954,
+      "p95AbsRGB": 0.0,
+      "maxAbsRGB": 5
+    },
+    "detail": {
+      "meanAbsRGB": 0.004754248366013072,
+      "p95AbsRGB": 0.0,
+      "maxAbsRGB": 5
+    }
+  }
+}

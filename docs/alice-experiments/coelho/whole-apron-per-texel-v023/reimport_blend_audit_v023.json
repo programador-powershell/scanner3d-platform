@@ -1,0 +1,302 @@
+{
+  "format": "blend",
+  "sourceTriangleCount": 150000,
+  "sourceUnusedVertices": 0,
+  "wholeCharacterWithDress": true,
+  "rigged": false,
+  "fidelityApproved": false,
+  "anatomicalHeightVerified": false,
+  "additionalTripoCredits": 0,
+  "independentReopen": true,
+  "highFaces": 1892694,
+  "UVLayers": 1,
+  "materials": {
+    "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007": {
+      "Base Color": [
+        {
+          "image": "alice_coelho_apron_fallback_photo_4096_v022",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Roughness": [
+        {
+          "image": "alice_coelho_roughness_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Metallic": [
+        {
+          "image": "alice_coelho_metallic_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Normal": [
+        {
+          "image": "alice_coelho_normal_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ]
+    },
+    "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011": {
+      "Base Color": [
+        {
+          "image": "alice_coelho_apron_photo_per_texel_4096_v019",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Roughness": [
+        {
+          "image": "alice_coelho_apron_roughness_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Metallic": [
+        {
+          "image": "alice_coelho_apron_metallic_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Normal": [
+        {
+          "image": "alice_coelho_apron_normal_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ]
+    }
+  },
+  "images": [
+    {
+      "name": "alice.jpg",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_apron_fallback_photo_4096_v022",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_apron_metallic_4096_dedicated_v012",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_apron_normal_4096_dedicated_v012",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_apron_photo_per_texel_4096_v019",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_apron_roughness_4096_dedicated_v012",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_h31_complete_source_basecolor.jpg",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_h31_complete_source_normal.png",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_h31_complete_source_rm.jpg",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_metallic_4096_local_v003",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_metallic_4096_newuv_v004",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_normal_4096_newuv_v004",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_roughness_4096_local_v003",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_coelho_roughness_4096_newuv_v004",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    },
+    {
+      "name": "alice_face_master_v001.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_39 (1).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_40 (2).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_40 (3).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_40 (4).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_41 (6).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_42 (7).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_42 (8).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_45 (9).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    },
+    {
+      "name": "ChatGPT Image 7 de jun. de 2026, 13_26_46 (10).png",
+      "size": [
+        1448,
+        1086
+      ],
+      "packed": true
+    }
+  ],
+  "portableNoExternalLibraries": true
+}

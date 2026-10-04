@@ -1,0 +1,27 @@
+{
+  "version": "v023",
+  "acceptedScope": "Original-photo projection at actual barycentric world points, dedicated atlas and restricted lower-apron fallback coverage",
+  "acceptedSources": [
+    "v019 original photo per-texel world-point correction",
+    "v022 guarded lower-apron fallback correction"
+  ],
+  "rejectedStudies": {
+    "v014": "Global vertical registration compressed upper chevrons.",
+    "v015": "Row-only local registration distorted rabbit ears. Do not repeat row-only warps.",
+    "v016": "Full clock component introduced absent upper numerals, duplicate dial, wrong placement and visible rabbit protection boundaries.",
+    "v017": "Five glyph crops created halos, discontinuities and altered antialiasing.",
+    "v018": "Poisson gradient blend passed solver self-check but retained broken/etched glyph appearance; no visual acceptance.",
+    "v020": "Broad fallback surface projection bleached blue garment bands; work surface is not semantic garment segmentation."
+  },
+  "wholeCharacterExportsVerified": true,
+  "wholeFrontRightBackAndCloseInspected": true,
+  "remainingLocalDefects": [
+    "Clock remains vertically compressed versus photograph; requires local registration/shape work.",
+    "Reference border and generated relief do not yet match completely.",
+    "Native crop contains limited photographic detail."
+  ],
+  "fullFidelityApproved": false,
+  "rigApproved": false,
+  "productionComplete": false,
+  "published": false
+}

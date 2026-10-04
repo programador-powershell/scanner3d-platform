@@ -1,0 +1,132 @@
+{
+  "format": "glb",
+  "sourceTriangleCount": 150000,
+  "sourceUnusedVertices": 0,
+  "wholeCharacterWithDress": true,
+  "rigged": false,
+  "fidelityApproved": false,
+  "anatomicalHeightVerified": false,
+  "additionalTripoCredits": 0,
+  "independentReimport": true,
+  "sha256": "018b371fbcb617b02e2a33db23e5f5379c98129b2a229836484da25f233ab96f",
+  "triangles": 150000,
+  "maxImportedToSourceDistanceM": 0.0,
+  "maxSourceToImportedDistanceM": 0.0,
+  "UVLayers": 1,
+  "allTriangleUVAndMaterialAssignmentsVerified": true,
+  "maxUVCornerError": 2.9802322387695312e-08,
+  "materialMismatchCount": 0,
+  "apronFaces": 2270,
+  "materials": {
+    "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007.001": {
+      "Base Color": [
+        {
+          "image": "alice_coelho_apron_fallback_photo_4096_v022.001",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Roughness": [
+        {
+          "image": "alice_coelho_metallic_4096_newuv_v004-alice_coelho_roughness_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Metallic": [
+        {
+          "image": "alice_coelho_metallic_4096_newuv_v004-alice_coelho_roughness_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Normal": [
+        {
+          "image": "alice_coelho_normal_4096_newuv_v004.001",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ]
+    },
+    "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011.001": {
+      "Base Color": [
+        {
+          "image": "alice_coelho_apron_photo_per_texel_4096_v019.001",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Roughness": [
+        {
+          "image": "alice_coelho_apron_metallic_4096_dedicated_v012-alice_coelho_apron_roughness_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Metallic": [
+        {
+          "image": "alice_coelho_apron_metallic_4096_dedicated_v012-alice_coelho_apron_roughness_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ],
+      "Normal": [
+        {
+          "image": "alice_coelho_apron_normal_4096_dedicated_v012.001",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true
+        }
+      ]
+    }
+  },
+  "sameCameraLightsWorldAndColorManagement": true,
+  "renderSettings": {
+    "engine": "CYCLES",
+    "samples": 16,
+    "resolution_x": 600,
+    "resolution_y": 850,
+    "resolution_percentage": 100,
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "camera": {
+    "location": [
+      0.0,
+      -4.0,
+      0.8861072063446045
+    ],
+    "rotation": [
+      1.5707964897155762,
+      -0.0,
+      0.0
+    ],
+    "type": "ORTHO",
+    "ortho_scale": 1.9800000190734863
+  }
+}

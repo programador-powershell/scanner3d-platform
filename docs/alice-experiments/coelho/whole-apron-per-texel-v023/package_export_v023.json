@@ -1,0 +1,55 @@
+{
+  "assetId": "alice_coelho",
+  "stage": "local_apron_per_texel_checkpoint_not_final",
+  "wholeCharacterWithDress": true,
+  "additionalTripoCredits": 0,
+  "creditsConsumed": 55,
+  "geometryPositionSha256": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+  "geometryExactlyPreserved": true,
+  "UVLayers": 1,
+  "materialAtlases": 2,
+  "apronFaces": 2270,
+  "rigged": false,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "publicationPerformed": false,
+  "productionComplete": false,
+  "files": {
+    "blend": {
+      "path": "Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\alice_coelho_complete_apron_per_texel_checkpoint_v023.blend",
+      "bytes": 188570781,
+      "sha256": "2d576f9591282ba2cc3db6297290f2b9753c6cbeffde4ce755494f5a93039824"
+    },
+    "glb": {
+      "path": "Assets\\Characters\\alice_coelho\\Exports\\apron_per_texel_checkpoint_v023\\alice_coelho_complete_apron_per_texel_checkpoint_v023.glb",
+      "bytes": 70706008,
+      "sha256": "018b371fbcb617b02e2a33db23e5f5379c98129b2a229836484da25f233ab96f"
+    },
+    "fbx": {
+      "path": "Assets\\Characters\\alice_coelho\\Exports\\apron_per_texel_checkpoint_v023\\alice_coelho_complete_apron_per_texel_checkpoint_v023.fbx",
+      "bytes": 73169964,
+      "sha256": "103b4f872b3b54d1ff7785c0f853e3d1f8e4c74d4f6dfe8a047378420784ce83"
+    }
+  },
+  "acceptedCorrectionScope": "Original-photo projection at actual barycentric world points, dedicated atlas and restricted lower-apron fallback coverage",
+  "UVExactlyPreservedRelativeToV013": true,
+  "sourcePhotoNativeCropSize": [
+    222,
+    455
+  ],
+  "textureDoesNotCreateNewPhotoDetail": true,
+  "correctionAudit": {
+    "geometryExactlyPreserved": true,
+    "nonApronUVExactlyPreserved": true,
+    "UVLayers": 1,
+    "sourceReports": [
+      "apron_per_texel_projection_audit_v019.json",
+      "apron_fallback_projection_audit_v022.json"
+    ],
+    "dedicatedAtlasPaintedTexels": 3759860,
+    "fallbackAtlasPaintedTexels": 22947,
+    "maxCorrectedUVInterpolationErrorPhotoPixels": 6.849979133059492,
+    "additionalTripoCredits": 0,
+    "fidelityApproved": false
+  }
+}
