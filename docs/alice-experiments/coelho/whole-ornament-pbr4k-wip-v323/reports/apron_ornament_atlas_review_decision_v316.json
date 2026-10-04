@@ -1,0 +1,209 @@
+{
+  "version": "v316",
+  "createdAt": "2026-10-04T12:05:14.864393+00:00",
+  "sourceCandidate": "v301",
+  "sourceCandidateSHA256": "1beaffe4b0efb3a19d819b9ac00c109922c4847faad583a6eb862a48e8baec30",
+  "productionCodeDependencies": {
+    "Tools/author_coelho_ornament_pbr_atlas_v301.py": "32ae6bdd129f027ba7223d02da4afaf6968313e4b373c610499750e6d9011c55",
+    "Tools/coelho_uv_triangle_sat.py": "56c372abc82131b8281f2fb81cae900ac15705a832f45c7eb3c5f8ce0a3cbe7d",
+    "Tools/audit_render_coelho_ornament_atlas_v303.py": "6c2267d2cf73bcc1afa4cc5b4c535081f2a2f7a68786b84301f33bbb80790618",
+    "Tools/audit_coelho_ornament_continuous_uv_v305.py": "260ea88ad6bee91794aaeec41b67250303b8742d8207c19e13b461615f7200c5",
+    "Tools/export_verify_coelho_ornament_material_formats_v308.py": "c7cfecffa95ee92ac63eb674ad2258790140c3a3389dd50f1493b1abed2b70bd",
+    "Tools/reimport_render_coelho_ornament_material_v310.py": "84fa53482d5be233f4468eceb36825e2cd4d4c77bc83faa6cc5735735059d54f",
+    "Tools/verify_coelho_ornament_packed_material_channels_v313.py": "ade22de703149a744153bb698d0f4094dc57bc4f487b05e03dbc89d26a09cf55"
+  },
+  "inspectedSavedRenders": [
+    {
+      "view": "front_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_front_full_atlas_review_v303.png",
+      "sha256": "6e03ec022f98757ecaebcc91b88ed193901f74b52984155c634003256da10e46",
+      "cameraLocation": [
+        0,
+        -4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "left_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_left_profile_full_atlas_review_v303.png",
+      "sha256": "d6ea29714830fb3a106bdd0268b036aefbb9f6f6e6a3593955b51280bcbca605",
+      "cameraLocation": [
+        -4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "right_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_right_profile_full_atlas_review_v303.png",
+      "sha256": "80538635a38dbad4e2478878edfc900bc176ed0941113f5991e92c9fca68010d",
+      "cameraLocation": [
+        4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "back_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_back_full_atlas_review_v303.png",
+      "sha256": "a3691800a3d75f072ec4baff79ee16f573ec4719ef0f626b10d7679da0ef3a1c",
+      "cameraLocation": [
+        0,
+        4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_atlas_review_v303.png",
+      "sha256": "5ccef3df09f1e9263269dba66dce1d9b7750801eaabe36b2078e6f93a90a234f",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    }
+  ],
+  "inspectedActualFormatReimportRenders": [
+    {
+      "label": "source301",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_source301_reimport_v310.png",
+      "sha256": "3f3922d7262eedaecb0c1c3a6698c35e4e13f479079115643e6b55c6e0570c60",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    },
+    {
+      "label": "glb",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_glb_reimport_v310.png",
+      "sha256": "cbc1c65bcd03e6d755935f5ff2785259e2c1ef22c8797894c66bbedcb4626cc5",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    },
+    {
+      "label": "fbx",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_fbx_reimport_v310.png",
+      "sha256": "81d795b8c2d06170d186fc72c090a535fafa437a7de09762a084d26fe49ead1e",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    }
+  ],
+  "allImagesActuallyInspected": true,
+  "ownUVAtlas4KMapsReopenedPackedAndFormatVerified": true,
+  "continuousUVOverlapPairs": 0,
+  "actualFloat32GeometryGroupsFacesSmoothAndMaterialIndicesPreservedFrom267": true,
+  "staticContactAndLinkage269270ApplicableBecauseExactGeometryPreserved": true,
+  "opaqueMetallicBlueIsArtDirectedNotTrueSapphireOptics": true,
+  "normalAtlasDoesNotAddNewHighPolyDetail": true,
+  "photoReferenceProjectionPerformed": false,
+  "goldFiligreeStillPending": true,
+  "rootGroupsAreNotFunctionalRig": true,
+  "referenceFidelityApproved": false,
+  "acceptedForWholeStaticWIPIntegrationReview": true,
+  "acceptedForFinalAssetOrGameplay": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "publicWholeCheckpointRemains": "v184"
+}

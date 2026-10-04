@@ -1,0 +1,243 @@
+{
+  "version": "v303",
+  "sourceCandidate": "v301",
+  "sourceSHA256": "1beaffe4b0efb3a19d819b9ac00c109922c4847faad583a6eb862a48e8baec30",
+  "geometryAndGroupsExactlyPreservedFromStaticallyVerified267": true,
+  "preservation": [
+    {
+      "object": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v301",
+      "positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved": true,
+      "ownUVExactlyMatchesSavedAuthorAudit": true,
+      "loopCount": 62126
+    },
+    {
+      "object": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v301",
+      "positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved": true,
+      "ownUVExactlyMatchesSavedAuthorAudit": true,
+      "loopCount": 28718
+    },
+    {
+      "object": "Alice.Coelho.Apron.Ornament.center.Candidate.v301",
+      "positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved": true,
+      "ownUVExactlyMatchesSavedAuthorAudit": true,
+      "loopCount": 12098
+    },
+    {
+      "object": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v301",
+      "positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved": true,
+      "ownUVExactlyMatchesSavedAuthorAudit": true,
+      "loopCount": 30140
+    },
+    {
+      "object": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v301",
+      "positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved": true,
+      "ownUVExactlyMatchesSavedAuthorAudit": true,
+      "loopCount": 61148
+    }
+  ],
+  "packedMaps": [
+    {
+      "role": "basecolor",
+      "packed": true,
+      "size": [
+        4096,
+        4096
+      ],
+      "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+      "colorSpace": "sRGB",
+      "pixelChannelMinimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixelChannelMaximum": [
+        0.7960785031318665,
+        0.615686297416687,
+        0.37254902720451355
+      ],
+      "uniqueApproximateColors": 3
+    },
+    {
+      "role": "roughness",
+      "packed": true,
+      "size": [
+        4096,
+        4096
+      ],
+      "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+      "colorSpace": "Non-Color",
+      "pixelChannelMinimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixelChannelMaximum": [
+        0.25882354378700256,
+        0.25882354378700256,
+        0.25882354378700256
+      ],
+      "uniqueApproximateColors": 8
+    },
+    {
+      "role": "metallic",
+      "packed": true,
+      "size": [
+        4096,
+        4096
+      ],
+      "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+      "colorSpace": "Non-Color",
+      "pixelChannelMinimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixelChannelMaximum": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uniqueApproximateColors": 2
+    },
+    {
+      "role": "normal",
+      "packed": true,
+      "size": [
+        4096,
+        4096
+      ],
+      "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+      "colorSpace": "Non-Color",
+      "pixelChannelMinimum": [
+        0.18039216101169586,
+        0.16078431904315948,
+        0.7764706611633301
+      ],
+      "pixelChannelMaximum": [
+        0.803921639919281,
+        0.917647123336792,
+        1.0
+      ],
+      "uniqueApproximateColors": 3313
+    }
+  ],
+  "renders": [
+    {
+      "view": "front_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_front_full_atlas_review_v303.png",
+      "sha256": "6e03ec022f98757ecaebcc91b88ed193901f74b52984155c634003256da10e46",
+      "cameraLocation": [
+        0,
+        -4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true
+    },
+    {
+      "view": "left_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_left_profile_full_atlas_review_v303.png",
+      "sha256": "d6ea29714830fb3a106bdd0268b036aefbb9f6f6e6a3593955b51280bcbca605",
+      "cameraLocation": [
+        -4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true
+    },
+    {
+      "view": "right_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_right_profile_full_atlas_review_v303.png",
+      "sha256": "80538635a38dbad4e2478878edfc900bc176ed0941113f5991e92c9fca68010d",
+      "cameraLocation": [
+        4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true
+    },
+    {
+      "view": "back_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_back_full_atlas_review_v303.png",
+      "sha256": "a3691800a3d75f072ec4baff79ee16f573ec4719ef0f626b10d7679da0ef3a1c",
+      "cameraLocation": [
+        0,
+        4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_atlas_review_v303.png",
+      "sha256": "5ccef3df09f1e9263269dba66dce1d9b7750801eaabe36b2078e6f93a90a234f",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "sameCameraAs267": true
+    }
+  ],
+  "sourceFilePreserved": true,
+  "ownImages4KVerified": true,
+  "normalMapDoesNotAddNewHighPolyDetail": true,
+  "UVRasterAndContinuousAuthorGuardsPassed": true,
+  "requiresActualImageInspection": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "referenceFidelityApproved": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "elapsedSeconds": 158.28358387947083
+}

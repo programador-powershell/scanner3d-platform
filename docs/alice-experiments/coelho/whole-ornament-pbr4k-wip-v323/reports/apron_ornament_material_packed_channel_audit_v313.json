@@ -1,0 +1,38 @@
+{
+  "version": "v313",
+  "sourceCandidate": "v301",
+  "sourceSHA256": "1beaffe4b0efb3a19d819b9ac00c109922c4847faad583a6eb862a48e8baec30",
+  "GLBPackedMetalRoughChannelsExactlyMatchSource": true,
+  "materialRows": [
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "metallicBEqualsSourceMetallicR": true,
+      "roughnessGEqualsSourceRoughnessR": true,
+      "baseAndNormal": {
+        "basecolor": {
+          "allPixelsAndChannelsExactlyEqual": true
+        },
+        "normal": {
+          "allPixelsAndChannelsExactlyEqual": true
+        }
+      }
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "metallicBEqualsSourceMetallicR": true,
+      "roughnessGEqualsSourceRoughnessR": true,
+      "baseAndNormal": {
+        "basecolor": {
+          "allPixelsAndChannelsExactlyEqual": true
+        },
+        "normal": {
+          "allPixelsAndChannelsExactlyEqual": true
+        }
+      }
+    }
+  ],
+  "allMapResolutions4096": true,
+  "formatActualReimportAndAppearanceSeparate": true,
+  "notPublished": true,
+  "productionComplete": false
+}

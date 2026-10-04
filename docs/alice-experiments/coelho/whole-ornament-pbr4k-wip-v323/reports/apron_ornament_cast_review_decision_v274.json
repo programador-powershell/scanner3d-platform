@@ -1,0 +1,153 @@
+{
+  "version": "v274",
+  "createdAt": "2026-10-04T11:24:22.207404+00:00",
+  "sourceCandidate": "v267",
+  "sourceCandidateSHA256": "136945ff4893974387d5d0a064c9249b9b82571d9d753eba98ab2b7eb3d4c218",
+  "productionCodeDependencies": {
+    "Tools/author_coelho_cast_mounts_v267.py": "b7cc456e1b856cb5366c515c1470e2e300df8dd9e85f3f52763e7f1154ff3b49",
+    "Tools/coelho_cast_mesh.py": "6944a613d929d3326f1b5ab1d4951b3f7b1dd5be8c24551511b7ea65403a17f4",
+    "Tools/coelho_ring_linking.py": "f4d2becc38b88927a72381352e3d7877919a930b7e3e815a1e1f3ab09078cfe8",
+    "Tools/coelho_ring_clearance.py": "8d3236de364a7e8707a6d70792c0fe2f44e22dde58046a55a3533e761216dafb"
+  },
+  "inspectedRenders": [
+    {
+      "view": "front_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_front_full_review_v271.png",
+      "sha256": "9b0d9ddbb90aff387d206bfb55372a3a802cb74f05a36db675c85fb5e74346ea",
+      "cameraLocation": [
+        0,
+        -4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "actualImageInspected": true,
+      "sameCameraAsV255": true
+    },
+    {
+      "view": "left_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_left_profile_full_review_v271.png",
+      "sha256": "3b4ea53dc396c7c00c78ac4e2be02c420b5194c690609f32abcfb847709ee05d",
+      "cameraLocation": [
+        -4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "actualImageInspected": true,
+      "sameCameraAsV255": true
+    },
+    {
+      "view": "right_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_right_profile_full_review_v271.png",
+      "sha256": "e6ed37a876a3e89180d138cd8dc3971ecb75fc48e9fefcb572c4c38b321e16d2",
+      "cameraLocation": [
+        4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "actualImageInspected": true,
+      "sameCameraAsV255": true
+    },
+    {
+      "view": "back_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_back_full_review_v271.png",
+      "sha256": "54ca312a4045472be18119e7c017578503f46bd6ad2928249c2b9e36a2914ac8",
+      "cameraLocation": [
+        0,
+        4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "actualImageInspected": true,
+      "sameCameraAsV255": true
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_fixed_camera_v277.png",
+      "sha256": "e19414dffc14fde98e7fc84db2de80dceafe0d81376e81255c28b489a14841ca",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true,
+      "sameCameraAsV255": true
+    }
+  ],
+  "nativeReferenceActuallyInspected": true,
+  "reference": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+  "detail271FollowedGemHalfMillimeterAndWasNotExactBeforeAfter": true,
+  "fixedDetail277InspectedWithExactPreviousCamera": true,
+  "before251IsRejectedHistoricalComparisonNotApprovedSource": true,
+  "whole181ExactlyPreserved": true,
+  "allChainAndIndividualFiberCoordinatesAndFacesPreserved": true,
+  "gemShapesPreservedRigid25mmPositionShiftOnly": true,
+  "fiveGoldSettingsAndMountsClosedConnectedTriangulated": true,
+  "fiveUpperBailsAndFourHollowTasselCapsAuthored": true,
+  "adjacentChainLinksVerified": 249,
+  "gemBailLinksVerified": 5,
+  "bailCurveSamplesInsideActualSavedCast": true,
+  "wholeSurfaceSATTrianglePairs": 0,
+  "selfSATTrianglePairs": 0,
+  "betweenOrnamentsSATTrianglePairs": 0,
+  "staticOnlyNotContainmentOrPhysicsProof": true,
+  "blueCrownWhiteHighlightsDoNotMatchReferenceYet": true,
+  "goldFiligreeAndMaterialPolishStillPending": true,
+  "ownUVRebuiltBut4KMapsNotBaked": true,
+  "legacyCordNormalMapNotReused": true,
+  "rootGroupsAreNotFunctionalRig": true,
+  "referenceFidelityApproved": false,
+  "acceptedForFurtherLocalMaterialAndDetailAuthoring": true,
+  "acceptedForWholeIntegrationOrExport": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "publicWholeCheckpointRemains": "v184"
+}

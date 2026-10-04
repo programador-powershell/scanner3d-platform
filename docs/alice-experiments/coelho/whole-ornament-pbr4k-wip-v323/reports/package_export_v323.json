@@ -1,0 +1,156 @@
+{
+  "version": "v323",
+  "wholeCharacterWithDress": true,
+  "sourceWholeWorkingVersion": "v318",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.Export323.character",
+      "vertices": 107832,
+      "triangles": 150000,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "positionSHA256": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.Export323.apron",
+      "vertices": 4202,
+      "triangles": 8400,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "positionSHA256": "21b606a3078598afdba9b0784af03332d65c21d36765ca82f45fb6af968a51c2"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.Export323.chain",
+      "vertices": 30528,
+      "triangles": 61056,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "positionSHA256": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.Export323.cord",
+      "vertices": 11076,
+      "triangles": 22136,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "positionSHA256": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.Export323.lace",
+      "vertices": 577422,
+      "triangles": 1144188,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "positionSHA256": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf"
+    },
+    {
+      "role": "ornament_outer_left",
+      "name": "Alice.Coelho.Export323.ornament_outer_left",
+      "vertices": 14972,
+      "triangles": 29768,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301"
+      ],
+      "positionSHA256": "a6a6df9378c378b97ec5b93a90f8eeaa2f094304f99e319a37e5b4d3dc6fb6e6"
+    },
+    {
+      "role": "ornament_inner_left",
+      "name": "Alice.Coelho.Export323.ornament_inner_left",
+      "vertices": 6642,
+      "triangles": 13112,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301"
+      ],
+      "positionSHA256": "2b0860d92cc0c4c2dac4821051ad7fb83664cbb0b5c74436682b794a8fe83ddb"
+    },
+    {
+      "role": "ornament_center",
+      "name": "Alice.Coelho.Export323.ornament_center",
+      "vertices": 2610,
+      "triangles": 5236,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301"
+      ],
+      "positionSHA256": "736d388382e2366402f7b4ec74398346e397f2c29a24c604c4e828fd71c82168"
+    },
+    {
+      "role": "ornament_inner_right",
+      "name": "Alice.Coelho.Export323.ornament_inner_right",
+      "vertices": 6999,
+      "triangles": 13826,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301"
+      ],
+      "positionSHA256": "3f75645837669ad7b5d116e1ed7b88f414b542f67d74b6a265d2a242b8920e3c"
+    },
+    {
+      "role": "ornament_outer_right",
+      "name": "Alice.Coelho.Export323.ornament_outer_right",
+      "vertices": 14729,
+      "triangles": 29282,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301"
+      ],
+      "positionSHA256": "e1d6a6efd50d47440482460ce1f8405be00529b20a78a010f7e7bf78f9564ced"
+    }
+  ],
+  "totalTriangles": 1477004,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_ornament_pbr4k_working_v318.blend",
+      "bytes": 670415562,
+      "sha256": "8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.glb",
+      "bytes": 157878536,
+      "sha256": "8dd1aade3757dbf41f3df7c4d811175a799efc2c64e1bea3c526b4cc34da5c6a"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.fbx",
+      "bytes": 198998364,
+      "sha256": "d84caa513b1abbdbdbba9736919940fdf01c71409fe2e19694698d67c0c1a62a"
+    }
+  },
+  "sourceBlendUnchanged": true,
+  "explicitTriangleExport": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "publicationPerformed": false,
+  "requiresIndependentReimportAndVisualReview": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 141.9610755443573
+}

@@ -1,0 +1,9 @@
+# Alice Coelho inteira com vestido — checkpoint estático v323
+
+Integra cinco pendentes 3D ao personagem completo: armações de ouro unificadas, cinco bails interligados, quatro capas ocas e 192 fios de tassels. Os elos/fios e os cristais preservam a geometria da revisão local; toda a Alice anterior com vestido/renda foi preservada. Atlas UV próprio, quatro mapas PBR4096² incorporados e conferidos depois de salvar e exportar.
+
+GLB e FBX completos foram reimportados em cinco vistas, com cada triângulo, UV e material comparado à fonte. O GLB usa arredondamento/normalização nativos de normais, reproduzidos na auditoria; o FBX preserva os dados brutos. Texturas e canais foram comparados pixel a pixel. O projeto Blender inteiro é mantido sem redução e distribuído na mesma release. Binários grandes ficam no GitHub Release; este diretório contém evidências do personagem INTEIRO, não entrega de peça separada.
+
+É um checkpoint em produção. Filigranas, fidelidade restante, costura e montagem dinâmica ainda precisam de trabalho. A identidade e o corpo anatômico comum de168cm, rig de todas as camadas, cabelo de fios individuais com penteado próprio, tecido/vento/colisões, caminhada/corrida/salto/queda/ataque, expressões e gameplay continuam pendentes. Azul metálico opaco é aproximação artística portátil; não comprova safira fisicamente correta. O normal atlas não inventa detalhe highpoly e este bake não fez nova projeção fotográfica. UV4K, reimportação, checkpoint e pacote não encerram a produção nem autorizam uma próxima geração Tripo.
+
+Fonte Blender: coleção COELHO_WHOLE_CHECKPOINT_V318_WIP, dez objetos Alice.Coelho.WholeCheckpoint318.*. Só esses estão ativos; fontes anteriores permanecem ocultas e recuperáveis. Não misturar com candidatas rejeitadas/HDD nem diagnósticos locais de pendentes isolados. SharedBase/current.json não foi promovido. Nenhum crédito adicional foi gasto.

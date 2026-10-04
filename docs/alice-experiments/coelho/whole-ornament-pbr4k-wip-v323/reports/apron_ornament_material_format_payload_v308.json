@@ -1,0 +1,210 @@
+{
+  "version": "v308",
+  "sourceCandidate": "v301",
+  "sourceSHA256": "1beaffe4b0efb3a19d819b9ac00c109922c4847faad583a6eb862a48e8baec30",
+  "diagnosticLocalOnlyNotWholeCharacterExport": true,
+  "files": {
+    "glb": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/DIAGNOSTIC_LOCAL_ONLY_ornament_material_v308.glb",
+      "sha256": "7d20d1833bbd03a339f021d27d3f0974be5ed6131d6c66d05cbaa81d40270a00",
+      "bytes": 9018860
+    },
+    "fbx": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/DIAGNOSTIC_LOCAL_ONLY_ornament_material_v308.fbx",
+      "sha256": "7863b7d71fc9ff2cad0e4980c5e85063e6d9a623d8eec3ba41742c9757d62e37",
+      "bytes": 8868412
+    }
+  },
+  "GLBImages": [
+    {
+      "index": 0,
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_0.png",
+      "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+      "bytes": 3762557,
+      "name": "alice_coelho_ornaments_normal_4096_v301"
+    },
+    {
+      "index": 1,
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_1.png",
+      "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+      "bytes": 558023,
+      "name": "alice_coelho_ornaments_basecolor_4096_v301"
+    },
+    {
+      "index": 2,
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_2.png",
+      "sha256": "cfa06e2cee21bb3b9b689d24897379169e3a3f753d79a1dfe8f6ffc3a2f88ba8",
+      "bytes": 1379657,
+      "name": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096"
+    }
+  ],
+  "GLBMaterialBindings": [
+    {
+      "name": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "bindings": {
+        "basecolor": {
+          "index": 1,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_1.png",
+          "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+          "bytes": 558023,
+          "name": "alice_coelho_ornaments_basecolor_4096_v301"
+        },
+        "metallicRoughness": {
+          "index": 2,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_2.png",
+          "sha256": "cfa06e2cee21bb3b9b689d24897379169e3a3f753d79a1dfe8f6ffc3a2f88ba8",
+          "bytes": 1379657,
+          "name": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096"
+        },
+        "normal": {
+          "index": 0,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_0.png",
+          "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+          "bytes": 3762557,
+          "name": "alice_coelho_ornaments_normal_4096_v301"
+        }
+      },
+      "metallicFactor": 1,
+      "roughnessFactor": 1
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "bindings": {
+        "basecolor": {
+          "index": 1,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_1.png",
+          "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+          "bytes": 558023,
+          "name": "alice_coelho_ornaments_basecolor_4096_v301"
+        },
+        "metallicRoughness": {
+          "index": 2,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_2.png",
+          "sha256": "cfa06e2cee21bb3b9b689d24897379169e3a3f753d79a1dfe8f6ffc3a2f88ba8",
+          "bytes": 1379657,
+          "name": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096"
+        },
+        "normal": {
+          "index": 0,
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Diagnostics/ornament_material_v308/glb_image_0.png",
+          "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+          "bytes": 3762557,
+          "name": "alice_coelho_ornaments_normal_4096_v301"
+        }
+      },
+      "metallicFactor": 1,
+      "roughnessFactor": 1
+    }
+  ],
+  "FBXEmbeddedVideos": [
+    {
+      "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+      "roles": [
+        "basecolor"
+      ],
+      "bytes": 558023
+    },
+    {
+      "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+      "roles": [
+        "normal"
+      ],
+      "bytes": 3762557
+    },
+    {
+      "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+      "roles": [
+        "roughness"
+      ],
+      "bytes": 1400346
+    },
+    {
+      "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+      "roles": [
+        "metallic"
+      ],
+      "bytes": 561474
+    }
+  ],
+  "FBXMaterialBindings": [
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "property": "DiffuseColor",
+      "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+      "roles": [
+        "basecolor"
+      ],
+      "bytes": 558023
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "property": "NormalMap",
+      "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+      "roles": [
+        "normal"
+      ],
+      "bytes": 3762557
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "property": "ShininessExponent",
+      "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+      "roles": [
+        "roughness"
+      ],
+      "bytes": 1400346
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "property": "ReflectionFactor",
+      "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+      "roles": [
+        "metallic"
+      ],
+      "bytes": 561474
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "property": "DiffuseColor",
+      "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+      "roles": [
+        "basecolor"
+      ],
+      "bytes": 558023
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "property": "NormalMap",
+      "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+      "roles": [
+        "normal"
+      ],
+      "bytes": 3762557
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "property": "ShininessExponent",
+      "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+      "roles": [
+        "roughness"
+      ],
+      "bytes": 1400346
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "property": "ReflectionFactor",
+      "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+      "roles": [
+        "metallic"
+      ],
+      "bytes": 561474
+    }
+  ],
+  "basecolorAndNormalGLBImageBytesExact": true,
+  "FBXAllEmbeddedImagesExact": true,
+  "GLBMetalRoughPackedChannelValidationPending": true,
+  "requiresActualFormatReimportAndAppearanceReview": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "elapsedSeconds": 40.696940660476685
+}

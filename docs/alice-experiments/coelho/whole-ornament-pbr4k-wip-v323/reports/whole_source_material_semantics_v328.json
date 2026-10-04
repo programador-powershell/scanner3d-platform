@@ -1,0 +1,1677 @@
+{
+  "version": "v328",
+  "sourceWholeVersion": "v318",
+  "materials": [
+    {
+      "name": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.23999999463558197,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "alice_coelho_apron_fallback_photo_4096_v022",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976.png",
+          "sha256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "alice_coelho_roughness_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf.png",
+          "sha256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "alice_coelho_metallic_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf.png",
+          "sha256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "alice_coelho_normal_4096_newuv_v004",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d.png",
+          "sha256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoGameUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.23999999463558197,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "alice_coelho_apron_photo_per_texel_4096_v019",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78.png",
+          "sha256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "alice_coelho_apron_roughness_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a.png",
+          "sha256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "alice_coelho_apron_metallic_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930.png",
+          "sha256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "alice_coelho_apron_normal_4096_dedicated_v012",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f.png",
+          "sha256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoGameUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        },
+        "Roughness": {
+          "default": 0.47999998927116394,
+          "links": []
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Apron.IntrinsicUV.front_basecolor.4096.v052",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168.png",
+          "sha256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        }
+      ],
+      "nodes": []
+    },
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Apron.Lining.basecolor.4096.v036",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e.png",
+          "sha256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.Apron.IntrinsicUV.lining_roughness.4096.v052",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9.png",
+          "sha256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.Apron.Lining.metallic.4096.v036",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64.png",
+          "sha256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.Apron.IntrinsicUV.lining_normal.4096.v052",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025.png",
+          "sha256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoApronIntrinsicUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.FittedChain.basecolor.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860.png",
+          "sha256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.FittedChain.roughness.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee.png",
+          "sha256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.FittedChain.metallic.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2.png",
+          "sha256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.ChainLOD.ActualHighNormal.4096.v066",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17.png",
+          "sha256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoFittedChainUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.FittedChain.basecolor.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860.png",
+          "sha256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.FittedChain.roughness.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee.png",
+          "sha256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.FittedChain.metallic.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2.png",
+          "sha256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.FittedChain.normal.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990.png",
+          "sha256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoLaceCordUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Lace.basecolor.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2.png",
+          "sha256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.Lace.roughness.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3.png",
+          "sha256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.Lace.metallic.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64.png",
+          "sha256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.FittedChain.normal.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990.png",
+          "sha256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoLaceCordUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Lace.basecolor.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2.png",
+          "sha256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.Lace.roughness.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3.png",
+          "sha256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.Lace.metallic.4K.v072",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64.png",
+          "sha256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.FittedChain.normal.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990.png",
+          "sha256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoDenseLaceUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.FittedChain.basecolor.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860.png",
+          "sha256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.FittedChain.roughness.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee.png",
+          "sha256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.FittedChain.metallic.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2.png",
+          "sha256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.FittedChain.normal.4096.v057",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990.png",
+          "sha256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "AliceCoelhoDenseLaceUV4K",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Ornaments.basecolor.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94.png",
+          "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.Ornaments.roughness.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756.png",
+          "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.Ornaments.metallic.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa.png",
+          "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.Ornaments.normal.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb.png",
+          "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "CoelhoOrnamentAtlas4K.v301",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301",
+      "principledInputs": {
+        "Base Color": {
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            {
+              "node": "Image Texture",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": [
+            {
+              "node": "Image Texture.002",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Roughness": {
+          "default": 0.5,
+          "links": [
+            {
+              "node": "Image Texture.001",
+              "socket": "Color",
+              "type": "TEX_IMAGE"
+            }
+          ]
+        },
+        "Alpha": {
+          "default": 1.0,
+          "links": []
+        },
+        "Normal": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            {
+              "node": "Normal Map",
+              "socket": "Normal",
+              "type": "NORMAL_MAP"
+            }
+          ]
+        },
+        "Specular IOR Level": {
+          "default": 0.5,
+          "links": []
+        },
+        "Coat Weight": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "images": [
+        {
+          "node": "Image Texture",
+          "name": "Alice.Coelho.Ornaments.basecolor.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "sRGB",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94.png",
+          "sha256": "64892c228c3fdd95e30791b4508c929aee31993e171d2541b015f1209a9f1a94",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "name": "Alice.Coelho.Ornaments.roughness.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756.png",
+          "sha256": "7c3ef95b3c136146fcb158c8e5085e94642c269fa1c8e2a20e99b50725915756",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Roughness",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "name": "Alice.Coelho.Ornaments.metallic.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa.png",
+          "sha256": "bfa41cf610d680640c80862af261e763df30937fd53d23b10caa3a59d3f238aa",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Metallic",
+              "toType": "BSDF_PRINCIPLED"
+            }
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "name": "Alice.Coelho.Ornaments.normal.4096.v301",
+          "size": [
+            4096,
+            4096
+          ],
+          "colorSpace": "Non-Color",
+          "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/MaterialAuditSource328/5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb.png",
+          "sha256": "5b5ae7941ec1319209801b56b0cab8b3484bd41f50eb2d135e9dcd861508b8cb",
+          "outputs": [
+            {
+              "fromSocket": "Color",
+              "toNode": "Normal Map",
+              "toSocket": "Color",
+              "toType": "NORMAL_MAP"
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "space": "TANGENT",
+          "uvMap": "CoelhoOrnamentAtlas4K.v301",
+          "strength": 1.0,
+          "links": [
+            {
+              "input": "Color",
+              "node": "Image Texture.003",
+              "socket": "Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "productionComplete": false
+}

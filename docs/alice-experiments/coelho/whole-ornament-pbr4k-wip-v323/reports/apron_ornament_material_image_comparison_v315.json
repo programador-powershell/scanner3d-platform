@@ -1,0 +1,31 @@
+{
+  "version": "v315",
+  "sourceCandidate": "v301",
+  "sourceSHA256": "1beaffe4b0efb3a19d819b9ac00c109922c4847faad583a6eb862a48e8baec30",
+  "actualExportReimportImageComparisons": [
+    {
+      "format": "glb",
+      "wholeFixedCameraRGBAbsoluteDifferenceMean": 0.006866048177083334,
+      "p95": 0.0,
+      "maximum": 52,
+      "metricsDoNotApproveFidelityOrPhysics": true
+    },
+    {
+      "format": "fbx",
+      "wholeFixedCameraRGBAbsoluteDifferenceMean": 0.010029296875,
+      "p95": 0.0,
+      "maximum": 63,
+      "metricsDoNotApproveFidelityOrPhysics": true
+    }
+  ],
+  "beforeAfter": {
+    "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_fixed_camera_before_after_v315.png",
+    "sha256": "50d2db30bdab2ec7bbcfe42b70d83232a6f1be6ffbf1b80c0539c1cdadbde05a",
+    "sameWorldCamera": true,
+    "sameGeometry": true,
+    "change": "Own material/UV atlas; no extra photographic or geometry detail claimed."
+  },
+  "referenceFidelityApproved": false,
+  "notPublished": true,
+  "productionComplete": false
+}

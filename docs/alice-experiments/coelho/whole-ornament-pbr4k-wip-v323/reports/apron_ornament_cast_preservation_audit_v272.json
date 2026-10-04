@@ -1,0 +1,5919 @@
+{
+  "version": "v272",
+  "sourceSHA256": "136945ff4893974387d5d0a064c9249b9b82571d9d753eba98ab2b7eb3d4c218",
+  "independentSavedReopen": true,
+  "records": [
+    {
+      "id": "outer_left",
+      "components": [
+        {
+          "sourceFirstVertex": 0,
+          "newFirstVertex": 0,
+          "vertices": 9,
+          "type": "blue_crystal_table_crown_pavilion",
+          "rigidShiftM": [
+            0.0,
+            0.0,
+            -0.0025
+          ],
+          "maximumPositionOrRigidShiftErrorM": 2.3841857910676667e-09,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 369,
+          "newFirstVertex": 9,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 489,
+          "newFirstVertex": 129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 609,
+          "newFirstVertex": 249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 729,
+          "newFirstVertex": 369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 849,
+          "newFirstVertex": 489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 969,
+          "newFirstVertex": 609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1089,
+          "newFirstVertex": 729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1209,
+          "newFirstVertex": 849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1329,
+          "newFirstVertex": 969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1449,
+          "newFirstVertex": 1089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1569,
+          "newFirstVertex": 1209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1689,
+          "newFirstVertex": 1329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1809,
+          "newFirstVertex": 1449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1929,
+          "newFirstVertex": 1569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2049,
+          "newFirstVertex": 1689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2169,
+          "newFirstVertex": 1809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2289,
+          "newFirstVertex": 1929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2409,
+          "newFirstVertex": 2049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2529,
+          "newFirstVertex": 2169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2649,
+          "newFirstVertex": 2289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2769,
+          "newFirstVertex": 2409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2889,
+          "newFirstVertex": 2529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3009,
+          "newFirstVertex": 2649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3129,
+          "newFirstVertex": 2769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3249,
+          "newFirstVertex": 2889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3369,
+          "newFirstVertex": 3009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3489,
+          "newFirstVertex": 3129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3609,
+          "newFirstVertex": 3249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3729,
+          "newFirstVertex": 3369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3849,
+          "newFirstVertex": 3489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3969,
+          "newFirstVertex": 3609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4089,
+          "newFirstVertex": 3729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4209,
+          "newFirstVertex": 3849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4329,
+          "newFirstVertex": 3969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4449,
+          "newFirstVertex": 4089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4569,
+          "newFirstVertex": 4209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4689,
+          "newFirstVertex": 4329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4809,
+          "newFirstVertex": 4449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4929,
+          "newFirstVertex": 4569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5049,
+          "newFirstVertex": 4689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5169,
+          "newFirstVertex": 4809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5289,
+          "newFirstVertex": 4929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5409,
+          "newFirstVertex": 5049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5529,
+          "newFirstVertex": 5169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5649,
+          "newFirstVertex": 5289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5769,
+          "newFirstVertex": 5409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5889,
+          "newFirstVertex": 5529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6009,
+          "newFirstVertex": 5649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6129,
+          "newFirstVertex": 5769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6249,
+          "newFirstVertex": 5889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6369,
+          "newFirstVertex": 6009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6489,
+          "newFirstVertex": 6129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6609,
+          "newFirstVertex": 6249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6729,
+          "newFirstVertex": 6369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6849,
+          "newFirstVertex": 6489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6969,
+          "newFirstVertex": 6609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7089,
+          "newFirstVertex": 6729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7209,
+          "newFirstVertex": 6849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7329,
+          "newFirstVertex": 6969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7449,
+          "newFirstVertex": 7089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7569,
+          "newFirstVertex": 7209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7689,
+          "newFirstVertex": 7329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7809,
+          "newFirstVertex": 7449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7929,
+          "newFirstVertex": 7569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8049,
+          "newFirstVertex": 7689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8169,
+          "newFirstVertex": 7809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8289,
+          "newFirstVertex": 7929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8409,
+          "newFirstVertex": 8049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8529,
+          "newFirstVertex": 8169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8649,
+          "newFirstVertex": 8289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8769,
+          "newFirstVertex": 8409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8889,
+          "newFirstVertex": 8529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9009,
+          "newFirstVertex": 8649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9129,
+          "newFirstVertex": 8769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9249,
+          "newFirstVertex": 8889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9369,
+          "newFirstVertex": 9009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9489,
+          "newFirstVertex": 9129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9609,
+          "newFirstVertex": 9249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9729,
+          "newFirstVertex": 9369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9849,
+          "newFirstVertex": 9489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9969,
+          "newFirstVertex": 9609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10089,
+          "newFirstVertex": 9729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10209,
+          "newFirstVertex": 9849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10329,
+          "newFirstVertex": 9969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10449,
+          "newFirstVertex": 10089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10569,
+          "newFirstVertex": 10209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10689,
+          "newFirstVertex": 10329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10809,
+          "newFirstVertex": 10449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10929,
+          "newFirstVertex": 10569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11049,
+          "newFirstVertex": 10689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11169,
+          "newFirstVertex": 10809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11289,
+          "newFirstVertex": 10929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11409,
+          "newFirstVertex": 11049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11529,
+          "newFirstVertex": 11169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11661,
+          "newFirstVertex": 11289,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11709,
+          "newFirstVertex": 11337,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11757,
+          "newFirstVertex": 11385,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11805,
+          "newFirstVertex": 11433,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11853,
+          "newFirstVertex": 11481,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11901,
+          "newFirstVertex": 11529,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11949,
+          "newFirstVertex": 11577,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11997,
+          "newFirstVertex": 11625,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12045,
+          "newFirstVertex": 11673,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12093,
+          "newFirstVertex": 11721,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12141,
+          "newFirstVertex": 11769,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12189,
+          "newFirstVertex": 11817,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12237,
+          "newFirstVertex": 11865,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12285,
+          "newFirstVertex": 11913,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12333,
+          "newFirstVertex": 11961,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12381,
+          "newFirstVertex": 12009,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12429,
+          "newFirstVertex": 12057,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12477,
+          "newFirstVertex": 12105,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12525,
+          "newFirstVertex": 12153,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12573,
+          "newFirstVertex": 12201,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12621,
+          "newFirstVertex": 12249,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12669,
+          "newFirstVertex": 12297,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12717,
+          "newFirstVertex": 12345,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12765,
+          "newFirstVertex": 12393,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12813,
+          "newFirstVertex": 12441,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12861,
+          "newFirstVertex": 12489,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12909,
+          "newFirstVertex": 12537,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12957,
+          "newFirstVertex": 12585,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13005,
+          "newFirstVertex": 12633,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13053,
+          "newFirstVertex": 12681,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13101,
+          "newFirstVertex": 12729,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13149,
+          "newFirstVertex": 12777,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13197,
+          "newFirstVertex": 12825,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13245,
+          "newFirstVertex": 12873,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13293,
+          "newFirstVertex": 12921,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13341,
+          "newFirstVertex": 12969,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13389,
+          "newFirstVertex": 13017,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13437,
+          "newFirstVertex": 13065,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13485,
+          "newFirstVertex": 13113,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13533,
+          "newFirstVertex": 13161,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13581,
+          "newFirstVertex": 13209,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13629,
+          "newFirstVertex": 13257,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13677,
+          "newFirstVertex": 13305,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13725,
+          "newFirstVertex": 13353,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13773,
+          "newFirstVertex": 13401,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13821,
+          "newFirstVertex": 13449,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13869,
+          "newFirstVertex": 13497,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13917,
+          "newFirstVertex": 13545,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        }
+      ],
+      "allChainAndFiberCoordinatesAndFacesExactlyPreserved": true,
+      "gemShapesPreservedOnlyRigidPositionShift": true,
+      "UVRebuiltOwnMaterialsUnbakedTrue": true,
+      "allGroupsAreRootTagsNotFunctionalRig": true
+    },
+    {
+      "id": "inner_left",
+      "components": [
+        {
+          "sourceFirstVertex": 0,
+          "newFirstVertex": 0,
+          "vertices": 9,
+          "type": "blue_crystal_table_crown_pavilion",
+          "rigidShiftM": [
+            0.0,
+            0.0,
+            -0.0025
+          ],
+          "maximumPositionOrRigidShiftErrorM": 2.3841857910676667e-09,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 369,
+          "newFirstVertex": 9,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 489,
+          "newFirstVertex": 129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 609,
+          "newFirstVertex": 249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 729,
+          "newFirstVertex": 369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 849,
+          "newFirstVertex": 489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 969,
+          "newFirstVertex": 609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1089,
+          "newFirstVertex": 729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1209,
+          "newFirstVertex": 849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1329,
+          "newFirstVertex": 969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1449,
+          "newFirstVertex": 1089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1569,
+          "newFirstVertex": 1209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1689,
+          "newFirstVertex": 1329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1809,
+          "newFirstVertex": 1449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1929,
+          "newFirstVertex": 1569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2049,
+          "newFirstVertex": 1689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2169,
+          "newFirstVertex": 1809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2289,
+          "newFirstVertex": 1929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2409,
+          "newFirstVertex": 2049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2529,
+          "newFirstVertex": 2169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2649,
+          "newFirstVertex": 2289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2769,
+          "newFirstVertex": 2409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2889,
+          "newFirstVertex": 2529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3009,
+          "newFirstVertex": 2649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3129,
+          "newFirstVertex": 2769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3249,
+          "newFirstVertex": 2889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3381,
+          "newFirstVertex": 3009,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3429,
+          "newFirstVertex": 3057,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3477,
+          "newFirstVertex": 3105,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3525,
+          "newFirstVertex": 3153,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3573,
+          "newFirstVertex": 3201,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3621,
+          "newFirstVertex": 3249,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3669,
+          "newFirstVertex": 3297,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3717,
+          "newFirstVertex": 3345,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3765,
+          "newFirstVertex": 3393,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3813,
+          "newFirstVertex": 3441,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3861,
+          "newFirstVertex": 3489,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3909,
+          "newFirstVertex": 3537,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3957,
+          "newFirstVertex": 3585,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4005,
+          "newFirstVertex": 3633,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4053,
+          "newFirstVertex": 3681,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4101,
+          "newFirstVertex": 3729,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4149,
+          "newFirstVertex": 3777,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4197,
+          "newFirstVertex": 3825,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4245,
+          "newFirstVertex": 3873,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4293,
+          "newFirstVertex": 3921,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4341,
+          "newFirstVertex": 3969,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4389,
+          "newFirstVertex": 4017,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4437,
+          "newFirstVertex": 4065,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4485,
+          "newFirstVertex": 4113,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4533,
+          "newFirstVertex": 4161,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4581,
+          "newFirstVertex": 4209,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4629,
+          "newFirstVertex": 4257,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4677,
+          "newFirstVertex": 4305,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4725,
+          "newFirstVertex": 4353,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4773,
+          "newFirstVertex": 4401,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4821,
+          "newFirstVertex": 4449,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4869,
+          "newFirstVertex": 4497,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4917,
+          "newFirstVertex": 4545,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4965,
+          "newFirstVertex": 4593,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5013,
+          "newFirstVertex": 4641,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5061,
+          "newFirstVertex": 4689,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5109,
+          "newFirstVertex": 4737,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5157,
+          "newFirstVertex": 4785,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5205,
+          "newFirstVertex": 4833,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5253,
+          "newFirstVertex": 4881,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5301,
+          "newFirstVertex": 4929,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5349,
+          "newFirstVertex": 4977,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5397,
+          "newFirstVertex": 5025,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5445,
+          "newFirstVertex": 5073,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5493,
+          "newFirstVertex": 5121,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5541,
+          "newFirstVertex": 5169,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5589,
+          "newFirstVertex": 5217,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5637,
+          "newFirstVertex": 5265,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        }
+      ],
+      "allChainAndFiberCoordinatesAndFacesExactlyPreserved": true,
+      "gemShapesPreservedOnlyRigidPositionShift": true,
+      "UVRebuiltOwnMaterialsUnbakedTrue": true,
+      "allGroupsAreRootTagsNotFunctionalRig": true
+    },
+    {
+      "id": "center",
+      "components": [
+        {
+          "sourceFirstVertex": 0,
+          "newFirstVertex": 0,
+          "vertices": 9,
+          "type": "blue_crystal_table_crown_pavilion",
+          "rigidShiftM": [
+            0.0,
+            0.0,
+            -0.0025
+          ],
+          "maximumPositionOrRigidShiftErrorM": 2.3841857910676667e-09,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 369,
+          "newFirstVertex": 9,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 489,
+          "newFirstVertex": 129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 609,
+          "newFirstVertex": 249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 729,
+          "newFirstVertex": 369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 849,
+          "newFirstVertex": 489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 969,
+          "newFirstVertex": 609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1089,
+          "newFirstVertex": 729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1209,
+          "newFirstVertex": 849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1329,
+          "newFirstVertex": 969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1449,
+          "newFirstVertex": 1089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1569,
+          "newFirstVertex": 1209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1689,
+          "newFirstVertex": 1329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1809,
+          "newFirstVertex": 1449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1929,
+          "newFirstVertex": 1569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2049,
+          "newFirstVertex": 1689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        }
+      ],
+      "allChainAndFiberCoordinatesAndFacesExactlyPreserved": true,
+      "gemShapesPreservedOnlyRigidPositionShift": true,
+      "UVRebuiltOwnMaterialsUnbakedTrue": true,
+      "allGroupsAreRootTagsNotFunctionalRig": true
+    },
+    {
+      "id": "inner_right",
+      "components": [
+        {
+          "sourceFirstVertex": 0,
+          "newFirstVertex": 0,
+          "vertices": 9,
+          "type": "blue_crystal_table_crown_pavilion",
+          "rigidShiftM": [
+            0.0,
+            0.0,
+            -0.0025
+          ],
+          "maximumPositionOrRigidShiftErrorM": 2.3841857910676667e-09,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 369,
+          "newFirstVertex": 9,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 489,
+          "newFirstVertex": 129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 609,
+          "newFirstVertex": 249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 729,
+          "newFirstVertex": 369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 849,
+          "newFirstVertex": 489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 969,
+          "newFirstVertex": 609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1089,
+          "newFirstVertex": 729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1209,
+          "newFirstVertex": 849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1329,
+          "newFirstVertex": 969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1449,
+          "newFirstVertex": 1089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1569,
+          "newFirstVertex": 1209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1689,
+          "newFirstVertex": 1329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1809,
+          "newFirstVertex": 1449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1929,
+          "newFirstVertex": 1569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2049,
+          "newFirstVertex": 1689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2169,
+          "newFirstVertex": 1809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2289,
+          "newFirstVertex": 1929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2409,
+          "newFirstVertex": 2049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2529,
+          "newFirstVertex": 2169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2649,
+          "newFirstVertex": 2289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2769,
+          "newFirstVertex": 2409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2889,
+          "newFirstVertex": 2529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3009,
+          "newFirstVertex": 2649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3129,
+          "newFirstVertex": 2769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3249,
+          "newFirstVertex": 2889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3369,
+          "newFirstVertex": 3009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3489,
+          "newFirstVertex": 3129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3609,
+          "newFirstVertex": 3249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3741,
+          "newFirstVertex": 3369,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3789,
+          "newFirstVertex": 3417,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3837,
+          "newFirstVertex": 3465,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3885,
+          "newFirstVertex": 3513,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3933,
+          "newFirstVertex": 3561,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3981,
+          "newFirstVertex": 3609,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4029,
+          "newFirstVertex": 3657,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4077,
+          "newFirstVertex": 3705,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4125,
+          "newFirstVertex": 3753,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4173,
+          "newFirstVertex": 3801,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4221,
+          "newFirstVertex": 3849,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4269,
+          "newFirstVertex": 3897,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4317,
+          "newFirstVertex": 3945,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4365,
+          "newFirstVertex": 3993,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4413,
+          "newFirstVertex": 4041,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4461,
+          "newFirstVertex": 4089,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4509,
+          "newFirstVertex": 4137,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4557,
+          "newFirstVertex": 4185,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4605,
+          "newFirstVertex": 4233,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4653,
+          "newFirstVertex": 4281,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4701,
+          "newFirstVertex": 4329,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4749,
+          "newFirstVertex": 4377,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4797,
+          "newFirstVertex": 4425,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4845,
+          "newFirstVertex": 4473,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4893,
+          "newFirstVertex": 4521,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4941,
+          "newFirstVertex": 4569,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4989,
+          "newFirstVertex": 4617,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5037,
+          "newFirstVertex": 4665,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5085,
+          "newFirstVertex": 4713,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5133,
+          "newFirstVertex": 4761,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5181,
+          "newFirstVertex": 4809,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5229,
+          "newFirstVertex": 4857,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5277,
+          "newFirstVertex": 4905,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5325,
+          "newFirstVertex": 4953,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5373,
+          "newFirstVertex": 5001,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5421,
+          "newFirstVertex": 5049,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5469,
+          "newFirstVertex": 5097,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5517,
+          "newFirstVertex": 5145,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5565,
+          "newFirstVertex": 5193,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5613,
+          "newFirstVertex": 5241,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5661,
+          "newFirstVertex": 5289,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5709,
+          "newFirstVertex": 5337,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5757,
+          "newFirstVertex": 5385,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5805,
+          "newFirstVertex": 5433,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5853,
+          "newFirstVertex": 5481,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5901,
+          "newFirstVertex": 5529,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5949,
+          "newFirstVertex": 5577,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5997,
+          "newFirstVertex": 5625,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        }
+      ],
+      "allChainAndFiberCoordinatesAndFacesExactlyPreserved": true,
+      "gemShapesPreservedOnlyRigidPositionShift": true,
+      "UVRebuiltOwnMaterialsUnbakedTrue": true,
+      "allGroupsAreRootTagsNotFunctionalRig": true
+    },
+    {
+      "id": "outer_right",
+      "components": [
+        {
+          "sourceFirstVertex": 0,
+          "newFirstVertex": 0,
+          "vertices": 9,
+          "type": "blue_crystal_table_crown_pavilion",
+          "rigidShiftM": [
+            0.0,
+            0.0,
+            -0.0025
+          ],
+          "maximumPositionOrRigidShiftErrorM": 2.3841857910676667e-09,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 369,
+          "newFirstVertex": 9,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 489,
+          "newFirstVertex": 129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 609,
+          "newFirstVertex": 249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 729,
+          "newFirstVertex": 369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 849,
+          "newFirstVertex": 489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 969,
+          "newFirstVertex": 609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1089,
+          "newFirstVertex": 729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1209,
+          "newFirstVertex": 849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1329,
+          "newFirstVertex": 969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1449,
+          "newFirstVertex": 1089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1569,
+          "newFirstVertex": 1209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1689,
+          "newFirstVertex": 1329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1809,
+          "newFirstVertex": 1449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 1929,
+          "newFirstVertex": 1569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2049,
+          "newFirstVertex": 1689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2169,
+          "newFirstVertex": 1809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2289,
+          "newFirstVertex": 1929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2409,
+          "newFirstVertex": 2049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2529,
+          "newFirstVertex": 2169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2649,
+          "newFirstVertex": 2289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2769,
+          "newFirstVertex": 2409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 2889,
+          "newFirstVertex": 2529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3009,
+          "newFirstVertex": 2649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3129,
+          "newFirstVertex": 2769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3249,
+          "newFirstVertex": 2889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3369,
+          "newFirstVertex": 3009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3489,
+          "newFirstVertex": 3129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3609,
+          "newFirstVertex": 3249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3729,
+          "newFirstVertex": 3369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3849,
+          "newFirstVertex": 3489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 3969,
+          "newFirstVertex": 3609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4089,
+          "newFirstVertex": 3729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4209,
+          "newFirstVertex": 3849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4329,
+          "newFirstVertex": 3969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4449,
+          "newFirstVertex": 4089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4569,
+          "newFirstVertex": 4209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4689,
+          "newFirstVertex": 4329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4809,
+          "newFirstVertex": 4449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 4929,
+          "newFirstVertex": 4569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5049,
+          "newFirstVertex": 4689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5169,
+          "newFirstVertex": 4809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5289,
+          "newFirstVertex": 4929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5409,
+          "newFirstVertex": 5049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5529,
+          "newFirstVertex": 5169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5649,
+          "newFirstVertex": 5289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5769,
+          "newFirstVertex": 5409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 5889,
+          "newFirstVertex": 5529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6009,
+          "newFirstVertex": 5649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6129,
+          "newFirstVertex": 5769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6249,
+          "newFirstVertex": 5889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6369,
+          "newFirstVertex": 6009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6489,
+          "newFirstVertex": 6129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6609,
+          "newFirstVertex": 6249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6729,
+          "newFirstVertex": 6369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6849,
+          "newFirstVertex": 6489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 6969,
+          "newFirstVertex": 6609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7089,
+          "newFirstVertex": 6729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7209,
+          "newFirstVertex": 6849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7329,
+          "newFirstVertex": 6969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7449,
+          "newFirstVertex": 7089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7569,
+          "newFirstVertex": 7209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7689,
+          "newFirstVertex": 7329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7809,
+          "newFirstVertex": 7449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 7929,
+          "newFirstVertex": 7569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8049,
+          "newFirstVertex": 7689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8169,
+          "newFirstVertex": 7809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8289,
+          "newFirstVertex": 7929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8409,
+          "newFirstVertex": 8049,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8529,
+          "newFirstVertex": 8169,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8649,
+          "newFirstVertex": 8289,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8769,
+          "newFirstVertex": 8409,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 8889,
+          "newFirstVertex": 8529,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9009,
+          "newFirstVertex": 8649,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9129,
+          "newFirstVertex": 8769,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9249,
+          "newFirstVertex": 8889,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9369,
+          "newFirstVertex": 9009,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9489,
+          "newFirstVertex": 9129,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9609,
+          "newFirstVertex": 9249,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9729,
+          "newFirstVertex": 9369,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9849,
+          "newFirstVertex": 9489,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 9969,
+          "newFirstVertex": 9609,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10089,
+          "newFirstVertex": 9729,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10209,
+          "newFirstVertex": 9849,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10329,
+          "newFirstVertex": 9969,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10449,
+          "newFirstVertex": 10089,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10569,
+          "newFirstVertex": 10209,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10689,
+          "newFirstVertex": 10329,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10809,
+          "newFirstVertex": 10449,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 10929,
+          "newFirstVertex": 10569,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11049,
+          "newFirstVertex": 10689,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11169,
+          "newFirstVertex": 10809,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11289,
+          "newFirstVertex": 10929,
+          "vertices": 120,
+          "type": "individual_connector_ring",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11421,
+          "newFirstVertex": 11049,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11469,
+          "newFirstVertex": 11097,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11517,
+          "newFirstVertex": 11145,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11565,
+          "newFirstVertex": 11193,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11613,
+          "newFirstVertex": 11241,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11661,
+          "newFirstVertex": 11289,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11709,
+          "newFirstVertex": 11337,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11757,
+          "newFirstVertex": 11385,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11805,
+          "newFirstVertex": 11433,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11853,
+          "newFirstVertex": 11481,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11901,
+          "newFirstVertex": 11529,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11949,
+          "newFirstVertex": 11577,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 11997,
+          "newFirstVertex": 11625,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12045,
+          "newFirstVertex": 11673,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12093,
+          "newFirstVertex": 11721,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12141,
+          "newFirstVertex": 11769,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12189,
+          "newFirstVertex": 11817,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12237,
+          "newFirstVertex": 11865,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12285,
+          "newFirstVertex": 11913,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12333,
+          "newFirstVertex": 11961,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12381,
+          "newFirstVertex": 12009,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12429,
+          "newFirstVertex": 12057,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12477,
+          "newFirstVertex": 12105,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12525,
+          "newFirstVertex": 12153,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12573,
+          "newFirstVertex": 12201,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12621,
+          "newFirstVertex": 12249,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12669,
+          "newFirstVertex": 12297,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12717,
+          "newFirstVertex": 12345,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12765,
+          "newFirstVertex": 12393,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12813,
+          "newFirstVertex": 12441,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12861,
+          "newFirstVertex": 12489,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12909,
+          "newFirstVertex": 12537,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 12957,
+          "newFirstVertex": 12585,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13005,
+          "newFirstVertex": 12633,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13053,
+          "newFirstVertex": 12681,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13101,
+          "newFirstVertex": 12729,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13149,
+          "newFirstVertex": 12777,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13197,
+          "newFirstVertex": 12825,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13245,
+          "newFirstVertex": 12873,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13293,
+          "newFirstVertex": 12921,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13341,
+          "newFirstVertex": 12969,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13389,
+          "newFirstVertex": 13017,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13437,
+          "newFirstVertex": 13065,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13485,
+          "newFirstVertex": 13113,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13533,
+          "newFirstVertex": 13161,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13581,
+          "newFirstVertex": 13209,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13629,
+          "newFirstVertex": 13257,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        },
+        {
+          "sourceFirstVertex": 13677,
+          "newFirstVertex": 13305,
+          "vertices": 48,
+          "type": "individual_tassel_thread",
+          "rigidShiftM": [
+            0,
+            0,
+            0
+          ],
+          "maximumPositionOrRigidShiftErrorM": 0.0,
+          "facesExactlyPreserved": true
+        }
+      ],
+      "allChainAndFiberCoordinatesAndFacesExactlyPreserved": true,
+      "gemShapesPreservedOnlyRigidPositionShift": true,
+      "UVRebuiltOwnMaterialsUnbakedTrue": true,
+      "allGroupsAreRootTagsNotFunctionalRig": true
+    }
+  ],
+  "readOnlyNoSaveOrExport": true,
+  "notRigOrPhysicsOrFidelityApproval": true,
+  "productionComplete": false,
+  "elapsedSeconds": 41.88161826133728
+}

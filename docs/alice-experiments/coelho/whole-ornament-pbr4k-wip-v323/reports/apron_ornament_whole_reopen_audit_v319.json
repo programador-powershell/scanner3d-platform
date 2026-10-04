@@ -1,0 +1,71 @@
+{
+  "version": "v319",
+  "sourceCandidate": "v318",
+  "sourceSHA256": "8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce",
+  "allTenCompleteMeshSignaturesExactlyVerified": true,
+  "independentSavedWholeReopen": true,
+  "portablePackedImages": true,
+  "records": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_front_ornament_wip_v319.png",
+      "sha256": "9922866ef95988f8e77f7adf80b7e2a88cb6cad7339fbddb9227a1171f7b7537",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_threequarter_ornament_wip_v319.png",
+      "sha256": "ecc00c2fb6d9cac356865785201c523001e1a1e62c73ec9d050027627a3785d9",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_back_ornament_wip_v319.png",
+      "sha256": "a3680d25be67af05e0058ff548760295f5851d40ae8bfb0bdf008accabf3309f",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_left_profile_ornament_wip_v319.png",
+      "sha256": "eae11a8721d5c30b72446d25ab0d82317b22b5bf40575bbe2244a01c5bb6d3fb",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_right_profile_ornament_wip_v319.png",
+      "sha256": "cb703b4b342cf99439f29cd9bdbb7ae60065cf9de28acc60bc32236f1f4ae682",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    }
+  ],
+  "requiresActualImageInspection": true,
+  "readOnlyNoSaveOrExport": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "elapsedSeconds": 180.10772371292114
+}

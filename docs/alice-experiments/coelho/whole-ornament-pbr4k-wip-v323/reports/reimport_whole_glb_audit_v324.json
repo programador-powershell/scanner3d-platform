@@ -1,0 +1,211 @@
+{
+  "version": "v324",
+  "format": "glb",
+  "sha256": "8dd1aade3757dbf41f3df7c4d811175a799efc2c64e1bea3c526b4cc34da5c6a",
+  "independentReimport": true,
+  "wholeCharacterWithDress": true,
+  "objects": [
+    {
+      "role": "character",
+      "vertices": 168027,
+      "triangles": 150000,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.6091579772641813,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007.001",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011.001"
+      ]
+    },
+    {
+      "role": "apron",
+      "vertices": 4586,
+      "triangles": 8400,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.02139033912773891,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052.001",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052.001"
+      ]
+    },
+    {
+      "role": "chain",
+      "vertices": 37100,
+      "triangles": 61056,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.02014216344078863,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066.001"
+      ]
+    },
+    {
+      "role": "cord",
+      "vertices": 12970,
+      "triangles": 22136,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.0202132466435679,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.001"
+      ]
+    },
+    {
+      "role": "lace",
+      "vertices": 717282,
+      "triangles": 1144188,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.06576362284032763,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082.001",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082.001"
+      ]
+    },
+    {
+      "role": "ornament_outer_left",
+      "vertices": 27893,
+      "triangles": 29768,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.7939677238464355e-08,
+      "maxNormalAngleDegrees": 0.4224179048810347,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301.001"
+      ]
+    },
+    {
+      "role": "ornament_inner_left",
+      "vertices": 12676,
+      "triangles": 13112,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.08960900674914554,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301.001"
+      ]
+    },
+    {
+      "role": "ornament_center",
+      "vertices": 5070,
+      "triangles": 5236,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.08798543681855141,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301.001"
+      ]
+    },
+    {
+      "role": "ornament_inner_right",
+      "vertices": 13428,
+      "triangles": 13826,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.24815754723493816,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301.001"
+      ]
+    },
+    {
+      "role": "ornament_outer_right",
+      "vertices": 27269,
+      "triangles": 29282,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.3679448823346366,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v301.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v301.001"
+      ]
+    }
+  ],
+  "totalTriangles": 1477004,
+  "allTriangleUVMaterialAssignmentsVerified": true,
+  "allImporterNormalEncodingReplaysVerified": true,
+  "rawNormalAudits": [
+    "whole_glb_raw_normal_payload_audit_v326.json",
+    "whole_fbx_raw_normal_payload_audit_v327.json"
+  ],
+  "rawNormalAuditRequiredBeforePublication": true,
+  "rawSourceNormalIdentityInBlenderNotClaimed": true,
+  "renders": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_front_v324.png",
+      "sha256": "897ad3d339a4129a96751b82dd5cf7d3426654e83e335b920b1dc24abf19f378"
+    },
+    {
+      "view": "threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_threequarter_v324.png",
+      "sha256": "3262b0b33459803a168da364d0700a22d20a77e57803e1acd0309ab70e30d307"
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_back_v324.png",
+      "sha256": "5e5e86cc8adddd25218516269ae95b4419fee93012cd3ce7104d08e0a6da88e1"
+    },
+    {
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_left_profile_v324.png",
+      "sha256": "ef3de3b0f2435486532fa8e37439bb0f98746e09e35a2d7a45a6a8162330b53b"
+    },
+    {
+      "view": "right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_right_profile_v324.png",
+      "sha256": "1337124bb1f210c33eea3de0a415e170c74bca10c1c233b61395a0bac4509647"
+    }
+  ],
+  "sameCameraLightsWorldAndColorManagement": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "elapsedSeconds": 246.809077501297
+}

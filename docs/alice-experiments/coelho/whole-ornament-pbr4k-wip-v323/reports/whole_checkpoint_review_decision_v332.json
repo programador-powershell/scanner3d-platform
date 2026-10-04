@@ -1,0 +1,106 @@
+{
+  "version": "v332",
+  "sourceWholeWorkingVersion": "v318",
+  "exportWholeVersion": "v323",
+  "sourceWholeSHA256": "8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce",
+  "allFiveWholeSourceViewsActuallyInspected": true,
+  "allTenIndependentGLBFBXViewsActuallyInspected": true,
+  "referenceBoard5ActuallyInspected": true,
+  "sourceImportPixelDiagnostics": {
+    "glb_front": {
+      "meanRGB": 0.01288989898989899,
+      "p95RGB": 0.0,
+      "maxRGB": 21.0,
+      "renderSHA256": "897ad3d339a4129a96751b82dd5cf7d3426654e83e335b920b1dc24abf19f378",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "fbx_front": {
+      "meanRGB": 0.0123,
+      "p95RGB": 0.0,
+      "maxRGB": 21.0,
+      "renderSHA256": "cdd13fe5c44748fb37ff263d98ae2f6ccaae948238408653e8c5eb388536a476",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "glb_threequarter": {
+      "meanRGB": 0.012311447811447811,
+      "p95RGB": 0.0,
+      "maxRGB": 33.0,
+      "renderSHA256": "3262b0b33459803a168da364d0700a22d20a77e57803e1acd0309ab70e30d307",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "fbx_threequarter": {
+      "meanRGB": 0.013646127946127946,
+      "p95RGB": 0.0,
+      "maxRGB": 39.0,
+      "renderSHA256": "ca0970b378b5de18217163f331567a1c8e10bc3e84ed93b11280626debddc5e8",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "glb_back": {
+      "meanRGB": 0.0018205387205387205,
+      "p95RGB": 0.0,
+      "maxRGB": 7.0,
+      "renderSHA256": "5e5e86cc8adddd25218516269ae95b4419fee93012cd3ce7104d08e0a6da88e1",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "fbx_back": {
+      "meanRGB": 0.0006491582491582492,
+      "p95RGB": 0.0,
+      "maxRGB": 2.0,
+      "renderSHA256": "f57010d01cfe88de03ab9e3801fc10bbd1b9d5d873a684139e20dff50f79ae27",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "glb_left_profile": {
+      "meanRGB": 0.004936026936026936,
+      "p95RGB": 0.0,
+      "maxRGB": 28.0,
+      "renderSHA256": "ef3de3b0f2435486532fa8e37439bb0f98746e09e35a2d7a45a6a8162330b53b",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "fbx_left_profile": {
+      "meanRGB": 0.005411111111111111,
+      "p95RGB": 0.0,
+      "maxRGB": 27.0,
+      "renderSHA256": "87e9947cfc8435543e66040316199e8ee38b9abb3a6fb8f23a0f65ee63e0c7ac",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "glb_right_profile": {
+      "meanRGB": 0.004439730639730639,
+      "p95RGB": 0.0,
+      "maxRGB": 33.0,
+      "renderSHA256": "1337124bb1f210c33eea3de0a415e170c74bca10c1c233b61395a0bac4509647",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    },
+    "fbx_right_profile": {
+      "meanRGB": 0.004644444444444444,
+      "p95RGB": 0.0,
+      "maxRGB": 37.0,
+      "renderSHA256": "87e25c3992f575d8a55cffdd96a58294918e9e26834476163a41989e9d5047fd",
+      "scope": "Whole-frame diagnostic only, not photographic fidelity approval."
+    }
+  },
+  "acceptedForWholeIntermediateCheckpoint": true,
+  "staticScope": "Five actual hanging pendants integrated: unified gold settings, five interlocked bails, four hollow tassel caps, 254 chain rings/192 individual tassel fibers, own PBR4K atlas. Static topology/contact/linkage and saved continuous UV checked; all old whole181 meshes exactly preserved. Opaque metallic blue is art-directed, not physical sapphire optics. Root groups are not rig.",
+  "normalScope": "Native GLB exporter rounds normals to four decimals and normalizes; raw payload matches that replay. Raw FBX normals and triangle order match source exactly. Both Blender importer encodings independently reproduced exactly.",
+  "normalRawAudits": [
+    "whole_glb_raw_normal_payload_audit_v326.json",
+    "whole_fbx_raw_normal_payload_audit_v327.json"
+  ],
+  "PBRMaterialAudits": [
+    "whole_glb_material_pixel_audit_v329.json",
+    "whole_fbx_embedded_material_audit_v330.json",
+    "whole_fbx_channel_semantics_audit_v331.json"
+  ],
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "remaining": [
+    "7,417 intra-motif path contacts are not approved as sewn joints; sewing/mounting and deformation LOD unfinished.",
+    "Ornament filigree/reference fidelity, physical mounts/rig/LOD/deformation, embroidery/overlay and lower layers remain unfinished.",
+    "Canonical common face/body168cm/rig, lower layers, individual outfit hair, cloth/hair dynamics/collisions/wind/actions/expressions and runtime switching unfinished."
+  ],
+  "notYetPublished": true,
+  "createdAt": "2026-10-04T12:33:19.593941+00:00"
+}

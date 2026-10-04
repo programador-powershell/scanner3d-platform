@@ -1,0 +1,482 @@
+{
+  "version": "whole_ornament_pbr4k_wip_v323",
+  "createdAt": "2026-10-04T09:39:06.137024-03:00",
+  "wholeCharacterWithDress": true,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_ornament_pbr4k_working_v318.blend",
+      "bytes": 670415562,
+      "sha256": "8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.glb",
+      "bytes": 157878536,
+      "sha256": "8dd1aade3757dbf41f3df7c4d811175a799efc2c64e1bea3c526b4cc34da5c6a"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.fbx",
+      "bytes": 198998364,
+      "sha256": "d84caa513b1abbdbdbba9736919940fdf01c71409fe2e19694698d67c0c1a62a"
+    }
+  },
+  "wholeTriangles": 1477004,
+  "review": "reports/whole_checkpoint_review_decision_v332.json",
+  "entries": [
+    {
+      "path": "source_photo.png",
+      "source": "Workspaces/root_coelho_refinement_20261003/scanner3d-platform/docs/alice-experiments/coelho/whole-lace-joint-wip-v184/source_photo.png",
+      "bytes": 462329,
+      "sha256": "235ccb89c6e8cbdfc0c68da3d1269282e659c00b1868e7df330217f8f95a9f7c"
+    },
+    {
+      "path": "reference_apron_layer5.png",
+      "source": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+      "bytes": 2563018,
+      "sha256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9"
+    },
+    {
+      "path": "whole_before_after_v332.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_before_after_v332.jpg",
+      "bytes": 141803,
+      "sha256": "8d963b27d8eaa8c26da2042e3c754b308b839c8d2af8f80182e8f8f833f8e801"
+    },
+    {
+      "path": "whole_source_glb_fbx_views_v332.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_source_glb_fbx_views_v332.jpg",
+      "bytes": 930848,
+      "sha256": "64f0516857ae8c84206575522b73fed7fbc9acd2617b01f63980418a5880537b"
+    },
+    {
+      "path": "apron_ornament_material_fixed_camera_before_after_v315.png",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_fixed_camera_before_after_v315.png",
+      "bytes": 404506,
+      "sha256": "50d2db30bdab2ec7bbcfe42b70d83232a6f1be6ffbf1b80c0539c1cdadbde05a"
+    },
+    {
+      "path": "reports/apron_ornament_cast_mounts_authoring_audit_v267.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_cast_mounts_authoring_audit_v267.json",
+      "bytes": 413565,
+      "sha256": "aa750b0f85abc459fdc175f3089998609844100d852697b28bd9ffdf11fc3090"
+    },
+    {
+      "path": "reports/apron_ornament_component_audit_v268.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_component_audit_v268.json",
+      "bytes": 176600,
+      "sha256": "9e2d9636b0aebfd224aeacb6cec04e5cbe313783525e862430350d402494dfda"
+    },
+    {
+      "path": "reports/apron_ornament_triangle_contact_audit_v269.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_triangle_contact_audit_v269.json",
+      "bytes": 11491,
+      "sha256": "394a1abcbc26b630093ba55ccfef566d65607e6942edb0ff7a78bc2a19d73c5b"
+    },
+    {
+      "path": "reports/apron_ornament_cast_linkage_audit_v270.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_cast_linkage_audit_v270.json",
+      "bytes": 347539,
+      "sha256": "6bf56647344155042d439b513581e8616ce18bf4152cdca5175f5b82954bf160"
+    },
+    {
+      "path": "reports/apron_ornament_cast_preservation_audit_v272.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_cast_preservation_audit_v272.json",
+      "bytes": 161834,
+      "sha256": "fe56f2e5f3f7e92d9c95095a660ffe12bc1eede36d063714845abfb7c3ae9453"
+    },
+    {
+      "path": "reports/apron_ornament_cast_review_decision_v274.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_cast_review_decision_v274.json",
+      "bytes": 5059,
+      "sha256": "ab181496b18100e3ee688d488c768115bf1f8517b494ad4b424ba7f0488c3fe6"
+    },
+    {
+      "path": "reports/apron_ornament_pbr_atlas_authoring_audit_v301.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_pbr_atlas_authoring_audit_v301.json",
+      "bytes": 704256,
+      "sha256": "049ebf05f1f86a1057eaa008ac0000514ae8301d25892bd5765dea8638db504c"
+    },
+    {
+      "path": "reports/apron_ornament_atlas_uv_audit_v301.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_atlas_uv_audit_v301.json",
+      "bytes": 262521,
+      "sha256": "d4e60567fd41a53e9fbb3e155b0893e5604ced1a4bb5cd038e70427c9bbe94e1"
+    },
+    {
+      "path": "reports/apron_ornament_pbr_atlas_reopen_audit_v303.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_pbr_atlas_reopen_audit_v303.json",
+      "bytes": 6610,
+      "sha256": "75200cbca0a48b92a148a563838f555478b8d7e938f4725a981464c37dac7d0f"
+    },
+    {
+      "path": "reports/apron_ornament_continuous_uv_audit_v305.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_continuous_uv_audit_v305.json",
+      "bytes": 779,
+      "sha256": "6156bd03a8e91d2f3e5fcd88cc3e843b968d4f542dcdb8ce45bb0593b224a2cf"
+    },
+    {
+      "path": "reports/apron_ornament_material_format_payload_v308.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_material_format_payload_v308.json",
+      "bytes": 7654,
+      "sha256": "426cf471f3b0b0ecc7ac093d2c59ec2d3a9e439165cd807c932ee6cfa0c06276"
+    },
+    {
+      "path": "reports/apron_ornament_material_actual_reimport_audit_v310.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_material_actual_reimport_audit_v310.json",
+      "bytes": 28649,
+      "sha256": "92549f8599307599ceaaacd6f4f8e76eeee912382469f923ce46431d523f11fc"
+    },
+    {
+      "path": "reports/apron_ornament_material_packed_channel_audit_v313.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_material_packed_channel_audit_v313.json",
+      "bytes": 1139,
+      "sha256": "79f7f52e55c8fcb2e61860df186a0048da33faaf1c5eb87b3fdde8b4d29fe694"
+    },
+    {
+      "path": "reports/apron_ornament_material_image_comparison_v315.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_material_image_comparison_v315.json",
+      "bytes": 1084,
+      "sha256": "221da9025c6cf77633679fddec95978a12d84e5a0e32b87ab4646d50ac09cfb8"
+    },
+    {
+      "path": "reports/apron_ornament_atlas_review_decision_v316.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_atlas_review_decision_v316.json",
+      "bytes": 6785,
+      "sha256": "ceac534cfe09b9fe9922073d8b640abddabae8936f43bc6a9a15d038c1d80801"
+    },
+    {
+      "path": "reports/apron_ornament_whole_integration_audit_v318.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_integration_audit_v318.json",
+      "bytes": 21034,
+      "sha256": "a26260b8ce52f4dd514c9d6ea19c8f2636d31804c9acf8af9d4a915c452f181e"
+    },
+    {
+      "path": "reports/apron_ornament_whole_reopen_audit_v319.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_reopen_audit_v319.json",
+      "bytes": 2393,
+      "sha256": "79110ddb361e523ed3bad3be6ddbf848787aa0940bb31e827801968ed070c513"
+    },
+    {
+      "path": "reports/apron_ornament_whole_review_decision_v321.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_review_decision_v321.json",
+      "bytes": 2911,
+      "sha256": "7f5fb8a654725aae331cff07358641297ebcde82ca9baa5bf6384fc400b1fb73"
+    },
+    {
+      "path": "reports/package_export_v323.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/package_export_v323.json",
+      "bytes": 5536,
+      "sha256": "0e1bec1420f2cdb1d40c781964d2622c317f990588bd77e5a8b58482c85b97c8"
+    },
+    {
+      "path": "reports/reimport_whole_glb_audit_v324.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_glb_audit_v324.json",
+      "bytes": 7867,
+      "sha256": "bd44e88ee41028a59eb5619f905ad243262045c5ee14302cc80d4f91a189af45"
+    },
+    {
+      "path": "reports/reimport_whole_fbx_audit_v324.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_fbx_audit_v324.json",
+      "bytes": 7934,
+      "sha256": "414280c3e2680e587002278a9465a7ed013ffbee7a2debeda13dacc7c2e276f1"
+    },
+    {
+      "path": "reports/whole_glb_raw_normal_payload_audit_v326.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_raw_normal_payload_audit_v326.json",
+      "bytes": 3767,
+      "sha256": "d0a6b237067eb99ba880dc6169b7d76116a8c483bf16179bb7fd99a702d3d77f"
+    },
+    {
+      "path": "reports/whole_fbx_raw_normal_payload_audit_v327.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_raw_normal_payload_audit_v327.json",
+      "bytes": 2617,
+      "sha256": "c7fd71cde614846338cc2418456fb210455d3c60f10d8a4d3c3b3606a8f481e0"
+    },
+    {
+      "path": "reports/whole_source_material_semantics_v328.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_source_material_semantics_v328.json",
+      "bytes": 50194,
+      "sha256": "b8f12347cfe6e5c45551106a3b178aad88e3da20dda9e779fec721a8cade686f"
+    },
+    {
+      "path": "reports/whole_glb_material_pixel_audit_v329.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_material_pixel_audit_v329.json",
+      "bytes": 10317,
+      "sha256": "df92773fba16d96438ea88e67e2e78e1a823bdf53c4c28cfb643b0aa70aad84a"
+    },
+    {
+      "path": "reports/whole_fbx_embedded_material_audit_v330.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_embedded_material_audit_v330.json",
+      "bytes": 15112,
+      "sha256": "8afc4afb5e778f2384421d760a0f0749dd9c50d4dad5b2d8345d79b20e6196cd"
+    },
+    {
+      "path": "reports/whole_fbx_channel_semantics_audit_v331.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_channel_semantics_audit_v331.json",
+      "bytes": 11685,
+      "sha256": "1a6040358753b6e2a1b65696284c15d528bcdf69c2a02f1d7dea32258594d223"
+    },
+    {
+      "path": "reports/whole_checkpoint_review_decision_v332.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_checkpoint_review_decision_v332.json",
+      "bytes": 5022,
+      "sha256": "beaf7559cbf8f85a253a90006367bbaf37cdb765ce8326e0da55b70db290cb06"
+    },
+    {
+      "path": "source-payload/character.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_character_v323.npz",
+      "bytes": 5808684,
+      "sha256": "c591abc0145cf6e508f4cb80183ef188c2a1ccd3108a7c7362df3f723113856e"
+    },
+    {
+      "path": "source-payload/apron.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_apron_v323.npz",
+      "bytes": 314187,
+      "sha256": "66044ff3ef2f01186885d83af94aac9a068aa6bc00a554a624be62788b76520f"
+    },
+    {
+      "path": "source-payload/chain.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_chain_v323.npz",
+      "bytes": 1827621,
+      "sha256": "5d3b57645bfe0ed42b835a0ae2b9262102e02d9900bc8512531a403545eab0e8"
+    },
+    {
+      "path": "source-payload/cord.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_cord_v323.npz",
+      "bytes": 680202,
+      "sha256": "7284c88d182412e59a65f7e5627f9b133fea90f27af6bd44ad076dc3942d5da0"
+    },
+    {
+      "path": "source-payload/lace.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_lace_v323.npz",
+      "bytes": 35226793,
+      "sha256": "8f915f68fa4f3985ca82a2374cf487de198bc96ce200c8fe15a139710e51f6f1"
+    },
+    {
+      "path": "source-payload/ornament_outer_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_left_v323.npz",
+      "bytes": 1124428,
+      "sha256": "2498c1048b71fa02e975b2fa7a9f0bc1a11cdb1e2fd9e303c32dfdd300d7981f"
+    },
+    {
+      "path": "source-payload/ornament_inner_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_left_v323.npz",
+      "bytes": 483291,
+      "sha256": "c98d647b9221056545d9c96fff10086b248c9e7844bce28bcf4f5913e847a240"
+    },
+    {
+      "path": "source-payload/ornament_center.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_center_v323.npz",
+      "bytes": 192176,
+      "sha256": "2bea3b6012641784997096bc66f2f939b965f177020108d8f31aae485f2abe00"
+    },
+    {
+      "path": "source-payload/ornament_inner_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_right_v323.npz",
+      "bytes": 519958,
+      "sha256": "43bc7c30fbf497f90555e14f1f59e97005cd7eb43e348e1fb5e000f14431af3d"
+    },
+    {
+      "path": "source-payload/ornament_outer_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_right_v323.npz",
+      "bytes": 1114617,
+      "sha256": "9070bcb0092b4a9ab9aaad3bb9de868355aa1615b0dfedc6c05c877d029e2bc2"
+    },
+    {
+      "path": "production-code/author_coelho_cast_mounts_v267.py",
+      "source": "Tools/author_coelho_cast_mounts_v267.py",
+      "bytes": 10914,
+      "sha256": "b7cc456e1b856cb5366c515c1470e2e300df8dd9e85f3f52763e7f1154ff3b49"
+    },
+    {
+      "path": "production-code/coelho_cast_mesh.py",
+      "source": "Tools/coelho_cast_mesh.py",
+      "bytes": 4664,
+      "sha256": "6944a613d929d3326f1b5ab1d4951b3f7b1dd5be8c24551511b7ea65403a17f4"
+    },
+    {
+      "path": "production-code/coelho_ring_linking.py",
+      "source": "Tools/coelho_ring_linking.py",
+      "bytes": 2751,
+      "sha256": "f4d2becc38b88927a72381352e3d7877919a930b7e3e815a1e1f3ab09078cfe8"
+    },
+    {
+      "path": "production-code/coelho_ring_clearance.py",
+      "source": "Tools/coelho_ring_clearance.py",
+      "bytes": 843,
+      "sha256": "8d3236de364a7e8707a6d70792c0fe2f44e22dde58046a55a3533e761216dafb"
+    },
+    {
+      "path": "production-code/author_coelho_ornament_pbr_atlas_v301.py",
+      "source": "Tools/author_coelho_ornament_pbr_atlas_v301.py",
+      "bytes": 13612,
+      "sha256": "32ae6bdd129f027ba7223d02da4afaf6968313e4b373c610499750e6d9011c55"
+    },
+    {
+      "path": "production-code/coelho_uv_triangle_sat.py",
+      "source": "Tools/coelho_uv_triangle_sat.py",
+      "bytes": 1960,
+      "sha256": "56c372abc82131b8281f2fb81cae900ac15705a832f45c7eb3c5f8ce0a3cbe7d"
+    },
+    {
+      "path": "production-code/audit_render_coelho_ornament_atlas_v303.py",
+      "source": "Tools/audit_render_coelho_ornament_atlas_v303.py",
+      "bytes": 4497,
+      "sha256": "6c2267d2cf73bcc1afa4cc5b4c535081f2a2f7a68786b84301f33bbb80790618"
+    },
+    {
+      "path": "production-code/audit_coelho_ornament_continuous_uv_v305.py",
+      "source": "Tools/audit_coelho_ornament_continuous_uv_v305.py",
+      "bytes": 3685,
+      "sha256": "260ea88ad6bee91794aaeec41b67250303b8742d8207c19e13b461615f7200c5"
+    },
+    {
+      "path": "production-code/export_verify_coelho_ornament_material_formats_v308.py",
+      "source": "Tools/export_verify_coelho_ornament_material_formats_v308.py",
+      "bytes": 5059,
+      "sha256": "c7cfecffa95ee92ac63eb674ad2258790140c3a3389dd50f1493b1abed2b70bd"
+    },
+    {
+      "path": "production-code/reimport_render_coelho_ornament_material_v310.py",
+      "source": "Tools/reimport_render_coelho_ornament_material_v310.py",
+      "bytes": 4452,
+      "sha256": "84fa53482d5be233f4468eceb36825e2cd4d4c77bc83faa6cc5735735059d54f"
+    },
+    {
+      "path": "production-code/verify_coelho_ornament_packed_material_channels_v313.py",
+      "source": "Tools/verify_coelho_ornament_packed_material_channels_v313.py",
+      "bytes": 1760,
+      "sha256": "ade22de703149a744153bb698d0f4094dc57bc4f487b05e03dbc89d26a09cf55"
+    },
+    {
+      "path": "production-code/record_coelho_ornament_atlas_review_v316.py",
+      "source": "Tools/record_coelho_ornament_atlas_review_v316.py",
+      "bytes": 8102,
+      "sha256": "415c3405f6cfe762aa4a35cfa07df044c2a79adc6a184212956318518cea477f"
+    },
+    {
+      "path": "production-code/integrate_coelho_ornament_atlas_whole_v318.py",
+      "source": "Tools/integrate_coelho_ornament_atlas_whole_v318.py",
+      "bytes": 4945,
+      "sha256": "ffcba100f00ff32ab3e008d3c28e97f1f9bb1d2e623fb2a949534aba35b39b0d"
+    },
+    {
+      "path": "production-code/reopen_render_coelho_ornament_whole_v319.py",
+      "source": "Tools/reopen_render_coelho_ornament_whole_v319.py",
+      "bytes": 2811,
+      "sha256": "3f026700407fd3d8f43912c4bb962eb1e17cb6fc32518bee171d6ebec49d3dab"
+    },
+    {
+      "path": "production-code/record_coelho_ornament_whole_review_v321.py",
+      "source": "Tools/record_coelho_ornament_whole_review_v321.py",
+      "bytes": 4672,
+      "sha256": "6d583af63c291951a113f6afd2c19cbee5dc8401760bf52046bc8ea9479bb021"
+    },
+    {
+      "path": "production-code/export_coelho_ornament_whole_checkpoint_v323.py",
+      "source": "Tools/export_coelho_ornament_whole_checkpoint_v323.py",
+      "bytes": 4131,
+      "sha256": "aec44514f40acf8381996c1c9aaea304a5517c7c74e194ce1d2e96b18be09096"
+    },
+    {
+      "path": "production-code/reimport_coelho_ornament_whole_checkpoint_v324.py",
+      "source": "Tools/reimport_coelho_ornament_whole_checkpoint_v324.py",
+      "bytes": 8219,
+      "sha256": "094792490d36b1d603d06054db0e63c1675c1aef93d50c62786444ae3df73bb1"
+    },
+    {
+      "path": "production-code/diagnose_coelho_ornament_whole_normal_payload_v326.py",
+      "source": "Tools/diagnose_coelho_ornament_whole_normal_payload_v326.py",
+      "bytes": 4383,
+      "sha256": "7377450709327b871f1cddb50400b197f2da04dd678bfccf2218775c0692443b"
+    },
+    {
+      "path": "production-code/verify_coelho_ornament_whole_fbx_normal_payload_v327.py",
+      "source": "Tools/verify_coelho_ornament_whole_fbx_normal_payload_v327.py",
+      "bytes": 2152,
+      "sha256": "eb67b39db2bab4cb602400ddcddec0ae2a1f0d0a736adf7e867019557f775ec1"
+    },
+    {
+      "path": "production-code/dump_coelho_ornament_whole_materials_v328.py",
+      "source": "Tools/dump_coelho_ornament_whole_materials_v328.py",
+      "bytes": 2073,
+      "sha256": "b58c6b95da47eaa0b1af834f9963362fe469854c4db71de780d0b4ecdde623cb"
+    },
+    {
+      "path": "production-code/verify_coelho_ornament_whole_glb_materials_v329.py",
+      "source": "Tools/verify_coelho_ornament_whole_glb_materials_v329.py",
+      "bytes": 3488,
+      "sha256": "4ef656ee4cc5919f3a2baaab6a68a421a3c24c786211c9e19db33d2002019ff7"
+    },
+    {
+      "path": "production-code/verify_coelho_ornament_whole_fbx_materials_v330.py",
+      "source": "Tools/verify_coelho_ornament_whole_fbx_materials_v330.py",
+      "bytes": 1822,
+      "sha256": "d82def0d076b821f39b0538980a5d708e88b3d67b0aadd3675f6f7589e06aede"
+    },
+    {
+      "path": "production-code/verify_coelho_ornament_whole_fbx_channels_v331.py",
+      "source": "Tools/verify_coelho_ornament_whole_fbx_channels_v331.py",
+      "bytes": 1949,
+      "sha256": "d57e4a2b3fee8b908bc5024d6b73266dec63ca3ce83d59a8c50d153d42b23b58"
+    },
+    {
+      "path": "production-code/review_coelho_ornament_whole_v332.py",
+      "source": "Tools/review_coelho_ornament_whole_v332.py",
+      "bytes": 5171,
+      "sha256": "b932812807542179657316339d2e8586efaf42a3221060ca50536d59aadf5aee"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1967,
+      "sha256": "378341c6f6c372d72b073cee2ef78e6f137afb128b07b422e8e2daa846e24429"
+    }
+  ],
+  "largeBinariesInGitHubReleaseNotGitBlobs": true,
+  "productionComplete": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "additionalTripoCredits": 0,
+  "githubRelease": {
+    "url": "https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-ornament-pbr4k-wip-v323",
+    "tag": "coelho-ornament-pbr4k-wip-v323",
+    "releaseId": 403013278,
+    "files": {
+      "glb": {
+        "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.glb",
+        "bytes": 157878536,
+        "sha256": "8dd1aade3757dbf41f3df7c4d811175a799efc2c64e1bea3c526b4cc34da5c6a",
+        "assetId": 609821873,
+        "filename": "alice_coelho_complete_ornament_pbr4k_checkpoint_v323.glb",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-ornament-pbr4k-wip-v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.glb",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609821873",
+        "githubDigest": "sha256:8dd1aade3757dbf41f3df7c4d811175a799efc2c64e1bea3c526b4cc34da5c6a",
+        "uploaded": true,
+        "downloadHashVerified": true
+      },
+      "fbx": {
+        "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.fbx",
+        "bytes": 198998364,
+        "sha256": "d84caa513b1abbdbdbba9736919940fdf01c71409fe2e19694698d67c0c1a62a",
+        "assetId": 609823249,
+        "filename": "alice_coelho_complete_ornament_pbr4k_checkpoint_v323.fbx",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-ornament-pbr4k-wip-v323/alice_coelho_complete_ornament_pbr4k_checkpoint_v323.fbx",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609823249",
+        "githubDigest": "sha256:d84caa513b1abbdbdbba9736919940fdf01c71409fe2e19694698d67c0c1a62a",
+        "uploaded": true,
+        "downloadHashVerified": true
+      },
+      "blend": {
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_ornament_pbr4k_working_v318.blend",
+        "bytes": 670415562,
+        "sha256": "8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce",
+        "assetId": 609825439,
+        "filename": "alice_coelho_complete_ornament_pbr4k_working_v318.blend",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-ornament-pbr4k-wip-v323/alice_coelho_complete_ornament_pbr4k_working_v318.blend",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609825439",
+        "githubDigest": "sha256:8121d019a4a58d645480bcffc3dcd2a88c677d12cbddededd3f7e5b7107149ce",
+        "uploaded": true,
+        "downloadHashVerified": true
+      }
+    },
+    "allThreeDownloadsHashVerified": true
+  }
+}
