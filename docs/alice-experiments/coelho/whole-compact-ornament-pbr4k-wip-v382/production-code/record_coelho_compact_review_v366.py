@@ -1,0 +1,14 @@
+"""Record actual compact-cast reference review, permitting local bake only."""
+from pathlib import Path
+import json,hashlib,datetime
+R=Path('F:/Alice/SharedProduction');O=R/'Blender/Work/alice_coelho/tripo_h31_budget55_v001'
+read=lambda p:json.loads(p.read_text(encoding='utf-8-sig'))
+q=read(O/'apron_ornament_component_audit_v362.json');c=read(O/'apron_ornament_triangle_contact_audit_v364.json');v=read(O/'apron_ornament_compact_reference_review_v365.json');a=read(O/'apron_ornament_compact_corner_authoring_audit_v361.json')
+assert q['sourceCandidateSHA256']==c['sourceSHA256']==v['sourceSHA256']==a['sha256']
+assert q['originalTenWholeMeshSignaturesExactlyPreserved'] and q['totalInwardComponents']==0 and all(x['zeroAreaTriangles']==x['boundaryEdges']==x['nonManifoldEdges']==x['inconsistentWindingEdges']==0 for r in q['records'] for x in r['components'])
+assert c['totalWholeSurfaceSATTrianglePairs']==c['totalSelfSATTrianglePairs']==c['totalBetweenOrnamentsSATTrianglePairs']==0
+for row in v['records']:assert hashlib.sha256((R/row['path']).read_bytes()).hexdigest()==row['sha256'];row['actualImageInspected']=True
+assert len(v['records'])==6
+decision=dict(version='v366',sourceCandidate='v361',sourceSHA256=a['sha256'],acceptedForOwnUVPBRBake=True,savedTopologyAndStaticContactsPassed=True,allSixActualReferenceAndBlueViewsInspected=True,referenceBoard5ActuallyInspected=True,referenceMagnificationAddsNoDetail=True,records=v['records'],allNonCastSourceGeometryAndWhole318Preserved=True,selectedBlueMetallic=.45,selectedBlueRoughness=.18,selectedBlueScope='Opaque art-directed mixed PBR approximation; not physically accurate sapphire refraction.',shapeScope='Compact corner lobes and a front rim, instead of rejected large leaf loops; source gem shapes, rings and fibers preserved.',fullReferenceFidelityStillRequiresFurtherReview=True,rejected346LargeLoopsNotIntegrated=True,rejected355SavedFloat32DegeneratesNotIntegrated=True,UVPBRNotYetBaked=True,allRigAndPhysicsStillPending=True,fidelityApproved=False,productionComplete=False,notIntegrated=True,notPublished=True,publicWholeRemains='v323',reviewedAt=datetime.datetime.now(datetime.timezone.utc).isoformat())
+(O/'apron_ornament_compact_review_decision_v366.json').write_text(json.dumps(decision,ensure_ascii=False,indent=2),encoding='utf-8')
+p=O/'continuation_state_v023.json';state=read(p);state.update(activeOwnBlenderJobs=[],latestLocalCandidatePendingReview=dict(version='v361_review366',path=a['path'],sha256=a['sha256'],bytes=a['bytes'],review='Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_compact_review_decision_v366.json',savedTopologyContactsAndAppearanceInspected=True,ownUVPBR4KPending=True,notIntegrated=True,notPublished=True,productionComplete=False));p.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding='utf-8');print('COMPACT361_REVIEW366_ACCEPTED_LOCAL_UVPBR_BAKE_ONLY')

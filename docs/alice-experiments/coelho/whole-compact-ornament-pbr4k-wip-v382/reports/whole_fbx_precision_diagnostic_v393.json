@@ -1,0 +1,176 @@
+{
+  "version": "v393",
+  "FBXSHA256": "7ff438d3b55d4528e8f479b6003fc03d87733714e85d4c66668f4ffd319e4b94",
+  "rows": [
+    {
+      "role": "character",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 2.905726432800293e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "apron",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.6391277313232422e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "chain",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.6391277313232422e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "cord",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.6391277313232422e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "lace",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.6391277313232422e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "ornament_outer_left",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.7136335372924805e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": [],
+      "failedNearestCornerTriangle": {
+        "triangle": 16204,
+        "sourceP": [
+          [
+            -0.1903795301914215,
+            -0.32103419303894043,
+            0.5328470468521118
+          ],
+          [
+            -0.18977153301239014,
+            -0.32104501128196716,
+            0.5318475961685181
+          ],
+          [
+            -0.18977154791355133,
+            -0.32104504108428955,
+            0.5318475365638733
+          ]
+        ],
+        "reimportP": [
+          [
+            -0.1903795301914215,
+            -0.32103410363197327,
+            0.5328471064567566
+          ],
+          [
+            -0.18977153301239014,
+            -0.321044921875,
+            0.5318476557731628
+          ],
+          [
+            -0.18977154791355133,
+            -0.3210449516773224,
+            0.5318475961685181
+          ]
+        ],
+        "UV": [
+          [
+            0.4682696759700775,
+            0.8504839539527893
+          ],
+          [
+            0.4682696759700775,
+            0.8514917492866516
+          ],
+          [
+            0.46826961636543274,
+            0.8514917492866516
+          ]
+        ],
+        "reimportUV": [
+          [
+            0.4682696759700775,
+            0.8504839539527893
+          ],
+          [
+            0.4682696759700775,
+            0.8514917492866516
+          ],
+          [
+            0.46826961636543274,
+            0.8514917492866516
+          ]
+        ],
+        "sourceArea": 3.081364851052574e-11,
+        "reimportArea": 3.082470390047831e-11
+      }
+    },
+    {
+      "role": "ornament_inner_left",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 8.940696716308594e-08,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "ornament_center",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 5.960464477539063e-08,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "ornament_inner_right",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 8.940696716308594e-08,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    },
+    {
+      "role": "ornament_outer_right",
+      "triangleOrderExactlyPreserved": true,
+      "maxPositionComponentErrorM": 1.6391277313232422e-07,
+      "cornerUVError": 0.0,
+      "sourceZeroAreaTriangles": 0,
+      "reimportZeroAreaTriangles": 0,
+      "newTinyOrCollapsedTriangles": 0,
+      "examples": []
+    }
+  ],
+  "newCollapsedOrTinyTriangles": 0,
+  "productionComplete": false,
+  "diagnosticDoesNotApproveFormat": true
+}

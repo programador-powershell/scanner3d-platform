@@ -1,0 +1,819 @@
+{
+  "version": "v374",
+  "sourceCandidate": "v370",
+  "sourceSHA256": "e1afd28c78510263a6db657d08399d19c4124e2dffd6ef90792161a8d0578223",
+  "diagnosticLocalOnlyNoWholeCharacterPublication": true,
+  "formats": [
+    {
+      "format": "glb",
+      "fileSHA256": "c31ef6f4fac3f655a26692841177150413c741503df515d378979199c7298868",
+      "objects": [
+        {
+          "object": "Alice.Coelho.Apron.Ornament.center.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.center.Candidate.v370.001",
+          "sourceCorners": 16280,
+          "importedCorners": 19890,
+          "maxPositionUVJointDistance": 2.9802322387695312e-08,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v370.001",
+          "sourceCorners": 33110,
+          "importedCorners": 43728,
+          "maxPositionUVJointDistance": 0.0,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v370.001",
+          "sourceCorners": 34568,
+          "importedCorners": 45906,
+          "maxPositionUVJointDistance": 2.9802322387695312e-08,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v370.001",
+          "sourceCorners": 66200,
+          "importedCorners": 93378,
+          "maxPositionUVJointDistance": 0.0,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v370.001",
+          "sourceCorners": 65288,
+          "importedCorners": 91986,
+          "maxPositionUVJointDistance": 2.9802322387695312e-08,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_basecolor_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "Alice.Coelho.Ornaments.metallic.4096-Alice.Coelho.Ornaments.roughness.4096",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.001",
+              "image": "alice_coelho_ornaments_normal_4096_v370",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "format": "fbx",
+      "fileSHA256": "9d7b6f9ad48a5cf7697f421eac180f1689f9cfc44b181cfad12f939d8bdfb4ec",
+      "objects": [
+        {
+          "object": "Alice.Coelho.Apron.Ornament.center.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.center.Candidate.v370.001",
+          "sourceCorners": 16280,
+          "importedCorners": 16280,
+          "maxPositionUVJointDistance": 8.429369702178807e-08,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v370.001",
+          "sourceCorners": 33110,
+          "importedCorners": 33110,
+          "maxPositionUVJointDistance": 1.0745380149674383e-07,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v370.001",
+          "sourceCorners": 34568,
+          "importedCorners": 34568,
+          "maxPositionUVJointDistance": 1.0745380149674383e-07,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v370.001",
+          "sourceCorners": 66200,
+          "importedCorners": 66200,
+          "maxPositionUVJointDistance": 1.7136335372924805e-07,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        },
+        {
+          "object": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v370",
+          "importedObject": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v370.001",
+          "sourceCorners": 65288,
+          "importedCorners": 65288,
+          "maxPositionUVJointDistance": 1.6391277313232422e-07,
+          "bothWaySurfaceCornerCorrespondencePassed": true,
+          "images": [
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.basecolor.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "sRGB"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.normal.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.roughness.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            },
+            {
+              "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v370.002",
+              "image": "Alice.Coelho.Ornaments.metallic.4096.v370.001",
+              "size": [
+                4096,
+                4096
+              ],
+              "colorSpace": "Non-Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "renders": [
+    {
+      "label": "source370",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_source370_reimport_v374.png",
+      "sha256": "d4e6b9287e4159dd7c48150b36dcc114ff97845cabb52c509615072aaf8adf46",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ]
+    },
+    {
+      "label": "glb",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_glb_reimport_v374.png",
+      "sha256": "43fff132fbbdfc9f04bace82e4c89374be04c5c82362ff97e7457cc476784a6e",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ]
+    },
+    {
+      "label": "fbx",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_fbx_reimport_v374.png",
+      "sha256": "b3ece30064d5fcee28b245b9f881c812979e61164139e7c163a602a2812886e0",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ]
+    }
+  ],
+  "geometryAndUVJointCornerCorrespondencePassed": true,
+  "images4KBoundAfterBothActualReimports": true,
+  "requiresActualAppearanceInspection": true,
+  "rigPhysicsNotProven": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "elapsedSeconds": 74.05205297470093
+}

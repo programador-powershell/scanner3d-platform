@@ -1,0 +1,23 @@
+{
+  "version": "v381",
+  "createdAt": "2026-10-04T14:12:40.028926+00:00",
+  "referencePath": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+  "actualReferenceSHA256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9",
+  "changes": [
+    {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_compact_corner_authoring_audit_v361.json",
+      "previousFileSHA256": "62350a9422a02ea1bf87cc33c520f2577c4627b5087e2a95174af08591693650",
+      "fields": [
+        {
+          "field": "referenceSHA256",
+          "previous": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e361a10342080c3320d5bcd9",
+          "corrected": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9"
+        }
+      ]
+    }
+  ],
+  "reason": "Earlier script-version substitution modified characters inside a reference hash. The image itself and Blender geometry did not change. Metadata corrected from the actual reference bytes.",
+  "actualReferenceUnchanged": true,
+  "wholeBlendUnchanged": true,
+  "productionComplete": false
+}

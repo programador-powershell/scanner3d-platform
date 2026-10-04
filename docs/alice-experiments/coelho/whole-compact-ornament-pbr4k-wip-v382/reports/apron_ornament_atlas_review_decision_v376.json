@@ -1,0 +1,202 @@
+{
+  "version": "v376",
+  "createdAt": "2026-10-04T14:02:04.782811+00:00",
+  "sourceCandidate": "v370",
+  "sourceCandidateSHA256": "e1afd28c78510263a6db657d08399d19c4124e2dffd6ef90792161a8d0578223",
+  "allImagesActuallyInspected": true,
+  "inspectedSavedRenders": [
+    {
+      "view": "front_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_front_full_atlas_review_v371.png",
+      "sha256": "c54816a7e77be8fbf6d4b35e4748cb0d98cb4b9b6323cc343ada270046860476",
+      "cameraLocation": [
+        0,
+        -4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "left_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_left_profile_full_atlas_review_v371.png",
+      "sha256": "e4c6ddeac7f1c338b591f4a8a15788266a7b14d98d9ba93e5ff39a9c61b9f3c8",
+      "cameraLocation": [
+        -4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "right_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_right_profile_full_atlas_review_v371.png",
+      "sha256": "7be87885e4ffdc7f750802f5460c4eb02fa838d4dfa83f67ae743e76f2fe83e1",
+      "cameraLocation": [
+        4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "back_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_back_full_atlas_review_v371.png",
+      "sha256": "0b25967dc96847a288a11a0b7a3d40736ed3ae7c2ead7aea4cd03da269657626",
+      "cameraLocation": [
+        0,
+        4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_atlas_review_v371.png",
+      "sha256": "85fa42088be94de2b364c4eaec8a08f3e0af5b422d1eab76ca95e42d57a23ad5",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "sameCameraAs267": true,
+      "actualImageInspected": true
+    }
+  ],
+  "inspectedActualFormatReimportRenders": [
+    {
+      "label": "source370",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_source370_reimport_v374.png",
+      "sha256": "d4e6b9287e4159dd7c48150b36dcc114ff97845cabb52c509615072aaf8adf46",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    },
+    {
+      "label": "glb",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_glb_reimport_v374.png",
+      "sha256": "43fff132fbbdfc9f04bace82e4c89374be04c5c82362ff97e7457cc476784a6e",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    },
+    {
+      "label": "fbx",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornament_material_fbx_reimport_v374.png",
+      "sha256": "b3ece30064d5fcee28b245b9f881c812979e61164139e7c163a602a2812886e0",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "actualImageInspected": true
+    }
+  ],
+  "continuousUVOverlapPairs": 0,
+  "ownPackedPBR4KAndActualFormatReimportVerified": true,
+  "geometryExactlyPreservedFrom361": true,
+  "staticSavedTopology362AndContacts364ApplicableBecauseExact361Geometry": true,
+  "legacy371Key267CorrectedByAuthorAndActualPreservationTo361": true,
+  "compactCornerGeometryAndBlueMaterialChangedSincePublished323": true,
+  "newPhotoProjectionPerformed": false,
+  "newHighPolyNormalDetailCreated": false,
+  "opaqueBlueApproximationNotPhysicalSapphire": true,
+  "acceptedForWholeStaticWIPIntegrationReview": true,
+  "acceptedForFinalAssetOrGameplay": false,
+  "referenceFidelityApproved": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "publicWholeCheckpointRemains": "v323"
+}

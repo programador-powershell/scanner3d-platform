@@ -1,0 +1,22 @@
+"""Independent reopen of saved own-UV material candidate; no source edit/save."""
+import bpy,numpy as np,json,hashlib,time
+from pathlib import Path
+from mathutils import Vector
+R=Path('F:/Alice/SharedProduction');O=R/'Blender/Work/alice_coelho/tripo_h31_budget55_v001';E=O/'Evidence';start=time.time()
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+a=read(O/'apron_ornament_pbr_atlas_authoring_audit_v370.json');source=R/a['path'];assert sha(source)==a['sha256'];old=read(O/'apron_ornament_compact_corner_authoring_audit_v361.json');assert sha(R/old['path'])==old['sha256'];objects=[];preservation=[]
+for row,previous in zip(a['newObjects'],old['newObjects']):
+    ob=bpy.data.objects[row['object']];base=bpy.data.objects[previous['object']];assert ob.matrix_world==base.matrix_world;P=np.asarray([v.co[:] for v in ob.data.vertices],np.float32);assert np.array_equal(P,np.asarray([v.co[:] for v in base.data.vertices],np.float32));assert [tuple(p.vertices) for p in ob.data.polygons]==[tuple(p.vertices) for p in base.data.polygons];assert [p.material_index for p in ob.data.polygons]==[p.material_index for p in base.data.polygons];assert [p.use_smooth for p in ob.data.polygons]==[p.use_smooth for p in base.data.polygons];assert [[(x.group,x.weight) for x in v.groups] for v in ob.data.vertices]==[[(x.group,x.weight) for x in v.groups] for v in base.data.vertices]
+    assert len(ob.data.uv_layers)==1 and ob.data.uv_layers.active.name==a['UVMapName'];uv=np.asarray([x.uv[:] for x in ob.data.uv_layers.active.data],np.float32);assert np.isfinite(uv).all() and uv.min()>=0 and uv.max()<=1;assert hashlib.sha256(uv.tobytes()).hexdigest()==row['uvSHA256'];preservation.append(dict(object=ob.name,positionsFacesGroupsSmoothAndMaterialIndicesExactlyPreserved=True,ownUVExactlyMatchesSavedAuthorAudit=True,loopCount=len(uv)));objects.append(ob)
+maps=[]
+for role,entry in a['maps'].items():
+    im=bpy.data.images['Alice.Coelho.Ornaments.'+role+'.4096.v370'];assert list(im.size)==[4096,4096] and im.packed_file;assert sha(R/entry['path'])==entry['sha256'];assert im.colorspace_settings.name==entry['colorSpace'];pixels=np.empty(len(im.pixels),np.float32);im.pixels.foreach_get(pixels);pixels=pixels.reshape(-1,4);assert np.isfinite(pixels).all();maps.append(dict(role=role,packed=True,size=list(im.size),sha256=entry['sha256'],colorSpace=im.colorspace_settings.name,pixelChannelMinimum=pixels[:,:3].min(0).tolist(),pixelChannelMaximum=pixels[:,:3].max(0).tolist(),uniqueApproximateColors=int(len(np.unique(np.round(pixels[::37,:3],4),axis=0)))));del pixels
+scene=bpy.context.scene;cam=scene.camera;scene.cycles.samples=48;wanted={ob.name for ob in objects}|{'Alice.Coelho.WholeCheckpoint318.'+x for x in ['apron','chain','cord','lace']}
+for ob in scene.objects:
+    if ob.type in {'MESH','CURVE'}:ob.hide_render=ob.name not in wanted
+reference=read(O/'apron_ornament_full_reference_render_audit_v271.json');fixed=read(O/'apron_ornament_fixed_detail_render_audit_v277.json');renders=[]
+for view in reference['renders']:
+    if view['view']=='inner_left_detail':view=fixed['renders'][0]
+    cam.location=view['cameraLocation'];cam.rotation_euler=(Vector(view['cameraTarget'])-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=view['orthoScale'];scene.render.resolution_x,scene.render.resolution_y=view['resolution'];scene.render.resolution_percentage=100;out=E/('apron_ornaments_'+view['view']+'_atlas_review_v371.png');scene.render.filepath=str(out);bpy.ops.render.render(write_still=True);renders.append(dict(view,path=out.relative_to(R).as_posix(),sha256=sha(out),sameCameraAs267=True));print('ATLAS371_RENDERED',view['view'],flush=True)
+assert sha(source)==a['sha256'];report=dict(version='v371',sourceCandidate='v370',sourceSHA256=a['sha256'],geometryAndGroupsExactlyPreservedFromStaticallyVerified267=True,preservation=preservation,packedMaps=maps,renders=renders,sourceFilePreserved=True,ownImages4KVerified=True,normalMapDoesNotAddNewHighPolyDetail=True,UVRasterAndContinuousAuthorGuardsPassed=True,requiresActualImageInspection=True,rigged=False,physicsVerified=False,referenceFidelityApproved=False,notIntegrated=True,notPublished=True,productionComplete=False,elapsedSeconds=time.time()-start);(O/'apron_ornament_pbr_atlas_reopen_audit_v371.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print('ATLAS371_REOPEN_TERMINAL_REQUIRES_IMAGE_REVIEW',flush=True)

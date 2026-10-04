@@ -1,0 +1,83 @@
+{
+  "version": "v379",
+  "createdAt": "2026-10-04T14:09:47.011771+00:00",
+  "sourceCandidate": "v377",
+  "sourceSHA256": "0eebbe9d37847eae449cd1906de134cf1e2fe47015d015662744b7e199eee6fc",
+  "allFiveWholeViewsActuallyInspected": true,
+  "allTenCompleteMeshSignaturesExactlyVerified": true,
+  "previousWhole318BaseAndOwnOrnament370GeometryExactlyPreserved": true,
+  "portablePackedImages": true,
+  "records": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_front_ornament_wip_v378.png",
+      "sha256": "e08e1d0ab41ed5b36b6323d1fc3a4e59b40c79c91b7d3c14c6ccb9d31789d638",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05,
+      "actualImageInspected": true
+    },
+    {
+      "view": "threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_threequarter_ornament_wip_v378.png",
+      "sha256": "1ffaceb44b0babb875fc885915d8815f53ad4b96253c38e90a847ee5f9810d2f",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05,
+      "actualImageInspected": true
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_back_ornament_wip_v378.png",
+      "sha256": "5fcceaca728d2357c7a5ab04eb49b8ddbe37c3feaac7222f9fae378bdcc0f97e",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05,
+      "actualImageInspected": true
+    },
+    {
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_left_profile_ornament_wip_v378.png",
+      "sha256": "08066ce2272249724ad3ded956b16a2f6069728a4e7fda0de3b61df587000947",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05,
+      "actualImageInspected": true
+    },
+    {
+      "view": "right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_right_profile_ornament_wip_v378.png",
+      "sha256": "c9970aed1d4165f6e8185f2af4bde33f75ce36ee71a7164d7be978f032f42c9e",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05,
+      "actualImageInspected": true
+    }
+  ],
+  "acceptedForLocalWholeExportReimportReview": true,
+  "acceptedForFinalAsset": false,
+  "referenceFidelityApproved": false,
+  "filigreeAndOtherLayersStillPending": true,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "publicWholeCheckpointRemains": "v323"
+}
