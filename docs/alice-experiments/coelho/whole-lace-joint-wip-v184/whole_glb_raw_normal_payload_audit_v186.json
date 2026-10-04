@@ -1,0 +1,73 @@
+{
+  "version": "v186",
+  "sha256": "ada506375190ad8bcd392d0f22ce004ff93ac29057f0df6f1fdf04394120b94d",
+  "directBinaryGLBPayload": true,
+  "allSourceTrianglesAndNormalsVerified": true,
+  "normalExporterRoundingDigits": 4,
+  "exactUnroundedSourceNormalsNotClaimed": true,
+  "exporterSourceSHA256": "fa36dec52271bd7bbde8bd9e75357698e5574b5f32ab993c454f585b895a1c6e",
+  "verificationScope": "Replayed native exporter rounding and normalization, then compared each matched corner; original unrounded normals not claimed component-exact.",
+  "records": [
+    {
+      "role": "character",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "apron",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "chain",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "cord",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "lace",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03956468030810356
+      ]
+    }
+  ],
+  "productionComplete": false
+}

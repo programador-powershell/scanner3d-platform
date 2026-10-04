@@ -1,0 +1,988 @@
+{
+  "version": "v173",
+  "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_apron_tip_chain_cord_working_v145.blend",
+  "sourceSHA256": "20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_lace_neighbor_sections_candidate_v173.blend",
+  "sha256": "3b25804a4a97788aa85fa66acdcc188fca306d663869dc44ac5e105fb2d4202f",
+  "bytes": 559994553,
+  "object": "Alice.Coelho.Apron.LaceNeighborSections.Candidate.v173",
+  "clothObject": "Alice.Coelho.WholeCheckpoint145.apron",
+  "oldObject": "Alice.Coelho.WholeCheckpoint145.lace",
+  "modifiedPaths": [
+    2028,
+    2029,
+    2037,
+    2038,
+    2047,
+    2048,
+    2064,
+    2067,
+    2068,
+    2069,
+    2070,
+    2072,
+    2075,
+    2082,
+    2085,
+    2086,
+    2087,
+    2088,
+    2098,
+    2102,
+    2103,
+    2108,
+    2109,
+    2110,
+    2122,
+    2142,
+    4173,
+    4174,
+    4189,
+    4191,
+    4193,
+    4204,
+    4209,
+    4212,
+    4215,
+    4225,
+    4232,
+    4244,
+    4249,
+    4251,
+    4252,
+    4257,
+    4259,
+    4265,
+    4273,
+    4281,
+    4282,
+    4292,
+    4293,
+    4294,
+    4295,
+    4297,
+    4304,
+    4305
+  ],
+  "maxLocalVertexDisplacementM": 0.00020931519226003858,
+  "maxFrontalXZDisplacementM": 0.00020806568882172636,
+  "maxRigidSectionRadialErrorM": 1.1102230246251565e-16,
+  "unchangedPathsExactlyPreserved": true,
+  "UVTopologyMaterialsPreserved": true,
+  "allModifiedSelfTrianglesChecked": true,
+  "modifiedSelfIntersectionPaths": 0,
+  "steps": [
+    {
+      "SATTrianglePairs": 1431,
+      "intersectingMotifPairs": 5,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 482,
+          "pathPairs": [
+            [
+              2028,
+              2067
+            ],
+            [
+              2028,
+              2068
+            ],
+            [
+              2028,
+              2069
+            ],
+            [
+              2028,
+              2081
+            ],
+            [
+              2028,
+              2082
+            ],
+            [
+              2029,
+              2067
+            ],
+            [
+              2029,
+              2068
+            ],
+            [
+              2029,
+              2069
+            ],
+            [
+              2029,
+              2081
+            ],
+            [
+              2037,
+              2068
+            ],
+            [
+              2038,
+              2067
+            ],
+            [
+              2038,
+              2068
+            ],
+            [
+              2047,
+              2067
+            ],
+            [
+              2047,
+              2068
+            ],
+            [
+              2048,
+              2067
+            ],
+            [
+              2049,
+              2067
+            ],
+            [
+              2064,
+              2067
+            ],
+            [
+              2064,
+              2068
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "left",
+            53
+          ],
+          "motifB": [
+            "left",
+            54
+          ],
+          "SATTrianglePairs": 291,
+          "pathPairs": [
+            [
+              2067,
+              2109
+            ],
+            [
+              2068,
+              2122
+            ],
+            [
+              2083,
+              2142
+            ],
+            [
+              2086,
+              2107
+            ],
+            [
+              2088,
+              2107
+            ],
+            [
+              2088,
+              2129
+            ],
+            [
+              2098,
+              2122
+            ],
+            [
+              2102,
+              2107
+            ],
+            [
+              2102,
+              2108
+            ],
+            [
+              2103,
+              2120
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            51
+          ],
+          "motifB": [
+            "right",
+            52
+          ],
+          "SATTrianglePairs": 308,
+          "pathPairs": [
+            [
+              4173,
+              4227
+            ],
+            [
+              4173,
+              4244
+            ],
+            [
+              4174,
+              4215
+            ],
+            [
+              4189,
+              4248
+            ],
+            [
+              4189,
+              4249
+            ],
+            [
+              4204,
+              4215
+            ],
+            [
+              4204,
+              4216
+            ],
+            [
+              4204,
+              4244
+            ],
+            [
+              4208,
+              4215
+            ],
+            [
+              4209,
+              4225
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            52
+          ],
+          "motifB": [
+            "right",
+            53
+          ],
+          "SATTrianglePairs": 48,
+          "pathPairs": [
+            [
+              4212,
+              4257
+            ],
+            [
+              4212,
+              4265
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            53
+          ],
+          "motifB": [
+            "right",
+            54
+          ],
+          "SATTrianglePairs": 302,
+          "pathPairs": [
+            [
+              4251,
+              4292
+            ],
+            [
+              4252,
+              4294
+            ],
+            [
+              4252,
+              4295
+            ],
+            [
+              4252,
+              4304
+            ],
+            [
+              4252,
+              4326
+            ],
+            [
+              4281,
+              4291
+            ],
+            [
+              4281,
+              4294
+            ],
+            [
+              4281,
+              4304
+            ],
+            [
+              4281,
+              4305
+            ],
+            [
+              4282,
+              4296
+            ],
+            [
+              4282,
+              4297
+            ],
+            [
+              4282,
+              4326
+            ]
+          ]
+        }
+      ],
+      "iteration": 0
+    },
+    {
+      "SATTrianglePairs": 804,
+      "intersectingMotifPairs": 5,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 270,
+          "pathPairs": [
+            [
+              2028,
+              2070
+            ],
+            [
+              2028,
+              2071
+            ],
+            [
+              2028,
+              2072
+            ],
+            [
+              2028,
+              2103
+            ],
+            [
+              2029,
+              2067
+            ],
+            [
+              2029,
+              2070
+            ],
+            [
+              2029,
+              2072
+            ],
+            [
+              2029,
+              2103
+            ],
+            [
+              2037,
+              2067
+            ],
+            [
+              2038,
+              2067
+            ],
+            [
+              2047,
+              2067
+            ],
+            [
+              2047,
+              2068
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "left",
+            53
+          ],
+          "motifB": [
+            "left",
+            54
+          ],
+          "SATTrianglePairs": 228,
+          "pathPairs": [
+            [
+              2075,
+              2122
+            ],
+            [
+              2085,
+              2108
+            ],
+            [
+              2087,
+              2108
+            ],
+            [
+              2088,
+              2107
+            ],
+            [
+              2088,
+              2122
+            ],
+            [
+              2098,
+              2109
+            ],
+            [
+              2102,
+              2108
+            ],
+            [
+              2103,
+              2109
+            ],
+            [
+              2103,
+              2110
+            ],
+            [
+              2103,
+              2120
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            51
+          ],
+          "motifB": [
+            "right",
+            52
+          ],
+          "SATTrianglePairs": 70,
+          "pathPairs": [
+            [
+              4173,
+              4215
+            ],
+            [
+              4189,
+              4249
+            ],
+            [
+              4191,
+              4215
+            ],
+            [
+              4193,
+              4215
+            ],
+            [
+              4204,
+              4216
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            52
+          ],
+          "motifB": [
+            "right",
+            53
+          ],
+          "SATTrianglePairs": 16,
+          "pathPairs": [
+            [
+              4212,
+              4257
+            ],
+            [
+              4232,
+              4257
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            53
+          ],
+          "motifB": [
+            "right",
+            54
+          ],
+          "SATTrianglePairs": 220,
+          "pathPairs": [
+            [
+              4252,
+              4294
+            ],
+            [
+              4252,
+              4295
+            ],
+            [
+              4252,
+              4304
+            ],
+            [
+              4252,
+              4305
+            ],
+            [
+              4259,
+              4297
+            ],
+            [
+              4273,
+              4297
+            ],
+            [
+              4281,
+              4292
+            ],
+            [
+              4282,
+              4297
+            ]
+          ]
+        }
+      ],
+      "iteration": 1
+    },
+    {
+      "SATTrianglePairs": 406,
+      "intersectingMotifPairs": 4,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 158,
+          "pathPairs": [
+            [
+              2028,
+              2067
+            ],
+            [
+              2028,
+              2068
+            ],
+            [
+              2028,
+              2069
+            ],
+            [
+              2028,
+              2081
+            ],
+            [
+              2028,
+              2082
+            ],
+            [
+              2029,
+              2071
+            ],
+            [
+              2038,
+              2067
+            ],
+            [
+              2047,
+              2080
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "left",
+            53
+          ],
+          "motifB": [
+            "left",
+            54
+          ],
+          "SATTrianglePairs": 74,
+          "pathPairs": [
+            [
+              2067,
+              2109
+            ],
+            [
+              2085,
+              2108
+            ],
+            [
+              2087,
+              2108
+            ],
+            [
+              2102,
+              2108
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            51
+          ],
+          "motifB": [
+            "right",
+            52
+          ],
+          "SATTrianglePairs": 38,
+          "pathPairs": [
+            [
+              4191,
+              4225
+            ],
+            [
+              4204,
+              4244
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            53
+          ],
+          "motifB": [
+            "right",
+            54
+          ],
+          "SATTrianglePairs": 136,
+          "pathPairs": [
+            [
+              4251,
+              4292
+            ],
+            [
+              4251,
+              4295
+            ],
+            [
+              4252,
+              4295
+            ],
+            [
+              4252,
+              4297
+            ],
+            [
+              4259,
+              4297
+            ],
+            [
+              4273,
+              4297
+            ],
+            [
+              4281,
+              4291
+            ],
+            [
+              4281,
+              4305
+            ]
+          ]
+        }
+      ],
+      "iteration": 2
+    },
+    {
+      "SATTrianglePairs": 104,
+      "intersectingMotifPairs": 4,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 26,
+          "pathPairs": [
+            [
+              2028,
+              2071
+            ],
+            [
+              2049,
+              2067
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "left",
+            53
+          ],
+          "motifB": [
+            "left",
+            54
+          ],
+          "SATTrianglePairs": 20,
+          "pathPairs": [
+            [
+              2098,
+              2109
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            51
+          ],
+          "motifB": [
+            "right",
+            52
+          ],
+          "SATTrianglePairs": 18,
+          "pathPairs": [
+            [
+              4209,
+              4225
+            ]
+          ]
+        },
+        {
+          "motifA": [
+            "right",
+            53
+          ],
+          "motifB": [
+            "right",
+            54
+          ],
+          "SATTrianglePairs": 40,
+          "pathPairs": [
+            [
+              4251,
+              4295
+            ],
+            [
+              4252,
+              4295
+            ],
+            [
+              4281,
+              4292
+            ],
+            [
+              4281,
+              4293
+            ]
+          ]
+        }
+      ],
+      "iteration": 3
+    },
+    {
+      "SATTrianglePairs": 60,
+      "intersectingMotifPairs": 1,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 60,
+          "pathPairs": [
+            [
+              2028,
+              2068
+            ],
+            [
+              2028,
+              2069
+            ],
+            [
+              2028,
+              2081
+            ],
+            [
+              2028,
+              2082
+            ]
+          ]
+        }
+      ],
+      "iteration": 4
+    },
+    {
+      "SATTrianglePairs": 20,
+      "intersectingMotifPairs": 1,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 20,
+          "pathPairs": [
+            [
+              2028,
+              2071
+            ]
+          ]
+        }
+      ],
+      "iteration": 5
+    },
+    {
+      "SATTrianglePairs": 46,
+      "intersectingMotifPairs": 1,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 46,
+          "pathPairs": [
+            [
+              2028,
+              2068
+            ],
+            [
+              2028,
+              2069
+            ],
+            [
+              2028,
+              2081
+            ],
+            [
+              2028,
+              2082
+            ]
+          ]
+        }
+      ],
+      "iteration": 6
+    },
+    {
+      "SATTrianglePairs": 14,
+      "intersectingMotifPairs": 1,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 14,
+          "pathPairs": [
+            [
+              2028,
+              2071
+            ]
+          ]
+        }
+      ],
+      "iteration": 7
+    },
+    {
+      "SATTrianglePairs": 28,
+      "intersectingMotifPairs": 1,
+      "contacts": [
+        {
+          "motifA": [
+            "left",
+            52
+          ],
+          "motifB": [
+            "left",
+            53
+          ],
+          "SATTrianglePairs": 28,
+          "pathPairs": [
+            [
+              2028,
+              2069
+            ],
+            [
+              2028,
+              2081
+            ],
+            [
+              2028,
+              2082
+            ]
+          ]
+        }
+      ],
+      "iteration": 8
+    },
+    {
+      "SATTrianglePairs": 0,
+      "intersectingMotifPairs": 0,
+      "contacts": [],
+      "iteration": 9
+    }
+  ],
+  "interMotifSATTrianglePairs": 0,
+  "actualTargetSATCounts": {
+    "Alice.Coelho.WholeCheckpoint145.apron": 0,
+    "Alice.Coelho.WholeCheckpoint145.character": 0,
+    "Alice.Coelho.WholeCheckpoint145.chain": 0,
+    "Alice.Coelho.WholeCheckpoint145.cord": 0
+  },
+  "intraMotifContactsRemainNotSewApproved": true,
+  "sourceWholePreserved": true,
+  "notIntegrated": true,
+  "notPublished": true,
+  "independentFloat32ReopenAndReferenceComparisonPending": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "elapsedSeconds": 139.64557600021362
+}

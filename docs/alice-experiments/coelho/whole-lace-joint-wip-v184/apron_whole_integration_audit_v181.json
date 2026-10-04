@@ -1,0 +1,512 @@
+{
+  "version": "v181",
+  "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_lace_neighbor_sections_candidate_v177.blend",
+  "sourceSHA256": "3515ac9cf910361e01f918eb76da7327c0c4994f3f71fdd20a90d26eea401833",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_apron_lace_joint_working_v181.blend",
+  "bytes": 616385300,
+  "sha256": "ef956916d3e53123a53554a29744b7ce2973703a7875a5fcda1b5865762d2813",
+  "wholeCharacterWithDress": true,
+  "collection": "COELHO_WHOLE_CHECKPOINT_V181_WIP",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.WholeCheckpoint181.character",
+      "source": "Alice.Coelho.WholeCheckpoint145.character"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.WholeCheckpoint181.apron",
+      "source": "Alice.Coelho.WholeCheckpoint145.apron"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.WholeCheckpoint181.chain",
+      "source": "Alice.Coelho.WholeCheckpoint145.chain"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.WholeCheckpoint181.cord",
+      "source": "Alice.Coelho.WholeCheckpoint145.cord"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.WholeCheckpoint181.lace",
+      "source": "Alice.Coelho.Apron.LaceNeighborSections.Candidate.v177"
+    }
+  ],
+  "sourceSignatures": {
+    "Alice.Coelho.WholeCheckpoint145.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "uv": [
+        "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint145.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "uv": [
+        "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      ],
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      },
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint145.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "uv": [
+        "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint145.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "uv": [
+        "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.LaceNeighborSections.Candidate.v177": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "uv": [
+        "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint145.lace": {
+      "positions": "0a1ef57ff9b9a68891f41b54035c4551311aea33784fe1cb3a26d81e5ad7162b",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "uv": [
+        "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Complete.High.SourcePreserved": {
+      "positions": "29c2d175da50d8d9192b20f78e915a0caaa3a60a96e67426b171fcf7e006a5c9",
+      "faces": "a5abf8f7d9e640c5957823326ed048c1a69b37a4cd546ec52be5dbf44b7de74c",
+      "uv": [
+        "1eac56036d0f94c3a1b5743f425503cb50be4b5843624c4ca34113ec38490aeb"
+      ],
+      "keys": {},
+      "materials": [
+        "tripo_material_48b1adc6-8159-4530-9ba4-57fa9c5bd4ab"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "wholeCopySignatures": {
+    "Alice.Coelho.WholeCheckpoint181.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "uv": [
+        "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint181.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "uv": [
+        "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      ],
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      },
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint181.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "uv": [
+        "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint181.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "uv": [
+        "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint181.lace": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "uv": [
+        "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "sourceWholeHighAndAllCandidatesPreserved": true,
+  "portablePackedImages": true,
+  "rigged": false,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "wholeVisualAndFormatReviewPending": true,
+  "elapsedSeconds": 175.32073712348938
+}

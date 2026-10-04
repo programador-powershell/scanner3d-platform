@@ -1,0 +1,96 @@
+{
+  "version": "v184",
+  "wholeCharacterWithDress": true,
+  "sourceWholeWorkingVersion": "v181",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.Export184.character",
+      "vertices": 107832,
+      "triangles": 150000,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "positionSHA256": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.Export184.apron",
+      "vertices": 4202,
+      "triangles": 8400,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "positionSHA256": "21b606a3078598afdba9b0784af03332d65c21d36765ca82f45fb6af968a51c2"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.Export184.chain",
+      "vertices": 30528,
+      "triangles": 61056,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "positionSHA256": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.Export184.cord",
+      "vertices": 11076,
+      "triangles": 22136,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "positionSHA256": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.Export184.lace",
+      "vertices": 577422,
+      "triangles": 1144188,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "positionSHA256": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf"
+    }
+  ],
+  "totalTriangles": 1385780,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_apron_lace_joint_working_v181.blend",
+      "bytes": 616385300,
+      "sha256": "ef956916d3e53123a53554a29744b7ce2973703a7875a5fcda1b5865762d2813"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/apron_lace_joint_checkpoint_v184/alice_coelho_complete_apron_lace_joint_checkpoint_v184.glb",
+      "bytes": 147476592,
+      "sha256": "ada506375190ad8bcd392d0f22ce004ff93ac29057f0df6f1fdf04394120b94d"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/apron_lace_joint_checkpoint_v184/alice_coelho_complete_apron_lace_joint_checkpoint_v184.fbx",
+      "bytes": 184712588,
+      "sha256": "57602adee4fbc0172f63cb43f52363c17065c5a88fd26573f76fa00ca19d06a2"
+    }
+  },
+  "sourceBlendUnchanged": true,
+  "explicitTriangleExport": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "publicationPerformed": false,
+  "requiresIndependentReimportAndVisualReview": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 135.078537940979
+}

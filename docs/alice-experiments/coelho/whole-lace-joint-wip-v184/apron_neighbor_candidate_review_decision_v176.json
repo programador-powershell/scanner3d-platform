@@ -1,0 +1,21 @@
+{
+  "version": "v176_review_of_v173",
+  "candidateVersion": "v173",
+  "candidatePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_lace_neighbor_sections_candidate_v173.blend",
+  "candidateSHA256": "3b25804a4a97788aa85fa66acdcc188fca306d663869dc44ac5e105fb2d4202f",
+  "allSixSameCameraImagesActuallyInspected": true,
+  "referenceBoard5Inspected": true,
+  "crossMotifSATTrianglePairs": 0,
+  "newNetPathPairs": 7,
+  "newNetSATTrianglePairs": 148,
+  "UVExactlyPreserved": true,
+  "maxSavedRigidSectionRadialErrorM": 5.463759106261179e-08,
+  "fullAssemblyAcceptedForPublication": false,
+  "acceptedForFurtherSameApronJointRepair": true,
+  "reason": "Inter-motif contacts cleared, but seven new intra-net contacts were independently found. Continue joint clearance repair; do not integrate/publish v173.",
+  "referenceFidelityApproved": false,
+  "productionComplete": false,
+  "publicWholeCheckpointRemains": "v147",
+  "additionalTripoCredits": 0,
+  "updatedAt": "2026-10-04T06:51:45.973212+00:00"
+}

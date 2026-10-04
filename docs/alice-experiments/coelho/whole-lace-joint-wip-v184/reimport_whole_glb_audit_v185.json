@@ -1,0 +1,131 @@
+{
+  "version": "v185",
+  "format": "glb",
+  "sha256": "ada506375190ad8bcd392d0f22ce004ff93ac29057f0df6f1fdf04394120b94d",
+  "independentReimport": true,
+  "wholeCharacterWithDress": true,
+  "objects": [
+    {
+      "role": "character",
+      "vertices": 168027,
+      "triangles": 150000,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.6091579772641813,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007.001",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011.001"
+      ]
+    },
+    {
+      "role": "apron",
+      "vertices": 4586,
+      "triangles": 8400,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.02139033912773891,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052.001",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052.001"
+      ]
+    },
+    {
+      "role": "chain",
+      "vertices": 37100,
+      "triangles": 61056,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.02014216344078863,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066.001"
+      ]
+    },
+    {
+      "role": "cord",
+      "vertices": 12970,
+      "triangles": 22136,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.0202132466435679,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.001"
+      ]
+    },
+    {
+      "role": "lace",
+      "vertices": 717282,
+      "triangles": 1144188,
+      "allSourceTrianglesMatched": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08,
+      "maxNormalAngleDegrees": 0.06576362284032763,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082.001",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082.001"
+      ]
+    }
+  ],
+  "totalTriangles": 1385780,
+  "allTriangleUVMaterialAssignmentsVerified": true,
+  "allImporterNormalEncodingReplaysVerified": true,
+  "rawNormalAudits": [
+    "whole_glb_raw_normal_payload_audit_v186.json",
+    "whole_fbx_raw_normal_payload_audit_v187.json"
+  ],
+  "rawNormalAuditRequiredBeforePublication": true,
+  "rawSourceNormalIdentityInBlenderNotClaimed": true,
+  "renders": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_front_v185.png",
+      "sha256": "3907cd3a670034ba82ddca3f9f95e0dff40ce132744021b1cd6cb0b04ca393e5"
+    },
+    {
+      "view": "threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_threequarter_v185.png",
+      "sha256": "548ece771124539db541d266308a582b11481eb86c7a04ec0e96f693e96a823e"
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_back_v185.png",
+      "sha256": "2d9a3cee69d9bab9a54c9833fa032c71c517e04d74d9cc84f00f256a12a614ee"
+    },
+    {
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_left_profile_v185.png",
+      "sha256": "e49969535a9088943bcaf47ce11f008bb6f4075f78bc8036b8418f22181deaa7"
+    },
+    {
+      "view": "right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_right_profile_v185.png",
+      "sha256": "acf123e62000135eceee67f52221f507871fbee39d76b62b35d9033318a3595e"
+    }
+  ],
+  "sameCameraLightsWorldAndColorManagement": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "elapsedSeconds": 282.42738103866577
+}
