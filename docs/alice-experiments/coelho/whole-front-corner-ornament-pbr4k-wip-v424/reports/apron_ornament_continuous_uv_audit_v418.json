@@ -1,0 +1,19 @@
+{
+  "version": "v418",
+  "sourceCandidate": "v417",
+  "sourceSHA256": "e681d774f70d43d833915216f8d1c9430db6195453d6cd8ee5e0778111408555",
+  "method": "Inclusive actual triangle AABB coverage in a 128x128 2D spatial grid, unique pairs, six normalized 2D edge-axis SAT strict positive interval overlap >1e-12 UV.",
+  "unitTestsPassed": true,
+  "unitTestsCoverContainedIdenticalSeparatedAndSharedEdgeTriangles": true,
+  "triangles": 97794,
+  "broadphasePairs": 344726,
+  "continuousUVOverlapPairs": 0,
+  "examples": [],
+  "positiveAreaOverlapToleranceUV": 1e-12,
+  "previousCoplanar3DBVH295RejectedAsNonProof": true,
+  "sourceUnchanged": true,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "elapsedSeconds": 27.7082622051239
+}

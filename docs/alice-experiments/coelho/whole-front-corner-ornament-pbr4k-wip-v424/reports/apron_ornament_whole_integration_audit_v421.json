@@ -1,0 +1,845 @@
+{
+  "version": "v421",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_ornament_pbr4k_working_v421.blend",
+  "bytes": 761407411,
+  "sha256": "c2aac2b799983f281ad7eef03f44051b58346ba82108f8d54e1717e1d1d4bfb9",
+  "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_ornaments_pbr_atlas_candidate_v417.blend",
+  "sourceSHA256": "e681d774f70d43d833915216f8d1c9430db6195453d6cd8ee5e0778111408555",
+  "wholeCharacterWithDress": true,
+  "collection": "COELHO_WHOLE_CHECKPOINT_V421_WIP",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.WholeCheckpoint421.character",
+      "source": "Alice.Coelho.WholeCheckpoint377.character"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.WholeCheckpoint421.apron",
+      "source": "Alice.Coelho.WholeCheckpoint377.apron"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.WholeCheckpoint421.chain",
+      "source": "Alice.Coelho.WholeCheckpoint377.chain"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.WholeCheckpoint421.cord",
+      "source": "Alice.Coelho.WholeCheckpoint377.cord"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.WholeCheckpoint421.lace",
+      "source": "Alice.Coelho.WholeCheckpoint377.lace"
+    },
+    {
+      "role": "ornament_outer_left",
+      "name": "Alice.Coelho.WholeCheckpoint421.ornament_outer_left",
+      "source": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v417"
+    },
+    {
+      "role": "ornament_inner_left",
+      "name": "Alice.Coelho.WholeCheckpoint421.ornament_inner_left",
+      "source": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v417"
+    },
+    {
+      "role": "ornament_center",
+      "name": "Alice.Coelho.WholeCheckpoint421.ornament_center",
+      "source": "Alice.Coelho.Apron.Ornament.center.Candidate.v417"
+    },
+    {
+      "role": "ornament_inner_right",
+      "name": "Alice.Coelho.WholeCheckpoint421.ornament_inner_right",
+      "source": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v417"
+    },
+    {
+      "role": "ornament_outer_right",
+      "name": "Alice.Coelho.WholeCheckpoint421.ornament_outer_right",
+      "source": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v417"
+    }
+  ],
+  "sourceSignatures": {
+    "Alice.Coelho.WholeCheckpoint377.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "uv": [
+        "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint377.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "uv": [
+        "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      ],
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      },
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint377.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "uv": [
+        "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint377.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "uv": [
+        "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint377.lace": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "uv": [
+        "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v417": {
+      "positions": "0c9da3600ada86de874a4f1c844caef451a0abbd94b9d9b1709e9c863104351a",
+      "faces": "b2812f85720fc49439a1856ead450f13d2f0c2339a74de09608cb11aee731c8e",
+      "uv": [
+        "4274e7757b760d805abff9c892a056df50fd5fa53a1cfc99b95ff698b8ee349c"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v417": {
+      "positions": "79d89c1dff8f957d68ae1029f20a3e1e26a962452546a16f850a2d5c0b86563e",
+      "faces": "d814aeb6b2d882d14ef1ad0d782e725f92250338ba42aca00ab7f9a7a519cf62",
+      "uv": [
+        "a6d40d068b938e6e7aa5b59e18df40aa843422a88467cbf7d84528e3d35376da"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.Ornament.center.Candidate.v417": {
+      "positions": "e5e3cb8821282fa6569e1aad60ce95aa9e11e0eeb1b1e45f4779f26dc0980c31",
+      "faces": "e85c15cfe133cd596e81615858e1d8984266c0a606a2df16714d24e1ff92f212",
+      "uv": [
+        "db9f421b458aae5e52b4ab72348e026e6f23d771b749dc5ad2eaa18f7df4eede"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v417": {
+      "positions": "a957ae66cf7ae082314100e83106b40bc4a7f0f73a9225869a9f0ad99733ed8c",
+      "faces": "1d7c21cf18484d822ec10a57ce714f88e21d1453b39e79a9725abbacfc0248b1",
+      "uv": [
+        "0bf777f76f641972551dc9812f0e57c131ee1c2dff792885ea415899eb01fa0d"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v417": {
+      "positions": "4729c577d5e32741421b190ef8ad7016c5c8c31f2c116617d41cc55304e45b8e",
+      "faces": "024ef39f87a4f0dbfeb59f42306219cb2c75e7f7ed7480b2d242492a733574b7",
+      "uv": [
+        "fd4016a16b994692609f14ad22e7e2f52771c5fffef47755c260dcc3701f6bd4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "wholeCopySignatures": {
+    "Alice.Coelho.WholeCheckpoint421.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "uv": [
+        "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "uv": [
+        "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      ],
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      },
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "uv": [
+        "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "uv": [
+        "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.lace": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "uv": [
+        "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+      "positions": "0c9da3600ada86de874a4f1c844caef451a0abbd94b9d9b1709e9c863104351a",
+      "faces": "b2812f85720fc49439a1856ead450f13d2f0c2339a74de09608cb11aee731c8e",
+      "uv": [
+        "4274e7757b760d805abff9c892a056df50fd5fa53a1cfc99b95ff698b8ee349c"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+      "positions": "79d89c1dff8f957d68ae1029f20a3e1e26a962452546a16f850a2d5c0b86563e",
+      "faces": "d814aeb6b2d882d14ef1ad0d782e725f92250338ba42aca00ab7f9a7a519cf62",
+      "uv": [
+        "a6d40d068b938e6e7aa5b59e18df40aa843422a88467cbf7d84528e3d35376da"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+      "positions": "e5e3cb8821282fa6569e1aad60ce95aa9e11e0eeb1b1e45f4779f26dc0980c31",
+      "faces": "e85c15cfe133cd596e81615858e1d8984266c0a606a2df16714d24e1ff92f212",
+      "uv": [
+        "db9f421b458aae5e52b4ab72348e026e6f23d771b749dc5ad2eaa18f7df4eede"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+      "positions": "a957ae66cf7ae082314100e83106b40bc4a7f0f73a9225869a9f0ad99733ed8c",
+      "faces": "1d7c21cf18484d822ec10a57ce714f88e21d1453b39e79a9725abbacfc0248b1",
+      "uv": [
+        "0bf777f76f641972551dc9812f0e57c131ee1c2dff792885ea415899eb01fa0d"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+      "positions": "4729c577d5e32741421b190ef8ad7016c5c8c31f2c116617d41cc55304e45b8e",
+      "faces": "024ef39f87a4f0dbfeb59f42306219cb2c75e7f7ed7480b2d242492a733574b7",
+      "uv": [
+        "fd4016a16b994692609f14ad22e7e2f52771c5fffef47755c260dcc3701f6bd4"
+      ],
+      "keys": {},
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "allFivePreviousWhole377BaseMeshesExactlyPreserved": true,
+  "allLocalOrnament417MeshesExactlyPreserved": true,
+  "oldSourcesRecoverableHidden": true,
+  "portablePackedImages": true,
+  "rigged": false,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "wholeVisualAndFormatReviewPending": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 158.47113752365112
+}

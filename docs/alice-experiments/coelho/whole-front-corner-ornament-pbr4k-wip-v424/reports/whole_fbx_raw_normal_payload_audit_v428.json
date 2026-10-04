@@ -1,0 +1,89 @@
+{
+  "version": "v428",
+  "directBinaryFBXPayload": true,
+  "formatVersion": 7400,
+  "sha256": "e9558f92c390d83c0421a813c636edbb6634caa3d271a767d196e0880eeabf6c",
+  "records": [
+    {
+      "role": "character",
+      "triangles": 150000,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "apron",
+      "triangles": 8400,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "chain",
+      "triangles": 61056,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "cord",
+      "triangles": 22136,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "lace",
+      "triangles": 1144188,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "ornament_outer_left",
+      "triangles": 31216,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_left",
+      "triangles": 14330,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_center",
+      "triangles": 6424,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_right",
+      "triangles": 15096,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_outer_right",
+      "triangles": 30728,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    }
+  ],
+  "productionComplete": false
+}

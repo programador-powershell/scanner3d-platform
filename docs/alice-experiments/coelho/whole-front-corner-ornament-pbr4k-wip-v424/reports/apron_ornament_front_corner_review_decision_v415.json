@@ -1,0 +1,163 @@
+{
+  "version": "v415",
+  "sourceCandidate": "v411",
+  "sourceSHA256": "bab780a52d8350ac913179054e1658a079dd77271d4d5f30b93dc69eed4e3fc4",
+  "actualSixNativeImagesInspected": true,
+  "actualNativeReferenceBoardInspected": true,
+  "allOriginalWhole377ObjectsExact": true,
+  "independentSavedComponentTopologyPassed": true,
+  "staticWholeSelfBetweenTriangleContactsZero": true,
+  "comparison": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/ornament_front_corner_before_after_reference_v415.jpg",
+  "comparisonSHA256": "92b459d5eb0048313e74481ed2a6a3cb96e1bec0bcc27d3f4d00be694362b436",
+  "sameConstantMaterialsLightsAndCamerasForBeforeAfter": true,
+  "sourceReference": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+  "sourceReferenceSHA256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9",
+  "acceptedForOwnUVPBRBake": true,
+  "acceptedForWholeIntegration": false,
+  "visualFinding": "Compact enlarged front gold corner lobes and rim visibly project from setting in detail view. No detached bead or gross floaters seen in five views. Improvement is local; chain links and tassel shape unchanged. Photo filigree, optical gemstone facets, embroidery and whole character still unfinished.",
+  "fidelityApproved": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "additionalTripoCredits": 0,
+  "records": [
+    {
+      "view": "front_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_front_full_compact_blue_review_v414.png",
+      "sha256": "220f9806f4a388756e8b0ba90cd0d0c8679e6511567b7deb8ece0f7dd296f193",
+      "cameraLocation": [
+        0,
+        -4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18
+    },
+    {
+      "view": "left_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_left_profile_full_compact_blue_review_v414.png",
+      "sha256": "0e3ab56c949b39b9e3e8a7267329fe05c3e4b13021d902efed3cd2d80277d3e3",
+      "cameraLocation": [
+        -4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18
+    },
+    {
+      "view": "right_profile_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_right_profile_full_compact_blue_review_v414.png",
+      "sha256": "71dd2d0366f9c37fe3fce8c9d53c5f329e2dff08209ddb249bc5bbf70ab88d9f",
+      "cameraLocation": [
+        4,
+        -0.25,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        -0.25,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18
+    },
+    {
+      "view": "back_full",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_back_full_compact_blue_review_v414.png",
+      "sha256": "1b412d207b3242d802ed2a20e452e153153f496aa6b4223baac571cc18cb02e9",
+      "cameraLocation": [
+        0,
+        4,
+        0.69
+      ],
+      "cameraTarget": [
+        0,
+        0,
+        0.69
+      ],
+      "orthoScale": 0.96,
+      "resolution": [
+        512,
+        1024
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_compact_blue_review_v414.png",
+      "sha256": "777dae1220c801e4d1cf0b7865b1d7a735e4982e69bc7fcc201f7f67ddda14c4",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18
+    },
+    {
+      "view": "inner_left_detail",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/apron_ornaments_inner_left_detail_source377_same_material_v414.png",
+      "sha256": "07c64adb9c89b77ed0c6bdcfb126e0240afed9daab8faea682b23e93a6e997dd",
+      "cameraLocation": [
+        -0.13231482161043506,
+        -4,
+        0.4344047337196172
+      ],
+      "cameraTarget": [
+        -0.13231482161043506,
+        -0.35528613278437554,
+        0.4344047337196172
+      ],
+      "orthoScale": 0.13,
+      "resolution": [
+        640,
+        640
+      ],
+      "blueMetallic": 0.45,
+      "blueRoughness": 0.18,
+      "comparisonBaseline": true,
+      "sourceWhole": "v377",
+      "sameCamerasLightsAndConstantMaterials": true
+    }
+  ],
+  "checkedAt": "2026-10-04T15:37:52.502319+00:00"
+}

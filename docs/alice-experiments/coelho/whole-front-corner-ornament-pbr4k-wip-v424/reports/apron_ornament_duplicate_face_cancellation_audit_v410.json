@@ -1,0 +1,27 @@
+{
+  "version": "v410",
+  "diagnosticSource": "apron_ornament_front_corner_nonmanifold_diagnostic_v409.json",
+  "opposedDuplicatePairs": [
+    [
+      3727,
+      3741
+    ]
+  ],
+  "removedTriangleIndices": [
+    3727,
+    3741
+  ],
+  "allDuplicatesShareExactVertexIndices": true,
+  "allDuplicateNormalsExactlyCancel": true,
+  "nonManifoldEdgesBefore": 1,
+  "nonManifoldEdgesAfterRemovingOnlyOpposedPairs": 0,
+  "allRemainingEdgeIncidencesExactlyTwo": true,
+  "remainingZeroAreaTriangles": 0,
+  "signedVolumeBefore": 1.3042320535982992e-07,
+  "signedVolumeAfter": 1.3042320535982992e-07,
+  "positionArrayUnchanged": true,
+  "noLiveMeshModified": true,
+  "noBlendSaved": true,
+  "notFidelityApproval": true,
+  "productionComplete": false
+}

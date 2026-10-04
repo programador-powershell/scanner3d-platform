@@ -1,0 +1,426 @@
+{
+  "version": "whole_front_corner_ornament_pbr4k_wip_v424",
+  "createdAt": "2026-10-04T16:25:43.113410+00:00",
+  "wholeCharacterWithDress": true,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_ornament_pbr4k_working_v421.blend",
+      "bytes": 761407411,
+      "sha256": "c2aac2b799983f281ad7eef03f44051b58346ba82108f8d54e1717e1d1d4bfb9"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v424/alice_coelho_complete_ornament_pbr4k_checkpoint_v424.glb",
+      "bytes": 158087024,
+      "sha256": "cd66b75399f40a0da90b76eb88a2e2822110a7d38148249855f77e5aca31abe7"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/ornament_pbr4k_checkpoint_v424/alice_coelho_complete_ornament_pbr4k_checkpoint_v424.fbx",
+      "bytes": 199398380,
+      "sha256": "e9558f92c390d83c0421a813c636edbb6634caa3d271a767d196e0880eeabf6c"
+    }
+  },
+  "wholeTriangles": 1483574,
+  "review": "reports/whole_checkpoint_review_decision_v434.json",
+  "entries": [
+    {
+      "path": "source_photo.png",
+      "source": "Workspaces/root_coelho_refinement_20261003/scanner3d-platform/docs/alice-experiments/coelho/whole-lace-joint-wip-v184/source_photo.png",
+      "bytes": 462329,
+      "sha256": "235ccb89c6e8cbdfc0c68da3d1269282e659c00b1868e7df330217f8f95a9f7c"
+    },
+    {
+      "path": "reference_apron_layer5.png",
+      "source": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_40 (5).png",
+      "bytes": 2563018,
+      "sha256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9"
+    },
+    {
+      "path": "whole_before_after_v434.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_before_after_v434.jpg",
+      "bytes": 142445,
+      "sha256": "170fea8cf1a489a0605b9674d0cfff6a3b90d8c7ae865b47a7ddbdcd1b79f131"
+    },
+    {
+      "path": "whole_source_glb_fbx_views_v434.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_source_glb_fbx_views_v434.jpg",
+      "bytes": 930907,
+      "sha256": "018660f678efe185c4c03ba7946cb3f39ec5cd611e070d893c55e3ebf8ffcafe"
+    },
+    {
+      "path": "ornament_front_corner_before_after_reference_v415.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/ornament_front_corner_before_after_reference_v415.jpg",
+      "bytes": 335262,
+      "sha256": "92b459d5eb0048313e74481ed2a6a3cb96e1bec0bcc27d3f4d00be694362b436"
+    },
+    {
+      "path": "reports/apron_ornament_front_corner_authoring_audit_v411.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_front_corner_authoring_audit_v411.json",
+      "bytes": 461502,
+      "sha256": "a3dfe0c272e1ff0edb82779ca29a56e1fcb3e6e32b8909a4d55f41957c24b49f"
+    },
+    {
+      "path": "reports/apron_ornament_component_audit_v412.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_component_audit_v412.json",
+      "bytes": 176673,
+      "sha256": "dd71490ea10bf95e00a0c3c5a76fdf9687ff6d902da0ad33c016229953d0570f"
+    },
+    {
+      "path": "reports/apron_ornament_triangle_contact_audit_v413.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_triangle_contact_audit_v413.json",
+      "bytes": 11499,
+      "sha256": "9a9fa5ff55fc4ee455f439425b4d6658342feff04b17ea03f479f5d7f9b004ef"
+    },
+    {
+      "path": "reports/apron_ornament_compact_reference_review_v414.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_compact_reference_review_v414.json",
+      "bytes": 4327,
+      "sha256": "85bfdc79c105e3d1de3d0e88e0f99c08ccc7d3741dad463c6fd5e270a737ff46"
+    },
+    {
+      "path": "reports/apron_ornament_front_corner_review_decision_v415.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_front_corner_review_decision_v415.json",
+      "bytes": 5256,
+      "sha256": "709b522c63e36c5cb8e5512f248e7a3609209d316234986cb11f0cd7b9a05ed4"
+    },
+    {
+      "path": "reports/apron_ornament_pbr_atlas_authoring_audit_v417.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_pbr_atlas_authoring_audit_v417.json",
+      "bytes": 885693,
+      "sha256": "67bb62a66f08d4fc6e702035684f8d40020013257f57a997cae6c35df1cbf04c"
+    },
+    {
+      "path": "reports/apron_ornament_atlas_uv_audit_v417.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_atlas_uv_audit_v417.json",
+      "bytes": 389957,
+      "sha256": "dd5f5c6520a2bfa290db0c482cddfc47a53abba2fa10cee0fd3cb57ef18bae4e"
+    },
+    {
+      "path": "reports/apron_ornament_continuous_uv_audit_v418.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_continuous_uv_audit_v418.json",
+      "bytes": 777,
+      "sha256": "718d6c7efae83fdfb04e0df6e361f5141d121d61cf73747d176a13be908fac4c"
+    },
+    {
+      "path": "reports/apron_ornament_pbr_atlas_reopen_audit_v419.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_pbr_atlas_reopen_audit_v419.json",
+      "bytes": 6639,
+      "sha256": "b2aac2c7ac5c7f7c833d176b82472769eef1ceb2c19de0e75e4d494535121d16"
+    },
+    {
+      "path": "reports/apron_ornament_atlas_review_decision_v420.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_atlas_review_decision_v420.json",
+      "bytes": 3970,
+      "sha256": "6c3b010f3d9e8235f936f1080944e4ae47736bf185e00da32cab7f0cf0a20c94"
+    },
+    {
+      "path": "reports/apron_ornament_whole_integration_audit_v421.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_integration_audit_v421.json",
+      "bytes": 21038,
+      "sha256": "71880754a0dbb25e149f959a6603abf4f86872341f0006f11d33ee8810ac6e52"
+    },
+    {
+      "path": "reports/apron_ornament_whole_reopen_audit_v422.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_reopen_audit_v422.json",
+      "bytes": 2393,
+      "sha256": "c8955eee3e69a35b8468d0f80cd05268bff0e33fa1afcfb3e0a0aa493f1104e4"
+    },
+    {
+      "path": "reports/apron_ornament_whole_review_decision_v423.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_whole_review_decision_v423.json",
+      "bytes": 2866,
+      "sha256": "3ce8ca29858db0a688505372b37f1dd95d9a8824532485deed3bdae8d6914cc9"
+    },
+    {
+      "path": "reports/package_export_v424.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/package_export_v424.json",
+      "bytes": 5536,
+      "sha256": "11714d6cb8200f3158a29c8bb8917521d07a0fefb609fb597fa1b74020d144bf"
+    },
+    {
+      "path": "reports/reimport_whole_glb_audit_v425.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_glb_audit_v425.json",
+      "bytes": 7829,
+      "sha256": "9e032e3538b39ca7625d0a8df8d9765793e52fadd2b7f678ca89410998710730"
+    },
+    {
+      "path": "reports/reimport_whole_fbx_audit_v426.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_fbx_audit_v426.json",
+      "bytes": 8141,
+      "sha256": "bc6d21dc0b45f5e604acf5c9bb45a14d1e52a9783d58b548b41121c4d43ed1a6"
+    },
+    {
+      "path": "reports/whole_glb_raw_normal_payload_audit_v427.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_raw_normal_payload_audit_v427.json",
+      "bytes": 3767,
+      "sha256": "76b9ae73415a210087f93d12d1e04d13b9a05e2c58b17c45a48ac604da2f8fdb"
+    },
+    {
+      "path": "reports/whole_fbx_raw_normal_payload_audit_v428.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_raw_normal_payload_audit_v428.json",
+      "bytes": 2617,
+      "sha256": "006d736a2f9e76767dfcfec1c1e0d8aebf275eb378d48bf4e75484b4a7dbf664"
+    },
+    {
+      "path": "reports/whole_source_material_semantics_v429.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_source_material_semantics_v429.json",
+      "bytes": 50194,
+      "sha256": "20e7d559a5732d723322f2e90375b265e00357b75547760b2dd44a6aea86e7f4"
+    },
+    {
+      "path": "reports/whole_glb_material_pixel_audit_v430.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_material_pixel_audit_v430.json",
+      "bytes": 10317,
+      "sha256": "cf9b4f9fc99674d95a07460ce10be6495d84bf899757bd7bc70389301647a4d3"
+    },
+    {
+      "path": "reports/whole_fbx_embedded_material_audit_v431.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_embedded_material_audit_v431.json",
+      "bytes": 15111,
+      "sha256": "ab4e4bf5d3588d4ce1dc4bc3e48bc1279fa1a1aaa9f507af36613d609eb96fae"
+    },
+    {
+      "path": "reports/whole_fbx_channel_semantics_audit_v432.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_channel_semantics_audit_v432.json",
+      "bytes": 11685,
+      "sha256": "ac7857ab6936a60fd6db34fa54eb4a54bdc7058b0f0b775cba68a37542d7cbbf"
+    },
+    {
+      "path": "reports/whole_checkpoint_review_decision_v434.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_checkpoint_review_decision_v434.json",
+      "bytes": 5159,
+      "sha256": "45e06846691e8ca968c3449eb661fba206ce935a4e21f12468830e8382f35e3c"
+    },
+    {
+      "path": "reports/layer_reference_index_v008.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/layer_reference_index_v008.json",
+      "bytes": 4462,
+      "sha256": "6e539d093f4841400fab21079185487658735727e7d8bba280b7f06ddc0731ca"
+    },
+    {
+      "path": "reports/apron_ornament_duplicate_face_cancellation_audit_v410.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_duplicate_face_cancellation_audit_v410.json",
+      "bytes": 763,
+      "sha256": "be35442a03c40cd07d7db9605c471127bd9745d4c65d87754934d234395c910f"
+    },
+    {
+      "path": "source-payload/character.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_character_v424.npz",
+      "bytes": 5808684,
+      "sha256": "c591abc0145cf6e508f4cb80183ef188c2a1ccd3108a7c7362df3f723113856e"
+    },
+    {
+      "path": "source-payload/apron.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_apron_v424.npz",
+      "bytes": 314187,
+      "sha256": "66044ff3ef2f01186885d83af94aac9a068aa6bc00a554a624be62788b76520f"
+    },
+    {
+      "path": "source-payload/chain.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_chain_v424.npz",
+      "bytes": 1827621,
+      "sha256": "5d3b57645bfe0ed42b835a0ae2b9262102e02d9900bc8512531a403545eab0e8"
+    },
+    {
+      "path": "source-payload/cord.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_cord_v424.npz",
+      "bytes": 680202,
+      "sha256": "7284c88d182412e59a65f7e5627f9b133fea90f27af6bd44ad076dc3942d5da0"
+    },
+    {
+      "path": "source-payload/lace.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_lace_v424.npz",
+      "bytes": 35226793,
+      "sha256": "8f915f68fa4f3985ca82a2374cf487de198bc96ce200c8fe15a139710e51f6f1"
+    },
+    {
+      "path": "source-payload/ornament_outer_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_left_v424.npz",
+      "bytes": 1178949,
+      "sha256": "11411f37384dc24f7f5ebf3839fbee1ee7cc73e539374661879987590520d458"
+    },
+    {
+      "path": "source-payload/ornament_inner_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_left_v424.npz",
+      "bytes": 526287,
+      "sha256": "4fccc87ad9e50c1e862933087807cabc96d6004ade64f45773a0553fddd9c1b9"
+    },
+    {
+      "path": "source-payload/ornament_center.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_center_v424.npz",
+      "bytes": 231889,
+      "sha256": "3917270deb49459390c0a260bf45c2d712dddc51b493b6a634c1a003f3503e58"
+    },
+    {
+      "path": "source-payload/ornament_inner_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_right_v424.npz",
+      "bytes": 563982,
+      "sha256": "4ca5e27b882e038e878b01677d94b4d1313aed725488720b601755931f0f192b"
+    },
+    {
+      "path": "source-payload/ornament_outer_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_right_v424.npz",
+      "bytes": 1165845,
+      "sha256": "93a676b1a487bec9e2d31e17b6c31217d7a443f2ad55f42b0ecd7462e76c51cf"
+    },
+    {
+      "path": "production-code/author_coelho_ornament_front_corner_relief_v411.py",
+      "source": "Tools/author_coelho_ornament_front_corner_relief_v411.py",
+      "bytes": 11560,
+      "sha256": "176be1bd99cb9edbe6946941ad1ac42c0b1c83b822c6b99693320aa2e496bf54"
+    },
+    {
+      "path": "production-code/coelho_cast_mesh.py",
+      "source": "Tools/coelho_cast_mesh.py",
+      "bytes": 4664,
+      "sha256": "6944a613d929d3326f1b5ab1d4951b3f7b1dd5be8c24551511b7ea65403a17f4"
+    },
+    {
+      "path": "production-code/coelho_ring_linking.py",
+      "source": "Tools/coelho_ring_linking.py",
+      "bytes": 2751,
+      "sha256": "f4d2becc38b88927a72381352e3d7877919a930b7e3e815a1e1f3ab09078cfe8"
+    },
+    {
+      "path": "production-code/coelho_ring_clearance.py",
+      "source": "Tools/coelho_ring_clearance.py",
+      "bytes": 843,
+      "sha256": "8d3236de364a7e8707a6d70792c0fe2f44e22dde58046a55a3533e761216dafb"
+    },
+    {
+      "path": "production-code/audit_coelho_front_corner_saved_components_v412.py",
+      "source": "Tools/audit_coelho_front_corner_saved_components_v412.py",
+      "bytes": 3257,
+      "sha256": "a0f78b34320fd592bd42fc38b434ce102bb0d5d0e1e4511f47b5280662c0c6ad"
+    },
+    {
+      "path": "production-code/audit_coelho_front_corner_contacts_v413.py",
+      "source": "Tools/audit_coelho_front_corner_contacts_v413.py",
+      "bytes": 6189,
+      "sha256": "3ea5b3ca01892277323a5033b7d055eefb16d2a3cde7027a7387acc647390d9a"
+    },
+    {
+      "path": "production-code/review_coelho_front_corner_reference_v414.py",
+      "source": "Tools/review_coelho_front_corner_reference_v414.py",
+      "bytes": 4296,
+      "sha256": "d26fd1ce6f5c8876bdf7f625c2d8099d4485a5d078636b17704136a280551269"
+    },
+    {
+      "path": "production-code/author_coelho_front_corner_pbr_atlas_v417.py",
+      "source": "Tools/author_coelho_front_corner_pbr_atlas_v417.py",
+      "bytes": 14640,
+      "sha256": "3d276d0ec14de08732ad14f43aaf0986faf928cb020394b95f883913569e2336"
+    },
+    {
+      "path": "production-code/coelho_uv_triangle_sat.py",
+      "source": "Tools/coelho_uv_triangle_sat.py",
+      "bytes": 1960,
+      "sha256": "56c372abc82131b8281f2fb81cae900ac15705a832f45c7eb3c5f8ce0a3cbe7d"
+    },
+    {
+      "path": "production-code/audit_coelho_front_corner_continuous_uv_v418.py",
+      "source": "Tools/audit_coelho_front_corner_continuous_uv_v418.py",
+      "bytes": 3685,
+      "sha256": "20f887120d4735f832da8512d4bb286e5135a188a9d957925e5c598a50916420"
+    },
+    {
+      "path": "production-code/audit_render_coelho_front_corner_atlas_v419.py",
+      "source": "Tools/audit_render_coelho_front_corner_atlas_v419.py",
+      "bytes": 4504,
+      "sha256": "7e1355ad4dbac9219287fc733ba1712d8cb3347e4c39449820f02ee8430cbebe"
+    },
+    {
+      "path": "production-code/record_coelho_front_corner_atlas_review_v420.py",
+      "source": "Tools/record_coelho_front_corner_atlas_review_v420.py",
+      "bytes": 2224,
+      "sha256": "1249998576e49ab77101499209dece45021b157ac31134e89e34063143b2df61"
+    },
+    {
+      "path": "production-code/integrate_coelho_front_corner_atlas_whole_v421.py",
+      "source": "Tools/integrate_coelho_front_corner_atlas_whole_v421.py",
+      "bytes": 4986,
+      "sha256": "d918a66d7aa89a414ea5984d39fb61074b3c1d8c43c1feecdffdd5732ef8b2dc"
+    },
+    {
+      "path": "production-code/reopen_render_coelho_front_corner_whole_v422.py",
+      "source": "Tools/reopen_render_coelho_front_corner_whole_v422.py",
+      "bytes": 2847,
+      "sha256": "a8a7ee119e0acb86e62f4f7e87bb1fcf7303084d01820b6ec3a2747052c19c3f"
+    },
+    {
+      "path": "production-code/record_coelho_front_corner_whole_review_v423.py",
+      "source": "Tools/record_coelho_front_corner_whole_review_v423.py",
+      "bytes": 3311,
+      "sha256": "8cd9f2fe62e6239cd397ff74130074a615eef8b1a790a50fff3b0a54f0d45cd3"
+    },
+    {
+      "path": "production-code/export_coelho_front_corner_whole_checkpoint_v424.py",
+      "source": "Tools/export_coelho_front_corner_whole_checkpoint_v424.py",
+      "bytes": 4151,
+      "sha256": "a243705d558476617277a33203a64eeb9177a6c1c5ad167670081e7a4b906f9c"
+    },
+    {
+      "path": "production-code/reimport_coelho_front_corner_whole_glb_v425.py",
+      "source": "Tools/reimport_coelho_front_corner_whole_glb_v425.py",
+      "bytes": 8219,
+      "sha256": "9328b18e70b6ebac7ca9f5ccbaa9a85c9519e448bde275f1c43e709870814ee3"
+    },
+    {
+      "path": "production-code/reimport_coelho_front_corner_whole_fbx_exact_v426.py",
+      "source": "Tools/reimport_coelho_front_corner_whole_fbx_exact_v426.py",
+      "bytes": 7710,
+      "sha256": "7be6f7f089aedcc90f098fec0c3bec5af7d4e50f42a015cd099a7d44c098a5e0"
+    },
+    {
+      "path": "production-code/verify_coelho_front_corner_whole_glb_normal_v427.py",
+      "source": "Tools/verify_coelho_front_corner_whole_glb_normal_v427.py",
+      "bytes": 4383,
+      "sha256": "fb0743db494b6e32c5b7b3a6ebbed8c273a5d7088420d8a52e8295d981ff9442"
+    },
+    {
+      "path": "production-code/verify_coelho_front_corner_whole_fbx_normal_v428.py",
+      "source": "Tools/verify_coelho_front_corner_whole_fbx_normal_v428.py",
+      "bytes": 2152,
+      "sha256": "54b48dc0a0c775fbe7e16589a52bcc91882f1bcb2e2bc29b3cfcda1630b0483f"
+    },
+    {
+      "path": "production-code/dump_coelho_front_corner_whole_materials_v429.py",
+      "source": "Tools/dump_coelho_front_corner_whole_materials_v429.py",
+      "bytes": 2090,
+      "sha256": "99a9344794e09db8287772b01b220c5534acbef32131e029e13ff2229ce79700"
+    },
+    {
+      "path": "production-code/verify_coelho_front_corner_whole_glb_materials_v430.py",
+      "source": "Tools/verify_coelho_front_corner_whole_glb_materials_v430.py",
+      "bytes": 3488,
+      "sha256": "43ff2010e7a63ac1a284d5aad6ccd9d883a19b4d07c0ad665b72b7537b0daa8c"
+    },
+    {
+      "path": "production-code/verify_coelho_front_corner_whole_fbx_materials_v431.py",
+      "source": "Tools/verify_coelho_front_corner_whole_fbx_materials_v431.py",
+      "bytes": 1822,
+      "sha256": "9a45cd053a522d1740af505694c42a95197a197d8e1cdb4aba581db726e458d9"
+    },
+    {
+      "path": "production-code/verify_coelho_front_corner_whole_fbx_channels_v432.py",
+      "source": "Tools/verify_coelho_front_corner_whole_fbx_channels_v432.py",
+      "bytes": 1949,
+      "sha256": "53f4c5cddb7be8c793166803f053b0b80271c372eeec0855ead30fcbbd15e5a0"
+    },
+    {
+      "path": "production-code/review_coelho_front_corner_whole_v434.py",
+      "source": "Tools/review_coelho_front_corner_whole_v434.py",
+      "bytes": 5332,
+      "sha256": "d6b8e04dfb0c738b14a12891a1b0e90a60015c4637a0e8abbfbaa5ec1e7e7fe2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1761,
+      "sha256": "35b5afe89522ff30dcc253e520771b3e18b1954c68c130d295e65242f7f5b5e6"
+    }
+  ],
+  "largeBinariesInGitHubReleaseNotGitBlobs": true,
+  "productionComplete": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "additionalTripoCredits": 0
+}

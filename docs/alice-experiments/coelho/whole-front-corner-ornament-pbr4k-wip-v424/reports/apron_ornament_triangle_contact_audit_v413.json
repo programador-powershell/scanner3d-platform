@@ -1,0 +1,359 @@
+{
+  "version": "v413",
+  "sourceCandidateVersion": "v411",
+  "sourcePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_ornaments_front_corner_relief_candidate_v411.blend",
+  "sourceSHA256": "bab780a52d8350ac913179054e1658a079dd77271d4d5f30b93dc69eed4e3fc4",
+  "independentSavedReopen": true,
+  "visibleEvaluatedTargets": true,
+  "records": [
+    {
+      "id": "outer_left",
+      "object": "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v411",
+      "targets": {
+        "character": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.character",
+          "targetEvaluatedTriangles": 150000
+        },
+        "apron": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.apron",
+          "targetEvaluatedTriangles": 8400
+        },
+        "chain": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.chain",
+          "targetEvaluatedTriangles": 61056
+        },
+        "cord": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.cord",
+          "targetEvaluatedTriangles": 22136
+        },
+        "lace": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.lace",
+          "targetEvaluatedTriangles": 1144188
+        }
+      },
+      "selfContacts": {
+        "BVHPairsAfterSharedVertexExclusion": 0,
+        "SATTrianglePairs": 0,
+        "sameClosedComponentPairs": 0,
+        "interComponentPairs": 0,
+        "byComponentTypes": [],
+        "manufacturedSettingContactsNotAutomaticallyApproved": true
+      }
+    },
+    {
+      "id": "inner_left",
+      "object": "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v411",
+      "targets": {
+        "character": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.character",
+          "targetEvaluatedTriangles": 150000
+        },
+        "apron": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.apron",
+          "targetEvaluatedTriangles": 8400
+        },
+        "chain": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.chain",
+          "targetEvaluatedTriangles": 61056
+        },
+        "cord": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.cord",
+          "targetEvaluatedTriangles": 22136
+        },
+        "lace": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.lace",
+          "targetEvaluatedTriangles": 1144188
+        }
+      },
+      "selfContacts": {
+        "BVHPairsAfterSharedVertexExclusion": 0,
+        "SATTrianglePairs": 0,
+        "sameClosedComponentPairs": 0,
+        "interComponentPairs": 0,
+        "byComponentTypes": [],
+        "manufacturedSettingContactsNotAutomaticallyApproved": true
+      }
+    },
+    {
+      "id": "center",
+      "object": "Alice.Coelho.Apron.Ornament.center.Candidate.v411",
+      "targets": {
+        "character": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.character",
+          "targetEvaluatedTriangles": 150000
+        },
+        "apron": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.apron",
+          "targetEvaluatedTriangles": 8400
+        },
+        "chain": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.chain",
+          "targetEvaluatedTriangles": 61056
+        },
+        "cord": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.cord",
+          "targetEvaluatedTriangles": 22136
+        },
+        "lace": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.lace",
+          "targetEvaluatedTriangles": 1144188
+        }
+      },
+      "selfContacts": {
+        "BVHPairsAfterSharedVertexExclusion": 0,
+        "SATTrianglePairs": 0,
+        "sameClosedComponentPairs": 0,
+        "interComponentPairs": 0,
+        "byComponentTypes": [],
+        "manufacturedSettingContactsNotAutomaticallyApproved": true
+      }
+    },
+    {
+      "id": "inner_right",
+      "object": "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v411",
+      "targets": {
+        "character": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.character",
+          "targetEvaluatedTriangles": 150000
+        },
+        "apron": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.apron",
+          "targetEvaluatedTriangles": 8400
+        },
+        "chain": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.chain",
+          "targetEvaluatedTriangles": 61056
+        },
+        "cord": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.cord",
+          "targetEvaluatedTriangles": 22136
+        },
+        "lace": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.lace",
+          "targetEvaluatedTriangles": 1144188
+        }
+      },
+      "selfContacts": {
+        "BVHPairsAfterSharedVertexExclusion": 0,
+        "SATTrianglePairs": 0,
+        "sameClosedComponentPairs": 0,
+        "interComponentPairs": 0,
+        "byComponentTypes": [],
+        "manufacturedSettingContactsNotAutomaticallyApproved": true
+      }
+    },
+    {
+      "id": "outer_right",
+      "object": "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v411",
+      "targets": {
+        "character": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.character",
+          "targetEvaluatedTriangles": 150000
+        },
+        "apron": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.apron",
+          "targetEvaluatedTriangles": 8400
+        },
+        "chain": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.chain",
+          "targetEvaluatedTriangles": 61056
+        },
+        "cord": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.cord",
+          "targetEvaluatedTriangles": 22136
+        },
+        "lace": {
+          "BVHPairs": 0,
+          "SATTrianglePairs": 0,
+          "contactsByComponentType": {},
+          "componentIDs": [],
+          "targetObject": "Alice.Coelho.WholeCheckpoint377.lace",
+          "targetEvaluatedTriangles": 1144188
+        }
+      },
+      "selfContacts": {
+        "BVHPairsAfterSharedVertexExclusion": 0,
+        "SATTrianglePairs": 0,
+        "sameClosedComponentPairs": 0,
+        "interComponentPairs": 0,
+        "byComponentTypes": [],
+        "manufacturedSettingContactsNotAutomaticallyApproved": true
+      }
+    }
+  ],
+  "betweenOrnaments": [
+    {
+      "idA": "outer_left",
+      "idB": "inner_left",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "outer_left",
+      "idB": "center",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "outer_left",
+      "idB": "inner_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "outer_left",
+      "idB": "outer_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "inner_left",
+      "idB": "center",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "inner_left",
+      "idB": "inner_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "inner_left",
+      "idB": "outer_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "center",
+      "idB": "inner_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "center",
+      "idB": "outer_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "idA": "inner_right",
+      "idB": "outer_right",
+      "BVHPairs": 0,
+      "SATTrianglePairs": 0
+    }
+  ],
+  "totalWholeSurfaceSATTrianglePairs": 0,
+  "totalSelfSATTrianglePairs": 0,
+  "totalBetweenOrnamentsSATTrianglePairs": 0,
+  "actualTrianglePairsNPZ": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/apron_ornament_actual_triangle_contacts_v413.npz",
+  "toleranceM": 1e-09,
+  "adjacentSharedVertexPairsExcludedFromSelfAudit": true,
+  "closedVolumeContainmentNotVerified": true,
+  "mechanicalLinkageNotVerified": true,
+  "sewMountsNotApplied": true,
+  "readOnlyNoBlendSaveOrExport": true,
+  "staticOnly": true,
+  "physicsVerified": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "elapsedSeconds": 56.44479036331177
+}
