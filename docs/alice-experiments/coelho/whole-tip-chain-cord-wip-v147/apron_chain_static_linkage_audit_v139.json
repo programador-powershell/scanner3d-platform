@@ -1,0 +1,17 @@
+{
+  "version": "v139",
+  "source": "apron_chain_links_v136.json",
+  "staticAnalyticRingAuditNotAnimation": true,
+  "samplesPerCenterline": 512,
+  "closePairs": 210,
+  "adjacentPairs": 210,
+  "adjacentLinkingEstimateMin": 1.0000251002374478,
+  "adjacentLinkingEstimateMax": 1.0000251002374603,
+  "allAdjacentRingsTopologicallyLinkedByApproximateGaussTest": true,
+  "clearanceAlerts": [],
+  "clearanceAlertsCount": 0,
+  "allPairsHaveConservativePositiveClearance": true,
+  "triangulatedSurfaceIntersectionsNotTested": true,
+  "runtimePhysicsNotValidated": true,
+  "productionComplete": false
+}

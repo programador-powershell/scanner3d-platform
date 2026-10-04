@@ -1,0 +1,49 @@
+{
+  "version": "v155",
+  "directBinaryFBXPayload": true,
+  "formatVersion": 7400,
+  "sha256": "6f8c711318939123365e4379341a87281d997af5bf5acb4c705b23194517fb26",
+  "records": [
+    {
+      "role": "character",
+      "triangles": 150000,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "apron",
+      "triangles": 8400,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "chain",
+      "triangles": 61056,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "cord",
+      "triangles": 22136,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "lace",
+      "triangles": 1144188,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    }
+  ],
+  "productionComplete": false
+}

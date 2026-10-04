@@ -1,0 +1,10 @@
+import sys,json,numpy as np,hashlib
+from pathlib import Path
+sys.path.insert(0,'F:/Programas/5.2/scripts/addons_core');from io_scene_fbx import parse_fbx
+R=Path('F:/Alice/SharedProduction');O=R/'Blender/Work/alice_coelho/tripo_h31_budget55_v001';a=json.loads((O/'package_export_v147.json').read_text());root,version=parse_fbx.parse(str(R/a['files']['fbx']['path']));objs=next(e for e in root.elems if e.id==b'Objects');connections=next(e for e in root.elems if e.id==b'Connections');byid={e.props[0]:e for e in objs.elems};records=[]
+def elem(e,key):return next(x for x in e.elems if x.id==key)
+for row in a['objects']:
+ model=next(e for e in objs.elems if e.id==b'Model' and row['name'].encode() in e.props[1]);gid=next(e.props[1] for e in connections.elems if e.props[2]==model.props[0] and byid.get(e.props[1]) is not None and byid[e.props[1]].id==b'Geometry');g=byid[gid];ex=np.load(O/f'whole_export_source_{row["role"]}_v147.npz');P=np.array(elem(g,b'Vertices').props[0]).reshape(-1,3);indices=np.array(elem(g,b'PolygonVertexIndex').props[0]);vertices=np.where(indices<0,-indices-1,indices);tri=vertices.reshape(-1,3);assert np.array_equal(tri,ex['triangles']);pe=float(np.abs(P-ex['positions']).max());assert pe<1e-7
+ ln=elem(g,b'LayerElementNormal');N=np.array(elem(ln,b'Normals').props[0]).reshape(-1,3);ni=np.array(elem(ln,b'NormalsIndex').props[0]);mapping=elem(ln,b'MappingInformationType').props[0];assert elem(ln,b'ReferenceInformationType').props[0]==b'IndexToDirect';N=N[ni] if mapping==b'ByPolygonVertex' else N[ni[vertices]];EN=ex['loopNormals'][ex['triangleLoops'].ravel()];ne=float(np.abs(N-EN).max());assert ne<1e-6,(row['role'],ne)
+ records.append(dict(role=row['role'],triangles=len(tri),triangleOrderExactlyPreserved=True,maxRawPositionComponentErrorM=pe,maxRawNormalComponentError=ne,mapping=mapping.decode()));print('RAW_FBX_NORMAL_VERIFIED',records[-1],flush=True)
+(O/'whole_fbx_raw_normal_payload_audit_v155.json').write_text(json.dumps(dict(version='v155',directBinaryFBXPayload=True,formatVersion=version,sha256=a['files']['fbx']['sha256'],records=records,productionComplete=False),indent=2))

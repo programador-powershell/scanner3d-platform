@@ -1,0 +1,39 @@
+{
+  "version": "v143",
+  "independentReopen": true,
+  "sourceSHA256": "8a260d99e7c52761976685fb155ef81f166bdf0ab36b6c597fcd9afe3900bb84",
+  "records": [
+    {
+      "role": "cord",
+      "object": "Alice.Coelho.Apron.Cords.LocalSpacing.Candidate.v142",
+      "selfSATTrianglePairs": 0,
+      "selfPairs": [],
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": {
+          "SATTrianglePairs": 0,
+          "pairs": []
+        },
+        "Alice.Coelho.Complete.GameCandidate": {
+          "SATTrianglePairs": 0,
+          "pairs": []
+        },
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": {
+          "SATTrianglePairs": 0,
+          "pairs": []
+        },
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": {
+          "SATTrianglePairs": 0,
+          "pairs": []
+        }
+      },
+      "metric": {
+        "maxSectionRigidTranslationErrorM": 7.761021443564164e-10,
+        "UVExactlyPreserved": true
+      }
+    }
+  ],
+  "staticOnly": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false
+}

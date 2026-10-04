@@ -1,0 +1,110 @@
+{
+  "version": "v161",
+  "sourceWholeWorkingVersion": "v145",
+  "exportWholeVersion": "v147",
+  "sourceWholeSHA256": "20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9",
+  "allSevenWholeSourceBeforeAfterViewsActuallyInspected": true,
+  "allTenIndependentGLBFBXViewsActuallyInspected": true,
+  "referenceBoard5ActuallyInspected": true,
+  "referenceSHA256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9",
+  "tipDarkFoldCorrectedForStaticReview": true,
+  "newChainStaticIntersections": 0,
+  "newCordStaticSelfAndTargetIntersections": 0,
+  "normalDifferenceCause": "Exact replay of importer normal encoding gives zero component difference on every mesh. Raw FBX normals component-exact; raw GLB normal directions preserved v151. First .1-degree source-vs-import assertion was not sufficient for Blender encoded normal storage.",
+  "sourceImportPixelDiagnostics": {
+    "glb_front": {
+      "meanRGB": 0.011450505050505051,
+      "p95RGB": 0.0,
+      "maxRGB": 13.0,
+      "sourceSHA256": "5b2e18a1e26ead05608f0d26e9d398eba7aad516020f5fede1bbf7874ebaaf16",
+      "renderSHA256": "afe5bb56a0c7d377fd2d84d9a3b0bd71117f81bc243c4b0a9ae6cfa4271c9e73",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "fbx_front": {
+      "meanRGB": 0.011113804713804713,
+      "p95RGB": 0.0,
+      "maxRGB": 16.0,
+      "sourceSHA256": "5b2e18a1e26ead05608f0d26e9d398eba7aad516020f5fede1bbf7874ebaaf16",
+      "renderSHA256": "bdb7e8452b91906635130289e5b22769d7d596b415551760398c3329de2da9a1",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "glb_threequarter": {
+      "meanRGB": 0.010794949494949494,
+      "p95RGB": 0.0,
+      "maxRGB": 27.0,
+      "sourceSHA256": "58178c25ddce4fc2529a02ed0bf486b2b5da38089bdfb329afed24d0ab2bd511",
+      "renderSHA256": "ed3e8b957b26c1cb0fb44765f6436f9a919a161d8defb09350e0d154336cc983",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "fbx_threequarter": {
+      "meanRGB": 0.011098653198653198,
+      "p95RGB": 0.0,
+      "maxRGB": 27.0,
+      "sourceSHA256": "58178c25ddce4fc2529a02ed0bf486b2b5da38089bdfb329afed24d0ab2bd511",
+      "renderSHA256": "6adb4b887e792f1d8cf204dbc889323f228cd8798fa8679a0630b646240c15c2",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "glb_back": {
+      "meanRGB": 0.0018191919191919191,
+      "p95RGB": 0.0,
+      "maxRGB": 7.0,
+      "sourceSHA256": "fba0e3d39f10b93d366eafe84f527b0d607d3ff455bd3b40d8a007eec6d9dc6b",
+      "renderSHA256": "51d41605d9dba82a880ac3837efc7785f410341505d0ee7727983600f8e540e0",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "fbx_back": {
+      "meanRGB": 0.0006353535353535353,
+      "p95RGB": 0.0,
+      "maxRGB": 2.0,
+      "sourceSHA256": "fba0e3d39f10b93d366eafe84f527b0d607d3ff455bd3b40d8a007eec6d9dc6b",
+      "renderSHA256": "04632315c3cf42df0d15523f9638961faec1b96b018f4f6652d59e6bb654c0ca",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "glb_left_profile": {
+      "meanRGB": 0.004667676767676768,
+      "p95RGB": 0.0,
+      "maxRGB": 30.0,
+      "sourceSHA256": "4717e085ed70c0d97ff201b220229675f23e8cbb256e77210208b7d4d6d17189",
+      "renderSHA256": "b478ea35539cedd5061c0db7b6d563c2fdc3b774706beef20b7264870710f235",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "fbx_left_profile": {
+      "meanRGB": 0.004860606060606061,
+      "p95RGB": 0.0,
+      "maxRGB": 29.0,
+      "sourceSHA256": "4717e085ed70c0d97ff201b220229675f23e8cbb256e77210208b7d4d6d17189",
+      "renderSHA256": "bd6abb727aacd896bab368179f9e188cca8cdf05da0b93641c56342479e7eaf3",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "glb_right_profile": {
+      "meanRGB": 0.004102693602693603,
+      "p95RGB": 0.0,
+      "maxRGB": 21.0,
+      "sourceSHA256": "7373028233accc56dcde76eb533ddfb1e6c64c40de9da85f537d4cb63735a7de",
+      "renderSHA256": "46a2cd2bda16a4eca1e6d30a8c55b49801f25b9fc37f20a341d0f63ee4781b9c",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    },
+    "fbx_right_profile": {
+      "meanRGB": 0.004213804713804714,
+      "p95RGB": 0.0,
+      "maxRGB": 22.0,
+      "sourceSHA256": "7373028233accc56dcde76eb533ddfb1e6c64c40de9da85f537d4cb63735a7de",
+      "renderSHA256": "77d0b724f300048835850f235880c4c7482d37bf5ca4d8d37f25d3ecb7b59fef",
+      "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+    }
+  },
+  "acceptedForWholeIntermediateCheckpoint": true,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "remaining": [
+    "Reference ornaments/overlay/embroidery/tassels and sewing rest/mounting still unfinished.",
+    "1.385M triangles include geometric lace; final deformation LOD is unfinished.",
+    "Canonical common face/body168cm/rig, true lower layers, individual outfit hairstyle, cloth/hair dynamics/collisions/wind/actions/expressions and runtime outfit switching unfinished."
+  ],
+  "notYetPublished": true,
+  "createdAt": "2026-10-04T05:49:21.653377+00:00"
+}

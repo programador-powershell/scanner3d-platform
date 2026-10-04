@@ -1,0 +1,273 @@
+{
+  "version": "v147",
+  "wholeCharacterWithDress": true,
+  "sourceWholeWorkingVersion": "v145",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.Export147.character",
+      "vertices": 107832,
+      "triangles": 150000,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "positionSHA256": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.Export147.apron",
+      "vertices": 4202,
+      "triangles": 8400,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "positionSHA256": "21b606a3078598afdba9b0784af03332d65c21d36765ca82f45fb6af968a51c2"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.Export147.chain",
+      "vertices": 30528,
+      "triangles": 61056,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "positionSHA256": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.Export147.cord",
+      "vertices": 11076,
+      "triangles": 22136,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "positionSHA256": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.Export147.lace",
+      "vertices": 577422,
+      "triangles": 1144188,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "positionSHA256": "0a1ef57ff9b9a68891f41b54035c4551311aea33784fe1cb3a26d81e5ad7162b"
+    }
+  ],
+  "totalTriangles": 1385780,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_apron_tip_chain_cord_working_v145.blend",
+      "bytes": 536252579,
+      "sha256": "20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/apron_tip_chain_cord_checkpoint_v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.glb",
+      "bytes": 147476592,
+      "sha256": "919f3ce3479bf4e1e2795cf75c7d99e875d9b503d1d2fcefb6231125166de51f"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/apron_tip_chain_cord_checkpoint_v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.fbx",
+      "bytes": 184709436,
+      "sha256": "6f8c711318939123365e4379341a87281d997af5bf5acb4c705b23194517fb26"
+    }
+  },
+  "sourceBlendUnchanged": true,
+  "explicitTriangleExport": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "publicationPerformed": false,
+  "requiresIndependentReimportAndVisualReview": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 232.15200114250183,
+  "review": {
+    "version": "v161",
+    "sourceWholeWorkingVersion": "v145",
+    "exportWholeVersion": "v147",
+    "sourceWholeSHA256": "20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9",
+    "allSevenWholeSourceBeforeAfterViewsActuallyInspected": true,
+    "allTenIndependentGLBFBXViewsActuallyInspected": true,
+    "referenceBoard5ActuallyInspected": true,
+    "referenceSHA256": "91b93bd3d72155ef1edf5dc0aec1fbca43dffd98e355a10342080c3320d5bcd9",
+    "tipDarkFoldCorrectedForStaticReview": true,
+    "newChainStaticIntersections": 0,
+    "newCordStaticSelfAndTargetIntersections": 0,
+    "normalDifferenceCause": "Exact replay of importer normal encoding gives zero component difference on every mesh. Raw FBX normals component-exact; raw GLB normal directions preserved v151. First .1-degree source-vs-import assertion was not sufficient for Blender encoded normal storage.",
+    "sourceImportPixelDiagnostics": {
+      "glb_front": {
+        "meanRGB": 0.011450505050505051,
+        "p95RGB": 0.0,
+        "maxRGB": 13.0,
+        "sourceSHA256": "5b2e18a1e26ead05608f0d26e9d398eba7aad516020f5fede1bbf7874ebaaf16",
+        "renderSHA256": "afe5bb56a0c7d377fd2d84d9a3b0bd71117f81bc243c4b0a9ae6cfa4271c9e73",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "fbx_front": {
+        "meanRGB": 0.011113804713804713,
+        "p95RGB": 0.0,
+        "maxRGB": 16.0,
+        "sourceSHA256": "5b2e18a1e26ead05608f0d26e9d398eba7aad516020f5fede1bbf7874ebaaf16",
+        "renderSHA256": "bdb7e8452b91906635130289e5b22769d7d596b415551760398c3329de2da9a1",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "glb_threequarter": {
+        "meanRGB": 0.010794949494949494,
+        "p95RGB": 0.0,
+        "maxRGB": 27.0,
+        "sourceSHA256": "58178c25ddce4fc2529a02ed0bf486b2b5da38089bdfb329afed24d0ab2bd511",
+        "renderSHA256": "ed3e8b957b26c1cb0fb44765f6436f9a919a161d8defb09350e0d154336cc983",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "fbx_threequarter": {
+        "meanRGB": 0.011098653198653198,
+        "p95RGB": 0.0,
+        "maxRGB": 27.0,
+        "sourceSHA256": "58178c25ddce4fc2529a02ed0bf486b2b5da38089bdfb329afed24d0ab2bd511",
+        "renderSHA256": "6adb4b887e792f1d8cf204dbc889323f228cd8798fa8679a0630b646240c15c2",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "glb_back": {
+        "meanRGB": 0.0018191919191919191,
+        "p95RGB": 0.0,
+        "maxRGB": 7.0,
+        "sourceSHA256": "fba0e3d39f10b93d366eafe84f527b0d607d3ff455bd3b40d8a007eec6d9dc6b",
+        "renderSHA256": "51d41605d9dba82a880ac3837efc7785f410341505d0ee7727983600f8e540e0",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "fbx_back": {
+        "meanRGB": 0.0006353535353535353,
+        "p95RGB": 0.0,
+        "maxRGB": 2.0,
+        "sourceSHA256": "fba0e3d39f10b93d366eafe84f527b0d607d3ff455bd3b40d8a007eec6d9dc6b",
+        "renderSHA256": "04632315c3cf42df0d15523f9638961faec1b96b018f4f6652d59e6bb654c0ca",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "glb_left_profile": {
+        "meanRGB": 0.004667676767676768,
+        "p95RGB": 0.0,
+        "maxRGB": 30.0,
+        "sourceSHA256": "4717e085ed70c0d97ff201b220229675f23e8cbb256e77210208b7d4d6d17189",
+        "renderSHA256": "b478ea35539cedd5061c0db7b6d563c2fdc3b774706beef20b7264870710f235",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "fbx_left_profile": {
+        "meanRGB": 0.004860606060606061,
+        "p95RGB": 0.0,
+        "maxRGB": 29.0,
+        "sourceSHA256": "4717e085ed70c0d97ff201b220229675f23e8cbb256e77210208b7d4d6d17189",
+        "renderSHA256": "bd6abb727aacd896bab368179f9e188cca8cdf05da0b93641c56342479e7eaf3",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "glb_right_profile": {
+        "meanRGB": 0.004102693602693603,
+        "p95RGB": 0.0,
+        "maxRGB": 21.0,
+        "sourceSHA256": "7373028233accc56dcde76eb533ddfb1e6c64c40de9da85f537d4cb63735a7de",
+        "renderSHA256": "46a2cd2bda16a4eca1e6d30a8c55b49801f25b9fc37f20a341d0f63ee4781b9c",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      },
+      "fbx_right_profile": {
+        "meanRGB": 0.004213804713804714,
+        "p95RGB": 0.0,
+        "maxRGB": 22.0,
+        "sourceSHA256": "7373028233accc56dcde76eb533ddfb1e6c64c40de9da85f537d4cb63735a7de",
+        "renderSHA256": "77d0b724f300048835850f235880c4c7482d37bf5ca4d8d37f25d3ecb7b59fef",
+        "scope": "Whole-frame diagnostics, not fidelity score; Blender importer normal encoding differs as independently replayed."
+      }
+    },
+    "acceptedForWholeIntermediateCheckpoint": true,
+    "canonicalIdentityApproved": false,
+    "anatomical168cmApproved": false,
+    "rigged": false,
+    "physicsVerified": false,
+    "productionComplete": false,
+    "additionalTripoCredits": 0,
+    "remaining": [
+      "Reference ornaments/overlay/embroidery/tassels and sewing rest/mounting still unfinished.",
+      "1.385M triangles include geometric lace; final deformation LOD is unfinished.",
+      "Canonical common face/body168cm/rig, true lower layers, individual outfit hairstyle, cloth/hair dynamics/collisions/wind/actions/expressions and runtime outfit switching unfinished."
+    ],
+    "notYetPublished": true,
+    "createdAt": "2026-10-04T05:49:21.653377+00:00"
+  },
+  "baseStatus": "Canonical common face/body168cm/rig not approved. Provisional original Coelho Tripo preserved; SharedBase not promoted.",
+  "largeBinaryDelivery": "GitHub project-alice-game immutable release assets; full Blender source unchanged.",
+  "requiresContinuedProductionAfterPublication": true,
+  "referenceCrop": {
+    "source": "references/board_01.png",
+    "box": [
+      18,
+      120,
+      340,
+      932
+    ],
+    "generated": false,
+    "sha256": "235ccb89c6e8cbdfc0c68da3d1269282e659c00b1868e7df330217f8f95a9f7c"
+  },
+  "reproductionScope": "Full source Blender in release and current shared production mapping required. QA NPZs and scripts included; local source candidates remain separate, never import rejected/HDD sources.",
+  "release": {
+    "version": "v162",
+    "repository": "programador-powershell/project-alice-game",
+    "releaseId": 402864705,
+    "releaseURL": "https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-apron-tip-chain-cord-wip-v147",
+    "tag": "coelho-apron-tip-chain-cord-wip-v147",
+    "targetRevision": "038c316b7dbf15b505526c799444d0f8ade1eec9",
+    "wholeCharacterWithDress": true,
+    "productionComplete": false,
+    "publicationLeaseNonce": "8f68815f469f4f2cb48200232426031b",
+    "files": {
+      "glb": {
+        "path": "Assets/Characters/alice_coelho/Exports/apron_tip_chain_cord_checkpoint_v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.glb",
+        "bytes": 147476592,
+        "sha256": "919f3ce3479bf4e1e2795cf75c7d99e875d9b503d1d2fcefb6231125166de51f",
+        "assetId": 609230398,
+        "filename": "alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.glb",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-apron-tip-chain-cord-wip-v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.glb",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609230398",
+        "githubDigest": "sha256:919f3ce3479bf4e1e2795cf75c7d99e875d9b503d1d2fcefb6231125166de51f",
+        "uploaded": true,
+        "downloadHashVerified": true
+      },
+      "fbx": {
+        "path": "Assets/Characters/alice_coelho/Exports/apron_tip_chain_cord_checkpoint_v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.fbx",
+        "bytes": 184709436,
+        "sha256": "6f8c711318939123365e4379341a87281d997af5bf5acb4c705b23194517fb26",
+        "assetId": 609231711,
+        "filename": "alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.fbx",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-apron-tip-chain-cord-wip-v147/alice_coelho_complete_apron_tip_chain_cord_checkpoint_v147.fbx",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609231711",
+        "githubDigest": "sha256:6f8c711318939123365e4379341a87281d997af5bf5acb4c705b23194517fb26",
+        "uploaded": true,
+        "downloadHashVerified": true
+      },
+      "blend": {
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_apron_tip_chain_cord_working_v145.blend",
+        "bytes": 536252579,
+        "sha256": "20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9",
+        "assetId": 609233444,
+        "filename": "alice_coelho_complete_apron_tip_chain_cord_working_v145.blend",
+        "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-apron-tip-chain-cord-wip-v147/alice_coelho_complete_apron_tip_chain_cord_working_v145.blend",
+        "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/609233444",
+        "githubDigest": "sha256:20fdf48066b65fa35df4569b068e17131d66278c31e2cede78919f6a11e7e8c9",
+        "uploaded": true,
+        "downloadHashVerified": true
+      }
+    },
+    "updatedAt": "2026-10-04T05:57:33.211968+00:00"
+  },
+  "binaryReleasePublishedAndHashVerified": true,
+  "portalPublicationPending": true
+}

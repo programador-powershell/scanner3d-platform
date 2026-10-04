@@ -1,0 +1,126 @@
+{
+  "version": "v142",
+  "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_chain_reflow_candidate_v136.blend",
+  "sourceSHA256": "f6035e73b1c60f8bf776cc7eb477849a77672154eaccaf8bb1df4773e99788a7",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_apron_cord_spacing_candidate_v142.blend",
+  "sha256": "8a260d99e7c52761976685fb155ef81f166bdf0ab36b6c597fcd9afe3900bb84",
+  "object": "Alice.Coelho.Apron.Cords.LocalSpacing.Candidate.v142",
+  "clothObject": "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121",
+  "chainObject": "Alice.Coelho.Apron.ChainReflow.Candidate.v136",
+  "parts": [
+    {
+      "role": "chain",
+      "object": "Alice.Coelho.Apron.ChainReflow.Candidate.v136",
+      "referenceObject": "Alice.Coelho.Apron.ChainLOD.Candidate.v066"
+    },
+    {
+      "role": "cord",
+      "object": "Alice.Coelho.Apron.Cords.LocalSpacing.Candidate.v142",
+      "referenceObject": "Alice.Coelho.Apron.CordPreserved.Candidate.v082.TipMetric.v123"
+    },
+    {
+      "role": "lace",
+      "object": "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129",
+      "referenceObject": "Alice.Coelho.Apron.LaceRigidMotifs.Tip.v126"
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "selfSATTrianglePairs": 160,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 18,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 1,
+      "selfSATTrianglePairs": 132,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 24,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 2,
+      "selfSATTrianglePairs": 96,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 24,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 3,
+      "selfSATTrianglePairs": 70,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 4,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 12,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 4,
+      "selfSATTrianglePairs": 36,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 6,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 5,
+      "selfSATTrianglePairs": 20,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 0,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 6,
+      "selfSATTrianglePairs": 10,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 0,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    },
+    {
+      "iteration": 7,
+      "selfSATTrianglePairs": 0,
+      "contacts": {
+        "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+        "Alice.Coelho.Complete.GameCandidate": 0,
+        "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 0,
+        "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+      }
+    }
+  ],
+  "maxLocalSectionTranslationM": 0.0008400000000000143,
+  "UVTopologyMaterialsAndSectionRadiusPreserved": true,
+  "clothChainLaceWholeSourcePreserved": true,
+  "selfSATTrianglePairs": 0,
+  "actualTargetSATCounts": {
+    "Alice.Coelho.Apron.TipDepthPolish.Candidate.v121": 0,
+    "Alice.Coelho.Complete.GameCandidate": 0,
+    "Alice.Coelho.Apron.ChainReflow.Candidate.v136": 0,
+    "Alice.Coelho.Apron.DenseLace.CapsuleWeaveCandidate.v129": 0
+  },
+  "independentReopenAndVisualReviewPending": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "notIntegrated": true,
+  "notPublished": true,
+  "productionComplete": false,
+  "elapsedSeconds": 61.97470045089722
+}
