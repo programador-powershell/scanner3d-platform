@@ -129,6 +129,8 @@
     "tools/verify_coelho_distinct_walk_fbx_normals_v1152.py": "1baa4f50edaeb3ec7916d3140121a9f4f5c0a1ec4cfed14d429816dc6803b686",
     "tools/verify_coelho_distinct_walk_glb_materials_v1153.py": "9eb62e583e6148cf4b19785081de717f084b334a7ab557f728adb9999a99010e",
     "tools/verify_coelho_distinct_walk_glb_normals_v1151.py": "6fc1ed020b3922039e324e9a41463ba07c5d9840b31f81e546a8ac25e4ef8483",
-    "tools/verify_coelho_fbx_raw_sequence_v1177.py": "ec76f497a1ebdafe876ec3a5ea116d2741b748d467a57de37dee2ec87601ed3e"
-  }
+    "tools/verify_coelho_fbx_raw_sequence_v1177.py": "ec76f497a1ebdafe876ec3a5ea116d2741b748d467a57de37dee2ec87601ed3e",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
+  "GitBlobBytePreservation": "Scoped * -text preserves raw evidence/source bytes, including Windows CRLF. Initial commit auto-normalized text; subsequent direct commit restores exact bytes without changing model or binary exports."
 }
