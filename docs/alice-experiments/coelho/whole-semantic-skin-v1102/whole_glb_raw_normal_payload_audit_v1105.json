@@ -1,0 +1,2438 @@
+{
+  "version": "v1105",
+  "sha256": "a91e9d087968973e6357f8c7da25a6d2521f1feeeb8d88731a6b5aec5b70b846",
+  "directBinaryGLBPayload": true,
+  "rawWorldPayloadAndIdentitySkinnedMeshNodeExactlyVerified": true,
+  "allSourceTrianglesAndNormalsVerified": true,
+  "normalExporterRoundingDigits": 4,
+  "exactUnroundedSourceNormalsNotClaimed": true,
+  "exporterSourceSHA256": "fa36dec52271bd7bbde8bd9e75357698e5574b5f32ab993c454f585b895a1c6e",
+  "verificationScope": "Replayed native exporter rounding and normalization, then compared each matched corner; original unrounded normals not claimed component-exact.",
+  "records": [
+    {
+      "role": "character",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "apron",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "chain",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "cord",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "lace",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "ornament_outer_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02267486209622828,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_inner_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "ornament_center",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_inner_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_outer_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_bow_left_base_loop_sewn_edges",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_left_printed_tail_sewn_edges",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_base_loop_sewn_edges",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_right_printed_tail_sewn_edges",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_backing",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_left_attachment_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_right_attachment_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_root_stitches",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_closed_watch_case",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_porcelain_dial",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_outer_bezel_recess",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_inner_bezel_highlight",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_sixty_raised_minute_indices",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_roman_XII",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_I",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_II",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_III",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_IV",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_V",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VI",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VII",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VIII",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_IX",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_X",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_roman_XI",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_clock_hour_hand_leaf",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_minute_hand_leaf",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_central_hand_rivet",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_oval_suspension_bail",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_winding_crown_base",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_-1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_dial_outer_roman_ring",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_minute_ring",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_center_ring",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_center_highlight",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_case_scalloped_filigree_border",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_10",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_11",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_12",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_13",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_14",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_15",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_collar",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_10",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_11",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_12",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_13",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_14",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_15",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_16",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_17",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_collar",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_10",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_11",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_12",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_13",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_14",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_15",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_collar",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_closed_ferrule",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_closed_ferrule",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_closed_ferrule",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_case_anchor",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_30",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_31",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_32",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_case_anchor",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_0",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_10",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_11",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_12",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_13",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 8.940696716308594e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_14",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_15",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03956468030810356,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_16",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_17",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_18",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_19",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_20",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_21",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_22",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_23",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_24",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_25",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_retaining_oval",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_front_case_scroll_relief",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_1",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_2",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_3",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_4",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_5",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_6",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_7",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_8",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_9",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_10",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_11",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_12",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_13",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_14",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 5.960464477539063e-08,
+      "maxRawPayloadAngleDegrees": 0,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_15",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_16",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_17",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 1.1920928955078125e-07,
+      "maxRawPayloadAngleDegrees": 0.01978234015405178,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.01978234015405178,
+        0.01978234015405178
+      ]
+    }
+  ],
+  "productionComplete": false
+}

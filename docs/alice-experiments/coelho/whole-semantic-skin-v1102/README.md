@@ -1,0 +1,9 @@
+# Alice Coelho inteira — checkpoint parcial de pesos v1102
+
+A mão esticava quando o antebraço se movia porque parte dos dedos tinha peso na pelve. A fonte inteira v1097 restringe as duas mãos aos próprios ossos de mão/dedos e protege o vestido nos testes dos antebraços. Geometria, todos os UVs, normais e materiais da autoria foram preservados.
+
+GLB/FBX completos: https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-whole-semantic-skin-wip-v1102. Ambos baixados do GitHub e conferidos por SHA256. Blender inteiro de 906113820 bytes preservado no disco compartilhado, com autoria recuperável; caminho/hash/dependência de biblioteca no manifesto. Não substituir pela base compartilhada nem usar os seeds antigos que deformavam mãos/vestido.
+
+Validação: 202 malhas / 209 ossos; reabertura nativa com 42 poses de antebraço e dois indicadores; quatro poses reimportadas por formato, todas comparadas com a fonte; 12 renders reais; UVs, materiais 4K/canais e normais verificados. No GLB, a regra oficial remove pesos <=0,0001 e normaliza; diferença máxima nas poses ~7 µm, FBX <1 µm. A prévia local Three.js conferiu os controles, 214 primitivas skinned e os mesmos 209 ossos, sem erros de console. Os scripts mantêm os limites geométricos e verificam todas as faces; 38 permutações bijetivas de cantos resolvem quase coincidências do GLB sem alterar o mesh.
+
+Sem Vercel, alteração no portal ou nova despesa Tripo. Este checkpoint NÃO é o asset final: corpo/rosto canônicos e 168cm anatômicos, rig/camadas definitivos, cabelo com fios individuais, tecido/vento/colisões, ações/expressões e gameplay continuam pendentes. As 201 peças adicionais ainda usam vínculo inicial na pelve; não equivalem a tecido final riggado. Nenhum clip de gameplay foi exportado. Continuar a produção do Coelho antes de outra geração própria.

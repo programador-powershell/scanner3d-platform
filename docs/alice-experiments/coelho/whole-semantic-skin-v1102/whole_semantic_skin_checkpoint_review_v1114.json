@@ -1,0 +1,114 @@
+{
+  "version": "v1114",
+  "acceptedAsVerifiedLocalWholeIntermediateCheckpoint": true,
+  "wholeCharacterWithDress": true,
+  "sourceWorkingVersion": "v1097",
+  "exportsVersion": "v1102",
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/semantic_skin_binding_CANDIDATE_v1097/alice_coelho_complete_both_hand_semantic_skin_CANDIDATE_v1097.blend",
+      "bytes": 906113820,
+      "sha256": "83b691891cb43939d9a637b2bfe0799b57268d969f13105416f73d87a4dbb39c"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_semantic_skin_checkpoint_v1102/alice_coelho_complete_whole_semantic_skin_checkpoint_v1102.glb",
+      "bytes": 238895588,
+      "sha256": "a91e9d087968973e6357f8c7da25a6d2521f1feeeb8d88731a6b5aec5b70b846"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_semantic_skin_checkpoint_v1102/alice_coelho_complete_whole_semantic_skin_checkpoint_v1102.fbx",
+      "bytes": 309867324,
+      "sha256": "db06f2f12317cddec288e56b3904c14c067c48fb65952ddd81c6dd71af0006d2"
+    }
+  },
+  "native42ForearmPosesAndTwoIndexTestsVerified": true,
+  "twelveActualReimportRendersInspected": true,
+  "formatChecks": [
+    {
+      "format": "glb",
+      "reimportAudit": "reimport_whole_glb_audit_v1118.json",
+      "all202MeshTrianglesUVMaterialsAndWeightsVerified": true,
+      "boneCount": 209,
+      "fourManualPosesComparedToNative": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 6.611475328099914e-06,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 6.53296547170612e-06,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 1.461605620534101e-06,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 1.461605620534101e-06,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "sixActualRendersInspected": true,
+      "bijectiveCornerFallbackCount": 38,
+      "nativeExporterMinInfluenceReplayed": 0.0001
+    },
+    {
+      "format": "fbx",
+      "reimportAudit": "reimport_whole_fbx_audit_v1112.json",
+      "all202MeshTrianglesUVMaterialsAndWeightsVerified": true,
+      "boneCount": 209,
+      "fourManualPosesComparedToNative": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "sixActualRendersInspected": true,
+      "bijectiveCornerFallbackCount": 0,
+      "nativeExporterMinInfluenceReplayed": null
+    }
+  ],
+  "rawNormalsAnd4KMaterialPixelChannelChecksVerified": true,
+  "sourceGeometryAllUVAndNormalsPreserved": true,
+  "authoringFullBlendRetained": true,
+  "sharedLibraryUnchanged": true,
+  "acceptedForDirectWholeCheckpointGithubPublication": true,
+  "VercelRequired": false,
+  "portalPublicationPerformed": false,
+  "rigFinalApproved": false,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "individualHair": false,
+  "clothPhysicsApproved": false,
+  "gameplayMotionApproved": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "limitations": [
+    "only four manual exported diagnostic poses; no gameplay clips in these GLB/FBX",
+    "201 additional cloth/accessory meshes still have initial Hips binding, not final cloth behavior",
+    "common canonical full body/head integration and anatomical168cm verification pending",
+    "hair is original solid Tripo surface, not individually authored strands",
+    "cloth layers, wind/collisions/run/jump/fall/attack/expressions/gameplay pending",
+    "GLB exporter filters weights <=0.0001 and normalizes; unfiltered native weight identity not claimed; FBX raw weights preserved"
+  ],
+  "createdAt": "2026-10-06T20:17:21.521696+00:00"
+}

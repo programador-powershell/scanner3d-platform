@@ -1,0 +1,1146 @@
+{
+  "version": "v1098",
+  "sourceSHA256": "83b691891cb43939d9a637b2bfe0799b57268d969f13105416f73d87a4dbb39c",
+  "independentReopen": true,
+  "neutral202MeshesVerified": true,
+  "neutralChecks": [
+    {
+      "role": "character",
+      "maxDisplacementM": 2.6889912874139554e-07
+    },
+    {
+      "role": "apron",
+      "maxDisplacementM": 1.2036781527058338e-07
+    },
+    {
+      "role": "chain",
+      "maxDisplacementM": 1.2105761015845928e-07
+    },
+    {
+      "role": "cord",
+      "maxDisplacementM": 1.2036781527058338e-07
+    },
+    {
+      "role": "lace",
+      "maxDisplacementM": 1.2105761015845928e-07
+    },
+    {
+      "role": "ornament_outer_left",
+      "maxDisplacementM": 1.2105761015845928e-07
+    },
+    {
+      "role": "ornament_inner_left",
+      "maxDisplacementM": 6.828570064953965e-08
+    },
+    {
+      "role": "ornament_center",
+      "maxDisplacementM": 4.218798821398195e-08
+    },
+    {
+      "role": "ornament_inner_right",
+      "maxDisplacementM": 6.828570064953965e-08
+    },
+    {
+      "role": "ornament_outer_right",
+      "maxDisplacementM": 1.2105761015845928e-07
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "maxDisplacementM": 1.2036781527058338e-07
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "maxDisplacementM": 1.2288165862628375e-07
+    },
+    {
+      "role": "rear_bow_left_base_loop_sewn_edges",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_left_printed_tail_sewn_edges",
+      "maxDisplacementM": 1.2036781527058338e-07
+    },
+    {
+      "role": "rear_bow_right_base_loop_sewn_edges",
+      "maxDisplacementM": 1.2377833513710357e-07
+    },
+    {
+      "role": "rear_bow_right_printed_tail_sewn_edges",
+      "maxDisplacementM": 1.228783474971351e-07
+    },
+    {
+      "role": "rear_bow_reinforced_backing",
+      "maxDisplacementM": 1.1944553079956677e-07
+    },
+    {
+      "role": "rear_bow_reinforced_left_attachment_loop",
+      "maxDisplacementM": 1.1944553079956677e-07
+    },
+    {
+      "role": "rear_bow_reinforced_right_attachment_loop",
+      "maxDisplacementM": 1.1944553079956677e-07
+    },
+    {
+      "role": "rear_bow_reinforced_root_stitches",
+      "maxDisplacementM": 1.1944553079956677e-07
+    },
+    {
+      "role": "rear_clock_closed_watch_case",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_porcelain_dial",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_outer_bezel_recess",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_inner_bezel_highlight",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_sixty_raised_minute_indices",
+      "maxDisplacementM": 1.1922384146600962e-07
+    },
+    {
+      "role": "rear_clock_roman_XII",
+      "maxDisplacementM": 1.201372299419745e-07
+    },
+    {
+      "role": "rear_clock_roman_I",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_roman_II",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_III",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_IV",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_V",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_roman_VI",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_roman_VII",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_roman_VIII",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_IX",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_X",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_roman_XI",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_hour_hand_leaf",
+      "maxDisplacementM": 1.1921292752958834e-07
+    },
+    {
+      "role": "rear_clock_minute_hand_leaf",
+      "maxDisplacementM": 1.1921292752958834e-07
+    },
+    {
+      "role": "rear_clock_central_hand_rivet",
+      "maxDisplacementM": 1.1920930376163597e-07
+    },
+    {
+      "role": "rear_clock_oval_suspension_bail",
+      "maxDisplacementM": 1.2013789785214612e-07
+    },
+    {
+      "role": "rear_clock_winding_crown_base",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_anchor_-1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_anchor_0",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_anchor_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_dial_outer_roman_ring",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_dial_inner_minute_ring",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_dial_inner_center_ring",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_dial_inner_center_highlight",
+      "maxDisplacementM": 1.2014061212539673e-07
+    },
+    {
+      "role": "rear_clock_case_scalloped_filigree_border",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_0",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_2",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_3",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_4",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_5",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_6",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_7",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_8",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_9",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_10",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_11",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_12",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_13",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_14",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_-1_link_15",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_collar",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_0",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_2",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_3",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_4",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_5",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_6",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_7",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_8",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_9",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_0",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_1",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_2",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_3",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_4",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_5",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_6",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_7",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_8",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_9",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_10",
+      "maxDisplacementM": 1.2013701677915378e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_11",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_12",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_13",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_14",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_15",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_16",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_chain_0_link_17",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_collar",
+      "maxDisplacementM": 6.143917374856755e-08
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_0",
+      "maxDisplacementM": 1.1920930376163597e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_1",
+      "maxDisplacementM": 1.2013701677915378e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_2",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_3",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_4",
+      "maxDisplacementM": 1.2013701677915378e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_5",
+      "maxDisplacementM": 1.1920928955078125e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_6",
+      "maxDisplacementM": 1.2013701677915378e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_7",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_8",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_9",
+      "maxDisplacementM": 1.2013701677915378e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_0",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_2",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_3",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_4",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_5",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_6",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_7",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_8",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_9",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_10",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_11",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_12",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_13",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_14",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_chain_1_link_15",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_collar",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_0",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_2",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_3",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_4",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_5",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_6",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_7",
+      "maxDisplacementM": 1.2013700256829907e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_8",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_9",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_tassel_-1_closed_ferrule",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_left",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_right",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_0_closed_ferrule",
+      "maxDisplacementM": 1.2013705941171793e-07
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_left",
+      "maxDisplacementM": 6.143917374856755e-08
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_right",
+      "maxDisplacementM": 6.143917374856755e-08
+    },
+    {
+      "role": "rear_clock_tassel_1_closed_ferrule",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_left",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_right",
+      "maxDisplacementM": 6.146728992462158e-08
+    },
+    {
+      "role": "rear_clock_left_drape_case_anchor",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_0",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_30",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_31",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_32",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_long_side_case_anchor",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_0",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_2",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_3",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_4",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_5",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_6",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_7",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_8",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_9",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_10",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_11",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_12",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_13",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_14",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_15",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_16",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_17",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_18",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_19",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_20",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_21",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_22",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_23",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_24",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_25",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_long_side_retaining_oval",
+      "maxDisplacementM": 1.2036781527058338e-07
+    },
+    {
+      "role": "rear_clock_front_case_scroll_relief",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_1",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_2",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_3",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_4",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_5",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_6",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_7",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_8",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_9",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_10",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_11",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_12",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_13",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_14",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_15",
+      "maxDisplacementM": 1.201514407966897e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_16",
+      "maxDisplacementM": 1.2019474127100693e-07
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_17",
+      "maxDisplacementM": 1.201514407966897e-07
+    }
+  ],
+  "originalPositionsTopologyUVNormalsMaterialNamesExactlyPreserved": true,
+  "sharedSkeletonLinkedNotChanged": true,
+  "protectedGarmentVertices": 49361,
+  "manualElbowPoseCount": 42,
+  "protectedGarmentStationaryInAll42TestedPoses": true,
+  "bothHandsFollowForearmWithoutPelvisTearing": true,
+  "poseResults": [
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.0,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 1.383883869721103e-07,
+      "movingHandVertices": 0
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.017453292500000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 1.8858362693663366e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.034906585000000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.0181749366420263e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.052359877500000006,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 1.9508040338678256e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.06981317000000001,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4374332951992983e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.0872664625,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.6151431598009367e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.10471975500000001,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.6749555104288447e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.12217304750000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.416849440578517e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.13962634000000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.0940529427425645e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.1570796325,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.066753322400473e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.174532925,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 1.9659510996916651e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.19198621750000003,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4073563054116676e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.20943951000000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.5156055016850587e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.22689280250000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.039252476355614e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.24434609500000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.563692760304548e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.26179938750000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4677061105649045e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.27925268000000003,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 4.217318121391145e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.2967059725,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.5211161869265197e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.314159265,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4677061105649045e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.3316125575,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.579381768759049e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "LeftForeArm",
+      "angleRadians": 0.34906585,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.009886881955026e-07,
+      "movingHandVertices": 2477
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.0,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 1.8271079227361042e-07,
+      "movingHandVertices": 0
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.017453292500000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4053377956079203e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.034906585000000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.9811633339704713e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.052359877500000006,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4073563054116676e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.06981317000000001,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.485637082827452e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.0872664625,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.6697625798988156e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.10471975500000001,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.578024632133747e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.12217304750000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4677061105649045e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.13962634000000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.004746164629978e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.1570796325,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.666641876203357e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.174532925,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.702825838696299e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.19198621750000003,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.0504190817737253e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.20943951000000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4620757699267415e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.22689280250000002,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.199415061772015e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.24434609500000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.6697625798988156e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.26179938750000004,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.4073563054116676e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.27925268000000003,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.021851284756849e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.2967059725,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 2.086162567138672e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.314159265,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.111453850124235e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.3316125575,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.223614157832344e-07,
+      "movingHandVertices": 2447
+    },
+    {
+      "bone": "RightForeArm",
+      "angleRadians": -0.34906585,
+      "protectedGarmentMaxDisplacementM": 1.2288165862628375e-07,
+      "handRigidInheritanceMaxErrorM": 3.1256939792001504e-07,
+      "movingHandVertices": 2447
+    }
+  ],
+  "individualIndexFingerMotionIsolatedToOwnHand": [
+    {
+      "bone": "LeftHandIndex2",
+      "movingHandVertices": 1305,
+      "maxOutsideOwnHandDisplacementM": 2.6889912874139554e-07,
+      "maxHandDisplacementM": 0.030200518667697906,
+      "localCurlAxis": [
+        0.39905500411987305,
+        5.570054213421827e-07,
+        0.9169269800186157
+      ]
+    },
+    {
+      "bone": "RightHandIndex2",
+      "movingHandVertices": 996,
+      "maxOutsideOwnHandDisplacementM": 2.6889912874139554e-07,
+      "maxHandDisplacementM": 0.029659902676939964,
+      "localCurlAxis": [
+        0.33044061064720154,
+        -7.691981522839342e-07,
+        -0.9438267946243286
+      ]
+    }
+  ],
+  "allSemanticsVisuallyApproved": false,
+  "gameplayMotionApproved": false,
+  "physicsApproved": false,
+  "productionComplete": false
+}
