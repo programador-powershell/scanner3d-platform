@@ -1,0 +1,47 @@
+{
+  "version": "v1157",
+  "sourceWorkingVersion": "v1146",
+  "sourceBlend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\distinct_stocking_cloth_weights_CANDIDATE_v1146\\alice_coelho_complete_distinct_stocking_cloth_CANDIDATE_v1146.blend",
+  "sourceBlendSHA256": "a42e64845dcf1d6869f78e5678f2a30ddcf2ede6b1e4adcbec3cb28073c872c6",
+  "acceptedForLimitedWholeWeightCheckpointExport": true,
+  "allFourNativeRendersActuallyInspected": true,
+  "all42FramesIndependentlyEvaluated": true,
+  "diagnosticShortEdgeCounts": {
+    "baseline": {
+      "all": 1167,
+      "boots": 587,
+      "forearm": 401,
+      "sleeve": 145,
+      "bootBoundary": 0
+    },
+    "candidate": {
+      "all": 116,
+      "boots": 0,
+      "forearm": 0,
+      "sleeve": 0,
+      "bootBoundary": 0
+    }
+  },
+  "diagnosticThreshold": "rest edge <3cm expanding >12cm; not a fidelity score",
+  "physicalSurfaceSeamsVerified": true,
+  "differentTouchingLayersMustNotShareWeights": true,
+  "geometryAllUVNormalsMaterialsPreserved": true,
+  "noCutWeldOrNewAnatomy": true,
+  "visualFindings": [
+    "previous long boot and forearm strips disappeared in the inspected front/profile study poses",
+    "stocking and navy garment weight fields now separate without editing their geometry",
+    "remaining shoulder/massive hair distortion and provisional pelvis-bound dress persist"
+  ],
+  "acceptedForPublication": false,
+  "requiresWholeGLBFBXReimportAndActualReview": true,
+  "rigFinalApproved": false,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmVerified": false,
+  "hairStrandsComplete": false,
+  "clothPhysicsApproved": false,
+  "gameplayMotionApproved": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "VercelUsed": false,
+  "createdAt": "2026-10-06T21:24:44.386098+00:00"
+}

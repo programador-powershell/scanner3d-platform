@@ -1,0 +1,15 @@
+{
+  "version": "v1174",
+  "oldMotionReference1147InvalidForOriginalWalk": true,
+  "oldRestGeometryUVWeightsAndSixNeutralManualGLBViews1166RemainValid": true,
+  "oldManualPoseReferencesArrayIdentical": true,
+  "rootCause": "Manual elbow tests changed original QUATERNION forearms to XYZ; restore original rotation modes/action settings before original linked Walk.",
+  "oldCapturedWalkVsOriginalFrame11MaxDifferenceM": 0.1763239949941635,
+  "correctedWalkOriginalSourceFrame11MaxDifferenceM": 0.0,
+  "correctedReference": "whole_skin_motion_reference_v1170.json",
+  "sourceBlendAndExportsNotChanged": true,
+  "animationsInGLBFBX": 0,
+  "publicationNotPerformed": true,
+  "productionComplete": false,
+  "createdAt": "2026-10-06T21:59:45.408641+00:00"
+}

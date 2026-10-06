@@ -1,0 +1,455 @@
+{
+  "version": "v1179",
+  "url": "http://127.0.0.1:56866/",
+  "actualDOMAudit": {
+    "version": "v1150",
+    "sourceWhole": "v1146",
+    "sourceSHA256": "29d0953311102dbf9d99e97dfd9b0646bca77c2d17448ecc74807ee48bc192b5",
+    "sourceBytes": 238895588,
+    "sourceMeshNodes": 202,
+    "renderedMeshPrimitives": 214,
+    "renderedTriangles": 1872066,
+    "skinnedMeshes": 214,
+    "animations": 0,
+    "allSourceMeshNames": [
+      "Alice.Coelho.Apron.UniformRest.ClothAuthoring.v046.009",
+      "Alice.Coelho.Chain.Reflow.v136.008",
+      "AliceCoelhoCompleteGameCandidateUV4K.008",
+      "Alice.Coelho.Apron.LaceCord.v072.015",
+      "Alice.Coelho.Apron.DenseLoopNet.v082.019",
+      "Alice.Coelho.Apron.Ornament.center.Candidate.v417.Mesh.004",
+      "Alice.Coelho.Apron.Ornament.inner_left.Candidate.v417.Mesh.004",
+      "Alice.Coelho.Apron.Ornament.inner_right.Candidate.v417.Mesh.004",
+      "Alice.Coelho.Apron.Ornament.outer_left.Candidate.v417.Mesh.004",
+      "Alice.Coelho.Apron.Ornament.outer_right.Candidate.v417.Mesh.004",
+      "Alice.Coelho.RearBow.center_wrap.UV466.Mesh.005",
+      "Alice.Coelho.RearBow.left.base_loop.UV466.Mesh.005",
+      "CoelhoBowSewnEdge.left.base_loop.Mesh643.002",
+      "Alice.Coelho.RearBow.left.plain_satin_tail_back.UV466.Mesh.005",
+      "Alice.Coelho.RearBow.left.printed_tail.UV466.Mesh.005",
+      "CoelhoBowSewnEdge.left.printed_tail.Mesh643.002",
+      "Alice.Coelho.RearBow.left.satin_lining.UV466.Mesh.003.LocalUV547.003",
+      "Alice.Coelho.RearBow.left.structured_interfacing.UV466.Mesh.005",
+      "CoelhoMount711.rear_bow_reinforced_backing.002",
+      "CoelhoMount711.rear_bow_reinforced_left_attachment_loop.002",
+      "CoelhoMount711.rear_bow_reinforced_right_attachment_loop.002",
+      "CoelhoMount711.rear_bow_reinforced_root_stitches.002",
+      "Alice.Coelho.RearBow.right.base_loop.UV466.Mesh.005",
+      "CoelhoBowSewnEdge.right.base_loop.Mesh643.002",
+      "Alice.Coelho.RearBow.right.plain_satin_tail_back.UV466.Mesh.005",
+      "Alice.Coelho.RearBow.right.printed_tail.UV466.Mesh.005",
+      "CoelhoBowSewnEdge.right.printed_tail.Mesh643.002",
+      "Alice.Coelho.RearBow.right.satin_lining.UV466.Mesh.003.LocalUV547.003",
+      "Alice.Coelho.RearBow.right.structured_interfacing.UV466.Mesh.005",
+      "Coelho.Clock764.case_scalloped_filigree_border.002",
+      "Coelho.Clock754.central_hand_rivet.002",
+      "Coelho.Clock764.chain_0_link_0.002",
+      "Coelho.Clock764.chain_0_link_1.002",
+      "Coelho.Clock764.chain_0_link_2.002",
+      "Coelho.Clock764.chain_0_link_3.002",
+      "Coelho.Clock764.chain_0_link_4.002",
+      "Coelho.Clock764.chain_0_link_5.002",
+      "Coelho.Clock764.chain_0_link_6.002",
+      "Coelho.Clock764.chain_0_link_7.002",
+      "Coelho.Clock764.chain_0_link_8.002",
+      "Coelho.Clock764.chain_0_link_9.002",
+      "Coelho.Clock764.chain_0_link_10.002",
+      "Coelho.Clock764.chain_0_link_11.002",
+      "Coelho.Clock764.chain_0_link_12.002",
+      "Coelho.Clock764.chain_0_link_13.002",
+      "Coelho.Clock764.chain_0_link_14.002",
+      "Coelho.Clock764.chain_0_link_15.002",
+      "Coelho.Clock764.chain_0_link_16.002",
+      "Coelho.Clock764.chain_0_link_17.002",
+      "Coelho.Clock764.chain_1_link_0.002",
+      "Coelho.Clock764.chain_1_link_1.002",
+      "Coelho.Clock764.chain_1_link_2.002",
+      "Coelho.Clock764.chain_1_link_3.002",
+      "Coelho.Clock764.chain_1_link_4.002",
+      "Coelho.Clock764.chain_1_link_5.002",
+      "Coelho.Clock764.chain_1_link_6.002",
+      "Coelho.Clock764.chain_1_link_7.002",
+      "Coelho.Clock764.chain_1_link_8.002",
+      "Coelho.Clock764.chain_1_link_9.002",
+      "Coelho.Clock764.chain_1_link_10.002",
+      "Coelho.Clock764.chain_1_link_11.002",
+      "Coelho.Clock764.chain_1_link_12.002",
+      "Coelho.Clock764.chain_1_link_13.002",
+      "Coelho.Clock764.chain_1_link_14.002",
+      "Coelho.Clock764.chain_1_link_15.002",
+      "Coelho.Clock764.chain_-1_link_0.002",
+      "Coelho.Clock764.chain_-1_link_1.002",
+      "Coelho.Clock764.chain_-1_link_2.002",
+      "Coelho.Clock764.chain_-1_link_3.002",
+      "Coelho.Clock764.chain_-1_link_4.002",
+      "Coelho.Clock764.chain_-1_link_5.002",
+      "Coelho.Clock764.chain_-1_link_6.002",
+      "Coelho.Clock764.chain_-1_link_7.002",
+      "Coelho.Clock764.chain_-1_link_8.002",
+      "Coelho.Clock764.chain_-1_link_9.002",
+      "Coelho.Clock764.chain_-1_link_10.002",
+      "Coelho.Clock764.chain_-1_link_11.002",
+      "Coelho.Clock764.chain_-1_link_12.002",
+      "Coelho.Clock764.chain_-1_link_13.002",
+      "Coelho.Clock764.chain_-1_link_14.002",
+      "Coelho.Clock764.chain_-1_link_15.002",
+      "Coelho.Clock754.chain_anchor_0.002",
+      "Coelho.Clock754.chain_anchor_1.002",
+      "Coelho.Clock754.chain_anchor_-1.002",
+      "Coelho.Clock754.closed_watch_case.002",
+      "Coelho.Clock764.dial_inner_center_highlight.002",
+      "Coelho.Clock764.dial_inner_center_ring.002",
+      "Coelho.Clock764.dial_inner_minute_ring.002",
+      "Coelho.Clock764.dial_outer_roman_ring.002",
+      "Coelho.Clock983.front_case_scroll_relief.002",
+      "Coelho.Clock754.hour_hand_leaf.002",
+      "Coelho.Clock754.inner_bezel_highlight.002",
+      "Coelho.Clock857.left_drape_case_anchor.002",
+      "Coelho.Clock857.left_drape_chain_link_0.002",
+      "Coelho.Clock1041.left_drape_chain_link_1.002",
+      "Coelho.Clock1041.left_drape_chain_link_2.002",
+      "Coelho.Clock1041.left_drape_chain_link_3.002",
+      "Coelho.Clock1041.left_drape_chain_link_4.002",
+      "Coelho.Clock1041.left_drape_chain_link_5.002",
+      "Coelho.Clock1041.left_drape_chain_link_6.002",
+      "Coelho.Clock1041.left_drape_chain_link_7.002",
+      "Coelho.Clock1041.left_drape_chain_link_8.002",
+      "Coelho.Clock1041.left_drape_chain_link_9.002",
+      "Coelho.Clock1041.left_drape_chain_link_10.002",
+      "Coelho.Clock1041.left_drape_chain_link_11.002",
+      "Coelho.Clock1041.left_drape_chain_link_12.002",
+      "Coelho.Clock1041.left_drape_chain_link_13.002",
+      "Coelho.Clock1041.left_drape_chain_link_14.002",
+      "Coelho.Clock1041.left_drape_chain_link_15.002",
+      "Coelho.Clock1041.left_drape_chain_link_16.002",
+      "Coelho.Clock1041.left_drape_chain_link_17.002",
+      "Coelho.Clock857.left_drape_chain_link_30.002",
+      "Coelho.Clock857.left_drape_chain_link_31.002",
+      "Coelho.Clock857.left_drape_chain_link_32.002",
+      "Coelho.Clock961.long_side_case_anchor.002",
+      "Coelho.Clock961.long_side_chain_link_0.002",
+      "Coelho.Clock961.long_side_chain_link_1.002",
+      "Coelho.Clock961.long_side_chain_link_2.002",
+      "Coelho.Clock961.long_side_chain_link_3.002",
+      "Coelho.Clock961.long_side_chain_link_4.002",
+      "Coelho.Clock961.long_side_chain_link_5.002",
+      "Coelho.Clock961.long_side_chain_link_6.002",
+      "Coelho.Clock961.long_side_chain_link_7.002",
+      "Coelho.Clock961.long_side_chain_link_8.002",
+      "Coelho.Clock961.long_side_chain_link_9.002",
+      "Coelho.Clock961.long_side_chain_link_10.002",
+      "Coelho.Clock961.long_side_chain_link_11.002",
+      "Coelho.Clock961.long_side_chain_link_12.002",
+      "Coelho.Clock961.long_side_chain_link_13.002",
+      "Coelho.Clock961.long_side_chain_link_14.002",
+      "Coelho.Clock961.long_side_chain_link_15.002",
+      "Coelho.Clock961.long_side_chain_link_16.002",
+      "Coelho.Clock961.long_side_chain_link_17.002",
+      "Coelho.Clock961.long_side_chain_link_18.002",
+      "Coelho.Clock961.long_side_chain_link_19.002",
+      "Coelho.Clock961.long_side_chain_link_20.002",
+      "Coelho.Clock961.long_side_chain_link_21.002",
+      "Coelho.Clock961.long_side_chain_link_22.002",
+      "Coelho.Clock961.long_side_chain_link_23.002",
+      "Coelho.Clock961.long_side_chain_link_24.002",
+      "Coelho.Clock961.long_side_chain_link_25.002",
+      "Coelho.Clock961.long_side_retaining_oval.002",
+      "Coelho.Clock754.minute_hand_leaf.002",
+      "Coelho.Clock754.outer_bezel_recess.002",
+      "Coelho.Clock754.oval_suspension_bail.002",
+      "Coelho.Clock754.porcelain_dial.002",
+      "Clock754.Roman.I.002",
+      "Clock754.Roman.II.002",
+      "Clock754.Roman.III.002",
+      "Clock754.Roman.IV.002",
+      "Clock754.Roman.IX.002",
+      "Clock754.Roman.V.002",
+      "Clock754.Roman.VI.002",
+      "Clock754.Roman.VII.002",
+      "Clock754.Roman.VIII.002",
+      "Clock754.Roman.X.002",
+      "Clock754.Roman.XI.002",
+      "Clock754.Roman.XII.002",
+      "Coelho.Clock754.sixty_raised_minute_indices.002",
+      "Coelho.Clock775.Tassel.0.closed_ferrule.002",
+      "Coelho.Clock764.tassel_0_collar.002",
+      "Coelho.Clock775.Tassel.0.neck_left.002",
+      "Coelho.Clock775.Tassel.0.neck_right.002",
+      "Coelho.Clock764.tassel_0_wire_0.002",
+      "Coelho.Clock764.tassel_0_wire_1.002",
+      "Coelho.Clock764.tassel_0_wire_2.002",
+      "Coelho.Clock764.tassel_0_wire_3.002",
+      "Coelho.Clock764.tassel_0_wire_4.002",
+      "Coelho.Clock764.tassel_0_wire_5.002",
+      "Coelho.Clock764.tassel_0_wire_6.002",
+      "Coelho.Clock764.tassel_0_wire_7.002",
+      "Coelho.Clock764.tassel_0_wire_8.002",
+      "Coelho.Clock764.tassel_0_wire_9.002",
+      "Coelho.Clock775.Tassel.1.closed_ferrule.002",
+      "Coelho.Clock764.tassel_1_collar.002",
+      "Coelho.Clock775.Tassel.1.neck_left.002",
+      "Coelho.Clock775.Tassel.1.neck_right.002",
+      "Coelho.Clock764.tassel_1_wire_0.002",
+      "Coelho.Clock764.tassel_1_wire_1.002",
+      "Coelho.Clock764.tassel_1_wire_2.002",
+      "Coelho.Clock764.tassel_1_wire_3.002",
+      "Coelho.Clock764.tassel_1_wire_4.002",
+      "Coelho.Clock764.tassel_1_wire_5.002",
+      "Coelho.Clock764.tassel_1_wire_6.002",
+      "Coelho.Clock764.tassel_1_wire_7.002",
+      "Coelho.Clock764.tassel_1_wire_8.002",
+      "Coelho.Clock764.tassel_1_wire_9.002",
+      "Coelho.Clock775.Tassel.-1.closed_ferrule.002",
+      "Coelho.Clock764.tassel_-1_collar.002",
+      "Coelho.Clock775.Tassel.-1.neck_left.002",
+      "Coelho.Clock775.Tassel.-1.neck_right.002",
+      "Coelho.Clock764.tassel_-1_wire_0.002",
+      "Coelho.Clock764.tassel_-1_wire_1.002",
+      "Coelho.Clock764.tassel_-1_wire_2.002",
+      "Coelho.Clock764.tassel_-1_wire_3.002",
+      "Coelho.Clock764.tassel_-1_wire_4.002",
+      "Coelho.Clock764.tassel_-1_wire_5.002",
+      "Coelho.Clock764.tassel_-1_wire_6.002",
+      "Coelho.Clock764.tassel_-1_wire_7.002",
+      "Coelho.Clock764.tassel_-1_wire_8.002",
+      "Coelho.Clock764.tassel_-1_wire_9.002",
+      "Coelho.Clock764.winding_crown_knurled_replacement.003"
+    ],
+    "localOnly": true,
+    "productionComplete": false,
+    "boneCount": 209,
+    "manualAndOriginalLinkedWalkStudyOnly": true,
+    "walkFrames": 42,
+    "canonicalIdentityApproved": false,
+    "anatomical168cmVerified": false,
+    "individualHairComplete": false,
+    "clothPhysicsApproved": false,
+    "gameplayApproved": false,
+    "poseQA": {
+      "neutral": {
+        "changedJointWorldMatrices": 0,
+        "maxJointMatrixDifference": 1.9984014443252818e-15,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_study_frame11": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.9110756466433285,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_1": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.3150903816354873,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      },
+      "walk_frame_2": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.411971618282144,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_3": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.4915635787254704,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_5": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.531476306069057,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_6": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.4869066124582995,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_7": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.4163873014626356,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_9": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.7004694624130154,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_10": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.825637003849395,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_12": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.9427542127419324,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_14": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.8298283272300204,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_15": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.8062399156902824,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_17": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.6677918165924117,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_19": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.3060274435735515,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_20": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.0932260015676816,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_22": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.0430772445998255,
+        "maxDesiredJointWorldComponentError": 1.1102230246251565e-15
+      },
+      "walk_frame_24": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 1.9508281389174915,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      },
+      "walk_frame_25": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 1.9086765092968292,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_27": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 1.929996351858771,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_29": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.1858519370447147,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_30": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.3559550129020734,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      },
+      "walk_frame_32": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.463962189223391,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_33": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.4250036456810307,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_35": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.334082890625693,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_37": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.363069807232458,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_39": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.0994987307033885,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_40": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.1394447856617016,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_42": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.3150894279606415,
+        "maxDesiredJointWorldComponentError": 2.220446049250313e-15
+      },
+      "walk_frame_8": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.54316236577701,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_11": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.9110756466433285,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_13": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.9102529711661633,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_16": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.7517101396369497,
+        "maxDesiredJointWorldComponentError": 2.4424906541753444e-15
+      },
+      "walk_frame_18": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.539719856653578,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_21": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.0598694947985425,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_23": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 1.999331143354061,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_26": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 1.898145056332482,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_28": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.0009726552624714,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_31": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.445819134093851,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      },
+      "walk_frame_34": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.346088002684952,
+        "maxDesiredJointWorldComponentError": 1.9984014443252818e-15
+      },
+      "walk_frame_36": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.391367702165893,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      },
+      "walk_frame_38": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.2519385987262486,
+        "maxDesiredJointWorldComponentError": 1.7763568394002505e-15
+      },
+      "walk_frame_41": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.20258712567136,
+        "maxDesiredJointWorldComponentError": 1.5543122344752192e-15
+      },
+      "walk_frame_4": {
+        "changedJointWorldMatrices": 209,
+        "maxJointMatrixDifference": 2.536036357264567,
+        "maxDesiredJointWorldComponentError": 1.3322676295501878e-15
+      }
+    }
+  },
+  "consoleLogs": [],
+  "actions": "Native Walk11 front/profile; play42frame original Walk study; pause. No game physics claimed.",
+  "sourceExportUnchanged": true,
+  "productionComplete": false
+}

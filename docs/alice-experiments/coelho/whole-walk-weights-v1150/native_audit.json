@@ -1,0 +1,3476 @@
+{
+  "version": "v1147",
+  "kind": "independent_reopen_same_action_all_frames_weight_continuity_review",
+  "baseline": {
+    "sourceSHA256": "83b691891cb43939d9a637b2bfe0799b57268d969f13105416f73d87a4dbb39c",
+    "sourceUnchanged": true,
+    "sharedLibraryUnchanged": true,
+    "linkedCommonAction": "Walk / current fitted Chapeleiro motion study",
+    "frames": [
+      {
+        "frame": 1,
+        "exactPositionUVSeamMaxSeparationM": 0.20378921203324327,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 108.98031596031576,
+            "p99StretchRatio": 18.215998435102293,
+            "shortRestEdgesExpandedBeyond12cm": 82,
+            "maxLengthGrowthM": 0.15676958969261853
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 34.74392387436722,
+            "p99StretchRatio": 6.828368936165965,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.06038376615903526
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 169.86578395410183,
+            "p99StretchRatio": 27.838403555161463,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.30041258802017773
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 169.86578395410183,
+            "p99StretchRatio": 2.1875137679351737,
+            "shortRestEdgesExpandedBeyond12cm": 670,
+            "maxLengthGrowthM": 0.30041258802017773
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 2,
+        "exactPositionUVSeamMaxSeparationM": 0.13880978493513374,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 71.71750970942334,
+            "p99StretchRatio": 12.220725903932317,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.10250995847830899
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 31.148196983008972,
+            "p99StretchRatio": 6.223570418139928,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.05965142509935217
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 156.55469825415435,
+            "p99StretchRatio": 25.010409403532734,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.27429490323373346
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 156.55469825415435,
+            "p99StretchRatio": 1.9836248735582305,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.27429490323373346
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 3,
+        "exactPositionUVSeamMaxSeparationM": 0.09006170033438816,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 84.40307888969761,
+            "p99StretchRatio": 13.907994147554657,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.08421232921771091
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 27.74012797227747,
+            "p99StretchRatio": 6.124411697461273,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.06643601677648496
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 140.15692352276523,
+            "p99StretchRatio": 23.734173091458857,
+            "shortRestEdgesExpandedBeyond12cm": 577,
+            "maxLengthGrowthM": 0.24359757412095115
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 140.15692352276523,
+            "p99StretchRatio": 1.957052185312286,
+            "shortRestEdgesExpandedBeyond12cm": 577,
+            "maxLengthGrowthM": 0.24359757412095115
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "exactPositionUVSeamMaxSeparationM": 0.11778687745494393,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 145.72651851357455,
+            "p99StretchRatio": 20.872069602872187,
+            "shortRestEdgesExpandedBeyond12cm": 142,
+            "maxLengthGrowthM": 0.13341771637530206
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 25.17815325258166,
+            "p99StretchRatio": 7.096478099408175,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.07889434220130266
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 134.2309431745369,
+            "p99StretchRatio": 23.741385239664098,
+            "shortRestEdgesExpandedBeyond12cm": 516,
+            "maxLengthGrowthM": 0.22350587502977862
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 145.72651851357455,
+            "p99StretchRatio": 2.1716502124502655,
+            "shortRestEdgesExpandedBeyond12cm": 658,
+            "maxLengthGrowthM": 0.22350587502977862
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 5,
+        "exactPositionUVSeamMaxSeparationM": 0.1742681595905307,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 215.27261046467447,
+            "p99StretchRatio": 29.908589029514232,
+            "shortRestEdgesExpandedBeyond12cm": 311,
+            "maxLengthGrowthM": 0.1938720256953885
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 29.669467064763822,
+            "p99StretchRatio": 8.601191937043403,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.091417937135302
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 158.60409539433786,
+            "p99StretchRatio": 25.482178528368866,
+            "shortRestEdgesExpandedBeyond12cm": 503,
+            "maxLengthGrowthM": 0.2447117598371162
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 215.27261046467447,
+            "p99StretchRatio": 2.420638896735793,
+            "shortRestEdgesExpandedBeyond12cm": 815,
+            "maxLengthGrowthM": 0.2447117598371162
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 6,
+        "exactPositionUVSeamMaxSeparationM": 0.23002483803275983,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 283.8609406962332,
+            "p99StretchRatio": 39.004026417948175,
+            "shortRestEdgesExpandedBeyond12cm": 349,
+            "maxLengthGrowthM": 0.25718120009137213
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 35.93787048510946,
+            "p99StretchRatio": 10.384143062423005,
+            "shortRestEdgesExpandedBeyond12cm": 4,
+            "maxLengthGrowthM": 0.1033101103046562
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 183.8235683288536,
+            "p99StretchRatio": 28.065420571479002,
+            "shortRestEdgesExpandedBeyond12cm": 503,
+            "maxLengthGrowthM": 0.29751689724129965
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 283.8609406962332,
+            "p99StretchRatio": 2.6557169343179687,
+            "shortRestEdgesExpandedBeyond12cm": 857,
+            "maxLengthGrowthM": 0.29751689724129965
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 7,
+        "exactPositionUVSeamMaxSeparationM": 0.2819939416441156,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 347.7552277659292,
+            "p99StretchRatio": 47.86627596888751,
+            "shortRestEdgesExpandedBeyond12cm": 371,
+            "maxLengthGrowthM": 0.3161664474270745
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 41.980730869722265,
+            "p99StretchRatio": 11.898663546796264,
+            "shortRestEdgesExpandedBeyond12cm": 37,
+            "maxLengthGrowthM": 0.12270240944834106
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 203.32505386427005,
+            "p99StretchRatio": 30.721165553386626,
+            "shortRestEdgesExpandedBeyond12cm": 503,
+            "maxLengthGrowthM": 0.3380184572398256
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 347.7552277659292,
+            "p99StretchRatio": 2.82638519390896,
+            "shortRestEdgesExpandedBeyond12cm": 913,
+            "maxLengthGrowthM": 0.3380184572398256
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 8,
+        "exactPositionUVSeamMaxSeparationM": 0.32755522707116036,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 403.7420266963653,
+            "p99StretchRatio": 56.30245726059232,
+            "shortRestEdgesExpandedBeyond12cm": 396,
+            "maxLengthGrowthM": 0.3679812580237655
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 47.357204353776304,
+            "p99StretchRatio": 13.214170419771927,
+            "shortRestEdgesExpandedBeyond12cm": 92,
+            "maxLengthGrowthM": 0.13951452471958456
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 218.36773277198762,
+            "p99StretchRatio": 32.841292553723484,
+            "shortRestEdgesExpandedBeyond12cm": 503,
+            "maxLengthGrowthM": 0.36843230269042254
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 403.7420266963653,
+            "p99StretchRatio": 3.04674759281763,
+            "shortRestEdgesExpandedBeyond12cm": 997,
+            "maxLengthGrowthM": 0.36843230269042254
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 9,
+        "exactPositionUVSeamMaxSeparationM": 0.3634506670807935,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 447.8152873294583,
+            "p99StretchRatio": 62.26597598133745,
+            "shortRestEdgesExpandedBeyond12cm": 398,
+            "maxLengthGrowthM": 0.4090932548353535
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 51.867362974338675,
+            "p99StretchRatio": 14.115890924467395,
+            "shortRestEdgesExpandedBeyond12cm": 121,
+            "maxLengthGrowthM": 0.15172272164585454
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 227.59254677648565,
+            "p99StretchRatio": 34.31681665116145,
+            "shortRestEdgesExpandedBeyond12cm": 517,
+            "maxLengthGrowthM": 0.3837025547170573
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 447.8152873294583,
+            "p99StretchRatio": 3.2411183643080235,
+            "shortRestEdgesExpandedBeyond12cm": 1042,
+            "maxLengthGrowthM": 0.4090932548353535
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 10,
+        "exactPositionUVSeamMaxSeparationM": 0.3876365003415011,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 477.4573996756829,
+            "p99StretchRatio": 66.38335494596556,
+            "shortRestEdgesExpandedBeyond12cm": 398,
+            "maxLengthGrowthM": 0.4373558294094058
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 55.374747385918674,
+            "p99StretchRatio": 14.846722156853055,
+            "shortRestEdgesExpandedBeyond12cm": 144,
+            "maxLengthGrowthM": 0.15958564384143548
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 230.20864655087482,
+            "p99StretchRatio": 35.95533899208331,
+            "shortRestEdgesExpandedBeyond12cm": 575,
+            "maxLengthGrowthM": 0.3831193795205087
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 477.4573996756829,
+            "p99StretchRatio": 3.4049105001215723,
+            "shortRestEdgesExpandedBeyond12cm": 1123,
+            "maxLengthGrowthM": 0.4373558294094058
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 11,
+        "exactPositionUVSeamMaxSeparationM": 0.40021208760342164,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 492.7969495889186,
+            "p99StretchRatio": 68.58600705115558,
+            "shortRestEdgesExpandedBeyond12cm": 399,
+            "maxLengthGrowthM": 0.4528381021378943
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 57.869374781767924,
+            "p99StretchRatio": 15.171751572276643,
+            "shortRestEdgesExpandedBeyond12cm": 145,
+            "maxLengthGrowthM": 0.1642297213113761
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 225.42581132751252,
+            "p99StretchRatio": 38.88794940867089,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.370932435272453
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 492.7969495889186,
+            "p99StretchRatio": 3.4630691876045807,
+            "shortRestEdgesExpandedBeyond12cm": 1137,
+            "maxLengthGrowthM": 0.4528381021378943
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 12,
+        "exactPositionUVSeamMaxSeparationM": 0.4027742934166199,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 495.80676851878377,
+            "p99StretchRatio": 69.02006853352603,
+            "shortRestEdgesExpandedBeyond12cm": 401,
+            "maxLengthGrowthM": 0.4572325388833191
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 59.3877523497476,
+            "p99StretchRatio": 14.953560245126132,
+            "shortRestEdgesExpandedBeyond12cm": 133,
+            "maxLengthGrowthM": 0.16624811518119337
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 225.6400018860981,
+            "p99StretchRatio": 40.35514178489056,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.39406593165132675
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 495.80676851878377,
+            "p99StretchRatio": 3.552333099562032,
+            "shortRestEdgesExpandedBeyond12cm": 1128,
+            "maxLengthGrowthM": 0.4572325388833191
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "exactPositionUVSeamMaxSeparationM": 0.39897852310792453,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 490.9997411912862,
+            "p99StretchRatio": 67.64847887177139,
+            "shortRestEdgesExpandedBeyond12cm": 391,
+            "maxLengthGrowthM": 0.4544535574238058
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 60.00922052571989,
+            "p99StretchRatio": 14.706907669226364,
+            "shortRestEdgesExpandedBeyond12cm": 109,
+            "maxLengthGrowthM": 0.16692096152587835
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 242.84623387349816,
+            "p99StretchRatio": 40.590082843636225,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.42690751787049624
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 490.9997411912862,
+            "p99StretchRatio": 3.6221517817206093,
+            "shortRestEdgesExpandedBeyond12cm": 1099,
+            "maxLengthGrowthM": 0.4544535574238058
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 14,
+        "exactPositionUVSeamMaxSeparationM": 0.39164395868678376,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 481.85397731556805,
+            "p99StretchRatio": 66.22846787967681,
+            "shortRestEdgesExpandedBeyond12cm": 382,
+            "maxLengthGrowthM": 0.4475868262434659
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 59.824340779450914,
+            "p99StretchRatio": 14.188353460265036,
+            "shortRestEdgesExpandedBeyond12cm": 86,
+            "maxLengthGrowthM": 0.1670927087183875
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 253.20589657850644,
+            "p99StretchRatio": 40.71420364199262,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.44832357125216343
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 481.85397731556805,
+            "p99StretchRatio": 3.706299238266005,
+            "shortRestEdgesExpandedBeyond12cm": 1083,
+            "maxLengthGrowthM": 0.44832357125216343
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 15,
+        "exactPositionUVSeamMaxSeparationM": 0.38168034553736274,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 469.4879767296283,
+            "p99StretchRatio": 63.85343134292094,
+            "shortRestEdgesExpandedBeyond12cm": 373,
+            "maxLengthGrowthM": 0.43785445911265136
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 58.837748146145074,
+            "p99StretchRatio": 14.008433843009625,
+            "shortRestEdgesExpandedBeyond12cm": 80,
+            "maxLengthGrowthM": 0.16619328547033832
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 260.26644107074276,
+            "p99StretchRatio": 41.02089706727614,
+            "shortRestEdgesExpandedBeyond12cm": 553,
+            "maxLengthGrowthM": 0.46334169243366574
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 469.4879767296283,
+            "p99StretchRatio": 3.747081492030097,
+            "shortRestEdgesExpandedBeyond12cm": 1069,
+            "maxLengthGrowthM": 0.46334169243366574
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 16,
+        "exactPositionUVSeamMaxSeparationM": 0.3683879267155469,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 453.0406050551583,
+            "p99StretchRatio": 61.14410048456309,
+            "shortRestEdgesExpandedBeyond12cm": 370,
+            "maxLengthGrowthM": 0.42462432069737344
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 57.00055741839403,
+            "p99StretchRatio": 13.403858496127333,
+            "shortRestEdgesExpandedBeyond12cm": 78,
+            "maxLengthGrowthM": 0.16324515796977565
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 263.02176274741294,
+            "p99StretchRatio": 41.98447840817991,
+            "shortRestEdgesExpandedBeyond12cm": 518,
+            "maxLengthGrowthM": 0.4688958157970677
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 453.0406050551583,
+            "p99StretchRatio": 3.6976671335451203,
+            "shortRestEdgesExpandedBeyond12cm": 1059,
+            "maxLengthGrowthM": 0.4688958157970677
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 17,
+        "exactPositionUVSeamMaxSeparationM": 0.3505452638014246,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 431.01594440699904,
+            "p99StretchRatio": 58.038679669014904,
+            "shortRestEdgesExpandedBeyond12cm": 351,
+            "maxLengthGrowthM": 0.4062379473546298
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 54.20856514405084,
+            "p99StretchRatio": 12.74323466204559,
+            "shortRestEdgesExpandedBeyond12cm": 75,
+            "maxLengthGrowthM": 0.15733362931954467
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 254.65949041406822,
+            "p99StretchRatio": 42.07462152024365,
+            "shortRestEdgesExpandedBeyond12cm": 519,
+            "maxLengthGrowthM": 0.45345339357931796
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 431.01594440699904,
+            "p99StretchRatio": 3.55724135709414,
+            "shortRestEdgesExpandedBeyond12cm": 1059,
+            "maxLengthGrowthM": 0.45345339357931796
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 18,
+        "exactPositionUVSeamMaxSeparationM": 0.3271872523880578,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 402.24230356734284,
+            "p99StretchRatio": 54.21176683542501,
+            "shortRestEdgesExpandedBeyond12cm": 337,
+            "maxLengthGrowthM": 0.38120093989332304
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 50.330304703397935,
+            "p99StretchRatio": 12.148708246416344,
+            "shortRestEdgesExpandedBeyond12cm": 70,
+            "maxLengthGrowthM": 0.14820073854715557
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 240.03359721538047,
+            "p99StretchRatio": 40.73489902765217,
+            "shortRestEdgesExpandedBeyond12cm": 526,
+            "maxLengthGrowthM": 0.42668306948734575
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 402.24230356734284,
+            "p99StretchRatio": 3.4783956084315277,
+            "shortRestEdgesExpandedBeyond12cm": 1050,
+            "maxLengthGrowthM": 0.42668306948734575
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 19,
+        "exactPositionUVSeamMaxSeparationM": 0.2927210349760003,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 359.88803987552967,
+            "p99StretchRatio": 48.19438606076192,
+            "shortRestEdgesExpandedBeyond12cm": 310,
+            "maxLengthGrowthM": 0.3422983801071129
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 45.28728358504288,
+            "p99StretchRatio": 11.302792096813477,
+            "shortRestEdgesExpandedBeyond12cm": 57,
+            "maxLengthGrowthM": 0.1349460401753443
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 215.2785889596294,
+            "p99StretchRatio": 38.81573200932395,
+            "shortRestEdgesExpandedBeyond12cm": 562,
+            "maxLengthGrowthM": 0.39762895963251266
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 359.88803987552967,
+            "p99StretchRatio": 3.4104084185501176,
+            "shortRestEdgesExpandedBeyond12cm": 1019,
+            "maxLengthGrowthM": 0.39762895963251266
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 20,
+        "exactPositionUVSeamMaxSeparationM": 0.24530305100706135,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 301.69039419629735,
+            "p99StretchRatio": 40.09470743238528,
+            "shortRestEdgesExpandedBeyond12cm": 300,
+            "maxLengthGrowthM": 0.28734434987326346
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 43.31157532624937,
+            "p99StretchRatio": 10.444372642317116,
+            "shortRestEdgesExpandedBeyond12cm": 23,
+            "maxLengthGrowthM": 0.11556948805136029
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 191.3504628123303,
+            "p99StretchRatio": 34.94071509987445,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.37326641002187827
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 301.69039419629735,
+            "p99StretchRatio": 3.20409309653714,
+            "shortRestEdgesExpandedBeyond12cm": 937,
+            "maxLengthGrowthM": 0.37326641002187827
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 21,
+        "exactPositionUVSeamMaxSeparationM": 0.18831328839936518,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 231.82724999652208,
+            "p99StretchRatio": 31.70289473769267,
+            "shortRestEdgesExpandedBeyond12cm": 259,
+            "maxLengthGrowthM": 0.2199730407349543
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 49.56598382637571,
+            "p99StretchRatio": 9.467283248379943,
+            "shortRestEdgesExpandedBeyond12cm": 4,
+            "maxLengthGrowthM": 0.10254007869527126
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 175.69789469849607,
+            "p99StretchRatio": 31.968153516078228,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.34900807181921717
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 231.82724999652208,
+            "p99StretchRatio": 3.0142229077388807,
+            "shortRestEdgesExpandedBeyond12cm": 853,
+            "maxLengthGrowthM": 0.34900807181921717
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 22,
+        "exactPositionUVSeamMaxSeparationM": 0.16005135695519682,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 156.97449973639263,
+            "p99StretchRatio": 24.28572327638935,
+            "shortRestEdgesExpandedBeyond12cm": 271,
+            "maxLengthGrowthM": 0.14611187419058175
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 57.45408356781316,
+            "p99StretchRatio": 8.831163350468998,
+            "shortRestEdgesExpandedBeyond12cm": 5,
+            "maxLengthGrowthM": 0.10763104492850958
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 159.0467562238249,
+            "p99StretchRatio": 28.671148996123176,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.32397990074528965
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 159.0467562238249,
+            "p99StretchRatio": 2.853356129879682,
+            "shortRestEdgesExpandedBeyond12cm": 864,
+            "maxLengthGrowthM": 0.32397990074528965
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 23,
+        "exactPositionUVSeamMaxSeparationM": 0.21900283510805163,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 128.0088381908073,
+            "p99StretchRatio": 20.126296752974504,
+            "shortRestEdgesExpandedBeyond12cm": 116,
+            "maxLengthGrowthM": 0.18027304019428522
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 65.77475961100448,
+            "p99StretchRatio": 8.956333674716106,
+            "shortRestEdgesExpandedBeyond12cm": 15,
+            "maxLengthGrowthM": 0.11901083812120321
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 147.98619718893076,
+            "p99StretchRatio": 26.463398718382834,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.30220589208170096
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 147.98619718893076,
+            "p99StretchRatio": 2.757906560235974,
+            "shortRestEdgesExpandedBeyond12cm": 720,
+            "maxLengthGrowthM": 0.30220589208170096
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 24,
+        "exactPositionUVSeamMaxSeparationM": 0.28792827840072915,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 167.5647743331288,
+            "p99StretchRatio": 22.27782502109974,
+            "shortRestEdgesExpandedBeyond12cm": 132,
+            "maxLengthGrowthM": 0.23763987608543957
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 73.34098446733742,
+            "p99StretchRatio": 9.547745467033817,
+            "shortRestEdgesExpandedBeyond12cm": 34,
+            "maxLengthGrowthM": 0.1331680704432618
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 137.84167991454567,
+            "p99StretchRatio": 25.501962055390408,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.2850873990927009
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 167.5647743331288,
+            "p99StretchRatio": 2.7344965495789153,
+            "shortRestEdgesExpandedBeyond12cm": 800,
+            "maxLengthGrowthM": 0.2850873990927009
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 25,
+        "exactPositionUVSeamMaxSeparationM": 0.3541252209512061,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 205.97789314960016,
+            "p99StretchRatio": 28.357869833099105,
+            "shortRestEdgesExpandedBeyond12cm": 141,
+            "maxLengthGrowthM": 0.2944902821794585
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 79.39599699514021,
+            "p99StretchRatio": 10.70970146761262,
+            "shortRestEdgesExpandedBeyond12cm": 69,
+            "maxLengthGrowthM": 0.1479570003606987
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 144.9020106678043,
+            "p99StretchRatio": 26.51698137317706,
+            "shortRestEdgesExpandedBeyond12cm": 586,
+            "maxLengthGrowthM": 0.2748242383166869
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 205.97789314960016,
+            "p99StretchRatio": 2.8496186895028557,
+            "shortRestEdgesExpandedBeyond12cm": 875,
+            "maxLengthGrowthM": 0.2944902821794585
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 26,
+        "exactPositionUVSeamMaxSeparationM": 0.4126234350236764,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 239.6343320933402,
+            "p99StretchRatio": 35.3543930491285,
+            "shortRestEdgesExpandedBeyond12cm": 336,
+            "maxLengthGrowthM": 0.34862885710663377
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 83.64686231794553,
+            "p99StretchRatio": 11.87194046468789,
+            "shortRestEdgesExpandedBeyond12cm": 98,
+            "maxLengthGrowthM": 0.16084967249746338
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 160.91281610134243,
+            "p99StretchRatio": 29.281620503464985,
+            "shortRestEdgesExpandedBeyond12cm": 581,
+            "maxLengthGrowthM": 0.27599168188927864
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 239.6343320933402,
+            "p99StretchRatio": 2.9445164486203357,
+            "shortRestEdgesExpandedBeyond12cm": 1103,
+            "maxLengthGrowthM": 0.34862885710663377
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 27,
+        "exactPositionUVSeamMaxSeparationM": 0.46216450621881805,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 267.7388592073299,
+            "p99StretchRatio": 41.2029502110658,
+            "shortRestEdgesExpandedBeyond12cm": 339,
+            "maxLengthGrowthM": 0.395040468500372
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 86.18511660133416,
+            "p99StretchRatio": 12.845518913436115,
+            "shortRestEdgesExpandedBeyond12cm": 115,
+            "maxLengthGrowthM": 0.17169301639846976
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 177.26874362083151,
+            "p99StretchRatio": 31.410564683387033,
+            "shortRestEdgesExpandedBeyond12cm": 573,
+            "maxLengthGrowthM": 0.31833283640725535
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 267.7388592073299,
+            "p99StretchRatio": 3.013716096576745,
+            "shortRestEdgesExpandedBeyond12cm": 1120,
+            "maxLengthGrowthM": 0.395040468500372
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 28,
+        "exactPositionUVSeamMaxSeparationM": 0.5026222938713221,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 290.4026006779638,
+            "p99StretchRatio": 46.69883611098477,
+            "shortRestEdgesExpandedBeyond12cm": 342,
+            "maxLengthGrowthM": 0.43267527671982986
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 87.22989597738454,
+            "p99StretchRatio": 13.59326563838015,
+            "shortRestEdgesExpandedBeyond12cm": 130,
+            "maxLengthGrowthM": 0.1807337985896159
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 191.62793187278822,
+            "p99StretchRatio": 33.24969020537273,
+            "shortRestEdgesExpandedBeyond12cm": 571,
+            "maxLengthGrowthM": 0.3520493167003965
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 290.4026006779638,
+            "p99StretchRatio": 3.0843238460145455,
+            "shortRestEdgesExpandedBeyond12cm": 1136,
+            "maxLengthGrowthM": 0.43267527671982986
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 29,
+        "exactPositionUVSeamMaxSeparationM": 0.5339667279682948,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 307.8340185286702,
+            "p99StretchRatio": 51.05190363578591,
+            "shortRestEdgesExpandedBeyond12cm": 345,
+            "maxLengthGrowthM": 0.46094622357491455
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 86.93123555892731,
+            "p99StretchRatio": 14.15159517731774,
+            "shortRestEdgesExpandedBeyond12cm": 137,
+            "maxLengthGrowthM": 0.18614061804236115
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 199.75463355420115,
+            "p99StretchRatio": 35.09726061656919,
+            "shortRestEdgesExpandedBeyond12cm": 583,
+            "maxLengthGrowthM": 0.3702765533006866
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 307.8340185286702,
+            "p99StretchRatio": 3.072790089496856,
+            "shortRestEdgesExpandedBeyond12cm": 1158,
+            "maxLengthGrowthM": 0.46094622357491455
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 30,
+        "exactPositionUVSeamMaxSeparationM": 0.5560597785997731,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 320.1123838722446,
+            "p99StretchRatio": 54.553163071394344,
+            "shortRestEdgesExpandedBeyond12cm": 349,
+            "maxLengthGrowthM": 0.4795005365625896
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 85.31140334542486,
+            "p99StretchRatio": 14.550904288628098,
+            "shortRestEdgesExpandedBeyond12cm": 139,
+            "maxLengthGrowthM": 0.1877857469115122
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 196.51534435981898,
+            "p99StretchRatio": 36.58647638569197,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.3627088386251578
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 320.1123838722446,
+            "p99StretchRatio": 3.1044433425541254,
+            "shortRestEdgesExpandedBeyond12cm": 1167,
+            "maxLengthGrowthM": 0.4795005365625896
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 31,
+        "exactPositionUVSeamMaxSeparationM": 0.5692205603302227,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 327.4083648534276,
+            "p99StretchRatio": 57.68321800447147,
+            "shortRestEdgesExpandedBeyond12cm": 352,
+            "maxLengthGrowthM": 0.4885256392645245
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 82.3390458497924,
+            "p99StretchRatio": 14.695000903944893,
+            "shortRestEdgesExpandedBeyond12cm": 130,
+            "maxLengthGrowthM": 0.18580957602415818
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 191.16612999744862,
+            "p99StretchRatio": 36.50668225486458,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.3450850820230358
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 327.4083648534276,
+            "p99StretchRatio": 3.103266401342261,
+            "shortRestEdgesExpandedBeyond12cm": 1158,
+            "maxLengthGrowthM": 0.4885256392645245
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 32,
+        "exactPositionUVSeamMaxSeparationM": 0.5740585828438503,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 337.787124977672,
+            "p99StretchRatio": 60.82438191250649,
+            "shortRestEdgesExpandedBeyond12cm": 358,
+            "maxLengthGrowthM": 0.4885946890618237
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 78.08595637234129,
+            "p99StretchRatio": 14.830512100132216,
+            "shortRestEdgesExpandedBeyond12cm": 128,
+            "maxLengthGrowthM": 0.18096598791296264
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 187.76783683764592,
+            "p99StretchRatio": 36.412138981055165,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.36292042423703674
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 337.787124977672,
+            "p99StretchRatio": 3.109503280680847,
+            "shortRestEdgesExpandedBeyond12cm": 1146,
+            "maxLengthGrowthM": 0.4885946890618237
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 33,
+        "exactPositionUVSeamMaxSeparationM": 0.5715604865242017,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 352.7351788602846,
+            "p99StretchRatio": 63.05349376796863,
+            "shortRestEdgesExpandedBeyond12cm": 360,
+            "maxLengthGrowthM": 0.48097825990740306
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 72.85572042594596,
+            "p99StretchRatio": 14.555033570295967,
+            "shortRestEdgesExpandedBeyond12cm": 129,
+            "maxLengthGrowthM": 0.17384879051995797
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 183.40861526810505,
+            "p99StretchRatio": 35.484985717783566,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.3890792559176135
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 352.7351788602846,
+            "p99StretchRatio": 3.1338444858809997,
+            "shortRestEdgesExpandedBeyond12cm": 1132,
+            "maxLengthGrowthM": 0.48097825990740306
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 34,
+        "exactPositionUVSeamMaxSeparationM": 0.5628225771533416,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 358.89475311678603,
+            "p99StretchRatio": 62.85694571324759,
+            "shortRestEdgesExpandedBeyond12cm": 362,
+            "maxLengthGrowthM": 0.46761664112524765
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 67.17550413760917,
+            "p99StretchRatio": 14.125143302297634,
+            "shortRestEdgesExpandedBeyond12cm": 123,
+            "maxLengthGrowthM": 0.1655981931347827
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 180.26904428348666,
+            "p99StretchRatio": 35.74089296466822,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.41782977928381204
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 358.89475311678603,
+            "p99StretchRatio": 3.2043131447692748,
+            "shortRestEdgesExpandedBeyond12cm": 1100,
+            "maxLengthGrowthM": 0.46761664112524765
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 35,
+        "exactPositionUVSeamMaxSeparationM": 0.5481244274238323,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 355.1852364510466,
+            "p99StretchRatio": 61.10542095254744,
+            "shortRestEdgesExpandedBeyond12cm": 360,
+            "maxLengthGrowthM": 0.4515431783519704
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 61.61496635804785,
+            "p99StretchRatio": 13.563069151278954,
+            "shortRestEdgesExpandedBeyond12cm": 118,
+            "maxLengthGrowthM": 0.15711269325408253
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 178.16738757539622,
+            "p99StretchRatio": 35.90690721004634,
+            "shortRestEdgesExpandedBeyond12cm": 573,
+            "maxLengthGrowthM": 0.4418442286036597
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 355.1852364510466,
+            "p99StretchRatio": 3.292466089806756,
+            "shortRestEdgesExpandedBeyond12cm": 1057,
+            "maxLengthGrowthM": 0.4515431783519704
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 36,
+        "exactPositionUVSeamMaxSeparationM": 0.5263762554246492,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 342.5200023492897,
+            "p99StretchRatio": 58.87807080068985,
+            "shortRestEdgesExpandedBeyond12cm": 355,
+            "maxLengthGrowthM": 0.43269970512154826
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 56.61396759179633,
+            "p99StretchRatio": 13.023661049677209,
+            "shortRestEdgesExpandedBeyond12cm": 110,
+            "maxLengthGrowthM": 0.1495163167471991
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 176.90868982086667,
+            "p99StretchRatio": 36.08861466648558,
+            "shortRestEdgesExpandedBeyond12cm": 498,
+            "maxLengthGrowthM": 0.44480396924420584
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 342.5200023492897,
+            "p99StretchRatio": 3.2266442302169382,
+            "shortRestEdgesExpandedBeyond12cm": 964,
+            "maxLengthGrowthM": 0.44480396924420584
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 37,
+        "exactPositionUVSeamMaxSeparationM": 0.49542374364285713,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 320.106618998402,
+            "p99StretchRatio": 54.94779257366626,
+            "shortRestEdgesExpandedBeyond12cm": 340,
+            "maxLengthGrowthM": 0.4062010939880421
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 52.32051888403607,
+            "p99StretchRatio": 12.32098023934935,
+            "shortRestEdgesExpandedBeyond12cm": 85,
+            "maxLengthGrowthM": 0.1403377815843492
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 175.50878028421397,
+            "p99StretchRatio": 35.34599291769541,
+            "shortRestEdgesExpandedBeyond12cm": 493,
+            "maxLengthGrowthM": 0.4253959701892704
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 320.106618998402,
+            "p99StretchRatio": 3.067036087610537,
+            "shortRestEdgesExpandedBeyond12cm": 919,
+            "maxLengthGrowthM": 0.4253959701892704
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 38,
+        "exactPositionUVSeamMaxSeparationM": 0.45373657332708833,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 287.52753889295525,
+            "p99StretchRatio": 49.23890413422108,
+            "shortRestEdgesExpandedBeyond12cm": 332,
+            "maxLengthGrowthM": 0.3707966975404804
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 48.632598567067106,
+            "p99StretchRatio": 11.400100450952628,
+            "shortRestEdgesExpandedBeyond12cm": 55,
+            "maxLengthGrowthM": 0.12851119896847116
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 174.8774485249395,
+            "p99StretchRatio": 33.97503578276908,
+            "shortRestEdgesExpandedBeyond12cm": 493,
+            "maxLengthGrowthM": 0.3850625840368007
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 287.52753889295525,
+            "p99StretchRatio": 2.8603963232980574,
+            "shortRestEdgesExpandedBeyond12cm": 881,
+            "maxLengthGrowthM": 0.3850625840368007
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 39,
+        "exactPositionUVSeamMaxSeparationM": 0.4011210978874794,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 247.38565897643235,
+            "p99StretchRatio": 42.99860712576792,
+            "shortRestEdgesExpandedBeyond12cm": 320,
+            "maxLengthGrowthM": 0.32606749691644105
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 45.275142916847216,
+            "p99StretchRatio": 10.356975728724185,
+            "shortRestEdgesExpandedBeyond12cm": 11,
+            "maxLengthGrowthM": 0.113623661164179
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 179.980076787815,
+            "p99StretchRatio": 33.639955890580325,
+            "shortRestEdgesExpandedBeyond12cm": 501,
+            "maxLengthGrowthM": 0.33733087819957697
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 247.38565897643235,
+            "p99StretchRatio": 2.749780081952876,
+            "shortRestEdgesExpandedBeyond12cm": 833,
+            "maxLengthGrowthM": 0.33733087819957697
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 40,
+        "exactPositionUVSeamMaxSeparationM": 0.3393696948708116,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 201.2213469735215,
+            "p99StretchRatio": 35.46196519368178,
+            "shortRestEdgesExpandedBeyond12cm": 316,
+            "maxLengthGrowthM": 0.2732323569040104
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 42.015928639244535,
+            "p99StretchRatio": 9.245672855525786,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.09577369949051105
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 183.5175578716957,
+            "p99StretchRatio": 32.27237693778728,
+            "shortRestEdgesExpandedBeyond12cm": 549,
+            "maxLengthGrowthM": 0.32631796598727986
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 201.2213469735215,
+            "p99StretchRatio": 2.6261376990377285,
+            "shortRestEdgesExpandedBeyond12cm": 866,
+            "maxLengthGrowthM": 0.32631796598727986
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 41,
+        "exactPositionUVSeamMaxSeparationM": 0.2721953536199533,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 150.20730032990787,
+            "p99StretchRatio": 26.749550774185195,
+            "shortRestEdgesExpandedBeyond12cm": 165,
+            "maxLengthGrowthM": 0.21543203420924428
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 38.53980726952006,
+            "p99StretchRatio": 7.927538554067709,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.07445215023184293
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 180.98147203227916,
+            "p99StretchRatio": 30.7786217948869,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.3188486769990358
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 180.98147203227916,
+            "p99StretchRatio": 2.424624074795688,
+            "shortRestEdgesExpandedBeyond12cm": 753,
+            "maxLengthGrowthM": 0.3188486769990358
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 42,
+        "exactPositionUVSeamMaxSeparationM": 0.20384032379176786,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 109.00820633318268,
+            "p99StretchRatio": 18.209420410203762,
+            "shortRestEdgesExpandedBeyond12cm": 82,
+            "maxLengthGrowthM": 0.15681115793435868
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 34.74542719891851,
+            "p99StretchRatio": 6.829514312247357,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.06038372233396308
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 170.6664001088973,
+            "p99StretchRatio": 27.731384380965505,
+            "shortRestEdgesExpandedBeyond12cm": 587,
+            "maxLengthGrowthM": 0.29822639451026267
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 170.6664001088973,
+            "p99StretchRatio": 2.1852428846994822,
+            "shortRestEdgesExpandedBeyond12cm": 670,
+            "maxLengthGrowthM": 0.29822639451026267
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      }
+    ],
+    "maxSeamSeparationM": 0.5740585828438503
+  },
+  "candidate": {
+    "sourceSHA256": "a42e64845dcf1d6869f78e5678f2a30ddcf2ede6b1e4adcbec3cb28073c872c6",
+    "sourceUnchanged": true,
+    "sharedLibraryUnchanged": true,
+    "linkedCommonAction": "Walk / current fitted Chapeleiro motion study",
+    "frames": [
+      {
+        "frame": 1,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.399233104959152,
+            "p99StretchRatio": 1.176903461910442,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006796847844016615
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.354104373154665,
+            "p99StretchRatio": 1.1834411206795907,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004553817407963484
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3444796302936375,
+            "p99StretchRatio": 1.1241471186314,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006362958404015427
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 59.83424396504576,
+            "p99StretchRatio": 1.2111831479237936,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.06739283723920976
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 2,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4234779168937621,
+            "p99StretchRatio": 1.1797475742321144,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007438979032778854
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3922006404858134,
+            "p99StretchRatio": 1.1696823219267585,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0037259050635577162
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.310061853200511,
+            "p99StretchRatio": 1.1153352381459491,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006412005843828131
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 57.58921879034083,
+            "p99StretchRatio": 1.19449856742646,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0706954906705094
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 3,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4502305113019638,
+            "p99StretchRatio": 1.1880246754328951,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00814689920109326
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4456375243819282,
+            "p99StretchRatio": 1.1641614922201164,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004494827889111989
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2566641653812007,
+            "p99StretchRatio": 1.1006408713028235,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006455381105123087
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 65.81598927897927,
+            "p99StretchRatio": 1.1880764768324878,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.07967536741932771
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4806513565256827,
+            "p99StretchRatio": 1.1958133370498911,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008956750643819435
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4991862568350185,
+            "p99StretchRatio": 1.1729876758884137,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005228827629376556
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2508977581929432,
+            "p99StretchRatio": 1.0923533215036212,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007895745401429989
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 76.55104993733663,
+            "p99StretchRatio": 1.20968830872028,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.09291267044413182
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 5,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.5037784938159027,
+            "p99StretchRatio": 1.2084080855419903,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009786203283595488
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5479686014456173,
+            "p99StretchRatio": 1.1946472158883537,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0059040572078944385
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2563012976821122,
+            "p99StretchRatio": 1.0829939838268832,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00843861641391317
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 87.25316005684265,
+            "p99StretchRatio": 1.2317895649591677,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.10756848971487103
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 6,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.5190909519874438,
+            "p99StretchRatio": 1.2178324360835657,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.010451512093754292
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5905427774992327,
+            "p99StretchRatio": 1.2182834665248812,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0065138656596699755
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2882051362148481,
+            "p99StretchRatio": 1.0762709256438407,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00878178758760207
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 97.316712468358,
+            "p99StretchRatio": 1.2486756483662322,
+            "shortRestEdgesExpandedBeyond12cm": 4,
+            "maxLengthGrowthM": 0.12116183091767406
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 7,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.527351554246105,
+            "p99StretchRatio": 1.2245711422120191,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.01092489258406805
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6260724145539744,
+            "p99StretchRatio": 1.2406064137757717,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007053259965080116
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3188226808852452,
+            "p99StretchRatio": 1.0859612705046688,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00930045696975959
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 106.28008010520331,
+            "p99StretchRatio": 1.264525081840555,
+            "shortRestEdgesExpandedBeyond12cm": 16,
+            "maxLengthGrowthM": 0.13317937753277886
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 8,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.5309389846290071,
+            "p99StretchRatio": 1.2334154248404117,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011263976244881797
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.652886382228212,
+            "p99StretchRatio": 1.2606562211917751,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007500853588890848
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3364062788881745,
+            "p99StretchRatio": 1.0898028159124598,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009996193523357635
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 113.61719393748811,
+            "p99StretchRatio": 1.2764053473423873,
+            "shortRestEdgesExpandedBeyond12cm": 23,
+            "maxLengthGrowthM": 0.14340145410005137
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 9,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.53225490621651,
+            "p99StretchRatio": 1.23949605564727,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011544740836142611
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.667837540903742,
+            "p99StretchRatio": 1.2732358425856756,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007814741113851238
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3216789010271848,
+            "p99StretchRatio": 1.0916262581023624,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00947362047836299
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 118.54824213638665,
+            "p99StretchRatio": 1.2842375126894194,
+            "shortRestEdgesExpandedBeyond12cm": 25,
+            "maxLengthGrowthM": 0.15061487243437313
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 10,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.5318267298145758,
+            "p99StretchRatio": 1.2462756916807853,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011801899949311634
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6668372984641913,
+            "p99StretchRatio": 1.2844866827362664,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007949273444623126
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3008962089202147,
+            "p99StretchRatio": 1.0952496242764687,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008747797348387189
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 120.35056457516902,
+            "p99StretchRatio": 1.2872474940147507,
+            "shortRestEdgesExpandedBeyond12cm": 25,
+            "maxLengthGrowthM": 0.1536507810795668
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 11,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.527959126967282,
+            "p99StretchRatio": 1.2575796587858814,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.01198705269735239
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6479351974300664,
+            "p99StretchRatio": 1.2880229631094002,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007885203287510606
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2598078275912528,
+            "p99StretchRatio": 1.0896903921739267,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007799320803775718
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 118.7773676212703,
+            "p99StretchRatio": 1.2878615266119573,
+            "shortRestEdgesExpandedBeyond12cm": 25,
+            "maxLengthGrowthM": 0.1521884223123676
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 12,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.5167157216697096,
+            "p99StretchRatio": 1.275906316447796,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011982348625587877
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6127576744542036,
+            "p99StretchRatio": 1.2830268512780376,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00764349044430658
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2114114425451905,
+            "p99StretchRatio": 1.0742374842286626,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006326551700040657
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 114.2404167290203,
+            "p99StretchRatio": 1.28929760985711,
+            "shortRestEdgesExpandedBeyond12cm": 25,
+            "maxLengthGrowthM": 0.1467756916220319
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4936901333266288,
+            "p99StretchRatio": 1.2841742973678598,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011670244059651363
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5668521743089767,
+            "p99StretchRatio": 1.2745478716541483,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007280002606622357
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2256536747900841,
+            "p99StretchRatio": 1.0834602836475036,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0059753122617501805
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 107.79778998316891,
+            "p99StretchRatio": 1.2899388140065189,
+            "shortRestEdgesExpandedBeyond12cm": 23,
+            "maxLengthGrowthM": 0.13880030974429317
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 14,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4569548789007927,
+            "p99StretchRatio": 1.2938159476825377,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011502643856390486
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5222800739905789,
+            "p99StretchRatio": 1.2635702821908907,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006853275652583941
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2132869007035076,
+            "p99StretchRatio": 1.1005754212106291,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004923174959808041
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 100.43843332715456,
+            "p99StretchRatio": 1.2929846578175037,
+            "shortRestEdgesExpandedBeyond12cm": 33,
+            "maxLengthGrowthM": 0.1295582016536535
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 15,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4096400931734634,
+            "p99StretchRatio": 1.3015017488659997,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.012195138468238206
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4810736683293244,
+            "p99StretchRatio": 1.2499590576199784,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006402222450916012
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2539175820368873,
+            "p99StretchRatio": 1.1171828273815971,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006165116616371792
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 104.37450690887503,
+            "p99StretchRatio": 1.2928704327546479,
+            "shortRestEdgesExpandedBeyond12cm": 63,
+            "maxLengthGrowthM": 0.13073899876346606
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 16,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4201948840083287,
+            "p99StretchRatio": 1.3068358963093127,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.012661724518099063
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4401521545453546,
+            "p99StretchRatio": 1.2367740763356303,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005935724297641852
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3046638645214792,
+            "p99StretchRatio": 1.1346410442640327,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00727685704351682
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 108.03256990041301,
+            "p99StretchRatio": 1.2919054365776617,
+            "shortRestEdgesExpandedBeyond12cm": 92,
+            "maxLengthGrowthM": 0.1353653956114718
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 17,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4277114642602593,
+            "p99StretchRatio": 1.3115067576633659,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.012891588168982851
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3980079098079548,
+            "p99StretchRatio": 1.2218910461387102,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0054455162268070255
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.338884584386137,
+            "p99StretchRatio": 1.1371088739238817,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007828862989759933
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 109.2736898361616,
+            "p99StretchRatio": 1.2918743373357429,
+            "shortRestEdgesExpandedBeyond12cm": 113,
+            "maxLengthGrowthM": 0.13693505512035034
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 18,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4270509264774427,
+            "p99StretchRatio": 1.3047445651926166,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.012855434331281258
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3528361572473113,
+            "p99StretchRatio": 1.2044603639483702,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00492482711019069
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.355385196164776,
+            "p99StretchRatio": 1.1509826357107455,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008050991833550264
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 108.35923172174782,
+            "p99StretchRatio": 1.2868848160480748,
+            "shortRestEdgesExpandedBeyond12cm": 116,
+            "maxLengthGrowthM": 0.13577852879810173
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 19,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4055020037542787,
+            "p99StretchRatio": 1.2909793976377364,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.012129917097190995
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3092487780573068,
+            "p99StretchRatio": 1.1889358085504116,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004380576182092904
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3594255599900626,
+            "p99StretchRatio": 1.156231847726196,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008029456454272395
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 104.6616797735362,
+            "p99StretchRatio": 1.2783152456019724,
+            "shortRestEdgesExpandedBeyond12cm": 89,
+            "maxLengthGrowthM": 0.1311021897853196
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 20,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.360353754634626,
+            "p99StretchRatio": 1.2620865948734485,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.010610969901058892
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3559331747257133,
+            "p99StretchRatio": 1.1714329680740017,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.003833054019235376
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3539659503034207,
+            "p99StretchRatio": 1.1527366434202317,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007861083066785901
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 96.11127197837045,
+            "p99StretchRatio": 1.2625399602048948,
+            "shortRestEdgesExpandedBeyond12cm": 26,
+            "maxLengthGrowthM": 0.12028838483876043
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 21,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3018526247569817,
+            "p99StretchRatio": 1.2259059473948932,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008363065626204466
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4438137400189948,
+            "p99StretchRatio": 1.157857375154855,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004091003739306057
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.334803484439024,
+            "p99StretchRatio": 1.1487278068946147,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007469000067240383
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 87.78820628001907,
+            "p99StretchRatio": 1.2500441505491404,
+            "shortRestEdgesExpandedBeyond12cm": 2,
+            "maxLengthGrowthM": 0.10976210221277205
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 22,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3085530815920532,
+            "p99StretchRatio": 1.1921288132547903,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0065738604485422805
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5256079377642102,
+            "p99StretchRatio": 1.1702878041740885,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005528119513914735
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3076581995901158,
+            "p99StretchRatio": 1.1358305292716098,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006918138683263839
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 90.68376588664749,
+            "p99StretchRatio": 1.2466815405088043,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.10681830457941985
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 23,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3242710403070261,
+            "p99StretchRatio": 1.1774462245652726,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0063372573875481175
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.594012383888032,
+            "p99StretchRatio": 1.2018317234157594,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007256547365917632
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.267155841180976,
+            "p99StretchRatio": 1.116031064083037,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0060466759770758036
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 109.08988974872496,
+            "p99StretchRatio": 1.2501070284273266,
+            "shortRestEdgesExpandedBeyond12cm": 1,
+            "maxLengthGrowthM": 0.11637868815741918
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 24,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3385049789649384,
+            "p99StretchRatio": 1.1732229577918358,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0062376460752475785
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6441363040126846,
+            "p99StretchRatio": 1.2375472076410456,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008715071700003657
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2216091499193953,
+            "p99StretchRatio": 1.0981413647123976,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004827122415669655
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 125.34049545006884,
+            "p99StretchRatio": 1.2626405251956443,
+            "shortRestEdgesExpandedBeyond12cm": 45,
+            "maxLengthGrowthM": 0.13396887665518287
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 25,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3493908704565611,
+            "p99StretchRatio": 1.1748087807440977,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006343949209798798
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6749534068665979,
+            "p99StretchRatio": 1.2668288716019442,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00981994587000045
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.24536023363381,
+            "p99StretchRatio": 1.0810579243032092,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004496934206665762
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 138.04801025654356,
+            "p99StretchRatio": 1.2745059532813316,
+            "shortRestEdgesExpandedBeyond12cm": 79,
+            "maxLengthGrowthM": 0.14774581795902125
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 26,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3583272500078356,
+            "p99StretchRatio": 1.1882579513771794,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0071477193631855895
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6886470264741373,
+            "p99StretchRatio": 1.2867401753238397,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.010575402218343286
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.244291389175532,
+            "p99StretchRatio": 1.0583373322345548,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004870222503086372
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 146.84180844605868,
+            "p99StretchRatio": 1.287800623360957,
+            "shortRestEdgesExpandedBeyond12cm": 89,
+            "maxLengthGrowthM": 0.15730622368948083
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 27,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3689139508022132,
+            "p99StretchRatio": 1.2066419637952241,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007970839519673235
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.688934197480946,
+            "p99StretchRatio": 1.297939662294587,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011038594009224044
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2245561266853349,
+            "p99StretchRatio": 1.0444971954456832,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004674980860291306
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 152.10492084754534,
+            "p99StretchRatio": 1.3028232161256172,
+            "shortRestEdgesExpandedBeyond12cm": 101,
+            "maxLengthGrowthM": 0.1630601934153984
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 28,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3796182752576855,
+            "p99StretchRatio": 1.222961979080986,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008685992096460912
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6796177914560426,
+            "p99StretchRatio": 1.308821923470941,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011276102941383655
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2276027013863715,
+            "p99StretchRatio": 1.0421763237328436,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004735432884230856
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 154.39793677006705,
+            "p99StretchRatio": 1.3143588302106939,
+            "shortRestEdgesExpandedBeyond12cm": 101,
+            "maxLengthGrowthM": 0.16561096270298045
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 29,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3918719334131657,
+            "p99StretchRatio": 1.2326755240918235,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009176789689765
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.663070000513616,
+            "p99StretchRatio": 1.3151844147656213,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.01133063022787252
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2297182977651342,
+            "p99StretchRatio": 1.054958817272793,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004708695725879609
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 154.07762958618656,
+            "p99StretchRatio": 1.3179395134727288,
+            "shortRestEdgesExpandedBeyond12cm": 101,
+            "maxLengthGrowthM": 0.16534342325250226
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 30,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4041914988762505,
+            "p99StretchRatio": 1.235343253402905,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009332342677834608
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6400739403961042,
+            "p99StretchRatio": 1.323509166043429,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.011217701576278091
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.1719463110129857,
+            "p99StretchRatio": 1.0641266589494562,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.003692779909374024
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 151.2250012628142,
+            "p99StretchRatio": 1.3222673293783074,
+            "shortRestEdgesExpandedBeyond12cm": 100,
+            "maxLengthGrowthM": 0.1623468625935987
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 31,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4130361821703261,
+            "p99StretchRatio": 1.2322518380690548,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009090325902391644
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.6103026280819928,
+            "p99StretchRatio": 1.3277597406987376,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.010938098776002464
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.1683332679620837,
+            "p99StretchRatio": 1.063175642982314,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00360281526644431
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 145.84332645338233,
+            "p99StretchRatio": 1.3198985864192336,
+            "shortRestEdgesExpandedBeyond12cm": 95,
+            "maxLengthGrowthM": 0.15662755850435575
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 32,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4150567906821643,
+            "p99StretchRatio": 1.2209010013680255,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008458312233472147
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5736317751221238,
+            "p99StretchRatio": 1.3263233094645563,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.010503071572261387
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.1684457093757772,
+            "p99StretchRatio": 1.0648472209323123,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0041138187261304665
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 138.1287855035139,
+            "p99StretchRatio": 1.3153638401480752,
+            "shortRestEdgesExpandedBeyond12cm": 77,
+            "maxLengthGrowthM": 0.1483982163270659
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 33,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.4084951991989874,
+            "p99StretchRatio": 1.2114617617896533,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007540196817717351
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5623940733299155,
+            "p99StretchRatio": 1.3267722064650864,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00995346704548606
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.1706917487736708,
+            "p99StretchRatio": 1.0800103454793697,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005386912813677029
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 128.6925972026114,
+            "p99StretchRatio": 1.3049068933527952,
+            "shortRestEdgesExpandedBeyond12cm": 56,
+            "maxLengthGrowthM": 0.13831647734827693
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 34,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3940512507446288,
+            "p99StretchRatio": 1.2037062748355454,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006536288596044992
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5737619843301864,
+            "p99StretchRatio": 1.3207289211625546,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.009354383096003047
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.199540450746867,
+            "p99StretchRatio": 1.0961056669892275,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006442278726859416
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 118.66532376571554,
+            "p99StretchRatio": 1.2966326675719024,
+            "shortRestEdgesExpandedBeyond12cm": 26,
+            "maxLengthGrowthM": 0.12744139597671147
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 35,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3748994963034369,
+            "p99StretchRatio": 1.2039565621815966,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006529124953888084
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.574641318062031,
+            "p99StretchRatio": 1.3111458015946484,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008770430396604453
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2082854539943297,
+            "p99StretchRatio": 1.1060566512388803,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004227653247767395
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 111.99448551969934,
+            "p99StretchRatio": 1.2927253864861736,
+            "shortRestEdgesExpandedBeyond12cm": 4,
+            "maxLengthGrowthM": 0.11685211865328055
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 36,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3561906541414182,
+            "p99StretchRatio": 1.1989553604794458,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006516699824406211
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5653174784667616,
+            "p99StretchRatio": 1.3002261586264445,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.008241319919798012
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.2585776462880867,
+            "p99StretchRatio": 1.1125642599031411,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0043412171405310535
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 105.60796841880251,
+            "p99StretchRatio": 1.2890309846721055,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.10732497945206157
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 37,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3430910466596335,
+            "p99StretchRatio": 1.1896015798783126,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006332028762621358
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.546557465988824,
+            "p99StretchRatio": 1.2867207544265749,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007761466355531155
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3015358342912693,
+            "p99StretchRatio": 1.1158002634335449,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005054273101509195
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 99.29688726261756,
+            "p99StretchRatio": 1.282851328852122,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.09899042489328243
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 38,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3389568938127134,
+            "p99StretchRatio": 1.179314951518854,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005932026598436148
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.5192279489578506,
+            "p99StretchRatio": 1.2699831890728,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.007289957112495325
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3347505695902193,
+            "p99StretchRatio": 1.1173284753143853,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0056800082601832225
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 92.63260128330788,
+            "p99StretchRatio": 1.273308207384224,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0915134615798723
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 39,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.344155340439325,
+            "p99StretchRatio": 1.1714720347352428,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005455500288415807
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4847809612511453,
+            "p99StretchRatio": 1.2501558868587486,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006770103331717459
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3577529292197306,
+            "p99StretchRatio": 1.1211803443401274,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006150870823268539
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 85.29920764859953,
+            "p99StretchRatio": 1.2646851912597903,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0842675305246834
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 40,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3565731144176547,
+            "p99StretchRatio": 1.1685861810626217,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005739413876299226
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4444618149372717,
+            "p99StretchRatio": 1.2278618043488907,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006159060412265056
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3721836926434872,
+            "p99StretchRatio": 1.1261729642765603,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006448894875861186
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 77.39774227219206,
+            "p99StretchRatio": 1.25189746252469,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.07674279641794149
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 41,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3755168352690232,
+            "p99StretchRatio": 1.172566967283723,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006196239897468474
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.4002728572320826,
+            "p99StretchRatio": 1.2032317283173426,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.0054165861628121675
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3686953738370564,
+            "p99StretchRatio": 1.1246449700268442,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.006377801621332571
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 68.68626964928033,
+            "p99StretchRatio": 1.2342917299266958,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.07073460474117975
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      },
+      {
+        "frame": 42,
+        "exactPositionUVSeamMaxSeparationM": 0.0,
+        "edgeStatistics": {
+          "forearm": {
+            "edges": 9838,
+            "maxStretchRatio": 1.3992261549127263,
+            "p99StretchRatio": 1.1769245511708177,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.00679662476057917
+          },
+          "sleeve": {
+            "edges": 13133,
+            "maxStretchRatio": 1.3541253192294904,
+            "p99StretchRatio": 1.1834091955827715,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.004553810890810299
+          },
+          "boots": {
+            "edges": 18151,
+            "maxStretchRatio": 1.3446564529578235,
+            "p99StretchRatio": 1.1165325451363526,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.005870963341287214
+          },
+          "all": {
+            "edges": 257204,
+            "maxStretchRatio": 59.838547267656175,
+            "p99StretchRatio": 1.2110377901605474,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0.06739454893445158
+          },
+          "bootBoundary": {
+            "edges": 0,
+            "maxStretchRatio": 0,
+            "p99StretchRatio": 0,
+            "shortRestEdgesExpandedBeyond12cm": 0,
+            "maxLengthGrowthM": 0
+          }
+        }
+      }
+    ],
+    "maxSeamSeparationM": 0.0
+  },
+  "geometryAllUVNormalsMaterialsExactlyPreserved": true,
+  "seamDefinition": "exact rest position within same reviewed physical surface role; touching garment versus stocking may legitimately separate",
+  "canonicalBaseNotPromoted": true,
+  "noBlendOrExportSaved": true,
+  "visualApprovalRequired": true,
+  "rigComplete": false,
+  "gameplayApproved": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "VercelUsed": false
+}

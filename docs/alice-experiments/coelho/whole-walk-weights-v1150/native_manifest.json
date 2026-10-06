@@ -1,0 +1,192 @@
+{
+  "version": "v1146",
+  "kind": "whole_character_anatomical_weight_continuity_CANDIDATE",
+  "wholeCharacterWithDress": true,
+  "blend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\distinct_stocking_cloth_weights_CANDIDATE_v1146\\alice_coelho_complete_distinct_stocking_cloth_CANDIDATE_v1146.blend",
+  "blendSHA256": "a42e64845dcf1d6869f78e5678f2a30ddcf2ede6b1e4adcbec3cb28073c872c6",
+  "bytes": 906078574,
+  "sourceBlend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\stocking_weight_continuity_CANDIDATE_v1135\\alice_coelho_complete_stocking_continuity_CANDIDATE_v1135.blend",
+  "sourceSHA256": "dde70cbe2c7dad860881d1ef91b87b4704a98686f0755adcc2889138d0213cc6",
+  "sharedLibrary": {
+    "library": "F:\\Alice\\SharedProduction\\SharedBase\\Development\\alice_shared_base.blend",
+    "librarySHA256": "5b75fe6c2bf82165ba120df8afd027224d5a60b5472b91cf00ae777ef6221f80",
+    "rigObject": "Alice.Shared.Rig",
+    "headObject": "Alice.Shared.Head",
+    "linkedHeadMesh": true,
+    "linkedSkeleton": true,
+    "headMeshBinding": "direct_link",
+    "headMeshOverrideProperties": [],
+    "editablePoseOverride": true,
+    "headDataPreserved": {
+      "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+      "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+      "uv": {
+        "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+      },
+      "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+    },
+    "rigRestHash": "22fd5b5c82011dbfa9134ce2ce585ec86e9f2ba47b2b1f470733320d6c37005e",
+    "boneCount": 209,
+    "actions": {
+      "Walk / current fitted Chapeleiro motion study": "c30ad39e29f93d14f6a1bf1f691e0781a1a00268ba9a317666a2b731fe44ae66",
+      "Run / current fitted Chapeleiro motion study": "28ba81a375684fc0fd17fd935616d2c718a16f184951e1767fefdfaf11406536",
+      "Attack / current fitted Chapeleiro motion study": "6d4ed16b42b8b1902ad57586babc358090634d43bf700ef86512620d2c083c43",
+      "Jump / current fitted planted-key IK motion study": "e52e1fcf823cffdb716ceb9550470e13d6a9e3534a32c6f7965ea3b0abc83dd8"
+    },
+    "bodyMissing": true,
+    "sharedMeshes": {
+      "shared_head": {
+        "name": "Alice.Shared.Head",
+        "meshHash": {
+          "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+          "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+          "uv": {
+            "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+          },
+          "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+        },
+        "linked": true,
+        "vertices": 33244,
+        "faces": 66484,
+        "armatureTargets": [
+          "Alice.Shared.Rig"
+        ],
+        "objectMatrix": [
+          [
+            0.9999999403953552,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999403953552,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "shapeKeys": []
+  },
+  "sourceGeometrySignature": {
+    "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+    "indices": "8fe1f6c7c8758e5b701e06384e8b25d7864cc4e2f493a4ed3f4eb0456ece5290",
+    "uv": {
+      "AliceCoelhoGameUV4K": "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+    },
+    "normals": "d0393edcdc715727771230c06f601ef86a3e3d4032cebb511697e2dd8e0b49e0",
+    "materials": [
+      "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+    ]
+  },
+  "positionsTopologyAllUVNormalsMaterialsExactlyPreserved": true,
+  "originalAuthoringPreserved": true,
+  "changedWeightVertices": 145,
+  "exactPositionUVSeamWeightMaxError": 0.0,
+  "maskVertices": {
+    "positiveHand": 2495,
+    "negativeHand": 2447,
+    "forearm": 4117,
+    "sleeve": 5387,
+    "boots": 6703
+  },
+  "bootWeightMethod": "Own foot/leg smoothstep ankle .126-.186m, no pelvis; full anatomical UV components incl. seam duplicates.",
+  "armWeightMethod": "Own Arm/ForeArm/Hand inverse segment distance without abrupt distance cutoff; puff sleeve Spine2/Shoulder/Arm.",
+  "canonicalBaseNotPromoted": true,
+  "anatomical168cmApproved": false,
+  "individualHairComplete": false,
+  "clothPhysicsApproved": false,
+  "rigComplete": false,
+  "gameplayMotionApproved": false,
+  "productionComplete": false,
+  "acceptedForPublication": false,
+  "additionalTripoCredits": 0,
+  "VercelUsed": false,
+  "renders": [
+    {
+      "frame": 1,
+      "view": "front_start",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/distinct_stocking_cloth_weights_CANDIDATE_v1146/whole_walk_front_start_frame1_v1146.png",
+      "sha256": "9c5132efb9f60430f2fdac693448f967080ca81507aa2d3141c5f891f7b80085"
+    },
+    {
+      "frame": 11,
+      "view": "front_quarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/distinct_stocking_cloth_weights_CANDIDATE_v1146/whole_walk_front_quarter_frame11_v1146.png",
+      "sha256": "dc7caa3e37c6ba392ff2600081e360fbe09a76b689dbd2a4e6fb321bf63c97f4"
+    },
+    {
+      "frame": 31,
+      "view": "front_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/distinct_stocking_cloth_weights_CANDIDATE_v1146/whole_walk_front_threequarter_frame31_v1146.png",
+      "sha256": "ef8c9a5bd3d2290f2030aa5600d3dd2ed5ab9c1c96668d07268dc124761dc576"
+    },
+    {
+      "frame": 11,
+      "view": "profile_quarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/distinct_stocking_cloth_weights_CANDIDATE_v1146/whole_walk_profile_quarter_frame11_v1146.png",
+      "sha256": "ce4428e2e2583404ce2fe2f85daece68e68ea6da5dd06175e48c6f9b6b62dbf6"
+    }
+  ],
+  "sourceAndLibraryUnchanged": true,
+  "allFourSameCameraRendersComplete": true,
+  "changedWristVertices": 594,
+  "wristTransition": [
+    {
+      "side": "Left",
+      "proximalGloveVertices": 207,
+      "transitionZ": [
+        0.91,
+        0.93
+      ],
+      "distalFingersPreserved": true
+    },
+    {
+      "side": "Right",
+      "proximalGloveVertices": 388,
+      "transitionZ": [
+        0.91,
+        0.93
+      ],
+      "distalFingersPreserved": true
+    }
+  ],
+  "geometryUVNormalsMaterialsExactlyPreserved": true,
+  "stockingTransition": [
+    {
+      "side": "Left",
+      "existingStockingSurfaceVertices": 992,
+      "existingSourceTopZ": 0.5063102841377258,
+      "noNewHiddenAnatomy": true
+    },
+    {
+      "side": "Right",
+      "existingStockingSurfaceVertices": 866,
+      "existingSourceTopZ": 0.5114555358886719,
+      "noNewHiddenAnatomy": true
+    }
+  ],
+  "changedStockingWeightVertices": 1858,
+  "bodyAnatomyNotCreated": true,
+  "stockingVertices": 7734,
+  "coincidentDressVerticesReleasedFromLegWeight": 89,
+  "skirtProvisionalPelvisVertices": 52144,
+  "distinctTouchingClothAndStockingSurfacesSeparatedByWeightOnly": true,
+  "noWeldCutOrNewAnatomy": true,
+  "UVSeamGrouping": "exact position plus reviewed anatomical surface role; different touching physical layers may legitimately separate",
+  "samePhysicalSurfaceUVSeamWeightMaxError": 0.0
+}
