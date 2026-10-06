@@ -1,0 +1,73 @@
+{
+  "version": "v1070",
+  "assetId": "alice_coelho",
+  "wholeCharacterWithDress": true,
+  "kind": "verified_static_intermediate_checkpoint",
+  "nativeVersion": "v1041",
+  "exportVersion": "v1048",
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_clock_left_chain21_uv4k_candidate_v1041.blend",
+      "bytes": 863805621,
+      "sha256": "dcd8ac81aa55409171578fb25fa18ec611c0c531d188ba8d1886ad74ad8abb55"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.glb",
+      "bytes": 212973944,
+      "sha256": "c1f4fc0e8c2651f6822fd3ccd02cc5df4c818c0b7ffed6e1a034b44178dc14b4"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.fbx",
+      "bytes": 267309676,
+      "sha256": "9f53a049fb8fa970c9096fd1d87c246c45cb18b707c1bd6ba470f5c5dac9b5ec"
+    }
+  },
+  "githubRelease": "https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-whole-clock-uv4k-wip-v1048",
+  "remoteFiles": {
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.glb",
+      "bytes": 212973944,
+      "sha256": "c1f4fc0e8c2651f6822fd3ccd02cc5df4c818c0b7ffed6e1a034b44178dc14b4",
+      "assetId": 616329211,
+      "filename": "alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.glb",
+      "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-whole-clock-uv4k-wip-v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.glb",
+      "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/616329211",
+      "githubDigest": "sha256:c1f4fc0e8c2651f6822fd3ccd02cc5df4c818c0b7ffed6e1a034b44178dc14b4",
+      "uploaded": true,
+      "downloadHashVerified": true
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.fbx",
+      "bytes": 267309676,
+      "sha256": "9f53a049fb8fa970c9096fd1d87c246c45cb18b707c1bd6ba470f5c5dac9b5ec",
+      "assetId": 616331660,
+      "filename": "alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.fbx",
+      "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-whole-clock-uv4k-wip-v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.fbx",
+      "apiURL": "https://api.github.com/repos/programador-powershell/project-alice-game/releases/assets/616331660",
+      "githubDigest": "sha256:9f53a049fb8fa970c9096fd1d87c246c45cb18b707c1bd6ba470f5c5dac9b5ec",
+      "uploaded": true,
+      "downloadHashVerified": true
+    }
+  },
+  "blenderCompletePreservedOnSharedDisk": true,
+  "blenderUploaded": false,
+  "siteDeploymentRequested": false,
+  "siteDeploymentVerified": false,
+  "userInstruction": "continue sem vercel",
+  "rigged": false,
+  "animations": 0,
+  "anatomical168cmApproved": false,
+  "canonicalIdentityApproved": false,
+  "physicsApproved": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "remaining": [
+    "common_168cm_base_and_identity",
+    "all_layers_and_rig",
+    "individual_hairs",
+    "cloth_wind_collision_actions",
+    "facial_expressions",
+    "gameplay"
+  ],
+  "createdAt": "2026-10-06T18:37:31.678924+00:00"
+}

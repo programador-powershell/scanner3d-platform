@@ -1,0 +1,81 @@
+{
+  "version": "v1060",
+  "sourceWhole": "v1041",
+  "exportWhole": "v1048",
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_clock_left_chain21_uv4k_candidate_v1041.blend",
+      "bytes": 863805621,
+      "sha256": "dcd8ac81aa55409171578fb25fa18ec611c0c531d188ba8d1886ad74ad8abb55"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.glb",
+      "bytes": 212973944,
+      "sha256": "c1f4fc0e8c2651f6822fd3ccd02cc5df4c818c0b7ffed6e1a034b44178dc14b4"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_clock_uv4k_checkpoint_v1048/alice_coelho_complete_rear_clock_uv4k_checkpoint_v1048.fbx",
+      "bytes": 267309676,
+      "sha256": "9f53a049fb8fa970c9096fd1d87c246c45cb18b707c1bd6ba470f5c5dac9b5ec"
+    }
+  },
+  "wholeCharacterWithDress": true,
+  "objects": 202,
+  "clockObjects": 173,
+  "totalTriangles": 1872066,
+  "independentReimportChecks": {
+    "glb": {
+      "reimport": 1050,
+      "all202ObjectsMatched": true,
+      "allFourActualRendersInspected": true,
+      "maxCornerPositionErrorM": 0.0,
+      "maxUVCornerError": 2.9802322387695312e-08
+    },
+    "fbx": {
+      "reimport": 1051,
+      "all202ObjectsMatched": true,
+      "allFourActualRendersInspected": true,
+      "maxCornerPositionErrorM": 2.905726432800293e-07,
+      "maxUVCornerError": 0.0
+    }
+  },
+  "allThreeNativeEightReimportAndSevenBrowserImagesActuallyInspected": true,
+  "allThreePhoto8NativeComparisonsActuallyInspected": true,
+  "allActualBrowserViewsInspected": true,
+  "rawNormalsMaterialPixelsAndChannelsVerified": true,
+  "actualCurrentFixedTrianglesContactAudit": "v1057",
+  "unexpectedClockOrWrapContacts": 0,
+  "intentionalMetalJoinPairs": 51,
+  "closedLoopSurfaceChecks": 55,
+  "gaussNativeProofReusedNotRecomputed": true,
+  "all185RetainedNativeProductionSignaturesPreserved": true,
+  "all29ExcludedOldLinksRecoverableAndExact": true,
+  "all173NativeMountsVerified": true,
+  "allEightClock4KMapsPackedAndVerified": true,
+  "acceptedAsVerifiedLocalWholeIntermediateCheckpoint": true,
+  "productionPortalNotVerified": true,
+  "uploaded": false,
+  "committed": false,
+  "published": false,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "remainingClockFidelity": [
+    "lower_chain_and_tassel_visual_weight_against_photo8",
+    "small_local_dial_paint_and_relief_refinement_if_visible"
+  ],
+  "remainingWholeAsset": [
+    "common168cm_identity",
+    "rig_all_layers",
+    "individual_hairs",
+    "cloth_wind_collisions_actions",
+    "facial_expressions",
+    "gameplay_Unreal"
+  ],
+  "createdAt": "2026-10-06T15:47:51.888973+00:00"
+}
