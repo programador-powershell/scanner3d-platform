@@ -1,0 +1,624 @@
+{
+  "version": "whole_rear_bow_uv4k_wip_v520",
+  "createdAt": "2026-10-06T01:09:25.743989+00:00",
+  "wholeCharacterWithDress": true,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_rear_bow_uv4k_working_v497.blend",
+      "bytes": 799551387,
+      "sha256": "91829ff46ac4bfd04b92286a55483072660a6f32fb1b390fc6d56ab0b796230e"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_bow_uv4k_checkpoint_v520/alice_coelho_complete_rear_bow_uv4k_checkpoint_v520.glb",
+      "bytes": 162035008,
+      "sha256": "4641ed27dadc03ed963b36fe31a6e2fbbfb9ea1b5c4f54a96ad7fa9a4079ac1b"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_bow_uv4k_checkpoint_v520/alice_coelho_complete_rear_bow_uv4k_checkpoint_v520.fbx",
+      "bytes": 205139420,
+      "sha256": "42ae78a2064a4e3e5589759652dc338e7caf8e0fcf46cc605de9abda07b064a6"
+    }
+  },
+  "wholeTriangles": 1535446,
+  "review": "reports/whole_checkpoint_review_decision_v526.json",
+  "entries": [
+    {
+      "path": "source_photo.png",
+      "source": "Workspaces/root_coelho_refinement_20261003/scanner3d-platform/docs/alice-experiments/coelho/whole-front-corner-ornament-pbr4k-wip-v424/source_photo.png",
+      "bytes": 462329,
+      "sha256": "235ccb89c6e8cbdfc0c68da3d1269282e659c00b1868e7df330217f8f95a9f7c"
+    },
+    {
+      "path": "reference_rear_construction_board8.png",
+      "source": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_42 (8).png",
+      "bytes": 2566215,
+      "sha256": "fb44d70585d08a851ed9161528100a0b772160a44cb185f5b61c2f13ac37b0af"
+    },
+    {
+      "path": "whole_before_after_front_v525.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_before_after_front_v525.jpg",
+      "bytes": 142455,
+      "sha256": "10dfe0419d011efe91963e2564a4be195e631e93b793f8511c3c84235b9589c7"
+    },
+    {
+      "path": "whole_before_after_back_v525.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_before_after_back_v525.jpg",
+      "bytes": 129069,
+      "sha256": "be029c201ec5e77a3b02ff5d3e519eb5e7e73388b1b68c063c3891ac269b4dc9"
+    },
+    {
+      "path": "whole_source_glb_fbx_views_v525.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_source_glb_fbx_views_v525.jpg",
+      "bytes": 961039,
+      "sha256": "b96b21c6a4445a8d8b02f5c7d8f8266a47451efb011eddd184104ebb1641bf08"
+    },
+    {
+      "path": "rear_bow_native_board_comparison_v494.jpg",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_native_board_comparison_v494.jpg",
+      "bytes": 424748,
+      "sha256": "7c70e6ce91fe8d75844e4bb2007bbf2fafb5a8e14b4bd49f215fc3bc823f8741"
+    },
+    {
+      "path": "reports/rear_bow_saved_geometry_audit_v462.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_saved_geometry_audit_v462.json",
+      "bytes": 8147,
+      "sha256": "8a49f24c4d59cc448e6678618b847660e719f6c793881072dccbaded64fb11e0"
+    },
+    {
+      "path": "reports/rear_bow_triangle_contact_audit_v450_candidate460.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_triangle_contact_audit_v450_candidate460.json",
+      "bytes": 34622,
+      "sha256": "4b725d9d9c390d89415b2487c87f7b35876bbd8006261afb3a5c5337a80da49f"
+    },
+    {
+      "path": "reports/rear_bow_uv_authoring_audit_v471.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_uv_authoring_audit_v471.json",
+      "bytes": 1504644,
+      "sha256": "1b3c721b2bbbaad0854dc224b3118295518279fd528a818d69c8a153ec474685"
+    },
+    {
+      "path": "reports/rear_bow_uv_saved_audit_v473.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_uv_saved_audit_v473.json",
+      "bytes": 4460,
+      "sha256": "cc896e97e970a7013d21c359a59f716a56cdcc030161e718a1ed70d11eb9223f"
+    },
+    {
+      "path": "reports/rear_bow_uv_distortion_audit_v474.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_uv_distortion_audit_v474.json",
+      "bytes": 11330,
+      "sha256": "0a59a6e83dbf906870f6b4792a09d423026755a41074b6f25d461d21118d3a27"
+    },
+    {
+      "path": "reports/rear_bow_visible_ink_authoring_audit_v482.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_visible_ink_authoring_audit_v482.json",
+      "bytes": 1512753,
+      "sha256": "b71c82a4224b04db498e301543d02153af9e486c0f1b14a4f07684fa31b77c62"
+    },
+    {
+      "path": "reports/rear_bow_paint_saved_audit_v483.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_paint_saved_audit_v483.json",
+      "bytes": 6612,
+      "sha256": "397dfa03fe97a34c577882bdec6d3708e71c3445c00aae7ee0c9f9c0c8f3745a"
+    },
+    {
+      "path": "reports/rear_bow_independent_projection_visibility_audit_v486.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_independent_projection_visibility_audit_v486.json",
+      "bytes": 1862,
+      "sha256": "2ab0af41db788efda622cbb9b7e671b84922cb9634e3102ba92fc66db37e89b2"
+    },
+    {
+      "path": "reports/rear_bow_thin_ink_classification_diagnostic_v491.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_thin_ink_classification_diagnostic_v491.json",
+      "bytes": 928,
+      "sha256": "b67e6b48e45e32539b855405b5781d6e705bc60e413512fc13e48ad28eb397ae"
+    },
+    {
+      "path": "reports/rear_bow_visible_ink_authoring_audit_v492.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_visible_ink_authoring_audit_v492.json",
+      "bytes": 1513049,
+      "sha256": "ed1a9ff0b46f1fae8333be01c0c0369467a9d45c5fd323101ee4fc82676ec4ff"
+    },
+    {
+      "path": "reports/rear_bow_paint_saved_audit_v493.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_paint_saved_audit_v493.json",
+      "bytes": 6624,
+      "sha256": "6d7a4633f3cb050c9df474bf0c17e8ce82d048d9cc64637bde97cac06c4750e2"
+    },
+    {
+      "path": "reports/rear_bow_same_camera_comparison_audit_v494.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_same_camera_comparison_audit_v494.json",
+      "bytes": 3856,
+      "sha256": "90ec692527a004923e14bb9a670a8b8d9c45e557cf44fbc0b4df343b80104b9c"
+    },
+    {
+      "path": "reports/rear_bow_thin_ink_review_decision_v495.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_thin_ink_review_decision_v495.json",
+      "bytes": 1320,
+      "sha256": "827520369125fab8748c2e0cf2e99d96999b65127752ecdd704ec877af9f096b"
+    },
+    {
+      "path": "reports/rear_bow_plate_registration_v480.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_plate_registration_v480.json",
+      "bytes": 2380,
+      "sha256": "5ae04e3d664b3e3a60231113e45b4c91837fd365afc5170fbfcebcf5c9bd3100"
+    },
+    {
+      "path": "reports/rear_bow_plate_review_decision_v481.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_plate_review_decision_v481.json",
+      "bytes": 862,
+      "sha256": "32e1e2aa802579f4d275143123f160d7c7192e811636b32e51d298cae90bddcd"
+    },
+    {
+      "path": "reports/rear_bow_whole_integration_audit_v497.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_whole_integration_audit_v497.json",
+      "bytes": 54613,
+      "sha256": "867f3c7b6912ae4dbcce58852d32ca6aca6e110c354c5974d34dbcfbdd6e980c"
+    },
+    {
+      "path": "reports/rear_bow_whole_reopen_audit_v498.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_whole_reopen_audit_v498.json",
+      "bytes": 2398,
+      "sha256": "20fa0c599871ba483af8444ac1f18c00785a26840ef34747d960b9d4cecc1d3b"
+    },
+    {
+      "path": "reports/rear_bow_whole_review_decision_v499.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_whole_review_decision_v499.json",
+      "bytes": 993,
+      "sha256": "7aa6e334956f9b3a541f7d716f970641f52dec5751b01ff57cce06bfd748893d"
+    },
+    {
+      "path": "reports/package_export_v520.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/package_export_v520.json",
+      "bytes": 9990,
+      "sha256": "c69ad51d4e12a389be6c7995b30f559aeb83eb6551785c4ffd8ea2367708399a"
+    },
+    {
+      "path": "reports/reimport_whole_glb_audit_v522.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_glb_audit_v522.json",
+      "bytes": 13676,
+      "sha256": "93ded6f23bb97768fb86be92599712d39b94f94c206e54cf47e404264e72fe17"
+    },
+    {
+      "path": "reports/reimport_whole_fbx_audit_v502.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_fbx_audit_v502.json",
+      "bytes": 14079,
+      "sha256": "ecb4a9c2317bb266f1b9f34d18bb028c8264d06cd552b0bd57a49ef6704cdfd7"
+    },
+    {
+      "path": "reports/whole_glb_raw_normal_payload_audit_v523.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_raw_normal_payload_audit_v523.json",
+      "bytes": 7446,
+      "sha256": "43671c9ee773af5edce8f6d9adea97e0a05f45c11c81af7f1c2539e34ee9a6da"
+    },
+    {
+      "path": "reports/whole_fbx_raw_normal_payload_audit_v504.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_raw_normal_payload_audit_v504.json",
+      "bytes": 5460,
+      "sha256": "410ac74f542ac86bb392ce4c92c59bcfa77097b54ccb928aa25f8ca4a123341a"
+    },
+    {
+      "path": "reports/whole_source_material_semantics_v505.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_source_material_semantics_v505.json",
+      "bytes": 52904,
+      "sha256": "9ccc1935fb37ae0f09e13a7031465360435d5305efbab539a20cda23e831ff1a"
+    },
+    {
+      "path": "reports/whole_glb_material_pixel_audit_v524.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_material_pixel_audit_v524.json",
+      "bytes": 11246,
+      "sha256": "7d5d1bea61ea657879998f416156fd71916fc8a5cbbe12ea4e54094e5dbb3835"
+    },
+    {
+      "path": "reports/whole_fbx_embedded_material_audit_v507.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_embedded_material_audit_v507.json",
+      "bytes": 16002,
+      "sha256": "873ce44ca567d7b6f9417e253cf24e736a038697306b403890a4f763a259ed84"
+    },
+    {
+      "path": "reports/whole_fbx_channel_semantics_audit_v508.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_fbx_channel_semantics_audit_v508.json",
+      "bytes": 12235,
+      "sha256": "3fbb995d069b1c894467b3fd2d395f2bc9b3e25bde6469801aa71c0702d88016"
+    },
+    {
+      "path": "reports/whole_comparison_diagnostics_v525.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_comparison_diagnostics_v525.json",
+      "bytes": 2949,
+      "sha256": "83d5e0082c6c2d931124f8aa36d1be311310b01aedb10b2949279feec181b43c"
+    },
+    {
+      "path": "reports/whole_checkpoint_review_decision_v526.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_checkpoint_review_decision_v526.json",
+      "bytes": 6104,
+      "sha256": "8bd4815376719d3460de53990274b86efeded47e64e397bea05498d254faf8ff"
+    },
+    {
+      "path": "reports/layer_reference_index_v008.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/layer_reference_index_v008.json",
+      "bytes": 4462,
+      "sha256": "6e539d093f4841400fab21079185487658735727e7d8bba280b7f06ddc0731ca"
+    },
+    {
+      "path": "reports/whole_glb_sheen_compatibility_audit_v521.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_glb_sheen_compatibility_audit_v521.json",
+      "bytes": 1071,
+      "sha256": "aa064d91dc848563c1b26e112a0088024a2bc9e45c5187dc9c0006edc8a7911a"
+    },
+    {
+      "path": "source-payload/character.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_character_v500.npz",
+      "bytes": 5808684,
+      "sha256": "c591abc0145cf6e508f4cb80183ef188c2a1ccd3108a7c7362df3f723113856e"
+    },
+    {
+      "path": "source-payload/apron.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_apron_v500.npz",
+      "bytes": 314187,
+      "sha256": "66044ff3ef2f01186885d83af94aac9a068aa6bc00a554a624be62788b76520f"
+    },
+    {
+      "path": "source-payload/chain.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_chain_v500.npz",
+      "bytes": 1827621,
+      "sha256": "5d3b57645bfe0ed42b835a0ae2b9262102e02d9900bc8512531a403545eab0e8"
+    },
+    {
+      "path": "source-payload/cord.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_cord_v500.npz",
+      "bytes": 680202,
+      "sha256": "7284c88d182412e59a65f7e5627f9b133fea90f27af6bd44ad076dc3942d5da0"
+    },
+    {
+      "path": "source-payload/lace.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_lace_v500.npz",
+      "bytes": 35226793,
+      "sha256": "8f915f68fa4f3985ca82a2374cf487de198bc96ce200c8fe15a139710e51f6f1"
+    },
+    {
+      "path": "source-payload/ornament_outer_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_left_v500.npz",
+      "bytes": 1178949,
+      "sha256": "11411f37384dc24f7f5ebf3839fbee1ee7cc73e539374661879987590520d458"
+    },
+    {
+      "path": "source-payload/ornament_inner_left.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_left_v500.npz",
+      "bytes": 526287,
+      "sha256": "4fccc87ad9e50c1e862933087807cabc96d6004ade64f45773a0553fddd9c1b9"
+    },
+    {
+      "path": "source-payload/ornament_center.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_center_v500.npz",
+      "bytes": 231889,
+      "sha256": "3917270deb49459390c0a260bf45c2d712dddc51b493b6a634c1a003f3503e58"
+    },
+    {
+      "path": "source-payload/ornament_inner_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_inner_right_v500.npz",
+      "bytes": 563982,
+      "sha256": "4ca5e27b882e038e878b01677d94b4d1313aed725488720b601755931f0f192b"
+    },
+    {
+      "path": "source-payload/ornament_outer_right.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_ornament_outer_right_v500.npz",
+      "bytes": 1165845,
+      "sha256": "93a676b1a487bec9e2d31e17b6c31217d7a443f2ad55f42b0ecd7462e76c51cf"
+    },
+    {
+      "path": "source-payload/rear_bow_left_base_loop.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_left_base_loop_v500.npz",
+      "bytes": 241582,
+      "sha256": "427117d504d9d356686203c373499a84d6d6f02d0b3bd1eb82987bc0e242880b"
+    },
+    {
+      "path": "source-payload/rear_bow_left_structured_interfacing.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_left_structured_interfacing_v500.npz",
+      "bytes": 240752,
+      "sha256": "662eaa5852ed953898822d4570d3f54716c6bb377bde3344c251ec5eeace804e"
+    },
+    {
+      "path": "source-payload/rear_bow_left_satin_lining.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_left_satin_lining_v500.npz",
+      "bytes": 240958,
+      "sha256": "7b4dcdc10722d522978045cea5ac1388581e5294e469885d6ab433d6a3087d96"
+    },
+    {
+      "path": "source-payload/rear_bow_left_printed_tail.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_left_printed_tail_v500.npz",
+      "bytes": 103114,
+      "sha256": "4eda0700bc2fe7ba43e8acd2edc9076f22325f89ab0cca1471e2477e6f339053"
+    },
+    {
+      "path": "source-payload/rear_bow_left_plain_satin_tail_back.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_left_plain_satin_tail_back_v500.npz",
+      "bytes": 103319,
+      "sha256": "a594f3ca66e88dd33be2ccd7114d31704ebf2023a03b05d67a36ddd398dabe45"
+    },
+    {
+      "path": "source-payload/rear_bow_right_base_loop.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_right_base_loop_v500.npz",
+      "bytes": 241400,
+      "sha256": "df14fc194a9c2d6064afea7ec20a56b183424624c035ccc9616c825d29d17027"
+    },
+    {
+      "path": "source-payload/rear_bow_right_structured_interfacing.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_right_structured_interfacing_v500.npz",
+      "bytes": 241560,
+      "sha256": "7dbf92fe90f87b51a27ab3cf0ea682684f66aa69682778f12b766b4315c5d7fc"
+    },
+    {
+      "path": "source-payload/rear_bow_right_satin_lining.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_right_satin_lining_v500.npz",
+      "bytes": 240631,
+      "sha256": "af29bbb0df64e7906d8b62e2254b8126f4e81ca3f6c405716963e55245150364"
+    },
+    {
+      "path": "source-payload/rear_bow_right_printed_tail.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_right_printed_tail_v500.npz",
+      "bytes": 103163,
+      "sha256": "f03d0a42188c473187b9449543955821239b326a168d2cadc435f7a663be08b7"
+    },
+    {
+      "path": "source-payload/rear_bow_right_plain_satin_tail_back.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_right_plain_satin_tail_back_v500.npz",
+      "bytes": 102875,
+      "sha256": "e484bedf4f09b0150df442dfc03201440e60d19a0b5f668d9a2cc21566660b19"
+    },
+    {
+      "path": "source-payload/rear_bow_center_center_wrap.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_export_source_rear_bow_center_center_wrap_v500.npz",
+      "bytes": 39998,
+      "sha256": "331f66f9227dd0014d3953631318aca83484bab98c8d0ee2eac87f1b1f886d32"
+    },
+    {
+      "path": "paint-sources/rear_bow_sources_v455/manifest_v455.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_sources_v455/manifest_v455.json",
+      "bytes": 2178,
+      "sha256": "7f806137acf690ed00b8eacd64450184708ad141cd8548a9720f4e899f2cdc55"
+    },
+    {
+      "path": "paint-sources/rear_bow_sources_v455/navy_gold_flat_albedo_candidate_v455.png",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_sources_v455/navy_gold_flat_albedo_candidate_v455.png",
+      "bytes": 3686085,
+      "sha256": "e743bd2df9a83306d571a67bac1a7e30e24a3d1fe5b216d35eeb096f3d306302"
+    },
+    {
+      "path": "paint-sources/rear_bow_sources_v455/prompt_v455.txt",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_sources_v455/prompt_v455.txt",
+      "bytes": 1272,
+      "sha256": "c4a1857bafe1b1a63b3b70181793fd46cda1c165c7d8e5ed7a57a04070e292ee"
+    },
+    {
+      "path": "paint-sources/rear_bow_plates_v479/back_fine_print_candidate_v479.png",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/back_fine_print_candidate_v479.png",
+      "bytes": 1930359,
+      "sha256": "b04d57ef0195e2607add0743d5b4914e3a0bd37d3541a5bfbdf148130cd9a718"
+    },
+    {
+      "path": "paint-sources/rear_bow_plates_v479/manifest_v479.json",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/manifest_v479.json",
+      "bytes": 2484,
+      "sha256": "ab3f9e4c1d5ac2e841f3d888e64ecf75e4f1aace7ead61874fd3c1f072d57d77"
+    },
+    {
+      "path": "paint-sources/rear_bow_plates_v479/prompt_v479.txt",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/prompt_v479.txt",
+      "bytes": 1500,
+      "sha256": "102fa66cc288f8f442951e1d4cc78e36f9d9597a422ee36783776324171f33e0"
+    },
+    {
+      "path": "visibility-cache/rear_bow_projection_masks_v482.npz",
+      "source": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_projection_masks_v482.npz",
+      "bytes": 361146,
+      "sha256": "175928dea97813d37c52991c37a9530070d6d3edff3eca5ba8e7e5eac56cdb7e"
+    },
+    {
+      "path": "production-code/author_coelho_rear_bow_fine_layers_v460.py",
+      "source": "Tools/author_coelho_rear_bow_fine_layers_v460.py",
+      "bytes": 594,
+      "sha256": "8ec7e71d777ae69e7289dc351ae17f3499925f4a7da4acaaf9412df0ad1da7b8"
+    },
+    {
+      "path": "production-code/author_coelho_rear_bow_pleats_v459.py",
+      "source": "Tools/author_coelho_rear_bow_pleats_v459.py",
+      "bytes": 833,
+      "sha256": "360d21f40a96e5719283ee446ab43ab432697697c160139db60a52c011d091a8"
+    },
+    {
+      "path": "production-code/author_coelho_rear_bow_curvature_layers_v454.py",
+      "source": "Tools/author_coelho_rear_bow_curvature_layers_v454.py",
+      "bytes": 4241,
+      "sha256": "df2d1df0b1e015827299ab0bc931458946eacf0f812e0b9415ba88ad06e12f81"
+    },
+    {
+      "path": "production-code/author_coelho_rear_bow_smooth_layers_v447.py",
+      "source": "Tools/author_coelho_rear_bow_smooth_layers_v447.py",
+      "bytes": 8601,
+      "sha256": "486a9c1055298259c98349d9c0a4bbbddcc89765595c4343e74654ffea7aced5"
+    },
+    {
+      "path": "production-code/author_coelho_rear_bow_uv_v466.py",
+      "source": "Tools/author_coelho_rear_bow_uv_v466.py",
+      "bytes": 10046,
+      "sha256": "1af832b7ef03594316d13d959291b1d464b35fd4bc6639154a790d5fbcd515e0"
+    },
+    {
+      "path": "production-code/relax_coelho_rear_bow_uv_v471.py",
+      "source": "Tools/relax_coelho_rear_bow_uv_v471.py",
+      "bytes": 5028,
+      "sha256": "35e88e6afacfb733a7c5b11f98303251539cf63b6e01ccb7b2c1ec1c0cf72cfa"
+    },
+    {
+      "path": "production-code/project_coelho_rear_bow_thin_ink_v492.py",
+      "source": "Tools/project_coelho_rear_bow_thin_ink_v492.py",
+      "bytes": 1594,
+      "sha256": "8b3dfed5fa619d8f4101fe11861bbac8172ef74efc383c3ddca94fb5857bb0db"
+    },
+    {
+      "path": "production-code/project_coelho_rear_bow_chroma_detail_v489.py",
+      "source": "Tools/project_coelho_rear_bow_chroma_detail_v489.py",
+      "bytes": 4321,
+      "sha256": "0c9364605473195db523d98bfe84a2696d82a0d04fa851c4ff5d1d2805e26c8a"
+    },
+    {
+      "path": "production-code/project_coelho_rear_bow_visible_ink_v467.py",
+      "source": "Tools/project_coelho_rear_bow_visible_ink_v467.py",
+      "bytes": 14050,
+      "sha256": "787ed2c846af8ce7dfa62d02ffedc27715e4707412132ebabb162be4b3a1e407"
+    },
+    {
+      "path": "production-code/verify_render_coelho_rear_bow_thin_ink_v493.py",
+      "source": "Tools/verify_render_coelho_rear_bow_thin_ink_v493.py",
+      "bytes": 399,
+      "sha256": "a9111318c939723f46f51332c5e443b3168165ca82dbb38c4a1f6956cada9fc7"
+    },
+    {
+      "path": "production-code/verify_render_coelho_rear_bow_paint_v469.py",
+      "source": "Tools/verify_render_coelho_rear_bow_paint_v469.py",
+      "bytes": 6320,
+      "sha256": "d30f86f650a593521a5c8f0791ed8dde0e31e3cf794a5f2db2ff194631868d0e"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_fine_projection_v486.py",
+      "source": "Tools/verify_coelho_rear_bow_fine_projection_v486.py",
+      "bytes": 326,
+      "sha256": "8f4a980cff69fd275180df0224ca7504047f9deeea0451ed02bf01441a4dcb9f"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_projection_visibility_v478.py",
+      "source": "Tools/verify_coelho_rear_bow_projection_visibility_v478.py",
+      "bytes": 3813,
+      "sha256": "77f1915bcd8be9730741eb568683481b73e31761dd182fd5e4ba68482d5ee4f6"
+    },
+    {
+      "path": "production-code/record_coelho_bow_thin_review_v495.py",
+      "source": "Tools/record_coelho_bow_thin_review_v495.py",
+      "bytes": 1749,
+      "sha256": "71626c25f453d914fa1aae6e26918ce5dd9115800744ef6a509a9be0cb9fd02e"
+    },
+    {
+      "path": "production-code/integrate_coelho_rear_bow_whole_v497.py",
+      "source": "Tools/integrate_coelho_rear_bow_whole_v497.py",
+      "bytes": 5436,
+      "sha256": "17603896420dcef482856530eeb82458c4cab32a09747dc7919d659a3ac77af5"
+    },
+    {
+      "path": "production-code/reopen_render_coelho_rear_bow_whole_v498.py",
+      "source": "Tools/reopen_render_coelho_rear_bow_whole_v498.py",
+      "bytes": 3260,
+      "sha256": "3461d63fab941083c8def960b3daa2e14e37ab10ffa52e8db7524f73058e0a33"
+    },
+    {
+      "path": "production-code/review_coelho_rear_bow_whole_v499.py",
+      "source": "Tools/review_coelho_rear_bow_whole_v499.py",
+      "bytes": 1438,
+      "sha256": "368267cf63190f94a962c78144f1f976afaf121041bd069a5842ba895054f505"
+    },
+    {
+      "path": "production-code/export_coelho_rear_bow_whole_checkpoint_v500.py",
+      "source": "Tools/export_coelho_rear_bow_whole_checkpoint_v500.py",
+      "bytes": 4506,
+      "sha256": "702770c17cf1c6ddedefea2d9bd5fc9b6c4414f914609bf3bbd9842a6ce829fb"
+    },
+    {
+      "path": "production-code/reimport_coelho_rear_bow_sheen_glb_v522.py",
+      "source": "Tools/reimport_coelho_rear_bow_sheen_glb_v522.py",
+      "bytes": 8937,
+      "sha256": "97287f4acb0f551078a81afced14e6e9960d9094c1a50f17f6fed799cf329092"
+    },
+    {
+      "path": "production-code/reimport_coelho_rear_bow_whole_fbx_exact_v502.py",
+      "source": "Tools/reimport_coelho_rear_bow_whole_fbx_exact_v502.py",
+      "bytes": 7710,
+      "sha256": "708f818e6dc7e141e2945bb69ce73f464d3be197da92355fe38116ed133b42bc"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_sheen_glb_normal_v523.py",
+      "source": "Tools/verify_coelho_rear_bow_sheen_glb_normal_v523.py",
+      "bytes": 4383,
+      "sha256": "0e69bc46e02594a7dd48463d0622a8d3283e9db3ef903fb517d08dd5e57eab85"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_whole_fbx_normal_v504.py",
+      "source": "Tools/verify_coelho_rear_bow_whole_fbx_normal_v504.py",
+      "bytes": 2152,
+      "sha256": "47b411f3824dd61442c416932a577e8c1931c0b687a3733a77e05c16143132ca"
+    },
+    {
+      "path": "production-code/dump_coelho_rear_bow_whole_materials_v505.py",
+      "source": "Tools/dump_coelho_rear_bow_whole_materials_v505.py",
+      "bytes": 2084,
+      "sha256": "66a1ec6aaa48dfbca996aa47836c49cec89c4b30f937db0fe131c512168d9b3b"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_sheen_glb_materials_v524.py",
+      "source": "Tools/verify_coelho_rear_bow_sheen_glb_materials_v524.py",
+      "bytes": 3792,
+      "sha256": "9b1492689c8a7c3e1992e2fb61ef79307309e28cfb42a0d6e9fe963dc1569a90"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_whole_fbx_materials_v507.py",
+      "source": "Tools/verify_coelho_rear_bow_whole_fbx_materials_v507.py",
+      "bytes": 1822,
+      "sha256": "2274ba066f0173508e3d84e0da13f6897ceb80b9fa3a017295f6584564a6fae4"
+    },
+    {
+      "path": "production-code/verify_coelho_rear_bow_whole_fbx_channels_v508.py",
+      "source": "Tools/verify_coelho_rear_bow_whole_fbx_channels_v508.py",
+      "bytes": 1949,
+      "sha256": "36afe330bd4032922bdfa6749400e0a8e95c824ebb589c71c06199213cb251f5"
+    },
+    {
+      "path": "production-code/compare_coelho_rear_bow_sheen_whole_v525.py",
+      "source": "Tools/compare_coelho_rear_bow_sheen_whole_v525.py",
+      "bytes": 2142,
+      "sha256": "23d0c1d0363d857e24677ff0d059e8bdae92c593f03314a3b11a322c31a98086"
+    },
+    {
+      "path": "production-code/review_coelho_rear_bow_checkpoint_v526.py",
+      "source": "Tools/review_coelho_rear_bow_checkpoint_v526.py",
+      "bytes": 3918,
+      "sha256": "6dfacac4185f7cb51752a25830756126d3ed5f98d48a95dd6974994ab5fcacd5"
+    },
+    {
+      "path": "production-code/coelho_uv_triangle_sat.py",
+      "source": "Tools/coelho_uv_triangle_sat.py",
+      "bytes": 1960,
+      "sha256": "56c372abc82131b8281f2fb81cae900ac15705a832f45c7eb3c5f8ce0a3cbe7d"
+    },
+    {
+      "path": "production-code/fix_coelho_bow_glb_sheen_v521.py",
+      "source": "Tools/fix_coelho_bow_glb_sheen_v521.py",
+      "bytes": 3519,
+      "sha256": "0d154e313e7f6b33e5965415500f37e416c4b74e04f4161b4082214dda8a28df"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2058,
+      "sha256": "5cc679a5e9f5dc158de7fa6baf2231c9908f50e9991a58f58d27f423d60dda42"
+    },
+    {
+      "path": "reports/shared_base_current_provisional.json",
+      "source": "SharedBase/current.json",
+      "bytes": 1222,
+      "sha256": "2d692befe00b9dc910655657aadc6ad612739ab33d264055d8cd552ea2ef7b74"
+    },
+    {
+      "path": "reports/coelho_base_binding_pending.json",
+      "source": "Assets/Characters/alice_coelho/base_binding.json",
+      "bytes": 429,
+      "sha256": "991a288072d57a29d4f4646129332e3735e785e2dc649f362e8248782baf18a8"
+    }
+  ],
+  "largeBinariesInGitHubReleaseNotGitBlobs": true,
+  "productionComplete": false,
+  "rigged": false,
+  "physicsVerified": false,
+  "additionalTripoCredits": 0,
+  "sharedBaseVersion": "v012_portable_provisional",
+  "sharedBaseFidelityApproved": false,
+  "sharedBaseNotIntegratedOrModified": true,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "sourceSheenCompatibility": "reports/whole_glb_sheen_compatibility_audit_v521.json"
+}

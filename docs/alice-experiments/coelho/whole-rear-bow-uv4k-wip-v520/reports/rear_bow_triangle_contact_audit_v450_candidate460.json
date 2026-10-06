@@ -1,0 +1,991 @@
+{
+  "version": "v450",
+  "candidateVersion": "460",
+  "sourceSHA256": "b95a95d3da698a3da71fd9226e997334744c62bfe2a129138480507c68be6e83",
+  "sourcePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_rear_bow_layers_candidate_v460.blend",
+  "records": [
+    {
+      "name": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "role": "base_loop",
+      "side": "left",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 42,
+          "SATTrianglePairs": 42,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "role": "structured_interfacing",
+      "side": "left",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 38,
+          "SATTrianglePairs": 38,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "role": "satin_lining",
+      "side": "left",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 53,
+          "SATTrianglePairs": 53,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "role": "printed_tail",
+      "side": "left",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "role": "plain_satin_tail_back",
+      "side": "left",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "role": "base_loop",
+      "side": "right",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 39,
+          "SATTrianglePairs": 39,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "role": "structured_interfacing",
+      "side": "right",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 42,
+          "SATTrianglePairs": 42,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "role": "satin_lining",
+      "side": "right",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 42,
+          "SATTrianglePairs": 42,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "role": "printed_tail",
+      "side": "right",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "role": "plain_satin_tail_back",
+      "side": "right",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    },
+    {
+      "name": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "role": "center_wrap",
+      "side": "center",
+      "targets": {
+        "Alice.Coelho.WholeCheckpoint421.character": {
+          "broadPairs": 89,
+          "SATTrianglePairs": 89,
+          "targetEvaluatedTriangles": 150000
+        },
+        "Alice.Coelho.WholeCheckpoint421.apron": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 8400
+        },
+        "Alice.Coelho.WholeCheckpoint421.chain": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 61056
+        },
+        "Alice.Coelho.WholeCheckpoint421.cord": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 22136
+        },
+        "Alice.Coelho.WholeCheckpoint421.lace": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 1144188
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 31216
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 14330
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 6424
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 15096
+        },
+        "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+          "broadPairs": 0,
+          "SATTrianglePairs": 0,
+          "targetEvaluatedTriangles": 30728
+        }
+      },
+      "selfSATTrianglePairs": 0
+    }
+  ],
+  "betweenLayers": [
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    },
+    {
+      "nameA": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "nameB": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "broadPairs": 0,
+      "SATTrianglePairs": 0
+    }
+  ],
+  "totalSelfSATTrianglePairs": 0,
+  "totalBetweenLayersSATTrianglePairs": 0,
+  "totalWholeSurfaceSATTrianglePairs": 345,
+  "toleranceM": 1e-09,
+  "sharedVertexAdjacentSelfPairsExcluded": true,
+  "closedVolumeContainmentNotTested": true,
+  "sewnMountsNotVerified": true,
+  "physicsVerified": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "readOnlyNoSaveOrExport": true,
+  "pairsPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/rear_bow_triangle_contacts_v450_candidate460.npz",
+  "elapsedSeconds": 62.03862476348877
+}

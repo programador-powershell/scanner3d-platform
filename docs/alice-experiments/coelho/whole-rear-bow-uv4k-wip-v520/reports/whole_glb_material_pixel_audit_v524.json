@@ -1,0 +1,294 @@
+{
+  "version": "v524",
+  "format": "GLB",
+  "sha256": "4641ed27dadc03ed963b36fe31a6e2fbbfb9ea1b5c4f54a96ad7fa9a4079ac1b",
+  "allExportedMaterialsVerified": true,
+  "allSourceLinkedImages4096": true,
+  "fullPixelComparisons": true,
+  "materials": [
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168",
+          "sourceSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168"
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.47999998927116394
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e",
+          "sourceSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976",
+          "sourceSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78",
+          "sourceSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+          "sourceSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+          "sourceSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+          "sourceSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "642849078259898483934c531e01bcd033c50c127acd14a6e193dc80c36d4397",
+          "sourceSHA256": "642849078259898483934c531e01bcd033c50c127acd14a6e193dc80c36d4397"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "52a0d95829ed34e6e1e1dfec81a19c048702d61e9b62ea53746dc1e0ea8dd0f0"
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0
+        }
+      },
+      "sheenWeightCompatibility": {
+        "sourceWeight": 0.08,
+        "encodedTintFactor": [
+          0.08,
+          0.08,
+          0.08
+        ],
+        "binaryTextureAndUVPreserved": true
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    }
+  ],
+  "unusedMaterialSlotsNotRequiredInGLB": true,
+  "productionComplete": false
+}

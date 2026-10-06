@@ -1,0 +1,77 @@
+{
+  "version": "v525",
+  "metrics": {
+    "glb_front": {
+      "meanRGB": 0.013073400673400673,
+      "p95RGB": 0.0,
+      "maxRGB": 14.0,
+      "renderSHA256": "751a1cfb5e2d763f535fe2f805812df68adfb064eb13d5164c9f71595a645157",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "fbx_front": {
+      "meanRGB": 0.017334343434343435,
+      "p95RGB": 0.0,
+      "maxRGB": 36.0,
+      "renderSHA256": "ebd0951f42f6d0db2ebf425f375d174f5e491dc0b9f453fb2808efc57db3f261",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "glb_threequarter": {
+      "meanRGB": 0.012302356902356903,
+      "p95RGB": 0.0,
+      "maxRGB": 33.0,
+      "renderSHA256": "fb866d2fb779956ce58c5cb494bc62d46633c4241a985dfe6fcec22b335a3f56",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "fbx_threequarter": {
+      "meanRGB": 0.016252861952861953,
+      "p95RGB": 0.0,
+      "maxRGB": 33.0,
+      "renderSHA256": "c2da3dfcf4d39c420c87f42a399b3ef248ee353d7886a42d5918f1e0287cc08f",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "glb_back": {
+      "meanRGB": 0.0072589225589225585,
+      "p95RGB": 0.0,
+      "maxRGB": 10.0,
+      "renderSHA256": "b1bf2bc9c8f31924a8c3c477ce94287f5dff9e5a0f1340f6e4c17e7c6bb66b48",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "fbx_back": {
+      "meanRGB": 0.05396902356902357,
+      "p95RGB": 0.0,
+      "maxRGB": 31.0,
+      "renderSHA256": "571795dc371550a235ab43a65529cb5966497a4ab75f4595b458cd549621a1bf",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "glb_left_profile": {
+      "meanRGB": 0.005860942760942761,
+      "p95RGB": 0.0,
+      "maxRGB": 28.0,
+      "renderSHA256": "3cdc37e2c70ac846a2d6a7b8d87ca325811e54e560504981f47e886945848197",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "fbx_left_profile": {
+      "meanRGB": 0.04188720538720539,
+      "p95RGB": 0.0,
+      "maxRGB": 50.0,
+      "renderSHA256": "5d9333d47b8ba9f75d806de5e5767b98e8a289b4e30fdabd401bb4468da34fee",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "glb_right_profile": {
+      "meanRGB": 0.00538989898989899,
+      "p95RGB": 0.0,
+      "maxRGB": 23.0,
+      "renderSHA256": "e5cdfa7f673f9a46d773d3376e7a756f6f2961fb265920ab979a3ea6332f1a83",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    },
+    "fbx_right_profile": {
+      "meanRGB": 0.03062053872053872,
+      "p95RGB": 0.0,
+      "maxRGB": 52.0,
+      "renderSHA256": "359b69d4965bdbdcab075120f939378765307327bf00662164611d2e8b7cbe7d",
+      "scope": "Whole-frame diagnostic, not reference fidelity approval."
+    }
+  },
+  "requiresActualImageInspection": true,
+  "productionComplete": false
+}

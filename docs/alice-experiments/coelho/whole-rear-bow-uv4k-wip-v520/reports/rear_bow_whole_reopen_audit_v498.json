@@ -1,0 +1,71 @@
+{
+  "version": "v498",
+  "sourceCandidate": "v497",
+  "sourceSHA256": "91829ff46ac4bfd04b92286a55483072660a6f32fb1b390fc6d56ab0b796230e",
+  "allTwentyOneCompleteMeshSignaturesExactlyVerified": true,
+  "independentSavedWholeReopen": true,
+  "portablePackedImages": true,
+  "records": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_front_rear_bow_wip_v498.png",
+      "sha256": "44aba6a0a0dae0efb353b72dfb90ae536aaa89d6d24ca45d3dc4e7b1312c4d64",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_threequarter_rear_bow_wip_v498.png",
+      "sha256": "152c98bd2805b5aea1f87bea6193a894e1f68983197689005a8bb79d6b9bcda9",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_back_rear_bow_wip_v498.png",
+      "sha256": "06e9499e9d66125c3d3ae93d13aba83c7742c580f98a4fe15daae296452db918",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_left_profile_rear_bow_wip_v498.png",
+      "sha256": "ffcfb540961442b89cbed87eee43063ac73d58d0b62d9c8540c5f5972dba84b3",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_coelho_right_profile_rear_bow_wip_v498.png",
+      "sha256": "e13f0cd1680e60e37796cdd1a38deca007cd70d1eed12d473e66309e67a13855",
+      "target": [
+        -6.717443466186523e-05,
+        0.0,
+        0.8860968289133098
+      ],
+      "orthoScale": 2.05
+    }
+  ],
+  "requiresActualImageInspection": true,
+  "readOnlyNoSaveOrExport": true,
+  "rigged": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "elapsedSeconds": 162.8381860256195
+}

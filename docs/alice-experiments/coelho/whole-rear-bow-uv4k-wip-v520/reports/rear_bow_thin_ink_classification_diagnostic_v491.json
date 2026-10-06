@@ -1,0 +1,24 @@
+{
+  "version": "v491",
+  "sourceSHA256": "b04d57ef0195e2607add0743d5b4914e3a0bd37d3541a5bfbdf148130cd9a718",
+  "cropNativePixels": [
+    280,
+    440,
+    570,
+    650
+  ],
+  "panelPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_thin_ink_diagnostic_v491.png",
+  "panelSHA256": "abb0ccbe97669f614fbdd1de5d73129eecf82a25639f0b31ed5d0a5776b21b0e",
+  "oldGoldPixelsAlphaAboveHalf": 4650,
+  "proposedGoldPixelsAlphaAboveHalf": 9027,
+  "diagnosticOnly": true,
+  "sourceImageNotChanged": true,
+  "proposedThresholdNotApplied": true,
+  "requiresActualLineAndHighlightInspection": true,
+  "productionComplete": false,
+  "actualDiagnosticPanelInspected": true,
+  "thinChainsAndCirclesMoreComplete": true,
+  "neutralHighlightsRemainExcludedInsideCloth": true,
+  "skinOutsideClothWouldBeWarmButGeometryVisibilityMaskPreventsTransfer": true,
+  "acceptedForLocalChromaProjectionOnly": true
+}

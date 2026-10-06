@@ -1,0 +1,266 @@
+{
+  "version": "v462",
+  "sourceCandidate": "v460",
+  "sourceSHA256": "b95a95d3da698a3da71fd9226e997334744c62bfe2a129138480507c68be6e83",
+  "allTenWholeSourceObjectsExactlyVerified": true,
+  "records": [
+    {
+      "name": "Alice.Coelho.RearBow.left.base_loop.Candidate460",
+      "role": "base_loop",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 3.1219544591314577e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 2.6928588704212756e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.structured_interfacing.Candidate460",
+      "role": "structured_interfacing",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 5.723195423616426e-06,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 4.736956840217554e-08,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.satin_lining.Candidate460",
+      "role": "satin_lining",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 5.703067105635145e-06,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 4.471954333886626e-08,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.printed_tail.Candidate460",
+      "role": "printed_tail",
+      "evaluatedVertices": 1394,
+      "evaluatedTriangles": 2784,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 1.5374526733135677e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 7.768197442242016e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Candidate460",
+      "role": "plain_satin_tail_back",
+      "evaluatedVertices": 1394,
+      "evaluatedTriangles": 2784,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 1.5469605957159203e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 7.57064188011804e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.base_loop.Candidate460",
+      "role": "base_loop",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 3.1220083363470575e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 2.700952629422894e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.structured_interfacing.Candidate460",
+      "role": "structured_interfacing",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 5.7233389865060646e-06,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 4.7631163338807766e-08,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.satin_lining.Candidate460",
+      "role": "satin_lining",
+      "evaluatedVertices": 3250,
+      "evaluatedTriangles": 6496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 5.703182181709066e-06,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 4.4699584327920636e-08,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.printed_tail.Candidate460",
+      "role": "printed_tail",
+      "evaluatedVertices": 1394,
+      "evaluatedTriangles": 2784,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 1.5368668575581415e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 7.765734637356789e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Candidate460",
+      "role": "plain_satin_tail_back",
+      "evaluatedVertices": 1394,
+      "evaluatedTriangles": 2784,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 1.5453113366053127e-05,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 7.564811803851778e-07,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    },
+    {
+      "name": "Alice.Coelho.RearBow.center_wrap.Candidate460",
+      "role": "center_wrap",
+      "evaluatedVertices": 882,
+      "evaluatedTriangles": 1760,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeM3": 5.322909513821841e-06,
+      "zeroAreaTriangles": 0,
+      "minimumTriangleAreaM2": 1.4231473866033184e-06,
+      "exactDuplicateMidSurfaceVertices": 0,
+      "UVLayers": 1,
+      "rigged": false
+    }
+  ],
+  "topologyDefectsRequireLocalCorrection": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "readOnlyNoSaveOrExport": true,
+  "renders": [
+    {
+      "view": "whole_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_whole_back_v462.png",
+      "sha256": "15eba8f0f6eb62a599fc0a8003bc236fa6d4f7e237c4ae892aa54a4ae548bd38",
+      "target": [
+        0,
+        0,
+        0.886
+      ],
+      "direction": [
+        0,
+        4,
+        0
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "whole_rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_whole_rear_threequarter_v462.png",
+      "sha256": "ca433aaa451b9b7a5477641299f601cba29b634b19252be7b15a002dcdfc0b81",
+      "target": [
+        0,
+        0,
+        0.886
+      ],
+      "direction": [
+        2,
+        4,
+        0
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "bow_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_back_v462.png",
+      "sha256": "dd8e179cf83b5d815da40aee53d2cb0cb30e9c1a9c5a068d2f581cda816f9ea0",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        0,
+        3,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_left_profile_v462.png",
+      "sha256": "fb65c286b12e347fa8e9acdfaf5e96a65fb3592f47ca5ef74a92c144bb5264b6",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        -3,
+        0,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_right_profile_v462.png",
+      "sha256": "262f580ae4846c964e1ae9933775110ca39bf917451feffe7b308ccba59d3de8",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        3,
+        0,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_layers_only_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_layers_only_back_v462.png",
+      "sha256": "715c49cef22f925bd9e0f64edaf84151064aec03c4600ef7affb9e865932fe1f",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        0,
+        3,
+        0
+      ],
+      "orthoScale": 0.83
+    }
+  ],
+  "allSixImagesRequireActualReferenceInspection": true,
+  "elapsedSeconds": 209.19126749038696
+}

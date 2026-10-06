@@ -1,0 +1,1935 @@
+{
+  "version": "v497",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_rear_bow_uv4k_working_v497.blend",
+  "bytes": 799551387,
+  "sha256": "91829ff46ac4bfd04b92286a55483072660a6f32fb1b390fc6d56ab0b796230e",
+  "sourcePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Dress/alice_coelho_rear_bow_visible_ink_candidate_v492.blend",
+  "sourceSHA256": "cc697f96dbd21737160aec133a844475fa818228449e273d5216552211a51e6b",
+  "wholeCharacterWithDress": true,
+  "collection": "COELHO_WHOLE_CHECKPOINT_V497_STATIC_WIP",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.WholeCheckpoint497.character",
+      "source": "Alice.Coelho.WholeCheckpoint421.character"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.WholeCheckpoint497.apron",
+      "source": "Alice.Coelho.WholeCheckpoint421.apron"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.WholeCheckpoint497.chain",
+      "source": "Alice.Coelho.WholeCheckpoint421.chain"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.WholeCheckpoint497.cord",
+      "source": "Alice.Coelho.WholeCheckpoint421.cord"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.WholeCheckpoint497.lace",
+      "source": "Alice.Coelho.WholeCheckpoint421.lace"
+    },
+    {
+      "role": "ornament_outer_left",
+      "name": "Alice.Coelho.WholeCheckpoint497.ornament_outer_left",
+      "source": "Alice.Coelho.WholeCheckpoint421.ornament_outer_left"
+    },
+    {
+      "role": "ornament_inner_left",
+      "name": "Alice.Coelho.WholeCheckpoint497.ornament_inner_left",
+      "source": "Alice.Coelho.WholeCheckpoint421.ornament_inner_left"
+    },
+    {
+      "role": "ornament_center",
+      "name": "Alice.Coelho.WholeCheckpoint497.ornament_center",
+      "source": "Alice.Coelho.WholeCheckpoint421.ornament_center"
+    },
+    {
+      "role": "ornament_inner_right",
+      "name": "Alice.Coelho.WholeCheckpoint497.ornament_inner_right",
+      "source": "Alice.Coelho.WholeCheckpoint421.ornament_inner_right"
+    },
+    {
+      "role": "ornament_outer_right",
+      "name": "Alice.Coelho.WholeCheckpoint497.ornament_outer_right",
+      "source": "Alice.Coelho.WholeCheckpoint421.ornament_outer_right"
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_left_base_loop",
+      "source": "Alice.Coelho.RearBow.left.base_loop.Detail492"
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_left_structured_interfacing",
+      "source": "Alice.Coelho.RearBow.left.structured_interfacing.Detail492"
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_left_satin_lining",
+      "source": "Alice.Coelho.RearBow.left.satin_lining.Detail492"
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_left_printed_tail",
+      "source": "Alice.Coelho.RearBow.left.printed_tail.Detail492"
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_left_plain_satin_tail_back",
+      "source": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Detail492"
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_right_base_loop",
+      "source": "Alice.Coelho.RearBow.right.base_loop.Detail492"
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_right_structured_interfacing",
+      "source": "Alice.Coelho.RearBow.right.structured_interfacing.Detail492"
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_right_satin_lining",
+      "source": "Alice.Coelho.RearBow.right.satin_lining.Detail492"
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_right_printed_tail",
+      "source": "Alice.Coelho.RearBow.right.printed_tail.Detail492"
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_right_plain_satin_tail_back",
+      "source": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Detail492"
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "name": "Alice.Coelho.WholeCheckpoint497.rear_bow_center_center_wrap",
+      "source": "Alice.Coelho.RearBow.center_wrap.Detail492"
+    }
+  ],
+  "sourceSignatures": {
+    "Alice.Coelho.WholeCheckpoint421.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "UV": {
+        "AliceCoelhoGameUV4K": "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      },
+      "normals": "d0393edcdc715727771230c06f601ef86a3e3d4032cebb511697e2dd8e0b49e0",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "groups": [],
+      "weights": "0ed7d610daf6854ede830a70adb355d54dd785d0cb434d55ccf077268f8eb43f",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "UV": {
+        "AliceCoelhoApronIntrinsicUV4K": "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      },
+      "normals": "a60b8ada4d2c865405d962205201bdfe21bda276ccc4fd02bd794c445cfc8a41",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "groups": [
+        "Cloth.Root.AuthoringPins_NotRig"
+      ],
+      "weights": "cff5f35d884fa73a814e40b581848f051529d280dbfb89046f023a01d8c1296c",
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      }
+    },
+    "Alice.Coelho.WholeCheckpoint421.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "UV": {
+        "AliceCoelhoFittedChainUV4K": "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      },
+      "normals": "67c3df1cd0651977713a0661d5b0c71a6dc84c75f0d3efb0d41ecf515b8efd18",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "groups": [],
+      "weights": "848b91e7f35467f3805866617e4f01c1ebc9fdc8d9231b5b7563c1a24f1e590d",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "UV": {
+        "AliceCoelhoLaceCordUV4K": "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      },
+      "normals": "5ac5e3167d85ae9b5309d5e264b23b7a330546057598e667c2d2ba8f68863d73",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "groups": [],
+      "weights": "d256f8992ece2f07829fc4eb21f4bfa9d9f698088c3f18b9dd3b4e6fcc868e72",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.lace": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "UV": {
+        "AliceCoelhoDenseLaceUV4K": "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      },
+      "normals": "bc4002c2a1707fdc2e2f4fc432b763365bd8885507430fe7dc1a7cec47ab6016",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "groups": [],
+      "weights": "af13e93d1137d35f0e5ba6aa025e1f7821e8886c381a916736568d88036fb187",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_outer_left": {
+      "positions": "0c9da3600ada86de874a4f1c844caef451a0abbd94b9d9b1709e9c863104351a",
+      "faces": "b2812f85720fc49439a1856ead450f13d2f0c2339a74de09608cb11aee731c8e",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "4274e7757b760d805abff9c892a056df50fd5fa53a1cfc99b95ff698b8ee349c"
+      },
+      "normals": "4ef2c86d4f15109ddc511489e590b44c977bd489c84bccd3807052bfaa495347",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.outer_left"
+      ],
+      "weights": "88dd263ccb91269ce4c775b6eeddc2fc6a1a7e7c589bf334fe1f324a4f26835c",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_inner_left": {
+      "positions": "79d89c1dff8f957d68ae1029f20a3e1e26a962452546a16f850a2d5c0b86563e",
+      "faces": "d814aeb6b2d882d14ef1ad0d782e725f92250338ba42aca00ab7f9a7a519cf62",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "a6d40d068b938e6e7aa5b59e18df40aa843422a88467cbf7d84528e3d35376da"
+      },
+      "normals": "8708bcf4aa7b5bbade55dab9306075f42b0eb504682e118f13812544fafa7205",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.inner_left"
+      ],
+      "weights": "0282297f62820970f96796651b21238fa9f956749a20c413c86905e534ba8d2d",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_center": {
+      "positions": "e5e3cb8821282fa6569e1aad60ce95aa9e11e0eeb1b1e45f4779f26dc0980c31",
+      "faces": "e85c15cfe133cd596e81615858e1d8984266c0a606a2df16714d24e1ff92f212",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "db9f421b458aae5e52b4ab72348e026e6f23d771b749dc5ad2eaa18f7df4eede"
+      },
+      "normals": "d4659ac6aa302f95f09ce8e74c429604f198abe2e2fc7a6e9f941135c53d5b60",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.center"
+      ],
+      "weights": "a9e948c927c69f7d1f18192512a05f331a02c4ca0947599bcf163368a0abc2f6",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_inner_right": {
+      "positions": "a957ae66cf7ae082314100e83106b40bc4a7f0f73a9225869a9f0ad99733ed8c",
+      "faces": "1d7c21cf18484d822ec10a57ce714f88e21d1453b39e79a9725abbacfc0248b1",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "0bf777f76f641972551dc9812f0e57c131ee1c2dff792885ea415899eb01fa0d"
+      },
+      "normals": "695132667c61966fbd0b3ff4d168be4da1108b3d84d350776b3e32e2b6d98e51",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.inner_right"
+      ],
+      "weights": "8bbc8b99a818251d90c364f878fe5e48826bc93aa7b27738e74d504c0facefdf",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint421.ornament_outer_right": {
+      "positions": "4729c577d5e32741421b190ef8ad7016c5c8c31f2c116617d41cc55304e45b8e",
+      "faces": "024ef39f87a4f0dbfeb59f42306219cb2c75e7f7ed7480b2d242492a733574b7",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "fd4016a16b994692609f14ad22e7e2f52771c5fffef47755c260dcc3701f6bd4"
+      },
+      "normals": "b7536f94fb8275f9a8c2004c28410456cbf5278e5883ff01e8fa6d2da2f2af7f",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.outer_right"
+      ],
+      "weights": "5ea5e21a944cba1da12ed3e72dbde606ca1d26d1d770aec9abcd692e2f8e9085",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.left.base_loop.Detail492": {
+      "positions": "3d46891e025f5e04fffe55463bf755abd497837a40f3a94f7edf869dcf089b9f",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "fabcb54268ba5960017724a70c6a34f025ea2b22bfddc4c7c7720dae14c92791"
+      },
+      "normals": "ae6ecb49100f5d18bd505517a99d8a67acbb6459efc4bf4df0533a453719f455",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.left.structured_interfacing.Detail492": {
+      "positions": "10b0a50fc097e605a33dad6513c86c8efbd3baa0c0c8787697d66ced2d427aa1",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "8cb77f4ca5891927df6164e8bc10a453b95b6110b043de75a0f9e88557ddcd66"
+      },
+      "normals": "8142ea2c0a64d478b35ebf99a2b38c049fd7f2159d19ab742e0c0fe8ae6eb5cc",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.left.satin_lining.Detail492": {
+      "positions": "66c9cb0c60698ddeeee53facc73c0bbbafdad25966f7f69b52be95bf10210a84",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "55b368494c644f3458f6e0b60d9f14b31689ce4b50dca2e1b1b4acd8be67dff6"
+      },
+      "normals": "4e4bb9be5a61aeefdc8c4e7893353dcb0ee163f973f4cb124327f71b0ab34c3a",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.left.printed_tail.Detail492": {
+      "positions": "da66a5589c769967ab4c4c7905299a7b81cace3c54f8fbb2ff9cf1f9ca0d5301",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "1735b7f9d6c5ac200017746c935a4ced8c64ad826a54904debfa02daee95c27d"
+      },
+      "normals": "5c8ba4979e628f3741154d9be25af9994cf6b7365de2f43607871339776cbbe3",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.left.plain_satin_tail_back.Detail492": {
+      "positions": "d6b64fb6caa96fda971d748ede1e5f5f6e938a946e507114a68d1b294778c6b8",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "1f3250460b75603314c53dcdc72358570bf95cc45b8aa57c88a611bfc5e0ee7f"
+      },
+      "normals": "02be3aabd4453a45a4869036b5cef7c28273b76145d99ad33b47ccc6c7e4d1ef",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.right.base_loop.Detail492": {
+      "positions": "80519f5186ed828132abf74323bbea91641fc77e41d67b01fa2fd102aa082b07",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "44cac2de2bf47fbef1d16d8edb150d89d4ade1cbc3ea2b71969e57de964d6f5a"
+      },
+      "normals": "d3071bd36f38bc1ee061df3559eec3ea4c1eca33455d2738489b911d29b82c2c",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.right.structured_interfacing.Detail492": {
+      "positions": "3a4490c8431f34ed8fa2c3abaa4bb4e67ff109de4dcacc3909456060274a420a",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "0ef63a798eedab8f578ca43e23223751d3d9e94082046712fdd78f710c913426"
+      },
+      "normals": "f676b2e1a02bb46d8127f29f13f5d2506651b344bf8eb8e6266d79d6522ececb",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.right.satin_lining.Detail492": {
+      "positions": "7ba36e2483fcefe3403b669f4530a5b5f01da68bb0be2ce7597803f370a2641d",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "e846ac241fe800d098b2dbe2977cd56bef31d9dfa134732c01eecb1731fcf607"
+      },
+      "normals": "2714db7311e3b9793629dfad93fe893525380717cacce4922eadfc9f1748b0a3",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.right.printed_tail.Detail492": {
+      "positions": "ae71650619c0077b3d2521e3ed590e477b851da892d38cad79ae8d5669cde5f9",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "a9dbc74bc99cb8521ac78d2c8ec67f0af8ec22afaccc503cb8c33f3cd8e45126"
+      },
+      "normals": "59ea7e5a5b43eb30f91ec3373834f361559cddaa027a4bede726e40e7f298cfb",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.right.plain_satin_tail_back.Detail492": {
+      "positions": "93102fefaa76cd324cbe9d89a4f829983121b5239dad2b30a7815a886853faab",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "3bde99b90ca93d36355639f6ca76862152a404bf4e94322bf0e7f6c5195a1cdf"
+      },
+      "normals": "dfb326fe3fcf76d028c13c5a72585d2fc7b2ace26b20f553eb933f839fa78822",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.RearBow.center_wrap.Detail492": {
+      "positions": "5c76a47e46c348b354f68d1a482f0f62e7209745659bdf4cf99a7e4f63d61c25",
+      "faces": "47ac96dcd396859c499a9d2bfc9f00efb928c024936e08fd0a175764e339867b",
+      "UV": {
+        "RearBow.PatternUV460": "f5a1e31d6ae566ff77225c32183efac5b3fb502562cf3078bda88355bc9d0e12",
+        "RearBow.Atlas4K.ABF.v471": "e1c83890720913178941bc7bead5fa8fa9e61dc8bbee4d8b7c6388b666533774"
+      },
+      "normals": "d208f42f8e54653a0c3babf9e10b34edf202a3609e7bf91b8f883e42406597b2",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "7b192233dae8ee5cf77d6825edae60fae9fd8e4002e81a0fbf8bf1d22835c3dd",
+      "keys": {}
+    }
+  },
+  "wholeCopySignatures": {
+    "Alice.Coelho.WholeCheckpoint497.character": {
+      "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+      "faces": "e315d7bac47cc3ad4888371b687b65f3adf236b438923e1bbd149d3b9a563fa7",
+      "UV": {
+        "AliceCoelhoGameUV4K": "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+      },
+      "normals": "d0393edcdc715727771230c06f601ef86a3e3d4032cebb511697e2dd8e0b49e0",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "groups": [],
+      "weights": "0ed7d610daf6854ede830a70adb355d54dd785d0cb434d55ccf077268f8eb43f",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.apron": {
+      "positions": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+      "faces": "db24f0e26fc553e2251ef9d8b77bf8c7aafe844f431fafd79c58e1b86b9422fc",
+      "UV": {
+        "AliceCoelhoApronIntrinsicUV4K": "b6efea4f39899aefa02d5d88330e2e6fa720f26290d9c6c1022ba2a0d81d5b96"
+      },
+      "normals": "a60b8ada4d2c865405d962205201bdfe21bda276ccc4fd02bd794c445cfc8a41",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "groups": [
+        "Cloth.Root.AuthoringPins_NotRig"
+      ],
+      "weights": "cff5f35d884fa73a814e40b581848f051529d280dbfb89046f023a01d8c1296c",
+      "keys": {
+        "Basis_ReferenceRest": "8b5516f9b80d110f641decf19420fd730f312c40e7852d7a2d24c90c3b34674c",
+        "InitialEnvelope_UNVALIDATED": "0d31937bee5640476cfb318bd71f68bb0a4684944587731131e1969034cc73fd",
+        "StaticRestFit_REVIEW_NotRuntimePhysics": "49929397ad26dc8b7e3df1e1170b711e741fe2a56c208862e9c669ae96e82497"
+      }
+    },
+    "Alice.Coelho.WholeCheckpoint497.chain": {
+      "positions": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470",
+      "faces": "4cdbabdd6e7108e601254c1fe2ffd007a65d147e9ec2a854913af64022169ffe",
+      "UV": {
+        "AliceCoelhoFittedChainUV4K": "fb950dc4919730f079ddbaeda10258d773ba51dc7e7bec17256a1e8645eba363"
+      },
+      "normals": "67c3df1cd0651977713a0661d5b0c71a6dc84c75f0d3efb0d41ecf515b8efd18",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "groups": [],
+      "weights": "848b91e7f35467f3805866617e4f01c1ebc9fdc8d9231b5b7563c1a24f1e590d",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.cord": {
+      "positions": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca",
+      "faces": "1999b3930c39f4701ebacf231094c1c3459e98742bff5fcd11112fcfe50c7c4b",
+      "UV": {
+        "AliceCoelhoLaceCordUV4K": "0c37c56329e1a518b2667df64098ba543eef63b172ec411fe75924f3627b4aa4"
+      },
+      "normals": "5ac5e3167d85ae9b5309d5e264b23b7a330546057598e667c2d2ba8f68863d73",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "groups": [],
+      "weights": "d256f8992ece2f07829fc4eb21f4bfa9d9f698088c3f18b9dd3b4e6fcc868e72",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.lace": {
+      "positions": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf",
+      "faces": "4ffd64262a749154ca991bf38198a8f24572c028b2a8175990f7b486fc0b4c27",
+      "UV": {
+        "AliceCoelhoDenseLaceUV4K": "dccedbe68fed63940c7cd2b07c608fc64fd39048238cddfd6cf816c4ffafb57f"
+      },
+      "normals": "bc4002c2a1707fdc2e2f4fc432b763365bd8885507430fe7dc1a7cec47ab6016",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "groups": [],
+      "weights": "af13e93d1137d35f0e5ba6aa025e1f7821e8886c381a916736568d88036fb187",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.ornament_outer_left": {
+      "positions": "0c9da3600ada86de874a4f1c844caef451a0abbd94b9d9b1709e9c863104351a",
+      "faces": "b2812f85720fc49439a1856ead450f13d2f0c2339a74de09608cb11aee731c8e",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "4274e7757b760d805abff9c892a056df50fd5fa53a1cfc99b95ff698b8ee349c"
+      },
+      "normals": "4ef2c86d4f15109ddc511489e590b44c977bd489c84bccd3807052bfaa495347",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.outer_left"
+      ],
+      "weights": "88dd263ccb91269ce4c775b6eeddc2fc6a1a7e7c589bf334fe1f324a4f26835c",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.ornament_inner_left": {
+      "positions": "79d89c1dff8f957d68ae1029f20a3e1e26a962452546a16f850a2d5c0b86563e",
+      "faces": "d814aeb6b2d882d14ef1ad0d782e725f92250338ba42aca00ab7f9a7a519cf62",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "a6d40d068b938e6e7aa5b59e18df40aa843422a88467cbf7d84528e3d35376da"
+      },
+      "normals": "8708bcf4aa7b5bbade55dab9306075f42b0eb504682e118f13812544fafa7205",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.inner_left"
+      ],
+      "weights": "0282297f62820970f96796651b21238fa9f956749a20c413c86905e534ba8d2d",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.ornament_center": {
+      "positions": "e5e3cb8821282fa6569e1aad60ce95aa9e11e0eeb1b1e45f4779f26dc0980c31",
+      "faces": "e85c15cfe133cd596e81615858e1d8984266c0a606a2df16714d24e1ff92f212",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "db9f421b458aae5e52b4ab72348e026e6f23d771b749dc5ad2eaa18f7df4eede"
+      },
+      "normals": "d4659ac6aa302f95f09ce8e74c429604f198abe2e2fc7a6e9f941135c53d5b60",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.center"
+      ],
+      "weights": "a9e948c927c69f7d1f18192512a05f331a02c4ca0947599bcf163368a0abc2f6",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.ornament_inner_right": {
+      "positions": "a957ae66cf7ae082314100e83106b40bc4a7f0f73a9225869a9f0ad99733ed8c",
+      "faces": "1d7c21cf18484d822ec10a57ce714f88e21d1453b39e79a9725abbacfc0248b1",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "0bf777f76f641972551dc9812f0e57c131ee1c2dff792885ea415899eb01fa0d"
+      },
+      "normals": "695132667c61966fbd0b3ff4d168be4da1108b3d84d350776b3e32e2b6d98e51",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.inner_right"
+      ],
+      "weights": "8bbc8b99a818251d90c364f878fe5e48826bc93aa7b27738e74d504c0facefdf",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.ornament_outer_right": {
+      "positions": "4729c577d5e32741421b190ef8ad7016c5c8c31f2c116617d41cc55304e45b8e",
+      "faces": "024ef39f87a4f0dbfeb59f42306219cb2c75e7f7ed7480b2d242492a733574b7",
+      "UV": {
+        "CoelhoOrnamentAtlas4K.v417": "fd4016a16b994692609f14ad22e7e2f52771c5fffef47755c260dcc3701f6bd4"
+      },
+      "normals": "b7536f94fb8275f9a8c2004c28410456cbf5278e5883ff01e8fa6d2da2f2af7f",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "groups": [
+        "Ornament.Root.outer_right"
+      ],
+      "weights": "5ea5e21a944cba1da12ed3e72dbde606ca1d26d1d770aec9abcd692e2f8e9085",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_left_base_loop": {
+      "positions": "3d46891e025f5e04fffe55463bf755abd497837a40f3a94f7edf869dcf089b9f",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "fabcb54268ba5960017724a70c6a34f025ea2b22bfddc4c7c7720dae14c92791"
+      },
+      "normals": "ae6ecb49100f5d18bd505517a99d8a67acbb6459efc4bf4df0533a453719f455",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_left_structured_interfacing": {
+      "positions": "10b0a50fc097e605a33dad6513c86c8efbd3baa0c0c8787697d66ced2d427aa1",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "8cb77f4ca5891927df6164e8bc10a453b95b6110b043de75a0f9e88557ddcd66"
+      },
+      "normals": "8142ea2c0a64d478b35ebf99a2b38c049fd7f2159d19ab742e0c0fe8ae6eb5cc",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_left_satin_lining": {
+      "positions": "66c9cb0c60698ddeeee53facc73c0bbbafdad25966f7f69b52be95bf10210a84",
+      "faces": "51bec2f9ccdc9d20b08a735dc4a49cbed1c7bbba55e8a7bedada3277637f64f0",
+      "UV": {
+        "RearBow.PatternUV460": "f2be44e4abd4ccbb25d504abdf1aa9acb39598aa4188505294f03b62f78a4033",
+        "RearBow.Atlas4K.ABF.v471": "55b368494c644f3458f6e0b60d9f14b31689ce4b50dca2e1b1b4acd8be67dff6"
+      },
+      "normals": "4e4bb9be5a61aeefdc8c4e7893353dcb0ee163f973f4cb124327f71b0ab34c3a",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_left_printed_tail": {
+      "positions": "da66a5589c769967ab4c4c7905299a7b81cace3c54f8fbb2ff9cf1f9ca0d5301",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "1735b7f9d6c5ac200017746c935a4ced8c64ad826a54904debfa02daee95c27d"
+      },
+      "normals": "5c8ba4979e628f3741154d9be25af9994cf6b7365de2f43607871339776cbbe3",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_left_plain_satin_tail_back": {
+      "positions": "d6b64fb6caa96fda971d748ede1e5f5f6e938a946e507114a68d1b294778c6b8",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "1f3250460b75603314c53dcdc72358570bf95cc45b8aa57c88a611bfc5e0ee7f"
+      },
+      "normals": "02be3aabd4453a45a4869036b5cef7c28273b76145d99ad33b47ccc6c7e4d1ef",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_right_base_loop": {
+      "positions": "80519f5186ed828132abf74323bbea91641fc77e41d67b01fa2fd102aa082b07",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "44cac2de2bf47fbef1d16d8edb150d89d4ade1cbc3ea2b71969e57de964d6f5a"
+      },
+      "normals": "d3071bd36f38bc1ee061df3559eec3ea4c1eca33455d2738489b911d29b82c2c",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_right_structured_interfacing": {
+      "positions": "3a4490c8431f34ed8fa2c3abaa4bb4e67ff109de4dcacc3909456060274a420a",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "0ef63a798eedab8f578ca43e23223751d3d9e94082046712fdd78f710c913426"
+      },
+      "normals": "f676b2e1a02bb46d8127f29f13f5d2506651b344bf8eb8e6266d79d6522ececb",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_right_satin_lining": {
+      "positions": "7ba36e2483fcefe3403b669f4530a5b5f01da68bb0be2ce7597803f370a2641d",
+      "faces": "38ff61fc21d295b514872f02296a03aa0cfdd4807f415165ad027e63207f5b89",
+      "UV": {
+        "RearBow.PatternUV460": "8c10940e1a8e678e6fb0ac1f630621463776c23a82bb662d0a31bf2a29291632",
+        "RearBow.Atlas4K.ABF.v471": "e846ac241fe800d098b2dbe2977cd56bef31d9dfa134732c01eecb1731fcf607"
+      },
+      "normals": "2714db7311e3b9793629dfad93fe893525380717cacce4922eadfc9f1748b0a3",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "be662c5d98913af87fb7f42ce68bf40e7e89f86be9cfb4be8683afe845724a12",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_right_printed_tail": {
+      "positions": "ae71650619c0077b3d2521e3ed590e477b851da892d38cad79ae8d5669cde5f9",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "a9dbc74bc99cb8521ac78d2c8ec67f0af8ec22afaccc503cb8c33f3cd8e45126"
+      },
+      "normals": "59ea7e5a5b43eb30f91ec3373834f361559cddaa027a4bede726e40e7f298cfb",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_right_plain_satin_tail_back": {
+      "positions": "93102fefaa76cd324cbe9d89a4f829983121b5239dad2b30a7815a886853faab",
+      "faces": "4805fde3904f4b65a9a52af9a7f0d5f56d01c55b1cde650517da0037dc329d66",
+      "UV": {
+        "RearBow.PatternUV460": "7a595aa66cc548be19549c340e9ed3d4b512e7797ba566cd01e8ade74e6e8aad",
+        "RearBow.Atlas4K.ABF.v471": "3bde99b90ca93d36355639f6ca76862152a404bf4e94322bf0e7f6c5195a1cdf"
+      },
+      "normals": "dfb326fe3fcf76d028c13c5a72585d2fc7b2ace26b20f553eb933f839fa78822",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "c0ba29a5dc220b1076c7c6c66815139f719e43533fbc77658774610bcc818529",
+      "keys": {}
+    },
+    "Alice.Coelho.WholeCheckpoint497.rear_bow_center_center_wrap": {
+      "positions": "5c76a47e46c348b354f68d1a482f0f62e7209745659bdf4cf99a7e4f63d61c25",
+      "faces": "47ac96dcd396859c499a9d2bfc9f00efb928c024936e08fd0a175764e339867b",
+      "UV": {
+        "RearBow.PatternUV460": "f5a1e31d6ae566ff77225c32183efac5b3fb502562cf3078bda88355bc9d0e12",
+        "RearBow.Atlas4K.ABF.v471": "e1c83890720913178941bc7bead5fa8fa9e61dc8bbee4d8b7c6388b666533774"
+      },
+      "normals": "d208f42f8e54653a0c3babf9e10b34edf202a3609e7bf91b8f883e42406597b2",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "groups": [
+        "Cloth.Pin.Waist"
+      ],
+      "weights": "7b192233dae8ee5cf77d6825edae60fae9fd8e4002e81a0fbf8bf1d22835c3dd",
+      "keys": {}
+    }
+  },
+  "allTenWhole421ObjectsExactlyPreserved": true,
+  "allElevenCloth492ObjectsExactlyPreserved": true,
+  "oldSourcesRecoverableHidden": true,
+  "portablePackedImages": true,
+  "remainingCharacterContacts345": true,
+  "sewnMountsVerified": false,
+  "otherViewsProjectionVerified": false,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "requiresSavedWholeAndFormatReview": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 168.75105834007263
+}

@@ -1,0 +1,21 @@
+"""Compare raw GLB NORMAL payload against pre-export corner normals, before Blender decoding."""
+import json,struct,numpy as np,sys,time
+from pathlib import Path
+R=Path('F:/Alice/SharedProduction');O=R/'Blender/Work/alice_coelho/tripo_h31_budget55_v001';sys.path.insert(0,str(R/'Tools/PythonDeps/mesh_repair'));from scipy.spatial import cKDTree
+a=json.loads((O/'package_export_v520.json').read_text(encoding='utf-8-sig'));raw=(R/a['files']['glb']['path']).read_bytes();ln,ty=struct.unpack_from('<II',raw,12);doc=json.loads(raw[20:20+ln]);pos=20+ln;bn,bt=struct.unpack_from('<II',raw,pos);binary=raw[pos+8:pos+8+bn]
+def accessor(i):
+ ac=doc['accessors'][i];view=doc['bufferViews'][ac['bufferView']];types={5126:'<f4',5125:'<u4',5123:'<u2',5121:'u1'};width={'SCALAR':1,'VEC2':2,'VEC3':3,'VEC4':4}[ac['type']];dtype=np.dtype(types[ac['componentType']]);offset=view.get('byteOffset',0)+ac.get('byteOffset',0);stride=view.get('byteStride',width*dtype.itemsize);return np.ndarray((ac['count'],width),dtype=dtype,buffer=binary,offset=offset,strides=(stride,dtype.itemsize)).copy()
+exporterSource=Path('F:/Programas/5.2/scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py')
+constants=Path('F:/Programas/5.2/scripts/addons_core/io_scene_gltf2/io/com/constants.py').read_text(encoding='utf-8')
+import re
+rounding=int(re.search(r'ROUNDING_DIGIT\s*=\s*(\d+)',constants).group(1))
+records=[]
+for row in a['objects']:
+ role=row['role'];node=next(n for n in doc['nodes'] if 'Export500.'+role in n.get('name',''));mesh=doc['meshes'][node['mesh']];expected=np.load(O/f'whole_export_source_{role}_v500.npz');P=expected['positions'].astype(float);tr=expected['triangles'];UV=expected['loopUV'];loops=expected['triangleLoops'];N=np.round(expected['loopNormals'].copy(),rounding);N/=np.linalg.norm(N,axis=1)[:,None];tree=cKDTree(P[tr].mean(1));worst=0;differences=[];matched=np.zeros(len(tr),bool);maxComponentError=0
+ for primitive in mesh['primitives']:
+  p=accessor(primitive['attributes']['POSITION']);uv=accessor(primitive['attributes']['TEXCOORD_0']);normal=accessor(primitive['attributes']['NORMAL']);ids=accessor(primitive['indices']).ravel().reshape(-1,3);p=p[:,[0,2,1]];p[:,1]*=-1;normal=normal[:,[0,2,1]];normal[:,1]*=-1;uv[:,1]=1-uv[:,1]
+  for base in range(0,len(ids),4096):
+   ii=ids[base:base+4096];Q=p[ii];dist,index=tree.query(Q.mean(1),k=8);sp=P[tr[index]];delta=np.linalg.norm(Q[:,None,:,None,:]-sp[:,:,None,:,:],axis=-1);order=delta.argmin(-1);d=np.take_along_axis(delta,order[...,None],-1)[...,0].max(-1);euv=np.take_along_axis(UV[loops[index]],order[...,None],2);uerr=np.abs(uv[ii][:,None,:,:]-euv).max(axis=(2,3));unique=(order[:,:,0]!=order[:,:,1])&(order[:,:,0]!=order[:,:,2])&(order[:,:,1]!=order[:,:,2]);score=np.where((d<2e-6)&(uerr<2e-6)&unique,uerr+d,np.inf);choice=score.argmin(1);assert np.isfinite(score[np.arange(len(ii)),choice]).all(),(role,base);chosen=index[np.arange(len(ii)),choice];matched[chosen]=True;ord=order[np.arange(len(ii)),choice];en=np.take_along_axis(N[loops[chosen]],ord[...,None],1);an=normal[ii];en=en/np.linalg.norm(en,axis=2)[...,None];an=an/np.linalg.norm(an,axis=2)[...,None];ce=float(np.abs(en-an).max());assert ce<2e-6,(role,base,ce);maxComponentError=max(maxComponentError,ce);angle=np.degrees(np.arccos(np.clip(np.sum(en*an,axis=2),-1,1)));differences.extend(angle.ravel().tolist());worst=max(worst,float(angle.max()))
+  print('RAW_NORMAL_PRIMITIVE',role,'maxAngle',worst,flush=True)
+ assert matched.all(),(role,int((~matched).sum()));records.append(dict(role=role,allSourceTrianglesMatched=True,maxNormalizedNormalComponentError=maxComponentError,maxRawPayloadAngleDegrees=worst,anglePercentiles=np.percentile(differences,[50,95,99.9,100]).tolist()))
+(O/'whole_glb_raw_normal_payload_audit_v523.json').write_text(json.dumps(dict(version='v523',sha256=a['files']['glb']['sha256'],directBinaryGLBPayload=True,allSourceTrianglesAndNormalsVerified=True,normalExporterRoundingDigits=rounding,exactUnroundedSourceNormalsNotClaimed=True,exporterSourceSHA256=__import__('hashlib').sha256(exporterSource.read_bytes()).hexdigest(),verificationScope='Replayed native exporter rounding and normalization, then compared each matched corner; original unrounded normals not claimed component-exact.',records=records,productionComplete=False),indent=2),encoding='utf-8');print('RAW_NORMAL_PAYLOAD_VERIFIED',flush=True)

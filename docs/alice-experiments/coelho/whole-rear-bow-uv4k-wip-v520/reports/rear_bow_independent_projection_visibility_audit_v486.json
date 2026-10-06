@@ -1,0 +1,71 @@
+{
+  "version": "v486",
+  "sourceCandidate": "v482",
+  "sourceSHA256": "3ea2d136fff897c054da0c8678a75b3ac709443164d1e62d51156db9499ae3f6",
+  "independentUVRayReconstructionMethod": true,
+  "allElevenClothAndTenWholeOccludersIncluded": true,
+  "totalOccluderTriangles": 1535446,
+  "records": [
+    {
+      "object": "Alice.Coelho.RearBow.left.base_loop.Paint482",
+      "visible": {
+        "samples": 1024,
+        "classificationFailures": 0
+      },
+      "occluded": {
+        "samples": 1024,
+        "classificationFailures": 0
+      }
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.printed_tail.Paint482",
+      "visible": {
+        "samples": 1024,
+        "classificationFailures": 0
+      },
+      "occluded": {
+        "samples": 1024,
+        "classificationFailures": 0
+      }
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.base_loop.Paint482",
+      "visible": {
+        "samples": 1024,
+        "classificationFailures": 0
+      },
+      "occluded": {
+        "samples": 1024,
+        "classificationFailures": 0
+      }
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.printed_tail.Paint482",
+      "visible": {
+        "samples": 1024,
+        "classificationFailures": 0
+      },
+      "occluded": {
+        "samples": 1024,
+        "classificationFailures": 0
+      }
+    },
+    {
+      "object": "Alice.Coelho.RearBow.center_wrap.Paint482",
+      "visible": {
+        "samples": 1024,
+        "classificationFailures": 0
+      },
+      "occluded": {
+        "samples": 1024,
+        "classificationFailures": 0
+      }
+    }
+  ],
+  "totalClassificationFailures": 0,
+  "sourceAndPaintUnchanged": true,
+  "readOnlyNoSaveOrExport": true,
+  "notFidelityOrPhysicsApproval": true,
+  "productionComplete": false,
+  "elapsedSeconds": 58.361504554748535
+}

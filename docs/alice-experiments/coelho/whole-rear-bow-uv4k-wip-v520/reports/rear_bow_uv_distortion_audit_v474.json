@@ -1,0 +1,307 @@
+{
+  "version": "v474",
+  "sourceCandidate": "v471",
+  "sourceSHA256": "82c1656e55d5c0e81528498193fd828c4382042207dd70c7e0497f7b192d05f0",
+  "method": "Singular values of exact piecewise-linear world position derivative with respect to saved atlas UV, using actual Blender loop triangles.",
+  "records": [
+    {
+      "object": "Alice.Coelho.RearBow.left.base_loop.ABF471",
+      "role": "base_loop",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.0004352078465886,
+        "median": 1.0166257978294002,
+        "p95": 1.0933835645576906,
+        "maximum": 1.384464026384041,
+        "areaWeightedMedian": 1.0150905827938068,
+        "areaWeightedP95": 1.0637119223312506,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 1.3391634334978775,
+        "median": 5.9248897907527684,
+        "p95": 14.096605617335252,
+        "maximum": 23.967640606554458,
+        "areaWeightedMedian": 10.36175865309499,
+        "areaWeightedP95": 23.47020954222688,
+        "areaFractionRatioAbove4": 0.8892710177217394,
+        "areaFractionRatioAbove10": 0.5404330190634277
+      },
+      "physicalSurfaceAreaM2": 0.09727667872093276
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.structured_interfacing.ABF471",
+      "role": "structured_interfacing",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.000415327280262,
+        "median": 1.0168765566031994,
+        "p95": 1.0979243356108286,
+        "maximum": 1.7640624405189136,
+        "areaWeightedMedian": 1.015250169302509,
+        "areaWeightedP95": 1.06313870014783,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 6.841686954807602,
+        "median": 31.413765533666098,
+        "p95": 76.09660577521544,
+        "maximum": 129.90878999078598,
+        "areaWeightedMedian": 55.9474359725256,
+        "areaWeightedP95": 127.1690573116765,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9426102841440699
+      },
+      "physicalSurfaceAreaM2": 0.09659427413676669
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.satin_lining.ABF471",
+      "role": "satin_lining",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.0003430984462394,
+        "median": 1.0170684130986807,
+        "p95": 1.102767717171403,
+        "maximum": 8.576904759746393,
+        "areaWeightedMedian": 1.015283290442286,
+        "areaWeightedP95": 1.0631939028774817,
+        "areaFractionRatioAbove4": 3.5206621497053305e-06,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 6.484827095638549,
+        "median": 31.33596864264625,
+        "p95": 76.09307449326883,
+        "maximum": 130.00445102940978,
+        "areaWeightedMedian": 55.93161052203949,
+        "areaWeightedP95": 127.20053797098304,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.942274246099055
+      },
+      "physicalSurfaceAreaM2": 0.09625485265214254
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.printed_tail.ABF471",
+      "role": "printed_tail",
+      "surface": {
+        "triangles": 2560,
+        "minimum": 1.0000041570710805,
+        "median": 1.0003936675634895,
+        "p95": 1.0015469184951509,
+        "maximum": 1.004673938025134,
+        "areaWeightedMedian": 1.0004006187638208,
+        "areaWeightedP95": 1.0015761751229861,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 224,
+        "minimum": 6.224393173394724,
+        "median": 19.599291866578593,
+        "p95": 22.68705628492723,
+        "maximum": 22.819001982105853,
+        "areaWeightedMedian": 19.67967215960318,
+        "areaWeightedP95": 22.700874738035587,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9508576189191841
+      },
+      "physicalSurfaceAreaM2": 0.06172605248365297
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.plain_satin_tail_back.ABF471",
+      "role": "plain_satin_tail_back",
+      "surface": {
+        "triangles": 2560,
+        "minimum": 1.0000030245047402,
+        "median": 1.0003937824206481,
+        "p95": 1.00154340113742,
+        "maximum": 1.0051651043204524,
+        "areaWeightedMedian": 1.0004038517610425,
+        "areaWeightedP95": 1.001581601030718,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 224,
+        "minimum": 6.121354149851652,
+        "median": 19.589669394307222,
+        "p95": 22.651011329147476,
+        "maximum": 23.037160609755595,
+        "areaWeightedMedian": 19.683993167087912,
+        "areaWeightedP95": 22.719851360949786,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9507975480265246
+      },
+      "physicalSurfaceAreaM2": 0.062111677891953876
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.base_loop.ABF471",
+      "role": "base_loop",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.0002489883524441,
+        "median": 1.0165764484637805,
+        "p95": 1.0822136011842576,
+        "maximum": 1.285091560504553,
+        "areaWeightedMedian": 1.0144194898371404,
+        "areaWeightedP95": 1.06130199836893,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 1.3376929811892033,
+        "median": 5.924242405872837,
+        "p95": 14.090424694410217,
+        "maximum": 24.0340896116134,
+        "areaWeightedMedian": 10.356782028704362,
+        "areaWeightedP95": 23.495950387640274,
+        "areaFractionRatioAbove4": 0.8876847670053928,
+        "areaFractionRatioAbove10": 0.5404183661128065
+      },
+      "physicalSurfaceAreaM2": 0.09727655355396275
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.structured_interfacing.ABF471",
+      "role": "structured_interfacing",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.0005745711985576,
+        "median": 1.0169199121355663,
+        "p95": 1.0871764916039666,
+        "maximum": 1.6287397065564453,
+        "areaWeightedMedian": 1.014606776220776,
+        "areaWeightedP95": 1.0614537206811419,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 6.821803700853552,
+        "median": 31.40606554873397,
+        "p95": 76.09480694595877,
+        "maximum": 129.92604644190834,
+        "areaWeightedMedian": 55.96112457952442,
+        "areaWeightedP95": 127.17367405566861,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9426052759741653
+      },
+      "physicalSurfaceAreaM2": 0.09659378949729805
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.satin_lining.ABF471",
+      "role": "satin_lining",
+      "surface": {
+        "triangles": 6144,
+        "minimum": 1.0006433985240168,
+        "median": 1.0170163819306013,
+        "p95": 1.0916269719735177,
+        "maximum": 6.5969827821057825,
+        "areaWeightedMedian": 1.0148675411604282,
+        "areaWeightedP95": 1.0618154186265976,
+        "areaFractionRatioAbove4": 3.80942922755865e-06,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 352,
+        "minimum": 6.475008139048824,
+        "median": 31.329526618122607,
+        "p95": 76.08282744648007,
+        "maximum": 130.01984153218896,
+        "areaWeightedMedian": 55.94238330893684,
+        "areaWeightedP95": 127.20303712176008,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9422689472868966
+      },
+      "physicalSurfaceAreaM2": 0.09625406377826148
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.printed_tail.ABF471",
+      "role": "printed_tail",
+      "surface": {
+        "triangles": 2560,
+        "minimum": 1.0000089691518568,
+        "median": 1.0005129959489873,
+        "p95": 1.0024331676496698,
+        "maximum": 1.0104127624881953,
+        "areaWeightedMedian": 1.0004524841077893,
+        "areaWeightedP95": 1.0023638725392137,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 224,
+        "minimum": 6.224552431117945,
+        "median": 19.606511734517724,
+        "p95": 22.641889229418585,
+        "maximum": 22.869884668732613,
+        "areaWeightedMedian": 19.676456342991028,
+        "areaWeightedP95": 22.66771909731508,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.950857271830074
+      },
+      "physicalSurfaceAreaM2": 0.06171234305918689
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.plain_satin_tail_back.ABF471",
+      "role": "plain_satin_tail_back",
+      "surface": {
+        "triangles": 2560,
+        "minimum": 1.0000031465894907,
+        "median": 1.000520324386109,
+        "p95": 1.0024576645271908,
+        "maximum": 1.0109641641589153,
+        "areaWeightedMedian": 1.000459190791141,
+        "areaWeightedP95": 1.002357036151425,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 224,
+        "minimum": 6.114210551185265,
+        "median": 19.5997682413223,
+        "p95": 22.653293450160895,
+        "maximum": 22.98084546446741,
+        "areaWeightedMedian": 19.675777174378503,
+        "areaWeightedP95": 22.705185786934557,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.9507949750331529
+      },
+      "physicalSurfaceAreaM2": 0.06205538390020117
+    },
+    {
+      "object": "Alice.Coelho.RearBow.center_wrap.ABF471",
+      "role": "center_wrap",
+      "surface": {
+        "triangles": 1536,
+        "minimum": 1.0000001074377594,
+        "median": 1.0000222069384852,
+        "p95": 1.000052456031503,
+        "maximum": 1.0000902964254479,
+        "areaWeightedMedian": 1.0000222069384852,
+        "areaWeightedP95": 1.0000524563791358,
+        "areaFractionRatioAbove4": 0.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "explicitlyRegularizedThinRims": {
+        "triangles": 224,
+        "minimum": 6.884272784458344,
+        "median": 7.393062792571892,
+        "p95": 7.813479363018979,
+        "maximum": 7.827396894094378,
+        "areaWeightedMedian": 7.4051163393900366,
+        "areaWeightedP95": 7.816869403786572,
+        "areaFractionRatioAbove4": 1.0,
+        "areaFractionRatioAbove10": 0.0
+      },
+      "physicalSurfaceAreaM2": 0.01640087723811376
+    }
+  ],
+  "UVQualityNotApprovedFromResolutionOrNoOverlap": true,
+  "productionComplete": false
+}

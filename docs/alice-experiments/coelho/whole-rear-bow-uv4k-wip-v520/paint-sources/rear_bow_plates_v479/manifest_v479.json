@@ -1,0 +1,23 @@
+{
+  "version": "v479",
+  "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/back_fine_print_candidate_v479.png",
+  "sha256": "b04d57ef0195e2607add0743d5b4914e3a0bd37d3541a5bfbdf148130cd9a718",
+  "nativeDimensions": [
+    1189,
+    1323
+  ],
+  "generator": "built_in_image_gen",
+  "actualGeneratedImageInspected": true,
+  "targetCamera": "Evidence/rear_bow_bow_back_v476.png",
+  "reference": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_42 (8).png",
+  "motifsSmallerAndDenserThan463Qualitatively": true,
+  "exactQuarterScaleRequestedButNotProven": true,
+  "foldIlluminationStillNeedsChromaSeparation": true,
+  "prompt": "Use case: precise-object-edit. Asset type: diffuse 2D textile painting plate for visible-face UV projection in Blender. Image 1 is the exact target camera/render of Alice Coelho's rear bow, central cloth wrap and two V-notched tails. Image 2 is the authoritative STEP7 costume reference. Image 3 is a supporting clean textile swatch. Change ONLY the scale and density of the gold PRINT on the bow cloth and tails in image1. Match the extremely fine, dense, restrained antique-gold chain, miniature key and star print of image2. The previous large keys and large clock circles are wrong: replace them with motifs about one quarter their present linear size, distributed coherently along the cloth. At the original 900x1000 target scale, keys should be roughly5\u20139pixels tall and tiny circular motifs8\u201312pixels across; absolutely no20\u201350pixel giant symbols. Keep the exact bow/cloth silhouette, V tips, all fold positions, central wrap, camera, crop and every other object unchanged. Keep existing thin gold edging exactly on the original garment boundaries. Clean diffuse midnight-navy albedo with warm antique-gold ink; no white specular bands, baked directional shadows, black fold-stripe paint, or bright yellow gold. The real3D geometry supplies fold lighting later. Do not add a flat clock medallion, jewelry or chains: these will be real separate3D objects. Do not change hair, skin, hands, main dress or background; no text, framing, added folds, moved tails or geometry reinterpretation.\n",
+  "promptPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/prompt_v479.txt",
+  "not4KAtlas": true,
+  "notProjected": true,
+  "notAppliedToBlender": true,
+  "productionComplete": false,
+  "additionalTripoCredits": 0
+}

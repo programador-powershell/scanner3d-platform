@@ -1,0 +1,21 @@
+{
+  "version": "v495",
+  "sourceCandidate": "v492",
+  "allSixActualRenders493Inspected": true,
+  "nativeBoardComparison494Inspected": true,
+  "acceptedForWholeStaticWIPIntegrationReview": true,
+  "acceptedForPublication": false,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "observations": [
+    "Six actual saved-file renders inspected: whole back, whole rear threequarter, close back, both profiles, layers-only back. Fine chain paths are more continuous than482; the same three-dimensional cloth folds remain.",
+    "Native board8 comparison inspected. Printed motif density/scale is not approved as final fidelity. Clock medallion, chains, upper drapes, ruffle and ivory cascade remain missing.",
+    "Profile views show layered cloth and actual thickness. Back ink and auxiliary hidden pattern are not a complete validated multiview material.",
+    "Original Tripo hair remains a solid mass and has345 static contacts at waist. No rig/physics/sewn attachment was approved."
+  ],
+  "sourceHashes": {
+    "savedBlend": "cc697f96dbd21737160aec133a844475fa818228449e273d5216552211a51e6b"
+  },
+  "additionalTripoCredits": 0,
+  "next": "Create whole dressed497 with exact source copies; independent reopen, export and reimport both formats before claiming a publication checkpoint."
+}

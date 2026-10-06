@@ -1,0 +1,177 @@
+{
+  "version": "v504",
+  "directBinaryFBXPayload": true,
+  "formatVersion": 7400,
+  "sha256": "42ae78a2064a4e3e5589759652dc338e7caf8e0fcf46cc605de9abda07b064a6",
+  "records": [
+    {
+      "role": "character",
+      "triangles": 150000,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "apron",
+      "triangles": 8400,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "chain",
+      "triangles": 61056,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "cord",
+      "triangles": 22136,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "lace",
+      "triangles": 1144188,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "ornament_outer_left",
+      "triangles": 31216,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_left",
+      "triangles": 14330,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_center",
+      "triangles": 6424,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_right",
+      "triangles": 15096,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_outer_right",
+      "triangles": 30728,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "triangles": 1760,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    }
+  ],
+  "productionComplete": false
+}

@@ -1,0 +1,70 @@
+{
+  "version": "v494",
+  "referencePath": "Assets/Characters/alice_coelho/References/ChatGPT Image 7 de jun. de 2026, 13_26_42 (8).png",
+  "referenceSHA256": "fb44d70585d08a851ed9161528100a0b772160a44cb185f5b61c2f13ac37b0af",
+  "sourceCandidate": "v492",
+  "sameCameraComparisons": [
+    {
+      "view": "whole_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_whole_back_v494.jpg",
+      "sha256": "e5a4a98c292a21ea22f9338db088a16546637a8ff321976019f3ed0df3937f8a",
+      "beforeSHA256": "8a1637a2930e856b69adfab14d2a08406627464376f9a62e953aae50f00b93c2",
+      "afterSHA256": "cfc55dfbf58ce07f5a542f3c2b71b61fb668b9101ec36da672a8152c91426fba",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    },
+    {
+      "view": "whole_rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_whole_rear_threequarter_v494.jpg",
+      "sha256": "d6dc8e08f9069a5f08b1577bc2d99b39275bfa9abfab2ffee2b1ed55a828d120",
+      "beforeSHA256": "0aa01800b6065779b7d56b3e90c1db0a6c90d402de9109a63b4b0c4cf656b255",
+      "afterSHA256": "a8ae3bdad5b124bfe26293cf3385d077020b5b00d436275393b803789cec57dc",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    },
+    {
+      "view": "bow_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_bow_back_v494.jpg",
+      "sha256": "fd3ef57f1dafe9378602fe40ca245d9f0111802dec8e01ef28b74d7d963267e5",
+      "beforeSHA256": "8cebd7bbdd03c1c8f5bea8eae83cc24e87928cead09a16d6603be7918acf7290",
+      "afterSHA256": "d275bd5d126ecd9b2774304baee6b05241b2a85cdf47e03662b44e1c1572acef",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    },
+    {
+      "view": "bow_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_bow_left_profile_v494.jpg",
+      "sha256": "76d2f40ca9f8b499ef9897d7136a8f4f6d24dc965de4683f9f92f4e79c848aee",
+      "beforeSHA256": "1ea0f69e9bd10507a56b55a05cab5b1302838a1d1ae372405ac61dbe542a762f",
+      "afterSHA256": "cf1eff21c914af8663820d8507d502adbb3664632abcf4604f53cc06740591fd",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    },
+    {
+      "view": "bow_right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_bow_right_profile_v494.jpg",
+      "sha256": "6687915b86006a735beab981b737a3cc30a4243c814d33b62a5348e7a3a994b2",
+      "beforeSHA256": "7c54e0c1aff7115d2526f6c156140db4547bad00771f43bdfec6ccefd43e13ae",
+      "afterSHA256": "0c4f253af25c1abc6efd1fa2d727da0417caabb032d9052e0974e63fa49980a8",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    },
+    {
+      "view": "bow_layers_only_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_same_camera_bow_layers_only_back_v494.jpg",
+      "sha256": "5ab1cb13ff959fc7ff211734be0aac9d96131855e0f70b737e31a2d61a553c90",
+      "beforeSHA256": "7c064fde89b14e4f7e43ace418c70fd3754ab26b3d7472c40eab44cdff012967",
+      "afterSHA256": "3abf9da595d0ebbdab473254554b4565d9fdf381c76d6fab6125bb302cc4d221",
+      "sameCameraParametersVerified": true,
+      "actualImageInspectionPending": true
+    }
+  ],
+  "nativeReferencePanel": {
+    "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_native_board_comparison_v494.jpg",
+    "sha256": "7c70e6ce91fe8d75844e4bb2007bbf2fafb5a8e14b4bd49f215fc3bc823f8741"
+  },
+  "originalImagesNotEdited": true,
+  "reviewPanelsOnlyNotMaterialSources": true,
+  "allImagesNeedActualInspection": true,
+  "productionComplete": false
+}

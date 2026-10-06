@@ -1,0 +1,63 @@
+{
+  "version": "v480",
+  "targetPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_back_v476.png",
+  "targetSHA256": "5c4a86ec3cc80df12a906f33c41e3129b6da09cd6bcccd943e67f7e9e55aa11f",
+  "targetDimensions": [
+    900,
+    1000
+  ],
+  "platePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Textures/rear_bow_plates_v479/back_fine_print_candidate_v479.png",
+  "plateSHA256": "b04d57ef0195e2607add0743d5b4914e3a0bd37d3541a5bfbdf148130cd9a718",
+  "plateNativeDimensions": [
+    1189,
+    1323
+  ],
+  "targetPixelToPlateNormalizedPixelAffine": [
+    [
+      0.99904,
+      -0.00031680000000000017,
+      0.9104000000000001
+    ],
+    [
+      -0.0001152,
+      1.0,
+      -0.02496000000000001
+    ]
+  ],
+  "plateNormalizedDimensions": [
+    900,
+    1000
+  ],
+  "unchangedRegionSamples": 15342,
+  "excludedBowPaintingRegions": true,
+  "gradientResidualBefore": 0.0037520672458789288,
+  "gradientResidualAfter": 0.0031149373071803124,
+  "meanUnchangedRegionDisplacementPixels": 0.41477172499929554,
+  "maxUnchangedRegionDisplacementPixels": 0.7238981511990726,
+  "onlyProjectionCoordinatesTransformed": true,
+  "sourceImagesNotEdited": true,
+  "bowSpecificBoundaryRegistrationNotApproved": true,
+  "manualOverlayReviewRequired": false,
+  "projectionNotPerformed": true,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "diagnosticComparisons": [
+    {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_plate_geometry_outline_v481.png",
+      "sha256": "ca9004d8736f11011da81fb47f466a09fe964660d445eec58e22a59cdb11e0e8"
+    },
+    {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_plate_camera_checker_v481.png",
+      "sha256": "3db9d4c05188a204031f7bc0eee79fb92e56fde981342fbd0731d270b174b351"
+    },
+    {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_plate_registration_comparison_v481.jpg",
+      "sha256": "b7e510d29278b541ac0d1377083ae4b4deb3e54438308f68823d0fde722d5bdf"
+    }
+  ],
+  "overlayIncludesOccludedClothSilhouette": true,
+  "actualOutlineAndRegistrationImages481Inspected": true,
+  "acceptedForLocalVisibleInkProjectionCoordinates": true,
+  "fullClothSilhouetteContainsSelfOccludedLiningEdges": true,
+  "tailTipsQualitativelyAlignedMoreClosely": true
+}

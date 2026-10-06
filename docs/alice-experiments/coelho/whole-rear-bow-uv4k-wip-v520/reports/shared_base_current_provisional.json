@@ -1,0 +1,22 @@
+{
+  "version": "v012_portable_provisional",
+  "status": "complete_dressed_template_only",
+  "canonicalFaceApproved": false,
+  "undressedBaseApproved": false,
+  "physicsApproved": false,
+  "characterCompleteWithDress": true,
+  "blend": "SharedBase/Versions/v012_portable_provisional/chapeleiro_complete_template.blend",
+  "blendSha256": "a3e1d33f10d13322a391b5b25111b19332a087aa39a97efb6f599bfaea33586d",
+  "canonicalFace": "SharedBase/References/alice_face_master_v001.png",
+  "owner": "chapeleiro_base_maintainer",
+  "sourceCommit": "4b6bfc82d193bc446d19d7b6b6f7874d6cb23765",
+  "baseChangeRequiresAllVariantsResync": true,
+  "latestUserAllowsParallelAssetWork": true,
+  "sourceOriginalBlendSha256": "4a2b9876ab1857accb05a147382ada9d1ea47f7947ffbde06ce2c4e5d349dce9",
+  "sourceOriginalVersion": "v012_provisional",
+  "migrationApproved": true,
+  "dependencyAudit": "Blender/Dependencies/dependency_audit.json",
+  "strongIntegrity": "Blender/Dependencies/strong_integrity_v002.json",
+  "fidelityApproved": false,
+  "sourceOriginalBlend": "F:/Alice/Deliverables/Alice_Variants/alice_chapeleiro/v011_reviewed_brim_cleanup_restored_candidate_v001/chapeleiro_complete_back_brim_residue_mask_study.blend"
+}

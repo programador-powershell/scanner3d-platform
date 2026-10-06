@@ -1,0 +1,280 @@
+{
+  "version": "v520",
+  "wholeCharacterWithDress": true,
+  "sourceWholeWorkingVersion": "v497",
+  "objects": [
+    {
+      "role": "character",
+      "name": "Alice.Coelho.Export500.character",
+      "vertices": 107832,
+      "triangles": 150000,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+      ],
+      "positionSHA256": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486"
+    },
+    {
+      "role": "apron",
+      "name": "Alice.Coelho.Export500.apron",
+      "vertices": 4202,
+      "triangles": 8400,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052"
+      ],
+      "positionSHA256": "21b606a3078598afdba9b0784af03332d65c21d36765ca82f45fb6af968a51c2"
+    },
+    {
+      "role": "chain",
+      "name": "Alice.Coelho.Export500.chain",
+      "vertices": 30528,
+      "triangles": 61056,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066"
+      ],
+      "positionSHA256": "487561b17386976a6de32fac94f9baf47e03dc70782bf74bc87017255fbbf470"
+    },
+    {
+      "role": "cord",
+      "name": "Alice.Coelho.Export500.cord",
+      "vertices": 11076,
+      "triangles": 22136,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072"
+      ],
+      "positionSHA256": "f766dc95aa4ce0d64f7aafb27246ba3f669d1d630ee7008e800c8206a64277ca"
+    },
+    {
+      "role": "lace",
+      "name": "Alice.Coelho.Export500.lace",
+      "vertices": 577422,
+      "triangles": 1144188,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082"
+      ],
+      "positionSHA256": "8fda87bb0a7416b371e5e3c4c6138e3020e9aeb37aac0df8b7580f16f497bdbf"
+    },
+    {
+      "role": "ornament_outer_left",
+      "name": "Alice.Coelho.Export500.ornament_outer_left",
+      "vertices": 15688,
+      "triangles": 31216,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "positionSHA256": "0c9da3600ada86de874a4f1c844caef451a0abbd94b9d9b1709e9c863104351a"
+    },
+    {
+      "role": "ornament_inner_left",
+      "name": "Alice.Coelho.Export500.ornament_inner_left",
+      "vertices": 7247,
+      "triangles": 14330,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "positionSHA256": "79d89c1dff8f957d68ae1029f20a3e1e26a962452546a16f850a2d5c0b86563e"
+    },
+    {
+      "role": "ornament_center",
+      "name": "Alice.Coelho.Export500.ornament_center",
+      "vertices": 3198,
+      "triangles": 6424,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "positionSHA256": "e5e3cb8821282fa6569e1aad60ce95aa9e11e0eeb1b1e45f4779f26dc0980c31"
+    },
+    {
+      "role": "ornament_inner_right",
+      "name": "Alice.Coelho.Export500.ornament_inner_right",
+      "vertices": 7630,
+      "triangles": 15096,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "positionSHA256": "a957ae66cf7ae082314100e83106b40bc4a7f0f73a9225869a9f0ad99733ed8c"
+    },
+    {
+      "role": "ornament_outer_right",
+      "name": "Alice.Coelho.Export500.ornament_outer_right",
+      "vertices": 15444,
+      "triangles": 30728,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417"
+      ],
+      "positionSHA256": "4729c577d5e32741421b190ef8ad7016c5c8c31f2c116617d41cc55304e45b8e"
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "name": "Alice.Coelho.Export500.rear_bow_left_base_loop",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "3d46891e025f5e04fffe55463bf755abd497837a40f3a94f7edf869dcf089b9f"
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "name": "Alice.Coelho.Export500.rear_bow_left_structured_interfacing",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "10b0a50fc097e605a33dad6513c86c8efbd3baa0c0c8787697d66ced2d427aa1"
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "name": "Alice.Coelho.Export500.rear_bow_left_satin_lining",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "66c9cb0c60698ddeeee53facc73c0bbbafdad25966f7f69b52be95bf10210a84"
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "name": "Alice.Coelho.Export500.rear_bow_left_printed_tail",
+      "vertices": 1394,
+      "triangles": 2784,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "da66a5589c769967ab4c4c7905299a7b81cace3c54f8fbb2ff9cf1f9ca0d5301"
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "name": "Alice.Coelho.Export500.rear_bow_left_plain_satin_tail_back",
+      "vertices": 1394,
+      "triangles": 2784,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "d6b64fb6caa96fda971d748ede1e5f5f6e938a946e507114a68d1b294778c6b8"
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "name": "Alice.Coelho.Export500.rear_bow_right_base_loop",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "80519f5186ed828132abf74323bbea91641fc77e41d67b01fa2fd102aa082b07"
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "name": "Alice.Coelho.Export500.rear_bow_right_structured_interfacing",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "3a4490c8431f34ed8fa2c3abaa4bb4e67ff109de4dcacc3909456060274a420a"
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "name": "Alice.Coelho.Export500.rear_bow_right_satin_lining",
+      "vertices": 3250,
+      "triangles": 6496,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "7ba36e2483fcefe3403b669f4530a5b5f01da68bb0be2ce7597803f370a2641d"
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "name": "Alice.Coelho.Export500.rear_bow_right_printed_tail",
+      "vertices": 1394,
+      "triangles": 2784,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "ae71650619c0077b3d2521e3ed590e477b851da892d38cad79ae8d5669cde5f9"
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "name": "Alice.Coelho.Export500.rear_bow_right_plain_satin_tail_back",
+      "vertices": 1394,
+      "triangles": 2784,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "93102fefaa76cd324cbe9d89a4f829983121b5239dad2b30a7815a886853faab"
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "name": "Alice.Coelho.Export500.rear_bow_center_center_wrap",
+      "vertices": 882,
+      "triangles": 1760,
+      "UVLayers": 1,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.PBR4K.v492"
+      ],
+      "positionSHA256": "5c76a47e46c348b354f68d1a482f0f62e7209745659bdf4cf99a7e4f63d61c25"
+    }
+  ],
+  "totalTriangles": 1535446,
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/alice_coelho_complete_rear_bow_uv4k_working_v497.blend",
+      "bytes": 799551387,
+      "sha256": "91829ff46ac4bfd04b92286a55483072660a6f32fb1b390fc6d56ab0b796230e"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_bow_uv4k_checkpoint_v520/alice_coelho_complete_rear_bow_uv4k_checkpoint_v520.glb",
+      "bytes": 162035008,
+      "sha256": "4641ed27dadc03ed963b36fe31a6e2fbbfb9ea1b5c4f54a96ad7fa9a4079ac1b"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/rear_bow_uv4k_checkpoint_v520/alice_coelho_complete_rear_bow_uv4k_checkpoint_v520.fbx",
+      "bytes": 205139420,
+      "sha256": "42ae78a2064a4e3e5589759652dc338e7caf8e0fcf46cc605de9abda07b064a6"
+    }
+  },
+  "sourceBlendUnchanged": true,
+  "explicitTriangleExport": true,
+  "rigged": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "anatomicalHeightVerified": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "publicationPerformed": false,
+  "requiresIndependentReimportAndVisualReview": true,
+  "additionalTripoCredits": 0,
+  "elapsedSeconds": 132.57831978797913,
+  "nativeExporterOutput500Retained": true,
+  "sourceExport": "package_export_v500.json",
+  "sheenCompatibilityAudit": "whole_glb_sheen_compatibility_audit_v521.json"
+}

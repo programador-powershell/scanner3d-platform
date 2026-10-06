@@ -1,0 +1,265 @@
+{
+  "version": "v523",
+  "sha256": "4641ed27dadc03ed963b36fe31a6e2fbbfb9ea1b5c4f54a96ad7fa9a4079ac1b",
+  "directBinaryGLBPayload": true,
+  "allSourceTrianglesAndNormalsVerified": true,
+  "normalExporterRoundingDigits": 4,
+  "exactUnroundedSourceNormalsNotClaimed": true,
+  "exporterSourceSHA256": "fa36dec52271bd7bbde8bd9e75357698e5574b5f32ab993c454f585b895a1c6e",
+  "verificationScope": "Replayed native exporter rounding and normalization, then compared each matched corner; original unrounded normals not claimed component-exact.",
+  "records": [
+    {
+      "role": "character",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "apron",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "chain",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "cord",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "lace",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "ornament_outer_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_inner_left",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_center",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_inner_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "ornament_outer_right",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03956468030810356,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03956468030810356
+      ]
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.03426402062177658,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.03426402062177658,
+        0.03426402062177658
+      ]
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "allSourceTrianglesMatched": true,
+      "maxNormalizedNormalComponentError": 0,
+      "maxRawPayloadAngleDegrees": 0.02797645330429077,
+      "anglePercentiles": [
+        0.0,
+        0.0,
+        0.02797645330429077,
+        0.02797645330429077
+      ]
+    }
+  ],
+  "productionComplete": false
+}

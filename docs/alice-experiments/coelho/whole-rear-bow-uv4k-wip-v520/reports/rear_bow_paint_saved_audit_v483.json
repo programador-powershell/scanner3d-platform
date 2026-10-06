@@ -1,0 +1,221 @@
+{
+  "version": "v483",
+  "sourceCandidate": "v482",
+  "sourceSHA256": "3ea2d136fff897c054da0c8678a75b3ac709443164d1e62d51156db9499ae3f6",
+  "allElevenSavedGeometriesUVWeightsAndTenWholeObjectsExactlyVerified": true,
+  "maps": [
+    {
+      "label": "basecolor",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "packedPNGBytesExact": true,
+      "colorSpace": "sRGB"
+    },
+    {
+      "label": "roughness",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "packedPNGBytesExact": true,
+      "colorSpace": "Non-Color"
+    }
+  ],
+  "records": [
+    {
+      "object": "Alice.Coelho.RearBow.left.base_loop.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0004849327166535822,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.structured_interfacing.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0005754034400209875,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.satin_lining.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.000514579686854462,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.printed_tail.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.000487564435831916,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.left.plain_satin_tail_back.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0005078103406367081,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.base_loop.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0005678070477628032,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.structured_interfacing.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0005089307132104172,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.satin_lining.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0004733449557563622,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.printed_tail.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0005981634869277675,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.right.plain_satin_tail_back.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 0.0004757696286800838,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    },
+    {
+      "object": "Alice.Coelho.RearBow.center_wrap.Paint482",
+      "positionsTrianglesUVExact466": true,
+      "pinWeightsExact466": true,
+      "maximumSavedSource460CornerNormalError": 1.2652851842620646e-05,
+      "normalTolerance": 0.0007,
+      "rigged": false
+    }
+  ],
+  "visibleProjectionMasksInsideActualCoverageVerified": true,
+  "fidelityApproved": false,
+  "productionComplete": false,
+  "readOnlyNoSaveOrExport": true,
+  "requiresActualNativeReferenceInspection": true,
+  "renders": [
+    {
+      "view": "whole_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_whole_back_v483.png",
+      "sha256": "8a1637a2930e856b69adfab14d2a08406627464376f9a62e953aae50f00b93c2",
+      "target": [
+        0,
+        0,
+        0.886
+      ],
+      "direction": [
+        0,
+        4,
+        0
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "whole_rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_whole_rear_threequarter_v483.png",
+      "sha256": "0aa01800b6065779b7d56b3e90c1db0a6c90d402de9109a63b4b0c4cf656b255",
+      "target": [
+        0,
+        0,
+        0.886
+      ],
+      "direction": [
+        2,
+        4,
+        0
+      ],
+      "orthoScale": 2.05
+    },
+    {
+      "view": "bow_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_back_v483.png",
+      "sha256": "8cebd7bbdd03c1c8f5bea8eae83cc24e87928cead09a16d6603be7918acf7290",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        0,
+        3,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_left_profile_v483.png",
+      "sha256": "1ea0f69e9bd10507a56b55a05cab5b1302838a1d1ae372405ac61dbe542a762f",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        -3,
+        0,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_right_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_right_profile_v483.png",
+      "sha256": "7c54e0c1aff7115d2526f6c156140db4547bad00771f43bdfec6ccefd43e13ae",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        3,
+        0,
+        0
+      ],
+      "orthoScale": 0.83
+    },
+    {
+      "view": "bow_layers_only_back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/rear_bow_bow_layers_only_back_v483.png",
+      "sha256": "7c064fde89b14e4f7e43ace418c70fd3754ab26b3d7472c40eab44cdff012967",
+      "target": [
+        0,
+        0.14,
+        0.985
+      ],
+      "direction": [
+        0,
+        3,
+        0
+      ],
+      "orthoScale": 0.83
+    }
+  ],
+  "elapsedSeconds": 211.6314549446106,
+  "allSixRendersCompleted": true
+}
