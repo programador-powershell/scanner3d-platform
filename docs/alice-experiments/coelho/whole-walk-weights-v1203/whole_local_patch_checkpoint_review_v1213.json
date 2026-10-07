@@ -1,0 +1,214 @@
+{
+  "version": "v1213",
+  "acceptedAsVerifiedLocalWholeIntermediateCheckpoint": true,
+  "acceptedForDirectWholeCheckpointGithubPublication": true,
+  "wholeCharacterWithDress": true,
+  "sourceWorkingVersion": "v1200",
+  "exportsVersion": "v1203",
+  "files": {
+    "blend": {
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/left_patch_weights_whole_CANDIDATE_v1200/alice_coelho_complete_left_patch_weight_CANDIDATE_v1200.blend",
+      "bytes": 906078967,
+      "sha256": "f22b541dbd8c845b9c1cda3f9bebe941efd53fad0c72218561da0a8844cb2135"
+    },
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_walk_weight_checkpoint_v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.glb",
+      "bytes": 238895588,
+      "sha256": "0a9f19b608b1179b5cd69d9e08099a70accbee4c731385641a0d014217529c2d"
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_walk_weight_checkpoint_v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.fbx",
+      "bytes": 309813708,
+      "sha256": "561c24d236e31afb9a9198b9493ca0ea439147ac619696fc3460c5f844a79cb2"
+    }
+  },
+  "nativeVisualReview": {
+    "version": "v1201",
+    "acceptedForLimitedWholeWeightCheckpointExport": true,
+    "allFiveActualNativeWholeImagesInspected": true,
+    "all42OriginalNativeWalkFramesVerified": true,
+    "globalRemainingBadEdgeOccurrencesAcross42Frames": 681,
+    "globalMaximumInOneFrame": 116,
+    "localSixPatchBadEdgesAcross42Frames": 0,
+    "only450WeightsChangedAfter1191": true,
+    "allOutsideWeightsAndGeometryUVNormalsMaterialsPreserved": true,
+    "observation": "Local left sleeve/hair-adjacent fragments no longer stretch into long triangles; original solid hair and other shoulders still deform and intersect. This is a whole weight checkpoint, not final cloth, hair, canonical anatomy or gameplay.",
+    "canonicalIdentityApproved": false,
+    "anatomical168cmApproved": false,
+    "individualHairComplete": false,
+    "clothPhysicsApproved": false,
+    "rigComplete": false,
+    "gameplayApproved": false,
+    "productionComplete": false
+  },
+  "native42WalkFramesIndependentlyVerified": true,
+  "twentyActualReimportRendersInspected": true,
+  "fiveActualNativeWholeRendersInspected": true,
+  "formatChecks": [
+    {
+      "format": "glb",
+      "report": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_glb_audit_v1206.json",
+      "reportSHA256": "0fbf6a7e783b7a0746afe6f2d5c182e6a49f0f23ceae860a1c8bf2819a3c84e2",
+      "all202MeshesVerified": true,
+      "eightActualDiagnosticPoses": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 7.264759460667847e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 9.563530511513818e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.4616816770285368e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.4616816770285368e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame1",
+          "maxWorldVertexErrorM": 1.4738220670551527e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.29682609642623e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame11",
+          "maxWorldVertexErrorM": 1.4994791399658425e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.933169344032649e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame31",
+          "maxWorldVertexErrorM": 1.4886998087604297e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.947158125403803e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame42",
+          "maxWorldVertexErrorM": 1.5158269661696977e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.292696080985479e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "tenActualWholeRendersInspected": true,
+      "officialGLTFEncodingFilterAccountedFor": true
+    },
+    {
+      "format": "fbx",
+      "report": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_fbx_audit_v1207.json",
+      "reportSHA256": "0f044b5eb716d3f675a6890d555446c9680281af8080b0ff867d4349ac96bfa4",
+      "all202MeshesVerified": true,
+      "eightActualDiagnosticPoses": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame1",
+          "maxWorldVertexErrorM": 6.226920277185855e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 6.226920277185855e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame11",
+          "maxWorldVertexErrorM": 7.410238254124124e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 7.410238254124124e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame31",
+          "maxWorldVertexErrorM": 4.906647177449486e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.906647177449486e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame42",
+          "maxWorldVertexErrorM": 6.186477889968955e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 6.186477889968955e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "tenActualWholeRendersInspected": true,
+      "officialGLTFEncodingFilterAccountedFor": true
+    }
+  ],
+  "rawNormalsAnd4KMaterialPixelChannelChecksVerified": true,
+  "sourceGeometryAllUVAndNormalsPreserved": true,
+  "authoringFullBlendRetained": true,
+  "sharedLibraryUnchanged": true,
+  "VercelRequired": false,
+  "portalPublicationPerformed": false,
+  "productionComplete": false,
+  "additionalTripoCredits": 0,
+  "limitations": [
+    "42-frame linked Walk is a study; exports contain zero animations",
+    "201 garment/accessory objects still have provisional pelvis binding",
+    "Other solid hair/shoulder deformation remains: global sum681 and max116 in the native Walk diagnostic",
+    "Canonical common body/head and anatomical168cm not approved",
+    "Individual strands, cloth/physics/wind/collisions/actions/expressions/gameplay unfinished",
+    "GLB native exporter filters tiny weights; effect independently reproduced without relaxing tolerance"
+  ],
+  "createdAt": "2026-10-07T00:05:16.512666+00:00"
+}

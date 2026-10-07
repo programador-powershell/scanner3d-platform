@@ -1,0 +1,10 @@
+{
+  "version": "v1191",
+  "failed1190NoBlendOrExportsSaved": true,
+  "reason": "Diagnostic1146 NPZ was captured before assigning weights to Blender and is not bit-exact to actual source for tiny changes below its old authoring threshold. Guard now compares bit-exactly to actual raw1148 pre-export capture, preserving all outside native weights.",
+  "primaryPatchVertices": 95,
+  "requiredSamePhysicalUVSeamCounterparts": 13,
+  "totalLocalEditedVertices": 108,
+  "sourceBlendAndLibraryNotModified": true,
+  "productionComplete": false
+}

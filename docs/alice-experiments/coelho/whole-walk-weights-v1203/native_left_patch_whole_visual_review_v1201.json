@@ -1,0 +1,19 @@
+{
+  "version": "v1201",
+  "acceptedForLimitedWholeWeightCheckpointExport": true,
+  "allFiveActualNativeWholeImagesInspected": true,
+  "all42OriginalNativeWalkFramesVerified": true,
+  "globalRemainingBadEdgeOccurrencesAcross42Frames": 681,
+  "globalMaximumInOneFrame": 116,
+  "localSixPatchBadEdgesAcross42Frames": 0,
+  "only450WeightsChangedAfter1191": true,
+  "allOutsideWeightsAndGeometryUVNormalsMaterialsPreserved": true,
+  "observation": "Local left sleeve/hair-adjacent fragments no longer stretch into long triangles; original solid hair and other shoulders still deform and intersect. This is a whole weight checkpoint, not final cloth, hair, canonical anatomy or gameplay.",
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "individualHairComplete": false,
+  "clothPhysicsApproved": false,
+  "rigComplete": false,
+  "gameplayApproved": false,
+  "productionComplete": false
+}

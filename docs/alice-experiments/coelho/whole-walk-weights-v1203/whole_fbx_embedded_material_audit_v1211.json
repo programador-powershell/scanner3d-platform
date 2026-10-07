@@ -1,0 +1,1498 @@
+{
+  "version": "v1211",
+  "allFBXEmbeddedVideoBytesMatchSource": true,
+  "format": "FBX",
+  "sourceWholeVersion": "v1041",
+  "sha256": "561c24d236e31afb9a9198b9493ca0ea439147ac619696fc3460c5f844a79cb2",
+  "videos": [
+    {
+      "id": 265686969,
+      "sha256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168",
+      "bytes": 5783647,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.IntrinsicUV.front_basecolor.4096.v052"
+      ]
+    },
+    {
+      "id": 82202403,
+      "sha256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e",
+      "bytes": 230220,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.Lining.basecolor.4096.v036"
+      ]
+    },
+    {
+      "id": 56570985,
+      "sha256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025",
+      "bytes": 5409863,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.IntrinsicUV.lining_normal.4096.v052"
+      ]
+    },
+    {
+      "id": 3361297,
+      "sha256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9",
+      "bytes": 4048967,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.IntrinsicUV.lining_roughness.4096.v052"
+      ]
+    },
+    {
+      "id": 164784539,
+      "sha256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+      "bytes": 220209,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.Lining.metallic.4096.v036",
+        "Alice.Coelho.Lace.metallic.4K.v072"
+      ]
+    },
+    {
+      "id": 471119028,
+      "sha256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "bytes": 230219,
+      "sourceImageNames": [
+        "Alice.Coelho.FittedChain.basecolor.4096.v057"
+      ]
+    },
+    {
+      "id": 228063554,
+      "sha256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17",
+      "bytes": 6309160,
+      "sourceImageNames": [
+        "Alice.Coelho.ChainLOD.ActualHighNormal.4096.v066"
+      ]
+    },
+    {
+      "id": 744185677,
+      "sha256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+      "bytes": 845680,
+      "sourceImageNames": [
+        "Alice.Coelho.FittedChain.roughness.4096.v057"
+      ]
+    },
+    {
+      "id": 951011531,
+      "sha256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+      "bytes": 230216,
+      "sourceImageNames": [
+        "Alice.Coelho.FittedChain.metallic.4096.v057"
+      ]
+    },
+    {
+      "id": 368973818,
+      "sha256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976",
+      "bytes": 19806380,
+      "sourceImageNames": [
+        "alice_coelho_apron_fallback_photo_4096_v022"
+      ]
+    },
+    {
+      "id": 708453902,
+      "sha256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d",
+      "bytes": 17528683,
+      "sourceImageNames": [
+        "alice_coelho_normal_4096_newuv_v004"
+      ]
+    },
+    {
+      "id": 161185002,
+      "sha256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf",
+      "bytes": 3475856,
+      "sourceImageNames": [
+        "alice_coelho_roughness_4096_newuv_v004"
+      ]
+    },
+    {
+      "id": 6417184,
+      "sha256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf",
+      "bytes": 6416443,
+      "sourceImageNames": [
+        "alice_coelho_metallic_4096_newuv_v004"
+      ]
+    },
+    {
+      "id": 722647521,
+      "sha256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78",
+      "bytes": 13353703,
+      "sourceImageNames": [
+        "alice_coelho_apron_photo_per_texel_4096_v019"
+      ]
+    },
+    {
+      "id": 589725538,
+      "sha256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f",
+      "bytes": 3390289,
+      "sourceImageNames": [
+        "alice_coelho_apron_normal_4096_dedicated_v012"
+      ]
+    },
+    {
+      "id": 183545264,
+      "sha256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a",
+      "bytes": 1466425,
+      "sourceImageNames": [
+        "alice_coelho_apron_roughness_4096_dedicated_v012"
+      ]
+    },
+    {
+      "id": 831828329,
+      "sha256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930",
+      "bytes": 1294535,
+      "sourceImageNames": [
+        "alice_coelho_apron_metallic_4096_dedicated_v012"
+      ]
+    },
+    {
+      "id": 988914694,
+      "sha256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "bytes": 230216,
+      "sourceImageNames": [
+        "Alice.Coelho.FittedChain.normal.4096.v057"
+      ]
+    },
+    {
+      "id": 341295597,
+      "sha256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+      "bytes": 230220,
+      "sourceImageNames": [
+        "Alice.Coelho.Lace.basecolor.4K.v072"
+      ]
+    },
+    {
+      "id": 766426185,
+      "sha256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3",
+      "bytes": 230216,
+      "sourceImageNames": [
+        "Alice.Coelho.Lace.roughness.4K.v072"
+      ]
+    },
+    {
+      "id": 439192701,
+      "sha256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+      "bytes": 220209,
+      "sourceImageNames": [
+        "Alice.Coelho.Apron.Lining.metallic.4096.v036",
+        "Alice.Coelho.Lace.metallic.4K.v072"
+      ]
+    },
+    {
+      "id": 716751665,
+      "sha256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+      "bytes": 572899,
+      "sourceImageNames": [
+        "Alice.Coelho.Ornaments.basecolor.4096.v417"
+      ]
+    },
+    {
+      "id": 258844736,
+      "sha256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e",
+      "bytes": 3665365,
+      "sourceImageNames": [
+        "Alice.Coelho.Ornaments.normal.4096.v417"
+      ]
+    },
+    {
+      "id": 189628071,
+      "sha256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414",
+      "bytes": 1340253,
+      "sourceImageNames": [
+        "Alice.Coelho.Ornaments.roughness.4096.v417"
+      ]
+    },
+    {
+      "id": 658014932,
+      "sha256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95",
+      "bytes": 574957,
+      "sourceImageNames": [
+        "Alice.Coelho.Ornaments.metallic.4096.v417"
+      ]
+    },
+    {
+      "id": 247465405,
+      "sha256": "57ee119d1f2e5d2e2dad0de3cdd158184ffc76d582198499e9ac65152f66e722",
+      "bytes": 1033630,
+      "sourceImageNames": [
+        "Alice.Coelho.RearBow.basecolor.4096.PaddingCandidate592"
+      ]
+    },
+    {
+      "id": 813305876,
+      "sha256": "ccbf9b922b9675131e6fea87e11697a989ed4dc05f319ff922673ba554a5696c",
+      "bytes": 924132,
+      "sourceImageNames": [
+        "Alice.Coelho.RearBow.roughness.4096.PaddingCandidate592"
+      ]
+    },
+    {
+      "id": 85944243,
+      "sha256": "61831f2328e0cd28b1d281ddd25daa1829a6aaa78b1ca1af00f5c7f4d5d10ef6",
+      "bytes": 4911502,
+      "sourceImageNames": [
+        "Coelho.Mount.BaseColor.PBR4K.v711"
+      ]
+    },
+    {
+      "id": 528351958,
+      "sha256": "ed6a1b0e12b3f3143d861837497731954712f11e785ab375b0570db70fd51bcd",
+      "bytes": 7517334,
+      "sourceImageNames": [
+        "Coelho.Mount.Normal.PBR4K.v711"
+      ]
+    },
+    {
+      "id": 124822279,
+      "sha256": "1472f14c2ed12ec0ce41e04e2481e8993f93639e5ee4e39e3bfe5302062e6cc7",
+      "bytes": 5815899,
+      "sourceImageNames": [
+        "Coelho.Mount.Roughness.PBR4K.v711"
+      ]
+    },
+    {
+      "id": 516847189,
+      "sha256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9",
+      "bytes": 304633,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock933.IvoryDial.Metallic.4K",
+        "Coelho.Mount.Metallic.PBR4K.v711"
+      ]
+    },
+    {
+      "id": 215238610,
+      "sha256": "ee1b06053fd11a9d86ff95738022182e3fe596d9e0520e7ae891005cdb9eb00c",
+      "bytes": 7869140,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock983.ReferencePatina.BaseColor.4K"
+      ]
+    },
+    {
+      "id": 175749775,
+      "sha256": "046f48e458bf3caeb14305babbc580ce879359e05568d416d1f24818d6b0fccd",
+      "bytes": 304630,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock983.ReferencePatina.Normal.4K"
+      ]
+    },
+    {
+      "id": 901763699,
+      "sha256": "f6a2390522f8c113bd861cc47880af9a3f55b6736511f7487b58f09c4cf2afb1",
+      "bytes": 8420067,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock983.ReferencePatina.Roughness.4K"
+      ]
+    },
+    {
+      "id": 132893760,
+      "sha256": "19e2b8c6e10530d0205f31cce97a9533c22e4785f13a3ef3d118edb8c7cc7415",
+      "bytes": 304632,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock983.ReferencePatina.Metallic.4K"
+      ]
+    },
+    {
+      "id": 828357720,
+      "sha256": "ac67f12e3fdf2122bc1f0b70f2ae7c421919d197494b70eb8316ab8535902561",
+      "bytes": 2877449,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock933.IvoryDial.BaseColor.4K"
+      ]
+    },
+    {
+      "id": 561799986,
+      "sha256": "8148a768cbdcc56d58c4100664449f180c4308ca2992114311fc0d45c116b175",
+      "bytes": 307206,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock933.IvoryDial.Normal.4K"
+      ]
+    },
+    {
+      "id": 413260912,
+      "sha256": "8e381faa322dc51555e10cfb6264da7454c842a9f9f18c4c2c3f37da808cd210",
+      "bytes": 2742469,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock933.IvoryDial.Roughness.4K"
+      ]
+    },
+    {
+      "id": 520823679,
+      "sha256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9",
+      "bytes": 304633,
+      "sourceImageNames": [
+        "Alice.Coelho.Clock933.IvoryDial.Metallic.4K",
+        "Coelho.Mount.Metallic.PBR4K.v711"
+      ]
+    }
+  ],
+  "channelConnections": [
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+      "property": "DiffuseColor",
+      "imageSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168"
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "property": "DiffuseColor",
+      "imageSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e"
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "property": "NormalMap",
+      "imageSHA256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025"
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "property": "ShininessExponent",
+      "imageSHA256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9"
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "property": "ReflectionFactor",
+      "imageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "property": "DiffuseColor",
+      "imageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "property": "NormalMap",
+      "imageSHA256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17"
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "property": "ShininessExponent",
+      "imageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "property": "ReflectionFactor",
+      "imageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "property": "DiffuseColor",
+      "imageSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976"
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "property": "NormalMap",
+      "imageSHA256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d"
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "property": "ShininessExponent",
+      "imageSHA256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf"
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "property": "ReflectionFactor",
+      "imageSHA256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf"
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "property": "DiffuseColor",
+      "imageSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78"
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "property": "NormalMap",
+      "imageSHA256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f"
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "property": "ShininessExponent",
+      "imageSHA256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a"
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "property": "ReflectionFactor",
+      "imageSHA256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "property": "DiffuseColor",
+      "imageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "property": "ShininessExponent",
+      "imageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "property": "ReflectionFactor",
+      "imageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "property": "DiffuseColor",
+      "imageSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "property": "ShininessExponent",
+      "imageSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "property": "ReflectionFactor",
+      "imageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "property": "DiffuseColor",
+      "imageSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "property": "ShininessExponent",
+      "imageSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3"
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "property": "ReflectionFactor",
+      "imageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "property": "DiffuseColor",
+      "imageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "property": "ShininessExponent",
+      "imageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "property": "ReflectionFactor",
+      "imageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "property": "DiffuseColor",
+      "imageSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "property": "NormalMap",
+      "imageSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "property": "ShininessExponent",
+      "imageSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "property": "ReflectionFactor",
+      "imageSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "property": "DiffuseColor",
+      "imageSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "property": "NormalMap",
+      "imageSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "property": "ShininessExponent",
+      "imageSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "property": "ReflectionFactor",
+      "imageSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592",
+      "property": "DiffuseColor",
+      "imageSHA256": "57ee119d1f2e5d2e2dad0de3cdd158184ffc76d582198499e9ac65152f66e722"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592",
+      "property": "ShininessExponent",
+      "imageSHA256": "ccbf9b922b9675131e6fea87e11697a989ed4dc05f319ff922673ba554a5696c"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643",
+      "property": "DiffuseColor",
+      "imageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.SewnThread.PBR4K.v643",
+      "property": "DiffuseColor",
+      "imageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.SewnThread.PBR4K.v643",
+      "property": "NormalMap",
+      "imageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "property": "DiffuseColor",
+      "imageSHA256": "61831f2328e0cd28b1d281ddd25daa1829a6aaa78b1ca1af00f5c7f4d5d10ef6"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "property": "NormalMap",
+      "imageSHA256": "ed6a1b0e12b3f3143d861837497731954712f11e785ab375b0570db70fd51bcd"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "property": "ShininessExponent",
+      "imageSHA256": "1472f14c2ed12ec0ce41e04e2481e8993f93639e5ee4e39e3bfe5302062e6cc7"
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "property": "ReflectionFactor",
+      "imageSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9"
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "property": "DiffuseColor",
+      "imageSHA256": "ee1b06053fd11a9d86ff95738022182e3fe596d9e0520e7ae891005cdb9eb00c"
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "property": "NormalMap",
+      "imageSHA256": "046f48e458bf3caeb14305babbc580ce879359e05568d416d1f24818d6b0fccd"
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "property": "ShininessExponent",
+      "imageSHA256": "f6a2390522f8c113bd861cc47880af9a3f55b6736511f7487b58f09c4cf2afb1"
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "property": "ReflectionFactor",
+      "imageSHA256": "19e2b8c6e10530d0205f31cce97a9533c22e4785f13a3ef3d118edb8c7cc7415"
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "property": "DiffuseColor",
+      "imageSHA256": "ac67f12e3fdf2122bc1f0b70f2ae7c421919d197494b70eb8316ab8535902561"
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "property": "NormalMap",
+      "imageSHA256": "8148a768cbdcc56d58c4100664449f180c4308ca2992114311fc0d45c116b175"
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "property": "ShininessExponent",
+      "imageSHA256": "8e381faa322dc51555e10cfb6264da7454c842a9f9f18c4c2c3f37da808cd210"
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "property": "ReflectionFactor",
+      "imageSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9"
+    }
+  ],
+  "materialProperties": {
+    "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        27.04000111579896
+      ],
+      "ShininessExponent": [
+        27.04000111579896
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.11999999731779099
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.11999999731779099
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.PipedCord.Gold.PBR4K.v072": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.20000000298023224
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        27.04000111579896
+      ],
+      "ShininessExponent": [
+        27.04000111579896
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.15000000596046448
+      ]
+    },
+    "Alice.Coelho.RearBow.SewnThread.PBR4K.v643": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.20000000298023224
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.25
+      ],
+      "Shininess": [
+        27.04000111579896
+      ],
+      "ShininessExponent": [
+        27.04000111579896
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.05000000074505806
+      ]
+    },
+    "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    },
+    "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview": {
+      "DiffuseColor": [
+        0.027000000700354576,
+        0.02199999988079071,
+        0.014000000432133675
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.027000000700354576,
+        0.02199999988079071,
+        0.014000000432133675
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        29.159999098777778
+      ],
+      "ShininessExponent": [
+        29.159999098777778
+      ],
+      "ReflectionColor": [
+        0.027000000700354576,
+        0.02199999988079071,
+        0.014000000432133675
+      ],
+      "ReflectionFactor": [
+        0.6200000047683716
+      ]
+    },
+    "Alice.Coelho.Clock754.RomanIndices.GeometryPreview": {
+      "DiffuseColor": [
+        0.01600000075995922,
+        0.01899999938905239,
+        0.01899999938905239
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "BumpFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.01600000075995922,
+        0.01899999938905239,
+        0.01899999938905239
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        42.25000077486038
+      ],
+      "ShininessExponent": [
+        42.25000077486038
+      ],
+      "ReflectionColor": [
+        0.01600000075995922,
+        0.01899999938905239,
+        0.01899999938905239
+      ],
+      "ReflectionFactor": [
+        0.18000000715255737
+      ]
+    },
+    "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933": {
+      "DiffuseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "EmissiveColor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "EmissiveFactor": [
+        0.0
+      ],
+      "AmbientColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "AmbientFactor": [
+        0.0
+      ],
+      "SpecularColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "SpecularFactor": [
+        0.17499999701976776
+      ],
+      "Shininess": [
+        25.0
+      ],
+      "ShininessExponent": [
+        25.0
+      ],
+      "ReflectionColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ReflectionFactor": [
+        0.0
+      ]
+    }
+  },
+  "productionComplete": false
+}

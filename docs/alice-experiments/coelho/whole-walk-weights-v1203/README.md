@@ -1,0 +1,9 @@
+# Alice Coelho inteira — checkpoint parcial de continuidade dos pesos v1203
+
+Pequenos fragmentos próximos às mangas se esticavam em triângulos longos durante a caminhada. A fonte inteira v1200 corrige pesos em 108 vértices da região direita e 450 da região esquerda, incluindo as contrapartes das costuras UV da mesma superfície. Topologia, posições, UVs, normais, materiais 4K e biblioteca comum preservados. As regiões tratadas não apresentam o estiramento diagnosticado nos 42 quadros; outros defeitos permanecem. A soma de ocorrências nos 42 quadros passou de 1575 para 681; o máximo num quadro continua 116. Essas contagens não medem fidelidade visual.
+
+GLB/FBX INTEIROS: https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-whole-walk-weights-wip-v1203. Ambos downloads conferidos por SHA256. O manifesto mapeia o Blender inteiro no disco F e a biblioteca comum protegida. Não publicar peças isoladas e não substituir o corpo/rosto com modelos antigos.
+
+Validação: 202 malhas, 209 ossos, 42 quadros nativos do estudo Walk, oito poses por formato, 25 renders nativos/reimportados e prévia local real. Triângulos, UVs, pesos, materiais, normais e canais/pixels 4K conferidos. GLB filtra influências pequenas pela regra oficial; o efeito é calculado independentemente sem afrouxar tolerâncias. Os exports têm zero animações de gameplay.
+
+INCOMPLETO: regiões do cabelo sólido ainda esticam/intersectam; 201 peças da roupa/acessórios têm vínculo provisório à pelve. Corpo/rosto canônicos comuns e 168 cm anatômicos, rig final, fios individuais, tecido, vento, colisões, ações, expressões e gameplay permanecem pendentes. Este checkpoint/ZIP não finaliza o asset. Continuar este Coelho antes de outra geração própria. Antes de mudar de parte/movimento, publicar novo checkpoint inteiro verificado. Sem Vercel, PR, portal ou novos créditos Tripo.

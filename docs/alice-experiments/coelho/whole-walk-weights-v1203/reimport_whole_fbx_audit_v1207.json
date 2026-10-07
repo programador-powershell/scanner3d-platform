@@ -1,0 +1,4216 @@
+{
+  "version": "v1207",
+  "format": "fbx",
+  "sha256": "561c24d236e31afb9a9198b9493ca0ea439147ac619696fc3460c5f844a79cb2",
+  "independentReimport": true,
+  "wholeCharacterWithDress": true,
+  "coordinateUVTolerancesNotRelaxed": true,
+  "allSourceTrianglesMatchedStillMandatory": true,
+  "bijectiveCornerFallbacks": [],
+  "literalIndexedCornerCorrespondenceUsedForExactFBXTriangleOrder": true,
+  "failed942957PreparationsPreserved": true,
+  "previousVerified897ImporterNameAndLiteralTriangleSupportRestored": true,
+  "objects": [
+    {
+      "role": "character",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.character",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.character",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.character",
+      "importerNameSanitizationApplied": false,
+      "vertices": 107832,
+      "triangles": 150000,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.9503593612772858e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.3117717008648557,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007.001",
+        "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011.001"
+      ]
+    },
+    {
+      "role": "apron",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.apron",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.apron",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.apron",
+      "importerNameSanitizationApplied": false,
+      "vertices": 4202,
+      "triangles": 8400,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.77863451012265e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02048337283276063,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052.001",
+        "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052.001"
+      ]
+    },
+    {
+      "role": "chain",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.chain",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.chain",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.chain",
+      "importerNameSanitizationApplied": false,
+      "vertices": 30528,
+      "triangles": 61056,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.77863451012265e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02014216380268096,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066.001"
+      ]
+    },
+    {
+      "role": "cord",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.cord",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.cord",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.cord",
+      "importerNameSanitizationApplied": false,
+      "vertices": 11076,
+      "triangles": 22136,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.77863451012265e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020213247004187578,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.001",
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.001"
+      ]
+    },
+    {
+      "role": "lace",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.lace",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.lace",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.lace",
+      "importerNameSanitizationApplied": false,
+      "vertices": 577422,
+      "triangles": 1144188,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.77863451012265e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020933039874301927,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082.001",
+        "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082.001"
+      ]
+    },
+    {
+      "role": "ornament_outer_left",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.ornament_outer_left",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.ornament_outer_left",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.ornament_outer_left",
+      "importerNameSanitizationApplied": false,
+      "vertices": 15688,
+      "triangles": 31216,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.487740830422111e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019410958204862105,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417.001"
+      ]
+    },
+    {
+      "role": "ornament_inner_left",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.ornament_inner_left",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.ornament_inner_left",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.ornament_inner_left",
+      "importerNameSanitizationApplied": false,
+      "vertices": 7247,
+      "triangles": 14330,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 6.143906154658885e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020338796680874686,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417.001"
+      ]
+    },
+    {
+      "role": "ornament_center",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.ornament_center",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.ornament_center",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.ornament_center",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3198,
+      "triangles": 6424,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 5.998586817037423e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019234991603557294,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417.001"
+      ]
+    },
+    {
+      "role": "ornament_inner_right",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.ornament_inner_right",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.ornament_inner_right",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.ornament_inner_right",
+      "importerNameSanitizationApplied": false,
+      "vertices": 7630,
+      "triangles": 15096,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.028863677424642e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01939392748489913,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417.001"
+      ]
+    },
+    {
+      "role": "ornament_outer_right",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.ornament_outer_right",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.ornament_outer_right",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.ornament_outer_right",
+      "importerNameSanitizationApplied": false,
+      "vertices": 15444,
+      "triangles": 30728,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 7.77863451012265e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02014070691623874,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417.001",
+        "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2038222426218186e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.03273090586869783,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_structured_interfacing",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_structured_interfacing",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_structured_interfacing",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2038222426218186e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.03166782432175057,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_satin_lining",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_satin_lining",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_satin_lining",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2038222426218186e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.03401855328063574,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1394,
+      "triangles": 2784,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.5879527841468985e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0294994860901022,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_plain_satin_tail_back",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_plain_satin_tail_back",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_plain_satin_tail_back",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1394,
+      "triangles": 2784,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.5910086411284374e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02670785608264939,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.228781230931777e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.03640578767016658,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_structured_interfacing",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_structured_interfacing",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_structured_interfacing",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.228781230931777e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.028140861745985044,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_satin_lining",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_satin_lining",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_satin_lining",
+      "importerNameSanitizationApplied": false,
+      "vertices": 3250,
+      "triangles": 6496,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.228781230931777e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.030076341300115637,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1394,
+      "triangles": 2784,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.6118070224511577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.031300509668531096,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_plain_satin_tail_back",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_plain_satin_tail_back",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_plain_satin_tail_back",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1394,
+      "triangles": 2784,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.6118070224511577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.027394530647826872,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_center_center_wrap",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_center_center_wrap",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_center_center_wrap",
+      "importerNameSanitizationApplied": false,
+      "vertices": 882,
+      "triangles": 1760,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2095725607167348e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017826363887800463,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_base_loop_sewn_edges",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop_sewn_edges",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop_sewn_edges",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_base_loop_sewn_edges",
+      "importerNameSanitizationApplied": false,
+      "vertices": 14100,
+      "triangles": 26992,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2038222426218186e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019706971291007534,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643.001",
+        "Alice.Coelho.RearBow.SewnThread.PBR4K.v643.001"
+      ]
+    },
+    {
+      "role": "rear_bow_left_printed_tail_sewn_edges",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail_sewn_edges",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail_sewn_edges",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_left_printed_tail_sewn_edges",
+      "importerNameSanitizationApplied": false,
+      "vertices": 18716,
+      "triangles": 35840,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.5840151626966372e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020254060978858835,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643.001",
+        "Alice.Coelho.RearBow.SewnThread.PBR4K.v643.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_base_loop_sewn_edges",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop_sewn_edges",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop_sewn_edges",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_base_loop_sewn_edges",
+      "importerNameSanitizationApplied": false,
+      "vertices": 14100,
+      "triangles": 26992,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.228781230931777e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019687769965942205,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643.001",
+        "Alice.Coelho.RearBow.SewnThread.PBR4K.v643.001"
+      ]
+    },
+    {
+      "role": "rear_bow_right_printed_tail_sewn_edges",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail_sewn_edges",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail_sewn_edges",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_right_printed_tail_sewn_edges",
+      "importerNameSanitizationApplied": false,
+      "vertices": 18716,
+      "triangles": 35840,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.6118070224511577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02041550823205147,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643.001",
+        "Alice.Coelho.RearBow.SewnThread.PBR4K.v643.001"
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_backing",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_backing",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_backing",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_backing",
+      "importerNameSanitizationApplied": false,
+      "vertices": 2450,
+      "triangles": 4896,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 9.750017768369913e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019527692383767104,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711.001"
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_left_attachment_loop",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_left_attachment_loop",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_left_attach_fb95971",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_left_attach_fb95971",
+      "importerNameSanitizationApplied": true,
+      "vertices": 650,
+      "triangles": 1296,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 9.726080379544488e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019457037174021582,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711.001"
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_right_attachment_loop",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_right_attachment_loop",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_right_attac_1cd307e",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_right_attac_1cd307e",
+      "importerNameSanitizationApplied": true,
+      "vertices": 650,
+      "triangles": 1296,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 9.744789965890255e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01842890225994721,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711.001"
+      ]
+    },
+    {
+      "role": "rear_bow_reinforced_root_stitches",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_root_stitches",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_root_stitches",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_bow_reinforced_root_stitches",
+      "importerNameSanitizationApplied": false,
+      "vertices": 720,
+      "triangles": 1344,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 9.739781993648096e-08,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01861691505977357,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.RearBow.SewnThread.PBR4K.v643.001"
+      ]
+    },
+    {
+      "role": "rear_clock_closed_watch_case",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_closed_watch_case",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_closed_watch_case",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_closed_watch_case",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1922,
+      "triangles": 3840,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0536712127723508e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018392056548343638,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_porcelain_dial",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_porcelain_dial",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_porcelain_dial",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_porcelain_dial",
+      "importerNameSanitizationApplied": false,
+      "vertices": 770,
+      "triangles": 1536,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017830198843361515,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933.001"
+      ]
+    },
+    {
+      "role": "rear_clock_outer_bezel_recess",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_outer_bezel_recess",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_outer_bezel_recess",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_outer_bezel_recess",
+      "importerNameSanitizationApplied": false,
+      "vertices": 768,
+      "triangles": 1536,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0511987700702595e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018230292258707235,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_inner_bezel_highlight",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_inner_bezel_highlight",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_inner_bezel_highlight",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_inner_bezel_highlight",
+      "importerNameSanitizationApplied": false,
+      "vertices": 960,
+      "triangles": 1920,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0511987700702595e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01819363850871011,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_sixty_raised_minute_indices",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_sixty_raised_minute_indices",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_sixty_raised_minute_indices",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_sixty_raised_minute_indices",
+      "importerNameSanitizationApplied": false,
+      "vertices": 480,
+      "triangles": 720,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016471208796349793,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_XII",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XII",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XII",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XII",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1392,
+      "triangles": 2772,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0479868662998987e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.3877583374024899,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_I",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_I",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_I",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_I",
+      "importerNameSanitizationApplied": false,
+      "vertices": 312,
+      "triangles": 620,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0472307202868608e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.1614118634208879,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_II",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_II",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_II",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_II",
+      "importerNameSanitizationApplied": false,
+      "vertices": 624,
+      "triangles": 1240,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0464435934202854e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.1221885394158248,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_III",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_III",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_III",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_III",
+      "importerNameSanitizationApplied": false,
+      "vertices": 936,
+      "triangles": 1860,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0457388198091238e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.06489646567729392,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_IV",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IV",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IV",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IV",
+      "importerNameSanitizationApplied": false,
+      "vertices": 666,
+      "triangles": 1324,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0464435934202854e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.4337104703873065,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_V",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_V",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_V",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_V",
+      "importerNameSanitizationApplied": false,
+      "vertices": 354,
+      "triangles": 704,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0472307202868608e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.38424838335732975,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VI",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VI",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VI",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VI",
+      "importerNameSanitizationApplied": false,
+      "vertices": 666,
+      "triangles": 1324,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0478749988511425e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.25988188253331107,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VII",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VII",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VII",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VII",
+      "importerNameSanitizationApplied": false,
+      "vertices": 978,
+      "triangles": 1944,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.23758804545072063,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_VIII",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VIII",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VIII",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_VIII",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1290,
+      "triangles": 2564,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.3277226868160616,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_IX",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IX",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IX",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_IX",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1080,
+      "triangles": 2152,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0490512728936019e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0952646643374593,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_X",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_X",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_X",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_X",
+      "importerNameSanitizationApplied": false,
+      "vertices": 768,
+      "triangles": 1532,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.09903009084956163,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_roman_XI",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XI",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XI",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_roman_XI",
+      "importerNameSanitizationApplied": false,
+      "vertices": 1080,
+      "triangles": 2152,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0490512728936019e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.4756808541415036,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_hour_hand_leaf",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_hour_hand_leaf",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_hour_hand_leaf",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_hour_hand_leaf",
+      "importerNameSanitizationApplied": false,
+      "vertices": 18,
+      "triangles": 32,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0490512728936019e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.012798798622532317,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_minute_hand_leaf",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_minute_hand_leaf",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_minute_hand_leaf",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_minute_hand_leaf",
+      "importerNameSanitizationApplied": false,
+      "vertices": 18,
+      "triangles": 32,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0478749988511425e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017587475514840332,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_central_hand_rivet",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_central_hand_rivet",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_central_hand_rivet",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_central_hand_rivet",
+      "importerNameSanitizationApplied": false,
+      "vertices": 146,
+      "triangles": 288,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0478195456742152e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013333215035816273,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_oval_suspension_bail",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_oval_suspension_bail",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_oval_suspension_bail",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_oval_suspension_bail",
+      "importerNameSanitizationApplied": false,
+      "vertices": 768,
+      "triangles": 1536,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0485654119403091e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017247473021651034,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_winding_crown_base",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_winding_crown_base",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_winding_crown_base",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_winding_crown_base",
+      "importerNameSanitizationApplied": false,
+      "vertices": 482,
+      "triangles": 960,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0479868662998987e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020030760243769596,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_-1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_-1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_-1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_-1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017987973984592752,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961687417974695e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01635352930954536,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_anchor_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_anchor_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017708890902900766,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_dial_outer_roman_ring",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_dial_outer_roman_ring",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_outer_roman_ring",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_outer_roman_ring",
+      "importerNameSanitizationApplied": false,
+      "vertices": 2400,
+      "triangles": 4800,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018364786811899698,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_minute_ring",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_minute_ring",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_minute_ring",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_minute_ring",
+      "importerNameSanitizationApplied": false,
+      "vertices": 2400,
+      "triangles": 4800,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.050084271620453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01829255875097368,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.RomanIndices.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_center_ring",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_ring",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_ring",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_ring",
+      "importerNameSanitizationApplied": false,
+      "vertices": 2400,
+      "triangles": 4800,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0490512728936019e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0183993002033842,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview.001"
+      ]
+    },
+    {
+      "role": "rear_clock_dial_inner_center_highlight",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_highlight",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_highlight",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_dial_inner_center_highlight",
+      "importerNameSanitizationApplied": false,
+      "vertices": 2400,
+      "triangles": 4800,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0490512728936019e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018199673110800587,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_case_scalloped_filigree_border",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_case_scalloped_filigree_border",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_case_scalloped_filig_978d190",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_case_scalloped_filig_978d190",
+      "importerNameSanitizationApplied": true,
+      "vertices": 4800,
+      "triangles": 9600,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0511987700702595e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0194923347343576,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01608794705353453,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016202230282936332,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017727748598567756,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01614315005705549,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015437759211137997,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0170804508942979,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017797494942376594,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018568576747887453,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01864390961918822,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018021517884425717,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_10",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_10",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_10",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_10",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01730064523430613,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_11",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_11",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_11",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_11",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017795654123164733,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_12",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_12",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_12",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_12",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015796619056632235,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_13",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_13",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_13",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_13",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015198899741143931,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_14",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_14",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_14",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_14",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018760664439404568,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_-1_link_15",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_15",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_15",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_-1_link_15",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01855266391719762,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_collar",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_collar",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_collar",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_collar",
+      "importerNameSanitizationApplied": false,
+      "vertices": 720,
+      "triangles": 1440,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016663836308133353,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.012275149765916085,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.012252918906573243,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01353776183138735,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014743497482149462,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015798249447537122,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013780739616829303,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013065606184706228,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01314798636393401,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014832742874887169,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_wire_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015715970253471895,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016379436161565977,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961447716404618e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01803852807632349,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018913903689886075,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961328129371832e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017383581119067675,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015335599232317074,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961328129371832e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015236441904635583,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016966672284860495,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961208718180921e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01775585729234264,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017535241569934953,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961208718180921e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01692752344660284,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_10",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_10",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_10",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_10",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015562169249599639,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_11",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_11",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_11",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_11",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961089482837147e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014716311553115216,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_12",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_12",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_12",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_12",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019097305576152378,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_13",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_13",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_13",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_13",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196097042334577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018020696534146785,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_14",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_14",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_14",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_14",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014041173050066557,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_15",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_15",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_15",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_15",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196097042334577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017461998377808496,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_16",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_16",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_16",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_16",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1962896474536712e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0153624391086133,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_0_link_17",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_17",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_17",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_0_link_17",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196085153971204e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015141018863796783,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_collar",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_collar",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_collar",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_collar",
+      "importerNameSanitizationApplied": false,
+      "vertices": 720,
+      "triangles": 1440,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961927822848874e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017751928177099283,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961927822848874e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01421478735925231,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961927822848874e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013272334505988467,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196097042334577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014770661503925442,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196055510003932e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013745500928893418,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1960024278729604e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01704493419964474,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1960024278729604e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013510760513296518,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1960024278729604e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017979119643820703,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1960495944009137e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013166256385065857,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.196097042334577e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013691001086141876,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_wire_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961447716404618e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013424693949287143,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017222943562726314,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017673191160084978,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018194563026840055,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01714481340875727,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018607454031543912,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017928262277371414,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01747621685842512,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016574298154993502,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020365809289712617,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01762698159547296,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_10",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_10",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_10",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_10",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015480807555163453,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_11",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_11",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_11",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_11",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016342923416988876,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_12",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_12",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_12",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_12",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01654929453754623,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_13",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_13",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_13",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_13",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01659003334787713,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_14",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_14",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_14",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_14",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017613584608677776,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_chain_1_link_15",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_15",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_15",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_chain_1_link_15",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01849736877464878,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_collar",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_collar",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_collar",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_collar",
+      "importerNameSanitizationApplied": false,
+      "vertices": 720,
+      "triangles": 1440,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019836334539635486,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014061389115546745,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013481019776990543,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013839821131171711,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014288927620994117,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014271718767237996,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.013200858529136248,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015632624724282028,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01353492138844855,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.019688829726146828,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_wire_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 74,
+      "triangles": 144,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018916242266899884,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_closed_ferrule",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_closed_ferrule",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_closed_ferrule",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_closed_ferrule",
+      "importerNameSanitizationApplied": false,
+      "vertices": 258,
+      "triangles": 512,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016571911193319726,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_left",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_left",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_left",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_left",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01707449112029022,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_right",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_right",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_right",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_-1_neck_right",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015369406999356362,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_closed_ferrule",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_closed_ferrule",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_closed_ferrule",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_closed_ferrule",
+      "importerNameSanitizationApplied": false,
+      "vertices": 258,
+      "triangles": 512,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961927822848874e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016271510760230413,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_left",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_left",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_left",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_left",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1960024278729604e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017390867615456312,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_right",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_right",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_right",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_0_neck_right",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1961927822848874e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018291159460250454,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_closed_ferrule",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_closed_ferrule",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_closed_ferrule",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_closed_ferrule",
+      "importerNameSanitizationApplied": false,
+      "vertices": 258,
+      "triangles": 512,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016541115252981162,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_left",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_left",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_left",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_left",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014541751839776948,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_right",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_right",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_right",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_tassel_1_neck_right",
+      "importerNameSanitizationApplied": false,
+      "vertices": 130,
+      "triangles": 256,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01707449112029022,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_case_anchor",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_case_anchor",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_case_anchor",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_case_anchor",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1982253063978428e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.0173934907830521,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01821840678477852,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_30",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_30",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_30",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_30",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01851507072607566,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_31",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_31",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_31",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_31",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01462999287980384,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_32",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_32",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_32",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_32",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016908629489365716,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_case_anchor",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_case_anchor",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_case_anchor",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_case_anchor",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.195036025230163e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017043844208993623,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_0",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_0",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_0",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_0",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0464435934202854e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015098147422285263,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01502724095921145,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1934018492431453e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015060706433209252,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018105855101526548,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.02019293744746194,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01782960122415492,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01619431481742523,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015557651266355658,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016500744033207084,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01590727033055994,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_10",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_10",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_10",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_10",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017570274270414694,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_11",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_11",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_11",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_11",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015400817138800673,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_12",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_12",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_12",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_12",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016156336194300177,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_13",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_13",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_13",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_13",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.014059899907334502,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_14",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_14",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_14",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_14",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016839807132511746,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_15",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_15",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_15",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_15",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01711540288686318,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_16",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_16",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_16",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_16",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01736754787704622,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_17",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_17",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_17",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_17",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017885794072573364,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_18",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_18",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_18",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_18",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017037896358625088,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_19",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_19",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_19",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_19",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01720582555743054,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_20",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_20",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_20",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_20",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017815256440593792,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_21",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_21",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_21",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_21",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017785137162989035,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_22",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_22",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_22",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_22",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016956980543927958,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_23",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_23",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_23",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_23",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01790171146549336,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_24",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_24",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_24",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_24",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015799388277327395,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_25",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_25",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_25",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_chain_link_25",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1944189326376765e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016842082961472018,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_long_side_retaining_oval",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_retaining_oval",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_retaining_oval",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_long_side_retaining_oval",
+      "importerNameSanitizationApplied": false,
+      "vertices": 768,
+      "triangles": 1536,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1926748300777466e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018600126374232768,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_front_case_scroll_relief",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_front_case_scroll_relief",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_front_case_scroll_relief",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_front_case_scroll_relief",
+      "importerNameSanitizationApplied": false,
+      "vertices": 24672,
+      "triangles": 49152,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.0511987700702595e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.020080477622642284,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_1",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_1",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_1",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_1",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.197320124506071e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018205585276359557,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_2",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_2",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_2",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_2",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017103698469039908,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_3",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_3",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_3",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_3",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018086532494834003,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_4",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_4",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_4",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_4",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018397534259496976,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_5",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_5",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_5",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_5",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015546100088903423,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_6",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_6",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_6",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_6",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01971809193554635,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_7",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_7",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_7",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_7",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01788536956700028,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_8",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_8",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_8",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_8",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017514994687478063,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_9",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_9",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_9",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_9",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018419158482482247,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_10",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_10",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_10",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_10",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01967002376147001,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_11",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_11",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_11",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_11",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017388701548984226,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_12",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_12",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_12",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_12",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.2013700229374393e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.016871420393251495,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_13",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_13",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_13",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_13",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.01931638559108919,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_14",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_14",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_14",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_14",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018818089187195703,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_15",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_15",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_15",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_15",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.017525512504580898,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_16",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_16",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_16",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_16",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.018756285300042735,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_17",
+      "sourceExportObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_17",
+      "actualImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_17",
+      "expectedImportedObjectName": "Alice.Coelho.Export1099.rear_clock_left_drape_chain_link_17",
+      "importerNameSanitizationApplied": false,
+      "vertices": 384,
+      "triangles": 768,
+      "allSourceTrianglesMatched": true,
+      "literalImportedTriangleOrderExactlyPreserved": true,
+      "maxCornerPositionErrorM": 1.1992021354153657e-07,
+      "maxUVCornerError": 0.0,
+      "maxNormalAngleDegrees": 0.015351882795302297,
+      "materialMismatchCount": 0,
+      "maxImporterEncodingReplayComponentError": 0.0,
+      "rawPayloadPreservationAuditedSeparately": false,
+      "materialNames": [
+        "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983.001"
+      ]
+    }
+  ],
+  "totalTriangles": 1872066,
+  "allTriangleUVMaterialAssignmentsVerified": true,
+  "allImporterNormalEncodingReplaysVerified": true,
+  "rawNormalAudits": [],
+  "rawNormalAuditRequiredBeforePublication": true,
+  "rawSourceNormalIdentityInBlenderNotClaimed": true,
+  "FBXImporterExactValidateBlendNamesFunctionUsed": true,
+  "FBXImporterSourceSHA256": "262127c8e6af3e748d696d81070366f39e449aa73e6bc1d9463092b5cbf86741",
+  "renders": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_front_v1207.png",
+      "sha256": "50bbb06cf9b5da1b867fc7fd36138c675405d7d1455357df0431ae62c80962b0"
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_back_v1207.png",
+      "sha256": "3fd6adaf0671de6fa25433139d27a34b642a2ed22b1c5dbf35d32e9fc69ca82b"
+    },
+    {
+      "view": "rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_rear_threequarter_v1207.png",
+      "sha256": "b1a8123e41eccf2fcb217bf0eab5325c949fc8183c79d3c97b6174338e4093bd"
+    },
+    {
+      "view": "rear_clock_close",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_rear_clock_close_v1207.png",
+      "sha256": "c1186841d6a136b19068ae9a7bd82472dcb37ab6734ee930bb3b6c81587eb307"
+    },
+    {
+      "view": "right_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_right_elbow_v1207.png",
+      "sha256": "2e67d4899c8c8f938f54fcc37e5839467f6f0fc88f7e127d44976aec8563120d",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "left_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_left_elbow_v1207.png",
+      "sha256": "d2b72e4ac0b277e439cfb78b113ae98a3f2d709db2eddc1d84a5658cb7fe6d3d",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "walk_study_frame11",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame11_v1207.png",
+      "sha256": "8f33efbac9c62681ef1ea0464844faf215ea87146ef71ef841218ade420a7e57",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame11_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame11_profile_v1207.png",
+      "sha256": "db2cbf5304dd3f091d344a54bc79564eed9a11fdfa32b762246162196db26669",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame31_v1207.png",
+      "sha256": "d44d62bc42c213f72ef3abf08c3c766482dbf7367e2e07c1119720a896d7300f",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame31_left_profile_v1207.png",
+      "sha256": "87b63859490ee626d89466fc622281ec5b5e56a524cbb1a93a82271eb07b5798",
+      "linkedWalkStudyNotGameplayApproved": true
+    }
+  ],
+  "sameCameraLightsWorldAndColorManagement": true,
+  "skinWeightsAllTriangleCornersVerified": true,
+  "GLTFNativeExporterMinInfluenceReplayed": null,
+  "exactUnfilteredNativeWeightIdentityClaimed": true,
+  "exporterEncodingReplayToleranceM": 1e-05,
+  "unfilteredNativeToleranceNotAssertedForGLB": true,
+  "officialFilterAnalyticAudit1205Used": false,
+  "boneCount": 209,
+  "exportedManualMotionComparedToNative": [
+    {
+      "label": "right_elbow",
+      "maxWorldVertexErrorM": 4.955091412739421e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "left_elbow",
+      "maxWorldVertexErrorM": 4.955091412739421e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "left_index",
+      "maxWorldVertexErrorM": 4.955091412739421e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "right_index",
+      "maxWorldVertexErrorM": 4.955091412739421e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "walk_study_frame1",
+      "maxWorldVertexErrorM": 6.226920277185855e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 6.226920277185855e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "walk_study_frame11",
+      "maxWorldVertexErrorM": 7.410238254124124e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 7.410238254124124e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "walk_study_frame31",
+      "maxWorldVertexErrorM": 4.906647177449486e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 4.906647177449486e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    },
+    {
+      "label": "walk_study_frame42",
+      "maxWorldVertexErrorM": 6.186477889968955e-07,
+      "maxOriginalUnfilteredNativePoseErrorM": 6.186477889968955e-07,
+      "comparisonReference": "source_native_unfiltered",
+      "toleranceMNotRelaxed": 1e-05,
+      "allCharacterVerticesCompared": true
+    }
+  ],
+  "rigged": true,
+  "rigComplete": false,
+  "animations": 0,
+  "canonicalIdentityApproved": false,
+  "physicsVerified": false,
+  "productionComplete": false,
+  "notPublished": true,
+  "elapsedSeconds": 776.5790114402771
+}

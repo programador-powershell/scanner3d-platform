@@ -1,0 +1,271 @@
+{
+  "version": "v1213",
+  "allTwentyCurrentReimportImagesActuallyInspected": true,
+  "allFiveNativeWholeImagesActuallyInspected": true,
+  "records": [
+    {
+      "format": "glb",
+      "report": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_glb_audit_v1206.json",
+      "reportSHA256": "0fbf6a7e783b7a0746afe6f2d5c182e6a49f0f23ceae860a1c8bf2819a3c84e2",
+      "all202MeshesVerified": true,
+      "eightActualDiagnosticPoses": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 7.264759460667847e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 9.563530511513818e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.4616816770285368e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 1.4819165699009318e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.4616816770285368e-06,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame1",
+          "maxWorldVertexErrorM": 1.4738220670551527e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.29682609642623e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame11",
+          "maxWorldVertexErrorM": 1.4994791399658425e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.933169344032649e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame31",
+          "maxWorldVertexErrorM": 1.4886998087604297e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 1.947158125403803e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame42",
+          "maxWorldVertexErrorM": 1.5158269661696977e-06,
+          "maxOriginalUnfilteredNativePoseErrorM": 2.292696080985479e-05,
+          "comparisonReference": "source_native_plus_independently_replayed_official_glTF_filter",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "tenActualWholeRendersInspected": true,
+      "officialGLTFEncodingFilterAccountedFor": true
+    },
+    {
+      "format": "fbx",
+      "report": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/reimport_whole_fbx_audit_v1207.json",
+      "reportSHA256": "0f044b5eb716d3f675a6890d555446c9680281af8080b0ff867d4349ac96bfa4",
+      "all202MeshesVerified": true,
+      "eightActualDiagnosticPoses": [
+        {
+          "label": "right_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_elbow",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "left_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "right_index",
+          "maxWorldVertexErrorM": 4.955091412739421e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.955091412739421e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame1",
+          "maxWorldVertexErrorM": 6.226920277185855e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 6.226920277185855e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame11",
+          "maxWorldVertexErrorM": 7.410238254124124e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 7.410238254124124e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame31",
+          "maxWorldVertexErrorM": 4.906647177449486e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 4.906647177449486e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        },
+        {
+          "label": "walk_study_frame42",
+          "maxWorldVertexErrorM": 6.186477889968955e-07,
+          "maxOriginalUnfilteredNativePoseErrorM": 6.186477889968955e-07,
+          "comparisonReference": "source_native_unfiltered",
+          "toleranceMNotRelaxed": 1e-05,
+          "allCharacterVerticesCompared": true
+        }
+      ],
+      "tenActualWholeRendersInspected": true,
+      "officialGLTFEncodingFilterAccountedFor": true
+    }
+  ],
+  "actualImages": [
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_front_v1206.png",
+      "sha256": "8d04f19b4d971b21855bca3736e6e23203a107a45db67c632ab40310df1330c9"
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_back_v1206.png",
+      "sha256": "a23a40873cad11fad0b6a822a353d98663d466a0fe22fcf164dc6743ef5e7841"
+    },
+    {
+      "view": "rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_rear_threequarter_v1206.png",
+      "sha256": "c2e073711ac78f0730fc110e49c703bde8244768f33c02483d448ff3cb5a379c"
+    },
+    {
+      "view": "rear_clock_close",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_rear_clock_close_v1206.png",
+      "sha256": "17313ad07a0b6ad287f85a1263a203680d8fc70f6270f5f82feac7e06039f323"
+    },
+    {
+      "view": "right_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_right_elbow_v1206.png",
+      "sha256": "3cf390177e22adba891d51f98f80f9e7fe0bc3252ec6fe6ac0f705dc2fad3a79",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "left_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_left_elbow_v1206.png",
+      "sha256": "e504744a3ff1c183ded475c55deb417e06c2796074e92bc48d0de2ab4b3f4664",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "walk_study_frame11",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_walk_study_frame11_v1206.png",
+      "sha256": "f13428ec1028ab409b1dce688c49e3c24fb99f87ca493b83635ae10bd1f05c7b",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame11_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_walk_study_frame11_profile_v1206.png",
+      "sha256": "08ea69a83efd4340d66f94200c2b0f0f04027ad9cea6433e21770802c45991cf",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_walk_study_frame31_v1206.png",
+      "sha256": "50ccad68ddad16c1ded0b3754af2bba325ad0581601809599c92b3b46d22b1ea",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_glb_walk_study_frame31_left_profile_v1206.png",
+      "sha256": "107a93634097f877bef86f030a58f65ad1df42926f19a79da94f3a4fc83da5d6",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_front_v1207.png",
+      "sha256": "50bbb06cf9b5da1b867fc7fd36138c675405d7d1455357df0431ae62c80962b0"
+    },
+    {
+      "view": "back",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_back_v1207.png",
+      "sha256": "3fd6adaf0671de6fa25433139d27a34b642a2ed22b1c5dbf35d32e9fc69ca82b"
+    },
+    {
+      "view": "rear_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_rear_threequarter_v1207.png",
+      "sha256": "b1a8123e41eccf2fcb217bf0eab5325c949fc8183c79d3c97b6174338e4093bd"
+    },
+    {
+      "view": "rear_clock_close",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_rear_clock_close_v1207.png",
+      "sha256": "c1186841d6a136b19068ae9a7bd82472dcb37ab6734ee930bb3b6c81587eb307"
+    },
+    {
+      "view": "right_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_right_elbow_v1207.png",
+      "sha256": "2e67d4899c8c8f938f54fcc37e5839467f6f0fc88f7e127d44976aec8563120d",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "left_elbow",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_left_elbow_v1207.png",
+      "sha256": "d2b72e4ac0b277e439cfb78b113ae98a3f2d709db2eddc1d84a5658cb7fe6d3d",
+      "manualDiagnosticPose": true
+    },
+    {
+      "view": "walk_study_frame11",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame11_v1207.png",
+      "sha256": "8f33efbac9c62681ef1ea0464844faf215ea87146ef71ef841218ade420a7e57",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame11_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame11_profile_v1207.png",
+      "sha256": "db2cbf5304dd3f091d344a54bc79564eed9a11fdfa32b762246162196db26669",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame31_v1207.png",
+      "sha256": "d44d62bc42c213f72ef3abf08c3c766482dbf7367e2e07c1119720a896d7300f",
+      "linkedWalkStudyNotGameplayApproved": true
+    },
+    {
+      "view": "walk_study_frame31_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/Evidence/whole_reimport_fbx_walk_study_frame31_left_profile_v1207.png",
+      "sha256": "87b63859490ee626d89466fc622281ec5b5e56a524cbb1a93a82271eb07b5798",
+      "linkedWalkStudyNotGameplayApproved": true
+    }
+  ],
+  "observation": "Local source fragments behind both sleeves have improved weight continuity. Remaining solid hair/upper shoulder spikes and provisional cloth binding visible; same canonical body/head, anatomical168cm, individual hair and physics/gameplay unapproved.",
+  "productionComplete": false
+}

@@ -1,0 +1,1628 @@
+{
+  "version": "v1209",
+  "directBinaryFBXPayload": true,
+  "rawPositionScopeLocalMesh": true,
+  "worldObjectTransformVerifiedByIndependentReimport1051": false,
+  "worldObjectTransformRequiresIndependentReimport1051": true,
+  "formatVersion": 7400,
+  "sha256": "561c24d236e31afb9a9198b9493ca0ea439147ac619696fc3460c5f844a79cb2",
+  "records": [
+    {
+      "role": "character",
+      "triangles": 150000,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "apron",
+      "triangles": 8400,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "chain",
+      "triangles": 61056,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "cord",
+      "triangles": 22136,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "lace",
+      "triangles": 1144188,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "ornament_outer_left",
+      "triangles": 31216,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_left",
+      "triangles": 14330,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_center",
+      "triangles": 6424,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_inner_right",
+      "triangles": 15096,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "ornament_outer_right",
+      "triangles": 30728,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_base_loop",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_structured_interfacing",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_satin_lining",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_printed_tail",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_plain_satin_tail_back",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_base_loop",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_structured_interfacing",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_satin_lining",
+      "triangles": 6496,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_printed_tail",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_right_plain_satin_tail_back",
+      "triangles": 2784,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_center_center_wrap",
+      "triangles": 1760,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_bow_left_base_loop_sewn_edges",
+      "triangles": 26992,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_left_printed_tail_sewn_edges",
+      "triangles": 35840,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_right_base_loop_sewn_edges",
+      "triangles": 26992,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_right_printed_tail_sewn_edges",
+      "triangles": 35840,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_reinforced_backing",
+      "triangles": 4896,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_reinforced_left_attachment_loop",
+      "triangles": 1296,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_reinforced_right_attachment_loop",
+      "triangles": 1296,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_bow_reinforced_root_stitches",
+      "triangles": 1344,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_closed_watch_case",
+      "triangles": 3840,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_porcelain_dial",
+      "triangles": 1536,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_outer_bezel_recess",
+      "triangles": 1536,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_inner_bezel_highlight",
+      "triangles": 1920,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_sixty_raised_minute_indices",
+      "triangles": 720,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_roman_XII",
+      "triangles": 2772,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_I",
+      "triangles": 620,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_II",
+      "triangles": 1240,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_III",
+      "triangles": 1860,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_IV",
+      "triangles": 1324,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_V",
+      "triangles": 704,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_VI",
+      "triangles": 1324,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_VII",
+      "triangles": 1944,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_VIII",
+      "triangles": 2564,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_IX",
+      "triangles": 2152,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_X",
+      "triangles": 1532,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_roman_XI",
+      "triangles": 2152,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByPolygonVertex"
+    },
+    {
+      "role": "rear_clock_hour_hand_leaf",
+      "triangles": 32,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_minute_hand_leaf",
+      "triangles": 32,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_central_hand_rivet",
+      "triangles": 288,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_oval_suspension_bail",
+      "triangles": 1536,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_winding_crown_base",
+      "triangles": 960,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_anchor_-1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_anchor_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_anchor_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_dial_outer_roman_ring",
+      "triangles": 4800,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_dial_inner_minute_ring",
+      "triangles": 4800,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_dial_inner_center_ring",
+      "triangles": 4800,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_dial_inner_center_highlight",
+      "triangles": 4800,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_case_scalloped_filigree_border",
+      "triangles": 9600,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_2",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_3",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_4",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_5",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_6",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_7",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_8",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_9",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_10",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_11",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_12",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_13",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_14",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_-1_link_15",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_collar",
+      "triangles": 1440,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_0",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_1",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_2",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_3",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_4",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_5",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_6",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_7",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_8",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_wire_9",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_2",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_3",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_4",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_5",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_6",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_7",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_8",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_9",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_10",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_11",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_12",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_13",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_14",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_15",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_16",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_0_link_17",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_collar",
+      "triangles": 1440,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_0",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_1",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_2",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_3",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_4",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_5",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_6",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_7",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_8",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_wire_9",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_2",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_3",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_4",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_5",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_6",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_7",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_8",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_9",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_10",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_11",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_12",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_13",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_14",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_chain_1_link_15",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_collar",
+      "triangles": 1440,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_0",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_1",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_2",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_3",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_4",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_5",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_6",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_7",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_8",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_wire_9",
+      "triangles": 144,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_closed_ferrule",
+      "triangles": 512,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_left",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_-1_neck_right",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_closed_ferrule",
+      "triangles": 512,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_left",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_0_neck_right",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_closed_ferrule",
+      "triangles": 512,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_left",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_tassel_1_neck_right",
+      "triangles": 256,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_case_anchor",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_30",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_31",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_32",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_case_anchor",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_0",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_2",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_3",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_4",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_5",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_6",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_7",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_8",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_9",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_10",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_11",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_12",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_13",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_14",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_15",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_16",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_17",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_18",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_19",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_20",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_21",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_22",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_23",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_24",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_chain_link_25",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_long_side_retaining_oval",
+      "triangles": 1536,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_front_case_scroll_relief",
+      "triangles": 49152,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_1",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_2",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_3",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_4",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_5",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_6",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_7",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_8",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_9",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_10",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_11",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_12",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_13",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_14",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_15",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_16",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    },
+    {
+      "role": "rear_clock_left_drape_chain_link_17",
+      "triangles": 768,
+      "triangleOrderExactlyPreserved": true,
+      "maxRawLocalPositionComponentErrorM": 0.0,
+      "maxRawNormalComponentError": 0.0,
+      "mapping": "ByVertice"
+    }
+  ],
+  "productionComplete": false
+}

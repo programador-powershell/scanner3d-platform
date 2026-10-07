@@ -1,0 +1,14 @@
+{
+  "version": "v1188",
+  "allNineActualDiagnosticViewsInspected": true,
+  "acceptedForLimitedWeightContinuityStudy": true,
+  "UVRoot": 38212,
+  "vertices": 95,
+  "triangles": 114,
+  "observation": "Source patch sits behind right puff sleeve, between torso and hair. Original UV is dark navy without visible longitudinal hair strands; exact construction remains provisional. In Walk the connected patch is pulled into long triangles by sharply differing torso/arm weights.",
+  "scope": "Smooth only existing weights along actual triangle-edge adjacency of this95vertex connected patch. Preserve geometry/UV/material/rig/library and all other vertices. Do not remove or replace the patch or claim hair/cloth/fidelity finished.",
+  "semanticHairOrClothFinalClassificationApproved": false,
+  "canonicalIdentityApproved": false,
+  "productionComplete": false,
+  "createdAt": "2026-10-06T22:53:54.207777+00:00"
+}

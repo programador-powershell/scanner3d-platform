@@ -1,0 +1,213 @@
+{
+  "version": "v1215",
+  "kind": "whole_character_intermediate_weight_continuity_checkpoint",
+  "wholeCharacterWithDress": true,
+  "workingBlend": {
+    "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/left_patch_weights_whole_CANDIDATE_v1200/alice_coelho_complete_left_patch_weight_CANDIDATE_v1200.blend",
+    "bytes": 906078967,
+    "sha256": "f22b541dbd8c845b9c1cda3f9bebe941efd53fad0c72218561da0a8844cb2135"
+  },
+  "releaseURL": "https://github.com/programador-powershell/project-alice-game/releases/tag/coelho-whole-walk-weights-wip-v1203",
+  "files": {
+    "glb": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_walk_weight_checkpoint_v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.glb",
+      "bytes": 238895588,
+      "sha256": "0a9f19b608b1179b5cd69d9e08099a70accbee4c731385641a0d014217529c2d",
+      "filename": "alice_coelho_complete_whole_walk_weight_checkpoint_v1203.glb",
+      "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-whole-walk-weights-wip-v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.glb",
+      "assetId": 617017669,
+      "uploaded": true,
+      "downloadHashVerified": true
+    },
+    "fbx": {
+      "path": "Assets/Characters/alice_coelho/Exports/whole_walk_weight_checkpoint_v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.fbx",
+      "bytes": 309813708,
+      "sha256": "561c24d236e31afb9a9198b9493ca0ea439147ac619696fc3460c5f844a79cb2",
+      "filename": "alice_coelho_complete_whole_walk_weight_checkpoint_v1203.fbx",
+      "url": "https://github.com/programador-powershell/project-alice-game/releases/download/coelho-whole-walk-weights-wip-v1203/alice_coelho_complete_whole_walk_weight_checkpoint_v1203.fbx",
+      "assetId": 617020067,
+      "uploaded": true,
+      "downloadHashVerified": true
+    }
+  },
+  "sourceWorkingVersion": "v1200",
+  "exportsVersion": "v1203",
+  "skeletonBones": 209,
+  "meshNodes": 202,
+  "totalTriangles": 1872066,
+  "animations": 0,
+  "sharedLibrary": {
+    "library": "F:\\Alice\\SharedProduction\\SharedBase\\Development\\alice_shared_base.blend",
+    "librarySHA256": "5b75fe6c2bf82165ba120df8afd027224d5a60b5472b91cf00ae777ef6221f80",
+    "rigObject": "Alice.Shared.Rig",
+    "headObject": "Alice.Shared.Head",
+    "linkedHeadMesh": true,
+    "linkedSkeleton": true,
+    "headMeshBinding": "direct_link",
+    "headMeshOverrideProperties": [],
+    "editablePoseOverride": true,
+    "headDataPreserved": {
+      "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+      "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+      "uv": {
+        "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+      },
+      "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+    },
+    "rigRestHash": "22fd5b5c82011dbfa9134ce2ce585ec86e9f2ba47b2b1f470733320d6c37005e",
+    "boneCount": 209,
+    "actions": {},
+    "bodyMissing": true,
+    "sharedMeshes": {
+      "shared_head": {
+        "name": "Alice.Shared.Head",
+        "meshHash": {
+          "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+          "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+          "uv": {
+            "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+          },
+          "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+        },
+        "linked": true,
+        "vertices": 33244,
+        "faces": 66484,
+        "armatureTargets": [
+          "Alice.Shared.Rig"
+        ],
+        "objectMatrix": [
+          [
+            0.9999999403953552,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999403953552,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "shapeKeys": []
+  },
+  "sourceAuthoringRetained": true,
+  "fullBlendExternalOnSharedDisk": true,
+  "all42NativeWalkStudyFramesVerified": true,
+  "eightDiagnosticPosesVerifiedPerFormat": true,
+  "twentyFiveActualImagesInspected": true,
+  "VercelUsed": false,
+  "portalChanged": false,
+  "sitePublicationClaimed": false,
+  "productionComplete": false,
+  "limitations": [
+    "42-frame linked Walk is a study; exports contain zero animations",
+    "201 garment/accessory objects still have provisional pelvis binding",
+    "Other solid hair/shoulder deformation remains: global sum681 and max116 in the native Walk diagnostic",
+    "Canonical common body/head and anatomical168cm not approved",
+    "Individual strands, cloth/physics/wind/collisions/actions/expressions/gameplay unfinished",
+    "GLB native exporter filters tiny weights; effect independently reproduced without relaxing tolerance"
+  ],
+  "evidenceSHA256": {
+    ".gitattributes": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+    "actual_export_visual_review_v1213.json": "d93302445279b1a4c0791cb7ef7df4b8ebc7d74badb52c3410a417f5d2f34ba0",
+    "browser_current_whole_audit_v1219.json": "73f8442e7e0875a32a7903d54b0c1c00214a3c9126522f42798b3b99f07ff895",
+    "browser_current_whole_walk31_profile_v1219.png": "a657f2cb37e5c3b9e33ab46f9f756cd97cf3af4b55dc5324fbc47681be0ffb16",
+    "browser_current_whole_walk31_v1219.png": "7ad4c6154fd636ef29f4861140e63187054340754b3bf3912c5f60d07a0db44b",
+    "layer_reference_index_v008.json": "6e539d093f4841400fab21079185487658735727e7d8bba280b7f06ddc0731ca",
+    "left_patch_analytic_audit_v1199.json": "39df91e925c9752002a2dff2659843517338fd4aaaf7ec22d703a2014203e49e",
+    "left_patch_weight_review_v1199.json": "eff3afcb3212d9c54143589cd49429bbeaadc5df27504665f63a7b8f89cd0e4d",
+    "local_patch_weight_review_v1188.json": "5ca7b288ac721f9bede18bc5c59cf095d3135e6bc26e03cf1b47c538a1e706a6",
+    "native_left_patch_whole_visual_review_v1201.json": "0fc04057411c230d3c24e2548abea82593b17c478c3a540ad010d57b09b6e67b",
+    "native_stage_photo_review_v1167.json": "34ae593211ca79b65e2c7b222791949190d3530308a892345ffaeb51b5fac4ce",
+    "native_weight_guard_correction_v1191.json": "58c55d5bdfc14c81cc8a780c9ae089eb0395e28b3968c210eb2d9c1daab3f74d",
+    "README.md": "646463bbc9c10726359d2da191445c8125f1357ca81e892f3e9cd20da9aed2e0",
+    "reimport_whole_fbx_audit_v1207.json": "0f044b5eb716d3f675a6890d555446c9680281af8080b0ff867d4349ac96bfa4",
+    "reimport_whole_glb_audit_v1206.json": "0fbf6a7e783b7a0746afe6f2d5c182e6a49f0f23ceae860a1c8bf2819a3c84e2",
+    "remaining_current_native_regions_audit_v1221.json": "63bdf063b0dc0639a7d329098d9b0b6ee28917feae973426e82795d89d5abbb7",
+    "remaining_regions_audit_v1196.json": "21544e1c2c2032778985fdc6d3908969c9e69421467745bc8c229d723e4d00bb",
+    "right_patch_analytic_audit_v1189.json": "30aee843be4f6e8cf27f99444ae9c22bcfeecd8f951044b2a97bffc1cde75b5c",
+    "source_current_whole_manifest_v1200.json": "2d8c174a031b60535e0ff38506df4ceeb952e43f0131a84b6a41a664ed5eb9e5",
+    "source_right_patch_manifest_v1191.json": "2f78f11432ab75f9b37f5157249a79973fd59dff688fc5c41c9295bbc0eb85b5",
+    "walk_export_filter_analytic_audit_v1205.json": "0db11538d62582bde8a6923e2f9d2d31d055461ccfcb21fff706922c279c510c",
+    "whole_fbx_channel_semantics_audit_v1212.json": "3074b2f466d38cd5d4f45e1c9c9340e0fb08f471753faa1474973597febd59f9",
+    "whole_fbx_embedded_material_audit_v1211.json": "67c45ba0a86fd57acf172bfa80ec1a95f0428339e8c76d49de4278867b8df7c7",
+    "whole_fbx_raw_normal_payload_audit_v1209.json": "64e2eee790ed1aed97c938a01c671639b631c2ded2d76da92323c9aca1ecaf37",
+    "whole_glb_material_pixel_audit_v1210.json": "b94edbe4fa945581cc9c83bc66efdf332d557c0be4aaf9507658d8ed31022a8c",
+    "whole_glb_raw_normal_payload_audit_v1208.json": "a86e370ea4655f101846353c02490687cd82d0b4cfd92810017470549c52401d",
+    "whole_local_patch_checkpoint_review_v1213.json": "7636eab7e78db9caf88ba18cba2ee8d0b46a4b6dfc4c960b62d42a21666b95ec",
+    "whole_reimport_fbx_back_v1207.png": "3fd6adaf0671de6fa25433139d27a34b642a2ed22b1c5dbf35d32e9fc69ca82b",
+    "whole_reimport_fbx_front_v1207.png": "50bbb06cf9b5da1b867fc7fd36138c675405d7d1455357df0431ae62c80962b0",
+    "whole_reimport_fbx_left_elbow_v1207.png": "d2b72e4ac0b277e439cfb78b113ae98a3f2d709db2eddc1d84a5658cb7fe6d3d",
+    "whole_reimport_fbx_rear_clock_close_v1207.png": "c1186841d6a136b19068ae9a7bd82472dcb37ab6734ee930bb3b6c81587eb307",
+    "whole_reimport_fbx_rear_threequarter_v1207.png": "b1a8123e41eccf2fcb217bf0eab5325c949fc8183c79d3c97b6174338e4093bd",
+    "whole_reimport_fbx_right_elbow_v1207.png": "2e67d4899c8c8f938f54fcc37e5839467f6f0fc88f7e127d44976aec8563120d",
+    "whole_reimport_fbx_walk_study_frame11_profile_v1207.png": "db2cbf5304dd3f091d344a54bc79564eed9a11fdfa32b762246162196db26669",
+    "whole_reimport_fbx_walk_study_frame11_v1207.png": "8f33efbac9c62681ef1ea0464844faf215ea87146ef71ef841218ade420a7e57",
+    "whole_reimport_fbx_walk_study_frame31_left_profile_v1207.png": "87b63859490ee626d89466fc622281ec5b5e56a524cbb1a93a82271eb07b5798",
+    "whole_reimport_fbx_walk_study_frame31_v1207.png": "d44d62bc42c213f72ef3abf08c3c766482dbf7367e2e07c1119720a896d7300f",
+    "whole_reimport_glb_back_v1206.png": "a23a40873cad11fad0b6a822a353d98663d466a0fe22fcf164dc6743ef5e7841",
+    "whole_reimport_glb_front_v1206.png": "8d04f19b4d971b21855bca3736e6e23203a107a45db67c632ab40310df1330c9",
+    "whole_reimport_glb_left_elbow_v1206.png": "e504744a3ff1c183ded475c55deb417e06c2796074e92bc48d0de2ab4b3f4664",
+    "whole_reimport_glb_rear_clock_close_v1206.png": "17313ad07a0b6ad287f85a1263a203680d8fc70f6270f5f82feac7e06039f323",
+    "whole_reimport_glb_rear_threequarter_v1206.png": "c2e073711ac78f0730fc110e49c703bde8244768f33c02483d448ff3cb5a379c",
+    "whole_reimport_glb_right_elbow_v1206.png": "3cf390177e22adba891d51f98f80f9e7fe0bc3252ec6fe6ac0f705dc2fad3a79",
+    "whole_reimport_glb_walk_study_frame11_profile_v1206.png": "08ea69a83efd4340d66f94200c2b0f0f04027ad9cea6433e21770802c45991cf",
+    "whole_reimport_glb_walk_study_frame11_v1206.png": "f13428ec1028ab409b1dce688c49e3c24fb99f87ca493b83635ae10bd1f05c7b",
+    "whole_reimport_glb_walk_study_frame31_left_profile_v1206.png": "107a93634097f877bef86f030a58f65ad1df42926f19a79da94f3a4fc83da5d6",
+    "whole_reimport_glb_walk_study_frame31_v1206.png": "50ccad68ddad16c1ded0b3754af2bba325ad0581601809599c92b3b46d22b1ea",
+    "whole_skin_glb_sheen_compatibility_v1203.json": "332994b0c184b9d7514ce2cf46b76518dd7dda721926f6404777a142d6ef5849",
+    "whole_skin_motion_reference_v1204.json": "3a54153a0379556f6fb42da4eb7e08066d56ca603bdbb569347cda5f8b7a3bf0",
+    "whole_walk_front_quarter_frame11_v1200.png": "c7b48aa2e60e89d733911d9dc97d330af6445a7c50578a6833d033e979a9bce0",
+    "whole_walk_front_start_frame1_v1200.png": "a16968210083ddd17b95a97587a354557ad633e1c8cb772be15f9d9374eef6bf",
+    "whole_walk_front_threequarter_frame31_v1200.png": "4060dfb45f2f8743a9f41fe6266f9c0e9b5c682e5c7b2511fd49d6196c25cf79",
+    "whole_walk_left_profile_threequarter_frame31_v1200.png": "f2a7cea05bfaa1653769b5f34a0703cbc12e5ff44d8ce5154f8b07dc817c5ae8",
+    "whole_walk_profile_quarter_frame11_v1200.png": "6b075c245e2a8afcbae68992695e634f322a3d12b9e882b1ac4e60be89b18c53",
+    "tools/alice_shared_base_lib.py": "0faa20ad9bc873fec345ff5e68a7f890ec75712e79b9d912b592482c011f741a",
+    "tools/audit_coelho_actual_remaining_walk_regions_v1221.py": "46fad98e31e8421bb42e86e96755a8d2f2254f387ad626d57c72cd0cb12ff85c",
+    "tools/audit_coelho_left_patch_export_filter_v1205.py": "46e9573c49b8e5a0fb7936d3565a50a181e9af89618d9350c0da1ae4e8df5df9",
+    "tools/audit_coelho_remaining_walk_regions_v1196.py": "889e0a2bfce073e71015cfe7995e518be643c5cba268e13433e02cca156818a3",
+    "tools/author_coelho_left_patch_weights_whole_v1200.py": "b794dc6d65264ede1916c797c357537e33761e977fcecb61c75d26e74a558437",
+    "tools/author_coelho_local_patch_weights_whole_v1191.py": "cd81496e194a246fb274556acae5bfd8564a414df1f43c8d51d0bfdbd83094ca",
+    "tools/capture_coelho_left_patch_true_motion_v1204.py": "3fca09d4e450a6e0effb2550f4ae0279acc808f7485935242e103350beb65b3c",
+    "tools/export_coelho_capture_then_whole_left_patch_v1202.py": "defa4121d20b7fe2380487661fc06b9e3a73cb93cfc3dc740604f80e5a84862a",
+    "tools/export_coelho_whole_left_patch_weights_v1202.py": "70f81b3902f7af05cd36cda4d128c230095dc26dc4cc7ea9338e752fc7d8d42d",
+    "tools/fix_coelho_left_patch_glb_sheen_v1203.py": "d6986d5c0d322b3d00b9769e61ef8138143e58de8f6545fe5690dbe57edb2a25",
+    "tools/prepare_coelho_actual_remaining_walk_audit_v1221.py": "b5e13febf753ebdb8562152ab98b66d611866bb5eb950bc7c8591875ab53938e",
+    "tools/prepare_coelho_current_whole_preview_v1219.py": "832cfc14c1ce38a3c77442490e5a0e0101b00c2c28f668e0f295160a345fcc59",
+    "tools/prepare_coelho_left_patch_study_v1199.py": "1bc38295d72506b5e2e8ec93abb4acb98226d3ee89a060e0c240bc4b1cce569f",
+    "tools/prepare_coelho_left_patch_whole_candidate_v1200.py": "be184e67f1cfacc01029837e59c552834e85a467ca4d32933d2ee7839e25c7a8",
+    "tools/prepare_coelho_left_patch_whole_exports_v1201.py": "d412ed8cb3895f01b81f7d21554b41b351f3c45856701ad3636dad649ac24c52",
+    "tools/reimport_coelho_left_glb_full_pipeline_v1206.py": "c910364fcdb00bb5b0fa720e3ca3d2e60b04cbfbd230ab88b09dd20eb4d95ea4",
+    "tools/reimport_coelho_whole_left_patch_fbx_v1207.py": "d4984871c9d0b384412d1903f03c1c6cd5625dfbdd8220c4b505193072adf417",
+    "tools/reimport_coelho_whole_left_patch_glb_v1206.py": "e9fa4ead4bf1ca07b5047140cbb073bdea0201a41e50f4d7255d6cf29da20629",
+    "tools/review_coelho_left_patch_original_uv_v1197.py": "239b63784f5280aea7c7e16878b056b3dec2926303b9a052b90256f4fd817adb",
+    "tools/review_coelho_patch_original_uv_v1187.py": "a85e942654b1d8d5c27ad8dd345f5d335f3327338f464570a8b50ad4b9fc0acf",
+    "tools/review_coelho_residual_patch_geometry_v1185.py": "4c88089e4fc0e550d0cb762f2e8f3e68dc659576fb79d666b49374f38b0b150c",
+    "tools/review_coelho_whole_local_patch_checkpoint_v1213.py": "29b54f53eeb42ffafb74b299abd33264e3f320d53475673f98358f74061a6928",
+    "tools/run_coelho_factory_pipeline.py": "f04c39c586c463dcb5f93d7e1b7a3baab290dc8445b7d4e3d30df34722af03f7",
+    "tools/serve_coelho_current_whole_preview_v1219.cjs": "1d90d42955b48283e7e33684e695db815e7a8cb8099b3e9c0db919a4c36ec8da",
+    "tools/study_coelho_left_patch_topology_weights_v1199.py": "78cd6c7136529136189bfdb87e91790124072de0a33bc69e13db4e6d372056d8",
+    "tools/study_coelho_local_patch_topology_weights_v1189.py": "3adc01d5ca547bb7e0f48c52fd0689048b16c6e54ad3f66e5e7744426a8c5a3f",
+    "tools/verify_coelho_left_patch_fbx_channels_v1212.py": "c31f46115f1df2e757b3f5f21ca50ce2c44dbeb512075c0a6ca6f28f56a0de09",
+    "tools/verify_coelho_left_patch_fbx_materials_v1211.py": "004cee11c672c02a261ffc1a33ba398b997b1d8e0e451f927a5d8354f4b2ea40",
+    "tools/verify_coelho_left_patch_fbx_normals_v1209.py": "c9026edabf7f818aad1966d7573aa4b25a8779b6aee0e04fe7e817f49b0c98e7",
+    "tools/verify_coelho_left_patch_fbx_raw_sequence_v1211.py": "3cbb4d8ce3ffc37e014c2ce4606348f042be0df421df407274755d9018dfd612",
+    "tools/verify_coelho_left_patch_glb_materials_v1210.py": "cdafe51e8280ed925ae89556ab76c423fe6f85499f73eca5d7a7617195f0c831",
+    "tools/verify_coelho_left_patch_glb_normals_v1208.py": "f100f8c6cb3a85033d912745cb2aa291dad2b3f0ca470a36d97c15ce4ba09848"
+  }
+}

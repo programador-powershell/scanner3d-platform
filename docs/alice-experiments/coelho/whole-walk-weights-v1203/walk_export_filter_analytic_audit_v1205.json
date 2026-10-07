@@ -1,0 +1,230 @@
+{
+  "version": "v1205",
+  "independentAnalyticLinearBlendSkinning": true,
+  "sourceGeometryUnchanged": true,
+  "allEightUnfilteredNativePosesReplayed": true,
+  "officialExporterThreshold": 0.0001,
+  "nativeReferenceToleranceM": 2e-06,
+  "reimportToleranceMNotRelaxed": 1e-05,
+  "filteredReferenceIsExporterEncodingReplayNotNewSourceGeometry": true,
+  "filteredVertexCount": 1347,
+  "poses": [
+    {
+      "label": "right_elbow",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 4.0370384240402864e-07,
+      "filterOnlyMaxDisplacementM": 7.27394876918918e-06,
+      "worstVertex": 14226,
+      "weightsBefore": [
+        9.78184471023269e-05,
+        0.848732054233551,
+        0.15117016434669495,
+        0.0
+      ],
+      "weightsAfter": [
+        0.0,
+        0.8488150525745003,
+        0.15118494742549965,
+        0.0
+      ],
+      "joints": [
+        32,
+        33,
+        34,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_right_elbow_v1205.npz",
+      "filteredReferenceSHA256": "f31cd2d28423a6a3584fe45e713d4cbfd16c61c704db22ba31d3a0e9b84a15e3"
+    },
+    {
+      "label": "left_elbow",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 3.558194880938129e-07,
+      "filterOnlyMaxDisplacementM": 9.425975693764762e-06,
+      "worstVertex": 99967,
+      "weightsBefore": [
+        9.395208326168358e-05,
+        0.04996572062373161,
+        0.9499403238296509,
+        0.0
+      ],
+      "weightsAfter": [
+        0.0,
+        0.04997041562144603,
+        0.950029584378554,
+        0.0
+      ],
+      "joints": [
+        8,
+        9,
+        10,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_left_elbow_v1205.npz",
+      "filteredReferenceSHA256": "9a1eb971cd39c4bf88f131723ace2b78fbf07b159572ba92ecd66cd88cc7dc7a"
+    },
+    {
+      "label": "left_index",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 3.8760914882696085e-07,
+      "filterOnlyMaxDisplacementM": 1.6179493117759262e-07,
+      "worstVertex": 20000,
+      "weightsBefore": [
+        0.5738192200660706,
+        0.4261520206928253,
+        2.8623189791687764e-05,
+        0.0
+      ],
+      "weightsAfter": [
+        0.5738357231459866,
+        0.4261642768540133,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        32,
+        33,
+        34,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_left_index_v1205.npz",
+      "filteredReferenceSHA256": "8d03853fe7ae7a32d9cbc227d3d076dfd9122abc6a185b5f3d646a31822199f8"
+    },
+    {
+      "label": "right_index",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 3.8760914882696085e-07,
+      "filterOnlyMaxDisplacementM": 1.6179493117759262e-07,
+      "worstVertex": 20000,
+      "weightsBefore": [
+        0.5738192200660706,
+        0.4261520206928253,
+        2.8623189791687764e-05,
+        0.0
+      ],
+      "weightsAfter": [
+        0.5738357231459866,
+        0.4261642768540133,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        32,
+        33,
+        34,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_right_index_v1205.npz",
+      "filteredReferenceSHA256": "187623b943c706021be1fff423ff1b6dfd1f10a6d12d63df8cb687abd02b5d89"
+    },
+    {
+      "label": "walk_study_frame1",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 3.489208104570691e-07,
+      "filterOnlyMaxDisplacementM": 2.342192426508084e-05,
+      "worstVertex": 71822,
+      "weightsBefore": [
+        9.357088129036129e-05,
+        0.9999064207077026,
+        0.0,
+        0.0
+      ],
+      "weightsAfter": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        60,
+        61,
+        -1,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_walk_study_frame1_v1205.npz",
+      "filteredReferenceSHA256": "87f29cff2a27b8e3e194e9dd86d2b6d3eb3e9c2d3f6619b75e413d0d542f95d5"
+    },
+    {
+      "label": "walk_study_frame11",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 4.1408905117373797e-07,
+      "filterOnlyMaxDisplacementM": 2.9388421803374852e-05,
+      "worstVertex": 18410,
+      "weightsBefore": [
+        0.9855058193206787,
+        0.01439916342496872,
+        9.503834007773548e-05,
+        0.0
+      ],
+      "weightsAfter": [
+        0.9855994682760456,
+        0.014400531723954347,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        32,
+        33,
+        34,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_walk_study_frame11_v1205.npz",
+      "filteredReferenceSHA256": "eb3cf399151c3e82acaf093ec14b370974235bf0e47544dbcf30473df0e6ff4f"
+    },
+    {
+      "label": "walk_study_frame31",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 4.271166307689497e-07,
+      "filterOnlyMaxDisplacementM": 1.9433059894155572e-05,
+      "worstVertex": 20899,
+      "weightsBefore": [
+        0.7161865830421448,
+        0.2837148606777191,
+        9.861069702310488e-05,
+        0.0
+      ],
+      "weightsAfter": [
+        0.7162571746849025,
+        0.2837428253150975,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        32,
+        33,
+        34,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_walk_study_frame31_v1205.npz",
+      "filteredReferenceSHA256": "7ccd66d2667b89ebce9612574c69b32b77bf92603b40c8c89b15cf4db1ff5b0b"
+    },
+    {
+      "label": "walk_study_frame42",
+      "allNativeVerticesAnalyticallyReplayed": true,
+      "unfilteredReplayMaxErrorM": 4.768275132203271e-07,
+      "filterOnlyMaxDisplacementM": 2.343408611751575e-05,
+      "worstVertex": 71822,
+      "weightsBefore": [
+        9.357088129036129e-05,
+        0.9999064207077026,
+        0.0,
+        0.0
+      ],
+      "weightsAfter": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "joints": [
+        60,
+        61,
+        -1,
+        -1
+      ],
+      "filteredReferencePath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/whole_skin_motion_filtered_walk_study_frame42_v1205.npz",
+      "filteredReferenceSHA256": "fbb4ca9e1f60c1d00aabe16e41266c20c40bb7f42410e6a1582dac3102598c27"
+    }
+  ],
+  "productionComplete": false
+}
