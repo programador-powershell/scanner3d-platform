@@ -1,0 +1,36 @@
+{
+  "version": "v1167",
+  "source": "v1146",
+  "stageReferences": [
+    {
+      "path": "F:\\Alice\\SharedProduction\\Assets\\Characters\\alice_coelho\\References\\ChatGPT Image 7 de jun. de 2026, 13_26_40 (2).png",
+      "sha256": "6c2b1fd2c172404545ce8ae6499a1a5d98a32c5631c48220851cb9a0d9aa1ff1",
+      "board": 2,
+      "role": "foundation: chemise, first petticoat, support underskirt, stockings",
+      "allRequiredComponentsCompleted": false,
+      "actualPhotoInspected": true
+    },
+    {
+      "path": "F:\\Alice\\SharedProduction\\Assets\\Characters\\alice_coelho\\References\\ChatGPT Image 7 de jun. de 2026, 13_26_40 (4).png",
+      "sha256": "a0acbb4046daf9db933ce43c430cfd73295ca72bc8d42aa325620cb57f33d307",
+      "board": 4,
+      "role": "puff sleeve cap/lining/under-sleeve, band, two cuff ruffles, lace, choker and chains",
+      "allRequiredComponentsCompleted": false,
+      "actualPhotoInspected": true
+    }
+  ],
+  "actualFourNativeWholeMotionRendersInspected": true,
+  "geometryUVNormalsMaterialsUnchanged": true,
+  "findings": [
+    "striped existing stockings retain their source pattern during the viewed poses; this does not approve complete foundation layers hidden under the skirt",
+    "sleeve puff/cuff volume remains in the whole renders, but shoulder/cuff transitions and hanging details do not yet match the clean construction shown in board4",
+    "the stage4 photo requires gathered caps, sleeve bands, two cuff ruffles/lace and independent trims; no approval of those hidden layers or final deformation is made",
+    "solid Tripo hair and canonical face/body integration remain visibly unfinished; unchanged UV4K alone does not establish fidelity"
+  ],
+  "staticFidelityApproved": false,
+  "allStageLayersComplete": false,
+  "clothPhysicsApproved": false,
+  "gameplayApproved": false,
+  "productionComplete": false,
+  "createdAt": "2026-10-06T21:46:23.219875+00:00"
+}

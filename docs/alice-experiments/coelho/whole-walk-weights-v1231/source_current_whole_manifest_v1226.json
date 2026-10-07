@@ -1,0 +1,382 @@
+{
+  "version": "v1226",
+  "wholeCharacterWithDress": true,
+  "blend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\corset_patch_weights_whole_CANDIDATE_v1226\\alice_coelho_complete_corset_patch_weight_CANDIDATE_v1226.blend",
+  "blendSHA256": "76927d991c99fdd187ef0ea7f1a2d502708d40494b13ac0d39a01c753cc51818",
+  "bytes": 906078974,
+  "sourceBlend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\left_patch_weights_whole_CANDIDATE_v1200\\alice_coelho_complete_left_patch_weight_CANDIDATE_v1200.blend",
+  "sourceSHA256": "f22b541dbd8c845b9c1cda3f9bebe941efd53fad0c72218561da0a8844cb2135",
+  "sharedLibrary": {
+    "library": "F:\\Alice\\SharedProduction\\SharedBase\\Development\\alice_shared_base.blend",
+    "librarySHA256": "5b75fe6c2bf82165ba120df8afd027224d5a60b5472b91cf00ae777ef6221f80",
+    "rigObject": "Alice.Shared.Rig",
+    "headObject": "Alice.Shared.Head",
+    "linkedHeadMesh": true,
+    "linkedSkeleton": true,
+    "headMeshBinding": "direct_link",
+    "headMeshOverrideProperties": [],
+    "editablePoseOverride": true,
+    "headDataPreserved": {
+      "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+      "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+      "uv": {
+        "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+      },
+      "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+    },
+    "rigRestHash": "22fd5b5c82011dbfa9134ce2ce585ec86e9f2ba47b2b1f470733320d6c37005e",
+    "boneCount": 209,
+    "actions": {
+      "Walk / current fitted Chapeleiro motion study": "c30ad39e29f93d14f6a1bf1f691e0781a1a00268ba9a317666a2b731fe44ae66",
+      "Run / current fitted Chapeleiro motion study": "28ba81a375684fc0fd17fd935616d2c718a16f184951e1767fefdfaf11406536",
+      "Attack / current fitted Chapeleiro motion study": "6d4ed16b42b8b1902ad57586babc358090634d43bf700ef86512620d2c083c43",
+      "Jump / current fitted planted-key IK motion study": "e52e1fcf823cffdb716ceb9550470e13d6a9e3534a32c6f7965ea3b0abc83dd8"
+    },
+    "bodyMissing": true,
+    "sharedMeshes": {
+      "shared_head": {
+        "name": "Alice.Shared.Head",
+        "meshHash": {
+          "positions": "549f54fed48291871503a099f489ceaddcf503b6dc6ffddf85d7af9ba5f9ac1c",
+          "indices": "8203c15958f6b8413ecf2219e29ca96569823ab874f1b7b9592e2f82773b948f",
+          "uv": {
+            "UV4K": "34169dd9e54d59e7d8e283f0cc7e4f9ce20125179b538adae7eba97d18e587bc"
+          },
+          "weights": "57d2f60217d30512be616aa3c1b39a380ef9414d2a7f2ed146747e6fc85f3149"
+        },
+        "linked": true,
+        "vertices": 33244,
+        "faces": 66484,
+        "armatureTargets": [
+          "Alice.Shared.Rig"
+        ],
+        "objectMatrix": [
+          [
+            0.9999999403953552,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999403953552,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "shapeKeys": []
+  },
+  "sourceGeometrySignature": {
+    "positions": "75636cc438501d8d08910894b2f3479afea5ddd3c482299840d5bf1f054ab486",
+    "indices": "8fe1f6c7c8758e5b701e06384e8b25d7864cc4e2f493a4ed3f4eb0456ece5290",
+    "uv": {
+      "AliceCoelhoGameUV4K": "6c5b7ba2f2ea4b05c0d0dd37aa6ea18b26052ac79a6914ed5953cf5cec7d6f67"
+    },
+    "normals": "d0393edcdc715727771230c06f601ef86a3e3d4032cebb511697e2dd8e0b49e0",
+    "materials": [
+      "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011"
+    ]
+  },
+  "geometryUVNormalsMaterialsExactlyPreserved": true,
+  "onlyChangedSkinWeights": true,
+  "changedWeightVertices": 103,
+  "previousWhole1200OutsideDomainPreserved": true,
+  "actualNativeWeightsExactlyMatchIndependentRaw1202": true,
+  "selectedRoots": [
+    75839
+  ],
+  "allOtherCharacterWeightsExactlyPreserved": true,
+  "originalAuthoringRetained": true,
+  "sourceAndLibraryUnchanged": true,
+  "all42NativeFramesVerified": true,
+  "allFiveSameCameraRendersComplete": true,
+  "acceptedForPublication": false,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "individualHairComplete": false,
+  "clothPhysicsApproved": false,
+  "rigComplete": false,
+  "gameplayMotionApproved": false,
+  "productionComplete": false,
+  "VercelUsed": false,
+  "additionalTripoCredits": 0,
+  "renders": [
+    {
+      "frame": 1,
+      "view": "front_start",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_front_start_frame1_v1226.png",
+      "sha256": "b5c25da80a84f15658fa7959d78f604a04b148f1b3a1658648f41b6eb304e1c7"
+    },
+    {
+      "frame": 11,
+      "view": "front_quarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_front_quarter_frame11_v1226.png",
+      "sha256": "8180c70d82f081371fa8d52b47fa41aff75b5afafbe793902b929d38b4c38c16"
+    },
+    {
+      "frame": 31,
+      "view": "front_threequarter",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_front_threequarter_frame31_v1226.png",
+      "sha256": "0709e3f7ae2e29eca8f99884c6f130ccee28a1550cf876590fc59eb003611d5b"
+    },
+    {
+      "frame": 27,
+      "view": "corset_peak",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_corset_peak_frame27_v1226.png",
+      "sha256": "c969cf44b59b0a8eb027b6e6632290b1f2cf76afb68a952b20a9dbf0feaabb6d"
+    },
+    {
+      "frame": 27,
+      "view": "corset_peak_left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_corset_peak_left_profile_frame27_v1226.png",
+      "sha256": "92ec1ec297079b3c69ac89e2e259e37522f091c095b53310ce1e82f49c2820e6"
+    }
+  ],
+  "nativeFrames": [
+    {
+      "frame": 1,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 2,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 3,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 4,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 5,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 6,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 7,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 8,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 9,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 10,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 11,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 12,
+      "shortRestEdgesExpandedBeyond12cm": 1,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 13,
+      "shortRestEdgesExpandedBeyond12cm": 6,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 14,
+      "shortRestEdgesExpandedBeyond12cm": 26,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 15,
+      "shortRestEdgesExpandedBeyond12cm": 62,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 16,
+      "shortRestEdgesExpandedBeyond12cm": 92,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 17,
+      "shortRestEdgesExpandedBeyond12cm": 113,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 18,
+      "shortRestEdgesExpandedBeyond12cm": 116,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 19,
+      "shortRestEdgesExpandedBeyond12cm": 89,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 20,
+      "shortRestEdgesExpandedBeyond12cm": 26,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 21,
+      "shortRestEdgesExpandedBeyond12cm": 2,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 22,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 23,
+      "shortRestEdgesExpandedBeyond12cm": 1,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 24,
+      "shortRestEdgesExpandedBeyond12cm": 3,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 25,
+      "shortRestEdgesExpandedBeyond12cm": 9,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 26,
+      "shortRestEdgesExpandedBeyond12cm": 17,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 27,
+      "shortRestEdgesExpandedBeyond12cm": 20,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 28,
+      "shortRestEdgesExpandedBeyond12cm": 20,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 29,
+      "shortRestEdgesExpandedBeyond12cm": 20,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 30,
+      "shortRestEdgesExpandedBeyond12cm": 20,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 31,
+      "shortRestEdgesExpandedBeyond12cm": 17,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 32,
+      "shortRestEdgesExpandedBeyond12cm": 7,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 33,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 34,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 35,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 36,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 37,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 38,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 39,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 40,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 41,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    },
+    {
+      "frame": 42,
+      "shortRestEdgesExpandedBeyond12cm": 0,
+      "samePhysicalSeamMaxM": 0.0
+    }
+  ],
+  "nativeBaselineFrame27MaxErrorM": 4.780180390974979e-07,
+  "baselineRenders": [
+    {
+      "frame": 27,
+      "view": "front",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_baseline1200_front_frame27_v1226.png",
+      "sha256": "1cb5dc6da8abad6f8d01effa6901d5b7e3c26c176fa834ff2bec51c3aa6aa58b",
+      "sourceWeights1200": true
+    },
+    {
+      "frame": 27,
+      "view": "left_profile",
+      "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_baseline1200_left_profile_frame27_v1226.png",
+      "sha256": "2401596d7221f34521f9922691d0d3316c298712176b0fbad21beb8d6e15b457",
+      "sourceWeights1200": true
+    }
+  ],
+  "nativeFrame27MatchesIndependentAnalyticCandidateMaxM": 4.780180390974979e-07,
+  "nativeFrame31MatchesIndependentAnalyticCandidateMaxM": 4.792177298929096e-07,
+  "twoSameCameraNativeBeforeAfterPairsComplete": true
+}

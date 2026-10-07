@@ -1,0 +1,537 @@
+{
+  "version": "v1240",
+  "sha256": "8c87432c56e26ba385c451bb8599b7521edce7d744db51a433b12916da3deab3",
+  "allSourceTextureChannelBindingsPreserved": true,
+  "allEmbeddedImagesVerifiedV1013": true,
+  "records": [
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "57ee119d1f2e5d2e2dad0de3cdd158184ffc76d582198499e9ac65152f66e722",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "ccbf9b922b9675131e6fea87e11697a989ed4dc05f319ff922673ba554a5696c",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 0.20000000298023224,
+      "rawFBXBumpFactor": 0.20000000298023224,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.RearBow.SewnThread.PBR4K.v643",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.SewnThread.PBR4K.v643",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990",
+      "exactConnection": true,
+      "sourceStrength": 0.20000000298023224,
+      "rawFBXBumpFactor": 0.20000000298023224,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "61831f2328e0cd28b1d281ddd25daa1829a6aaa78b1ca1af00f5c7f4d5d10ef6",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "1472f14c2ed12ec0ce41e04e2481e8993f93639e5ee4e39e3bfe5302062e6cc7",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "ed6a1b0e12b3f3143d861837497731954712f11e785ab375b0570db70fd51bcd",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "ee1b06053fd11a9d86ff95738022182e3fe596d9e0520e7ae891005cdb9eb00c",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "f6a2390522f8c113bd861cc47880af9a3f55b6736511f7487b58f09c4cf2afb1",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "19e2b8c6e10530d0205f31cce97a9533c22e4785f13a3ef3d118edb8c7cc7415",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "046f48e458bf3caeb14305babbc580ce879359e05568d416d1f24818d6b0fccd",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "socket": "Base Color",
+      "property": "DiffuseColor",
+      "sourceImageSHA256": "ac67f12e3fdf2122bc1f0b70f2ae7c421919d197494b70eb8316ab8535902561",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "socket": "Roughness",
+      "property": "ShininessExponent",
+      "sourceImageSHA256": "8e381faa322dc51555e10cfb6264da7454c842a9f9f18c4c2c3f37da808cd210",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "socket": "Metallic",
+      "property": "ReflectionFactor",
+      "sourceImageSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9",
+      "exactConnection": true
+    },
+    {
+      "material": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "socket": "Normal",
+      "property": "NormalMap",
+      "sourceImageSHA256": "8148a768cbdcc56d58c4100664449f180c4308ca2992114311fc0d45c116b175",
+      "exactConnection": true,
+      "sourceStrength": 1.0,
+      "rawFBXBumpFactor": 1.0,
+      "strengthTolerance": 1e-07
+    }
+  ],
+  "constantClockMaterials": [
+    {
+      "material": "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview",
+      "rawFBXColorMetallicRoughnessShininessSpecularAndOpaqueAlphaVerified": true,
+      "expectedProperties": {
+        "DiffuseColor": [
+          0.027000000700354576,
+          0.02199999988079071,
+          0.014000000432133675
+        ],
+        "SpecularColor": [
+          0.027000000700354576,
+          0.02199999988079071,
+          0.014000000432133675
+        ],
+        "ReflectionColor": [
+          0.027000000700354576,
+          0.02199999988079071,
+          0.014000000432133675
+        ],
+        "ReflectionFactor": [
+          0.6200000047683716
+        ],
+        "SpecularFactor": [
+          0.17499999701976776
+        ],
+        "Shininess": [
+          29.159999098777778
+        ],
+        "ShininessExponent": [
+          29.159999098777778
+        ]
+      }
+    },
+    {
+      "material": "Alice.Coelho.Clock754.RomanIndices.GeometryPreview",
+      "rawFBXColorMetallicRoughnessShininessSpecularAndOpaqueAlphaVerified": true,
+      "expectedProperties": {
+        "DiffuseColor": [
+          0.01600000075995922,
+          0.01899999938905239,
+          0.01899999938905239
+        ],
+        "SpecularColor": [
+          0.01600000075995922,
+          0.01899999938905239,
+          0.01899999938905239
+        ],
+        "ReflectionColor": [
+          0.01600000075995922,
+          0.01899999938905239,
+          0.01899999938905239
+        ],
+        "ReflectionFactor": [
+          0.18000000715255737
+        ],
+        "SpecularFactor": [
+          0.17499999701976776
+        ],
+        "Shininess": [
+          42.25000077486038
+        ],
+        "ShininessExponent": [
+          42.25000077486038
+        ]
+      }
+    }
+  ],
+  "officialExporterFormulaPath": "F:/Programas/5.2/scripts/addons_core/io_scene_fbx/export_fbx_bin.py",
+  "officialExporterFormulaSHA256": "8fd324e4ee0d25cc89cd53507b0f93c057b17b699601ac90f81085d5be09e44a",
+  "productionComplete": false
+}

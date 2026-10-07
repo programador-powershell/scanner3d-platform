@@ -1,0 +1,63 @@
+{
+  "version": "v1229",
+  "actualSameCameraNativeBeforeAfter": true,
+  "pixelDifferencesAreNotFidelityMetrics": true,
+  "noRetouchOrSourceEditing": true,
+  "rows": [
+    {
+      "view": "front",
+      "frame": 27,
+      "baseline": {
+        "frame": 27,
+        "view": "front",
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_baseline1200_front_frame27_v1226.png",
+        "sha256": "1cb5dc6da8abad6f8d01effa6901d5b7e3c26c176fa834ff2bec51c3aa6aa58b",
+        "sourceWeights1200": true
+      },
+      "candidate": {
+        "frame": 27,
+        "view": "corset_peak",
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_corset_peak_frame27_v1226.png",
+        "sha256": "c969cf44b59b0a8eb027b6e6632290b1f2cf76afb68a952b20a9dbf0feaabb6d"
+      },
+      "fixedCrop": [
+        445,
+        300,
+        590,
+        490
+      ],
+      "meanAbsoluteRGBDifference": 0.003012704174228675,
+      "maximumAbsoluteRGBDifference": 1.0,
+      "comparisonPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/actual_before_after_corset_frame27_front_v1229.png",
+      "comparisonSHA256": "0380b128d5af70fbc314eac45201828292edc9072d5476e3a2005cc98a005c5d"
+    },
+    {
+      "view": "left_profile",
+      "frame": 27,
+      "baseline": {
+        "frame": 27,
+        "view": "left_profile",
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_baseline1200_left_profile_frame27_v1226.png",
+        "sha256": "2401596d7221f34521f9922691d0d3316c298712176b0fbad21beb8d6e15b457",
+        "sourceWeights1200": true
+      },
+      "candidate": {
+        "frame": 27,
+        "view": "corset_peak_left_profile",
+        "path": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/whole_walk_corset_peak_left_profile_frame27_v1226.png",
+        "sha256": "92ec1ec297079b3c69ac89e2e259e37522f091c095b53310ce1e82f49c2820e6"
+      },
+      "fixedCrop": [
+        300,
+        270,
+        565,
+        515
+      ],
+      "meanAbsoluteRGBDifference": 0.01126427929662431,
+      "maximumAbsoluteRGBDifference": 10.0,
+      "comparisonPath": "Blender/Work/alice_coelho/tripo_h31_budget55_v001/corset_patch_weights_whole_CANDIDATE_v1226/actual_before_after_corset_frame27_left_profile_v1229.png",
+      "comparisonSHA256": "4c3c89f3b4bb5d22f647190812c1efe838060b6e6f6e4832a71632a7755abe1e"
+    }
+  ],
+  "productionComplete": false
+}

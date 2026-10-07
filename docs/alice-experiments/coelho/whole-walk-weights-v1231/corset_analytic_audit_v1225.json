@@ -1,0 +1,831 @@
+{
+  "version": "v1225",
+  "readonlyStudySourceAndExportsNotEdited": true,
+  "currentWholeGitCheckpoint": "d927e2ebb006ffe94b565565aeb636f87265c2d3",
+  "sourceBlend": "F:\\Alice\\SharedProduction\\Blender\\Work\\alice_coelho\\tripo_h31_budget55_v001\\left_patch_weights_whole_CANDIDATE_v1200\\alice_coelho_complete_left_patch_weight_CANDIDATE_v1200.blend",
+  "previousWhole1200OutsideDomainPreserved": true,
+  "sameActualOriginalWalk1204Reference": true,
+  "baselineFrame31ReproducedMaxM": 6.454604700916789e-08,
+  "selectedTopologyGroups": 96,
+  "changedVertices": 103,
+  "changedUVRootCounts": {
+    "65668": 1,
+    "75585": 5,
+    "75839": 96,
+    "77034": 1
+  },
+  "changedPhysicalRoleCounts": {
+    "0": 101,
+    "3": 2
+  },
+  "actualMeshEdgeGraphOnly": true,
+  "geodesicRadiusM": 0.08,
+  "smoothIterations": 120,
+  "outsideDomainWeightsExactlyPreserved": true,
+  "geometryUVNormalsMaterialsNotEdited": true,
+  "all42Frames": [
+    {
+      "frame": 1,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 2,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 3,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 4,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 5,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 6,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 7,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 8,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 9,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 10,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 11,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 12,
+      "baseline": {
+        "allBad": 1,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 1,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 13,
+      "baseline": {
+        "allBad": 6,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 6,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 14,
+      "baseline": {
+        "allBad": 26,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 26,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 15,
+      "baseline": {
+        "allBad": 62,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 62,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 16,
+      "baseline": {
+        "allBad": 92,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 92,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 17,
+      "baseline": {
+        "allBad": 113,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 113,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 18,
+      "baseline": {
+        "allBad": 116,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 116,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 19,
+      "baseline": {
+        "allBad": 89,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 89,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 20,
+      "baseline": {
+        "allBad": 26,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 26,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 21,
+      "baseline": {
+        "allBad": 2,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 2,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 22,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 23,
+      "baseline": {
+        "allBad": 1,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 1,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 24,
+      "baseline": {
+        "allBad": 3,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 3,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 25,
+      "baseline": {
+        "allBad": 9,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 9,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 26,
+      "baseline": {
+        "allBad": 18,
+        "localBad": 1,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 17,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 27,
+      "baseline": {
+        "allBad": 23,
+        "localBad": 3,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 20,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 28,
+      "baseline": {
+        "allBad": 23,
+        "localBad": 3,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 20,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 29,
+      "baseline": {
+        "allBad": 23,
+        "localBad": 3,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 20,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 30,
+      "baseline": {
+        "allBad": 23,
+        "localBad": 3,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 20,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 31,
+      "baseline": {
+        "allBad": 18,
+        "localBad": 1,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 17,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 32,
+      "baseline": {
+        "allBad": 7,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 7,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 33,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 34,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 35,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 36,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 37,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 38,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 39,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 40,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 41,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    },
+    {
+      "frame": 42,
+      "baseline": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      },
+      "candidate": {
+        "allBad": 0,
+        "localBad": 0,
+        "bootsBad": 0,
+        "forearmBad": 0,
+        "sleeveBad": 0,
+        "samePhysicalSeamMaxM": 0.0
+      }
+    }
+  ],
+  "visualReviewRequired": true,
+  "noWholeBlendOrNewExportsSaved": true,
+  "acceptedForProduction": false,
+  "productionComplete": false,
+  "elapsedSeconds": 36.59137034416199
+}

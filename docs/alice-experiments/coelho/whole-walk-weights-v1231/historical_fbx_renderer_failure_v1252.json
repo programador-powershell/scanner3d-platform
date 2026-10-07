@@ -1,0 +1,15 @@
+{
+  "version": "v1252",
+  "failedPID": 18228,
+  "terminalProcessMissing": true,
+  "reason": "Cycles malloc returned null at first render",
+  "numericGeometryAndNinePoseChecksLoggedButFinalReportNotWritten": true,
+  "sourceFullBlendPreserved": true,
+  "failedLogs": [
+    "corset_fbx1235.stdout.log",
+    "corset_fbx1235.stderr.log"
+  ],
+  "requiredRecovery": "Rerun numerical stage, save full verified importer scene; render in fresh factory process with two CPU threads, all202objects/45full-resolution images and unchanged cameras/shaders/samples.",
+  "productionComplete": false,
+  "createdAt": "2026-10-07T10:17:57.548832+00:00"
+}

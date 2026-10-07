@@ -1,0 +1,20 @@
+{
+  "version": "v1228",
+  "acceptedForLimitedWholeWeightCheckpointExport": true,
+  "allSevenActualNativeImagesInspected": true,
+  "twoRealSameCameraBeforeAfterPairsInspected": true,
+  "all42OriginalNativeWalkFramesVerified": true,
+  "localCorsetBadEdgesAcross42Frames": 0,
+  "globalRemainingBadEdgeOccurrencesAcross42Frames": 667,
+  "globalMaximumInOneFrame": 116,
+  "changedWeightVertices": 103,
+  "allOutsideWeightsAndGeometryUVNormalsMaterialsPreserved": true,
+  "observation": "Corset UV75839 local weight continuity improved. Remaining original solid hair/other upper regions still deform; provisional cloth, canonical anatomy and gameplay remain unfinished.",
+  "productionComplete": false,
+  "canonicalIdentityApproved": false,
+  "anatomical168cmApproved": false,
+  "individualHairComplete": false,
+  "clothPhysicsApproved": false,
+  "rigComplete": false,
+  "gameplayApproved": false
+}

@@ -1,0 +1,494 @@
+{
+  "version": "v1238",
+  "format": "GLB",
+  "sha256": "0cc5812809f30337e9c45dccb659e3fd744896e20cdbeea7ebaae2d0e3bd68fd",
+  "allExportedMaterialsVerified": true,
+  "allSourceLinkedImages4096": true,
+  "fullPixelComparisons": true,
+  "materials": [
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicPhoto.Front.Candidate.v052",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168",
+          "sourceSHA256": "11287202d4734573097fa73de97c26be8ac50647c2fa5124d77cbd7ab6a25168"
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.47999998927116394
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Apron.IntrinsicSatin.Back.Candidate.v052",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e",
+          "sourceSHA256": "51ffdf079353bfb672f85f2126f72e0babe06e78d2f3b6ef3f30eba83f2fc48e"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "f2fca323d8ca4a18dfedc1ab0f55e2750231ce306c83dd653073b7460d438aa9"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "3b9f0322c56a0db15e039de484298b796798d4f37a31a502f74f592bb84eb025"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.ChainLOD.BakedNormal.PBR4K.v066",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "e0a538a55e5574f63b2545f1cc72ba28b90ae8af625c4ab0cf27171a14c52f17"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.FrontApron.ReferenceProjection.Candidate.v007",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976",
+          "sourceSHA256": "bce2b44598e1e588163ed56bac28c650cb1272e7bcd63b29bc34d1eafd51c976"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "512fc49d43e17c930eada8d2ecd6aa5f5c3e04dbdfaa924dc714e9739e0682bf"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "80faaab1d86b9c934296cade6ec92d581f31b58b8b25b0fca7187038108c1baf"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "6e9d319646dc02ab2e0dc3f0a1e3e103faa596297f549dc5cfe30ce5038bca0d"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Apron.DedicatedPhotoUV4K.v011",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78",
+          "sourceSHA256": "81568244db8744936465ebc6109ff675f13a369159fdf0b1eb426278b4c1cc78"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "14dfad485ef8558a3fb5bee05bc417061898dbec6f0e62b01d325c4413f8e61a"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "ef2312895376c040a63564eef7cf6ad67142f28b4cf3474b47d3ca2a46799930"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "34980509199eed2f41d6a0e77110d12d21c095714d5f38ad237e768151aca83f"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Lace.GeometricThreads.PBR4K.v072.DenseLace.v082",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2",
+          "sourceSHA256": "1f2a8adb749a9cc99ee985bf57bdef538a147f53554f43c940a82c3494f2bbc2"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "586be8053b328a1a8d204f6aab2bd4f3c9ca9404bfb20ac701ea98cba1f9d9a3"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "cfa2a02075b3ff02ea44d921846e237a53b29db5709b12f55734eed98a6fac64"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.PipedCord.Gold.PBR4K.v072.DenseLace.v082",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ae21584198c7b679d94dedb6ecdd9eecfeeecfba17d0fe728c1b3804569280ee"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "a0365629ecb9e4914fd5af886eb524064b19d7f5485d317198c3bf5c09e94de2"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Gold.AtlasPBR4K.v417",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+          "sourceSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Ornaments.Blue.AtlasPBR4K.v417",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473",
+          "sourceSHA256": "83b3897a8d447738e075ae5d087a5127e174193be99532d0e291b3f608735473"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ce5bfc507210bd4269259fe9d108424fccc8f50b27f3a64754000d469d346414"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "6ae275ce4cf62b60cf013f5bc77a38e10d77e0d5fc1d8e27f9194095292aba95"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "d3e3be9f4921e23fcc0a2747d7d949d499cce29337777df598982f4a8449413e"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.RearBow.VisibleInk.RimPaddingCandidate592",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "57ee119d1f2e5d2e2dad0de3cdd158184ffc76d582198499e9ac65152f66e722",
+          "sourceSHA256": "57ee119d1f2e5d2e2dad0de3cdd158184ffc76d582198499e9ac65152f66e722"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "ccbf9b922b9675131e6fea87e11697a989ed4dc05f319ff922673ba554a5696c"
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0
+        }
+      },
+      "sheenWeightCompatibility": {
+        "sourceWeight": 0.08,
+        "encodedTintFactor": [
+          0.08,
+          0.08,
+          0.08
+        ],
+        "binaryTextureAndUVPreserved": true
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.RearBow.GoldBinding.Thread.PBR4K.v643",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.47999998927116394
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0.15000000596046448
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 0.20000000298023224,
+          "exportedNormalScale": 0.20000000298023224,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.RearBow.SewnThread.PBR4K.v643",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860",
+          "sourceSHA256": "d0696b0617705e6c86ae9ca3b6f3724be9b92becac2fbddc123643c22584d860"
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.47999998927116394
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0.05000000074505806
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 0.20000000298023224,
+          "exportedNormalScale": 0.20000000298023224,
+          "sourceSHA256": "ab45a172e1880d53a690ae5d26032c4f54520c75246294064cfa0977f7771990"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.RearBow.HiddenReinforcement.NativeWoven.PBR4K.v711",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "61831f2328e0cd28b1d281ddd25daa1829a6aaa78b1ca1af00f5c7f4d5d10ef6",
+          "sourceSHA256": "61831f2328e0cd28b1d281ddd25daa1829a6aaa78b1ca1af00f5c7f4d5d10ef6"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "1472f14c2ed12ec0ce41e04e2481e8993f93639e5ee4e39e3bfe5302062e6cc7"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "ed6a1b0e12b3f3143d861837497731954712f11e785ab375b0570db70fd51bcd"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Clock.ReferencePatina.Baked.PBR4K.v983",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "ee1b06053fd11a9d86ff95738022182e3fe596d9e0520e7ae891005cdb9eb00c",
+          "sourceSHA256": "ee1b06053fd11a9d86ff95738022182e3fe596d9e0520e7ae891005cdb9eb00c"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "f6a2390522f8c113bd861cc47880af9a3f55b6736511f7487b58f09c4cf2afb1"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "19e2b8c6e10530d0205f31cce97a9533c22e4785f13a3ef3d118edb8c7cc7415"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "046f48e458bf3caeb14305babbc580ce879359e05568d416d1f24818d6b0fccd"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Clock754.OxidizedBrass.GeometryPreview",
+      "channels": {
+        "baseColor": {
+          "sourceConstantFactorExactlyPreserved": true,
+          "value": [
+            0.027000000700354576,
+            0.02199999988079071,
+            0.014000000432133675,
+            1.0
+          ]
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.46000000834465027
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0.6200000047683716
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Clock754.RomanIndices.GeometryPreview",
+      "channels": {
+        "baseColor": {
+          "sourceConstantFactorExactlyPreserved": true,
+          "value": [
+            0.01600000075995922,
+            0.01899999938905239,
+            0.01899999938905239,
+            1.0
+          ]
+        },
+        "Roughness": {
+          "constantPreserved": true,
+          "value": 0.3499999940395355
+        },
+        "Metallic": {
+          "constantPreserved": true,
+          "value": 0.18000000715255737
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    },
+    {
+      "name": "Alice.Coelho.Clock.IvoryDial.PlanarRebake.PBR4K.v933",
+      "channels": {
+        "baseColor": {
+          "allRGBPixelsExact": true,
+          "textureSHA256": "ac67f12e3fdf2122bc1f0b70f2ae7c421919d197494b70eb8316ab8535902561",
+          "sourceSHA256": "ac67f12e3fdf2122bc1f0b70f2ae7c421919d197494b70eb8316ab8535902561"
+        },
+        "Roughness": {
+          "allChannelPixelsExact": true,
+          "channel": 1,
+          "sourceSHA256": "8e381faa322dc51555e10cfb6264da7454c842a9f9f18c4c2c3f37da808cd210"
+        },
+        "Metallic": {
+          "allChannelPixelsExact": true,
+          "channel": 2,
+          "sourceSHA256": "0d13075ac2ce6d06a6cae9840663384ee5a2cbb3a3b89e1ac6c01d41c08c33b9"
+        },
+        "Normal": {
+          "allRGBPixelsExact": true,
+          "tangentSpaceAndStrengthPreserved": true,
+          "sourceNormalStrength": 1.0,
+          "exportedNormalScale": 1,
+          "sourceSHA256": "8148a768cbdcc56d58c4100664449f180c4308ca2992114311fc0d45c116b175"
+        }
+      },
+      "alphaAndSpecularSemanticsPreserved": true
+    }
+  ],
+  "unusedMaterialSlotsNotRequiredInGLB": true,
+  "productionComplete": false
+}
